@@ -32,6 +32,28 @@ Menghadirkan pengalaman belajar mandiri (asynchronous) yang menyenangkan, inklus
 4. **Clean & Scalable Backend**:
    - Google Apps Script (`Code.gs`) baru yang menangani registrasi/login multi-jenjang dan logging progres/nilai ke Google Sheets secara modular dan otomatis.
 
+## 2.3 Pelajaran dari Sistem Lama & Solusi Arsitektur (Anti-Bug Architecture)
+
+Berdasarkan evaluasi sistem lama di `/Academic_Content/B2B/UOB/Async`, platform baru ini mengadopsi 6 solusi arsitektur wajib:
+
+| No | Gejala Bug Lama | Akar Masalah (Root Cause) | Solusi Arsitektur Baru |
+|---|---|---|---|
+| 1 | Di halaman login, video 00 sudah auto-play sendiri di latar belakang | Komponen iframe YouTube ter-mount di DOM sebelum autentikasi selesai | **Conditional Mounting**: Komponen video player sama sekali tidak di-render ke DOM selama `isAuthenticated === false`. |
+| 2 | Saat pindah tab/modul, video tab lama tetap memutar audio sendiri di latar | Player instance tab lama tidak di-teardown / di-pause saat state tab berubah | **Lifecycle Teardown Hook**: Setiap pergantian tab/modul mengeksekusi `player.pauseVideo()` atau `player.destroy()` sebelum me-mount video baru. |
+| 3 | Pop-up kuis sudah diisi (bahkan tersimpan di backend), tapi tombol lanjut tab berikutnya tetap terkunci (stuck) | Pengecekan completion terikat pada selector class CSS typo (`.quiz-next-btn` vs `.quiz-next`) atau mismatch ID kuis | **Reactive ID-based Gate**: Progress lock hanya bergantung pada data reaktif murni (`submittedQuizIds.has(quiz.id)`), 100% independen dari animasi CSS atau manipulasi class DOM. |
+| 4 & 5 | Data siswa dihapus di backend untuk reset, tapi browser tetap nyangkut karena data browser (localStorage) usang | Client hanya percaya pada `localStorage` tanpa two-way sync dari server | **Server-First Hydration**: Saat siswa login, aplikasi menarik snapshot progres terkini dari Google Sheets via Apps Script. Jika data di sheet kosong (di-reset admin), frontend otomatis mengosongkan cache lokal dan menyelaraskan state. |
+| 6 | Setiap login di tanggal berbeda membuat row baru di Google Sheets dengan data kredensial yang sama (duplikasi row) | Skrip backend lama selalu memanggil `appendRow()` tanpa validasi keberadaan record | **Atomic Upsert Pattern**: Skrip `Code.gs` baru memeriksa kombinasi unik `Email + Sekolah`. Jika sudah ada, lakukan update pada baris tersebut; jika belum ada, buat baris baru. |
+
+---
+
+## 2.4 Mobile UX & Gentle Advisory Modal
+
+Platform baru didesain responsif (*mobile-friendly*), namun karena pembelajaran coding membutuhkan ruang layar yang leluasa:
+- **Deteksi Perangkat Mobile**: Jika viewport terdeteksi berukuran mobile (< 768px):
+  - Sistem menampilkan **CSS Modal Dialog** yang elegan (bukan `window.alert()`).
+  - **Pesan**: *"Untuk kenyamanan dan kemudahan belajar koding yang optimal, disarankan menggunakan perangkat Laptop, Komputer, atau Tablet."*
+  - **Tombol Aksi**: *"Mengerti, Tetap Lanjutkan"* (siswa tidak diblokir secara kaku jika hanya memiliki perangkat ponsel).
+
 ---
 
 ## 3. Project Organization & Subprojects
@@ -48,7 +70,8 @@ projects/uob-async-lms/
 ├── HISTORY.md                                # Log Interaksi Induk
 ├── AGENTS.md                                 # Aturan Agen Induk
 ├── planning/
-│   └── 01-implementation-plan-...md          # Rencana Eksekusi Bertahap
+│   ├── 01-implementation-plan-...md          # Rencana Induk
+│   └── 02-implementation-plan-...md          # Rencana Scaffolding Kurikulum
 └── subprojects/
     ├── 01-lms-platform/                      # Subproject 1: Web App & Apps Script
     │   ├── AGENTS.md
@@ -73,13 +96,17 @@ projects/uob-async-lms/
 ## 4. Functional Specifications
 
 ### 4.1 Modul Autentikasi & Smart Routing (Subproject 1)
-- **Step 1 - Autocomplete Sekolah**: Input pencarian sekolah mitra. Data sekolah terhubung ke master data di Google Sheets.
-- **Step 2 - Auto-Detect Jenjang**: Setiap sekolah di database memiliki tag jenjang:
-  - `SD` → Mengarahkan ke Kurikulum Upper Primary (Scratch / Visual Logic).
-  - `SMP` → Mengarahkan ke Kurikulum Middle School (Python Fundamental / Logic).
-  - `SMA` → Mengarahkan ke Kurikulum High School (Python Applied / Web IDE).
-- **Step 3 - Validasi Siswa**: Siswa memilih namanya dari daftar siswa sekolah tersebut atau memasukkan email terdaftar.
-- **Session Persistence**: Progres lokal disimpan di `localStorage` per email siswa, mencegah kehilangan status jika halaman ter-refresh atau koneksi terputus.
+- **Data Kredensial Login (3 Field)**:
+  1. **Nama Sekolah**: Dropdown pencarian sekolah mitra.
+  2. **Nama Siswa**: Pilihan nama dari roster sekolah.
+  3. **Email Akademia**: Email resmi siswa terdaftar di Akademia Ruangguru.
+- **Deteksi Jenjang Otomatis**:
+  - `SD` → Memuat struktur modul Upper Primary (Visual Logic / Scratch template).
+  - `SMP` → Memuat modul Middle School (Logic / App Inventor / Python Dasar).
+  - `SMA` → Memuat modul High School (Python Applied / Safe Coding).
+- **Two-Way Server Sync**:
+  - Setelah verifikasi berhasil, frontend mengambil riwayat kuis & modul dari backend Google Sheets.
+  - Memperbarui cache `localStorage` sesuai snapshot server terbaru.
 
 ### 4.2 Modul Video Player & Quiz Interaction UX (Subproject 1)
 - **Komponen Player**:
@@ -149,7 +176,19 @@ Struktur data tunggal yang dihasilkan oleh Subproject 2 untuk dibaca langsung ol
 
 ---
 
-## 5. Backend & Data Integration Specifications
+## 5. Backend, Clasp, & Git Deployment
+
+- **Remote Git Repository**:
+  - Target: `git@github.com:mds-academic/beasiswa_async.git`
+  - SSH Host: `github.com` via Identity `~/.ssh/id_ed25519_academic_mds` (User: `mds-academic`).
+- **Google Apps Script & Clasp**:
+  - Manajemen script via `@google/clasp`.
+  - Deployment dengan akun RGC UOB baru yang disiapkan.
+  - Spreadsheet baru sebagai master data dan logging hasil siswa.
+- **Operasi Backend**:
+  - Action `auth`: Validasi nama, sekolah, email + return historical progress snapshot.
+  - Action `submitQuiz`: Menyimpan skor kuis ke Google Sheets dengan metode Upsert.
+  - Action `submitProject`: Menyimpan kode ide atau kuis akhir.
 
 - **Platform**: Google Apps Script (Web App Deployment).
 - **Database**: Google Sheets Terpusat.

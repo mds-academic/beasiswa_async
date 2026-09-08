@@ -57,3 +57,86 @@ Untuk memastikan eksekusi tahap berikutnya presisi, mohon konfirmasi beberapa ha
 3. **Database Google Sheets**: Apakah kita akan memakai Google Spreadsheet yang sudah ada (`1pE_YGmKFZNUz8ow2baGfxw3EMH0PwOQeRmOWVVB9Itg`) atau disiapkan sheet baru untuk integrasi Apps Script kali ini?
 
 Silakan review dokumen [PRD.md](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/PRD.md) dan [01-implementation-plan](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/planning/01-implementation-plan-uob-async-lms-and-curriculum-revamp.md). Jika sudah sesuai, kita bisa langsung melangkah ke Fase 2 (Audit & Kurasi Alur Materi Koding) dan Fase 3 (Scaffolding Web App Player LMS).
+
+### User Request (Turn 2 - Text & Audio Transcription)
+**Text Prompt:**
+```text
+link :
+https://github.com/mds-academic/beasiswa_async.git
+
+eror async yang lama :
+
+/Users/yazidhilmi/Documents/cloud/Kalananti-cloud/Academic_Content/B2B/UOB/Async
+
+1/ ini sangat cahos loh kenapa ini dia pas di halaman login vidoe 00 udah jalan aja aneh bange
+
+2/ sama klao udah login dai pindah pinah tab suka eror anjirr vide di tab yang lama suka mulai sendiri anehh banget 
+
+3/ suka ada eror diman aanak anak udah ngsi pop up quizz tapidia ngga bisa lanjut video selanjutnya
+
+contohnya di hs grup a tuh di video 6 udah ngisi semua poop up nya di back end pun dah ketulis tapi kok dia ngga bsa lanjut ke video tab 7 yah ke mini quiz nya katanya belum selesai padahal udah dan sudah terisi anjir
+
+4/ kan kalo ada masaah nomor 3 yaudah dtanya dari beack end dihapus minta mereka isi tpai kok dia masi eror jua
+
+5/ kadang aklo nomr 4 gabiakita hapus datanya sama seklai biar dia mulai dari awal , tapi karena dia pake penyimpanan browser dia malah ngabisa reset awal karena dai ada data dari browser anjir ini chaos banget harusnya dia sync sama appscropt dong di cek di sheet datanya udah aad abelum kalo ada paek yang di sheet aja yang terbaruu karena tersimpan
+
+6/ ini kok taip anak login di tanggal beda dia nyimpan rwo baru dengan rkredensial yang sama ini bigungin kodingnya ini yang mana anjir datanya yan dipake gitu
+```
+
+**Audio Transcription:**
+"Oke kita planning dulu sebelum kita mulai koding... Ini aku ada error sebentar ya. Nah oke jadi kita balik lagi. Nah disini aku tuh ada project kan, project 1 ini kita mau bikin LMS-nya. Nah LMS-nya ini ada beberapa ke-erroran yang perlu kita attend, kita ya kita bikin attention-nya dulu. Apa aku langsung ngasih aja karena aku udah ini ya? Ya pokoknya ada inilah, ada error-error yang sedang aku perbaiki ya. Kamu nggak usah perbaikin yang error async yang lama ya, ini aku tulis error-errornya apa aja tuh kamu baca aja deh. Nah kamu nggak usah benerin yang async yang lama ya, karena kan ini apa aku mau kamu aware pas kamu copy-paste kodenya apa kita tulis ulang lah kodenya jadi jangan sampai error. Itu yang pertama. Yang kedua, ini pastikan design-nya itu dia mobile friendly ya karena anak-anak bisa jadi buka pakai mobile. Tapi kalau dia pakai mobile kayaknya kita kasih kayak paling atas kita kasih top pop up menu kayak pop up gitu di browser kayak alert apakah gitu yang bagus gitu ya, jangan pakai javascript alert ya, aku mau yang bagus dia pakai CSS modal aja yang kasih tahu 'Untuk supaya ya belajarnya lebih mudah lagi gunakan perangkat tablet atau perangkat laptop atau HP eh atau komputer ya, jangan pakai HP karena...' Jadi kalau misalnya dia buka browser pakai HP susah gitu apa itunya ininya, ya walaupun tetap bisa mereka tetap bisa ngerjain, kita tetap kasih alert aja supaya mereka kita ya arahkan secara halus lah untuk membuka dari perangkat desktop atau tablet ya nggak papa. Nah terus yang ketiga adalah: ini materi SD belum ada. Jadi materi SD belum ada, kamu pakai dulu materi yang apa namanya kita materinya juga belum ada, jadi itu kita mau bikin templatenya dulu, kita mau bikin tempatnya dulu gitu kan dari login apa segala macam. Nah untuk login ini kan ya kita berarti butuh list email apa kita butuh ya apa sheet lagi yang disitu nanti ada list email segala macam ya kan: list email, nama anak, nama sekolah... terus itu ya udah itu doang kan kita butuhnya kan? Email, nama anak, nama sekolah, kan untuk login cuma butuh tiga itu. Oke. Nah itu yang ketiga, kita perlu clasp itu yang kita butuh spreadsheet baru, berarti nanti untuk clasp aku mau login pakai akun RGC UOB yang baru, jadi nanti aku akan minta kamu untuk re-authenticate lagi. Terus yang keempat, ini nanti akan dipush ke akun githubnya ini ya RGC MDS Academic gitu, ini link githubnya udah aku taruh di komen nanti kamu masukin aja disitu kalau butuh... kayaknya aku udah harusnya udah ada link ke ininya ya, link RDPRDC apa segala macam itu kayaknya, udah pokoknya udah connect lah kamu tinggal upload-upload aja gitu. Tuh, ya... Nah terus itu yang keempat, aku mau kita planning juga sekalian, kita planning juga bikin implementation plan untuk lesson apa yang subproject 2 yang kita mau memperbaiki SD eh memperbaiki materi SMP sama SMA nya supaya dia scaffoldingnya bener gitu, jadi anak yang belum pernah belajar coding dia bisa belajar gitu. Jadi sekalian bikin dulu itunya ya, jadi ya nanti aku akan bikin di chat lain lah untuk ininya. Gitu."
+
+### Assistant Response
+Terima kasih atas catatan detail dan breakdown 6 bug kritis dari sistem lama! Seluruh poin evaluasi tersebut telah dipelajari akar masalahnya (*root cause*) dan diintegrasikan ke dalam arsitektur platform baru agar **tidak terulang kembali**.
+
+Dokumen perencanaan dan spesifikasi telah diperbarui secara menyeluruh:
+- Dokumen PRD Utama: [`PRD.md`](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/PRD.md) (kini memuat tabel analisis 6 bug lama & solusi arsitektur, spesifikasi modal advisory mobile, auth 3-field, dan git deployment).
+- Rencana Scaffolding Kurikulum (Subproject 2): [`planning/02-implementation-plan-curriculum-scaffolding-smp-sma-sd.md`](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/planning/02-implementation-plan-curriculum-scaffolding-smp-sma-sd.md).
+- Konfigurasi Remote Git: Berhasil dikonfigurasi ke `git@github.com:mds-academic/beasiswa_async.git` (autentikasi SSH via key `mds-academic` telah terverifikasi aktif).
+
+---
+
+### 1. Resolusi Arsitektur untuk 6 Bug Kritis Sistem Lama
+
+| No | Gejala Bug Lama | Akar Masalah (Root Cause) | Solusi di Arsitektur Baru |
+|---|---|---|---|
+| **1** | Halaman login memutar video 00 sendiri di latar | Iframe video YouTube ter-mount di DOM sebelum autentikasi selesai | **Conditional Lifecycle Mounting**: Komponen video player sama sekali tidak di-render ke DOM selama `isAuthenticated === false`. |
+| **2** | Pindah tab membuat video tab lama jalan sendiri / audio ganda | Instance player tab lama tidak di-teardown saat state tab berubah | **Lifecycle Teardown Hook**: Setiap perpindahan tab/modul mengeksekusi `player.destroy()` / `player.pauseVideo()` sebelum me-mount video baru. |
+| **3** | Pop-up kuis sudah diisi tapi tombol lanjut tab terkunci (misal HS Grup A video 6 ke tab 7) | Pengecekan completion terikat pada selector class CSS animasi typo (`.quiz-next-btn` vs `.quiz-next`) | **Reactive ID-based Gate**: Validasi progres murni berbasis evaluasi data Set kuis (`submittedQuizIds.has(quiz.id)`), 100% independen dari animasi CSS atau DOM class. |
+| **4 & 5** | Data siswa di-reset di backend tapi browser tetap stuck membaca `localStorage` lama | Browser hanya mengandalkan data lokal tanpa sinkronisasi 2 arah | **Server-First Hydration**: Saat siswa login, aplikasi menarik snapshot progres resmi dari Google Sheets. Jika sheet di-reset admin (kosong), cache browser otomatis dibersihkan dan diselaraskan. |
+| **6** | Setiap login di tanggal berbeda membuat baris baru dengan kredensial sama (duplikasi row) | Skrip `Code.gs` lama selalu memanggil `appendRow()` | **Atomic Upsert Pattern**: Skrip backend baru memeriksa composite key `Email + Sekolah`. Jika sudah ada, lakukan update kolom progres pada baris tersebut; jika belum ada, buat baris baru. |
+
+---
+
+### 2. Fitur Mobile-Friendly & Gentle Advisory Modal
+
+Aplikasi didesain sepenuhnya responsif, namun bila mendeteksi layar ponsel (< 768px):
+- Menampilkan **CSS Modal Dialog** yang elegan dan ramah (bukan `window.alert()` browser bawaan).
+- **Pesan**: *"Untuk kenyamanan dan kemudahan belajar koding yang optimal, disarankan menggunakan perangkat Laptop, Komputer, atau Tablet."*
+- **Tombol Aksi**: *"Mengerti, Tetap Lanjutkan"* (memastikan siswa yang hanya memiliki HP tetap dapat belajar tanpa terblokir).
+
+---
+
+### 3. Implementation Plan Subproject 02: Scaffolding Kurikulum Koding
+
+Dokumen detail telah dibuat di:
+[`planning/02-implementation-plan-curriculum-scaffolding-smp-sma-sd.md`](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/planning/02-implementation-plan-curriculum-scaffolding-smp-sma-sd.md)
+
+**Tangga Progresi Pedagogis (Zero Coding Experience)**:
+1. **Modul 1 — Dunia Coding, Output & Variabel**: Memahami cara komputer berpikir, fungsi `print()`, dan menyimpan data dalam variabel (string, number).
+2. **Modul 2 — Mengambil Input & Operator**: Menggunakan `input()`, konversi tipe data, dan perbandingan boolean.
+3. **Modul 3 — Logika Percabangan (Condition)**: Program mengambil keputusan dengan `if`, `elif`, `else`.
+4. **Modul 4 — Otomasi dengan Perulangan (Loops)**: Menghindari repetisi kode dengan `for` loop dan `while` loop.
+5. **Modul 5 — Safe Coding & Mini Project**: Menyatukan konsep menjadi aplikasi pencatat keuangan aman dengan penanganan kesalahan (`try-except`) dan dictionary.
+
+**Jenjang SD (Upper Primary)**:
+Dibuatkan struktur kurikulum modular dan data template placeholder (Visual Logic / Scratch sequencing, decision, loop) yang siap diisi begitu video materi SD telah siap diproduksi.
+
+---
+
+### 4. Status Git & Langkah Berikutnya
+
+- Remote Git `origin` sudah dihubungkan ke `git@github.com:mds-academic/beasiswa_async.git`.
+- Untuk Google Apps Script (`clasp`), kita akan siapkan skrip `Code.gs` baru dengan fitur Upsert dan sinkronisasi 2 arah, siap di-link ke akun RGC UOB baru saat autentikasi dijalankan.
+
+Silakan periksa dokumen [PRD.md](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/PRD.md) dan [02-implementation-plan](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/planning/02-implementation-plan-curriculum-scaffolding-smp-sma-sd.md). Jika rencana kurikulum dan arsitektur anti-bug ini sudah sesuai dengan yang kamu harapkan, kita siap mengeksekusi push awal dan mulai penyusunan kode!

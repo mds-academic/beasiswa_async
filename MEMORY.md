@@ -5,16 +5,22 @@
 - **Arsitektur Proyek**: Proyek induk `uob-async-lms` menaungi 2 subproject terpisah:
   1. `subprojects/01-lms-platform/` (Aplikasi web player LMS & backend Apps Script).
   2. `subprojects/02-curriculum-sequencing/` (Kurasi alur materi koding SD, SMP, SMA).
-  Masing-masing subproject memiliki file `AGENTS.md`, `STATE.md`, dan `HISTORY.md` mandiri untuk memisahkan konteks pengembangan kode dan kurikulum.
-- **Single Portal Entry**: Tidak ada lagi URL terpisah per grup/jenjang. Satu link web app melayani SD, SMP, dan SMA. Penentuan kurikulum dilakukan otomatis saat autentikasi berdasarkan sekolah asal siswa.
-- **Interaksi Kuis yang Ramah Siswa (Less Strict)**:
-  - Pop-up kuis di video tidak memblokir permanen saat muncul; siswa dapat menutup/menunda pop-up.
-  - Terdapat indikator navigasi kuis di video (contoh: "Kuis 1 dari 3"), siswa dapat berpindah antar kuis secara manual.
-  - Video Completion Lock: Navigasi tombol "Next Video" / modul selanjutnya wajib dikunci sampai seluruh pop-up kuis pada video aktif telah dikerjakan.
+  Masing-masing subproject memiliki file `AGENTS.md`, `STATE.md`, `MEMORY.md`, dan `HISTORY.md` mandiri untuk memisahkan konteks pengembangan kode dan kurikulum.
+- **Single Portal Entry**: Tidak ada lagi URL terpisah per grup/jenjang. Satu link web app melayani SD, SMP, dan SMA. Penentuan kurikulum dilakukan otomatis saat autentikasi berdasarkan sekolah asal siswa. Input login hanya membutuhkan 3 field: Nama Siswa, Nama Sekolah, dan Email Akademia.
+- **Anti-Bug Architecture (Solusi 6 Bug Lama)**:
+  1. *Video 00 autoplay saat login*: Conditional mounting — iframe player tidak di-mount sebelum login selesai.
+  2. *Video tab lama nyala sendiri saat pindah tab*: Player lifecycle teardown/pause hook saat perpindahan tab.
+  3. *Tombol kuis/next terkunci*: State progress reaktif murni berbasis Set ID kuis yang diselesaikan (`submittedQuizIds`), decoupling total dari class animasi CSS.
+  4. & 5. *Data browser tidak sinkron saat di-reset*: Two-way Server-First Sync. Saat login, frontend fetch data terkini dari Google Sheets via Apps Script; jika kosong/direset, bersihkan local cache.
+  6. *Duplikasi baris di Google Sheets*: Atomic Upsert Pattern di Apps Script `Code.gs` berbasis composite key `Email + Sekolah`.
+- **Mobile Friendly & Gentle Advisory Modal**:
+  - Tampilan responsif.
+  - Viewport mobile (< 768px) menampilkan CSS dialog modal elegan: *"Untuk kenyamanan dan kemudahan belajar optimal, disarankan menggunakan perangkat Laptop, Komputer, atau Tablet."* dengan tombol dismiss *"Mengerti, Tetap Lanjutkan"*.
 - **Pedagogi Koding Pemula**:
-  - Kurikulum harus berurutan secara logis: Konsep/Lingkungan Dasar → Variabel → Percabangan (If-Else) → Perulangan (Loops) → Proyek Integratif.
-  - Menghindari materi acak yang memicu kebingungan bagi anak yang belum pernah belajar pemrograman.
-- **Backend & Integrasi**:
-  - Google Apps Script baru (`Code.gs`) dan skema Google Sheets yang diperbarui untuk mencatat hasil siswa multi-jenjang secara akurat.
+  - Kurikulum berurutan secara logis: Konsep/Lingkungan Dasar → Variabel & Tipe Data → Percabangan (If-Else) → Perulangan (Loops) → Proyek Integratif.
+  - Jenjang SD: Konten video belum ada, disiapkan template struktur data modular siap pakai.
+- **Git & Clasp Deployment**:
+  - Remote Git: `git@github.com:mds-academic/beasiswa_async.git` (Identity: `~/.ssh/id_ed25519_academic_mds`).
+  - Apps Script Clasp: Akun RGC UOB baru dengan spreadsheet terpusat baru.
 - **Sumber Kode Lama**:
   - Direktori acuan: `/Users/yazidhilmi/Documents/cloud/Kalananti-cloud/Academic_Content/B2B/UOB/Async/`.
