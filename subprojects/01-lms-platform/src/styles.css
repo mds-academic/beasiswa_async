@@ -31,8 +31,9 @@
   --soft-red: #fee4e2;
 
   /* Typography */
-  --font-heading: 'Fredoka', 'Nunito', system-ui, sans-serif;
-  --font-body: 'Nunito', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-code: 'Fira Code', ui-monospace, SFMono-Regular, monospace;
 
   /* Shadows & Radius */
   --radius-sm: 8px;
@@ -1189,31 +1190,51 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   object-fit: cover;
 }
 
-/* Tombol Play Center Neo-Brutalist (100% Identik dengan LMS Lama) */
+/* Tombol Play Center Skeuomorphic Tactile Hardware Control */
 .video-center-play {
   position: absolute;
   top: 50%;
   left: 50%;
   z-index: 12;
   width: 88px;
-  height: 72px;
+  height: 88px;
   display: grid;
   place-items: center;
   color: #ffffff;
-  border: 4px solid var(--ink);
-  border-radius: 22px;
-  background: var(--blue);
-  box-shadow: 7px 7px 0 var(--yellow);
-  font-size: 2rem;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #3ba2ff, #0b78f6 55%, #054ea6 100%);
+  border: 3px solid rgba(255, 255, 255, 0.9);
+  box-shadow:
+    inset 0 3px 5px rgba(255, 255, 255, 0.6),
+    inset 0 -4px 6px rgba(0, 0, 0, 0.35),
+    0 12px 28px rgba(0, 0, 0, 0.5),
+    0 0 0 6px rgba(255, 255, 255, 0.18),
+    0 0 20px rgba(11, 120, 246, 0.4);
+  font-size: 2.2rem;
   cursor: pointer;
   transform: translate(-50%, -50%);
-  transition: 160ms ease;
-  padding-left: 4px;
+  transition: all 0.2s ease;
+  padding-left: 6px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .video-center-play:hover {
-  transform: translate(calc(-50% - 2px), calc(-50% - 2px));
-  box-shadow: 9px 9px 0 var(--yellow);
+  transform: translate(-50%, -50%) scale(1.06);
+  background: radial-gradient(circle at 35% 30%, #58b2ff, #1a83ff 55%, #085fc4 100%);
+  box-shadow:
+    inset 0 3px 6px rgba(255, 255, 255, 0.75),
+    inset 0 -4px 6px rgba(0, 0, 0, 0.35),
+    0 16px 36px rgba(0, 0, 0, 0.6),
+    0 0 0 8px rgba(255, 255, 255, 0.25),
+    0 0 28px rgba(11, 120, 246, 0.6);
+}
+
+.video-center-play:active {
+  transform: translate(-50%, -50%) scale(0.96);
+  box-shadow:
+    inset 0 3px 8px rgba(0, 0, 0, 0.45),
+    0 6px 14px rgba(0, 0, 0, 0.4),
+    0 0 0 4px rgba(255, 255, 255, 0.15);
 }
 
 .video-center-play.is-playing {
@@ -1611,21 +1632,37 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 }
 
 .button-open-quiz {
-  padding: 9px 18px;
+  padding: 9px 20px;
   border-radius: var(--radius-pill);
-  background: var(--yellow);
-  color: var(--navy-dark);
+  background: linear-gradient(180deg, #ffe875 0%, #ffd93d 48%, #e6be19 100%);
+  color: #051a43;
   font-family: var(--font-heading);
-  font-weight: 700;
+  font-weight: 800;
   font-size: 0.92rem;
-  box-shadow: 0 4px 12px rgba(255, 217, 61, 0.35);
-  transition: var(--transition-fast);
+  border: 1px solid #c9a30a;
+  border-top: 1px solid #fff2a3;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.6),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.2),
+    0 4px 10px rgba(230, 190, 25, 0.35);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  transition: all 0.18s ease;
   white-space: nowrap;
 }
 
 .button-open-quiz:hover {
-  transform: translateY(-2px);
-  background: #ffe366;
+  transform: translateY(-1px);
+  background: linear-gradient(180deg, #fff08f 0%, #ffe366 48%, #f0c822 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.8),
+    0 6px 14px rgba(230, 190, 25, 0.45);
+}
+
+.button-open-quiz:active {
+  transform: translateY(1px);
+  box-shadow:
+    inset 0 2px 4px rgba(0, 0, 0, 0.25),
+    0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* ==================== 2-Column Cards Below Video (.below-video) ==================== */

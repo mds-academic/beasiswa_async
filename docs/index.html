@@ -499,24 +499,38 @@
     <!-- ==================== 3. MODAL: GENTLE ADVISORY (MOBILE/DEVICE) ==================== -->
     <dialog id="advisory-modal" class="modal-dialog advisory-modal">
       <div class="modal-card">
-        <div class="modal-decor-icon">✦</div>
-        <h2>Rekomendasi Perangkat Belajar</h2>
+        <div class="modal-decor-icon">💻</div>
+        <h2>Rekomendasi Pengalaman Belajar Maksimal</h2>
         <p class="modal-sub">
-          Untuk kenyamanan dan kemudahan belajar koding serta menjalankan latihan kode secara optimal,
-          disarankan menggunakan perangkat <strong>Laptop, Komputer, atau Tablet</strong>.
+          Halo Teman Belajar! Platform ini tetap dapat kamu akses dan gunakan melalui smartphone.
+          Namun, karena program pembelajaran asinkronus ini memuat latihan praktik coding langsung, simulasi slide interaktif,
+          dan kuis pemahaman, kami sangat merekomendasikan kamu menggunakan <strong>Laptop, Komputer, atau Tablet</strong>.
         </p>
         <div class="advisory-tips">
           <div class="tip-item">
-            <span class="tip-icon">💻</span>
-            <span>Tampilan editor dan video lebih lega di layar besar.</span>
+            <span class="tip-icon">🖥️</span>
+            <div>
+              <strong>Layar Lebih Lega & Jelas</strong>
+              <p>Kode program, teks materi, dan video terlihat detail tanpa perlu memperbesar layar (zoom).</p>
+            </div>
           </div>
           <div class="tip-item">
             <span class="tip-icon">⌨️</span>
-            <span>Mengetik kode pemrograman lebih cepat & minim typo dengan keyboard fisik.</span>
+            <div>
+              <strong>Mengetik Kode Lebih Nyaman</strong>
+              <p>Mengetik sintaks kode dengan keyboard fisik jauh lebih cepat, presisi, dan minim salah ketik.</p>
+            </div>
+          </div>
+          <div class="tip-item">
+            <span class="tip-icon">🚀</span>
+            <div>
+              <strong>Simulasi & Sandbox Optimal</strong>
+              <p>Membuka Google Colab, MIT App Inventor, atau Scratch di tab terpisah berjalan mulus.</p>
+            </div>
           </div>
         </div>
         <button id="btn-dismiss-advisory" class="modal-primary-btn" type="button">
-          Mengerti, Tetap Lanjutkan
+          Mengerti, Tetap Belajar di HP Ini
         </button>
       </div>
     </dialog>
@@ -603,6 +617,124 @@
             <button type="submit" id="btn-submit-admin-modal" class="btn-submit-modal">Masuk →</button>
           </div>
         </form>
+      </div>
+    </dialog>
+
+    <!-- ==================== 5. MODAL: SCORE REPORT & SERTIFIKAT KELULUSAN DIGITAL ==================== -->
+    <dialog id="certificate-modal" class="modal-dialog certificate-modal">
+      <div class="certificate-dialog-card">
+        <div class="certificate-dialog-header">
+          <div class="cert-head-left">
+            <span class="cert-trophy-icon">🏆</span>
+            <div>
+              <h3>Laporan Hasil Belajar & Sertifikat Kelulusan</h3>
+              <p>Selamat! Kamu telah menyelesaikan petualangan coding asinkronus UOB My Digital Space.</p>
+            </div>
+          </div>
+          <button type="button" id="btn-close-cert-modal" class="btn-close-modal" aria-label="Tutup Dialog">×</button>
+        </div>
+
+        <!-- 1. Score Report Summary Grid -->
+        <div class="score-report-grid">
+          <div class="score-stat-card">
+            <span class="score-stat-icon">📝</span>
+            <div class="score-stat-info">
+              <strong id="report-quizzes-count">0 / 0</strong>
+              <span>Kuis Pop-up Selesai</span>
+            </div>
+          </div>
+          <div class="score-stat-card">
+            <span class="score-stat-icon">🎯</span>
+            <div class="score-stat-info">
+              <strong id="report-accuracy">100%</strong>
+              <span>Akurasi Pemahaman</span>
+            </div>
+          </div>
+          <div class="score-stat-card">
+            <span class="score-stat-icon">🚀</span>
+            <div class="score-stat-info">
+              <strong id="report-challenges-count">0</strong>
+              <span>Tantangan Dikumpulkan</span>
+            </div>
+          </div>
+          <div class="score-stat-card highlight">
+            <span class="score-stat-icon">⭐</span>
+            <div class="score-stat-info">
+              <strong id="report-status">LULUS</strong>
+              <span>Status Kelulusan</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Sertifikat Kelulusan Digital Resmi (Skeuomorphic Luxury Certificate) -->
+        <div class="certificate-printable-area" id="certificate-printable-area">
+          <div class="certificate-frame">
+            <div class="certificate-inner-border">
+              <!-- Header Logos -->
+              <div class="cert-logos">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ruangguru_logo.svg/3840px-Ruangguru_logo.svg.png"
+                  alt="Ruangguru"
+                  class="cert-logo-rg"
+                />
+                <div class="cert-divider-line"></div>
+                <img
+                  src="https://cdn-web-2.ruangguru.com/landing-pages/assets/37185db7-24a8-467d-aabb-1d5df48f9bc0.png"
+                  alt="UOB My Digital Space"
+                  class="cert-logo-uob"
+                />
+              </div>
+
+              <div class="cert-header-badge">CERTIFICATE OF COMPLETION</div>
+              <h1 class="cert-title">SERTIFIKAT KELULUSAN</h1>
+              <p class="cert-subtitle">Sertifikat ini secara resmi diberikan sebagai bukti apresiasi kepada:</p>
+
+              <div class="cert-student-name" id="cert-student-name">Nama Siswa</div>
+              <div class="cert-student-school" id="cert-student-school">SMAN 8 Jakarta · Kelas XII</div>
+
+              <p class="cert-body-text">
+                Telah berhasil menyelesaikan seluruh rangkaian materi pembelajaran dan evaluasi interaktif pada program:
+              </p>
+              <div class="cert-program-name" id="cert-program-name">
+                Asynchronous Coding Exploration: Python for High School
+              </div>
+
+              <!-- Footer Sertifikat: QR / Serial, Tanggal, Tanda Tangan -->
+              <div class="cert-footer-grid">
+                <div class="cert-col-left">
+                  <span class="cert-serial-label">Nomor Verifikasi Sertifikat:</span>
+                  <strong class="cert-serial-no" id="cert-serial-no">MDS-2026-SMA-78291</strong>
+                  <span class="cert-date-text" id="cert-date-text">Diterbitkan pada: 8 September 2026</span>
+                </div>
+
+                <div class="cert-seal-box">
+                  <div class="cert-gold-seal">
+                    <span>★</span>
+                    <strong>OFFICIAL</strong>
+                    <small>UOB MDS</small>
+                  </div>
+                </div>
+
+                <div class="cert-col-right">
+                  <div class="cert-signature-line"></div>
+                  <strong>Ahmad Yazid Hilmi</strong>
+                  <span>Lead Curriculum & Technology</span>
+                  <span class="cert-org">UOB My Digital Space & Kalananti</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Tombol Aksi Modal Sertifikat -->
+        <div class="certificate-dialog-actions">
+          <button type="button" class="btn-print-certificate" id="btn-print-certificate">
+            <span>🖨️</span> Cetak / Simpan PDF
+          </button>
+          <button type="button" class="btn-dismiss-certificate" id="btn-dismiss-certificate">
+            Tutup
+          </button>
+        </div>
       </div>
     </dialog>
 

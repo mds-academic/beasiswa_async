@@ -1229,4 +1229,28 @@ aku kan maunya dia tetep bsia di buka di mobile tapi akan ada modal alert kalo d
      - Kolom Pelacakan Jawaban per Tab/Step:
        - Setiap step memiliki kolom khusus `[ID Step] [Skor & Jawaban]` (misal `hs-1-1 [Skor & Jawaban]`, `ms-2-1 [Skor & Jawaban]`).
        - Catatan jawaban siswa tersimpan rapi: `Skor: 100 | Jawaban: [Pilihan] | Benar ✓` atau `Skor: 100 | Proyek: Selesai ✓`.
-   - Google Apps Script backend telah diperbarui dan di-deploy ke versi `@5` via `clasp deploy`.
+    - Google Apps Script backend telah diperbarui dan di-deploy ke versi `@5` via `clasp deploy`.
+
+---
+
+### User Request (Turn 11)
+
+"1/ ini kan aku mau di awal ada video intro nya yah?
+mana video intro nya maksudnya kan ada video 4 detik di awal semua video yang harus di play sebelum play video nya kan mana??
+
+2/ ini kan aku mau di semua tab video muncul ada tracker nya akan ada berapa pop up quiz yang nanti muncul dan bagaimana stasunya nanti apakah udah dikerjain apa belum, kalo belum dikerjain sama video nya belum at least 10 detik terakhir di tonton maka dia gabsia lanjut ke video selanjutnay akses admin gapa akasi peringatan juga tapi khusus admin ada button bypass jadi dia bsia tetep ke vidoe selanjutnyaa 
+
+3/ ini design video nya udah bagus kah untuk mobile layout nya ??
+aku kan maunya dia tetep bsia di buka di mobile tapi akan ada modal alert kalo dia harus bika di laporp atau tablet untuk pengalaman belajar yang amksimal gitu apakah bahasanya kamu susun
+
+4/ eh ini kook terlalu AI slop yah designnya, coba ganti style nay jadi skeuporphsm deh jadi bagus, sama in ifont nya jangan fredoka cari yang abgus deh 
+
+5/ eh ini nnanti kan ada mini project sebelumnya kita wajibibn mereka masukin yah nah untuk yang ini gausa di wajinbin di kasi jadikan cahllenge aja jadi kalo mereka mau skip ya ga masalah gapap ke vide selanjutya , tapi klao dia udah ngerjain dan mau ngumpul gapap kita colelct aja kalo sma bisa langsung masukin kdoenya di IDE yang ktia buat itu kan yah , kalo sd smp nanti bisa up link scratch atau galery mit app inventor atau bisa uploa dfile .sb3 nya atau file mit appinventor nya 
+
+6/ ini nanti kayanya di paling akhir akan kaya ada ini deh , semacam sertifikat telah belajar sama score report ini dia 
+
+7/ oiya ini kan di backend kan kalo di delete data siswanya masa pas di refresh datanya masi nyangkut ?? harusnya kalo di backend data siswanya udah di delete sama admin pas dia buka lagi website nya dia harusnya keriset dong datanya masa tetep nyangkut di materi yang tadi ??"
+
+### User Request (Turn 12)
+
+"cont"
