@@ -79,10 +79,12 @@
                 <input
                   id="login-school-input"
                   type="text"
-                  placeholder="Pilih atau ketik nama sekolah..."
+                  placeholder="Ketik atau pilih nama sekolah..."
                   autocomplete="off"
+                  style="padding-right: 46px;"
                   required
                 />
+                <button type="button" id="btn-clear-school" class="btn-clear-input" title="Hapus dan cari sekolah lain" style="display: none;">×</button>
                 <div id="login-school-dropdown" class="login-dropdown" hidden>
                   <!-- Diisi otomatis dari Apps Script / master data -->
                 </div>
@@ -246,6 +248,12 @@
             <button type="button" class="media-tab" id="tab-mode-sandbox">
               <span>💻</span> Interactive Sandbox / Slide
             </button>
+          </div>
+
+          <!-- Intro Video Card (Pengantar Materi Sebelum Video) -->
+          <div class="intro-video-card" id="intro-video-card" style="display: none;">
+            <div class="intro-video-badge">💡 PENGANTAR MATERI SEBELUM MENONTON</div>
+            <p class="intro-video-text" id="intro-video-text"></p>
           </div>
 
           <!-- 1. Video & Sandbox Media Container -->
@@ -467,6 +475,39 @@
             </button>
           </div>
         </div>
+      </div>
+    </dialog>
+
+    <!-- Modal Password Admin MDS (permata@mds.com) -->
+    <dialog id="admin-password-modal" class="admin-password-modal">
+      <div class="admin-modal-card">
+        <div class="admin-modal-header">
+          <span class="admin-shield-icon">🛡️</span>
+          <div>
+            <h3>Verifikasi Akses Admin</h3>
+            <p id="admin-modal-subtitle">Akses khusus peninjauan kurikulum UOB My Digital Space</p>
+          </div>
+        </div>
+        <form id="admin-password-form">
+          <div class="input-group">
+            <label for="admin-password-input">Password Admin</label>
+            <input
+              id="admin-password-input"
+              type="password"
+              placeholder="Masukkan password admin..."
+              autocomplete="current-password"
+              required
+            />
+          </div>
+          <div id="admin-modal-error" class="login-error-msg" style="display: none; margin-top: 10px;">
+            <span class="icon">!</span>
+            <span id="admin-modal-error-text">Password admin salah! Silakan coba lagi.</span>
+          </div>
+          <div class="admin-modal-actions">
+            <button type="button" id="btn-cancel-admin-modal" class="btn-cancel-modal">Batal</button>
+            <button type="submit" id="btn-submit-admin-modal" class="btn-submit-modal">Masuk sebagai Admin →</button>
+          </div>
+        </form>
       </div>
     </dialog>
 

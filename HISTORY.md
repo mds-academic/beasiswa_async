@@ -868,3 +868,31 @@ oiya ini juga kalo ada beberapa info yang kamu ga tau scraping websites buat amb
 4. **Verifikasi Visual Rendering & Sinkronisasi Repositori**:
    - Menjalankan Playwright script untuk merender dan memvalidasi slide deck 16:9 di viewport 1280x720 (`rendered_hs_slide_01.png`, `rendered_hs_slide_06.png`, `rendered_ms_slide_01.png`, `rendered_ms_slide_06.png`, `rendered_ms_slide_08.png`).
    - Menyinkronkan file slide dan JSON ke platform LMS (`subprojects/01-lms-platform/src/slides/`) serta deploy docs (`docs/slides/`).
+
+
+### User Request — 2026-09-08T19:05:21+07:00
+
+"mana ini kok dia gak nembakin ke sheet nya yah mana kok masi kosong sheet nya"
+
+
+
+### User Request — 2026-09-08T19:52:43+07:00
+
+"inid adatanya udah aku masukin yah ke spreadsheetnya yang butuh akses 
+
+oiya di backend di appscript bikin akses admin dong emailnya permata@mds.com , nah misalya admin mau lihat sd dia cukup masukin  SD UOB atau SMP UOB atau SMA UOBtrus kalo dai masukin nama ini nananti muncul password di aler untuk admin akses passwordnyaa KalanantiDihati nanti dia bisa masuk yah buat lihat materinya 
+
+oiya di login gausa minta anama yah 
+
+oiya ini nama sekolahnya harus search yah biar filtering nama emailnya bisa gapang per nama sekolah"
+
+oiya di backend di appscript bikin akses admin dong emailnya permata@mds.com , nah misalya admin mau lihat sd dia cukup masukin  SD UOB atau SMP UOB atau SMA UOBtrus kalo dai masukin nama ini nananti muncul password di aler untuk admin akses passwordnyaa KalanantiDihati nanti dia bisa masuk yah buat lihat materinya 
+
+oiya di login gausa minta anama yah 
+
+### User Request — 2026-09-08T19:54:34+07:00 (Penambahan Video Pengantar Platform SMP)
+
+"oiyaaa ini yang smp ada video nya kita kasi video in aja yah tpai kamu cek ini kan hanya menjelaskan platform yah perlu ditambah sumamry amteri yangd ibawah sama bookmark  sama intro video nantinya https://youtu.be/tT1FtLbLqkE?si=EGyh6QAlftU1RmWc
+https://youtu.be/5M9jTl5pPsI?si=SUe3e6ooBMdvMPvL
+https://youtu.be/5M9jTl5pPsI?si=j1wYxVgGD4FjuCvv
+https://youtu.be/_aAQ8nFUAqc?si=ydg6KQywOi6CxC6x"

@@ -35,6 +35,7 @@ const state = {
   playerCheckTimer: null,
   hasStartedVideo: false
 };
+window.state = state;
 
 // ==================== DOM ELEMENTS ====================
 const el = {
@@ -43,6 +44,7 @@ const el = {
   loginForm: document.querySelector('#login-form'),
   loginSchoolInput: document.querySelector('#login-school-input'),
   loginSchoolDropdown: document.querySelector('#login-school-dropdown'),
+  btnClearSchool: document.querySelector('#btn-clear-school'),
   loginEmailInput: document.querySelector('#login-email-input'),
   loginDetectedBadge: document.querySelector('#login-detected-badge'),
   btnToggleEmailHelp: document.querySelector('#btn-toggle-email-help'),
@@ -56,6 +58,15 @@ const el = {
   loginSuggestionCard: document.querySelector('#login-suggestion-card'),
   loginSuggestionEmail: document.querySelector('#login-suggestion-email'),
   btnUseSuggestion: document.querySelector('#btn-use-suggestion'),
+
+  // Admin Password Modal
+  adminPasswordModal: document.querySelector('#admin-password-modal'),
+  adminModalSubtitle: document.querySelector('#admin-modal-subtitle'),
+  adminPasswordForm: document.querySelector('#admin-password-form'),
+  adminPasswordInput: document.querySelector('#admin-password-input'),
+  adminModalError: document.querySelector('#admin-modal-error'),
+  adminModalErrorText: document.querySelector('#admin-modal-error-text'),
+  btnCancelAdminModal: document.querySelector('#btn-cancel-admin-modal'),
 
   // Site Shell & Topbar
   siteShell: document.querySelector('#site-shell'),
@@ -87,6 +98,8 @@ const el = {
   mediaSwitcherTabs: document.querySelector('#media-switcher-tabs'),
   tabModeVideo: document.querySelector('#tab-mode-video'),
   tabModeSandbox: document.querySelector('#tab-mode-sandbox'),
+  introVideoCard: document.querySelector('#intro-video-card'),
+  introVideoText: document.querySelector('#intro-video-text'),
   videoContainerBox: document.querySelector('#video-container-box'),
   videoFrame: document.querySelector('#video-frame'),
   customThumbnail: document.querySelector('#custom-thumbnail'),
@@ -250,35 +263,72 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 });
 
-// ==================== 1. DATA LOADING & COMBBOX SEARCH ====================
+// ==================== 1. DATA LOADING & COMBOBOX SEARCH ====================
+const ADMIN_VIRTUAL_SCHOOLS = [
+  { school: 'SD UOB', grade_name: 'Upper Primary', level: 'SD', isAdmin: true },
+  { school: 'SMP UOB', grade_name: 'Middle School', level: 'SMP', isAdmin: true },
+  { school: 'SMA UOB', grade_name: 'High School', level: 'SMA', isAdmin: true }
+];
+
+function highlightMatch(text, query) {
+  if (!query) return text;
+  const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const regex = new RegExp(`(${escaped})`, 'gi');
+  return text.replace(regex, '<mark class="search-highlight">$1</mark>');
+}
+
 async function loadMasterData() {
-  // Load local student master fixture (berisi kolom: email, name, rombel_name, school_name, grade_name)
+  // 1. Inisialisasi sekolah admin secara instan (0ms latency)
+  state.masterSchools = [...ADMIN_VIRTUAL_SCHOOLS];
+
+  // 2. Load local student master fixture (berisi 504 siswa real)
   try {
     const res = await fetch('./data/ops-student-data.json');
     if (res.ok) {
       state.allStudentsData = await res.json();
+      buildSchoolsFromStudents();
     }
   } catch (e) {
     console.warn('Local student fixture load warning:', e);
   }
 
-  // Coba ambil data sekolah aktif langsung dari Google Apps Script backend
-  try {
-    const res = await fetch(`${APP_SCRIPT_URL}?action=schools`);
-    if (res.ok) {
-      const data = await res.json();
-      if (data.success && Array.isArray(data.schools) && data.schools.length > 0) {
-        state.masterSchools = data.schools;
-        return;
+  // 3. Background Sync (non-blocking) dari Google Apps Script backend
+  (async () => {
+    try {
+      const res = await fetch(`${APP_SCRIPT_URL}?action=schools`);
+      if (res.ok) {
+        const data = await res.json();
+        if (data.success && Array.isArray(data.schools) && data.schools.length > 0) {
+          state.masterSchools = data.schools;
+          ensureAdminSchoolsInMaster();
+          state.masterSchools.sort((a, b) => a.school.localeCompare(b.school));
+        }
       }
+    } catch (err) {
+      console.log('Background schools update deferred.');
     }
-  } catch (err) {
-    console.log('Apps Script schools offline/deferred, fallback to local fixture.');
-  }
 
-  // Fallback: ekstrak sekolah dari allStudentsData
+    try {
+      const res = await fetch(`${APP_SCRIPT_URL}?action=all_students`);
+      if (res.ok) {
+        const data = await res.json();
+        if (data.success && Array.isArray(data.students) && data.students.length > 0) {
+          state.allStudentsData = data.students;
+          buildSchoolsFromStudents();
+        }
+      }
+    } catch (err) {
+      console.log('Background all_students update deferred.');
+    }
+  })();
+}
+
+function buildSchoolsFromStudents() {
   const seen = {};
-  state.masterSchools = [];
+  ADMIN_VIRTUAL_SCHOOLS.forEach((adm) => {
+    seen[adm.school.toLowerCase()] = true;
+  });
+
   state.allStudentsData.forEach((s) => {
     const school = String(s.school_name || '').trim();
     if (school && !seen[school.toLowerCase()]) {
@@ -291,23 +341,89 @@ async function loadMasterData() {
       });
     }
   });
+  ensureAdminSchoolsInMaster();
   state.masterSchools.sort((a, b) => a.school.localeCompare(b.school));
 }
 
+function ensureAdminSchoolsInMaster() {
+  ADMIN_VIRTUAL_SCHOOLS.forEach((adm) => {
+    const existing = state.masterSchools.find(
+      (s) => s.school.toLowerCase().trim() === adm.school.toLowerCase().trim()
+    );
+    if (!existing) {
+      state.masterSchools.push(adm);
+    } else {
+      existing.isAdmin = true;
+    }
+  });
+}
+
 function setupLoginEvents() {
+  let activeDropdownIndex = -1;
+
+  // Tombol Reset / Clear Sekolah
+  if (el.btnClearSchool) {
+    el.btnClearSchool.addEventListener('click', () => {
+      resetSchoolSelection();
+      el.loginSchoolInput.focus();
+      showSchoolDropdown();
+    });
+  }
+
+  function resetSchoolSelection() {
+    state.selectedSchool = null;
+    state.schoolStudents = [];
+    el.loginSchoolInput.value = '';
+    if (el.btnClearSchool) el.btnClearSchool.style.display = 'none';
+    el.loginDetectedBadge.textContent = 'Pilih Sekolah untuk Mulai';
+    el.loginDetectedBadge.style.color = '';
+    el.loginEmailInput.value = '';
+    el.loginEmailInput.placeholder = 'nama@email.com';
+    el.loginEmailInput.disabled = true;
+    el.btnToggleEmailHelp.disabled = true;
+    el.btnLogin.disabled = true;
+    el.emailHelpPanel.hidden = true;
+    hideLoginError();
+  }
+
   // 1. School Combobox Search & Selection
   const showSchoolDropdown = () => {
     const query = el.loginSchoolInput.value.toLowerCase().trim();
+    if (el.btnClearSchool) {
+      el.btnClearSchool.style.display = el.loginSchoolInput.value.trim() ? 'flex' : 'none';
+    }
+
     const filtered = state.masterSchools.filter((s) => s.school.toLowerCase().includes(query));
 
+    // Urutkan: yang diawali query di paling atas
+    if (query) {
+      filtered.sort((a, b) => {
+        const aStarts = a.school.toLowerCase().startsWith(query);
+        const bStarts = b.school.toLowerCase().startsWith(query);
+        if (aStarts && !bStarts) return -1;
+        if (!aStarts && bStarts) return 1;
+        return a.school.localeCompare(b.school);
+      });
+    }
+
+    activeDropdownIndex = -1;
     el.loginSchoolDropdown.innerHTML = '';
+
     if (filtered.length === 0) {
-      el.loginSchoolDropdown.innerHTML = '<p>Sekolah tidak ditemukan.</p>';
+      el.loginSchoolDropdown.innerHTML = '<p>Sekolah tidak ditemukan. Coba ketik kata kunci lain (misal: "uob", "strada", "smp").</p>';
     } else {
-      filtered.forEach((item) => {
+      filtered.forEach((item, idx) => {
         const btn = document.createElement('button');
         btn.type = 'button';
-        btn.innerHTML = `<strong>${item.school}</strong> <span style="opacity:0.7; font-size:0.8rem; margin-left:6px;">(${item.level})</span>`;
+        btn.className = 'dropdown-item-school';
+        btn.dataset.index = idx;
+
+        const highlightedName = highlightMatch(item.school, query);
+        const adminBadge = (item.isAdmin || item.school.toUpperCase().includes('UOB'))
+          ? '<span class="badge-admin-tag">Akses Admin</span>'
+          : '';
+
+        btn.innerHTML = `<strong>${highlightedName}</strong> <span style="opacity:0.75; font-size:0.8rem; margin-left:6px;">(${item.level})</span> ${adminBadge}`;
         btn.addEventListener('click', () => selectSchool(item));
         el.loginSchoolDropdown.appendChild(btn);
       });
@@ -315,11 +431,61 @@ function setupLoginEvents() {
     el.loginSchoolDropdown.hidden = false;
   };
 
-  el.loginSchoolInput.addEventListener('focus', showSchoolDropdown);
+  el.loginSchoolInput.addEventListener('focus', () => {
+    if (el.loginSchoolInput.value) {
+      el.loginSchoolInput.select();
+    }
+    showSchoolDropdown();
+  });
+
   el.loginSchoolInput.addEventListener('input', showSchoolDropdown);
 
+  // Keyboard navigation untuk combobox sekolah
+  el.loginSchoolInput.addEventListener('keydown', (e) => {
+    const buttons = el.loginSchoolDropdown.querySelectorAll('button');
+    if (el.loginSchoolDropdown.hidden || buttons.length === 0) {
+      if (e.key === 'ArrowDown') {
+        showSchoolDropdown();
+        e.preventDefault();
+      }
+      return;
+    }
+
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      activeDropdownIndex = (activeDropdownIndex + 1) % buttons.length;
+      updateActiveDropdownItem(buttons);
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      activeDropdownIndex = (activeDropdownIndex - 1 + buttons.length) % buttons.length;
+      updateActiveDropdownItem(buttons);
+    } else if (e.key === 'Enter') {
+      if (activeDropdownIndex >= 0 && activeDropdownIndex < buttons.length) {
+        e.preventDefault();
+        buttons[activeDropdownIndex].click();
+      }
+    } else if (e.key === 'Escape') {
+      el.loginSchoolDropdown.hidden = true;
+    }
+  });
+
+  function updateActiveDropdownItem(buttons) {
+    buttons.forEach((b, i) => {
+      if (i === activeDropdownIndex) {
+        b.classList.add('dropdown-item-active');
+        b.scrollIntoView({ block: 'nearest' });
+      } else {
+        b.classList.remove('dropdown-item-active');
+      }
+    });
+  }
+
   document.addEventListener('click', (e) => {
-    if (!el.loginSchoolInput.contains(e.target) && !el.loginSchoolDropdown.contains(e.target)) {
+    if (
+      !el.loginSchoolInput.contains(e.target) &&
+      !el.loginSchoolDropdown.contains(e.target) &&
+      (!el.btnClearSchool || !el.btnClearSchool.contains(e.target))
+    ) {
       el.loginSchoolDropdown.hidden = true;
     }
   });
@@ -328,6 +494,7 @@ function setupLoginEvents() {
     state.selectedSchool = schoolItem;
     el.loginSchoolInput.value = schoolItem.school;
     el.loginSchoolDropdown.hidden = true;
+    if (el.btnClearSchool) el.btnClearSchool.style.display = 'flex';
 
     // Filter daftar siswa sekolah ini untuk email helper & typo suggestion
     state.schoolStudents = state.allStudentsData.filter(
@@ -336,8 +503,22 @@ function setupLoginEvents() {
 
     // Update badge jenjang
     const cur = resolveCurriculumFromGrade(schoolItem.grade_name);
-    el.loginDetectedBadge.textContent = `Terdeteksi: Jenjang ${cur.level} (${schoolItem.school})`;
-    el.loginDetectedBadge.style.color = cur.level === 'SMA' ? '#ffd93d' : cur.level === 'SMP' ? '#43d7ff' : '#27c881';
+    const isAdminSchool = schoolItem.isAdmin || schoolItem.school.toUpperCase().includes('UOB');
+
+    if (isAdminSchool) {
+      el.loginDetectedBadge.textContent = `Akses Admin: ${schoolItem.school} (${cur.level})`;
+      el.loginDetectedBadge.style.color = '#7c3aed';
+      if (!el.loginEmailInput.value || el.loginEmailInput.value.trim() === '') {
+        el.loginEmailInput.value = 'permata@mds.com';
+      }
+    } else {
+      el.loginDetectedBadge.textContent = `Terdeteksi: Jenjang ${cur.level} (${schoolItem.school})`;
+      el.loginDetectedBadge.style.color = cur.level === 'SMA' ? '#ffd93d' : cur.level === 'SMP' ? '#43d7ff' : '#27c881';
+      el.loginEmailInput.placeholder = 'nama@email.com';
+      if (el.loginEmailInput.value === 'permata@mds.com') {
+        el.loginEmailInput.value = '';
+      }
+    }
 
     // Aktifkan input email & tombol cari bantuan
     el.loginEmailInput.disabled = false;
@@ -371,6 +552,25 @@ function setupLoginEvents() {
 
   function renderEmailHelpResults(query) {
     const q = query.toLowerCase();
+    const isAdminSchool = state.selectedSchool && (state.selectedSchool.isAdmin || state.selectedSchool.school.toUpperCase().includes('UOB'));
+
+    if (isAdminSchool) {
+      el.emailHelpResults.innerHTML = `
+        <div class="email-help-result" style="border-left: 4px solid #7c3aed;">
+          <strong>Admin MDS (${state.selectedSchool.school})</strong>
+          <code>permata@mds.com</code>
+        </div>
+      `;
+      const card = el.emailHelpResults.querySelector('.email-help-result');
+      card.addEventListener('click', () => {
+        el.loginEmailInput.value = 'permata@mds.com';
+        el.emailHelpPanel.hidden = true;
+        hideLoginError();
+        attemptLogin();
+      });
+      return;
+    }
+
     const students = state.schoolStudents.filter(
       (s) => !q || s.name.toLowerCase().includes(q) || s.email.toLowerCase().includes(q)
     );
@@ -413,6 +613,23 @@ function setupLoginEvents() {
       attemptLogin();
     }
   });
+
+  // 6. Admin Password Modal Events
+  if (el.btnCancelAdminModal && el.adminPasswordModal) {
+    el.btnCancelAdminModal.addEventListener('click', () => {
+      el.adminPasswordModal.close();
+    });
+  }
+
+  if (el.adminPasswordForm && el.adminPasswordModal) {
+    el.adminPasswordForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const password = el.adminPasswordInput ? el.adminPasswordInput.value.trim() : '';
+      const schoolName = state.selectedSchool ? state.selectedSchool.school : 'SD UOB';
+      const curLevel = state.selectedSchool ? state.selectedSchool.level : 'SD';
+      executeAdminLogin(schoolName, curLevel, password);
+    });
+  }
 }
 
 function hideLoginError() {
@@ -434,25 +651,117 @@ function showLoginError(title, desc, suggestion = null) {
   }
 }
 
-// ==================== 2. ATTEMPT LOGIN WITH TYPO SUGGESTION ====================
+// ==================== 2. ATTEMPT LOGIN WITH ADMIN AUTH & TYPO SUGGESTION ====================
+function openAdminPasswordModal(schoolName, curLevel) {
+  if (el.adminPasswordModal && typeof el.adminPasswordModal.showModal === 'function') {
+    if (el.adminModalSubtitle) {
+      el.adminModalSubtitle.textContent = `Akses khusus peninjauan kurikulum ${curLevel || ''} (${schoolName})`;
+    }
+    if (el.adminPasswordInput) {
+      el.adminPasswordInput.value = '';
+    }
+    if (el.adminModalError) {
+      el.adminModalError.style.display = 'none';
+    }
+    el.adminPasswordModal.showModal();
+    setTimeout(() => {
+      if (el.adminPasswordInput) el.adminPasswordInput.focus();
+    }, 60);
+    return;
+  }
+
+  // Fallback prompt jika browser tidak mendukung dialog element
+  const adminPassword = window.prompt(
+    `Akses Admin UOB My Digital Space\n\nAnda sedang mengakses materi jenjang ${curLevel} (${schoolName}).\nSilakan masukkan Password Admin:`,
+    ''
+  );
+  if (adminPassword === null) return;
+  executeAdminLogin(schoolName, curLevel, adminPassword);
+}
+
+function executeAdminLogin(schoolName, curLevel, password) {
+  if (password !== 'KalanantiDihati') {
+    if (el.adminModalError) {
+      el.adminModalError.style.display = 'flex';
+      if (el.adminModalErrorText) {
+        el.adminModalErrorText.textContent = 'Password admin salah! Silakan periksa kembali.';
+      }
+      if (el.adminPasswordInput) el.adminPasswordInput.select();
+    }
+    showLoginError('Password Admin Salah', 'Password admin yang Anda masukkan tidak sesuai.');
+    return false;
+  }
+
+  // Tutup modal jika terbuka
+  if (el.adminPasswordModal && el.adminPasswordModal.open) {
+    el.adminPasswordModal.close();
+  }
+
+  el.btnLogin.disabled = true;
+  el.btnLogin.querySelector('span').textContent = 'Memverifikasi Admin...';
+
+  const emailInput = (el.loginEmailInput.value || '').toLowerCase().trim() || 'permata@mds.com';
+
+  // Verifikasi ke backend Apps Script (background logging non-blocking)
+  try {
+    const loginUrl = `${APP_SCRIPT_URL}?action=login&email=${encodeURIComponent(emailInput)}&school=${encodeURIComponent(schoolName)}&password=${encodeURIComponent(password)}`;
+    fetch(loginUrl).catch((e) => console.log('Apps Script admin login notice:', e));
+  } catch (e) {
+    console.warn('Backend admin notify deferred:', e);
+  }
+
+  const cur = resolveCurriculumFromGrade(state.selectedSchool ? state.selectedSchool.grade_name : 'Kelas 4');
+  state.student = {
+    name: `Admin Permata (${schoolName})`,
+    school: schoolName,
+    rombel: 'Super Admin',
+    email: 'permata@mds.com',
+    grade: state.selectedSchool ? state.selectedSchool.grade_name : 'Kelas 4',
+    level: cur.level,
+    dataFile: cur.dataFile,
+    isAdmin: true
+  };
+
+  completeSuccessfulLogin();
+  return true;
+}
+
 async function attemptLogin() {
   if (!state.selectedSchool) {
-    showLoginError('Sekolah Belum Dipilih', 'Silakan pilih sekolah mitra terlebih dahulu.');
+    showLoginError('Sekolah Belum Dipilih', 'Silakan pilih sekolah mitra terlebih dahulu dari kolom pencarian.');
     return;
   }
 
   const emailInput = el.loginEmailInput.value.toLowerCase().trim();
+  const schoolName = state.selectedSchool.school;
+  const isVirtualAdminSchool = state.selectedSchool.isAdmin || schoolName.toUpperCase().includes('UOB');
+  const isAdminEmail = emailInput === 'permata@mds.com';
+
+  // ==================== ALUR KHUSUS ADMIN (permata@mds.com) ====================
+  if (isAdminEmail || isVirtualAdminSchool) {
+    if (!isAdminEmail && emailInput) {
+      showLoginError(
+        'Email Khusus Admin Diperlukan',
+        `Sekolah virtual "${schoolName}" ditujukan untuk akses peninjauan materi oleh tim admin. Silakan gunakan email admin: permata@mds.com`
+      );
+      return;
+    }
+
+    const cur = resolveCurriculumFromGrade(state.selectedSchool.grade_name);
+    openAdminPasswordModal(schoolName, cur.level);
+    return;
+  }
+
   if (!emailInput) {
     showLoginError('Email Masih Kosong', 'Silakan masukkan email yang terdaftar di Akademia Ruangguru.');
     return;
   }
 
+  // ==================== ALUR SISWA REGULER ====================
   el.btnLogin.disabled = true;
   el.btnLogin.querySelector('span').textContent = 'Memverifikasi...';
 
-  const schoolName = state.selectedSchool.school;
-
-  // A. Cek kecocokan langsung di data lokal/memori
+  // A. Cek kecocokan langsung di data lokal/memori (500+ siswa real)
   let matchedStudent = state.schoolStudents.find(
     (s) => String(s.email || '').toLowerCase().trim() === emailInput
   );
@@ -489,7 +798,8 @@ async function attemptLogin() {
       email: matchedStudent.email || emailInput,
       grade: matchedStudent.grade_name || state.selectedSchool.grade_name,
       level: cur.level,
-      dataFile: cur.dataFile
+      dataFile: cur.dataFile,
+      isAdmin: false
     };
 
     completeSuccessfulLogin();
@@ -607,7 +917,29 @@ async function loadCourseData(filename) {
   const res = await fetch(`./data/${filename}`);
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   const data = await res.json();
-  state.courseData = Array.isArray(data) ? data : Object.values(data);
+  state.rawCourseData = data;
+  if (data && Array.isArray(data.modules)) {
+    const allSteps = [];
+    data.modules.forEach((mod) => {
+      if (Array.isArray(mod.steps)) {
+        mod.steps.forEach((step) => {
+          allSteps.push({
+            ...step,
+            moduleTitle: mod.title,
+            moduleId: mod.id,
+            moduleDesc: mod.description
+          });
+        });
+      }
+    });
+    state.courseData = allSteps;
+  } else if (Array.isArray(data)) {
+    state.courseData = data;
+  } else if (data && typeof data === 'object') {
+    state.courseData = Object.values(data);
+  } else {
+    state.courseData = [];
+  }
 }
 
 function setupProfileDropdown() {
@@ -716,6 +1048,16 @@ function goToStep(index) {
   } else {
     activateMediaMode('video');
     renderVideoStep(step);
+  }
+
+  // Render Intro Video Card (Pengantar Materi Sebelum Menonton)
+  if (el.introVideoCard && el.introVideoText) {
+    if (step.introVideo || step.introText) {
+      el.introVideoText.innerHTML = step.introVideo || step.introText;
+      el.introVideoCard.style.display = 'block';
+    } else {
+      el.introVideoCard.style.display = 'none';
+    }
   }
 
   // Render Bookmarks
@@ -1186,9 +1528,26 @@ function showQuizFeedback(msg, type) {
 
 // ==================== 10. PROGRESS LOCK GATE ====================
 function checkProgressGate() {
+  const isLastStep = state.currentStepIndex >= state.courseData.length - 1;
+
+  // Akses Bebas untuk Admin
+  if (state.student && state.student.isAdmin) {
+    if (isLastStep) {
+      el.btnNextStep.disabled = true;
+      el.nextStepIcon.textContent = '★';
+      el.stepGateInfo.textContent = 'Mode Admin: Anda berada pada materi terakhir misi ini.';
+      el.stepGateInfo.style.color = '#7c3aed';
+    } else {
+      el.btnNextStep.disabled = false;
+      el.nextStepIcon.textContent = '→';
+      el.stepGateInfo.textContent = '🔓 Mode Admin: Akses bebas untuk meninjau seluruh materi.';
+      el.stepGateInfo.style.color = '#7c3aed';
+    }
+    return;
+  }
+
   const quizzes = state.activeStepQuizzes;
   const isCurrentStepCompleted = quizzes.every((q) => state.submittedQuizIds.has(q.id));
-  const isLastStep = state.currentStepIndex >= state.courseData.length - 1;
 
   if (isLastStep) {
     el.btnNextStep.disabled = true;
@@ -1219,7 +1578,9 @@ function setupStepNavEvents() {
 
   el.btnNextStep.addEventListener('click', () => {
     const isCurrentStepCompleted = state.activeStepQuizzes.every((q) => state.submittedQuizIds.has(q.id));
-    if (isCurrentStepCompleted && state.currentStepIndex < state.courseData.length - 1) {
+    const isAdmin = Boolean(state.student && state.student.isAdmin);
+
+    if ((isCurrentStepCompleted || isAdmin) && state.currentStepIndex < state.courseData.length - 1) {
       goToStep(state.currentStepIndex + 1);
     }
   });

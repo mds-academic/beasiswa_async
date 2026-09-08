@@ -364,10 +364,60 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 }
 
 .login-dropdown button:hover,
-.login-dropdown button:focus-visible {
+.login-dropdown button:focus-visible,
+.login-dropdown button.dropdown-item-active {
   background: var(--soft-blue);
   color: var(--blue);
   outline: none;
+}
+
+.btn-clear-input {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+  background: #e2e8f0;
+  color: #475569;
+  font-size: 1.1rem;
+  font-weight: 900;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  z-index: 10;
+}
+
+.btn-clear-input:hover {
+  background: #cbd5e1;
+  color: #0f172a;
+  transform: translateY(-50%) scale(1.08);
+}
+
+.search-highlight {
+  background: #fef08a;
+  color: #854d0e;
+  padding: 0 2px;
+  border-radius: 2px;
+  font-weight: 900;
+}
+
+.badge-admin-tag {
+  background: rgba(155, 81, 224, 0.15);
+  color: #7c3aed;
+  border: 1px solid rgba(155, 81, 224, 0.4);
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 .login-dropdown p {
@@ -1071,6 +1121,39 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   color: var(--navy-dark);
   border-color: var(--yellow);
   box-shadow: 0 4px 14px rgba(255, 217, 61, 0.35);
+}
+
+/* Intro Video Card (Pengantar Materi Sebelum Menonton) */
+.intro-video-card {
+  background: linear-gradient(135deg, rgba(16, 24, 40, 0.85) 0%, rgba(9, 39, 100, 0.6) 100%);
+  border: 2px solid rgba(0, 198, 255, 0.4);
+  border-left: 6px solid var(--yellow);
+  border-radius: var(--radius-md);
+  padding: 14px 18px;
+  margin-bottom: 6px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(8px);
+}
+
+.intro-video-badge {
+  font-family: var(--font-heading);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--yellow);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.intro-video-text {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #e2e8f0;
+  margin: 0;
 }
 
 .media-container-box {
@@ -2276,3 +2359,111 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
     justify-content: center;
   }
 }
+
+/* ==================== ADMIN PASSWORD MODAL ==================== */
+.admin-password-modal {
+  border: none;
+  border-radius: 16px;
+  padding: 0;
+  background: transparent;
+  max-width: 460px;
+  width: 90%;
+  margin: auto;
+  position: fixed;
+  inset: 0;
+}
+
+.admin-password-modal::backdrop {
+  background: rgba(5, 26, 67, 0.78);
+  backdrop-filter: blur(5px);
+}
+
+.admin-modal-card {
+  background: #ffffff;
+  border: 3px solid #000000;
+  border-radius: 16px;
+  padding: 30px 24px;
+  box-shadow: 8px 8px 0 #7c3aed;
+}
+
+.admin-modal-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.admin-shield-icon {
+  font-size: 2.2rem;
+  background: rgba(124, 58, 237, 0.12);
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  border: 2px solid rgba(124, 58, 237, 0.3);
+  flex-shrink: 0;
+}
+
+.admin-modal-header h3 {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  color: var(--navy-dark);
+  margin: 0 0 4px 0;
+  line-height: 1.2;
+}
+
+.admin-modal-header p {
+  margin: 0;
+  font-size: 0.86rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.admin-modal-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.btn-cancel-modal {
+  flex: 1;
+  padding: 12px 14px;
+  border: 2px solid #cbd5e1;
+  background: #f8fafc;
+  color: #475569;
+  border-radius: 8px;
+  font-weight: 800;
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-cancel-modal:hover {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.btn-submit-modal {
+  flex: 1.6;
+  padding: 12px 16px;
+  border: 2px solid #000000;
+  background: #7c3aed;
+  color: #ffffff;
+  border-radius: 8px;
+  font-weight: 800;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  cursor: pointer;
+  box-shadow: 4px 4px 0 #000000;
+  transition: all 0.15s ease;
+}
+
+.btn-submit-modal:hover {
+  background: #6d28d9;
+  transform: translate(-1px, -1px);
+  box-shadow: 5px 5px 0 #000000;
+}
+

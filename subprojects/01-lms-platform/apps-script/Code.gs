@@ -70,8 +70,45 @@ function doGet(e) {
         schools.push({ school, grade_name: gradeName, level: cur.level });
       }
 
+      // Selalu sertakan sekolah virtual admin UOB
+      const adminSchools = [
+        { school: "SD UOB", grade_name: "Upper Primary", level: "SD" },
+        { school: "SMP UOB", grade_name: "Middle School", level: "SMP" },
+        { school: "SMA UOB", grade_name: "High School", level: "SMA" }
+      ];
+      adminSchools.forEach(as => {
+        if (!seen[as.school.toLowerCase()]) {
+          seen[as.school.toLowerCase()] = true;
+          schools.push(as);
+        }
+      });
+
       schools.sort((a, b) => a.school.localeCompare(b.school));
       return respond({ success: true, schools });
+    }
+
+    // 1b. Ambil seluruh data siswa untuk sinkronisasi lokal dan pencarian cepat
+    if (action === 'all_students') {
+      const sheet = ss.getSheetByName(SHEET_STUDENT_DATA);
+      const rows = sheet.getDataRange().getValues();
+      const students = [];
+      for (let i = 2; i < rows.length; i++) {
+        const email = String(rows[i][0] || '').trim();
+        const name = String(rows[i][1] || '').trim();
+        const rombel = String(rows[i][2] || '').trim();
+        const school = String(rows[i][3] || '').trim();
+        const grade = String(rows[i][4] || '').trim();
+        if (email && school) {
+          students.push({
+            email,
+            name,
+            rombel_name: rombel,
+            school_name: school,
+            grade_name: grade
+          });
+        }
+      }
+      return respond({ success: true, total: students.length, students });
     }
 
     // 2. Cari murid berdasarkan sekolah
@@ -103,13 +140,54 @@ function doGet(e) {
       return respond({ success: true, students });
     }
 
-    // 3. Validasi Login Murid (Hanya butuh nama sekolah dan email, auto-detect level dari grade_name)
+    // 3. Validasi Login Murid / Admin (Hanya butuh nama sekolah dan email, auto-detect level dari grade_name)
     if (action === 'login') {
       const email = normalizeEmail(e.parameter.email || '');
       const school = String(e.parameter.school || '').toLowerCase().trim();
+      const password = String(e.parameter.password || '').trim();
 
       if (!email || !school) {
         return respond({ success: false, message: "Email dan sekolah wajib diisi." });
+      }
+
+      // Akses Khusus Admin MDS (permata@mds.com)
+      if (email === 'permata@mds.com') {
+        const ADMIN_PASS = 'KalanantiDihati';
+        if (password !== ADMIN_PASS) {
+          return respond({
+            success: false,
+            requireAdminPassword: true,
+            message: "Akses Admin memerlukan password verifikasi yang benar."
+          });
+        }
+
+        let level = 'SMA';
+        let gradeName = 'High School';
+        let dataFile = 'courseData-highschool.json';
+
+        if (school.includes('sd') || school.includes('primary')) {
+          level = 'SD';
+          gradeName = 'Upper Primary';
+          dataFile = 'courseData-upperprimary.json';
+        } else if (school.includes('smp') || school.includes('middle')) {
+          level = 'SMP';
+          gradeName = 'Middle School';
+          dataFile = 'courseData-middleschool.json';
+        }
+
+        return respond({
+          success: true,
+          isAdmin: true,
+          student: {
+            email: 'permata@mds.com',
+            name: 'Admin Permata (' + (school === 'sd uob' ? 'SD UOB' : school === 'smp uob' ? 'SMP UOB' : school === 'sma uob' ? 'SMA UOB' : school.toUpperCase()) + ')',
+            rombel_name: 'Super Admin',
+            school_name: (school === 'sd uob' ? 'SD UOB' : school === 'smp uob' ? 'SMP UOB' : school === 'sma uob' ? 'SMA UOB' : school.toUpperCase()),
+            grade_name: gradeName,
+            level: level,
+            dataFile: dataFile
+          }
+        });
       }
 
       const sheet = ss.getSheetByName(SHEET_STUDENT_DATA);

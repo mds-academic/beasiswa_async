@@ -455,3 +455,15 @@ Jika siswa salah ketik email (misal mengetik `budi.santoss@gmail.com` atau salah
 - **Git Commit & Remote Push**: Berhasil di-commit dan di-push ke remote `git@github.com:mds-academic/beasiswa_async.git` pada branch `main`.
 - **Akses Langsung Server Lokal**: Kamu bisa langsung membukanya di browser komputermu di:  
   👉 `http://localhost:8080/`
+
+
+### User Request — 2026-09-08T19:52:43+07:00
+
+"inid adatanya udah aku masukin yah ke spreadsheetnya yang butuh akses 
+
+oiya di backend di appscript bikin akses admin dong emailnya permata@mds.com , nah misalya admin mau lihat sd dia cukup masukin  SD UOB atau SMP UOB atau SMA UOBtrus kalo dai masukin nama ini nananti muncul password di aler untuk admin akses passwordnyaa KalanantiDihati nanti dia bisa masuk yah buat lihat materinya 
+
+oiya di login gausa minta anama yah 
+
+oiya ini nama sekolahnya harus search yah biar filtering nama emailnya bisa gapang per nama sekolah"
+
