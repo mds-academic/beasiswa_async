@@ -3,7 +3,7 @@
 ## Current Status
 
 - **Status**: Audit ulang scaffolding selesai; arah sequencing sudah cukup benar, tetapi kurikulum belum siap dianggap scaffolding final untuk pemula.
-- **Active Focus**: Finalisasi bridge HTML, memisahkan tur App Inventor dari TinyDB, lalu membuat dataset sequencing baru yang menghubungkan bridge sebagai prasyarat eksplisit.
+- **Active Focus**: Menjalankan implementation plan bertahap untuk finalisasi bridge HTML, pemisahan tur App Inventor dari TinyDB, dataset sequencing baru, dan QA sebelum integrasi LMS.
 - **Last Updated**: 2026-09-08
 
 ## Completed
@@ -20,6 +20,7 @@
 - Audit ulang tersimpan di `mapping/audit-ulang-scaffolding-2026-09-08.md`.
 - Temuan kunci: hanya `bridge-hs-00.html` dan `bridge-ms-00.html` yang sudah menjadi HTML; `bridge-hs-01`/`bridge-ms-01` baru berupa metadata JSON dan belum di-inject sebagai step prasyarat.
 - Dataset masih memiliki quiz `99999`, bookmark di luar segmen, dan beberapa quiz yang berada sebelum `startSeconds`; dataset produksi belum disetujui untuk diubah.
+- Implementation plan bertahap tersimpan di `planning/01-implementation-plan-scaffolding-smp-sma.md`.
 
 ## Concrete Next Steps
 
