@@ -531,7 +531,24 @@ turs ini appscritp nya jalan ga sih kan, aku udah aada di sheetnya emailnya nama
    - Logika pemuatan sekolah (`rebuildMasterSchools`) telah diperbaiki menggunakan struktur `Map` deduplikasi, sehingga sekolah dari server dan data lokal tidak akan pernah lagi terduplikasi di dropdown.
 
 4. **Sinkronisasi Kode & Deployment GitHub Pages**:
-   - Seluruh perbaikan pada `subprojects/01-lms-platform/src/` disinkronkan 100% ke folder `docs/` untuk GitHub Pages.
+   - Seluruh perbaikan pada `subprojects/01-lms-platform/src/` disinkronkan 100% ke folder `docs/` untuk GitHub Pages.### User Request — 2026-09-08T20:50:55+07:00
 
+"eh ini kok aku udah liat materinya sih ??
 
+kan kita baru bikini wadahnya dulu bukan sih ???"
 
+### Assistant Response & Clarification — 2026-09-08T20:52:00+07:00
+
+1. **Konfirmasi Lingkup Kerja (Wadah vs Konten)**:
+   - Benar sekali! Pekerjaan kita di Subproject 1 (`01-lms-platform`) memang **murni membangun wadah / platform LMS-nya**:
+     - Sistem login single-portal, pencarian sekolah, verifikasi sandi akses admin (`KalanantiDihati`), dan koneksi Google Sheets.
+     - Layout visual neo-brutalist (topbar, profil avatar, sidebar materi, player hybrid video & sandbox iframe, loot box, cheat sheet, accordion bacaan, dan dialog panduan perangkat).
+2. **Alasan Materi Terlihat di Dashboard**:
+   - Materi (video, judul materi, slide, dan kuis) yang terlihat di dalam dashboard saat ini berasal dari file JSON rujukan (`courseData-*.json`).
+   - File tersebut dimasukkan sebagai **data sampel nyata (*realistic mock/fixture data*)** semata-mata untuk menguji kelayakan fungsi wadah:
+     - Memastikan kontrol player video dan bookmark berfungsi.
+     - Memastikan tombol switcher *Interactive Sandbox / Slide* bisa memuat slide interaktif.
+     - Memastikan sistem kuis pop-up, loot box, dan progress gate berfungsi.
+3. **Penyusunan Materi Sebenarnya Ada di Subproject 2**:
+   - Seluruh perakitan materi asli, urutan modul, kurasi video baru, pembuatan slide HTML interaktif, dan kuis resmi adalah tanggung jawab **Subproject 2 (`02-curriculum-sequencing`)**.
+   - Konten di Subproject 1 belum difinalisasi dan sewaktu-waktu siap digantikan dengan kurikulum final dari Subproject 2 saat wadahnya sudah 100% disetujui.

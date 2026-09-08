@@ -951,3 +951,24 @@ turs ini appscritp nya jalan ga sih kan, aku udah aada di sheetnya emailnya nama
 4. **Sinkronisasi Kode & Deployment GitHub Pages**:
    - Seluruh perbaikan pada `subprojects/01-lms-platform/src/` disinkronkan 100% ke folder `docs/` untuk GitHub Pages.
 
+### User Request — 2026-09-08T20:50:55+07:00
+
+"eh ini kok aku udah liat materinya sih ??
+
+kan kita baru bikini wadahnya dulu bukan sih ???"
+
+### Assistant Response & Clarification — 2026-09-08T20:52:00+07:00
+
+1. **Konfirmasi Lingkup Kerja (Wadah vs Konten)**:
+   - Benar sekali! Fokus kerja kita di Subproject 1 (`01-lms-platform`) memang **murni membangun wadah / platform LMS-nya**:
+     - Sistem portal login multi-jenjang, pencarian nama sekolah real-time, verifikasi sandi akses admin (`KalanantiDihati`), dan integrasi Google Sheets.
+     - Struktur dan tata letak UI (topbar, profil siswa, navigasi sidebar, player hybrid video & sandbox iframe, loot box, cheat sheet, accordion bacaan, dan dialog panduan perangkat).
+2. **Alasan Materi Terlihat di Dashboard**:
+   - Materi (video YouTube, judul modul, slide interaktif, dan kuis) yang muncul di dalam dashboard saat ini berasal dari file JSON rujukan (`courseData-*.json`).
+   - Berkas-berkas tersebut dipasang sebagai **data sampel realistis (*mock / fixture data*)** semata-mata untuk menguji kelayakan wadah:
+     - Memastikan player video dapat memutar video dan mengenali bookmarks waktu.
+     - Memastikan tombol switcher *Interactive Sandbox / Slide* dapat merender iframe slide interaktif.
+     - Memastikan pop-up kuis, loot box, dan progress gate berfungsi secara responsif.
+3. **Penyusunan Materi Sebenarnya Ada di Subproject 2**:
+   - Seluruh kurasi materi resmi, sequencing kurikulum, pembuatan slide interaktif, transkripsi video baru, dan kuis final dikerjakan di **Subproject 2 (`02-curriculum-sequencing`)**.
+   - Konten yang ada di Subproject 1 hanyalah wadah uji coba dan siap menerima kurikulum final dari Subproject 2 kapan saja.
