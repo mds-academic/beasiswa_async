@@ -1,0 +1,59 @@
+{
+  "id": "bridge-hs-02",
+  "level": "SMA",
+  "kicker": "Materi Jembatan 02 · Dasar Python",
+  "title": "Dari Input Teks Menjadi Logika Keputusan",
+  "duration": "8 Menit Baca & Praktik",
+  "type": "slides",
+  "embedUrl": "slides/bridge-hs-02.html",
+  "summary": "Pahami mengapa fungsi input() selalu menghasilkan tipe String, cara mengubah teks angka menjadi bilangan bulat dengan int(), menggunakan operator perbandingan (==, !=, >, <), dan aturan indentasi 4 spasi pada percabangan if-else.",
+  "totalSlides": 8,
+  "bookmarks": [
+    {
+      "slideIndex": 0,
+      "label": "1. Mengapa Input Perlu Perlakuan Khusus?"
+    },
+    {
+      "slideIndex": 1,
+      "label": "2. Rahasia Terbesar input(): Selalu String"
+    },
+    {
+      "slideIndex": 2,
+      "label": "3. Konversi Tipe Data: int() & float()"
+    },
+    {
+      "slideIndex": 3,
+      "label": "4. Operator Perbandingan & Boolean"
+    },
+    {
+      "slideIndex": 4,
+      "label": "5. Aturan Indentasi Percabangan if-else"
+    },
+    {
+      "slideIndex": 5,
+      "label": "6. Simulator Pengecekan Saldo Kas"
+    },
+    {
+      "slideIndex": 6,
+      "label": "7. Kuis Pemahaman Mandiri"
+    },
+    {
+      "slideIndex": 7,
+      "label": "8. Rangkuman & Bekal Menuju Modul 2"
+    }
+  ],
+  "learningObjectives": [
+    "Mengetahui bahwa input() selalu menghasilkan tipe String (teks)",
+    "Mengubah teks angka menjadi integer dengan int() dan float()",
+    "Menggunakan operator perbandingan untuk menghasilkan Boolean",
+    "Menerapkan aturan indentasi 4 spasi dalam blok percabangan if-else"
+  ],
+  "practice": {
+    "type": "simulation",
+    "description": "Simulasi pengecekan saldo kas dan konversi input belanja"
+  },
+  "completionCriteria": {
+    "quizScoreMin": 100,
+    "interactiveCompleted": true
+  }
+}

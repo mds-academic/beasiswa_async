@@ -2,29 +2,25 @@
 
 ## Current Status
 
-- **Status**: Audit ulang scaffolding selesai; arah sequencing sudah cukup benar, tetapi kurikulum belum siap dianggap scaffolding final untuk pemula.
-- **Active Focus**: Menjalankan implementation plan bertahap untuk finalisasi bridge HTML, pemisahan tur App Inventor dari TinyDB, dataset sequencing baru, dan QA sebelum integrasi LMS.
+- **Status**: Implementasi Scaffolding Pedagogis SMP-SMA Selesai & Lolos Verifikasi (Fase 0 s.d. Fase 6 Selesai).
+- **Active Focus**: Siap produksi dan deployment; platform LMS telah tersinkronisasi penuh dengan materi jembatan dan dataset baru.
 - **Last Updated**: 2026-09-08
 
 ## Completed
 
 - Audit menyeluruh video & kuis eksisting dari Highschool (A, B, C, D) dan Middleschool (A, B, C, D).
 - Analisis kesenjangan (*gap analysis*) bagi pemula mutlak ([curriculum-audit-and-scaffolding-gap-analysis.md](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/02-curriculum-sequencing/mapping/curriculum-audit-and-scaffolding-gap-analysis.md)).
-- Penyusunan ulang alur materi logis dan ekspor dataset JSON tervalidasi (SMA, SMP, SD).
-- **Overhaul Total Bridge Slides 00 (SMA & SMP)**:
-  - Mengadopsi arsitektur template neo-brutalisme kanonik dari `slide_deck_part1.html` (font Fredoka, border hitam 4px, shadow 12px, banner responsif 16:9, counter & progress bar dinamis).
-  - Mengintegrasikan tangkapan layar 100% nyata (bukan CSS buatan) dari Google Colaboratory dan MIT App Inventor nyata via Chrome CDP.
-  - Mengunggah seluruh aset visual secara permanen ke Ruangguru CDN (`rg_cdn_web_2` di `https://cdn-web-2.ruangguru.com/landing-pages/assets/...`).
-  - Menyusun 16 slide materi kaya & mendalam per jenjang dengan tabel perbandingan, petunjuk langkah demi langkah, mini playground interaktif, dan kuis pemahaman mandiri.
-  - Sinkronisasi berkas slides & metadata JSON ke `subprojects/01-lms-platform/src/slides/` dan `docs/slides/`.
-- Audit ulang tersimpan di `mapping/audit-ulang-scaffolding-2026-09-08.md`.
-- Temuan kunci: hanya `bridge-hs-00.html` dan `bridge-ms-00.html` yang sudah menjadi HTML; `bridge-hs-01`/`bridge-ms-01` baru berupa metadata JSON dan belum di-inject sebagai step prasyarat.
-- Dataset masih memiliki quiz `99999`, bookmark di luar segmen, dan beberapa quiz yang berada sebelum `startSeconds`; dataset produksi belum disetujui untuk diubah.
-- Implementation plan bertahap tersimpan di `planning/01-implementation-plan-scaffolding-smp-sma.md`.
+- Audit ulang scaffolding tersimpan di [audit-ulang-scaffolding-2026-09-08.md](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/02-curriculum-sequencing/mapping/audit-ulang-scaffolding-2026-09-08.md).
+- Implementation plan tersusun di [01-implementation-plan-scaffolding-smp-sma.md](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/02-curriculum-sequencing/planning/01-implementation-plan-scaffolding-smp-sma.md).
+- **Fase 0**: Baseline hash contract tersimpan di `drafts/qa/baseline-contract.json`.
+- **Fase 1**: Blueprint pedagogis terkunci di `drafts/qa/blueprints.json`.
+- **Fase 2**: Produksi 5 HTML Bridge SMA (`bridge-hs-01.html` s.d. `bridge-hs-05.html`) lengkap dengan live simulator interaktif dan kuis.
+- **Fase 3**: Produksi 3 HTML Bridge SMP (`bridge-ms-01.html` s.d. `bridge-ms-03.html`) serta revisi bersih `bridge-ms-00.html` (menghapus TinyDB dari Modul 0 ke Modul 4).
+- **Fase 4**: Dataset kurikulum baru `courseData-highschool.json` (12 langkah kanonik, relokasi `hs-1-3` setelah dictionary) dan `courseData-middleschool.json` (11 langkah kanonik, TinyDB setelah procedures).
+- **Fase 5**: Pengujian otomatis & validasi teknis lolos 100% (bebas siklus, tidak ada anomali kuis 99999 autoplay, semua slide tersedia) di `drafts/qa/qa-scaffolding-report.md`.
+- **Fase 6**: Sinkronisasi penuh ke `slides/`, `output/`, `subprojects/01-lms-platform/src/`, dan `docs/`.
 
 ## Concrete Next Steps
 
-1. Produksi HTML `bridge-hs-01` sampai `bridge-hs-05` dan `bridge-ms-01` sampai `bridge-ms-03`.
-2. Revisi `bridge-ms-00` agar tidak mengajarkan TinyDB terlalu awal.
-3. Buat dataset sequencing baru dengan bridge sebagai step dan prasyarat eksplisit.
-4. Validasi ulang timestamp/bookmark/quiz sebelum integrasi LMS.
+1. User Acceptance Testing (UAT) dan pilot testing bersama perwakilan siswa non-coding.
+2. Evaluasi feedback siswa pada mini lab interaktif dan kuis pemahaman mandiri.

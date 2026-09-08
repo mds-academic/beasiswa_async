@@ -1,0 +1,59 @@
+{
+  "id": "bridge-ms-03",
+  "level": "SMP",
+  "kicker": "Materi Jembatan 03 · Kualitas & Pengujian",
+  "title": "Detektif Blok: Debugging & Uji Kasus Form",
+  "duration": "8 Menit Baca & Eksplorasi",
+  "type": "slides",
+  "embedUrl": "slides/bridge-ms-03.html",
+  "summary": "Kuasai seni mendeteksi bug: membedakan tanda silang merah (Error) dan segitiga kuning (Warning), menggunakan fitur rahasia 'Do It' untuk menguji balok mandiri, menyusun tabel kasus uji (normal, kosong, ekstrem), serta etika menjaga privasi data pengguna.",
+  "totalSlides": 8,
+  "bookmarks": [
+    {
+      "slideIndex": 0,
+      "label": "1. Menjadi Detektif Koding"
+    },
+    {
+      "slideIndex": 1,
+      "label": "2. Silang Merah vs Segitiga Kuning"
+    },
+    {
+      "slideIndex": 2,
+      "label": "3. Fitur Rahasia Pengujian: 'Do It'"
+    },
+    {
+      "slideIndex": 3,
+      "label": "4. Membuat Tabel Kasus Uji (Test Cases)"
+    },
+    {
+      "slideIndex": 4,
+      "label": "5. Etika & Privasi Perlindungan Data"
+    },
+    {
+      "slideIndex": 5,
+      "label": "6. Detektif Balok Tertukar"
+    },
+    {
+      "slideIndex": 6,
+      "label": "7. Kuis Pemahaman Mandiri"
+    },
+    {
+      "slideIndex": 7,
+      "label": "8. Rangkuman & Pintu Masuk Proyek Akhir"
+    }
+  ],
+  "learningObjectives": [
+    "Mengenali tanda error pada App Inventor (silang merah vs peringatan kuning)",
+    "Menerapkan teknik isolasi: menguji balok satu per satu dengan Do It",
+    "Membuat tabel kasus uji: input normal, input kosong, dan input ekstrem",
+    "Menghargai privasi digital: tidak pernah menyimpan password atau PIN dalam teks polos"
+  ],
+  "practice": {
+    "type": "simulation",
+    "description": "Menemukan dan memperbaiki balok yang tertukar antara setter dan getter"
+  },
+  "completionCriteria": {
+    "quizScoreMin": 100,
+    "interactiveCompleted": true
+  }
+}

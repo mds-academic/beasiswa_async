@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Jembatan 05 SMA: Kamus Data: Menyimpan Transaksi dengan Dictionary</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Consolas&display=swap" rel="stylesheet">
+    <style>
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --yellow: #FFE500;
+            --blue: #00C6FF;
+            --black: #1A1A1A;
+            --white: #FFFFFF;
+            --bg-light: #E8E8E8;
+            --green: #00E676;
+            --pink: #FF9DE2;
+            --red: #FF0055;
+            --purple: #C084FC;
+            --orange: #FF9F1C;
+        }
+        body {
+            background-color: var(--bg-light);
+            background-image: radial-gradient(#bcbcbc 2px, transparent 2px);
+            background-size: 30px 30px;
+            font-family: 'Fredoka', sans-serif;
+            color: var(--black);
+            overflow: hidden;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .app-container {
+            position: relative; z-index: 10;
+            width: 98vw; max-width: 1400px;
+            height: 98vh; max-height: 900px;
+            display: flex; flex-direction: column;
+        }
+        .header {
+            display: flex; justify-content: flex-start; align-items: flex-start;
+            padding: 25px 50px 10px;
+            position: relative;
+            width: 100%;
+        }
+        .banner-container { 
+            position: absolute; top: 20px; left: 0; width: 100%;
+            text-align: center; display: flex; flex-direction: column; align-items: center; 
+            z-index: 10; pointer-events: none;
+        }
+        .banner-shape {
+            background-color: var(--blue);
+            padding: 10px 50px;
+            border: 4px solid var(--black);
+            border-radius: 12px;
+            box-shadow: 6px 6px 0px var(--black);
+            display: inline-block;
+        }
+        .banner-text { 
+            font-size: 24px; font-weight: 700; letter-spacing: 2px; color: var(--white); 
+            text-shadow: 2px 2px 0px var(--black), -1px -1px 0px var(--black), 1px -1px 0px var(--black), -1px 1px 0px var(--black), 1px 1px 0px var(--black);
+        }
+        .banner-subtitle {
+            background-color: var(--yellow); 
+            color: var(--black); 
+            padding: 6px 36px; 
+            font-size: 15px; font-weight: 700;
+            border: 3px solid var(--black);
+            border-radius: 20px; 
+            margin-top: -12px; 
+            text-transform: uppercase; letter-spacing: 1px;
+            box-shadow: 4px 4px 0px var(--black);
+            display: inline-block;
+        }
+        .slides-area {
+            flex: 1; position: relative; margin: 25px 50px 0; perspective: 1200px;
+            min-height: 0; 
+        }
+        .slide {
+            position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+            display: none;
+        }
+        .slide.active { 
+            display: block; 
+            animation: popIn 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+        }
+        @keyframes popIn {
+            from { opacity: 0; transform: scale(0.96) translateY(15px); }
+            to { opacity: 1; transform: scale(1) translateY(0); }
+        }
+        .content-card {
+            background-color: var(--white);
+            border: 4px solid var(--black); 
+            border-radius: 24px;
+            padding: 35px 55px; 
+            box-shadow: 12px 12px 0px var(--black);
+            width: 100%; height: 100%; 
+            overflow-y: auto;
+            display: flex;
+            position: relative;
+        }
+        .inner-content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .slide-title {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 18px;
+            color: var(--black);
+            border-bottom: 4px dashed var(--black);
+            padding-bottom: 10px;
+        }
+        .slide-text {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #222222;
+        }
+        .slide-text p { margin-bottom: 14px; }
+        .feature-card {
+            background-color: #F8F9FA;
+            border: 3px solid var(--black);
+            border-radius: 16px;
+            padding: 18px 22px;
+            margin: 14px 0;
+            box-shadow: 6px 6px 0px var(--black);
+        }
+        .feature-card ul { margin-left: 25px; margin-bottom: 0; }
+        .feature-card li { margin-bottom: 8px; font-size: 17px; }
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 22px;
+            margin: 16px 0;
+        }
+        .code-box {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            border: 3px solid var(--black);
+            border-radius: 14px;
+            padding: 16px;
+            font-family: 'Consolas', monospace;
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 14px 0;
+            box-shadow: 5px 5px 0px var(--black);
+            overflow-x: auto;
+        }
+        .code-kw { color: #569cd6; font-weight: bold; }
+        .code-str { color: #ce9178; }
+        .code-num { color: #b5cea8; }
+        .code-fn { color: #dcdcaa; }
+        .code-cmt { color: #6a9955; font-style: italic; }
+        .code-bool { color: #4ec9b0; font-weight: bold; }
+        .styled-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            border: 3px solid var(--black);
+            box-shadow: 6px 6px 0px var(--black);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .styled-table th, .styled-table td {
+            border: 2px solid var(--black);
+            padding: 10px 16px;
+            font-size: 16px;
+            text-align: left;
+        }
+        .styled-table thead {
+            background-color: var(--yellow);
+            font-weight: 700;
+        }
+        .styled-table tbody tr:nth-child(even) {
+            background-color: #F9FAFB;
+        }
+        .interactive-card {
+            background: #FFFDE7;
+            border: 4px solid var(--black);
+            border-radius: 18px;
+            padding: 22px;
+            margin: 16px 0;
+            box-shadow: 8px 8px 0px var(--black);
+        }
+        .interactive-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .quiz-container {
+            margin: 14px 0;
+        }
+        .quiz-q {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        .quiz-options {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .quiz-opt {
+            background: var(--white);
+            border: 3px solid var(--black);
+            border-radius: 12px;
+            padding: 12px 18px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.15s;
+            text-align: left;
+        }
+        .quiz-opt:hover {
+            background: #FFF9C4;
+            transform: translate(-2px, -2px);
+            box-shadow: 4px 4px 0px var(--black);
+        }
+        .quiz-opt.correct {
+            background: var(--green) !important;
+            color: var(--black);
+        }
+        .quiz-opt.wrong {
+            background: var(--red) !important;
+            color: var(--white);
+        }
+        .quiz-feedback {
+            margin-top: 12px;
+            padding: 12px 18px;
+            border: 3px solid var(--black);
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 16px;
+            display: none;
+        }
+        .bottom-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px 25px;
+        }
+        .nav-container {
+            display: flex;
+            gap: 16px;
+        }
+        .nav-btn {
+            background-color: var(--yellow);
+            color: var(--black);
+            border: 3px solid var(--black);
+            border-radius: 14px;
+            padding: 10px 24px;
+            font-family: 'Fredoka', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 5px 5px 0px var(--black);
+            transition: 0.15s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .nav-btn:hover:not(:disabled) {
+            transform: translate(-2px, -2px);
+            box-shadow: 7px 7px 0px var(--black);
+        }
+        .nav-btn:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+            box-shadow: none;
+        }
+        .nav-btn.primary {
+            background-color: var(--green);
+        }
+        .progress-bar-container {
+            flex: 1;
+            max-width: 400px;
+            height: 20px;
+            background-color: var(--white);
+            border: 3px solid var(--black);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 4px 4px 0px var(--black);
+            margin: 0 25px;
+        }
+        .progress-bar-fill {
+            height: 100%;
+            background-color: var(--pink);
+            width: 12.5%;
+            transition: width 0.3s ease;
+        }
+        .slide-counter {
+            font-size: 18px;
+            font-weight: 700;
+            background: var(--white);
+            padding: 6px 16px;
+            border: 3px solid var(--black);
+            border-radius: 10px;
+            box-shadow: 3px 3px 0px var(--black);
+        }
+        .btn-action {
+            background: var(--green);
+            color: var(--black);
+            border: 3px solid var(--black);
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-family: 'Fredoka', sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 4px 4px 0px var(--black);
+            transition: 0.15s;
+        }
+        .btn-action:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px var(--black);
+        }
+        .input-mini {
+            padding: 8px 14px;
+            border: 3px solid var(--black);
+            border-radius: 8px;
+            font-family: 'Fredoka', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            margin: 4px 8px 4px 0;
+        }
+        .output-console {
+            background: #1e1e1e;
+            color: #00E676;
+            border: 3px solid var(--black);
+            border-radius: 10px;
+            padding: 14px 18px;
+            font-family: 'Consolas', monospace;
+            font-size: 16px;
+            margin-top: 12px;
+            box-shadow: 4px 4px 0px var(--black);
+        }
+        .badge-block {
+            display: inline-block;
+            padding: 4px 12px;
+            border: 2px solid var(--black);
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 14px;
+            margin: 2px 4px;
+            box-shadow: 2px 2px 0px var(--black);
+        }
+        .badge-event { background-color: #FFC107; color: #000; }
+        .badge-text { background-color: #E91E63; color: #fff; }
+        .badge-prop { background-color: #4CAF50; color: #fff; }
+        .badge-var { background-color: #FF9800; color: #fff; }
+        .badge-db { background-color: #9C27B0; color: #fff; }
+        .badge-call { background-color: #7C4DFF; color: #fff; }
+
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <div class="header">
+            <div class="banner-container">
+                <div class="banner-shape">
+                    <span class="banner-text" id="banner-title">DICTIONARY DATA</span>
+                </div>
+                <div class="banner-subtitle" id="banner-subtitle">Pasangan Key-Value & List of Dictionaries</div>
+            </div>
+        </div>
+
+        <div class="slides-area">
+
+            <!-- Slide 1: Keterbatasan List Tunggal -->
+            <div class="slide active" data-title="DICTIONARY DATA" data-subtitle="Kamus Data Pasangan Key-Value">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">1. Mengapa List Tunggal Tidak Cukup untuk Data Keuangan? 🤔</h2>
+                        <div class="slide-text">
+                            <p>Satu catatan transaksi perbankan memiliki banyak informasi yang saling terkait: tanggal, nominal uang, kategori belanja, dan catatan deskripsi. Perhatikan jika kita menggunakan list terpisah:</p>
+                            <div class="code-box">
+tanggal = [<span class="code-str">"01/09"</span>, <span class="code-str">"02/09"</span>, <span class="code-str">"03/09"</span>]
+nominal = [<span class="code-num">25000</span>, <span class="code-num">50000</span>, <span class="code-num">15000</span>]
+kategori = [<span class="code-str">"Makan"</span>, <span class="code-str">"Buku"</span>, <span class="code-str">"Transport"</span>]
+                            </div>
+                            <div class="feature-card" style="background: #FFEBEE; border-left: 6px solid var(--red);">
+                                <h3 style="color: #C62828;">🚨 Bahaya Menggunakan List Paralel:</h3>
+                                <p>Jika satu data di tengah list terhapus atau tertukar posisinya, seluruh catatan menjadi rusak! Tanggal 01/09 bisa tidak sengaja berpasangan dengan nominal buku milik orang lain.</p>
+                            </div>
+                            <div class="feature-card" style="background: #E8F5E9; border-left: 6px solid var(--green);">
+                                💡 <strong>Solusi Elegan:</strong> Mengikat semua informasi dalam satu kesatuan data menggunakan struktur <strong>Dictionary (Kamus)</strong>!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2: Konsep Key-Value Pair -->
+            <div class="slide" data-title="KONSEP KEY-VALUE" data-subtitle="Struktur Dictionary { }">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">2. Konsep Pasangan Kunci dan Nilai (Key-Value Pair) 🔑</h2>
+                        <div class="slide-text">
+                            <p>Dictionary dibuat dengan tanda kurung kurawal <code>{ }</code>. Di dalamnya, data disimpan berpasangan: <strong>Kunci (Key) : Nilai (Value)</strong>:</p>
+                            <div class="code-box">
+transaksi = {
+    <span class="code-str">"id"</span>: <span class="code-num">101</span>,
+    <span class="code-str">"kategori"</span>: <span class="code-str">"Makanan"</span>,
+    <span class="code-str">"nominal"</span>: <span class="code-num">35000</span>,
+    <span class="code-str">"sukses"</span>: <span class="code-bool">True</span>
+}
+                            </div>
+                            <table class="styled-table">
+                                <thead>
+                                    <tr>
+                                        <th>Bagian</th>
+                                        <th>Nama</th>
+                                        <th>Fungsi</th>
+                                        <th>Contoh</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Sebelah Kiri Titik Dua (:)</td>
+                                        <td><strong>Key (Kunci)</strong></td>
+                                        <td>Nama label unik untuk mencari data (biasanya teks string)</td>
+                                        <td><code>"kategori"</code>, <code>"nominal"</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sebelah Kanan Titik Dua (:)</td>
+                                        <td><strong>Value (Nilai)</strong></td>
+                                        <td>Isi data sesungguhnya (bisa berupa angka, teks, atau boolean)</td>
+                                        <td><code>"Makanan"</code>, <code>35000</code></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: Akses dan Update Nilai -->
+            <div class="slide" data-title="AKSES & UPDATE" data-subtitle="Membaca dan Mengubah Isi Dictionary">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">3. Cara Mengakses dan Memperbarui Nilai Dictionary 🎯</h2>
+                        <div class="slide-text">
+                            <p>Pada list biasa kita memanggil indeks angka (<code>list[0]</code>). Pada dictionary, kita memanggil <strong>nama kuncinya (Key)</strong>!</p>
+                            <div class="two-column">
+                                <div class="feature-card" style="background: #E8F5E9; border-left: 6px solid var(--green);">
+                                    <h3>📖 Membaca Nilai</h3>
+                                    <div class="code-box">
+biaya = transaksi[<span class="code-str">"nominal"</span>]
+<span class="code-fn">print</span>(biaya)  <span class="code-cmt"># Output: 35000</span>
+                                    </div>
+                                    <p>Sangat mudah dibaca oleh manusia! Kita langsung tahu bahwa kita sedang mengambil nilai nominal.</p>
+                                </div>
+                                <div class="feature-card" style="background: #FFF3E0; border-left: 6px solid var(--orange);">
+                                    <h3>✏️ Mengubah / Menambah Nilai</h3>
+                                    <div class="code-box">
+transaksi[<span class="code-str">"nominal"</span>] = <span class="code-num">40000</span>  <span class="code-cmt"># Update</span>
+transaksi[<span class="code-str">"metode"</span>] = <span class="code-str">"QRIS"</span>    <span class="code-cmt"># Tambah key baru</span>
+                                    </div>
+                                    <p>Jika key sudah ada, nilainya diupdate. Jika belum ada, Python otomatis membuatkan key baru!</p>
+                                </div>
+                            </div>
+                            <div class="feature-card" style="background: #FFEBEE; border-left: 6px solid var(--red);">
+                                🚨 <strong>Awas KeyError:</strong> Jika kamu memanggil key yang tidak ada, misal <code>transaksi["alamat"]</code>, Python akan melempar <em>KeyError</em>!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4: List of Dictionaries -->
+            <div class="slide" data-title="LIST OF DICTIONARIES" data-subtitle="Struktur Basis Data Transaksi">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">4. Standar Industri: List of Dictionaries (Buku Kas) 📊</h2>
+                        <div class="slide-text">
+                            <p>Bagaimana aplikasi perbankan profesional menyimpan puluhan riwayat mutasi nasabah? Mereka menggabungkan <strong>List</strong> dan <strong>Dictionary</strong>:</p>
+                            <div class="code-box">
+riwayat_mutasi = [
+    {<span class="code-str">"id"</span>: <span class="code-num">1</span>, <span class="code-str">"jenis"</span>: <span class="code-str">"Kredit"</span>, <span class="code-str">"nominal"</span>: <span class="code-num">500000</span>, <span class="code-str">"ket"</span>: <span class="code-str">"Gaji Bulanan"</span>},
+    {<span class="code-str">"id"</span>: <span class="code-num">2</span>, <span class="code-str">"jenis"</span>: <span class="code-str">"Debit"</span>,  <span class="code-str">"nominal"</span>: <span class="code-num">25000</span>,  <span class="code-str">"ket"</span>: <span class="code-str">"Makan Siang"</span>},
+    {<span class="code-str">"id"</span>: <span class="code-num">3</span>, <span class="code-str">"jenis"</span>: <span class="code-str">"Debit"</span>,  <span class="code-str">"nominal"</span>: <span class="code-num">50000</span>,  <span class="code-str">"ket"</span>: <span class="code-str">"Beli Buku"</span>}
+]
+                            </div>
+                            <p>Struktur ini menyerupai tabel database nyata: List adalah baris-baris tabelnya, dan Dictionary adalah kolom-kolom data pada setiap baris!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 5: Menambah Data dengan append() -->
+            <div class="slide" data-title="METHOD APPEND()" data-subtitle="Mencatat Transaksi Baru">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">5. Menambahkan Transaksi Baru dengan .append() ➕</h2>
+                        <div class="slide-text">
+                            <p>Setiap kali pengguna selesai berbelanja, aplikasi kita membuat dictionary transaksi baru dan memasukkannya ke dalam list riwayat dengan metode <code>.append()</code>:</p>
+                            <div class="code-box">
+<span class="code-cmt"># 1. Buat catatan transaksi baru</span>
+transaksi_baru = {
+    <span class="code-str">"id"</span>: <span class="code-num">4</span>,
+    <span class="code-str">"jenis"</span>: <span class="code-str">"Debit"</span>,
+    <span class="code-str">"nominal"</span>: <span class="code-num">15000</span>,
+    <span class="code-str">"ket"</span>: <span class="code-str">"Kopi Sore"</span>
+}
+
+<span class="code-cmt"># 2. Masukkan ke dalam buku mutasi</span>
+riwayat_mutasi.<span class="code-fn">append</span>(transaksi_baru)
+
+<span class="code-fn">print</span>(<span class="code-str">"Total mutasi sekarang:"</span>, <span class="code-fn">len</span>(riwayat_mutasi))  <span class="code-cmt"># Output: 4</span>
+                            </div>
+                            <div class="feature-card" style="background: #E8F5E9; border-left: 6px solid var(--green);">
+                                💡 <strong>Looping List of Dicts:</strong> Kamu bisa menggabungkannya dengan perulangan <code>for t in riwayat_mutasi: print(t["ket"], t["nominal"])</code> untuk mencetak laporan rekening koran!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 6: Mini Lab Interaktif -->
+            <div class="slide" data-title="MINI LAB INTERAKTIF" data-subtitle="Simulator Buku Kas Digital">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">6. Laboratorium Mini: Buku Kas Digital Interaktif 🧪</h2>
+                        <div class="slide-text">
+                            <p>Coba tambahkan transaksi baru dan lihat bagaimana Python menyusun Dictionary dan List of Dicts:</p>
+                            <div class="interactive-card">
+                                <div class="interactive-title">📒 Buku Kas Mutasi Keuangan</div>
+                                <div style="display: flex; gap: 14px; margin-bottom: 12px; flex-wrap: wrap;">
+                                    <div>
+                                        <label style="font-weight: 700;">Keterangan Belanja:</label><br>
+                                        <input type="text" id="hs05-ket" class="input-mini" value="Beli Kuota Internet" style="width: 200px;">
+                                    </div>
+                                    <div>
+                                        <label style="font-weight: 700;">Nominal (Rp):</label><br>
+                                        <input type="number" id="hs05-nominal" class="input-mini" value="50000" style="width: 150px;">
+                                    </div>
+                                    <div style="align-self: flex-end;">
+                                        <button class="btn-action" onclick="addTrxHS05()">Catat (.append())</button>
+                                    </div>
+                                </div>
+                                <div class="output-console" id="hs05-output" style="max-height: 140px; overflow-y: auto;">
+>>> riwayat_mutasi = [
+    {"id": 1, "ket": "Saldo Awal", "nominal": 200000, "tipe": "Kredit"}
+]
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 7: Kuis Pemahaman Mandiri -->
+            <div class="slide" data-title="KUIS PEMAHAMAN" data-subtitle="Uji Kesiapan Belajar Mandiri">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">7. Kuis Pemahaman: Uji Akses Dictionary 🎯</h2>
+                        <div class="slide-text">
+                            <p>Perhatikan potongan struktur data transaksi berikut:</p>
+                            <div class="code-box">
+akun = {
+    <span class="code-str">"nama"</span>: <span class="code-str">"Budi Santoso"</span>,
+    <span class="code-str">"saldo"</span>: <span class="code-num">750000</span>,
+    <span class="code-str">"tier"</span>: <span class="code-str">"Gold"</span>
+}
+                            </div>
+                            <div class="quiz-container">
+                                <div class="quiz-q">Pertanyaan: Bagaimanakah sintaks Python yang benar untuk mengambil nilai saldo dari dictionary akun?</div>
+                                <div class="quiz-options">
+                                    <div class="quiz-opt" onclick="handleQuiz(this, false, 'fb-hs05-q1', 'Benar!', 'Salah! [1] adalah cara akses indeks list, bukan key dictionary!')">A. akun[1]</div>
+                                    <div class="quiz-opt" onclick="handleQuiz(this, true, 'fb-hs05-q1', 'Tepat sekali! Memanggil key dictionary menggunakan tanda kurung siku dan nama kuncinya: akun["saldo"]!', 'Salah!')">B. akun["saldo"]</div>
+                                    <div class="quiz-opt" onclick="handleQuiz(this, false, 'fb-hs05-q1', 'Benar!', 'Salah! Tanda kurung bulat () digunakan untuk pemanggilan fungsi, bukan dictionary.')">C. akun("saldo")</div>
+                                    <div class="quiz-opt" onclick="handleQuiz(this, false, 'fb-hs05-q1', 'Benar!', 'Salah! Key adalah string teks, sehingga membutuhkan tanda petik.')">D. akun.get_saldo</div>
+                                </div>
+                                <div class="quiz-feedback" id="fb-hs05-q1"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 8: Rangkuman & Menuju hs-4-1 -->
+            <div class="slide" data-title="RANGKUMAN" data-subtitle="Bekal Menuju Proyek Aplikasi">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">8. Rangkuman & Pintu Masuk Proyek Aplikasi Finansial 🚀</h2>
+                        <div class="slide-text">
+                            <p>Luar biasa! Seluruh pondasi komputasi tingkat SMA kini telah lengkap di tanganmu:</p>
+                            <div class="two-column">
+                                <div class="feature-card">
+                                    <h3>📌 Rangkuman Konsep:</h3>
+                                    <ul>
+                                        <li>Dictionary <code>{key: value}</code> menyimpan data berpasangan</li>
+                                        <li>Akses nilai menggunakan kunci: <code>data["key"]</code></li>
+                                        <li>List of Dictionaries merepresentasikan tabel transaksi keuangan</li>
+                                        <li>Metode <code>.append()</code> memasukkan catatan transaksi baru</li>
+                                    </ul>
+                                </div>
+                                <div class="feature-card" style="background: #E8F5E9; border: 3px solid var(--green);">
+                                    <h3>🎯 Siap Membangun Proyek Finansial (hs-4 & hs-5):</h3>
+                                    <p>Dengan menguasai Variabel, Input/Output, Conditional If-Else, For Loop, Function, dan Dictionary, kamu sekarang 100% siap membangun aplikasi <strong>UOB Financial Literacy Manager</strong> yang aman dan interaktif!</p>
+                                    <p style="font-weight: 700; margin-top: 10px; color: #2E7D32;">Klik selesai untuk mulai mengerjakan proyekmu! ✨</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bottom-bar">
+            <button class="nav-btn" id="btn-prev" disabled>⬅️ Kembali</button>
+            <div class="progress-bar-container">
+                <div class="progress-bar-fill" id="progress-bar"></div>
+            </div>
+            <div class="slide-counter">
+                <span id="current-slide-num">1</span> / <span id="total-slides-num">8</span>
+            </div>
+            <button class="nav-btn primary" id="btn-next">Lanjut ➡️</button>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const btnPrev = document.getElementById('btn-prev');
+        const btnNext = document.getElementById('btn-next');
+        const counter = document.getElementById('current-slide-num');
+        const totalNum = document.getElementById('total-slides-num');
+        const bar = document.getElementById('progress-bar');
+        const bannerTitle = document.getElementById('banner-title');
+        const bannerSubtitle = document.getElementById('banner-subtitle');
+
+        totalNum.innerText = slides.length;
+
+        function showSlide(index) {
+            if (index < 0 || index >= slides.length) return;
+            slides[currentSlide].classList.remove('active');
+            currentSlide = index;
+            slides[currentSlide].classList.add('active');
+
+            btnPrev.disabled = currentSlide === 0;
+            btnNext.disabled = currentSlide === slides.length - 1;
+            counter.innerText = currentSlide + 1;
+            bar.style.width = (((currentSlide + 1) / slides.length) * 100) + '%';
+
+            const activeSlide = slides[currentSlide];
+            const t = activeSlide.getAttribute('data-title');
+            const s = activeSlide.getAttribute('data-subtitle');
+            if (t && bannerTitle) bannerTitle.innerText = t;
+            if (s && bannerSubtitle) bannerSubtitle.innerText = s;
+        }
+
+        btnNext.addEventListener('click', () => {
+            if (currentSlide < slides.length - 1) showSlide(currentSlide + 1);
+        });
+        btnPrev.addEventListener('click', () => {
+            if (currentSlide > 0) showSlide(currentSlide - 1);
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.target.tagName.toLowerCase() === 'input' || e.target.tagName.toLowerCase() === 'textarea') return;
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                if (currentSlide < slides.length - 1) showSlide(currentSlide + 1);
+            }
+            if (e.key === 'ArrowLeft') {
+                if (currentSlide > 0) showSlide(currentSlide - 1);
+            }
+        });
+
+        function handleQuiz(el, isCorrect, feedbackId, successMsg, failMsg) {
+            const parent = el.parentElement;
+            parent.querySelectorAll('.quiz-opt').forEach(o => o.classList.remove('correct', 'wrong'));
+            const fb = document.getElementById(feedbackId);
+            if (!fb) return;
+            fb.style.display = 'block';
+            if (isCorrect) {
+                el.classList.add('correct');
+                fb.innerHTML = '✅ ' + successMsg;
+                fb.style.backgroundColor = 'var(--green)';
+                fb.style.color = 'var(--black)';
+            } else {
+                el.classList.add('wrong');
+                fb.innerHTML = '❌ ' + failMsg;
+                fb.style.backgroundColor = 'var(--red)';
+                fb.style.color = 'var(--white)';
+            }
+        }
+
+
+        const listTrxHS05 = [
+            {"id": 1, "ket": "Saldo Awal", "nominal": 200000, "tipe": "Kredit"}
+        ];
+        
+        function addTrxHS05() {
+            const ket = document.getElementById('hs05-ket').value.trim();
+            const nominal = parseInt(document.getElementById('hs05-nominal').value);
+            const out = document.getElementById('hs05-output');
+            
+            if (!ket || isNaN(nominal)) {
+                alert("Mohon masukkan keterangan dan nominal yang valid!");
+                return;
+            }
+            
+            const newTrx = {
+                "id": listTrxHS05.length + 1,
+                "ket": ket,
+                "nominal": nominal,
+                "tipe": "Debit"
+            };
+            listTrxHS05.push(newTrx);
+            
+            out.innerText = ">>> riwayat_mutasi = " + JSON.stringify(listTrxHS05, null, 2);
+        }
+
+    </script>
+</body>
+</html>

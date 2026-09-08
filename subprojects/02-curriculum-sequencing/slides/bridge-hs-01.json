@@ -7,19 +7,46 @@
   "type": "slides",
   "summary": "Variabel adalah wadah penyimpanan di memori komputer yang diberi nama label khusus. Gunakan tanda sama dengan (=) untuk menugaskan nilai. Kenali perbedaan mendasar antara teks (String) dan angka (Integer/Float) agar program tidak salah menghitung.",
   "bookmarks": [
-    { "slideIndex": 0, "label": "1. Analogi Kotak Berlabel" },
-    { "slideIndex": 1, "label": "2. Membuat Variabel di Python" },
-    { "slideIndex": 2, "label": "3. Tipe Data: String (Teks)" },
-    { "slideIndex": 3, "label": "4. Tipe Data: Integer & Float" },
-    { "slideIndex": 4, "label": "5. Jebakan: Teks '10' vs Angka 10" },
-    { "slideIndex": 5, "label": "6. Tipe Data: Boolean (Benar/Salah)" },
-    { "slideIndex": 6, "label": "7. Menghitung Nilai Variabel" },
-    { "slideIndex": 7, "label": "8. Rangkuman & Kuis Cek Pemahaman" }
+    {
+      "slideIndex": 0,
+      "label": "1. Analogi Kotak Berlabel"
+    },
+    {
+      "slideIndex": 1,
+      "label": "2. Membuat Variabel di Python"
+    },
+    {
+      "slideIndex": 2,
+      "label": "3. Tipe Data: String (Teks)"
+    },
+    {
+      "slideIndex": 3,
+      "label": "4. Tipe Data: Integer & Float"
+    },
+    {
+      "slideIndex": 4,
+      "label": "5. Jebakan: Teks '10' vs Angka 10"
+    },
+    {
+      "slideIndex": 5,
+      "label": "6. Tipe Data: Boolean (Benar/Salah)"
+    },
+    {
+      "slideIndex": 6,
+      "label": "7. Menghitung Nilai Variabel"
+    },
+    {
+      "slideIndex": 7,
+      "label": "8. Rangkuman & Kuis Cek Pemahaman"
+    }
   ],
   "slides": [
     {
       "slideIndex": 0,
-      "tagPill": { "text": "📦 Konsep Dasar", "color": "yellow" },
+      "tagPill": {
+        "text": "📦 Konsep Dasar",
+        "color": "yellow"
+      },
       "title": "Variabel: Kotak Berlabel di Memori Komputer",
       "highlights": [
         {
@@ -42,7 +69,10 @@
     },
     {
       "slideIndex": 1,
-      "tagPill": { "text": "⚙️ Sintaks Python", "color": "blue" },
+      "tagPill": {
+        "text": "⚙️ Sintaks Python",
+        "color": "blue"
+      },
       "title": "Cara Menulis Variabel di Python",
       "highlights": [
         {
@@ -65,7 +95,10 @@
     },
     {
       "slideIndex": 2,
-      "tagPill": { "text": "🔤 Tipe Data 1", "color": "green" },
+      "tagPill": {
+        "text": "🔤 Tipe Data 1",
+        "color": "green"
+      },
       "title": "Tipe Data 1: String (Teks & Karakter)",
       "highlights": [
         {
@@ -88,7 +121,10 @@
     },
     {
       "slideIndex": 3,
-      "tagPill": { "text": "🔢 Tipe Data 2", "color": "pink" },
+      "tagPill": {
+        "text": "🔢 Tipe Data 2",
+        "color": "pink"
+      },
       "title": "Tipe Data 2: Integer & Float (Angka)",
       "highlights": [
         {
@@ -111,7 +147,10 @@
     },
     {
       "slideIndex": 4,
-      "tagPill": { "text": "🚨 Jebakan Coder", "color": "yellow" },
+      "tagPill": {
+        "text": "🚨 Jebakan Coder",
+        "color": "yellow"
+      },
       "title": "Jebakan Klasik: Teks \"10\" vs Angka 10",
       "highlights": [
         {
@@ -134,7 +173,10 @@
     },
     {
       "slideIndex": 5,
-      "tagPill": { "text": "🔘 Tipe Data 3", "color": "blue" },
+      "tagPill": {
+        "text": "🔘 Tipe Data 3",
+        "color": "blue"
+      },
       "title": "Tipe Data 3: Boolean (Benar atau Salah)",
       "highlights": [
         {
@@ -157,7 +199,10 @@
     },
     {
       "slideIndex": 6,
-      "tagPill": { "text": "💰 Studi Kasus", "color": "green" },
+      "tagPill": {
+        "text": "💰 Studi Kasus",
+        "color": "green"
+      },
       "title": "Menghitung Variabel Keuangan Sederhana",
       "highlights": [
         {
@@ -180,7 +225,10 @@
     },
     {
       "slideIndex": 7,
-      "tagPill": { "text": "🏆 Cek Pemahaman", "color": "pink" },
+      "tagPill": {
+        "text": "🏆 Cek Pemahaman",
+        "color": "pink"
+      },
       "title": "Rangkuman Materi & Kuis Mandiri",
       "highlights": [
         {

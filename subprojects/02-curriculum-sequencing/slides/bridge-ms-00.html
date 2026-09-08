@@ -488,7 +488,7 @@
                             Belajar Pemrograman Visual, Alur Logika, dan Database Lokal di HP
                         </p>
                         <div style="font-size: 16px; font-weight: 600; opacity: 0.95; text-transform: uppercase; letter-spacing: 2px; background: rgba(0,0,0,0.3); padding: 10px 24px; border-radius: 12px; display: inline-block;">
-                            Materi Jembatan 00 • Fondasi Desain UI, Balok Logika, dan TinyDB
+                            Materi Jembatan 00 • Fondasi Desain UI, Balok Logika & Uji Proyek
                         </div>
                     </div>
                 </div>
@@ -533,7 +533,7 @@
                                 <ul style="margin-bottom: 0; font-size: 19px;">
                                     <li><strong>Aplikasi Android Nyata</strong>: Aplikasi yang kamu rancang di sini bukanlah sekadar animasi main-main, melainkan <strong>file APK Android sungguhan</strong> yang bisa diinstal di HP!</li>
                                     <li><strong>Cloud Storage</strong>: Semua proyek aplikasi tersimpan otomatis di server MIT menggunakan akun Google kamu.</li>
-                                    <li><strong>Dukungan Fitur Canggih</strong>: Dilengkapi akses kamera HP, sensor gerak, perekam suara, database lokal (TinyDB), hingga chatbot AI cerdas!</li>
+                                    <li><strong>Dukungan Fitur Canggih</strong>: Dilengkapi akses kamera HP, sensor gerak, perekam suara, logika interaktif cerdas, hingga koneksi internet!</li>
                                 </ul>
                             </div>
 
@@ -667,7 +667,7 @@
                                     <div style="font-size: 22px; font-weight: 700; margin-bottom: 8px;">⚙️ 2. Komponen Tak Tampak (Non-Visible)</div>
                                     <p style="font-size: 17px; margin-bottom: 10px;">Bekerja diam-diam di balik layar HP (terletak di bawah simulasi viewer):</p>
                                     <ul style="font-size: 16px; margin-bottom: 0;">
-                                        <li><strong>TinyDB</strong>: Memori penyimpan data agar saldo tidak hilang saat aplikasi ditutup.</li>
+                                        <li><strong>Live Testing</strong>: Menjalankan dan menguji aplikasi langsung di layar HP secara real-time.</li>
                                         <li><strong>Clock</strong>: Jam dan pengatur waktu otomatis.</li>
                                         <li><strong>Sound</strong>: Pemutar efek suara klik atau peringatan.</li>
                                         <li><strong>ChatBot</strong>: Asisten kecerdasan buatan penjawab saran keuangan.</li>
@@ -691,7 +691,7 @@
                             <div class="screenshot-box">
                                 <img src="https://cdn-web-2.ruangguru.com/landing-pages/assets/3b7480d8-1ce7-46d3-9850-8e97bb9d399d.png" alt="App Inventor Blocks Editor" class="screenshot-img">
                                 <div class="screenshot-caption">
-                                    📸 <em>Tangkapan layar nyata: Blocks Editor proyek nyata dengan laci balok built-in dan balok logika event tombol serta TinyDB.</em>
+                                    📸 <em>Tangkapan layar nyata: Blocks Editor proyek nyata dengan laci balok logika event tombol dan pengatur teks.</em>
                                 </div>
                             </div>
 
@@ -731,7 +731,7 @@
                                     <div style="font-size: 16px; margin-top: 6px;">Wadah nilai data: <code>initialize global</code>, <code>get</code>, dan <code>set</code>.</div>
                                 </div>
                                 <div class="feature-card">
-                                    <span class="block-badge block-tinydb">Storage / TinyDB (Ungu)</span>
+                                    <span class="block-badge" style="background: #00BCD4; color: white;">Colors (Biru Muda)</span>
                                     <div style="font-size: 16px; margin-top: 6px;">Simpan dan muat data dari memori permanen HP.</div>
                                 </div>
                             </div>
@@ -767,43 +767,13 @@
                 </div>
             </div>
 
-            <!-- Slide 11: Langkah 8 - Mengenal Database TinyDB -->
-            <div class="slide" data-title="LANGKAH 8: TINYDB" data-subtitle="Simpan Data Permanen di HP">
+                        <!-- Slide 11: Langkah 8 - Uji Coba di HP dengan AI Companion -->
+            <div class="slide" data-title="LANGKAH 8: TESTING DI HP" data-subtitle="MIT AI Companion">
                 <div class="content-card">
                     <div class="inner-content">
-                        <h2 class="slide-title">Langkah 8: Mengenal Database Lokal TinyDB 🗄️</h2>
+                        <h2 class="slide-title">Langkah 8: Menguji Aplikasi Langsung di HP Android 📲</h2>
                         <div class="slide-text">
-                            <p>Apa yang terjadi jika aplikasi kamu ditutup atau HP mati? Jika data hanya disimpan di variabel biasa, <strong>semua data akan hilang terhapus</strong>!</p>
-                            <p>Untuk itulah kita butuh <strong>TinyDB</strong> — database mini yang menyimpan data permanen di memori fisik HP.</p>
-
-                            <div class="two-column">
-                                <div class="feature-card" style="background: #F3E5F5;">
-                                    <div style="font-size: 20px; font-weight: 700; margin-bottom: 8px;">💾 Menyimpan Nilai:</div>
-                                    <div class="block-badge block-tinydb" style="font-size: 16px;">call TinyDB1 . StoreValue</div>
-                                    <p style="font-size: 16px; margin: 8px 0;"><strong>tag</strong>: Kunci label loker (misal: <code>"Saldo"</code>)<br><strong>valueToStore</strong>: Angka uangnya (misal: <code>50000</code>)</p>
-                                </div>
-                                <div class="feature-card" style="background: #EDE7F6;">
-                                    <div style="font-size: 20px; font-weight: 700; margin-bottom: 8px;">📖 Mengambil Nilai:</div>
-                                    <div class="block-badge block-tinydb" style="font-size: 16px;">call TinyDB1 . GetValue</div>
-                                    <p style="font-size: 16px; margin: 8px 0;"><strong>tag</strong>: Kunci yang dicari (misal: <code>"Saldo"</code>)<br><strong>valueIfTagNotThere</strong>: Nilai cadangan jika belum ada (misal: <code>0</code>)</p>
-                                </div>
-                            </div>
-
-                            <div class="quote-box">
-                                "Pasangan Tag dan Value adalah kunci utama: Tag adalah nama labelnya, Value adalah data rahasia di dalamnya!" 🔑
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Slide 12: Langkah 9 - Uji Coba di HP dengan AI Companion -->
-            <div class="slide" data-title="LANGKAH 9: TESTING DI HP" data-subtitle="MIT AI Companion">
-                <div class="content-card">
-                    <div class="inner-content">
-                        <h2 class="slide-title">Langkah 9: Menguji Aplikasi Langsung di HP Android 📲</h2>
-                        <div class="slide-text">
-                            <p>Kamu tidak perlu kabel data rumit untuk mencoba aplikasimu! Ikuti 4 langkah kilat ini:</p>
+                            <p>Kamu tidak perlu kabel data rumit untuk mencoba aplikasimu! Ikuti 4 langkah kilat ini untuk melihat aplikasimu hidup di layar HP:</p>
 
                             <div style="display: flex; flex-direction: column; gap: 12px; margin: 18px 0;">
                                 <div class="feature-card" style="display: flex; align-items: center; gap: 16px;">
@@ -828,38 +798,35 @@
                 </div>
             </div>
 
-            <!-- Slide 13: Interactive Simulation -->
-            <div class="slide" data-title="SIMULASI TINYDB" data-subtitle="Eksperimen Tag & Value">
+            <!-- Slide 12: Interactive Simulation Live Testing -->
+            <div class="slide" data-title="SIMULASI TESTING" data-subtitle="Uji Tombol & Pesan di Layar HP">
                 <div class="content-card">
                     <div class="inner-content">
-                        <h2 class="slide-title">Laboratorium Mini: Simulasi Penyimpanan Data TinyDB 🧪</h2>
+                        <h2 class="slide-title">Laboratorium Mini: Simulasi Live Testing di Layar HP 🧪</h2>
                         <div class="slide-text">
-                            <p>Coba uji bagaimana balok <code>StoreValue</code> dan <code>GetValue</code> bekerja di database HP:</p>
+                            <p>Coba uji bagaimana balok tombol dan perubahan teks bekerja di layar ponsel virtual di bawah ini:</p>
 
-                            <div class="playground-card">
-                                <label style="display: block; font-weight: 700; margin-bottom: 6px;">Nama Tag (Label Penyimpanan):</label>
-                                <input type="text" id="db-tag" class="input-text-custom" value="Saldo_Uang" placeholder="Contoh: Saldo_Uang">
-
-                                <label style="display: block; font-weight: 700; margin-bottom: 6px;">Nominal Nilai (Value):</label>
-                                <input type="number" id="db-value" class="input-text-custom" value="125000">
-
-                                <div style="display: flex; gap: 12px;">
-                                    <button class="btn-action-custom" onclick="simpanTinyDB()">💾 Simpan (call StoreValue)</button>
-                                    <button class="btn-action-custom" style="background-color: var(--yellow); color: var(--black);" onclick="bacaTinyDB()">📖 Baca (call GetValue)</button>
+                            <div class="playground-card" style="max-width: 500px; margin: 15px auto; text-align: center;">
+                                <div style="background: #333; color: white; padding: 8px; border-radius: 12px 12px 0 0; font-weight: 700;">
+                                    📱 Layar HP: Proyek Pertamaku
                                 </div>
-
-                                <div class="result-box" id="db-output">
-                                    Status penyimpanan TinyDB akan muncul di sini...
+                                <div style="background: white; border: 3px solid #333; border-top: none; padding: 30px 20px; border-radius: 0 0 12px 12px;">
+                                    <div id="phone-label-output" style="font-size: 20px; font-weight: 700; color: #1565C0; margin-bottom: 25px; min-height: 50px; display: flex; align-items: center; justify-content: center; border: 2px dashed #90CAF9; border-radius: 8px; padding: 10px;">
+                                        Selamat datang di App Inventor!
+                                    </div>
+                                    <button class="btn-action-custom" style="width: 100%; font-size: 18px;" onclick="testButtonLive()">
+                                        👆 Klik Saya (Button1)
+                                    </button>
                                 </div>
                             </div>
 
-                            <p style="font-size: 16px; color: #555;">💡 <em>Data yang disimpan dengan Tag akan tetap ada di memori meskipun kamu membaca ulang berkali-kali!</em></p>
+                            <p style="font-size: 16px; color: #555; text-align: center;">💡 <em>Saat tombol diklik, balok <code>when Button1.Click</code> akan mengubah teks pada <code>Label1.Text</code> secara seketika!</em></p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Slide 14: Kuis Pemahaman Mandiri -->
+            <!-- Slide 13: Kuis Pemahaman Mandiri Bersih -->
             <div class="slide" data-title="KUIS PEMAHAMAN" data-subtitle="Check Kesiapan Siswa">
                 <div class="content-card">
                     <div class="inner-content">
@@ -880,11 +847,12 @@
 
                             <div style="background: #F8FAFC; border: 3px solid var(--black); padding: 18px; border-radius: 14px;">
                                 <div style="font-weight: 700; font-size: 20px; margin-bottom: 12px;">
-                                    Pertanyaan 2: Mengapa kita harus menggunakan TinyDB untuk data keuangan?
+                                    Pertanyaan 2: Di manakah kita merakit logika balok agar tombol bisa bereaksi saat ditekan jari?
                                 </div>
-                                <div class="quiz-option" onclick="checkQ2_SMP('correct', this)">A. Agar data tetap tersimpan saat aplikasi ditutup atau HP mati</div>
-                                <div class="quiz-option" onclick="checkQ2_SMP('wrong', this)">B. Agar tombol berubah warna menjadi ungu</div>
-                                <div class="quiz-option" onclick="checkQ2_SMP('wrong', this)">C. Karena TinyDB bisa menghapus HP secara otomatis</div>
+                                <div class="quiz-option" onclick="checkQ2_SMP_Clean('correct', this)">A. Di Blocks Editor (layar perakitan balok)</div>
+                                <div class="quiz-option" onclick="checkQ2_SMP_Clean('wrong', this)">B. Di Google Drive</div>
+                                <div class="quiz-option" onclick="checkQ2_SMP_Clean('wrong', this)">C. Di Pengaturan HP</div>
+                                <div class="quiz-option" onclick="checkQ2_SMP_Clean('wrong', this)">D. Di Palette User Interface</div>
                                 <div id="q2-smp-feedback" style="display: none; margin-top: 10px; font-weight: bold; font-size: 17px; padding: 10px; border-radius: 8px;"></div>
                             </div>
                         </div>
@@ -892,64 +860,52 @@
                 </div>
             </div>
 
-            <!-- Slide 15: Glosarium & Tips Anti-Bingung -->
+            <!-- Slide 14: Glosarium Bersih -->
             <div class="slide" data-title="GLOSARIUM SMP" data-subtitle="Istilah Kunci App Inventor">
                 <div class="content-card">
                     <div class="inner-content">
                         <h2 class="slide-title">Glosarium Cepat & Tips Sukses Koding 💡</h2>
                         <div class="slide-text">
-                            <p>Rangkuman istilah penting di dunia aplikasi mobile:</p>
+                            <p>Rangkuman istilah penting di dunia aplikasi mobile App Inventor:</p>
 
                             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 18px 0;">
                                 <div class="feature-card">
                                     <strong>Designer</strong><br>
-                                    Layar perancangan visual antarmuka tombol, teks, dan gambar.
+                                    Layar perancangan visual antarmuka tombol, teks, gambar, dan warna.
                                 </div>
                                 <div class="feature-card">
                                     <strong>Blocks Editor</strong><br>
-                                    Ruang perakitan logika balok kejadian (otak aplikasi).
+                                    Ruang perakitan logika balok kejadian (otak kerja aplikasi).
                                 </div>
                                 <div class="feature-card">
-                                    <strong>Tag-Value</strong><br>
-                                    Pasangan kunci (Tag) dan isi data (Value) pada database TinyDB.
+                                    <strong>Component</strong><br>
+                                    Elemen aplikasi seperti Button (tombol), TextBox (kolom ketik), dan Label.
                                 </div>
                                 <div class="feature-card">
                                     <strong>AI Companion</strong><br>
-                                    Aplikasi di HP untuk menguji kodingan secara live via Wi-Fi.
+                                    Aplikasi di HP untuk menguji kode proyek secara langsung tanpa kabel.
                                 </div>
-                            </div>
-
-                            <div class="quote-box" style="font-size: 18px;">
-                                🌟 <strong>Pesan Penting:</strong> "Setiap aplikasi populer seperti Gojek atau Tokopedia berawal dari konsep yang sama: Tombol yang disentuh dan Data yang disimpan!"
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Slide 16: Penutup & Menuju Modul 1 -->
-            <div class="slide" data-title="SIAP MENUJU MODUL 1" data-subtitle="Selamat Melangkah!">
-                <div class="content-card" style="align-items: center; justify-content: center; background: radial-gradient(circle, #00E676 0%, #008f4c 100%); color: var(--black); border-color: var(--black);">
-                    <div class="inner-content" style="text-align: center;">
-                        <span style="background-color: var(--yellow); color: var(--black); padding: 8px 24px; border: 3px solid var(--black); border-radius: 20px; font-size: 18px; font-weight: 700; box-shadow: 4px 4px 0px var(--black); display: inline-block; margin-bottom: 25px; transform: rotate(-2deg);">
-                            LEVEL 0 COMPLETED! 🎉
-                        </span>
-                        <h1 style="font-size: 46px; font-weight: 700; margin-bottom: 18px; color: white; text-shadow: 4px 4px 0px var(--black); line-height: 1.2;">
-                            Kamu Telah Menguasai Dasar<br>MIT App Inventor! 📱🚀
-                        </h1>
-                        <p style="font-size: 22px; font-weight: 700; color: var(--yellow); text-shadow: 2px 2px 0px var(--black); margin-bottom: 35px;">
-                            Kini kamu sudah paham perbedaan Designer & Blocks, cara pakai TinyDB, dan siap membuat aplikasi!
-                        </p>
-                        <div style="background-color: var(--white); border: 4px solid var(--black); border-radius: 16px; padding: 20px; box-shadow: 8px 8px 0px var(--black); max-width: 600px; margin: 0 auto; text-align: left; font-size: 18px; font-weight: 600;">
-                            <strong>Misi Berikutnya di Modul 1:</strong>
-                            <ul style="margin-top: 10px; padding-left: 25px;">
-                                <li>Menyusun alur instruksi berurutan (Sequence)</li>
-                                <li>Membaca diagram alur (Flowchart) pengambilan keputusan</li>
-                                <li>Menjaga keamanan data privasi pengguna di aplikasi mobile</li>
-                            </ul>
+            <!-- Slide 15: Penutup -->
+            <div class="slide" data-title="SELESAI" data-subtitle="Menuju Modul 1">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">Hore! Kamu Siap Menjadi Pengembang Aplikasi! 🚀</h2>
+                        <div class="slide-text">
+                            <p>Kini kamu sudah paham perbedaan Designer & Blocks, cara menghubungkan HP, dan siap membuat aplikasi pertamamu!</p>
+                            <div class="feature-card" style="background: #E8F5E9; border: 3px solid var(--green); margin-top: 20px;">
+                                <h3 style="color: #2E7D32;">🎯 Langkah Selanjutnya:</h3>
+                                <p>Klik tombol <strong>Lanjut</strong> di LMS untuk memulai Modul 1: Merancang antarmuka form input yang aman dan menarik!</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
 
         </div>

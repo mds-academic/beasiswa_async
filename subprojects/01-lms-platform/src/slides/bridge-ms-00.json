@@ -1,13 +1,13 @@
 {
   "id": "bridge-ms-00",
   "level": "SMP",
-  "kicker": "Materi Jembatan 00 · Dasar Pemrograman Visual & Mobile",
-  "title": "Pengenalan Logika Koding & Pembuatan Aplikasi Mobile dengan MIT App Inventor",
+  "kicker": "Materi Jembatan 00 · Desain UI & Blok Logika SMP",
+  "title": "Panduan Lengkap MIT App Inventor & Uji Proyek Pertamaku",
   "duration": "10 Menit Baca Mandiri & Praktik",
   "type": "slides",
   "embedUrl": "slides/bridge-ms-00.html",
-  "summary": "Panduan komprehensif membuka MIT App Inventor 2 dengan akun Google, memahami 4 kolom Designer (Palette, Viewer, Components, Properties), komponen tampak vs tidak tampak, menyusun balok logika di Blocks Editor, konsep Event-Driven, dan database lokal TinyDB.",
-  "totalSlides": 16,
+  "summary": "Panduan komprehensif membuka MIT App Inventor di browser, memahami anatomi Designer (Palette, Viewer, Components, Properties) dan Blocks Editor, merakit tombol interaktif, serta menguji langsung di HP Android via AI2 Companion tanpa TinyDB.",
+  "totalSlides": 15,
   "realScreenshots": [
     {
       "name": "real_appinventor_01_google_login.png",
@@ -26,21 +26,65 @@
     }
   ],
   "bookmarks": [
-    { "slideIndex": 0, "label": "1. Pengenalan Logika Koding SMP" },
-    { "slideIndex": 1, "label": "2. Mengapa Balok Visual?" },
-    { "slideIndex": 2, "label": "3. Apa itu MIT App Inventor 2?" },
-    { "slideIndex": 3, "label": "4. Langkah 1: Buka & Login Google" },
-    { "slideIndex": 4, "label": "5. Langkah 2: Mulai Proyek Baru" },
-    { "slideIndex": 5, "label": "6. Langkah 3: Anatomi Designer (4 Kolom)" },
-    { "slideIndex": 6, "label": "7. Langkah 4: Komponen Tampak vs Tak Tampak" },
-    { "slideIndex": 7, "label": "8. Langkah 5: Masuk ke Blocks Editor" },
-    { "slideIndex": 8, "label": "9. Langkah 6: Anatomi Balok Built-in" },
-    { "slideIndex": 9, "label": "10. Langkah 7: Pola Event-Driven di Smartphone" },
-    { "slideIndex": 10, "label": "11. Langkah 8: Database Lokal TinyDB" },
-    { "slideIndex": 11, "label": "12. Langkah 9: Testing di HP via AI Companion" },
-    { "slideIndex": 12, "label": "13. Simulasi Penyimpanan TinyDB" },
-    { "slideIndex": 13, "label": "14. Kuis Pemahaman Mandiri" },
-    { "slideIndex": 14, "label": "15. Glosarium & Tips Sukses Koding" },
-    { "slideIndex": 15, "label": "16. Penutup & Menuju Modul 1" }
+    {
+      "slideIndex": 0,
+      "label": "1. Pengenalan App Inventor SMP"
+    },
+    {
+      "slideIndex": 1,
+      "label": "2. Mengapa Belajar App Inventor?"
+    },
+    {
+      "slideIndex": 2,
+      "label": "3. Cara Kerja Ekosistem Browser & HP"
+    },
+    {
+      "slideIndex": 3,
+      "label": "4. Langkah 1: Login Akun Google"
+    },
+    {
+      "slideIndex": 4,
+      "label": "5. Langkah 2: Start New Project"
+    },
+    {
+      "slideIndex": 5,
+      "label": "6. Langkah 3: 4 Panel Utama Designer"
+    },
+    {
+      "slideIndex": 6,
+      "label": "7. Langkah 4: Memasukkan Komponen UI"
+    },
+    {
+      "slideIndex": 7,
+      "label": "8. Langkah 5: Berpindah ke Blocks Editor"
+    },
+    {
+      "slideIndex": 8,
+      "label": "9. Langkah 6: Anatomi Balok Logika"
+    },
+    {
+      "slideIndex": 9,
+      "label": "10. Langkah 7: Balok Event Handler"
+    },
+    {
+      "slideIndex": 10,
+      "label": "11. Langkah 8: Menguji Aplikasi di HP (AI Companion)"
+    },
+    {
+      "slideIndex": 11,
+      "label": "12. Simulasi Live Testing di Layar HP"
+    },
+    {
+      "slideIndex": 12,
+      "label": "13. Uji Pemahaman Cek Kesiapan"
+    },
+    {
+      "slideIndex": 13,
+      "label": "14. Glosarium Cepat & Tips Sukses"
+    },
+    {
+      "slideIndex": 14,
+      "label": "15. Penutup & Menuju Modul 1"
+    }
   ]
 }

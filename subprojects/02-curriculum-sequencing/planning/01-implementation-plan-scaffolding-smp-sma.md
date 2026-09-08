@@ -1,7 +1,8 @@
 # Implementation Plan 01 — Scaffolding Kurikulum SMP–SMA
 
 Tanggal: 2026-09-08  
-Status: **proposed**  
+Status: **completed (selesai diimplementasikan & diverifikasi)**  
+Laporan QA: [Laporan QA Scaffolding](../drafts/qa/qa-scaffolding-report.md)  
 Sumber utama: [Audit Ulang Scaffolding Materi SMP–SMA](../mapping/audit-ulang-scaffolding-2026-09-08.md)
 
 ## Tujuan

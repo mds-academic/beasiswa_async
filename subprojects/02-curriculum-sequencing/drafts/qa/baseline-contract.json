@@ -1,0 +1,38 @@
+{
+  "timestamp": "2026-09-08T23:18:00+07:00",
+  "status": "baseline_recorded",
+  "checksums": {
+    "output/courseData-highschool.json": "fcbdf9a31f6827f8cac424a5aeb6912ca0d9f5b11c8f9c683ef00c0ca3c8efa5",
+    "output/courseData-middleschool.json": "e2d773262c9af7939a9553da82916148574f5cec312256846b0d664cc285c53d",
+    "output/courseData-upperprimary.json": "c231cc3862b5ba4e820d110b613bfe9db8ef2011f9daf7dbb90c891d81bd6cb2",
+    "slides/bridge-hs-00.html": "dfc03c85bdad98f39353b1c5d6c48b1a11e97818053074307ef26503a55638b1",
+    "slides/bridge-ms-00.html": "c3adb484a186ab482bb97797ca1c2fdd5472ea9b6736e312475d877ce72865d8",
+    "slides/bridge-hs-01.json": "d599b9019f9b5b49f3ccd69ce3a4a15916e3dc420399a864700814308478f5ae",
+    "slides/bridge-ms-01.json": "049f83a691d9698c6bc4e46a6f0fcd96cb41266f61d7c8ccbf2b45ac420a6d95"
+  },
+  "metadata_contract": {
+    "id": "string (kebab-case, e.g. bridge-hs-01)",
+    "type": "slide",
+    "slideUrl": "string relative URL to HTML",
+    "prerequisiteStepIds": [
+      "array of step IDs"
+    ],
+    "learningObjectives": [
+      "array of measurable goals"
+    ],
+    "practice": "object describing hands-on practice",
+    "completionCriteria": "object with explicit requirements",
+    "bookmarks": [
+      "array of slide bookmarks"
+    ],
+    "quizzes": [
+      "array of quiz objects"
+    ]
+  },
+  "timestamp_status_contract": [
+    "verified",
+    "review_required",
+    "unknown",
+    "manual_checkpoint"
+  ]
+}

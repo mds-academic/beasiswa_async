@@ -23,6 +23,11 @@
   - Pembuatan Google Spreadsheet baru terpusat: `1s6VVCGLPwiGWYwBNiR-4lrnB5XWcOV0l7pAIcgyif-k` ([UOB My Digital Space Master Database](https://docs.google.com/spreadsheets/d/1s6VVCGLPwiGWYwBNiR-4lrnB5XWcOV0l7pAIcgyif-k/edit)).
   - Container-bound Apps Script project terpasang dan terdeploy via Clasp: `AKfycbxeN6qSeNLl3G08JkKsJ1HTGLzk7smy4idTfpJgA4LxvgI_WR9G0JKeg9qohVDV4yyd`.
   - Sinkronisasi progres dua arah (Local Storage & Server-First Sync via Apps Script) terpasang di `src/app.js`.
+- **Implementasi Scaffolding Pedagogis SMP-SMA Selesai & Lolos Verifikasi (Fase 0 s.d. Fase 6)**:
+  - Berkas HTML materi jembatan lengkap: 5 SMA (`bridge-hs-01` s.d. `bridge-hs-05`) dan 4 SMP (`bridge-ms-00` revisi bersih tanpa TinyDB, `bridge-ms-01` s.d. `bridge-ms-03`).
+  - Dataset kurikulum baru `courseData-highschool.json` (12 langkah kanonik) dan `courseData-middleschool.json` (11 langkah kanonik) aktif.
+  - Seluruh kuis 99999 dikonversi menjadi manual/project checkpoint tanpa autoplay palsu.
+  - Seluruh berkas tersinkronisasi penuh ke `slides/`, `output/`, `subprojects/01-lms-platform/src/`, dan `docs/`.
 
 ## Blockers & Open Questions
 
@@ -30,5 +35,5 @@
 
 ## Concrete Next Steps
 
-1. Verifikasi integrasi data siswa riil di tab `ops-student-data` pada Google Spreadsheet baru.
-2. Pengujian end-to-end pemutaran video YouTube dan pengerjaan kuis interaktif di browser.
+1. UAT dan verifikasi alur belajar di platform LMS (`http://localhost:8080/`).
+2. Evaluasi pengerjaan siswa pada mini lab interaktif dan kuis pemahaman mandiri.

@@ -7,18 +7,42 @@
   "type": "slides",
   "summary": "Pahami konsep Event-Driven Programming di App Inventor: komputer menunggu kejadian (when Button.Click) sebelum bertindak. Pelajari cara mengambil input dari TextBox.Text, menggabungkannya dengan blok join, menampilkannya di Label.Text, dan menyimpan nilai ke variabel blok.",
   "bookmarks": [
-    { "slideIndex": 0, "label": "1. Bagaimana Aplikasi Bereaksi?" },
-    { "slideIndex": 1, "label": "2. Blok Emas: when Button.Click" },
-    { "slideIndex": 2, "label": "3. Membaca Input: TextBox.Text" },
-    { "slideIndex": 3, "label": "4. Menampilkan Output: Label.Text" },
-    { "slideIndex": 4, "label": "5. Menggabungkan Kata: Blok join" },
-    { "slideIndex": 5, "label": "6. Variabel: Memori Sementara Blok" },
-    { "slideIndex": 6, "label": "7. Rangkuman & Kuis Cek Pemahaman" }
+    {
+      "slideIndex": 0,
+      "label": "1. Bagaimana Aplikasi Bereaksi?"
+    },
+    {
+      "slideIndex": 1,
+      "label": "2. Blok Emas: when Button.Click"
+    },
+    {
+      "slideIndex": 2,
+      "label": "3. Membaca Input: TextBox.Text"
+    },
+    {
+      "slideIndex": 3,
+      "label": "4. Menampilkan Output: Label.Text"
+    },
+    {
+      "slideIndex": 4,
+      "label": "5. Menggabungkan Kata: Blok join"
+    },
+    {
+      "slideIndex": 5,
+      "label": "6. Variabel: Memori Sementara Blok"
+    },
+    {
+      "slideIndex": 6,
+      "label": "7. Rangkuman & Kuis Cek Pemahaman"
+    }
   ],
   "slides": [
     {
       "slideIndex": 0,
-      "tagPill": { "text": "⚡ Logika Aplikasi", "color": "yellow" },
+      "tagPill": {
+        "text": "⚡ Logika Aplikasi",
+        "color": "yellow"
+      },
       "title": "Bagaimana Aplikasi Bereaksi terhadap Pengguna?",
       "highlights": [
         {
@@ -41,7 +65,10 @@
     },
     {
       "slideIndex": 1,
-      "tagPill": { "text": "🟡 Blok Kuning Emas", "color": "blue" },
+      "tagPill": {
+        "text": "🟡 Blok Kuning Emas",
+        "color": "blue"
+      },
       "title": "Blok Emas: when Button.Click do",
       "highlights": [
         {
@@ -64,7 +91,10 @@
     },
     {
       "slideIndex": 2,
-      "tagPill": { "text": "📝 Mengambil Input", "color": "green" },
+      "tagPill": {
+        "text": "📝 Mengambil Input",
+        "color": "green"
+      },
       "title": "Membaca Masukan Pengguna: TextBox.Text",
       "highlights": [
         {
@@ -87,7 +117,10 @@
     },
     {
       "slideIndex": 3,
-      "tagPill": { "text": "🖥️ Menampilkan Output", "color": "pink" },
+      "tagPill": {
+        "text": "🖥️ Menampilkan Output",
+        "color": "pink"
+      },
       "title": "Menampilkan Jawaban: Mengubah Label.Text",
       "highlights": [
         {
@@ -110,7 +143,10 @@
     },
     {
       "slideIndex": 4,
-      "tagPill": { "text": "🧩 Mengolah Data", "color": "yellow" },
+      "tagPill": {
+        "text": "🧩 Mengolah Data",
+        "color": "yellow"
+      },
       "title": "Menggabungkan Kata: Blok 'join'",
       "highlights": [
         {
@@ -133,7 +169,10 @@
     },
     {
       "slideIndex": 5,
-      "tagPill": { "text": "📦 Memori Sementara", "color": "blue" },
+      "tagPill": {
+        "text": "📦 Memori Sementara",
+        "color": "blue"
+      },
       "title": "Variabel Blok: Menyimpan Data Sementara",
       "highlights": [
         {
@@ -156,7 +195,10 @@
     },
     {
       "slideIndex": 6,
-      "tagPill": { "text": "🏆 Cek Pemahaman", "color": "green" },
+      "tagPill": {
+        "text": "🏆 Cek Pemahaman",
+        "color": "green"
+      },
       "title": "Rangkuman Materi & Cek Pemahaman",
       "highlights": [
         {

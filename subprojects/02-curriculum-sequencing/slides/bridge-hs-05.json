@@ -1,0 +1,59 @@
+{
+  "id": "bridge-hs-05",
+  "level": "SMA",
+  "kicker": "Materi Jembatan 05 · Struktur Data Lanjutan",
+  "title": "Kamus Data: Menyimpan Transaksi dengan Dictionary",
+  "duration": "8 Menit Baca & Praktik",
+  "type": "slides",
+  "embedUrl": "slides/bridge-hs-05.html",
+  "summary": "Kuasai struktur data Dictionary {key: value} untuk menyimpan data berpasangan, akses dan perbarui nilai melalui kuncinya, susun tabel data profesional dalam format List of Dictionaries, dan catat transaksi baru dengan .append().",
+  "totalSlides": 8,
+  "bookmarks": [
+    {
+      "slideIndex": 0,
+      "label": "1. Keterbatasan List Tunggal untuk Data Keuangan"
+    },
+    {
+      "slideIndex": 1,
+      "label": "2. Konsep Pasangan Key-Value Pair"
+    },
+    {
+      "slideIndex": 2,
+      "label": "3. Cara Mengakses & Mengubah Dictionary"
+    },
+    {
+      "slideIndex": 3,
+      "label": "4. Standar Industri: List of Dictionaries"
+    },
+    {
+      "slideIndex": 4,
+      "label": "5. Menambahkan Transaksi dengan .append()"
+    },
+    {
+      "slideIndex": 5,
+      "label": "6. Simulator Buku Kas Digital Interaktif"
+    },
+    {
+      "slideIndex": 6,
+      "label": "7. Kuis Pemahaman Mandiri"
+    },
+    {
+      "slideIndex": 7,
+      "label": "8. Rangkuman & Pintu Masuk Proyek Finansial"
+    }
+  ],
+  "learningObjectives": [
+    "Memahami konsep Key-Value pair pada struktur Dictionary { }",
+    "Mengakses nilai dictionary menggunakan kuncinya: data['key']",
+    "Menyimpan sekumpulan record transaksi dalam format List of Dictionaries",
+    "Menambahkan item transaksi baru ke dalam list riwayat dengan .append()"
+  ],
+  "practice": {
+    "type": "simulation",
+    "description": "Buku kas digital interaktif menambah dan melihat struktur data JSON dictionary"
+  },
+  "completionCriteria": {
+    "quizScoreMin": 100,
+    "interactiveCompleted": true
+  }
+}

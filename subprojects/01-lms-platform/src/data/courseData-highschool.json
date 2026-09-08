@@ -1,13 +1,13 @@
 {
-  "levelId": "high_school",
-  "levelTitle": "Pemrograman Python SMA (UOB My Digital Space)",
-  "description": "Kurikulum koding terstruktur dari konsep data, pengambilan keputusan, perulangan, hingga pembuatan aplikasi finansial yang aman.",
+  "levelId": "highschool",
+  "levelTitle": "Tingkat SMA / SMK (Python & Financial Technology)",
+  "version": "1.0-scaffolded",
+  "updatedAt": "2026-09-08T23:25:00+07:00",
+  "description": "Kurikulum Asinkronus Python & Literasi Finansial dengan Jembatan Pedagogis Eksplisit (Bridge HS-00 s.d. HS-05)",
   "modules": [
     {
       "id": "hs-mod-00",
-      "order": 0,
-      "title": "Modul 0: Orientasi Pembelajaran Asinkronus",
-      "description": "Panduan cara belajar mandiri, fitur navigasi kuis interaktif, dan tips sukses belajar coding.",
+      "title": "Modul 0: Orientasi & Fondasi Lingkungan Python",
       "steps": [
         {
           "id": "hs-0-0",
@@ -80,15 +80,92 @@
                 }
               ]
             }
-          ]
+          ],
+          "sourceStepId": "hs-0-0",
+          "prerequisiteStepIds": []
+        },
+        {
+          "id": "bridge-hs-00",
+          "type": "slide",
+          "kicker": "Materi Jembatan 00 · Dasar Python & Cloud Editor",
+          "title": "Panduan Lengkap Google Colab & Pemrograman Python Pertamaku",
+          "duration": "8 Menit Baca Mandiri & Praktik",
+          "slideUrl": "./slides/bridge-hs-00.html",
+          "prerequisiteStepIds": [
+            "hs-0-0"
+          ],
+          "learningObjectives": [],
+          "practice": {
+            "type": "interactive_slide",
+            "description": "Latihan interaktif di dalam slide"
+          },
+          "completionCriteria": {
+            "quizScoreMin": 100
+          },
+          "bookmarks": [],
+          "quizzes": [],
+          "sourceStepId": "bridge-hs-00"
+        },
+        {
+          "id": "bridge-hs-01",
+          "type": "slide",
+          "kicker": "Materi Jembatan 01 · Dasar Python",
+          "title": "Variabel dan Tipe Data Tanpa Takut",
+          "duration": "8 Menit Baca & Praktik",
+          "slideUrl": "./slides/bridge-hs-01.html",
+          "prerequisiteStepIds": [
+            "bridge-hs-00"
+          ],
+          "learningObjectives": [],
+          "practice": {
+            "type": "interactive_slide",
+            "description": "Latihan interaktif di dalam slide"
+          },
+          "completionCriteria": {
+            "quizScoreMin": 100
+          },
+          "bookmarks": [
+            {
+              "slideIndex": 0,
+              "label": "1. Analogi Kotak Berlabel"
+            },
+            {
+              "slideIndex": 1,
+              "label": "2. Membuat Variabel di Python"
+            },
+            {
+              "slideIndex": 2,
+              "label": "3. Tipe Data: String (Teks)"
+            },
+            {
+              "slideIndex": 3,
+              "label": "4. Tipe Data: Integer & Float"
+            },
+            {
+              "slideIndex": 4,
+              "label": "5. Jebakan: Teks '10' vs Angka 10"
+            },
+            {
+              "slideIndex": 5,
+              "label": "6. Tipe Data: Boolean (Benar/Salah)"
+            },
+            {
+              "slideIndex": 6,
+              "label": "7. Menghitung Nilai Variabel"
+            },
+            {
+              "slideIndex": 7,
+              "label": "8. Rangkuman & Kuis Cek Pemahaman"
+            }
+          ],
+          "quizzes": [],
+          "sourceStepId": "bridge-hs-01"
         }
       ]
     },
     {
       "id": "hs-mod-01",
-      "order": 1,
-      "title": "Modul 1: Fondasi Data — Input, Tipe Data & Validasi",
-      "description": "Memahami cara program menerima data pengguna, perbedaan teks dan angka, serta teknik sanitasi input.",
+      "title": "Modul 1: Fondasi Data — Input Pengguna & Konversi Logika",
       "steps": [
         {
           "id": "hs-1-1",
@@ -157,144 +234,78 @@
                 }
               ]
             }
+          ],
+          "sourceStepId": "hs-1-1",
+          "prerequisiteStepIds": [
+            "bridge-hs-01"
           ]
         },
         {
-          "id": "hs-1-2",
-          "type": "video",
-          "kicker": "Materi 02",
-          "title": "Sanitasi & Validasi Input dalam Program Keuangan",
-          "duration": "14 Menit",
-          "videoId": "pKYN1E60xtU",
-          "startSeconds": 761,
-          "endSeconds": 1585,
+          "id": "bridge-hs-02",
+          "type": "slide",
+          "kicker": "Materi Jembatan 02 · Dasar Python",
+          "title": "Dari Input Teks Menjadi Logika Keputusan",
+          "duration": "8 Menit Baca & Praktik",
+          "slideUrl": "./slides/bridge-hs-02.html",
+          "prerequisiteStepIds": [
+            "hs-1-1"
+          ],
+          "learningObjectives": [
+            "Mengetahui bahwa input() selalu menghasilkan tipe String (teks)",
+            "Mengubah teks angka menjadi integer dengan int() dan float()",
+            "Menggunakan operator perbandingan untuk menghasilkan Boolean",
+            "Menerapkan aturan indentasi 4 spasi dalam blok percabangan if-else"
+          ],
+          "practice": {
+            "type": "simulation",
+            "description": "Simulasi pengecekan saldo kas dan konversi input belanja"
+          },
+          "completionCriteria": {
+            "quizScoreMin": 100,
+            "interactiveCompleted": true
+          },
           "bookmarks": [
             {
-              "time": 761,
-              "label": "Validasi Input Kosong 📭"
+              "slideIndex": 0,
+              "label": "1. Mengapa Input Perlu Perlakuan Khusus?"
             },
             {
-              "time": 918,
-              "label": "Validasi Jenis Transaksi 🔄"
+              "slideIndex": 1,
+              "label": "2. Rahasia Terbesar input(): Selalu String"
             },
             {
-              "time": 1020,
-              "label": "Kenapa Nominal Negatif Berbahaya? ⚠️"
+              "slideIndex": 2,
+              "label": "3. Konversi Tipe Data: int() & float()"
             },
             {
-              "time": 1268,
-              "label": "Membuat Function clean_text 🧼"
+              "slideIndex": 3,
+              "label": "4. Operator Perbandingan & Boolean"
             },
             {
-              "time": 1415,
-              "label": "Function validate_type & validate_amount ✅"
+              "slideIndex": 4,
+              "label": "5. Aturan Indentasi Percabangan if-else"
             },
             {
-              "time": 1576,
-              "label": "Kuis Sanitasi dan Validasi 🧠"
+              "slideIndex": 5,
+              "label": "6. Simulator Pengecekan Saldo Kas"
+            },
+            {
+              "slideIndex": 6,
+              "label": "7. Kuis Pemahaman Mandiri"
+            },
+            {
+              "slideIndex": 7,
+              "label": "8. Rangkuman & Bekal Menuju Modul 2"
             }
           ],
-          "quizzes": [
-            {
-              "time": 1077,
-              "resume": false,
-              "questions": [
-                {
-                  "type": "info",
-                  "title": "Bahayanya Angka Negatif! ⚠️",
-                  "html": "\n              <div style=\"font-family: 'Outfit', sans-serif; text-align: center;\">\n                <style>\n                  @keyframes mathFail {\n                    0%, 20% { content: '1.000 - (-5.000)'; color: #1a1a1a; transform: scale(1); }\n                    40%, 60% { content: '1.000 + 5.000'; color: #ff3333; transform: scale(1.1); }\n                    80%, 100% { content: '= 6.000 😱'; color: #ff3333; transform: scale(1.2); }\n                  }\n                  .math-anim::after {\n                    content: '1.000 - (-5.000)';\n                    display: inline-block;\n                    animation: mathFail 5s infinite;\n                    font-weight: 900;\n                    font-size: 28px;\n                  }\n                </style>\n                <div style=\"display: inline-block; background-color: #ff3333; padding: 10px 24px; border-radius: 12px; border: 3px solid #1a1a1a; box-shadow: 4px 4px 0px #1a1a1a; margin-bottom: 24px;\">\n                  <h3 style=\"margin: 0; font-size: 22px; font-weight: 800; color: #fff;\">Info Penting: Bahayanya Angka Negatif! ⚠️</h3>\n                </div>\n                <p style=\"font-size: 18px; font-weight: 600; text-align: left; background: #f0f0f0; padding: 16px; border-radius: 8px; color: #1a1a1a; border: 2px solid #1a1a1a;\">\n                  Bayangkan saldo awalmu <strong>Rp 1.000</strong>.<br><br>\n                  Lalu ada pengguna usil yang memasukkan pengeluaran <strong>-5.000</strong>.<br>\n                  Sistem akan menghitung: <code style=\"background: #ffeb3b; padding: 4px 8px; border-radius: 4px;\">Saldo = Saldo Awal - Pengeluaran</code>\n                </p>\n                <div style=\"margin: 30px 0; min-height: 50px;\" class=\"math-anim\"></div>\n                <p style=\"font-size: 18px; font-weight: 800; color: #ff3333; border: 3px dashed #ff3333; padding: 12px; border-radius: 8px;\">\n                  Aneh kan? Saldo malah bertambah jadi 6.000! 🤯<br>Kalian ingat pelajaran Matematika? <strong>Minus ketemu Minus jadinya Plus!</strong><br><br>Itulah kenapa kita HARUS memvalidasi angka agar tidak boleh kurang dari 0.\n                </p>\n              </div>\n            "
-                }
-              ]
-            },
-            {
-              "time": 1583,
-              "resume": false,
-              "questions": [
-                {
-                  "type": "input",
-                  "title": "Latihan: Lengkapi Function! 🧩",
-                  "html": "\n              <div style=\"text-align: left; font-family: 'Outfit', sans-serif;\">\n                <div style=\"display: inline-block; background-color: #ffe600; padding: 10px 24px; border-radius: 12px; border: 3px solid #1a1a1a; box-shadow: 4px 4px 0px #1a1a1a; margin-bottom: 24px; margin-top: 10px;\">\n                  <h3 style=\"margin: 0; font-size: 22px; font-weight: 800; color: #1a1a1a;\">Latihan: Lengkapi Function! 🧩</h3>\n                </div>\n                <p style=\"font-weight: 800; font-size: 18px; color: #1a1a1a; margin-bottom: 16px;\">Ketik nama function yang tepat untuk melengkapi kode di bawah ini!</p>\n                <div class=\"code-block\" style=\"background-color: #1a1a1a; padding: 24px; border-radius: 16px; font-family: 'Courier New', Courier, monospace; font-size: 16px; margin-bottom: 24px; border: 3px solid #ffe600; box-shadow: 4px 4px 0px #ffe600; color: #f8f8f2; line-height: 1.6; font-weight: bold; text-align: left;\">\n<span style=\"color: #ff79c6;\">def</span> <span style=\"background-color: #ffe600; color: #1a1a1a; padding: 2px 10px; border-radius: 4px;\">_________________</span>(text):<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"color: #ff79c6;\">return</span> text.strip().lower()<br><br>\ncategory = clean_text(<span style=\"color: #f1fa8c;\">\"  PENGELUARAN  \"</span>)<br>\n<span style=\"color: #8be9fd;\">print</span>(category)\n                </div>\n              </div>\n            ",
-                  "correct": "clean_text",
-                  "explanation": "Tepat sekali! Nama function-nya adalah clean_text."
-                },
-                {
-                  "type": "input",
-                  "title": "Latihan: Lengkapi Method! 🧩",
-                  "html": "\n              <div style=\"text-align: left; font-family: 'Outfit', sans-serif;\">\n                <div style=\"display: inline-block; background-color: #ffe600; padding: 10px 24px; border-radius: 12px; border: 3px solid #1a1a1a; box-shadow: 4px 4px 0px #1a1a1a; margin-bottom: 24px; margin-top: 10px;\">\n                  <h3 style=\"margin: 0; font-size: 22px; font-weight: 800; color: #1a1a1a;\">Latihan: Lengkapi Method! 🧩</h3>\n                </div>\n                <p style=\"font-weight: 800; font-size: 18px; color: #1a1a1a; margin-bottom: 16px;\">Bagus! Sekarang lengkapi baris return agar teks dibersihkan dari spasi berlebih dan diubah ke huruf kecil semua!</p>\n                <div class=\"code-block\" style=\"background-color: #1a1a1a; padding: 24px; border-radius: 16px; font-family: 'Courier New', Courier, monospace; font-size: 16px; margin-bottom: 24px; border: 3px solid #ffe600; box-shadow: 4px 4px 0px #ffe600; color: #f8f8f2; line-height: 1.6; font-weight: bold; text-align: left;\">\n<span style=\"color: #ff79c6;\">def</span> <span style=\"color: #50fa7b;\">clean_text</span>(text):<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"color: #ff79c6;\">return</span> text<span style=\"background-color: #ffe600; color: #1a1a1a; padding: 2px 10px; border-radius: 4px;\">__________________</span><br><br>\ncategory = clean_text(<span style=\"color: #f1fa8c;\">\"  PENGELUARAN  \"</span>)<br>\n<span style=\"color: #8be9fd;\">print</span>(category)\n                </div>\n              </div>\n            ",
-                  "correct": [
-                    ".strip().lower()",
-                    ".lower().strip()"
-                  ],
-                  "explanation": "Kombinasi .strip().lower() atau .lower().strip() sama-sama bisa digunakan dan sangat berguna untuk membersihkan teks input dari pengguna."
-                },
-                {
-                  "type": "input",
-                  "title": "Latihan: Lengkapi Function `validate_amount` 🧩",
-                  "html": "\n              <div style=\"text-align: left; font-family: 'Outfit', sans-serif;\">\n                <div style=\"display: inline-block; background-color: #ffe600; padding: 10px 24px; border-radius: 12px; border: 3px solid #1a1a1a; box-shadow: 4px 4px 0px #1a1a1a; margin-bottom: 24px; margin-top: 10px;\">\n                  <h3 style=\"margin: 0; font-size: 22px; font-weight: 800; color: #1a1a1a;\">Latihan: Lengkapi Function `validate_amount` 🧩</h3>\n                </div>\n                <p style=\"font-weight: 800; font-size: 18px; color: #1a1a1a; margin-bottom: 16px;\">Lengkapi function berikut agar nominal Rp0 atau negatif ditolak (mengembalikan nilai False):</p>\n                <div class=\"code-block\" style=\"background-color: #1a1a1a; padding: 24px; border-radius: 16px; font-family: 'Courier New', Courier, monospace; font-size: 16px; margin-bottom: 24px; border: 3px solid #ffe600; box-shadow: 4px 4px 0px #ffe600; color: #f8f8f2; line-height: 1.6; font-weight: bold; text-align: left;\">\n<span style=\"color: #ff79c6;\">def</span> <span style=\"color: #50fa7b;\">validate_amount</span>(amount):<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"color: #ff79c6;\">if</span> amount <span style=\"background-color: #ffe600; color: #1a1a1a; padding: 2px 10px; border-radius: 4px;\">_________</span> 0:<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"color: #ff79c6;\">return</span> <span style=\"color: #bd93f9;\">False</span><br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"color: #ff79c6;\">else</span>:<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"color: #ff79c6;\">return</span> <span style=\"color: #bd93f9;\">True</span>\n                </div>\n              </div>\n            ",
-                  "correct": "<=",
-                  "explanation": "Benar sekali! Operator <= artinya 'kurang dari atau sama dengan', jadi angka minus dan nol akan ditolak."
-                },
-                {
-                  "type": "custom",
-                  "title": "Kuis Kilat: Sanitasi vs Validasi ⚖️",
-                  "html": "\n              <div style=\"text-align: left; font-family: 'Outfit', sans-serif;\">\n                <div style=\"display: inline-block; background-color: #ffe600; padding: 10px 24px; border-radius: 12px; border: 3px solid #1a1a1a; box-shadow: 4px 4px 0px #1a1a1a; margin-bottom: 24px; margin-top: 10px;\">\n                  <h3 style=\"margin: 0; font-size: 22px; font-weight: 800; color: #1a1a1a;\">Kuis Kilat: Manakah yang termasuk tindakan VALIDASI?</h3>\n                </div>\n              </div>\n            ",
-                  "choices": [
-                    "Mengubah input 'PENGELUARAN' menjadi 'pengeluaran'",
-                    "Memastikan nominal tidak boleh negatif (<= 0)",
-                    "Membuang spasi kosong di depan dan belakang kata"
-                  ],
-                  "correct": "Memastikan nominal tidak boleh negatif (<= 0)",
-                  "explanation": "Memastikan nominal negatif adalah pengecekan aturan (Validasi), sedangkan sisanya mengubah format data (Sanitasi)."
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "hs-1-3",
-          "type": "project",
-          "kicker": "Mini Project",
-          "title": "Safe Transaction Input",
-          "duration": "2 Menit",
-          "videoId": "pKYN1E60xtU",
-          "startSeconds": 1590,
-          "endSeconds": 1695,
-          "bookmarks": [],
-          "quizzes": [
-            {
-              "time": 99999,
-              "resume": false,
-              "questions": [
-                {
-                  "type": "pyscript",
-                  "title": "Mini Project: Safe Transaction Input 🛡️",
-                  "html": "<p style=\"font-size: 18px; margin-bottom: 10px;\">Buat program pencatat transaksi sederhana yang menolak input tidak valid.</p><div style=\"background-color: rgba(0, 198, 255, 0.15); border: 4px solid var(--black); padding: 25px; border-radius: 16px; box-shadow: 6px 6px 0px var(--black); margin: 20px 0;\"><h3 style=\"margin-bottom: 10px; font-size: 20px;\">Syarat:</h3><ul style=\"padding-left: 25px; font-size: 18px; line-height: 1.6;\"><li>Minta input nama transaksi, jenis transaksi, dan nominal.</li><li>Nama transaksi tidak boleh kosong.</li><li>Jenis transaksi hanya boleh <code>pemasukan</code> atau <code>pengeluaran</code>.</li><li>Nominal harus lebih dari 0.</li><li>Jika semua valid, tampilkan dictionary transaksi.</li></ul></div>",
-                  "initialCode": "def clean_text(text):\n    return text.strip().lower()\n\nname = input(\"Nama transaksi: \").strip()\ntransaction_type = clean_text(input(\"Jenis transaksi: \"))\namount = int(input(\"Nominal transaksi: \"))\n\n# Lengkapi validasi di bawah ini!\n",
-                  "expectedCode": "def clean_text(text):\n    return text.strip().lower()\n\nname = input(\"Nama transaksi: \").strip()\ntransaction_type = clean_text(input(\"Jenis transaksi: \"))\namount = int(input(\"Nominal transaksi: \"))\n\nif name == \"\":\n    print(\"Nama transaksi tidak boleh kosong.\")\nelif transaction_type != \"pemasukan\" and transaction_type != \"pengeluaran\":\n    print(\"Jenis transaksi harus pemasukan atau pengeluaran.\")\nelif amount <= 0:\n    print(\"Nominal harus lebih dari 0.\")\nelse:\n    transaction = {\"name\": name, \"type\": transaction_type, \"amount\": amount}\n    print(\"Transaksi valid:\", transaction)",
-                  "requiredCodeIncludes": [
-                    "if",
-                    "elif",
-                    "<=",
-                    "transaction"
-                  ],
-                  "successKeywords": [
-                    "Transaksi valid",
-                    "Snack",
-                    "pengeluaran",
-                    "10000"
-                  ]
-                }
-              ]
-            }
-          ]
+          "quizzes": [],
+          "sourceStepId": "bridge-hs-02"
         }
       ]
     },
     {
       "id": "hs-mod-02",
-      "order": 2,
       "title": "Modul 2: Logika Percabangan — Conditional Logic (If-Else)",
-      "description": "Membuat program yang mampu mengambil keputusan cerdas berdasarkan data input.",
       "steps": [
         {
           "id": "hs-2-1",
@@ -366,6 +377,10 @@
                 }
               ]
             }
+          ],
+          "sourceStepId": "hs-2-1",
+          "prerequisiteStepIds": [
+            "bridge-hs-02"
           ]
         },
         {
@@ -477,6 +492,10 @@
                 }
               ]
             }
+          ],
+          "sourceStepId": "hs-2-2",
+          "prerequisiteStepIds": [
+            "hs-2-1"
           ]
         },
         {
@@ -525,6 +544,10 @@
                 }
               ]
             }
+          ],
+          "sourceStepId": "hs-2-3",
+          "prerequisiteStepIds": [
+            "hs-2-2"
           ]
         },
         {
@@ -568,6 +591,10 @@
                 }
               ]
             }
+          ],
+          "sourceStepId": "hs-2-4",
+          "prerequisiteStepIds": [
+            "hs-2-3"
           ]
         },
         {
@@ -641,6 +668,10 @@
                 }
               ]
             }
+          ],
+          "sourceStepId": "hs-2-5",
+          "prerequisiteStepIds": [
+            "hs-2-4"
           ]
         },
         {
@@ -731,6 +762,10 @@
                 }
               ]
             }
+          ],
+          "sourceStepId": "hs-2-6",
+          "prerequisiteStepIds": [
+            "hs-2-5"
           ]
         },
         {
@@ -743,7 +778,6 @@
           "startSeconds": 2137,
           "quizzes": [
             {
-              "time": 99999,
               "shown": false,
               "resume": false,
               "title": "VALIDASI PROYEK SMART BUDGET & RISK PLANNER",
@@ -760,18 +794,84 @@
                   "answer": "C",
                   "explanation": "Benar! (25.000 / 100.000) * 100 = 25%. Rasio tabungan >= 20% menunjukkan kondisi keuangan yang Sehat."
                 }
-              ]
+              ],
+              "type": "project_checkpoint",
+              "autoplay": false,
+              "note": "Checkpoint manual pengerjaan tugas proyek/latihan, tidak dipicu secara otomatis oleh video player."
             }
+          ],
+          "sourceStepId": "hs-2-7",
+          "prerequisiteStepIds": [
+            "hs-2-6"
           ]
         }
       ]
     },
     {
       "id": "hs-mod-03",
-      "order": 3,
       "title": "Modul 3: Otomasi & Desain Modular — Loops & Functions",
-      "description": "Mengotomatisasi tugas berulang dengan loop dan merapikan kode menggunakan functions.",
       "steps": [
+        {
+          "id": "bridge-hs-03",
+          "type": "slide",
+          "kicker": "Materi Jembatan 03 · Logika Iterasi",
+          "title": "Mengulang Tanpa Bosan: List dan For Loop",
+          "duration": "8 Menit Baca & Praktik",
+          "slideUrl": "./slides/bridge-hs-03.html",
+          "prerequisiteStepIds": [
+            "hs-2-7"
+          ],
+          "learningObjectives": [
+            "Membuat struktur data List dengan tanda kurung siku [ ]",
+            "Menjalankan perulangan for untuk memproses elemen list",
+            "Menggunakan range(start, stop) untuk hitungan berurutan",
+            "Menerapkan pola accumulator (total += biaya) untuk menghitung saldo"
+          ],
+          "practice": {
+            "type": "simulation",
+            "description": "Tracing interaktif perubahan nilai total akumulator transaksi"
+          },
+          "completionCriteria": {
+            "quizScoreMin": 100,
+            "interactiveCompleted": true
+          },
+          "bookmarks": [
+            {
+              "slideIndex": 0,
+              "label": "1. Masalah Besar Menulis 100 Variabel"
+            },
+            {
+              "slideIndex": 1,
+              "label": "2. Struktur Data List & Indeks Nol"
+            },
+            {
+              "slideIndex": 2,
+              "label": "3. Perulangan for item in list"
+            },
+            {
+              "slideIndex": 3,
+              "label": "4. Fungsi range() Generator Deret Angka"
+            },
+            {
+              "slideIndex": 4,
+              "label": "5. Pola Akumulator Menghitung Saldo"
+            },
+            {
+              "slideIndex": 5,
+              "label": "6. Visual Tracer Langkah Demi Langkah"
+            },
+            {
+              "slideIndex": 6,
+              "label": "7. Kuis Pemahaman Mandiri"
+            },
+            {
+              "slideIndex": 7,
+              "label": "8. Rangkuman & Bekal Menuju Modul 3"
+            }
+          ],
+          "quizzes": [],
+          "sourceStepId": "bridge-hs-03"
+        },
         {
           "id": "hs-3-1",
           "type": "video",
@@ -822,6 +922,10 @@
                 }
               ]
             }
+          ],
+          "sourceStepId": "hs-3-1",
+          "prerequisiteStepIds": [
+            "bridge-hs-03"
           ]
         },
         {
@@ -872,6 +976,10 @@
                 }
               ]
             }
+          ],
+          "sourceStepId": "hs-3-2",
+          "prerequisiteStepIds": [
+            "hs-3-1"
           ]
         },
         {
@@ -930,6 +1038,10 @@
                 }
               ]
             }
+          ],
+          "sourceStepId": "hs-3-3",
+          "prerequisiteStepIds": [
+            "hs-3-2"
           ]
         },
         {
@@ -953,7 +1065,6 @@
           ],
           "quizzes": [
             {
-              "time": 99999,
               "shown": false,
               "resume": false,
               "title": "VALIDASI SIMULATOR TARGET TABUNGAN",
@@ -970,9 +1081,77 @@
                   "answer": "B",
                   "explanation": "Tepat! Variabel 'bulan' bertindak sebagai counter iterasi loop untuk mencatat durasi waktu pencapaian target."
                 }
-              ]
+              ],
+              "type": "project_checkpoint",
+              "autoplay": false,
+              "note": "Checkpoint manual pengerjaan tugas proyek/latihan, tidak dipicu secara otomatis oleh video player."
             }
+          ],
+          "sourceStepId": "hs-3-4",
+          "prerequisiteStepIds": [
+            "hs-3-3"
           ]
+        },
+        {
+          "id": "bridge-hs-04",
+          "type": "slide",
+          "kicker": "Materi Jembatan 04 · Modularisasi Kode",
+          "title": "Fungsi: Mesin Cetak Kode Mandiri",
+          "duration": "8 Menit Baca & Praktik",
+          "slideUrl": "./slides/bridge-hs-04.html",
+          "prerequisiteStepIds": [
+            "hs-3-4"
+          ],
+          "learningObjectives": [
+            "Mendefinisikan fungsi sendiri dengan def nama_fungsi(parameter):",
+            "Membedakan parameter (wadah cetakan) dan argumen (nilai nyata)",
+            "Memahami perbedaan penting antara return dan print",
+            "Memanggil fungsi berulang kali dengan input berbeda"
+          ],
+          "practice": {
+            "type": "simulation",
+            "description": "Simulasi pemanggilan fungsi hitung_diskon dan penangkapan nilai return"
+          },
+          "completionCriteria": {
+            "quizScoreMin": 100,
+            "interactiveCompleted": true
+          },
+          "bookmarks": [
+            {
+              "slideIndex": 0,
+              "label": "1. Prinsip DRY: Don't Repeat Yourself"
+            },
+            {
+              "slideIndex": 1,
+              "label": "2. Anatomi Pembuatan Fungsi dengan def"
+            },
+            {
+              "slideIndex": 2,
+              "label": "3. Parameter vs Argumen"
+            },
+            {
+              "slideIndex": 3,
+              "label": "4. Perbedaan Krusial: return vs print()"
+            },
+            {
+              "slideIndex": 4,
+              "label": "5. Pemanggilan Fungsi Berulang Kali"
+            },
+            {
+              "slideIndex": 5,
+              "label": "6. Simulator Mesin Fungsi Diskon"
+            },
+            {
+              "slideIndex": 6,
+              "label": "7. Kuis Pemahaman Mandiri"
+            },
+            {
+              "slideIndex": 7,
+              "label": "8. Rangkuman & Bekal Menuju Modul 3.5"
+            }
+          ],
+          "quizzes": [],
+          "sourceStepId": "bridge-hs-04"
         },
         {
           "id": "hs-3-5",
@@ -1061,6 +1240,10 @@
                 }
               ]
             }
+          ],
+          "sourceStepId": "hs-3-5",
+          "prerequisiteStepIds": [
+            "bridge-hs-04"
           ]
         },
         {
@@ -1110,6 +1293,10 @@
                 }
               ]
             }
+          ],
+          "sourceStepId": "hs-3-6",
+          "prerequisiteStepIds": [
+            "hs-3-5"
           ]
         },
         {
@@ -1133,7 +1320,6 @@
           ],
           "quizzes": [
             {
-              "time": 99999,
               "shown": false,
               "resume": false,
               "title": "VALIDASI STRUKTURAL KASIR MODULAR",
@@ -1150,8 +1336,15 @@
                   "answer": "B",
                   "explanation": "Tepat! Fungsi mandiri mempermudah pemeliharaan kode (maintenance) dan pengujian (testing) tanpa efek samping pada modul lain."
                 }
-              ]
+              ],
+              "type": "project_checkpoint",
+              "autoplay": false,
+              "note": "Checkpoint manual pengerjaan tugas proyek/latihan, tidak dipicu secara otomatis oleh video player."
             }
+          ],
+          "sourceStepId": "hs-3-7",
+          "prerequisiteStepIds": [
+            "hs-3-6"
           ]
         },
         {
@@ -1215,16 +1408,220 @@
                 }
               ]
             }
+          ],
+          "sourceStepId": "hs-3-8",
+          "prerequisiteStepIds": [
+            "hs-3-7"
           ]
         }
       ]
     },
     {
       "id": "hs-mod-04",
-      "order": 4,
       "title": "Modul 4: Keamanan Kode — Error Handling & Dictionary",
-      "description": "Mencegah program crash dengan try-except dan mengorganisir data kompleks dengan dictionary.",
       "steps": [
+        {
+          "id": "bridge-hs-05",
+          "type": "slide",
+          "kicker": "Materi Jembatan 05 · Struktur Data Lanjutan",
+          "title": "Kamus Data: Menyimpan Transaksi dengan Dictionary",
+          "duration": "8 Menit Baca & Praktik",
+          "slideUrl": "./slides/bridge-hs-05.html",
+          "prerequisiteStepIds": [
+            "hs-3-8"
+          ],
+          "learningObjectives": [
+            "Memahami konsep Key-Value pair pada struktur Dictionary { }",
+            "Mengakses nilai dictionary menggunakan kuncinya: data['key']",
+            "Menyimpan sekumpulan record transaksi dalam format List of Dictionaries",
+            "Menambahkan item transaksi baru ke dalam list riwayat dengan .append()"
+          ],
+          "practice": {
+            "type": "simulation",
+            "description": "Buku kas digital interaktif menambah dan melihat struktur data JSON dictionary"
+          },
+          "completionCriteria": {
+            "quizScoreMin": 100,
+            "interactiveCompleted": true
+          },
+          "bookmarks": [
+            {
+              "slideIndex": 0,
+              "label": "1. Keterbatasan List Tunggal untuk Data Keuangan"
+            },
+            {
+              "slideIndex": 1,
+              "label": "2. Konsep Pasangan Key-Value Pair"
+            },
+            {
+              "slideIndex": 2,
+              "label": "3. Cara Mengakses & Mengubah Dictionary"
+            },
+            {
+              "slideIndex": 3,
+              "label": "4. Standar Industri: List of Dictionaries"
+            },
+            {
+              "slideIndex": 4,
+              "label": "5. Menambahkan Transaksi dengan .append()"
+            },
+            {
+              "slideIndex": 5,
+              "label": "6. Simulator Buku Kas Digital Interaktif"
+            },
+            {
+              "slideIndex": 6,
+              "label": "7. Kuis Pemahaman Mandiri"
+            },
+            {
+              "slideIndex": 7,
+              "label": "8. Rangkuman & Pintu Masuk Proyek Finansial"
+            }
+          ],
+          "quizzes": [],
+          "sourceStepId": "bridge-hs-05"
+        },
+        {
+          "id": "hs-1-2",
+          "type": "video",
+          "kicker": "Materi 02",
+          "title": "Sanitasi & Validasi Input dalam Program Keuangan",
+          "duration": "14 Menit",
+          "videoId": "pKYN1E60xtU",
+          "startSeconds": 761,
+          "endSeconds": 1585,
+          "bookmarks": [
+            {
+              "time": 761,
+              "label": "Validasi Input Kosong 📭"
+            },
+            {
+              "time": 918,
+              "label": "Validasi Jenis Transaksi 🔄"
+            },
+            {
+              "time": 1020,
+              "label": "Kenapa Nominal Negatif Berbahaya? ⚠️"
+            },
+            {
+              "time": 1268,
+              "label": "Membuat Function clean_text 🧼"
+            },
+            {
+              "time": 1415,
+              "label": "Function validate_type & validate_amount ✅"
+            },
+            {
+              "time": 1576,
+              "label": "Kuis Sanitasi dan Validasi 🧠"
+            }
+          ],
+          "quizzes": [
+            {
+              "time": 1077,
+              "resume": false,
+              "questions": [
+                {
+                  "type": "info",
+                  "title": "Bahayanya Angka Negatif! ⚠️",
+                  "html": "\n              <div style=\"font-family: 'Outfit', sans-serif; text-align: center;\">\n                <style>\n                  @keyframes mathFail {\n                    0%, 20% { content: '1.000 - (-5.000)'; color: #1a1a1a; transform: scale(1); }\n                    40%, 60% { content: '1.000 + 5.000'; color: #ff3333; transform: scale(1.1); }\n                    80%, 100% { content: '= 6.000 😱'; color: #ff3333; transform: scale(1.2); }\n                  }\n                  .math-anim::after {\n                    content: '1.000 - (-5.000)';\n                    display: inline-block;\n                    animation: mathFail 5s infinite;\n                    font-weight: 900;\n                    font-size: 28px;\n                  }\n                </style>\n                <div style=\"display: inline-block; background-color: #ff3333; padding: 10px 24px; border-radius: 12px; border: 3px solid #1a1a1a; box-shadow: 4px 4px 0px #1a1a1a; margin-bottom: 24px;\">\n                  <h3 style=\"margin: 0; font-size: 22px; font-weight: 800; color: #fff;\">Info Penting: Bahayanya Angka Negatif! ⚠️</h3>\n                </div>\n                <p style=\"font-size: 18px; font-weight: 600; text-align: left; background: #f0f0f0; padding: 16px; border-radius: 8px; color: #1a1a1a; border: 2px solid #1a1a1a;\">\n                  Bayangkan saldo awalmu <strong>Rp 1.000</strong>.<br><br>\n                  Lalu ada pengguna usil yang memasukkan pengeluaran <strong>-5.000</strong>.<br>\n                  Sistem akan menghitung: <code style=\"background: #ffeb3b; padding: 4px 8px; border-radius: 4px;\">Saldo = Saldo Awal - Pengeluaran</code>\n                </p>\n                <div style=\"margin: 30px 0; min-height: 50px;\" class=\"math-anim\"></div>\n                <p style=\"font-size: 18px; font-weight: 800; color: #ff3333; border: 3px dashed #ff3333; padding: 12px; border-radius: 8px;\">\n                  Aneh kan? Saldo malah bertambah jadi 6.000! 🤯<br>Kalian ingat pelajaran Matematika? <strong>Minus ketemu Minus jadinya Plus!</strong><br><br>Itulah kenapa kita HARUS memvalidasi angka agar tidak boleh kurang dari 0.\n                </p>\n              </div>\n            "
+                }
+              ]
+            },
+            {
+              "time": 1583,
+              "resume": false,
+              "questions": [
+                {
+                  "type": "input",
+                  "title": "Latihan: Lengkapi Function! 🧩",
+                  "html": "\n              <div style=\"text-align: left; font-family: 'Outfit', sans-serif;\">\n                <div style=\"display: inline-block; background-color: #ffe600; padding: 10px 24px; border-radius: 12px; border: 3px solid #1a1a1a; box-shadow: 4px 4px 0px #1a1a1a; margin-bottom: 24px; margin-top: 10px;\">\n                  <h3 style=\"margin: 0; font-size: 22px; font-weight: 800; color: #1a1a1a;\">Latihan: Lengkapi Function! 🧩</h3>\n                </div>\n                <p style=\"font-weight: 800; font-size: 18px; color: #1a1a1a; margin-bottom: 16px;\">Ketik nama function yang tepat untuk melengkapi kode di bawah ini!</p>\n                <div class=\"code-block\" style=\"background-color: #1a1a1a; padding: 24px; border-radius: 16px; font-family: 'Courier New', Courier, monospace; font-size: 16px; margin-bottom: 24px; border: 3px solid #ffe600; box-shadow: 4px 4px 0px #ffe600; color: #f8f8f2; line-height: 1.6; font-weight: bold; text-align: left;\">\n<span style=\"color: #ff79c6;\">def</span> <span style=\"background-color: #ffe600; color: #1a1a1a; padding: 2px 10px; border-radius: 4px;\">_________________</span>(text):<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"color: #ff79c6;\">return</span> text.strip().lower()<br><br>\ncategory = clean_text(<span style=\"color: #f1fa8c;\">\"  PENGELUARAN  \"</span>)<br>\n<span style=\"color: #8be9fd;\">print</span>(category)\n                </div>\n              </div>\n            ",
+                  "correct": "clean_text",
+                  "explanation": "Tepat sekali! Nama function-nya adalah clean_text."
+                },
+                {
+                  "type": "input",
+                  "title": "Latihan: Lengkapi Method! 🧩",
+                  "html": "\n              <div style=\"text-align: left; font-family: 'Outfit', sans-serif;\">\n                <div style=\"display: inline-block; background-color: #ffe600; padding: 10px 24px; border-radius: 12px; border: 3px solid #1a1a1a; box-shadow: 4px 4px 0px #1a1a1a; margin-bottom: 24px; margin-top: 10px;\">\n                  <h3 style=\"margin: 0; font-size: 22px; font-weight: 800; color: #1a1a1a;\">Latihan: Lengkapi Method! 🧩</h3>\n                </div>\n                <p style=\"font-weight: 800; font-size: 18px; color: #1a1a1a; margin-bottom: 16px;\">Bagus! Sekarang lengkapi baris return agar teks dibersihkan dari spasi berlebih dan diubah ke huruf kecil semua!</p>\n                <div class=\"code-block\" style=\"background-color: #1a1a1a; padding: 24px; border-radius: 16px; font-family: 'Courier New', Courier, monospace; font-size: 16px; margin-bottom: 24px; border: 3px solid #ffe600; box-shadow: 4px 4px 0px #ffe600; color: #f8f8f2; line-height: 1.6; font-weight: bold; text-align: left;\">\n<span style=\"color: #ff79c6;\">def</span> <span style=\"color: #50fa7b;\">clean_text</span>(text):<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"color: #ff79c6;\">return</span> text<span style=\"background-color: #ffe600; color: #1a1a1a; padding: 2px 10px; border-radius: 4px;\">__________________</span><br><br>\ncategory = clean_text(<span style=\"color: #f1fa8c;\">\"  PENGELUARAN  \"</span>)<br>\n<span style=\"color: #8be9fd;\">print</span>(category)\n                </div>\n              </div>\n            ",
+                  "correct": [
+                    ".strip().lower()",
+                    ".lower().strip()"
+                  ],
+                  "explanation": "Kombinasi .strip().lower() atau .lower().strip() sama-sama bisa digunakan dan sangat berguna untuk membersihkan teks input dari pengguna."
+                },
+                {
+                  "type": "input",
+                  "title": "Latihan: Lengkapi Function `validate_amount` 🧩",
+                  "html": "\n              <div style=\"text-align: left; font-family: 'Outfit', sans-serif;\">\n                <div style=\"display: inline-block; background-color: #ffe600; padding: 10px 24px; border-radius: 12px; border: 3px solid #1a1a1a; box-shadow: 4px 4px 0px #1a1a1a; margin-bottom: 24px; margin-top: 10px;\">\n                  <h3 style=\"margin: 0; font-size: 22px; font-weight: 800; color: #1a1a1a;\">Latihan: Lengkapi Function `validate_amount` 🧩</h3>\n                </div>\n                <p style=\"font-weight: 800; font-size: 18px; color: #1a1a1a; margin-bottom: 16px;\">Lengkapi function berikut agar nominal Rp0 atau negatif ditolak (mengembalikan nilai False):</p>\n                <div class=\"code-block\" style=\"background-color: #1a1a1a; padding: 24px; border-radius: 16px; font-family: 'Courier New', Courier, monospace; font-size: 16px; margin-bottom: 24px; border: 3px solid #ffe600; box-shadow: 4px 4px 0px #ffe600; color: #f8f8f2; line-height: 1.6; font-weight: bold; text-align: left;\">\n<span style=\"color: #ff79c6;\">def</span> <span style=\"color: #50fa7b;\">validate_amount</span>(amount):<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"color: #ff79c6;\">if</span> amount <span style=\"background-color: #ffe600; color: #1a1a1a; padding: 2px 10px; border-radius: 4px;\">_________</span> 0:<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"color: #ff79c6;\">return</span> <span style=\"color: #bd93f9;\">False</span><br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"color: #ff79c6;\">else</span>:<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"color: #ff79c6;\">return</span> <span style=\"color: #bd93f9;\">True</span>\n                </div>\n              </div>\n            ",
+                  "correct": "<=",
+                  "explanation": "Benar sekali! Operator <= artinya 'kurang dari atau sama dengan', jadi angka minus dan nol akan ditolak."
+                },
+                {
+                  "type": "custom",
+                  "title": "Kuis Kilat: Sanitasi vs Validasi ⚖️",
+                  "html": "\n              <div style=\"text-align: left; font-family: 'Outfit', sans-serif;\">\n                <div style=\"display: inline-block; background-color: #ffe600; padding: 10px 24px; border-radius: 12px; border: 3px solid #1a1a1a; box-shadow: 4px 4px 0px #1a1a1a; margin-bottom: 24px; margin-top: 10px;\">\n                  <h3 style=\"margin: 0; font-size: 22px; font-weight: 800; color: #1a1a1a;\">Kuis Kilat: Manakah yang termasuk tindakan VALIDASI?</h3>\n                </div>\n              </div>\n            ",
+                  "choices": [
+                    "Mengubah input 'PENGELUARAN' menjadi 'pengeluaran'",
+                    "Memastikan nominal tidak boleh negatif (<= 0)",
+                    "Membuang spasi kosong di depan dan belakang kata"
+                  ],
+                  "correct": "Memastikan nominal tidak boleh negatif (<= 0)",
+                  "explanation": "Memastikan nominal negatif adalah pengecekan aturan (Validasi), sedangkan sisanya mengubah format data (Sanitasi)."
+                }
+              ]
+            }
+          ],
+          "sourceStepId": "hs-1-2",
+          "prerequisiteStepIds": [
+            "bridge-hs-05"
+          ],
+          "pedagogicalNote": "Direlokasi ke Modul 4 setelah materi Function dan Dictionary sesuai rekomendasi Audit Pedagogis 2026-09-08."
+        },
+        {
+          "id": "hs-1-3",
+          "type": "project",
+          "kicker": "Mini Project",
+          "title": "Safe Transaction Input",
+          "duration": "2 Menit",
+          "videoId": "pKYN1E60xtU",
+          "startSeconds": 1590,
+          "endSeconds": 1695,
+          "bookmarks": [],
+          "quizzes": [
+            {
+              "resume": false,
+              "questions": [
+                {
+                  "type": "pyscript",
+                  "title": "Mini Project: Safe Transaction Input 🛡️",
+                  "html": "<p style=\"font-size: 18px; margin-bottom: 10px;\">Buat program pencatat transaksi sederhana yang menolak input tidak valid.</p><div style=\"background-color: rgba(0, 198, 255, 0.15); border: 4px solid var(--black); padding: 25px; border-radius: 16px; box-shadow: 6px 6px 0px var(--black); margin: 20px 0;\"><h3 style=\"margin-bottom: 10px; font-size: 20px;\">Syarat:</h3><ul style=\"padding-left: 25px; font-size: 18px; line-height: 1.6;\"><li>Minta input nama transaksi, jenis transaksi, dan nominal.</li><li>Nama transaksi tidak boleh kosong.</li><li>Jenis transaksi hanya boleh <code>pemasukan</code> atau <code>pengeluaran</code>.</li><li>Nominal harus lebih dari 0.</li><li>Jika semua valid, tampilkan dictionary transaksi.</li></ul></div>",
+                  "initialCode": "def clean_text(text):\n    return text.strip().lower()\n\nname = input(\"Nama transaksi: \").strip()\ntransaction_type = clean_text(input(\"Jenis transaksi: \"))\namount = int(input(\"Nominal transaksi: \"))\n\n# Lengkapi validasi di bawah ini!\n",
+                  "expectedCode": "def clean_text(text):\n    return text.strip().lower()\n\nname = input(\"Nama transaksi: \").strip()\ntransaction_type = clean_text(input(\"Jenis transaksi: \"))\namount = int(input(\"Nominal transaksi: \"))\n\nif name == \"\":\n    print(\"Nama transaksi tidak boleh kosong.\")\nelif transaction_type != \"pemasukan\" and transaction_type != \"pengeluaran\":\n    print(\"Jenis transaksi harus pemasukan atau pengeluaran.\")\nelif amount <= 0:\n    print(\"Nominal harus lebih dari 0.\")\nelse:\n    transaction = {\"name\": name, \"type\": transaction_type, \"amount\": amount}\n    print(\"Transaksi valid:\", transaction)",
+                  "requiredCodeIncludes": [
+                    "if",
+                    "elif",
+                    "<=",
+                    "transaction"
+                  ],
+                  "successKeywords": [
+                    "Transaksi valid",
+                    "Snack",
+                    "pengeluaran",
+                    "10000"
+                  ]
+                }
+              ],
+              "type": "project_checkpoint",
+              "autoplay": false,
+              "note": "Checkpoint manual pengerjaan tugas proyek/latihan, tidak dipicu secara otomatis oleh video player."
+            }
+          ],
+          "sourceStepId": "hs-1-3",
+          "prerequisiteStepIds": [
+            "hs-1-2"
+          ],
+          "pedagogicalNote": "Direlokasi ke Modul 4 setelah materi Function dan Dictionary sesuai rekomendasi Audit Pedagogis 2026-09-08."
+        },
         {
           "id": "hs-4-1",
           "type": "video",
@@ -1292,6 +1689,10 @@
                 }
               ]
             }
+          ],
+          "sourceStepId": "hs-4-1",
+          "prerequisiteStepIds": [
+            "hs-1-3"
           ]
         },
         {
@@ -1329,6 +1730,10 @@
                 }
               ]
             }
+          ],
+          "sourceStepId": "hs-4-2",
+          "prerequisiteStepIds": [
+            "hs-4-1"
           ]
         },
         {
@@ -1392,6 +1797,10 @@
                 }
               ]
             }
+          ],
+          "sourceStepId": "hs-4-3",
+          "prerequisiteStepIds": [
+            "hs-4-2"
           ]
         },
         {
@@ -1406,7 +1815,6 @@
           "bookmarks": [],
           "quizzes": [
             {
-              "time": 99999,
               "resume": false,
               "questions": [
                 {
@@ -1418,8 +1826,15 @@
                   "validationTest": "print(get_total(30000, 2))\nprint(get_discount(60000, True))\nprint(get_final_price(60000, 6000))",
                   "expectedOutput": "60000\n6000.0\n54000"
                 }
-              ]
+              ],
+              "type": "project_checkpoint",
+              "autoplay": false,
+              "note": "Checkpoint manual pengerjaan tugas proyek/latihan, tidak dipicu secara otomatis oleh video player."
             }
+          ],
+          "sourceStepId": "hs-4-4",
+          "prerequisiteStepIds": [
+            "hs-4-3"
           ]
         },
         {
@@ -1490,6 +1905,10 @@
                 }
               ]
             }
+          ],
+          "sourceStepId": "hs-4-5",
+          "prerequisiteStepIds": [
+            "hs-4-4"
           ]
         },
         {
@@ -1623,15 +2042,17 @@
               "start": 4387,
               "end": 4400
             }
+          ],
+          "sourceStepId": "hs-4-6",
+          "prerequisiteStepIds": [
+            "hs-4-5"
           ]
         }
       ]
     },
     {
       "id": "hs-mod-05",
-      "order": 5,
       "title": "Modul 5: Proyek Integrasi — Financial Literacy App",
-      "description": "Merancang dan membangun aplikasi finansial interaktif dari ide hingga integrasi kode.",
       "steps": [
         {
           "id": "hs-5-1",
@@ -1914,6 +2335,10 @@
                 }
               ]
             }
+          ],
+          "sourceStepId": "hs-5-1",
+          "prerequisiteStepIds": [
+            "hs-4-6"
           ]
         },
         {
@@ -2137,6 +2562,10 @@
                 }
               ]
             }
+          ],
+          "sourceStepId": "hs-5-2",
+          "prerequisiteStepIds": [
+            "hs-5-1"
           ]
         },
         {
@@ -2253,6 +2682,10 @@
                 }
               ]
             }
+          ],
+          "sourceStepId": "hs-5-3",
+          "prerequisiteStepIds": [
+            "hs-5-2"
           ]
         },
         {
@@ -2364,6 +2797,10 @@
                 }
               ]
             }
+          ],
+          "sourceStepId": "hs-5-4",
+          "prerequisiteStepIds": [
+            "hs-5-3"
           ]
         },
         {
@@ -2533,6 +2970,10 @@
                 }
               ]
             }
+          ],
+          "sourceStepId": "hs-5-5",
+          "prerequisiteStepIds": [
+            "hs-5-4"
           ]
         }
       ]

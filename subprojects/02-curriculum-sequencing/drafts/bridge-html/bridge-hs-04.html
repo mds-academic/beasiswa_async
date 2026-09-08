@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Jembatan 04 SMA: Fungsi: Mesin Cetak Kode Mandiri</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Consolas&display=swap" rel="stylesheet">
+    <style>
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --yellow: #FFE500;
+            --blue: #00C6FF;
+            --black: #1A1A1A;
+            --white: #FFFFFF;
+            --bg-light: #E8E8E8;
+            --green: #00E676;
+            --pink: #FF9DE2;
+            --red: #FF0055;
+            --purple: #C084FC;
+            --orange: #FF9F1C;
+        }
+        body {
+            background-color: var(--bg-light);
+            background-image: radial-gradient(#bcbcbc 2px, transparent 2px);
+            background-size: 30px 30px;
+            font-family: 'Fredoka', sans-serif;
+            color: var(--black);
+            overflow: hidden;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .app-container {
+            position: relative; z-index: 10;
+            width: 98vw; max-width: 1400px;
+            height: 98vh; max-height: 900px;
+            display: flex; flex-direction: column;
+        }
+        .header {
+            display: flex; justify-content: flex-start; align-items: flex-start;
+            padding: 25px 50px 10px;
+            position: relative;
+            width: 100%;
+        }
+        .banner-container { 
+            position: absolute; top: 20px; left: 0; width: 100%;
+            text-align: center; display: flex; flex-direction: column; align-items: center; 
+            z-index: 10; pointer-events: none;
+        }
+        .banner-shape {
+            background-color: var(--blue);
+            padding: 10px 50px;
+            border: 4px solid var(--black);
+            border-radius: 12px;
+            box-shadow: 6px 6px 0px var(--black);
+            display: inline-block;
+        }
+        .banner-text { 
+            font-size: 24px; font-weight: 700; letter-spacing: 2px; color: var(--white); 
+            text-shadow: 2px 2px 0px var(--black), -1px -1px 0px var(--black), 1px -1px 0px var(--black), -1px 1px 0px var(--black), 1px 1px 0px var(--black);
+        }
+        .banner-subtitle {
+            background-color: var(--yellow); 
+            color: var(--black); 
+            padding: 6px 36px; 
+            font-size: 15px; font-weight: 700;
+            border: 3px solid var(--black);
+            border-radius: 20px; 
+            margin-top: -12px; 
+            text-transform: uppercase; letter-spacing: 1px;
+            box-shadow: 4px 4px 0px var(--black);
+            display: inline-block;
+        }
+        .slides-area {
+            flex: 1; position: relative; margin: 25px 50px 0; perspective: 1200px;
+            min-height: 0; 
+        }
+        .slide {
+            position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+            display: none;
+        }
+        .slide.active { 
+            display: block; 
+            animation: popIn 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+        }
+        @keyframes popIn {
+            from { opacity: 0; transform: scale(0.96) translateY(15px); }
+            to { opacity: 1; transform: scale(1) translateY(0); }
+        }
+        .content-card {
+            background-color: var(--white);
+            border: 4px solid var(--black); 
+            border-radius: 24px;
+            padding: 35px 55px; 
+            box-shadow: 12px 12px 0px var(--black);
+            width: 100%; height: 100%; 
+            overflow-y: auto;
+            display: flex;
+            position: relative;
+        }
+        .inner-content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .slide-title {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 18px;
+            color: var(--black);
+            border-bottom: 4px dashed var(--black);
+            padding-bottom: 10px;
+        }
+        .slide-text {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #222222;
+        }
+        .slide-text p { margin-bottom: 14px; }
+        .feature-card {
+            background-color: #F8F9FA;
+            border: 3px solid var(--black);
+            border-radius: 16px;
+            padding: 18px 22px;
+            margin: 14px 0;
+            box-shadow: 6px 6px 0px var(--black);
+        }
+        .feature-card ul { margin-left: 25px; margin-bottom: 0; }
+        .feature-card li { margin-bottom: 8px; font-size: 17px; }
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 22px;
+            margin: 16px 0;
+        }
+        .code-box {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            border: 3px solid var(--black);
+            border-radius: 14px;
+            padding: 16px;
+            font-family: 'Consolas', monospace;
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 14px 0;
+            box-shadow: 5px 5px 0px var(--black);
+            overflow-x: auto;
+        }
+        .code-kw { color: #569cd6; font-weight: bold; }
+        .code-str { color: #ce9178; }
+        .code-num { color: #b5cea8; }
+        .code-fn { color: #dcdcaa; }
+        .code-cmt { color: #6a9955; font-style: italic; }
+        .code-bool { color: #4ec9b0; font-weight: bold; }
+        .styled-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            border: 3px solid var(--black);
+            box-shadow: 6px 6px 0px var(--black);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .styled-table th, .styled-table td {
+            border: 2px solid var(--black);
+            padding: 10px 16px;
+            font-size: 16px;
+            text-align: left;
+        }
+        .styled-table thead {
+            background-color: var(--yellow);
+            font-weight: 700;
+        }
+        .styled-table tbody tr:nth-child(even) {
+            background-color: #F9FAFB;
+        }
+        .interactive-card {
+            background: #FFFDE7;
+            border: 4px solid var(--black);
+            border-radius: 18px;
+            padding: 22px;
+            margin: 16px 0;
+            box-shadow: 8px 8px 0px var(--black);
+        }
+        .interactive-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .quiz-container {
+            margin: 14px 0;
+        }
+        .quiz-q {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        .quiz-options {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .quiz-opt {
+            background: var(--white);
+            border: 3px solid var(--black);
+            border-radius: 12px;
+            padding: 12px 18px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.15s;
+            text-align: left;
+        }
+        .quiz-opt:hover {
+            background: #FFF9C4;
+            transform: translate(-2px, -2px);
+            box-shadow: 4px 4px 0px var(--black);
+        }
+        .quiz-opt.correct {
+            background: var(--green) !important;
+            color: var(--black);
+        }
+        .quiz-opt.wrong {
+            background: var(--red) !important;
+            color: var(--white);
+        }
+        .quiz-feedback {
+            margin-top: 12px;
+            padding: 12px 18px;
+            border: 3px solid var(--black);
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 16px;
+            display: none;
+        }
+        .bottom-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px 25px;
+        }
+        .nav-container {
+            display: flex;
+            gap: 16px;
+        }
+        .nav-btn {
+            background-color: var(--yellow);
+            color: var(--black);
+            border: 3px solid var(--black);
+            border-radius: 14px;
+            padding: 10px 24px;
+            font-family: 'Fredoka', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 5px 5px 0px var(--black);
+            transition: 0.15s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .nav-btn:hover:not(:disabled) {
+            transform: translate(-2px, -2px);
+            box-shadow: 7px 7px 0px var(--black);
+        }
+        .nav-btn:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+            box-shadow: none;
+        }
+        .nav-btn.primary {
+            background-color: var(--green);
+        }
+        .progress-bar-container {
+            flex: 1;
+            max-width: 400px;
+            height: 20px;
+            background-color: var(--white);
+            border: 3px solid var(--black);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 4px 4px 0px var(--black);
+            margin: 0 25px;
+        }
+        .progress-bar-fill {
+            height: 100%;
+            background-color: var(--pink);
+            width: 12.5%;
+            transition: width 0.3s ease;
+        }
+        .slide-counter {
+            font-size: 18px;
+            font-weight: 700;
+            background: var(--white);
+            padding: 6px 16px;
+            border: 3px solid var(--black);
+            border-radius: 10px;
+            box-shadow: 3px 3px 0px var(--black);
+        }
+        .btn-action {
+            background: var(--green);
+            color: var(--black);
+            border: 3px solid var(--black);
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-family: 'Fredoka', sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 4px 4px 0px var(--black);
+            transition: 0.15s;
+        }
+        .btn-action:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px var(--black);
+        }
+        .input-mini {
+            padding: 8px 14px;
+            border: 3px solid var(--black);
+            border-radius: 8px;
+            font-family: 'Fredoka', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            margin: 4px 8px 4px 0;
+        }
+        .output-console {
+            background: #1e1e1e;
+            color: #00E676;
+            border: 3px solid var(--black);
+            border-radius: 10px;
+            padding: 14px 18px;
+            font-family: 'Consolas', monospace;
+            font-size: 16px;
+            margin-top: 12px;
+            box-shadow: 4px 4px 0px var(--black);
+        }
+        .badge-block {
+            display: inline-block;
+            padding: 4px 12px;
+            border: 2px solid var(--black);
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 14px;
+            margin: 2px 4px;
+            box-shadow: 2px 2px 0px var(--black);
+        }
+        .badge-event { background-color: #FFC107; color: #000; }
+        .badge-text { background-color: #E91E63; color: #fff; }
+        .badge-prop { background-color: #4CAF50; color: #fff; }
+        .badge-var { background-color: #FF9800; color: #fff; }
+        .badge-db { background-color: #9C27B0; color: #fff; }
+        .badge-call { background-color: #7C4DFF; color: #fff; }
+
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <div class="header">
+            <div class="banner-container">
+                <div class="banner-shape">
+                    <span class="banner-text" id="banner-title">FUNGSI DI PYTHON</span>
+                </div>
+                <div class="banner-subtitle" id="banner-subtitle">Kata Kunci def & Perbedaan return vs print</div>
+            </div>
+        </div>
+
+        <div class="slides-area">
+
+            <!-- Slide 1: Prinsip DRY -->
+            <div class="slide active" data-title="FUNGSI DI PYTHON" data-subtitle="Mesin Cetak Kode Mandiri">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">1. Prinsip DRY: Jangan Ulangi Dirimu Sendiri! 🔄</h2>
+                        <div class="slide-text">
+                            <p>Dalam dunia rekayasa perangkat lunak, ada prinsip terkenal bernama <strong>DRY (Don't Repeat Yourself)</strong>. Bayangkan jika tokomu memiliki rumus hitung pajak dan diskon 5 baris. Apakah kamu akan menyalin-tempel 5 baris kode itu di 50 tempat berbeda?</p>
+                            <div class="two-column">
+                                <div class="feature-card" style="border-left: 6px solid var(--red); background: #FFEBEE;">
+                                    <h3>❌ Salin-Tempel (Copy-Paste)</h3>
+                                    <p>Jika suatu hari rumus diskon berubah, kamu harus mencari dan mengedit 50 tempat itu satu per satu! Sangat rawan terlewat dan memicu bug fatal.</p>
+                                </div>
+                                <div class="feature-card" style="border-left: 6px solid var(--green); background: #E8F5E9;">
+                                    <h3>✅ Solusi: Bungkus Jadi Fungsi (Function)</h3>
+                                    <p>Tulis rumusnya <strong>SATU KALI SAJA</strong> di dalam fungsi, lalu panggil nama fungsinya kapan pun dan di mana pun kamu butuh!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2: Anatomi Fungsi def -->
+            <div class="slide" data-title="ANATOMI FUNGSI" data-subtitle="Kata Kunci def dan Parameter">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">2. Anatomi Pembuatan Fungsi dengan def ⚙️</h2>
+                        <div class="slide-text">
+                            <p>Untuk merakit fungsi buatanmu sendiri di Python, gunakan kata kunci <code>def</code> (kependekan dari <em>define</em> / mendefinisikan):</p>
+                            <div class="code-box">
+<span class="code-kw">def</span> <span class="code-fn">hitung_diskon</span>(total_belanja, persen):
+    <span class="code-cmt"># Blok badan fungsi (wajib menjorok 4 spasi)</span>
+    potongan = total_belanja * (persen / <span class="code-num">100</span>)
+    harga_akhir = total_belanja - potongan
+    <span class="code-kw">return</span> harga_akhir
+                            </div>
+                            <div class="feature-card" style="background: #FFFDE7; border-left: 6px solid var(--yellow);">
+                                <h3 style="margin-bottom: 6px;">🔍 4 Bagian Penting Fungsi:</h3>
+                                <ol style="margin-left: 20px; line-height: 1.6;">
+                                    <li><strong>Kata Kunci <code>def</code>:</strong> Memberitahu Python bahwa kita sedang membuat cetakan fungsi baru.</li>
+                                    <li><strong>Nama Fungsi:</strong> Nama panggilan fungsi (gunakan standar <code>snake_case</code>, misal: <code>hitung_diskon</code>).</li>
+                                    <li><strong>Parameter di dalam <code>( )</code>:</strong> Wadah penampung data yang dibutuhkan fungsi saat dipanggil.</li>
+                                    <li><strong>Titik Dua (:) & Indentasi:</strong> Menandai blok isi tubuh fungsi.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: Parameter vs Argumen -->
+            <div class="slide" data-title="PARAMETER VS ARGUMEN" data-subtitle="Wadah Cetakan vs Nilai Nyata">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">3. Parameter vs Argumen: Apa Bedanya? 🥊</h2>
+                        <div class="slide-text">
+                            <p>Banyak pemula tertukar antara istilah <em>parameter</em> dan <em>argumen</em>. Mari kita bedakan dengan analogi cetakan kue:</p>
+                            <div class="two-column">
+                                <div class="feature-card" style="background: #E1F5FE; border-left: 6px solid var(--blue);">
+                                    <h3>📦 Parameter (Wadah Cetakan)</h3>
+                                    <p>Variabel penampung yang ditulis saat <strong>mendefinisikan</strong> fungsi:</p>
+                                    <div class="code-box">
+<span class="code-kw">def</span> <span class="code-fn">sapa</span>(nama_nasabah):
+    <span class="code-fn">print</span>(<span class="code-str">"Halo,"</span>, nama_nasabah)
+                                    </div>
+                                    <p>Di sini, <code>nama_nasabah</code> adalah <strong>parameter</strong> (kotak kosong yang menunggu diisi).</p>
+                                </div>
+                                <div class="feature-card" style="background: #FFF3E0; border-left: 6px solid var(--orange);">
+                                    <h3>🧁 Argumen (Nilai Nyata)</h3>
+                                    <p>Nilai konkret yang dimasukkan saat <strong>memanggil</strong> fungsi:</p>
+                                    <div class="code-box">
+<span class="code-fn">sapa</span>(<span class="code-str">"Ahmad"</span>)
+<span class="code-fn">sapa</span>(<span class="code-str">"Jessica"</span>)
+                                    </div>
+                                    <p>Di sini, <code>"Ahmad"</code> dan <code>"Jessica"</code> adalah <strong>argumen</strong> nyata yang disalurkan ke fungsi.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4: return vs print -->
+            <div class="slide" data-title="RETURN VS PRINT" data-subtitle="Perbedaan Paling Kritis di Python">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">4. Perbedaan Krusial: return vs print() ⚡</h2>
+                        <div class="slide-text">
+                            <p>Ini adalah konsep yang paling sering disalahpahami oleh siswa. Perhatikan baik-baik:</p>
+                            <div class="two-column">
+                                <div class="feature-card" style="background: #FFEBEE; border-left: 6px solid var(--red);">
+                                    <h3>📺 Fungsi dengan print() Saja</h3>
+                                    <div class="code-box">
+<span class="code-kw">def</span> <span class="code-fn">tambah_print</span>(a, b):
+    <span class="code-fn">print</span>(a + b)
+
+hasil = <span class="code-fn">tambah_print</span>(<span class="code-num">10</span>, <span class="code-num">20</span>)
+<span class="code-fn">print</span>(hasil)  <span class="code-cmt"># Output: None !</span>
+                                    </div>
+                                    <p><code>print()</code> hanya <strong>menampilkan ke layar kaca</strong>. Ia TIDAK mengembalikan nilai ke program! Variabel <code>hasil</code> akan bernilai kosong (<code>None</code>).</p>
+                                </div>
+                                <div class="feature-card" style="background: #E8F5E9; border-left: 6px solid var(--green);">
+                                    <h3>🎁 Fungsi dengan return</h3>
+                                    <div class="code-box">
+<span class="code-kw">def</span> <span class="code-fn">tambah_return</span>(a, b):
+    <span class="code-kw">return</span> a + b
+
+hasil = <span class="code-fn">tambah_return</span>(<span class="code-num">10</span>, <span class="code-num">20</span>)
+<span class="code-fn">print</span>(hasil + <span class="code-num">5</span>)  <span class="code-cmt"># Output: 35 !</span>
+                                    </div>
+                                    <p><code>return</code> <strong>menyerahkan nilai hasil kerja</strong> ke variabel pemanggil. Nilai ini bisa disimpan ke saldo kas, dihitung lagi, atau dikirim ke database!</p>
+                                </div>
+                            </div>
+                            <div class="feature-card" style="background: #FFFDE7; border-left: 6px solid var(--yellow);">
+                                💡 <strong>Golden Rule:</strong> Jika hasil perhitungan perlu dipakai lagi di langkah berikutnya, WAJIB gunakan <code>return</code>!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 5: Pemanggilan Berulang -->
+            <div class="slide" data-title="PEMANGGILAN BERULANG" data-subtitle="Kekuatan Modularitas Kode">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">5. Memanggil Fungsi Berkali-Kali Tanpa Mengulang Kode 🚀</h2>
+                        <div class="slide-text">
+                            <p>Setelah fungsimu dibuat, kamu bisa menggunakannya seperti pabrik kalkulator pribadi:</p>
+                            <div class="code-box">
+<span class="code-kw">def</span> <span class="code-fn">cek_kelayakan_kredit</span>(saldo_rata2, tanggungan):
+    <span class="code-kw">if</span> saldo_rata2 >= <span class="code-num">5000000</span> <span class="code-kw">and</span> tanggungan &lt;= <span class="code-num">2</span>:
+        <span class="code-kw">return</span> <span class="code-str">"DISETUJUI"</span>
+    <span class="code-kw">else</span>:
+        <span class="code-kw">return</span> <span class="code-str">"DITINJAU_ULANG"</span>
+
+<span class="code-cmt"># Menguji nasabah A, B, dan C dengan 1 baris saja:</span>
+status_a = <span class="code-fn">cek_kelayakan_kredit</span>(<span class="code-num">7000000</span>, <span class="code-num">1</span>)  <span class="code-cmt"># DISETUJUI</span>
+status_b = <span class="code-fn">cek_kelayakan_kredit</span>(<span class="code-num">3000000</span>, <span class="code-num">3</span>)  <span class="code-cmt"># DITINJAU_ULANG</span>
+status_c = <span class="code-fn">cek_kelayakan_kredit</span>(<span class="code-num">9000000</span>, <span class="code-num">2</span>)  <span class="code-cmt"># DISETUJUI</span>
+                            </div>
+                            <p>Program menjadi sangat rapi, mudah dibaca orang lain, dan sangat mudah diperbaiki jika ada perubahan syarat di kemudian hari!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 6: Mini Lab Interaktif -->
+            <div class="slide" data-title="MINI LAB INTERAKTIF" data-subtitle="Simulasi Fungsi Mesin Diskon">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">6. Laboratorium Mini: Mesin Fungsi Diskon Finansial 🧪</h2>
+                        <div class="slide-text">
+                            <p>Ujilah fungsi <code>hitung_diskon(belanja, persen)</code> secara langsung:</p>
+                            <div class="interactive-card">
+                                <div class="interactive-title">🏷️ Fungsi: hitung_diskon(belanja, persen)</div>
+                                <div style="display: flex; gap: 16px; margin-bottom: 12px; flex-wrap: wrap;">
+                                    <div>
+                                        <label style="font-weight: 700;">Nominal Belanja (Rp):</label><br>
+                                        <input type="number" id="hs04-belanja" class="input-mini" value="100000" style="width: 180px;">
+                                    </div>
+                                    <div>
+                                        <label style="font-weight: 700;">Persentase Diskon (%):</label><br>
+                                        <input type="number" id="hs04-persen" class="input-mini" value="15" style="width: 140px;">
+                                    </div>
+                                    <div style="align-self: flex-end;">
+                                        <button class="btn-action" onclick="runFunctionHS04()">Panggil Fungsi (return)</button>
+                                    </div>
+                                </div>
+                                <div class="output-console" id="hs04-output">
+>>> def hitung_diskon(total_belanja=100000, persen=15):
+...     potongan = 100000 * 0.15 = 15000
+...     return 100000 - 15000
+>>> Nilai Return Diterima: Rp 85.000 (Bisa disimpan ke variabel bayar!)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 7: Kuis Pemahaman Mandiri -->
+            <div class="slide" data-title="KUIS PEMAHAMAN" data-subtitle="Uji Kesiapan Belajar Mandiri">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">7. Kuis Pemahaman: Uji return vs print 🎯</h2>
+                        <div class="slide-text">
+                            <p>Perhatikan potongan kode di bawah ini:</p>
+                            <div class="code-box">
+<span class="code-kw">def</span> <span class="code-fn">hitung_pajak</span>(nominal):
+    pajak = nominal * <span class="code-num">0.1</span>
+    <span class="code-fn">print</span>(pajak)
+
+total_pajak = <span class="code-fn">hitung_pajak</span>(<span class="code-num">50000</span>)
+<span class="code-fn">print</span>(total_pajak)
+                            </div>
+                            <div class="quiz-container">
+                                <div class="quiz-q">Pertanyaan: Apa yang tercetak pada baris terakhir <code>print(total_pajak)</code>?</div>
+                                <div class="quiz-options">
+                                    <div class="quiz-opt" onclick="handleQuiz(this, false, 'fb-hs04-q1', 'Benar!', 'Salah! 5000 dicetak saat baris fungsi berjalan, tapi fungsi tidak me-return nilai ke variabel total_pajak!')">A. 5000.0</div>
+                                    <div class="quiz-opt" onclick="handleQuiz(this, true, 'fb-hs04-q1', 'Tepat sekali! Karena fungsi tidak menggunakan return, variabel total_pajak akan menerima None!', 'Salah!')">B. None</div>
+                                    <div class="quiz-opt" onclick="handleQuiz(this, false, 'fb-hs04-q1', 'Benar!', 'Salah! Python tidak error, ia otomatis mengembalikan None jika tidak ada return.')">C. TypeError</div>
+                                    <div class="quiz-opt" onclick="handleQuiz(this, false, 'fb-hs04-q1', 'Benar!', 'Salah! 50000 adalah argumen input, bukan output.')">D. 50000</div>
+                                </div>
+                                <div class="quiz-feedback" id="fb-hs04-q1"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 8: Rangkuman & Menuju hs-3-5 -->
+            <div class="slide" data-title="RANGKUMAN" data-subtitle="Bekal Menuju Fungsi Modular">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">8. Rangkuman & Bekal Menuju Modul Fungsi Lanjutan 🚀</h2>
+                        <div class="slide-text">
+                            <p>Selamat! Sekarang kamu memahami rahasia membangun kode yang modular dan profesional:</p>
+                            <div class="two-column">
+                                <div class="feature-card">
+                                    <h3>📌 Rangkuman Konsep:</h3>
+                                    <ul>
+                                        <li>Prinsip DRY: jangan menduplikasi rumus perhitungan</li>
+                                        <li>Sintaks: <code>def nama_fungsi(parameter):</code></li>
+                                        <li>Parameter = cetakan wadah; Argumen = nilai nyata saat pemanggilan</li>
+                                        <li><code>return</code> mengembalikan nilai nyata; <code>print()</code> hanya menampilkan di layar kaca</li>
+                                    </ul>
+                                </div>
+                                <div class="feature-card" style="background: #E8F5E9; border: 3px solid var(--green);">
+                                    <h3>🎯 Menuju Video Modularisasi (hs-3-5 s.d. hs-3-7):</h3>
+                                    <p>Di modul selanjutnya, kamu akan mempelajari fungsi dengan banyak parameter, nilai default parameter, dan bagaimana memecah program kasir besar menjadi fungsi-fungsi kecil yang independen!</p>
+                                    <p style="font-weight: 700; margin-top: 10px; color: #2E7D32;">Klik tombol selesai untuk melanjutkan! ✨</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bottom-bar">
+            <button class="nav-btn" id="btn-prev" disabled>⬅️ Kembali</button>
+            <div class="progress-bar-container">
+                <div class="progress-bar-fill" id="progress-bar"></div>
+            </div>
+            <div class="slide-counter">
+                <span id="current-slide-num">1</span> / <span id="total-slides-num">8</span>
+            </div>
+            <button class="nav-btn primary" id="btn-next">Lanjut ➡️</button>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const btnPrev = document.getElementById('btn-prev');
+        const btnNext = document.getElementById('btn-next');
+        const counter = document.getElementById('current-slide-num');
+        const totalNum = document.getElementById('total-slides-num');
+        const bar = document.getElementById('progress-bar');
+        const bannerTitle = document.getElementById('banner-title');
+        const bannerSubtitle = document.getElementById('banner-subtitle');
+
+        totalNum.innerText = slides.length;
+
+        function showSlide(index) {
+            if (index < 0 || index >= slides.length) return;
+            slides[currentSlide].classList.remove('active');
+            currentSlide = index;
+            slides[currentSlide].classList.add('active');
+
+            btnPrev.disabled = currentSlide === 0;
+            btnNext.disabled = currentSlide === slides.length - 1;
+            counter.innerText = currentSlide + 1;
+            bar.style.width = (((currentSlide + 1) / slides.length) * 100) + '%';
+
+            const activeSlide = slides[currentSlide];
+            const t = activeSlide.getAttribute('data-title');
+            const s = activeSlide.getAttribute('data-subtitle');
+            if (t && bannerTitle) bannerTitle.innerText = t;
+            if (s && bannerSubtitle) bannerSubtitle.innerText = s;
+        }
+
+        btnNext.addEventListener('click', () => {
+            if (currentSlide < slides.length - 1) showSlide(currentSlide + 1);
+        });
+        btnPrev.addEventListener('click', () => {
+            if (currentSlide > 0) showSlide(currentSlide - 1);
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.target.tagName.toLowerCase() === 'input' || e.target.tagName.toLowerCase() === 'textarea') return;
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                if (currentSlide < slides.length - 1) showSlide(currentSlide + 1);
+            }
+            if (e.key === 'ArrowLeft') {
+                if (currentSlide > 0) showSlide(currentSlide - 1);
+            }
+        });
+
+        function handleQuiz(el, isCorrect, feedbackId, successMsg, failMsg) {
+            const parent = el.parentElement;
+            parent.querySelectorAll('.quiz-opt').forEach(o => o.classList.remove('correct', 'wrong'));
+            const fb = document.getElementById(feedbackId);
+            if (!fb) return;
+            fb.style.display = 'block';
+            if (isCorrect) {
+                el.classList.add('correct');
+                fb.innerHTML = '✅ ' + successMsg;
+                fb.style.backgroundColor = 'var(--green)';
+                fb.style.color = 'var(--black)';
+            } else {
+                el.classList.add('wrong');
+                fb.innerHTML = '❌ ' + failMsg;
+                fb.style.backgroundColor = 'var(--red)';
+                fb.style.color = 'var(--white)';
+            }
+        }
+
+
+        function runFunctionHS04() {
+            const belanja = parseFloat(document.getElementById('hs04-belanja').value);
+            const persen = parseFloat(document.getElementById('hs04-persen').value);
+            const out = document.getElementById('hs04-output');
+            
+            if (isNaN(belanja) || isNaN(persen)) {
+                out.innerText = ">>> Masukkan angka belanja dan persentase yang valid!";
+                return;
+            }
+            
+            const potongan = belanja * (persen / 100);
+            const hargaAkhir = belanja - potongan;
+            
+            let log = ">>> def hitung_diskon(total_belanja=" + belanja + ", persen=" + persen + "):\n";
+            log += "...     potongan = " + belanja + " * (" + persen + "/100) = " + potongan + "\n";
+            log += "...     harga_akhir = " + belanja + " - " + potongan + " = " + hargaAkhir + "\n";
+            log += "...     return " + hargaAkhir + "\n";
+            log += ">>> Nilai Return Diterima: Rp " + hargaAkhir.toLocaleString('id-ID') + " (Berhasil disimpan ke variabel bayar!)";
+            out.innerText = log;
+        }
+
+    </script>
+</body>
+</html>
