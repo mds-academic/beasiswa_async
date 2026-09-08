@@ -1019,3 +1019,33 @@ soalnya aku mau kamu amsukin detail materinya ke sheet https://docs.google.com/s
 "/Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms\n\nini aku lagi bgerjain sub project 1 dan sub project 2 tapi masi bikini bikin tapi kayanya ini banyak yang ga sesuai dengan yang aku minta di prd ataupun di project md dans emuanya coba audit dong"
 
 **Status:** under discussion — audit menyeluruh diminta; belum ada perubahan kode pada turn ini.
+
+### Assistant Response — 2026-09-08 (Audit kesesuaian Subproject 1 & 2)
+
+Audit sudah aku lakukan terhadap PRD, PROJECT/MEMORY/STATE, aturan kedua subproject, dataset, frontend, Apps Script, timing audit, bridge slides, dan status git.
+
+Kesimpulan utamanya: kekhawatiranmu valid. Sistem saat ini terlihat lebih selesai daripada kondisi sebenarnya, karena wadah LMS, draft sequencing, bridge slides, fixture lokal, dan materi yang belum disetujui sudah bercampur di jalur yang sama.
+
+Temuan paling kritis:
+1. **P0 — Progress server-first rusak kontraknya:** frontend membaca `res.data.submittedQuizIds`, tetapi Apps Script mengembalikan `progress` berupa map skor. Progres Sheet belum bisa memulihkan status kuis ke frontend.
+2. **P0 — Slide salah bisa tampil:** semua step tanpa `slideUrl` otomatis mendapat fallback `bridge-hs-00.html` atau `bridge-ms-00.html`.
+3. **P0 — Timestamp belum ditegakkan:** ada 12 unit audit dengan batas waktu tidak lengkap; player masih mengubah nilai kosong menjadi 0/full duration dan seek belum di-clamp ke segmen kurasi.
+4. **P1 — Aktivitas dan media tercampur:** field `type` sekaligus dipakai untuk `video/project/slide`, padahal PRD terbaru meminta activity type dipisah dari media type.
+5. **P1 — Stack tidak sesuai dokumen:** PROJECT.md menyebut Vue 3/Vite, tetapi implementasi aktual vanilla static app tanpa `package.json`, Vite, atau `.vue`.
+6. **P1 — Subproject 2 sudah dianggap produksi sebelum approval:** review sequencing sendiri menyatakan dataset produksi belum disetujui, tetapi dataset/bridge/payload sudah dipasang ke jalur LMS.
+7. **P1 — SD masih placeholder:** mayoritas step tidak punya video/slide/bookmark/rangkuman dan hanya ada satu kuis, tetapi bisa tampil seperti materi aktif.
+8. **P1 — Bridge belum benar-benar terhubung:** `bridge-hs-01` dan `bridge-ms-01` ada sebagai metadata/artefak, tetapi belum menjadi step ber-URL dalam jalur kurikulum.
+9. **P2 — Payload Sheet belum membuktikan tab materi sudah terpublikasi:** Apps Script belum punya endpoint untuk membaca/menyajikan tab materi SD/SMP/SMA; script generator juga memakai path relatif yang tidak cocok dari folder project.
+10. **P2 — Password admin terekspos di frontend dan backend:** `KalanantiDihati` ada di source JavaScript dan `Code.gs`.
+
+Aku simpan laporan lengkap di:
+[audit lengkap Subproject 1 & 2](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/audits/01-audit-kesesuaian-subproject-1-2.md)
+
+Rekomendasi urutan perbaikan:
+- Bekukan materi sebagai `draft/review_required`; jangan tampilkan draft sebagai materi final.
+- Bersihkan fallback slide global dan betulkan kontrak `get_progress`.
+- Pisahkan `activityType` dari `media` dan tegakkan timestamp `unknown`/clamping.
+- Setelah sequencing HS/MS disetujui, baru injeksikan dataset final dan buat tab Sheet materi.
+- Tandai SD sebagai placeholder sampai konten dan media minimalnya tersedia.
+
+Yang aku ubah pada turn ini hanya dokumentasi audit dan log percakapan; tidak mengubah kode yang sedang kamu kerjakan. Audit didokumentasikan dalam commit lokal `0d3f67b`. Working tree masih memiliki perubahan kode/data lain yang belum aku sentuh atau commit.
