@@ -7,11 +7,11 @@
     <title>UOB My Digital Space — Asynchronous Learning Platform</title>
     <meta name="description" content="Dashboard pembelajaran interaktif coding UOB My Digital Space multi-jenjang (SD, SMP, SMA)." />
 
-    <!-- Google Fonts: Fredoka & Nunito -->
+    <!-- Google Fonts: Plus Jakarta Sans (Premium Tech Heading) & Inter (Sharp Body Text) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,400;1,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
 
@@ -161,6 +161,12 @@
         </div>
 
         <div class="topbar-right">
+          <!-- Tombol Sertifikat & Rekap Hasil -->
+          <button id="btn-open-certificate" class="certificate-btn" type="button" title="Lihat Rekap Nilai & Sertifikat Kelulusan">
+            <span class="cert-icon">🎓</span>
+            <span class="cert-text">Sertifikat & Skor</span>
+          </button>
+
           <!-- Tombol Panduan Perangkat (Advisory) -->
           <button id="btn-open-advisory" class="advisory-btn" type="button" title="Informasi Perangkat">
             <span class="advisory-icon">✦</span>
@@ -178,6 +184,10 @@
 
             <!-- Dropdown Menu Keluar -->
             <div class="profile-dropdown" id="profile-dropdown" hidden>
+              <button id="btn-dropdown-cert" class="dropdown-item" type="button">
+                <span>🎓</span>
+                <span>Sertifikat & Skor</span>
+              </button>
               <button id="btn-logout" class="dropdown-item" type="button">
                 <span>⏏</span>
                 <span>Ganti Akun / Keluar</span>
@@ -344,6 +354,78 @@
             </button>
           </div>
 
+          <!-- 2b. Kartu Tantangan Praktik Mandiri (Challenge) — Opsional & Non-Gating -->
+          <section class="challenge-panel" id="challenge-panel" style="display: none;">
+            <div class="challenge-header">
+              <div class="challenge-header-left">
+                <span class="challenge-badge">🏆 TANTANGAN PRAKTIK MANDIRI</span>
+                <h3 class="challenge-title" id="challenge-title">Mini Project: Challenge Mandiri</h3>
+              </div>
+              <span class="challenge-status-badge" id="challenge-status-badge">Opsional · Mengasah Skill</span>
+            </div>
+            <p class="challenge-desc" id="challenge-desc">
+              Tantangan ini bersifat opsional untuk menguji dan melatih keterampilan kodingmu secara mandiri. Kamu bebas melewatinya dan lanjut ke materi berikutnya kapan saja!
+            </p>
+            <div class="challenge-tasks-box" id="challenge-tasks-box">
+              <!-- Instruksi tugas diinjeksi dinamis via JS -->
+            </div>
+
+            <!-- Form Pengumpulan Fleksibel Sesuai Jenjang -->
+            <div class="challenge-submission-box">
+              <div class="challenge-form-body" id="challenge-form-body">
+                <!-- Input Kode Langsung (Khusus SMA Python IDE) -->
+                <div class="challenge-input-group" id="group-code-input">
+                  <label for="challenge-code-editor">
+                    <strong>Tulis / Tempel Kode Programmu di sini:</strong>
+                  </label>
+                  <textarea
+                    id="challenge-code-editor"
+                    class="challenge-code-textarea"
+                    rows="6"
+                    placeholder="# Ketikkan kode Python jawaban tantanganmu di sini...&#10;def hitung_saldo(pemasukan, pengeluaran):&#10;    return pemasukan - pengeluaran"
+                    spellcheck="false"
+                  ></textarea>
+                </div>
+
+                <!-- Input Tautan Proyek (Colab / GitHub / MIT Gallery / Scratch) -->
+                <div class="challenge-input-group" id="group-link-input">
+                  <label for="challenge-url-input">
+                    <strong id="challenge-url-label">Tautan Proyek (Google Colab / Scratch / App Inventor / Drive):</strong>
+                  </label>
+                  <input
+                    type="url"
+                    id="challenge-url-input"
+                    class="challenge-text-input"
+                    placeholder="https://colab.research.google.com/... atau https://scratch.mit.edu/projects/..."
+                  />
+                </div>
+
+                <!-- Upload File (.py, .aia, .apk, .sb3) -->
+                <div class="challenge-input-group" id="group-file-input">
+                  <label for="challenge-file-input">
+                    <strong id="challenge-file-label">Atau Unggah Berkas Karya (.py / .aia / .sb3):</strong>
+                  </label>
+                  <div class="file-upload-dropzone">
+                    <input type="file" id="challenge-file-input" class="file-input-hidden" accept=".py,.aia,.apk,.sb3,.txt,.png,.jpg,.zip" />
+                    <label for="challenge-file-input" class="btn-file-browse">📁 Pilih Berkas Karya</label>
+                    <span class="file-selected-name" id="file-selected-name">Belum ada file dipilih</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tombol Aksi Tantangan -->
+              <div class="challenge-action-row">
+                <button type="button" class="btn-submit-challenge" id="btn-submit-challenge">
+                  <span>🚀</span> Kirim Karya Tantangan
+                </button>
+                <button type="button" class="btn-skip-challenge" id="btn-skip-challenge">
+                  Lewati Tantangan & Lanjut →
+                </button>
+                <div class="challenge-submit-feedback" id="challenge-submit-feedback" style="display: none;"></div>
+              </div>
+            </div>
+          </section>
+
           <!-- 3. Exact Legacy 2-Column Cards (.below-video) -->
           <div class="below-video">
             <!-- Kartu 1: Loot Box Hari Ini (Rangkuman Poin dengan Checklist Hijau) -->
@@ -417,24 +499,38 @@
     <!-- ==================== 3. MODAL: GENTLE ADVISORY (MOBILE/DEVICE) ==================== -->
     <dialog id="advisory-modal" class="modal-dialog advisory-modal">
       <div class="modal-card">
-        <div class="modal-decor-icon">✦</div>
-        <h2>Rekomendasi Perangkat Belajar</h2>
+        <div class="modal-decor-icon">💻</div>
+        <h2>Rekomendasi Pengalaman Belajar Maksimal</h2>
         <p class="modal-sub">
-          Untuk kenyamanan dan kemudahan belajar koding serta menjalankan latihan kode secara optimal,
-          disarankan menggunakan perangkat <strong>Laptop, Komputer, atau Tablet</strong>.
+          Halo Teman Belajar! Platform ini tetap dapat kamu akses dan gunakan melalui smartphone.
+          Namun, karena program pembelajaran asinkronus ini memuat latihan praktik coding langsung, simulasi slide interaktif,
+          dan kuis pemahaman, kami sangat merekomendasikan kamu menggunakan <strong>Laptop, Komputer, atau Tablet</strong>.
         </p>
         <div class="advisory-tips">
           <div class="tip-item">
-            <span class="tip-icon">💻</span>
-            <span>Tampilan editor dan video lebih lega di layar besar.</span>
+            <span class="tip-icon">🖥️</span>
+            <div>
+              <strong>Layar Lebih Lega & Jelas</strong>
+              <p>Kode program, teks materi, dan video terlihat detail tanpa perlu memperbesar layar (zoom).</p>
+            </div>
           </div>
           <div class="tip-item">
             <span class="tip-icon">⌨️</span>
-            <span>Mengetik kode pemrograman lebih cepat & minim typo dengan keyboard fisik.</span>
+            <div>
+              <strong>Mengetik Kode Lebih Nyaman</strong>
+              <p>Mengetik sintaks kode dengan keyboard fisik jauh lebih cepat, presisi, dan minim salah ketik.</p>
+            </div>
+          </div>
+          <div class="tip-item">
+            <span class="tip-icon">🚀</span>
+            <div>
+              <strong>Simulasi & Sandbox Optimal</strong>
+              <p>Membuka Google Colab, MIT App Inventor, atau Scratch di tab terpisah berjalan mulus.</p>
+            </div>
           </div>
         </div>
         <button id="btn-dismiss-advisory" class="modal-primary-btn" type="button">
-          Mengerti, Tetap Lanjutkan
+          Mengerti, Tetap Belajar di HP Ini
         </button>
       </div>
     </dialog>
@@ -521,6 +617,124 @@
             <button type="submit" id="btn-submit-admin-modal" class="btn-submit-modal">Masuk →</button>
           </div>
         </form>
+      </div>
+    </dialog>
+
+    <!-- ==================== 5. MODAL: SCORE REPORT & SERTIFIKAT KELULUSAN DIGITAL ==================== -->
+    <dialog id="certificate-modal" class="modal-dialog certificate-modal">
+      <div class="certificate-dialog-card">
+        <div class="certificate-dialog-header">
+          <div class="cert-head-left">
+            <span class="cert-trophy-icon">🏆</span>
+            <div>
+              <h3>Laporan Hasil Belajar & Sertifikat Kelulusan</h3>
+              <p>Selamat! Kamu telah menyelesaikan petualangan coding asinkronus UOB My Digital Space.</p>
+            </div>
+          </div>
+          <button type="button" id="btn-close-cert-modal" class="btn-close-modal" aria-label="Tutup Dialog">×</button>
+        </div>
+
+        <!-- 1. Score Report Summary Grid -->
+        <div class="score-report-grid">
+          <div class="score-stat-card">
+            <span class="score-stat-icon">📝</span>
+            <div class="score-stat-info">
+              <strong id="report-quizzes-count">0 / 0</strong>
+              <span>Kuis Pop-up Selesai</span>
+            </div>
+          </div>
+          <div class="score-stat-card">
+            <span class="score-stat-icon">🎯</span>
+            <div class="score-stat-info">
+              <strong id="report-accuracy">100%</strong>
+              <span>Akurasi Pemahaman</span>
+            </div>
+          </div>
+          <div class="score-stat-card">
+            <span class="score-stat-icon">🚀</span>
+            <div class="score-stat-info">
+              <strong id="report-challenges-count">0</strong>
+              <span>Tantangan Dikumpulkan</span>
+            </div>
+          </div>
+          <div class="score-stat-card highlight">
+            <span class="score-stat-icon">⭐</span>
+            <div class="score-stat-info">
+              <strong id="report-status">LULUS</strong>
+              <span>Status Kelulusan</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Sertifikat Kelulusan Digital Resmi (Skeuomorphic Luxury Certificate) -->
+        <div class="certificate-printable-area" id="certificate-printable-area">
+          <div class="certificate-frame">
+            <div class="certificate-inner-border">
+              <!-- Header Logos -->
+              <div class="cert-logos">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ruangguru_logo.svg/3840px-Ruangguru_logo.svg.png"
+                  alt="Ruangguru"
+                  class="cert-logo-rg"
+                />
+                <div class="cert-divider-line"></div>
+                <img
+                  src="https://cdn-web-2.ruangguru.com/landing-pages/assets/37185db7-24a8-467d-aabb-1d5df48f9bc0.png"
+                  alt="UOB My Digital Space"
+                  class="cert-logo-uob"
+                />
+              </div>
+
+              <div class="cert-header-badge">CERTIFICATE OF COMPLETION</div>
+              <h1 class="cert-title">SERTIFIKAT KELULUSAN</h1>
+              <p class="cert-subtitle">Sertifikat ini secara resmi diberikan sebagai bukti apresiasi kepada:</p>
+
+              <div class="cert-student-name" id="cert-student-name">Nama Siswa</div>
+              <div class="cert-student-school" id="cert-student-school">SMAN 8 Jakarta · Kelas XII</div>
+
+              <p class="cert-body-text">
+                Telah berhasil menyelesaikan seluruh rangkaian materi pembelajaran dan evaluasi interaktif pada program:
+              </p>
+              <div class="cert-program-name" id="cert-program-name">
+                Asynchronous Coding Exploration: Python for High School
+              </div>
+
+              <!-- Footer Sertifikat: QR / Serial, Tanggal, Tanda Tangan -->
+              <div class="cert-footer-grid">
+                <div class="cert-col-left">
+                  <span class="cert-serial-label">Nomor Verifikasi Sertifikat:</span>
+                  <strong class="cert-serial-no" id="cert-serial-no">MDS-2026-SMA-78291</strong>
+                  <span class="cert-date-text" id="cert-date-text">Diterbitkan pada: 8 September 2026</span>
+                </div>
+
+                <div class="cert-seal-box">
+                  <div class="cert-gold-seal">
+                    <span>★</span>
+                    <strong>OFFICIAL</strong>
+                    <small>UOB MDS</small>
+                  </div>
+                </div>
+
+                <div class="cert-col-right">
+                  <div class="cert-signature-line"></div>
+                  <strong>Ahmad Yazid Hilmi</strong>
+                  <span>Lead Curriculum & Technology</span>
+                  <span class="cert-org">UOB My Digital Space & Kalananti</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Tombol Aksi Modal Sertifikat -->
+        <div class="certificate-dialog-actions">
+          <button type="button" class="btn-print-certificate" id="btn-print-certificate">
+            <span>🖨️</span> Cetak / Simpan PDF
+          </button>
+          <button type="button" class="btn-dismiss-certificate" id="btn-dismiss-certificate">
+            Tutup
+          </button>
+        </div>
       </div>
     </dialog>
 

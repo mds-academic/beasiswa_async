@@ -7,11 +7,11 @@
     <title>UOB My Digital Space — Asynchronous Learning Platform</title>
     <meta name="description" content="Dashboard pembelajaran interaktif coding UOB My Digital Space multi-jenjang (SD, SMP, SMA)." />
 
-    <!-- Google Fonts: Fredoka & Nunito -->
+    <!-- Google Fonts: Plus Jakarta Sans (Premium Tech Heading) & Inter (Sharp Body Text) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,400;1,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
 
@@ -161,6 +161,12 @@
         </div>
 
         <div class="topbar-right">
+          <!-- Tombol Sertifikat & Rekap Hasil -->
+          <button id="btn-open-certificate" class="certificate-btn" type="button" title="Lihat Rekap Nilai & Sertifikat Kelulusan">
+            <span class="cert-icon">🎓</span>
+            <span class="cert-text">Sertifikat & Skor</span>
+          </button>
+
           <!-- Tombol Panduan Perangkat (Advisory) -->
           <button id="btn-open-advisory" class="advisory-btn" type="button" title="Informasi Perangkat">
             <span class="advisory-icon">✦</span>
@@ -178,6 +184,10 @@
 
             <!-- Dropdown Menu Keluar -->
             <div class="profile-dropdown" id="profile-dropdown" hidden>
+              <button id="btn-dropdown-cert" class="dropdown-item" type="button">
+                <span>🎓</span>
+                <span>Sertifikat & Skor</span>
+              </button>
               <button id="btn-logout" class="dropdown-item" type="button">
                 <span>⏏</span>
                 <span>Ganti Akun / Keluar</span>
@@ -343,6 +353,78 @@
               <span>Buka Kuis</span>
             </button>
           </div>
+
+          <!-- 2b. Kartu Tantangan Praktik Mandiri (Challenge) — Opsional & Non-Gating -->
+          <section class="challenge-panel" id="challenge-panel" style="display: none;">
+            <div class="challenge-header">
+              <div class="challenge-header-left">
+                <span class="challenge-badge">🏆 TANTANGAN PRAKTIK MANDIRI</span>
+                <h3 class="challenge-title" id="challenge-title">Mini Project: Challenge Mandiri</h3>
+              </div>
+              <span class="challenge-status-badge" id="challenge-status-badge">Opsional · Mengasah Skill</span>
+            </div>
+            <p class="challenge-desc" id="challenge-desc">
+              Tantangan ini bersifat opsional untuk menguji dan melatih keterampilan kodingmu secara mandiri. Kamu bebas melewatinya dan lanjut ke materi berikutnya kapan saja!
+            </p>
+            <div class="challenge-tasks-box" id="challenge-tasks-box">
+              <!-- Instruksi tugas diinjeksi dinamis via JS -->
+            </div>
+
+            <!-- Form Pengumpulan Fleksibel Sesuai Jenjang -->
+            <div class="challenge-submission-box">
+              <div class="challenge-form-body" id="challenge-form-body">
+                <!-- Input Kode Langsung (Khusus SMA Python IDE) -->
+                <div class="challenge-input-group" id="group-code-input">
+                  <label for="challenge-code-editor">
+                    <strong>Tulis / Tempel Kode Programmu di sini:</strong>
+                  </label>
+                  <textarea
+                    id="challenge-code-editor"
+                    class="challenge-code-textarea"
+                    rows="6"
+                    placeholder="# Ketikkan kode Python jawaban tantanganmu di sini...&#10;def hitung_saldo(pemasukan, pengeluaran):&#10;    return pemasukan - pengeluaran"
+                    spellcheck="false"
+                  ></textarea>
+                </div>
+
+                <!-- Input Tautan Proyek (Colab / GitHub / MIT Gallery / Scratch) -->
+                <div class="challenge-input-group" id="group-link-input">
+                  <label for="challenge-url-input">
+                    <strong id="challenge-url-label">Tautan Proyek (Google Colab / Scratch / App Inventor / Drive):</strong>
+                  </label>
+                  <input
+                    type="url"
+                    id="challenge-url-input"
+                    class="challenge-text-input"
+                    placeholder="https://colab.research.google.com/... atau https://scratch.mit.edu/projects/..."
+                  />
+                </div>
+
+                <!-- Upload File (.py, .aia, .apk, .sb3) -->
+                <div class="challenge-input-group" id="group-file-input">
+                  <label for="challenge-file-input">
+                    <strong id="challenge-file-label">Atau Unggah Berkas Karya (.py / .aia / .sb3):</strong>
+                  </label>
+                  <div class="file-upload-dropzone">
+                    <input type="file" id="challenge-file-input" class="file-input-hidden" accept=".py,.aia,.apk,.sb3,.txt,.png,.jpg,.zip" />
+                    <label for="challenge-file-input" class="btn-file-browse">📁 Pilih Berkas Karya</label>
+                    <span class="file-selected-name" id="file-selected-name">Belum ada file dipilih</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tombol Aksi Tantangan -->
+              <div class="challenge-action-row">
+                <button type="button" class="btn-submit-challenge" id="btn-submit-challenge">
+                  <span>🚀</span> Kirim Karya Tantangan
+                </button>
+                <button type="button" class="btn-skip-challenge" id="btn-skip-challenge">
+                  Lewati Tantangan & Lanjut →
+                </button>
+                <div class="challenge-submit-feedback" id="challenge-submit-feedback" style="display: none;"></div>
+              </div>
+            </div>
+          </section>
 
           <!-- 3. Exact Legacy 2-Column Cards (.below-video) -->
           <div class="below-video">

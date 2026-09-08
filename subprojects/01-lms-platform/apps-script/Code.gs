@@ -588,10 +588,22 @@ function setupResultTrackingSheets() {
     if (!sheet) {
       sheet = ss.insertSheet(cfg.sheetName);
     } else {
+      try {
+        sheet.getRange(1, 1, sheet.getMaxRows(), sheet.getMaxColumns()).breakApart();
+      } catch (e) {}
       sheet.clear();
     }
 
     const allHeaders = baseHeaders.concat(cfg.stepHeaders);
+
+    // Pastikan jumlah kolom mencukupi untuk seluruh kuis (SMP: 43 cols, SMA: 40 cols)
+    const maxCols = sheet.getMaxColumns();
+    if (maxCols < allHeaders.length) {
+      sheet.insertColumnsAfter(maxCols, allHeaders.length - maxCols);
+    }
+    if (sheet.getMaxRows() < 10) {
+      sheet.insertRowsAfter(sheet.getMaxRows(), 10);
+    }
 
     // Row 1: Warning Banner
     sheet.getRange(1, 1).setValue(WARNING_BANNER);
@@ -633,7 +645,6 @@ function setupResultTrackingSheets() {
     }
 
     sheet.setFrozenRows(2);
-    sheet.setFrozenColumns(4); // Freeze up to Sekolah so student identity stays visible when scrolling right
   });
 
   return {
