@@ -755,4 +755,77 @@ kan aku mau ada sandbox buat nampilin vdideo / html slide
 kok ga sam apersis si h designnya ??"
 
 ### Status / Action
-In progress: Menyesuaikan login sheet 5 kolom (`email`, `name`, `rombel_name`, `school_name`, `grade_name`), auto-detect grade materi kurikulum, fuzzy typo suggestion email dengan Levenshtein distance, menyamakan desain 100% identik dengan legacy LMS (termasuk tombol play kuning pekat, focus-card, summary-card, dll.), serta mengintegrasikan sandbox container (`<iframe>`) untuk video & HTML slides.
+Selesai diimplementasikan: Menyesuaikan login sheet 5 kolom (`email`, `name`, `rombel_name`, `school_name`, `grade_name`), auto-detect grade materi kurikulum, fuzzy typo suggestion email dengan Levenshtein distance, menyamakan desain 100% identik dengan legacy LMS (termasuk tombol play kuning pekat, focus-card, summary-card, dll.), serta mengintegrasikan sandbox container (`<iframe>`) untuk video & HTML slides.
+
+### Assistant Response (Verbatim)
+
+Semua poin yang kamu instruksikan telah dirombak dan diselaraskan secara menyeluruh: data login 5 kolom Google Sheets, auto-detect jenjang dari `grade_name`, form login ringkas (hanya nama sekolah & email tanpa meminta nama siswa), saran email typo terdekat (Levenshtein distance), desain 100% identik dengan LMS lama, serta wadah **Interactive Sandbox** untuk slide HTML interaktif!
+
+Berikut rincian jawaban dan pembaruan sistem yang telah aktif:
+
+---
+
+### 1. Dari Mana Data Loginnya & Skema 5 Kolom Sheet
+Data login siswa sekarang diambil langsung dari database terpusat Google Spreadsheet (sheet `ops-student-data`) pada akun operasional `rgcuob@gmail.com`:
+- **Link Master Sheet**: [Buka Spreadsheet Master Siswa](https://docs.google.com/spreadsheets/d/1s6VVCGLPwiGWYwBNiR-4lrnB5XWcOV0l7pAIcgyif-k/edit)
+- **Skema 5 Kolom Sesuai Permintaanmu**:
+  `email | name | rombel_name | school_name | grade_name` *(dan kolom ke-6 otomatis: `last_login`)*.
+- **Offline / Local Fallback**: Tersedia juga di [`src/data/ops-student-data.json`](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/01-lms-platform/src/data/ops-student-data.json) sehingga sistem tetap dapat berjalan lancar saat offline atau saat koneksi Apps Script sedang tertunda.
+
+---
+
+### 2. Auto-Detect Materi Pembelajaran dari `grade_name`
+Siswa tidak perlu lagi memilih jenjang secara manual. Fungsi `resolveCurriculumFromGrade(gradeName)` di backend dan frontend otomatis mendeteksi nilai kolom `grade_name`:
+- **Upper Primary / Lower Primary / SD / Scratch** → Otomatis memuat kurikulum SD: [`courseData-upperprimary.json`](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/01-lms-platform/src/data/courseData-upperprimary.json).
+- **Middle School / SMP / App Inventor** → Otomatis memuat kurikulum SMP: [`courseData-middleschool.json`](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/01-lms-platform/src/data/courseData-middleschool.json).
+- **High School / SMA / Python** → Otomatis memuat kurikulum SMA: [`courseData-highschool.json`](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/01-lms-platform/src/data/courseData-highschool.json).
+
+---
+
+### 3. Alur Login Baru: Hanya Menanyakan Nama Sekolah & Email
+- **Input Nama Siswa Sudah Dihapus Total**: Siswa tidak perlu repot mengetik nama lagi!
+- **Alur 2 Langkah Sederhana**:
+  1. **Pilih / Ketik Nama Sekolah**: Menggunakan combobox pencarian sekolah yang menampilkan daftar sekolah mitra beserta jenjangnya.
+  2. **Masukkan Email**: Siswa mengetik email terdaftar di Akademia Ruangguru.
+- Begitu email diverifikasi, sistem langsung menarik otomatis **`name`** (Nama Siswa) dan **`rombel_name`** (Kelas/Rombel) dari sheet. Topbar profil siswa langsung menampilkan nama lengkap, rombel, sekolah, jenjang, dan avatar unik Dicebear!
+
+---
+
+### 4. Saran Typo Email Paling Mendekati (Levenshtein Distance)
+Jika siswa salah ketik email (misal mengetik `budi.santoss@gmail.com` atau salah huruf pada domain):
+1. Sistem menghitung jarak karakter (*Levenshtein distance*) terhadap seluruh email siswa yang terdaftar di sekolah tersebut.
+2. Muncul kotak peringatan elegan yang menyarankan email terdekat:
+   > **Email belum cocok**  
+   > Email ini belum cocok dengan data untuk sekolah yang dipilih.  
+   > **Apakah maksud Anda email ini?**  
+   > 👉 `budi.santoso@gmail.com`  
+   > **[Gunakan Email Ini]**
+3. Siswa cukup menekan tombol **"Gunakan Email Ini"**, maka input email langsung terisi otomatis dan memproses login.
+4. Tersedia juga tombol bantuan *"Tidak yakin emailnya? Cari bantuan lewat nama/email"* dengan panel pencarian nama siswa di sekolah tersebut.
+
+---
+
+### 5. Kenapa Desain Sebelumnya Sempat Berbeda & Tampilan 100% Identik Sekarang
+- **Alasan Sebelumnya Sempat Berbeda**:  
+  Pada draft awal sebelumnya, sistem dibangun sebagai prototipe mandiri (*standalone modern mockup*) sebelum kita membedah dan menyalin 100% token CSS asli (`style.css` 58KB) dan template `App.vue` dari repositori legacy (`sesi25-26/grup-hs-2-a`). Akibatnya, beberapa komponen seperti tombol play, kartu di bawah video, dan pembungkus slide masih menggunakan format bawaan prototype.
+- **Pembaruan 100% Identik yang Sekarang Sudah Aktif**:
+  1. **Tombol Play Center Neo-Brutalist**: Sudah 100% presisi menggunakan tombol kotak biru `88px × 72px` dengan border hitam 4px dan bayangan tebal kuning pekat khas UOB (`box-shadow: 7px 7px 0 var(--yellow)`).
+  2. **Interactive Sandbox Container (`<iframe>`)**:
+     - Frame pemutar media (16:9) kini bersifat hybrid.
+     - Di atas frame terdapat tab switcher mode: `[▶ Video Pembelajaran]` dan `[💻 Interactive Sandbox / Slide]`.
+     - Ketika materi berupa slide HTML interaktif (seperti materi jembatan `bridge-hs-00.html` atau `bridge-ms-00.html`), sistem memuat **Sandbox Container** (`<iframe>`) yang terisolasi aman dengan izin sandbox lengkap (`allow-scripts allow-same-origin allow-popups allow-forms`).
+     - Terdapat bilah kontrol Sandbox: judul slide, tombol **↻ Reset**, dan tombol **⛶ Layar Penuh**.
+  3. **Kartu Bawah Video (`.below-video`) 2 Kolom Identik**:
+     - **Kolom Kiri**: `.summary-card` (*"Loot Box Hari Ini 🎁"* dengan icon pill biru berbingkai `heading-icon` dan daftar poin dengan centang tebal hijau miring 45° khas LMS asli).
+     - **Kolom Kanan**: `.focus-card` (*"Cheat Sheet 📝"* dengan gradasi kuning emas pastel `rgba(255,249,235,0.95)`, teks penjelas, dan kotak kode gelap `.mini-code`).
+  4. **Accordion Materi Bacaan (`details.lesson-reading-accordion`)**:
+     - Lengkap dengan header biru neon berbayang cyan `7px 7px 0 var(--cyan)`, grid kartu konsep A, B, C berlatar blur glassmorphism, serta blok kode contoh dan catatan penting.
+
+---
+
+### 6. Status Sinkronisasi & Deployment
+- **Google Apps Script Backend**: Berhasil di-deploy ke versi 3 (`AKfycbybx1KlcTW7Rofbb7OSGWtWeEAU_uflLAG3bqfS9edl-tSlIPmRh4FnheBWCaKxb06S`).
+- **GitHub Pages Sync**: Seluruh berkas terbaru (`index.html`, `styles.css`, `app.js`, slide HTML, dan data) telah disinkronkan ke folder `docs/`.
+- **Git Commit & Remote Push**: Berhasil di-commit dan di-push ke remote `git@github.com:mds-academic/beasiswa_async.git` pada branch `main`.
+- **Akses Langsung Server Lokal**: Kamu bisa langsung membukanya di browser komputermu di:  
+  👉 `http://localhost:8080/`
