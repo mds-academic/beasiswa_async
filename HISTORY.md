@@ -989,7 +989,22 @@ kan kita baru bikini wadahnya dulu bukan sih ???"
    - **Akses Siswa Real**: Ketik nama sekolah (misal: "Pekanbaru", "Strada", "SMP", dll.) atau langsung masukkan email siswa dari 504 database.
    - **Akses Admin / Pengawas**: Masukkan sekolah `SD UOB`, `SMP UOB`, atau `SMA UOB` dengan sandi akses `KalanantiDihati`.
 
+### User Request — 2026-09-08T20:56:34+07:00
 
+"plis kan aku udah bilang nama sd uob ny agausa ada di drop down dongg tunggu diketik dia baru muncul"
+
+### Assistant Response & Resolution — 2026-09-08T20:58:00+07:00
+
+1. **Penyembunyian Mutlak Sekolah Virtual UOB dari Dropdown Default**:
+   - Logika filter dropdown (`showSchoolDropdown`) diperbarui sehingga `SD UOB`, `SMP UOB`, dan `SMA UOB` **TIDAK AKAN PERNAH MUNCUL** saat dropdown dibuka atau saat kolom sekolah dalam keadaan kosong.
+   - Dropdown default murni hanya menampilkan sekolah mitra resmi siswa (15-18 sekolah nyata).
+   - Sekolah virtual admin (`SD UOB`, `SMP UOB`, `SMA UOB`) hanya akan muncul jika pengguna secara eksplisit mengetikkan kata kunci yang mengandung `"uob"` (misal mengetik: `"uob"`, `"sd uob"`, `"smp uob"`, `"sma uob"`).
+2. **Pengujian Otomatis**:
+   - Playwright verifikasi:
+     - Dropdown saat kosong: `Contains UOB: False` (hanya menampilkan sekolah reguler).
+     - Dropdown saat diketik `"uob"`: `['SD UOB (SD)', 'SMA UOB (SMA)', 'SMP UOB (SMP)']`.
+3. **Penyelarasan & Sinkronisasi GitHub Pages**:
+   - Berkas `src/app.js` disinkronkan ke `docs/app.js` dan di-push ke branch `main`.
 
 ### User Request — 2026-09-08T20:52:30+07:00
 

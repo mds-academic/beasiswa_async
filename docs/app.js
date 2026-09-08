@@ -265,9 +265,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 // ==================== 1. DATA LOADING & COMBOBOX SEARCH ====================
 const ADMIN_VIRTUAL_SCHOOLS = [
-  { school: 'SD UOB', grade_name: 'Upper Primary', level: 'SD' },
-  { school: 'SMP UOB', grade_name: 'Middle School', level: 'SMP' },
-  { school: 'SMA UOB', grade_name: 'High School', level: 'SMA' }
+  { school: 'SD UOB', grade_name: 'Upper Primary', level: 'SD', isVirtual: true },
+  { school: 'SMP UOB', grade_name: 'Middle School', level: 'SMP', isVirtual: true },
+  { school: 'SMA UOB', grade_name: 'High School', level: 'SMA', isVirtual: true }
 ];
 
 function highlightMatch(text, query) {
@@ -384,7 +384,14 @@ function setupLoginEvents() {
       el.btnClearSchool.style.display = el.loginSchoolInput.value.trim() ? 'flex' : 'none';
     }
 
-    const filtered = state.masterSchools.filter((s) => s.school.toLowerCase().includes(query));
+    const isVirtualSchool = (s) => s.isVirtual || s.school.toUpperCase().includes('UOB');
+
+    const filtered = state.masterSchools.filter((s) => {
+      if (isVirtualSchool(s)) {
+        return query.includes('uob') && s.school.toLowerCase().includes(query);
+      }
+      return !query || s.school.toLowerCase().includes(query);
+    });
 
     // Urutkan: yang diawali query di paling atas
     if (query) {
