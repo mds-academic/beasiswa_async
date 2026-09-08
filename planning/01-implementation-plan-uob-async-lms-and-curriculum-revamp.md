@@ -1,4 +1,15 @@
-# Implementation Plan 01: UOB Async LMS & Curriculum Revamp
+# ❌ [SUPERSEDED / TIDAK DIGUNAKAN LAGI] Implementation Plan 01: UOB Async LMS & Curriculum Revamp
+
+> [!CAUTION]
+> **STATUS: OBSOLETE / SUPERSEDED (TIDAK DIGUNAKAN LAGI)**
+> Rencana implementasi ini merupakan draft awal dan **SUDAH TIDAK DIGUNAKAN LAGI**.
+> Rencana yang aktif, telah diperbarui dengan evaluasi 6 bug lama, dan saat ini menjadi acuan eksekusi adalah:
+> - Rencana Kurikulum & Alur Scaffolding: [02-implementation-plan-curriculum-scaffolding-smp-sma-sd.md](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/planning/02-implementation-plan-curriculum-scaffolding-smp-sma-sd.md)
+> - Spesifikasi Komprehensif: [PRD.md](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/PRD.md)
+>
+> Mohon jangan menggunakan instruksi pada dokumen ini sebagai panduan aktif.
+
+---
 
 Pembangunan platform LMS Asinkronus terpadu (single portal) untuk program UOB My Digital Space multi-jenjang (SD, SMP, SMA), pembaruan sistem interaksi kuis video yang lebih fleksibel (less-strict), dan kurasi alur kurikulum koding terstruktur untuk pemula.
 

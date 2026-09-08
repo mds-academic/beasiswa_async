@@ -183,3 +183,33 @@ Berikut alasan pertimbangannya:
 Kita kurasi dan rapikan alur materi SMA di Subproject 2 hari ini juga (karena videonya sudah ada di folder eksisting, tinggal kita petakan urutannya yang runtut). Begitu datanya jadi JSON yang bersih, kita langsung punya fondasi kuat untuk mulai mengoding LMS di Subproject 1!
 
 Bagaimana, setuju kita mulai dari **Opsi A (Kurasi SMA dulu)**?
+
+### User Request (Turn 4)
+"/Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/planning/01-implementation-plan-uob-async-lms-and-curriculum-revamp.md inia yang lama kan yah kasi tau kalo ini udah ga dipake lagi yah dia tasnya kasi simbol x kah apakah ngeri banget ini nanti bukannya kita udah ganti yah  ini kayanya agents.md /Users/yazidhilmi/Documents/Edu/Fireside-chat/AGENTS.md dikasi tau juga deh emang harus bikin impelementation pla n juga tapi kalo ada renerewal dari plan yang lama di edit plan lama nya kecuali plan baru baru lah bikin yang baru implementation plan nya gitu"
+
+### Assistant Response
+Siap, perubahan sudah diterapkan secara menyeluruh baik pada file plan lama maupun pada aturan kerja workspace!
+
+Berikut ringkasan tindakan yang telah dilakukan:
+
+---
+
+### 1. Penandaan Jelas pada Plan Lama (01)
+File [`planning/01-implementation-plan-uob-async-lms-and-curriculum-revamp.md`](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/planning/01-implementation-plan-uob-async-lms-and-curriculum-revamp.md) kini telah diberikan tanda peringatan **`❌ [SUPERSEDED / TIDAK DIGUNAKAN LAGI]`** di judul utama paling atas beserta alert box merah (`[!CAUTION]`):
+- Menjelaskan bahwa dokumen tersebut merupakan draft awal yang sudah usang/tidak dipakai.
+- Menyertakan tautan langsung ke rencana aktif penggantinya:
+  - Rencana Kurikulum & Scaffolding Aktif: [`02-implementation-plan-curriculum-scaffolding-smp-sma-sd.md`](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/planning/02-implementation-plan-curriculum-scaffolding-smp-sma-sd.md)
+  - Spesifikasi Komprehensif: [`PRD.md`](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/PRD.md)
+
+---
+
+### 2. Pembaruan Aturan Workspace ([`AGENTS.md`](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/AGENTS.md))
+Aturan baku terkait **Implementation Plans** di [`AGENTS.md`](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/AGENTS.md) (serta [`projects/uob-async-lms/AGENTS.md`](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/AGENTS.md)) telah resmi ditambahkan ketentuan baru:
+
+1. **In-Place Renewal Rule**: Jika ada revisi, penyesuaian kebutuhan, atau iterasi dari rencana yang sudah ada untuk topik yang sama, **agen wajib mengedit dan memperbarui file plan yang lama secara langsung (in-place update)**, agar dokumen tetap menjadi single source of truth yang rapi dan tidak menumpuk file usang.
+2. **Kriteria File Plan Baru**: Agen hanya diperbolehkan membuat file implementation plan baru (`02`, `03`, dst.) jika topiknya benar-benar **inisiatif/subproject baru yang berbeda**.
+3. **Superseded Plan Marking**: Jika suatu plan lama terlanjur digantikan, wajib diberi penanda jelas di baris paling atas: `❌ [SUPERSEDED / TIDAK DIGUNAKAN LAGI]` dengan link yang mengarahkan ke dokumen plan aktif penggantinya.
+
+---
+
+Semua perubahan sudah tersimpan dan tercatat rapi di Git. Sekarang dokumen sudah aman dan tidak akan membingungkan!
