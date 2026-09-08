@@ -267,3 +267,30 @@ https://youtu.be/_aAQ8nFUAqc?si=ydg6KQywOi6CxC6x"
 
 ### Status
 - **under discussion** — audit ulang pedagogis, scaffolding, kelengkapan materi, dan kesesuaian jalur SMP–SMA diminta.
+
+### Assistant Response — 2026-09-08
+
+Sudah aku audit ulang isi folder `02-curriculum-sequencing`, mapping Markdown, dataset JSON SMP–SMA, metadata bridge, dan HTML bridge yang sudah tersedia.
+
+**Kesimpulan jujurnya: arah besarnya sudah benar, tetapi belum bisa disebut scaffolding final untuk pemula nol.** Struktur modulnya terlihat rapi, namun beberapa prasyarat belum benar-benar hadir sebagai materi dan belum dihubungkan sebagai step wajib di dataset.
+
+Temuan terpenting:
+
+1. **SMA:** hanya `bridge-hs-00.html` yang sudah menjadi HTML. `bridge-hs-01` sampai `bridge-hs-05` baru berupa rencana/metadata atau belum ada sebagai step LMS. Akibatnya siswa masih langsung masuk materi yang mencampur `input`, `if`, function, dan `return`.
+2. **SMA:** proyek `hs-1-3` memakai `def`, `elif`, `and`, `int(input())`, dan dictionary terlalu dini. Seharusnya setelah bridge function dan dictionary, atau disederhanakan menjadi latihan input dasar.
+3. **SMA:** loop masuk ke optimasi sebelum ada bridge `list`, `for`, `range`, dan accumulator.
+4. **SMP:** `bridge-ms-00.html` terlalu cepat mengajarkan TinyDB pada Modul 0. Tur App Inventor harus berhenti dulu pada Designer, Blocks, event, input-output, dan menjalankan proyek kosong.
+5. **SMP:** `bridge-ms-01`, `bridge-ms-02`, dan `bridge-ms-03` belum menjadi HTML bridge yang dipakai sebagai prasyarat. Materi input aman masih memuat event, `if/else`, `not`, `or`, validasi, flowchart, dan privasi sekaligus.
+6. **Dataset belum siap produksi:** masih ada quiz `99999`, bookmark yang melewati `endSeconds`, dan beberapa quiz yang timestamp-nya berada sebelum awal segmen.
+
+Urutan pedagogis yang aku rekomendasikan:
+
+- **SMA:** Colab → `print()` → variabel dan tipe data → input sederhana → konversi tipe/boolean → conditional → list dan loop → function → dictionary → validasi/error handling → proyek.
+- **SMP:** tur App Inventor → event/input-output/variabel → form dan validasi → conditional → procedures → debugging → TinyDB → proyek.
+
+Audit lengkap sudah kusimpan di:
+[Audit ulang scaffolding SMP–SMA](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/02-curriculum-sequencing/mapping/audit-ulang-scaffolding-2026-09-08.md)
+
+Aku **tidak mengubah dataset produksi atau folder sumber lama**. Yang dibuat/diperbarui hanya dokumen audit dan `STATE.md` di subproject ini. Perubahan tersebut sudah dibuat checkpoint Git lokal dengan commit `ba5365f` (`docs(curriculum): audit scaffolding SMP SMA`).
+
+Status: **belum disetujui sebagai kurikulum final; arah sequencing dan daftar materi bridge sudah disetujui sebagai dasar pekerjaan berikutnya.**
