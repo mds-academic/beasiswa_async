@@ -829,3 +829,42 @@ Jika siswa salah ketik email (misal mengetik `budi.santoss@gmail.com` atau salah
 - **Git Commit & Remote Push**: Berhasil di-commit dan di-push ke remote `git@github.com:mds-academic/beasiswa_async.git` pada branch `main`.
 - **Akses Langsung Server Lokal**: Kamu bisa langsung membukanya di browser komputermu di:  
   👉 `http://localhost:8080/`
+
+### User Request — 2026-09-08 (Kritik & Instruksi Overhaul Slide Materi Jembatan)
+
+"nga ini jelek sekali, ini ga sesuai  standard ini harusnya dia slide nya detail karena anak anak akan BACA DARI SINI 
+
+/Users/yazidhilmi/Documents/cloud/Kalananti-cloud/Academic_Content/B2B/UOB/Async/Highschool/sesi30-32/unused_files/slide_deck_part1.html
+ini template nya oake yang inini hh jangan ngaco 
+
+ulang ini kenapa asangatklah ga jeals gamabrnya kok ga asli kalo google colab yang di ss https://colab.research.google.com/ dan mit app inventor yang di ss ini nya lah 
+
+ini cara menggunakan nya pake ini. nih udah ada isa di masukin https://support.exabytes.co.id/id/support/solutions/articles/14000146469-cara-menggunakan-google-colab
+
+ini cara gunakakn app inventor https://books.google.co.id/books?id=TEZIEAAAQBAJ&printsec=copyright&hl=id#v=onepage&q&f=false
+
+nah ini aku mau dia foto yang digunakan real jangan bikin dair css anjirr
+
+oiya ini juga kalo ada beberapa info yang kamu ga tau scraping websites buat ambil gambar atau materialnyaa baru kamu tambahin biar nyambung sama materi nya aku mau lengkao unu"
+
+### User Request — 2026-09-08 (Kelanjutan Pekerjaan)
+
+"continue"
+
+### Status / Action
+
+1. **Adopsi 100% Template Kanonik Neo-Brutalist**:
+   - Membedah secara mendalam template rujukan `/Users/yazidhilmi/Documents/cloud/Kalananti-cloud/Academic_Content/B2B/UOB/Async/Highschool/sesi30-32/unused_files/slide_deck_part1.html`.
+   - Mengadopsi struktur CSS lengkap: font `Fredoka`, palette `--yellow: #FFE500`, `--blue: #00C6FF`, `--purple: #9B51E0`, `--green: #00E676`, `--red: #FF3B30`, border tebal `4px solid #000`, hard drop shadow (`12px 12px 0 #000`), `.banner-shape`, `.banner-text`, `.banner-subtitle`, kartu konten ganda `.split-layout`, `.quote-box`, `.code-block`, `.interactive-box`, `.quiz-option`, navigasi footer (`.nav-btn`, `.progress-bar`), serta custom scrollbar.
+2. **Pengambilan & Upload Tangkapan Layar Asli (Zero CSS Mockup)**:
+   - Membuka session browser riil via Chrome DevTools Protocol (CDP) port 9222 pada akun aktif Ahmad Yazid.
+   - Menangkap tangkapan layar antarmuka asli dari:
+     - Google Colab (`https://colab.research.google.com/`): Modal Welcome, Notebook Anatomy, Code Execution (`seconds_in_a_day = 24 * 60 * 60` -> `86400`), dan Sidebar Files/Mount Drive.
+     - MIT App Inventor (`https://ai2.appinventor.mit.edu/`): Login Google, Designer 4 Kolom aplikasi Spendify, dan Blocks Editor logika event `Button.Click` & `TinyDB.GetValue`.
+   - Mengunggah 7 tangkapan layar asli ke Ruangguru CDN (`https://file-uploader.sirogu.com/`, bucket `rg_cdn_web_2`) via script Python terverifikasi.
+3. **Penyusunan Konten Edukatif Rinci (16 Slide Pembelajaran Mandiri)**:
+   - **SMA (`bridge-hs-00.html`)**: Memadukan materi tutorial Exabytes (*Cara Menggunakan Google Colab*), antarmuka notebook, eksekusi kode, tipe data, variabel, sanitasi input, error handling, checkpoint kuis interaktif, dan simulator runtime Python mini.
+   - **SMP (`bridge-ms-00.html`)**: Memadukan materi buku referensi Agus Suharto (*Tutorial Mudah Membuat Aplikasi Android dengan MIT App Inventor*), Designer vs Blocks, event-driven architecture, TinyDB persistence, checkpoint kuis interaktif, dan simulator virtual storage TinyDB.
+4. **Verifikasi Visual Rendering & Sinkronisasi Repositori**:
+   - Menjalankan Playwright script untuk merender dan memvalidasi slide deck 16:9 di viewport 1280x720 (`rendered_hs_slide_01.png`, `rendered_hs_slide_06.png`, `rendered_ms_slide_01.png`, `rendered_ms_slide_06.png`, `rendered_ms_slide_08.png`).
+   - Menyinkronkan file slide dan JSON ke platform LMS (`subprojects/01-lms-platform/src/slides/`) serta deploy docs (`docs/slides/`).

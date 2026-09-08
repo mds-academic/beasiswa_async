@@ -3,685 +3,1105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Materi Jembatan 00 - Tur Lengkap MIT App Inventor</title>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Materi Pengantar SMP: Logika Koding & MIT App Inventor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Consolas&display=swap" rel="stylesheet">
     <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         :root {
             --yellow: #FFE500;
             --blue: #00C6FF;
             --black: #1A1A1A;
             --white: #FFFFFF;
-            --bg-light: #F0F4F8;
+            --bg-light: #E8E8E8;
             --green: #00E676;
-            --pink: #FF3366;
-            --purple: #8A2BE2;
-            --border: 3px solid #1A1A1A;
-            --shadow: 4px 4px 0px #1A1A1A;
-            --shadow-lg: 6px 6px 0px #1A1A1A;
+            --pink: #FF9DE2;
+            --red: #FF0055;
+            --purple: #C084FC;
+            --orange: #FF9800;
         }
+
         body {
             background-color: var(--bg-light);
-            background-image: radial-gradient(#cbd5e1 2px, transparent 2px);
-            background-size: 28px 28px;
+            background-image: radial-gradient(#bcbcbc 2px, transparent 2px);
+            background-size: 30px 30px;
             font-family: 'Fredoka', sans-serif;
             color: var(--black);
-            min-height: 100vh;
+            overflow: hidden;
+            height: 100vh;
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            padding: 20px;
         }
+
+        /* App Container (Landscape 16:9 Simulator) */
         .app-container {
-            width: 100%;
-            max-width: 1200px;
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
+            position: relative; z-index: 10;
+            width: 98vw; max-width: 1400px;
+            height: 98vh; max-height: 900px;
+            display: flex; flex-direction: column;
         }
-        /* Header */
+
+        /* Header Layout */
         .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: var(--white);
-            border: var(--border);
-            border-radius: 18px;
-            padding: 14px 24px;
-            box-shadow: var(--shadow);
-        }
-        .brand-group {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-        .badge-kicker {
-            background: var(--black);
-            color: var(--yellow);
-            padding: 6px 14px;
-            border-radius: 10px;
-            font-size: 13px;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-        }
-        .program-title {
-            font-size: 15px;
-            font-weight: 700;
-            color: #0f172a;
-        }
-        .status-pill {
-            background: #e0f2fe;
-            color: #0369a1;
-            border: 2px solid #0369a1;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 13px;
-            font-weight: 700;
-        }
-        /* Slides Area */
-        .slides-card {
-            background: var(--white);
-            border: var(--border);
-            border-radius: 24px;
-            box-shadow: var(--shadow-lg);
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            min-height: 520px;
-        }
-        .slide-stage {
-            flex: 1;
-            padding: 32px 36px;
-            display: none;
-            animation: fadeIn 0.25s ease forwards;
-        }
-        .slide-stage.active {
-            display: flex;
-            gap: 32px;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(6px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        /* Left Column: Summary & Content */
-        .col-content {
-            flex: 1.1;
-            display: flex;
-            flex-direction: column;
-            gap: 18px;
-        }
-        .tag-pill {
-            display: inline-block;
-            align-self: flex-start;
-            padding: 6px 14px;
-            border-radius: 10px;
-            font-size: 13px;
-            font-weight: 700;
-            border: 2px solid var(--black);
-            box-shadow: 2px 2px 0 var(--black);
-        }
-        .tag-yellow { background: var(--yellow); color: var(--black); }
-        .tag-blue { background: var(--blue); color: var(--black); }
-        .tag-green { background: var(--green); color: var(--black); }
-        .tag-pink { background: var(--pink); color: var(--white); }
-        .slide-title {
-            font-size: 26px;
-            font-weight: 700;
-            line-height: 1.25;
-            color: #0f172a;
-        }
-        .highlights-list {
-            display: flex;
-            flex-direction: column;
-            gap: 14px;
-            margin-top: 4px;
-        }
-        .highlight-item {
-            display: flex;
-            gap: 14px;
-            align-items: flex-start;
-            background: #f8fafc;
-            border: 2px solid #e2e8f0;
-            border-radius: 12px;
-            padding: 12px 14px;
-        }
-        .highlight-icon {
-            font-size: 26px;
-            line-height: 1;
-        }
-        .highlight-text {
-            font-family: 'Nunito', sans-serif;
-        }
-        .highlight-label {
-            display: block;
-            font-family: 'Fredoka', sans-serif;
-            font-size: 15px;
-            font-weight: 700;
-            color: #1e293b;
-            margin-bottom: 2px;
-        }
-        .highlight-sub {
-            font-size: 13px;
-            color: #475569;
-            line-height: 1.4;
-        }
-        .keynote-box {
-            background: #fefce8;
-            border: 2px solid var(--black);
-            border-radius: 12px;
-            padding: 12px 16px;
-            font-family: 'Nunito', sans-serif;
-            font-size: 13px;
-            color: #854d0e;
-            box-shadow: 3px 3px 0 var(--yellow);
-            line-height: 1.4;
-        }
-        /* Right Column: Visual Frame */
-        .col-visual {
-            flex: 0.9;
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-        .visual-frame {
-            flex: 1;
-            background: #0f172a;
-            border: var(--border);
-            border-radius: 16px;
-            overflow: hidden;
+            display: flex; justify-content: flex-start; align-items: flex-start;
+            padding: 25px 50px 10px;
             position: relative;
-            cursor: pointer;
-            box-shadow: var(--shadow);
+            width: 100%;
+        }
+
+        /* Banner Centered at Top */
+        .banner-container { 
+            position: absolute; top: 20px; left: 0; width: 100%;
+            text-align: center; display: flex; flex-direction: column; align-items: center; 
+            z-index: 10; pointer-events: none;
+        }
+        
+        .banner-shape {
+            background-color: var(--blue);
+            padding: 10px 50px;
+            border: 4px solid var(--black);
+            border-radius: 12px;
+            box-shadow: 6px 6px 0px var(--black);
+            display: inline-block;
+        }
+        
+        .banner-text { 
+            font-size: 26px; font-weight: 700; letter-spacing: 2px; color: var(--white); 
+            text-shadow: 2px 2px 0px var(--black), -1px -1px 0px var(--black), 1px -1px 0px var(--black), -1px 1px 0px var(--black), 1px 1px 0px var(--black);
+        }
+        
+        .banner-subtitle {
+            background-color: var(--yellow); 
+            color: var(--black); 
+            padding: 6px 36px; 
+            font-size: 15px; font-weight: 700;
+            border: 3px solid var(--black);
+            border-radius: 20px; 
+            margin-top: -12px; 
+            text-transform: uppercase; letter-spacing: 1px;
+            box-shadow: 4px 4px 0px var(--black);
+            display: inline-block;
+        }
+
+        /* Slides Area */
+        .slides-area {
+            flex: 1; position: relative; margin: 25px 50px 0; perspective: 1200px;
+            min-height: 0; 
+        }
+
+        .slide {
+            position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+            display: none;
+        }
+        
+        .slide.active { 
+            display: block; 
+            animation: popIn 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+        }
+
+        @keyframes popIn {
+            from { opacity: 0; transform: scale(0.96) translateY(15px); }
+            to { opacity: 1; transform: scale(1) translateY(0); }
+        }
+
+        .content-card {
+            background-color: var(--white);
+            border: 4px solid var(--black); 
+            border-radius: 24px;
+            padding: 35px 55px; 
+            box-shadow: 12px 12px 0px var(--black);
+            width: 100%; height: 100%; 
+            overflow-y: auto;
+            display: flex;
+            position: relative;
+        }
+
+        .content-card::-webkit-scrollbar { width: 14px; }
+        .content-card::-webkit-scrollbar-track { background: var(--bg-light); border-left: 3px solid var(--black); border-radius: 0 20px 20px 0; }
+        .content-card::-webkit-scrollbar-thumb { background: var(--blue); border: 3px solid var(--black); border-radius: 10px; }
+
+        /* Decorative corner dot */
+        .content-card::after {
+            content: '';
+            position: absolute;
+            top: -15px; right: 30px;
+            width: 40px; height: 40px;
+            background-color: var(--yellow);
+            border: 3px solid var(--black);
+            border-radius: 50%;
+            box-shadow: 4px 4px 0px var(--black);
+            z-index: 5;
+        }
+
+        /* Inner container */
+        .inner-content {
+            max-width: 960px;
+            margin: auto;
+            width: 100%;
+            position: relative;
+            z-index: 10;
+        }
+
+        .slide-title {
+            font-size: 30px; font-weight: 700; color: var(--black); 
+            margin-bottom: 22px; line-height: 1.3;
+            background-color: var(--yellow);
+            display: inline-block;
+            padding: 8px 24px;
+            border: 3px solid var(--black);
+            border-radius: 12px;
+            box-shadow: 5px 5px 0px var(--black);
+        }
+
+        .slide-text { font-size: 20px; line-height: 1.6; color: var(--black); font-weight: 600; }
+        .slide-text p { margin-bottom: 18px; }
+        .slide-text ul { padding-left: 35px; margin-bottom: 20px; }
+        .slide-text li { margin-bottom: 12px; position: relative; list-style-type: none; }
+        .slide-text li::before {
+            content: '▶';
+            color: var(--blue);
+            position: absolute;
+            left: -30px;
+            font-size: 18px;
+            -webkit-text-stroke: 1px var(--black);
+        }
+        
+        .slide-text strong { 
+            color: var(--black); 
+            background-color: var(--blue); 
+            padding: 2px 10px; 
+            border: 2px solid var(--black);
+            border-radius: 6px; 
+            font-weight: 700; 
+            box-shadow: 2px 2px 0px var(--black);
+            display: inline-block;
+        }
+
+        .quote-box {
+            background-color: var(--yellow); 
+            border: 4px solid var(--black);
+            padding: 18px 26px; 
+            border-radius: 16px; 
+            margin: 22px 0; 
+            font-weight: 700; color: var(--black); font-size: 21px;
+            box-shadow: 6px 6px 0px var(--blue);
+            position: relative;
+        }
+
+        .code-block {
+            background-color: var(--black); 
+            border: 4px solid var(--black); border-radius: 16px;
+            padding: 20px 26px; font-family: 'Consolas', 'Courier New', monospace; font-size: 20px;
+            color: var(--white); overflow-x: auto; margin: 20px 0; 
+            box-shadow: 6px 6px 0px var(--yellow); 
+            line-height: 1.5;
+            text-align: left;
+        }
+
+        /* Real Screenshot Frame */
+        .screenshot-box {
+            margin: 20px 0;
+            background: #FAFAFA;
+            border: 4px solid var(--black);
+            border-radius: 18px;
+            padding: 12px;
+            box-shadow: 8px 8px 0px var(--black);
+            text-align: center;
+        }
+
+        .screenshot-img {
+            width: 100%;
+            max-height: 380px;
+            object-fit: contain;
+            border: 3px solid var(--black);
+            border-radius: 12px;
+            background: #FFFFFF;
+            display: block;
+        }
+
+        .screenshot-caption {
+            margin-top: 10px;
+            font-size: 15px;
+            font-weight: 700;
+            color: #333;
             display: flex;
             align-items: center;
             justify-content: center;
-            min-height: 280px;
+            gap: 8px;
         }
-        .visual-frame img {
+
+        /* 2-Column Side-by-Side */
+        .two-column {
+            display: flex;
+            gap: 25px;
+            align-items: flex-start;
+            margin: 20px 0;
+        }
+
+        .two-column > * {
+            flex: 1;
+        }
+
+        /* Tables */
+        .styled-table {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
+            border-collapse: collapse;
+            background-color: var(--white);
+            border: 4px solid var(--black);
+            box-shadow: 6px 6px 0px var(--black);
+            margin: 18px 0;
+            font-size: 17px;
         }
-        .zoom-badge {
-            position: absolute;
-            bottom: 12px;
-            right: 12px;
-            background: rgba(0,0,0,0.75);
-            color: var(--white);
-            padding: 4px 10px;
-            border-radius: 8px;
-            font-size: 11px;
-            font-weight: 600;
-            backdrop-filter: blur(4px);
-        }
-        .caption-bar {
-            font-family: 'Nunito', sans-serif;
-            font-size: 12px;
-            color: #64748b;
-            text-align: center;
-            font-weight: 600;
-        }
-        /* Controls Bar */
-        .controls-bar {
-            background: #f8fafc;
-            border-top: var(--border);
-            padding: 16px 36px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .nav-btn {
-            background: var(--white);
-            border: var(--border);
-            box-shadow: 3px 3px 0 var(--black);
-            padding: 10px 20px;
-            border-radius: 12px;
-            font-family: 'Fredoka', sans-serif;
-            font-size: 15px;
+
+        .styled-table th {
+            background-color: var(--yellow);
+            color: var(--black);
+            padding: 12px 16px;
+            border: 2px solid var(--black);
+            text-align: left;
             font-weight: 700;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            transition: transform 0.1s ease;
         }
-        .nav-btn:hover {
-            transform: translate(-1px, -1px);
-            box-shadow: 4px 4px 0 var(--black);
+
+        .styled-table td {
+            padding: 10px 16px;
+            border: 2px solid var(--black);
+            font-weight: 600;
         }
-        .nav-btn:active {
-            transform: translate(2px, 2px);
-            box-shadow: 1px 1px 0 var(--black);
+
+        .styled-table tr:nth-child(even) {
+            background-color: #F8FAFC;
         }
-        .nav-btn:disabled {
-            opacity: 0.4;
-            cursor: not-allowed;
-            transform: none;
-            box-shadow: 2px 2px 0 var(--black);
-        }
-        .nav-btn.primary {
-            background: var(--yellow);
-        }
-        .slide-counter {
-            font-size: 15px;
-            font-weight: 700;
-            color: #475569;
-        }
-        /* Summary Card Below Player */
-        .summary-card {
-            background: var(--white);
-            border: var(--border);
-            border-radius: 18px;
-            padding: 20px 24px;
-            box-shadow: var(--shadow);
-        }
-        .summary-card h3 {
-            font-size: 16px;
-            color: #0f172a;
-            margin-bottom: 8px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .summary-card p {
-            font-family: 'Nunito', sans-serif;
-            font-size: 14px;
-            color: #475569;
-            line-height: 1.5;
-        }
-        /* Quiz Card */
-        .quiz-card {
-            margin-top: 16px;
-            background: #eef2ff;
-            border: 2px solid #6366f1;
+
+        /* Card Callout Boxes */
+        .feature-card {
+            background-color: #F0F9FF;
+            border: 3px solid var(--black);
             border-radius: 14px;
-            padding: 16px 20px;
+            padding: 18px;
+            box-shadow: 4px 4px 0px var(--black);
+            margin-bottom: 14px;
         }
-        .quiz-title {
-            font-size: 15px;
+
+        /* Block Representation Badges */
+        .block-badge {
+            display: inline-block;
+            padding: 6px 14px;
+            border: 3px solid var(--black);
+            border-radius: 10px;
             font-weight: 700;
-            color: #312e81;
+            color: var(--white);
+            box-shadow: 3px 3px 0px var(--black);
+            margin: 4px 0;
+        }
+
+        .block-control { background-color: #DDAA00; color: var(--black); }
+        .block-logic { background-color: #55B535; }
+        .block-math { background-color: #3864B8; }
+        .block-text { background-color: #DE4C8A; }
+        .block-variable { background-color: #E86D1F; }
+        .block-event { background-color: #B58B00; color: var(--black); }
+        .block-tinydb { background-color: #6C5CE7; }
+
+        /* Interactive Playground */
+        .playground-card {
+            background: #fdfdfd;
+            border: 4px solid var(--black);
+            border-radius: 16px;
+            padding: 22px;
+            margin: 20px 0;
+            box-shadow: 6px 6px 0px var(--black);
+            text-align: left;
+        }
+
+        .input-text-custom {
+            width: 100%;
+            padding: 12px 18px;
+            font-size: 18px;
+            font-family: inherit;
+            border: 3px solid var(--black);
+            border-radius: 8px;
             margin-bottom: 12px;
         }
-        .quiz-options {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-        .quiz-opt-btn {
-            background: var(--white);
-            border: 2px solid #cbd5e1;
-            padding: 10px 14px;
-            border-radius: 8px;
-            font-family: 'Nunito', sans-serif;
-            font-size: 14px;
-            font-weight: 600;
-            text-align: left;
-            cursor: pointer;
-            transition: all 0.15s ease;
-        }
-        .quiz-opt-btn:hover {
-            border-color: #6366f1;
-            background: #faf5ff;
-        }
-        .quiz-opt-btn.correct {
-            background: #dcfce7;
-            border-color: #22c55e;
-            color: #15803d;
-        }
-        .quiz-opt-btn.wrong {
-            background: #fee2e2;
-            border-color: #ef4444;
-            color: #b91c1c;
-        }
-        /* Lightbox Modal */
-        .lightbox {
-            position: fixed;
-            top: 0; left: 0; width: 100vw; height: 100vh;
-            background: rgba(0,0,0,0.85);
-            display: none;
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-            padding: 40px;
-        }
-        .lightbox.active {
-            display: flex;
-        }
-        .lightbox img {
-            max-width: 90vw;
-            max-height: 85vh;
-            border: 4px solid var(--white);
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
-        }
-        .lightbox-close {
-            position: absolute;
-            top: 24px;
-            right: 28px;
-            background: var(--pink);
+
+        .btn-action-custom {
+            background-color: var(--blue);
             color: var(--white);
-            border: 2px solid var(--white);
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            font-size: 20px;
-            font-weight: bold;
+            font-family: inherit;
+            font-weight: 700;
+            font-size: 18px;
+            padding: 10px 25px;
+            border: 3px solid var(--black);
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 4px 4px 0px var(--black);
+            transition: all 0.1s;
+        }
+
+        .btn-action-custom:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px var(--black);
+            background-color: #00B0E8;
+        }
+
+        .btn-action-custom:active {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0px var(--black);
+        }
+
+        .result-box {
+            margin-top: 15px;
+            background-color: var(--black);
+            color: var(--green);
+            padding: 15px 20px;
+            border-radius: 10px;
+            font-family: 'Consolas', monospace;
+            font-size: 19px;
+            min-height: 50px;
             display: flex;
             align-items: center;
-            justify-content: center;
-            cursor: pointer;
         }
-        @media (max-width: 860px) {
-            .slide-stage.active { flex-direction: column; }
-            .col-visual { order: -1; }
+
+        /* Quiz Layout */
+        .quiz-option {
+            background-color: var(--white);
+            border: 3px solid var(--black);
+            border-radius: 12px;
+            padding: 14px 20px;
+            margin: 10px 0;
+            font-weight: 700;
+            font-size: 18px;
+            cursor: pointer;
+            box-shadow: 4px 4px 0px var(--black);
+            transition: all 0.1s;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .quiz-option:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px var(--black);
+            background-color: #F8FAFC;
+        }
+
+        .quiz-option.correct {
+            background-color: var(--green) !important;
+            color: var(--black) !important;
+        }
+
+        .quiz-option.wrong {
+            background-color: var(--red) !important;
+            color: var(--white) !important;
+        }
+
+        /* Navigation Controls */
+        .nav-container {
+            padding: 20px 50px 30px; display: flex; justify-content: space-between; align-items: center;
+            min-height: 90px;
+        }
+
+        .nav-btn {
+            background-color: var(--yellow); 
+            border: 4px solid var(--black);
+            color: var(--black); padding: 12px 35px; border-radius: 30px; cursor: pointer;
+            font-family: 'Fredoka', sans-serif; font-weight: 700; font-size: 18px;
+            transition: all 0.1s; display: flex; align-items: center; gap: 8px;
+            box-shadow: 6px 6px 0px var(--black);
+        }
+
+        .nav-btn:hover:not(:disabled) { 
+            transform: translate(-2px, -2px); box-shadow: 8px 8px 0px var(--black); 
+            background-color: #FFF033;
+        }
+        
+        .nav-btn:active:not(:disabled) {
+            transform: translate(4px, 4px); box-shadow: 2px 2px 0px var(--black);
+        }
+        
+        .nav-btn:disabled { 
+            background-color: #e0e0e0;
+            color: #888;
+            border-color: #888;
+            box-shadow: 2px 2px 0px #888; 
+            transform: translate(2px, 2px); 
+            cursor: not-allowed; 
+        }
+        
+        .counter-group {
+            display: flex; flex-direction: column; align-items: center; gap: 8px;
+            background: var(--white);
+            padding: 10px 28px;
+            border: 4px solid var(--black);
+            border-radius: 24px;
+            box-shadow: 6px 6px 0px var(--black);
+            transform: rotate(1deg);
+        }
+
+        .slide-counter { font-size: 17px; font-weight: 700; color: var(--black); }
+
+        .progress-bar-bg {
+            width: 220px; height: 16px; background-color: var(--bg-light); 
+            border: 3px solid var(--black); border-radius: 10px; overflow: hidden;
+            box-shadow: inset 2px 2px 0px rgba(0,0,0,0.1);
+        }
+        
+        .progress-bar {
+            height: 100%; background-color: var(--blue); 
+            border-right: 3px solid var(--black);
+            transition: width 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
     </style>
 </head>
 <body>
 
     <div class="app-container">
+        
         <!-- Header -->
-        <header class="header">
-            <div class="brand-group">
-                <span class="badge-kicker">MATERI 00</span>
-                <span class="program-title">UOB My Digital Space · SMP</span>
-            </div>
-            <span class="status-pill">📱 Materi Jembatan Pemula</span>
-        </header>
-
-        <!-- Slides Presentation Area -->
-        <main class="slides-card">
-            <!-- Slide 0 -->
-            <div class="slide-stage active" data-slide="0">
-                <div class="col-content">
-                    <span class="tag-pill tag-yellow">🤖 Koding Visual</span>
-                    <h1 class="slide-title">Selamat Datang di MIT App Inventor!</h1>
-                    <div class="highlights-list">
-                        <div class="highlight-item">
-                            <span class="highlight-icon">📱</span>
-                            <div class="highlight-text">
-                                <span class="highlight-label">Bikin Aplikasi Android Beneran</span>
-                                <span class="highlight-sub">Kamu bisa membuat aplikasi tombol interaktif, form masukan, game sederhana, hingga penyimpanan data di smartphone.</span>
-                            </div>
-                        </div>
-                        <div class="highlight-item">
-                            <span class="highlight-icon">🧩</span>
-                            <div class="highlight-text">
-                                <span class="highlight-label">Koding Seperti Puzzle Blok</span>
-                                <span class="highlight-sub">Tidak perlu menghafal ketikan kode rumit; kamu cukup menyusun blok logika yang saling mengunci.</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="keynote-box">
-                        💡 Platform ini dikembangkan oleh MIT agar siapa saja bisa menjadi pencipta teknologi digital masa depan!
-                    </div>
+        <div class="header">
+            <div class="banner-container">
+                <div class="banner-shape">
+                    <div id="banner-title" class="banner-text">LOGIKA KODING SMP</div>
                 </div>
-                <div class="col-visual">
-                    <div class="visual-frame" onclick="openLightbox('https://cdn-web-2.ruangguru.com/landing-pages/assets/99488d0a-3779-4dc9-890c-dcc95b525209.png')">
-                        <img src="https://cdn-web-2.ruangguru.com/landing-pages/assets/99488d0a-3779-4dc9-890c-dcc95b525209.png" alt="Antarmuka MIT App Inventor">
-                        <span class="zoom-badge">🔍 Klik untuk Perbesar</span>
+                <div id="banner-subtitle" class="banner-subtitle">MIT App Inventor & Dasar Aplikasi Android</div>
+            </div>
+        </div>
+
+        <!-- Slides Wrapper -->
+        <div class="slides-area">
+            
+            <!-- Slide 1: Welcome Intro -->
+            <div class="slide active" data-title="LOGIKA KODING SMP" data-subtitle="MIT App Inventor & Dasar Aplikasi Android">
+                <div class="content-card" style="align-items: center; justify-content: center; background: radial-gradient(circle, var(--blue) 0%, #0056b3 100%); color: var(--white); border-color: var(--black);">
+                    <div class="inner-content" style="text-align: center;">
+                        <span style="background-color: var(--yellow); color: var(--black); padding: 8px 24px; border: 3px solid var(--black); border-radius: 20px; font-size: 18px; font-weight: 700; box-shadow: 4px 4px 0px var(--black); display: inline-block; margin-bottom: 25px; transform: rotate(-2deg);">
+                            UOB MY DIGITAL SPACE • MIDDLE SCHOOL 📱
+                        </span>
+                        <h1 style="font-size: 46px; font-weight: 700; margin-bottom: 16px; text-shadow: 4px 4px 0px var(--black); line-height: 1.2;">
+                            Membuat Aplikasi Android Sendiri<br>dengan MIT App Inventor! 🤖
+                        </h1>
+                        <p style="font-size: 23px; font-weight: 600; text-shadow: 2px 2px 0px var(--black); color: var(--yellow); margin-bottom: 35px;">
+                            Belajar Pemrograman Visual, Alur Logika, dan Database Lokal di HP
+                        </p>
+                        <div style="font-size: 16px; font-weight: 600; opacity: 0.95; text-transform: uppercase; letter-spacing: 2px; background: rgba(0,0,0,0.3); padding: 10px 24px; border-radius: 12px; display: inline-block;">
+                            Materi Jembatan 00 • Fondasi Desain UI, Balok Logika, dan TinyDB
+                        </div>
                     </div>
-                    <p class="caption-bar">📸 Tur Lengkap: Antarmuka Kerja MIT App Inventor</p>
                 </div>
             </div>
 
-            <!-- Slide 1 -->
-            <div class="slide-stage" data-slide="1">
-                <div class="col-content">
-                    <span class="tag-pill tag-blue">🔄 Dua Ruang Kerja</span>
-                    <h1 class="slide-title">Dua Ruang Kerja: Designer vs Blocks</h1>
-                    <div class="highlights-list">
-                        <div class="highlight-item">
-                            <span class="highlight-icon">🎨</span>
-                            <div class="highlight-text">
-                                <span class="highlight-label">Designer: Menggambar Tampilan</span>
-                                <span class="highlight-sub">Ruang untuk mengatur tata letak tombol, teks, kotak isian, dan warna aplikasi yang tampak di HP.</span>
+            <!-- Slide 2: Mengapa Belajar Visual Blocks? -->
+            <div class="slide" data-title="MENGAPA BALOK VISUAL?" data-subtitle="Bebas Stres Typo & Fokus Logika">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">Mengapa Koding Berbasis Balok Visual? 🧩</h2>
+                        <div class="slide-text">
+                            <p>Banyak pemula takut belajar koding karena mengira koding penuh dengan hafalan teks bahasa Inggris dan tanda kurung rumit yang gampang error.</p>
+                            
+                            <div class="two-column">
+                                <div class="feature-card" style="background: #E8F5E9;">
+                                    <div style="font-size: 24px; font-weight: 700; margin-bottom: 8px;">🧩 Bentuk Puzzle Anti-Error</div>
+                                    <p style="font-size: 18px; margin-bottom: 0;">Setiap balok kode memiliki lekukan khusus. Jika dua instruksi tidak masuk akal atau tidak cocok tipe datanya, balok tersebut <strong>tidak akan bisa dipasangkan</strong> secara fisik!</p>
+                                </div>
+                                <div class="feature-card" style="background: #E1F5FE;">
+                                    <div style="font-size: 24px; font-weight: 700; margin-bottom: 8px;">🎯 100% Fokus ke Logika Pemikiran</div>
+                                    <p style="font-size: 18px; margin-bottom: 0;">Kamu tidak akan pusing dengan kesalahan tanda koma atau titik dua. Pikiranmu murni dilatih untuk berpikir logis: <em>"Jika saldo kurang, apa yang harus terjadi?"</em></p>
+                                </div>
+                            </div>
+
+                            <div class="quote-box">
+                                "Balok visual adalah jembatan terbaik: melatih logika berpikir komputasional tingkat tinggi dengan cara yang sangat visual dan menyenangkan!" 💡
                             </div>
                         </div>
-                        <div class="highlight-item">
-                            <span class="highlight-icon">🧠</span>
-                            <div class="highlight-text">
-                                <span class="highlight-label">Blocks: Mengatur Otak & Logika</span>
-                                <span class="highlight-sub">Ruang di balik layar untuk menentukan apa yang harus dilakukan aplikasi saat tombol diklik.</span>
-                            </div>
-                        </div>
                     </div>
-                    <div class="keynote-box">
-                        🎯 Tombol peralihan Designer dan Blocks berada di sudut kanan atas layar!
-                    </div>
-                </div>
-                <div class="col-visual">
-                    <div class="visual-frame" onclick="openLightbox('https://cdn-web-2.ruangguru.com/landing-pages/assets/99488d0a-3779-4dc9-890c-dcc95b525209.png')">
-                        <img src="https://cdn-web-2.ruangguru.com/landing-pages/assets/99488d0a-3779-4dc9-890c-dcc95b525209.png" alt="Peralihan Designer dan Blocks">
-                        <span class="zoom-badge">🔍 Klik untuk Perbesar</span>
-                    </div>
-                    <p class="caption-bar">📸 Tombol Peralihan Tab Designer dan Blocks di Pojok Kanan Atas</p>
                 </div>
             </div>
 
-            <!-- Slide 2 -->
-            <div class="slide-stage" data-slide="2">
-                <div class="col-content">
-                    <span class="tag-pill tag-green">🗂️ Area 1</span>
-                    <h1 class="slide-title">Area Palette: Katalog Komponen Aplikasi</h1>
-                    <div class="highlights-list">
-                        <div class="highlight-item">
-                            <span class="highlight-icon">🔘</span>
-                            <div class="highlight-text">
-                                <span class="highlight-label">User Interface (Antarmuka)</span>
-                                <span class="highlight-sub">Berisi Button (tombol), TextBox (kotak ketik), Label (teks keterangan), dan Image (gambar).</span>
+            <!-- Slide 3: Apa itu MIT App Inventor 2? -->
+            <div class="slide" data-title="MIT APP INVENTOR" data-subtitle="Platform Pembuat Aplikasi Mobile">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">Apa Itu MIT App Inventor 2? 🚀</h2>
+                        <div class="slide-text">
+                            <p><strong>MIT App Inventor</strong> adalah platform pemrograman berbasis web yang dikembangkan oleh universitas teknologi terbaik dunia, <strong>Massachusetts Institute of Technology (MIT)</strong> bersama Google.</p>
+                            
+                            <div class="feature-card">
+                                <ul style="margin-bottom: 0; font-size: 19px;">
+                                    <li><strong>Aplikasi Android Nyata</strong>: Aplikasi yang kamu rancang di sini bukanlah sekadar animasi main-main, melainkan <strong>file APK Android sungguhan</strong> yang bisa diinstal di HP!</li>
+                                    <li><strong>Cloud Storage</strong>: Semua proyek aplikasi tersimpan otomatis di server MIT menggunakan akun Google kamu.</li>
+                                    <li><strong>Dukungan Fitur Canggih</strong>: Dilengkapi akses kamera HP, sensor gerak, perekam suara, database lokal (TinyDB), hingga chatbot AI cerdas!</li>
+                                </ul>
                             </div>
-                        </div>
-                        <div class="highlight-item">
-                            <span class="highlight-icon">✋</span>
-                            <div class="highlight-text">
-                                <span class="highlight-label">Cara Pakai: Drag and Drop</span>
-                                <span class="highlight-sub">Cukup klik komponen yang diinginkan, tahan, lalu seret dan lepaskan ke layar Viewer.</span>
-                            </div>
+
+                            <p>Dengan App Inventor, siapa saja — bahkan siswa SMP yang belum pernah koding sekalipun — bisa menjadi <strong>Pencipta Solusi Digital</strong>! 🌟</p>
                         </div>
                     </div>
-                    <div class="keynote-box">
-                        💡 Tombol di Palette belum berfungsi sampai kamu memberinya logika di Blocks Editor nanti!
-                    </div>
-                </div>
-                <div class="col-visual">
-                    <div class="visual-frame" onclick="openLightbox('https://cdn-web-2.ruangguru.com/landing-pages/assets/99488d0a-3779-4dc9-890c-dcc95b525209.png')">
-                        <img src="https://cdn-web-2.ruangguru.com/landing-pages/assets/99488d0a-3779-4dc9-890c-dcc95b525209.png" alt="Area Palette">
-                        <span class="zoom-badge">🔍 Klik untuk Perbesar</span>
-                    </div>
-                    <p class="caption-bar">📸 Kolom Paling Kiri: Palette Pilihan Komponen Interaktif</p>
                 </div>
             </div>
 
-            <!-- Slide 3 -->
-            <div class="slide-stage" data-slide="3">
-                <div class="col-content">
-                    <span class="tag-pill tag-pink">📱 Area 2</span>
-                    <h1 class="slide-title">Area Viewer: Simulasi Layar Smartphone</h1>
-                    <div class="highlights-list">
-                        <div class="highlight-item">
-                            <span class="highlight-icon">📲</span>
-                            <div class="highlight-text">
-                                <span class="highlight-label">Cermin Layar HP Nyata</span>
-                                <span class="highlight-sub">Apa yang kamu susun di dalam kotak Viewer ini adalah tampilan persis yang akan muncul di layar HP Android.</span>
+            <!-- Slide 4: Langkah 1 - Buka & Login Akun Google -->
+            <div class="slide" data-title="LANGKAH 1: LOGIN" data-subtitle="Akses Akun Google">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">Langkah 1: Membuka App Inventor & Login 🔑</h2>
+                        <div class="slide-text">
+                            <p>Berdasarkan buku panduan <em>"Tutorial Mudah Membuat Aplikasi Android Dengan MIT App Inventor"</em>, berikut cara masuk pertama kali:</p>
+                            <ul style="font-size: 19px;">
+                                <li>Buka browser dan akses alamat: <strong>https://ai2.appinventor.mit.edu/</strong></li>
+                                <li>Klik tombol <strong>Create Apps!</strong> berwarna oranye di kiri atas.</li>
+                                <li>Pilih akun Google (Gmail) kamu untuk login satu klik.</li>
+                            </ul>
+
+                            <div class="screenshot-box">
+                                <img src="https://cdn-web-2.ruangguru.com/landing-pages/assets/3ceeff4b-2d43-4675-938c-69e8b748b3cd.png" alt="Google Login MIT App Inventor" class="screenshot-img">
+                                <div class="screenshot-caption">
+                                    📸 <em>Tangkapan layar nyata: Layar otentikasi Google OAuth untuk masuk langsung ke akun App Inventor kamu.</em>
+                                </div>
                             </div>
                         </div>
-                        <div class="highlight-item">
-                            <span class="highlight-icon">📐</span>
-                            <div class="highlight-text">
-                                <span class="highlight-label">Atur Urutan Komponen</span>
-                                <span class="highlight-sub">Kamu bisa meletakkan judul di atas, kotak isian nama di tengah, dan tombol sapaan di bawah.</span>
-                            </div>
-                        </div>
                     </div>
-                    <div class="keynote-box">
-                        ✨ Di sinilah kamu melihat desain fisik aplikasimu terbentuk langkah demi langkah!
-                    </div>
-                </div>
-                <div class="col-visual">
-                    <div class="visual-frame" onclick="openLightbox('https://cdn-web-2.ruangguru.com/landing-pages/assets/99488d0a-3779-4dc9-890c-dcc95b525209.png')">
-                        <img src="https://cdn-web-2.ruangguru.com/landing-pages/assets/99488d0a-3779-4dc9-890c-dcc95b525209.png" alt="Area Viewer">
-                        <span class="zoom-badge">🔍 Klik untuk Perbesar</span>
-                    </div>
-                    <p class="caption-bar">📸 Kolom Tengah: Viewer Simulasi Layar HP Asli</p>
                 </div>
             </div>
 
-            <!-- Slide 4 -->
-            <div class="slide-stage" data-slide="4">
-                <div class="col-content">
-                    <span class="tag-pill tag-yellow">⚙️ Area 3 & 4</span>
-                    <h1 class="slide-title">Components List & Properties (Pengaturan)</h1>
-                    <div class="highlights-list">
-                        <div class="highlight-item">
-                            <span class="highlight-icon">📋</span>
-                            <div class="highlight-text">
-                                <span class="highlight-label">Components (Daftar Komponen)</span>
-                                <span class="highlight-sub">Daftar pohon seluruh elemen yang ada di aplikasi. Sangat disarankan me-rename komponen (misal: btn_sapa).</span>
+            <!-- Slide 5: Langkah 2 - Mulai Proyek Baru -->
+            <div class="slide" data-title="LANGKAH 2: NEW PROJECT" data-subtitle="Membuat Proyek Baru">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">Langkah 2: Memulai Proyek Baru (Start New Project) 📁</h2>
+                        <div class="slide-text">
+                            <p>Setelah berhasil login, kamu akan melihat daftar proyekmu. Untuk membuat aplikasi baru:</p>
+                            
+                            <ul style="font-size: 19px;">
+                                <li>Klik tombol <strong>Start new project</strong> di pojok kiri atas.</li>
+                                <li>Ketik nama proyek yang kamu inginkan, misalnya <code>DompetDigitalSMP</code>.</li>
+                            </ul>
+
+                            <div class="quote-box" style="font-size: 19px;">
+                                ⚠️ <strong>Aturan Wajib Penamaan Proyek App Inventor:</strong><br>
+                                • Nama proyek <strong>TIDAK BOLEH</strong> menggunakan spasi! (Gunakan huruf besar di tiap kata seperti <code>AplikasiKeuangan</code> atau pisahkan dengan tanda underscore <code>Catatan_Uang</code>).<br>
+                                • Wajib diawali dengan huruf abjad, bukan angka (❌ <code>1aplikasi</code>).
                             </div>
-                        </div>
-                        <div class="highlight-item">
-                            <span class="highlight-icon">🎨</span>
-                            <div class="highlight-text">
-                                <span class="highlight-label">Properties (Pengaturan Detail)</span>
-                                <span class="highlight-sub">Mengubah tulisan Text tombol, warna tombol (BackgroundColor), ukuran font, dan lebar elemen.</span>
-                            </div>
+
+                            <p>Klik tombol <strong>OK</strong>, dan sistem akan langsung membuka studio perancangan aplikasimu!</p>
                         </div>
                     </div>
-                    <div class="keynote-box">
-                        💡 Selalu ubah properti 'Text' di kolom Properties untuk mengganti tulisan tombol, bukan dengan mengetik langsung di Viewer!
-                    </div>
-                </div>
-                <div class="col-visual">
-                    <div class="visual-frame" onclick="openLightbox('https://cdn-web-2.ruangguru.com/landing-pages/assets/99488d0a-3779-4dc9-890c-dcc95b525209.png')">
-                        <img src="https://cdn-web-2.ruangguru.com/landing-pages/assets/99488d0a-3779-4dc9-890c-dcc95b525209.png" alt="Components dan Properties">
-                        <span class="zoom-badge">🔍 Klik untuk Perbesar</span>
-                    </div>
-                    <p class="caption-bar">📸 Sisi Kanan: Daftar Komponen dan Panel Pengaturan Properti</p>
                 </div>
             </div>
 
-            <!-- Slide 5 -->
-            <div class="slide-stage" data-slide="5">
-                <div class="col-content">
-                    <span class="tag-pill tag-green">🏆 Rangkuman & Kuis</span>
-                    <h1 class="slide-title">Cek Pemahaman Coder App Inventor</h1>
-                    <div class="quiz-card">
-                        <p class="quiz-title">❓ Jika kita ingin mengganti tulisan pada sebuah tombol di MIT App Inventor, di panel manakah kita mengaturnya?</p>
-                        <div class="quiz-options">
-                            <button class="quiz-opt-btn" onclick="checkQuiz(0)">A. Di panel Palette</button>
-                            <button class="quiz-opt-btn" onclick="checkQuiz(1)">B. Di panel Properties (pada bagian Text)</button>
-                            <button class="quiz-opt-btn" onclick="checkQuiz(2)">C. Di panel Viewer dengan mengklik dua kali</button>
-                            <button class="quiz-opt-btn" onclick="checkQuiz(3)">D. Di galeri foto smartphone</button>
+            <!-- Slide 6: Langkah 3 - Anatomi Designer (4 Kolom Utama) -->
+            <div class="slide" data-title="LANGKAH 3: ANATOMI DESIGNER" data-subtitle="4 Kolom Area Kerja">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">Langkah 3: Anatomi Layar Designer (4 Kolom Utama) 📱</h2>
+                        <div class="slide-text">
+                            <p>Layar <strong>Designer</strong> adalah tempat merancang tampilan muka (*User Interface*) aplikasimu. Terbagi menjadi 4 kolom utama:</p>
+
+                            <div class="screenshot-box">
+                                <img src="https://cdn-web-2.ruangguru.com/landing-pages/assets/34a4c4fc-e4ce-459c-afbc-fd63fc88f107.png" alt="App Inventor Designer Anatomy" class="screenshot-img">
+                                <div class="screenshot-caption">
+                                    📸 <em>Tangkapan layar nyata: Designer proyek aplikasi keuangan Spendify dengan 4 kolom utama dan komponen non-visible di bawah layar.</em>
+                                </div>
+                            </div>
+
+                            <table class="styled-table">
+                                <thead>
+                                    <tr>
+                                        <th>Kolom</th>
+                                        <th>Nama Bagian</th>
+                                        <th>Fungsi Utama</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>1 (Kiri)</strong></td>
+                                        <td><strong>Palette</strong></td>
+                                        <td>Kotak peralatan berisi komponen (Button, Label, TextBox, Layout, Storage).</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>2 (Tengah)</strong></td>
+                                        <td><strong>Viewer</strong></td>
+                                        <td>Simulasi layar HP Android tempat kita men-drag & drop komponen.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>3 (Kanan)</strong></td>
+                                        <td><strong>Components</strong></td>
+                                        <td>Daftar susunan hierarki komponen yang sedang aktif di layar.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>4 (Paling Kanan)</strong></td>
+                                        <td><strong>Properties</strong></td>
+                                        <td>Pengaturan atribut komponen (Warna background, teks tombol, font size, lebar/tinggi).</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <div id="quiz-feedback" style="margin-top: 10px; font-size: 13px; display: none; line-height: 1.4;"></div>
                     </div>
-                    <div class="keynote-box">
-                        🚀 Kamu sekarang siap lanjut ke materi bridge berikutnya: memberi aksi dan logika pada tombol!
-                    </div>
-                </div>
-                <div class="col-visual">
-                    <div class="visual-frame" onclick="openLightbox('https://cdn-web-2.ruangguru.com/landing-pages/assets/d65c2b8d-7754-4df4-89f9-9075439d5b01.png')">
-                        <img src="https://cdn-web-2.ruangguru.com/landing-pages/assets/d65c2b8d-7754-4df4-89f9-9075439d5b01.png" alt="Blocks Editor">
-                        <span class="zoom-badge">🔍 Klik untuk Perbesar</span>
-                    </div>
-                    <p class="caption-bar">📸 Menatap Masa Depan: Blocks Editor Tempat Logika Dihidupkan</p>
                 </div>
             </div>
 
-            <!-- Controls Footer -->
-            <footer class="controls-bar">
-                <button class="nav-btn" id="btn-prev" onclick="prevSlide()">◀ Sebelumnya</button>
-                <span class="slide-counter" id="slide-counter">Slide 1 dari 6</span>
-                <button class="nav-btn primary" id="btn-next" onclick="nextSlide()">Selanjutnya ▶</button>
-            </footer>
-        </main>
+            <!-- Slide 7: Langkah 4 - Komponen Visible vs Non-Visible -->
+            <div class="slide" data-title="LANGKAH 4: JENIS KOMPONEN" data-subtitle="Tampak vs Tak Tampak">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">Langkah 4: Komponen Tampak vs Komponen Tak Tampak 👁️</h2>
+                        <div class="slide-text">
+                            <p>Semua komponen di App Inventor dikelompokkan menjadi 2 jenis:</p>
 
-        <!-- Summary Card Below Player -->
-        <section class="summary-card">
-            <h3>📖 Rangkuman Ringkas Materi</h3>
-            <p>
-                MIT App Inventor adalah platform visual untuk membuat aplikasi Android menggunakan blok puzzle logika. Desain aplikasi dibagi menjadi dua ruang kerja utama: <b>Designer Tab</b> (mengatur tampilan fisik tombol, teks, dan tata letak) dan <b>Blocks Editor</b> (menyusun logika aksi ketika tombol ditekan). Di area Designer terdapat 4 panel penting: <b>Palette</b> (katalog komponen), <b>Viewer</b> (simulasi layar HP), <b>Components</b> (daftar elemen), dan <b>Properties</b> (pengaturan tulisan, warna, dan ukuran).
-            </p>
-        </section>
-    </div>
+                            <div class="two-column">
+                                <div class="feature-card" style="background: #FFF9C4;">
+                                    <div style="font-size: 22px; font-weight: 700; margin-bottom: 8px;">🎨 1. Komponen Tampak (Visible)</div>
+                                    <p style="font-size: 17px; margin-bottom: 10px;">Komponen visual yang terlihat langsung di layar kaca HP pengguna:</p>
+                                    <ul style="font-size: 16px; margin-bottom: 0;">
+                                        <li><strong>Button</strong>: Tombol yang bisa disentuh/ditekan.</li>
+                                        <li><strong>Label</strong>: Teks keterangan untuk menampilkan informasi/saldo.</li>
+                                        <li><strong>TextBox</strong>: Kolom tempat pengguna mengetik huruf atau angka.</li>
+                                        <li><strong>Image</strong>: Gambar ilustrasi atau logo aplikasi.</li>
+                                    </ul>
+                                </div>
 
-    <!-- Lightbox Modal -->
-    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
-        <button class="lightbox-close" onclick="closeLightbox()">✕</button>
-        <img id="lightbox-img" src="" alt="Zoom Visual">
+                                <div class="feature-card" style="background: #EDE7F6;">
+                                    <div style="font-size: 22px; font-weight: 700; margin-bottom: 8px;">⚙️ 2. Komponen Tak Tampak (Non-Visible)</div>
+                                    <p style="font-size: 17px; margin-bottom: 10px;">Bekerja diam-diam di balik layar HP (terletak di bawah simulasi viewer):</p>
+                                    <ul style="font-size: 16px; margin-bottom: 0;">
+                                        <li><strong>TinyDB</strong>: Memori penyimpan data agar saldo tidak hilang saat aplikasi ditutup.</li>
+                                        <li><strong>Clock</strong>: Jam dan pengatur waktu otomatis.</li>
+                                        <li><strong>Sound</strong>: Pemutar efek suara klik atau peringatan.</li>
+                                        <li><strong>ChatBot</strong>: Asisten kecerdasan buatan penjawab saran keuangan.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 8: Langkah 5 - Menuju Blocks Editor -->
+            <div class="slide" data-title="LANGKAH 5: BLOCKS EDITOR" data-subtitle="Otak Logika Aplikasi">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">Langkah 5: Masuk ke Otak Program — Blocks Editor 🧠</h2>
+                        <div class="slide-text">
+                            <p>Tampilan layar saja tidak cukup! Agar tombol bisa merespons saat ditekan, kita harus memberikan perintah di <strong>Blocks Editor</strong>.</p>
+                            <p>Klik tombol hijau bertuliskan <strong>Blocks</strong> di pojok kanan atas layar.</p>
+
+                            <div class="screenshot-box">
+                                <img src="https://cdn-web-2.ruangguru.com/landing-pages/assets/3b7480d8-1ce7-46d3-9850-8e97bb9d399d.png" alt="App Inventor Blocks Editor" class="screenshot-img">
+                                <div class="screenshot-caption">
+                                    📸 <em>Tangkapan layar nyata: Blocks Editor proyek nyata dengan laci balok built-in dan balok logika event tombol serta TinyDB.</em>
+                                </div>
+                            </div>
+
+                            <p>Di sini kamu menyusun balok-balok logika layaknya merakit mainan LEGO! 🧱</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 9: Langkah 6 - Anatomi Balok Built-in -->
+            <div class="slide" data-title="LANGKAH 6: TIPE BALOK" data-subtitle="Kategori Balok Bawaan">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">Langkah 6: Mengenal Kategori Balok Built-in 🎨</h2>
+                        <div class="slide-text">
+                            <p>Di sisi kiri Blocks Editor terdapat laci <strong>Built-in</strong> yang dikelompokkan berdasarkan warna fungsinya:</p>
+
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 16px 0;">
+                                <div class="feature-card">
+                                    <span class="block-badge block-control">Control (Emas)</span>
+                                    <div style="font-size: 16px; margin-top: 6px;">Pengambil keputusan: <code>if then else</code>, perulangan, dan buka layar lain.</div>
+                                </div>
+                                <div class="feature-card">
+                                    <span class="block-badge block-logic">Logic (Hijau)</span>
+                                    <div style="font-size: 16px; margin-top: 6px;">Kebenaran logika: <code>true</code>, <code>false</code>, <code>and</code>, <code>or</code>, <code>not</code>.</div>
+                                </div>
+                                <div class="feature-card">
+                                    <span class="block-badge block-math">Math (Biru)</span>
+                                    <div style="font-size: 16px; margin-top: 6px;">Operasi hitung: tambah, kurang, kali, bagi, dan pembanding angka.</div>
+                                </div>
+                                <div class="feature-card">
+                                    <span class="block-badge block-text">Text (Pink)</span>
+                                    <div style="font-size: 16px; margin-top: 6px;">Pengolah kata: teks <code>"..."</code>, gabung teks (<code>join</code>), panjang kata.</div>
+                                </div>
+                                <div class="feature-card">
+                                    <span class="block-badge block-variable">Variables (Oranye)</span>
+                                    <div style="font-size: 16px; margin-top: 6px;">Wadah nilai data: <code>initialize global</code>, <code>get</code>, dan <code>set</code>.</div>
+                                </div>
+                                <div class="feature-card">
+                                    <span class="block-badge block-tinydb">Storage / TinyDB (Ungu)</span>
+                                    <div style="font-size: 16px; margin-top: 6px;">Simpan dan muat data dari memori permanen HP.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 10: Langkah 7 - Event-Driven Programming -->
+            <div class="slide" data-title="LANGKAH 7: EVENT DRIVEN" data-subtitle="Ketika Kejadian Terjadi">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">Langkah 7: Pola Koding Event-Driven di Smartphone ⚡</h2>
+                        <div class="slide-text">
+                            <p>Aplikasi smartphone bekerja berdasarkan konsep <strong>Event-Driven</strong> (Digerakkan oleh Kejadian). Komputer menunggu sampai pengguna menyentuh layar atau menerima sinyal:</p>
+
+                            <div class="feature-card" style="background: #FFF8E1; border: 3px solid var(--black); margin: 20px 0;">
+                                <div style="font-size: 20px; font-weight: 700; margin-bottom: 10px;">Struktur Dasar Balok Event:</div>
+                                <div style="background: #B58B00; color: white; padding: 12px 18px; border-radius: 12px; border: 3px solid var(--black); font-size: 19px; font-weight: 700; display: inline-block;">
+                                    when Button1 . Click do
+                                </div>
+                                <div style="margin-left: 25px; margin-top: 8px;">
+                                    <div style="background: #55B535; color: white; padding: 8px 14px; border-radius: 8px; border: 2px solid var(--black); font-size: 17px; font-weight: 700; display: inline-block;">
+                                        set LabelSaldo . Text to (get global Saldo)
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p>Artinya: <em>"KETIKA Tombol1 diklik oleh jari pengguna, MAKA ubah tulisan di LabelSaldo menjadi angka saldo yang tersimpan!"</em></p>
+                            <p>Sangat mudah dipahami kan? Logikanya sama persis dengan bahasa komunikasi manusia!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 11: Langkah 8 - Mengenal Database TinyDB -->
+            <div class="slide" data-title="LANGKAH 8: TINYDB" data-subtitle="Simpan Data Permanen di HP">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">Langkah 8: Mengenal Database Lokal TinyDB 🗄️</h2>
+                        <div class="slide-text">
+                            <p>Apa yang terjadi jika aplikasi kamu ditutup atau HP mati? Jika data hanya disimpan di variabel biasa, <strong>semua data akan hilang terhapus</strong>!</p>
+                            <p>Untuk itulah kita butuh <strong>TinyDB</strong> — database mini yang menyimpan data permanen di memori fisik HP.</p>
+
+                            <div class="two-column">
+                                <div class="feature-card" style="background: #F3E5F5;">
+                                    <div style="font-size: 20px; font-weight: 700; margin-bottom: 8px;">💾 Menyimpan Nilai:</div>
+                                    <div class="block-badge block-tinydb" style="font-size: 16px;">call TinyDB1 . StoreValue</div>
+                                    <p style="font-size: 16px; margin: 8px 0;"><strong>tag</strong>: Kunci label loker (misal: <code>"Saldo"</code>)<br><strong>valueToStore</strong>: Angka uangnya (misal: <code>50000</code>)</p>
+                                </div>
+                                <div class="feature-card" style="background: #EDE7F6;">
+                                    <div style="font-size: 20px; font-weight: 700; margin-bottom: 8px;">📖 Mengambil Nilai:</div>
+                                    <div class="block-badge block-tinydb" style="font-size: 16px;">call TinyDB1 . GetValue</div>
+                                    <p style="font-size: 16px; margin: 8px 0;"><strong>tag</strong>: Kunci yang dicari (misal: <code>"Saldo"</code>)<br><strong>valueIfTagNotThere</strong>: Nilai cadangan jika belum ada (misal: <code>0</code>)</p>
+                                </div>
+                            </div>
+
+                            <div class="quote-box">
+                                "Pasangan Tag dan Value adalah kunci utama: Tag adalah nama labelnya, Value adalah data rahasia di dalamnya!" 🔑
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 12: Langkah 9 - Uji Coba di HP dengan AI Companion -->
+            <div class="slide" data-title="LANGKAH 9: TESTING DI HP" data-subtitle="MIT AI Companion">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">Langkah 9: Menguji Aplikasi Langsung di HP Android 📲</h2>
+                        <div class="slide-text">
+                            <p>Kamu tidak perlu kabel data rumit untuk mencoba aplikasimu! Ikuti 4 langkah kilat ini:</p>
+
+                            <div style="display: flex; flex-direction: column; gap: 12px; margin: 18px 0;">
+                                <div class="feature-card" style="display: flex; align-items: center; gap: 16px;">
+                                    <div style="background: var(--yellow); color: black; padding: 10px 16px; border-radius: 12px; font-weight: 700; font-size: 20px; border: 3px solid var(--black);">1</div>
+                                    <div style="font-size: 17px;">Download aplikasi gratis <strong>MIT AI2 Companion</strong> di Google Play Store pada HP Android-mu.</div>
+                                </div>
+                                <div class="feature-card" style="display: flex; align-items: center; gap: 16px;">
+                                    <div style="background: var(--blue); color: white; padding: 10px 16px; border-radius: 12px; font-weight: 700; font-size: 20px; border: 3px solid var(--black);">2</div>
+                                    <div style="font-size: 17px;">Pastikan laptop dan HP terhubung ke <strong>jaringan Wi-Fi yang sama</strong>.</div>
+                                </div>
+                                <div class="feature-card" style="display: flex; align-items: center; gap: 16px;">
+                                    <div style="background: var(--green); color: black; padding: 10px 16px; border-radius: 12px; font-weight: 700; font-size: 20px; border: 3px solid var(--black);">3</div>
+                                    <div style="font-size: 17px;">Di layar komputer App Inventor, klik menu atas: <strong>Connect ▶ AI Companion</strong> hingga muncul QR Code.</div>
+                                </div>
+                                <div class="feature-card" style="display: flex; align-items: center; gap: 16px;">
+                                    <div style="background: var(--pink); color: white; padding: 10px 16px; border-radius: 12px; font-weight: 700; font-size: 20px; border: 3px solid var(--black);">4</div>
+                                    <div style="font-size: 17px;">Buka aplikasi di HP, pilih <strong>Scan QR Code</strong>. Aplikasi langsung menyala di HP-mu secara ajaib! ✨</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 13: Interactive Simulation -->
+            <div class="slide" data-title="SIMULASI TINYDB" data-subtitle="Eksperimen Tag & Value">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">Laboratorium Mini: Simulasi Penyimpanan Data TinyDB 🧪</h2>
+                        <div class="slide-text">
+                            <p>Coba uji bagaimana balok <code>StoreValue</code> dan <code>GetValue</code> bekerja di database HP:</p>
+
+                            <div class="playground-card">
+                                <label style="display: block; font-weight: 700; margin-bottom: 6px;">Nama Tag (Label Penyimpanan):</label>
+                                <input type="text" id="db-tag" class="input-text-custom" value="Saldo_Uang" placeholder="Contoh: Saldo_Uang">
+
+                                <label style="display: block; font-weight: 700; margin-bottom: 6px;">Nominal Nilai (Value):</label>
+                                <input type="number" id="db-value" class="input-text-custom" value="125000">
+
+                                <div style="display: flex; gap: 12px;">
+                                    <button class="btn-action-custom" onclick="simpanTinyDB()">💾 Simpan (call StoreValue)</button>
+                                    <button class="btn-action-custom" style="background-color: var(--yellow); color: var(--black);" onclick="bacaTinyDB()">📖 Baca (call GetValue)</button>
+                                </div>
+
+                                <div class="result-box" id="db-output">
+                                    Status penyimpanan TinyDB akan muncul di sini...
+                                </div>
+                            </div>
+
+                            <p style="font-size: 16px; color: #555;">💡 <em>Data yang disimpan dengan Tag akan tetap ada di memori meskipun kamu membaca ulang berkali-kali!</em></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 14: Kuis Pemahaman Mandiri -->
+            <div class="slide" data-title="KUIS PEMAHAMAN" data-subtitle="Check Kesiapan Siswa">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">Uji Pemahaman: Cek Kesiapan Belajar SMP! 🎯</h2>
+                        <div class="slide-text">
+                            <p>Jawablah pertanyaan berikut untuk memastikan kamu siap membuat aplikasi mobile:</p>
+
+                            <div style="background: #F8FAFC; border: 3px solid var(--black); padding: 18px; border-radius: 14px; margin-bottom: 20px;">
+                                <div style="font-weight: 700; font-size: 20px; margin-bottom: 12px;">
+                                    Pertanyaan 1: Di bagian manakah kita mengatur warna tombol dan ukuran teks?
+                                </div>
+                                <div class="quiz-option" onclick="checkQ1_SMP('wrong', this)">A. Palette</div>
+                                <div class="quiz-option" onclick="checkQ1_SMP('wrong', this)">B. Viewer</div>
+                                <div class="quiz-option" onclick="checkQ1_SMP('correct', this)">C. Properties</div>
+                                <div class="quiz-option" onclick="checkQ1_SMP('wrong', this)">D. Blocks Built-in</div>
+                                <div id="q1-smp-feedback" style="display: none; margin-top: 10px; font-weight: bold; font-size: 17px; padding: 10px; border-radius: 8px;"></div>
+                            </div>
+
+                            <div style="background: #F8FAFC; border: 3px solid var(--black); padding: 18px; border-radius: 14px;">
+                                <div style="font-weight: 700; font-size: 20px; margin-bottom: 12px;">
+                                    Pertanyaan 2: Mengapa kita harus menggunakan TinyDB untuk data keuangan?
+                                </div>
+                                <div class="quiz-option" onclick="checkQ2_SMP('correct', this)">A. Agar data tetap tersimpan saat aplikasi ditutup atau HP mati</div>
+                                <div class="quiz-option" onclick="checkQ2_SMP('wrong', this)">B. Agar tombol berubah warna menjadi ungu</div>
+                                <div class="quiz-option" onclick="checkQ2_SMP('wrong', this)">C. Karena TinyDB bisa menghapus HP secara otomatis</div>
+                                <div id="q2-smp-feedback" style="display: none; margin-top: 10px; font-weight: bold; font-size: 17px; padding: 10px; border-radius: 8px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 15: Glosarium & Tips Anti-Bingung -->
+            <div class="slide" data-title="GLOSARIUM SMP" data-subtitle="Istilah Kunci App Inventor">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">Glosarium Cepat & Tips Sukses Koding 💡</h2>
+                        <div class="slide-text">
+                            <p>Rangkuman istilah penting di dunia aplikasi mobile:</p>
+
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 18px 0;">
+                                <div class="feature-card">
+                                    <strong>Designer</strong><br>
+                                    Layar perancangan visual antarmuka tombol, teks, dan gambar.
+                                </div>
+                                <div class="feature-card">
+                                    <strong>Blocks Editor</strong><br>
+                                    Ruang perakitan logika balok kejadian (otak aplikasi).
+                                </div>
+                                <div class="feature-card">
+                                    <strong>Tag-Value</strong><br>
+                                    Pasangan kunci (Tag) dan isi data (Value) pada database TinyDB.
+                                </div>
+                                <div class="feature-card">
+                                    <strong>AI Companion</strong><br>
+                                    Aplikasi di HP untuk menguji kodingan secara live via Wi-Fi.
+                                </div>
+                            </div>
+
+                            <div class="quote-box" style="font-size: 18px;">
+                                🌟 <strong>Pesan Penting:</strong> "Setiap aplikasi populer seperti Gojek atau Tokopedia berawal dari konsep yang sama: Tombol yang disentuh dan Data yang disimpan!"
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 16: Penutup & Menuju Modul 1 -->
+            <div class="slide" data-title="SIAP MENUJU MODUL 1" data-subtitle="Selamat Melangkah!">
+                <div class="content-card" style="align-items: center; justify-content: center; background: radial-gradient(circle, #00E676 0%, #008f4c 100%); color: var(--black); border-color: var(--black);">
+                    <div class="inner-content" style="text-align: center;">
+                        <span style="background-color: var(--yellow); color: var(--black); padding: 8px 24px; border: 3px solid var(--black); border-radius: 20px; font-size: 18px; font-weight: 700; box-shadow: 4px 4px 0px var(--black); display: inline-block; margin-bottom: 25px; transform: rotate(-2deg);">
+                            LEVEL 0 COMPLETED! 🎉
+                        </span>
+                        <h1 style="font-size: 46px; font-weight: 700; margin-bottom: 18px; color: white; text-shadow: 4px 4px 0px var(--black); line-height: 1.2;">
+                            Kamu Telah Menguasai Dasar<br>MIT App Inventor! 📱🚀
+                        </h1>
+                        <p style="font-size: 22px; font-weight: 700; color: var(--yellow); text-shadow: 2px 2px 0px var(--black); margin-bottom: 35px;">
+                            Kini kamu sudah paham perbedaan Designer & Blocks, cara pakai TinyDB, dan siap membuat aplikasi!
+                        </p>
+                        <div style="background-color: var(--white); border: 4px solid var(--black); border-radius: 16px; padding: 20px; box-shadow: 8px 8px 0px var(--black); max-width: 600px; margin: 0 auto; text-align: left; font-size: 18px; font-weight: 600;">
+                            <strong>Misi Berikutnya di Modul 1:</strong>
+                            <ul style="margin-top: 10px; padding-left: 25px;">
+                                <li>Menyusun alur instruksi berurutan (Sequence)</li>
+                                <li>Membaca diagram alur (Flowchart) pengambilan keputusan</li>
+                                <li>Menjaga keamanan data privasi pengguna di aplikasi mobile</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Navigation Controls -->
+        <div class="nav-container">
+            <button id="btnPrev" class="nav-btn" disabled>← Prev</button>
+            <div class="counter-group">
+                <div class="slide-counter">Slide <span id="counter">1</span> dari <span id="totalSlides">16</span></div>
+                <div class="progress-bar-bg">
+                    <div id="bar" class="progress-bar" style="width: 6.25%;"></div>
+                </div>
+            </div>
+            <button id="btnNext" class="nav-btn">Next →</button>
+        </div>
+
     </div>
 
     <script>
+        const slides = document.querySelectorAll('.slide');
+        const bar = document.getElementById('bar');
+        const counter = document.getElementById('counter');
+        const btnPrev = document.getElementById('btnPrev');
+        const btnNext = document.getElementById('btnNext');
         let currentSlide = 0;
-        const totalSlides = 6;
-        const stages = document.querySelectorAll('.slide-stage');
-        const prevBtn = document.getElementById('btn-prev');
-        const nextBtn = document.getElementById('btn-next');
-        const counter = document.getElementById('slide-counter');
+        document.getElementById('totalSlides').innerText = slides.length;
 
-        function updateSlide() {
-            stages.forEach((s, idx) => {
-                s.classList.toggle('active', idx === currentSlide);
-            });
-            counter.innerText = `Slide ${currentSlide + 1} dari ${totalSlides}`;
-            prevBtn.disabled = currentSlide === 0;
-            nextBtn.innerText = currentSlide === totalSlides - 1 ? 'Selesai 🏁' : 'Selanjutnya ▶';
+        function showSlide(index) {
+            slides[currentSlide].classList.remove('active');
+            
+            if (index < 0) index = 0;
+            if (index >= slides.length) index = slides.length - 1;
+            
+            currentSlide = index;
+            slides[currentSlide].classList.add('active');
+            
+            const contentCard = slides[currentSlide].querySelector('.content-card');
+            if (contentCard) contentCard.scrollTo(0, 0);
+            
+            btnPrev.disabled = currentSlide === 0;
+            btnNext.disabled = currentSlide === slides.length - 1;
+            
+            counter.innerText = currentSlide + 1;
+            bar.style.width = ((currentSlide + 1) / slides.length * 100) + '%';
+
+            const bannerTitle = document.getElementById('banner-title');
+            const bannerSubtitle = document.getElementById('banner-subtitle');
+            
+            const activeSlide = slides[currentSlide];
+            const slideTitleText = activeSlide.getAttribute('data-title') || "LOGIKA KODING SMP";
+            const slideSubtitleText = activeSlide.getAttribute('data-subtitle') || "MIT App Inventor & Dasar Aplikasi Android";
+            
+            if (bannerTitle) bannerTitle.innerText = slideTitleText;
+            if (bannerSubtitle) bannerSubtitle.innerText = slideSubtitleText;
         }
 
-        function nextSlide() {
-            if (currentSlide < totalSlides - 1) {
-                currentSlide++;
-                updateSlide();
-            }
-        }
-
-        function prevSlide() {
-            if (currentSlide > 0) {
-                currentSlide--;
-                updateSlide();
-            }
-        }
-
-        // Keyboard arrow navigation
+        btnNext.addEventListener('click', () => {
+            if (currentSlide < slides.length - 1) showSlide(currentSlide + 1);
+        });
+        
+        btnPrev.addEventListener('click', () => {
+            if (currentSlide > 0) showSlide(currentSlide - 1);
+        });
+        
         document.addEventListener('keydown', (e) => {
-            if (e.key === 'ArrowRight') nextSlide();
-            if (e.key === 'ArrowLeft') prevSlide();
-            if (e.key === 'Escape') closeLightbox();
+            if (e.target.tagName.toLowerCase() === 'input' || e.target.tagName.toLowerCase() === 'textarea') {
+                return;
+            }
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                if (currentSlide < slides.length - 1) showSlide(currentSlide + 1);
+            }
+            if (e.key === 'ArrowLeft') {
+                if (currentSlide > 0) showSlide(currentSlide - 1);
+            }
         });
 
-        // Lightbox modal
-        function openLightbox(src) {
-            document.getElementById('lightbox-img').src = src;
-            document.getElementById('lightbox').classList.add('active');
-        }
+        // Virtual TinyDB Memory Simulation
+        const virtualTinyDB = {};
 
-        function closeLightbox() {
-            document.getElementById('lightbox').classList.remove('active');
-        }
-
-        // Quiz check
-        function checkQuiz(selectedIndex) {
-            const btns = document.querySelectorAll('.quiz-opt-btn');
-            const feedback = document.getElementById('quiz-feedback');
-            btns.forEach(b => b.classList.remove('correct', 'wrong'));
+        function simpanTinyDB() {
+            const tag = document.getElementById('db-tag').value.trim() || "DefaultTag";
+            const val = parseInt(document.getElementById('db-value').value) || 0;
+            virtualTinyDB[tag] = val;
             
-            if (selectedIndex === 1) {
-                btns[1].classList.add('correct');
-                feedback.style.display = 'block';
-                feedback.style.color = '#15803d';
-                feedback.innerHTML = '<b>✅ Jawaban Benar!</b> Setiap perubahan tulisan, warna, maupun ukuran komponen diatur secara presisi pada panel paling kanan yaitu panel Properties.';
+            const out = document.getElementById('db-output');
+            out.innerHTML = `
+                ✅ <strong>TinyDB1.StoreValue BERHASIL!</strong><br>
+                Tag     : <span style="color: var(--yellow);">"${tag}"</span><br>
+                Value   : <span style="color: var(--green);">Rp ${val.toLocaleString('id-ID')}</span><br>
+                Status  : Tersimpan aman di memori permanen HP!
+            `;
+        }
+
+        function bacaTinyDB() {
+            const tag = document.getElementById('db-tag').value.trim() || "DefaultTag";
+            const out = document.getElementById('db-output');
+            
+            if (tag in virtualTinyDB) {
+                const val = virtualTinyDB[tag];
+                out.innerHTML = `
+                    📖 <strong>TinyDB1.GetValue DITEMUKAN!</strong><br>
+                    Tag     : <span style="color: var(--yellow);">"${tag}"</span><br>
+                    Hasil   : <span style="color: var(--green); font-size: 22px;">Rp ${val.toLocaleString('id-ID')}</span><br>
+                    Status  : Berhasil diambil dari memori lokal HP!
+                `;
             } else {
-                btns[selectedIndex].classList.add('wrong');
-                feedback.style.display = 'block';
-                feedback.style.color = '#b91c1c';
-                feedback.innerHTML = '<b>❌ Kurang tepat.</b> Coba ingat panel di sebelah paling kanan tempat kita mengganti warna dan teks!';
+                out.innerHTML = `
+                    ⚠️ <strong>Tag "${tag}" Tidak Ditemukan!</strong><br>
+                    Mengembalikan valueIfTagNotThere: <span style="color: var(--red);">0</span> (Nilai default cadangan).
+                `;
             }
         }
 
-        updateSlide();
+        // Quiz Q1 SMP
+        function checkQ1_SMP(type, el) {
+            const fb = document.getElementById('q1-smp-feedback');
+            const parent = el.parentElement;
+            parent.querySelectorAll('.quiz-option').forEach(o => o.classList.remove('correct', 'wrong'));
+            fb.style.display = 'block';
+            
+            if (type === 'correct') {
+                el.classList.add('correct');
+                fb.innerHTML = "✅ TEPAT SEKALI! Kolom 'Properties' di sebelah paling kanan digunakan untuk mengatur warna, font, teks, serta dimensi komponen.";
+                fb.style.backgroundColor = "var(--green)";
+                fb.style.color = "var(--black)";
+            } else {
+                el.classList.add('wrong');
+                fb.innerHTML = "❌ Kurang tepat! Coba ingat kolom paling kanan yang berisi atribut komponen.";
+                fb.style.backgroundColor = "var(--red)";
+                fb.style.color = "var(--white)";
+            }
+        }
+
+        // Quiz Q2 SMP
+        function checkQ2_SMP(type, el) {
+            const fb = document.getElementById('q2-smp-feedback');
+            const parent = el.parentElement;
+            parent.querySelectorAll('.quiz-option').forEach(o => o.classList.remove('correct', 'wrong'));
+            fb.style.display = 'block';
+            
+            if (type === 'correct') {
+                el.classList.add('correct');
+                fb.innerHTML = "✅ BENAR! Keunggulan utama TinyDB adalah menyimpan data secara persisten di memori lokal HP, sehingga data saldo tidak hilang saat aplikasi ditutup.";
+                fb.style.backgroundColor = "var(--green)";
+                fb.style.color = "var(--black)";
+            } else {
+                el.classList.add('wrong');
+                fb.innerHTML = "❌ Salah! TinyDB adalah komponen database lokal untuk menyimpan data secara permanen.";
+                fb.style.backgroundColor = "var(--red)";
+                fb.style.color = "var(--white)";
+            }
+        }
     </script>
 </body>
 </html>

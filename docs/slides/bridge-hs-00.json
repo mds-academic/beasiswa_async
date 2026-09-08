@@ -1,173 +1,51 @@
 {
   "id": "bridge-hs-00",
   "level": "SMA",
-  "kicker": "Materi Jembatan 00 · Dasar Python",
-  "title": "Membuka Python Pertama Kali di Google Colab",
-  "duration": "7 Menit Baca & Praktik",
+  "kicker": "Materi Jembatan 00 · Dasar Python & Cloud Editor",
+  "title": "Panduan Lengkap Google Colab & Pemrograman Python Pertamaku",
+  "duration": "10 Menit Baca Mandiri & Praktik",
   "type": "slides",
-  "summary": "Google Colab adalah editor Python berbasis web gratis. Siswa menulis perintah di Code Cell, menekan tombol Run, dan membaca hasilnya tepat di bawah cell. Pahami siklus I-P-O (Input-Proses-Output) sebelum melangkah ke koding yang lebih kompleks.",
-  "bookmarks": [
-    { "slideIndex": 0, "label": "1. Selamat Datang di Python" },
-    { "slideIndex": 1, "label": "2. Siklus Berpikir Komputer (I-P-O)" },
-    { "slideIndex": 2, "label": "3. Mengenal Google Colab" },
-    { "slideIndex": 3, "label": "4. Menulis Code Cell & print()" },
-    { "slideIndex": 4, "label": "5. Menjalankan Kode & Output" },
-    { "slideIndex": 5, "label": "6. Rangkuman & Kuis Cek Pemahaman" }
-  ],
-  "slides": [
+  "embedUrl": "slides/bridge-hs-00.html",
+  "summary": "Panduan komprehensif membuka Google Colaboratory di browser tanpa instalasi software, memahami anatomi Code Cell vs Text Cell, menulis fungsi print(), mengeksekusi kode dengan shortcut Shift+Enter, menguasai variabel, dan 4 tipe data utama Python.",
+  "totalSlides": 16,
+  "realScreenshots": [
     {
-      "slideIndex": 0,
-      "tagPill": { "text": "🚀 Dasar Koding", "color": "yellow" },
-      "title": "Selamat Datang di Dunia Koding Python!",
-      "highlights": [
-        {
-          "icon": "🧠",
-          "label": "Bahasa Paling Ramah di Dunia",
-          "sub": "Sintaks Python dirancang sangat mirip bahasa Inggris sehari-hari, sehingga mudah dipelajari pemula."
-        },
-        {
-          "icon": "⚡",
-          "label": "Kekuatan Industri Nyata",
-          "sub": "Dipakai oleh perusahaan teknologi raksasa (Google, YouTube, Netflix) untuk AI, data science, dan web."
-        }
-      ],
-      "keynote": "💡 Koding bukanlah sihir matematika yang rumit; koding adalah seni memberi instruksi yang jelas kepada komputer langkah demi langkah.",
-      "visual": {
-        "cdnUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/9c0eaab5-9c3f-48e3-8216-e7bcce43a871.png",
-        "caption": "📸 Layar Awal: Lingkungan Belajar Koding Google Colab",
-        "altText": "Layar Awal Google Colab"
-      }
+      "name": "real_colab_01_welcome.png",
+      "cdnUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/a6b13d46-7b29-4f4d-b3a8-a3ed5b4f80d7.png",
+      "caption": "Tangkapan layar nyata: Halaman selamat datang Google Colab dengan tombol + New notebook"
     },
     {
-      "slideIndex": 1,
-      "tagPill": { "text": "💡 Pola Pikir Komputer", "color": "blue" },
-      "title": "Cara Komputer Berpikir: Siklus I-P-O",
-      "highlights": [
-        {
-          "icon": "⌨️",
-          "label": "1. Input (Masukan)",
-          "sub": "Instruksi atau data mentah yang kita ketikkan melalui keyboard."
-        },
-        {
-          "icon": "⚙️",
-          "label": "2. Proses (Pengolahan)",
-          "sub": "Mesin Python menerjemahkan instruksimu baris demi baris dan menjalankannya."
-        },
-        {
-          "icon": "🖥️",
-          "label": "3. Output (Keluaran)",
-          "sub": "Hasil akhir yang ditampilkan ke layar monitor agar bisa dibaca manusia."
-        }
-      ],
-      "keynote": "🎯 Komputer hanya melakukan apa yang kamu perintahkan. Jika instruksimu teratur, hasilnya pasti teratur!",
-      "visual": {
-        "cdnUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/af5954a4-3115-43fb-b9f9-4400cd55224f.png",
-        "caption": "📸 Diagram Alur: Siklus Input -> Proses -> Output",
-        "altText": "Siklus IPO Python"
-      }
+      "name": "real_colab_02_notebook_interface.png",
+      "cdnUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/35b7d54b-636f-4072-9607-abcb281ec7c3.png",
+      "caption": "Tangkapan layar nyata: Antarmuka interaktif Google Colab yang memuat menubar, code cells, dan output langsung"
     },
     {
-      "slideIndex": 2,
-      "tagPill": { "text": "🌐 Alat Koding Online", "color": "green" },
-      "title": "Mengenal Google Colaboratory (Colab)",
-      "highlights": [
-        {
-          "icon": "☁️",
-          "label": "100% Berbasis Cloud",
-          "sub": "Tidak perlu install aplikasi berat di laptop. Cukup punya browser Chrome dan koneksi internet."
-        },
-        {
-          "icon": "📁",
-          "label": "Tersimpan Aman di Google Drive",
-          "sub": "Setiap file kodinganmu (format .ipynb) otomatis tersimpan rapi di Google Drive pribadimu."
-        }
-      ],
-      "keynote": "🔗 Cara buka: Cukup akses colab.research.google.com lalu klik tombol 'Notebook Baru' (+ New Notebook).",
-      "visual": {
-        "cdnUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/9c0eaab5-9c3f-48e3-8216-e7bcce43a871.png",
-        "caption": "📸 Portal Resmi: Membuka Notebook Baru di Google Colab",
-        "altText": "Membuka Notebook Baru di Google Colab"
-      }
+      "name": "real_colab_03_code_cells.png",
+      "cdnUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/587d7d63-f602-4d96-b450-161223b32fd9.png",
+      "caption": "Tangkapan layar nyata: Menjalankan kode perhitungan detik dalam sehari dan menampilkan output 86400"
     },
     {
-      "slideIndex": 3,
-      "tagPill": { "text": "📝 Menulis Perintah", "color": "pink" },
-      "title": "Mengenal Code Cell & Fungsi print()",
-      "highlights": [
-        {
-          "icon": "📦",
-          "label": "Code Cell (Kotak Perintah)",
-          "sub": "Kotak abu-abu tempat kamu mengetikkan baris perintah Python."
-        },
-        {
-          "icon": "📢",
-          "label": "Fungsi print()",
-          "sub": "Perintah ajaib untuk menyuruh komputer mencetak teks ke layar. Teks wajib diapit tanda petik (\"...\")."
-        }
-      ],
-      "keynote": "⚠️ Ingat Aturan Tanda Petik: Huruf atau kalimat wajib memakai tanda petik dua \"Halo\" atau petik satu 'Halo'.",
-      "visual": {
-        "cdnUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/fcd966fb-4031-43c3-8c63-85de89ff3989.png",
-        "caption": "📸 Code Editor: Mengetik Perintah print() di dalam Code Cell",
-        "altText": "Code Cell dan Fungsi Print"
-      }
-    },
-    {
-      "slideIndex": 4,
-      "tagPill": { "text": "▶️ Eksekusi Kode", "color": "yellow" },
-      "title": "Menjalankan Kode & Membaca Output",
-      "highlights": [
-        {
-          "icon": "🔘",
-          "label": "Tombol Play (Run)",
-          "sub": "Klik tombol lingkaran segitiga di samping kiri cell, atau gunakan shortcut keyboard Ctrl + Enter."
-        },
-        {
-          "icon": "👀",
-          "label": "Membaca Hasil di Bawah Cell",
-          "sub": "Teks hasil print akan muncul bersih tepat di bawah kotak kode cell dalam hitungan detik."
-        }
-      ],
-      "keynote": "🎉 Selamat! Ketika teks muncul di layar, kamu sudah resmi menjadi seorang Coder Python!",
-      "visual": {
-        "cdnUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/fcd966fb-4031-43c3-8c63-85de89ff3989.png",
-        "caption": "📸 Hasil Nyata: Output Muncul Bersih Tepat di Bawah Kotak Kode",
-        "altText": "Hasil Eksekusi Output Python"
-      }
-    },
-    {
-      "slideIndex": 5,
-      "tagPill": { "text": "🏆 Rangkuman & Praktik", "color": "green" },
-      "title": "Rangkuman Materi & Cek Pemahaman",
-      "highlights": [
-        {
-          "icon": "1️⃣",
-          "label": "Google Colab",
-          "sub": "Editor Python online yang menyimpan kodinganmu langsung ke Google Drive."
-        },
-        {
-          "icon": "2️⃣",
-          "label": "Fungsi print()",
-          "sub": "Sintaks print(\"teks\") digunakan untuk memunculkan pesan keluaran (Output) ke layar."
-        }
-      ],
-      "keynote": "🚀 Kamu sekarang siap masuk ke materi berikutnya: mempelajari Variabel dan Tipe Data!",
-      "visual": {
-        "cdnUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/af5954a4-3115-43fb-b9f9-4400cd55224f.png",
-        "caption": "📸 Checklist: Siklus I-P-O yang Berhasil Kamu Pelajari",
-        "altText": "Rangkuman Colab dan IPO"
-      }
+      "name": "real_colab_06_files_sidebar.png",
+      "cdnUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/8c9b33cc-a921-402b-9437-598cc5e3cf48.png",
+      "caption": "Tangkapan layar nyata: Sidebar penjelajah file dan status runtime cloud di pojok kanan atas"
     }
   ],
-  "quiz": {
-    "question": "Di mana kita menuliskan baris kode Python pada Google Colaboratory?",
-    "options": [
-      "A. Di dalam kotak pencarian Google",
-      "B. Di dalam kotak Code Cell",
-      "C. Di kolom komentar YouTube",
-      "D. Di berkas Microsoft Word"
-    ],
-    "answer": 1,
-    "explanation": "Tepat sekali! Pada Google Colaboratory, semua instruksi dan kode program Python dituliskan di dalam kotak khusus bernama Code Cell sebelum dieksekusi dengan tombol Play."
-  }
+  "bookmarks": [
+    { "slideIndex": 0, "label": "1. Pengenalan Python SMA" },
+    { "slideIndex": 1, "label": "2. Mengapa Belajar Python?" },
+    { "slideIndex": 2, "label": "3. Apa itu Google Colaboratory?" },
+    { "slideIndex": 3, "label": "4. Colab vs Jupyter Notebook Lokal" },
+    { "slideIndex": 4, "label": "5. Langkah 1: Buka Colab & New Notebook" },
+    { "slideIndex": 5, "label": "6. Langkah 2: Anatomi Antarmuka Colab" },
+    { "slideIndex": 6, "label": "7. Langkah 3: Code Cell vs Text Cell" },
+    { "slideIndex": 7, "label": "8. Langkah 4: Fungsi print()" },
+    { "slideIndex": 8, "label": "9. Langkah 5: Cara Menjalankan Kode" },
+    { "slideIndex": 9, "label": "10. Langkah 6: Konsep Variabel" },
+    { "slideIndex": 10, "label": "11. Langkah 7: 4 Tipe Data Utama" },
+    { "slideIndex": 11, "label": "12. Langkah 8: Google Drive & Unduh File" },
+    { "slideIndex": 12, "label": "13. Simulasi Koding Interaktif" },
+    { "slideIndex": 13, "label": "14. Kuis Pemahaman Mandiri" },
+    { "slideIndex": 14, "label": "15. Glosarium & Tips Anti-Error" },
+    { "slideIndex": 15, "label": "16. Penutup & Menuju Modul 1" }
+  ]
 }

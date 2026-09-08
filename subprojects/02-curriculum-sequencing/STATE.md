@@ -2,30 +2,25 @@
 
 ## Current Status
 
-- **Status**: Review rinci tahap 1 selesai — dataset produksi belum diubah.
-- **Active Focus**: Persetujuan urutan kanonik dan backlog HTML slides, lalu verifikasi timestamp yang ditandai.
+- **Status**: Overhaul Materi Jembatan 00 (SMA Google Colab & SMP MIT App Inventor) selesai dengan template neo-brutalisme kanonik & screenshot real CDN Ruangguru.
+- **Active Focus**: Integrasi bridge slides ke kurikulum platform LMS dan persiapan bridge slides berikutnya.
 - **Last Updated**: 2026-09-08
 
 ## Completed
 
 - Audit menyeluruh video & kuis eksisting dari Highschool (A, B, C, D) dan Middleschool (A, B, C, D).
 - Analisis kesenjangan (*gap analysis*) bagi pemula mutlak ([curriculum-audit-and-scaffolding-gap-analysis.md](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/02-curriculum-sequencing/mapping/curriculum-audit-and-scaffolding-gap-analysis.md)).
-- Penyusunan ulang alur materi logis dan ekspor dataset JSON tervalidasi:
-  - SMA: [`courseData-highschool.json`](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/02-curriculum-sequencing/output/courseData-highschool.json) (Modul 0 s.d. 5)
-  - SMP: [`courseData-middleschool.json`](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/02-curriculum-sequencing/output/courseData-middleschool.json) (Modul 0 s.d. 5)
-  - SD: [`courseData-upperprimary.json`](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/02-curriculum-sequencing/output/courseData-upperprimary.json) (Template Modular Modul 0 s.d. 4)
-- Injeksi dataset ke direktori Subproject 01 (`subprojects/01-lms-platform/src/data/`).
+- Penyusunan ulang alur materi logis dan ekspor dataset JSON tervalidasi (SMA, SMP, SD).
+- **Overhaul Total Bridge Slides 00 (SMA & SMP)**:
+  - Mengadopsi arsitektur template neo-brutalisme kanonik dari `slide_deck_part1.html` (font Fredoka, border hitam 4px, shadow 12px, banner responsif 16:9, counter & progress bar dinamis).
+  - Mengintegrasikan tangkapan layar 100% nyata (bukan CSS buatan) dari Google Colaboratory dan MIT App Inventor nyata via Chrome CDP.
+  - Mengunggah seluruh aset visual secara permanen ke Ruangguru CDN (`rg_cdn_web_2` di `https://cdn-web-2.ruangguru.com/landing-pages/assets/...`).
+  - Menyusun 16 slide materi kaya & mendalam per jenjang dengan tabel perbandingan, petunjuk langkah demi langkah, mini playground interaktif, dan kuis pemahaman mandiri.
+  - Sinkronisasi berkas slides & metadata JSON ke `subprojects/01-lms-platform/src/slides/` dan `docs/slides/`.
 
 ## Concrete Next Steps
 
-1. User meninjau urutan kanonik SMA/SMP dan backlog bridge slides pada review rinci.
-2. Konfirmasi enam temuan timestamp `review_required` dan dua overlap video.
-3. Setelah disetujui, ubah dataset dengan `sourceStepId`/media contract tanpa mengubah timing sumber.
-4. Baru lanjut ke Subproject 01 untuk renderer video + HTML slides.
+1. Uji integrasi materi jembatan di dalam LMS player web app.
+2. Melanjutkan pembuatan bridge slides berikutnya sesuai kurasi review (`bridge-hs-01`, `bridge-ms-01`).
+3. Pemutakhiran dataset kurikulum final untuk disuntikkan ke portal belajar.
 
-## Checkpoint review 2026-09-08
-
-- Review rinci in-place: [review tahap 1 SMP–SMA](mapping/review-tahap-1-smp-sma.md).
-- Seluruh 15 video unik sudah diekstrak caption lokalnya; statusnya tetap caption-based, bukan klaim peninjauan audiovisual penuh.
-- Review kini memetakan setiap source step, urutan kanonik, gap, bridge slides, latihan, dan tindakan preserve/move/split/add.
-- JSON produksi dan player belum diubah. Enam anomali timestamp dan overlap tetap terbuka untuk keputusan manual.
