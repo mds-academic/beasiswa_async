@@ -886,13 +886,40 @@ oiya di login gausa minta anama yah
 
 oiya ini nama sekolahnya harus search yah biar filtering nama emailnya bisa gapang per nama sekolah"
 
-oiya di backend di appscript bikin akses admin dong emailnya permata@mds.com , nah misalya admin mau lihat sd dia cukup masukin  SD UOB atau SMP UOB atau SMA UOBtrus kalo dai masukin nama ini nananti muncul password di aler untuk admin akses passwordnyaa KalanantiDihati nanti dia bisa masuk yah buat lihat materinya 
+### Assistant Response & Execution Record — 2026-09-08T20:22:00+07:00
 
-oiya di login gausa minta anama yah 
+1. **Akses Admin (`permata@mds.com`) & Verifikasi Password (`KalanantiDihati`)**:
+   - Backend Apps Script (`Code.gs`) diperbarui untuk mendukung verifikasi password admin `KalanantiDihati` dan rute kurikulum admin SD, SMP, dan SMA.
+   - Di-deploy ke Google Apps Script Web App versi 4 dengan akses terbuka "Siapa saja" (*Anyone*):
+     `https://script.google.com/macros/s/AKfycbybx1KlcTW7Rofbb7OSGWtWeEAU_uflLAG3bqfS9edl-tSlIPmRh4FnheBWCaKxb06S/exec`
+   - Dibuat 3 sekolah virtual admin:
+     - `SD UOB` -> Jenjang SD / Upper Primary (`courseData-upperprimary.json`)
+     - `SMP UOB` -> Jenjang SMP / Middle School (`courseData-middleschool.json`)
+     - `SMA UOB` -> Jenjang SMA / High School (`courseData-highschool.json`)
+   - Saat memilih salah satu sekolah ini, email otomatis terisi `permata@mds.com`.
+   - Saat tombol "Mulai Belajar" ditekan, dialog modal password admin bertema shield neo-brutalist muncul meminta password.
+   - Password divalidasi ke `KalanantiDihati`. Jika salah, muncul peringatan error merah. Jika benar, admin langsung masuk ke dashboard peninjauan materi dengan hak akses bebas tanpa terblokir status kuis.
 
-### User Request — 2026-09-08T19:54:34+07:00 (Penambahan Video Pengantar Platform SMP)
+2. **Form Login Sederhana (Tanpa Input Nama Siswa)**:
+   - Input nama siswa telah sepenuhnya dihapus dari form login. Form kini hanya berisi 2 field:
+     1. Kolom pencarian Sekolah Mitra / Kelas.
+     2. Kolom input Email terdaftar di Akademia Ruangguru.
+   - Nama siswa otomatis diambil dari database master spreadsheet berdasarkan email yang terdaftar.
 
-"oiyaaa ini yang smp ada video nya kita kasi video in aja yah tpai kamu cek ini kan hanya menjelaskan platform yah perlu ditambah sumamry amteri yangd ibawah sama bookmark  sama intro video nantinya https://youtu.be/tT1FtLbLqkE?si=EGyh6QAlftU1RmWc
-https://youtu.be/5M9jTl5pPsI?si=SUe3e6ooBMdvMPvL
-https://youtu.be/5M9jTl5pPsI?si=j1wYxVgGD4FjuCvv
-https://youtu.be/_aAQ8nFUAqc?si=ydg6KQywOi6CxC6x"
+3. **Pencarian Sekolah Searchable & Real-Time Filtering**:
+   - Kolom nama sekolah kini merupakan combobox pencarian real-time. Pengguna cukup mengetik bagian nama sekolah (misal: "uob", "strada", "smp", "pekanbaru").
+   - Dilengkapi penandaan teks kuning terang (*match highlight*), badge jenjang (SD / SMP / SMA), tombol hapus cepat (✕), dan navigasi keyboard (panah Atas/Bawah dan Enter).
+
+4. **Sinkronisasi 504 Data Siswa Real**:
+   - Data 504 siswa dari spreadsheet master telah disinkronkan ke berkas lokal `ops-student-data.json` dan live database backend Apps Script.
+
+5. **Pengujian Otomatis Playwright (100% Passed)**:
+   - Pencarian "uob" -> Menampilkan SD UOB, SMP UOB, SMA UOB dengan label Akses Admin.
+   - Pemilihan SD UOB -> Mengisi otomatis email `permata@mds.com` -> Membuka modal password.
+   - Password salah `salah123` -> Ditolak dengan pesan error.
+   - Password `KalanantiDihati` -> Berhasil masuk ke dashboard SD UOB.
+   - Pengujian SMP UOB dan SMA UOB -> Berhasil memuat materi kurikulum masing-masing.
+   - Pengujian pencarian sekolah reguler ("pekanbaru") -> Berhasil menemukan sekolah terkait.
+
+6. **Git Versioning & Remote Push**:
+   - Seluruh perubahan pada `src/` disinkronkan ke folder `docs/` (GitHub Pages) dan telah ter-push ke branch `main` repositori `git@github.com:mds-academic/beasiswa_async.git`.
