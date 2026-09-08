@@ -552,3 +552,20 @@ kan kita baru bikini wadahnya dulu bukan sih ???"
 3. **Penyusunan Materi Sebenarnya Ada di Subproject 2**:
    - Seluruh perakitan materi asli, urutan modul, kurasi video baru, pembuatan slide HTML interaktif, dan kuis resmi adalah tanggung jawab **Subproject 2 (`02-curriculum-sequencing`)**.
    - Konten di Subproject 1 belum difinalisasi dan sewaktu-waktu siap digantikan dengan kurikulum final dari Subproject 2 saat wadahnya sudah 100% disetujui.
+
+### User Request — 2026-09-08T20:54:18+07:00
+
+"tapi ini udah dimasukin github kah kalo udah mana link github pages nya yah kok aku ga dikasi aku kan mau test gimana pakah sudah sesuai dengan data anak yang kita masukin atau gimana"
+
+### Assistant Response & Deployment Link — 2026-09-08T20:55:00+07:00
+
+1. **Link GitHub Pages Resmi & Live**:
+   - URL Utama: `https://mds-academic.github.io/beasiswa_async/` (otomatis redirect ke `/docs/`)
+   - URL Direct LMS: `https://mds-academic.github.io/beasiswa_async/docs/`
+   - Terverifikasi HTTP 200 OK dengan build terbaru GitHub Actions.
+2. **Repositori GitHub**:
+   - `git@github.com:mds-academic/beasiswa_async.git` pada branch `main`.
+3. **Panduan Testing untuk Pengguna**:
+   - **Akses Siswa Real**: Ketik nama sekolah (misal: "Pekanbaru", "Strada", "SMP", dll.) atau langsung masukkan email siswa dari 504 database.
+   - **Akses Admin / Pengawas**: Masukkan sekolah `SD UOB`, `SMP UOB`, atau `SMA UOB` dengan sandi akses `KalanantiDihati`.
+

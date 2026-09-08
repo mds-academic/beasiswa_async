@@ -972,3 +972,35 @@ kan kita baru bikini wadahnya dulu bukan sih ???"
 3. **Penyusunan Materi Sebenarnya Ada di Subproject 2**:
    - Seluruh kurasi materi resmi, sequencing kurikulum, pembuatan slide interaktif, transkripsi video baru, dan kuis final dikerjakan di **Subproject 2 (`02-curriculum-sequencing`)**.
    - Konten yang ada di Subproject 1 hanyalah wadah uji coba dan siap menerima kurikulum final dari Subproject 2 kapan saja.
+
+### User Request — 2026-09-08T20:54:18+07:00
+
+"tapi ini udah dimasukin github kah kalo udah mana link github pages nya yah kok aku ga dikasi aku kan mau test gimana pakah sudah sesuai dengan data anak yang kita masukin atau gimana"
+
+### Assistant Response & Deployment Link — 2026-09-08T20:55:00+07:00
+
+1. **Link GitHub Pages Resmi & Live**:
+   - URL Utama: `https://mds-academic.github.io/beasiswa_async/` (otomatis redirect ke `/docs/`)
+   - URL Direct LMS: `https://mds-academic.github.io/beasiswa_async/docs/`
+   - Terverifikasi HTTP 200 OK dengan build terbaru GitHub Actions.
+2. **Repositori GitHub**:
+   - `git@github.com:mds-academic/beasiswa_async.git` pada branch `main`.
+3. **Panduan Testing untuk Pengguna**:
+   - **Akses Siswa Real**: Ketik nama sekolah (misal: "Pekanbaru", "Strada", "SMP", dll.) atau langsung masukkan email siswa dari 504 database.
+   - **Akses Admin / Pengawas**: Masukkan sekolah `SD UOB`, `SMP UOB`, atau `SMA UOB` dengan sandi akses `KalanantiDihati`.
+
+
+
+### User Request — 2026-09-08T20:52:30+07:00
+
+"eh ini materinya udah siap semua kah ??
+
+yang slide sllide masukin github yah trus link nya dikumpulinn
+
+soalnya aku mau kamu amsukin detail materinya ke sheet https://docs.google.com/spreadsheets/d/1s6VVCGLPwiGWYwBNiR-4lrnB5XWcOV0l7pAIcgyif-k/edit?usp=sharing bikinin tabsheet materi sd smp sma yah detailin dia belajar apa aaj"
+
+### User Request — 2026-09-08 (Audit kesesuaian Subproject 1 & 2)
+
+"/Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms\n\nini aku lagi bgerjain sub project 1 dan sub project 2 tapi masi bikini bikin tapi kayanya ini banyak yang ga sesuai dengan yang aku minta di prd ataupun di project md dans emuanya coba audit dong"
+
+**Status:** under discussion — audit menyeluruh diminta; belum ada perubahan kode pada turn ini.
