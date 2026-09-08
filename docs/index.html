@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#092764" />
+    <title>UOB My Digital Space — Asynchronous Learning Platform</title>
+    <meta name="description" content="Dashboard pembelajaran interaktif coding UOB My Digital Space multi-jenjang (SD, SMP, SMA)." />
+
+    <!-- Google Fonts: Fredoka & Nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-- YouTube IFrame API -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+  </head>
+  <body>
+    <!-- Background Space Planets -->
+    <img
+      class="planet planet-one"
+      src="https://cdn-web-2.ruangguru.com/landing-pages/assets/e49806a2-dcc4-4858-a261-c4e33b798180.png"
+      alt=""
+      aria-hidden="true"
+    />
+    <img
+      class="planet planet-two"
+      src="https://cdn-web-2.ruangguru.com/landing-pages/assets/eaa66ac5-e69c-46f2-b942-909bcaad579a.png"
+      alt=""
+      aria-hidden="true"
+    />
+
+    <!-- ==================== 1. LOGIN OVERLAY ==================== -->
+    <div id="login-overlay" class="login-overlay">
+      <div class="login-card">
+        <!-- Sisi Kiri: Branding & Informasi -->
+        <div class="login-copy">
+          <div class="brand-group-login">
+            <img
+              class="rg-logo"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ruangguru_logo.svg/3840px-Ruangguru_logo.svg.png"
+              alt="Ruangguru"
+            />
+            <img
+              class="uob-logo"
+              src="https://cdn-web-2.ruangguru.com/landing-pages/assets/37185db7-24a8-467d-aabb-1d5df48f9bc0.png"
+              alt="UOB"
+            />
+          </div>
+          <span class="login-kicker">UOB My Digital Space</span>
+          <h1>Portal Belajar Coding Asinkronus</h1>
+          <p>
+            Satu portal belajar mandiri interaktif untuk seluruh jenjang. Masuk dengan memilih sekolah
+            dan email terdaftarmu.
+          </p>
+          <div class="login-highlights" aria-label="Jenjang belajar">
+            <span class="badge-sd">SD · Scratch Logic</span>
+            <span class="badge-smp">SMP · App Inventor</span>
+            <span class="badge-sma">SMA · Python Coding</span>
+          </div>
+        </div>
+
+        <!-- Sisi Kanan: Form Autentikasi Cerdas -->
+        <div class="login-form-panel">
+          <span class="login-step" id="login-detected-badge">Pilih Sekolah untuk Mulai</span>
+          <h2>Masuk ke Kelas</h2>
+
+          <form id="login-form" class="login-form">
+            <!-- 1. Pilihan Sekolah (Auto Jenjang) -->
+            <div class="form-group">
+              <label for="school-select">Sekolah Mitra / Kelas</label>
+              <select id="school-select" required>
+                <option value="" disabled selected>-- Pilih Sekolah --</option>
+                <optgroup label="Sekolah Menengah Atas (SMA - Python)">
+                  <option value="SMAN 8 Jakarta|SMA|courseData-highschool.json">SMAN 8 Jakarta (SMA)</option>
+                  <option value="SMAN 70 Jakarta|SMA|courseData-highschool.json">SMAN 70 Jakarta (SMA)</option>
+                  <option value="SMA Labschool Kebayoran|SMA|courseData-highschool.json">SMA Labschool Kebayoran (SMA)</option>
+                  <option value="SMAN 1 Bandung|SMA|courseData-highschool.json">SMAN 1 Bandung (SMA)</option>
+                </optgroup>
+                <optgroup label="Sekolah Menengah Pertama (SMP - App Inventor)">
+                  <option value="SMPN 1 Jakarta|SMP|courseData-middleschool.json">SMPN 1 Jakarta (SMP)</option>
+                  <option value="SMPN 115 Jakarta|SMP|courseData-middleschool.json">SMPN 115 Jakarta (SMP)</option>
+                  <option value="SMP Labschool Jakarta|SMP|courseData-middleschool.json">SMP Labschool Jakarta (SMP)</option>
+                </optgroup>
+                <optgroup label="Sekolah Dasar (SD - Scratch & Logic)">
+                  <option value="SDN Menteng 01|SD|courseData-upperprimary.json">SDN Menteng 01 (SD)</option>
+                  <option value="SD Al-Azhar Kelapa Gading|SD|courseData-upperprimary.json">SD Al-Azhar Kelapa Gading (SD)</option>
+                </optgroup>
+              </select>
+            </div>
+
+            <!-- 2. Nama Siswa -->
+            <div class="form-group">
+              <label for="student-name">Nama Lengkap Siswa</label>
+              <input
+                id="student-name"
+                type="text"
+                placeholder="Contoh: Budi Santoso"
+                required
+                autocomplete="name"
+              />
+            </div>
+
+            <!-- 3. Email Akademia -->
+            <div class="form-group">
+              <label for="student-email">Email Terdaftar di Akademia</label>
+              <input
+                id="student-email"
+                type="email"
+                placeholder="nama@akademia.sch.id"
+                required
+                autocomplete="email"
+              />
+            </div>
+
+            <button type="submit" id="btn-login" class="login-btn">
+              <span>Mulai Belajar Sekarang</span>
+              <span class="btn-arrow">→</span>
+            </button>
+          </form>
+
+          <p id="login-status-msg" class="login-status-msg" role="status" aria-live="polite"></p>
+
+          <p class="login-helper">
+            Menggunakan email pribadi/sekolah yang didaftarkan pada program UOB My Digital Space.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== 2. MAIN SITE SHELL (DASHBOARD) ==================== -->
+    <div id="site-shell" class="site-shell" style="display: none;">
+      <!-- Topbar Navigasi -->
+      <header class="topbar">
+        <div class="brand-group">
+          <img
+            class="rg-logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ruangguru_logo.svg/3840px-Ruangguru_logo.svg.png"
+            alt="Ruangguru"
+          />
+          <img
+            class="uob-logo"
+            src="https://cdn-web-2.ruangguru.com/landing-pages/assets/37185db7-24a8-467d-aabb-1d5df48f9bc0.png"
+            alt="UOB"
+          />
+        </div>
+
+        <div class="topbar-right">
+          <!-- Tombol Panduan Perangkat (Advisory) -->
+          <button id="btn-open-advisory" class="advisory-btn" type="button" title="Informasi Perangkat">
+            <span class="advisory-icon">✦</span>
+            <span class="advisory-text">Panduan Perangkat</span>
+          </button>
+
+          <!-- Profil Siswa Chip -->
+          <div class="student-chip" id="student-chip" tabindex="0" role="button" aria-haspopup="true">
+            <div class="avatar" id="student-avatar" aria-hidden="true"></div>
+            <div class="student-info">
+              <strong id="display-student-name">Siswa Kalananti</strong>
+              <span id="display-student-meta">SMA · SMAN 8 Jakarta</span>
+            </div>
+            <span class="chip-caret">▼</span>
+
+            <!-- Dropdown Menu Keluar -->
+            <div class="profile-dropdown" id="profile-dropdown" hidden>
+              <button id="btn-logout" class="dropdown-item" type="button">
+                <span>⏏</span>
+                <span>Ganti Akun / Keluar</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Dashboard Grid (Sidebar + Main Content) -->
+      <main class="dashboard">
+        <!-- Sidebar Modul Belajar -->
+        <aside class="sidebar">
+          <div class="eyebrow">ASYNCHRONOUS LEARNING</div>
+          <h1 id="sidebar-mission-title">Misi: Dasar Pemrograman</h1>
+          <p class="sidebar-intro" id="sidebar-mission-desc">
+            Pelajari konsep coding dari nol, tonton video atau baca materi, dan tuntaskan kuis di setiap sesi.
+          </p>
+
+          <!-- Progress Bar Misi -->
+          <div class="mission-progress" aria-label="Progres Pembelajaran">
+            <div class="progress-copy">
+              <span>Progres Misi</span>
+              <span id="progress-text">1 dari 8 Materi</span>
+            </div>
+            <div class="progress-track">
+              <div id="progress-fill" class="progress-fill" style="width: 12%;"></div>
+            </div>
+          </div>
+
+          <!-- Mobile Dropdown Nav -->
+          <div class="mobile-nav">
+            <label for="mobile-step-select">Pilih Materi:</label>
+            <select id="mobile-step-select"></select>
+          </div>
+
+          <!-- Daftar Navigasi Materi Desktop -->
+          <nav class="lesson-nav" id="lesson-nav" aria-label="Daftar Materi Pembelajaran"></nav>
+
+          <!-- Help Card -->
+          <div class="help-card">
+            Ada bagian yang masih membingungkan?
+            <a href="mailto:fasilitator@kalananti.id">Tanya Fasilitator</a>
+          </div>
+        </aside>
+
+        <!-- Area Konten Utama -->
+        <section class="content">
+          <!-- Content Header -->
+          <div class="content-top">
+            <div>
+              <p class="lesson-kicker" id="lesson-kicker">MODUL 01</p>
+              <h2 class="lesson-title" id="lesson-title">Memuat Materi...</h2>
+            </div>
+            <div class="content-meta-badges">
+              <span class="media-badge" id="media-type-badge">▶ Video</span>
+              <span class="duration-pill" id="lesson-duration">10 Menit</span>
+            </div>
+          </div>
+
+          <!-- 1. Video Frame (YouTube Interactive Player) -->
+          <div id="video-container-box" class="media-container-box">
+            <div class="video-frame" id="video-frame">
+              <div id="youtube-player"></div>
+
+              <!-- Custom Thumbnail & Center Play Button -->
+              <div class="custom-thumbnail" id="custom-thumbnail">
+                <img
+                  id="thumbnail-img"
+                  src="https://cdn-web-2.ruangguru.com/landing-pages/assets/fec32e8d-d711-48a2-bd22-59581f0594c1.jpg"
+                  alt="Thumbnail Video"
+                />
+                <button class="video-center-play" id="center-play-btn" type="button" aria-label="Putar Video">▶</button>
+              </div>
+
+              <!-- Video Loading Spinner -->
+              <div class="video-loading-overlay" id="video-loading" hidden>
+                <div class="spinner"></div>
+                <p>Memuat Media...</p>
+              </div>
+
+              <!-- Custom Player Controls Bar -->
+              <div class="video-controls" id="video-controls">
+                <button class="video-control-button" id="btn-play-pause" type="button" aria-label="Play/Pause">▶</button>
+                <input
+                  class="video-seek"
+                  id="video-seek-bar"
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="0"
+                  step="0.1"
+                  aria-label="Posisi Durasi Video"
+                />
+                <span class="video-time" id="video-time-display">0:00 / 0:00</span>
+                <button class="video-control-button" id="btn-mute" type="button" aria-label="Mute/Unmute">🔊</button>
+                <button class="video-control-button" id="btn-fullscreen" type="button" aria-label="Fullscreen">⛶</button>
+              </div>
+            </div>
+
+            <!-- Bookmarks Bar -->
+            <div class="bookmarks-container" id="bookmarks-container"></div>
+          </div>
+
+          <!-- 2. HTML Slides Viewer Container (Untuk Materi Non-Video) -->
+          <div id="slides-container-box" class="media-container-box" style="display: none;">
+            <div class="slides-viewer-card">
+              <div class="slides-viewer-header">
+                <div class="slides-indicator">
+                  <span class="slides-icon">📄</span>
+                  <span id="slides-counter-text">Halaman 1 dari 4</span>
+                </div>
+                <button class="btn-expand-slides" id="btn-expand-slides" type="button">
+                  <span>⛶</span> Perbesar Tampilan
+                </button>
+              </div>
+
+              <!-- Canvas Konten Slide -->
+              <div class="slides-canvas" id="slides-canvas">
+                <!-- Diinjeksi secara dinamis lewat app.js -->
+              </div>
+
+              <!-- Navigasi Slide Bawah -->
+              <div class="slides-footer-nav">
+                <button class="btn-slide-nav" id="btn-prev-slide" type="button">
+                  <span>‹</span> Slide Sebelumnya
+                </button>
+                <div class="slides-dots" id="slides-dots"></div>
+                <button class="btn-slide-nav" id="btn-next-slide" type="button">
+                  Slide Berikutnya <span>›</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Quiz Switcher Bar & Status Strip -->
+          <div class="quiz-switcher-strip" id="quiz-switcher-strip">
+            <div class="quiz-switcher-left">
+              <span class="quiz-strip-badge">📝 Pop-up Kuis</span>
+              <span class="quiz-strip-status" id="quiz-summary-status">Memuat kuis...</span>
+            </div>
+            <div class="quiz-pills-list" id="quiz-pills-list">
+              <!-- Tombol Kuis (Kuis 1, Kuis 2) diinjeksi lewat JS -->
+            </div>
+            <button class="button-open-quiz" id="btn-open-active-quiz" type="button">
+              <span>Buka Kuis</span>
+            </button>
+          </div>
+
+          <!-- 4. Card Rangkuman Materi -->
+          <article class="summary-card">
+            <div class="summary-header">
+              <span class="summary-kicker">RANGKUMAN MATERI</span>
+              <h3 id="summary-title">Poin Pembelajaran Hari Ini</h3>
+            </div>
+            <div class="summary-content" id="summary-body">
+              <p>Materi pembelajaran akan ditampilkan secara lengkap di sini.</p>
+            </div>
+          </article>
+
+          <!-- 5. Navigasi Bawah (Progress Locked Next Button) -->
+          <footer class="lesson-footer-nav">
+            <button class="btn-nav-step" id="btn-prev-step" type="button">
+              <span>←</span> Materi Sebelumnya
+            </button>
+            <div class="step-gate-info" id="step-gate-info"></div>
+            <button class="btn-nav-step btn-nav-primary" id="btn-next-step" type="button">
+              <span>Materi Selanjutnya</span> <span id="next-step-icon">🔒</span>
+            </button>
+          </footer>
+        </section>
+      </main>
+    </div>
+
+    <!-- ==================== 3. MODAL: GENTLE ADVISORY (MOBILE/DEVICE) ==================== -->
+    <dialog id="advisory-modal" class="modal-dialog advisory-modal">
+      <div class="modal-card">
+        <div class="modal-decor-icon">✦</div>
+        <h2>Rekomendasi Perangkat Belajar</h2>
+        <p class="modal-sub">
+          Untuk kenyamanan dan kemudahan belajar koding serta menjalankan latihan kode secara optimal,
+          disarankan menggunakan perangkat <strong>Laptop, Komputer, atau Tablet</strong>.
+        </p>
+        <div class="advisory-tips">
+          <div class="tip-item">
+            <span class="tip-icon">💻</span>
+            <span>Tampilan editor dan video lebih lega di layar besar.</span>
+          </div>
+          <div class="tip-item">
+            <span class="tip-icon">⌨️</span>
+            <span>Mengetik kode pemrograman lebih cepat & minim typo dengan keyboard fisik.</span>
+          </div>
+        </div>
+        <button id="btn-dismiss-advisory" class="modal-primary-btn" type="button">
+          Mengerti, Tetap Lanjutkan
+        </button>
+      </div>
+    </dialog>
+
+    <!-- ==================== 4. MODAL: INTERACTIVE QUIZ (LESS-STRICT) ==================== -->
+    <dialog id="quiz-modal" class="modal-dialog quiz-modal">
+      <div class="modal-card quiz-card">
+        <!-- Header Kuis -->
+        <div class="quiz-modal-header">
+          <div class="quiz-header-title">
+            <span class="quiz-number-tag" id="modal-quiz-number">Kuis 1 dari 2</span>
+            <h3 id="modal-quiz-title">Cek Pemahaman Materi</h3>
+          </div>
+          <!-- Tombol Tutup / Nanti Dulu -->
+          <button
+            class="quiz-close-btn"
+            id="btn-close-quiz-modal"
+            type="button"
+            title="Tutup & Kerjakan Nanti"
+            aria-label="Tutup kuis"
+          >
+            ✕
+          </button>
+        </div>
+
+        <!-- Konten Pertanyaan -->
+        <div class="quiz-modal-body">
+          <p class="quiz-question" id="modal-quiz-question">Pertanyaan kuis sedang dimuat...</p>
+
+          <!-- Opsi Jawaban Radio Cards -->
+          <div class="quiz-options-group" id="modal-quiz-options"></div>
+
+          <!-- Alert Pesan Feedback Hasil Jawaban -->
+          <div class="quiz-feedback-box" id="quiz-feedback-box" hidden>
+            <span class="feedback-icon" id="feedback-icon">!</span>
+            <span class="feedback-text" id="feedback-text"></span>
+          </div>
+        </div>
+
+        <!-- Footer Tombol Aksi Kuis -->
+        <div class="quiz-modal-footer">
+          <button class="btn-rewatch" id="btn-rewatch-quiz" type="button" title="Putar ulang 30 detik sebelum kuis">
+            <span>↺</span> Putar Ulang 30 Detik
+          </button>
+          <div class="quiz-footer-right">
+            <button class="btn-defer" id="btn-defer-quiz" type="button">
+              Tutup & Kerjakan Nanti
+            </button>
+            <button class="btn-submit-quiz" id="btn-submit-quiz" type="button">
+              Kirim Jawaban
+            </button>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- Aplikasi Logika JS Utama -->
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
