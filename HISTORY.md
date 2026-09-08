@@ -320,3 +320,62 @@ Melanjutkan pekerjaan pada proyek aktif `uob-async-lms`, bukan membuat catatan Q
 ### Status / Action
 
 Aktif dikerjakan: Subproject 01 LMS Platform. Subproject 02 tidak diubah. Urutan awal: HTML shell/prototype → verifikasi roster/kelas → koneksi backend setelah target akun operasional terkonfirmasi. Guard akun Gita Pengbenar vs akun Gita pribadi dicatat sebagai acceptance gate; tidak ada kredensial atau token yang disimpan.
+
+### Assistant Response (Verbatim)
+
+Siap, fokus kita alihkan untuk memajukan **Subproject 01 (LMS Platform)** terlebih dahulu, sementara **Subproject 02 (Curriculum Sequencing)** tetap dibiarkan berjalan tenang di jalurnya (*let it be*).
+
+Rencana implementasi teknis dan alur kerjanya telah disusun secara komprehensif pada dokumen rencana proyek:
+👉 **[03-implementation-plan-lms-video-html-slides.md](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/planning/03-implementation-plan-lms-video-html-slides.md)**
+
+Berikut adalah gambaran alur implementasi teknisnya:
+
+---
+
+### 1. Desain Visual Sama Persis dengan LMS Lama + Komponen Baru
+Desain visual antarmuka mempertahankan 100% identitas visual khas **UOB My Digital Space / Kalananti Async** (mengacu pada template eksisting `sesi25-26/grup-hs-2-a`):
+- **Aset & Identitas Visual**: Header logo resmi Ruangguru dan UOB, background bertema luar angkasa dengan floating planet, Google Fonts (`Fredoka` untuk judul, `Nunito` untuk teks isi), dan palet warna navy-blue elegan (`#0A192F`, `#101828`).
+- **Tata Letak Konsisten**: Sidebar modul belajar di kiri dengan indikator progres misi (*"X dari Y"*), daftar navigasi materi, dan kartu rangkuman ringkas di bawah player.
+
+**Penyesuaian Komponen Modal Baru yang Ditambahkan**:
+1. **Gentle Advisory Modal (Mobile Reminder)**:
+   - Dialog peringatan otomatis jika dibuka di viewport mobile (< 768px): *"Untuk kenyamanan dan kemudahan belajar koding yang optimal, disarankan menggunakan perangkat Laptop, Komputer, atau Tablet"*, lengkap dengan tombol dismiss *"Mengerti, Tetap Lanjutkan"*.
+2. **Interactive Quiz Pop-up & Switcher (Non-Blocking)**:
+   - Pop-up kuis muncul sesuai timestamp video, tetapi **tidak memblokir siswa secara kaku**. Siswa dapat menutup atau menundanya (*"Tutup / Nanti Dulu"*), memutar mundur 30 detik (*"Rewatch 30 Detik"*), atau membuka kembali kuis kapan saja.
+   - Terdapat **Quiz Switcher Bar** di bawah player yang menampilkan status (*"Kuis 1 dari 3: Belum Selesai"* vs *"Selesai"*).
+3. **Progress Lock Gate**:
+   - Tombol navigasi *"Materi Selanjutnya"* dinonaktifkan (disabled) sampai semua kuis pada materi tersebut berstatus selesai (submitted).
+4. **Hybrid Media Container**:
+   - Mendukung pemutaran **video YouTube** (mempertahankan timestamp `startSeconds`/`endSeconds` dan bookmark).
+   - Mendukung penampil **HTML Slides** interaktif untuk materi pengantar pemula dari nol (lengkap dengan navigasi slide, tombol perbesar/fullscreen, dan bookmark).
+
+---
+
+### 2. Verifikasi Kelas & Roster Siswa (Sebelum Koneksi Backend)
+Sebelum menghubungkan sistem ke Google Sheets, verifikasi dilakukan terlebih dahulu di dokumen operasional:
+👉 **[class-verification-checklist.md](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/01-lms-platform/ops/class-verification-checklist.md)**
+- Memastikan daftar master sekolah/kelas dan jenjangnya (SD, SMP, atau SMA) sudah valid.
+- Memastikan mapping login single-portal: siswa memasukkan nama sekolah -> sistem otomatis mendeteksi jenjang -> memuat kurikulum yang tepat dari dataset lokal (`courseData-*.json`).
+- Pengujian awal diuji menggunakan data fixture lokal offline untuk memastikan UI dan alur belajar stabil tanpa risiko penulisan data kotor.
+
+---
+
+### 3. Strict Operational Guard: Akun Gita Pengbenar (Hard Gate)
+Sesuai briefing dan penegasan mutlak dari kamu:
+- **WAJIB Akun Gita Pengbenar**: Seluruh konfigurasi Google Workspace, Google Sheets, dan deployment Apps Script (`Code.gs`) **hanya boleh** menggunakan akun operasional resmi **Gita Pengbenar**.
+- **DILARANG KERAS Akun Gita Pribadi**: Ada validasi identitas visual (avatar dan email profil Google) sebelum menjalankan `clasp` atau deployment Web App. Jika terdeteksi akun pribadi Gita yang aktif, proses deployment **wajib langsung dibatalkan**.
+- **Keamanan Kredensial**: Tidak ada password, token, atau secret yang disimpan ke dalam repositori Git.
+
+---
+
+### 4. Langkah Lanjutan yang Siap Dijalankan
+1. **Rampungkan markup semantik dan styling CSS** di `subprojects/01-lms-platform/src/index.html` dan `styles.css` agar 100% presisi dengan LMS lama ditambah modal baru.
+2. **Implementasikan logika interaktif** di `src/app.js` (advisory modal, quiz switcher bar, non-blocking modal, progress lock gate, dan hybrid media container).
+3. **Uji coba lokal** interaksi login multi-jenjang dan pengerjaan kuis.
+4. **Verifikasi checklist kelas dan konfirmasi akun Gita Pengbenar** sebelum menyentuh Apps Script backend.
+
+Rencana detail sudah tersimpan di:
+- Rencana Repositori: [03-implementation-plan-lms-video-html-slides.md](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/planning/03-implementation-plan-lms-video-html-slides.md)
+- Checklist Operasional: [class-verification-checklist.md](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/01-lms-platform/ops/class-verification-checklist.md)
+- Berkas HTML Shell: [index.html](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/01-lms-platform/src/index.html)
+
