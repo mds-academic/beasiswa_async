@@ -260,6 +260,16 @@
               <!-- YouTube Video Player -->
               <div id="youtube-player"></div>
 
+              <!-- 4-Detik Intro Video Bumper (HTML5) -->
+              <video
+                id="intro-video"
+                class="intro-video"
+                src="./intro.mp4"
+                playsinline
+                preload="auto"
+                style="display: none;"
+              ></video>
+
               <!-- Custom Thumbnail & Neo-Brutalist Center Play Button -->
               <div class="custom-thumbnail" id="custom-thumbnail">
                 <img
@@ -390,7 +400,12 @@
             <button class="btn-nav-step" id="btn-prev-step" type="button">
               <span>←</span> Materi Sebelumnya
             </button>
-            <div class="step-gate-info" id="step-gate-info"></div>
+            <div class="step-gate-container" style="display: flex; flex-direction: column; align-items: center; gap: 6px; flex: 1; text-align: center;">
+              <div class="step-gate-info" id="step-gate-info"></div>
+              <button type="button" id="btn-admin-bypass" class="btn-admin-bypass" style="display: none;">
+                ⚡ Bypass Materi (Khusus Admin) →
+              </button>
+            </div>
             <button class="btn-nav-step btn-nav-primary" id="btn-next-step" type="button">
               <span>Materi Selanjutnya</span> <span id="next-step-icon">🔒</span>
             </button>
