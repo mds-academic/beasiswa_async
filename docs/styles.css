@@ -1370,6 +1370,10 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   z-index: 12;
 }
 
+.video-loading-overlay[hidden] {
+  display: none !important;
+}
+
 .spinner {
   width: 44px;
   height: 44px;

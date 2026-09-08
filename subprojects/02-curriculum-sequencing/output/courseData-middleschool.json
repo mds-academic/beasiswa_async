@@ -17,6 +17,7 @@
           "title": "Introduction to Async Learning",
           "duration": "Video 00",
           "videoId": "yxmLOk5vcFg",
+          "slideUrl": "./slides/bridge-ms-00.html",
           "startSeconds": 0,
           "bookmarks": [
             {
@@ -40,7 +41,28 @@
               "label": "Materi Bacaan & Praktik Mandiri"
             }
           ],
-          "quizzes": [],
+          "quizzes": [
+            {
+              "time": 45,
+              "shown": false,
+              "resume": false,
+              "title": "ORIENTASI ASYNC LEARNING SMP",
+              "questions": [
+                {
+                  "id": "q-ms-0-0-1",
+                  "question": "Kapan pop-up quiz interaktif akan muncul saat kamu menonton video materi?",
+                  "options": [
+                    "A. Hanya setelah kamu menyelesaikan semua modul 1 sampai 5",
+                    "B. Di tengah-tengah pemutaran video secara otomatis pada checkpoint konsep penting",
+                    "C. Hanya jika kamu menekan tombol skip",
+                    "D. Tidak akan pernah muncul kuis"
+                  ],
+                  "answer": "B",
+                  "explanation": "Benar! Kuis pop-up muncul di sela-sela video untuk memastikan kamu memahami konsep kunci sebelum melanjutkan."
+                }
+              ]
+            }
+          ],
           "summaryHtml": "\n      <header class=\"reading-header\">\n        <div>\n          <p class=\"label\">Materi Bacaan 00</p>\n          <h3>Panduan Pembelajaran Mandiri (Async Learning)</h3>\n        </div>\n      </header>\n      <article class=\"reading-section\">\n        <h4>Selamat Datang di Pembelajaran Mandiri!</h4>\n        <div class=\"slide-text\">\n          <p>Program pembelajaran mandiri ini dipersembahkan oleh <strong>UOB My Digital Space</strong>. Di platform ini, kamu memegang kendali penuh atas ritme dan kecepatan belajarmu.</p>\n          <div class=\"quote-box\">Belajar mandiri bukan tentang siapa yang paling cepat selesai, tetapi tentang siapa yang benar-benar memahami materi yang dipelajari.</div>\n        </div>\n        <h4>Aturan Penting Selama Belajar</h4>\n        <div class=\"slide-text\">\n          <div class=\"info-grid\">\n            <div class=\"mini-card\" style=\"background-color:#E3F2FD;\">\n              <h3>1. Video Step-by-Step</h3>\n              <p>Materi disusun secara bertahap. Tonton setiap video sampai selesai (minimal hingga 20 detik sebelum video berakhir) agar modul berikutnya terbuka otomatis.</p>\n            </div>\n            <div class=\"mini-card\" style=\"background-color:#FFF3E0;\">\n              <h3>2. Pop-up Quiz Tiba-tiba</h3>\n              <p>Di tengah video, Pop-up Quiz akan muncul secara interaktif. Jawablah dengan benar untuk melanjutkan video. Gunakan tombol ulangi 30 detik jika perlu mengulang penjelasan.</p>\n            </div>\n            <div class=\"mini-card\" style=\"background-color:#E8F5E9;\">\n              <h3>3. Rangkuman & Praktik</h3>\n              <p>Tepat di bawah video terdapat rangkuman materi bacaan dan area pengumpulan proyek mandiri yang terhubung ke sistem penilaian.</p>\n            </div>\n          </div>\n        </div>\n        <h4>Tips Sukses Belajar</h4>\n        <div class=\"slide-text\">\n          <ul>\n            <li><strong>Fokus pada layar:</strong> Jangan tinggalkan video saat sedang berjalan agar tidak ketinggalan quiz interaktif.</li>\n            <li><strong>Pause & Catat:</strong> Jangan ragu mem-pause video untuk mencatat poin-poin penting.</li>\n            <li><strong>Kerjakan Proyek:</strong> Terapkan konsep yang sudah dipelajari pada mini project di setiap checkpoint.</li>\n          </ul>\n        </div>\n      </article>\n    ",
           "introVideo": "Selamat datang di program <strong>UOB My Digital Space</strong>! Tonton video orientasi singkat ini untuk memahami alur belajar mandiri asinkronus, fitur pop-up quiz interaktif, dan cara menyelesaikan misi kodingmu!",
           "lootboxTitle": "Loot Box Hari Ini 🎁",
@@ -535,7 +557,28 @@
               "label": "Instruksi Mini Project"
             }
           ],
-          "quizzes": [],
+          "quizzes": [
+            {
+              "time": 99999,
+              "shown": false,
+              "resume": false,
+              "title": "CHECKPOINT PROYEK FORM AMAN",
+              "questions": [
+                {
+                  "id": "q-ms-1-2-1",
+                  "question": "Blok apa yang digunakan untuk memeriksa apakah TextBox input nama masih dalam keadaan kosong?",
+                  "options": [
+                    "A. is number?",
+                    "B. is empty (dari kelompok Text)",
+                    "C. length of list",
+                    "D. random integer"
+                  ],
+                  "answer": "B",
+                  "explanation": "Benar! Blok 'is empty' akan menguji apakah string teks bernilai kosong atau tidak ada isinya."
+                }
+              ]
+            }
+          ],
           "summaryHtml": "\n      <header class=\"reading-header\">\n        <div>\n          <p class=\"label\">Mini Project</p>\n          <h3>Form Aman</h3>\n        </div>\n      </header>\n      <article class=\"reading-section\">\n        <div class=\"slide-text\">\n          <p>Tonton instruksi video di atas untuk mengerjakan mini project ini.</p>\n        </div>\n      </article>\n    "
         },
         {
@@ -650,7 +693,28 @@
               "label": "Instruksi Mini Project"
             }
           ],
-          "quizzes": [],
+          "quizzes": [
+            {
+              "time": 99999,
+              "shown": false,
+              "resume": false,
+              "title": "CHECKPOINT PENDETEKSI PHISHING",
+              "questions": [
+                {
+                  "id": "q-ms-1-5-1",
+                  "question": "Blok apa yang digunakan untuk mengecek apakah suatu pesan teks mengandung potongan kata 'minta password'?",
+                  "options": [
+                    "A. text length",
+                    "B. contains text piece (dari menu Text)",
+                    "C. split at spaces",
+                    "D. upcase text"
+                  ],
+                  "answer": "B",
+                  "explanation": "Tepat! Blok 'contains text piece' mengembalikan nilai True jika potongan teks tertentu ditemukan di dalam pesan."
+                }
+              ]
+            }
+          ],
           "summaryHtml": "\n      <header class=\"reading-header\">\n        <div>\n          <p class=\"label\">Mini Project</p>\n          <h3>Cek Pesan Aman</h3>\n        </div>\n      </header>\n      <article class=\"reading-section\">\n        <div class=\"slide-text\">\n          <p>Tonton instruksi video di atas untuk mengerjakan mini project ini.</p>\n        </div>\n      </article>\n    "
         },
         {
@@ -1113,7 +1177,28 @@
             }
           ],
           "summaryHtml": "\n      <header class=\"reading-header\">\n        <div>\n          <p class=\"label\">Materi Bacaan 06</p>\n          <h3>Tugas Akhir: Pengganti Kehadiran</h3>\n        </div>\n      </header>\n      <article class=\"reading-section\">\n        <h4>Aplikasi Target Tabungan! 🏆</h4>\n        <div class=\"slide-text\">\n          <div class=\"mini-project-card\">\n              <p>Praktik di MIT App Inventor sekarang!</p>\n              <ol>\n                  <li>Buat desain UI (TextBox Tabungan, TextBox Harga, Tombol Cek).</li>\n                  <li>Susun blok If-Then-Else membandingkan nilai keduanya.</li>\n                  <li>Tambahkan blok Math dan Join di bagian Else agar aplikasi memberi tahu berapa selisih kekurangannya.</li>\n                  <li>Jalankan di HP dengan MIT Companion dan tunjukkan hasilnya!</li>\n              </ol>\n              <p style=\"margin-top:20px;\"><strong>Submit link/screenshot aplikasi kamu pada form di bawah ini sebagai bukti kehadiran.</strong></p>\n          </div>\n        </div>\n      </article>",
-          "quizzes": []
+          "quizzes": [
+            {
+              "time": 99999,
+              "shown": false,
+              "resume": false,
+              "title": "CHECKPOINT PENASIHAT BELANJA",
+              "questions": [
+                {
+                  "id": "q-ms-2-6-1",
+                  "question": "Jika Saldo Celengan = 70.000 dan Harga Barang = 30.000, berapa sisa saldo dan apa saran aplikasi?",
+                  "options": [
+                    "A. Sisa 40.000 -> Tunda Dulu (karena sisa tabungan < 50.000)",
+                    "B. Sisa 100.000 -> Langsung Beli",
+                    "C. Saldo Minus -> Tolak",
+                    "D. Saldo 0"
+                  ],
+                  "answer": "A",
+                  "explanation": "Tepat! 70.000 - 30.000 = 40.000. Karena sisa uang < 50.000 (batas aman), aplikasi menyarankan untuk menunda dulu agar tidak kehabisan uang."
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1202,7 +1287,28 @@
               "label": "Instruksi Mini Project"
             }
           ],
-          "quizzes": [],
+          "quizzes": [
+            {
+              "time": 99999,
+              "shown": false,
+              "resume": false,
+              "title": "CHECKPOINT KALKULATOR MODULAR",
+              "questions": [
+                {
+                  "id": "q-ms-3-2-1",
+                  "question": "Di mana letak menu untuk membuat blok Procedure baru di MIT App Inventor?",
+                  "options": [
+                    "A. Di menu Layout Designer",
+                    "B. Di laci bawaan 'Procedures' pada Blocks Editor",
+                    "C. Di dalam Google Drive",
+                    "D. Di galeri foto"
+                  ],
+                  "answer": "B",
+                  "explanation": "Benar! Di Blocks Editor terdapat laci bawaan berwarna ungu bernama 'Procedures'."
+                }
+              ]
+            }
+          ],
           "summaryHtml": "\n      <header class=\"reading-header\">\n        <div>\n          <p class=\"label\">Mini Project</p>\n          <h3>Tugas Pertama: Kalkulator Cerdas 🛠️</h3>\n        </div>\n      </header>\n      <article class=\"reading-section\">\n        <div class=\"slide-text\">\n          <p>Tonton instruksi video untuk mengerjakan mini project ini. Ikuti langkah-langkah di bawah ini:</p>\n          <ol>\n            <li>Buka proyek baru di MIT App Inventor.</li>\n            <li>Buat UI dengan 2 TextBox, 1 Label, dan 2 Button (TAMBAH dan RESET).</li>\n            <li>Buat Procedure \"Do\" dengan nama <code>ResetLayar</code> untuk mengosongkan TextBox dan Label.</li>\n            <li>Buat Procedure \"Result\" dengan nama <code>JumlahkanAngka</code> yang menambahkan TextBox1 dan TextBox2.</li>\n            <li>Panggil procedure tersebut di masing-masing tombol seperti contoh di video.</li>\n          </ol>\n        </div>\n      </article>\n    "
         },
         {
@@ -1516,7 +1622,28 @@
               "label": "Instruksi Mini Project"
             }
           ],
-          "quizzes": [],
+          "quizzes": [
+            {
+              "time": 99999,
+              "shown": false,
+              "resume": false,
+              "title": "CHECKPOINT TABUNGAN TINYDB",
+              "questions": [
+                {
+                  "id": "q-ms-4-3-1",
+                  "question": "Pada event apa sebaiknya kita memanggil blok 'TinyDB.GetValue' untuk memuat saldo terakhir saat aplikasi baru dibuka?",
+                  "options": [
+                    "A. when Screen1.Initialize",
+                    "B. when ButtonExit.Click",
+                    "C. when Screen1.ErrorOccurred",
+                    "D. when Screen1.BackPressed"
+                  ],
+                  "answer": "A",
+                  "explanation": "Tepat! Event 'when Screen1.Initialize' langsung berjalan otomatis saat layar aplikasi pertama kali dimuat."
+                }
+              ]
+            }
+          ],
           "summaryHtml": "\n      <header class=\"reading-header\">\n        <div>\n          <p class=\"label\">Mini Project</p>\n          <h3>Tantangan Akhir: Sistem CRUD Data Rahasia</h3>\n        </div>\n      </header>\n      <article class=\"reading-section\">\n        <h4>Misi Kalian 🏆</h4>\n        <div class=\"slide-text\">\n          <p>Sekarang giliranmu merakit aplikasi secara utuh! Tonton instruksi video untuk mengerjakan mini project ini.</p>\n          <ul>\n            <li>Desain UI yang rapi dan menarik.</li>\n            <li>Gunakan <strong>StoreValue</strong> untuk tombol Simpan. (Pastikan pakai Tag rahasiamu sendiri).</li>\n            <li>Gunakan <strong>GetValue</strong> untuk tombol Baca dan tampilkan hasilnya ke Label Output.</li>\n            <li>Gunakan <strong>ClearTag</strong> untuk tombol Hancurkan Data agar memori kembali bersih!</li>\n          </ul>\n        </div>\n      </article>\n    "
         },
         {
@@ -1539,7 +1666,28 @@
               "label": "Pencatatan Keuangan"
             }
           ],
-          "quizzes": [],
+          "quizzes": [
+            {
+              "time": 120,
+              "shown": false,
+              "resume": false,
+              "title": "ANALISIS DATA TINYDB",
+              "questions": [
+                {
+                  "id": "q-ms-4-4-1",
+                  "question": "Jika kita menyimpan riwayat transaksi belanja berupa List ke TinyDB, blok apa yang digunakan untuk menambahkan item belanja baru ke dalam list?",
+                  "options": [
+                    "A. remove list item",
+                    "B. add items to list (dari menu Lists)",
+                    "C. clear list",
+                    "D. pick random item"
+                  ],
+                  "answer": "B",
+                  "explanation": "Benar! Blok 'add items to list' menambahkan data transaksi baru ke daftar riwayat yang sudah ada."
+                }
+              ]
+            }
+          ],
           "summaryHtml": "\n      <header class=\"reading-header\">\n        <div>\n          <p class=\"label\">Materi Bacaan 05</p>\n          <h3>Finansial & Transaksi Digital</h3>\n        </div>\n      </header>\n      <article class=\"reading-section\">\n        <h4>Analisis Data</h4>\n<div class=\"slide-text\">\n<p>Data finansial sederhana adalah catatan tentang uang masuk, uang keluar, sisa uang, dan kebiasaan belanja.</p>\n<p>Untuk SMP, tujuannya bukan belajar akuntansi berat. Tujuannya adalah melihat pola: apakah pengeluaran terlalu besar, apakah ada kebiasaan jajan yang bisa dikurangi, dan apakah uang masih cukup untuk kebutuhan penting.</p>\n<div class=\"quote-box\" style=\"background-color:#E8F5E9;\">Keputusan finansial yang baik dimulai dari mencatat data dengan jujur.</div>\n</div>\n<h4>Contoh Sekitar</h4>\n<div class=\"slide-text\">\n<table style=\"width:100%; border-collapse: collapse; background-color: var(--white); border: 4px solid var(--black); box-shadow: 6px 6px 0px var(--black); margin-bottom: 25px; font-size: 18px;\">\n<thead>\n<tr style=\"background-color: var(--yellow);\">\n<th style=\"padding: 12px; border: 2px solid var(--black);\">Hari</th>\n<th style=\"padding: 12px; border: 2px solid var(--black);\">Uang Saku</th>\n<th style=\"padding: 12px; border: 2px solid var(--black);\">Pengeluaran</th>\n<th style=\"padding: 12px; border: 2px solid var(--black);\">Sisa</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"padding: 10px; border: 2px solid var(--black);\">Senin</td><td style=\"padding: 10px; border: 2px solid var(--black);\">30.000</td><td style=\"padding: 10px; border: 2px solid var(--black);\">20.000</td><td style=\"padding: 10px; border: 2px solid var(--black);\">10.000</td></tr>\n<tr><td style=\"padding: 10px; border: 2px solid var(--black);\">Selasa</td><td style=\"padding: 10px; border: 2px solid var(--black);\">30.000</td><td style=\"padding: 10px; border: 2px solid var(--black);\">28.000</td><td style=\"padding: 10px; border: 2px solid var(--black);\">2.000</td></tr>\n<tr><td style=\"padding: 10px; border: 2px solid var(--black);\">Rabu</td><td style=\"padding: 10px; border: 2px solid var(--black);\">30.000</td><td style=\"padding: 10px; border: 2px solid var(--black);\">15.000</td><td style=\"padding: 10px; border: 2px solid var(--black);\">15.000</td></tr>\n</tbody>\n</table>\n<p>Dari data ini, aplikasi bisa menampilkan hari paling boros, sisa uang terkecil, dan saran agar siswa punya target menabung.</p>\n</div>\n<h4>MIT App Inventor</h4>\n<div class=\"slide-text\">\n<p>Aplikasi \"Smart Jajan\" membantu pengguna mengecek apakah pengeluaran hari ini aman.</p>\n<div class=\"app-screen\">\n<p><strong>Fitur:</strong></p>\n<ul style=\"padding-left: 25px;\">\n<li>Input uang saku dan pengeluaran.</li>\n<li>Validasi angka dan tidak kosong.</li>\n<li>Hitung sisa uang.</li>\n<li>Beri status: hemat, aman, atau boros.</li>\n</ul>\n</div>\n<div class=\"block-code\" style=\"background-color:#F7F7F7; color:var(--black);\">\n<span class=\"block-badge block-control\">if</span> <span class=\"block-badge block-ui\">pengeluaran</span> <span class=\"block-badge block-math\">&gt;</span> <span class=\"block-badge block-ui\">uangSaku</span><br/>\n<span class=\"block-badge block-control\">then</span> <span class=\"block-badge block-text\">\"Pengeluaran melebihi uang saku\"</span><br/>\n<span class=\"block-badge block-control\">else if</span> <span class=\"block-badge block-ui\">sisa</span> <span class=\"block-badge block-math\">&gt;=</span> <span class=\"block-badge block-math\">10000</span><br/>\n<span class=\"block-badge block-control\">then</span> <span class=\"block-badge block-text\">\"Hemat, sisa uangmu bagus\"</span><br/>\n<span class=\"block-badge block-control\">else</span> <span class=\"block-badge block-text\">\"Aman, tapi coba sisakan lebih banyak\"</span>\n</div>\n</div>\n<h4>Designer</h4>\n<div class=\"slide-text\">\n<p>Versi lebih lengkap dari aplikasi uang saku: siswa memasukkan kategori pengeluaran agar aplikasi tidak hanya menghitung sisa, tetapi juga membaca pola.</p>\n<div class=\"practice-layout\">\n<div class=\"phone-mock\">\n<div class=\"phone-screen\">\n<div class=\"app-title-bar\">Smart Jajan</div>\n<div class=\"mock-label\">Uang saku</div>\n<div class=\"mock-input\">30000</div>\n<div class=\"mock-label\">Pengeluaran</div>\n<div class=\"mock-input\">22000</div>\n<div class=\"mock-label\">Kategori</div>\n<div class=\"mock-input\">Makanan / Transport / Hiburan</div>\n<div class=\"mock-button\">CEK POLA</div>\n<div class=\"mock-output\">Kategori terbesar: Makanan<br/>Saran: kurangi jajan minuman manis.</div>\n</div>\n</div>\n<div class=\"component-list\">\n<h3>Komponen di Designer</h3>\n<span class=\"component-pill\">TextBoxUangSaku</span>\n<span class=\"component-pill\">TextBoxPengeluaran</span>\n<span class=\"component-pill\">ListPickerKategori</span>\n<span class=\"component-pill\">ButtonCekPola</span>\n<span class=\"component-pill\">LabelSisa</span>\n<span class=\"component-pill\">LabelSaran</span>\n<span class=\"component-pill\">TinyDB1</span>\n<p class=\"tiny-note\">TinyDB opsional: dipakai jika ingin menyimpan catatan pengeluaran antar percobaan.</p>\n</div>\n</div>\n</div>\n<h4>Blocks</h4>\n<div class=\"slide-text\">\n<p>Blocks ini membuat aplikasi memberi status yang lebih kaya: melebihi uang saku, hemat, aman, atau perlu mengurangi kategori tertentu.</p>\n<div class=\"block-stack\">\n<h3>Gambaran Blocks</h3>\n<div class=\"block-row event\">when ButtonCekPola.Click</div>\n<div class=\"block-row check indent-1\">validasi uang saku, pengeluaran, dan kategori</div>\n<div class=\"block-row action indent-1\">set sisa to UangSaku - Pengeluaran</div>\n<div class=\"block-row check indent-1\">if Pengeluaran &gt; UangSaku</div>\n<div class=\"block-row warn indent-2\">set LabelSaran.Text to \"Pengeluaran melebihi uang saku\"</div>\n<div class=\"block-row check indent-1\">else if sisa &gt;= 10000</div>\n<div class=\"block-row output indent-2\">set LabelSaran.Text to \"Hemat, sisa uangmu bagus\"</div>\n<div class=\"block-row check indent-1\">else if Kategori = \"Hiburan\"</div>\n<div class=\"block-row warn indent-2\">set LabelSaran.Text to \"Coba batasi hiburan dulu\"</div>\n<div class=\"block-row output indent-1\">else set LabelSaran.Text to \"Masih aman, tetap catat pengeluaran\"</div>\n</div>\n<p class=\"tiny-note\">Tantangan tambahan: simpan kategori dan pengeluaran ke TinyDB, lalu tampilkan riwayat sederhana.</p>\n</div>\n<h4>Transaksi Digital</h4>\n<div class=\"slide-text\">\n<p>Transaksi digital terjadi saat kita membeli, membayar, top up, transfer, atau berlangganan lewat perangkat digital.</p>\n<p>Risikonya bukan hanya uang hilang. Data pribadi juga bisa dicuri jika pengguna tertipu link palsu atau memberikan OTP/password kepada orang lain.</p>\n<div class=\"info-grid\">\n<div class=\"mini-card\" style=\"background-color:#FFEBEE;\">\n<h3>Risiko</h3>\n<ul>\n<li>Phishing lewat link palsu.</li>\n<li>Hadiah palsu yang meminta password.</li>\n<li>Nomor tidak dikenal meminta OTP.</li>\n</ul>\n</div>\n<div class=\"mini-card\" style=\"background-color:#E8F5E9;\">\n<h3>Langkah Aman</h3>\n<ul>\n<li>Cek sumber pesan.</li>\n<li>Jangan bagikan OTP atau PIN.</li>\n<li>Gunakan aplikasi resmi.</li>\n</ul>\n</div>\n</div>\n</div>\n<h4>Phishing</h4>\n<div class=\"slide-text\">\n<p>Phishing adalah penipuan yang menyamar sebagai pihak resmi untuk mencuri data atau uang.</p>\n<div style=\"background-color: var(--red); color: white; padding: 22px; border: 4px solid var(--black); border-radius: 14px; box-shadow: 6px 6px 0px var(--black);\">\n<strong>Tanda bahaya:</strong>\n<ul style=\"margin-top: 12px; padding-left: 28px;\">\n<li style=\"color:white;\">Meminta password, PIN, kode OTP, atau data kartu.</li>\n<li style=\"color:white;\">Mendesak: \"Akun akan diblokir dalam 5 menit!\"</li>\n<li style=\"color:white;\">Hadiah terlalu bagus untuk dipercaya.</li>\n<li style=\"color:white;\">Link terlihat aneh atau berbeda dari situs resmi.</li>\n</ul>\n</div>\n<p class=\"tiny-note\">Aturan sederhana: kalau pesan membuat kamu panik, buru-buru, atau diminta memberi data rahasia, berhenti dulu dan cek ke orang dewasa/akun resmi.</p>\n</div>\n<h4>Designer</h4>\n<div class=\"slide-text\">\n<p>Aplikasi ini membantu siswa membaca pesan digital dengan lebih kritis. Pengguna memilih tanda bahaya yang muncul, lalu aplikasi memberi status risiko.</p>\n<div class=\"practice-layout\">\n<div class=\"phone-mock\">\n<div class=\"phone-screen\">\n<div class=\"app-title-bar\">Cek Pesan Aman</div>\n<div class=\"mock-label\">Isi pesan</div>\n<div class=\"mock-input\">\"Kirim OTP agar hadiah masuk\"</div>\n<div class=\"mock-label\">Tanda bahaya</div>\n<div class=\"mock-input\">Meminta OTP</div>\n<div class=\"mock-button\">CEK RISIKO</div>\n<div class=\"mock-output\">Risiko tinggi: jangan balas pesan.</div>\n</div>\n</div>\n<div class=\"component-list\">\n<h3>Komponen di Designer</h3>\n<span class=\"component-pill\">TextBoxPesan</span>\n<span class=\"component-pill\">CheckBoxOTP</span>\n<span class=\"component-pill\">CheckBoxPassword</span>\n<span class=\"component-pill\">CheckBoxLinkAneh</span>\n<span class=\"component-pill\">CheckBoxHadiah</span>\n<span class=\"component-pill\">ButtonCekRisiko</span>\n<span class=\"component-pill\">LabelRisiko</span>\n<p class=\"tiny-note\">Komponen CheckBox cocok untuk latihan ini karena tanda bahaya bisa lebih dari satu.</p>\n</div>\n</div>\n</div>\n<h4>Blocks</h4>\n<div class=\"slide-text\">\n<p>Siswa belajar membuat skor risiko. Semakin banyak tanda bahaya yang dicentang, semakin tinggi risikonya.</p>\n<div class=\"block-stack\">\n<h3>Gambaran Blocks</h3>\n<div class=\"block-row event\">when ButtonCekRisiko.Click</div>\n<div class=\"block-row action indent-1\">set global skor to 0</div>\n<div class=\"block-row check indent-1\">if CheckBoxOTP.Checked then set skor to skor + 2</div>\n<div class=\"block-row check indent-1\">if CheckBoxPassword.Checked then set skor to skor + 2</div>\n<div class=\"block-row check indent-1\">if CheckBoxLinkAneh.Checked then set skor to skor + 1</div>\n<div class=\"block-row check indent-1\">if CheckBoxHadiah.Checked then set skor to skor + 1</div>\n<div class=\"block-row warn indent-1\">if skor &gt;= 3 set LabelRisiko.Text to \"Risiko tinggi: jangan klik atau balas\"</div>\n<div class=\"block-row output indent-1\">else set LabelRisiko.Text to \"Tetap cek sumber resmi sebelum percaya\"</div>\n</div>\n<p class=\"tiny-note\">Pertanyaan diskusi: kenapa OTP dan password diberi skor lebih tinggi daripada kata \"hadiah\"?</p>\n</div>\n      </article>\n    "
         },
         {
@@ -1558,7 +1706,28 @@
               "label": "Instruksi Mini Project"
             }
           ],
-          "quizzes": [],
+          "quizzes": [
+            {
+              "time": 99999,
+              "shown": false,
+              "resume": false,
+              "title": "CHECKPOINT KAS MINI PERSISTEN",
+              "questions": [
+                {
+                  "id": "q-ms-4-5-1",
+                  "question": "Mengapa kita harus memberi nama Tag yang unik dan jelas saat menyimpan data ke TinyDB?",
+                  "options": [
+                    "A. Agar aplikasi menghabiskan memori HP",
+                    "B. Agar data tidak tertukar atau tertimpa secara tidak sengaja oleh fitur lain",
+                    "C. Supaya koneksi WiFi tetap stabil",
+                    "D. Agar tidak bisa dibaca oleh sistem"
+                  ],
+                  "answer": "B",
+                  "explanation": "Tepat! Tag adalah kunci pengidentifikasi data di TinyDB. Tag yang unik memastikan data tersimpan rapi dan tidak tumpang tindih."
+                }
+              ]
+            }
+          ],
           "summaryHtml": "\n      <header class=\"reading-header\">\n        <div>\n          <p class=\"label\">Mini Project</p>\n          <h3>Mini Project C</h3>\n        </div>\n      </header>\n      <article class=\"reading-section\">\n        <div class=\"slide-text\">\n          <p>Tonton instruksi video di atas untuk mengerjakan mini project ini.</p>\n        </div>\n      </article>\n    "
         },
         {
@@ -1671,7 +1840,28 @@
           "startSeconds": 2267,
           "endSeconds": 2303,
           "bookmarks": [],
-          "quizzes": [],
+          "quizzes": [
+            {
+              "time": 99999,
+              "shown": false,
+              "resume": false,
+              "title": "CHECKPOINT WIREFRAMING CAPSTONE",
+              "questions": [
+                {
+                  "id": "q-ms-5-2-1",
+                  "question": "Komponen Layout apa yang paling ideal digunakan untuk menata 2 tombol secara berdampingan ke samping (horizontal)?",
+                  "options": [
+                    "A. VerticalArrangement",
+                    "B. HorizontalArrangement",
+                    "C. Canvas",
+                    "D. VideoPlayer"
+                  ],
+                  "answer": "B",
+                  "explanation": "Benar! HorizontalArrangement menata komponen di dalamnya secara berjajar dari kiri ke kanan."
+                }
+              ]
+            }
+          ],
           "summaryHtml": "\n      <header class=\"reading-header\">\n        <div>\n          <p class=\"label\">Tugas Akhir</p>\n          <h3>Misi Brainstorming Ide Aplikasi! 🚀</h3>\n        </div>\n      </header>\n      <article class=\"reading-section\">\n        <div class=\"slide-text\">\n          <p>Waktunya menerapkan ilmu yang sudah kamu pelajari untuk memecahkan masalah nyata di sekitarmu.</p>\n        </div>\n      </article>\n    "
         },
         {
@@ -1689,7 +1879,28 @@
               "label": "Instruksi Final Project"
             }
           ],
-          "quizzes": [],
+          "quizzes": [
+            {
+              "time": 99999,
+              "shown": false,
+              "resume": false,
+              "title": "CHECKPOINT FINAL CAPSTONE VERIFIKASI",
+              "questions": [
+                {
+                  "id": "q-ms-5-3-1",
+                  "question": "Sebelum mengumpulkan link proyek akhir, uji coba mandiri apa yang wajib dilakukan di HP?",
+                  "options": [
+                    "A. Mematikan layar HP dan tidur",
+                    "B. Menguji seluruh tombol, memasukkan form kosong untuk cek error validasi, dan memastikan data tersimpan di TinyDB",
+                    "C. Menghapus seluruh blok kode",
+                    "D. Mengubah bahasa HP"
+                  ],
+                  "answer": "B",
+                  "explanation": "Tepat sekali! Pengujian menyeluruh menjamin aplikasi berjalan mulus tanpa crash saat dinilai fasilitator."
+                }
+              ]
+            }
+          ],
           "summaryHtml": "\n      <header class=\"reading-header\">\n        <div>\n          <p class=\"label\">Final Project</p>\n          <h3>Final Project</h3>\n        </div>\n      </header>\n      <article class=\"reading-section\">\n        <div class=\"slide-text\">\n          <p>Tonton instruksi video di atas untuk menyelesaikan Final Project dan mengakhiri pembelajaran.</p>\n          <iframe src=\"./sandbox_finalproject.html\" style=\"width: 100%; height: 600px; border: 4px solid var(--black); border-radius: 16px; margin-top: 20px; box-shadow: 6px 6px 0px var(--black);\"></iframe>\n        </div>\n      </article>\n    "
         },
         {

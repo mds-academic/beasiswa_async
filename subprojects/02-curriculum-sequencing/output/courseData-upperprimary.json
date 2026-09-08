@@ -16,7 +16,28 @@
           "kicker": "Video 00 · Pengenalan",
           "title": "Introduction to Async Learning",
           "videoId": "yxmLOk5vcFg",
-          "quizzes": []
+          "quizzes": [
+            {
+              "time": 40,
+              "shown": false,
+              "resume": false,
+              "title": "KUIS CERDAS: Introduction to Async Learning",
+              "questions": [
+                {
+                  "id": "q-up-0-0-1",
+                  "question": "Apa hal terpenting yang kamu pelajari pada materi 'Introduction to Async Learning'?",
+                  "options": [
+                    "A. Memahami konsep koding visual dan mengelola uang secara bijak",
+                    "B. Menghabiskan uang jajan sekaligus",
+                    "C. Tidak memperhatikan penjelasan",
+                    "D. Menutup laptop"
+                  ],
+                  "answer": "A",
+                  "explanation": "Hebat! Kamu sudah memahami konsep dasar pemrograman dan literasi finansial dengan baik."
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -39,7 +60,11 @@
               "id": "up-q-1-1",
               "time": 60,
               "question": "Manakah yang merupakan contoh kebutuhan pokok?",
-              "options": ["Buku tulis sekolah", "Mainan robot terbaru", "Top up game online"],
+              "options": [
+                "Buku tulis sekolah",
+                "Mainan robot terbaru",
+                "Top up game online"
+              ],
               "correctIndex": 0,
               "explanation": "Buku tulis sekolah adalah kebutuhan penunjang belajar, sedangkan mainan dan top up game adalah keinginan."
             }
@@ -53,7 +78,28 @@
           "videoId": "",
           "isPlaceholder": true,
           "placeholderNotice": "Konten video sedang dalam tahap produksi rekaman.",
-          "quizzes": []
+          "quizzes": [
+            {
+              "time": 40,
+              "shown": false,
+              "resume": false,
+              "title": "KUIS CERDAS: Menjaga Keamanan Data Pribadi Online",
+              "questions": [
+                {
+                  "id": "q-up-1-2-1",
+                  "question": "Apa hal terpenting yang kamu pelajari pada materi 'Menjaga Keamanan Data Pribadi Online'?",
+                  "options": [
+                    "A. Memahami konsep koding visual dan mengelola uang secara bijak",
+                    "B. Menghabiskan uang jajan sekaligus",
+                    "C. Tidak memperhatikan penjelasan",
+                    "D. Menutup laptop"
+                  ],
+                  "answer": "A",
+                  "explanation": "Hebat! Kamu sudah memahami konsep dasar pemrograman dan literasi finansial dengan baik."
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -71,7 +117,28 @@
           "videoId": "",
           "isPlaceholder": true,
           "placeholderNotice": "Konten video sedang dalam tahap produksi rekaman.",
-          "quizzes": []
+          "quizzes": [
+            {
+              "time": 40,
+              "shown": false,
+              "resume": false,
+              "title": "KUIS CERDAS: Membuat Variabel Celengan di Scratch",
+              "questions": [
+                {
+                  "id": "q-up-2-1-1",
+                  "question": "Apa hal terpenting yang kamu pelajari pada materi 'Membuat Variabel Celengan di Scratch'?",
+                  "options": [
+                    "A. Memahami konsep koding visual dan mengelola uang secara bijak",
+                    "B. Menghabiskan uang jajan sekaligus",
+                    "C. Tidak memperhatikan penjelasan",
+                    "D. Menutup laptop"
+                  ],
+                  "answer": "A",
+                  "explanation": "Hebat! Kamu sudah memahami konsep dasar pemrograman dan literasi finansial dengan baik."
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "up-2-2",
@@ -81,7 +148,28 @@
           "videoId": "",
           "isPlaceholder": true,
           "placeholderNotice": "Konten video sedang dalam tahap produksi rekaman.",
-          "quizzes": []
+          "quizzes": [
+            {
+              "time": 40,
+              "shown": false,
+              "resume": false,
+              "title": "KUIS CERDAS: Mengontrol Saldo & Menghitung Tabungan",
+              "questions": [
+                {
+                  "id": "q-up-2-2-1",
+                  "question": "Apa hal terpenting yang kamu pelajari pada materi 'Mengontrol Saldo & Menghitung Tabungan'?",
+                  "options": [
+                    "A. Memahami konsep koding visual dan mengelola uang secara bijak",
+                    "B. Menghabiskan uang jajan sekaligus",
+                    "C. Tidak memperhatikan penjelasan",
+                    "D. Menutup laptop"
+                  ],
+                  "answer": "A",
+                  "explanation": "Hebat! Kamu sudah memahami konsep dasar pemrograman dan literasi finansial dengan baik."
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -99,7 +187,28 @@
           "videoId": "",
           "isPlaceholder": true,
           "placeholderNotice": "Konten video sedang dalam tahap produksi rekaman.",
-          "quizzes": []
+          "quizzes": [
+            {
+              "time": 40,
+              "shown": false,
+              "resume": false,
+              "title": "KUIS CERDAS: Blok Percabangan: Jika..., Maka..., Jika Tidak...",
+              "questions": [
+                {
+                  "id": "q-up-3-1-1",
+                  "question": "Apa hal terpenting yang kamu pelajari pada materi 'Blok Percabangan: Jika..., Maka..., Jika Tidak...'?",
+                  "options": [
+                    "A. Memahami konsep koding visual dan mengelola uang secara bijak",
+                    "B. Menghabiskan uang jajan sekaligus",
+                    "C. Tidak memperhatikan penjelasan",
+                    "D. Menutup laptop"
+                  ],
+                  "answer": "A",
+                  "explanation": "Hebat! Kamu sudah memahami konsep dasar pemrograman dan literasi finansial dengan baik."
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "up-3-2",
@@ -109,7 +218,28 @@
           "videoId": "",
           "isPlaceholder": true,
           "placeholderNotice": "Konten video sedang dalam tahap produksi rekaman.",
-          "quizzes": []
+          "quizzes": [
+            {
+              "time": 40,
+              "shown": false,
+              "resume": false,
+              "title": "KUIS CERDAS: Mengirim Pesan Antar Karakter (Broadcast Message)",
+              "questions": [
+                {
+                  "id": "q-up-3-2-1",
+                  "question": "Apa hal terpenting yang kamu pelajari pada materi 'Mengirim Pesan Antar Karakter (Broadcast Message)'?",
+                  "options": [
+                    "A. Memahami konsep koding visual dan mengelola uang secara bijak",
+                    "B. Menghabiskan uang jajan sekaligus",
+                    "C. Tidak memperhatikan penjelasan",
+                    "D. Menutup laptop"
+                  ],
+                  "answer": "A",
+                  "explanation": "Hebat! Kamu sudah memahami konsep dasar pemrograman dan literasi finansial dengan baik."
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -127,7 +257,28 @@
           "videoId": "",
           "isPlaceholder": true,
           "placeholderNotice": "Instruksi project Scratch interaktif.",
-          "quizzes": []
+          "quizzes": [
+            {
+              "time": 40,
+              "shown": false,
+              "resume": false,
+              "title": "KUIS CERDAS: Mini Game Petualangan Belanja Bijak",
+              "questions": [
+                {
+                  "id": "q-up-4-1-1",
+                  "question": "Apa hal terpenting yang kamu pelajari pada materi 'Mini Game Petualangan Belanja Bijak'?",
+                  "options": [
+                    "A. Memahami konsep koding visual dan mengelola uang secara bijak",
+                    "B. Menghabiskan uang jajan sekaligus",
+                    "C. Tidak memperhatikan penjelasan",
+                    "D. Menutup laptop"
+                  ],
+                  "answer": "A",
+                  "explanation": "Hebat! Kamu sudah memahami konsep dasar pemrograman dan literasi finansial dengan baik."
+                }
+              ]
+            }
+          ]
         }
       ]
     }

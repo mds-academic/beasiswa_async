@@ -39,7 +39,48 @@
               "label": "Materi Bacaan & Praktik Mandiri"
             }
           ],
-          "quizzes": []
+          "quizzes": [
+            {
+              "time": 65,
+              "shown": false,
+              "resume": false,
+              "title": "ORIENTASI ASYNC LEARNING",
+              "questions": [
+                {
+                  "id": "q-hs-0-0-1",
+                  "question": "Apa keunggulan utama belajar mandiri (asynchronous learning) di platform UOB My Digital Space?",
+                  "options": [
+                    "A. Harus online bersamaan di jam yang sama setiap hari",
+                    "B. Kamu memegang kendali penuh atas ritme belajar, bisa pause, ulang, dan coba coding kapan saja",
+                    "C. Tidak perlu menonton video materi sama sekali",
+                    "D. Hanya boleh dikerjakan di akhir pekan saja"
+                  ],
+                  "answer": "B",
+                  "explanation": "Tepat! Belajar async memberikan kebebasan fleksibilitas waktu sehingga kamu dapat belajar sesuai kenyamanan dan pemahamanmu."
+                }
+              ]
+            },
+            {
+              "time": 110,
+              "shown": false,
+              "resume": false,
+              "title": "FITUR POP-UP QUIZ & PINTASAN COLAB",
+              "questions": [
+                {
+                  "id": "q-hs-0-0-2",
+                  "question": "Pintasan keyboard apa yang digunakan di Google Colab untuk mengeksekusi cell kode dan langsung lanjut ke cell berikutnya?",
+                  "options": [
+                    "A. Ctrl + C",
+                    "B. Alt + F4",
+                    "C. Shift + Enter",
+                    "D. Ctrl + Z"
+                  ],
+                  "answer": "C",
+                  "explanation": "Benar! Menekan Shift + Enter akan langsung mengeksekusi sel aktif dan membuat/pindah ke sel kode berikutnya."
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -284,7 +325,48 @@
               "label": "Condition Kayak Pintu"
             }
           ],
-          "quizzes": []
+          "quizzes": [
+            {
+              "time": 180,
+              "shown": false,
+              "resume": false,
+              "title": "KONSEP BOOLEAN & LOGIKA KEPUTUSAN",
+              "questions": [
+                {
+                  "id": "q-hs-2-1-1",
+                  "question": "Dalam pemrograman Python, tipe data apa yang hanya memiliki dua kemungkinan nilai: True atau False?",
+                  "options": [
+                    "A. String (str)",
+                    "B. Integer (int)",
+                    "C. Boolean (bool)",
+                    "D. Float (float)"
+                  ],
+                  "answer": "C",
+                  "explanation": "Tepat sekali! Boolean (bool) adalah tipe data logika yang merepresentasikan nilai kebenaran: True (Benar) atau False (Salah)."
+                }
+              ]
+            },
+            {
+              "time": 360,
+              "shown": false,
+              "resume": false,
+              "title": "OPERATOR PERBANDINGAN",
+              "questions": [
+                {
+                  "id": "q-hs-2-1-2",
+                  "question": "Operator apa yang digunakan di Python untuk mengecek apakah dua nilai adalah SAMA PERSIS?",
+                  "options": [
+                    "A. = (satu tanda sama dengan)",
+                    "B. == (dua tanda sama dengan)",
+                    "C. != (tanda seru sama dengan)",
+                    "D. >= (lebih besar sama dengan)"
+                  ],
+                  "answer": "B",
+                  "explanation": "Benar! Tanda == digunakan untuk membandingkan kesamaan nilai, sedangkan = digunakan untuk assignment (memberi nilai variabel)."
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "hs-2-2",
@@ -659,7 +741,28 @@
           "duration": "Tugas Akhir Misi Conditional",
           "videoId": "bMsKBaRsKmc",
           "startSeconds": 2137,
-          "quizzes": []
+          "quizzes": [
+            {
+              "time": 99999,
+              "shown": false,
+              "resume": false,
+              "title": "VALIDASI PROYEK SMART BUDGET & RISK PLANNER",
+              "questions": [
+                {
+                  "id": "q-hs-2-7-1",
+                  "question": "Jika seorang siswa memiliki pemasukan Rp 100.000 dan menabung Rp 25.000, berapa rasio tabungannya dan apa status anggarannya?",
+                  "options": [
+                    "A. 10% — Status Bahaya",
+                    "B. 15% — Status Waspada",
+                    "C. 25% — Status Sehat (karena >= 20%)",
+                    "D. 50% — Status Overbudget"
+                  ],
+                  "answer": "C",
+                  "explanation": "Benar! (25.000 / 100.000) * 100 = 25%. Rasio tabungan >= 20% menunjukkan kondisi keuangan yang Sehat."
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -848,7 +951,28 @@
               "label": "Syarat dan Panduan Pengerjaan"
             }
           ],
-          "quizzes": []
+          "quizzes": [
+            {
+              "time": 99999,
+              "shown": false,
+              "resume": false,
+              "title": "VALIDASI SIMULATOR TARGET TABUNGAN",
+              "questions": [
+                {
+                  "id": "q-hs-3-4-1",
+                  "question": "Di dalam loop akumulasi 'while saldo < target', mengapa kita wajib menambahkan 'bulan += 1' pada setiap putaran?",
+                  "options": [
+                    "A. Agar font angka berubah warna",
+                    "B. Sebagai penghitung (counter) berapa periode/bulan yang dibutuhkan hingga saldo mencapai target",
+                    "C. Agar program berhenti seketika",
+                    "D. Agar saldo tidak berkurang"
+                  ],
+                  "answer": "B",
+                  "explanation": "Tepat! Variabel 'bulan' bertindak sebagai counter iterasi loop untuk mencatat durasi waktu pencapaian target."
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "hs-3-5",
@@ -1007,7 +1131,28 @@
               "label": "Panduan Pengerjaan"
             }
           ],
-          "quizzes": []
+          "quizzes": [
+            {
+              "time": 99999,
+              "shown": false,
+              "resume": false,
+              "title": "VALIDASI STRUKTURAL KASIR MODULAR",
+              "questions": [
+                {
+                  "id": "q-hs-3-7-1",
+                  "question": "Apa manfaat utama memisahkan perhitungan diskon ke dalam fungsi 'hitung_diskon(subtotal)' tersendiri?",
+                  "options": [
+                    "A. Kode jadi lebih panjang dan membingungkan",
+                    "B. Prinsip modularitas: aturan diskon mudah diubah sewaktu-waktu tanpa mengganggu fungsi cetak struk",
+                    "C. Agar program hanya bisa dijalankan di satu laptop saja",
+                    "D. Mengurangi kecepatan loading Colab"
+                  ],
+                  "answer": "B",
+                  "explanation": "Tepat! Fungsi mandiri mempermudah pemeliharaan kode (maintenance) dan pengujian (testing) tanpa efek samping pada modul lain."
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "hs-3-8",
@@ -2087,7 +2232,28 @@
               }
             ]
           },
-          "quizzes": []
+          "quizzes": [
+            {
+              "time": 150,
+              "shown": false,
+              "resume": false,
+              "title": "PENGELOMPOKAN DATA TRANSAKSI (GROUPING)",
+              "questions": [
+                {
+                  "id": "q-hs-5-3-1",
+                  "question": "Bagaimana cara elegan di Python untuk menjumlahkan nominal pada dictionary 'kategori_total[kat]' jika key tersebut belum pernah ada sebelumnya?",
+                  "options": [
+                    "A. kategori_total[kat] = kategori_total[kat] + nominal",
+                    "B. kategori_total[kat] = kategori_total.get(kat, 0) + nominal",
+                    "C. delete kategori_total[kat]",
+                    "D. kategori_total.clear()"
+                  ],
+                  "answer": "B",
+                  "explanation": "Tepat sekali! Method .get(kat, 0) mengembalikan nilai default 0 jika key belum ada, sehingga mencegah KeyError saat penjumlahan pertama."
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "hs-5-4",

@@ -33,7 +33,12 @@ const state = {
   isPlayerReady: false,
   isPlaying: false,
   playerCheckTimer: null,
-  hasStartedVideo: false
+  hasStartedVideo: false,
+  introPlayedSteps: new Set(),
+  isIntroPlaying: false,
+  videoMaxTimeWatched: 0,
+  videoDuration: 0,
+  videoWatchedToEnd: false
 };
 window.state = state;
 
@@ -102,6 +107,7 @@ const el = {
   introVideoText: document.querySelector('#intro-video-text'),
   videoContainerBox: document.querySelector('#video-container-box'),
   videoFrame: document.querySelector('#video-frame'),
+  introVideo: document.querySelector('#intro-video'),
   customThumbnail: document.querySelector('#custom-thumbnail'),
   thumbnailImg: document.querySelector('#thumbnail-img'),
   centerPlayBtn: document.querySelector('#center-play-btn'),
@@ -151,6 +157,7 @@ const el = {
   btnNextStep: document.querySelector('#btn-next-step'),
   nextStepIcon: document.querySelector('#next-step-icon'),
   stepGateInfo: document.querySelector('#step-gate-info'),
+  btnAdminBypass: document.querySelector('#btn-admin-bypass'),
 
   // Quiz Modal Dialog
   quizModal: document.querySelector('#quiz-modal'),
@@ -1087,6 +1094,17 @@ function updateProgressIndicator() {
 function goToStep(index) {
   if (index < 0 || index >= state.courseData.length) return;
   state.currentStepIndex = index;
+  state.videoMaxTimeWatched = 0;
+  state.videoDuration = 0;
+  state.videoWatchedToEnd = false;
+  state.isIntroPlaying = false;
+  if (el.introVideo) {
+    try {
+      el.introVideo.pause();
+    } catch (e) {}
+    el.introVideo.currentTime = 0;
+    el.introVideo.style.display = 'none';
+  }
   teardownPlayer();
 
   const step = state.courseData[index];
@@ -1245,9 +1263,18 @@ function activateMediaMode(mode) {
 function renderVideoStep(step) {
   state.hasStartedVideo = false;
   state.isPlaying = false;
+  state.isIntroPlaying = false;
   el.btnPlayPause.textContent = '▶';
   el.videoSeekBar.value = 0;
   el.videoTimeDisplay.textContent = '0:00 / 0:00';
+
+  if (el.introVideo) {
+    try {
+      el.introVideo.pause();
+    } catch (e) {}
+    el.introVideo.currentTime = 0;
+    el.introVideo.style.display = 'none';
+  }
 
   const vidId = step.videoId || step.youtubeId || 'yxmLOk5vcFg';
   el.thumbnailImg.src = step.thumbnailUrl || `https://img.youtube.com/vi/${vidId}/hqdefault.jpg`;
@@ -1279,6 +1306,7 @@ function initYouTubePlayer(videoId, startSeconds, endSeconds) {
     events: {
       onReady: (event) => {
         state.isPlayerReady = true;
+        state.videoDuration = event.target.getDuration() || 0;
         if (startSeconds) event.target.seekTo(startSeconds, true);
       },
       onStateChange: (event) => {
@@ -1286,6 +1314,13 @@ function initYouTubePlayer(videoId, startSeconds, endSeconds) {
           state.isPlaying = true;
           el.btnPlayPause.textContent = '⏸';
           startPlayerTicker(endSeconds);
+        } else if (event.data === YT.PlayerState.ENDED) {
+          state.isPlaying = false;
+          state.videoWatchedToEnd = true;
+          el.btnPlayPause.textContent = '▶';
+          stopPlayerTicker();
+          checkProgressGate();
+          renderQuizSwitcherStrip();
         } else {
           state.isPlaying = false;
           el.btnPlayPause.textContent = '▶';
@@ -1302,6 +1337,17 @@ function startPlayerTicker(endSeconds) {
     if (!state.ytPlayer || !state.ytPlayer.getCurrentTime) return;
     const curTime = state.ytPlayer.getCurrentTime();
     const duration = state.ytPlayer.getDuration() || 1;
+
+    state.videoDuration = duration;
+    const prevMax = state.videoMaxTimeWatched || 0;
+    state.videoMaxTimeWatched = Math.max(prevMax, curTime);
+
+    // Cek apakah baru saja mencapai batas minimal 10 detik terakhir
+    const threshold = Math.max(1, duration - 10);
+    if (prevMax < threshold && state.videoMaxTimeWatched >= threshold) {
+      checkProgressGate();
+      renderQuizSwitcherStrip();
+    }
 
     el.videoSeekBar.value = (curTime / duration) * 100;
     el.videoTimeDisplay.textContent = `${formatTime(curTime)} / ${formatTime(duration)}`;
@@ -1347,8 +1393,75 @@ function teardownPlayer() {
   }
 }
 
+/**
+ * 4-Detik Intro Video Bumper (intro.mp4)
+ * Wajib diputar sebelum video materi utama YouTube berputar
+ */
+function playIntroBumper(onFinish) {
+  if (!el.introVideo) {
+    if (onFinish) onFinish();
+    return;
+  }
+
+  el.customThumbnail.style.display = 'none';
+  el.introVideo.style.display = 'block';
+  el.introVideo.currentTime = 0;
+  state.isIntroPlaying = true;
+  el.btnPlayPause.textContent = '⏸';
+
+  let finished = false;
+  const finishIntro = () => {
+    if (finished) return;
+    finished = true;
+    state.isIntroPlaying = false;
+    state.introPlayedSteps.add(state.currentStepIndex);
+    el.introVideo.style.display = 'none';
+    if (onFinish) onFinish();
+  };
+
+  el.introVideo.onended = finishIntro;
+  el.introVideo.onerror = (err) => {
+    console.warn('Intro video playback error:', err);
+    finishIntro();
+  };
+
+  const playPromise = el.introVideo.play();
+  if (playPromise !== undefined) {
+    playPromise.catch((err) => {
+      console.warn('Intro video play exception:', err);
+      finishIntro();
+    });
+  }
+}
+
 function setupPlayerControlEvents() {
   const togglePlay = () => {
+    const step = state.courseData[state.currentStepIndex];
+    const isVideoStep = !step || step.type !== 'slide';
+
+    // 1. Jika intro video sedang berjalan, toggle play/pause intro
+    if (state.isIntroPlaying && el.introVideo) {
+      if (el.introVideo.paused) {
+        el.introVideo.play();
+        el.btnPlayPause.textContent = '⏸';
+      } else {
+        el.introVideo.pause();
+        el.btnPlayPause.textContent = '▶';
+      }
+      return;
+    }
+
+    // 2. Jika belum pernah memutar intro di materi video ini, putar intro 4 detik dulu
+    if (isVideoStep && !state.introPlayedSteps.has(state.currentStepIndex)) {
+      playIntroBumper(() => {
+        if (state.ytPlayer && state.ytPlayer.playVideo) {
+          state.ytPlayer.playVideo();
+        }
+      });
+      return;
+    }
+
+    // 3. Kontrol reguler YouTube
     if (el.customThumbnail.style.display !== 'none') {
       el.customThumbnail.style.display = 'none';
       state.hasStartedVideo = true;
@@ -1361,9 +1474,18 @@ function setupPlayerControlEvents() {
     }
   };
 
-  el.centerPlayBtn.addEventListener('click', togglePlay);
-  el.customThumbnail.addEventListener('click', togglePlay);
-  el.btnPlayPause.addEventListener('click', togglePlay);
+  el.centerPlayBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    togglePlay();
+  });
+  el.customThumbnail.addEventListener('click', (e) => {
+    if (e.target === el.centerPlayBtn) return;
+    togglePlay();
+  });
+  el.btnPlayPause.addEventListener('click', (e) => {
+    e.stopPropagation();
+    togglePlay();
+  });
 
   el.videoSeekBar.addEventListener('input', (e) => {
     if (!state.ytPlayer || !state.ytPlayer.getDuration) return;
@@ -1475,31 +1597,56 @@ function renderReadingAccordion(step, index) {
 function renderQuizSwitcherStrip() {
   el.quizPillsList.innerHTML = '';
   const quizzes = state.activeStepQuizzes;
+  const step = state.courseData[state.currentStepIndex];
+  const isVideoStep = !step || step.type !== 'slide';
 
-  if (quizzes.length === 0) {
-    el.quizSummaryStatus.textContent = 'Materi ini tidak memiliki kuis wajib.';
+  const isVideoWatchedEnough = !isVideoStep || state.videoWatchedToEnd || (state.videoDuration > 0 && state.videoMaxTimeWatched >= Math.max(1, state.videoDuration - 10));
+
+  if (quizzes.length === 0 && !isVideoStep) {
+    el.quizSummaryStatus.textContent = 'Materi slide interaktif dapat dipelajari secara mandiri.';
     el.btnOpenActiveQuiz.style.display = 'none';
     return;
   }
 
-  el.btnOpenActiveQuiz.style.display = 'inline-block';
   const completedCount = quizzes.filter((q) => state.submittedQuizIds.has(q.id)).length;
-  el.quizSummaryStatus.textContent = `${quizzes.length} Kuis: ${completedCount} Selesai · ${quizzes.length - completedCount} Belum`;
 
+  if (quizzes.length === 0) {
+    el.quizSummaryStatus.textContent = isVideoWatchedEnough ? '✓ Video tuntas ditonton.' : '⏱ Tonton video setidaknya s.d. 10 detik terakhir.';
+    el.btnOpenActiveQuiz.style.display = 'none';
+  } else {
+    el.btnOpenActiveQuiz.style.display = 'inline-block';
+    el.quizSummaryStatus.textContent = `Tracker: ${quizzes.length} Pop-up Kuis (${completedCount}/${quizzes.length} Selesai) · Video: ${isVideoWatchedEnough ? '✓ Tuntas' : '⏱ Belum Tuntas'}`;
+  }
+
+  // Render Quiz Pills
   quizzes.forEach((quiz, i) => {
     const isDone = state.submittedQuizIds.has(quiz.id);
     const pill = document.createElement('button');
     pill.className = `quiz-pill-btn ${isDone ? 'completed' : ''}`;
     pill.type = 'button';
-    pill.innerHTML = `<span>${isDone ? '✓' : '⏱'}</span> <span>Kuis ${i + 1}</span>`;
+    const timeLabel = quiz.time ? formatTime(quiz.time) : '';
+    pill.innerHTML = `<span>${isDone ? '✓' : '⏱'}</span> <span>${timeLabel ? timeLabel + ' · ' : ''}Kuis ${i + 1} (${isDone ? 'Selesai' : 'Belum'})</span>`;
     pill.addEventListener('click', () => openQuizModal(i));
     el.quizPillsList.appendChild(pill);
   });
 
-  el.btnOpenActiveQuiz.onclick = () => {
-    const firstUnfinished = quizzes.findIndex((q) => !state.submittedQuizIds.has(q.id));
-    openQuizModal(firstUnfinished !== -1 ? firstUnfinished : 0);
-  };
+  // Render Video Status Pill
+  if (isVideoStep) {
+    const videoPill = document.createElement('div');
+    videoPill.className = `quiz-pill-btn ${isVideoWatchedEnough ? 'completed' : ''}`;
+    videoPill.style.cursor = 'default';
+    videoPill.innerHTML = `<span>${isVideoWatchedEnough ? '✓' : '⏱'}</span> <span>Video: ${isVideoWatchedEnough ? 'Ditonton s.d. 10 Detik Akhir' : 'Belum 10 Detik Terakhir'}</span>`;
+    el.quizPillsList.appendChild(videoPill);
+  }
+
+  if (quizzes.length > 0) {
+    const allDone = completedCount === quizzes.length;
+    el.btnOpenActiveQuiz.textContent = allDone ? '✓ Semua Kuis Tuntas' : 'Buka Kuis Pop-up';
+    el.btnOpenActiveQuiz.onclick = () => {
+      const firstUnfinished = quizzes.findIndex((q) => !state.submittedQuizIds.has(q.id));
+      openQuizModal(firstUnfinished !== -1 ? firstUnfinished : 0);
+    };
+  }
 }
 
 function openQuizModal(quizIndex) {
@@ -1593,43 +1740,56 @@ function showQuizFeedback(msg, type) {
 // ==================== 10. PROGRESS LOCK GATE ====================
 function checkProgressGate() {
   const isLastStep = state.currentStepIndex >= state.courseData.length - 1;
-
-  // Akses Bebas untuk Admin
-  if (state.student && state.student.isAdmin) {
-    if (isLastStep) {
-      el.btnNextStep.disabled = true;
-      el.nextStepIcon.textContent = '★';
-      el.stepGateInfo.textContent = 'Mode Admin: Anda berada pada materi terakhir misi ini.';
-      el.stepGateInfo.style.color = '#7c3aed';
-    } else {
-      el.btnNextStep.disabled = false;
-      el.nextStepIcon.textContent = '→';
-      el.stepGateInfo.textContent = '🔓 Mode Admin: Akses bebas untuk meninjau seluruh materi.';
-      el.stepGateInfo.style.color = '#7c3aed';
-    }
-    return;
-  }
+  const step = state.courseData[state.currentStepIndex];
+  const isVideoStep = !step || step.type !== 'slide';
 
   const quizzes = state.activeStepQuizzes;
-  const isCurrentStepCompleted = quizzes.every((q) => state.submittedQuizIds.has(q.id));
+  const completedCount = quizzes.filter((q) => state.submittedQuizIds.has(q.id)).length;
+  const isAllQuizzesCompleted = completedCount === quizzes.length;
+  const isVideoWatchedEnough = !isVideoStep || state.videoWatchedToEnd || (state.videoDuration > 0 && state.videoMaxTimeWatched >= Math.max(1, state.videoDuration - 10));
+  const isRequirementMet = isAllQuizzesCompleted && isVideoWatchedEnough;
+
+  const isAdmin = Boolean(state.student && state.student.isAdmin);
 
   if (isLastStep) {
     el.btnNextStep.disabled = true;
     el.nextStepIcon.textContent = '★';
     el.stepGateInfo.textContent = 'Selamat! Kamu telah menyelesaikan semua materi pada misi ini.';
+    el.stepGateInfo.style.color = '#27c881';
+    if (el.btnAdminBypass) el.btnAdminBypass.style.display = 'none';
     return;
   }
 
-  if (isCurrentStepCompleted) {
+  if (isRequirementMet) {
     el.btnNextStep.disabled = false;
     el.nextStepIcon.textContent = '→';
-    el.stepGateInfo.textContent = '✓ Semua aktivitas tuntas! Kamu bisa lanjut ke materi berikutnya.';
+    el.stepGateInfo.textContent = '✓ Semua kuis selesai & video telah ditonton hingga 10 detik terakhir! Kamu bisa lanjut ke materi berikutnya.';
     el.stepGateInfo.style.color = '#27c881';
+    if (el.btnAdminBypass) el.btnAdminBypass.style.display = 'none';
   } else {
     el.btnNextStep.disabled = true;
     el.nextStepIcon.textContent = '🔒';
-    el.stepGateInfo.textContent = 'Selesaikan seluruh kuis pada materi ini untuk membuka materi selanjutnya.';
+
+    // Rincikan syarat yang belum dipenuhi
+    const pendingItems = [];
+    if (!isAllQuizzesCompleted) {
+      pendingItems.push(`${quizzes.length - completedCount} kuis pop-up belum dikerjakan`);
+    }
+    if (!isVideoWatchedEnough) {
+      pendingItems.push('video belum ditonton setidaknya sampai 10 detik terakhir');
+    }
+
+    const warningText = `⚠️ Belum bisa lanjut: ${pendingItems.join(' dan ')}. Selesaikan untuk membuka materi selanjutnya.`;
     el.stepGateInfo.style.color = '#ffd93d';
+
+    // Khusus Admin: Tetap tampilkan peringatan status siswa, namun tombol bypass dimunculkan
+    if (isAdmin) {
+      el.stepGateInfo.innerHTML = `<span>${warningText}</span><br><span style="color:#a78bfa;font-size:0.8rem;font-weight:700;">(Peringatan Status Siswa — Khusus Admin gunakan tombol bypass di bawah untuk melompat)</span>`;
+      if (el.btnAdminBypass) el.btnAdminBypass.style.display = 'inline-flex';
+    } else {
+      el.stepGateInfo.textContent = warningText;
+      if (el.btnAdminBypass) el.btnAdminBypass.style.display = 'none';
+    }
   }
 }
 
@@ -1641,11 +1801,22 @@ function setupStepNavEvents() {
   });
 
   el.btnNextStep.addEventListener('click', () => {
-    const isCurrentStepCompleted = state.activeStepQuizzes.every((q) => state.submittedQuizIds.has(q.id));
-    const isAdmin = Boolean(state.student && state.student.isAdmin);
+    const quizzes = state.activeStepQuizzes;
+    const isCurrentStepCompleted = quizzes.every((q) => state.submittedQuizIds.has(q.id));
+    const step = state.courseData[state.currentStepIndex];
+    const isVideoStep = !step || step.type !== 'slide';
+    const isVideoWatchedEnough = !isVideoStep || state.videoWatchedToEnd || (state.videoDuration > 0 && state.videoMaxTimeWatched >= Math.max(1, state.videoDuration - 10));
 
-    if ((isCurrentStepCompleted || isAdmin) && state.currentStepIndex < state.courseData.length - 1) {
+    if (isCurrentStepCompleted && isVideoWatchedEnough && state.currentStepIndex < state.courseData.length - 1) {
       goToStep(state.currentStepIndex + 1);
     }
   });
+
+  if (el.btnAdminBypass) {
+    el.btnAdminBypass.addEventListener('click', () => {
+      if (state.currentStepIndex < state.courseData.length - 1) {
+        goToStep(state.currentStepIndex + 1);
+      }
+    });
+  }
 }
