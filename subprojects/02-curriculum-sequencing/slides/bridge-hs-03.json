@@ -4,34 +4,54 @@
   "kicker": "Materi Jembatan 03 · Logika Iterasi",
   "title": "Mengulang Tanpa Bosan: List dan For Loop",
   "duration": "8 Menit Baca & Praktik",
-  "type": "slides",
+  "type": "slide",
+  "slideUrl": "./slides/bridge-hs-03.html",
   "embedUrl": "slides/bridge-hs-03.html",
-  "summary": "Kuasai struktur data List untuk menampung banyak data terurut, jalankan perulangan for item in list untuk memproses data secara otomatis, buat deret hitungan dengan range(), dan terapkan pola akumulator untuk menjumlahkan saldo keuangan.",
+  "prerequisiteStepIds": [
+    "bridge-hs-02",
+    "hs-2-5"
+  ],
+  "summary": "Membuat List dengan tanda kurung siku [ ], menjalankan loop for item in list untuk memproses elemen satu per satu, memahami batas range(start, stop), dan menerapkan pola accumulator total = total + x untuk agregasi data finansial.",
   "totalSlides": 8,
+  "learningObjectives": [
+    "Membuat struktur data List menggunakan tanda kurung siku [ ]",
+    "Menjalankan perulangan for item in list untuk memproses elemen satu per satu",
+    "Menggunakan fungsi range(start, stop) untuk hitungan berurutan",
+    "Menerapkan pola accumulator (total = total + nominal) untuk menghitung saldo"
+  ],
+  "practice": {
+    "type": "simulation",
+    "description": "Menelusuri tabel iterasi akumulasi 3 transaksi harian"
+  },
+  "completionCriteria": {
+    "quizScoreMin": 100,
+    "interactiveCompleted": true,
+    "description": "Menghitung total akhir dari loop dan kuis batas range"
+  },
   "bookmarks": [
     {
       "slideIndex": 0,
-      "label": "1. Masalah Besar Menulis 100 Variabel"
+      "label": "1. Masalah Pengulangan Manual"
     },
     {
       "slideIndex": 1,
-      "label": "2. Struktur Data List & Indeks Nol"
+      "label": "2. Struktur Data List [ ]"
     },
     {
       "slideIndex": 2,
-      "label": "3. Perulangan for item in list"
+      "label": "3. Perulangan for ... in list"
     },
     {
       "slideIndex": 3,
-      "label": "4. Fungsi range() Generator Deret Angka"
+      "label": "4. Menghasilkan Deret Angka: range()"
     },
     {
       "slideIndex": 4,
-      "label": "5. Pola Akumulator Menghitung Saldo"
+      "label": "5. Pola Akumulator: total = total + n"
     },
     {
       "slideIndex": 5,
-      "label": "6. Visual Tracer Langkah Demi Langkah"
+      "label": "6. Simulasi Tabel Jejak Akumulasi Kas"
     },
     {
       "slideIndex": 6,
@@ -42,18 +62,17 @@
       "label": "8. Rangkuman & Bekal Menuju Modul 3"
     }
   ],
-  "learningObjectives": [
-    "Membuat struktur data List dengan tanda kurung siku [ ]",
-    "Menjalankan perulangan for untuk memproses elemen list",
-    "Menggunakan range(start, stop) untuk hitungan berurutan",
-    "Menerapkan pola accumulator (total += biaya) untuk menghitung saldo"
-  ],
-  "practice": {
-    "type": "simulation",
-    "description": "Tracing interaktif perubahan nilai total akumulator transaksi"
-  },
-  "completionCriteria": {
-    "quizScoreMin": 100,
-    "interactiveCompleted": true
-  }
+  "quizzes": [
+    {
+      "question": "Berapakah nilai akhir dari variabel total setelah kode ini selesai dijalankan?\ntotal = 0\nfor x in [10, 20, 30]:\n    total = total + x",
+      "options": [
+        "A. 30",
+        "B. 50",
+        "C. 60",
+        "D. 0"
+      ],
+      "answer": 2,
+      "explanation": "Loop menjumlahkan: 0 + 10 = 10, lalu 10 + 20 = 30, lalu 30 + 30 = 60."
+    }
+  ]
 }

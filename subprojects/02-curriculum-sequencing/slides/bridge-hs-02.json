@@ -4,10 +4,30 @@
   "kicker": "Materi Jembatan 02 · Dasar Python",
   "title": "Dari Input Teks Menjadi Logika Keputusan",
   "duration": "8 Menit Baca & Praktik",
-  "type": "slides",
+  "type": "slide",
+  "slideUrl": "./slides/bridge-hs-02.html",
   "embedUrl": "slides/bridge-hs-02.html",
+  "prerequisiteStepIds": [
+    "bridge-hs-01",
+    "hs-1-1"
+  ],
   "summary": "Pahami mengapa fungsi input() selalu menghasilkan tipe String, cara mengubah teks angka menjadi bilangan bulat dengan int(), menggunakan operator perbandingan (==, !=, >, <), dan aturan indentasi 4 spasi pada percabangan if-else.",
   "totalSlides": 8,
+  "learningObjectives": [
+    "Mengetahui bahwa fungsi input() selalu menghasilkan tipe String (teks)",
+    "Mengubah teks angka menjadi bilangan bulat dengan int() dan float()",
+    "Menggunakan operator perbandingan (==, !=, >, <, >=, <=) untuk menghasilkan Boolean",
+    "Memahami aturan indentasi 4 spasi dalam blok percabangan if-else"
+  ],
+  "practice": {
+    "type": "simulation",
+    "description": "Simulasi konversi input nominal uang dan cek saldo cukup/kurang"
+  },
+  "completionCriteria": {
+    "quizScoreMin": 100,
+    "interactiveCompleted": true,
+    "description": "Menyelesaikan tabel perbandingan boolean dan kuis indentasi"
+  },
   "bookmarks": [
     {
       "slideIndex": 0,
@@ -42,18 +62,17 @@
       "label": "8. Rangkuman & Bekal Menuju Modul 2"
     }
   ],
-  "learningObjectives": [
-    "Mengetahui bahwa input() selalu menghasilkan tipe String (teks)",
-    "Mengubah teks angka menjadi integer dengan int() dan float()",
-    "Menggunakan operator perbandingan untuk menghasilkan Boolean",
-    "Menerapkan aturan indentasi 4 spasi dalam blok percabangan if-else"
-  ],
-  "practice": {
-    "type": "simulation",
-    "description": "Simulasi pengecekan saldo kas dan konversi input belanja"
-  },
-  "completionCriteria": {
-    "quizScoreMin": 100,
-    "interactiveCompleted": true
-  }
+  "quizzes": [
+    {
+      "question": "Jika pengguna memasukkan angka '25000' pada fungsi nominal = input('Masukkan belanja: '), tipe data apa yang dimiliki variabel nominal?",
+      "options": [
+        "A. Integer (bilangan bulat)",
+        "B. String (teks)",
+        "C. Float (desimal)",
+        "D. Boolean (True/False)"
+      ],
+      "answer": 1,
+      "explanation": "Fungsi input() di Python selalu mengembalikan nilai bertipe String, meskipun pengguna mengetik angka."
+    }
+  ]
 }

@@ -4,8 +4,29 @@
   "kicker": "Materi Jembatan 01 · Pengantar Koding SMP",
   "title": "Event Tombol, Properti, dan Variabel Blok",
   "duration": "8 Menit Baca & Eksplorasi",
-  "type": "slides",
+  "type": "slide",
+  "slideUrl": "./slides/bridge-ms-01.html",
+  "embedUrl": "slides/bridge-ms-01.html",
+  "prerequisiteStepIds": [
+    "bridge-ms-00"
+  ],
   "summary": "Pahami konsep Event-Driven Programming di App Inventor: komputer menunggu kejadian (when Button.Click) sebelum bertindak. Pelajari cara mengambil input dari TextBox.Text, menggabungkannya dengan blok join, menampilkannya di Label.Text, dan menyimpan nilai ke variabel blok.",
+  "totalSlides": 8,
+  "learningObjectives": [
+    "Menjelaskan konsep Event-Driven: aplikasi menunggu kejadian sebelum beraksi",
+    "Menggunakan blok when Button.Click do sebagai pintu masuk aksi",
+    "Membaca input teks dari komponen TextBox.Text dan menampilkan output ke Label.Text",
+    "Menggabungkan potongan teks dengan blok join dan menyimpan ke variabel blok sementara"
+  ],
+  "practice": {
+    "type": "simulation",
+    "description": "Merakit blok tombol sapaan yang menggabungkan nama dari TextBox"
+  },
+  "completionCriteria": {
+    "quizScoreMin": 100,
+    "interactiveCompleted": true,
+    "description": "Menjawab kuis urutan eksekusi blok event dan fungsi join"
+  },
   "bookmarks": [
     {
       "slideIndex": 0,
@@ -29,206 +50,28 @@
     },
     {
       "slideIndex": 5,
-      "label": "6. Variabel: Memori Sementara Blok"
+      "label": "6. Simulator Tombol Sapaan Cerdas"
     },
     {
       "slideIndex": 6,
-      "label": "7. Rangkuman & Kuis Cek Pemahaman"
+      "label": "7. Kuis Pemahaman Mandiri"
+    },
+    {
+      "slideIndex": 7,
+      "label": "8. Rangkuman & Bekal Menuju Modul 1"
     }
   ],
-  "slides": [
+  "quizzes": [
     {
-      "slideIndex": 0,
-      "tagPill": {
-        "text": "⚡ Logika Aplikasi",
-        "color": "yellow"
-      },
-      "title": "Bagaimana Aplikasi Bereaksi terhadap Pengguna?",
-      "highlights": [
-        {
-          "icon": "⏳",
-          "label": "Aplikasi Selalu 'Mendengarkan'",
-          "sub": "Aplikasi tidak bergerak sendiri secara membabi buta. Ia standby menunggu tindakan (aksi) dari pengguna."
-        },
-        {
-          "icon": "🔔",
-          "label": "Konsep Event (Kejadian)",
-          "sub": "Setiap sentuhan jari di layar, klik tombol, atau ketikan teks dinamakan Event."
-        }
+      "question": "Kapan balok-balok yang diletakkan di dalam when Button1.Click do akan dijalankan?",
+      "options": [
+        "A. Setiap 1 detik sekali secara otomatis",
+        "B. Hanya saat tombol ditekan oleh jari pengguna",
+        "C. Saat laptop ditutup",
+        "D. Saat proyek baru dibuat di Designer"
       ],
-      "keynote": "💡 Polanya selalu sama: JIKA ADA KEJADIAN (Event) ➔ LAKUKAN TINDAKAN (Action). Inilah inti dari Event-Driven Programming!",
-      "visual": {
-        "cdnUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/d65c2b8d-7754-4df4-89f9-9075439d5b01.png",
-        "caption": "📸 Blok Event: 'when Button1.Click' Menjadi Pintu Masuk Segala Aksi",
-        "altText": "Konsep Event Driven App Inventor"
-      }
-    },
-    {
-      "slideIndex": 1,
-      "tagPill": {
-        "text": "🟡 Blok Kuning Emas",
-        "color": "blue"
-      },
-      "title": "Blok Emas: when Button.Click do",
-      "highlights": [
-        {
-          "icon": "🚪",
-          "label": "Blok Pembungkus (Event Handler)",
-          "sub": "Blok berkepala kuning cokelat ini bertindak seperti pintu gerbang yang menjaga semua perintah di dalamnya."
-        },
-        {
-          "icon": "🔒",
-          "label": "Hanya Jalan Saat Diklik",
-          "sub": "Perintah yang diletakkan di dalam lekukan blok ini HANYA AKAN JALAN saat tombol Button1 ditekan jari."
-        }
-      ],
-      "keynote": "🎯 Jangan letakkan blok aksi sendirian di ruang kosong tanpa dibungkus event handler, karena komputer tidak akan tahu kapan harus menjalankannya!",
-      "visual": {
-        "cdnUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/d65c2b8d-7754-4df4-89f9-9075439d5b01.png",
-        "caption": "📸 Blok Kuning Event Button1.Click dengan Lekukan Tempat Aksi",
-        "altText": "Blok Event Click App Inventor"
-      }
-    },
-    {
-      "slideIndex": 2,
-      "tagPill": {
-        "text": "📝 Mengambil Input",
-        "color": "green"
-      },
-      "title": "Membaca Masukan Pengguna: TextBox.Text",
-      "highlights": [
-        {
-          "icon": "📦",
-          "label": "Komponen TextBox",
-          "sub": "Kotak tempat pengguna mengetikkan nama, angka nominal uang, atau password di HP."
-        },
-        {
-          "icon": "🔍",
-          "label": "Blok Hijau Muda: get TextBox.Text",
-          "sub": "Blok ini bertugas menyedot tulisan apapun yang saat itu sedang ada di dalam kotak TextBox."
-        }
-      ],
-      "keynote": "💡 Inilah tahap 1 (INPUT) dalam siklus komputasi aplikasi kodingmu!",
-      "visual": {
-        "cdnUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/99488d0a-3779-4dc9-890c-dcc95b525209.png",
-        "caption": "📸 Layar HP: Kotak TextBox Tempat Pengguna Mengetik Nama",
-        "altText": "Input TextBox App Inventor"
-      }
-    },
-    {
-      "slideIndex": 3,
-      "tagPill": {
-        "text": "🖥️ Menampilkan Output",
-        "color": "pink"
-      },
-      "title": "Menampilkan Jawaban: Mengubah Label.Text",
-      "highlights": [
-        {
-          "icon": "🏷️",
-          "label": "Komponen Label",
-          "sub": "Elemen di layar yang bertugas memajang teks hasil olahan komputer."
-        },
-        {
-          "icon": "🟢",
-          "label": "Blok Hijau Tua: set Label.Text to",
-          "sub": "Perintah untuk mengganti teks Label di layar dengan hasil perhitungan atau kalimat sapaan baru."
-        }
-      ],
-      "keynote": "✨ Inilah tahap 3 (OUTPUT). Pengguna langsung melihat respon aplikasi di layar HP-nya!",
-      "visual": {
-        "cdnUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/d65c2b8d-7754-4df4-89f9-9075439d5b01.png",
-        "caption": "📸 Blok Aksi: 'set LabelHasil.Text to' Mengubah Teks di Layar HP",
-        "altText": "Output Label App Inventor"
-      }
-    },
-    {
-      "slideIndex": 4,
-      "tagPill": {
-        "text": "🧩 Mengolah Data",
-        "color": "yellow"
-      },
-      "title": "Menggabungkan Kata: Blok 'join'",
-      "highlights": [
-        {
-          "icon": "🧲",
-          "label": "Blok Magnet Teks",
-          "sub": "Diambil dari kategori Text (Merah Muda). Berfungsi merekatkan dua atau lebih potongan teks menjadi satu."
-        },
-        {
-          "icon": "💬",
-          "label": "Contoh: \"Halo, \" + TextBox1.Text",
-          "sub": "Jika pengguna mengetik 'Budi', blok join otomatis menghasilkan kalimat utuh: 'Halo, Budi'!"
-        }
-      ],
-      "keynote": "💡 Inilah tahap 2 (PROSES). Komputer mengolah data masukan menjadi bentuk pesan yang bermakna.",
-      "visual": {
-        "cdnUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/d65c2b8d-7754-4df4-89f9-9075439d5b01.png",
-        "caption": "📸 Blok join: Merekatkan Kata 'Halo, ' dengan Isi TextBox1.Text",
-        "altText": "Blok Join App Inventor"
-      }
-    },
-    {
-      "slideIndex": 5,
-      "tagPill": {
-        "text": "📦 Memori Sementara",
-        "color": "blue"
-      },
-      "title": "Variabel Blok: Menyimpan Data Sementara",
-      "highlights": [
-        {
-          "icon": "🏷️",
-          "label": "initialize global [nama] to",
-          "sub": "Blok oranye di kategori Variables untuk menyiapkan wadah memori bernama khusus."
-        },
-        {
-          "icon": "🔄",
-          "label": "get dan set",
-          "sub": "Gunakan blok 'get' untuk mengambil isinya, dan blok 'set' jika ingin memperbarui isi angkanya."
-        }
-      ],
-      "keynote": "⚠️ Variabel blok ini hanya hidup selama aplikasi dibuka di layar HP. Jika aplikasi ditutup, isinya kembali reset (karena itu nanti kita butuh TinyDB untuk simpan permanen!).",
-      "visual": {
-        "cdnUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/3017e5b0-2188-4bdd-b895-28020f093c03.png",
-        "caption": "📸 Konsep Wadah Memori: Variabel Menyimpan Nilai di Balik Layar",
-        "altText": "Variabel Blok App Inventor"
-      }
-    },
-    {
-      "slideIndex": 6,
-      "tagPill": {
-        "text": "🏆 Cek Pemahaman",
-        "color": "green"
-      },
-      "title": "Rangkuman Materi & Cek Pemahaman",
-      "highlights": [
-        {
-          "icon": "1️⃣",
-          "label": "Event: when Button.Click",
-          "sub": "Pintu masuk yang mendeteksi sentuhan jari pengguna."
-        },
-        {
-          "icon": "2️⃣",
-          "label": "Siklus Input-Proses-Output",
-          "sub": "TextBox (Input) ➔ Blok join (Proses) ➔ Label (Output)."
-        }
-      ],
-      "keynote": "🚀 Kamu sekarang siap masuk ke video Modul 1: membuat form masukan aman dengan validasi!",
-      "visual": {
-        "cdnUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/d65c2b8d-7754-4df4-89f9-9075439d5b01.png",
-        "caption": "📸 Rangkuman: Blok Logika Sempurna yang Sudah Siap Dijalankan",
-        "altText": "Rangkuman Event dan Properti"
-      }
+      "answer": 1,
+      "explanation": "Balok event handler hanya aktif mengeksekusi isinya saat tombol ditekan oleh pengguna."
     }
-  ],
-  "quiz": {
-    "question": "Jika pengguna mengetik 'Siti' pada TextBox1, lalu tombol diklik dengan blok 'set Label.Text to join(\"Selamat Pagi \", TextBox1.Text)', apakah teks yang tampil pada Label?",
-    "options": [
-      "A. Siti",
-      "B. Selamat Pagi Siti",
-      "C. Label1",
-      "D. Error"
-    ],
-    "answer": 1,
-    "explanation": "Tepat sekali! Blok join akan menyambungkan teks statis 'Selamat Pagi ' dengan isi TextBox1.Text yaitu 'Siti', sehingga hasil akhirnya adalah 'Selamat Pagi Siti'."
-  }
+  ]
 }

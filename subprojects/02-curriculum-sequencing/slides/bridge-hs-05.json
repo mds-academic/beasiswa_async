@@ -4,34 +4,54 @@
   "kicker": "Materi Jembatan 05 · Struktur Data Lanjutan",
   "title": "Kamus Data: Menyimpan Transaksi dengan Dictionary",
   "duration": "8 Menit Baca & Praktik",
-  "type": "slides",
+  "type": "slide",
+  "slideUrl": "./slides/bridge-hs-05.html",
   "embedUrl": "slides/bridge-hs-05.html",
-  "summary": "Kuasai struktur data Dictionary {key: value} untuk menyimpan data berpasangan, akses dan perbarui nilai melalui kuncinya, susun tabel data profesional dalam format List of Dictionaries, dan catat transaksi baru dengan .append().",
+  "prerequisiteStepIds": [
+    "bridge-hs-04",
+    "hs-3-7"
+  ],
+  "summary": "Pahami konsep Key-Value pair pada struktur data Dictionary { }, akses data via data['nominal'], simpan riwayat mutasi transaksi berupa List of Dictionaries, dan pelajari cara menambahkan transaksi baru dengan method .append().",
   "totalSlides": 8,
+  "learningObjectives": [
+    "Memahami konsep Key-Value pair pada struktur data Dictionary { }",
+    "Mengakses nilai dictionary menggunakan kuncinya: data[\"nominal\"]",
+    "Menyimpan sekumpulan record transaksi dalam format List of Dictionaries",
+    "Menambahkan item transaksi baru ke dalam list riwayat dengan .append()"
+  ],
+  "practice": {
+    "type": "simulation",
+    "description": "Membaca mutasi rekening dalam bentuk list of dicts dan mencetak laporannya"
+  },
+  "completionCriteria": {
+    "quizScoreMin": 100,
+    "interactiveCompleted": true,
+    "description": "Menjawab kuis akses key dictionary dan manipulasi list of dicts"
+  },
   "bookmarks": [
     {
       "slideIndex": 0,
-      "label": "1. Keterbatasan List Tunggal untuk Data Keuangan"
+      "label": "1. Keterbatasan List Tunggal"
     },
     {
       "slideIndex": 1,
-      "label": "2. Konsep Pasangan Key-Value Pair"
+      "label": "2. Kamus Data: Key-Value Pair { }"
     },
     {
       "slideIndex": 2,
-      "label": "3. Cara Mengakses & Mengubah Dictionary"
+      "label": "3. Mengakses Nilai Menggunakan Kunci"
     },
     {
       "slideIndex": 3,
-      "label": "4. Standar Industri: List of Dictionaries"
+      "label": "4. Menyimpan Riwayat: List of Dictionaries"
     },
     {
       "slideIndex": 4,
-      "label": "5. Menambahkan Transaksi dengan .append()"
+      "label": "5. Menambah Transaksi: Method .append()"
     },
     {
       "slideIndex": 5,
-      "label": "6. Simulator Buku Kas Digital Interaktif"
+      "label": "6. Simulator Buku Kas Digital"
     },
     {
       "slideIndex": 6,
@@ -39,21 +59,20 @@
     },
     {
       "slideIndex": 7,
-      "label": "8. Rangkuman & Pintu Masuk Proyek Finansial"
+      "label": "8. Rangkuman & Bekal Menuju Modul 4"
     }
   ],
-  "learningObjectives": [
-    "Memahami konsep Key-Value pair pada struktur Dictionary { }",
-    "Mengakses nilai dictionary menggunakan kuncinya: data['key']",
-    "Menyimpan sekumpulan record transaksi dalam format List of Dictionaries",
-    "Menambahkan item transaksi baru ke dalam list riwayat dengan .append()"
-  ],
-  "practice": {
-    "type": "simulation",
-    "description": "Buku kas digital interaktif menambah dan melihat struktur data JSON dictionary"
-  },
-  "completionCriteria": {
-    "quizScoreMin": 100,
-    "interactiveCompleted": true
-  }
+  "quizzes": [
+    {
+      "question": "Jika transaksi = {'kategori': 'Makan', 'nominal': 15000}, bagaimana cara mengambil angka nominal 15000 tersebut?",
+      "options": [
+        "A. transaksi[0]",
+        "B. transaksi['nominal']",
+        "C. transaksi.nominal",
+        "D. transaksi.get_all()"
+      ],
+      "answer": 1,
+      "explanation": "Pada dictionary Python, nilai diakses menggunakan tanda kurung siku dengan nama kuncinya: transaksi['nominal']."
+    }
+  ]
 }

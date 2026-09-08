@@ -2,7 +2,7 @@
   "levelId": "highschool",
   "levelTitle": "Tingkat SMA / SMK (Python & Financial Technology)",
   "version": "1.0-scaffolded",
-  "updatedAt": "2026-09-08T23:25:00+07:00",
+  "updatedAt": "2026-09-08T23:50:00+07:00",
   "description": "Kurikulum Asinkronus Python & Literasi Finansial dengan Jembatan Pedagogis Eksplisit (Bridge HS-00 s.d. HS-05)",
   "modules": [
     {
@@ -20,23 +20,28 @@
           "bookmarks": [
             {
               "time": 0,
-              "label": "Pengenalan Async Learning"
+              "label": "Pengenalan Async Learning",
+              "status": "verified"
             },
             {
               "time": 25,
-              "label": "Ritme Belajar & Pause"
+              "label": "Ritme Belajar & Pause",
+              "status": "verified"
             },
             {
               "time": 55,
-              "label": "Alur Belajar Step-by-Step"
+              "label": "Alur Belajar Step-by-Step",
+              "status": "verified"
             },
             {
               "time": 85,
-              "label": "Pop-up Quiz Interaktif"
+              "label": "Pop-up Quiz Interaktif",
+              "status": "verified"
             },
             {
               "time": 115,
-              "label": "Materi Bacaan & Praktik Mandiri"
+              "label": "Materi Bacaan & Praktik Mandiri",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -89,21 +94,121 @@
           "type": "slide",
           "kicker": "Materi Jembatan 00 · Dasar Python & Cloud Editor",
           "title": "Panduan Lengkap Google Colab & Pemrograman Python Pertamaku",
-          "duration": "8 Menit Baca Mandiri & Praktik",
+          "duration": "10 Menit Baca Mandiri & Praktik",
           "slideUrl": "./slides/bridge-hs-00.html",
           "prerequisiteStepIds": [
             "hs-0-0"
           ],
-          "learningObjectives": [],
+          "learningObjectives": [
+            "Membuka notebook Google Colab baru di browser tanpa instalasi lokal",
+            "Menulis dan menjalankan kode Python pertama dengan perintah print()",
+            "Membedakan fungsi Code Cell (untuk kode) dan Text Cell (untuk catatan Markdown)",
+            "Mengeksekusi sel kode menggunakan pintasan keyboard Shift+Enter"
+          ],
           "practice": {
-            "type": "interactive_slide",
-            "description": "Latihan interaktif di dalam slide"
+            "type": "simulation",
+            "description": "Simulasi interaktif menulis perintah print() dan menjalankan sel Colab"
           },
           "completionCriteria": {
-            "quizScoreMin": 100
+            "quizScoreMin": 100,
+            "interactiveCompleted": true,
+            "description": "Menyelesaikan seluruh slide dan menjawab kuis pintasan Colab dengan benar"
           },
-          "bookmarks": [],
-          "quizzes": [],
+          "bookmarks": [
+            {
+              "slideIndex": 0,
+              "label": "1. Pengenalan Python SMA",
+              "status": "verified"
+            },
+            {
+              "slideIndex": 1,
+              "label": "2. Mengapa Belajar Python?",
+              "status": "verified"
+            },
+            {
+              "slideIndex": 2,
+              "label": "3. Apa itu Google Colaboratory?",
+              "status": "verified"
+            },
+            {
+              "slideIndex": 3,
+              "label": "4. Colab vs Jupyter Notebook Lokal",
+              "status": "verified"
+            },
+            {
+              "slideIndex": 4,
+              "label": "5. Langkah 1: Buka Colab & New Notebook",
+              "status": "verified"
+            },
+            {
+              "slideIndex": 5,
+              "label": "6. Langkah 2: Anatomi Antarmuka Colab",
+              "status": "verified"
+            },
+            {
+              "slideIndex": 6,
+              "label": "7. Langkah 3: Code Cell vs Text Cell",
+              "status": "verified"
+            },
+            {
+              "slideIndex": 7,
+              "label": "8. Langkah 4: Fungsi print()",
+              "status": "verified"
+            },
+            {
+              "slideIndex": 8,
+              "label": "9. Langkah 5: Cara Menjalankan Kode",
+              "status": "verified"
+            },
+            {
+              "slideIndex": 9,
+              "label": "10. Langkah 6: Konsep Variabel",
+              "status": "verified"
+            },
+            {
+              "slideIndex": 10,
+              "label": "11. Langkah 7: 4 Tipe Data Utama",
+              "status": "verified"
+            },
+            {
+              "slideIndex": 11,
+              "label": "12. Langkah 8: Google Drive & Unduh File",
+              "status": "verified"
+            },
+            {
+              "slideIndex": 12,
+              "label": "13. Simulasi Koding Interaktif",
+              "status": "verified"
+            },
+            {
+              "slideIndex": 13,
+              "label": "14. Kuis Pemahaman Mandiri",
+              "status": "verified"
+            },
+            {
+              "slideIndex": 14,
+              "label": "15. Glosarium & Tips Anti-Error",
+              "status": "verified"
+            },
+            {
+              "slideIndex": 15,
+              "label": "16. Penutup & Menuju Modul 1",
+              "status": "verified"
+            }
+          ],
+          "quizzes": [
+            {
+              "question": "Pintasan keyboard (shortcut) apa yang paling cepat untuk menjalankan sel kode di Google Colab?",
+              "options": [
+                "A. Ctrl + C",
+                "B. Shift + Enter",
+                "C. Alt + F4",
+                "D. Esc + Delete"
+              ],
+              "answer": 1,
+              "explanation": "Shift + Enter mengeksekusi kode pada sel saat ini dan langsung berpindah ke sel berikutnya."
+            }
+          ],
           "sourceStepId": "bridge-hs-00"
         },
         {
@@ -111,54 +216,81 @@
           "type": "slide",
           "kicker": "Materi Jembatan 01 · Dasar Python",
           "title": "Variabel dan Tipe Data Tanpa Takut",
-          "duration": "8 Menit Baca & Praktik",
+          "duration": "8 Menit Baca Mandiri & Praktik",
           "slideUrl": "./slides/bridge-hs-01.html",
           "prerequisiteStepIds": [
             "bridge-hs-00"
           ],
-          "learningObjectives": [],
+          "learningObjectives": [
+            "Menjelaskan konsep variabel sebagai wadah berlabel di memori",
+            "Membuat variabel menggunakan sintaks assignment (nama = nilai)",
+            "Membedakan 4 tipe data dasar: str, int, float, dan bool",
+            "Mengidentifikasi jebakan tipe data: teks \"10\" vs angka 10"
+          ],
           "practice": {
-            "type": "interactive_slide",
-            "description": "Latihan interaktif di dalam slide"
+            "type": "simulation",
+            "description": "Prediksi output perhitungan dan tentukan tipe data variabel"
           },
           "completionCriteria": {
-            "quizScoreMin": 100
+            "quizScoreMin": 100,
+            "interactiveCompleted": true,
+            "description": "Menjawab kuis pemahaman tipe data dengan benar"
           },
           "bookmarks": [
             {
               "slideIndex": 0,
-              "label": "1. Analogi Kotak Berlabel"
+              "label": "1. Analogi Kotak Berlabel",
+              "status": "verified"
             },
             {
               "slideIndex": 1,
-              "label": "2. Membuat Variabel di Python"
+              "label": "2. Membuat Variabel di Python",
+              "status": "verified"
             },
             {
               "slideIndex": 2,
-              "label": "3. Tipe Data: String (Teks)"
+              "label": "3. Tipe Data: String (Teks)",
+              "status": "verified"
             },
             {
               "slideIndex": 3,
-              "label": "4. Tipe Data: Integer & Float"
+              "label": "4. Tipe Data: Integer & Float",
+              "status": "verified"
             },
             {
               "slideIndex": 4,
-              "label": "5. Jebakan: Teks '10' vs Angka 10"
+              "label": "5. Jebakan: Teks '10' vs Angka 10",
+              "status": "verified"
             },
             {
               "slideIndex": 5,
-              "label": "6. Tipe Data: Boolean (Benar/Salah)"
+              "label": "6. Aturan Penamaan Variabel (snake_case)",
+              "status": "verified"
             },
             {
               "slideIndex": 6,
-              "label": "7. Menghitung Nilai Variabel"
+              "label": "7. Laboratorium Mini: Type Inspector",
+              "status": "verified"
             },
             {
               "slideIndex": 7,
-              "label": "8. Rangkuman & Kuis Cek Pemahaman"
+              "label": "8. Kuis Pemahaman & Rangkuman",
+              "status": "verified"
             }
           ],
-          "quizzes": [],
+          "quizzes": [
+            {
+              "question": "Jika kita menjalankan kode: a = '50' lalu b = '20', berapakah hasil dari print(a + b)?",
+              "options": [
+                "A. 70",
+                "B. '5020'",
+                "C. Error",
+                "D. 50"
+              ],
+              "answer": 1,
+              "explanation": "Karena '50' dan '20' dibungkus tanda kutip, Python memperlakukannya sebagai String (teks). Operator + akan menggabungkan kedua teks menjadi '5020'."
+            }
+          ],
           "sourceStepId": "bridge-hs-01"
         }
       ]
@@ -179,27 +311,33 @@
           "bookmarks": [
             {
               "time": 9,
-              "label": "Apa yang Akan Kita Pelajari? 🎯"
+              "label": "Apa yang Akan Kita Pelajari? 🎯",
+              "status": "verified"
             },
             {
               "time": 60,
-              "label": "Apa Itu Input? 📥"
+              "label": "Apa Itu Input? 📥",
+              "status": "verified"
             },
             {
               "time": 145,
-              "label": "Input Pengguna Tidak Selalu Benar! 🤯"
+              "label": "Input Pengguna Tidak Selalu Benar! 🤯",
+              "status": "verified"
             },
             {
               "time": 284,
-              "label": "Apa Itu Validasi Input? 🚦"
+              "label": "Apa Itu Validasi Input? 🚦",
+              "status": "verified"
             },
             {
               "time": 499,
-              "label": "Apa Itu Sanitasi Input? 🧹"
+              "label": "Apa Itu Sanitasi Input? 🧹",
+              "status": "verified"
             },
             {
               "time": 581,
-              "label": ".strip() dan .lower() di Python 🐍"
+              "label": ".strip() dan .lower() di Python 🐍",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -251,54 +389,75 @@
             "hs-1-1"
           ],
           "learningObjectives": [
-            "Mengetahui bahwa input() selalu menghasilkan tipe String (teks)",
-            "Mengubah teks angka menjadi integer dengan int() dan float()",
-            "Menggunakan operator perbandingan untuk menghasilkan Boolean",
-            "Menerapkan aturan indentasi 4 spasi dalam blok percabangan if-else"
+            "Mengetahui bahwa fungsi input() selalu menghasilkan tipe String (teks)",
+            "Mengubah teks angka menjadi bilangan bulat dengan int() dan float()",
+            "Menggunakan operator perbandingan (==, !=, >, <, >=, <=) untuk menghasilkan Boolean",
+            "Memahami aturan indentasi 4 spasi dalam blok percabangan if-else"
           ],
           "practice": {
             "type": "simulation",
-            "description": "Simulasi pengecekan saldo kas dan konversi input belanja"
+            "description": "Simulasi konversi input nominal uang dan cek saldo cukup/kurang"
           },
           "completionCriteria": {
             "quizScoreMin": 100,
-            "interactiveCompleted": true
+            "interactiveCompleted": true,
+            "description": "Menyelesaikan tabel perbandingan boolean dan kuis indentasi"
           },
           "bookmarks": [
             {
               "slideIndex": 0,
-              "label": "1. Mengapa Input Perlu Perlakuan Khusus?"
+              "label": "1. Mengapa Input Perlu Perlakuan Khusus?",
+              "status": "verified"
             },
             {
               "slideIndex": 1,
-              "label": "2. Rahasia Terbesar input(): Selalu String"
+              "label": "2. Rahasia Terbesar input(): Selalu String",
+              "status": "verified"
             },
             {
               "slideIndex": 2,
-              "label": "3. Konversi Tipe Data: int() & float()"
+              "label": "3. Konversi Tipe Data: int() & float()",
+              "status": "verified"
             },
             {
               "slideIndex": 3,
-              "label": "4. Operator Perbandingan & Boolean"
+              "label": "4. Operator Perbandingan & Boolean",
+              "status": "verified"
             },
             {
               "slideIndex": 4,
-              "label": "5. Aturan Indentasi Percabangan if-else"
+              "label": "5. Aturan Indentasi Percabangan if-else",
+              "status": "verified"
             },
             {
               "slideIndex": 5,
-              "label": "6. Simulator Pengecekan Saldo Kas"
+              "label": "6. Simulator Pengecekan Saldo Kas",
+              "status": "verified"
             },
             {
               "slideIndex": 6,
-              "label": "7. Kuis Pemahaman Mandiri"
+              "label": "7. Kuis Pemahaman Mandiri",
+              "status": "verified"
             },
             {
               "slideIndex": 7,
-              "label": "8. Rangkuman & Bekal Menuju Modul 2"
+              "label": "8. Rangkuman & Bekal Menuju Modul 2",
+              "status": "verified"
             }
           ],
-          "quizzes": [],
+          "quizzes": [
+            {
+              "question": "Jika pengguna memasukkan angka '25000' pada fungsi nominal = input('Masukkan belanja: '), tipe data apa yang dimiliki variabel nominal?",
+              "options": [
+                "A. Integer (bilangan bulat)",
+                "B. String (teks)",
+                "C. Float (desimal)",
+                "D. Boolean (True/False)"
+              ],
+              "answer": 1,
+              "explanation": "Fungsi input() di Python selalu mengembalikan nilai bertipe String, meskipun pengguna mengetik angka."
+            }
+          ],
           "sourceStepId": "bridge-hs-02"
         }
       ]
@@ -317,23 +476,28 @@
           "bookmarks": [
             {
               "time": 0,
-              "label": "Pengenalan Conditional"
+              "label": "Pengenalan Conditional",
+              "status": "verified"
             },
             {
               "time": 21,
-              "label": "Program Tidak Lurus"
+              "label": "Program Tidak Lurus",
+              "status": "verified"
             },
             {
               "time": 59,
-              "label": "Keputusan Sehari-hari"
+              "label": "Keputusan Sehari-hari",
+              "status": "verified"
             },
             {
               "time": 85,
-              "label": "Apa Itu Condition?"
+              "label": "Apa Itu Condition?",
+              "status": "verified"
             },
             {
               "time": 126,
-              "label": "Condition Kayak Pintu"
+              "label": "Condition Kayak Pintu",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -393,35 +557,43 @@
           "bookmarks": [
             {
               "time": 0,
-              "label": "If dan Else di Python"
+              "label": "If dan Else di Python",
+              "status": "verified"
             },
             {
               "time": 43,
-              "label": "Conditional if"
+              "label": "Conditional if",
+              "status": "verified"
             },
             {
               "time": 133,
-              "label": "Cara Membaca if"
+              "label": "Cara Membaca if",
+              "status": "verified"
             },
             {
               "time": 201,
-              "label": "True atau False"
+              "label": "True atau False",
+              "status": "verified"
             },
             {
               "time": 264,
-              "label": "Kalau Kondisi Salah"
+              "label": "Kalau Kondisi Salah",
+              "status": "verified"
             },
             {
               "time": 409,
-              "label": "Menambahkan else"
+              "label": "Menambahkan else",
+              "status": "verified"
             },
             {
               "time": 433,
-              "label": "Seperti Dua Jalan"
+              "label": "Seperti Dua Jalan",
+              "status": "verified"
             },
             {
               "time": 506,
-              "label": "Contoh Program Game"
+              "label": "Contoh Program Game",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -508,23 +680,28 @@
           "bookmarks": [
             {
               "time": 0,
-              "label": "Mengenal Elif"
+              "label": "Mengenal Elif",
+              "status": "verified"
             },
             {
               "time": 14,
-              "label": "Lebih dari Dua Pilihan?"
+              "label": "Lebih dari Dua Pilihan?",
+              "status": "verified"
             },
             {
               "time": 111,
-              "label": "Multi-Branch Decision"
+              "label": "Multi-Branch Decision",
+              "status": "verified"
             },
             {
               "time": 230,
-              "label": "Contoh di Python"
+              "label": "Contoh di Python",
+              "status": "verified"
             },
             {
               "time": 422,
-              "label": "Kenapa Urutan Penting?"
+              "label": "Kenapa Urutan Penting?",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -560,23 +737,28 @@
           "bookmarks": [
             {
               "time": 0,
-              "label": "Nested Conditionals"
+              "label": "Nested Conditionals",
+              "status": "verified"
             },
             {
               "time": 133,
-              "label": "Analogi Nested Condition"
+              "label": "Analogi Nested Condition",
+              "status": "verified"
             },
             {
               "time": 267,
-              "label": "Nested Condition di Python"
+              "label": "Nested Condition di Python",
+              "status": "verified"
             },
             {
               "time": 461,
-              "label": "Contoh Kasus Game"
+              "label": "Contoh Kasus Game",
+              "status": "verified"
             },
             {
               "time": 601,
-              "label": "Masalah Nested Condition"
+              "label": "Masalah Nested Condition",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -607,31 +789,38 @@
           "bookmarks": [
             {
               "time": 0,
-              "label": "Penggabungan Kondisi"
+              "label": "Penggabungan Kondisi",
+              "status": "verified"
             },
             {
               "time": 108,
-              "label": "Operator \"and\""
+              "label": "Operator \"and\"",
+              "status": "verified"
             },
             {
               "time": 337,
-              "label": "Operator \"or\""
+              "label": "Operator \"or\"",
+              "status": "verified"
             },
             {
               "time": 541,
-              "label": "Operator \"not\""
+              "label": "Operator \"not\"",
+              "status": "verified"
             },
             {
               "time": 763,
-              "label": "Menggabungkan 3+ Kondisi"
+              "label": "Menggabungkan 3+ Kondisi",
+              "status": "verified"
             },
             {
               "time": 938,
-              "label": "Prioritas Operator"
+              "label": "Prioritas Operator",
+              "status": "verified"
             },
             {
               "time": 1028,
-              "label": "Tanda Kurung ()"
+              "label": "Tanda Kurung ()",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -684,35 +873,43 @@
           "bookmarks": [
             {
               "time": 0,
-              "label": "Financial Literacy"
+              "label": "Financial Literacy",
+              "status": "verified"
             },
             {
               "time": 133,
-              "label": "Kebutuhan vs Keinginan"
+              "label": "Kebutuhan vs Keinginan",
+              "status": "verified"
             },
             {
               "time": 151,
-              "label": "Apa Itu Kebutuhan?"
+              "label": "Apa Itu Kebutuhan?",
+              "status": "verified"
             },
             {
               "time": 182,
-              "label": "Apa Itu Keinginan?"
+              "label": "Apa Itu Keinginan?",
+              "status": "verified"
             },
             {
               "time": 402,
-              "label": "Program Cek Kategori"
+              "label": "Program Cek Kategori",
+              "status": "verified"
             },
             {
               "time": 791,
-              "label": "Budgeting"
+              "label": "Budgeting",
+              "status": "verified"
             },
             {
               "time": 1403,
-              "label": "Risiko Finansial"
+              "label": "Risiko Finansial",
+              "status": "verified"
             },
             {
               "time": 1659,
-              "label": "Menilai Risiko"
+              "label": "Menilai Risiko",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -822,54 +1019,75 @@
             "hs-2-7"
           ],
           "learningObjectives": [
-            "Membuat struktur data List dengan tanda kurung siku [ ]",
-            "Menjalankan perulangan for untuk memproses elemen list",
-            "Menggunakan range(start, stop) untuk hitungan berurutan",
-            "Menerapkan pola accumulator (total += biaya) untuk menghitung saldo"
+            "Membuat struktur data List menggunakan tanda kurung siku [ ]",
+            "Menjalankan perulangan for item in list untuk memproses elemen satu per satu",
+            "Menggunakan fungsi range(start, stop) untuk hitungan berurutan",
+            "Menerapkan pola accumulator (total = total + nominal) untuk menghitung saldo"
           ],
           "practice": {
             "type": "simulation",
-            "description": "Tracing interaktif perubahan nilai total akumulator transaksi"
+            "description": "Menelusuri tabel iterasi akumulasi 3 transaksi harian"
           },
           "completionCriteria": {
             "quizScoreMin": 100,
-            "interactiveCompleted": true
+            "interactiveCompleted": true,
+            "description": "Menghitung total akhir dari loop dan kuis batas range"
           },
           "bookmarks": [
             {
               "slideIndex": 0,
-              "label": "1. Masalah Besar Menulis 100 Variabel"
+              "label": "1. Masalah Pengulangan Manual",
+              "status": "verified"
             },
             {
               "slideIndex": 1,
-              "label": "2. Struktur Data List & Indeks Nol"
+              "label": "2. Struktur Data List [ ]",
+              "status": "verified"
             },
             {
               "slideIndex": 2,
-              "label": "3. Perulangan for item in list"
+              "label": "3. Perulangan for ... in list",
+              "status": "verified"
             },
             {
               "slideIndex": 3,
-              "label": "4. Fungsi range() Generator Deret Angka"
+              "label": "4. Menghasilkan Deret Angka: range()",
+              "status": "verified"
             },
             {
               "slideIndex": 4,
-              "label": "5. Pola Akumulator Menghitung Saldo"
+              "label": "5. Pola Akumulator: total = total + n",
+              "status": "verified"
             },
             {
               "slideIndex": 5,
-              "label": "6. Visual Tracer Langkah Demi Langkah"
+              "label": "6. Simulasi Tabel Jejak Akumulasi Kas",
+              "status": "verified"
             },
             {
               "slideIndex": 6,
-              "label": "7. Kuis Pemahaman Mandiri"
+              "label": "7. Kuis Pemahaman Mandiri",
+              "status": "verified"
             },
             {
               "slideIndex": 7,
-              "label": "8. Rangkuman & Bekal Menuju Modul 3"
+              "label": "8. Rangkuman & Bekal Menuju Modul 3",
+              "status": "verified"
             }
           ],
-          "quizzes": [],
+          "quizzes": [
+            {
+              "question": "Berapakah nilai akhir dari variabel total setelah kode ini selesai dijalankan?\ntotal = 0\nfor x in [10, 20, 30]:\n    total = total + x",
+              "options": [
+                "A. 30",
+                "B. 50",
+                "C. 60",
+                "D. 0"
+              ],
+              "answer": 2,
+              "explanation": "Loop menjumlahkan: 0 + 10 = 10, lalu 10 + 20 = 30, lalu 30 + 30 = 60."
+            }
+          ],
           "sourceStepId": "bridge-hs-03"
         },
         {
@@ -884,19 +1102,23 @@
           "bookmarks": [
             {
               "time": 2,
-              "label": "Pengenalan Algoritma"
+              "label": "Pengenalan Algoritma",
+              "status": "verified"
             },
             {
               "time": 65,
-              "label": "Perbedaan Algoritma"
+              "label": "Perbedaan Algoritma",
+              "status": "verified"
             },
             {
               "time": 109,
-              "label": "Optimasi Algoritma"
+              "label": "Optimasi Algoritma",
+              "status": "verified"
             },
             {
               "time": 160,
-              "label": "Contoh Optimasi Algoritma"
+              "label": "Contoh Optimasi Algoritma",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -940,19 +1162,23 @@
           "bookmarks": [
             {
               "time": 240,
-              "label": "Apa itu Step Count?"
+              "label": "Apa itu Step Count?",
+              "status": "verified"
             },
             {
               "time": 420,
-              "label": "Mencari Angka pada Array"
+              "label": "Mencari Angka pada Array",
+              "status": "verified"
             },
             {
               "time": 480,
-              "label": "Implementasi For Loop"
+              "label": "Implementasi For Loop",
+              "status": "verified"
             },
             {
               "time": 750,
-              "label": "Optimasi dengan Break"
+              "label": "Optimasi dengan Break",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -993,23 +1219,28 @@
           "bookmarks": [
             {
               "time": 910,
-              "label": "Prinsip DRY (Don't Repeat)"
+              "label": "Prinsip DRY (Don't Repeat)",
+              "status": "verified"
             },
             {
               "time": 981,
-              "label": "Looping untuk Efisiensi"
+              "label": "Looping untuk Efisiensi",
+              "status": "verified"
             },
             {
               "time": 1200,
-              "label": "Menjumlahkan Data Array"
+              "label": "Menjumlahkan Data Array",
+              "status": "verified"
             },
             {
               "time": 1402,
-              "label": "Menggunakan Function sum()"
+              "label": "Menggunakan Function sum()",
+              "status": "verified"
             },
             {
               "time": 1471,
-              "label": "Memilih Algoritma yang Tepat"
+              "label": "Memilih Algoritma yang Tepat",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -1056,11 +1287,13 @@
           "bookmarks": [
             {
               "time": 1618,
-              "label": "Instruksi Mini Project"
+              "label": "Instruksi Mini Project",
+              "status": "verified"
             },
             {
               "time": 1648,
-              "label": "Syarat dan Panduan Pengerjaan"
+              "label": "Syarat dan Panduan Pengerjaan",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -1103,54 +1336,75 @@
             "hs-3-4"
           ],
           "learningObjectives": [
-            "Mendefinisikan fungsi sendiri dengan def nama_fungsi(parameter):",
-            "Membedakan parameter (wadah cetakan) dan argumen (nilai nyata)",
-            "Memahami perbedaan penting antara return dan print",
-            "Memanggil fungsi berulang kali dengan input berbeda"
+            "Mendefinisikan fungsi sendiri dengan kata kunci def nama_fungsi(parameter):",
+            "Membedakan parameter (wadah input fungsi) dan argumen (nilai nyata)",
+            "Memahami perbedaan penting antara perintah return (menghasilkan nilai) dan print (menampilkan ke layar)",
+            "Memanggil fungsi berulang kali dengan input berbeda tanpa menduplikasi kode"
           ],
           "practice": {
             "type": "simulation",
-            "description": "Simulasi pemanggilan fungsi hitung_diskon dan penangkapan nilai return"
+            "description": "Membuat fungsi hitung_diskon(belanja, persen) dan memeriksa hasil return-nya"
           },
           "completionCriteria": {
             "quizScoreMin": 100,
-            "interactiveCompleted": true
+            "interactiveCompleted": true,
+            "description": "Menentukan output dari fungsi dengan return vs print"
           },
           "bookmarks": [
             {
               "slideIndex": 0,
-              "label": "1. Prinsip DRY: Don't Repeat Yourself"
+              "label": "1. Bahaya Copy-Paste Kode",
+              "status": "verified"
             },
             {
               "slideIndex": 1,
-              "label": "2. Anatomi Pembuatan Fungsi dengan def"
+              "label": "2. Anatomi Fungsi: Kata Kunci def",
+              "status": "verified"
             },
             {
               "slideIndex": 2,
-              "label": "3. Parameter vs Argumen"
+              "label": "3. Parameter vs Argumen",
+              "status": "verified"
             },
             {
               "slideIndex": 3,
-              "label": "4. Perbedaan Krusial: return vs print()"
+              "label": "4. Perbedaan Kritis: return vs print()",
+              "status": "verified"
             },
             {
               "slideIndex": 4,
-              "label": "5. Pemanggilan Fungsi Berulang Kali"
+              "label": "5. Memanggil Fungsi Berkali-kali",
+              "status": "verified"
             },
             {
               "slideIndex": 5,
-              "label": "6. Simulator Mesin Fungsi Diskon"
+              "label": "6. Laboratorium Fungsi: Kalkulator Diskon",
+              "status": "verified"
             },
             {
               "slideIndex": 6,
-              "label": "7. Kuis Pemahaman Mandiri"
+              "label": "7. Kuis Pemahaman Mandiri",
+              "status": "verified"
             },
             {
               "slideIndex": 7,
-              "label": "8. Rangkuman & Bekal Menuju Modul 3.5"
+              "label": "8. Rangkuman & Bekal Menuju Modul 3.5",
+              "status": "verified"
             }
           ],
-          "quizzes": [],
+          "quizzes": [
+            {
+              "question": "Jika kita ingin hasil perhitungan dari sebuah fungsi bisa disimpan ke dalam variabel atau dipakai untuk perhitungan lain, perintah apa yang harus digunakan di akhir fungsi?",
+              "options": [
+                "A. print()",
+                "B. return",
+                "C. break",
+                "D. input()"
+              ],
+              "answer": 1,
+              "explanation": "Perintah return mengembalikan nilai ke pemanggil fungsi sehingga dapat disimpan dalam variabel. print() hanya menampilkan ke layar."
+            }
+          ],
           "sourceStepId": "bridge-hs-04"
         },
         {
@@ -1165,23 +1419,28 @@
           "bookmarks": [
             {
               "time": 1712,
-              "label": "Apa itu Function?"
+              "label": "Apa itu Function?",
+              "status": "verified"
             },
             {
               "time": 2085,
-              "label": "Membuat Function (def)"
+              "label": "Membuat Function (def)",
+              "status": "verified"
             },
             {
               "time": 2337,
-              "label": "Function dengan Parameter"
+              "label": "Function dengan Parameter",
+              "status": "verified"
             },
             {
               "time": 2575,
-              "label": "Multiple Parameter"
+              "label": "Multiple Parameter",
+              "status": "verified"
             },
             {
               "time": 2723,
-              "label": "Mengembalikan Nilai (return)"
+              "label": "Mengembalikan Nilai (return)",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -1258,27 +1517,33 @@
           "bookmarks": [
             {
               "time": 86,
-              "label": "Konsep Modular Design"
+              "label": "Konsep Modular Design",
+              "status": "verified"
             },
             {
               "time": 207,
-              "label": "Tanpa Modular Design"
+              "label": "Tanpa Modular Design",
+              "status": "verified"
             },
             {
               "time": 311,
-              "label": "Dengan Modular Design"
+              "label": "Dengan Modular Design",
+              "status": "verified"
             },
             {
               "time": 407,
-              "label": "Manfaat Modular Design"
+              "label": "Manfaat Modular Design",
+              "status": "verified"
             },
             {
               "time": 474,
-              "label": "Reusable Code"
+              "label": "Reusable Code",
+              "status": "verified"
             },
             {
               "time": 552,
-              "label": "Memperbaiki Bug"
+              "label": "Memperbaiki Bug",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -1311,11 +1576,13 @@
           "bookmarks": [
             {
               "time": 626,
-              "label": "Instruksi Mini Project"
+              "label": "Instruksi Mini Project",
+              "status": "verified"
             },
             {
               "time": 646,
-              "label": "Panduan Pengerjaan"
+              "label": "Panduan Pengerjaan",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -1358,31 +1625,38 @@
           "bookmarks": [
             {
               "time": 725,
-              "label": "Pengenalan Menabung & Bunga"
+              "label": "Pengenalan Menabung & Bunga",
+              "status": "verified"
             },
             {
               "time": 815,
-              "label": "Bunga Tunggal"
+              "label": "Bunga Tunggal",
+              "status": "verified"
             },
             {
               "time": 898,
-              "label": "Bunga Tunggal di Python"
+              "label": "Bunga Tunggal di Python",
+              "status": "verified"
             },
             {
               "time": 1280,
-              "label": "Simulasi Bunga Tunggal"
+              "label": "Simulasi Bunga Tunggal",
+              "status": "verified"
             },
             {
               "time": 1398,
-              "label": "Pengenalan Bunga Majemuk"
+              "label": "Pengenalan Bunga Majemuk",
+              "status": "verified"
             },
             {
               "time": 1607,
-              "label": "Bunga Majemuk di Python"
+              "label": "Bunga Majemuk di Python",
+              "status": "verified"
             },
             {
               "time": 1941,
-              "label": "Tunggal vs Majemuk"
+              "label": "Tunggal vs Majemuk",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -1431,54 +1705,75 @@
             "hs-3-8"
           ],
           "learningObjectives": [
-            "Memahami konsep Key-Value pair pada struktur Dictionary { }",
-            "Mengakses nilai dictionary menggunakan kuncinya: data['key']",
+            "Memahami konsep Key-Value pair pada struktur data Dictionary { }",
+            "Mengakses nilai dictionary menggunakan kuncinya: data[\"nominal\"]",
             "Menyimpan sekumpulan record transaksi dalam format List of Dictionaries",
             "Menambahkan item transaksi baru ke dalam list riwayat dengan .append()"
           ],
           "practice": {
             "type": "simulation",
-            "description": "Buku kas digital interaktif menambah dan melihat struktur data JSON dictionary"
+            "description": "Membaca mutasi rekening dalam bentuk list of dicts dan mencetak laporannya"
           },
           "completionCriteria": {
             "quizScoreMin": 100,
-            "interactiveCompleted": true
+            "interactiveCompleted": true,
+            "description": "Menjawab kuis akses key dictionary dan manipulasi list of dicts"
           },
           "bookmarks": [
             {
               "slideIndex": 0,
-              "label": "1. Keterbatasan List Tunggal untuk Data Keuangan"
+              "label": "1. Keterbatasan List Tunggal",
+              "status": "verified"
             },
             {
               "slideIndex": 1,
-              "label": "2. Konsep Pasangan Key-Value Pair"
+              "label": "2. Kamus Data: Key-Value Pair { }",
+              "status": "verified"
             },
             {
               "slideIndex": 2,
-              "label": "3. Cara Mengakses & Mengubah Dictionary"
+              "label": "3. Mengakses Nilai Menggunakan Kunci",
+              "status": "verified"
             },
             {
               "slideIndex": 3,
-              "label": "4. Standar Industri: List of Dictionaries"
+              "label": "4. Menyimpan Riwayat: List of Dictionaries",
+              "status": "verified"
             },
             {
               "slideIndex": 4,
-              "label": "5. Menambahkan Transaksi dengan .append()"
+              "label": "5. Menambah Transaksi: Method .append()",
+              "status": "verified"
             },
             {
               "slideIndex": 5,
-              "label": "6. Simulator Buku Kas Digital Interaktif"
+              "label": "6. Simulator Buku Kas Digital",
+              "status": "verified"
             },
             {
               "slideIndex": 6,
-              "label": "7. Kuis Pemahaman Mandiri"
+              "label": "7. Kuis Pemahaman Mandiri",
+              "status": "verified"
             },
             {
               "slideIndex": 7,
-              "label": "8. Rangkuman & Pintu Masuk Proyek Finansial"
+              "label": "8. Rangkuman & Bekal Menuju Modul 4",
+              "status": "verified"
             }
           ],
-          "quizzes": [],
+          "quizzes": [
+            {
+              "question": "Jika transaksi = {'kategori': 'Makan', 'nominal': 15000}, bagaimana cara mengambil angka nominal 15000 tersebut?",
+              "options": [
+                "A. transaksi[0]",
+                "B. transaksi['nominal']",
+                "C. transaksi.nominal",
+                "D. transaksi.get_all()"
+              ],
+              "answer": 1,
+              "explanation": "Pada dictionary Python, nilai diakses menggunakan tanda kurung siku dengan nama kuncinya: transaksi['nominal']."
+            }
+          ],
           "sourceStepId": "bridge-hs-05"
         },
         {
@@ -1493,27 +1788,33 @@
           "bookmarks": [
             {
               "time": 761,
-              "label": "Validasi Input Kosong 📭"
+              "label": "Validasi Input Kosong 📭",
+              "status": "verified"
             },
             {
               "time": 918,
-              "label": "Validasi Jenis Transaksi 🔄"
+              "label": "Validasi Jenis Transaksi 🔄",
+              "status": "verified"
             },
             {
               "time": 1020,
-              "label": "Kenapa Nominal Negatif Berbahaya? ⚠️"
+              "label": "Kenapa Nominal Negatif Berbahaya? ⚠️",
+              "status": "verified"
             },
             {
               "time": 1268,
-              "label": "Membuat Function clean_text 🧼"
+              "label": "Membuat Function clean_text 🧼",
+              "status": "verified"
             },
             {
               "time": 1415,
-              "label": "Function validate_type & validate_amount ✅"
+              "label": "Function validate_type & validate_amount ✅",
+              "status": "verified"
             },
             {
               "time": 1576,
-              "label": "Kuis Sanitasi dan Validasi 🧠"
+              "label": "Kuis Sanitasi dan Validasi 🧠",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -1634,19 +1935,23 @@
           "bookmarks": [
             {
               "time": 1714,
-              "label": "Ketika Program Python Error 🛑"
+              "label": "Ketika Program Python Error 🛑",
+              "status": "verified"
             },
             {
               "time": 1808,
-              "label": "Tiga Jenis Error yang Sering Muncul 🐛"
+              "label": "Tiga Jenis Error yang Sering Muncul 🐛",
+              "status": "verified"
             },
             {
               "time": 2027,
-              "label": "Mengenal Penyelamat: try-except 🛡️"
+              "label": "Mengenal Penyelamat: try-except 🛡️",
+              "status": "verified"
             },
             {
               "time": 2137,
-              "label": "Contoh Menangani ValueError 🧯"
+              "label": "Contoh Menangani ValueError 🧯",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -1748,23 +2053,28 @@
           "bookmarks": [
             {
               "time": 2362,
-              "label": "Apa Itu Debugging? 🕵️‍♂️"
+              "label": "Apa Itu Debugging? 🕵️‍♂️",
+              "status": "verified"
             },
             {
               "time": 2520,
-              "label": "Rantai Function Program Belanja 🔗"
+              "label": "Rantai Function Program Belanja 🔗",
+              "status": "verified"
             },
             {
               "time": 2681,
-              "label": "Function Saling Bergantung 🧩"
+              "label": "Function Saling Bergantung 🧩",
+              "status": "verified"
             },
             {
               "time": 2721,
-              "label": "Langkah Debugging Step-by-Step ✅"
+              "label": "Langkah Debugging Step-by-Step ✅",
+              "status": "verified"
             },
             {
               "time": 2800,
-              "label": "Debugging dengan print() 🖨️"
+              "label": "Debugging dengan print() 🖨️",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -1849,27 +2159,33 @@
           "bookmarks": [
             {
               "time": 3000,
-              "label": "Apa Itu Dictionary di Python? 📖"
+              "label": "Apa Itu Dictionary di Python? 📖",
+              "status": "verified"
             },
             {
               "time": 3200,
-              "label": "Membuat Dictionary Transaksi 🧱"
+              "label": "Membuat Dictionary Transaksi 🧱",
+              "status": "verified"
             },
             {
               "time": 3414,
-              "label": "List of Dictionaries 🗂️"
+              "label": "List of Dictionaries 🗂️",
+              "status": "verified"
             },
             {
               "time": 3582,
-              "label": "Menghitung Pemasukan dan Pengeluaran 🧮"
+              "label": "Menghitung Pemasukan dan Pengeluaran 🧮",
+              "status": "verified"
             },
             {
               "time": 3660,
-              "label": "Menambahkan Transaksi Baru ➕"
+              "label": "Menambahkan Transaksi Baru ➕",
+              "status": "verified"
             },
             {
               "time": 3830,
-              "label": "Function untuk Merangkum Transaksi 📊"
+              "label": "Function untuk Merangkum Transaksi 📊",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -1923,31 +2239,40 @@
           "bookmarks": [
             {
               "time": 3932,
-              "label": "Mengapa Data Keuangan Perlu Dianalisis? 🔎"
+              "label": "Mengapa Data Keuangan Perlu Dianalisis? 🔎",
+              "status": "verified"
             },
             {
               "time": 3960,
-              "label": "Dataset Pengeluaran Bulanan 📝"
+              "label": "Dataset Pengeluaran Bulanan 📝",
+              "status": "verified"
             },
             {
               "time": 4026,
-              "label": "Menghitung Total dengan sum() ➕"
+              "label": "Menghitung Total dengan sum() ➕",
+              "status": "verified"
             },
             {
               "time": 4081,
-              "label": "Mencari Terbesar dan Terkecil dengan max()/min() 📏"
+              "label": "Mencari Terbesar dan Terkecil dengan max()/min() 📏",
+              "status": "verified"
             },
             {
               "time": 4153,
-              "label": "Menghitung Rata-Rata dengan sum()/len() 📊"
+              "label": "Menghitung Rata-Rata dengan sum()/len() 📊",
+              "status": "verified"
             },
             {
               "time": 4264,
-              "label": "Analisis Berdasarkan Kategori 📂"
+              "label": "Analisis Berdasarkan Kategori 📂",
+              "status": "verified"
             },
             {
               "time": 4421,
-              "label": "Final Project Kehadiran 🏁"
+              "label": "Final Project Kehadiran 🏁",
+              "status": "review_required",
+              "outOfBounds": true,
+              "note": "Bookmark (4421s) melewati endSeconds (4408s)."
             }
           ],
           "quizzes": [
@@ -2066,43 +2391,55 @@
           "bookmarks": [
             {
               "time": 2,
-              "label": "Pembuka"
+              "label": "Pembuka",
+              "status": "review_required",
+              "outOfBounds": true,
+              "note": "Bookmark (2s) berada sebelum startSeconds (3s)."
             },
             {
               "time": 19,
-              "label": "Masalah Butuh Rencana"
+              "label": "Masalah Butuh Rencana",
+              "status": "verified"
             },
             {
               "time": 63,
-              "label": "Menuju Design Thinking"
+              "label": "Menuju Design Thinking",
+              "status": "verified"
             },
             {
               "time": 78,
-              "label": "Apa Itu Design Thinking"
+              "label": "Apa Itu Design Thinking",
+              "status": "verified"
             },
             {
               "time": 195,
-              "label": "Contoh Boros"
+              "label": "Contoh Boros",
+              "status": "verified"
             },
             {
               "time": 321,
-              "label": "Analogi Sandwich"
+              "label": "Analogi Sandwich",
+              "status": "verified"
             },
             {
               "time": 525,
-              "label": "Siapa User Kita"
+              "label": "Siapa User Kita",
+              "status": "verified"
             },
             {
               "time": 603,
-              "label": "Problem Statement"
+              "label": "Problem Statement",
+              "status": "verified"
             },
             {
               "time": 775,
-              "label": "Masalah Jadi Fitur"
+              "label": "Masalah Jadi Fitur",
+              "status": "verified"
             },
             {
               "time": 963,
-              "label": "Feasible atau Nanti"
+              "label": "Feasible atau Nanti",
+              "status": "verified"
             }
           ],
           "quickSummary": {
@@ -2353,31 +2690,38 @@
           "bookmarks": [
             {
               "time": 1107,
-              "label": "Use Case"
+              "label": "Use Case",
+              "status": "verified"
             },
             {
               "time": 1284,
-              "label": "Rancangan Tombol"
+              "label": "Rancangan Tombol",
+              "status": "verified"
             },
             {
               "time": 1517,
-              "label": "Tombol Jadi Fungsi"
+              "label": "Tombol Jadi Fungsi",
+              "status": "verified"
             },
             {
               "time": 1695,
-              "label": "Flowchart"
+              "label": "Flowchart",
+              "status": "verified"
             },
             {
               "time": 1905,
-              "label": "Menu Python"
+              "label": "Menu Python",
+              "status": "verified"
             },
             {
               "time": 2045,
-              "label": "Pilihan Menu"
+              "label": "Pilihan Menu",
+              "status": "verified"
             },
             {
               "time": 2103,
-              "label": "Kerangka Fungsi"
+              "label": "Kerangka Fungsi",
+              "status": "verified"
             }
           ],
           "quickSummary": {
@@ -2580,19 +2924,23 @@
           "bookmarks": [
             {
               "time": 2231,
-              "label": "Aplikasi Pintar"
+              "label": "Aplikasi Pintar",
+              "status": "verified"
             },
             {
               "time": 2298,
-              "label": "Insight Data"
+              "label": "Insight Data",
+              "status": "verified"
             },
             {
               "time": 2420,
-              "label": "If Saldo"
+              "label": "If Saldo",
+              "status": "verified"
             },
             {
               "time": 2555,
-              "label": "Dictionary"
+              "label": "Dictionary",
+              "status": "verified"
             }
           ],
           "quickSummary": {
@@ -2680,7 +3028,11 @@
                   "answer": "B",
                   "explanation": "Tepat sekali! Method .get(kat, 0) mengembalikan nilai default 0 jika key belum ada, sehingga mencegah KeyError saat penjumlahan pertama."
                 }
-              ]
+              ],
+              "type": "manual_checkpoint",
+              "autoplay": false,
+              "status": "review_required",
+              "note": "Waktu kuis sumber (150s) berada di luar rentang segmen video (2231–2615s). Ditetapkan sebagai manual checkpoint untuk mencegah playback error."
             }
           ],
           "sourceStepId": "hs-5-3",
@@ -2700,23 +3052,28 @@
           "bookmarks": [
             {
               "time": 2619,
-              "label": "Mencari Kategori Terbesar"
+              "label": "Mencari Kategori Terbesar",
+              "status": "verified"
             },
             {
               "time": 2825,
-              "label": "Kategori Berubah Sesuai Data"
+              "label": "Kategori Berubah Sesuai Data",
+              "status": "verified"
             },
             {
               "time": 2828,
-              "label": "Saran Kategori"
+              "label": "Saran Kategori",
+              "status": "verified"
             },
             {
               "time": 2916,
-              "label": "Saran Harus Jelas"
+              "label": "Saran Harus Jelas",
+              "status": "verified"
             },
             {
               "time": 2966,
-              "label": "Latihan Rekomendasi"
+              "label": "Latihan Rekomendasi",
+              "status": "verified"
             }
           ],
           "quickSummary": {
@@ -2815,19 +3172,23 @@
           "bookmarks": [
             {
               "time": 2989,
-              "label": "Menyatukan Konsep"
+              "label": "Menyatukan Konsep",
+              "status": "verified"
             },
             {
               "time": 3123,
-              "label": "Kode Modular"
+              "label": "Kode Modular",
+              "status": "verified"
             },
             {
               "time": 3203,
-              "label": "Loop Menu"
+              "label": "Loop Menu",
+              "status": "verified"
             },
             {
               "time": 3252,
-              "label": "Prinsip DRY"
+              "label": "Prinsip DRY",
+              "status": "verified"
             }
           ],
           "quickSummary": {

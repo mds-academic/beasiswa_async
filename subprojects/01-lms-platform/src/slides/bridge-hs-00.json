@@ -4,48 +4,106 @@
   "kicker": "Materi Jembatan 00 · Dasar Python & Cloud Editor",
   "title": "Panduan Lengkap Google Colab & Pemrograman Python Pertamaku",
   "duration": "10 Menit Baca Mandiri & Praktik",
-  "type": "slides",
+  "type": "slide",
+  "slideUrl": "./slides/bridge-hs-00.html",
   "embedUrl": "slides/bridge-hs-00.html",
-  "summary": "Panduan komprehensif membuka Google Colaboratory di browser tanpa instalasi software, memahami anatomi Code Cell vs Text Cell, menulis fungsi print(), mengeksekusi kode dengan shortcut Shift+Enter, menguasai variabel, dan 4 tipe data utama Python.",
+  "prerequisiteStepIds": [
+    "hs-0-0"
+  ],
+  "summary": "Panduan komprehensif membuka Google Colaboratory di browser tanpa instalasi software, memahami anatomi Code Cell vs Text Cell, menulis fungsi print(), mengeksekusi kode dengan shortcut Shift+Enter, serta tips koding anti-error.",
   "totalSlides": 16,
-  "realScreenshots": [
+  "learningObjectives": [
+    "Membuka notebook Google Colab baru di browser tanpa instalasi lokal",
+    "Menulis dan menjalankan kode Python pertama dengan perintah print()",
+    "Membedakan fungsi Code Cell (untuk kode) dan Text Cell (untuk catatan Markdown)",
+    "Mengeksekusi sel kode menggunakan pintasan keyboard Shift+Enter"
+  ],
+  "practice": {
+    "type": "simulation",
+    "description": "Simulasi interaktif menulis perintah print() dan menjalankan sel Colab"
+  },
+  "completionCriteria": {
+    "quizScoreMin": 100,
+    "interactiveCompleted": true,
+    "description": "Menyelesaikan seluruh slide dan menjawab kuis pintasan Colab dengan benar"
+  },
+  "bookmarks": [
     {
-      "name": "real_colab_01_welcome.png",
-      "cdnUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/a6b13d46-7b29-4f4d-b3a8-a3ed5b4f80d7.png",
-      "caption": "Tangkapan layar nyata: Halaman selamat datang Google Colab dengan tombol + New notebook"
+      "slideIndex": 0,
+      "label": "1. Pengenalan Python SMA"
     },
     {
-      "name": "real_colab_02_notebook_interface.png",
-      "cdnUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/35b7d54b-636f-4072-9607-abcb281ec7c3.png",
-      "caption": "Tangkapan layar nyata: Antarmuka interaktif Google Colab yang memuat menubar, code cells, dan output langsung"
+      "slideIndex": 1,
+      "label": "2. Mengapa Belajar Python?"
     },
     {
-      "name": "real_colab_03_code_cells.png",
-      "cdnUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/587d7d63-f602-4d96-b450-161223b32fd9.png",
-      "caption": "Tangkapan layar nyata: Menjalankan kode perhitungan detik dalam sehari dan menampilkan output 86400"
+      "slideIndex": 2,
+      "label": "3. Apa itu Google Colaboratory?"
     },
     {
-      "name": "real_colab_06_files_sidebar.png",
-      "cdnUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/8c9b33cc-a921-402b-9437-598cc5e3cf48.png",
-      "caption": "Tangkapan layar nyata: Sidebar penjelajah file dan status runtime cloud di pojok kanan atas"
+      "slideIndex": 3,
+      "label": "4. Colab vs Jupyter Notebook Lokal"
+    },
+    {
+      "slideIndex": 4,
+      "label": "5. Langkah 1: Buka Colab & New Notebook"
+    },
+    {
+      "slideIndex": 5,
+      "label": "6. Langkah 2: Anatomi Antarmuka Colab"
+    },
+    {
+      "slideIndex": 6,
+      "label": "7. Langkah 3: Code Cell vs Text Cell"
+    },
+    {
+      "slideIndex": 7,
+      "label": "8. Langkah 4: Fungsi print()"
+    },
+    {
+      "slideIndex": 8,
+      "label": "9. Langkah 5: Cara Menjalankan Kode"
+    },
+    {
+      "slideIndex": 9,
+      "label": "10. Langkah 6: Konsep Variabel"
+    },
+    {
+      "slideIndex": 10,
+      "label": "11. Langkah 7: 4 Tipe Data Utama"
+    },
+    {
+      "slideIndex": 11,
+      "label": "12. Langkah 8: Google Drive & Unduh File"
+    },
+    {
+      "slideIndex": 12,
+      "label": "13. Simulasi Koding Interaktif"
+    },
+    {
+      "slideIndex": 13,
+      "label": "14. Kuis Pemahaman Mandiri"
+    },
+    {
+      "slideIndex": 14,
+      "label": "15. Glosarium & Tips Anti-Error"
+    },
+    {
+      "slideIndex": 15,
+      "label": "16. Penutup & Menuju Modul 1"
     }
   ],
-  "bookmarks": [
-    { "slideIndex": 0, "label": "1. Pengenalan Python SMA" },
-    { "slideIndex": 1, "label": "2. Mengapa Belajar Python?" },
-    { "slideIndex": 2, "label": "3. Apa itu Google Colaboratory?" },
-    { "slideIndex": 3, "label": "4. Colab vs Jupyter Notebook Lokal" },
-    { "slideIndex": 4, "label": "5. Langkah 1: Buka Colab & New Notebook" },
-    { "slideIndex": 5, "label": "6. Langkah 2: Anatomi Antarmuka Colab" },
-    { "slideIndex": 6, "label": "7. Langkah 3: Code Cell vs Text Cell" },
-    { "slideIndex": 7, "label": "8. Langkah 4: Fungsi print()" },
-    { "slideIndex": 8, "label": "9. Langkah 5: Cara Menjalankan Kode" },
-    { "slideIndex": 9, "label": "10. Langkah 6: Konsep Variabel" },
-    { "slideIndex": 10, "label": "11. Langkah 7: 4 Tipe Data Utama" },
-    { "slideIndex": 11, "label": "12. Langkah 8: Google Drive & Unduh File" },
-    { "slideIndex": 12, "label": "13. Simulasi Koding Interaktif" },
-    { "slideIndex": 13, "label": "14. Kuis Pemahaman Mandiri" },
-    { "slideIndex": 14, "label": "15. Glosarium & Tips Anti-Error" },
-    { "slideIndex": 15, "label": "16. Penutup & Menuju Modul 1" }
+  "quizzes": [
+    {
+      "question": "Pintasan keyboard (shortcut) apa yang paling cepat untuk menjalankan sel kode di Google Colab?",
+      "options": [
+        "A. Ctrl + C",
+        "B. Shift + Enter",
+        "C. Alt + F4",
+        "D. Esc + Delete"
+      ],
+      "answer": 1,
+      "explanation": "Shift + Enter mengeksekusi kode pada sel saat ini dan langsung berpindah ke sel berikutnya."
+    }
   ]
 }

@@ -3,28 +3,30 @@
   "level": "SMP",
   "kicker": "Materi Jembatan 00 · Desain UI & Blok Logika SMP",
   "title": "Panduan Lengkap MIT App Inventor & Uji Proyek Pertamaku",
-  "duration": "10 Menit Baca Mandiri & Praktik",
-  "type": "slides",
+  "duration": "10 Menit Baca Mandiri & Eksplorasi",
+  "type": "slide",
+  "slideUrl": "./slides/bridge-ms-00.html",
   "embedUrl": "slides/bridge-ms-00.html",
-  "summary": "Panduan komprehensif membuka MIT App Inventor di browser, memahami anatomi Designer (Palette, Viewer, Components, Properties) dan Blocks Editor, merakit tombol interaktif, serta menguji langsung di HP Android via AI2 Companion tanpa TinyDB.",
-  "totalSlides": 15,
-  "realScreenshots": [
-    {
-      "name": "real_appinventor_01_google_login.png",
-      "cdnUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/3ceeff4b-2d43-4675-938c-69e8b748b3cd.png",
-      "caption": "Tangkapan layar nyata: Halaman otentikasi Google OAuth untuk masuk langsung ke akun App Inventor"
-    },
-    {
-      "name": "real_appinventor_03_designer_workspace.png",
-      "cdnUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/34a4c4fc-e4ce-459c-afbc-fd63fc88f107.png",
-      "caption": "Tangkapan layar nyata: Designer proyek aplikasi Spendify lengkap dengan 4 kolom dan komponen TinyDB"
-    },
-    {
-      "name": "real_appinventor_04_blocks_workspace.png",
-      "cdnUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/3b7480d8-1ce7-46d3-9850-8e97bb9d399d.png",
-      "caption": "Tangkapan layar nyata: Blocks Editor proyek nyata dengan balok event tombol dan pemanggilan TinyDB"
-    }
+  "prerequisiteStepIds": [
+    "ms-0-3"
   ],
+  "summary": "Panduan komprehensif membuka MIT App Inventor di browser, memahami 4 panel utama Designer (Palette, Viewer, Components, Properties), merakit balok di Blocks Editor, dan menguji aplikasi di HP via AI2 Companion secara langsung.",
+  "totalSlides": 15,
+  "learningObjectives": [
+    "Mengenal ekosistem MIT App Inventor (Browser Designer + Blocks Editor + AI Companion)",
+    "Memahami anatomi 4 panel Designer: Palette, Viewer, Components, dan Properties",
+    "Merakit balok logika event handler sederhana (when Button.Click)",
+    "Menghubungkan proyek ke HP menggunakan AI2 Companion untuk live testing"
+  ],
+  "practice": {
+    "type": "simulation",
+    "description": "Simulasi interaktif tombol klik mengubah label sapaan di simulator layar HP"
+  },
+  "completionCriteria": {
+    "quizScoreMin": 100,
+    "interactiveCompleted": true,
+    "description": "Menyelesaikan seluruh tur platform dan menjawab kuis panel Designer dengan benar"
+  },
   "bookmarks": [
     {
       "slideIndex": 0,
@@ -85,6 +87,30 @@
     {
       "slideIndex": 14,
       "label": "15. Penutup & Menuju Modul 1"
+    }
+  ],
+  "quizzes": [
+    {
+      "question": "Di bagian manakah kita mengatur warna tombol dan ukuran teks?",
+      "options": [
+        "A. Palette",
+        "B. Viewer",
+        "C. Properties",
+        "D. Blocks Built-in"
+      ],
+      "answer": 2,
+      "explanation": "Kolom Properties di sebelah kanan digunakan untuk mengatur atribut visual komponen."
+    },
+    {
+      "question": "Di manakah kita merakit logika balok agar tombol bisa bereaksi saat ditekan jari?",
+      "options": [
+        "A. Di Blocks Editor (layar perakitan balok)",
+        "B. Di Google Drive",
+        "C. Di Pengaturan HP",
+        "D. Di Palette User Interface"
+      ],
+      "answer": 0,
+      "explanation": "Blocks Editor adalah ruang kerja khusus menyusun balok logika event-driven."
     }
   ]
 }

@@ -4,34 +4,54 @@
   "kicker": "Materi Jembatan 02 · Penyimpanan Data SMP",
   "title": "Buku Kas Digital: Menyimpan Data dengan TinyDB",
   "duration": "8 Menit Baca & Eksplorasi",
-  "type": "slides",
+  "type": "slide",
+  "slideUrl": "./slides/bridge-ms-02.html",
   "embedUrl": "slides/bridge-ms-02.html",
-  "summary": "Pahami perbedaan memori sementara RAM dan memori persisten TinyDB, komponen Non-Visible di laci Storage, konsep loker Tag dan ValueToStore, cara menyimpan dengan StoreValue, membaca dengan GetValue, serta fungsi penyelamat valueIfTagNotThere.",
+  "prerequisiteStepIds": [
+    "bridge-ms-01",
+    "ms-3-5"
+  ],
+  "summary": "Membedakan memori sementara (RAM) vs penyimpanan persisten (TinyDB), menggunakan blok call TinyDB.StoreValue dengan Tag dan ValueToStore, membaca data via call TinyDB.GetValue dengan penanganan default ValueIfTagNotThere, dan menghapus tag.",
   "totalSlides": 8,
+  "learningObjectives": [
+    "Membedakan memori sementara (variabel hilang saat app ditutup) dan persisten (TinyDB tetap tersimpan)",
+    "Menggunakan blok call TinyDB.StoreValue dengan Tag (label) dan ValueToStore (isi)",
+    "Mengambil data dengan call TinyDB.GetValue dan menyediakan ValueIfTagNotThere (nilai default)",
+    "Menghapus data tersimpan menggunakan call TinyDB.ClearTag untuk reset saldo"
+  ],
+  "practice": {
+    "type": "simulation",
+    "description": "Simulasi alur simpan nama dan saldo uang saku lalu membaca kembali nilainya"
+  },
+  "completionCriteria": {
+    "quizScoreMin": 100,
+    "interactiveCompleted": true,
+    "description": "Memilih blok yang tepat untuk mencegah error jika data belum pernah disimpan"
+  },
   "bookmarks": [
     {
       "slideIndex": 0,
-      "label": "1. Masalah Lupa Ingatan: RAM vs TinyDB"
+      "label": "1. Ke Mana Perginya Data?"
     },
     {
       "slideIndex": 1,
-      "label": "2. Komponen Non-Visible TinyDB di Storage"
+      "label": "2. Solusi Persisten: TinyDB"
     },
     {
       "slideIndex": 2,
-      "label": "3. Konsep Tag dan Value"
+      "label": "3. Menyimpan Data: Tag & ValueToStore"
     },
     {
       "slideIndex": 3,
-      "label": "4. call StoreValue & call GetValue"
+      "label": "4. Mengambil Data: GetValue & Nilai Default"
     },
     {
       "slideIndex": 4,
-      "label": "5. Mengatur Ulang Data dengan ClearTag"
+      "label": "5. Menghapus Data: ClearTag"
     },
     {
       "slideIndex": 5,
-      "label": "6. Simulator Penyimpanan Data TinyDB"
+      "label": "6. Simulator Brankas Kas TinyDB"
     },
     {
       "slideIndex": 6,
@@ -42,18 +62,17 @@
       "label": "8. Rangkuman & Bekal Menuju Modul 4"
     }
   ],
-  "learningObjectives": [
-    "Membedakan memori sementara (variabel hilang saat app tutup) dan persisten (TinyDB tetap tersimpan)",
-    "Menggunakan call TinyDB.StoreValue dengan Tag dan ValueToStore",
-    "Mengambil data dengan call TinyDB.GetValue dan menyediakan valueIfTagNotThere",
-    "Menghapus data tersimpan menggunakan call TinyDB.ClearTag untuk reset saldo"
-  ],
-  "practice": {
-    "type": "simulation",
-    "description": "Simulasi simpan saldo dengan Tag, tutup aplikasi, dan baca kembali nilainya"
-  },
-  "completionCriteria": {
-    "quizScoreMin": 100,
-    "interactiveCompleted": true
-  }
+  "quizzes": [
+    {
+      "question": "Mengapa kita harus mengisi blok 'valueIfTagNotThere' saat memanggil TinyDB.GetValue?",
+      "options": [
+        "A. Agar layar HP tidak pecah",
+        "B. Agar aplikasi tidak error jika data dengan Tag tersebut belum pernah disimpan sebelumnya",
+        "C. Untuk mengirim data otomatis ke server Google",
+        "D. Agar warna teks tombol berubah menjadi hijau"
+      ],
+      "answer": 1,
+      "explanation": "valueIfTagNotThere memberikan nilai cadangan/default jika Tag yang diminta belum pernah tersimpan di HP."
+    }
+  ]
 }

@@ -305,7 +305,7 @@
         .block-text { background-color: #DE4C8A; }
         .block-variable { background-color: #E86D1F; }
         .block-event { background-color: #B58B00; color: var(--black); }
-        .block-tinydb { background-color: #6C5CE7; }
+        .block-color { background-color: #00BCD4; }
 
         /* Interactive Playground */
         .playground-card {
@@ -485,7 +485,7 @@
                             Membuat Aplikasi Android Sendiri<br>dengan MIT App Inventor! 🤖
                         </h1>
                         <p style="font-size: 23px; font-weight: 600; text-shadow: 2px 2px 0px var(--black); color: var(--yellow); margin-bottom: 35px;">
-                            Belajar Pemrograman Visual, Alur Logika, dan Database Lokal di HP
+                            Belajar Pemrograman Visual, Alur Logika & Uji Proyek di HP
                         </p>
                         <div style="font-size: 16px; font-weight: 600; opacity: 0.95; text-transform: uppercase; letter-spacing: 2px; background: rgba(0,0,0,0.3); padding: 10px 24px; border-radius: 12px; display: inline-block;">
                             Materi Jembatan 00 • Fondasi Desain UI, Balok Logika & Uji Proyek
@@ -532,7 +532,7 @@
                             <div class="feature-card">
                                 <ul style="margin-bottom: 0; font-size: 19px;">
                                     <li><strong>Aplikasi Android Nyata</strong>: Aplikasi yang kamu rancang di sini bukanlah sekadar animasi main-main, melainkan <strong>file APK Android sungguhan</strong> yang bisa diinstal di HP!</li>
-                                    <li><strong>Cloud Storage</strong>: Semua proyek aplikasi tersimpan otomatis di server MIT menggunakan akun Google kamu.</li>
+                                    <li><strong>Penyimpanan Cloud</strong>: Semua proyek aplikasi tersimpan otomatis di server MIT menggunakan akun Google kamu.</li>
                                     <li><strong>Dukungan Fitur Canggih</strong>: Dilengkapi akses kamera HP, sensor gerak, perekam suara, logika interaktif cerdas, hingga koneksi internet!</li>
                                 </ul>
                             </div>
@@ -619,7 +619,7 @@
                                     <tr>
                                         <td><strong>1 (Kiri)</strong></td>
                                         <td><strong>Palette</strong></td>
-                                        <td>Kotak peralatan berisi komponen (Button, Label, TextBox, Layout, Storage).</td>
+                                        <td>Kotak peralatan berisi komponen (Button, Label, TextBox, Layout, Media).</td>
                                     </tr>
                                     <tr>
                                         <td><strong>2 (Tengah)</strong></td>
@@ -982,78 +982,48 @@
             }
         });
 
-        // Virtual TinyDB Memory Simulation
-        const virtualTinyDB = {};
-
-        function simpanTinyDB() {
-            const tag = document.getElementById('db-tag').value.trim() || "DefaultTag";
-            const val = parseInt(document.getElementById('db-value').value) || 0;
-            virtualTinyDB[tag] = val;
-            
-            const out = document.getElementById('db-output');
-            out.innerHTML = `
-                ✅ <strong>TinyDB1.StoreValue BERHASIL!</strong><br>
-                Tag     : <span style="color: var(--yellow);">"${tag}"</span><br>
-                Value   : <span style="color: var(--green);">Rp ${val.toLocaleString('id-ID')}</span><br>
-                Status  : Tersimpan aman di memori permanen HP!
-            `;
-        }
-
-        function bacaTinyDB() {
-            const tag = document.getElementById('db-tag').value.trim() || "DefaultTag";
-            const out = document.getElementById('db-output');
-            
-            if (tag in virtualTinyDB) {
-                const val = virtualTinyDB[tag];
-                out.innerHTML = `
-                    📖 <strong>TinyDB1.GetValue DITEMUKAN!</strong><br>
-                    Tag     : <span style="color: var(--yellow);">"${tag}"</span><br>
-                    Hasil   : <span style="color: var(--green); font-size: 22px;">Rp ${val.toLocaleString('id-ID')}</span><br>
-                    Status  : Berhasil diambil dari memori lokal HP!
-                `;
-            } else {
-                out.innerHTML = `
-                    ⚠️ <strong>Tag "${tag}" Tidak Ditemukan!</strong><br>
-                    Mengembalikan valueIfTagNotThere: <span style="color: var(--red);">0</span> (Nilai default cadangan).
-                `;
-            }
+        let clickCountSMP = 0;
+        function testButtonLive() {
+            clickCountSMP++;
+            const label = document.getElementById("phone-label-output");
+            label.innerHTML = "🎉 Tombol berhasil diklik (" + clickCountSMP + "x)!<br><span style='font-size:16px; color:#2E7D32;'>Balok when Button1.Click berjalan sempurna!</span>";
+            label.style.backgroundColor = "#E8F5E9";
+            label.style.borderColor = "#4CAF50";
         }
 
         // Quiz Q1 SMP
         function checkQ1_SMP(type, el) {
-            const fb = document.getElementById('q1-smp-feedback');
+            const fb = document.getElementById("q1-smp-feedback");
             const parent = el.parentElement;
-            parent.querySelectorAll('.quiz-option').forEach(o => o.classList.remove('correct', 'wrong'));
-            fb.style.display = 'block';
-            
-            if (type === 'correct') {
-                el.classList.add('correct');
+            parent.querySelectorAll(".quiz-option").forEach(o => o.classList.remove("correct", "wrong"));
+            fb.style.display = "block";
+            if (type === "correct") {
+                el.classList.add("correct");
                 fb.innerHTML = "✅ TEPAT SEKALI! Kolom 'Properties' di sebelah paling kanan digunakan untuk mengatur warna, font, teks, serta dimensi komponen.";
                 fb.style.backgroundColor = "var(--green)";
                 fb.style.color = "var(--black)";
             } else {
-                el.classList.add('wrong');
+                el.classList.add("wrong");
                 fb.innerHTML = "❌ Kurang tepat! Coba ingat kolom paling kanan yang berisi atribut komponen.";
                 fb.style.backgroundColor = "var(--red)";
                 fb.style.color = "var(--white)";
             }
         }
 
-        // Quiz Q2 SMP
-        function checkQ2_SMP(type, el) {
-            const fb = document.getElementById('q2-smp-feedback');
+        // Quiz Q2 SMP Clean (Blocks Editor vs Designer)
+        function checkQ2_SMP_Clean(status, el) {
             const parent = el.parentElement;
-            parent.querySelectorAll('.quiz-option').forEach(o => o.classList.remove('correct', 'wrong'));
-            fb.style.display = 'block';
-            
-            if (type === 'correct') {
-                el.classList.add('correct');
-                fb.innerHTML = "✅ BENAR! Keunggulan utama TinyDB adalah menyimpan data secara persisten di memori lokal HP, sehingga data saldo tidak hilang saat aplikasi ditutup.";
+            parent.querySelectorAll(".quiz-option").forEach(opt => opt.classList.remove("correct", "wrong"));
+            const fb = document.getElementById("q2-smp-feedback");
+            fb.style.display = "block";
+            if (status === "correct") {
+                el.classList.add("correct");
+                fb.innerHTML = "✅ BENAR! Blocks Editor adalah ruang kerja khusus di mana kita menyusun balok-balok logika untuk menentukan apa yang terjadi saat tombol diklik.";
                 fb.style.backgroundColor = "var(--green)";
                 fb.style.color = "var(--black)";
             } else {
-                el.classList.add('wrong');
-                fb.innerHTML = "❌ Salah! TinyDB adalah komponen database lokal untuk menyimpan data secara permanen.";
+                el.classList.add("wrong");
+                fb.innerHTML = "❌ Kurang tepat! Layar untuk menyusun balok logika adalah Blocks Editor.";
                 fb.style.backgroundColor = "var(--red)";
                 fb.style.color = "var(--white)";
             }

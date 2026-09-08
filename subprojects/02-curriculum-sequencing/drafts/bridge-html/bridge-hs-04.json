@@ -4,18 +4,38 @@
   "kicker": "Materi Jembatan 04 · Modularisasi Kode",
   "title": "Fungsi: Mesin Cetak Kode Mandiri",
   "duration": "8 Menit Baca & Praktik",
-  "type": "slides",
+  "type": "slide",
+  "slideUrl": "./slides/bridge-hs-04.html",
   "embedUrl": "slides/bridge-hs-04.html",
-  "summary": "Pahami prinsip DRY (Don't Repeat Yourself), anatomi pembuatan fungsi dengan def, perbedaan parameter dan argumen, serta perbedaan krusial antara return (menghasilkan nilai) dan print (menampilkan teks di layar).",
+  "prerequisiteStepIds": [
+    "bridge-hs-03",
+    "hs-3-4"
+  ],
+  "summary": "Definisikan fungsi modular dengan def nama(parameter):, bedakan parameter vs argumen, pahami perbedaan mendasar perintah return (menghasilkan nilai yang bisa disimpan) vs print() (hanya mencetak ke layar), dan reusability kode.",
   "totalSlides": 8,
+  "learningObjectives": [
+    "Mendefinisikan fungsi sendiri dengan kata kunci def nama_fungsi(parameter):",
+    "Membedakan parameter (wadah input fungsi) dan argumen (nilai nyata)",
+    "Memahami perbedaan penting antara perintah return (menghasilkan nilai) dan print (menampilkan ke layar)",
+    "Memanggil fungsi berulang kali dengan input berbeda tanpa menduplikasi kode"
+  ],
+  "practice": {
+    "type": "simulation",
+    "description": "Membuat fungsi hitung_diskon(belanja, persen) dan memeriksa hasil return-nya"
+  },
+  "completionCriteria": {
+    "quizScoreMin": 100,
+    "interactiveCompleted": true,
+    "description": "Menentukan output dari fungsi dengan return vs print"
+  },
   "bookmarks": [
     {
       "slideIndex": 0,
-      "label": "1. Prinsip DRY: Don't Repeat Yourself"
+      "label": "1. Bahaya Copy-Paste Kode"
     },
     {
       "slideIndex": 1,
-      "label": "2. Anatomi Pembuatan Fungsi dengan def"
+      "label": "2. Anatomi Fungsi: Kata Kunci def"
     },
     {
       "slideIndex": 2,
@@ -23,15 +43,15 @@
     },
     {
       "slideIndex": 3,
-      "label": "4. Perbedaan Krusial: return vs print()"
+      "label": "4. Perbedaan Kritis: return vs print()"
     },
     {
       "slideIndex": 4,
-      "label": "5. Pemanggilan Fungsi Berulang Kali"
+      "label": "5. Memanggil Fungsi Berkali-kali"
     },
     {
       "slideIndex": 5,
-      "label": "6. Simulator Mesin Fungsi Diskon"
+      "label": "6. Laboratorium Fungsi: Kalkulator Diskon"
     },
     {
       "slideIndex": 6,
@@ -42,18 +62,17 @@
       "label": "8. Rangkuman & Bekal Menuju Modul 3.5"
     }
   ],
-  "learningObjectives": [
-    "Mendefinisikan fungsi sendiri dengan def nama_fungsi(parameter):",
-    "Membedakan parameter (wadah cetakan) dan argumen (nilai nyata)",
-    "Memahami perbedaan penting antara return dan print",
-    "Memanggil fungsi berulang kali dengan input berbeda"
-  ],
-  "practice": {
-    "type": "simulation",
-    "description": "Simulasi pemanggilan fungsi hitung_diskon dan penangkapan nilai return"
-  },
-  "completionCriteria": {
-    "quizScoreMin": 100,
-    "interactiveCompleted": true
-  }
+  "quizzes": [
+    {
+      "question": "Jika kita ingin hasil perhitungan dari sebuah fungsi bisa disimpan ke dalam variabel atau dipakai untuk perhitungan lain, perintah apa yang harus digunakan di akhir fungsi?",
+      "options": [
+        "A. print()",
+        "B. return",
+        "C. break",
+        "D. input()"
+      ],
+      "answer": 1,
+      "explanation": "Perintah return mengembalikan nilai ke pemanggil fungsi sehingga dapat disimpan dalam variabel. print() hanya menampilkan ke layar."
+    }
+  ]
 }

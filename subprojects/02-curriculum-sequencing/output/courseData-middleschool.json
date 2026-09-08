@@ -2,7 +2,7 @@
   "levelId": "middleschool",
   "levelTitle": "Tingkat SMP (MIT App Inventor & Aplikasi Mobile)",
   "version": "1.0-scaffolded",
-  "updatedAt": "2026-09-08T23:25:00+07:00",
+  "updatedAt": "2026-09-08T23:50:00+07:00",
   "description": "Kurikulum Asinkronus MIT App Inventor dengan Jembatan Konseptual Bersih (Bridge MS-00 s.d. MS-03, TinyDB setelah Procedures)",
   "modules": [
     {
@@ -22,23 +22,28 @@
           "bookmarks": [
             {
               "time": 0,
-              "label": "Pengenalan Async Learning"
+              "label": "Pengenalan Async Learning",
+              "status": "verified"
             },
             {
               "time": 25,
-              "label": "Ritme Belajar & Pause"
+              "label": "Ritme Belajar & Pause",
+              "status": "verified"
             },
             {
               "time": 55,
-              "label": "Alur Belajar Step-by-Step"
+              "label": "Alur Belajar Step-by-Step",
+              "status": "verified"
             },
             {
               "time": 85,
-              "label": "Pop-up Quiz Interaktif"
+              "label": "Pop-up Quiz Interaktif",
+              "status": "verified"
             },
             {
               "time": 115,
-              "label": "Materi Bacaan & Praktik Mandiri"
+              "label": "Materi Bacaan & Praktik Mandiri",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -92,31 +97,38 @@
           "bookmarks": [
             {
               "time": 0,
-              "label": "Pengenalan Platform MIT App Inventor"
+              "label": "Pengenalan Platform MIT App Inventor",
+              "status": "verified"
             },
             {
               "time": 42,
-              "label": "Membuka code.appinventor.mit.edu"
+              "label": "Membuka code.appinventor.mit.edu",
+              "status": "verified"
             },
             {
               "time": 75,
-              "label": "Opsi Login: Google vs Tanpa Akun"
+              "label": "Opsi Login: Google vs Tanpa Akun",
+              "status": "verified"
             },
             {
               "time": 112,
-              "label": "Fitur 'Continue Without An Account'"
+              "label": "Fitur 'Continue Without An Account'",
+              "status": "verified"
             },
             {
               "time": 148,
-              "label": "Mencatat 4-Kata Revisit Code"
+              "label": "Mencatat 4-Kata Revisit Code",
+              "status": "verified"
             },
             {
               "time": 225,
-              "label": "Cara Masuk Kembali dengan Revisit Code"
+              "label": "Cara Masuk Kembali dengan Revisit Code",
+              "status": "verified"
             },
             {
               "time": 270,
-              "label": "Tips Masuk ke Dashboard Proyek"
+              "label": "Tips Masuk ke Dashboard Proyek",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -192,43 +204,53 @@
           "bookmarks": [
             {
               "time": 0,
-              "label": "Pengenalan User Interface (UI)"
+              "label": "Pengenalan User Interface (UI)",
+              "status": "verified"
             },
             {
               "time": 70,
-              "label": "Membuat Proyek Baru ('Start new project')"
+              "label": "Membuat Proyek Baru ('Start new project')",
+              "status": "verified"
             },
             {
               "time": 145,
-              "label": "Mengenal 4 Kolom Designer Workspace"
+              "label": "Mengenal 4 Kolom Designer Workspace",
+              "status": "verified"
             },
             {
               "time": 255,
-              "label": "Menambahkan Komponen Label & Mengubah Teks"
+              "label": "Menambahkan Komponen Label & Mengubah Teks",
+              "status": "verified"
             },
             {
               "time": 390,
-              "label": "Mengatur BackgroundColor & Ukuran Font"
+              "label": "Mengatur BackgroundColor & Ukuran Font",
+              "status": "verified"
             },
             {
               "time": 525,
-              "label": "Menambahkan Tombol (Button) & Style Warna"
+              "label": "Menambahkan Tombol (Button) & Style Warna",
+              "status": "verified"
             },
             {
               "time": 680,
-              "label": "Perataan Posisi (AlignHorizontal & AlignVertical)"
+              "label": "Perataan Posisi (AlignHorizontal & AlignVertical)",
+              "status": "verified"
             },
             {
               "time": 770,
-              "label": "Menambah Layar Baru (Multiple Screens - Screen2)"
+              "label": "Menambah Layar Baru (Multiple Screens - Screen2)",
+              "status": "verified"
             },
             {
               "time": 855,
-              "label": "Live Test Tampilan via AI Companion (QR Code)"
+              "label": "Live Test Tampilan via AI Companion (QR Code)",
+              "status": "verified"
             },
             {
               "time": 940,
-              "label": "Rangkuman & Persiapan ke Blocks Editor"
+              "label": "Rangkuman & Persiapan ke Blocks Editor",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -325,23 +347,28 @@
           "bookmarks": [
             {
               "time": 0,
-              "label": "Mengenal MIT App Inventor Gallery"
+              "label": "Mengenal MIT App Inventor Gallery",
+              "status": "verified"
             },
             {
               "time": 30,
-              "label": "Membuka Menu Projects -> My Projects"
+              "label": "Membuka Menu Projects -> My Projects",
+              "status": "verified"
             },
             {
               "time": 65,
-              "label": "Memilih Proyek & Klik 'Publish to Gallery'"
+              "label": "Memilih Proyek & Klik 'Publish to Gallery'",
+              "status": "verified"
             },
             {
               "time": 100,
-              "label": "Mengisi Info Aplikasi (Title, Description, Icon)"
+              "label": "Mengisi Info Aplikasi (Title, Description, Icon)",
+              "status": "verified"
             },
             {
               "time": 135,
-              "label": "Menjelajahi Galeri Publik (gallery.appinventor.mit.edu)"
+              "label": "Menjelajahi Galeri Publik (gallery.appinventor.mit.edu)",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -408,82 +435,127 @@
           "type": "slide",
           "kicker": "Materi Jembatan 00 · Desain UI & Blok Logika SMP",
           "title": "Panduan Lengkap MIT App Inventor & Uji Proyek Pertamaku",
-          "duration": "10 Menit Baca Mandiri & Praktik",
+          "duration": "10 Menit Baca Mandiri & Eksplorasi",
           "slideUrl": "./slides/bridge-ms-00.html",
           "prerequisiteStepIds": [
             "ms-0-3"
           ],
-          "learningObjectives": [],
+          "learningObjectives": [
+            "Mengenal ekosistem MIT App Inventor (Browser Designer + Blocks Editor + AI Companion)",
+            "Memahami anatomi 4 panel Designer: Palette, Viewer, Components, dan Properties",
+            "Merakit balok logika event handler sederhana (when Button.Click)",
+            "Menghubungkan proyek ke HP menggunakan AI2 Companion untuk live testing"
+          ],
           "practice": {
-            "type": "interactive_slide",
-            "description": "Latihan interaktif di dalam slide"
+            "type": "simulation",
+            "description": "Simulasi interaktif tombol klik mengubah label sapaan di simulator layar HP"
           },
           "completionCriteria": {
-            "quizScoreMin": 100
+            "quizScoreMin": 100,
+            "interactiveCompleted": true,
+            "description": "Menyelesaikan seluruh tur platform dan menjawab kuis panel Designer dengan benar"
           },
           "bookmarks": [
             {
               "slideIndex": 0,
-              "label": "1. Pengenalan App Inventor SMP"
+              "label": "1. Pengenalan App Inventor SMP",
+              "status": "verified"
             },
             {
               "slideIndex": 1,
-              "label": "2. Mengapa Belajar App Inventor?"
+              "label": "2. Mengapa Belajar App Inventor?",
+              "status": "verified"
             },
             {
               "slideIndex": 2,
-              "label": "3. Cara Kerja Ekosistem Browser & HP"
+              "label": "3. Cara Kerja Ekosistem Browser & HP",
+              "status": "verified"
             },
             {
               "slideIndex": 3,
-              "label": "4. Langkah 1: Login Akun Google"
+              "label": "4. Langkah 1: Login Akun Google",
+              "status": "verified"
             },
             {
               "slideIndex": 4,
-              "label": "5. Langkah 2: Start New Project"
+              "label": "5. Langkah 2: Start New Project",
+              "status": "verified"
             },
             {
               "slideIndex": 5,
-              "label": "6. Langkah 3: 4 Panel Utama Designer"
+              "label": "6. Langkah 3: 4 Panel Utama Designer",
+              "status": "verified"
             },
             {
               "slideIndex": 6,
-              "label": "7. Langkah 4: Memasukkan Komponen UI"
+              "label": "7. Langkah 4: Memasukkan Komponen UI",
+              "status": "verified"
             },
             {
               "slideIndex": 7,
-              "label": "8. Langkah 5: Berpindah ke Blocks Editor"
+              "label": "8. Langkah 5: Berpindah ke Blocks Editor",
+              "status": "verified"
             },
             {
               "slideIndex": 8,
-              "label": "9. Langkah 6: Anatomi Balok Logika"
+              "label": "9. Langkah 6: Anatomi Balok Logika",
+              "status": "verified"
             },
             {
               "slideIndex": 9,
-              "label": "10. Langkah 7: Balok Event Handler"
+              "label": "10. Langkah 7: Balok Event Handler",
+              "status": "verified"
             },
             {
               "slideIndex": 10,
-              "label": "11. Langkah 8: Menguji Aplikasi di HP (AI Companion)"
+              "label": "11. Langkah 8: Menguji Aplikasi di HP (AI Companion)",
+              "status": "verified"
             },
             {
               "slideIndex": 11,
-              "label": "12. Simulasi Live Testing di Layar HP"
+              "label": "12. Simulasi Live Testing di Layar HP",
+              "status": "verified"
             },
             {
               "slideIndex": 12,
-              "label": "13. Uji Pemahaman Cek Kesiapan"
+              "label": "13. Uji Pemahaman Cek Kesiapan",
+              "status": "verified"
             },
             {
               "slideIndex": 13,
-              "label": "14. Glosarium Cepat & Tips Sukses"
+              "label": "14. Glosarium Cepat & Tips Sukses",
+              "status": "verified"
             },
             {
               "slideIndex": 14,
-              "label": "15. Penutup & Menuju Modul 1"
+              "label": "15. Penutup & Menuju Modul 1",
+              "status": "verified"
             }
           ],
-          "quizzes": [],
+          "quizzes": [
+            {
+              "question": "Di bagian manakah kita mengatur warna tombol dan ukuran teks?",
+              "options": [
+                "A. Palette",
+                "B. Viewer",
+                "C. Properties",
+                "D. Blocks Built-in"
+              ],
+              "answer": 2,
+              "explanation": "Kolom Properties di sebelah kanan digunakan untuk mengatur atribut visual komponen."
+            },
+            {
+              "question": "Di manakah kita merakit logika balok agar tombol bisa bereaksi saat ditekan jari?",
+              "options": [
+                "A. Di Blocks Editor (layar perakitan balok)",
+                "B. Di Google Drive",
+                "C. Di Pengaturan HP",
+                "D. Di Palette User Interface"
+              ],
+              "answer": 0,
+              "explanation": "Blocks Editor adalah ruang kerja khusus menyusun balok logika event-driven."
+            }
+          ],
           "sourceStepId": "bridge-ms-00"
         }
       ]
@@ -502,45 +574,76 @@
           "prerequisiteStepIds": [
             "bridge-ms-00"
           ],
-          "learningObjectives": [],
+          "learningObjectives": [
+            "Menjelaskan konsep Event-Driven: aplikasi menunggu kejadian sebelum beraksi",
+            "Menggunakan blok when Button.Click do sebagai pintu masuk aksi",
+            "Membaca input teks dari komponen TextBox.Text dan menampilkan output ke Label.Text",
+            "Menggabungkan potongan teks dengan blok join dan menyimpan ke variabel blok sementara"
+          ],
           "practice": {
-            "type": "interactive_slide",
-            "description": "Latihan interaktif di dalam slide"
+            "type": "simulation",
+            "description": "Merakit blok tombol sapaan yang menggabungkan nama dari TextBox"
           },
           "completionCriteria": {
-            "quizScoreMin": 100
+            "quizScoreMin": 100,
+            "interactiveCompleted": true,
+            "description": "Menjawab kuis urutan eksekusi blok event dan fungsi join"
           },
           "bookmarks": [
             {
               "slideIndex": 0,
-              "label": "1. Bagaimana Aplikasi Bereaksi?"
+              "label": "1. Bagaimana Aplikasi Bereaksi?",
+              "status": "verified"
             },
             {
               "slideIndex": 1,
-              "label": "2. Blok Emas: when Button.Click"
+              "label": "2. Blok Emas: when Button.Click",
+              "status": "verified"
             },
             {
               "slideIndex": 2,
-              "label": "3. Membaca Input: TextBox.Text"
+              "label": "3. Membaca Input: TextBox.Text",
+              "status": "verified"
             },
             {
               "slideIndex": 3,
-              "label": "4. Menampilkan Output: Label.Text"
+              "label": "4. Menampilkan Output: Label.Text",
+              "status": "verified"
             },
             {
               "slideIndex": 4,
-              "label": "5. Menggabungkan Kata: Blok join"
+              "label": "5. Menggabungkan Kata: Blok join",
+              "status": "verified"
             },
             {
               "slideIndex": 5,
-              "label": "6. Variabel: Memori Sementara Blok"
+              "label": "6. Simulator Tombol Sapaan Cerdas",
+              "status": "verified"
             },
             {
               "slideIndex": 6,
-              "label": "7. Rangkuman & Kuis Cek Pemahaman"
+              "label": "7. Kuis Pemahaman Mandiri",
+              "status": "verified"
+            },
+            {
+              "slideIndex": 7,
+              "label": "8. Rangkuman & Bekal Menuju Modul 1",
+              "status": "verified"
             }
           ],
-          "quizzes": [],
+          "quizzes": [
+            {
+              "question": "Kapan balok-balok yang diletakkan di dalam when Button1.Click do akan dijalankan?",
+              "options": [
+                "A. Setiap 1 detik sekali secara otomatis",
+                "B. Hanya saat tombol ditekan oleh jari pengguna",
+                "C. Saat laptop ditutup",
+                "D. Saat proyek baru dibuat di Designer"
+              ],
+              "answer": 1,
+              "explanation": "Balok event handler hanya aktif mengeksekusi isinya saat tombol ditekan oleh pengguna."
+            }
+          ],
           "sourceStepId": "bridge-ms-01"
         },
         {
@@ -556,19 +659,23 @@
           "bookmarks": [
             {
               "time": 14,
-              "label": "Pengenalan Input Aman"
+              "label": "Pengenalan Input Aman",
+              "status": "verified"
             },
             {
               "time": 255,
-              "label": "Studi Kasus Meminjam Buku"
+              "label": "Studi Kasus Meminjam Buku",
+              "status": "verified"
             },
             {
               "time": 421,
-              "label": "Validasi Input User"
+              "label": "Validasi Input User",
+              "status": "verified"
             },
             {
               "time": 551,
-              "label": "Pengecekan Input"
+              "label": "Pengecekan Input",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -610,7 +717,8 @@
           "bookmarks": [
             {
               "time": 1349,
-              "label": "Instruksi Mini Project"
+              "label": "Instruksi Mini Project",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -656,19 +764,23 @@
           "bookmarks": [
             {
               "time": 1424,
-              "label": "Pengenalan Flowchart"
+              "label": "Pengenalan Flowchart",
+              "status": "verified"
             },
             {
               "time": 1499,
-              "label": "Pentingnya Flowchart"
+              "label": "Pentingnya Flowchart",
+              "status": "verified"
             },
             {
               "time": 1794,
-              "label": "Komponen Flowchart"
+              "label": "Komponen Flowchart",
+              "status": "verified"
             },
             {
               "time": 2037,
-              "label": "Menyusun Flowchart"
+              "label": "Menyusun Flowchart",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -708,19 +820,25 @@
           "bookmarks": [
             {
               "time": 2118,
-              "label": "Apa Itu Privacy?"
+              "label": "Apa Itu Privacy?",
+              "status": "verified"
             },
             {
               "time": 2337,
-              "label": "Empat Prinsip Data Privacy"
+              "label": "Empat Prinsip Data Privacy",
+              "status": "verified"
             },
             {
               "time": 2527,
-              "label": "Menerapkan Data Privacy"
+              "label": "Menerapkan Data Privacy",
+              "status": "verified"
             },
             {
               "time": 2591,
-              "label": "Memahami Data Privacy"
+              "label": "Memahami Data Privacy",
+              "status": "review_required",
+              "outOfBounds": true,
+              "note": "Bookmark (2591s) melewati endSeconds (2572s)."
             }
           ],
           "quizzes": [
@@ -760,7 +878,8 @@
           "bookmarks": [
             {
               "time": 2584,
-              "label": "Instruksi Mini Project"
+              "label": "Instruksi Mini Project",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -806,15 +925,18 @@
           "bookmarks": [
             {
               "time": 10,
-              "label": "Pengantar Data Pribadi"
+              "label": "Pengantar Data Pribadi",
+              "status": "verified"
             },
             {
               "time": 300,
-              "label": "Data Sensitif vs Publik"
+              "label": "Data Sensitif vs Publik",
+              "status": "verified"
             },
             {
               "time": 600,
-              "label": "Penggunaan Data di Aplikasi"
+              "label": "Penggunaan Data di Aplikasi",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -893,15 +1015,18 @@
           "bookmarks": [
             {
               "time": 900,
-              "label": "Etika Berinternet"
+              "label": "Etika Berinternet",
+              "status": "verified"
             },
             {
               "time": 1200,
-              "label": "Phishing & Penipuan"
+              "label": "Phishing & Penipuan",
+              "status": "verified"
             },
             {
               "time": 1400,
-              "label": "Membuat Password Kuat"
+              "label": "Membuat Password Kuat",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -997,19 +1122,23 @@
           "bookmarks": [
             {
               "time": 10,
-              "label": "Pendahuluan"
+              "label": "Pendahuluan",
+              "status": "verified"
             },
             {
               "time": 60,
-              "label": "Logika Percabangan"
+              "label": "Logika Percabangan",
+              "status": "verified"
             },
             {
               "time": 120,
-              "label": "If-Then-Else"
+              "label": "If-Then-Else",
+              "status": "verified"
             },
             {
               "time": 300,
-              "label": "Flowchart"
+              "label": "Flowchart",
+              "status": "verified"
             }
           ],
           "summaryHtml": "\n      <header class=\"reading-header\">\n        <div>\n          <p class=\"label\">Materi Bacaan 01</p>\n          <h3>PERCABANGAN GANDA: Logika di Dunia Nyata</h3>\n        </div>\n      </header>\n      <article class=\"reading-section\">\n        <h4>Ribuan Pilihan Setiap Hari 🤯</h4>\n<div class=\"slide-text\">\n<p>Tahukah kamu bahwa otak kita membuat ribuan pilihan setiap harinya?</p>\n<ul>\n    <li>Jam berapa harus bangun?</li>\n    <li>Baju apa yang harus dipakai?</li>\n    <li>Makan ayam atau ikan?</li>\n</ul>\n<p>Proses memilih inilah yang dalam ilmu komputer disebut <strong>Logika Percabangan</strong>.</p>\n</div>\n\n        <h4>Apa Itu Percabangan? 🤔</h4>\n<div class=\"slide-text\">\n<p>Percabangan berarti menentukan jalan berdasarkan suatu <strong>kondisi</strong>.</p>\n<div class=\"quote-box\">\"Jika (IF) hari ini hujan, maka (THEN) aku bawa payung.\" ☔</div>\n<p>Jika kondisi \"hujan\" benar, maka instruksi \"bawa payung\" dilakukan. Ini adalah contoh percabangan tunggal.</p>\n</div>\n\n        <h4>Kelemahan Kondisi Tunggal 🛑</h4>\n<div class=\"slide-text\">\n<p>Bayangkan robot penjaga dengan perintah: <strong>\"Jika ada tamu, bukakan pintu.\"</strong></p>\n<p>Apa yang terjadi jika tamu itu adalah pencuri yang tidak dikenal? Robot tetap membukakan pintu!</p>\n<p>Ini karena robot hanya punya satu kondisi tanpa jalan keluar alternatif.</p>\n</div>\n\n        <h4>If-Then-Else (Ganda) 🔀</h4>\n<div class=\"slide-text\">\n<p>Untuk membuat robot cerdas, kita gunakan <strong>Else (Selain itu)</strong>.</p>\n<ul>\n    <li><strong>Jika (If)</strong> tamu adalah orang yang dikenal, <strong>Maka (Then)</strong> bukakan pintu.</li>\n    <li><strong>Selain itu (Else)</strong>, bunyikan alarm peringatan! 🚨</li>\n</ul>\n<p>Sekarang robot tahu harus berbuat apa di kedua situasi.</p>\n</div>\n\n        <h4>Analogi: Lampu Lalu Lintas 🚥</h4>\n<div class=\"slide-text\">\n<div style=\"background: #C8E6C9; padding: 20px; border: 3px solid var(--black); border-radius: 12px;\">\n    <strong>Logika Lampu Pejalan Kaki</strong><br><br>\n    <strong>Jika (If)</strong> tombol ditekan oleh pejalan kaki,<br>\n    <strong>Maka (Then)</strong> Nyalakan lampu merah untuk mobil.<br>\n    <strong>Selain itu (Else)</strong>,<br>\n    Biarkan lampu hijau menyala untuk mobil.\n</div>\n</div>\n\n        <h4>Analogi: Game Over 🎮</h4>\n<div class=\"slide-text\">\n<div style=\"background: #FFF9C4; padding: 20px; border: 3px solid var(--black); border-radius: 12px;\">\n    <strong>Logika Nyawa Pemain</strong><br><br>\n    <strong>Jika (If)</strong> nyawa pemain habis (0),<br>\n    <strong>Maka (Then)</strong> Tampilkan layar \"Game Over\".<br>\n    <strong>Selain itu (Else)</strong>,<br>\n    Lanjutkan permainan seperti biasa.\n</div>\n</div>\n\n        <h4>Menggambar Logika (Flowchart) 🗺️</h4>\n<div class=\"slide-text\">\n<p>Programmer menjelaskan logika ini ke dalam gambar yang disebut <strong>Flowchart</strong>.</p>\n<ul>\n    <li><strong>Oval:</strong> Mulai / Selesai (Start/End)</li>\n    <li><strong>Persegi:</strong> Proses / Tindakan / Perintah</li>\n    <li><strong>Belah Ketupat 🔷:</strong> Pertanyaan Kondisi (Bercabang 2 jalan: YA dan TIDAK)</li>\n</ul>\n</div>\n\n        <h4>Contoh Flowchart Hujan 🔷</h4>\n<div class=\"slide-text\">\n<div class=\"fc-container\">\n    <div class=\"fc-node fc-oval\">Mulai</div>\n    <div class=\"fc-arrow-down\"></div>\n    <div class=\"fc-diamond-wrapper\">\n        <div class=\"fc-diamond\"></div>\n        <div class=\"fc-diamond-text\">Apakah<br>Hujan?</div>\n    </div>\n    \n    <div class=\"fc-row\" style=\"margin-top: 5px;\">\n        <div style=\"text-align:right; margin-right: 5px; font-weight:bold; color:var(--red);\">TIDAK</div>\n        <div class=\"fc-arrow-left\" style=\"transform: scaleX(-1);\"></div>\n        <div style=\"width: 100px;\"></div>\n        <div class=\"fc-arrow-right\"></div>\n        <div style=\"text-align:left; margin-left: 5px; font-weight:bold; color:var(--green);\">YA</div>\n    </div>\n    \n    <div class=\"fc-row\" style=\"gap: 20px; margin-top: 5px;\">\n        <div class=\"fc-node fc-rect\" style=\"background-color:#FFCDD2;\">Pakai Topi</div>\n        <div class=\"fc-node fc-rect\" style=\"background-color:#C8E6C9;\">Bawa Payung</div>\n    </div>\n</div>\n</div>\n\n        <h4>Tugas Mandiri 🕵️‍♂️</h4>\n<div class=\"slide-text\">\n<div class=\"mini-project-card\">\n    <h3>Detektif Flowchart!</h3>\n    <p>1. Amati sistem lampu taman yang menyala malam hari.<br>\n    2. Gambarkan flowchart <strong>If-Then-Else</strong> di kertasmu.<br>\n    3. Tentukan pertanyaan di dalam Belah Ketupat (Misal: Apakah sudah gelap?).<br>\n    4. Tentukan aksi jika YA, dan jika TIDAK.</p>\n</div>\n</div>\n      </article>",
@@ -1068,19 +1197,23 @@
           "bookmarks": [
             {
               "time": 490,
-              "label": "App Inventor"
+              "label": "App Inventor",
+              "status": "verified"
             },
             {
               "time": 540,
-              "label": "UI Designer"
+              "label": "UI Designer",
+              "status": "verified"
             },
             {
               "time": 600,
-              "label": "Blok Event"
+              "label": "Blok Event",
+              "status": "verified"
             },
             {
               "time": 700,
-              "label": "Logika"
+              "label": "Logika",
+              "status": "verified"
             }
           ],
           "summaryHtml": "\n      <header class=\"reading-header\">\n        <div>\n          <p class=\"label\">Materi Bacaan 02</p>\n          <h3>APP INVENTOR: Percabangan Blok</h3>\n        </div>\n      </header>\n      <article class=\"reading-section\">\n        <h4>Blok IF di App Inventor 🧩</h4>\n<div class=\"slide-text\">\n<p>Di App Inventor, logika percabangan bersembunyi di laci <strong>Control</strong> yang berwarna coklat.</p>\n<div style=\"margin: 20px 0;\">\n    <div class=\"ai-block ai-control\">\n        <div class=\"ai-event-header\">\n            <span class=\"ai-mutator\"></span> if <div class=\"ai-block ai-math\"> </div>\n        </div>\n        <div class=\"ai-event-do\">then</div>\n        <div class=\"ai-event-body\">\n            \n        </div>\n    </div>\n</div>\n<p>Perhatikan bahwa bentuk blok ini seperti penjepit (bracket) yang bisa memeluk blok lainnya di dalam <code>then</code>.</p>\n</div>\n\n        <h4>Memunculkan ELSE dengan Mutator ⚙️</h4>\n<div class=\"slide-text\">\n<p>Awalnya, blok IF hanya punya \"Then\". Tidak ada \"Else\" sama sekali.</p>\n<p>Untuk menambah Else, kamu HARUS mengklik ikon <strong>Roda Gigi (Mutator) ⚙️</strong> kecil warna biru di sudut kiri atas blok tersebut.</p>\n<p>Sebuah pop-up kecil akan muncul, tarik blok <code>else</code> dan gabungkan ke blok <code>if</code> di dalam pop-up tersebut.</p>\n</div>\n\n        <h4>Blok Lengkap If-Then-Else 🔀</h4>\n<div class=\"slide-text\">\n<p>Setelah menarik blok else, blok aslimu akan berubah menjadi seperti ini:</p>\n<div style=\"margin: 20px 0;\">\n    <div class=\"ai-block ai-control\">\n        <div class=\"ai-event-header\">\n            <span class=\"ai-mutator\"></span> if <div class=\"ai-block ai-math\"> </div>\n        </div>\n        <div class=\"ai-event-do\">then</div>\n        <div class=\"ai-event-body\"></div>\n        <div class=\"ai-event-do\">else</div>\n        <div class=\"ai-event-body\"></div>\n    </div>\n</div>\n<p>Sekarang kamu punya 2 tempat kosong untuk diisi aksi yang berbeda!</p>\n</div>\n\n        <h4>UI Designer: Aplikasi Kelulusan 🎨</h4>\n<div class=\"slide-text\">\n<p>Mari kita siapkan tampilan layar aplikasi di halaman Designer terlebih dahulu.</p>\n    <div class=\"designer-container\" style=\"margin-top: 30px;\">\n        <div class=\"phone-mockup\">\n            <div class=\"phone-screen\">\n                <div style=\"background:#ddd; padding:5px; text-align:center; font-size:12px; font-weight:bold; border-radius:4px; margin-bottom:10px;\">Screen1</div>\n                <div class=\"ui-comp ui-lbl\">Masukkan Nilai Ujian:</div><div class=\"ui-comp ui-txt\">Hint: 80</div><div class=\"ui-comp ui-btn\">CEK KELULUSAN</div><div class=\"ui-comp ui-lbl\">Hasil: ???</div>\n            </div>\n        </div>\n        <div class=\"properties-panel\">\n            <h3 style=\"margin-bottom:15px; border-bottom:3px solid var(--black); padding-bottom:5px;\">⚙️ Properties</h3>\n            <div class=\"prop-item\"><strong>TextBox1</strong><span>Rename jadi txtNilai</span></div><div class=\"prop-item\"><strong>Button1</strong><span>Rename jadi btnCek</span></div><div class=\"prop-item\"><strong>Label2</strong><span>Rename jadi lblHasil</span></div>\n        </div>\n    </div>\n</div>\n\n        <h4>Koding Blok Event (When Click) 👆</h4>\n<div class=\"slide-text\">\n<p>Pertama, kita ambil blok kejadian (event) berwarna emas dari laci <strong>btnCek</strong>.</p>\n<div style=\"margin: 20px 0;\">\n    <div class=\"ai-block ai-event\">\n        <div class=\"ai-event-header\">\n            when <div class=\"ai-dropdown\">btnCek</div> .Click\n        </div>\n        <div class=\"ai-event-do\">do</div>\n        <div class=\"ai-event-body\">\n            \n        </div>\n    </div>\n</div>\n<p>Ini artinya: \"Ketika tombol btnCek diklik, lakukan apa yang ada di dalam pelukanku\".</p>\n</div>\n\n        <h4>Menambahkan Logika & Kondisi 🧠</h4>\n<div class=\"slide-text\">\n<p>Lalu kita masukkan blok IF dan kondisi matematika (biru) dari laci Math.</p>\n<div style=\"margin: 20px 0;\">\n    <div class=\"ai-block ai-event\">\n        <div class=\"ai-event-header\">\n            when <div class=\"ai-dropdown\">btnCek</div> .Click\n        </div>\n        <div class=\"ai-event-do\">do</div>\n        <div class=\"ai-event-body\">\n            <div class=\"ai-block ai-control\">\n                <div class=\"ai-event-header\">\n                    <span class=\"ai-mutator\"></span> if <div class=\"ai-block ai-math\"><div class=\"ai-dropdown\">txtNilai</div> .Text ≥ 75</div>\n                </div>\n                <div class=\"ai-event-do\">then</div>\n                <div class=\"ai-event-body\"></div>\n                <div class=\"ai-event-do\">else</div>\n                <div class=\"ai-event-body\"></div>\n            </div>\n        </div>\n    </div>\n</div>\n</div>\n\n        <h4>Mengisi Aksi (Set Label Text) ✏️</h4>\n<div class=\"slide-text\">\n<p>Terakhir, kita gunakan blok hijau tua dari laci lblHasil untuk mengubah teks sesuai kondisi!</p>\n<div style=\"margin: 20px 0;\">\n    <div class=\"ai-block ai-event\" style=\"transform: scale(0.9); transform-origin: top left;\">\n        <div class=\"ai-event-header\">\n            when <div class=\"ai-dropdown\">btnCek</div> .Click\n        </div>\n        <div class=\"ai-event-do\">do</div>\n        <div class=\"ai-event-body\">\n            <div class=\"ai-block ai-control\">\n                <div class=\"ai-event-header\">\n                    <span class=\"ai-mutator\"></span> if <div class=\"ai-block ai-math\"><div class=\"ai-dropdown\">txtNilai</div> .Text ≥ 75</div>\n                </div>\n                <div class=\"ai-event-do\">then</div>\n                <div class=\"ai-event-body\">\n                    <div class=\"ai-block ai-set\">\n                        set <div class=\"ai-dropdown\">lblHasil</div> .Text to <div class=\"ai-block ai-text\">\"Kamu Lulus!\"</div>\n                    </div>\n                </div>\n                <div class=\"ai-event-do\">else</div>\n                <div class=\"ai-event-body\">\n                    <div class=\"ai-block ai-set\">\n                        set <div class=\"ai-dropdown\">lblHasil</div> .Text to <div class=\"ai-block ai-text\">\"Belajar Lagi!\"</div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n</div>\n\n        <h4>Latihan Mandiri 🚀</h4>\n<div class=\"slide-text\">\n<div class=\"mini-project-card\">\n    <h3>Aplikasi Cek Suhu</h3>\n    <p>1. Buat aplikasi sederhana dengan input Suhu (TextBox).<br>\n    2. <strong>If (Suhu &gt; 30)</strong>, then set label jadi \"Panas Sekali!\"<br>\n    3. <strong>Else</strong>, set label jadi \"Cuaca Nyaman.\"<br>\n    4. Test di Companion!</p>\n</div>\n</div>\n      </article>",
@@ -1119,19 +1252,23 @@
           "bookmarks": [
             {
               "time": 740,
-              "label": "Literasi Keuangan"
+              "label": "Literasi Keuangan",
+              "status": "verified"
             },
             {
               "time": 840,
-              "label": "Uang Digital"
+              "label": "Uang Digital",
+              "status": "verified"
             },
             {
               "time": 900,
-              "label": "E-Wallet"
+              "label": "E-Wallet",
+              "status": "verified"
             },
             {
               "time": 1100,
-              "label": "QRIS"
+              "label": "QRIS",
+              "status": "verified"
             }
           ],
           "summaryHtml": "\n      <header class=\"reading-header\">\n        <div>\n          <p class=\"label\">Materi Bacaan 03</p>\n          <h3>LITERASI KEUANGAN: Uang Digital</h3>\n        </div>\n      </header>\n      <article class=\"reading-section\">\n        <h4>Sejarah Uang Singkat ⏳</h4>\n<div class=\"slide-text\">\n<p>Ribuan tahun lalu, orang bertukar barang langsung (Barter). Lalu muncul koin emas, kemudian uang kertas yang mudah dibawa.</p>\n<p>Hari ini? Uang bahkan tidak terlihat bentuknya. Hanya berupa angka di sistem komputer!</p>\n<p>Itulah yang disebut dengan Era Uang Digital.</p>\n</div>\n\n        <h4>Pendapatan (Income) 📥</h4>\n<div class=\"slide-text\">\n<p><strong>Pendapatan</strong> = Semua uang yang mengalir masuk ke kantongmu.</p>\n<div class=\"quote-box\" style=\"background-color: var(--blue);\">Sebutkan 3 sumber pendapatanmu saat ini! 💰</div>\n<p>Mungkin dari uang saku mingguan orang tua, amplop lebaran, atau hasil jualan stiker di kelas.</p>\n</div>\n\n        <h4>Pengeluaran (Expense) 📤</h4>\n<div class=\"slide-text\">\n<p><strong>Pengeluaran</strong> = Uang yang keluar untuk ditukar dengan barang/jasa.</p>\n<p>Membeli makanan, bayar ongkos angkot, hingga top-up diamond game adalah pengeluaran.</p>\n<p>Jika pengeluaran lebih besar dari pendapatan? Kamu akan berhutang!</p>\n</div>\n\n        <h4>Tabungan (Savings) 🐷</h4>\n<div class=\"slide-text\">\n<p><strong>Rumus Sakti: Tabungan = Pendapatan - Pengeluaran</strong></p>\n<p>Tabungan berfungsi sebagai \"benteng pertahanan\" ketika ada hal darurat atau ketika kamu ingin membeli sesuatu yang mahal di masa depan tanpa harus meminjam uang.</p>\n</div>\n\n        <h4>E-Wallet (Dompet Digital) 📱</h4>\n<div class=\"slide-text\">\n<p>Sama seperti dompet kulit, tapi di dalam handphone.</p>\n<div style=\"background-color: #E3F2FD; padding: 20px; border: 3px solid var(--black); border-radius: 12px; margin: 15px 0;\">\n    Aplikasi seperti Gopay, OVO, Dana, LinkAja bertugas menjaga \"saldo\" digital kita. Uang fisik kita diserahkan ke sistem mereka, ditukar dengan saldo digital.\n</div>\n</div>\n\n        <h4>QRIS Bikin Semua Mudah ⬛⬜</h4>\n<div class=\"slide-text\">\n<p><strong>QRIS</strong> (Quick Response Code Indonesian Standard)</p>\n<p>Di balik kotak-kotak hitam putih QRIS, tersimpan data rekening penjual. Saat kameramu memindainya, aplikasi e-wallet langsung tahu ke mana uang harus ditransfer dalam hitungan detik!</p>\n</div>\n\n        <h4>Diskusi Kelompok 🗣️</h4>\n<div class=\"slide-text\">\n<div class=\"mini-project-card\">\n    <h3>Bahaya Uang Digital?</h3>\n    <p>Apakah uang digital membuat orang lebih boros?<br>\n    Karena kita tidak melihat uang fisiknya berkurang, kadang kita terus men-scan QRIS sampai saldo habis.<br>\n    Diskusikan dengan temanmu bagaimana cara mengatasinya!</p>\n</div>\n</div>\n      </article>",
@@ -1170,15 +1307,18 @@
           "bookmarks": [
             {
               "time": 1190,
-              "label": "Needs vs Wants"
+              "label": "Needs vs Wants",
+              "status": "verified"
             },
             {
               "time": 1300,
-              "label": "Kebutuhan & Keinginan"
+              "label": "Kebutuhan & Keinginan",
+              "status": "verified"
             },
             {
               "time": 1400,
-              "label": "Aturan 50-30-20"
+              "label": "Aturan 50-30-20",
+              "status": "verified"
             }
           ],
           "summaryHtml": "\n      <header class=\"reading-header\">\n        <div>\n          <p class=\"label\">Materi Bacaan 04</p>\n          <h3>LITERASI KEUANGAN: Needs vs Wants</h3>\n        </div>\n      </header>\n      <article class=\"reading-section\">\n        <h4>Jebakan Batman Finansial 🦇</h4>\n<div class=\"slide-text\">\n<p>Banyak orang kehabisan uang bukan karena pendapatannya kecil, tapi karena mereka tidak bisa membedakan mana yang <strong>BUTUH</strong> dan mana yang <strong>INGIN</strong>.</p>\n<p>Ini adalah jebakan terbesar dalam mengelola uang saku!</p>\n</div>\n\n        <h4>Kebutuhan (Needs) 🍞</h4>\n<div class=\"slide-text\">\n<p>Kebutuhan (Needs) adalah hal yang <strong>HARUS</strong> dipenuhi.</p>\n<ul>\n    <li>Tanpanya, kita sakit (Makanan pokok)</li>\n    <li>Tanpanya, kita dihukum (Seragam sekolah)</li>\n    <li>Tanpanya, kita tidak bisa belajar (Alat tulis, Kuota tugas)</li>\n</ul>\n</div>\n\n        <h4>Keinginan (Wants) 🎮</h4>\n<div class=\"slide-text\">\n<p>Keinginan (Wants) adalah hal yang dipengaruhi nafsu atau gengsi.</p>\n<ul>\n    <li>Kamu sudah punya sepatu yang bagus, tapi ingin beli sepatu merk Hypebeast.</li>\n    <li>Kamu sudah minum air putih, tapi ingin beli Thai Tea Boba yang mahal.</li>\n</ul>\n<p>Keinginan tidak salah, tapi <strong>harus ditunda</strong> sampai uang lebih.</p>\n</div>\n\n        <h4>Aturan 50-30-20 📊</h4>\n<div class=\"slide-text\">\n<p>Salah satu cara membagi uang saku:</p>\n<div style=\"background-color: #FFF9C4; padding: 20px; border: 3px solid var(--black); border-radius: 12px;\">\n    <strong>50%</strong> untuk Kebutuhan (Needs)<br>\n    <strong>30%</strong> untuk Keinginan (Wants)<br>\n    <strong>20%</strong> untuk Tabungan (Savings)\n</div>\n<p>Tentu saja porsi Tabungan bisa lebih besar jika kamu sedang hemat!</p>\n</div>\n\n        <h4>Aturan Tunggu 24 Jam 🛑</h4>\n<div class=\"slide-text\">\n<div class=\"quote-box\" style=\"background-color: var(--black); color: var(--pink);\">Jangan beli langsung! Tunggu 1 hari!</div>\n<p>Seringkali, keinginan membeli (impulsive buying) akan hilang setelah kita tidur satu malam.</p>\n<p>Jika besoknya kamu merasa tidak butuh lagi, selamat! Kamu baru saja menghemat uang.</p>\n</div>\n\n        <h4>Latihan: Buat Budgetmu 📝</h4>\n<div class=\"slide-text\">\n<div class=\"mini-project-card\">\n    <h3>Jadilah Menteri Keuangan!</h3>\n    <p>1. Anggap uang sakumu minggu ini Rp 50.000.<br>\n    2. Tulis di kertas: 2 Needs (Kebutuhan) yang pasti dibeli.<br>\n    3. Tulis 1 Wants (Keinginan) yang ingin dibeli jika sisa uang cukup.<br>\n    4. Tulis alokasi Tabungan! (Minimal Rp 5.000)</p>\n</div>\n</div>\n      </article>",
@@ -1228,15 +1368,18 @@
           "bookmarks": [
             {
               "time": 1620,
-              "label": "App Keuangan"
+              "label": "App Keuangan",
+              "status": "verified"
             },
             {
               "time": 1700,
-              "label": "UI Nabung"
+              "label": "UI Nabung",
+              "status": "verified"
             },
             {
               "time": 1800,
-              "label": "Blok Keuangan"
+              "label": "Blok Keuangan",
+              "status": "verified"
             }
           ],
           "summaryHtml": "\n      <header class=\"reading-header\">\n        <div>\n          <p class=\"label\">Materi Bacaan 05</p>\n          <h3>APP INVENTOR + FINANSIAL: Aplikasi Kalkulator Keuangan</h3>\n        </div>\n      </header>\n      <article class=\"reading-section\">\n        <h4>Mengapa Komputer & Uang? 🤖</h4>\n<div class=\"slide-text\">\n<p>Manusia sering lapar mata dan salah hitung. Komputer tidak pernah bohong!</p>\n<p>Kita bisa menggabungkan <strong>Logika IF</strong> dengan <strong>Matematika Keuangan</strong> di App Inventor untuk menjaga kita tetap disiplin berhemat.</p>\n</div>\n\n        <h4>UI Designer: Aplikasi Nabung 🎨</h4>\n<div class=\"slide-text\">\n<p>Kita buat desain Kalkulator Target Tabungan.</p>\n    <div class=\"designer-container\" style=\"margin-top: 30px;\">\n        <div class=\"phone-mockup\">\n            <div class=\"phone-screen\">\n                <div style=\"background:#ddd; padding:5px; text-align:center; font-size:12px; font-weight:bold; border-radius:4px; margin-bottom:10px;\">Screen1</div>\n                <div class=\"ui-comp ui-lbl\">Harga Barang Impian (Rp):</div><div class=\"ui-comp ui-txt\">Misal: 50000</div><div class=\"ui-comp ui-lbl\">Tabungan Saat Ini (Rp):</div><div class=\"ui-comp ui-txt\">Misal: 20000</div><div class=\"ui-comp ui-btn\">CEK BISA BELI?</div><div class=\"ui-comp ui-lbl\">Status: ???</div>\n            </div>\n        </div>\n        <div class=\"properties-panel\">\n            <h3 style=\"margin-bottom:15px; border-bottom:3px solid var(--black); padding-bottom:5px;\">⚙️ Properties</h3>\n            <div class=\"prop-item\"><strong>TextBox_Harga</strong><span>Input tipe: Numbers Only</span></div><div class=\"prop-item\"><strong>TextBox_Tabungan</strong><span>Input tipe: Numbers Only</span></div><div class=\"prop-item\"><strong>Label_Status</strong><span>Font: Bold, Size: 18</span></div>\n        </div>\n    </div>\n</div>\n\n        <h4>Menyusun Blok Logika Keuangan 🧩</h4>\n<div class=\"slide-text\">\n<p>Gunakan operasi perbandingan (≥) dari laci Math.</p>\n<div style=\"margin: 20px 0;\">\n    <div class=\"ai-block ai-event\" style=\"transform: scale(0.9); transform-origin: top left;\">\n        <div class=\"ai-event-header\">\n            when <div class=\"ai-dropdown\">btnCek</div> .Click\n        </div>\n        <div class=\"ai-event-do\">do</div>\n        <div class=\"ai-event-body\">\n            <div class=\"ai-block ai-control\">\n                <div class=\"ai-event-header\">\n                    <span class=\"ai-mutator\"></span> if <div class=\"ai-block ai-math\"><div class=\"ai-dropdown\">txtTabungan</div> .Text ≥ <div class=\"ai-dropdown\">txtHarga</div> .Text</div>\n                </div>\n                <div class=\"ai-event-do\">then</div>\n                <div class=\"ai-event-body\">\n                    <div class=\"ai-block ai-set\">\n                        set <div class=\"ai-dropdown\">lblStatus</div> .Text to <div class=\"ai-block ai-text\">\"Uang Cukup! Boleh Beli!\"</div>\n                    </div>\n                </div>\n                <div class=\"ai-event-do\">else</div>\n                <div class=\"ai-event-body\">\n                    <div class=\"ai-block ai-set\">\n                        set <div class=\"ai-dropdown\">lblStatus</div> .Text to <div class=\"ai-block ai-text\">\"Nabung lagi ya!\"</div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n</div>\n\n        <h4>Menghitung Kekurangan (-) ➖</h4>\n<div class=\"slide-text\">\n<p>Jika uang tidak cukup (Else), aplikasinya bisa menghitung kekurangan!</p>\n<p>Ambil blok <strong>Math Minus (-)</strong>.</p>\n<div style=\"margin: 20px 0;\">\n    <div class=\"ai-block ai-math\">\n        <div class=\"ai-dropdown\">txtHarga</div> .Text - <div class=\"ai-dropdown\">txtTabungan</div> .Text\n    </div>\n</div>\n<p>Ini adalah logika pengurangan dasar: Harga Barang dikurangi Tabungan kita.</p>\n</div>\n\n        <h4>Blok Join (Menggabung Teks) 🔗</h4>\n<div class=\"slide-text\">\n<p>Untuk membuat kalimat seperti \"Kurang Rp 30000\", kita butuh blok <code>join</code> dari laci Text (Pink/Merah Muda).</p>\n<div style=\"margin: 20px 0;\">\n    <div class=\"ai-block ai-join\" style=\"background-color: #C2185B;\">\n        <div style=\"display:flex; gap:5px; align-items:center;\">\n            <div style=\"margin-right:5px;\">join</div>\n            <div class=\"ai-block ai-text\">\"Kurang Rp \"</div>\n        </div>\n        <div style=\"display:flex; gap:5px; align-items:center; margin-left:30px;\">\n            <div class=\"ai-block ai-math\"> <div class=\"ai-dropdown\">txtHarga</div> .Text - <div class=\"ai-dropdown\">txtTabungan</div> .Text</div>\n        </div>\n    </div>\n</div>\n<p>Masukkan hasil Join ini ke <code>set Label_Status.Text to</code> pada blok Else!</p>\n</div>\n\n        <h4>Mini Project Final 🏆</h4>\n<div class=\"slide-text\">\n<div class=\"mini-project-card\">\n    <h3>Aplikasi Target Tabungan!</h3>\n    <p>Praktik di MIT App Inventor sekarang!</p>\n    <ol>\n        <li>Buat desain UI (TextBox Tabungan, TextBox Harga, Tombol Cek).</li>\n        <li>Susun blok If-Then-Else membandingkan nilai keduanya.</li>\n        <li>Tambahkan blok Math dan Join di bagian Else agar aplikasi memberi tahu berapa selisih kekurangannya.</li>\n        <li>Jalankan di HP dengan MIT Companion dan tunjukkan hasilnya!</li>\n    </ol>\n</div>\n</div>\n      </article>",
@@ -1275,7 +1418,8 @@
           "bookmarks": [
             {
               "time": 1930,
-              "label": "Mini Project"
+              "label": "Mini Project",
+              "status": "verified"
             }
           ],
           "summaryHtml": "\n      <header class=\"reading-header\">\n        <div>\n          <p class=\"label\">Materi Bacaan 06</p>\n          <h3>Tugas Akhir: Pengganti Kehadiran</h3>\n        </div>\n      </header>\n      <article class=\"reading-section\">\n        <h4>Aplikasi Target Tabungan! 🏆</h4>\n        <div class=\"slide-text\">\n          <div class=\"mini-project-card\">\n              <p>Praktik di MIT App Inventor sekarang!</p>\n              <ol>\n                  <li>Buat desain UI (TextBox Tabungan, TextBox Harga, Tombol Cek).</li>\n                  <li>Susun blok If-Then-Else membandingkan nilai keduanya.</li>\n                  <li>Tambahkan blok Math dan Join di bagian Else agar aplikasi memberi tahu berapa selisih kekurangannya.</li>\n                  <li>Jalankan di HP dengan MIT Companion dan tunjukkan hasilnya!</li>\n              </ol>\n              <p style=\"margin-top:20px;\"><strong>Submit link/screenshot aplikasi kamu pada form di bawah ini sebagai bukti kehadiran.</strong></p>\n          </div>\n        </div>\n      </article>",
@@ -1327,31 +1471,40 @@
           "bookmarks": [
             {
               "time": 10,
-              "label": "Pengenalan Procedures"
+              "label": "Pengenalan Procedures",
+              "status": "verified"
             },
             {
               "time": 119,
-              "label": "Kebiasaan buruk copy paste"
+              "label": "Kebiasaan buruk copy paste",
+              "status": "verified"
             },
             {
               "time": 286,
-              "label": "Prosedur atau Function"
+              "label": "Prosedur atau Function",
+              "status": "verified"
             },
             {
               "time": 442,
-              "label": "Kategori Prosedur"
+              "label": "Kategori Prosedur",
+              "status": "verified"
             },
             {
               "time": 541,
-              "label": "Prosedur Do"
+              "label": "Prosedur Do",
+              "status": "verified"
             },
             {
               "time": 696,
-              "label": "Prosedur Result"
+              "label": "Prosedur Result",
+              "status": "verified"
             },
             {
               "time": 803,
-              "label": "Mini Project Kalkulator"
+              "label": "Mini Project Kalkulator",
+              "status": "review_required",
+              "outOfBounds": true,
+              "note": "Bookmark (803s) melewati endSeconds (794s)."
             }
           ],
           "quizzes": [
@@ -1394,7 +1547,8 @@
           "bookmarks": [
             {
               "time": 798,
-              "label": "Instruksi Mini Project"
+              "label": "Instruksi Mini Project",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -1440,11 +1594,13 @@
           "bookmarks": [
             {
               "time": 883,
-              "label": "Modularisasi"
+              "label": "Modularisasi",
+              "status": "verified"
             },
             {
               "time": 991,
-              "label": "Spaghetti Code vs Modular"
+              "label": "Spaghetti Code vs Modular",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -1485,54 +1641,75 @@
             "ms-3-3"
           ],
           "learningObjectives": [
-            "Mengenali tanda error pada App Inventor (silang merah vs peringatan kuning)",
-            "Menerapkan teknik isolasi: menguji balok satu per satu dengan Do It",
-            "Membuat tabel kasus uji: input normal, input kosong, dan input ekstrem",
-            "Menghargai privasi digital: tidak pernah menyimpan password atau PIN dalam teks polos"
+            "Mengenali tanda error pada App Inventor (blok bertanda silang merah / tanda seru kuning)",
+            "Menerapkan teknik isolasi: menguji blok satu per satu dengan Do It",
+            "Membuat tabel uji kasus (Test Cases): input normal, input kosong, dan input angka negatif",
+            "Menghargai privasi digital: tidak pernah menyimpan password atau PIN ke dalam teks biasa"
           ],
           "practice": {
             "type": "simulation",
-            "description": "Menemukan dan memperbaiki balok yang tertukar antara setter dan getter"
+            "description": "Menemukan blok yang tertukar antara set Label.Text dan get TextBox.Text"
           },
           "completionCriteria": {
             "quizScoreMin": 100,
-            "interactiveCompleted": true
+            "interactiveCompleted": true,
+            "description": "Memperbaiki skenario blok salah pada tabel uji kasus"
           },
           "bookmarks": [
             {
               "slideIndex": 0,
-              "label": "1. Menjadi Detektif Koding"
+              "label": "1. Ketika Aplikasi Bertingkah Aneh",
+              "status": "verified"
             },
             {
               "slideIndex": 1,
-              "label": "2. Silang Merah vs Segitiga Kuning"
+              "label": "2. Indikator Error App Inventor",
+              "status": "verified"
             },
             {
               "slideIndex": 2,
-              "label": "3. Fitur Rahasia Pengujian: 'Do It'"
+              "label": "3. Jurus Isolasi: Fitur Do It",
+              "status": "verified"
             },
             {
               "slideIndex": 3,
-              "label": "4. Membuat Tabel Kasus Uji (Test Cases)"
+              "label": "4. Tabel Uji Kasus (Test Cases)",
+              "status": "verified"
             },
             {
               "slideIndex": 4,
-              "label": "5. Etika & Privasi Perlindungan Data"
+              "label": "5. Etika & Privasi Data Pengguna",
+              "status": "verified"
             },
             {
               "slideIndex": 5,
-              "label": "6. Detektif Balok Tertukar"
+              "label": "6. Ruang Bedah Bug: Temukan Blok yang Tertukar",
+              "status": "verified"
             },
             {
               "slideIndex": 6,
-              "label": "7. Kuis Pemahaman Mandiri"
+              "label": "7. Kuis Pemahaman Mandiri",
+              "status": "verified"
             },
             {
               "slideIndex": 7,
-              "label": "8. Rangkuman & Pintu Masuk Proyek Akhir"
+              "label": "8. Rangkuman & Bekal Menuju Modul 3.5",
+              "status": "verified"
             }
           ],
-          "quizzes": [],
+          "quizzes": [
+            {
+              "question": "Fitur bawaan apa di Blocks Editor yang bisa kita klik kanan pada suatu blok untuk melihat hasil eksekusinya secara instan saat live testing?",
+              "options": [
+                "A. Do It",
+                "B. Delete Block",
+                "C. Duplicate",
+                "D. Collapse Block"
+              ],
+              "answer": 0,
+              "explanation": "Fitur 'Do It' mengeksekusi blok terpilih secara langsung di HP dan menampilkan gelembung hasil outputnya."
+            }
+          ],
           "sourceStepId": "bridge-ms-03"
         },
         {
@@ -1548,27 +1725,33 @@
           "bookmarks": [
             {
               "time": 1206,
-              "label": "Membahas bug dan error"
+              "label": "Membahas bug dan error",
+              "status": "verified"
             },
             {
               "time": 1307,
-              "label": "Apa itu bug?"
+              "label": "Apa itu bug?",
+              "status": "verified"
             },
             {
               "time": 1402,
-              "label": "Bug/crash tipe data"
+              "label": "Bug/crash tipe data",
+              "status": "verified"
             },
             {
               "time": 1461,
-              "label": "Deteksi is a number?"
+              "label": "Deteksi is a number?",
+              "status": "verified"
             },
             {
               "time": 1525,
-              "label": "Fitur rahasia: Do it"
+              "label": "Fitur rahasia: Do it",
+              "status": "verified"
             },
             {
               "time": 1556,
-              "label": "Tiny DB untuk keamanan"
+              "label": "Tiny DB untuk keamanan",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -1611,19 +1794,23 @@
           "bookmarks": [
             {
               "time": 1704,
-              "label": "Mempresentasikan project"
+              "label": "Mempresentasikan project",
+              "status": "verified"
             },
             {
               "time": 1790,
-              "label": "Empat poin presentasi"
+              "label": "Empat poin presentasi",
+              "status": "verified"
             },
             {
               "time": 1903,
-              "label": "Persiapan live demo"
+              "label": "Persiapan live demo",
+              "status": "verified"
             },
             {
               "time": 1955,
-              "label": "Menerima feedback"
+              "label": "Menerima feedback",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -1670,54 +1857,75 @@
             "ms-3-5"
           ],
           "learningObjectives": [
-            "Membedakan memori sementara (variabel hilang saat app tutup) dan persisten (TinyDB tetap tersimpan)",
-            "Menggunakan call TinyDB.StoreValue dengan Tag dan ValueToStore",
-            "Mengambil data dengan call TinyDB.GetValue dan menyediakan valueIfTagNotThere",
+            "Membedakan memori sementara (variabel hilang saat app ditutup) dan persisten (TinyDB tetap tersimpan)",
+            "Menggunakan blok call TinyDB.StoreValue dengan Tag (label) dan ValueToStore (isi)",
+            "Mengambil data dengan call TinyDB.GetValue dan menyediakan ValueIfTagNotThere (nilai default)",
             "Menghapus data tersimpan menggunakan call TinyDB.ClearTag untuk reset saldo"
           ],
           "practice": {
             "type": "simulation",
-            "description": "Simulasi simpan saldo dengan Tag, tutup aplikasi, dan baca kembali nilainya"
+            "description": "Simulasi alur simpan nama dan saldo uang saku lalu membaca kembali nilainya"
           },
           "completionCriteria": {
             "quizScoreMin": 100,
-            "interactiveCompleted": true
+            "interactiveCompleted": true,
+            "description": "Memilih blok yang tepat untuk mencegah error jika data belum pernah disimpan"
           },
           "bookmarks": [
             {
               "slideIndex": 0,
-              "label": "1. Masalah Lupa Ingatan: RAM vs TinyDB"
+              "label": "1. Ke Mana Perginya Data?",
+              "status": "verified"
             },
             {
               "slideIndex": 1,
-              "label": "2. Komponen Non-Visible TinyDB di Storage"
+              "label": "2. Solusi Persisten: TinyDB",
+              "status": "verified"
             },
             {
               "slideIndex": 2,
-              "label": "3. Konsep Tag dan Value"
+              "label": "3. Menyimpan Data: Tag & ValueToStore",
+              "status": "verified"
             },
             {
               "slideIndex": 3,
-              "label": "4. call StoreValue & call GetValue"
+              "label": "4. Mengambil Data: GetValue & Nilai Default",
+              "status": "verified"
             },
             {
               "slideIndex": 4,
-              "label": "5. Mengatur Ulang Data dengan ClearTag"
+              "label": "5. Menghapus Data: ClearTag",
+              "status": "verified"
             },
             {
               "slideIndex": 5,
-              "label": "6. Simulator Penyimpanan Data TinyDB"
+              "label": "6. Simulator Brankas Kas TinyDB",
+              "status": "verified"
             },
             {
               "slideIndex": 6,
-              "label": "7. Kuis Pemahaman Mandiri"
+              "label": "7. Kuis Pemahaman Mandiri",
+              "status": "verified"
             },
             {
               "slideIndex": 7,
-              "label": "8. Rangkuman & Bekal Menuju Modul 4"
+              "label": "8. Rangkuman & Bekal Menuju Modul 4",
+              "status": "verified"
             }
           ],
-          "quizzes": [],
+          "quizzes": [
+            {
+              "question": "Mengapa kita harus mengisi blok 'valueIfTagNotThere' saat memanggil TinyDB.GetValue?",
+              "options": [
+                "A. Agar layar HP tidak pecah",
+                "B. Agar aplikasi tidak error jika data dengan Tag tersebut belum pernah disimpan sebelumnya",
+                "C. Untuk mengirim data otomatis ke server Google",
+                "D. Agar warna teks tombol berubah menjadi hijau"
+              ],
+              "answer": 1,
+              "explanation": "valueIfTagNotThere memberikan nilai cadangan/default jika Tag yang diminta belum pernah tersimpan di HP."
+            }
+          ],
           "sourceStepId": "bridge-ms-02"
         },
         {
@@ -1733,15 +1941,18 @@
           "bookmarks": [
             {
               "time": 1715,
-              "label": "Konsep Database Lokal"
+              "label": "Konsep Database Lokal",
+              "status": "verified"
             },
             {
               "time": 2000,
-              "label": "Fungsi TinyDB"
+              "label": "Fungsi TinyDB",
+              "status": "verified"
             },
             {
               "time": 2300,
-              "label": "Data Sementara vs Permanen"
+              "label": "Data Sementara vs Permanen",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -1801,19 +2012,23 @@
           "bookmarks": [
             {
               "time": 2555,
-              "label": "Menampilkan & Update Data"
+              "label": "Menampilkan & Update Data",
+              "status": "verified"
             },
             {
               "time": 2800,
-              "label": "Menghapus Data (Delete)"
+              "label": "Menghapus Data (Delete)",
+              "status": "verified"
             },
             {
               "time": 3060,
-              "label": "Flowchart Penyimpanan"
+              "label": "Flowchart Penyimpanan",
+              "status": "verified"
             },
             {
               "time": 3150,
-              "label": "Keamanan Data Lokal"
+              "label": "Keamanan Data Lokal",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -1875,7 +2090,8 @@
           "bookmarks": [
             {
               "time": 3285,
-              "label": "Instruksi Mini Project"
+              "label": "Instruksi Mini Project",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -1921,11 +2137,13 @@
           "bookmarks": [
             {
               "time": 2632,
-              "label": "Menganalisis Data Finansial"
+              "label": "Menganalisis Data Finansial",
+              "status": "verified"
             },
             {
               "time": 2664,
-              "label": "Pencatatan Keuangan"
+              "label": "Pencatatan Keuangan",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -1947,7 +2165,11 @@
                   "answer": "B",
                   "explanation": "Benar! Blok 'add items to list' menambahkan data transaksi baru ke daftar riwayat yang sudah ada."
                 }
-              ]
+              ],
+              "type": "manual_checkpoint",
+              "autoplay": false,
+              "status": "review_required",
+              "note": "Waktu kuis sumber (120s) berada di luar rentang segmen video (2621–2844s). Ditetapkan sebagai manual checkpoint untuk mencegah playback error."
             }
           ],
           "summaryHtml": "\n      <header class=\"reading-header\">\n        <div>\n          <p class=\"label\">Materi Bacaan 05</p>\n          <h3>Finansial & Transaksi Digital</h3>\n        </div>\n      </header>\n      <article class=\"reading-section\">\n        <h4>Analisis Data</h4>\n<div class=\"slide-text\">\n<p>Data finansial sederhana adalah catatan tentang uang masuk, uang keluar, sisa uang, dan kebiasaan belanja.</p>\n<p>Untuk SMP, tujuannya bukan belajar akuntansi berat. Tujuannya adalah melihat pola: apakah pengeluaran terlalu besar, apakah ada kebiasaan jajan yang bisa dikurangi, dan apakah uang masih cukup untuk kebutuhan penting.</p>\n<div class=\"quote-box\" style=\"background-color:#E8F5E9;\">Keputusan finansial yang baik dimulai dari mencatat data dengan jujur.</div>\n</div>\n<h4>Contoh Sekitar</h4>\n<div class=\"slide-text\">\n<table style=\"width:100%; border-collapse: collapse; background-color: var(--white); border: 4px solid var(--black); box-shadow: 6px 6px 0px var(--black); margin-bottom: 25px; font-size: 18px;\">\n<thead>\n<tr style=\"background-color: var(--yellow);\">\n<th style=\"padding: 12px; border: 2px solid var(--black);\">Hari</th>\n<th style=\"padding: 12px; border: 2px solid var(--black);\">Uang Saku</th>\n<th style=\"padding: 12px; border: 2px solid var(--black);\">Pengeluaran</th>\n<th style=\"padding: 12px; border: 2px solid var(--black);\">Sisa</th>\n</tr>\n</thead>\n<tbody>\n<tr><td style=\"padding: 10px; border: 2px solid var(--black);\">Senin</td><td style=\"padding: 10px; border: 2px solid var(--black);\">30.000</td><td style=\"padding: 10px; border: 2px solid var(--black);\">20.000</td><td style=\"padding: 10px; border: 2px solid var(--black);\">10.000</td></tr>\n<tr><td style=\"padding: 10px; border: 2px solid var(--black);\">Selasa</td><td style=\"padding: 10px; border: 2px solid var(--black);\">30.000</td><td style=\"padding: 10px; border: 2px solid var(--black);\">28.000</td><td style=\"padding: 10px; border: 2px solid var(--black);\">2.000</td></tr>\n<tr><td style=\"padding: 10px; border: 2px solid var(--black);\">Rabu</td><td style=\"padding: 10px; border: 2px solid var(--black);\">30.000</td><td style=\"padding: 10px; border: 2px solid var(--black);\">15.000</td><td style=\"padding: 10px; border: 2px solid var(--black);\">15.000</td></tr>\n</tbody>\n</table>\n<p>Dari data ini, aplikasi bisa menampilkan hari paling boros, sisa uang terkecil, dan saran agar siswa punya target menabung.</p>\n</div>\n<h4>MIT App Inventor</h4>\n<div class=\"slide-text\">\n<p>Aplikasi \"Smart Jajan\" membantu pengguna mengecek apakah pengeluaran hari ini aman.</p>\n<div class=\"app-screen\">\n<p><strong>Fitur:</strong></p>\n<ul style=\"padding-left: 25px;\">\n<li>Input uang saku dan pengeluaran.</li>\n<li>Validasi angka dan tidak kosong.</li>\n<li>Hitung sisa uang.</li>\n<li>Beri status: hemat, aman, atau boros.</li>\n</ul>\n</div>\n<div class=\"block-code\" style=\"background-color:#F7F7F7; color:var(--black);\">\n<span class=\"block-badge block-control\">if</span> <span class=\"block-badge block-ui\">pengeluaran</span> <span class=\"block-badge block-math\">&gt;</span> <span class=\"block-badge block-ui\">uangSaku</span><br/>\n<span class=\"block-badge block-control\">then</span> <span class=\"block-badge block-text\">\"Pengeluaran melebihi uang saku\"</span><br/>\n<span class=\"block-badge block-control\">else if</span> <span class=\"block-badge block-ui\">sisa</span> <span class=\"block-badge block-math\">&gt;=</span> <span class=\"block-badge block-math\">10000</span><br/>\n<span class=\"block-badge block-control\">then</span> <span class=\"block-badge block-text\">\"Hemat, sisa uangmu bagus\"</span><br/>\n<span class=\"block-badge block-control\">else</span> <span class=\"block-badge block-text\">\"Aman, tapi coba sisakan lebih banyak\"</span>\n</div>\n</div>\n<h4>Designer</h4>\n<div class=\"slide-text\">\n<p>Versi lebih lengkap dari aplikasi uang saku: siswa memasukkan kategori pengeluaran agar aplikasi tidak hanya menghitung sisa, tetapi juga membaca pola.</p>\n<div class=\"practice-layout\">\n<div class=\"phone-mock\">\n<div class=\"phone-screen\">\n<div class=\"app-title-bar\">Smart Jajan</div>\n<div class=\"mock-label\">Uang saku</div>\n<div class=\"mock-input\">30000</div>\n<div class=\"mock-label\">Pengeluaran</div>\n<div class=\"mock-input\">22000</div>\n<div class=\"mock-label\">Kategori</div>\n<div class=\"mock-input\">Makanan / Transport / Hiburan</div>\n<div class=\"mock-button\">CEK POLA</div>\n<div class=\"mock-output\">Kategori terbesar: Makanan<br/>Saran: kurangi jajan minuman manis.</div>\n</div>\n</div>\n<div class=\"component-list\">\n<h3>Komponen di Designer</h3>\n<span class=\"component-pill\">TextBoxUangSaku</span>\n<span class=\"component-pill\">TextBoxPengeluaran</span>\n<span class=\"component-pill\">ListPickerKategori</span>\n<span class=\"component-pill\">ButtonCekPola</span>\n<span class=\"component-pill\">LabelSisa</span>\n<span class=\"component-pill\">LabelSaran</span>\n<span class=\"component-pill\">TinyDB1</span>\n<p class=\"tiny-note\">TinyDB opsional: dipakai jika ingin menyimpan catatan pengeluaran antar percobaan.</p>\n</div>\n</div>\n</div>\n<h4>Blocks</h4>\n<div class=\"slide-text\">\n<p>Blocks ini membuat aplikasi memberi status yang lebih kaya: melebihi uang saku, hemat, aman, atau perlu mengurangi kategori tertentu.</p>\n<div class=\"block-stack\">\n<h3>Gambaran Blocks</h3>\n<div class=\"block-row event\">when ButtonCekPola.Click</div>\n<div class=\"block-row check indent-1\">validasi uang saku, pengeluaran, dan kategori</div>\n<div class=\"block-row action indent-1\">set sisa to UangSaku - Pengeluaran</div>\n<div class=\"block-row check indent-1\">if Pengeluaran &gt; UangSaku</div>\n<div class=\"block-row warn indent-2\">set LabelSaran.Text to \"Pengeluaran melebihi uang saku\"</div>\n<div class=\"block-row check indent-1\">else if sisa &gt;= 10000</div>\n<div class=\"block-row output indent-2\">set LabelSaran.Text to \"Hemat, sisa uangmu bagus\"</div>\n<div class=\"block-row check indent-1\">else if Kategori = \"Hiburan\"</div>\n<div class=\"block-row warn indent-2\">set LabelSaran.Text to \"Coba batasi hiburan dulu\"</div>\n<div class=\"block-row output indent-1\">else set LabelSaran.Text to \"Masih aman, tetap catat pengeluaran\"</div>\n</div>\n<p class=\"tiny-note\">Tantangan tambahan: simpan kategori dan pengeluaran ke TinyDB, lalu tampilkan riwayat sederhana.</p>\n</div>\n<h4>Transaksi Digital</h4>\n<div class=\"slide-text\">\n<p>Transaksi digital terjadi saat kita membeli, membayar, top up, transfer, atau berlangganan lewat perangkat digital.</p>\n<p>Risikonya bukan hanya uang hilang. Data pribadi juga bisa dicuri jika pengguna tertipu link palsu atau memberikan OTP/password kepada orang lain.</p>\n<div class=\"info-grid\">\n<div class=\"mini-card\" style=\"background-color:#FFEBEE;\">\n<h3>Risiko</h3>\n<ul>\n<li>Phishing lewat link palsu.</li>\n<li>Hadiah palsu yang meminta password.</li>\n<li>Nomor tidak dikenal meminta OTP.</li>\n</ul>\n</div>\n<div class=\"mini-card\" style=\"background-color:#E8F5E9;\">\n<h3>Langkah Aman</h3>\n<ul>\n<li>Cek sumber pesan.</li>\n<li>Jangan bagikan OTP atau PIN.</li>\n<li>Gunakan aplikasi resmi.</li>\n</ul>\n</div>\n</div>\n</div>\n<h4>Phishing</h4>\n<div class=\"slide-text\">\n<p>Phishing adalah penipuan yang menyamar sebagai pihak resmi untuk mencuri data atau uang.</p>\n<div style=\"background-color: var(--red); color: white; padding: 22px; border: 4px solid var(--black); border-radius: 14px; box-shadow: 6px 6px 0px var(--black);\">\n<strong>Tanda bahaya:</strong>\n<ul style=\"margin-top: 12px; padding-left: 28px;\">\n<li style=\"color:white;\">Meminta password, PIN, kode OTP, atau data kartu.</li>\n<li style=\"color:white;\">Mendesak: \"Akun akan diblokir dalam 5 menit!\"</li>\n<li style=\"color:white;\">Hadiah terlalu bagus untuk dipercaya.</li>\n<li style=\"color:white;\">Link terlihat aneh atau berbeda dari situs resmi.</li>\n</ul>\n</div>\n<p class=\"tiny-note\">Aturan sederhana: kalau pesan membuat kamu panik, buru-buru, atau diminta memberi data rahasia, berhenti dulu dan cek ke orang dewasa/akun resmi.</p>\n</div>\n<h4>Designer</h4>\n<div class=\"slide-text\">\n<p>Aplikasi ini membantu siswa membaca pesan digital dengan lebih kritis. Pengguna memilih tanda bahaya yang muncul, lalu aplikasi memberi status risiko.</p>\n<div class=\"practice-layout\">\n<div class=\"phone-mock\">\n<div class=\"phone-screen\">\n<div class=\"app-title-bar\">Cek Pesan Aman</div>\n<div class=\"mock-label\">Isi pesan</div>\n<div class=\"mock-input\">\"Kirim OTP agar hadiah masuk\"</div>\n<div class=\"mock-label\">Tanda bahaya</div>\n<div class=\"mock-input\">Meminta OTP</div>\n<div class=\"mock-button\">CEK RISIKO</div>\n<div class=\"mock-output\">Risiko tinggi: jangan balas pesan.</div>\n</div>\n</div>\n<div class=\"component-list\">\n<h3>Komponen di Designer</h3>\n<span class=\"component-pill\">TextBoxPesan</span>\n<span class=\"component-pill\">CheckBoxOTP</span>\n<span class=\"component-pill\">CheckBoxPassword</span>\n<span class=\"component-pill\">CheckBoxLinkAneh</span>\n<span class=\"component-pill\">CheckBoxHadiah</span>\n<span class=\"component-pill\">ButtonCekRisiko</span>\n<span class=\"component-pill\">LabelRisiko</span>\n<p class=\"tiny-note\">Komponen CheckBox cocok untuk latihan ini karena tanda bahaya bisa lebih dari satu.</p>\n</div>\n</div>\n</div>\n<h4>Blocks</h4>\n<div class=\"slide-text\">\n<p>Siswa belajar membuat skor risiko. Semakin banyak tanda bahaya yang dicentang, semakin tinggi risikonya.</p>\n<div class=\"block-stack\">\n<h3>Gambaran Blocks</h3>\n<div class=\"block-row event\">when ButtonCekRisiko.Click</div>\n<div class=\"block-row action indent-1\">set global skor to 0</div>\n<div class=\"block-row check indent-1\">if CheckBoxOTP.Checked then set skor to skor + 2</div>\n<div class=\"block-row check indent-1\">if CheckBoxPassword.Checked then set skor to skor + 2</div>\n<div class=\"block-row check indent-1\">if CheckBoxLinkAneh.Checked then set skor to skor + 1</div>\n<div class=\"block-row check indent-1\">if CheckBoxHadiah.Checked then set skor to skor + 1</div>\n<div class=\"block-row warn indent-1\">if skor &gt;= 3 set LabelRisiko.Text to \"Risiko tinggi: jangan klik atau balas\"</div>\n<div class=\"block-row output indent-1\">else set LabelRisiko.Text to \"Tetap cek sumber resmi sebelum percaya\"</div>\n</div>\n<p class=\"tiny-note\">Pertanyaan diskusi: kenapa OTP dan password diberi skor lebih tinggi daripada kata \"hadiah\"?</p>\n</div>\n      </article>\n    ",
@@ -1969,7 +2191,8 @@
           "bookmarks": [
             {
               "time": 2847,
-              "label": "Instruksi Mini Project"
+              "label": "Instruksi Mini Project",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -2015,11 +2238,13 @@
           "bookmarks": [
             {
               "time": 3228,
-              "label": "Transaksi Digital"
+              "label": "Transaksi Digital",
+              "status": "verified"
             },
             {
               "time": 3491,
-              "label": "Keamanan Transaksi & OTP"
+              "label": "Keamanan Transaksi & OTP",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -2065,19 +2290,23 @@
           "bookmarks": [
             {
               "time": 2018,
-              "label": "Aplikasi berdampak positif"
+              "label": "Aplikasi berdampak positif",
+              "status": "verified"
             },
             {
               "time": 2086,
-              "label": "Mengidentifikasi masalah nyata"
+              "label": "Mengidentifikasi masalah nyata",
+              "status": "verified"
             },
             {
               "time": 2189,
-              "label": "Contoh aplikasi alarm ibu"
+              "label": "Contoh aplikasi alarm ibu",
+              "status": "verified"
             },
             {
               "time": 2260,
-              "label": "Brainstorming idea"
+              "label": "Brainstorming idea",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -2160,7 +2389,8 @@
           "bookmarks": [
             {
               "time": 3700,
-              "label": "Instruksi Final Project"
+              "label": "Instruksi Final Project",
+              "status": "verified"
             }
           ],
           "quizzes": [
@@ -2207,23 +2437,28 @@
           "bookmarks": [
             {
               "time": 0,
-              "label": "Mengenal MIT App Inventor Gallery"
+              "label": "Mengenal MIT App Inventor Gallery",
+              "status": "verified"
             },
             {
               "time": 30,
-              "label": "Membuka Menu Projects -> My Projects"
+              "label": "Membuka Menu Projects -> My Projects",
+              "status": "verified"
             },
             {
               "time": 65,
-              "label": "Memilih Proyek & Klik 'Publish to Gallery'"
+              "label": "Memilih Proyek & Klik 'Publish to Gallery'",
+              "status": "verified"
             },
             {
               "time": 100,
-              "label": "Mengisi Info Aplikasi (Title, Description, Icon)"
+              "label": "Mengisi Info Aplikasi (Title, Description, Icon)",
+              "status": "verified"
             },
             {
               "time": 135,
-              "label": "Menjelajahi Galeri Publik (gallery.appinventor.mit.edu)"
+              "label": "Menjelajahi Galeri Publik (gallery.appinventor.mit.edu)",
+              "status": "verified"
             }
           ],
           "quizzes": [

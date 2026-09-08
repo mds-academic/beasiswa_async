@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Pengantar SMA: Panduan Lengkap Google Colab & Dasar Python</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Consolas&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --yellow: #FFE500;
+            --blue: #00C6FF;
+            --black: #1A1A1A;
+            --white: #FFFFFF;
+            --bg-light: #E8E8E8;
+            --green: #00E676;
+            --pink: #FF9DE2;
+            --red: #FF0055;
+            --purple: #C084FC;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            background-image: radial-gradient(#bcbcbc 2px, transparent 2px);
+            background-size: 30px 30px;
+            font-family: 'Fredoka', sans-serif;
+            color: var(--black);
+            overflow: hidden;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* App Container (Landscape 16:9 Simulator) */
+        .app-container {
+            position: relative; z-index: 10;
+            width: 98vw; max-width: 1400px;
+            height: 98vh; max-height: 900px;
+            display: flex; flex-direction: column;
+        }
+
+        /* Header Layout */
+        .header {
+            display: flex; justify-content: flex-start; align-items: flex-start;
+            padding: 25px 50px 10px;
+            position: relative;
+            width: 100%;
+        }
+
+        /* Banner Centered at Top */
+        .banner-container { 
+            position: absolute; top: 20px; left: 0; width: 100%;
+            text-align: center; display: flex; flex-direction: column; align-items: center; 
+            z-index: 10; pointer-events: none;
+        }
+        
+        .banner-shape {
+            background-color: var(--blue);
+            padding: 10px 50px;
+            border: 4px solid var(--black);
+            border-radius: 12px;
+            box-shadow: 6px 6px 0px var(--black);
+            display: inline-block;
+        }
+        
+        .banner-text { 
+            font-size: 26px; font-weight: 700; letter-spacing: 2px; color: var(--white); 
+            text-shadow: 2px 2px 0px var(--black), -1px -1px 0px var(--black), 1px -1px 0px var(--black), -1px 1px 0px var(--black), 1px 1px 0px var(--black);
+        }
+        
+        .banner-subtitle {
+            background-color: var(--yellow); 
+            color: var(--black); 
+            padding: 6px 36px; 
+            font-size: 15px; font-weight: 700;
+            border: 3px solid var(--black);
+            border-radius: 20px; 
+            margin-top: -12px; 
+            text-transform: uppercase; letter-spacing: 1px;
+            box-shadow: 4px 4px 0px var(--black);
+            display: inline-block;
+        }
+
+        /* Slides Area */
+        .slides-area {
+            flex: 1; position: relative; margin: 25px 50px 0; perspective: 1200px;
+            min-height: 0; 
+        }
+
+        .slide {
+            position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+            display: none;
+        }
+        
+        .slide.active { 
+            display: block; 
+            animation: popIn 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+        }
+
+        @keyframes popIn {
+            from { opacity: 0; transform: scale(0.96) translateY(15px); }
+            to { opacity: 1; transform: scale(1) translateY(0); }
+        }
+
+        .content-card {
+            background-color: var(--white);
+            border: 4px solid var(--black); 
+            border-radius: 24px;
+            padding: 35px 55px; 
+            box-shadow: 12px 12px 0px var(--black);
+            width: 100%; height: 100%; 
+            overflow-y: auto;
+            display: flex;
+            position: relative;
+        }
+
+        .content-card::-webkit-scrollbar { width: 14px; }
+        .content-card::-webkit-scrollbar-track { background: var(--bg-light); border-left: 3px solid var(--black); border-radius: 0 20px 20px 0; }
+        .content-card::-webkit-scrollbar-thumb { background: var(--blue); border: 3px solid var(--black); border-radius: 10px; }
+
+        /* Decorative corner dot */
+        .content-card::after {
+            content: '';
+            position: absolute;
+            top: -15px; right: 30px;
+            width: 40px; height: 40px;
+            background-color: var(--yellow);
+            border: 3px solid var(--black);
+            border-radius: 50%;
+            box-shadow: 4px 4px 0px var(--black);
+            z-index: 5;
+        }
+
+        /* Inner container */
+        .inner-content {
+            max-width: 960px;
+            margin: auto;
+            width: 100%;
+            position: relative;
+            z-index: 10;
+        }
+
+        .slide-title {
+            font-size: 30px; font-weight: 700; color: var(--black); 
+            margin-bottom: 22px; line-height: 1.3;
+            background-color: var(--yellow);
+            display: inline-block;
+            padding: 8px 24px;
+            border: 3px solid var(--black);
+            border-radius: 12px;
+            box-shadow: 5px 5px 0px var(--black);
+        }
+
+        .slide-text { font-size: 20px; line-height: 1.6; color: var(--black); font-weight: 600; }
+        .slide-text p { margin-bottom: 18px; }
+        .slide-text ul { padding-left: 35px; margin-bottom: 20px; }
+        .slide-text li { margin-bottom: 12px; position: relative; list-style-type: none; }
+        .slide-text li::before {
+            content: '▶';
+            color: var(--blue);
+            position: absolute;
+            left: -30px;
+            font-size: 18px;
+            -webkit-text-stroke: 1px var(--black);
+        }
+        
+        .slide-text strong { 
+            color: var(--black); 
+            background-color: var(--blue); 
+            padding: 2px 10px; 
+            border: 2px solid var(--black);
+            border-radius: 6px; 
+            font-weight: 700; 
+            box-shadow: 2px 2px 0px var(--black);
+            display: inline-block;
+        }
+
+        .quote-box {
+            background-color: var(--yellow); 
+            border: 4px solid var(--black);
+            padding: 18px 26px; 
+            border-radius: 16px; 
+            margin: 22px 0; 
+            font-weight: 700; color: var(--black); font-size: 21px;
+            box-shadow: 6px 6px 0px var(--blue);
+            position: relative;
+        }
+
+        .code-block {
+            background-color: var(--black); 
+            border: 4px solid var(--black); border-radius: 16px;
+            padding: 20px 26px; font-family: 'Consolas', 'Courier New', monospace; font-size: 20px;
+            color: var(--white); overflow-x: auto; margin: 20px 0; 
+            box-shadow: 6px 6px 0px var(--yellow); 
+            line-height: 1.5;
+            text-align: left;
+        }
+
+        .keyword { color: var(--pink); font-weight: bold; }
+        .string { color: var(--green); font-weight: bold; }
+        .function { color: var(--blue); font-weight: bold; }
+        .operator { color: var(--yellow); font-weight: bold; }
+        .comment { color: #888; font-style: italic; }
+
+        /* Real Screenshot Frame */
+        .screenshot-box {
+            margin: 20px 0;
+            background: #FAFAFA;
+            border: 4px solid var(--black);
+            border-radius: 18px;
+            padding: 12px;
+            box-shadow: 8px 8px 0px var(--black);
+            text-align: center;
+        }
+
+        .screenshot-img {
+            width: 100%;
+            max-height: 380px;
+            object-fit: contain;
+            border: 3px solid var(--black);
+            border-radius: 12px;
+            background: #FFFFFF;
+            display: block;
+        }
+
+        .screenshot-caption {
+            margin-top: 10px;
+            font-size: 15px;
+            font-weight: 700;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        /* 2-Column Side-by-Side */
+        .two-column {
+            display: flex;
+            gap: 25px;
+            align-items: flex-start;
+            margin: 20px 0;
+        }
+
+        .two-column > * {
+            flex: 1;
+        }
+
+        /* Tables */
+        .styled-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: var(--white);
+            border: 4px solid var(--black);
+            box-shadow: 6px 6px 0px var(--black);
+            margin: 18px 0;
+            font-size: 17px;
+        }
+
+        .styled-table th {
+            background-color: var(--yellow);
+            color: var(--black);
+            padding: 12px 16px;
+            border: 2px solid var(--black);
+            text-align: left;
+            font-weight: 700;
+        }
+
+        .styled-table td {
+            padding: 10px 16px;
+            border: 2px solid var(--black);
+            font-weight: 600;
+        }
+
+        .styled-table tr:nth-child(even) {
+            background-color: #F8FAFC;
+        }
+
+        /* Card Callout Boxes */
+        .feature-card {
+            background-color: #F0F9FF;
+            border: 3px solid var(--black);
+            border-radius: 14px;
+            padding: 18px;
+            box-shadow: 4px 4px 0px var(--black);
+            margin-bottom: 14px;
+        }
+
+        /* Interactive Playground */
+        .playground-card {
+            background: #fdfdfd;
+            border: 4px solid var(--black);
+            border-radius: 16px;
+            padding: 22px;
+            margin: 20px 0;
+            box-shadow: 6px 6px 0px var(--black);
+            text-align: left;
+        }
+
+        .input-text-custom {
+            width: 100%;
+            padding: 12px 18px;
+            font-size: 18px;
+            font-family: inherit;
+            border: 3px solid var(--black);
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+
+        .btn-action-custom {
+            background-color: var(--blue);
+            color: var(--white);
+            font-family: inherit;
+            font-weight: 700;
+            font-size: 18px;
+            padding: 10px 25px;
+            border: 3px solid var(--black);
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 4px 4px 0px var(--black);
+            transition: all 0.1s;
+        }
+
+        .btn-action-custom:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px var(--black);
+            background-color: #00B0E8;
+        }
+
+        .btn-action-custom:active {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0px var(--black);
+        }
+
+        .result-box {
+            margin-top: 15px;
+            background-color: var(--black);
+            color: var(--green);
+            padding: 15px 20px;
+            border-radius: 10px;
+            font-family: 'Consolas', monospace;
+            font-size: 19px;
+            min-height: 50px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Quiz Layout */
+        .quiz-option {
+            background-color: var(--white);
+            border: 3px solid var(--black);
+            border-radius: 12px;
+            padding: 14px 20px;
+            margin: 10px 0;
+            font-weight: 700;
+            font-size: 18px;
+            cursor: pointer;
+            box-shadow: 4px 4px 0px var(--black);
+            transition: all 0.1s;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .quiz-option:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px var(--black);
+            background-color: #F8FAFC;
+        }
+
+        .quiz-option.correct {
+            background-color: var(--green) !important;
+            color: var(--black) !important;
+        }
+
+        .quiz-option.wrong {
+            background-color: var(--red) !important;
+            color: var(--white) !important;
+        }
+
+        /* Navigation Controls */
+        .nav-container {
+            padding: 20px 50px 30px; display: flex; justify-content: space-between; align-items: center;
+            min-height: 90px;
+        }
+
+        .nav-btn {
+            background-color: var(--yellow); 
+            border: 4px solid var(--black);
+            color: var(--black); padding: 12px 35px; border-radius: 30px; cursor: pointer;
+            font-family: 'Fredoka', sans-serif; font-weight: 700; font-size: 18px;
+            transition: all 0.1s; display: flex; align-items: center; gap: 8px;
+            box-shadow: 6px 6px 0px var(--black);
+        }
+
+        .nav-btn:hover:not(:disabled) { 
+            transform: translate(-2px, -2px); box-shadow: 8px 8px 0px var(--black); 
+            background-color: #FFF033;
+        }
+        
+        .nav-btn:active:not(:disabled) {
+            transform: translate(4px, 4px); box-shadow: 2px 2px 0px var(--black);
+        }
+        
+        .nav-btn:disabled { 
+            background-color: #e0e0e0;
+            color: #888;
+            border-color: #888;
+            box-shadow: 2px 2px 0px #888; 
+            transform: translate(2px, 2px); 
+            cursor: not-allowed; 
+        }
+        
+        .counter-group {
+            display: flex; flex-direction: column; align-items: center; gap: 8px;
+            background: var(--white);
+            padding: 10px 28px;
+            border: 4px solid var(--black);
+            border-radius: 24px;
+            box-shadow: 6px 6px 0px var(--black);
+            transform: rotate(1deg);
+        }
+
+        .slide-counter { font-size: 17px; font-weight: 700; color: var(--black); }
+
+        .progress-bar-bg {
+            width: 220px; height: 16px; background-color: var(--bg-light); 
+            border: 3px solid var(--black); border-radius: 10px; overflow: hidden;
+            box-shadow: inset 2px 2px 0px rgba(0,0,0,0.1);
+        }
+        
+        .progress-bar {
+            height: 100%; background-color: var(--blue); 
+            border-right: 3px solid var(--black);
+            transition: width 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="app-container">
+        
+        <!-- Header -->
+        <div class="header">
+            <div class="banner-container">
+                <div class="banner-shape">
+                    <div id="banner-title" class="banner-text">PENGENALAN PYTHON SMA</div>
+                </div>
+                <div id="banner-subtitle" class="banner-subtitle">Google Colab & Dasar Pemrograman</div>
+            </div>
+        </div>
+
+        <!-- Slides Wrapper -->
+        <div class="slides-area">
+            
+            <!-- Slide 1: Welcome Intro -->
+            <div class="slide active" data-title="PENGENALAN PYTHON SMA" data-subtitle="Google Colab & Dasar Pemrograman">
+                <div class="content-card" style="align-items: center; justify-content: center; background: radial-gradient(circle, var(--blue) 0%, #0056b3 100%); color: var(--white); border-color: var(--black);">
+                    <div class="inner-content" style="text-align: center;">
+                        <span style="background-color: var(--yellow); color: var(--black); padding: 8px 24px; border: 3px solid var(--black); border-radius: 20px; font-size: 18px; font-weight: 700; box-shadow: 4px 4px 0px var(--black); display: inline-block; margin-bottom: 25px; transform: rotate(-2deg);">
+                            UOB MY DIGITAL SPACE • HIGH SCHOOL 🐍
+                        </span>
+                        <h1 style="font-size: 46px; font-weight: 700; margin-bottom: 16px; text-shadow: 4px 4px 0px var(--black); line-height: 1.2;">
+                            Panduan Lengkap Google Colab<br>& Program Python Pertamaku! 🚀
+                        </h1>
+                        <p style="font-size: 23px; font-weight: 600; text-shadow: 2px 2px 0px var(--black); color: var(--yellow); margin-bottom: 35px;">
+                            Belajar Koding dari Nol di Cloud Tanpa Perlu Install Software Apapun
+                        </p>
+                        <div style="font-size: 16px; font-weight: 600; opacity: 0.95; text-transform: uppercase; letter-spacing: 2px; background: rgba(0,0,0,0.3); padding: 10px 24px; border-radius: 12px; display: inline-block;">
+                            Materi Jembatan 00 • Persiapan Menuju Fondasi Data & Validasi Input
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2: Mengapa Belajar Python? -->
+            <div class="slide" data-title="MENGAPA PYTHON?" data-subtitle="Bahasa Masa Depan">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">Mengapa Kita Belajar Bahasa Python? 🐍</h2>
+                        <div class="slide-text">
+                            <p>Selamat datang di dunia pemrograman! Di jenjang SMA ini, kamu akan mempelajari <strong>Python</strong>. Mengapa Python dipilih oleh jutaan programmer di seluruh dunia?</p>
+                            
+                            <div class="two-column">
+                                <div class="feature-card" style="background: #E8F5E9;">
+                                    <div style="font-size: 28px; margin-bottom: 8px;">✨ <strong>Sintaks Ramah & Bersih</strong></div>
+                                    <p style="font-size: 18px; margin-bottom: 0;">Sintaks Python dirancang sangat mirip dengan kalimat bahasa Inggris sehari-hari, sehingga mudah dibaca dan dipahami bahkan untuk pemula murni.</p>
+                                </div>
+                                <div class="feature-card" style="background: #E1F5FE;">
+                                    <div style="font-size: 28px; margin-bottom: 8px;">🤖 <strong>Standar Industri AI & Finansial</strong></div>
+                                    <p style="font-size: 18px; margin-bottom: 0;">Python adalah bahasa utama dunia untuk Artificial Intelligence, Data Science, perbankan, dan aplikasi keuangan cerdas (seperti yang akan kita buat!).</p>
+                                </div>
+                            </div>
+
+                            <div class="quote-box">
+                                "Koding bukan tentang menghafal rumus rumit, melainkan seni memberikan instruksi yang runtut dan logis kepada komputer." 💡
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: Apa itu Google Colaboratory? -->
+            <div class="slide" data-title="GOOGLE COLAB" data-subtitle="Mengenal Alat Belajar Kita">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">Apa Itu Google Colaboratory (Google Colab)? ☁️</h2>
+                        <div class="slide-text">
+                            <p><strong>Google Colab</strong> (kependekan dari <em>Colaboratory</em>) adalah aplikasi berbasis web yang disediakan gratis oleh Google untuk menulis dan menjalankan kode program Python langsung di browser internet.</p>
+                            
+                            <div class="feature-card">
+                                <ul style="margin-bottom: 0; font-size: 19px;">
+                                    <li><strong>Zero Installation</strong>: Kamu tidak perlu menginstal Python, Anaconda, atau VS Code di komputer atau laptopmu.</li>
+                                    <li><strong>Cloud Powered</strong>: Kode dijalankan di komputer server Google berkemampuan tinggi secara gratis.</li>
+                                    <li><strong>Google Drive Autosave</strong>: Semua catatan dan kodinganmu langsung tersimpan aman di Google Drive akun pribadimu.</li>
+                                    <li><strong>Multi-device</strong>: Bisa diakses lancar dari laptop Windows, MacBook, Chromebook, hingga tablet!</li>
+                                </ul>
+                            </div>
+                            
+                            <p>Dengan Google Colab, kita bisa fokus 100% belajar logika koding tanpa pusing kendala laptop lemot atau instalasi error! 🎉</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4: Google Colab vs Jupyter Notebook -->
+            <div class="slide" data-title="GOOGLE COLAB" data-subtitle="Colab vs Jupyter Notebook">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">Google Colab vs Jupyter Notebook Lokal ⚖️</h2>
+                        <div class="slide-text">
+                            <p>Para developer profesional sering membandingkan Google Colab dengan Jupyter Notebook. Berikut perbandingan utamanya agar kamu paham:</p>
+                            
+                            <table class="styled-table">
+                                <thead>
+                                    <tr>
+                                        <th>Fitur / Aspek</th>
+                                        <th style="background-color: var(--blue); color: white;">Google Colaboratory (Cloud)</th>
+                                        <th>Jupyter Notebook (Lokal)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Penyimpanan File</strong></td>
+                                        <td>Otomatis tersimpan di <strong>Google Drive</strong></td>
+                                        <td>Tersimpan di harddisk komputer fisik</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Instalasi & Setup</strong></td>
+                                        <td><strong>Langsung pakai</strong> via browser web</td>
+                                        <td>Wajib install Python & environment rumit</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Hardware & Memori</strong></td>
+                                        <td>Gratis RAM hingga 12GB & GPU Cloud</td>
+                                        <td>Bergantung penuh pada spek laptop sendiri</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Kolaborasi & Sharing</strong></td>
+                                        <td>Sangat mudah, cukup bagikan link (ala Google Docs)</td>
+                                        <td>Perlu kirim file manual atau setup Git server</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>Oleh karena itu, Google Colab adalah pilihan paling ideal dan nyaman untuk pembelajaran asinkronus kita!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 5: Langkah 1 - Membuka Colab & New Notebook -->
+            <div class="slide" data-title="LANGKAH 1: BUKA COLAB" data-subtitle="Membuat Notebook Baru">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">Langkah 1: Membuka Colab & Membuat Notebook Baru 🌐</h2>
+                        <div class="slide-text">
+                            <p>Mari kita mulai! Ikuti langkah-langkah praktis berikut:</p>
+                            <ul style="font-size: 19px;">
+                                <li>Buka peramban (Chrome / Edge / Safari) lalu kunjungi alamat: <strong>https://colab.research.google.com/</strong></li>
+                                <li>Pastikan kamu sudah login ke akun Google kamu (Gmail).</li>
+                                <li>Akan muncul dialog selamat datang. Klik tombol biru <strong>+ New notebook</strong> (atau <strong>+ Notebook baru</strong>).</li>
+                            </ul>
+
+                            <div class="screenshot-box">
+                                <img src="https://cdn-web-2.ruangguru.com/landing-pages/assets/a6b13d46-7b29-4f4d-b3a8-a3ed5b4f80d7.png" alt="Google Colab Welcome Screen" class="screenshot-img">
+                                <div class="screenshot-caption">
+                                    📸 <em>Tangkapan layar nyata: Halaman selamat datang Google Colab dengan tombol "+ New notebook" di pojok kiri atas.</em>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 6: Langkah 2 - Anatomi Antarmuka Colab -->
+            <div class="slide" data-title="LANGKAH 2: ANATOMI COLAB" data-subtitle="Mengenal Area Kerja">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">Langkah 2: Anatomi Area Kerja Google Colab 🖥️</h2>
+                        <div class="slide-text">
+                            <p>Setelah notebook terbuka, mari kenali bagian-bagian penting di layar kerjamu:</p>
+
+                            <div class="screenshot-box">
+                                <img src="https://cdn-web-2.ruangguru.com/landing-pages/assets/35b7d54b-636f-4072-9607-abcb281ec7c3.png" alt="Google Colab Interface Anatomy" class="screenshot-img">
+                                <div class="screenshot-caption">
+                                    📸 <em>Tangkapan layar nyata: Antarmuka interaktif Google Colab yang memuat menubar, code cells, dan output langsung.</em>
+                                </div>
+                            </div>
+
+                            <ul style="font-size: 18px; margin-top: 15px;">
+                                <li><strong>Judul File Notebook</strong>: Di kiri atas (misal <code>Untitled.ipynb</code>). Klik untuk mengganti nama file.</li>
+                                <li><strong>Tombol + Code & + Text</strong>: Untuk menambahkan baris perintah kode baru atau teks catatan.</li>
+                                <li><strong>Indikator Connect / Runtime</strong>: Di pojok kanan atas, menandakan status koneksi ke komputer cloud Google (RAM & Disk).</li>
+                                <li><strong>Sidebar Kiri</strong>: Menu navigasi daftar isi, pencarian kode, dan penjelajah file Google Drive.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 7: Langkah 3 - Code Cell vs Text Cell -->
+            <div class="slide" data-title="LANGKAH 3: TIPE CELL" data-subtitle="Code Cell vs Text Cell">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">Langkah 3: Memahami Code Cell vs Text Cell 📝</h2>
+                        <div class="slide-text">
+                            <p>Di Google Colab, dokumen disusun dari blok-blok yang disebut <strong>Cell</strong>. Ada dua jenis cell:</p>
+
+                            <div class="two-column">
+                                <div class="feature-card" style="background: #FFF9C4;">
+                                    <div style="font-size: 22px; font-weight: 700; margin-bottom: 8px;">💻 1. Code Cell (Sel Kode)</div>
+                                    <p style="font-size: 17px; margin-bottom: 10px;">Blok berwarna abu-abu gelap dengan tombol Play ▶️ di kirinya. Di sinilah kita mengetik instruksi Python yang akan dihitung dan dijalankan oleh komputer.</p>
+                                    <div style="background: #1A1A1A; color: #00E676; padding: 8px 12px; border-radius: 6px; font-family: monospace;">
+                                        print("Ini dijalankan komputer!")
+                                    </div>
+                                </div>
+                                <div class="feature-card" style="background: #F3E5F5;">
+                                    <div style="font-size: 22px; font-weight: 700; margin-bottom: 8px;">📄 2. Text Cell (Sel Teks)</div>
+                                    <p style="font-size: 17px; margin-bottom: 10px;">Blok untuk menulis penjelasan, judul modul, catatan rumus, atau dokumentasi menggunakan format teks kaya Markdown.</p>
+                                    <div style="background: #FFFFFF; color: #1A1A1A; padding: 8px 12px; border: 2px solid #1A1A1A; border-radius: 6px; font-weight: 700;">
+                                        # Catatan Modul: Pengeluaran Harian
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="quote-box">
+                                "Kombinasi Code dan Text Cell menjadikan Colab bukan hanya buku catatan pasif, melainkan laboratorium digital yang hidup!" 🧪
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 8: Langkah 4 - Fungsi print() -->
+            <div class="slide" data-title="LANGKAH 4: FUNGSI PRINT" data-subtitle="Perintah Output Pertama">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">Langkah 4: Menulis Perintah Pertama — Fungsi print() 📢</h2>
+                        <div class="slide-text">
+                            <p>Perintah paling mendasar di Python adalah fungsi <code>print()</code>. Perintah ini digunakan untuk <strong>menampilkan pesan atau hasil hitungan ke layar</strong>.</p>
+                            
+                            <p>Mari perhatikan aturan sintaksnya:</p>
+                            <div class="code-block">
+<span class="comment"># Menampilkan pesan teks (wajib pakai tanda petik ganda atau tunggal)</span><br>
+<span class="function">print</span>(<span class="string">"Halo Dunia! Selamat Datang di Python SMA"</span>)<br><br>
+<span class="comment"># Menampilkan angka matematis (tidak perlu tanda petik)</span><br>
+<span class="function">print</span>(<span class="operator">24</span> <span class="operator">*</span> <span class="operator">60</span> <span class="operator">*</span> <span class="operator">60</span>)
+                            </div>
+
+                            <div class="screenshot-box">
+                                <img src="https://cdn-web-2.ruangguru.com/landing-pages/assets/587d7d63-f602-4d96-b450-161223b32fd9.png" alt="Google Colab Code Execution" class="screenshot-img">
+                                <div class="screenshot-caption">
+                                    📸 <em>Tangkapan layar nyata: Menghitung detik dalam sehari (24 * 60 * 60) dan menghasilkan output 86400 tepat di bawahnya.</em>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 9: Langkah 5 - Menjalankan Kode -->
+            <div class="slide" data-title="LANGKAH 5: RUN CODE" data-subtitle="Eksekusi & Shortcut Sakti">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">Langkah 5: Cara Menjalankan Kode (Shortcut Sakti) ⚡</h2>
+                        <div class="slide-text">
+                            <p>Ada 3 cara untuk mengeksekusi kode yang sudah kamu tulis di dalam Code Cell:</p>
+
+                            <div style="display: flex; flex-direction: column; gap: 14px; margin: 20px 0;">
+                                <div class="feature-card" style="display: flex; align-items: center; gap: 18px;">
+                                    <div style="background: var(--blue); color: white; padding: 12px 18px; border-radius: 12px; font-size: 24px; border: 3px solid var(--black); box-shadow: 3px 3px 0px var(--black);">
+                                        ▶️
+                                    </div>
+                                    <div>
+                                        <div style="font-size: 20px; font-weight: 700;">Cara 1: Klik Tombol Play</div>
+                                        <div style="font-size: 16px; color: #444;">Arahkan kursor mouse ke lingkaran tombol Play di samping kiri cell, lalu klik sekali.</div>
+                                    </div>
+                                </div>
+
+                                <div class="feature-card" style="display: flex; align-items: center; gap: 18px; background: #FFF9C4;">
+                                    <div style="background: var(--yellow); color: var(--black); padding: 12px 16px; border-radius: 12px; font-size: 20px; font-weight: 700; border: 3px solid var(--black); box-shadow: 3px 3px 0px var(--black);">
+                                        Shift + Enter
+                                    </div>
+                                    <div>
+                                        <div style="font-size: 20px; font-weight: 700;">Cara 2: Shortcut Keyboard Sakti (Paling Direkomendasikan!)</div>
+                                        <div style="font-size: 16px; color: #444;">Jalankan cell yang aktif, dan otomatis berpindah/membuat cell baru di bawahnya. Cepat dan efisien!</div>
+                                    </div>
+                                </div>
+
+                                <div class="feature-card" style="display: flex; align-items: center; gap: 18px;">
+                                    <div style="background: var(--pink); color: white; padding: 12px 16px; border-radius: 12px; font-size: 20px; font-weight: 700; border: 3px solid var(--black); box-shadow: 3px 3px 0px var(--black);">
+                                        Ctrl + Enter
+                                    </div>
+                                    <div>
+                                        <div style="font-size: 20px; font-weight: 700;">Cara 3: Run di Tempat</div>
+                                        <div style="font-size: 16px; color: #444;">Jalankan cell yang aktif tanpa memindahkan fokus kursor ke bawah.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 10: Langkah 6 - Mengenal Variabel -->
+            <div class="slide" data-title="LANGKAH 6: VARIABEL" data-subtitle="Menyimpan Data di Memori">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">Langkah 6: Mengenal Konsep Variabel 📦</h2>
+                        <div class="slide-text">
+                            <p>Bayangkan kamu memiliki sebuah <strong>kotak penyimpanan yang diberi label nama</strong>. Kamu bisa memasukkan barang ke dalamnya, mengambilnya kapan saja, atau mengganti isinya. Itulah <strong>Variabel</strong>!</p>
+
+                            <div class="code-block">
+<span class="comment"># Membuat variabel untuk data keuangan kita</span><br>
+<span class="keyword">nama_akun</span> <span class="operator">=</span> <span class="string">"Ahmad Yazid"</span><br>
+<span class="keyword">saldo_awal</span> <span class="operator">=</span> <span class="operator">500000</span><br>
+<span class="keyword">pengeluaran</span> <span class="operator">=</span> <span class="operator">75000</span><br><br>
+<span class="comment"># Menghitung sisa saldo dengan operasi matematika</span><br>
+<span class="keyword">sisa_saldo</span> <span class="operator">=</span> <span class="keyword">saldo_awal</span> <span class="operator">-</span> <span class="keyword">pengeluaran</span><br><br>
+<span class="function">print</span>(<span class="string">"Nama Akun:"</span>, <span class="keyword">nama_akun</span>)<br>
+<span class="function">print</span>(<span class="string">"Sisa Saldo Kamu: Rp"</span>, <span class="keyword">sisa_saldo</span>)
+                            </div>
+
+                            <div class="quote-box" style="font-size: 19px;">
+                                ⚠️ <strong>Aturan Penamaan Variabel di Python:</strong><br>
+                                • Gunakan huruf kecil dan pisahkan kata dengan underscore <code>_</code> (contoh: <code>total_belanja</code>).<br>
+                                • Tidak boleh memakai spasi (❌ <code>total belanja</code>).<br>
+                                • Tidak boleh diawali angka (❌ <code>1transaksi</code>).
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 11: Langkah 7 - 4 Tipe Data Utama -->
+            <div class="slide" data-title="LANGKAH 7: TIPE DATA" data-subtitle="String, Int, Float, Bool">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">Langkah 7: 4 Tipe Data Utama di Python 🏷️</h2>
+                        <div class="slide-text">
+                            <p>Setiap data yang dimasukkan ke komputer memiliki jenis atau <strong>Tipe Data</strong>. Dalam aplikasi pencatatan keuangan kita nanti, 4 tipe ini adalah yang paling sering digunakan:</p>
+
+                            <table class="styled-table">
+                                <thead>
+                                    <tr>
+                                        <th>Tipe Data</th>
+                                        <th>Nama Lengkap</th>
+                                        <th>Penjelasan Sederhana</th>
+                                        <th>Contoh di Kode</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span style="background: var(--pink); color: black; padding: 2px 8px; border-radius: 6px; font-weight: bold;">str</span></td>
+                                        <td>String (Teks)</td>
+                                        <td>Kumpulan huruf/kata diapit tanda petik</td>
+                                        <td><code>"UOB Finance"</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span style="background: var(--yellow); color: black; padding: 2px 8px; border-radius: 6px; font-weight: bold;">int</span></td>
+                                        <td>Integer (Bilangan Bulat)</td>
+                                        <td>Angka tanpa tanda koma/desimal</td>
+                                        <td><code>150000</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span style="background: var(--blue); color: black; padding: 2px 8px; border-radius: 6px; font-weight: bold;">float</span></td>
+                                        <td>Floating Point (Desimal)</td>
+                                        <td>Angka pecahan memakai titik (.)</td>
+                                        <td><code>2.5</code> atau <code>17.8</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span style="background: var(--green); color: black; padding: 2px 8px; border-radius: 6px; font-weight: bold;">bool</span></td>
+                                        <td>Boolean (Logika)</td>
+                                        <td>Hanya bernilai Benar atau Salah</td>
+                                        <td><code>True</code> atau <code>False</code></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>Ingat: Angka yang diapit tanda petik seperti <code>"50000"</code> akan dianggap sebagai <strong>teks (string)</strong> dan tidak bisa dijumlahkan secara matematika sebelum diubah ke integer!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 12: Langkah 8 - Google Drive & Unduh File -->
+            <div class="slide" data-title="LANGKAH 8: SIMPAN & UNDUH" data-subtitle="Integrasi Google Drive">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">Langkah 8: Integrasi Google Drive & Unduh File 💾</h2>
+                        <div class="slide-text">
+                            <p>Salah satu fitur terbaik Google Colab adalah kemudahan mengelola dan menyimpan file proyek:</p>
+
+                            <div class="screenshot-box">
+                                <img src="https://cdn-web-2.ruangguru.com/landing-pages/assets/8c9b33cc-a921-402b-9437-598cc5e3cf48.png" alt="Google Colab Files Sidebar" class="screenshot-img">
+                                <div class="screenshot-caption">
+                                    📸 <em>Tangkapan layar nyata: Sidebar penjelajah file dan status runtime cloud di pojok kanan atas.</em>
+                                </div>
+                            </div>
+
+                            <ul style="font-size: 18px; margin-top: 15px;">
+                                <li><strong>Otomatis Tersimpan</strong>: Setiap kali kamu mengedit, perubahan otomatis tersimpan ke Google Drive di folder <code>Colab Notebooks</code>.</li>
+                                <li><strong>Mengunduh Berkas</strong>: Kamu bisa mengunduh file notebook ke komputermu lewat menu:
+                                    <br><code>File ▶ Download ▶ Download .ipynb</code> (format standar notebook) atau <code>Download .py</code> (file kode Python murni).</li>
+                                <li><strong>Berbagi dengan Teman</strong>: Klik tombol biru <strong>Share</strong> di pojok kanan atas untuk mengirimkan link kodinganmu kepada teman atau mentor!</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 13: Interactive Code Playground -->
+            <div class="slide" data-title="SIMULASI KODING" data-subtitle="Coba Program Keuangan">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">Laboratorium Mini: Coba Eksekusi Program di Sini! 🧪</h2>
+                        <div class="slide-text">
+                            <p>Kamu tidak perlu menunggu! Mari kita coba simulasi bagaimana Python menghitung saldo tabunganmu langsung di slide interaktif ini:</p>
+
+                            <div class="playground-card">
+                                <label style="display: block; font-weight: 700; margin-bottom: 6px;">Masukkan Nama Akun Kamu:</label>
+                                <input type="text" id="demo-name" class="input-text-custom" value="Ahmad Yazid" placeholder="Ketik nama kamu...">
+
+                                <label style="display: block; font-weight: 700; margin-bottom: 6px;">Saldo Awal (Rp):</label>
+                                <input type="number" id="demo-saldo" class="input-text-custom" value="250000">
+
+                                <label style="display: block; font-weight: 700; margin-bottom: 6px;">Pengeluaran Belanja (Rp):</label>
+                                <input type="number" id="demo-belanja" class="input-text-custom" value="75000">
+
+                                <button class="btn-action-custom" onclick="runMiniDemo()">▶️ Jalankan Kode Python</button>
+
+                                <div class="result-box" id="demo-output">
+                                    Output terminal akan muncul di sini setelah kamu klik tombol jalankan...
+                                </div>
+                            </div>
+
+                            <p style="font-size: 17px; color: #444;">💡 <em>Di balik layar, komputer membaca nilai dari variabel nama, saldo, dan belanja, lalu menghitung rumus <code>sisa = saldo - belanja</code> secara instan!</em></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 14: Interactive Quiz Checkpoint -->
+            <div class="slide" data-title="KUIS PEMAHAMAN" data-subtitle="Check Pemahaman Mandiri">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">Uji Pemahaman: Apakah Kamu Sudah Siap? 🎯</h2>
+                        <div class="slide-text">
+                            <p>Pilihlah satu jawaban yang paling tepat untuk menguji pemahamanmu tentang materi pengantar ini:</p>
+
+                            <div style="background: #F8FAFC; border: 3px solid var(--black); padding: 18px; border-radius: 14px; margin-bottom: 20px;">
+                                <div style="font-weight: 700; font-size: 20px; margin-bottom: 12px;">
+                                    Pertanyaan 1: Shortcut keyboard tercepat untuk menjalankan cell kode di Google Colab adalah...
+                                </div>
+                                <div class="quiz-option" onclick="checkQ1('wrong', this)">A. Ctrl + Alt + Delete</div>
+                                <div class="quiz-option" onclick="checkQ1('correct', this)">B. Shift + Enter</div>
+                                <div class="quiz-option" onclick="checkQ1('wrong', this)">C. Spacebar 3 kali</div>
+                                <div class="quiz-option" onclick="checkQ1('wrong', this)">D. Esc + Enter</div>
+                                <div id="q1-feedback" style="display: none; margin-top: 10px; font-weight: bold; font-size: 17px; padding: 10px; border-radius: 8px;"></div>
+                            </div>
+
+                            <div style="background: #F8FAFC; border: 3px solid var(--black); padding: 18px; border-radius: 14px;">
+                                <div style="font-weight: 700; font-size: 20px; margin-bottom: 12px;">
+                                    Pertanyaan 2: Di manakah file Google Colab disimpan secara default?
+                                </div>
+                                <div class="quiz-option" onclick="checkQ2('wrong', this)">A. Flashdisk lokal siswa</div>
+                                <div class="quiz-option" onclick="checkQ2('correct', this)">B. Google Drive akun siswa</div>
+                                <div class="quiz-option" onclick="checkQ2('wrong', this)">C. Keranjang sampah browser</div>
+                                <div id="q2-feedback" style="display: none; margin-top: 10px; font-weight: bold; font-size: 17px; padding: 10px; border-radius: 8px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 15: Glosarium & Ringkasan Cepat -->
+            <div class="slide" data-title="GLOSARIUM & TIPS" data-subtitle="Cheat Sheet Pemula">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <h2 class="slide-title">Glosarium Cepat & Tips Anti-Error 💡</h2>
+                        <div class="slide-text">
+                            <p>Simpan rangkuman istilah penting ini sebagai bekal perjalanan kodingmu:</p>
+
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 18px 0;">
+                                <div class="feature-card">
+                                    <strong>.ipynb</strong><br>
+                                    Format berkas <em>Interactive Python Notebook</em> yang memuat kode dan teks sekaligus.
+                                </div>
+                                <div class="feature-card">
+                                    <strong>Runtime</strong><br>
+                                    Lingkungan komputasi di server Google yang memproses dan mengeksekusi kode Python kita.
+                                </div>
+                                <div class="feature-card">
+                                    <strong>SyntaxError</strong><br>
+                                    Pesan error jika ada salah ketik tanda kurung, tanda petik yang belum ditutup, atau huruf typo.
+                                </div>
+                                <div class="feature-card">
+                                    <strong>Case-Sensitive</strong><br>
+                                    Python membedakan huruf besar dan kecil. <code>print()</code> benar, tetapi <code>Print()</code> akan error!
+                                </div>
+                            </div>
+
+                            <div class="quote-box" style="font-size: 18px;">
+                                🛡️ <strong>Golden Rule Programmer:</strong> "Menemukan pesan error di terminal bukan tanda kamu gagal, melainkan petunjuk cerdas dari komputer agar kodemu menjadi sempurna!"
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 16: Penutup & Menuju Modul 1 -->
+            <div class="slide" data-title="SIAP MENUJU MODUL 1" data-subtitle="Selamat Melangkah!">
+                <div class="content-card" style="align-items: center; justify-content: center; background: radial-gradient(circle, #00E676 0%, #008f4c 100%); color: var(--black); border-color: var(--black);">
+                    <div class="inner-content" style="text-align: center;">
+                        <span style="background-color: var(--yellow); color: var(--black); padding: 8px 24px; border: 3px solid var(--black); border-radius: 20px; font-size: 18px; font-weight: 700; box-shadow: 4px 4px 0px var(--black); display: inline-block; margin-bottom: 25px; transform: rotate(-2deg);">
+                            LEVEL 0 COMPLETED! 🎉
+                        </span>
+                        <h1 style="font-size: 46px; font-weight: 700; margin-bottom: 18px; color: white; text-shadow: 4px 4px 0px var(--black); line-height: 1.2;">
+                            Kamu Telah Menguasai Dasar<br>Google Colab & Python! 🚀
+                        </h1>
+                        <p style="font-size: 22px; font-weight: 700; color: var(--yellow); text-shadow: 2px 2px 0px var(--black); margin-bottom: 35px;">
+                            Sekarang kamu sudah siap melangkah ke Modul 1 untuk belajar Input Data Pengguna & Validasi!
+                        </p>
+                        <div style="background-color: var(--white); border: 4px solid var(--black); border-radius: 16px; padding: 20px; box-shadow: 8px 8px 0px var(--black); max-width: 600px; margin: 0 auto; text-align: left; font-size: 18px; font-weight: 600;">
+                            <strong>Misi Berikutnya di Modul 1:</strong>
+                            <ul style="margin-top: 10px; padding-left: 25px;">
+                                <li>Menerima data interaktif dengan fungsi <code>input()</code></li>
+                                <li>Membersihkan teks spasi kotor dengan <code>.strip()</code></li>
+                                <li>Memeriksa input kosong agar program tidak crash</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Navigation Controls -->
+        <div class="nav-container">
+            <button id="btnPrev" class="nav-btn" disabled>← Prev</button>
+            <div class="counter-group">
+                <div class="slide-counter">Slide <span id="counter">1</span> dari <span id="totalSlides">16</span></div>
+                <div class="progress-bar-bg">
+                    <div id="bar" class="progress-bar" style="width: 6.25%;"></div>
+                </div>
+            </div>
+            <button id="btnNext" class="nav-btn">Next →</button>
+        </div>
+
+    </div>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        const bar = document.getElementById('bar');
+        const counter = document.getElementById('counter');
+        const btnPrev = document.getElementById('btnPrev');
+        const btnNext = document.getElementById('btnNext');
+        let currentSlide = 0;
+        document.getElementById('totalSlides').innerText = slides.length;
+
+        function showSlide(index) {
+            slides[currentSlide].classList.remove('active');
+            
+            // Boundary checks
+            if (index < 0) index = 0;
+            if (index >= slides.length) index = slides.length - 1;
+            
+            currentSlide = index;
+            slides[currentSlide].classList.add('active');
+            
+            // Scroll content card to top
+            const contentCard = slides[currentSlide].querySelector('.content-card');
+            if (contentCard) contentCard.scrollTo(0, 0);
+            
+            // Update Navigation UI
+            btnPrev.disabled = currentSlide === 0;
+            btnNext.disabled = currentSlide === slides.length - 1;
+            
+            counter.innerText = currentSlide + 1;
+            bar.style.width = ((currentSlide + 1) / slides.length * 100) + '%';
+
+            const bannerTitle = document.getElementById('banner-title');
+            const bannerSubtitle = document.getElementById('banner-subtitle');
+            
+            const activeSlide = slides[currentSlide];
+            const slideTitleText = activeSlide.getAttribute('data-title') || "PENGENALAN PYTHON SMA";
+            const slideSubtitleText = activeSlide.getAttribute('data-subtitle') || "Google Colab & Dasar Pemrograman";
+            
+            if (bannerTitle) bannerTitle.innerText = slideTitleText;
+            if (bannerSubtitle) bannerSubtitle.innerText = slideSubtitleText;
+        }
+
+        btnNext.addEventListener('click', () => {
+            if (currentSlide < slides.length - 1) showSlide(currentSlide + 1);
+        });
+        
+        btnPrev.addEventListener('click', () => {
+            if (currentSlide > 0) showSlide(currentSlide - 1);
+        });
+        
+        document.addEventListener('keydown', (e) => {
+            if (e.target.tagName.toLowerCase() === 'input' || e.target.tagName.toLowerCase() === 'textarea') {
+                return;
+            }
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                if (currentSlide < slides.length - 1) showSlide(currentSlide + 1);
+            }
+            if (e.key === 'ArrowLeft') {
+                if (currentSlide > 0) showSlide(currentSlide - 1);
+            }
+        });
+
+        // Slide 13 Interactive Mini Demo
+        function runMiniDemo() {
+            const name = document.getElementById('demo-name').value.trim() || "Pengguna";
+            const saldo = parseInt(document.getElementById('demo-saldo').value) || 0;
+            const belanja = parseInt(document.getElementById('demo-belanja').value) || 0;
+            const sisa = saldo - belanja;
+            
+            const outputBox = document.getElementById('demo-output');
+            outputBox.innerHTML = `
+                >>> PYTHON EXECUTION OUTPUT:<br>
+                Halo, <strong>${name}</strong>!<br>
+                Saldo Awal : Rp ${saldo.toLocaleString('id-ID')}<br>
+                Belanja    : Rp ${belanja.toLocaleString('id-ID')}<br>
+                -----------------------------------<br>
+                Sisa Saldo : <span style="color: ${sisa >= 0 ? 'var(--green)' : 'var(--red)'}; font-weight: bold;">Rp ${sisa.toLocaleString('id-ID')}</span>
+                ${sisa < 0 ? '<br>⚠️ PERINGATAN: Saldo kamu minus (defisit)!' : '<br>✅ Sukses: Saldo mencukupi.'}
+            `;
+        }
+
+        // Slide 14 Quiz Q1
+        function checkQ1(type, el) {
+            const fb = document.getElementById('q1-feedback');
+            const parent = el.parentElement;
+            parent.querySelectorAll('.quiz-option').forEach(o => o.classList.remove('correct', 'wrong'));
+            fb.style.display = 'block';
+            
+            if (type === 'correct') {
+                el.classList.add('correct');
+                fb.innerHTML = "✅ TEPAT SEKALI! Shortcut 'Shift + Enter' adalah jalan pintas standar tercepat untuk menjalankan cell dan langsung berpindah ke cell berikutnya.";
+                fb.style.backgroundColor = "var(--green)";
+                fb.style.color = "var(--black)";
+            } else {
+                el.classList.add('wrong');
+                fb.innerHTML = "❌ Kurang tepat! Coba ingat tombol Shift dikombinasikan dengan tombol apa?";
+                fb.style.backgroundColor = "var(--red)";
+                fb.style.color = "var(--white)";
+            }
+        }
+
+        // Slide 14 Quiz Q2
+        function checkQ2(type, el) {
+            const fb = document.getElementById('q2-feedback');
+            const parent = el.parentElement;
+            parent.querySelectorAll('.quiz-option').forEach(o => o.classList.remove('correct', 'wrong'));
+            fb.style.display = 'block';
+            
+            if (type === 'correct') {
+                el.classList.add('correct');
+                fb.innerHTML = "✅ BENAR! Google Colab langsung terhubung dan otomatis menyimpan file .ipynb ke dalam folder 'Colab Notebooks' di Google Drive milikmu.";
+                fb.style.backgroundColor = "var(--green)";
+                fb.style.color = "var(--black)";
+            } else {
+                el.classList.add('wrong');
+                fb.innerHTML = "❌ Salah! Colab adalah layanan cloud Google yang terintegrasi dengan Google Drive.";
+                fb.style.backgroundColor = "var(--red)";
+                fb.style.color = "var(--white)";
+            }
+        }
+    </script>
+</body>
+</html>
