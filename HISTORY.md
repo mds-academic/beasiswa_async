@@ -1086,3 +1086,36 @@ Yang aku ubah pada turn ini hanya dokumentasi audit dan log percakapan; tidak me
      - Header Navy Blue (`#092764`) dengan teks putih tebal.
      - 12 Kolom Lengkap: `No`, `Modul ID`, `Nama Modul`, `Step ID`, `Judul Step / Materi`, `Tipe Pembelajaran`, `Durasi / Kicker`, `Link Media / Slide / Video`, `Konsep & Topik yang Dipelajari`, `Rangkuman / Cheatsheet Singkat`, `Target Capaian & Hasil Belajar`, `Status Kesiapan Materi`.
      - Teks terbungkus (text wrapping) dan zebra shading (`#F8F9FA`).
+
+
+### User Request — 2026-09-08T21:01:45+07:00
+
+"sekalian masukin mana pop up quiz nyaa apa dan apa mini project nya yang ada di display di tab"
+
+
+### Assistant Response & Action Record — 2026-09-08T21:06:00+07:00
+
+1. **Penambahan Kolom Pop-up Quiz & Mini Project di Google Spreadsheet**:
+   - Seluruh tabsheet kurikulum (`materi-sd`, `materi-smp`, `materi-sma`) telah diperbarui secara langsung dengan 14 kolom lengkap:
+     1. `No`
+     2. `Modul ID`
+     3. `Nama Modul`
+     4. `Step ID`
+     5. `Judul Step / Materi`
+     6. `Tipe Pembelajaran`
+     7. `Durasi / Kicker`
+     8. `Link Media / Slide / Video`
+     9. `Konsep & Topik yang Dipelajari`
+     10. `Pop-up Quiz Interaktif (Waktu, Soal & Kunci)` *(BARU)*
+     11. `Mini Project / Hands-on Tugas Praktik` *(BARU)*
+     12. `Rangkuman / Cheatsheet Singkat`
+     13. `Target Capaian & Hasil Belajar`
+     14. `Status Kesiapan Materi`
+
+2. **Detail Pop-up Quiz & Mini Project yang Ditampilkan**:
+   - **Pop-up Quiz**: Menampilkan detik kemunculan di video (`⏱️ [mm:ss]`), teks lengkap pertanyaan kuis atau badge info interaktif, pilihan ganda, dan kunci jawaban yang benar (`✅ Kunci: ...`).
+   - **Mini Project / Hands-on**: Menampilkan nama misi proyek (misal `MINI PROJECT 01: Safe Transaction Input 🛡️`, `MINI PROJECT 01: Form Registrasi Aman 📱`, `MINI PROJECT 01: Sorting Needs vs Wants di Scratch 🐱`), daftar instruksi tugas yang harus dikerjakan siswa step-by-step, dan target artefak luaran yang harus dikumpulkan ke sistem penilaian.
+
+3. **Verifikasi Visual & Sinkronisasi Git**:
+   - Berhasil dieksekusi via `populateCurriculumSheets()` Google Apps Script dan dikonfirmasi lewat tangkapan layar Playwright pada browser live.
+   - Perubahan kode Apps Script dan sinkronisasi `docs/` telah di-commit (`973d939`) dan di-push ke GitHub remote `origin main`.
