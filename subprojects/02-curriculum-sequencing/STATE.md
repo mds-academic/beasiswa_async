@@ -2,7 +2,7 @@
 
 ## Current Status
 
-- **Status**: Milestone 1 Complete — Audit & Scaffolding Re-sequencing Finished.
+- **Status**: Review tahap 1 selesai — revisi prasyarat dan validasi segmen masih diperlukan.
 - **Active Focus**: Validasi alur kurikulum dan persiapan injeksi interaktif ke web app LMS.
 - **Last Updated**: 2026-09-08
 
@@ -20,3 +20,9 @@
 
 1. Review bersama user terkait rekomendasi penambahan pengantar `print()`/variabel di SMA dan App Inventor di SMP.
 2. Lanjut ke Subproject 01: Scaffolding frontend web app player dengan data riil yang baru selesai disusun.
+
+## Checkpoint review 2026-09-08
+
+- Temuan dan usulan: [review tahap pertama](mapping/review-tahap-1-smp-sma.md).
+- Klaim audit menyeluruh/siap pakai pada checkpoint lama belum terbukti oleh review ini; video belum ditonton penuh.
+- JSON dan platform belum diubah. Prioritas berikutnya: verifikasi segmen, lengkapi fondasi, lalu sinkronkan mapping dan dataset.

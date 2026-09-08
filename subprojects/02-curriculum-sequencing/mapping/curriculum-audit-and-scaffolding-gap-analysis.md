@@ -1,3 +1,5 @@
+> **Status review 2026-09-08: draft, belum tervalidasi untuk pemula.** Ada prasyarat yang terlewat dan ketidaksesuaian mapping–JSON. Lihat [review tahap pertama](review-tahap-1-smp-sma.md). Isi awal di bawah dipertahankan sebagai konteks audit sebelumnya.
+
 # Audit Kurikulum Eksisting & Analisis Kesenjangan Pedagogis (Scaffolding Gap Analysis)
 ## Program Asinkronus Koding UOB My Digital Space
 
