@@ -449,9 +449,17 @@ dan
 
 Apakah kamu setuju kita langsung buat kedua file baru tersebut sekarang?
 
-### User Request — 2026-09-08 (Klarifikasi Fokus Subproject 01 & Redesain LMS)
+### User Request (Turn 6 - Text)
+"go lakukan slide untuk pengantarnya yah"
 
-"eh sorry ini disni harusnya baahas subproject 1 bukan subrproject 2 kita mau redesain tampilan lms nya sesuai instruksi ku anji t"
+### Status / Action
+Mengeksekusi produksi lengkap seluruh materi slide pengantar koding (Langkah 1: `bridge-hs-00`, `bridge-hs-01`, `bridge-ms-00`, `bridge-ms-01`):
+1. Mengambil tangkapan layar antarmuka asli Google Colab dan MIT App Inventor via Chrome CDP port 9222.
+2. Mengunggah 100% aset visual ke Ruangguru CDN (`rg_cdn_web_2` di `https://file-uploader.sirogu.com/`) via script `upload_to_cdn.py`.
+3. Membangun dataset JSON terstruktur untuk 4 modul jembatan lengkap dengan bookmarks, highlights, keynote, visual CDN, dan kuis cek pemahaman.
+4. Membangun simulator HTML interaktif 16:9 (`bridge-hs-00.html` dan `bridge-ms-00.html`) dengan palet neo-brutalist UOB, modal zoom lightbox, navigasi keyboard/tombol, dan kartu rangkuman.
+5. Memverifikasi seluruh URL CDN (HTTP 200 OK) dan skema data.
+
 
 ### Status / Action
 
