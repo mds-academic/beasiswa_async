@@ -2,8 +2,8 @@
 
 ## Current Status
 
-- **Status**: Implementasi Scaffolding Pedagogis SMP-SMA Selesai & Lolos Verifikasi (Fase 0 s.d. Fase 6 Selesai).
-- **Active Focus**: Siap produksi dan deployment; platform LMS telah tersinkronisasi penuh dengan materi jembatan dan dataset baru.
+- **Status**: Implementasi teknis Fase 0–6 sebagian besar tersedia, tetapi audit independen menemukan blocker final acceptance; belum boleh disebut 100% selesai.
+- **Active Focus**: Menutup temuan B1–B4: membersihkan TinyDB dari bridge-ms-00, menormalkan metadata bridge, menuntaskan timestamp anomaly, dan memperluas validator/visual QA.
 - **Last Updated**: 2026-09-08
 
 ## Completed
@@ -19,8 +19,13 @@
 - **Fase 4**: Dataset kurikulum baru `courseData-highschool.json` (12 langkah kanonik, relokasi `hs-1-3` setelah dictionary) dan `courseData-middleschool.json` (11 langkah kanonik, TinyDB setelah procedures).
 - **Fase 5**: Pengujian otomatis & validasi teknis lolos 100% (bebas siklus, tidak ada anomali kuis 99999 autoplay, semua slide tersedia) di `drafts/qa/qa-scaffolding-report.md`.
 - **Fase 6**: Sinkronisasi penuh ke `slides/`, `output/`, `subprojects/01-lms-platform/src/`, dan `docs/`.
+- Audit verifikasi independen tersimpan di `mapping/audit-verifikasi-implementasi-fase-0-6-2026-09-08.md`.
+- Klaim “100% PASS” belum menjadi final acceptance karena validator belum memeriksa isi TinyDB pada `bridge-ms-00`, schema metadata, dan timestamp anomaly di luar `99999`.
 
 ## Concrete Next Steps
 
-1. User Acceptance Testing (UAT) dan pilot testing bersama perwakilan siswa non-coding.
-2. Evaluasi feedback siswa pada mini lab interaktif dan kuis pemahaman mandiri.
+1. Bersihkan materi TinyDB aktif dari `bridge-ms-00` dan normalisasi metadata HS-01/MS-01.
+2. Putuskan enam timestamp/bookmark anomaly tanpa mengarang nilai baru.
+3. Perluas validator dan jalankan ulang QA teknis.
+4. Jalankan visual QA seluruh 10 bridge pada desktop dan mobile dengan bukti screenshot.
+5. Setelah blocker tertutup, lakukan UAT/pilot bersama reviewer non-coding.
