@@ -22,8 +22,10 @@
 - **Git & Clasp Deployment**:
   - Remote Git: `git@github.com:mds-academic/beasiswa_async.git` (Identity: `~/.ssh/id_ed25519_academic_mds`).
   - Apps Script Clasp: Akun RGC UOB baru dengan spreadsheet terpusat baru.
-- **Sumber Kode Lama**:
+- **Sumber Kode & Materi Lama (Strict Read-Only)**:
   - Direktori acuan: `/Users/yazidhilmi/Documents/cloud/Kalananti-cloud/Academic_Content/B2B/UOB/Async/`.
+  - **Prinsip Zero-Touch**: DILARANG KERAS mengubah atau memodifikasi file apapun di folder lama tersebut. Folder lama strictly read-only.
+  - **Clean Slate / Completely New**: Semua file pengembangan baru (LMS player, slides koding pemula, dataset kurikulum baru, skrip) dibuat sebagai file baru (*completely new*) langsung di dalam folder proyek lokal `projects/uob-async-lms/`.
 
 ## Kebutuhan disetujui pengguna — 2026-09-08: materi campuran untuk pemula
 
