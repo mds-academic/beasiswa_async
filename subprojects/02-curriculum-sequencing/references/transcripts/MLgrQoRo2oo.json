@@ -1,0 +1,262 @@
+[
+  {
+    "text": "Halo teman-teman, hari ini kita akan",
+    "start": 2.12,
+    "duration": 5.44
+  },
+  {
+    "text": "membahas tentang conditional. Nah,",
+    "start": 4.2,
+    "duration": 5.68
+  },
+  {
+    "text": "sebelum kita membahas conditional, yuk",
+    "start": 7.56,
+    "duration": 5.56
+  },
+  {
+    "text": "kita perhatikan slide berikut ini. Nah,",
+    "start": 9.88,
+    "duration": 6.319
+  },
+  {
+    "text": "slide berikut ini menunjukkan bla bla",
+    "start": 13.12,
+    "duration": 5.12
+  },
+  {
+    "text": "bla bla bla bla. Ini tes aja kok enggak",
+    "start": 16.199,
+    "duration": 5.561
+  },
+  {
+    "text": "bukan asli. Nah, jadi teman-teman pada",
+    "start": 18.24,
+    "duration": 6.0
+  },
+  {
+    "text": "saat kita pada saat kita mencoding atau",
+    "start": 21.76,
+    "duration": 4.96
+  },
+  {
+    "text": "memprogram sesuatu, sebuah program itu",
+    "start": 24.24,
+    "duration": 4.52
+  },
+  {
+    "text": "dia tidak berjalan lurus-lurus aja loh",
+    "start": 26.72,
+    "duration": 4.92
+  },
+  {
+    "text": "seperti kereta api teman-teman. Tapi",
+    "start": 28.76,
+    "duration": 5.119
+  },
+  {
+    "text": "mereka itu juga kadang harus memilih",
+    "start": 31.64,
+    "duration": 5.32
+  },
+  {
+    "text": "apakah ee harus menggunakan cara A atau",
+    "start": 33.879,
+    "duration": 6.401
+  },
+  {
+    "text": "cara B, apakah harus menjalankan ee cara",
+    "start": 36.96,
+    "duration": 5.919
+  },
+  {
+    "text": "A atau menjalankan cara B dulu. Jadi",
+    "start": 40.28,
+    "duration": 6.959
+  },
+  {
+    "text": "program itu dia harus memilih. Nah,",
+    "start": 42.879,
+    "duration": 6.36
+  },
+  {
+    "text": "di dalam dunia pemrograman konsep",
+    "start": 47.239,
+    "duration": 5.681
+  },
+  {
+    "text": "memilih jalan ini disebut dengan",
+    "start": 49.239,
+    "duration": 8.0
+  },
+  {
+    "text": "Nah, kita sebagai manusia juga",
+    "start": 52.92,
+    "duration": 6.439
+  },
+  {
+    "text": "membuat keputusan. Contohnya misalnya",
+    "start": 57.239,
+    "duration": 4.241
+  },
+  {
+    "text": "kalau hujan jatuh, hujan jatuh. Kalau",
+    "start": 59.359,
+    "duration": 3.801
+  },
+  {
+    "text": "misalnya hujan turun kita harus bawa",
+    "start": 61.48,
+    "duration": 3.92
+  },
+  {
+    "text": "payung. Kalau perut lapar kita harus",
+    "start": 63.16,
+    "duration": 5.68
+  },
+  {
+    "text": "makan. Nah, hujan turun dan perut lapar",
+    "start": 65.4,
+    "duration": 6.16
+  },
+  {
+    "text": "itu namanya adalah condition atau",
+    "start": 68.84,
+    "duration": 6.36
+  },
+  {
+    "text": "kondisi. Jadi, komputer itu juga pintar",
+    "start": 71.56,
+    "duration": 7.32
+  },
+  {
+    "text": "untuk melakukan dan ee memilih sesuatu",
+    "start": 75.2,
+    "duration": 5.64
+  },
+  {
+    "text": "berdasarkan kondisi yang telah kita",
+    "start": 78.88,
+    "duration": 6.199
+  },
+  {
+    "text": "tetapkan. Nah, condition itu apa sih?",
+    "start": 80.84,
+    "duration": 7.44
+  },
+  {
+    "text": "Condition itu kalau dalam program adalah",
+    "start": 85.079,
+    "duration": 5.761
+  },
+  {
+    "text": "sebuah cara gimana komputer berpikir.",
+    "start": 88.28,
+    "duration": 4.519
+  },
+  {
+    "text": "Nah, misalnya kalian sedang membuat",
+    "start": 90.84,
+    "duration": 5.08
+  },
+  {
+    "text": "game, di game itu kalian membuat kondisi",
+    "start": 92.799,
+    "duration": 5.841
+  },
+  {
+    "text": "di mana kalau misalnya dia makan apel",
+    "start": 95.92,
+    "duration": 5.04
+  },
+  {
+    "text": "nyawanya akan bertambah. Kalau misalnya",
+    "start": 98.64,
+    "duration": 5.519
+  },
+  {
+    "text": "dia kena duri, maka dia nyawanya akan",
+    "start": 100.96,
+    "duration": 6.0
+  },
+  {
+    "text": "berkurang. Nah, kondisinya adalah makan",
+    "start": 104.159,
+    "duration": 7.0
+  },
+  {
+    "text": "apel dan kena duri. Itu contoh kalau di",
+    "start": 106.96,
+    "duration": 6.28
+  },
+  {
+    "text": "game. Contoh lain, bayangkan kalian",
+    "start": 111.159,
+    "duration": 5.28
+  },
+  {
+    "text": "sedang berjalan ke ee di tengah hutan",
+    "start": 113.24,
+    "duration": 5.0
+  },
+  {
+    "text": "terus kalian menemukan sebuah castle",
+    "start": 116.439,
+    "duration": 4.32
+  },
+  {
+    "text": "yang isinya itu penuh harta gitu ya.",
+    "start": 118.24,
+    "duration": 4.839
+  },
+  {
+    "text": "Nah, untuk membuka castle tersebut kita",
+    "start": 120.759,
+    "duration": 4.121
+  },
+  {
+    "text": "harus punya kunci. Kalau kita enggak",
+    "start": 123.079,
+    "duration": 3.521
+  },
+  {
+    "text": "punya kunci, kita tidak bisa buka",
+    "start": 124.88,
+    "duration": 4.12
+  },
+  {
+    "text": "pintunya. Kalau misalnya kita tidak bisa",
+    "start": 126.6,
+    "duration": 3.84
+  },
+  {
+    "text": "buka pintunya, kita enggak bisa dapat",
+    "start": 129.0,
+    "duration": 3.959
+  },
+  {
+    "text": "hartanya. Nah,",
+    "start": 130.44,
+    "duration": 5.0
+  },
+  {
+    "text": "punya kunci itu disebut dengan kondisi",
+    "start": 132.959,
+    "duration": 5.321
+  },
+  {
+    "text": "ya, Teman-teman. Oke, tuh untuk",
+    "start": 135.44,
+    "duration": 4.879
+  },
+  {
+    "text": "condition.",
+    "start": 138.28,
+    "duration": 5.039
+  },
+  {
+    "text": "B",
+    "start": 140.319,
+    "duration": 3.0
+  }
+]

@@ -1,0 +1,1122 @@
+[
+  {
+    "text": "Jika ada program atau sebu eh sesuatu",
+    "start": 0.199,
+    "duration": 6.68
+  },
+  {
+    "text": "yang kondisinya hanya satu, maka kita",
+    "start": 4.52,
+    "duration": 6.4
+  },
+  {
+    "text": "bisa menggunakan if dan else aja. Tapi",
+    "start": 6.879,
+    "duration": 7.401
+  },
+  {
+    "text": "bagaimana kalau misalnya kita memiliki",
+    "start": 10.92,
+    "duration": 5.64
+  },
+  {
+    "text": "lebih dari satu kondisi gitu ya?",
+    "start": 14.28,
+    "duration": 4.159
+  },
+  {
+    "text": "Misalnya jawabannya enggak yang benar",
+    "start": 16.56,
+    "duration": 4.08
+  },
+  {
+    "text": "itu enggak hanya yang Aja, tapi yang B",
+    "start": 18.439,
+    "duration": 4.92
+  },
+  {
+    "text": "itu juga bisa benar. Tapi misalnya kalau",
+    "start": 20.64,
+    "duration": 6.28
+  },
+  {
+    "text": "ee murid kita atau pemain game kita tuh",
+    "start": 23.359,
+    "duration": 7.08
+  },
+  {
+    "text": "menjawabnya A, maka skornya misalnya 90.",
+    "start": 26.92,
+    "duration": 5.479
+  },
+  {
+    "text": "Tapi kalau misalnya dia jawabnya B, maka",
+    "start": 30.439,
+    "duration": 4.721
+  },
+  {
+    "text": "skornya hanya 80 gitu. Berarti ada dua",
+    "start": 32.399,
+    "duration": 6.441
+  },
+  {
+    "text": "kondisi yang harus terpenuhi. Nah, kalau",
+    "start": 35.16,
+    "duration": 6.44
+  },
+  {
+    "text": "misalnya kondisinya lebih dari satu,",
+    "start": 38.84,
+    "duration": 6.36
+  },
+  {
+    "text": "maka kita ee tampilannya dalam bahasa",
+    "start": 41.6,
+    "duration": 6.439
+  },
+  {
+    "text": "Python itu seharusnya seperti ini. Kita",
+    "start": 45.2,
+    "duration": 5.8
+  },
+  {
+    "text": "tuliskan if-nya terlebih dahulu.",
+    "start": 48.039,
+    "duration": 6.441
+  },
+  {
+    "text": "Kemudian kita masukkan else. Nah, di",
+    "start": 51.0,
+    "duration": 5.48
+  },
+  {
+    "text": "dalam else ini kita tulis lagi if",
+    "start": 54.48,
+    "duration": 5.399
+  },
+  {
+    "text": "kondisi yang kedua nih. Jadi kondisi",
+    "start": 56.48,
+    "duration": 6.239
+  },
+  {
+    "text": "satu kalau misalnya kondisi satu tidak",
+    "start": 59.879,
+    "duration": 5.121
+  },
+  {
+    "text": "terpenuhi maka kita tambahin else tadi",
+    "start": 62.719,
+    "duration": 4.001
+  },
+  {
+    "text": "ya. Nah, di dalam else ini kita harus",
+    "start": 65.0,
+    "duration": 4.04
+  },
+  {
+    "text": "ngecek lagi apakah kondisi yang kedua",
+    "start": 66.72,
+    "duration": 5.32
+  },
+  {
+    "text": "terpenuhi juga. Kalau enggak, maka dia",
+    "start": 69.04,
+    "duration": 5.2
+  },
+  {
+    "text": "akan menjalankan else-nya. Itu kalau",
+    "start": 72.04,
+    "duration": 4.52
+  },
+  {
+    "text": "misalnya ada kondisi ketiga, ada kondisi",
+    "start": 74.24,
+    "duration": 4.68
+  },
+  {
+    "text": "keempat, dan seterusnya. Jadi dalam",
+    "start": 76.56,
+    "duration": 3.879
+  },
+  {
+    "text": "bahasa Python itu dia seharusnya",
+    "start": 78.92,
+    "duration": 4.68
+  },
+  {
+    "text": "tertulisnya seperti ini. Nah, namun ee",
+    "start": 80.439,
+    "duration": 4.761
+  },
+  {
+    "text": "tulisan seperti ini kan kadang",
+    "start": 83.6,
+    "duration": 4.12
+  },
+  {
+    "text": "membingungkan ya, Teman-teman ya. Karena",
+    "start": 85.2,
+    "duration": 4.32
+  },
+  {
+    "text": "dia semakin menjorok ke kanan semakin",
+    "start": 87.72,
+    "duration": 5.079
+  },
+  {
+    "text": "jauh tuh. Dan kita sebagai pengguna,",
+    "start": 89.52,
+    "duration": 5.32
+  },
+  {
+    "text": "sebagai yang mengetik programmer bingung",
+    "start": 92.799,
+    "duration": 5.881
+  },
+  {
+    "text": "dong ketika membacanya. Nah, untungnya",
+    "start": 94.84,
+    "duration": 5.599
+  },
+  {
+    "text": "Python itu selalu update dan dia",
+    "start": 98.68,
+    "duration": 3.719
+  },
+  {
+    "text": "sekarang udah canggih. Sekarang kita",
+    "start": 100.439,
+    "duration": 4.0
+  },
+  {
+    "text": "tidak perlu lagi menulis kode yang",
+    "start": 102.399,
+    "duration": 5.121
+  },
+  {
+    "text": "berjenjang seperti ini. Kita bisa",
+    "start": 104.439,
+    "duration": 6.68
+  },
+  {
+    "text": "menggunakan solusi berikut ini. Nah,",
+    "start": 107.52,
+    "duration": 6.52
+  },
+  {
+    "text": "kalau ada kondisi yang lebih dari dua",
+    "start": 111.119,
+    "duration": 6.241
+  },
+  {
+    "text": "misalnya contoh kasusnya ee mungkin pada",
+    "start": 114.04,
+    "duration": 5.359
+  },
+  {
+    "text": "saat kalian bagi rapot, kalian melihat",
+    "start": 117.36,
+    "duration": 5.119
+  },
+  {
+    "text": "nih ee di rapot kalian di palian di",
+    "start": 119.399,
+    "duration": 7.921
+  },
+  {
+    "text": "bagian paling bawah ada ee semacam ee",
+    "start": 122.479,
+    "duration": 7.081
+  },
+  {
+    "text": "akreditasi nilai gitu ya, predikat.",
+    "start": 127.32,
+    "duration": 4.44
+  },
+  {
+    "text": "Misalnya kalau nilainya nilai kita di",
+    "start": 129.56,
+    "duration": 5.0
+  },
+  {
+    "text": "rapot itu 90 sampai 100, maka",
+    "start": 131.76,
+    "duration": 5.44
+  },
+  {
+    "text": "predikatnya sangat baik. atau misalnya",
+    "start": 134.56,
+    "duration": 6.92
+  },
+  {
+    "text": "nilai kita 7 antara 75 sampai 89 karena",
+    "start": 137.2,
+    "duration": 6.64
+  },
+  {
+    "text": "90 kan sangat baik ya. Nah, maka",
+    "start": 141.48,
+    "duration": 4.92
+  },
+  {
+    "text": "prediket akan baik dan seterusnya dan",
+    "start": 143.84,
+    "duration": 5.56
+  },
+  {
+    "text": "seterusnya. Nah, kondisi ini kalau misal",
+    "start": 146.4,
+    "duration": 4.52
+  },
+  {
+    "text": "kan kondisinya enggak hanya satu ya.",
+    "start": 149.4,
+    "duration": 2.96
+  },
+  {
+    "text": "Pertama program tuh harus ngecek nih",
+    "start": 150.92,
+    "duration": 4.16
+  },
+  {
+    "text": "apakah nilainya antara 90 sampai 100.",
+    "start": 152.36,
+    "duration": 4.72
+  },
+  {
+    "text": "Terus itu dia ngecek lagi yang kedua dan",
+    "start": 155.08,
+    "duration": 4.68
+  },
+  {
+    "text": "ketiga dan seterusnya. Nah, dalam bahasa",
+    "start": 157.08,
+    "duration": 6.48
+  },
+  {
+    "text": "Python untuk",
+    "start": 159.76,
+    "duration": 3.8
+  },
+  {
+    "text": "menggunakan kondisi yang lebih dari",
+    "start": 163.599,
+    "duration": 4.92
+  },
+  {
+    "text": "satu, kita bisa menggunakan yang namanya",
+    "start": 165.879,
+    "duration": 5.64
+  },
+  {
+    "text": "function yang namanya elif. Nah, elif",
+    "start": 168.519,
+    "duration": 5.961
+  },
+  {
+    "text": "atau singkatan dari else if gitu ya,",
+    "start": 171.519,
+    "duration": 4.8
+  },
+  {
+    "text": "Teman-teman. Karena di sini kan di sini",
+    "start": 174.48,
+    "duration": 4.56
+  },
+  {
+    "text": "ada else, di dalamnya ada if. Nah, kalau",
+    "start": 176.319,
+    "duration": 5.28
+  },
+  {
+    "text": "bahasa Python yang terbaru itu dia akan",
+    "start": 179.04,
+    "duration": 4.88
+  },
+  {
+    "text": "ee mengganti e langsung digabung nih",
+    "start": 181.599,
+    "duration": 4.881
+  },
+  {
+    "text": "sama dia. Jadi tulisannya elif yang",
+    "start": 183.92,
+    "duration": 4.959
+  },
+  {
+    "text": "artinya kalau misalnya kondisi",
+    "start": 186.48,
+    "duration": 4.479
+  },
+  {
+    "text": "sebelumnya salah, coba cek kondisi",
+    "start": 188.879,
+    "duration": 6.121
+  },
+  {
+    "text": "bagian ini. Maka di sini bentuk bahasa",
+    "start": 190.959,
+    "duration": 7.801
+  },
+  {
+    "text": "python-nya tadi itu seperti ini. Ift",
+    "start": 195.0,
+    "duration": 5.48
+  },
+  {
+    "text": "kondisi yang paling pertama dicek itu",
+    "start": 198.76,
+    "duration": 4.199
+  },
+  {
+    "text": "if, kemudian dibaca dengan eh",
+    "start": 200.48,
+    "duration": 5.2
+  },
+  {
+    "text": "dilanjutkan dengan elif. Elif. Terus itu",
+    "start": 202.959,
+    "duration": 4.241
+  },
+  {
+    "text": "kalau misalnya kondisinya tidak ada yang",
+    "start": 205.68,
+    "duration": 4.4
+  },
+  {
+    "text": "terpenuhi kita tambahkan else. Nah,",
+    "start": 207.2,
+    "duration": 4.759
+  },
+  {
+    "text": "kalau bahasa manusia kan kita melihatnya",
+    "start": 210.08,
+    "duration": 4.159
+  },
+  {
+    "text": "seperti ini ya. Kalau nilai 90 ke atas",
+    "start": 211.959,
+    "duration": 4.161
+  },
+  {
+    "text": "maka sangat baik dan seterusnya dan",
+    "start": 214.239,
+    "duration": 3.681
+  },
+  {
+    "text": "seterusnya. Nah, ini kan bahasa manusia,",
+    "start": 216.12,
+    "duration": 5.16
+  },
+  {
+    "text": "bahasa Python-nya itu if elif elif.",
+    "start": 217.92,
+    "duration": 5.039
+  },
+  {
+    "text": "Terus kalau misalnya ada semua",
+    "start": 221.28,
+    "duration": 3.28
+  },
+  {
+    "text": "kondisinya tidak terpenuhi maka kita",
+    "start": 222.959,
+    "duration": 5.721
+  },
+  {
+    "text": "tambahin else gitu. Nah, bentuk bahasa",
+    "start": 224.56,
+    "duration": 6.16
+  },
+  {
+    "text": "Python-nya itu seperti apa sih? Nah, ini",
+    "start": 228.68,
+    "duration": 5.96
+  },
+  {
+    "text": "dia contohnya. Oh iya. Ee tadi yang",
+    "start": 230.72,
+    "duration": 7.079
+  },
+  {
+    "text": "bercabang tadi ya ee nilai if yang",
+    "start": 234.64,
+    "duration": 4.959
+  },
+  {
+    "text": "bercabang tadi if yang kondisinya lebih",
+    "start": 237.799,
+    "duration": 4.041
+  },
+  {
+    "text": "dari satu itu disebut dengan multi",
+    "start": 239.599,
+    "duration": 4.761
+  },
+  {
+    "text": "branch decision teman-teman. Nah bentuk",
+    "start": 241.84,
+    "duration": 4.959
+  },
+  {
+    "text": "multi branch decision itu di Python nih",
+    "start": 244.36,
+    "duration": 6.84
+  },
+  {
+    "text": "seperti ini sama ya seperti eh bahasa e",
+    "start": 246.799,
+    "duration": 7.121
+  },
+  {
+    "text": "bahasa pemrograman Python yang if yang",
+    "start": 251.2,
+    "duration": 6.2
+  },
+  {
+    "text": "kondisinya satu tadi itu di awal kita",
+    "start": 253.92,
+    "duration": 6.36
+  },
+  {
+    "text": "harus mendeklarasikan dulu variabelnya.",
+    "start": 257.4,
+    "duration": 5.4
+  },
+  {
+    "text": "Misal variabel skornya itu sama dengan",
+    "start": 260.28,
+    "duration": 5.8
+  },
+  {
+    "text": "82. Oh, nilai kita berarti 82 gitu ya.",
+    "start": 262.8,
+    "duration": 6.8
+  },
+  {
+    "text": "Nah, programnya akan ngecek nih jika if",
+    "start": 266.08,
+    "duration": 6.16
+  },
+  {
+    "text": "score lebih dari atau sama dengan 90 kan",
+    "start": 269.6,
+    "duration": 5.36
+  },
+  {
+    "text": "tadi kita range-nya 90 sampai 100 maka",
+    "start": 272.24,
+    "duration": 5.72
+  },
+  {
+    "text": "kita mau dia nge-print sangat baik. Nah,",
+    "start": 274.96,
+    "duration": 5.4
+  },
+  {
+    "text": "kita cek nih kondisi yang kedua. Kita",
+    "start": 277.96,
+    "duration": 4.12
+  },
+  {
+    "text": "tuliskan kondisi yang kedua. Nah, kita",
+    "start": 280.36,
+    "duration": 4.44
+  },
+  {
+    "text": "tulisnya bukan else. Nah, misalnya kita",
+    "start": 282.08,
+    "duration": 5.44
+  },
+  {
+    "text": "tuliskan digantikan dengan elif. Dan",
+    "start": 284.8,
+    "duration": 6.239
+  },
+  {
+    "text": "kondisi yang kedua kalau misal skornya",
+    "start": 287.52,
+    "duration": 5.72
+  },
+  {
+    "text": "variabel skornya itu nilainya lebih atau",
+    "start": 291.039,
+    "duration": 4.521
+  },
+  {
+    "text": "sama dengan 75 karena kita mau range-nya",
+    "start": 293.24,
+    "duration": 6.88
+  },
+  {
+    "text": "75 sampai 89 itu dia akan ng-print",
+    "start": 295.56,
+    "duration": 6.88
+  },
+  {
+    "text": "tulisan baik.",
+    "start": 300.12,
+    "duration": 4.28
+  },
+  {
+    "text": "Ada if yang ketiga, kalau misalnya dia",
+    "start": 302.44,
+    "duration": 5.8
+  },
+  {
+    "text": "antara 60 sampai 74 maka dia tulisannya",
+    "start": 304.4,
+    "duration": 6.32
+  },
+  {
+    "text": "cukup. Tapi kalau misalnya dia tidak ada",
+    "start": 308.24,
+    "duration": 5.32
+  },
+  {
+    "text": "yang terpenuhi, misalnya nilainya under",
+    "start": 310.72,
+    "duration": 7.56
+  },
+  {
+    "text": "60, maka kita akan ee nampilkan teks",
+    "start": 313.56,
+    "duration": 6.919
+  },
+  {
+    "text": "perlu latihan lagi. Nah, kita cek nih",
+    "start": 318.28,
+    "duration": 4.68
+  },
+  {
+    "text": "contoh kita 82 tadi. Dia akan",
+    "start": 320.479,
+    "duration": 4.921
+  },
+  {
+    "text": "melemparkan ke dalam condition yang",
+    "start": 322.96,
+    "duration": 4.359
+  },
+  {
+    "text": "pertama. Ingat ya, Teman-teman, dalam",
+    "start": 325.4,
+    "duration": 4.04
+  },
+  {
+    "text": "bahasa program Python itu dia mengalir",
+    "start": 327.319,
+    "duration": 6.121
+  },
+  {
+    "text": "dari atas sampai bawah gitu. Jadi nilai",
+    "start": 329.44,
+    "duration": 7.96
+  },
+  {
+    "text": "ini akan dicek dulu dari atas. 82. Dicek",
+    "start": 333.44,
+    "duration": 6.8
+  },
+  {
+    "text": "apakah 82",
+    "start": 337.4,
+    "duration": 6.04
+  },
+  {
+    "text": "itu dia lebih besar dari 90. Oh, 82",
+    "start": 340.24,
+    "duration": 5.239
+  },
+  {
+    "text": "tidak lebih besar dari 90. Kita cek lagi",
+    "start": 343.44,
+    "duration": 3.44
+  },
+  {
+    "text": "karena di sini ada dua kondisi ya, ada",
+    "start": 345.479,
+    "duration": 5.681
+  },
+  {
+    "text": "sama dengan apakah 82 = 90? Oh, tidak",
+    "start": 346.88,
+    "duration": 7.24
+  },
+  {
+    "text": "juga. Maka kondisi yang A itu kita",
+    "start": 351.16,
+    "duration": 4.8
+  },
+  {
+    "text": "tutup.",
+    "start": 354.12,
+    "duration": 5.0
+  },
+  {
+    "text": "Eh, kondisinya akan pindah ke yang nomor",
+    "start": 355.96,
+    "duration": 5.56
+  },
+  {
+    "text": "du. Kondisi yang kedua",
+    "start": 359.12,
+    "duration": 6.68
+  },
+  {
+    "text": "apakah 82 lebih besar dari 75?",
+    "start": 361.52,
+    "duration": 6.88
+  },
+  {
+    "text": "Wah, ternyata benar 82 lebih besar dari",
+    "start": 365.8,
+    "duration": 4.519
+  },
+  {
+    "text": "75. Apakah kita perlu ngecek lagi",
+    "start": 368.4,
+    "duration": 4.0
+  },
+  {
+    "text": "kondisi kedua? Tidak. Karena dalam",
+    "start": 370.319,
+    "duration": 3.961
+  },
+  {
+    "text": "bahasa pemegangan Python, kalau sudah",
+    "start": 372.4,
+    "duration": 4.28
+  },
+  {
+    "text": "ada yang benar maka dia akan stop. Nah,",
+    "start": 374.28,
+    "duration": 5.319
+  },
+  {
+    "text": "di sini 82 lebih besar dari 75 maka dia",
+    "start": 376.68,
+    "duration": 5.16
+  },
+  {
+    "text": "akan langsung nge-print tulisan baik.",
+    "start": 379.599,
+    "duration": 4.88
+  },
+  {
+    "text": "Yang di bawah ini akan dia lewatin pun",
+    "start": 381.84,
+    "duration": 4.32
+  },
+  {
+    "text": "yang di perintah selanjutnya kan setelah",
+    "start": 384.479,
+    "duration": 3.761
+  },
+  {
+    "text": "kita ngecek lebih besar ada sama dengan",
+    "start": 386.16,
+    "duration": 3.759
+  },
+  {
+    "text": "ya. Kita harus ngecek juga programnya",
+    "start": 388.24,
+    "duration": 3.56
+  },
+  {
+    "text": "karena kondisinya nih ngecek dua apakah",
+    "start": 389.919,
+    "duration": 3.761
+  },
+  {
+    "text": "dia lebih besar dari 75 atau sama dengan",
+    "start": 391.8,
+    "duration": 4.16
+  },
+  {
+    "text": "75. karena dia lebih besar sudah benar",
+    "start": 393.68,
+    "duration": 5.079
+  },
+  {
+    "text": "maka dia akan stop program di sini gitu",
+    "start": 395.96,
+    "duration": 6.799
+  },
+  {
+    "text": "ya. Jadi 82 harusnya jawabannya baik.",
+    "start": 398.759,
+    "duration": 6.601
+  },
+  {
+    "text": "Nah, kalau kita lihat hasilnya baik",
+    "start": 402.759,
+    "duration": 6.361
+  },
+  {
+    "text": "karena nilainya sudah 82 ee sudah ee",
+    "start": 405.36,
+    "duration": 5.839
+  },
+  {
+    "text": "belum mencapai 90 tapi sudah mencapai",
+    "start": 409.12,
+    "duration": 5.6
+  },
+  {
+    "text": "lebih dari 75. Kurang lebih seperti itu.",
+    "start": 411.199,
+    "duration": 6.161
+  },
+  {
+    "text": "Nah, ini yang perlu teman-teman pahami",
+    "start": 414.72,
+    "duration": 4.879
+  },
+  {
+    "text": "dan ingat nih, Teman. ketika kita",
+    "start": 417.36,
+    "duration": 4.959
+  },
+  {
+    "text": "menggunakan multi branch conditional,",
+    "start": 419.599,
+    "duration": 5.44
+  },
+  {
+    "text": "urutan itu sangat penting dalam ee",
+    "start": 422.319,
+    "duration": 5.28
+  },
+  {
+    "text": "mendeklarasikan sebuah kondisi.",
+    "start": 425.039,
+    "duration": 5.081
+  },
+  {
+    "text": "Contohnya nih ada contoh kedua ya, kita",
+    "start": 427.599,
+    "duration": 5.16
+  },
+  {
+    "text": "menggunakan ee prinsip yang sama ee",
+    "start": 430.12,
+    "duration": 5.72
+  },
+  {
+    "text": "predikat nilai, tapi di sini kita ee",
+    "start": 432.759,
+    "duration": 6.201
+  },
+  {
+    "text": "nulisnya dari bawah ke atas. Misalnya",
+    "start": 435.84,
+    "duration": 8.6
+  },
+  {
+    "text": "kita mau ee misalnya skor kita tuh 95.",
+    "start": 438.96,
+    "duration": 7.799
+  },
+  {
+    "text": "Kondisi yang pertama itu dia ngecek dulu",
+    "start": 444.44,
+    "duration": 5.039
+  },
+  {
+    "text": "apakah skornya lebih besar sama dengan",
+    "start": 446.759,
+    "duration": 5.56
+  },
+  {
+    "text": "60. Kondisi yang kedua, dia ngecek",
+    "start": 449.479,
+    "duration": 5.241
+  },
+  {
+    "text": "apakah ee skornya lebih besar atau sama",
+    "start": 452.319,
+    "duration": 5.041
+  },
+  {
+    "text": "dengan 75. Yang ketiga skornya lebih",
+    "start": 454.72,
+    "duration": 5.72
+  },
+  {
+    "text": "besar sama 90. Nah, kalau kita bahas",
+    "start": 457.36,
+    "duration": 6.08
+  },
+  {
+    "text": "manusia, oh 95 kan dia lebih dari 90 ya.",
+    "start": 460.44,
+    "duration": 5.28
+  },
+  {
+    "text": "Harusnya nanti programnya akan ng-print",
+    "start": 463.44,
+    "duration": 4.759
+  },
+  {
+    "text": "sangat baik gitu ya. Nah, tapi kalau",
+    "start": 465.72,
+    "duration": 5.08
+  },
+  {
+    "text": "kita lihat di sini, coba kita jalankan",
+    "start": 468.199,
+    "duration": 6.0
+  },
+  {
+    "text": "programnya ya. Kita lihat kondisi",
+    "start": 470.8,
+    "duration": 4.679
+  },
+  {
+    "text": "seperti yang Kakak bilang tadi,",
+    "start": 474.199,
+    "duration": 3.12
+  },
+  {
+    "text": "programnya itu berjalan dari atas ke",
+    "start": 475.479,
+    "duration": 4.12
+  },
+  {
+    "text": "bawah seperti air terjun ya mengalir ke",
+    "start": 477.319,
+    "duration": 4.16
+  },
+  {
+    "text": "bawah, maka dia akan ngecek dari atas",
+    "start": 479.599,
+    "duration": 4.28
+  },
+  {
+    "text": "dulu, bukan ngecek yang paling bawah.",
+    "start": 481.479,
+    "duration": 4.0
+  },
+  {
+    "text": "Kalau kita manusia mungkin bisa langsung",
+    "start": 483.879,
+    "duration": 3.04
+  },
+  {
+    "text": "ngecek ya, langsung paling bawah, tapi",
+    "start": 485.479,
+    "duration": 2.961
+  },
+  {
+    "text": "program tidak seperti itu. Dia akan",
+    "start": 486.919,
+    "duration": 4.361
+  },
+  {
+    "text": "ngecek dari atas dulu. Misalnya skornya",
+    "start": 488.44,
+    "duration": 5.28
+  },
+  {
+    "text": "nilainya 95,",
+    "start": 491.28,
+    "duration": 6.039
+  },
+  {
+    "text": "apakah 95 lebih besar dari 60? Wah,",
+    "start": 493.72,
+    "duration": 7.039
+  },
+  {
+    "text": "ternyata 95 itu lebih besar dari 60.",
+    "start": 497.319,
+    "duration": 4.801
+  },
+  {
+    "text": "Maka seperti yang Kakak bilang tadi,",
+    "start": 500.759,
+    "duration": 3.16
+  },
+  {
+    "text": "kalau misalnya dia sudah ada yang benar,",
+    "start": 502.12,
+    "duration": 4.079
+  },
+  {
+    "text": "maka dia akan programnya akan stop.",
+    "start": 503.919,
+    "duration": 4.361
+  },
+  {
+    "text": "Harusnya di sini dia akan menjalankan",
+    "start": 506.199,
+    "duration": 5.28
+  },
+  {
+    "text": "cukup. Nah, kalau kita lihat di bawah",
+    "start": 508.28,
+    "duration": 6.4
+  },
+  {
+    "text": "hasilnya cukup. Nah, padahal nilainya",
+    "start": 511.479,
+    "duration": 5.961
+  },
+  {
+    "text": "95. Harusnya dia tulisannya yang muncul",
+    "start": 514.68,
+    "duration": 5.359
+  },
+  {
+    "text": "itu sangat baik. Nah, kenapa? Padahal",
+    "start": 517.44,
+    "duration": 4.56
+  },
+  {
+    "text": "skornya 795",
+    "start": 520.039,
+    "duration": 4.441
+  },
+  {
+    "text": "nih. Karena Python membaca dari atas dan",
+    "start": 522.0,
+    "duration": 4.92
+  },
+  {
+    "text": "ke bawah. Saat menemukan kondisi pertama",
+    "start": 524.48,
+    "duration": 4.039
+  },
+  {
+    "text": "yang benar, Python akan langsung",
+    "start": 526.92,
+    "duration": 3.28
+  },
+  {
+    "text": "menjalankan bagian itu dan melewatkan",
+    "start": 528.519,
+    "duration": 5.361
+  },
+  {
+    "text": "sisanya. Ya, jadi yang lain yang ini",
+    "start": 530.2,
+    "duration": 5.92
+  },
+  {
+    "text": "kalau misalnya kondisi pertama udah",
+    "start": 533.88,
+    "duration": 4.72
+  },
+  {
+    "text": "benar, maka yang lain semuanya akan",
+    "start": 536.12,
+    "duration": 5.32
+  },
+  {
+    "text": "diop. dia tidak akan dijalankan seperti",
+    "start": 538.6,
+    "duration": 5.44
+  },
+  {
+    "text": "itu. Jadi kalau misalnya kita",
+    "start": 541.44,
+    "duration": 4.519
+  },
+  {
+    "text": "menggunakan nilai gitu ya untuk",
+    "start": 544.04,
+    "duration": 4.919
+  },
+  {
+    "text": "mengkategorikan sebuah nilai",
+    "start": 545.959,
+    "duration": 6.481
+  },
+  {
+    "text": "teman-teman harus menambahkan kondisi",
+    "start": 548.959,
+    "duration": 6.721
+  },
+  {
+    "text": "dari yang paling tinggi gitu ya.",
+    "start": 552.44,
+    "duration": 5.28
+  },
+  {
+    "text": "Kondisinya yang paling tinggi batas yang",
+    "start": 555.68,
+    "duration": 5.32
+  },
+  {
+    "text": "paling atas. Jadi kalau misalnya yang ee",
+    "start": 557.72,
+    "duration": 6.559
+  },
+  {
+    "text": "skor kita 95 tadi nih bentuk yang benar",
+    "start": 561.0,
+    "duration": 5.24
+  },
+  {
+    "text": "seperti ini ya. Jadi yang paling atas",
+    "start": 564.279,
+    "duration": 5.281
+  },
+  {
+    "text": "itu lebih besar dari 90. dan dia akan",
+    "start": 566.24,
+    "duration": 4.76
+  },
+  {
+    "text": "nge-print sangat baik. Jadi kalau",
+    "start": 569.56,
+    "duration": 4.56
+  },
+  {
+    "text": "misalnya dia menjalankan apakah 95 lebih",
+    "start": 571.0,
+    "duration": 5.36
+  },
+  {
+    "text": "besar dari 90 benar, maka dia akan",
+    "start": 574.12,
+    "duration": 4.839
+  },
+  {
+    "text": "ng-print sangat baik seperti itu ya.",
+    "start": 576.36,
+    "duration": 5.24
+  },
+  {
+    "text": "Jadi jangan lupa dipikirkan dan",
+    "start": 578.959,
+    "duration": 5.601
+  },
+  {
+    "text": "diplanning secara hati-hati.",
+    "start": 581.6,
+    "duration": 5.919
+  },
+  {
+    "text": "Untuk mengetahui pemahaman teman-teman",
+    "start": 584.56,
+    "duration": 5.68
+  },
+  {
+    "text": "tentang eh multibranch conditional yang",
+    "start": 587.519,
+    "duration": 4.921
+  },
+  {
+    "text": "ada di dalam bahasa Python, silakan",
+    "start": 590.24,
+    "duration": 5.76
+  },
+  {
+    "text": "mengerjakan kuis berikut ini.",
+    "start": 592.44,
+    "duration": 3.56
+  }
+]

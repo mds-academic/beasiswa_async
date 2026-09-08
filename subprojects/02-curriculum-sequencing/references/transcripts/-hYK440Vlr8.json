@@ -1,0 +1,1122 @@
+[
+  {
+    "text": "Setelah mengetahui apa itu condition,",
+    "start": 0.16,
+    "duration": 5.76
+  },
+  {
+    "text": "sekarang kita lihat yuk bagaimana",
+    "start": 3.04,
+    "duration": 5.639
+  },
+  {
+    "text": "condition ini diimplementasikan dalam",
+    "start": 5.92,
+    "duration": 5.639
+  },
+  {
+    "text": "bahasa pemrograman Python. Nah, di dalam",
+    "start": 8.679,
+    "duration": 5.761
+  },
+  {
+    "text": "bahasa pemrograman Python, condition itu",
+    "start": 11.559,
+    "duration": 5.8
+  },
+  {
+    "text": "tadi direpresentasikan dengan yang",
+    "start": 14.44,
+    "duration": 6.52
+  },
+  {
+    "text": "namanya ifas Indonesianya adalah jika.",
+    "start": 17.359,
+    "duration": 6.84
+  },
+  {
+    "text": "bentuk programnya seperti ini. Ini ada",
+    "start": 20.96,
+    "duration": 6.719
+  },
+  {
+    "text": "contoh kondisinya seperti ini. Kalau",
+    "start": 24.199,
+    "duration": 6.56
+  },
+  {
+    "text": "misalnya ada seorang anak atau seseorang",
+    "start": 27.679,
+    "duration": 6.761
+  },
+  {
+    "text": "yang umurnya itu sama dengan atau lebih",
+    "start": 30.759,
+    "duration": 6.881
+  },
+  {
+    "text": "dari 17 tahun, maka kita mau programnya",
+    "start": 34.44,
+    "duration": 5.639
+  },
+  {
+    "text": "akan menampilkan tulisan boleh membuat",
+    "start": 37.64,
+    "duration": 5.759
+  },
+  {
+    "text": "KTP. Tapi kalau misalnya dia kondisinya",
+    "start": 40.079,
+    "duration": 5.881
+  },
+  {
+    "text": "salah atau misal ee berarti dia tidak",
+    "start": 43.399,
+    "duration": 5.081
+  },
+  {
+    "text": "lebih besar terus umurnya tidak juga",
+    "start": 45.96,
+    "duration": 4.8
+  },
+  {
+    "text": "sama dengan 17, maka programnya tidak",
+    "start": 48.48,
+    "duration": 4.2
+  },
+  {
+    "text": "akan menampilkan apapun, tidak",
+    "start": 50.76,
+    "duration": 4.959
+  },
+  {
+    "text": "menampilkan teks apapun. Nah, ini ada",
+    "start": 52.68,
+    "duration": 6.039
+  },
+  {
+    "text": "contohnya nih programnya di sini di",
+    "start": 55.719,
+    "duration": 5.84
+  },
+  {
+    "text": "atasnya ada sebuah deklarasi variabel",
+    "start": 58.719,
+    "duration": 5.44
+  },
+  {
+    "text": "ya, Teman-teman ya. Ada sebuah variabel",
+    "start": 61.559,
+    "duration": 5.441
+  },
+  {
+    "text": "nama variabelnya age. Kemudian variabel",
+    "start": 64.159,
+    "duration": 5.681
+  },
+  {
+    "text": "age ini menyimpan nilai sebanyak 17",
+    "start": 67.0,
+    "duration": 5.36
+  },
+  {
+    "text": "tahun. Nah, variabel H inilah yang nanti",
+    "start": 69.84,
+    "duration": 6.319
+  },
+  {
+    "text": "akan dijadikan eh kondisinya. Oke, kita",
+    "start": 72.36,
+    "duration": 6.0
+  },
+  {
+    "text": "lihat lebih dalam yuk tentang e bahasa",
+    "start": 76.159,
+    "duration": 5.801
+  },
+  {
+    "text": "program Python ini. Nah, tulisan if-nya,",
+    "start": 78.36,
+    "duration": 6.6
+  },
+  {
+    "text": "condition yang ada di dalam Python itu",
+    "start": 81.96,
+    "duration": 6.08
+  },
+  {
+    "text": "seperti ini nih. Kalau kita lihat di",
+    "start": 84.96,
+    "duration": 6.0
+  },
+  {
+    "text": "sini dia diawali dengan deklarasi if-nya",
+    "start": 88.04,
+    "duration": 5.079
+  },
+  {
+    "text": "dulu. Kita harus tulis dulu if-nya.",
+    "start": 90.96,
+    "duration": 5.56
+  },
+  {
+    "text": "Kemudian kita masukkan kondisinya apa?",
+    "start": 93.119,
+    "duration": 7.201
+  },
+  {
+    "text": "Kondisinya kalau umurnya lebih besar",
+    "start": 96.52,
+    "duration": 7.32
+  },
+  {
+    "text": "atau sama dengan 17. Karena kita mau 17",
+    "start": 100.32,
+    "duration": 6.32
+  },
+  {
+    "text": "itu dia sudah boleh buat KTP gitu ya.",
+    "start": 103.84,
+    "duration": 5.44
+  },
+  {
+    "text": "Karena kalau misalnya kita tulisnya ee",
+    "start": 106.64,
+    "duration": 5.079
+  },
+  {
+    "text": "hanya lebih besar dari 17, maka kalau",
+    "start": 109.28,
+    "duration": 5.28
+  },
+  {
+    "text": "misalnya umur kita 17, kita belum apa",
+    "start": 111.719,
+    "duration": 5.241
+  },
+  {
+    "text": "tidak akan menampilkan teks ini nih.",
+    "start": 114.56,
+    "duration": 5.76
+  },
+  {
+    "text": "Karena 17 itu tidak lebih ee 17 itu",
+    "start": 116.96,
+    "duration": 6.0
+  },
+  {
+    "text": "tidak lebih besar dari 17 ya kan ya",
+    "start": 120.32,
+    "duration": 4.04
+  },
+  {
+    "text": "kalau misalnya tidak ada sama dengan.",
+    "start": 122.96,
+    "duration": 3.799
+  },
+  {
+    "text": "Nah, nah karena kita mau umur 17 itu dia",
+    "start": 124.36,
+    "duration": 4.679
+  },
+  {
+    "text": "sudah boleh membuat TP maka kita",
+    "start": 126.759,
+    "duration": 4.0
+  },
+  {
+    "text": "tambahkan sama dengan di sini lebih",
+    "start": 129.039,
+    "duration": 4.481
+  },
+  {
+    "text": "besar sama dengan 17. Nah, cara",
+    "start": 130.759,
+    "duration": 5.641
+  },
+  {
+    "text": "membacanya kita sebagai manusia jika",
+    "start": 133.52,
+    "duration": 6.16
+  },
+  {
+    "text": "umur lebih dari atau sama dengan 17 maka",
+    "start": 136.4,
+    "duration": 5.88
+  },
+  {
+    "text": "tampilkan sesuatu, tampilkan pesan. Nah,",
+    "start": 139.68,
+    "duration": 4.96
+  },
+  {
+    "text": "bahasa pemrograman if itu di depan ada",
+    "start": 142.28,
+    "duration": 5.64
+  },
+  {
+    "text": "if diikuti dengan 2.2 di belakangnya.",
+    "start": 144.64,
+    "duration": 4.599
+  },
+  {
+    "text": "Ini jangan lupa ya, Teman-teman ya.",
+    "start": 147.92,
+    "duration": 2.76
+  },
+  {
+    "text": "Kalau misalnya di belakangnya ada titik",
+    "start": 149.239,
+    "duration": 5.401
+  },
+  {
+    "text": "dua kemudian ada indentasi. Nah, jadi",
+    "start": 150.68,
+    "duration": 6.04
+  },
+  {
+    "text": "kalau misalnya kita ngetik print-nya itu",
+    "start": 154.64,
+    "duration": 4.72
+  },
+  {
+    "text": "sejajar dengan if di sebelah sini, maka",
+    "start": 156.72,
+    "duration": 4.92
+  },
+  {
+    "text": "dia tidak akan menganggap yang di",
+    "start": 159.36,
+    "duration": 4.56
+  },
+  {
+    "text": "bawahnya ini sebagai pesannya atau",
+    "start": 161.64,
+    "duration": 5.12
+  },
+  {
+    "text": "perintahnya dari if itu tadi. Nah, jadi",
+    "start": 163.92,
+    "duration": 5.64
+  },
+  {
+    "text": "jangan lupa gunakan ee di keyboard ada",
+    "start": 166.76,
+    "duration": 6.08
+  },
+  {
+    "text": "tab itu ya atau bisa klik spasi empat",
+    "start": 169.56,
+    "duration": 4.72
+  },
+  {
+    "text": "kali.",
+    "start": 172.84,
+    "duration": 4.16
+  },
+  {
+    "text": "Nah, yang di bawah ini yang kita lihat",
+    "start": 174.28,
+    "duration": 6.959
+  },
+  {
+    "text": "ini ya, yang tadi kakak bilang age le =",
+    "start": 177.0,
+    "duration": 8.44
+  },
+  {
+    "text": "17 itu disebut dengan kondisi. Sedangkan",
+    "start": 181.239,
+    "duration": 6.92
+  },
+  {
+    "text": "tulisan print itu disebut dengan action",
+    "start": 185.44,
+    "duration": 4.92
+  },
+  {
+    "text": "atau sesuatu yang dilakukan oleh program",
+    "start": 188.159,
+    "duration": 6.601
+  },
+  {
+    "text": "itu tadi. Nah, berdasarkan kondisi tadi",
+    "start": 190.36,
+    "duration": 8.959
+  },
+  {
+    "text": "ya, nih, kondisi yang age le = 17,",
+    "start": 194.76,
+    "duration": 7.0
+  },
+  {
+    "text": "sebenarnya kondisi itu tadi akan",
+    "start": 199.319,
+    "duration": 5.241
+  },
+  {
+    "text": "menghasilkan salah satu dari dua jawaban",
+    "start": 201.76,
+    "duration": 6.199
+  },
+  {
+    "text": "aja gitu ya. Jadi, if eh if itu sebuah",
+    "start": 204.56,
+    "duration": 6.879
+  },
+  {
+    "text": "eh condition itu eh hanya akan",
+    "start": 207.959,
+    "duration": 6.28
+  },
+  {
+    "text": "menghasilkan dua jawaban antara true",
+    "start": 211.439,
+    "duration": 5.641
+  },
+  {
+    "text": "atau false atau salah gitu ya. Nah,",
+    "start": 214.239,
+    "duration": 5.241
+  },
+  {
+    "text": "kalau kita lihat contohnya yang tadi",
+    "start": 217.08,
+    "duration": 5.28
+  },
+  {
+    "text": "kita membuat mempunyai sebuah variabel",
+    "start": 219.48,
+    "duration": 5.56
+  },
+  {
+    "text": "umurnya 17 ya, variabel dia menyimpan",
+    "start": 222.36,
+    "duration": 5.2
+  },
+  {
+    "text": "angka 17 sebagai umurnya. Nah, ketika",
+    "start": 225.04,
+    "duration": 5.64
+  },
+  {
+    "text": "kita melakukan sebuah print langsung ya",
+    "start": 227.56,
+    "duration": 6.399
+  },
+  {
+    "text": "tanpa menggunakan eh if itu kita bisa",
+    "start": 230.68,
+    "duration": 5.6
+  },
+  {
+    "text": "lihat di sini dia akan menghasilkan",
+    "start": 233.959,
+    "duration": 4.64
+  },
+  {
+    "text": "true. Jadi si if-nya ini akan",
+    "start": 236.28,
+    "duration": 4.4
+  },
+  {
+    "text": "menghasilkan true karena 17 itu memang",
+    "start": 238.599,
+    "duration": 5.28
+  },
+  {
+    "text": "lebih besar atau sama dengan 17. Nah,",
+    "start": 240.68,
+    "duration": 5.32
+  },
+  {
+    "text": "misalnya kalau misalnya kita ganti nih",
+    "start": 243.879,
+    "duration": 5.401
+  },
+  {
+    "text": "ada kondisi lagi di variabel H-nya tadi",
+    "start": 246.0,
+    "duration": 6.879
+  },
+  {
+    "text": "kita ganti nilainya 15. Nah, kalau",
+    "start": 249.28,
+    "duration": 6.56
+  },
+  {
+    "text": "misalnya 15 programnya akan ngecek tadi",
+    "start": 252.879,
+    "duration": 6.76
+  },
+  {
+    "text": "ya ee variabel H-nya ini diganti dengan",
+    "start": 255.84,
+    "duration": 8.32
+  },
+  {
+    "text": "angka misalnya 15. Apakah 15 lebih dari",
+    "start": 259.639,
+    "duration": 8.241
+  },
+  {
+    "text": "sama 17? Apakah 15 lebih dari 17? Salah,",
+    "start": 264.16,
+    "duration": 5.72
+  },
+  {
+    "text": "ya kan? Kemudian dia ngecek yang kondisi",
+    "start": 267.88,
+    "duration": 4.56
+  },
+  {
+    "text": "yang kedua. Apakah 15 = 17? Salah.",
+    "start": 269.88,
+    "duration": 5.08
+  },
+  {
+    "text": "Karena dua-duanya salah, maka programnya",
+    "start": 272.44,
+    "duration": 6.0
+  },
+  {
+    "text": "akan menghasilkan nilai false karena",
+    "start": 274.96,
+    "duration": 5.76
+  },
+  {
+    "text": "kondisinya tidak muncul apa tidak",
+    "start": 278.44,
+    "duration": 5.72
+  },
+  {
+    "text": "terpenuhi gitu ya. Ee karena kan yang",
+    "start": 280.72,
+    "duration": 5.56
+  },
+  {
+    "text": "teksnya hanya muncul tadi sekali lagi",
+    "start": 284.16,
+    "duration": 4.44
+  },
+  {
+    "text": "kalau misalnya umurnya lebih dari atau",
+    "start": 286.28,
+    "duration": 6.12
+  },
+  {
+    "text": "sama dengan 17. Nah, untuk ee",
+    "start": 288.6,
+    "duration": 6.08
+  },
+  {
+    "text": "memantapkan pemahaman teman-teman",
+    "start": 292.4,
+    "duration": 4.96
+  },
+  {
+    "text": "tentang conditional di bahasa pembelan",
+    "start": 294.68,
+    "duration": 5.4
+  },
+  {
+    "text": "Python, yuk kita kerjakan kuis berikut",
+    "start": 297.36,
+    "duration": 5.72
+  },
+  {
+    "text": "ini.",
+    "start": 300.08,
+    "duration": 3.0
+  },
+  {
+    "text": "Nah, karena Teman-teman sudah",
+    "start": 306.759,
+    "duration": 4.761
+  },
+  {
+    "text": "mengerjakan kuis ee harusnya teman-teman",
+    "start": 308.08,
+    "duration": 5.959
+  },
+  {
+    "text": "sudah lumayan paham ya terkait dengan",
+    "start": 311.52,
+    "duration": 5.28
+  },
+  {
+    "text": "conditional if. Namun dalam bahasa",
+    "start": 314.039,
+    "duration": 5.801
+  },
+  {
+    "text": "pemrograman kadang kita mau programnya",
+    "start": 316.8,
+    "duration": 5.64
+  },
+  {
+    "text": "itu tetap melakukan sesuatu walaupun",
+    "start": 319.84,
+    "duration": 5.12
+  },
+  {
+    "text": "kondisinya salah atau tidak terpenuhi.",
+    "start": 322.44,
+    "duration": 5.44
+  },
+  {
+    "text": "Nah, di dalam eh bahasa pemorgan Python",
+    "start": 324.96,
+    "duration": 6.12
+  },
+  {
+    "text": "selain if pasangannya itu kita harus",
+    "start": 327.88,
+    "duration": 6.439
+  },
+  {
+    "text": "menggunakan yang namanya else atau bisa",
+    "start": 331.08,
+    "duration": 4.92
+  },
+  {
+    "text": "juga disebut dengan lainnya gitu ya,",
+    "start": 334.319,
+    "duration": 3.961
+  },
+  {
+    "text": "Teman-teman ya. Nah, misalnya di sini",
+    "start": 336.0,
+    "duration": 4.479
+  },
+  {
+    "text": "ada sebuah kondisi",
+    "start": 338.28,
+    "duration": 4.12
+  },
+  {
+    "text": "kalau kita menggunakan contoh yang sama",
+    "start": 340.479,
+    "duration": 4.84
+  },
+  {
+    "text": "tadi ya, tentang ee membuat KTP. Kalau",
+    "start": 342.4,
+    "duration": 5.2
+  },
+  {
+    "text": "umurnya minimal 17 tahun, berarti dia",
+    "start": 345.319,
+    "duration": 4.6
+  },
+  {
+    "text": "lebih dari 17 tahun atau sama dengan 17",
+    "start": 347.6,
+    "duration": 5.28
+  },
+  {
+    "text": "tahun. Maka kita mau membuat tulisan",
+    "start": 349.919,
+    "duration": 5.321
+  },
+  {
+    "text": "boleh membuat KTP. Tapi kalau misalnya",
+    "start": 352.88,
+    "duration": 6.039
+  },
+  {
+    "text": "dia belum atau ee kurang dari 17 tahun,",
+    "start": 355.24,
+    "duration": 6.6
+  },
+  {
+    "text": "maka kita mau ada tulisan belum boleh",
+    "start": 358.919,
+    "duration": 5.201
+  },
+  {
+    "text": "membuat KTP. Nah, bentuk bahasa",
+    "start": 361.84,
+    "duration": 3.919
+  },
+  {
+    "text": "pemrogramannya",
+    "start": 364.12,
+    "duration": 4.24
+  },
+  {
+    "text": "Python-nya itu seperti ini nih. Jadi,",
+    "start": 365.759,
+    "duration": 4.401
+  },
+  {
+    "text": "sama seperti sebelumnya kita",
+    "start": 368.36,
+    "duration": 4.559
+  },
+  {
+    "text": "mendeklarasikan sebuah variabel age yang",
+    "start": 370.16,
+    "duration": 4.8
+  },
+  {
+    "text": "nanti menyimpan nilainya untuk dijadikan",
+    "start": 372.919,
+    "duration": 4.601
+  },
+  {
+    "text": "sebuah kondisinya. Nah, kondisinya di",
+    "start": 374.96,
+    "duration": 4.12
+  },
+  {
+    "text": "sini kita tulis satu kali saja ya,",
+    "start": 377.52,
+    "duration": 5.2
+  },
+  {
+    "text": "Teman-teman. Jika if age lebih besar",
+    "start": 379.08,
+    "duration": 6.36
+  },
+  {
+    "text": "dari sama 17, kalau misalnya umurnya",
+    "start": 382.72,
+    "duration": 5.479
+  },
+  {
+    "text": "lebih besar atau sama dengan 17, maka",
+    "start": 385.44,
+    "duration": 4.64
+  },
+  {
+    "text": "dia akan menjalankan perintah yang ada",
+    "start": 388.199,
+    "duration": 4.961
+  },
+  {
+    "text": "di bawahnya, gitu ya. Gimana kalau dia",
+    "start": 390.08,
+    "duration": 4.88
+  },
+  {
+    "text": "kondisinya enggak terpenuhi? Maka dia",
+    "start": 393.16,
+    "duration": 3.879
+  },
+  {
+    "text": "akan menjalankan perintah yang lainnya",
+    "start": 394.96,
+    "duration": 4.959
+  },
+  {
+    "text": "atau disebut juga dengan else. Nah,",
+    "start": 397.039,
+    "duration": 4.321
+  },
+  {
+    "text": "lihat nih di sini. Jangan lupa",
+    "start": 399.919,
+    "duration": 3.881
+  },
+  {
+    "text": "teman-teman kalau else itu dia tidak",
+    "start": 401.36,
+    "duration": 5.52
+  },
+  {
+    "text": "memerlukan kondisi karena kondisinya",
+    "start": 403.8,
+    "duration": 5.44
+  },
+  {
+    "text": "else ini eh else-nya ini dia akan",
+    "start": 406.88,
+    "duration": 4.64
+  },
+  {
+    "text": "menjalankan jika kondisi yang pertama",
+    "start": 409.24,
+    "duration": 5.88
+  },
+  {
+    "text": "tidak terpenuhi atau salah gitu ya. Jadi",
+    "start": 411.52,
+    "duration": 7.399
+  },
+  {
+    "text": "bentuknya if dan kondisi. Kemudian",
+    "start": 415.12,
+    "duration": 6.04
+  },
+  {
+    "text": "perintahnya if tadi kalau benar. Kalau",
+    "start": 418.919,
+    "duration": 5.72
+  },
+  {
+    "text": "salah kita gunakan yang namanya else.",
+    "start": 421.16,
+    "duration": 7.319
+  },
+  {
+    "text": "Nah, kita coba lihat lagi nih eh",
+    "start": 424.639,
+    "duration": 6.68
+  },
+  {
+    "text": "deskripsinya if else itu bayangkan kalau",
+    "start": 428.479,
+    "duration": 4.84
+  },
+  {
+    "text": "misalnya kalian tiba di persimpangan",
+    "start": 431.319,
+    "duration": 5.16
+  },
+  {
+    "text": "jalan. Kalau misalnya jalan di sebelah",
+    "start": 433.319,
+    "duration": 5.921
+  },
+  {
+    "text": "kiri terbuka, maka kita bisa lewat kiri.",
+    "start": 436.479,
+    "duration": 6.0
+  },
+  {
+    "text": "Misalnya kita ee bayangkan kita sedang",
+    "start": 439.24,
+    "duration": 5.6
+  },
+  {
+    "text": "membuat sebuah ee membuat sebuah game",
+    "start": 442.479,
+    "duration": 4.521
+  },
+  {
+    "text": "gitu ya. kita mau di jalanan sebelah",
+    "start": 444.84,
+    "duration": 5.6
+  },
+  {
+    "text": "kiri itu ee kalau mau di-unlock dia",
+    "start": 447.0,
+    "duration": 5.56
+  },
+  {
+    "text": "harus bayar gitu. Tapi kalau jadi kalau",
+    "start": 450.44,
+    "duration": 3.8
+  },
+  {
+    "text": "misalnya dia mau belok kiri, kalau",
+    "start": 452.56,
+    "duration": 3.639
+  },
+  {
+    "text": "misalnya dia belum bayar maka dia belum",
+    "start": 454.24,
+    "duration": 4.16
+  },
+  {
+    "text": "bisa tuh lewat jalan sebelah kiri maka",
+    "start": 456.199,
+    "duration": 4.881
+  },
+  {
+    "text": "dia harus lewat sebelah kanan gitu ya.",
+    "start": 458.4,
+    "duration": 5.68
+  },
+  {
+    "text": "Nah, jadi program itu akan melihat tuh",
+    "start": 461.08,
+    "duration": 6.959
+  },
+  {
+    "text": "kondisinya tadi. Oh, udah dia ee apakah",
+    "start": 464.08,
+    "duration": 6.88
+  },
+  {
+    "text": "sudah membeli jalan tersebut? Apakah",
+    "start": 468.039,
+    "duration": 4.6
+  },
+  {
+    "text": "jalannya sudah terbuka? Kalau enggak dia",
+    "start": 470.96,
+    "duration": 4.239
+  },
+  {
+    "text": "akan ee belok ke sebelah kanan. Nah,",
+    "start": 472.639,
+    "duration": 4.801
+  },
+  {
+    "text": "ingat ya teman-teman, bahasa pemrograman",
+    "start": 475.199,
+    "duration": 5.361
+  },
+  {
+    "text": "itu dia hanya memilih satu jalan saja.",
+    "start": 477.44,
+    "duration": 6.199
+  },
+  {
+    "text": "Jadi misalnya kita ee melihat dalam",
+    "start": 480.56,
+    "duration": 6.079
+  },
+  {
+    "text": "sebuah program kita ee tadi jalan",
+    "start": 483.639,
+    "duration": 5.4
+  },
+  {
+    "text": "sebelah kiri kebuka, di sebelah kanan",
+    "start": 486.639,
+    "duration": 4.28
+  },
+  {
+    "text": "buka. Nah, ee kan enggak mungkin tuh",
+    "start": 489.039,
+    "duration": 4.0
+  },
+  {
+    "text": "mobil atau karakter yang kita laluin itu",
+    "start": 490.919,
+    "duration": 4.12
+  },
+  {
+    "text": "dia lewat dua-duanya. Itu kan dia harus",
+    "start": 493.039,
+    "duration": 4.16
+  },
+  {
+    "text": "pilih satu kan antara kiri atau kanan",
+    "start": 495.039,
+    "duration": 4.72
+  },
+  {
+    "text": "itu ya. Sama dengan program kita.",
+    "start": 497.199,
+    "duration": 6.28
+  },
+  {
+    "text": "Program hanya memilih satu saja.",
+    "start": 499.759,
+    "duration": 7.081
+  },
+  {
+    "text": "Nah, ini contoh lain dari penerapan if",
+    "start": 503.479,
+    "duration": 6.12
+  },
+  {
+    "text": "else. Misalnya kita punya sebuah game",
+    "start": 506.84,
+    "duration": 6.4
+  },
+  {
+    "text": "yang nanti dia pada saat jalan akan",
+    "start": 509.599,
+    "duration": 6.12
+  },
+  {
+    "text": "muncul kuis gitu ya, akan muncul sebuah",
+    "start": 513.24,
+    "duration": 4.679
+  },
+  {
+    "text": "pertanyaan. Nah, di dalam pertanyaan itu",
+    "start": 515.719,
+    "duration": 5.24
+  },
+  {
+    "text": "ada tiga pilihan, ada A, B, dan C. Dari",
+    "start": 517.919,
+    "duration": 4.92
+  },
+  {
+    "text": "tiga pilihan ini ternyata pilihan yang",
+    "start": 520.959,
+    "duration": 4.481
+  },
+  {
+    "text": "paling benar itu yang A. Nah, maka kita",
+    "start": 522.839,
+    "duration": 5.361
+  },
+  {
+    "text": "tulis nih di sini kondisinya. Kalau",
+    "start": 525.44,
+    "duration": 5.36
+  },
+  {
+    "text": "jawabannya itu yang apa itu namanya?",
+    "start": 528.2,
+    "duration": 5.4
+  },
+  {
+    "text": "yang user masukin itu adalah A. Maka",
+    "start": 530.8,
+    "duration": 4.84
+  },
+  {
+    "text": "kita kasih tahu, kita print bahwa",
+    "start": 533.6,
+    "duration": 4.679
+  },
+  {
+    "text": "jawabannya itu benar. Tapi kalau",
+    "start": 535.64,
+    "duration": 5.52
+  },
+  {
+    "text": "misalnya jawabannya bukan A, maka dia",
+    "start": 538.279,
+    "duration": 5.641
+  },
+  {
+    "text": "akan print jawabannya salah. Nih",
+    "start": 541.16,
+    "duration": 5.239
+  },
+  {
+    "text": "contohnya di sini",
+    "start": 543.92,
+    "duration": 6.4
+  },
+  {
+    "text": "ee pengguna atau pemain game kita itu",
+    "start": 546.399,
+    "duration": 6.12
+  },
+  {
+    "text": "memasukkan jawabannya A dan disimpan ke",
+    "start": 550.32,
+    "duration": 6.32
+  },
+  {
+    "text": "dalam sebuah variabel answer. Nah, si",
+    "start": 552.519,
+    "duration": 6.481
+  },
+  {
+    "text": "answer ini tadi dibandingkan di dalam",
+    "start": 556.64,
+    "duration": 5.8
+  },
+  {
+    "text": "kondisi yang pertama. kondisi 1 ini ya.",
+    "start": 559.0,
+    "duration": 8.68
+  },
+  {
+    "text": "If a = a, wah ternyata a = a. Benar dong",
+    "start": 562.44,
+    "duration": 7.24
+  },
+  {
+    "text": "kondisinya, maka dia akan menuliskan",
+    "start": 567.68,
+    "duration": 3.68
+  },
+  {
+    "text": "jawabannya benar. Tapi kalau misalnya",
+    "start": 569.68,
+    "duration": 4.279
+  },
+  {
+    "text": "dia jawab B, dia ngecek nih di sini",
+    "start": 571.36,
+    "duration": 5.84
+  },
+  {
+    "text": "apakah B = sama A? Salah, maka dia akan",
+    "start": 573.959,
+    "duration": 5.801
+  },
+  {
+    "text": "langsung menjalankan yang else. Begitu",
+    "start": 577.2,
+    "duration": 6.24
+  },
+  {
+    "text": "pula dengan yang C. Kalau di sini dia",
+    "start": 579.76,
+    "duration": 6.759
+  },
+  {
+    "text": "ngecek nih apakah C = A, kan huruf C",
+    "start": 583.44,
+    "duration": 4.88
+  },
+  {
+    "text": "bukan A ya. berarti dia akan langsung",
+    "start": 586.519,
+    "duration": 4.201
+  },
+  {
+    "text": "menjalankan kondisinya yang paling",
+    "start": 588.32,
+    "duration": 4.199
+  },
+  {
+    "text": "bawah. Jadi seperti itu ya, Teman-teman",
+    "start": 590.72,
+    "duration": 4.119
+  },
+  {
+    "text": "ya. Kalau misalnya kita hanya punya satu",
+    "start": 592.519,
+    "duration": 5.241
+  },
+  {
+    "text": "kondisi saja benar atau salah, maka kita",
+    "start": 594.839,
+    "duration": 6.68
+  },
+  {
+    "text": "bisa menggunakan yang namanya if dan",
+    "start": 597.76,
+    "duration": 6.88
+  },
+  {
+    "text": "else. Nih kalau di sini tadi jawabannya",
+    "start": 601.519,
+    "duration": 5.361
+  },
+  {
+    "text": "benar, kalau misalnya bukan A, maka",
+    "start": 604.64,
+    "duration": 5.16
+  },
+  {
+    "text": "jawabannya akan salah. Nah, untuk",
+    "start": 606.88,
+    "duration": 5.84
+  },
+  {
+    "text": "mengetahui e pemahaman teman-teman",
+    "start": 609.8,
+    "duration": 5.56
+  },
+  {
+    "text": "terkait if else ini, silakan kerjakan",
+    "start": 612.72,
+    "duration": 6.119
+  },
+  {
+    "text": "tiga kuis berikut.",
+    "start": 615.36,
+    "duration": 3.479
+  },
+  {
+    "text": "Yeah.",
+    "start": 620.88,
+    "duration": 2.04
+  }
+]

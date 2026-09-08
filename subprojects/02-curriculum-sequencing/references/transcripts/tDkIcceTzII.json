@@ -1,0 +1,3787 @@
+[
+  {
+    "text": "Ready, set, action.",
+    "start": 1.439,
+    "duration": 4.48
+  },
+  {
+    "text": "Halo, Teman-teman. Hari ini kita akan",
+    "start": 8.559,
+    "duration": 5.881
+  },
+  {
+    "text": "melanjutkan ee pembahasan kita tentang",
+    "start": 10.599,
+    "duration": 6.161
+  },
+  {
+    "text": "percabangan ganda. Nah, percabangan",
+    "start": 14.44,
+    "duration": 4.08
+  },
+  {
+    "text": "ganda itu apa sih dan apa sih",
+    "start": 16.76,
+    "duration": 4.64
+  },
+  {
+    "text": "hubungannya dengan logik? Oke, yuk kita",
+    "start": 18.52,
+    "duration": 5.36
+  },
+  {
+    "text": "perhatikan slide berikut. Nah,",
+    "start": 21.4,
+    "duration": 4.84
+  },
+  {
+    "text": "Teman-teman pernah enggak dihadapkan",
+    "start": 23.88,
+    "duration": 4.799
+  },
+  {
+    "text": "pada suatu kondisi di mana Teman-teman",
+    "start": 26.24,
+    "duration": 5.76
+  },
+  {
+    "text": "tuh diminta untuk ee dihadapkan dengan",
+    "start": 28.679,
+    "duration": 6.361
+  },
+  {
+    "text": "ribuan pilihan setiap hari gitu ya? Jadi",
+    "start": 32.0,
+    "duration": 5.48
+  },
+  {
+    "text": "misalnya nih contohnya setiap pagi kita",
+    "start": 35.04,
+    "duration": 4.679
+  },
+  {
+    "text": "tuh harus mikir kita harus bangun jam",
+    "start": 37.48,
+    "duration": 5.759
+  },
+  {
+    "text": "berapa ya. ee misalnya kita ada pilihan",
+    "start": 39.719,
+    "duration": 6.241
+  },
+  {
+    "text": "kalau misalnya hari ini hari ee untuk",
+    "start": 43.239,
+    "duration": 4.84
+  },
+  {
+    "text": "pergi sekolah ya, hari weekday berarti",
+    "start": 45.96,
+    "duration": 3.56
+  },
+  {
+    "text": "kan kita harus bangunnya pagi. Tapi",
+    "start": 48.079,
+    "duration": 3.441
+  },
+  {
+    "text": "kalau misalnya hari ini hari Minggu",
+    "start": 49.52,
+    "duration": 4.44
+  },
+  {
+    "text": "berarti kan kita bisa ee tidur lebih",
+    "start": 51.52,
+    "duration": 4.719
+  },
+  {
+    "text": "lama gitu kan ya. Terus baju apa sih",
+    "start": 53.96,
+    "duration": 3.96
+  },
+  {
+    "text": "yang harus dipakai? Kan kadang sekolah",
+    "start": 56.239,
+    "duration": 4.441
+  },
+  {
+    "text": "tuh ee setiap harinya bajunya beda-beda",
+    "start": 57.92,
+    "duration": 5.2
+  },
+  {
+    "text": "ya. Nah, itu baju apa yang harus di",
+    "start": 60.68,
+    "duration": 5.439
+  },
+  {
+    "text": "dipakai, terus kita mau makan apa ya ee",
+    "start": 63.12,
+    "duration": 5.96
+  },
+  {
+    "text": "hari ini. Nah, dari pilihan-pilihan tadi",
+    "start": 66.119,
+    "duration": 5.521
+  },
+  {
+    "text": "kan kita harus memilih ya. Nah, proses",
+    "start": 69.08,
+    "duration": 5.0
+  },
+  {
+    "text": "memilih berdasarkan pilihan kita tadi",
+    "start": 71.64,
+    "duration": 4.72
+  },
+  {
+    "text": "itu ada disebut juga dengan namanya",
+    "start": 74.08,
+    "duration": 5.999
+  },
+  {
+    "text": "logika percabangan. Nah, percabangan itu",
+    "start": 76.36,
+    "duration": 6.36
+  },
+  {
+    "text": "apa sih? Percabangan berarti menentukan",
+    "start": 80.079,
+    "duration": 4.68
+  },
+  {
+    "text": "jalan gitu ya. menentukan jalan atau",
+    "start": 82.72,
+    "duration": 3.56
+  },
+  {
+    "text": "memilih",
+    "start": 84.759,
+    "duration": 4.521
+  },
+  {
+    "text": "berdasarkan suatu kondisi. Nah,",
+    "start": 86.28,
+    "duration": 4.72
+  },
+  {
+    "text": "contohnya nih kalau bentuknya",
+    "start": 89.28,
+    "duration": 4.159
+  },
+  {
+    "text": "percabangan yang biasa sering dipakai",
+    "start": 91.0,
+    "duration": 6.04
+  },
+  {
+    "text": "adalah kalau hari ini hujan maka atau",
+    "start": 93.439,
+    "duration": 5.921
+  },
+  {
+    "text": "bahasa Inggrisnya then ya aku akan bawa",
+    "start": 97.04,
+    "duration": 5.439
+  },
+  {
+    "text": "payung gitu. Jadi di sini kalau",
+    "start": 99.36,
+    "duration": 5.28
+  },
+  {
+    "text": "kondisinya benar, kalau di sini kan kita",
+    "start": 102.479,
+    "duration": 4.32
+  },
+  {
+    "text": "contoh e statementnya adalah hujan gitu.",
+    "start": 104.64,
+    "duration": 3.36
+  },
+  {
+    "text": "Kalau misalnya hari ini hujan aku bawa",
+    "start": 106.799,
+    "duration": 3.441
+  },
+  {
+    "text": "payung berarti kondisinya hujan. dia",
+    "start": 108.0,
+    "duration": 4.36
+  },
+  {
+    "text": "tergantung kondisi itu kayak dia",
+    "start": 110.24,
+    "duration": 4.199
+  },
+  {
+    "text": "tergantung apa gitu. Tergantung sesuatu.",
+    "start": 112.36,
+    "duration": 3.6
+  },
+  {
+    "text": "Nah, sesuatunya itu disebut juga dengan",
+    "start": 114.439,
+    "duration": 3.841
+  },
+  {
+    "text": "kondisi. Nah, di sini kondisinya itu",
+    "start": 115.96,
+    "duration": 5.04
+  },
+  {
+    "text": "adalah hujan. Kalau kondisinya hujan,",
+    "start": 118.28,
+    "duration": 4.879
+  },
+  {
+    "text": "maka aku akan bawa payung. Ini bawa",
+    "start": 121.0,
+    "duration": 3.92
+  },
+  {
+    "text": "payung ini kan berarti action-nya yang",
+    "start": 123.159,
+    "duration": 4.521
+  },
+  {
+    "text": "kita lakukan, gitu ya. Nah, itu",
+    "start": 124.92,
+    "duration": 4.679
+  },
+  {
+    "text": "merupakan contoh dari percabangan",
+    "start": 127.68,
+    "duration": 3.44
+  },
+  {
+    "text": "tunggal atau percabangan yang cuman",
+    "start": 129.599,
+    "duration": 4.841
+  },
+  {
+    "text": "satu. Nah, kalau misalnya percabangan",
+    "start": 131.12,
+    "duration": 5.16
+  },
+  {
+    "text": "tunggal itu biasanya sangat simpel ya.",
+    "start": 134.44,
+    "duration": 4.76
+  },
+  {
+    "text": "Kalau hujan ya udah kitaak apa bawa",
+    "start": 136.28,
+    "duration": 5.679
+  },
+  {
+    "text": "payung. Tapi ee kondisi tunggal,",
+    "start": 139.2,
+    "duration": 5.24
+  },
+  {
+    "text": "percabangan kondisi tunggal itu dia",
+    "start": 141.959,
+    "duration": 5.28
+  },
+  {
+    "text": "hanya ee apa itu namanya? Hanya punya",
+    "start": 144.44,
+    "duration": 6.2
+  },
+  {
+    "text": "satu kondisi tanpa adanya alternatif",
+    "start": 147.239,
+    "duration": 6.961
+  },
+  {
+    "text": "gitu. Misalnya di sini ada jika ada tamu",
+    "start": 150.64,
+    "duration": 6.56
+  },
+  {
+    "text": "bukakan pintu gitu. Apa yang terjadi",
+    "start": 154.2,
+    "duration": 5.16
+  },
+  {
+    "text": "jika tamu itu adalah pencuri yang tidak",
+    "start": 157.2,
+    "duration": 4.16
+  },
+  {
+    "text": "dikenal? Nah, karena dia tidak ada",
+    "start": 159.36,
+    "duration": 3.799
+  },
+  {
+    "text": "kondisinya, maka robot akan tetap",
+    "start": 161.36,
+    "duration": 3.64
+  },
+  {
+    "text": "membuka pintu. Intinya dia kalau ada",
+    "start": 163.159,
+    "duration": 4.44
+  },
+  {
+    "text": "yang ngetok rumah atau ada tamu gitu ya,",
+    "start": 165.0,
+    "duration": 5.64
+  },
+  {
+    "text": "ee kita mau programnya atau misalnya ee",
+    "start": 167.599,
+    "duration": 5.321
+  },
+  {
+    "text": "kita lagi bikin aplikasi yang dia bisa",
+    "start": 170.64,
+    "duration": 3.879
+  },
+  {
+    "text": "buka pintu otomatis gitu ya kalau ada",
+    "start": 172.92,
+    "duration": 3.72
+  },
+  {
+    "text": "tamu. Nah, itu kan kalau kondisinya",
+    "start": 174.519,
+    "duration": 5.08
+  },
+  {
+    "text": "cuman satu jika ada tamu bukan pintu itu",
+    "start": 176.64,
+    "duration": 6.48
+  },
+  {
+    "text": "kan berbahaya gitu kan ya. Nah,",
+    "start": 179.599,
+    "duration": 6.64
+  },
+  {
+    "text": "supaya dia lebih lengkap lagi percabang",
+    "start": 183.12,
+    "duration": 6.199
+  },
+  {
+    "text": "ini itu ada yang namanya enggak cuman if",
+    "start": 186.239,
+    "duration": 5.041
+  },
+  {
+    "text": "aja. Kan tadi kalau misalnya kita lihat",
+    "start": 189.319,
+    "duration": 5.28
+  },
+  {
+    "text": "contoh itu kan di sini if jika hari ini",
+    "start": 191.28,
+    "duration": 5.72
+  },
+  {
+    "text": "hujan then maka dia akan melakukan satu",
+    "start": 194.599,
+    "duration": 5.64
+  },
+  {
+    "text": "if jikanya kondisinya terus then-nya itu",
+    "start": 197.0,
+    "duration": 5.36
+  },
+  {
+    "text": "eh apa itu namanya apa yang dia lakukan.",
+    "start": 200.239,
+    "duration": 4.64
+  },
+  {
+    "text": "Nah, selain if then ada loh yang namanya",
+    "start": 202.36,
+    "duration": 5.0
+  },
+  {
+    "text": "else atau juga bisa juga disebut juga",
+    "start": 204.879,
+    "duration": 6.28
+  },
+  {
+    "text": "dengan selain itu. Nah, kalau jika itu",
+    "start": 207.36,
+    "duration": 6.64
+  },
+  {
+    "text": "if-nya itu tadi adalah kondisinya",
+    "start": 211.159,
+    "duration": 5.121
+  },
+  {
+    "text": "misalnya nih jika tamu adalah orang yang",
+    "start": 214.0,
+    "duration": 5.68
+  },
+  {
+    "text": "dikenal maka atau then kita bukakan",
+    "start": 216.28,
+    "duration": 6.959
+  },
+  {
+    "text": "pintu else atau selain itu kita bunyikan",
+    "start": 219.68,
+    "duration": 6.96
+  },
+  {
+    "text": "alarm peringatan gitu ya. Jadi dia bisa",
+    "start": 223.239,
+    "duration": 7.121
+  },
+  {
+    "text": "merespon kalau misalnya kondisinya tepat",
+    "start": 226.64,
+    "duration": 5.28
+  },
+  {
+    "text": "ya. Kalau kondisinya tepat kan tamunya",
+    "start": 230.36,
+    "duration": 2.76
+  },
+  {
+    "text": "orang yang dikenal berarti dia akan",
+    "start": 231.92,
+    "duration": 3.12
+  },
+  {
+    "text": "bukakan pintu. Tapi kalau dia bukan",
+    "start": 233.12,
+    "duration": 3.36
+  },
+  {
+    "text": "orang yang dikenal maka dia akan",
+    "start": 235.04,
+    "duration": 3.759
+  },
+  {
+    "text": "melakukan yang lain atau yang else itu",
+    "start": 236.48,
+    "duration": 5.88
+  },
+  {
+    "text": "tadi gitu ya. Jadi sekarang ee apa",
+    "start": 238.799,
+    "duration": 5.52
+  },
+  {
+    "text": "terama program yang kita buat itu tahu",
+    "start": 242.36,
+    "duration": 4.76
+  },
+  {
+    "text": "kondisinya kalau misalnya ada ee dua",
+    "start": 244.319,
+    "duration": 5.64
+  },
+  {
+    "text": "kejadian yang berbeda. Nah, contohnya",
+    "start": 247.12,
+    "duration": 5.759
+  },
+  {
+    "text": "lagi ada kan misalnya lampu lalu lintas",
+    "start": 249.959,
+    "duration": 5.441
+  },
+  {
+    "text": "kan biasa kalau misalnya mau nyebrang",
+    "start": 252.879,
+    "duration": 4.801
+  },
+  {
+    "text": "gitu. Kalau di Jakarta kan harus pencet",
+    "start": 255.4,
+    "duration": 4.359
+  },
+  {
+    "text": "tombol pedestrian dulu gitu supaya",
+    "start": 257.68,
+    "duration": 4.079
+  },
+  {
+    "text": "lampunya bisa berubah, supaya kita bisa",
+    "start": 259.759,
+    "duration": 7.081
+  },
+  {
+    "text": "nyebrang. Nah, jika if tombol ee",
+    "start": 261.759,
+    "duration": 7.401
+  },
+  {
+    "text": "pedestriannya dipencet oleh pejalan",
+    "start": 266.84,
+    "duration": 4.919
+  },
+  {
+    "text": "kaki, maka nyalakan lampu merah untuk",
+    "start": 269.16,
+    "duration": 4.92
+  },
+  {
+    "text": "mobil. Tapi kalau misalnya enggak ada",
+    "start": 271.759,
+    "duration": 4.921
+  },
+  {
+    "text": "yang mencet, else kalau enggak ada yang",
+    "start": 274.08,
+    "duration": 4.64
+  },
+  {
+    "text": "mencet ya kan ya di sini kan kondisinya",
+    "start": 276.68,
+    "duration": 3.92
+  },
+  {
+    "text": "kalau ditekan kalau ada yang pencet.",
+    "start": 278.72,
+    "duration": 3.199
+  },
+  {
+    "text": "Tapi kalau enggak ada yang pencet, ya",
+    "start": 280.6,
+    "duration": 3.56
+  },
+  {
+    "text": "udah maka biarkan lampu hijau menyala",
+    "start": 281.919,
+    "duration": 5.161
+  },
+  {
+    "text": "untuk mobil, gitu ya. Jadi dia e apa itu",
+    "start": 284.16,
+    "duration": 4.84
+  },
+  {
+    "text": "namanya kondisinya kalau enggak ada yang",
+    "start": 287.08,
+    "duration": 4.0
+  },
+  {
+    "text": "terjadi, kondisinya yang ini enggak ada",
+    "start": 289.0,
+    "duration": 4.08
+  },
+  {
+    "text": "e enggak terjadi maka dia akan selalu",
+    "start": 291.08,
+    "duration": 4.04
+  },
+  {
+    "text": "menjalankan else. Tapi kalau ada sesuatu",
+    "start": 293.08,
+    "duration": 6.2
+  },
+  {
+    "text": "terjadi maka kita pakainya dan oke. Nah,",
+    "start": 295.12,
+    "duration": 6.48
+  },
+  {
+    "text": "sekarang ada contoh lagi yang lain.",
+    "start": 299.28,
+    "duration": 4.56
+  },
+  {
+    "text": "Misalnya kita main game, terus itu kita",
+    "start": 301.6,
+    "duration": 4.92
+  },
+  {
+    "text": "bikin game over. Nah, game over itu kita",
+    "start": 303.84,
+    "duration": 5.52
+  },
+  {
+    "text": "bikin dia supaya ketika ketika",
+    "start": 306.52,
+    "duration": 5.6
+  },
+  {
+    "text": "kondisinya itu nyawanya sudah habis gitu",
+    "start": 309.36,
+    "duration": 6.279
+  },
+  {
+    "text": "ya. Nah, kalau misalnya habis kita mau",
+    "start": 312.12,
+    "duration": 6.24
+  },
+  {
+    "text": "dia menampilkan layar game over gitu ya.",
+    "start": 315.639,
+    "duration": 5.041
+  },
+  {
+    "text": "Berarti kita pindah ke ee apa itu",
+    "start": 318.36,
+    "duration": 4.279
+  },
+  {
+    "text": "namanya? Screen game over. Tapi kalau",
+    "start": 320.68,
+    "duration": 4.32
+  },
+  {
+    "text": "misalnya masih ada, maka dia akan",
+    "start": 322.639,
+    "duration": 4.28
+  },
+  {
+    "text": "seperti biasa gitu layarnya belum",
+    "start": 325.0,
+    "duration": 5.039
+  },
+  {
+    "text": "berpindah. Nah, itu tadi contoh lain",
+    "start": 326.919,
+    "duration": 6.4
+  },
+  {
+    "text": "dalam bentuk game gitu ya. Nah, tadi",
+    "start": 330.039,
+    "duration": 5.72
+  },
+  {
+    "text": "kondisi tadi, percabangan tadi itu",
+    "start": 333.319,
+    "duration": 5.281
+  },
+  {
+    "text": "sebenarnya dalam dunia pemograman itu",
+    "start": 335.759,
+    "duration": 5.0
+  },
+  {
+    "text": "digambarkan menggunakan flowchart gitu",
+    "start": 338.6,
+    "duration": 4.76
+  },
+  {
+    "text": "ya. Nah, flowchart itu adalah kalau kita",
+    "start": 340.759,
+    "duration": 4.88
+  },
+  {
+    "text": "lihat flowchart sendiri namanya itu",
+    "start": 343.36,
+    "duration": 4.76
+  },
+  {
+    "text": "pertama ada flow sama chart. Flow itu",
+    "start": 345.639,
+    "duration": 4.521
+  },
+  {
+    "text": "kan bahasa Inggrisnya alur ya, mengalir",
+    "start": 348.12,
+    "duration": 5.12
+  },
+  {
+    "text": "gitu ya. Jadi kalau air itu kan dia",
+    "start": 350.16,
+    "duration": 6.28
+  },
+  {
+    "text": "water flowing gitu, air mengalir. Nah,",
+    "start": 353.24,
+    "duration": 5.56
+  },
+  {
+    "text": "kalau di sini flow chart itu gambar",
+    "start": 356.44,
+    "duration": 4.319
+  },
+  {
+    "text": "kayak kan kalau misalnya kita pernah",
+    "start": 358.8,
+    "duration": 3.36
+  },
+  {
+    "text": "lihat soal-soal matematika atau",
+    "start": 360.759,
+    "duration": 3.801
+  },
+  {
+    "text": "statistika itu kan dia ada gambarnya",
+    "start": 362.16,
+    "duration": 4.439
+  },
+  {
+    "text": "chart-chart-nya kalau di Excel. Nah,",
+    "start": 364.56,
+    "duration": 4.96
+  },
+  {
+    "text": "berarti kita bisa ee mengartikan flow",
+    "start": 366.599,
+    "duration": 4.44
+  },
+  {
+    "text": "chart karena bahasa Inggris itu dimulai",
+    "start": 369.52,
+    "duration": 4.2
+  },
+  {
+    "text": "dari belakang ya. Chart berarti gambaran",
+    "start": 371.039,
+    "duration": 5.681
+  },
+  {
+    "text": "alur, gambar alur gitu ya. Nah, gambar",
+    "start": 373.72,
+    "duration": 6.039
+  },
+  {
+    "text": "alur ini biasa dimulai dengan kalau ee",
+    "start": 376.72,
+    "duration": 6.52
+  },
+  {
+    "text": "bentuknya ada banyak ya, ada ee tiga",
+    "start": 379.759,
+    "duration": 5.521
+  },
+  {
+    "text": "harusnya. Yang pertama tuh ada oval.",
+    "start": 383.24,
+    "duration": 4.92
+  },
+  {
+    "text": "Oval itu dia eh yang memulai yang",
+    "start": 385.28,
+    "duration": 4.479
+  },
+  {
+    "text": "bentuknya kayak pil gitu ya, yang kayak",
+    "start": 388.16,
+    "duration": 4.319
+  },
+  {
+    "text": "ini. Nah, bentuknya pil seperti ini.",
+    "start": 389.759,
+    "duration": 4.481
+  },
+  {
+    "text": "Terus kalau dia menandakan proses dia",
+    "start": 392.479,
+    "duration": 4.041
+  },
+  {
+    "text": "persegi sama belah kutupat. Itu kalau",
+    "start": 394.24,
+    "duration": 5.28
+  },
+  {
+    "text": "misalnya ada logika percabangannya, ada",
+    "start": 396.52,
+    "duration": 5.799
+  },
+  {
+    "text": "kondisinya. Kan tadi kalau misalnya kita",
+    "start": 399.52,
+    "duration": 10.079
+  },
+  {
+    "text": "lihat contohnya di sini yang ini ya. Ee",
+    "start": 402.319,
+    "duration": 11.641
+  },
+  {
+    "text": "oke kita lihat dulu.",
+    "start": 409.599,
+    "duration": 8.481
+  },
+  {
+    "text": "Nah di sini jika kalau misalnya ini ya",
+    "start": 413.96,
+    "duration": 6.32
+  },
+  {
+    "text": "kan jika kondisinya ini ya maka dia akan",
+    "start": 418.08,
+    "duration": 4.64
+  },
+  {
+    "text": "menjalankan yang then. Tapi kalau",
+    "start": 420.28,
+    "duration": 4.16
+  },
+  {
+    "text": "kondisinya ini tidak maka dia akan",
+    "start": 422.72,
+    "duration": 4.479
+  },
+  {
+    "text": "menjalankan yang else gitu ya. Nah,",
+    "start": 424.44,
+    "duration": 4.64
+  },
+  {
+    "text": "makanya di sini belah ketubat dia punya",
+    "start": 427.199,
+    "duration": 3.961
+  },
+  {
+    "text": "kondisi percabangan yang dia bercabang",
+    "start": 429.08,
+    "duration": 4.76
+  },
+  {
+    "text": "kedua jalan yang nantinya dia ya atau",
+    "start": 431.16,
+    "duration": 5.56
+  },
+  {
+    "text": "tidak. Nih contohnya. Nah, pertama",
+    "start": 433.84,
+    "duration": 4.72
+  },
+  {
+    "text": "sebuah floucher itu harus dimulai dengan",
+    "start": 436.72,
+    "duration": 4.319
+  },
+  {
+    "text": "bentuk pil seperti ini ya, memulai dan",
+    "start": 438.56,
+    "duration": 4.079
+  },
+  {
+    "text": "nanti harusnya di bawahnya itu ada N",
+    "start": 441.039,
+    "duration": 4.521
+  },
+  {
+    "text": "gitu. Nah, di sini pas program mulai dia",
+    "start": 442.639,
+    "duration": 5.521
+  },
+  {
+    "text": "mengecek dulu kondisinya apakah hari ini",
+    "start": 445.56,
+    "duration": 5.28
+  },
+  {
+    "text": "hujan. Kalau hari ini hujan maka kita",
+    "start": 448.16,
+    "duration": 5.159
+  },
+  {
+    "text": "mau proses bawa payung gitu ya. Nah, ini",
+    "start": 450.84,
+    "duration": 4.28
+  },
+  {
+    "text": "harusnya panahnya gini ya. Kalau iya",
+    "start": 453.319,
+    "duration": 4.361
+  },
+  {
+    "text": "turun ke sini. Tapi kalau misalnya",
+    "start": 455.12,
+    "duration": 4.68
+  },
+  {
+    "text": "apakah hari ini hujan? Tidak. Maka",
+    "start": 457.68,
+    "duration": 4.48
+  },
+  {
+    "text": "panahnya akan ke kanan. Jadi dia akan",
+    "start": 459.8,
+    "duration": 5.2
+  },
+  {
+    "text": "bergantung panahnya, arah panahnya.",
+    "start": 462.16,
+    "duration": 4.68
+  },
+  {
+    "text": "Terus itu bloknya, kondisinya akan",
+    "start": 465.0,
+    "duration": 4.24
+  },
+  {
+    "text": "bergantung sesuai dengan kondisinya.",
+    "start": 466.84,
+    "duration": 4.079
+  },
+  {
+    "text": "Kalau misalnya dia benar sama kalau",
+    "start": 469.24,
+    "duration": 7.239
+  },
+  {
+    "text": "misalnya dia salah gitu. Nah,",
+    "start": 470.919,
+    "duration": 5.56
+  },
+  {
+    "text": "three two one action.",
+    "start": 480.0,
+    "duration": 7.38
+  },
+  {
+    "text": "[musik]",
+    "start": 485.36,
+    "duration": 2.02
+  },
+  {
+    "text": "Nah, Teman-teman kita sudah berkenalan",
+    "start": 488.759,
+    "duration": 6.0
+  },
+  {
+    "text": "dengan bercabangan, ya. Percabangan. Apa",
+    "start": 492.24,
+    "duration": 5.16
+  },
+  {
+    "text": "itu percabangan? Nah, sekarang kalau",
+    "start": 494.759,
+    "duration": 4.761
+  },
+  {
+    "text": "misalnya di Epinventor seperti apa sih",
+    "start": 497.4,
+    "duration": 4.799
+  },
+  {
+    "text": "percabangan itu? Coba kita lihat. Nah,",
+    "start": 499.52,
+    "duration": 5.72
+  },
+  {
+    "text": "kalau logika percabangan itu dia ada di",
+    "start": 502.199,
+    "duration": 5.921
+  },
+  {
+    "text": "dalam kontrol ya. Dia ada di dalam blok",
+    "start": 505.24,
+    "duration": 4.959
+  },
+  {
+    "text": "bagian kontrol nih. Bentuknya yang",
+    "start": 508.12,
+    "duration": 5.08
+  },
+  {
+    "text": "seperti ini ya. sama namanya juga if dan",
+    "start": 510.199,
+    "duration": 6.921
+  },
+  {
+    "text": "juga then if then. Nah, perhatikan di",
+    "start": 513.2,
+    "duration": 6.68
+  },
+  {
+    "text": "sini dia ada bracketnya ya yang membeluk",
+    "start": 517.12,
+    "duration": 4.799
+  },
+  {
+    "text": "blok di dalamnya. Berarti dia apapun",
+    "start": 519.88,
+    "duration": 4.639
+  },
+  {
+    "text": "kondisinya kita masukin ke dalam bloknya",
+    "start": 521.919,
+    "duration": 6.321
+  },
+  {
+    "text": "ini nanti gitu. Nah, itu bentuk if else",
+    "start": 524.519,
+    "duration": 6.601
+  },
+  {
+    "text": "atau percabangan yang ada di dalam eh",
+    "start": 528.24,
+    "duration": 5.88
+  },
+  {
+    "text": "apa itu namanya? MIT App Inventor. Nah,",
+    "start": 531.12,
+    "duration": 5.159
+  },
+  {
+    "text": "kalau kita lihat tadi bentuknya kan dia",
+    "start": 534.12,
+    "duration": 5.32
+  },
+  {
+    "text": "cuman if sama aja, dia enggak ada else.",
+    "start": 536.279,
+    "duration": 5.361
+  },
+  {
+    "text": "Nah, kalau misalnya kita mau menampilkan",
+    "start": 539.44,
+    "duration": 4.839
+  },
+  {
+    "text": "else-nya itu kita harus klik ininya nih",
+    "start": 541.64,
+    "duration": 5.8
+  },
+  {
+    "text": "yang ada apa setting-nya ini kan rodanya",
+    "start": 544.279,
+    "duration": 5.68
+  },
+  {
+    "text": "ini. Nah, kita harus klik dulu supaya",
+    "start": 547.44,
+    "duration": 5.6
+  },
+  {
+    "text": "dia bisa menampilkan else-nya. Nah,",
+    "start": 549.959,
+    "duration": 6.041
+  },
+  {
+    "text": "nanti dia ada pop up kecil, nanti kalian",
+    "start": 553.04,
+    "duration": 5.0
+  },
+  {
+    "text": "tarik tuh-nya ke dalam blok if-nya itu",
+    "start": 556.0,
+    "duration": 4.92
+  },
+  {
+    "text": "tadi. Nah, sehingga nanti bentuknya akan",
+    "start": 558.04,
+    "duration": 6.0
+  },
+  {
+    "text": "seperti ini ya. Ada tiga, ada if, jika,",
+    "start": 560.92,
+    "duration": 5.12
+  },
+  {
+    "text": "terus itu dia akan melakukan apa. Tapi",
+    "start": 564.04,
+    "duration": 3.52
+  },
+  {
+    "text": "kalau yang if-nya ini salah atau",
+    "start": 566.04,
+    "duration": 2.96
+  },
+  {
+    "text": "kondisinya enggak benar kayak misalnya",
+    "start": 567.56,
+    "duration": 3.08
+  },
+  {
+    "text": "hari ini enggak hujan kok, maka dia akan",
+    "start": 569.0,
+    "duration": 3.92
+  },
+  {
+    "text": "menjalankan langsung yang else yang then",
+    "start": 570.64,
+    "duration": 4.759
+  },
+  {
+    "text": "itu nanti dikip gitu ya. Jadi akan ada",
+    "start": 572.92,
+    "duration": 5.44
+  },
+  {
+    "text": "dua tempat ee yang nanti kita taruh",
+    "start": 575.399,
+    "duration": 5.12
+  },
+  {
+    "text": "perintah atau kodenya yang nanti",
+    "start": 578.36,
+    "duration": 4.24
+  },
+  {
+    "text": "berjalan sesuai dengan apakah kondisinya",
+    "start": 580.519,
+    "duration": 7.88
+  },
+  {
+    "text": "ini benar apa salah gitu. Nah,",
+    "start": 582.6,
+    "duration": 5.799
+  },
+  {
+    "text": "di sini contohnya misalnya kita mau",
+    "start": 588.839,
+    "duration": 6.361
+  },
+  {
+    "text": "bikin aplikasi yang di mana dia itu bisa",
+    "start": 592.48,
+    "duration": 5.479
+  },
+  {
+    "text": "ngecek apakah kita lulus ujian atau",
+    "start": 595.2,
+    "duration": 4.759
+  },
+  {
+    "text": "tidak berdasarkan nilai yang kita punya",
+    "start": 597.959,
+    "duration": 4.56
+  },
+  {
+    "text": "gitu ya. Nah, di sini kita ee bisa",
+    "start": 599.959,
+    "duration": 5.081
+  },
+  {
+    "text": "tambahin misalnya kita tambahin textbox",
+    "start": 602.519,
+    "duration": 4.401
+  },
+  {
+    "text": "ya, textbox yang ini kita nanti tempat",
+    "start": 605.04,
+    "duration": 4.16
+  },
+  {
+    "text": "kita masukin angka, terus ada button",
+    "start": 606.92,
+    "duration": 4.64
+  },
+  {
+    "text": "yang nanti untuk men-trigger si if-nya",
+    "start": 609.2,
+    "duration": 4.6
+  },
+  {
+    "text": "gitu kan ya. Terus itu ada label yang",
+    "start": 611.56,
+    "duration": 4.56
+  },
+  {
+    "text": "nanti akan menghasil menampilkan",
+    "start": 613.8,
+    "duration": 4.76
+  },
+  {
+    "text": "hasilnya. Nah, kalau kita lihat di sini",
+    "start": 616.12,
+    "duration": 5.92
+  },
+  {
+    "text": "kan dia ee apa tuh namanya? Harus tambah",
+    "start": 618.56,
+    "duration": 6.399
+  },
+  {
+    "text": "ee col codingnya ya. Nih pertama kita",
+    "start": 622.04,
+    "duration": 5.68
+  },
+  {
+    "text": "ambil blok e event-nya dulu. Berarti di",
+    "start": 624.959,
+    "duration": 5.601
+  },
+  {
+    "text": "dalam button-nya kita ambil blok ini ya,",
+    "start": 627.72,
+    "duration": 5.64
+  },
+  {
+    "text": "when button cek diklik. Kalau buttonnya",
+    "start": 630.56,
+    "duration": 5.44
+  },
+  {
+    "text": "diklik maka kita akan ee apa itu",
+    "start": 633.36,
+    "duration": 5.279
+  },
+  {
+    "text": "namanya? Memulai programnya gitu. Kita",
+    "start": 636.0,
+    "duration": 5.2
+  },
+  {
+    "text": "akan memulai pengkondisiannya. Nah, di",
+    "start": 638.639,
+    "duration": 4.921
+  },
+  {
+    "text": "sini kita tambahin block if dan kita",
+    "start": 641.2,
+    "duration": 6.28
+  },
+  {
+    "text": "tadi ya. Nah, di sini kita mau bikin ee",
+    "start": 643.56,
+    "duration": 6.6
+  },
+  {
+    "text": "di dalam if-nya kita ditambahin kondisi",
+    "start": 647.48,
+    "duration": 5.44
+  },
+  {
+    "text": "kalau button teks nilai ya labelnya tadi",
+    "start": 650.16,
+    "duration": 5.479
+  },
+  {
+    "text": "namanya kan teks nilai ya. Kalau eh",
+    "start": 652.92,
+    "duration": 4.84
+  },
+  {
+    "text": "bukan label teks area. Kalau teks",
+    "start": 655.639,
+    "duration": 5.161
+  },
+  {
+    "text": "areanya button nilainya itu nilainya",
+    "start": 657.76,
+    "duration": 6.4
+  },
+  {
+    "text": "lebih dari atau sama dengan 75 berarti",
+    "start": 660.8,
+    "duration": 6.92
+  },
+  {
+    "text": "dia lolos kan. Berarti dia nilai ee apa",
+    "start": 664.16,
+    "duration": 5.96
+  },
+  {
+    "text": "itu namanya nanti bisa lanjut gitu",
+    "start": 667.72,
+    "duration": 4.559
+  },
+  {
+    "text": "enggak remedial gitu kan ya. Nah kita",
+    "start": 670.12,
+    "duration": 5.44
+  },
+  {
+    "text": "tambahin di sini di dalam block if kita",
+    "start": 672.279,
+    "duration": 7.641
+  },
+  {
+    "text": "masukin kondisi dari eh M ya e bagian M",
+    "start": 675.56,
+    "duration": 7.64
+  },
+  {
+    "text": "yang warnanya biru seperti ini. Oke kita",
+    "start": 679.92,
+    "duration": 6.359
+  },
+  {
+    "text": "lanjut. setelahnya baru kita bisa",
+    "start": 683.2,
+    "duration": 5.52
+  },
+  {
+    "text": "mengubah kondisinya. Kalau misalnya",
+    "start": 686.279,
+    "duration": 5.56
+  },
+  {
+    "text": "nilainya lebih dari 75, kita akan ubah",
+    "start": 688.72,
+    "duration": 6.239
+  },
+  {
+    "text": "label hasilnya jadi kamu lulus. Tapi",
+    "start": 691.839,
+    "duration": 5.44
+  },
+  {
+    "text": "kalau misalnya dia enggak ee apa tuh",
+    "start": 694.959,
+    "duration": 4.44
+  },
+  {
+    "text": "namanya? Yang ini kondisinya gender",
+    "start": 697.279,
+    "duration": 4.321
+  },
+  {
+    "text": "misalnya dia masukin 65 kan ini salah.",
+    "start": 699.399,
+    "duration": 4.601
+  },
+  {
+    "text": "Berarti yang then ini akan dikip dia",
+    "start": 701.6,
+    "duration": 4.44
+  },
+  {
+    "text": "akan langsung menjalankan ini dia akan",
+    "start": 704.0,
+    "duration": 4.48
+  },
+  {
+    "text": "ng-set hasilnya, label hasilnya menjadi",
+    "start": 706.04,
+    "duration": 5.72
+  },
+  {
+    "text": "belajar lagi gitu ya. Jadi dia akan auto",
+    "start": 708.48,
+    "duration": 7.44
+  },
+  {
+    "text": "ter ee terganti gitu. ya. Oke, itu untuk",
+    "start": 711.76,
+    "duration": 7.92
+  },
+  {
+    "text": "bentuk simpel dari percabangan di MIT",
+    "start": 715.92,
+    "duration": 7.039
+  },
+  {
+    "text": "App Inventor",
+    "start": 719.68,
+    "duration": 3.279
+  },
+  {
+    "text": "action.",
+    "start": 732.68,
+    "duration": 3.603
+  },
+  {
+    "text": "[musik]",
+    "start": 734.263,
+    "duration": 2.02
+  },
+  {
+    "text": "Oke, Teman-teman. Sekarang kita akan",
+    "start": 738.12,
+    "duration": 5.079
+  },
+  {
+    "text": "melanjutkan mengenai literasi keuangan.",
+    "start": 739.88,
+    "duration": 5.079
+  },
+  {
+    "text": "ee kita akan bahas membahas tentang",
+    "start": 743.199,
+    "duration": 3.401
+  },
+  {
+    "text": "pendapatan, pengeluaran, dan juga",
+    "start": 744.959,
+    "duration": 4.56
+  },
+  {
+    "text": "e-wallet. Oke, pertama kita harus",
+    "start": 746.6,
+    "duration": 4.96
+  },
+  {
+    "text": "belajar dulu nih uang tuh sebenarnya",
+    "start": 749.519,
+    "duration": 4.44
+  },
+  {
+    "text": "dari mana sih? Apa sih usul-usul uang?",
+    "start": 751.56,
+    "duration": 4.719
+  },
+  {
+    "text": "Nah, ribuan tahun lalu sebelum adanya",
+    "start": 753.959,
+    "duration": 4.201
+  },
+  {
+    "text": "uang di dunia modern kan kita semua",
+    "start": 756.279,
+    "duration": 5.081
+  },
+  {
+    "text": "pakai uang ya. Nah, di ee sebelum adanya",
+    "start": 758.16,
+    "duration": 5.88
+  },
+  {
+    "text": "uang orang lain itu melakukan yang",
+    "start": 761.36,
+    "duration": 5.4
+  },
+  {
+    "text": "namanya barter atau bertukar barang ee",
+    "start": 764.04,
+    "duration": 7.76
+  },
+  {
+    "text": "secara langsung. Misalnya kita butuh ee",
+    "start": 766.76,
+    "duration": 6.84
+  },
+  {
+    "text": "butuh nasi gitu ya. Kita butuh beras",
+    "start": 771.8,
+    "duration": 3.839
+  },
+  {
+    "text": "untuk memasak nasi, tapi kita enggak",
+    "start": 773.6,
+    "duration": 4.72
+  },
+  {
+    "text": "punya ee beras, tapi kita punya misalnya",
+    "start": 775.639,
+    "duration": 4.88
+  },
+  {
+    "text": "buah-buahan. Nah, kita tuh bisa tuh",
+    "start": 778.32,
+    "duration": 4.28
+  },
+  {
+    "text": "langsung berter ke petani atau tetangga",
+    "start": 780.519,
+    "duration": 4.041
+  },
+  {
+    "text": "kita gitu yang dekat. Kamu punya beras",
+    "start": 782.6,
+    "duration": 4.44
+  },
+  {
+    "text": "enggak? Ini aku apa? Punya buah. Kalau",
+    "start": 784.56,
+    "duration": 4.639
+  },
+  {
+    "text": "misalnya punya dan kamu mau tukaran, yuk",
+    "start": 787.04,
+    "duration": 4.28
+  },
+  {
+    "text": "kita tukaran atau barter. Nah, itu",
+    "start": 789.199,
+    "duration": 3.961
+  },
+  {
+    "text": "biasanya ee kalau zaman dulu tuh",
+    "start": 791.32,
+    "duration": 4.04
+  },
+  {
+    "text": "langsung bertukaran seperti itu. Jadi,",
+    "start": 793.16,
+    "duration": 4.56
+  },
+  {
+    "text": "dia akan bertukar barang yang value-nya",
+    "start": 795.36,
+    "duration": 5.919
+  },
+  {
+    "text": "yang nilainya sama. Nah, kemudian",
+    "start": 797.72,
+    "duration": 6.6
+  },
+  {
+    "text": "ee dengan berkembangnya zaman muncul",
+    "start": 801.279,
+    "duration": 5.0
+  },
+  {
+    "text": "yang dinamakan koin emas ya. Muncul koin",
+    "start": 804.32,
+    "duration": 4.12
+  },
+  {
+    "text": "emas karena ee koin emas itu kan",
+    "start": 806.279,
+    "duration": 5.36
+  },
+  {
+    "text": "berharga gitu ya. Nah, itu bisa ditukar",
+    "start": 808.44,
+    "duration": 5.68
+  },
+  {
+    "text": "ee yang kemudian orang-orang enggak jadi",
+    "start": 811.639,
+    "duration": 4.081
+  },
+  {
+    "text": "enggak langsung barter gitu ya. Oh, dia",
+    "start": 814.12,
+    "duration": 3.159
+  },
+  {
+    "text": "kalau misalnya punya koin emas nih, aku",
+    "start": 815.72,
+    "duration": 4.799
+  },
+  {
+    "text": "punya emas segini ee aku mau beli itu,",
+    "start": 817.279,
+    "duration": 6.481
+  },
+  {
+    "text": "aku mau ee apa itu namanya? Suatu barang",
+    "start": 820.519,
+    "duration": 5.241
+  },
+  {
+    "text": "gitu. Jadi sudah mulai transaksi ee",
+    "start": 823.76,
+    "duration": 4.8
+  },
+  {
+    "text": "dengan menggunakan koin baru ee dengan",
+    "start": 825.76,
+    "duration": 4.879
+  },
+  {
+    "text": "berkembang zaman. Kalau koin emas tuh",
+    "start": 828.56,
+    "duration": 3.8
+  },
+  {
+    "text": "kan kayak berat gitu ya, bawa koin ke",
+    "start": 830.639,
+    "duration": 4.44
+  },
+  {
+    "text": "mana-mana. Terus itu ya apa tuh namanya?",
+    "start": 832.36,
+    "duration": 4.88
+  },
+  {
+    "text": "Harus selalu bawa poskan jadi enggak apa",
+    "start": 835.079,
+    "duration": 5.921
+  },
+  {
+    "text": "ya dia enggak ee ya enggak efektif lah",
+    "start": 837.24,
+    "duration": 6.2
+  },
+  {
+    "text": "jadinya. ee manusia menciptakan yang",
+    "start": 841.0,
+    "duration": 4.72
+  },
+  {
+    "text": "namanya uang kertas yang bisa dimudah",
+    "start": 843.44,
+    "duration": 5.12
+  },
+  {
+    "text": "mudah dibawa ke mana-mana. Tapi dimasuki",
+    "start": 845.72,
+    "duration": 6.84
+  },
+  {
+    "text": "era digital ini uang itu makin ee lebih",
+    "start": 848.56,
+    "duration": 7.24
+  },
+  {
+    "text": "jarang lagi dibawa karena zaman sekarang",
+    "start": 852.56,
+    "duration": 5.68
+  },
+  {
+    "text": "uang tuh dia enggak terlihat bentuknya",
+    "start": 855.8,
+    "duration": 4.76
+  },
+  {
+    "text": "gitu ya. Uang tuh sekarang tuh bentuknya",
+    "start": 858.24,
+    "duration": 5.8
+  },
+  {
+    "text": "hanya berupa angka aja. Nah, itulah yang",
+    "start": 860.56,
+    "duration": 6.279
+  },
+  {
+    "text": "disebut dengan uang di era digital. Nah,",
+    "start": 864.04,
+    "duration": 5.479
+  },
+  {
+    "text": "di era digital ee sebelum kita ke uang",
+    "start": 866.839,
+    "duration": 5.481
+  },
+  {
+    "text": "di era digital, pertama kalau dalam",
+    "start": 869.519,
+    "duration": 5.32
+  },
+  {
+    "text": "literasi keuangan itu ada yang namanya",
+    "start": 872.32,
+    "duration": 4.24
+  },
+  {
+    "text": "kita harus pahami ada yang namanya",
+    "start": 874.839,
+    "duration": 4.36
+  },
+  {
+    "text": "pendapatan atau income. Jadi, pendapatan",
+    "start": 876.56,
+    "duration": 4.8
+  },
+  {
+    "text": "itu adalah semua uang yang mengalir",
+    "start": 879.199,
+    "duration": 4.401
+  },
+  {
+    "text": "masuk ke kantongmu. Nah, jadi intinya",
+    "start": 881.36,
+    "duration": 4.039
+  },
+  {
+    "text": "income ini adalah sumber pendapatan gitu",
+    "start": 883.6,
+    "duration": 4.359
+  },
+  {
+    "text": "ya. Nah, coba deh kalian sebutkan tiga",
+    "start": 885.399,
+    "duration": 4.721
+  },
+  {
+    "text": "sumber pendapatan kalian apa aja sih",
+    "start": 887.959,
+    "duration": 4.921
+  },
+  {
+    "text": "gitu. Misalnya dari ee dikasih orang",
+    "start": 890.12,
+    "duration": 5.399
+  },
+  {
+    "text": "tua, dikasih nenek gitu. coba sebutin.",
+    "start": 892.88,
+    "duration": 5.84
+  },
+  {
+    "text": "Nah, itu ya. Jadi ee tiga income ini",
+    "start": 895.519,
+    "duration": 5.281
+  },
+  {
+    "text": "uang kita datangnya muncul dari mana",
+    "start": 898.72,
+    "duration": 5.039
+  },
+  {
+    "text": "gitu. Oke, selanjutnya",
+    "start": 900.8,
+    "duration": 5.279
+  },
+  {
+    "text": "selain ada pemasukan, ada yang namanya",
+    "start": 903.759,
+    "duration": 5.64
+  },
+  {
+    "text": "pengeluaran. Income versus expense.",
+    "start": 906.079,
+    "duration": 5.401
+  },
+  {
+    "text": "Expense itu artinya pengeluaran.",
+    "start": 909.399,
+    "duration": 4.12
+  },
+  {
+    "text": "Pengeluaran itu berarti uang yang kita",
+    "start": 911.48,
+    "duration": 5.039
+  },
+  {
+    "text": "ee keluarkan yang ditukar dengan barang",
+    "start": 913.519,
+    "duration": 5.521
+  },
+  {
+    "text": "atau jasa gitu ya. Misalnya kita membeli",
+    "start": 916.519,
+    "duration": 4.081
+  },
+  {
+    "text": "makanan,",
+    "start": 919.04,
+    "duration": 3.799
+  },
+  {
+    "text": "kita beli barang-barang yang kita mau",
+    "start": 920.6,
+    "duration": 4.96
+  },
+  {
+    "text": "gitu kan. mainan, beli handphone, beli",
+    "start": 922.839,
+    "duration": 5.0
+  },
+  {
+    "text": "ee apa tuh namanya? Komputer dan segala",
+    "start": 925.56,
+    "duration": 5.32
+  },
+  {
+    "text": "macam. Nah, jadi pengeluaran sama",
+    "start": 927.839,
+    "duration": 5.041
+  },
+  {
+    "text": "pemasukan ini berkaitan satu sama lain",
+    "start": 930.88,
+    "duration": 5.56
+  },
+  {
+    "text": "ya. Karena kita harus tahu nih pemasukan",
+    "start": 932.88,
+    "duration": 6.12
+  },
+  {
+    "text": "kita berapa, pengeluaran kita berapa.",
+    "start": 936.44,
+    "duration": 5.16
+  },
+  {
+    "text": "Nah, kenapa kita harus tahu? Karena di",
+    "start": 939.0,
+    "duration": 5.04
+  },
+  {
+    "text": "sini nih yang bahaya. Kalau pengeluaran",
+    "start": 941.6,
+    "duration": 5.12
+  },
+  {
+    "text": "kita ternyata lebih dari pendapatan,",
+    "start": 944.04,
+    "duration": 5.44
+  },
+  {
+    "text": "maka kita ee harus berhutang gitu ya,",
+    "start": 946.72,
+    "duration": 4.64
+  },
+  {
+    "text": "Teman-teman. Jadi kayak ya ini enggak",
+    "start": 949.48,
+    "duration": 3.839
+  },
+  {
+    "text": "disarankan. Jadi jangan sampai kita ee",
+    "start": 951.36,
+    "duration": 4.2
+  },
+  {
+    "text": "berhutang. Jadi kita harus tahu dulu",
+    "start": 953.319,
+    "duration": 4.561
+  },
+  {
+    "text": "gitu kan berapa pemasukan kita, dari",
+    "start": 955.56,
+    "duration": 4.56
+  },
+  {
+    "text": "mana pemasukan itu berasal, terus kita",
+    "start": 957.88,
+    "duration": 4.12
+  },
+  {
+    "text": "harus cek pengeluaran kita berapa,",
+    "start": 960.12,
+    "duration": 3.48
+  },
+  {
+    "text": "expense kita itu berapa, kita harus",
+    "start": 962.0,
+    "duration": 5.319
+  },
+  {
+    "text": "catat gitu ya. Nah,",
+    "start": 963.6,
+    "duration": 6.719
+  },
+  {
+    "text": "untuk ee apa itu namanya? Selain",
+    "start": 967.319,
+    "duration": 5.401
+  },
+  {
+    "text": "pemasukan pengeluaran ada juga yang",
+    "start": 970.319,
+    "duration": 3.921
+  },
+  {
+    "text": "namanya tabungan. Kalau di dalam",
+    "start": 972.72,
+    "duration": 4.28
+  },
+  {
+    "text": "literasi keuangan yang namanya ee",
+    "start": 974.24,
+    "duration": 5.48
+  },
+  {
+    "text": "savings. Jadi, savings itu artinya",
+    "start": 977.0,
+    "duration": 7.079
+  },
+  {
+    "text": "tabungan yang di mana tabungan itu",
+    "start": 979.72,
+    "duration": 6.76
+  },
+  {
+    "text": "adalah uang gitu ya atau sesuatu yang",
+    "start": 984.079,
+    "duration": 5.281
+  },
+  {
+    "text": "kita sisihkan dari pemasukan kita yang",
+    "start": 986.48,
+    "duration": 5.279
+  },
+  {
+    "text": "tidak akan kita pakai untuk pengeluaran",
+    "start": 989.36,
+    "duration": 4.52
+  },
+  {
+    "text": "gitu ya. Rumusnya bisa kita pakai",
+    "start": 991.759,
+    "duration": 5.64
+  },
+  {
+    "text": "seperti ini. Tabungan itu bisa ee kita",
+    "start": 993.88,
+    "duration": 5.959
+  },
+  {
+    "text": "hitung dari pendapatan dikurang",
+    "start": 997.399,
+    "duration": 4.321
+  },
+  {
+    "text": "pengeluaran. Jadi misalnya kita dapat",
+    "start": 999.839,
+    "duration": 4.161
+  },
+  {
+    "text": "uang Rp10.000 R dari orang tua gitu ya.",
+    "start": 1001.72,
+    "duration": 4.0
+  },
+  {
+    "text": "Terus kita pengeluarannya sehari untuk",
+    "start": 1004.0,
+    "duration": 5.72
+  },
+  {
+    "text": "jajan itu R5.000. Berarti 10.000 - 5.000",
+    "start": 1005.72,
+    "duration": 6.44
+  },
+  {
+    "text": "itu 5.000. Nah, 5.000 itulah yang nanti",
+    "start": 1009.72,
+    "duration": 4.84
+  },
+  {
+    "text": "dimasukin ke tabungan. Jadi, tabungan",
+    "start": 1012.16,
+    "duration": 3.919
+  },
+  {
+    "text": "ini sangat penting ya, Teman-teman.",
+    "start": 1014.56,
+    "duration": 3.719
+  },
+  {
+    "text": "Karena dia berfungsi sebagai benteng",
+    "start": 1016.079,
+    "duration": 5.081
+  },
+  {
+    "text": "pertahanan gitu ya, atau kayak jaga-jaga",
+    "start": 1018.279,
+    "duration": 7.481
+  },
+  {
+    "text": "gitu uang ee apa itu namanya? Uang ee",
+    "start": 1021.16,
+    "duration": 6.6
+  },
+  {
+    "text": "simpanan gitu loh ya. Karena kalau",
+    "start": 1025.76,
+    "duration": 3.96
+  },
+  {
+    "text": "misalnya ada hal darurat gitu, misalnya",
+    "start": 1027.76,
+    "duration": 5.36
+  },
+  {
+    "text": "kita ee harus pulang ke sekolah, pulang",
+    "start": 1029.72,
+    "duration": 5.719
+  },
+  {
+    "text": "sekolah harus naik ojek gitu ya, Kak",
+    "start": 1033.12,
+    "duration": 4.919
+  },
+  {
+    "text": "atau ojeknya harus mobil gitu. Kita",
+    "start": 1035.439,
+    "duration": 4.681
+  },
+  {
+    "text": "harus pesan mobil karena hujan. Nah, itu",
+    "start": 1038.039,
+    "duration": 4.04
+  },
+  {
+    "text": "kan kita supaya kita bisa pesan mobil",
+    "start": 1040.12,
+    "duration": 4.719
+  },
+  {
+    "text": "kan oh ada nih tabungan kita. Jadi ya",
+    "start": 1042.079,
+    "duration": 4.6
+  },
+  {
+    "text": "udah kita bisa langsung pesan mobil gitu",
+    "start": 1044.839,
+    "duration": 4.801
+  },
+  {
+    "text": "pakai ojek online. Nah, seperti itu ya.",
+    "start": 1046.679,
+    "duration": 5.161
+  },
+  {
+    "text": "Atau misalnya kita pengin beli membeli",
+    "start": 1049.64,
+    "duration": 4.279
+  },
+  {
+    "text": "sesuatu yang mahal gitu, yang penting",
+    "start": 1051.84,
+    "duration": 3.88
+  },
+  {
+    "text": "gitu. Kayak misalnya laptop, kita butuh",
+    "start": 1053.919,
+    "duration": 3.841
+  },
+  {
+    "text": "laptop. T kan mahal. Nah, karena kita",
+    "start": 1055.72,
+    "duration": 3.72
+  },
+  {
+    "text": "punya tabungan kita bisa tuh langsung",
+    "start": 1057.76,
+    "duration": 4.6
+  },
+  {
+    "text": "membeli tanpa harus minjam uang gitu ya,",
+    "start": 1059.44,
+    "duration": 6.479
+  },
+  {
+    "text": "Teman-teman. Oke. Nah, sekarang di dunia",
+    "start": 1062.36,
+    "duration": 7.52
+  },
+  {
+    "text": "digital ee kita enggak lagi pakai ini ya",
+    "start": 1065.919,
+    "duration": 6.12
+  },
+  {
+    "text": "ke bank, setor uang, tarik uang. Itu",
+    "start": 1069.88,
+    "duration": 4.48
+  },
+  {
+    "text": "jarang banget ya. Kita mungkin sekarang",
+    "start": 1072.039,
+    "duration": 4.041
+  },
+  {
+    "text": "udah ee mungkin di antara teman-teman",
+    "start": 1074.36,
+    "duration": 3.16
+  },
+  {
+    "text": "kita atau mungkin dari orang tua kalian",
+    "start": 1076.08,
+    "duration": 3.28
+  },
+  {
+    "text": "enggak langsung ngasih cash ya, kita",
+    "start": 1077.52,
+    "duration": 4.68
+  },
+  {
+    "text": "langsung dikasihnya transfer gitu atau",
+    "start": 1079.36,
+    "duration": 5.6
+  },
+  {
+    "text": "misalnya top up gitu misalnya pakai ee",
+    "start": 1082.2,
+    "duration": 4.88
+  },
+  {
+    "text": "e-owallet gitu. E-wallet di dunia luar",
+    "start": 1084.96,
+    "duration": 5.32
+  },
+  {
+    "text": "kan banyak ya. Nah, ewallet ini dia jadi",
+    "start": 1087.08,
+    "duration": 5.88
+  },
+  {
+    "text": "saldo digital kita gitu. Uang fisik kita",
+    "start": 1090.28,
+    "duration": 4.32
+  },
+  {
+    "text": "itu dikasih ke mereka gitu ya",
+    "start": 1092.96,
+    "duration": 4.92
+  },
+  {
+    "text": "sebenarnya. Mm. Terus itu nanti ditukar",
+    "start": 1094.6,
+    "duration": 5.079
+  },
+  {
+    "text": "dengan saldo digital. Kurang lebih",
+    "start": 1097.88,
+    "duration": 3.32
+  },
+  {
+    "text": "bentuknya seperti itu ya. Ewallet",
+    "start": 1099.679,
+    "duration": 4.801
+  },
+  {
+    "text": "intinya ewallet itu dia",
+    "start": 1101.2,
+    "duration": 5.88
+  },
+  {
+    "text": "saldo digital lah yang ada gitu. Karena",
+    "start": 1104.48,
+    "duration": 4.72
+  },
+  {
+    "text": "kan kita enggak perlu kayak harus bikin",
+    "start": 1107.08,
+    "duration": 3.959
+  },
+  {
+    "text": "rekening dan segala macam. Karena dia",
+    "start": 1109.2,
+    "duration": 4.32
+  },
+  {
+    "text": "simpel kan kalau ewallet gitu atau",
+    "start": 1111.039,
+    "duration": 4.801
+  },
+  {
+    "text": "dompet digital. Jadi dia tuh kayak ee",
+    "start": 1113.52,
+    "duration": 4.84
+  },
+  {
+    "text": "pengeluaran-pengeluaran kecil. Nah,",
+    "start": 1115.84,
+    "duration": 5.04
+  },
+  {
+    "text": "selain itu di era digital sekarang",
+    "start": 1118.36,
+    "duration": 4.16
+  },
+  {
+    "text": "khususnya di Indonesia ya ada yang",
+    "start": 1120.88,
+    "duration": 4.48
+  },
+  {
+    "text": "namanya Kris ya atau singkatan dari",
+    "start": 1122.52,
+    "duration": 5.48
+  },
+  {
+    "text": "quick response Code Indonesian Standard.",
+    "start": 1125.36,
+    "duration": 6.04
+  },
+  {
+    "text": "Jadi kayak itu ada Kris itu kode yang",
+    "start": 1128.0,
+    "duration": 6.48
+  },
+  {
+    "text": "dibuat gitu kan yang dia bentuknya QR",
+    "start": 1131.4,
+    "duration": 4.639
+  },
+  {
+    "text": "gitu ya bukan barcode ya. Kalau barcode",
+    "start": 1134.48,
+    "duration": 3.439
+  },
+  {
+    "text": "itu yang batang-batang. Nah kalau Kris",
+    "start": 1136.039,
+    "duration": 5.721
+  },
+  {
+    "text": "kan dia bentuknya QR kan. Nah, ee yang",
+    "start": 1137.919,
+    "duration": 6.841
+  },
+  {
+    "text": "dia itu terstandarisasi di Indonesia",
+    "start": 1141.76,
+    "duration": 4.279
+  },
+  {
+    "text": "gitu. Jadi, kita kalau melakukan",
+    "start": 1144.76,
+    "duration": 3.2
+  },
+  {
+    "text": "transaksi jual beli pakai Kris itu kan",
+    "start": 1146.039,
+    "duration": 4.441
+  },
+  {
+    "text": "dia langsung gitu ya, uang kita yang",
+    "start": 1147.96,
+    "duration": 4.719
+  },
+  {
+    "text": "kita beli itu langsung tertransfer atau",
+    "start": 1150.48,
+    "duration": 4.48
+  },
+  {
+    "text": "masuk ke rekening penjualnya gitu ya.",
+    "start": 1152.679,
+    "duration": 5.401
+  },
+  {
+    "text": "Jadi kita tinggal scan terus itu nanti",
+    "start": 1154.96,
+    "duration": 5.8
+  },
+  {
+    "text": "entah dari e-wallet atau dari uang ee",
+    "start": 1158.08,
+    "duration": 4.4
+  },
+  {
+    "text": "kalau misalnya kalian sudah cukup tua",
+    "start": 1160.76,
+    "duration": 4.799
+  },
+  {
+    "text": "untuk mempunyai mbanking gitu ya. Nah,",
+    "start": 1162.48,
+    "duration": 6.04
+  },
+  {
+    "text": "itu nanti dia ee uangnya akan langsung",
+    "start": 1165.559,
+    "duration": 5.041
+  },
+  {
+    "text": "ditransfer atau dipindahkan ke rekening",
+    "start": 1168.52,
+    "duration": 7.399
+  },
+  {
+    "text": "penjualnya gitu ya. Untuk Kris",
+    "start": 1170.6,
+    "duration": 5.319
+  },
+  {
+    "text": "3, two, one, action.",
+    "start": 1179.52,
+    "duration": 4.788
+  },
+  {
+    "text": "[musik]",
+    "start": 1182.288,
+    "duration": 2.02
+  },
+  {
+    "text": "Nah, kita sudah membahas tentang",
+    "start": 1186.36,
+    "duration": 3.88
+  },
+  {
+    "text": "literasi keuangan. Sekarang kita mau",
+    "start": 1188.28,
+    "duration": 5.04
+  },
+  {
+    "text": "membahas tentang perencanaan keuangan",
+    "start": 1190.24,
+    "duration": 4.799
+  },
+  {
+    "text": "gitu ya. Jadi kita sudah punya uang,",
+    "start": 1193.32,
+    "duration": 3.4
+  },
+  {
+    "text": "kita tahu income kita berapa,",
+    "start": 1195.039,
+    "duration": 3.961
+  },
+  {
+    "text": "pengeluaran kita berapa. Sekarang kita",
+    "start": 1196.72,
+    "duration": 5.72
+  },
+  {
+    "text": "mau membahas kebutuhan versus keinginan.",
+    "start": 1199.0,
+    "duration": 7.12
+  },
+  {
+    "text": "Nah, ada banyak jebakan B ee jebakan",
+    "start": 1202.44,
+    "duration": 7.44
+  },
+  {
+    "text": "Batman gitu ya. Misalnya ee orang-orang",
+    "start": 1206.12,
+    "duration": 6.08
+  },
+  {
+    "text": "itu misalnya kalian lihat teman-teman ee",
+    "start": 1209.88,
+    "duration": 5.96
+  },
+  {
+    "text": "di sekolah kalian gitu ya atau ee di",
+    "start": 1212.2,
+    "duration": 5.16
+  },
+  {
+    "text": "keluarga kalian misalnya adik kalian",
+    "start": 1215.84,
+    "duration": 5.12
+  },
+  {
+    "text": "gitu ya sering dia kehabisan uang gitu",
+    "start": 1217.36,
+    "duration": 7.48
+  },
+  {
+    "text": "ya karena pendapatannya kecil gitu.",
+    "start": 1220.96,
+    "duration": 7.0
+  },
+  {
+    "text": "di mereka kira seperti itu gitu ya. Tapi",
+    "start": 1224.84,
+    "duration": 5.4
+  },
+  {
+    "text": "padahal sebenarnya pendapatan itu tidak",
+    "start": 1227.96,
+    "duration": 3.719
+  },
+  {
+    "text": "berpengaruh karena kan pendapatan",
+    "start": 1230.24,
+    "duration": 4.16
+  },
+  {
+    "text": "uangnya ee udah kita terima gitu kan.",
+    "start": 1231.679,
+    "duration": 4.521
+  },
+  {
+    "text": "Nah, sebenarnya uang yang kita terima",
+    "start": 1234.4,
+    "duration": 3.84
+  },
+  {
+    "text": "itu kadang kita tuh pengin langsung",
+    "start": 1236.2,
+    "duration": 4.0
+  },
+  {
+    "text": "beliin sesuatu gitu kan ya. Entah kita",
+    "start": 1238.24,
+    "duration": 4.0
+  },
+  {
+    "text": "entah itu kita beli makanan atau entah",
+    "start": 1240.2,
+    "duration": 4.2
+  },
+  {
+    "text": "kita beli barang-barang yang kita mau.",
+    "start": 1242.24,
+    "duration": 5.64
+  },
+  {
+    "text": "Nah, itu bisa jadi ee jebakan Batman",
+    "start": 1244.4,
+    "duration": 5.2
+  },
+  {
+    "text": "gitu ya. Kayak kita ee jebakan",
+    "start": 1247.88,
+    "duration": 3.799
+  },
+  {
+    "text": "Batman-nya itu maksudnya kayak di suatu",
+    "start": 1249.6,
+    "duration": 4.4
+  },
+  {
+    "text": "hari kita dapat uang R5.000, uang saku",
+    "start": 1251.679,
+    "duration": 4.321
+  },
+  {
+    "text": "R5.000 atau Rp10.000 terus itu kita",
+    "start": 1254.0,
+    "duration": 4.08
+  },
+  {
+    "text": "langsung belikan jajan gitu ya. Terus",
+    "start": 1256.0,
+    "duration": 3.559
+  },
+  {
+    "text": "kita harus terus langsung belikan",
+    "start": 1258.08,
+    "duration": 4.44
+  },
+  {
+    "text": "sesuatu. Di suatu saat kita butuh uang",
+    "start": 1259.559,
+    "duration": 5.961
+  },
+  {
+    "text": "tersebut gitu ya, tapi kita tidak punya",
+    "start": 1262.52,
+    "duration": 4.44
+  },
+  {
+    "text": "uang lagi gitu karena sudah",
+    "start": 1265.52,
+    "duration": 5.159
+  },
+  {
+    "text": "dibelanjakan. Nah, itulah kita ee akibat",
+    "start": 1266.96,
+    "duration": 6.12
+  },
+  {
+    "text": "dari kita tidak bisa membedakan mana",
+    "start": 1270.679,
+    "duration": 4.561
+  },
+  {
+    "text": "yang merupakan kebutuhan, mana yang",
+    "start": 1273.08,
+    "duration": 5.479
+  },
+  {
+    "text": "merupakan keinginan. Nah, jebakan itulah",
+    "start": 1275.24,
+    "duration": 5.52
+  },
+  {
+    "text": "yang sangat besar gitu ya kalau misalnya",
+    "start": 1278.559,
+    "duration": 4.881
+  },
+  {
+    "text": "kita ee enggak bisa mengelola uang yang",
+    "start": 1280.76,
+    "duration": 5.36
+  },
+  {
+    "text": "kita punya. Nah, kita bahas dulu tentang",
+    "start": 1283.44,
+    "duration": 5.44
+  },
+  {
+    "text": "kebutuhan atau bahasa Inggrisnya needs.",
+    "start": 1286.12,
+    "duration": 6.28
+  },
+  {
+    "text": "Needs atau kebutuhan itu adalah hal-hal",
+    "start": 1288.88,
+    "duration": 6.919
+  },
+  {
+    "text": "yang harus dipenuhi gitu ya. misalah",
+    "start": 1292.4,
+    "duration": 6.2
+  },
+  {
+    "text": "hal-hal yang harus dipenuhi.",
+    "start": 1295.799,
+    "duration": 5.201
+  },
+  {
+    "text": "Kalau misalnya ee rumusnya ini ya, kita",
+    "start": 1298.6,
+    "duration": 4.4
+  },
+  {
+    "text": "bisa pakai rumus ini. Kalau enggak ada",
+    "start": 1301.0,
+    "duration": 4.48
+  },
+  {
+    "text": "itu kita bisa sakit misalnya kita harus",
+    "start": 1303.0,
+    "duration": 7.08
+  },
+  {
+    "text": "makan gitu ya atau misalnya kita harus",
+    "start": 1305.48,
+    "duration": 9.72
+  },
+  {
+    "text": "minum gitu atau misalnya kita harus ee",
+    "start": 1310.08,
+    "duration": 7.56
+  },
+  {
+    "text": "apa itu namanya? Pergi ke sekolah gitu",
+    "start": 1315.2,
+    "duration": 4.04
+  },
+  {
+    "text": "ya. Kalau misalnya kita ke sekolah jalan",
+    "start": 1317.64,
+    "duration": 3.919
+  },
+  {
+    "text": "kaki kan capek kita sakit nanti apa",
+    "start": 1319.24,
+    "duration": 4.919
+  },
+  {
+    "text": "jalan jauh. Nah, maka di sini kita butuh",
+    "start": 1321.559,
+    "duration": 5.441
+  },
+  {
+    "text": "transportasi, ya kan? Terus rumus yang",
+    "start": 1324.159,
+    "duration": 5.601
+  },
+  {
+    "text": "kedua, kita bisa pakai needs itu sesuatu",
+    "start": 1327.0,
+    "duration": 5.12
+  },
+  {
+    "text": "bisa dibilang needs atau kebutuhan.",
+    "start": 1329.76,
+    "duration": 4.56
+  },
+  {
+    "text": "Ketika kalau kita enggak punya itu, kita",
+    "start": 1332.12,
+    "duration": 5.28
+  },
+  {
+    "text": "bisa dihukum misalnya seragam sekolah,",
+    "start": 1334.32,
+    "duration": 7.04
+  },
+  {
+    "text": "topi, ya kan dasi, buku, gitu. Nah,",
+    "start": 1337.4,
+    "duration": 6.08
+  },
+  {
+    "text": "terus itu needs-nya kita bisa pakai",
+    "start": 1341.36,
+    "duration": 4.319
+  },
+  {
+    "text": "rumus kalau dia enggak ada itu kita",
+    "start": 1343.48,
+    "duration": 4.64
+  },
+  {
+    "text": "enggak bisa belajar. Misal alat tulis",
+    "start": 1345.679,
+    "duration": 4.841
+  },
+  {
+    "text": "atau misalnya kuota gitu ya. Nah, ini",
+    "start": 1348.12,
+    "duration": 5.24
+  },
+  {
+    "text": "merupakan rumus-rumus dari needs gitu.",
+    "start": 1350.52,
+    "duration": 5.2
+  },
+  {
+    "text": "Jadi, eh apa itu namanya? Kita bisa",
+    "start": 1353.36,
+    "duration": 5.28
+  },
+  {
+    "text": "implementasikan dengan seluruh yang ee",
+    "start": 1355.72,
+    "duration": 5.48
+  },
+  {
+    "text": "apa tuh namanya ee kondisi yang ada di",
+    "start": 1358.64,
+    "duration": 5.08
+  },
+  {
+    "text": "dalam hidup kita gitu ya. Terus kita cek",
+    "start": 1361.2,
+    "duration": 4.44
+  },
+  {
+    "text": "apakah kita kalau enggak ada apakah kita",
+    "start": 1363.72,
+    "duration": 3.88
+  },
+  {
+    "text": "betul-betul butuh itu gitu ya. Apakah",
+    "start": 1365.64,
+    "duration": 4.36
+  },
+  {
+    "text": "harus benar-benar dipenuhi gitu ya.",
+    "start": 1367.6,
+    "duration": 4.16
+  },
+  {
+    "text": "Kayak misalnya tampaknya kita tidak bisa",
+    "start": 1370.0,
+    "duration": 4.2
+  },
+  {
+    "text": "belajar. Oh, berarti di sini ada HP.",
+    "start": 1371.76,
+    "duration": 4.48
+  },
+  {
+    "text": "Apakah di rumah ada komputer orang tua?",
+    "start": 1374.2,
+    "duration": 4.0
+  },
+  {
+    "text": "Apakah di sekolah ada perpustakaan gitu",
+    "start": 1376.24,
+    "duration": 4.36
+  },
+  {
+    "text": "kan ya. Nah, ini bisa dicek gitu ya",
+    "start": 1378.2,
+    "duration": 4.479
+  },
+  {
+    "text": "untuk mengetahui apakah sesuatu itu",
+    "start": 1380.6,
+    "duration": 4.92
+  },
+  {
+    "text": "sebuah needs atau lain gitu ya. Nah, itu",
+    "start": 1382.679,
+    "duration": 4.641
+  },
+  {
+    "text": "bisa disesuaikan juga dengan kondisi",
+    "start": 1385.52,
+    "duration": 5.2
+  },
+  {
+    "text": "diri sendiri, kebiasaan, dan juga ee apa",
+    "start": 1387.32,
+    "duration": 5.359
+  },
+  {
+    "text": "tuh namanya? Kondisi keuangan gitu ya",
+    "start": 1390.72,
+    "duration": 4.52
+  },
+  {
+    "text": "teman-teman. Itu untuk kebutuhan atau",
+    "start": 1392.679,
+    "duration": 5.201
+  },
+  {
+    "text": "needs. Nah, selanjutnya ada yang namanya",
+    "start": 1395.24,
+    "duration": 6.4
+  },
+  {
+    "text": "wants atau keinginan. Kalau wants itu",
+    "start": 1397.88,
+    "duration": 6.56
+  },
+  {
+    "text": "hanya sesuatu yang dipengaruhi kepingin",
+    "start": 1401.64,
+    "duration": 5.48
+  },
+  {
+    "text": "atau gengsi gitu ya. Nah, misalnya kita",
+    "start": 1404.44,
+    "duration": 4.8
+  },
+  {
+    "text": "udah punya sepatu, tapi kita pengin yang",
+    "start": 1407.12,
+    "duration": 3.799
+  },
+  {
+    "text": "bagus, lebih bagus lagi. Misalnya kita",
+    "start": 1409.24,
+    "duration": 4.039
+  },
+  {
+    "text": "mau yang bermerek gitu atau misalnya",
+    "start": 1410.919,
+    "duration": 4.281
+  },
+  {
+    "text": "kita sebenarnya dari rumah udah bawa air",
+    "start": 1413.279,
+    "duration": 3.321
+  },
+  {
+    "text": "putih, tapi karena kita lihat",
+    "start": 1415.2,
+    "duration": 3.56
+  },
+  {
+    "text": "teman-teman kita beli Taiti ya udah kita",
+    "start": 1416.6,
+    "duration": 4.76
+  },
+  {
+    "text": "beli apa ingin beli juga Taiti karena",
+    "start": 1418.76,
+    "duration": 4.56
+  },
+  {
+    "text": "kita gengsi dong kalau kita cuma main",
+    "start": 1421.36,
+    "duration": 5.679
+  },
+  {
+    "text": "putusih. Nah, keinginan itu adalah",
+    "start": 1423.32,
+    "duration": 5.28
+  },
+  {
+    "text": "sebenarnya dia tidak salah gitu ya,",
+    "start": 1427.039,
+    "duration": 4.12
+  },
+  {
+    "text": "sahja kita punya keinginan. Tapi",
+    "start": 1428.6,
+    "duration": 5.559
+  },
+  {
+    "text": "terkadang kita harus menunda dulu sampai",
+    "start": 1431.159,
+    "duration": 5.801
+  },
+  {
+    "text": "kita punya uang lebih gitu ya. Kalau",
+    "start": 1434.159,
+    "duration": 5.76
+  },
+  {
+    "text": "misalnya uang kita terbatas gitu. Tapi",
+    "start": 1436.96,
+    "duration": 4.599
+  },
+  {
+    "text": "kalau misalnya berdasarkan kehitungan,",
+    "start": 1439.919,
+    "duration": 4.0
+  },
+  {
+    "text": "perhitungan dan ee pertimbangan kita, oh",
+    "start": 1441.559,
+    "duration": 3.801
+  },
+  {
+    "text": "ini kayaknya enggak apa-apa kok kalau",
+    "start": 1443.919,
+    "duration": 2.601
+  },
+  {
+    "text": "kita beli kita masih ada",
+    "start": 1445.36,
+    "duration": 3.919
+  },
+  {
+    "text": "persimpanganimpanan uang tabungan, maka",
+    "start": 1446.52,
+    "duration": 5.159
+  },
+  {
+    "text": "kita enggak apa-apa beli keinginan.",
+    "start": 1449.279,
+    "duration": 5.081
+  },
+  {
+    "text": "Intinya kita kalau misalnya punya uang",
+    "start": 1451.679,
+    "duration": 4.6
+  },
+  {
+    "text": "gitu ya, kita pakai aturan bisa pakai",
+    "start": 1454.36,
+    "duration": 6.319
+  },
+  {
+    "text": "aturan nih 50, 30, 20, 50, 3020. Nah,",
+    "start": 1456.279,
+    "duration": 8.561
+  },
+  {
+    "text": "502, 3020 itu dibagi uang sakunya",
+    "start": 1460.679,
+    "duration": 6.521
+  },
+  {
+    "text": "dibaginya tuh gimana? Misalnya 50% itu",
+    "start": 1464.84,
+    "duration": 4.68
+  },
+  {
+    "text": "untuk kebutuhan. Jadi, hal-hal yang kita",
+    "start": 1467.2,
+    "duration": 4.719
+  },
+  {
+    "text": "butuhkan ya kayak transportasi, kita",
+    "start": 1469.52,
+    "duration": 4.92
+  },
+  {
+    "text": "butuhkan untuk makan gitu ya. Ini bukan",
+    "start": 1471.919,
+    "duration": 4.401
+  },
+  {
+    "text": "jajan memang benar-benar uang makan",
+    "start": 1474.44,
+    "duration": 4.719
+  },
+  {
+    "text": "gitu. Kemudian 30% itu bisa kita",
+    "start": 1476.32,
+    "duration": 5.16
+  },
+  {
+    "text": "alokasikan untuk sesuatu yang kita",
+    "start": 1479.159,
+    "duration": 5.24
+  },
+  {
+    "text": "inginkan gitu. Misalnya kita ee pengin",
+    "start": 1481.48,
+    "duration": 5.4
+  },
+  {
+    "text": "ee dalam sehari itu kita pasti minum ya",
+    "start": 1484.399,
+    "duration": 4.121
+  },
+  {
+    "text": "waktu walaupun enggak sehat kita pengin",
+    "start": 1486.88,
+    "duration": 3.679
+  },
+  {
+    "text": "sehari itu minum es-es gitu ya. Entah",
+    "start": 1488.52,
+    "duration": 5.279
+  },
+  {
+    "text": "itu boba atau ee es teh gitu kan ya.",
+    "start": 1490.559,
+    "duration": 5.521
+  },
+  {
+    "text": "Jadi itu kita bisa alokasikan 30% dari",
+    "start": 1493.799,
+    "duration": 4.561
+  },
+  {
+    "text": "uang saku kita.",
+    "start": 1496.08,
+    "duration": 5.0
+  },
+  {
+    "text": "Terus itu 20%-nya itu kita bisa masukin",
+    "start": 1498.36,
+    "duration": 4.84
+  },
+  {
+    "text": "tabungan. Misalnya nih kita uang kita",
+    "start": 1501.08,
+    "duration": 4.8
+  },
+  {
+    "text": "Rp10.000. Oh, berarti 5.000-nya itu",
+    "start": 1503.2,
+    "duration": 5.359
+  },
+  {
+    "text": "untuk kebutuhan ya. Karena 50% dari",
+    "start": 1505.88,
+    "duration": 5.6
+  },
+  {
+    "text": "10.000 itu 5.000. Oh, 5.000 ini misalnya",
+    "start": 1508.559,
+    "duration": 5.921
+  },
+  {
+    "text": "kita pakai ojek 3.000, kemudian",
+    "start": 1511.48,
+    "duration": 5.439
+  },
+  {
+    "text": "2.000-nya untuk ee apa tuh namanya? Beli",
+    "start": 1514.48,
+    "duration": 5.0
+  },
+  {
+    "text": "air putih kalau misalnya habis gitu ya.",
+    "start": 1516.919,
+    "duration": 4.76
+  },
+  {
+    "text": "Nah, ons ini kayak misalnya kita berarti",
+    "start": 1519.48,
+    "duration": 5.199
+  },
+  {
+    "text": "R30.000 ya eh Rp3.000 gitu untuk beli",
+    "start": 1521.679,
+    "duration": 6.88
+  },
+  {
+    "text": "gorengan kah atau kita beli ee permen",
+    "start": 1524.679,
+    "duration": 6.281
+  },
+  {
+    "text": "gitu. Nah, ini bisa 2.000-nya itu",
+    "start": 1528.559,
+    "duration": 4.441
+  },
+  {
+    "text": "masukkan tabungan. Nah, itu ya. Jadi",
+    "start": 1530.96,
+    "duration": 4.28
+  },
+  {
+    "text": "contohnya kita bisa pakai rumus ini",
+    "start": 1533.0,
+    "duration": 6.159
+  },
+  {
+    "text": "untuk menghemat gitu ya. Nah, ada juga",
+    "start": 1535.24,
+    "duration": 5.76
+  },
+  {
+    "text": "aturan kalau misalnya kita melihat",
+    "start": 1539.159,
+    "duration": 3.681
+  },
+  {
+    "text": "sesuatu ya kayak kita pengin banget nih",
+    "start": 1541.0,
+    "duration": 4.279
+  },
+  {
+    "text": "membeli sesuatu. Nah, kita boleh nih",
+    "start": 1542.84,
+    "duration": 4.559
+  },
+  {
+    "text": "kasih peraturan buat diri sendiri kayak",
+    "start": 1545.279,
+    "duration": 5.961
+  },
+  {
+    "text": "oh coba tunggu 24 jam dulu sebelum kita",
+    "start": 1547.399,
+    "duration": 5.64
+  },
+  {
+    "text": "membeli. Gitu ya. Jadi kalau misalnya",
+    "start": 1551.24,
+    "duration": 3.679
+  },
+  {
+    "text": "kita pengin satu tuh jangan sesuatu itu",
+    "start": 1553.039,
+    "duration": 3.76
+  },
+  {
+    "text": "jangan langsung dibeli. Coba kita tunggu",
+    "start": 1554.919,
+    "duration": 3.721
+  },
+  {
+    "text": "1 hari. Karena kadang kalau misalnya",
+    "start": 1556.799,
+    "duration": 4.401
+  },
+  {
+    "text": "udah sat hari kayak ah malas ah kayak ke",
+    "start": 1558.64,
+    "duration": 4.919
+  },
+  {
+    "text": "sana lagi gitu. kayak oh kayaknya",
+    "start": 1561.2,
+    "duration": 3.719
+  },
+  {
+    "text": "sebenarnya enggak butuh-butuh banget sih",
+    "start": 1563.559,
+    "duration": 4.281
+  },
+  {
+    "text": "gue untuk beli itu gitu. Nah, terkadang",
+    "start": 1564.919,
+    "duration": 4.88
+  },
+  {
+    "text": "kalau kita karena itu terjadi karena",
+    "start": 1567.84,
+    "duration": 5.0
+  },
+  {
+    "text": "kadang kita ke pas mau membeli itu cuman",
+    "start": 1569.799,
+    "duration": 5.36
+  },
+  {
+    "text": "ke impulse buying impulsif buying aja",
+    "start": 1572.84,
+    "duration": 5.28
+  },
+  {
+    "text": "kayak pengin aja gitu dan apa setelah",
+    "start": 1575.159,
+    "duration": 5.321
+  },
+  {
+    "text": "kita punya tuh kayak ah gitu sebenarnya",
+    "start": 1578.12,
+    "duration": 3.919
+  },
+  {
+    "text": "enggak butuh-butuh amat gitu. Nah",
+    "start": 1580.48,
+    "duration": 4.439
+  },
+  {
+    "text": "daripada kita menyesal gitu kan ya ee",
+    "start": 1582.039,
+    "duration": 4.52
+  },
+  {
+    "text": "terus itu supaya kita bisa menghemat",
+    "start": 1584.919,
+    "duration": 4.841
+  },
+  {
+    "text": "uang sebaiknya tunggu dulu 24 jam apakah",
+    "start": 1586.559,
+    "duration": 5.081
+  },
+  {
+    "text": "kita benar-benar butuh apa enggak. Kalau",
+    "start": 1589.76,
+    "duration": 4.84
+  },
+  {
+    "text": "enggak ya udah kita enggak perlu.",
+    "start": 1591.64,
+    "duration": 5.96
+  },
+  {
+    "text": "Oke.",
+    "start": 1594.6,
+    "duration": 3.0
+  },
+  {
+    "text": "Three, two, one, action.",
+    "start": 1601.24,
+    "duration": 5.039
+  },
+  {
+    "text": "Nah, sekarang kita udah ee membahas gitu",
+    "start": 1610.679,
+    "duration": 8.081
+  },
+  {
+    "text": "ya, gimana eh financial literacy dan",
+    "start": 1615.08,
+    "duration": 5.839
+  },
+  {
+    "text": "juga condition yang ada di MIT App",
+    "start": 1618.76,
+    "duration": 4.36
+  },
+  {
+    "text": "Inventor. Nah, sekarang kita coba mau",
+    "start": 1620.919,
+    "duration": 4.841
+  },
+  {
+    "text": "membuat sebuah project di MIT App",
+    "start": 1623.12,
+    "duration": 7.64
+  },
+  {
+    "text": "Inventor. Nah, di sini kita coba cek",
+    "start": 1625.76,
+    "duration": 7.24
+  },
+  {
+    "text": "kenapa sih kita dalam ee apa tuh",
+    "start": 1630.76,
+    "duration": 4.639
+  },
+  {
+    "text": "namanya? mencatat keuangan lebih baik",
+    "start": 1633.0,
+    "duration": 5.76
+  },
+  {
+    "text": "menggunakan komputer gitu ya. Ee apa itu",
+    "start": 1635.399,
+    "duration": 5.921
+  },
+  {
+    "text": "namanya? Kenap atau membuat program gitu",
+    "start": 1638.76,
+    "duration": 5.44
+  },
+  {
+    "text": "ya. Karena kadang gini ee ketika kita",
+    "start": 1641.32,
+    "duration": 5.88
+  },
+  {
+    "text": "punya uang tuh atau kita ee mencatatnya",
+    "start": 1644.2,
+    "duration": 6.12
+  },
+  {
+    "text": "masih manual kadang tuh kita masih ee",
+    "start": 1647.2,
+    "duration": 5.16
+  },
+  {
+    "text": "lupa gitu ya atau kadang kita tuh bisa",
+    "start": 1650.32,
+    "duration": 3.92
+  },
+  {
+    "text": "manipulasi gitu ya yang kayak misalnya",
+    "start": 1652.36,
+    "duration": 4.48
+  },
+  {
+    "text": "kita uang kita Rp10.000 tapi kita",
+    "start": 1654.24,
+    "duration": 4.84
+  },
+  {
+    "text": "manipulasi oh kita uang yang masuk tuh",
+    "start": 1656.84,
+    "duration": 4.76
+  },
+  {
+    "text": "cuman R5.000 gitu ya. Ee apa tuh",
+    "start": 1659.08,
+    "duration": 5.479
+  },
+  {
+    "text": "namanya? Mm yang dikasih usak orang tua",
+    "start": 1661.6,
+    "duration": 4.679
+  },
+  {
+    "text": "cuma 55.000, berarti 5.000-nya kita bisa",
+    "start": 1664.559,
+    "duration": 3.84
+  },
+  {
+    "text": "langsung belikan apa yang kita mau gitu.",
+    "start": 1666.279,
+    "duration": 4.76
+  },
+  {
+    "text": "5.000-nya bisa kita catat gitu kan. Nah,",
+    "start": 1668.399,
+    "duration": 4.88
+  },
+  {
+    "text": "ini ee apa itu namanya? Kan kadang kita",
+    "start": 1671.039,
+    "duration": 4.12
+  },
+  {
+    "text": "khilaf ya, kayak sering lapar mata gitu",
+    "start": 1673.279,
+    "duration": 4.041
+  },
+  {
+    "text": "kan ya. Kita bisa ee salah hitung",
+    "start": 1675.159,
+    "duration": 4.601
+  },
+  {
+    "text": "ataupun kayak kita bisa manipulasi. Tapi",
+    "start": 1677.32,
+    "duration": 3.76
+  },
+  {
+    "text": "kalau komputer tuh kan dia enggak bisa",
+    "start": 1679.76,
+    "duration": 3.32
+  },
+  {
+    "text": "bohong. Kalau kita bisa kita bikin",
+    "start": 1681.08,
+    "duration": 3.68
+  },
+  {
+    "text": "aplikasi gitu ya. Misalnya aplikasinya",
+    "start": 1683.08,
+    "duration": 4.28
+  },
+  {
+    "text": "nanti akan ee mencatat berdasarkan",
+    "start": 1684.76,
+    "duration": 4.96
+  },
+  {
+    "text": "mbanking atau notifikasi kita. Karena",
+    "start": 1687.36,
+    "duration": 4.28
+  },
+  {
+    "text": "itu kan kita berapa yang ditransfer",
+    "start": 1689.72,
+    "duration": 3.679
+  },
+  {
+    "text": "misalnya R.000, kita enggak bisa ditulis",
+    "start": 1691.64,
+    "duration": 4.159
+  },
+  {
+    "text": "5.000 karena pemasukannya itu buktinya",
+    "start": 1693.399,
+    "duration": 5.64
+  },
+  {
+    "text": "itu apa itu namanya 10.000 bukan R5.000.",
+    "start": 1695.799,
+    "duration": 5.12
+  },
+  {
+    "text": "Nah, terus tuh kalau misalnya kita pakai",
+    "start": 1699.039,
+    "duration": 3.36
+  },
+  {
+    "text": "komputer juga gitu kita bisa",
+    "start": 1700.919,
+    "duration": 4.321
+  },
+  {
+    "text": "menggabungkan tentang ee logika if ya",
+    "start": 1702.399,
+    "duration": 5.081
+  },
+  {
+    "text": "kan yang ada di dalam pemrograman dan",
+    "start": 1705.24,
+    "duration": 5.08
+  },
+  {
+    "text": "juga apa matematika keuangan yang ada di",
+    "start": 1707.48,
+    "duration": 5.319
+  },
+  {
+    "text": "app Inventor. Jadi kita bisa lebih mudah",
+    "start": 1710.32,
+    "duration": 4.479
+  },
+  {
+    "text": "dan kita bisa disiplin gitu dalam",
+    "start": 1712.799,
+    "duration": 5.161
+  },
+  {
+    "text": "mencatat keuangan kita. Oke. Pertama",
+    "start": 1714.799,
+    "duration": 6.24
+  },
+  {
+    "text": "mungkin kita ee bisa bikin misalnya",
+    "start": 1717.96,
+    "duration": 6.16
+  },
+  {
+    "text": "kalkulator yang dia menghitung ee apa",
+    "start": 1721.039,
+    "duration": 6.041
+  },
+  {
+    "text": "itu namanya? Supaya bukan menghitung dia",
+    "start": 1724.12,
+    "duration": 5.32
+  },
+  {
+    "text": "ini bisa mengecek apakah kita bisa beli",
+    "start": 1727.08,
+    "duration": 5.439
+  },
+  {
+    "text": "barangnya sekarang atau bisa ee ditunggu",
+    "start": 1729.44,
+    "duration": 6.16
+  },
+  {
+    "text": "nanti dulu gitu ya. Nah, di sini kita ee",
+    "start": 1732.519,
+    "duration": 5.88
+  },
+  {
+    "text": "bikin misalnya ada label harga barang",
+    "start": 1735.6,
+    "duration": 5.28
+  },
+  {
+    "text": "impian. Nah, di sini ada teks area yang",
+    "start": 1738.399,
+    "duration": 5.601
+  },
+  {
+    "text": "dia nanti Xbox yang dia masukin eh harga",
+    "start": 1740.88,
+    "duration": 5.36
+  },
+  {
+    "text": "barangnya itu harga barang yang kita mau",
+    "start": 1744.0,
+    "duration": 5.679
+  },
+  {
+    "text": "tuh berapa. Kemudian ada label lagi gitu",
+    "start": 1746.24,
+    "duration": 4.76
+  },
+  {
+    "text": "kan. Tabungan kita emangnya sekarang",
+    "start": 1749.679,
+    "duration": 4.441
+  },
+  {
+    "text": "sisa berapa? Nah, ada textbox lagi sama",
+    "start": 1751.0,
+    "duration": 5.48
+  },
+  {
+    "text": "ada button yang nanti m-trigger",
+    "start": 1754.12,
+    "duration": 5.279
+  },
+  {
+    "text": "ngeceknya. Nah, nanti ada label status",
+    "start": 1756.48,
+    "duration": 6.199
+  },
+  {
+    "text": "juga yang nanti dia akan muncul ee apa?",
+    "start": 1759.399,
+    "duration": 5.481
+  },
+  {
+    "text": "Berdasarkan kondisi yang kita punya gitu",
+    "start": 1762.679,
+    "duration": 5.321
+  },
+  {
+    "text": "ya. Kondisinya gimana? Kalau misalnya ee",
+    "start": 1764.88,
+    "duration": 6.84
+  },
+  {
+    "text": "tabungan kita tuh lebih besar dari tab",
+    "start": 1768.0,
+    "duration": 6.519
+  },
+  {
+    "text": "lebih besar dari ee harga barang yang",
+    "start": 1771.72,
+    "duration": 5.439
+  },
+  {
+    "text": "kita mau beli, maka berarti statusnya",
+    "start": 1774.519,
+    "duration": 4.241
+  },
+  {
+    "text": "mungkin kita bisa ya udah enggak apa-apa",
+    "start": 1777.159,
+    "duration": 3.961
+  },
+  {
+    "text": "kalau misalnya butuh ee bisa kamu beli",
+    "start": 1778.76,
+    "duration": 3.96
+  },
+  {
+    "text": "sekarang gitu. Kalau enggak kalau",
+    "start": 1781.12,
+    "duration": 3.76
+  },
+  {
+    "text": "misalnya harganya barangnya Rp50.000",
+    "start": 1782.72,
+    "duration": 4.12
+  },
+  {
+    "text": "tapi tabungannya baru Rp20.000 berarti",
+    "start": 1784.88,
+    "duration": 4.12
+  },
+  {
+    "text": "statusnya oh kamu enggak bisa beli",
+    "start": 1786.84,
+    "duration": 5.719
+  },
+  {
+    "text": "sekarang gitu ya. Nah, di sini kita bisa",
+    "start": 1789.0,
+    "duration": 5.84
+  },
+  {
+    "text": "tambahkan kodenya seperti ini. Nah,",
+    "start": 1792.559,
+    "duration": 4.48
+  },
+  {
+    "text": "ketika button-nya diklik, ya kan",
+    "start": 1794.84,
+    "duration": 4.04
+  },
+  {
+    "text": "triggernya event-nya adalah ketika",
+    "start": 1797.039,
+    "duration": 4.721
+  },
+  {
+    "text": "button-nya itu tadi diklik, dia bikin",
+    "start": 1798.88,
+    "duration": 4.799
+  },
+  {
+    "text": "apa? Mengecek kondisinya dulu. Kalau",
+    "start": 1801.76,
+    "duration": 6.24
+  },
+  {
+    "text": "tabungan kita itu lebih besar dari harga",
+    "start": 1803.679,
+    "duration": 7.521
+  },
+  {
+    "text": "barang yang kita punya, maka kita bisa",
+    "start": 1808.0,
+    "duration": 5.76
+  },
+  {
+    "text": "print uangnya cukup, boleh beli sekarang",
+    "start": 1811.2,
+    "duration": 5.52
+  },
+  {
+    "text": "gitu. Tapi kalau misalnya enggak gitu",
+    "start": 1813.76,
+    "duration": 4.68
+  },
+  {
+    "text": "ya, dia enggak lebih besar gitu ya,",
+    "start": 1816.72,
+    "duration": 3.839
+  },
+  {
+    "text": "misalnya ee berarti kondisi yang ini",
+    "start": 1818.44,
+    "duration": 4.479
+  },
+  {
+    "text": "salah gitu, maka yang then ini dia akan",
+    "start": 1820.559,
+    "duration": 5.201
+  },
+  {
+    "text": "dikip dia programnya akan langsung",
+    "start": 1822.919,
+    "duration": 5.681
+  },
+  {
+    "text": "menjalankan yang ada di else ini tadi",
+    "start": 1825.76,
+    "duration": 6.12
+  },
+  {
+    "text": "gitu ya. Sesimpel itu bikinnya kok. Oke.",
+    "start": 1828.6,
+    "duration": 6.199
+  },
+  {
+    "text": "Nah, ee untuk menghitung ke ee untuk",
+    "start": 1831.88,
+    "duration": 5.44
+  },
+  {
+    "text": "menghitung itu kita bisa pakai ini ya e",
+    "start": 1834.799,
+    "duration": 4.6
+  },
+  {
+    "text": "apa tuh namanya? Pakai M yang ada di",
+    "start": 1837.32,
+    "duration": 4.359
+  },
+  {
+    "text": "dalam app Inventor untuk mengurangin",
+    "start": 1839.399,
+    "duration": 5.321
+  },
+  {
+    "text": "gitu ya. Jadi kita bisa mengurangi ee",
+    "start": 1841.679,
+    "duration": 5.921
+  },
+  {
+    "text": "teks berdasarkan teks area harga, harga",
+    "start": 1844.72,
+    "duration": 5.0
+  },
+  {
+    "text": "barang gitu ya, dan juga teks area",
+    "start": 1847.6,
+    "duration": 5.919
+  },
+  {
+    "text": "tabungan gitu. Nah, inilah logika",
+    "start": 1849.72,
+    "duration": 5.919
+  },
+  {
+    "text": "pengurangan dasar harga barang dikurangi",
+    "start": 1853.519,
+    "duration": 6.561
+  },
+  {
+    "text": "harga tabungan kita gitu ya. Oke, itu ee",
+    "start": 1855.639,
+    "duration": 7.481
+  },
+  {
+    "text": "bentuk app-nya. Nah, terus itu kadang",
+    "start": 1860.08,
+    "duration": 5.88
+  },
+  {
+    "text": "kita mau ee menampilkan",
+    "start": 1863.12,
+    "duration": 5.039
+  },
+  {
+    "text": "pas di ini ya, pas uangnya kurang itu",
+    "start": 1865.96,
+    "duration": 5.199
+  },
+  {
+    "text": "kita mau nampilkan ee tulisannya uangnya",
+    "start": 1868.159,
+    "duration": 5.561
+  },
+  {
+    "text": "kurang R30.000 gitu ya. Kalau misalnya",
+    "start": 1871.159,
+    "duration": 4.681
+  },
+  {
+    "text": "kita mau ngasih tahu, \"Oh, kamu mau beli",
+    "start": 1873.72,
+    "duration": 4.52
+  },
+  {
+    "text": "sesuatu tapi uangmu kurang.\" Berarti",
+    "start": 1875.84,
+    "duration": 3.959
+  },
+  {
+    "text": "kita kasih tahu, \"Oh, uangmu kurang",
+    "start": 1878.24,
+    "duration": 3.399
+  },
+  {
+    "text": "segini nih.\" gitu. Nah, untuk",
+    "start": 1879.799,
+    "duration": 4.6
+  },
+  {
+    "text": "menambahkan teks dan juga angka kan",
+    "start": 1881.639,
+    "duration": 4.481
+  },
+  {
+    "text": "kalau angka ini kan hasil pengurangan",
+    "start": 1884.399,
+    "duration": 3.841
+  },
+  {
+    "text": "ini ya, harus hasil penghitungan ini ya.",
+    "start": 1886.12,
+    "duration": 4.439
+  },
+  {
+    "text": "Maka kita bisa tambahkan yang namanya",
+    "start": 1888.24,
+    "duration": 4.039
+  },
+  {
+    "text": "join",
+    "start": 1890.559,
+    "duration": 4.96
+  },
+  {
+    "text": "kita tambahin teks kurang dari kurang",
+    "start": 1892.279,
+    "duration": 5.24
+  },
+  {
+    "text": "atau kurang Rp gitu ya. Baru kita",
+    "start": 1895.519,
+    "duration": 4.441
+  },
+  {
+    "text": "tambahin di bawahnya kita masukin ee",
+    "start": 1897.519,
+    "duration": 4.16
+  },
+  {
+    "text": "rumusnya tadi langsung itu enggak",
+    "start": 1899.96,
+    "duration": 5.36
+  },
+  {
+    "text": "masalah gitu ya. Nanti ee hasil join ini",
+    "start": 1901.679,
+    "duration": 6.681
+  },
+  {
+    "text": "kita masukin ke dalam label statusnya.",
+    "start": 1905.32,
+    "duration": 6.04
+  },
+  {
+    "text": "Oke.",
+    "start": 1908.36,
+    "duration": 3.0
+  },
+  {
+    "text": "3, two, one, action. [musik]",
+    "start": 1920.919,
+    "duration": 3.548
+  },
+  {
+    "text": "Nah, Teman-teman sekarang waktunya",
+    "start": 1926.48,
+    "duration": 4.559
+  },
+  {
+    "text": "kalian mengerjakan. Buatkan project",
+    "start": 1928.48,
+    "duration": 5.919
+  },
+  {
+    "text": "sederhana entah itu aplikasi ee dia",
+    "start": 1931.039,
+    "duration": 5.6
+  },
+  {
+    "text": "boleh aplikasinya bebas ya. Boleh sama",
+    "start": 1934.399,
+    "duration": 4.721
+  },
+  {
+    "text": "seperti yang tadi gitu ya. membuat",
+    "start": 1936.639,
+    "duration": 5.241
+  },
+  {
+    "text": "aplikasi yang ee menentukan apakah kita",
+    "start": 1939.12,
+    "duration": 4.64
+  },
+  {
+    "text": "boleh beli barang sesuatu barang apa",
+    "start": 1941.88,
+    "duration": 4.72
+  },
+  {
+    "text": "belum gitu ya atau dia barang ee",
+    "start": 1943.76,
+    "duration": 6.159
+  },
+  {
+    "text": "aplikasinya simpel aja kayak misalnya",
+    "start": 1946.6,
+    "duration": 6.4
+  },
+  {
+    "text": "menghitung tabungan kita gitu atau dia",
+    "start": 1949.919,
+    "duration": 5.12
+  },
+  {
+    "text": "bisa mengecek kalau dia masukin uang",
+    "start": 1953.0,
+    "duration": 5.159
+  },
+  {
+    "text": "gitu ya misalnya Rp50.000. Nah ee kita",
+    "start": 1955.039,
+    "duration": 6.12
+  },
+  {
+    "text": "mau ee dia aplikasinya bisa mengeluarkan",
+    "start": 1958.159,
+    "duration": 6.201
+  },
+  {
+    "text": "50 30 gitu. Berarti kalau uang kita",
+    "start": 1961.159,
+    "duration": 6.4
+  },
+  {
+    "text": "Rp100.000 R000. Nah, berarti dia 50-nya",
+    "start": 1964.36,
+    "duration": 5.76
+  },
+  {
+    "text": "untuk needs itu berapa ribu gitu.",
+    "start": 1967.559,
+    "duration": 6.0
+  },
+  {
+    "text": "Berarti Rp50.000 kan. Terus itu 30-nya",
+    "start": 1970.12,
+    "duration": 5.24
+  },
+  {
+    "text": "yang wants-nya. Oh, berarti barangnya",
+    "start": 1973.559,
+    "duration": 3.6
+  },
+  {
+    "text": "kita kita uangnya bisa belanjakan",
+    "start": 1975.36,
+    "duration": 4.88
+  },
+  {
+    "text": "R30.000 dan tabungan itu berarti sisanya",
+    "start": 1977.159,
+    "duration": 5.64
+  },
+  {
+    "text": "20 berarti Rp200.000. Nah, itu boleh",
+    "start": 1980.24,
+    "duration": 5.559
+  },
+  {
+    "text": "dikerjakan. Lalu kumpulkan di bok di",
+    "start": 1982.799,
+    "duration": 5.521
+  },
+  {
+    "text": "bawah ini.",
+    "start": 1985.799,
+    "duration": 2.521
+  }
+]

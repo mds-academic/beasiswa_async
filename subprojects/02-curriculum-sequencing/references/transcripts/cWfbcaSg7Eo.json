@@ -1,0 +1,6482 @@
+[
+  {
+    "text": "two",
+    "start": 0.32,
+    "duration": 4.6
+  },
+  {
+    "text": "one.",
+    "start": 1.92,
+    "duration": 3.0
+  },
+  {
+    "text": "Halo teman-teman, hari ini kita akan",
+    "start": 7.64,
+    "duration": 5.079
+  },
+  {
+    "text": "membahas tentang eksplorasi data",
+    "start": 10.28,
+    "duration": 5.999
+  },
+  {
+    "text": "pribadi. Nah, apa sih eksplorasi data",
+    "start": 12.719,
+    "duration": 5.801
+  },
+  {
+    "text": "pribadi itu? Apa? Yuk, kita bahas nih.",
+    "start": 16.279,
+    "duration": 4.361
+  },
+  {
+    "text": "Pertama, kita harus tahu dulu apa sih",
+    "start": 18.52,
+    "duration": 5.079
+  },
+  {
+    "text": "data itu. Jadi, sederhananya data itu",
+    "start": 20.64,
+    "duration": 5.44
+  },
+  {
+    "text": "adalah kumpulan informasi. Jadi kalau",
+    "start": 23.599,
+    "duration": 5.0
+  },
+  {
+    "text": "misalnya kita tahu informasi tentang",
+    "start": 26.08,
+    "duration": 5.039
+  },
+  {
+    "text": "diri kita atau informasi mengenai",
+    "start": 28.599,
+    "duration": 4.201
+  },
+  {
+    "text": "pengeluaran kita, nah itu kalau misalnya",
+    "start": 31.119,
+    "duration": 3.561
+  },
+  {
+    "text": "kita kumpulkan itu dia bisa menjadi",
+    "start": 32.8,
+    "duration": 4.2
+  },
+  {
+    "text": "sebuah data. Jadi dia bisa sebuah",
+    "start": 34.68,
+    "duration": 4.12
+  },
+  {
+    "text": "informasi atau fakta ya, Teman-teman.",
+    "start": 37.0,
+    "duration": 4.079
+  },
+  {
+    "text": "Kayak misalnya kita tahu tentang kita",
+    "start": 38.8,
+    "duration": 5.64
+  },
+  {
+    "text": "mengetahui sebuah fakta bahwa di dunia",
+    "start": 41.079,
+    "duration": 6.561
+  },
+  {
+    "text": "ini ada 1 miliar di dalam Milky Way itu",
+    "start": 44.44,
+    "duration": 6.48
+  },
+  {
+    "text": "ada misalnya 100.000 planet gitu ya.",
+    "start": 47.64,
+    "duration": 4.759
+  },
+  {
+    "text": "Nah, itu kan fakta dan itu bisa",
+    "start": 50.92,
+    "duration": 3.92
+  },
+  {
+    "text": "dijadikan sebuah data gitu ya. Nah, data",
+    "start": 52.399,
+    "duration": 5.0
+  },
+  {
+    "text": "itu dia macam-macam jenisnya. Ada berupa",
+    "start": 54.84,
+    "duration": 5.44
+  },
+  {
+    "text": "bisa berupa angka, bisa berupa huruf,",
+    "start": 57.399,
+    "duration": 5.8
+  },
+  {
+    "text": "gambar pun dia bisa termasuk juga dengan",
+    "start": 60.28,
+    "duration": 6.24
+  },
+  {
+    "text": "data gitu. Intinya dia kalau dikumpulkan",
+    "start": 63.199,
+    "duration": 7.041
+  },
+  {
+    "text": "itu dia bisa disebut sebagai data. Nah,",
+    "start": 66.52,
+    "duration": 6.56
+  },
+  {
+    "text": "di era digital sekarang ini banyak hal",
+    "start": 70.24,
+    "duration": 5.16
+  },
+  {
+    "text": "yang kita lakukan di internet gitu ya.",
+    "start": 73.08,
+    "duration": 6.039
+  },
+  {
+    "text": "ketika kita ee ya kita menonton video,",
+    "start": 75.4,
+    "duration": 6.16
+  },
+  {
+    "text": "kita mengerjakan tugas",
+    "start": 79.119,
+    "duration": 5.441
+  },
+  {
+    "text": "ee apa itu namanya atau sekedar",
+    "start": 81.56,
+    "duration": 4.8
+  },
+  {
+    "text": "browsing-browsing, hal itu kalau",
+    "start": 84.56,
+    "duration": 3.559
+  },
+  {
+    "text": "misalnya kita kumpulkan itu bisa menjadi",
+    "start": 86.36,
+    "duration": 3.719
+  },
+  {
+    "text": "data loh, Teman-teman. Nah, datanya yang",
+    "start": 88.119,
+    "duration": 4.921
+  },
+  {
+    "text": "seperti apa sih? Coba kita lihat di",
+    "start": 90.079,
+    "duration": 7.241
+  },
+  {
+    "text": "dalam di dunia nyata gitu ya. di nyata",
+    "start": 93.04,
+    "duration": 7.96
+  },
+  {
+    "text": "dan di dunia digital itu jenis datanya",
+    "start": 97.32,
+    "duration": 5.799
+  },
+  {
+    "text": "itu ya kurang lebih sama lah. Kalau",
+    "start": 101.0,
+    "duration": 4.64
+  },
+  {
+    "text": "misalnya di dunia nyata datanya itu",
+    "start": 103.119,
+    "duration": 4.801
+  },
+  {
+    "text": "misalnya adalah data berat badan, warna",
+    "start": 105.64,
+    "duration": 4.68
+  },
+  {
+    "text": "rambut, jadi tentang diri kita gitu ya.",
+    "start": 107.92,
+    "duration": 5.479
+  },
+  {
+    "text": "Nah, kalau di dunia digital",
+    "start": 110.32,
+    "duration": 6.04
+  },
+  {
+    "text": "data itu dia bisa apa? tentang riwayat",
+    "start": 113.399,
+    "duration": 5.881
+  },
+  {
+    "text": "pencarian YouTube, foto-foto yang kita",
+    "start": 116.36,
+    "duration": 5.48
+  },
+  {
+    "text": "upload di Instagram gitu kan ya atau",
+    "start": 119.28,
+    "duration": 6.08
+  },
+  {
+    "text": "data ee codingan kita gitu ya atau game",
+    "start": 121.84,
+    "duration": 4.919
+  },
+  {
+    "text": "yang kita mainkan berdasarkan",
+    "start": 125.36,
+    "duration": 3.72
+  },
+  {
+    "text": "username-nya gitu kan. Nah, semua itu",
+    "start": 126.759,
+    "duration": 4.761
+  },
+  {
+    "text": "merupakan data diri kita gitu ya",
+    "start": 129.08,
+    "duration": 4.72
+  },
+  {
+    "text": "teman-teman. Cuman bedanya yang ada yang",
+    "start": 131.52,
+    "duration": 5.68
+  },
+  {
+    "text": "ee dunia di dunia nyata dan juga ada di",
+    "start": 133.8,
+    "duration": 5.32
+  },
+  {
+    "text": "dunia digital atau di dunia maya gitu",
+    "start": 137.2,
+    "duration": 4.8
+  },
+  {
+    "text": "ya. Nah,",
+    "start": 139.12,
+    "duration": 5.759
+  },
+  {
+    "text": "sekarang data yang tadi kita sebut itu",
+    "start": 142.0,
+    "duration": 5.319
+  },
+  {
+    "text": "kan data pribadi. Intinya data pribadi",
+    "start": 144.879,
+    "duration": 5.561
+  },
+  {
+    "text": "itu adalah data atau kumpulan informasi",
+    "start": 147.319,
+    "duration": 4.401
+  },
+  {
+    "text": "ya. Kalau informasi apa tuh namanya?",
+    "start": 150.44,
+    "duration": 3.56
+  },
+  {
+    "text": "Data itu kan kumpulan informasi.",
+    "start": 151.72,
+    "duration": 4.799
+  },
+  {
+    "text": "Kumpulan informasi khusus yang menunjuk",
+    "start": 154.0,
+    "duration": 4.319
+  },
+  {
+    "text": "langsung kepadamu. Jadi, data pribadi",
+    "start": 156.519,
+    "duration": 4.201
+  },
+  {
+    "text": "itu adalah fakta-fakta gitu ya,",
+    "start": 158.319,
+    "duration": 5.321
+  },
+  {
+    "text": "Teman-teman ya. eh informasi-informasi",
+    "start": 160.72,
+    "duration": 4.92
+  },
+  {
+    "text": "tentang diri kita sendiri, data kita",
+    "start": 163.64,
+    "duration": 6.08
+  },
+  {
+    "text": "pribadi. Nah, informasi ini data-data",
+    "start": 165.64,
+    "duration": 6.8
+  },
+  {
+    "text": "yang kita punya, data pribadi kita itu",
+    "start": 169.72,
+    "duration": 4.879
+  },
+  {
+    "text": "bisa membuat orang lain mengenali lebih",
+    "start": 172.44,
+    "duration": 4.56
+  },
+  {
+    "text": "jauh tentang siapa sih kita, gitu ya",
+    "start": 174.599,
+    "duration": 4.321
+  },
+  {
+    "text": "kan, ya. Pokoknya data pribadi kita gitu",
+    "start": 177.0,
+    "duration": 3.959
+  },
+  {
+    "text": "ya. Tadi kita sudah bahas kayak misalnya",
+    "start": 178.92,
+    "duration": 4.44
+  },
+  {
+    "text": "oh kita sering nonton YouTube tutorial",
+    "start": 180.959,
+    "duration": 4.481
+  },
+  {
+    "text": "coding. Oh berarti kita nih ternyata",
+    "start": 183.36,
+    "duration": 4.32
+  },
+  {
+    "text": "orangnya suka ngoding ya. Nah, itu kan",
+    "start": 185.44,
+    "duration": 4.159
+  },
+  {
+    "text": "orang lain bisa menyimpulkan gitu ya",
+    "start": 187.68,
+    "duration": 4.72
+  },
+  {
+    "text": "berdasarkan data yang kita punya. Nah,",
+    "start": 189.599,
+    "duration": 5.56
+  },
+  {
+    "text": "itu untuk data pribadi. Nah, kenapa sih",
+    "start": 192.4,
+    "duration": 5.28
+  },
+  {
+    "text": "disebut pribadi? Pribadi karena",
+    "start": 195.159,
+    "duration": 4.881
+  },
+  {
+    "text": "informasi yang",
+    "start": 197.68,
+    "duration": 4.6
+  },
+  {
+    "text": "ee ada di data pribadi tuh seutuhnya",
+    "start": 200.04,
+    "duration": 4.199
+  },
+  {
+    "text": "punya kita gitu ya. Private orang lain",
+    "start": 202.28,
+    "duration": 4.64
+  },
+  {
+    "text": "tuh enggak pun apa tuh namanya? Mm apa",
+    "start": 204.239,
+    "duration": 4.92
+  },
+  {
+    "text": "ya? Enggak ada yang punya data sama",
+    "start": 206.92,
+    "duration": 5.0
+  },
+  {
+    "text": "persis dengan kita ya. Sama persis. Ada",
+    "start": 209.159,
+    "duration": 4.401
+  },
+  {
+    "text": "yang sama tapi enggak mungkin ada yang",
+    "start": 211.92,
+    "duration": 4.64
+  },
+  {
+    "text": "sama ee sama persis gitu ya. Contohnya",
+    "start": 213.56,
+    "duration": 5.84
+  },
+  {
+    "text": "misalnya di kota kita itu ada 1000 anak",
+    "start": 216.56,
+    "duration": 4.28
+  },
+  {
+    "text": "yang namanya Andi. Misalnya nama kita",
+    "start": 219.4,
+    "duration": 4.119
+  },
+  {
+    "text": "Andi. Terus di kota kita pas kita cek ke",
+    "start": 220.84,
+    "duration": 5.479
+  },
+  {
+    "text": "Duk Capil gitu ya, ada 1000 anak yang",
+    "start": 223.519,
+    "duration": 5.321
+  },
+  {
+    "text": "namanya Andi juga. Nah, cara membedanya",
+    "start": 226.319,
+    "duration": 4.84
+  },
+  {
+    "text": "ya dengan apa ya? Dengan data",
+    "start": 228.84,
+    "duration": 3.72
+  },
+  {
+    "text": "private-nya dia. Karena kan setiap",
+    "start": 231.159,
+    "duration": 4.481
+  },
+  {
+    "text": "Anding mungkin ada tujuh anak yang",
+    "start": 232.56,
+    "duration": 5.759
+  },
+  {
+    "text": "namanya Andi suka ngoding gitu ya. atau",
+    "start": 235.64,
+    "duration": 4.439
+  },
+  {
+    "text": "ada dari tujuh anak itu kita bisa",
+    "start": 238.319,
+    "duration": 4.401
+  },
+  {
+    "text": "kecilkan lagi misalnya tiga anak itu",
+    "start": 240.079,
+    "duration": 5.0
+  },
+  {
+    "text": "tinggallah di kota Jakarta Utara. Nah,",
+    "start": 242.72,
+    "duration": 5.519
+  },
+  {
+    "text": "yang kayak gitu. Jadi, setiap Andi ini",
+    "start": 245.079,
+    "duration": 5.201
+  },
+  {
+    "text": "setiap orang ini memiliki data yang",
+    "start": 248.239,
+    "duration": 4.84
+  },
+  {
+    "text": "berbeda-beda walau seperti tanggal lahir",
+    "start": 250.28,
+    "duration": 4.84
+  },
+  {
+    "text": "atau alamat rumah gitu ya. Jadi data",
+    "start": 253.079,
+    "duration": 4.88
+  },
+  {
+    "text": "pribadi itu intinya data di tentang kita",
+    "start": 255.12,
+    "duration": 4.88
+  },
+  {
+    "text": "pribadi private gitu ya, yang unik",
+    "start": 257.959,
+    "duration": 7.281
+  },
+  {
+    "text": "dengan ee kita gitu. Oke. Nah, sekarang",
+    "start": 260.0,
+    "duration": 8.36
+  },
+  {
+    "text": "misalnya kita punya analogi seperti ini.",
+    "start": 265.24,
+    "duration": 7.08
+  },
+  {
+    "text": "Ada KTP versus eh browser diskon. Kan",
+    "start": 268.36,
+    "duration": 6.679
+  },
+  {
+    "text": "dua-duanya ini KTP sama browser diskon",
+    "start": 272.32,
+    "duration": 5.719
+  },
+  {
+    "text": "ini sama-sama informasi ya, sama-sama",
+    "start": 275.039,
+    "duration": 5.081
+  },
+  {
+    "text": "informasi. Cuman yang satu adalah",
+    "start": 278.039,
+    "duration": 4.081
+  },
+  {
+    "text": "informasi pribadi, yang satu informasi",
+    "start": 280.12,
+    "duration": 4.88
+  },
+  {
+    "text": "publik. Coba kita lihat lagi lebih jauh",
+    "start": 282.12,
+    "duration": 5.68
+  },
+  {
+    "text": "di sini. Kalau KTP atau kartu pelajar",
+    "start": 285.0,
+    "duration": 5.32
+  },
+  {
+    "text": "itu dia berisi detail gitu ya. ada nama,",
+    "start": 287.8,
+    "duration": 5.04
+  },
+  {
+    "text": "alamat rumah kita, dan bahkan kadang ada",
+    "start": 290.32,
+    "duration": 5.719
+  },
+  {
+    "text": "foto kita. Kalau misalnya KTP atau kartu",
+    "start": 292.84,
+    "duration": 6.32
+  },
+  {
+    "text": "pelajar kita itu hilang atau di ee apa",
+    "start": 296.039,
+    "duration": 4.761
+  },
+  {
+    "text": "tuh namanya? disalahgunakan orang lain,",
+    "start": 299.16,
+    "duration": 3.479
+  },
+  {
+    "text": "itu tuh kita ada loh orang yang bisa",
+    "start": 300.8,
+    "duration": 3.399
+  },
+  {
+    "text": "menyamar.",
+    "start": 302.639,
+    "duration": 5.521
+  },
+  {
+    "text": "misalnya dia buatkan kita akun terus ee",
+    "start": 304.199,
+    "duration": 6.44
+  },
+  {
+    "text": "akun misalnya untuk nge-scam orang gitu",
+    "start": 308.16,
+    "duration": 5.68
+  },
+  {
+    "text": "ya ee pakai data pribadi kita, dia",
+    "start": 310.639,
+    "duration": 5.161
+  },
+  {
+    "text": "bikinin Instagram account terus itu dia",
+    "start": 313.84,
+    "duration": 4.72
+  },
+  {
+    "text": "ngirimin link fishing atau link palsu",
+    "start": 315.8,
+    "duration": 5.28
+  },
+  {
+    "text": "gitu ya untuk menguras ee informasi",
+    "start": 318.56,
+    "duration": 5.668
+  },
+  {
+    "text": "tentang orang apa ee perbankan atau",
+    "start": 321.08,
+    "duration": 4.48
+  },
+  {
+    "text": "[berdehem] informasi orang lain gitu kan",
+    "start": 324.228,
+    "duration": 3.132
+  },
+  {
+    "text": "ya menggunakan kita. Jadi kalau misalnya",
+    "start": 325.56,
+    "duration": 4.72
+  },
+  {
+    "text": "ada sesuatu terjadi karena dia menyamar",
+    "start": 327.36,
+    "duration": 4.959
+  },
+  {
+    "text": "sebagai kita itu bisa kita yang kena,",
+    "start": 330.28,
+    "duration": 5.039
+  },
+  {
+    "text": "kita yang terkena ee hukum gitu ya. Nah,",
+    "start": 332.319,
+    "duration": 6.041
+  },
+  {
+    "text": "jadi intinya KTP itu ee kalau kartu",
+    "start": 335.319,
+    "duration": 5.44
+  },
+  {
+    "text": "pelajar atau KTP itu dia data pribadi",
+    "start": 338.36,
+    "duration": 5.24
+  },
+  {
+    "text": "murni data pribadi. Beda sama brosur ya",
+    "start": 340.759,
+    "duration": 4.521
+  },
+  {
+    "text": "kan. Brosur misalnya di sini diskon",
+    "start": 343.6,
+    "duration": 4.84
+  },
+  {
+    "text": "sepatu. Nah, kalau browser ini kan dia",
+    "start": 345.28,
+    "duration": 5.96
+  },
+  {
+    "text": "bisa dicetak sebanyak-banyaknya dan bisa",
+    "start": 348.44,
+    "duration": 5.4
+  },
+  {
+    "text": "dibagikan ke semua orang. Karena di",
+    "start": 351.24,
+    "duration": 4.2
+  },
+  {
+    "text": "dalam browser itu enggak ada data",
+    "start": 353.84,
+    "duration": 4.079
+  },
+  {
+    "text": "rahasia gitu ya. Enggak ada orang tuh",
+    "start": 355.44,
+    "duration": 5.24
+  },
+  {
+    "text": "enggak bisa nyamar jadi sabun. Misalkan",
+    "start": 357.919,
+    "duration": 4.481
+  },
+  {
+    "text": "brosur sabun enggak ada yang bisa nyamar",
+    "start": 360.68,
+    "duration": 4.4
+  },
+  {
+    "text": "jadi sabun. Nah, ee jadi browur itu",
+    "start": 362.4,
+    "duration": 5.239
+  },
+  {
+    "text": "tidak dianggap sebagai data pribadi dan",
+    "start": 365.08,
+    "duration": 4.839
+  },
+  {
+    "text": "dia dianggap sebagai informasi publik",
+    "start": 367.639,
+    "duration": 4.441
+  },
+  {
+    "text": "gitu. Karena di situ ya infonya siapa",
+    "start": 369.919,
+    "duration": 5.041
+  },
+  {
+    "text": "yang mau pakai, siapa yang butuh gitu.",
+    "start": 372.08,
+    "duration": 5.64
+  },
+  {
+    "text": "ee baru dia bisa relevan. Tapi kalau KTP",
+    "start": 374.96,
+    "duration": 7.6
+  },
+  {
+    "text": "kan dia emang data kita gitu. Oke. Nah,",
+    "start": 377.72,
+    "duration": 6.8
+  },
+  {
+    "text": "data pribadi itu ada banyak ya contohnya",
+    "start": 382.56,
+    "duration": 3.68
+  },
+  {
+    "text": "ya teman-teman di sini kalau nama",
+    "start": 384.52,
+    "duration": 4.239
+  },
+  {
+    "text": "lengkap sama nama ibu kandung itu adalah",
+    "start": 386.24,
+    "duration": 4.48
+  },
+  {
+    "text": "identitas kalau misalnya kita ee ke",
+    "start": 388.759,
+    "duration": 4.961
+  },
+  {
+    "text": "perbankan ya kita ee ke bank atau kita",
+    "start": 390.72,
+    "duration": 6.72
+  },
+  {
+    "text": "mau daftar ee digital wallet gitu. Nah,",
+    "start": 393.72,
+    "duration": 5.199
+  },
+  {
+    "text": "pasti yang ditanyakan adalah nama",
+    "start": 397.44,
+    "duration": 4.12
+  },
+  {
+    "text": "lengkap sama nama ibu kandung gitu ya.",
+    "start": 398.919,
+    "duration": 5.0
+  },
+  {
+    "text": "Jadi jangan sampai nama lengkap dan nama",
+    "start": 401.56,
+    "duration": 4.24
+  },
+  {
+    "text": "ibu kandung kita itu tersebar gitu.",
+    "start": 403.919,
+    "duration": 4.28
+  },
+  {
+    "text": "Jangan sampai kita nulis dia di bio",
+    "start": 405.8,
+    "duration": 4.519
+  },
+  {
+    "text": "profil game kita gitu ya atau di mana",
+    "start": 408.199,
+    "duration": 4.361
+  },
+  {
+    "text": "pun jangan pernah menuliskannya. Dan",
+    "start": 410.319,
+    "duration": 4.28
+  },
+  {
+    "text": "kedua tempat tanggal lahir gitu ya.",
+    "start": 412.56,
+    "duration": 5.24
+  },
+  {
+    "text": "Banyak password itu makainya tanggal",
+    "start": 414.599,
+    "duration": 5.561
+  },
+  {
+    "text": "tempat tanggal lahir gitu ya. Misalnya",
+    "start": 417.8,
+    "duration": 5.839
+  },
+  {
+    "text": "ee Jakarta 31 Maret gitu kan. itu kayak",
+    "start": 420.16,
+    "duration": 5.039
+  },
+  {
+    "text": "ketebak ya orang-orang kalau misalnya",
+    "start": 423.639,
+    "duration": 5.801
+  },
+  {
+    "text": "tahu misalnya dia bisa menemukan dia ee",
+    "start": 425.199,
+    "duration": 6.641
+  },
+  {
+    "text": "ketemu KTP kalian, kartu pelajar kalian",
+    "start": 429.44,
+    "duration": 4.56
+  },
+  {
+    "text": "gitu. Dia langsung tahu, \"Oh, ini",
+    "start": 431.84,
+    "duration": 4.24
+  },
+  {
+    "text": "anaknya ini aku kenal nih, username-nya",
+    "start": 434.0,
+    "duration": 4.68
+  },
+  {
+    "text": "ada nih.\" Terus dia coba masukin",
+    "start": 436.08,
+    "duration": 4.36
+  },
+  {
+    "text": "password-nya tanggal lahir kita yang",
+    "start": 438.68,
+    "duration": 3.4
+  },
+  {
+    "text": "langsung masuk gitu ya. Jadi mudah",
+    "start": 440.44,
+    "duration": 3.439
+  },
+  {
+    "text": "ditebak gitu. Jadi, data kita enggak",
+    "start": 442.08,
+    "duration": 5.239
+  },
+  {
+    "text": "aman. Nah, ini data pribadi yang harus",
+    "start": 443.879,
+    "duration": 6.44
+  },
+  {
+    "text": "kita jaga. Selain itu ada alamat rumah",
+    "start": 447.319,
+    "duration": 5.361
+  },
+  {
+    "text": "gitu ya. Karena kan tadi kalau kita",
+    "start": 450.319,
+    "duration": 5.28
+  },
+  {
+    "text": "lihat kayak misalnya, oh di kota kita",
+    "start": 452.68,
+    "duration": 4.84
+  },
+  {
+    "text": "ada 1000 anak yang namanya Andi, tapi",
+    "start": 455.599,
+    "duration": 4.081
+  },
+  {
+    "text": "kan alamatnya beda-beda gitu ya. Nah,",
+    "start": 457.52,
+    "duration": 4.0
+  },
+  {
+    "text": "jadi ee kita harus lindungin juga data",
+    "start": 459.68,
+    "duration": 4.519
+  },
+  {
+    "text": "pribadi ini. Terus lokasi GPS ya, live",
+    "start": 461.52,
+    "duration": 5.76
+  },
+  {
+    "text": "location gitu. Kemudian ada sidik jari,",
+    "start": 464.199,
+    "duration": 6.081
+  },
+  {
+    "text": "fingurprint, scan wajah ya, Face ID.",
+    "start": 467.28,
+    "duration": 5.8
+  },
+  {
+    "text": "Kalau misalnya HP kalian mm bisa",
+    "start": 470.28,
+    "duration": 4.639
+  },
+  {
+    "text": "nge-unlock pakai wajah. Nah, itu kan",
+    "start": 473.08,
+    "duration": 3.72
+  },
+  {
+    "text": "kalau misalnya disalahgunakan tuh dia",
+    "start": 474.919,
+    "duration": 4.041
+  },
+  {
+    "text": "bisa mengakses semua data pribadi kita.",
+    "start": 476.8,
+    "duration": 4.44
+  },
+  {
+    "text": "nomor HP, alamat email itu juga",
+    "start": 478.96,
+    "duration": 7.679
+  },
+  {
+    "text": "merupakan data pribadi gitu ya. Nah,",
+    "start": 481.24,
+    "duration": 5.399
+  },
+  {
+    "text": "nah kenapa sih aplikasi itu meminta data",
+    "start": 488.319,
+    "duration": 5.28
+  },
+  {
+    "text": "kita gitu? Jadi kadang ketika kita",
+    "start": 491.28,
+    "duration": 4.68
+  },
+  {
+    "text": "menginstal aplikasi atau ketika kita mau",
+    "start": 493.599,
+    "duration": 4.32
+  },
+  {
+    "text": "membuat aplikasi gitu ya, kadang kita",
+    "start": 495.96,
+    "duration": 4.919
+  },
+  {
+    "text": "tuh butuh beberapa data",
+    "start": 497.919,
+    "duration": 6.96
+  },
+  {
+    "text": "supaya kita bisa menggunakan aplikasinya",
+    "start": 500.879,
+    "duration": 6.961
+  },
+  {
+    "text": "dengan sepenuhnya gitu. Coba lihat di",
+    "start": 504.879,
+    "duration": 6.481
+  },
+  {
+    "text": "sini pas kita instal misalnya ketika",
+    "start": 507.84,
+    "duration": 5.28
+  },
+  {
+    "text": "kita nginstal Instagram aja kan kadang",
+    "start": 511.36,
+    "duration": 4.679
+  },
+  {
+    "text": "dia minta izin akses kamera, dia minta",
+    "start": 513.12,
+    "duration": 4.839
+  },
+  {
+    "text": "akses lokasi gitu ya. Karena",
+    "start": 516.039,
+    "duration": 3.44
+  },
+  {
+    "text": "kadang-kadang kita mau ng-post di",
+    "start": 517.959,
+    "duration": 2.88
+  },
+  {
+    "text": "Instagram tuh kayak kita mau kasih tahu,",
+    "start": 519.479,
+    "duration": 3.281
+  },
+  {
+    "text": "\"Oh, kita di sini loh.\" gitu. Terus",
+    "start": 520.839,
+    "duration": 4.361
+  },
+  {
+    "text": "kadang dia ee butuh informasi kontak",
+    "start": 522.76,
+    "duration": 4.24
+  },
+  {
+    "text": "kita gitu kan. Dia mau ngakses kontak",
+    "start": 525.2,
+    "duration": 5.079
+  },
+  {
+    "text": "kita apakah ee ada yang mungkin yang",
+    "start": 527.0,
+    "duration": 5.24
+  },
+  {
+    "text": "kita kenal orangnya pakai Instagram gitu",
+    "start": 530.279,
+    "duration": 3.641
+  },
+  {
+    "text": "biar kita bisa langsung berteman gitu.",
+    "start": 532.24,
+    "duration": 4.44
+  },
+  {
+    "text": "Nah, ini ee kadang aplikasi banyak ya",
+    "start": 533.92,
+    "duration": 5.44
+  },
+  {
+    "text": "meminta izin akses itu. Nah, aplikasi",
+    "start": 536.68,
+    "duration": 5.08
+  },
+  {
+    "text": "butuh datamu agar data fiturnya bisa",
+    "start": 539.36,
+    "duration": 4.64
+  },
+  {
+    "text": "berjalan gitu ya. Nah, kayak misalnya",
+    "start": 541.76,
+    "duration": 3.759
+  },
+  {
+    "text": "kamera kan kalau Instagram kita harus",
+    "start": 544.0,
+    "duration": 3.16
+  },
+  {
+    "text": "ngupload-ngupload foto gitu ya, dia",
+    "start": 545.519,
+    "duration": 4.361
+  },
+  {
+    "text": "harus punya akses ke kamera gitu. Tapi",
+    "start": 547.16,
+    "duration": 5.64
+  },
+  {
+    "text": "kadang ketika kita membuat aplikasi atau",
+    "start": 549.88,
+    "duration": 4.44
+  },
+  {
+    "text": "kita melihat aplikasi kita harus",
+    "start": 552.8,
+    "duration": 3.36
+  },
+  {
+    "text": "menanyakan juga, kita harus melihat juga",
+    "start": 554.32,
+    "duration": 4.4
+  },
+  {
+    "text": "apakah aplikasinya benar-benar butuh",
+    "start": 556.16,
+    "duration": 4.76
+  },
+  {
+    "text": "data itu gitu ya untuk bisa berjalan",
+    "start": 558.72,
+    "duration": 5.119
+  },
+  {
+    "text": "dengan ee apa terama? Baik gitu. Nah,",
+    "start": 560.92,
+    "duration": 4.599
+  },
+  {
+    "text": "itu yang perlu kita tanyakan ketika kita",
+    "start": 563.839,
+    "duration": 5.321
+  },
+  {
+    "text": "membuat dan mau menginstal sesuatu. Nah,",
+    "start": 565.519,
+    "duration": 6.841
+  },
+  {
+    "text": "ada beberapa izin yang mungkin ee izin",
+    "start": 569.16,
+    "duration": 5.08
+  },
+  {
+    "text": "untuk menggunakan aplikasi yang mungkin",
+    "start": 572.36,
+    "duration": 4.36
+  },
+  {
+    "text": "kita mau implementasikan ke project kita",
+    "start": 574.24,
+    "duration": 4.8
+  },
+  {
+    "text": "atau mungkin kalian pada saat ee mau",
+    "start": 576.72,
+    "duration": 5.96
+  },
+  {
+    "text": "menginstal aplikasi baru itu ee ya ada",
+    "start": 579.04,
+    "duration": 5.6
+  },
+  {
+    "text": "beberapa izin nih coba kita cek. Yang",
+    "start": 582.68,
+    "duration": 5.399
+  },
+  {
+    "text": "pertama misalnya aplikasi Maps gitu ya,",
+    "start": 584.64,
+    "duration": 6.28
+  },
+  {
+    "text": "kadang ee ada beberapa aplikasi seperti",
+    "start": 588.079,
+    "duration": 5.2
+  },
+  {
+    "text": "Google Maps gitu ya, dia butuh lokasi",
+    "start": 590.92,
+    "duration": 5.2
+  },
+  {
+    "text": "kita yang tepat gitu kan ya, GPS kita.",
+    "start": 593.279,
+    "duration": 6.041
+  },
+  {
+    "text": "Dia butuh GPS HP kita supaya dia tahu",
+    "start": 596.12,
+    "duration": 7.88
+  },
+  {
+    "text": "nih untuk ee memberikan saran rute atau",
+    "start": 599.32,
+    "duration": 7.0
+  },
+  {
+    "text": "arah perjalanan yang benar itu ya dia",
+    "start": 604.0,
+    "duration": 5.0
+  },
+  {
+    "text": "harus punya izin GPS kita kan ya. Nah,",
+    "start": 606.32,
+    "duration": 5.32
+  },
+  {
+    "text": "dan ini wajar kalau dia di maps. Yang",
+    "start": 609.0,
+    "duration": 5.0
+  },
+  {
+    "text": "tidak wajar itu kalau misalnya dia",
+    "start": 611.64,
+    "duration": 5.16
+  },
+  {
+    "text": "aplikasi untuk mencatat keuangan tapi",
+    "start": 614.0,
+    "duration": 5.72
+  },
+  {
+    "text": "dia minta izin lokasi GPS. Nah, ini",
+    "start": 616.8,
+    "duration": 4.36
+  },
+  {
+    "text": "berarti ada yang salah nih. Entah kita",
+    "start": 619.72,
+    "duration": 3.799
+  },
+  {
+    "text": "salah download aplikasinya, kita pakai",
+    "start": 621.16,
+    "duration": 5.16
+  },
+  {
+    "text": "aplikasi yang palsu gitu kan ya. Atau",
+    "start": 623.519,
+    "duration": 5.201
+  },
+  {
+    "text": "memang ee ini enggak benar aja nih, gitu",
+    "start": 626.32,
+    "duration": 5.759
+  },
+  {
+    "text": "ya. Jadi hati-hati. Selanjutnya",
+    "start": 628.72,
+    "duration": 6.6
+  },
+  {
+    "text": "kalau misalnya ee apa ojek online itu",
+    "start": 632.079,
+    "duration": 5.2
+  },
+  {
+    "text": "kan dia butuh alamat kan ya. Dia butuh",
+    "start": 635.32,
+    "duration": 3.8
+  },
+  {
+    "text": "alat data pribadi kita, alamat rumah",
+    "start": 637.279,
+    "duration": 3.24
+  },
+  {
+    "text": "kalau kita mau pulang ke rumah atau",
+    "start": 639.12,
+    "duration": 4.279
+  },
+  {
+    "text": "alamat sekolah kita sama nomor HP supaya",
+    "start": 640.519,
+    "duration": 7.241
+  },
+  {
+    "text": "si ojeknya, driver ojeknya itu bisa ee",
+    "start": 643.399,
+    "duration": 6.44
+  },
+  {
+    "text": "menghubungi kita. Nah, ini wajar nih kan",
+    "start": 647.76,
+    "duration": 6.72
+  },
+  {
+    "text": "yang seperti ini gitu. Kemudian kalau ee",
+    "start": 649.839,
+    "duration": 7.0
+  },
+  {
+    "text": "yang lain tuh ada aplikasi kamera sama",
+    "start": 654.48,
+    "duration": 5.64
+  },
+  {
+    "text": "aplikasi kalkulator ya kan ya. Nah, di",
+    "start": 656.839,
+    "duration": 5.961
+  },
+  {
+    "text": "sini kalau misalnya aplikasi ya ini",
+    "start": 660.12,
+    "duration": 4.08
+  },
+  {
+    "text": "logikanya gini ya. Kalau misalnya",
+    "start": 662.8,
+    "duration": 3.88
+  },
+  {
+    "text": "aplikasi kita buat aplikasi yang kayak",
+    "start": 664.2,
+    "duration": 4.68
+  },
+  {
+    "text": "Instagram gitu ya, aplikasi kamera ya",
+    "start": 666.68,
+    "duration": 4.64
+  },
+  {
+    "text": "itu pasti wajar dia harus mengakses",
+    "start": 668.88,
+    "duration": 5.12
+  },
+  {
+    "text": "galeri sama ee harus mengakses kamera",
+    "start": 671.32,
+    "duration": 4.72
+  },
+  {
+    "text": "gitu. Karena untuk menyimpan fotonya",
+    "start": 674.0,
+    "duration": 3.88
+  },
+  {
+    "text": "atau videonya itu kan butuh kamera dan",
+    "start": 676.04,
+    "duration": 4.16
+  },
+  {
+    "text": "butuh akses galeri. Tapi kalau misalnya",
+    "start": 677.88,
+    "duration": 3.92
+  },
+  {
+    "text": "kita instal nih kalkulator dari Play",
+    "start": 680.2,
+    "duration": 4.04
+  },
+  {
+    "text": "Store atau App Store tapi dia minta",
+    "start": 681.8,
+    "duration": 4.599
+  },
+  {
+    "text": "kontak telepon kan itu sudah tidak wajar",
+    "start": 684.24,
+    "duration": 3.76
+  },
+  {
+    "text": "gitu ya. Karena kan dia hanya menghitung",
+    "start": 686.399,
+    "duration": 4.0
+  },
+  {
+    "text": "kan dia tidak perlu mengakses apapun.",
+    "start": 688.0,
+    "duration": 4.44
+  },
+  {
+    "text": "Dia enggak perlu butuh GPS, dia enggak",
+    "start": 690.399,
+    "duration": 3.88
+  },
+  {
+    "text": "perlu butuh kamera dan segala macam.",
+    "start": 692.44,
+    "duration": 4.48
+  },
+  {
+    "text": "Jadi kalau kita mau mengizinkan sesuatu",
+    "start": 694.279,
+    "duration": 4.761
+  },
+  {
+    "text": "coba kita pakai analogi. Kita pikirkan",
+    "start": 696.92,
+    "duration": 5.599
+  },
+  {
+    "text": "logikanya ini benar enggak sih gitu.",
+    "start": 699.04,
+    "duration": 6.08
+  },
+  {
+    "text": "Nah, ee kalau misalnya ada aplikasi yang",
+    "start": 702.519,
+    "duration": 5.161
+  },
+  {
+    "text": "minta ee izin-izin enggak jelas tadi,",
+    "start": 705.12,
+    "duration": 5.32
+  },
+  {
+    "text": "itu berarti aplikasinya mencurigakan.",
+    "start": 707.68,
+    "duration": 5.12
+  },
+  {
+    "text": "Jangan lupa untuk segera tolak ya. Kalau",
+    "start": 710.44,
+    "duration": 4.44
+  },
+  {
+    "text": "misalnya ada permintaan apapun ya kita",
+    "start": 712.8,
+    "duration": 4.159
+  },
+  {
+    "text": "tolak aja gitu kayak denay denay denay",
+    "start": 714.88,
+    "duration": 4.12
+  },
+  {
+    "text": "atau kalau misalnya kita pakai HP itu",
+    "start": 716.959,
+    "duration": 4.281
+  },
+  {
+    "text": "bisa kita ke setting terus itu kita e",
+    "start": 719.0,
+    "duration": 5.079
+  },
+  {
+    "text": "tolak semuanya karena bisa jadi aplikasi",
+    "start": 721.24,
+    "duration": 5.24
+  },
+  {
+    "text": "tersebut itu malware atau virus gitu ya",
+    "start": 724.079,
+    "duration": 6.0
+  },
+  {
+    "text": "yang bisa ee ya dia bisa ngakses semua",
+    "start": 726.48,
+    "duration": 4.84
+  },
+  {
+    "text": "yang ada di HP kita kayak misalnya",
+    "start": 730.079,
+    "duration": 3.081
+  },
+  {
+    "text": "mbanking kita misalnya ada di HP gitu",
+    "start": 731.32,
+    "duration": 4.8
+  },
+  {
+    "text": "kan. Nah, ini bisa berbahaya gitu ya.",
+    "start": 733.16,
+    "duration": 5.96
+  },
+  {
+    "text": "Oke,",
+    "start": 736.12,
+    "duration": 3.0
+  },
+  {
+    "text": "sekarang data itu dia memiliki tingkat",
+    "start": 739.839,
+    "duration": 6.761
+  },
+  {
+    "text": "sensitivitas",
+    "start": 743.92,
+    "duration": 6.52
+  },
+  {
+    "text": "yang berbeda. Nah, karena di mata hacker",
+    "start": 746.6,
+    "duration": 6.64
+  },
+  {
+    "text": "gitu ya, di mata hacker itu enggak semua",
+    "start": 750.44,
+    "duration": 6.759
+  },
+  {
+    "text": "data itu sama gitu ya. Ada data ee kalau",
+    "start": 753.24,
+    "duration": 6.48
+  },
+  {
+    "text": "di hacker itu dia bisa ngebagi jadi dua",
+    "start": 757.199,
+    "duration": 5.161
+  },
+  {
+    "text": "data. Ada data publik sama ada data",
+    "start": 759.72,
+    "duration": 6.64
+  },
+  {
+    "text": "sensitif. Jadi misalnya kalau di sini",
+    "start": 762.36,
+    "duration": 6.24
+  },
+  {
+    "text": "nih,",
+    "start": 766.36,
+    "duration": 4.88
+  },
+  {
+    "text": "oke kalau data publik itu berarti data",
+    "start": 768.6,
+    "duration": 5.52
+  },
+  {
+    "text": "yang boleh dibagikan yang tidak contain,",
+    "start": 771.24,
+    "duration": 6.36
+  },
+  {
+    "text": "yang tidak ada ee data pribadi kita",
+    "start": 774.12,
+    "duration": 6.92
+  },
+  {
+    "text": "gitu. Misalnya nama panggilan atau nama",
+    "start": 777.6,
+    "duration": 5.56
+  },
+  {
+    "text": "username kita, gametag kita. Nah, ini",
+    "start": 781.04,
+    "duration": 4.52
+  },
+  {
+    "text": "kan data yang publik boleh tahu gitu kan",
+    "start": 783.16,
+    "duration": 4.52
+  },
+  {
+    "text": "ya. Karena di mungkin di username",
+    "start": 785.56,
+    "duration": 3.959
+  },
+  {
+    "text": "sebaiknya kalau kalian bikin game tag",
+    "start": 787.68,
+    "duration": 4.959
+  },
+  {
+    "text": "apa e username ee game kalian jangan",
+    "start": 789.519,
+    "duration": 4.44
+  },
+  {
+    "text": "sampai kalian masukin nama kalian",
+    "start": 792.639,
+    "duration": 3.121
+  },
+  {
+    "text": "panjang gitu ya. Lebih baik ya nama-nama",
+    "start": 793.959,
+    "duration": 3.32
+  },
+  {
+    "text": "panggilan kalian lah, nama panggilan",
+    "start": 795.76,
+    "duration": 3.439
+  },
+  {
+    "text": "kecil kalian atau nama karakter favorit",
+    "start": 797.279,
+    "duration": 4.441
+  },
+  {
+    "text": "kalian. Terus itu kayak hobi atau",
+    "start": 799.199,
+    "duration": 5.561
+  },
+  {
+    "text": "makanan favorit itu kan data publik ya,",
+    "start": 801.72,
+    "duration": 5.08
+  },
+  {
+    "text": "band atau film kesukaan. Nah, itu enggak",
+    "start": 804.76,
+    "duration": 3.6
+  },
+  {
+    "text": "apa-apa gitu. kayak ee kalau misalnya",
+    "start": 806.8,
+    "duration": 4.8
+  },
+  {
+    "text": "orang tahu tuh dia ee hal-hal ini kan",
+    "start": 808.36,
+    "duration": 5.36
+  },
+  {
+    "text": "tidak ditanyakan ketika dia mau ngakses",
+    "start": 811.6,
+    "duration": 4.28
+  },
+  {
+    "text": "ini ya perbankan gitu. Jadi enggak",
+    "start": 813.72,
+    "duration": 3.72
+  },
+  {
+    "text": "masalah kalau orang tahu itu data",
+    "start": 815.88,
+    "duration": 3.92
+  },
+  {
+    "text": "publik. Tapi data ada juga yang namanya",
+    "start": 817.44,
+    "duration": 4.759
+  },
+  {
+    "text": "data sensitif dan ini yang ee apa tuh",
+    "start": 819.8,
+    "duration": 5.279
+  },
+  {
+    "text": "namanya? Yang krusial dan sangat dicari",
+    "start": 822.199,
+    "duration": 5.041
+  },
+  {
+    "text": "oleh hacker gitu ya. Nah, misalnya",
+    "start": 825.079,
+    "duration": 5.0
+  },
+  {
+    "text": "password atau pin ATM,",
+    "start": 827.24,
+    "duration": 5.64
+  },
+  {
+    "text": "kode OTP. OTP itu one time password ya",
+    "start": 830.079,
+    "duration": 4.44
+  },
+  {
+    "text": "ee yang biasanya dikirimin lewat SMS",
+    "start": 832.88,
+    "duration": 3.8
+  },
+  {
+    "text": "atau lewat WhatsApp gitu ya. sama tadi",
+    "start": 834.519,
+    "duration": 4.201
+  },
+  {
+    "text": "nama ibu kandung dan detail lengkap",
+    "start": 836.68,
+    "duration": 5.079
+  },
+  {
+    "text": "alamat rumah kita. Jadi kalau kita mau",
+    "start": 838.72,
+    "duration": 6.08
+  },
+  {
+    "text": "ada orang yang minta ini, itu pastikan",
+    "start": 841.759,
+    "duration": 4.76
+  },
+  {
+    "text": "ini benar-benar butuh enggak ya orang",
+    "start": 844.8,
+    "duration": 4.599
+  },
+  {
+    "text": "ini atau sesuatu ini ee data pribadi,",
+    "start": 846.519,
+    "duration": 4.841
+  },
+  {
+    "text": "data sensitif kita ini. Kalau enggak ya",
+    "start": 849.399,
+    "duration": 3.88
+  },
+  {
+    "text": "mohon maaf kita tidak bisa membagikannya",
+    "start": 851.36,
+    "duration": 5.56
+  },
+  {
+    "text": "gitu ya. Oke. Ee ini ada analogi lagi",
+    "start": 853.279,
+    "duration": 6.641
+  },
+  {
+    "text": "misalnya ee anggap aja data yang",
+    "start": 856.92,
+    "duration": 5.279
+  },
+  {
+    "text": "bersifat publik itu kayak papan mading",
+    "start": 859.92,
+    "duration": 3.76
+  },
+  {
+    "text": "gitu ya. kayak di sekolah kita ada",
+    "start": 862.199,
+    "duration": 3.64
+  },
+  {
+    "text": "mading yang dia kita bisa nempelin",
+    "start": 863.68,
+    "duration": 4.8
+  },
+  {
+    "text": "apapun di situ kayak ya udah dia sekedar",
+    "start": 865.839,
+    "duration": 4.601
+  },
+  {
+    "text": "informasi aja enggak ada data yang",
+    "start": 868.48,
+    "duration": 5.479
+  },
+  {
+    "text": "sensitif sedangkan kayak kalau misalnya",
+    "start": 870.44,
+    "duration": 5.92
+  },
+  {
+    "text": "dia kita di rumah punya brangkas gitu ya",
+    "start": 873.959,
+    "duration": 5.44
+  },
+  {
+    "text": "atau loker nah itu kan dia tempat kita",
+    "start": 876.36,
+    "duration": 5.64
+  },
+  {
+    "text": "menyimpan data-data berharga gitu ya nah",
+    "start": 879.399,
+    "duration": 4.161
+  },
+  {
+    "text": "yang kita enggak mau orang lain tahu",
+    "start": 882.0,
+    "duration": 3.48
+  },
+  {
+    "text": "atau bisa mengaksesnya maka itu bisa",
+    "start": 883.56,
+    "duration": 5.76
+  },
+  {
+    "text": "disebut juga dengan data sensitif",
+    "start": 885.48,
+    "duration": 3.84
+  },
+  {
+    "text": "[musik]",
+    "start": 899.98,
+    "duration": 2.02
+  },
+  {
+    "text": "Oke, Teman-teman. Kita hari ini akan",
+    "start": 904.16,
+    "duration": 5.039
+  },
+  {
+    "text": "membahas etika dan tanggung jawab data",
+    "start": 906.36,
+    "duration": 5.56
+  },
+  {
+    "text": "digital kita. Nah, pernah enggak kalian",
+    "start": 909.199,
+    "duration": 4.88
+  },
+  {
+    "text": "teman-teman mendengar atau membaca",
+    "start": 911.92,
+    "duration": 5.52
+  },
+  {
+    "text": "berita gak ada data-data",
+    "start": 914.079,
+    "duration": 5.68
+  },
+  {
+    "text": "ee data-data pribadi orang itu bocor",
+    "start": 917.44,
+    "duration": 4.44
+  },
+  {
+    "text": "bocor di internet dan diperjual belikan",
+    "start": 919.759,
+    "duration": 4.121
+  },
+  {
+    "text": "gitu kan ya. Nah, bayangkan itu terjadi",
+    "start": 921.88,
+    "duration": 5.16
+  },
+  {
+    "text": "sama kita. Kalau misalnya data sensitif",
+    "start": 923.88,
+    "duration": 6.24
+  },
+  {
+    "text": "kita kayak ya data password kita mungkin",
+    "start": 927.04,
+    "duration": 5.96
+  },
+  {
+    "text": "data sensitif bisa password, bisa juga",
+    "start": 930.12,
+    "duration": 5.88
+  },
+  {
+    "text": "alamat tinggal kita. kan orang-orang",
+    "start": 933.0,
+    "duration": 4.44
+  },
+  {
+    "text": "yang tidak bertanggung jawab gitu ya",
+    "start": 936.0,
+    "duration": 3.6
+  },
+  {
+    "text": "atau orang yang dengan niat jahat itu",
+    "start": 937.44,
+    "duration": 5.04
+  },
+  {
+    "text": "dia bisa menyalahkan menyalahgunakan",
+    "start": 939.6,
+    "duration": 4.799
+  },
+  {
+    "text": "data kita atau biasanya disebut juga",
+    "start": 942.48,
+    "duration": 6.839
+  },
+  {
+    "text": "dengan data misuse. Nah, misalnya nih",
+    "start": 944.399,
+    "duration": 8.481
+  },
+  {
+    "text": "hacker dia mendapatkan akses ke foto",
+    "start": 949.319,
+    "duration": 6.041
+  },
+  {
+    "text": "wajah kita gitu ya dan dia dapat akses",
+    "start": 952.88,
+    "duration": 4.72
+  },
+  {
+    "text": "nama lengkap. Nah, kalau misalnya dia",
+    "start": 955.36,
+    "duration": 4.76
+  },
+  {
+    "text": "sudah punya dua ini, dia bisa loh",
+    "start": 957.6,
+    "duration": 6.44
+  },
+  {
+    "text": "membuat ee akun di media sosial yang",
+    "start": 960.12,
+    "duration": 7.12
+  },
+  {
+    "text": "ngaku ngaku itu seolah-olah kita. Nah,",
+    "start": 964.04,
+    "duration": 5.68
+  },
+  {
+    "text": "kalau terus itu setelah dia bikin sosial",
+    "start": 967.24,
+    "duration": 5.8
+  },
+  {
+    "text": "media palsu, dia menggunakan ee aplikasi",
+    "start": 969.72,
+    "duration": 5.039
+  },
+  {
+    "text": "itu atau sosial media tersebut untuk",
+    "start": 973.04,
+    "duration": 4.919
+  },
+  {
+    "text": "menipu orang lain. Nah, kalau misalnya",
+    "start": 974.759,
+    "duration": 6.481
+  },
+  {
+    "text": "ee ini terjadi kan berarti reputasi kita",
+    "start": 977.959,
+    "duration": 4.641
+  },
+  {
+    "text": "bisa hancur dong. nya kayak misalnya",
+    "start": 981.24,
+    "duration": 4.0
+  },
+  {
+    "text": "kita terkenal ee",
+    "start": 982.6,
+    "duration": 5.12
+  },
+  {
+    "text": "anak yang baik-baik gitu ya contohnya.",
+    "start": 985.24,
+    "duration": 4.76
+  },
+  {
+    "text": "Terus itu karena kita wah ini ternyata",
+    "start": 987.72,
+    "duration": 4.44
+  },
+  {
+    "text": "si ini menipu nih suka nipu orang lain",
+    "start": 990.0,
+    "duration": 3.92
+  },
+  {
+    "text": "nih gitu ya suka minta-minta pulsa",
+    "start": 992.16,
+    "duration": 3.2
+  },
+  {
+    "text": "padahal kita enggak pernah nih melakukan",
+    "start": 993.92,
+    "duration": 4.44
+  },
+  {
+    "text": "hal itu. Padahal data kita foto wajah",
+    "start": 995.36,
+    "duration": 6.56
+  },
+  {
+    "text": "sama nama lengkap itu di sedang dimisuse",
+    "start": 998.36,
+    "duration": 6.479
+  },
+  {
+    "text": "untuk dibuat ee dibuatkan Instagram",
+    "start": 1001.92,
+    "duration": 5.359
+  },
+  {
+    "text": "palsu gitu atau WA palsu untuk menipu",
+    "start": 1004.839,
+    "duration": 4.841
+  },
+  {
+    "text": "orang lain gitu ya. Dan itu dan selain",
+    "start": 1007.279,
+    "duration": 4.201
+  },
+  {
+    "text": "merugikan orang lain itu merugikan diri",
+    "start": 1009.68,
+    "duration": 2.959
+  },
+  {
+    "text": "kita juga ya, padahal kita enggak",
+    "start": 1011.48,
+    "duration": 5.279
+  },
+  {
+    "text": "ngapa-ngapain. Nah, kemudian selain itu",
+    "start": 1012.639,
+    "duration": 7.88
+  },
+  {
+    "text": "dampak dari data misus itu ketika orang",
+    "start": 1016.759,
+    "duration": 6.76
+  },
+  {
+    "text": "lain dapat ee dapat data yang lebih",
+    "start": 1020.519,
+    "duration": 5.04
+  },
+  {
+    "text": "sensitif lagi kayak misalnya nomor HP",
+    "start": 1023.519,
+    "duration": 4.44
+  },
+  {
+    "text": "dan informasi nama kandungmu, dia bisa",
+    "start": 1025.559,
+    "duration": 4.441
+  },
+  {
+    "text": "loh nelepon ke bank. Terus itu kan kalau",
+    "start": 1027.959,
+    "duration": 3.641
+  },
+  {
+    "text": "orang bank untuk verifikasi itu dia",
+    "start": 1030.0,
+    "duration": 4.439
+  },
+  {
+    "text": "perlu tahu nama ibu kita, nama panggilan",
+    "start": 1031.6,
+    "duration": 4.359
+  },
+  {
+    "text": "ibu kita dan segala macam. Nah, orang",
+    "start": 1034.439,
+    "duration": 3.88
+  },
+  {
+    "text": "tuh bisa pura-pura, \"Oh, saya lupa",
+    "start": 1035.959,
+    "duration": 4.88
+  },
+  {
+    "text": "password, saya lupa ini, ini, ini.\" gitu",
+    "start": 1038.319,
+    "duration": 4.561
+  },
+  {
+    "text": "kan ya. Ngaku-ngaku sebagai kita. Terus",
+    "start": 1040.839,
+    "duration": 4.041
+  },
+  {
+    "text": "kalau misalnya dia udah dikasih, sudah",
+    "start": 1042.88,
+    "duration": 5.159
+  },
+  {
+    "text": "dapat ee aksesnya, uang tabungan kita",
+    "start": 1044.88,
+    "duration": 5.52
+  },
+  {
+    "text": "bisa di apa? Bisa ludes, bisa habis gitu",
+    "start": 1048.039,
+    "duration": 3.961
+  },
+  {
+    "text": "ya dalam hitungan menit. karena",
+    "start": 1050.4,
+    "duration": 4.24
+  },
+  {
+    "text": "keteladoran misalnya kita enggak sengaja",
+    "start": 1052.0,
+    "duration": 4.96
+  },
+  {
+    "text": "ee masukin data kita di website yang",
+    "start": 1054.64,
+    "duration": 6.36
+  },
+  {
+    "text": "fishing kah atau mungkin ee apa ya",
+    "start": 1056.96,
+    "duration": 7.959
+  },
+  {
+    "text": "mungkin mm pas kita masuk ke aplikasi",
+    "start": 1061.0,
+    "duration": 5.6
+  },
+  {
+    "text": "perbankan dilihat orang lain lah itu",
+    "start": 1064.919,
+    "duration": 4.921
+  },
+  {
+    "text": "contoh yang lainnya. Nah itu jadi ee ini",
+    "start": 1066.6,
+    "duration": 5.8
+  },
+  {
+    "text": "bisa ee ketika data kita di misuse itu",
+    "start": 1069.84,
+    "duration": 5.16
+  },
+  {
+    "text": "kita bisa",
+    "start": 1072.4,
+    "duration": 6.32
+  },
+  {
+    "text": "apa mendapatkan kerugian finansial. Nah,",
+    "start": 1075.0,
+    "duration": 7.12
+  },
+  {
+    "text": "terus itu pernah enggak kalian dapat SMS",
+    "start": 1078.72,
+    "duration": 5.76
+  },
+  {
+    "text": "gitu ya, SMS atau WhatsApp kirimkan uang",
+    "start": 1082.12,
+    "duration": 4.84
+  },
+  {
+    "text": "segera ke rekening ini. Mama sedang di",
+    "start": 1084.48,
+    "duration": 3.96
+  },
+  {
+    "text": "kantor polisi gitu ya. Jadi dia",
+    "start": 1086.96,
+    "duration": 4.04
+  },
+  {
+    "text": "ngaku-ngaku sebagai orang atau keluarga",
+    "start": 1088.44,
+    "duration": 6.16
+  },
+  {
+    "text": "terdekat kita yang ee apa itu namanya?",
+    "start": 1091.0,
+    "duration": 5.52
+  },
+  {
+    "text": "Diminta untuk ngirim uang gitu. Nah,",
+    "start": 1094.6,
+    "duration": 4.4
+  },
+  {
+    "text": "kalau kita pernah dapat SMS atau pesan",
+    "start": 1096.52,
+    "duration": 4.84
+  },
+  {
+    "text": "seperti ini di WhatsApp, berarti nomor",
+    "start": 1099.0,
+    "duration": 4.48
+  },
+  {
+    "text": "HP kita itu sudah tersebar di internet",
+    "start": 1101.36,
+    "duration": 4.72
+  },
+  {
+    "text": "dan disalah gunakan ya untuk penipuan",
+    "start": 1103.48,
+    "duration": 4.92
+  },
+  {
+    "text": "atau kadang kita dapat ee pesan-pesan",
+    "start": 1106.08,
+    "duration": 5.12
+  },
+  {
+    "text": "spam gitu ya. Nah, itu ee jadi kita",
+    "start": 1108.4,
+    "duration": 5.96
+  },
+  {
+    "text": "harus berhati-hati ya, Teman-teman. Nah,",
+    "start": 1111.2,
+    "duration": 6.88
+  },
+  {
+    "text": "kalau misalnya sampai data pribadi kita",
+    "start": 1114.36,
+    "duration": 5.76
+  },
+  {
+    "text": "itu",
+    "start": 1118.08,
+    "duration": 3.64
+  },
+  {
+    "text": "ee apa namanya? diketahui sama orang",
+    "start": 1120.12,
+    "duration": 3.88
+  },
+  {
+    "text": "lain misalnya password itu sama aja",
+    "start": 1121.72,
+    "duration": 4.04
+  },
+  {
+    "text": "kayak kita ngasih kunci rumah kita ke",
+    "start": 1124.0,
+    "duration": 4.2
+  },
+  {
+    "text": "orang lain gitu ya. Ya udah ee apa itu",
+    "start": 1125.76,
+    "duration": 4.72
+  },
+  {
+    "text": "namanya dia udah tahu alamat lengkap",
+    "start": 1128.2,
+    "duration": 4.76
+  },
+  {
+    "text": "kali apa dia punya bisa tahu alamat",
+    "start": 1130.48,
+    "duration": 4.559
+  },
+  {
+    "text": "lengkap kita, kita tinggal ngasih gitu",
+    "start": 1132.96,
+    "duration": 3.4
+  },
+  {
+    "text": "ya. Kalau misalnya dia punya passwordnya",
+    "start": 1135.039,
+    "duration": 3.961
+  },
+  {
+    "text": "kita kayak ngasih orang itu masuk ke",
+    "start": 1136.36,
+    "duration": 4.96
+  },
+  {
+    "text": "rumah kita gitu ya. Akibatnya ya dia",
+    "start": 1139.0,
+    "duration": 4.6
+  },
+  {
+    "text": "bisa masuk ke rumah kita dan ee mencuri",
+    "start": 1141.32,
+    "duration": 4.56
+  },
+  {
+    "text": "barang-barang kita gitu ya. Nah,",
+    "start": 1143.6,
+    "duration": 5.199
+  },
+  {
+    "text": "kemudian ancaman lain ketika kita ee",
+    "start": 1145.88,
+    "duration": 5.48
+  },
+  {
+    "text": "data kita di misuse gitu ya. ada ancaman",
+    "start": 1148.799,
+    "duration": 5.441
+  },
+  {
+    "text": "keselamatan fisik gitu ya. Misalnya nih",
+    "start": 1151.36,
+    "duration": 5.679
+  },
+  {
+    "text": "kita sering ee apa namama over sharing",
+    "start": 1154.24,
+    "duration": 5.16
+  },
+  {
+    "text": "kita live location. Kita sedang live di",
+    "start": 1157.039,
+    "duration": 4.841
+  },
+  {
+    "text": "Instagram terus ada caption-nya kalian",
+    "start": 1159.4,
+    "duration": 5.159
+  },
+  {
+    "text": "bilang, \"Wih, lagi sendirian nih di",
+    "start": 1161.88,
+    "duration": 6.48
+  },
+  {
+    "text": "kafe\" gitu ya atau di ee supermarket.",
+    "start": 1164.559,
+    "duration": 5.36
+  },
+  {
+    "text": "Nah, ini kan berbahaya ya kalau misalnya",
+    "start": 1168.36,
+    "duration": 3.92
+  },
+  {
+    "text": "orang lihat, \"Wih, ternyata si ini lagi",
+    "start": 1169.919,
+    "duration": 4.081
+  },
+  {
+    "text": "sendirian nih.\" Wah, itu kalau misalnya",
+    "start": 1172.28,
+    "duration": 5.2
+  },
+  {
+    "text": "dia punya niat jahat itu dia bisa ee ya",
+    "start": 1174.0,
+    "duration": 7.32
+  },
+  {
+    "text": "mencelakai kita gitu ya. Nah, ketika",
+    "start": 1177.48,
+    "duration": 8.64
+  },
+  {
+    "text": "kita ee melakukan oversharing itu bisa",
+    "start": 1181.32,
+    "duration": 7.64
+  },
+  {
+    "text": "ee apa ya, merugikan diri kita gitu ya.",
+    "start": 1186.12,
+    "duration": 5.08
+  },
+  {
+    "text": "Nah, oversharing itu sendiri merupakan",
+    "start": 1188.96,
+    "duration": 4.959
+  },
+  {
+    "text": "sebuah kebiasaan yang di mana kita tuh",
+    "start": 1191.2,
+    "duration": 7.76
+  },
+  {
+    "text": "terlalu ee terlalu membagikan keseharian",
+    "start": 1193.919,
+    "duration": 7.681
+  },
+  {
+    "text": "kita, detail hidup kita ke internet gitu",
+    "start": 1198.96,
+    "duration": 4.079
+  },
+  {
+    "text": "ya. Jadi orang kalau internet tuh kan",
+    "start": 1201.6,
+    "duration": 3.559
+  },
+  {
+    "text": "berarti orang lain bisa ngakses itu sama",
+    "start": 1203.039,
+    "duration": 4.601
+  },
+  {
+    "text": "kayak kita seolah-olah data publik gitu",
+    "start": 1205.159,
+    "duration": 4.161
+  },
+  {
+    "text": "ya, bukan data pribadi kita lagi. Kayak",
+    "start": 1207.64,
+    "duration": 4.08
+  },
+  {
+    "text": "misalnya kita enggak sengaja ee buka",
+    "start": 1209.32,
+    "duration": 4.32
+  },
+  {
+    "text": "paket nih, kalian e habis beli paket",
+    "start": 1211.72,
+    "duration": 4.52
+  },
+  {
+    "text": "kalian show nih, kalian unboxing di live",
+    "start": 1213.64,
+    "duration": 4.279
+  },
+  {
+    "text": "IG gitu kan. Di situ kelihatan tuh",
+    "start": 1216.24,
+    "duration": 3.64
+  },
+  {
+    "text": "alamat rumah kalian gitu kan, terus",
+    "start": 1217.919,
+    "duration": 3.601
+  },
+  {
+    "text": "kalian beli apa tuh kan kelihatan orang",
+    "start": 1219.88,
+    "duration": 4.44
+  },
+  {
+    "text": "main bisa tahu. Padahal kan alamat itu",
+    "start": 1221.52,
+    "duration": 5.44
+  },
+  {
+    "text": "harusnya menjadi data pribadi kita, data",
+    "start": 1224.32,
+    "duration": 4.44
+  },
+  {
+    "text": "private kita ya. Tapi kalau misalnya",
+    "start": 1226.96,
+    "duration": 3.199
+  },
+  {
+    "text": "kalian udah masukin internet, itu",
+    "start": 1228.76,
+    "duration": 4.12
+  },
+  {
+    "text": "berarti bisa jadi data publik gitu yang",
+    "start": 1230.159,
+    "duration": 5.52
+  },
+  {
+    "text": "orang lain bisa eh trace back gitu ya.",
+    "start": 1232.88,
+    "duration": 4.72
+  },
+  {
+    "text": "Orang lain bisa ngelihat alamat kalian",
+    "start": 1235.679,
+    "duration": 4.521
+  },
+  {
+    "text": "di internet terus itu ya bisa datangin",
+    "start": 1237.6,
+    "duration": 4.48
+  },
+  {
+    "text": "kalian gitu ya. Bahaya banget. Jadi",
+    "start": 1240.2,
+    "duration": 4.44
+  },
+  {
+    "text": "jangan sampai kita melakukan oversharing",
+    "start": 1242.08,
+    "duration": 4.4
+  },
+  {
+    "text": "ini ya. Karena kalau datanya udah masuk",
+    "start": 1244.64,
+    "duration": 5.64
+  },
+  {
+    "text": "di internet itu udah pasti jadi ee data",
+    "start": 1246.48,
+    "duration": 5.88
+  },
+  {
+    "text": "ee ini ya, udah jadi data publik dan",
+    "start": 1250.28,
+    "duration": 4.0
+  },
+  {
+    "text": "juga itu meninggalkan jejak-jejak",
+    "start": 1252.36,
+    "duration": 4.04
+  },
+  {
+    "text": "digital dan jejak digital tuh pasti",
+    "start": 1254.28,
+    "duration": 5.04
+  },
+  {
+    "text": "abadi. No matter how hard ya enggak apa",
+    "start": 1256.4,
+    "duration": 6.04
+  },
+  {
+    "text": "itu namanya sesusah apapun kita mencoba",
+    "start": 1259.32,
+    "duration": 5.68
+  },
+  {
+    "text": "untuk menghapus eh data itu dia akan",
+    "start": 1262.44,
+    "duration": 4.44
+  },
+  {
+    "text": "tetap ada di situ. Karena once it goes",
+    "start": 1265.0,
+    "duration": 5.48
+  },
+  {
+    "text": "to the internet apa tu namanya dia akan",
+    "start": 1266.88,
+    "duration": 5.56
+  },
+  {
+    "text": "selalu akan ada di situ gitu ya. enggak",
+    "start": 1270.48,
+    "duration": 6.559
+  },
+  {
+    "text": "bisa dihapus permanen mungkin kita.",
+    "start": 1272.44,
+    "duration": 4.599
+  },
+  {
+    "text": "Nah, untuk melawan ancaman-ancaman yang",
+    "start": 1278.36,
+    "duration": 5.96
+  },
+  {
+    "text": "kita bahas tadi ini ada beberapa tips ya",
+    "start": 1281.48,
+    "duration": 4.84
+  },
+  {
+    "text": "yang kita bisa lakukan untuk menjaga",
+    "start": 1284.32,
+    "duration": 4.56
+  },
+  {
+    "text": "privasi kita. Yang pertama, pastikan",
+    "start": 1286.32,
+    "duration": 5.04
+  },
+  {
+    "text": "ketika kita membuat password itu jangan",
+    "start": 1288.88,
+    "duration": 5.44
+  },
+  {
+    "text": "sampai sesuatu yang mudah ditebak. kayak",
+    "start": 1291.36,
+    "duration": 5.0
+  },
+  {
+    "text": "misalnya tanggal lahir atau nama kita",
+    "start": 1294.32,
+    "duration": 4.479
+  },
+  {
+    "text": "sendiri atau sesuatu yang berurutan",
+    "start": 1296.36,
+    "duration": 6.439
+  },
+  {
+    "text": "kayak 1 2 3 4 5 6 atau kebalikan 654 321",
+    "start": 1298.799,
+    "duration": 6.801
+  },
+  {
+    "text": "ya jangan kalau bisa ketika kita mau",
+    "start": 1302.799,
+    "duration": 4.88
+  },
+  {
+    "text": "pakai password misalnya kita suka lupa",
+    "start": 1305.6,
+    "duration": 4.199
+  },
+  {
+    "text": "gitu ya mau pakai nama sendiri ya enggak",
+    "start": 1307.679,
+    "duration": 3.921
+  },
+  {
+    "text": "apa-apa tapi dilihat nih at least",
+    "start": 1309.799,
+    "duration": 4.441
+  },
+  {
+    "text": "dikombinasikan jadi misalnya nama nama",
+    "start": 1311.6,
+    "duration": 4.4
+  },
+  {
+    "text": "kita yang paling depan sama yang paling",
+    "start": 1314.24,
+    "duration": 3.6
+  },
+  {
+    "text": "akhir itu huruf besar sisanya huruf",
+    "start": 1316.0,
+    "duration": 4.039
+  },
+  {
+    "text": "kecil terus kita masukin juga angka",
+    "start": 1317.84,
+    "duration": 3.88
+  },
+  {
+    "text": "kelahiran kita gitu ya walaupun",
+    "start": 1320.039,
+    "duration": 4.0
+  },
+  {
+    "text": "berbahaya supaya lebih aman lag lagi",
+    "start": 1321.72,
+    "duration": 4.24
+  },
+  {
+    "text": "tambahin simbol khusus gitu ya kan",
+    "start": 1324.039,
+    "duration": 4.64
+  },
+  {
+    "text": "misalnya add atau hashtag. Jadi kalau",
+    "start": 1325.96,
+    "duration": 4.839
+  },
+  {
+    "text": "misalnya kita suka lupa mau pakai data",
+    "start": 1328.679,
+    "duration": 3.721
+  },
+  {
+    "text": "kita tanggal prib tanggal lahir sama",
+    "start": 1330.799,
+    "duration": 5.161
+  },
+  {
+    "text": "nama sendiri ya boleh gitu ya tapi ingat",
+    "start": 1332.4,
+    "duration": 5.639
+  },
+  {
+    "text": "harus dikombinasikan tapi lebih baik",
+    "start": 1335.96,
+    "duration": 3.719
+  },
+  {
+    "text": "lagi kita pakai password yang",
+    "start": 1338.039,
+    "duration": 4.601
+  },
+  {
+    "text": "benar-benar random gitu ya. Oke. Nah,",
+    "start": 1339.679,
+    "duration": 5.041
+  },
+  {
+    "text": "untuk password juga kadang kan sekarang",
+    "start": 1342.64,
+    "duration": 3.56
+  },
+  {
+    "text": "sudah ada aplikasinya kayak Google tuh",
+    "start": 1344.72,
+    "duration": 3.6
+  },
+  {
+    "text": "ada yang namanya Google Authentificator.",
+    "start": 1346.2,
+    "duration": 4.52
+  },
+  {
+    "text": "Microsoft juga punya. Jadi dia bisa",
+    "start": 1348.32,
+    "duration": 4.28
+  },
+  {
+    "text": "kalau misalnya mau masuk ke sebuah",
+    "start": 1350.72,
+    "duration": 3.839
+  },
+  {
+    "text": "account itu harus benar-benar harus scan",
+    "start": 1352.6,
+    "duration": 4.16
+  },
+  {
+    "text": "barcode terus itu skin jadi jari dan",
+    "start": 1354.559,
+    "duration": 4.6
+  },
+  {
+    "text": "segala macam gitu ya.",
+    "start": 1356.76,
+    "duration": 5.72
+  },
+  {
+    "text": "Nah, ini ada contoh password yang buruk",
+    "start": 1359.159,
+    "duration": 6.441
+  },
+  {
+    "text": "ini kayak Andi 2010 tanggal lahirnya apa",
+    "start": 1362.48,
+    "duration": 6.12
+  },
+  {
+    "text": "tahun lahirnya 2010 misalnya sayang mama",
+    "start": 1365.6,
+    "duration": 4.52
+  },
+  {
+    "text": "atau berurutan. Ini buruk ya",
+    "start": 1368.6,
+    "duration": 3.8
+  },
+  {
+    "text": "password-nya ya. Nah, kalau lebih baik",
+    "start": 1370.12,
+    "duration": 5.32
+  },
+  {
+    "text": "gini, lebih baik tuh seperti ini ya. M4",
+    "start": 1372.4,
+    "duration": 8.56
+  },
+  {
+    "text": "K N-nya besar nasi goreng, O-nya jadi 0,",
+    "start": 1375.44,
+    "duration": 7.68
+  },
+  {
+    "text": "E-nya jadi 3, terus digabung-gabung.",
+    "start": 1380.96,
+    "duration": 5.079
+  },
+  {
+    "text": "Nah, ini kan dia panjang unik, terus itu",
+    "start": 1383.12,
+    "duration": 5.32
+  },
+  {
+    "text": "ya mungkin mudah diingat ya. Tapi ee apa",
+    "start": 1386.039,
+    "duration": 4.841
+  },
+  {
+    "text": "namanya? Di mungkin kita sering nulis",
+    "start": 1388.44,
+    "duration": 3.719
+  },
+  {
+    "text": "gini sama teman-teman kita ya. Jadi",
+    "start": 1390.88,
+    "duration": 2.88
+  },
+  {
+    "text": "kayak wah ini password-nya gampang",
+    "start": 1392.159,
+    "duration": 3.841
+  },
+  {
+    "text": "diingat gitu ya sama kita kan gitu ya.",
+    "start": 1393.76,
+    "duration": 4.039
+  },
+  {
+    "text": "Nah, komputer tuh susah nebaknya gitu",
+    "start": 1396.0,
+    "duration": 4.24
+  },
+  {
+    "text": "ya. Karena dia kalau mau nyusun nih bisa",
+    "start": 1397.799,
+    "duration": 5.921
+  },
+  {
+    "text": "ee kalau mau nge-crack bisa ee puluhan",
+    "start": 1400.24,
+    "duration": 5.799
+  },
+  {
+    "text": "bakal bahkan ratusan tahun nih untuk",
+    "start": 1403.72,
+    "duration": 5.64
+  },
+  {
+    "text": "bisa mengakses password kita.",
+    "start": 1406.039,
+    "duration": 5.041
+  },
+  {
+    "text": "Terus itu yang kemud yang kedua jangan",
+    "start": 1409.36,
+    "duration": 3.84
+  },
+  {
+    "text": "sampai kita asal mengklik sebuah link",
+    "start": 1411.08,
+    "duration": 4.92
+  },
+  {
+    "text": "gitu ya. Jadi kalau misalnya ada",
+    "start": 1413.2,
+    "duration": 5.32
+  },
+  {
+    "text": "klink-kling yang langsung ngasih hadiah",
+    "start": 1416.0,
+    "duration": 6.0
+  },
+  {
+    "text": "kayak misalnya kamu mendapatkan uang",
+    "start": 1418.52,
+    "duration": 5.8
+  },
+  {
+    "text": "senilai Rp100 juta, kamu mendapatkan HP,",
+    "start": 1422.0,
+    "duration": 5.12
+  },
+  {
+    "text": "kamu mendapatkan ee kipas angin atau",
+    "start": 1424.32,
+    "duration": 4.28
+  },
+  {
+    "text": "motor. Nah, ini kan enggak masuk akal",
+    "start": 1427.12,
+    "duration": 2.96
+  },
+  {
+    "text": "ya. Maksudnya kita enggak melakukan",
+    "start": 1428.6,
+    "duration": 2.88
+  },
+  {
+    "text": "apa-apa, kita dapat hadiah. Nah, itu",
+    "start": 1430.08,
+    "duration": 2.92
+  },
+  {
+    "text": "hati-hati karena itu bisa jadi dia",
+    "start": 1431.48,
+    "duration": 4.96
+  },
+  {
+    "text": "sebuah fishing atau ee apa itu namanya?",
+    "start": 1433.0,
+    "duration": 6.36
+  },
+  {
+    "text": "Link ilegal atau link penipuan. Kalau",
+    "start": 1436.44,
+    "duration": 5.08
+  },
+  {
+    "text": "misalnya kamu klik, bisa jadi dia",
+    "start": 1439.36,
+    "duration": 4.72
+  },
+  {
+    "text": "menyimpan datamu atau dia bisa",
+    "start": 1441.52,
+    "duration": 5.039
+  },
+  {
+    "text": "menyusupkan virus ke HP-mu yang dia bisa",
+    "start": 1444.08,
+    "duration": 4.44
+  },
+  {
+    "text": "meng-copy nih. Jadi apa yang kalian",
+    "start": 1446.559,
+    "duration": 3.441
+  },
+  {
+    "text": "buka, apa yang kalian ketikkan itu",
+    "start": 1448.52,
+    "duration": 3.72
+  },
+  {
+    "text": "tercopy ke servernya mereka gitu ya.",
+    "start": 1450.0,
+    "duration": 4.039
+  },
+  {
+    "text": "Nah, ini kan berbahaya banget ya. Jadi",
+    "start": 1452.24,
+    "duration": 4.72
+  },
+  {
+    "text": "jangan sampai klik asal-asal klikan ya,",
+    "start": 1454.039,
+    "duration": 5.801
+  },
+  {
+    "text": "klik link-link gitu ya. Jangan. Oke,",
+    "start": 1456.96,
+    "duration": 5.8
+  },
+  {
+    "text": "selanjutnya",
+    "start": 1459.84,
+    "duration": 5.12
+  },
+  {
+    "text": "gembok akun metsos. Jadi kalau bisa",
+    "start": 1462.76,
+    "duration": 4.72
+  },
+  {
+    "text": "kalau memungkinkan diprivate aja account",
+    "start": 1464.96,
+    "duration": 4.52
+  },
+  {
+    "text": "kalian gitu ya. akun Instagram, akun",
+    "start": 1467.48,
+    "duration": 4.84
+  },
+  {
+    "text": "TikTok kalian, gitu ya. Jadi yang apa",
+    "start": 1469.48,
+    "duration": 4.439
+  },
+  {
+    "text": "namanya? Hanya orang-orang yang kalian",
+    "start": 1472.32,
+    "duration": 3.92
+  },
+  {
+    "text": "mau aja, yang kalian setujui, yang",
+    "start": 1473.919,
+    "duration": 4.961
+  },
+  {
+    "text": "kalian accept aja yang bisa melihat foto",
+    "start": 1476.24,
+    "duration": 4.52
+  },
+  {
+    "text": "sama videomu. Jadi kayak misalnya",
+    "start": 1478.88,
+    "duration": 4.519
+  },
+  {
+    "text": "penculik atau penjahat yang pengin tahu",
+    "start": 1480.76,
+    "duration": 5.6
+  },
+  {
+    "text": "tinggalmu atau keseharianmu itu dia",
+    "start": 1483.399,
+    "duration": 4.241
+  },
+  {
+    "text": "enggak punya akses gitu karena kita",
+    "start": 1486.36,
+    "duration": 3.799
+  },
+  {
+    "text": "gembok account gitu. Kemudian yang bisa",
+    "start": 1487.64,
+    "duration": 5.159
+  },
+  {
+    "text": "kita lakukan adalah kita matikan izin",
+    "start": 1490.159,
+    "duration": 5.12
+  },
+  {
+    "text": "lokasi gitu ya. Kalau misalnya ee enggak",
+    "start": 1492.799,
+    "duration": 4.24
+  },
+  {
+    "text": "digunakan ya udah matiin aja fitur",
+    "start": 1495.279,
+    "duration": 4.041
+  },
+  {
+    "text": "GPS-nya. Mungkin pas kita makainya kalau",
+    "start": 1497.039,
+    "duration": 4.321
+  },
+  {
+    "text": "misalnya mau pakai peta aja atau mau",
+    "start": 1499.32,
+    "duration": 4.68
+  },
+  {
+    "text": "pakai ojol boleh kita nyalain lagi. Tapi",
+    "start": 1501.36,
+    "duration": 4.88
+  },
+  {
+    "text": "sisanya dimatiin aja. Selain membuat",
+    "start": 1504.0,
+    "duration": 4.2
+  },
+  {
+    "text": "kita aman, kadang baterainya bisa lebih",
+    "start": 1506.24,
+    "duration": 5.039
+  },
+  {
+    "text": "hemat juga ya. Nah,",
+    "start": 1508.2,
+    "duration": 5.88
+  },
+  {
+    "text": "ya intinya ee kalau kita menggunakan",
+    "start": 1511.279,
+    "duration": 5.201
+  },
+  {
+    "text": "password yang lebih mudah ditebak itu",
+    "start": 1514.08,
+    "duration": 4.92
+  },
+  {
+    "text": "sama aja kayak kita mau pergi jauh tapi",
+    "start": 1516.48,
+    "duration": 4.559
+  },
+  {
+    "text": "kita biarin rumah kita terbuka lebar",
+    "start": 1519.0,
+    "duration": 5.44
+  },
+  {
+    "text": "gitu ya. Nah, supaya aman selain eh kita",
+    "start": 1521.039,
+    "duration": 4.801
+  },
+  {
+    "text": "pakai password, passwordnya susah",
+    "start": 1524.44,
+    "duration": 4.119
+  },
+  {
+    "text": "ditebak, password-nya kuat gitu ya, kita",
+    "start": 1525.84,
+    "duration": 5.76
+  },
+  {
+    "text": "tambahin ada yang namanya 2 FA atau to",
+    "start": 1528.559,
+    "duration": 5.201
+  },
+  {
+    "text": "eh verification authentificator, to",
+    "start": 1531.6,
+    "duration": 5.04
+  },
+  {
+    "text": "factor authentification.",
+    "start": 1533.76,
+    "duration": 5.44
+  },
+  {
+    "text": "Jadi dia selain harus masukin password,",
+    "start": 1536.64,
+    "duration": 5.0
+  },
+  {
+    "text": "dia harus kirim OTP dari SMS atau dari",
+    "start": 1539.2,
+    "duration": 4.76
+  },
+  {
+    "text": "WA atau pakai aplikasi yang Kakak bilang",
+    "start": 1541.64,
+    "duration": 4.36
+  },
+  {
+    "text": "tadi yang kayak Google Authentificator",
+    "start": 1543.96,
+    "duration": 5.92
+  },
+  {
+    "text": "atau Microsoft Authentificator.",
+    "start": 1546.0,
+    "duration": 3.88
+  },
+  {
+    "text": "Nah, di App Inventor itu dia ada fitur",
+    "start": 1550.559,
+    "duration": 7.801
+  },
+  {
+    "text": "yang dia bis ee apa ya? Fitur yang bisa",
+    "start": 1553.799,
+    "duration": 7.401
+  },
+  {
+    "text": "menyimpan data pribadi kita. Contohnya",
+    "start": 1558.36,
+    "duration": 5.64
+  },
+  {
+    "text": "password. Kan kalau misalnya dia mau ee",
+    "start": 1561.2,
+    "duration": 6.359
+  },
+  {
+    "text": "masukin password, dia harus ini ya kayak",
+    "start": 1564.0,
+    "duration": 5.52
+  },
+  {
+    "text": "orang lain jangan sampai tahu dong apa",
+    "start": 1567.559,
+    "duration": 4.081
+  },
+  {
+    "text": "bisa ngelihat dong password yang kita ee",
+    "start": 1569.52,
+    "duration": 5.0
+  },
+  {
+    "text": "masukkan gitu kan ya. Nah, kenapa sih",
+    "start": 1571.64,
+    "duration": 5.68
+  },
+  {
+    "text": "harus ada keamanannya gitu ya? Kalau",
+    "start": 1574.52,
+    "duration": 5.6
+  },
+  {
+    "text": "misalnya aplikasi kita aman gitu ya,",
+    "start": 1577.32,
+    "duration": 5.599
+  },
+  {
+    "text": "berarti pengguna itu kayak tenang gitu.",
+    "start": 1580.12,
+    "duration": 5.439
+  },
+  {
+    "text": "pengguna jadi tenang dan e pengguna jadi",
+    "start": 1582.919,
+    "duration": 4.161
+  },
+  {
+    "text": "trust kalau misalnya dia mau menggunakan",
+    "start": 1585.559,
+    "duration": 3.881
+  },
+  {
+    "text": "aplikasi kita dan dia bisa menyarankan",
+    "start": 1587.08,
+    "duration": 4.319
+  },
+  {
+    "text": "aplikasi kita ke orang lain tanpa",
+    "start": 1589.44,
+    "duration": 4.479
+  },
+  {
+    "text": "khawatir data kita bisa disalahgunakan",
+    "start": 1591.399,
+    "duration": 4.921
+  },
+  {
+    "text": "gitu ya. Jadi intinya data pengguna",
+    "start": 1593.919,
+    "duration": 4.401
+  },
+  {
+    "text": "adalah harta yang paling berharga bagi",
+    "start": 1596.32,
+    "duration": 5.479
+  },
+  {
+    "text": "seorang developer gitu ya. Nah, kalau di",
+    "start": 1598.32,
+    "duration": 5.32
+  },
+  {
+    "text": "ini ya bentuknya ya, kalau misalnya kita",
+    "start": 1601.799,
+    "duration": 4.36
+  },
+  {
+    "text": "mau mengguna ee mau minta user",
+    "start": 1603.64,
+    "duration": 4.639
+  },
+  {
+    "text": "memasukkan password, jangan lupa",
+    "start": 1606.159,
+    "duration": 4.441
+  },
+  {
+    "text": "inputnya itu tipenya jangan sampai",
+    "start": 1608.279,
+    "duration": 5.64
+  },
+  {
+    "text": "textbox biasa ya, tapi gunakan textbox",
+    "start": 1610.6,
+    "duration": 7.16
+  },
+  {
+    "text": "yang password. Oke, itu untuk eh",
+    "start": 1613.919,
+    "duration": 6.401
+  },
+  {
+    "text": "keamanan digital di menggunakan MIT App",
+    "start": 1617.76,
+    "duration": 5.56
+  },
+  {
+    "text": "Inventor.",
+    "start": 1620.32,
+    "duration": 3.0
+  },
+  {
+    "text": "Nah, kemudian ketika kita ee apa itu",
+    "start": 1625.559,
+    "duration": 5.041
+  },
+  {
+    "text": "namanya?",
+    "start": 1629.36,
+    "duration": 5.039
+  },
+  {
+    "text": "ketika kita menggunakan App Inventor",
+    "start": 1630.6,
+    "duration": 5.559
+  },
+  {
+    "text": "gitu ya, kita harus ngecek juga ketika",
+    "start": 1634.399,
+    "duration": 4.081
+  },
+  {
+    "text": "kita bikin aplikasi menggunakan MIT App",
+    "start": 1636.159,
+    "duration": 5.481
+  },
+  {
+    "text": "Inventor, pastikan pada saat dia klik",
+    "start": 1638.48,
+    "duration": 5.6
+  },
+  {
+    "text": "login misalnya ini di sini dia ngeklik",
+    "start": 1641.64,
+    "duration": 5.0
+  },
+  {
+    "text": "tombol login gitu ya. Nih di sini dia",
+    "start": 1644.08,
+    "duration": 4.68
+  },
+  {
+    "text": "ngeklik tombol login tanpa masukin",
+    "start": 1646.64,
+    "duration": 4.159
+  },
+  {
+    "text": "password. Kalau misalnya dia cuman tahu",
+    "start": 1648.76,
+    "duration": 4.039
+  },
+  {
+    "text": "username aja ya kita bisa kebobol akun",
+    "start": 1650.799,
+    "duration": 5.521
+  },
+  {
+    "text": "kita ya kan ya. Nah pastikan harus ada",
+    "start": 1652.799,
+    "duration": 6.401
+  },
+  {
+    "text": "input validation gitu ya. inputnya harus",
+    "start": 1656.32,
+    "duration": 7.12
+  },
+  {
+    "text": "divalidasi dulu oleh program kita supaya",
+    "start": 1659.2,
+    "duration": 6.76
+  },
+  {
+    "text": "kalau misalnya dia password-nya empty",
+    "start": 1663.44,
+    "duration": 5.88
+  },
+  {
+    "text": "atau kosong, maka kita harus kirim pesan",
+    "start": 1665.96,
+    "duration": 5.52
+  },
+  {
+    "text": "error, password-nya harus diisi gitu ya",
+    "start": 1669.32,
+    "duration": 4.239
+  },
+  {
+    "text": "sebelum dia masuk.",
+    "start": 1671.48,
+    "duration": 5.6
+  },
+  {
+    "text": "Nah, block is empty itu sebuah adalah",
+    "start": 1673.559,
+    "duration": 5.801
+  },
+  {
+    "text": "sebuah function yang ada di MITF",
+    "start": 1677.08,
+    "duration": 4.839
+  },
+  {
+    "text": "Inventor yang dia bertugas apakah",
+    "start": 1679.36,
+    "duration": 6.24
+  },
+  {
+    "text": "textbox-nya itu ada isinya atau kosong",
+    "start": 1681.919,
+    "duration": 5.721
+  },
+  {
+    "text": "gitu ya. Kalau benar-benar kosong then",
+    "start": 1685.6,
+    "duration": 4.439
+  },
+  {
+    "text": "kita minta dia eh ya lakukan sesuatu.",
+    "start": 1687.64,
+    "duration": 4.759
+  },
+  {
+    "text": "Misalnya di sini kita mau ada label",
+    "start": 1690.039,
+    "duration": 4.281
+  },
+  {
+    "text": "peringatan atau kita bisa munculin",
+    "start": 1692.399,
+    "duration": 6.4
+  },
+  {
+    "text": "notifikasi error gitu ya. Nah, itu is",
+    "start": 1694.32,
+    "duration": 8.079
+  },
+  {
+    "text": "MIT App Inventor.",
+    "start": 1698.799,
+    "duration": 3.6
+  },
+  {
+    "text": "Halo teman-teman, hari ini kita akan",
+    "start": 1720.6,
+    "duration": 5.28
+  },
+  {
+    "text": "membahas terkait Tiny Dib. Nah, apa sih",
+    "start": 1722.76,
+    "duration": 6.08
+  },
+  {
+    "text": "Tiny DB itu? Yuk, kita bahas.",
+    "start": 1725.88,
+    "duration": 5.399
+  },
+  {
+    "text": "Nah, pernah enggak kalian pada saat",
+    "start": 1728.84,
+    "duration": 6.16
+  },
+  {
+    "text": "kalian ee bermain game gitu ya, ketika",
+    "start": 1731.279,
+    "duration": 5.64
+  },
+  {
+    "text": "kita membuat game atau membuat aplikasi",
+    "start": 1735.0,
+    "duration": 5.279
+  },
+  {
+    "text": "di App Inventor misalnya aplikasinya itu",
+    "start": 1736.919,
+    "duration": 5.24
+  },
+  {
+    "text": "menghitung skor atau menghitung uang",
+    "start": 1740.279,
+    "duration": 3.841
+  },
+  {
+    "text": "gitu ya. Tapi ketika kita tutup",
+    "start": 1742.159,
+    "duration": 4.12
+  },
+  {
+    "text": "aplikasinya gitu ya, ketika kita close",
+    "start": 1744.12,
+    "duration": 5.279
+  },
+  {
+    "text": "atau HP kita kita tutup, nah pas kita",
+    "start": 1746.279,
+    "duration": 5.64
+  },
+  {
+    "text": "buka lagi mungkin besok harinya atau",
+    "start": 1749.399,
+    "duration": 4.0
+  },
+  {
+    "text": "beberapa jam kemudian atau beberapa",
+    "start": 1751.919,
+    "duration": 4.24
+  },
+  {
+    "text": "menit kemudian bahkan. Nah, apa sih yang",
+    "start": 1753.399,
+    "duration": 6.201
+  },
+  {
+    "text": "terjadi? Kadang yang terjadi adalah",
+    "start": 1756.159,
+    "duration": 7.4
+  },
+  {
+    "text": "ee levelnya atau skornya atau semua yang",
+    "start": 1759.6,
+    "duration": 6.0
+  },
+  {
+    "text": "kita simpan ke dalam aplikasinya itu dia",
+    "start": 1763.559,
+    "duration": 5.521
+  },
+  {
+    "text": "teriset atau apa ee dia jadi nol lagi",
+    "start": 1765.6,
+    "duration": 6.199
+  },
+  {
+    "text": "gitu ya. Kembali menjadi nilai awalnya.",
+    "start": 1769.08,
+    "duration": 4.479
+  },
+  {
+    "text": "misalnya nol ya, kalau misalnya di",
+    "start": 1771.799,
+    "duration": 4.36
+  },
+  {
+    "text": "aplikasi kita kita setnya nol skornya",
+    "start": 1773.559,
+    "duration": 5.12
+  },
+  {
+    "text": "atau nyawanya lima. Nah, misalnya kita",
+    "start": 1776.159,
+    "duration": 4.041
+  },
+  {
+    "text": "sudah main game, sudah capek-capek nih",
+    "start": 1778.679,
+    "duration": 4.041
+  },
+  {
+    "text": "gitu kan ya ee skornya jadi kembali ke",
+    "start": 1780.2,
+    "duration": 6.719
+  },
+  {
+    "text": "nol. Nah, ini terjadi karena ketika kita",
+    "start": 1782.72,
+    "duration": 6.52
+  },
+  {
+    "text": "menyimpan data itu kita menyimpannya",
+    "start": 1786.919,
+    "duration": 5.12
+  },
+  {
+    "text": "menggunakan variabel. Nah, kalau",
+    "start": 1789.24,
+    "duration": 5.319
+  },
+  {
+    "text": "misalnya kita tutup aplikasi tadi, dia",
+    "start": 1792.039,
+    "duration": 5.281
+  },
+  {
+    "text": "itu variabelnya itu bisa teriset yang",
+    "start": 1794.559,
+    "duration": 4.761
+  },
+  {
+    "text": "menyebabkan nilai yang ada di dalam",
+    "start": 1797.32,
+    "duration": 4.8
+  },
+  {
+    "text": "variabel itu pun juga kembali ke nilai",
+    "start": 1799.32,
+    "duration": 5.199
+  },
+  {
+    "text": "awalnya ya, misalnya 0 atau 5 dan",
+    "start": 1802.12,
+    "duration": 6.0
+  },
+  {
+    "text": "seterusnya. Nah, bayangin juga ketika",
+    "start": 1804.519,
+    "duration": 6.361
+  },
+  {
+    "text": "kita ee main game udah sampai di level",
+    "start": 1808.12,
+    "duration": 5.2
+  },
+  {
+    "text": "99 gitu ya, udah capek-capek tiba-tiba",
+    "start": 1810.88,
+    "duration": 4.48
+  },
+  {
+    "text": "baterainya habis gitu atau HP-nya",
+    "start": 1813.32,
+    "duration": 3.88
+  },
+  {
+    "text": "teriset gitu ya, kayak nge-lag. Jadi",
+    "start": 1815.36,
+    "duration": 4.52
+  },
+  {
+    "text": "kita harus ng-riset kan karena kita",
+    "start": 1817.2,
+    "duration": 4.76
+  },
+  {
+    "text": "menyimpan datanya menggunakan variabel",
+    "start": 1819.88,
+    "duration": 4.88
+  },
+  {
+    "text": "itu kan jadi kayak wah datanya akan",
+    "start": 1821.96,
+    "duration": 4.959
+  },
+  {
+    "text": "hilang gitu ya kan. Jadi bikin prasi",
+    "start": 1824.76,
+    "duration": 4.0
+  },
+  {
+    "text": "gitu ya. Kita sudah capek-capek main,",
+    "start": 1826.919,
+    "duration": 2.801
+  },
+  {
+    "text": "sudah capek-capek menggunakan",
+    "start": 1828.76,
+    "duration": 2.36
+  },
+  {
+    "text": "aplikasinya tapi datanya enggak bisa",
+    "start": 1829.72,
+    "duration": 4.52
+  },
+  {
+    "text": "disimpan. Nah, itulah kita membut ee",
+    "start": 1831.12,
+    "duration": 5.52
+  },
+  {
+    "text": "kenapa ee daripada kita menggunakan",
+    "start": 1834.24,
+    "duration": 4.48
+  },
+  {
+    "text": "variabel ketika kita mau menyimpan data,",
+    "start": 1836.64,
+    "duration": 4.759
+  },
+  {
+    "text": "sebaiknya kita menggunakan database.",
+    "start": 1838.72,
+    "duration": 4.799
+  },
+  {
+    "text": "Nah, ketika kita menggunakan variabel",
+    "start": 1841.399,
+    "duration": 4.361
+  },
+  {
+    "text": "itu bayangkan aja kayak misalnya kalian",
+    "start": 1843.519,
+    "duration": 5.201
+  },
+  {
+    "text": "ee melihat plat nomor mobil yang ada di",
+    "start": 1845.76,
+    "duration": 5.44
+  },
+  {
+    "text": "jalanan gitu ya. Nah, pas kalian tidur",
+    "start": 1848.72,
+    "duration": 4.64
+  },
+  {
+    "text": "besoknya kalian diminta untuk mengingat",
+    "start": 1851.2,
+    "duration": 3.959
+  },
+  {
+    "text": "kembali nomor platnya kan udah lupa",
+    "start": 1853.36,
+    "duration": 3.72
+  },
+  {
+    "text": "gitu. Karena data tersebut itu sementara",
+    "start": 1855.159,
+    "duration": 3.721
+  },
+  {
+    "text": "karena kita cuma nyimpannya di otak.",
+    "start": 1857.08,
+    "duration": 3.439
+  },
+  {
+    "text": "Tapi ketika kita menyimpannya,",
+    "start": 1858.88,
+    "duration": 3.759
+  },
+  {
+    "text": "menuliskan nomornya tadi di buku gitu",
+    "start": 1860.519,
+    "duration": 5.04
+  },
+  {
+    "text": "ya. Nah, itu kan selama bukunya masih",
+    "start": 1862.639,
+    "duration": 5.121
+  },
+  {
+    "text": "ada, catatan kita pun masih tetap ada",
+    "start": 1865.559,
+    "duration": 4.84
+  },
+  {
+    "text": "gitu ya. Nah, anggap aja otak kita",
+    "start": 1867.76,
+    "duration": 4.519
+  },
+  {
+    "text": "penyimpanan sementara itu namanya",
+    "start": 1870.399,
+    "duration": 4.841
+  },
+  {
+    "text": "variabel dan penyimpanan yang dalam",
+    "start": 1872.279,
+    "duration": 5.4
+  },
+  {
+    "text": "jangka panjang itu namanya database ya,",
+    "start": 1875.24,
+    "duration": 6.319
+  },
+  {
+    "text": "Teman-teman. Nah, selanjutnya",
+    "start": 1877.679,
+    "duration": 7.641
+  },
+  {
+    "text": "kalau misalnya kita mau mengaplikasikan",
+    "start": 1881.559,
+    "duration": 7.24
+  },
+  {
+    "text": "database dalam aplikasi kita agar",
+    "start": 1885.32,
+    "duration": 5.719
+  },
+  {
+    "text": "datanya kalau misalnya aplikasinya kita",
+    "start": 1888.799,
+    "duration": 5.72
+  },
+  {
+    "text": "reset atau kita matikan itu dia ee apa",
+    "start": 1891.039,
+    "duration": 5.801
+  },
+  {
+    "text": "ter datanya tetap ada, datanya permanen",
+    "start": 1894.519,
+    "duration": 4.88
+  },
+  {
+    "text": "di memori HP kita. Nah, kalau misalnya",
+    "start": 1896.84,
+    "duration": 4.52
+  },
+  {
+    "text": "datanya disimpan hanya di HP kita, itu",
+    "start": 1899.399,
+    "duration": 4.721
+  },
+  {
+    "text": "namanya database lokal. Nah, database",
+    "start": 1901.36,
+    "duration": 5.039
+  },
+  {
+    "text": "lokal itu berarti dia menyimpan datanya",
+    "start": 1904.12,
+    "duration": 4.08
+  },
+  {
+    "text": "di memori fisik HP. Jadi kita enggak",
+    "start": 1906.399,
+    "duration": 4.201
+  },
+  {
+    "text": "perlu upload dia ke internet, dia akan",
+    "start": 1908.2,
+    "duration": 5.479
+  },
+  {
+    "text": "stay dan bisa disimpan di dalam ee apa",
+    "start": 1910.6,
+    "duration": 5.24
+  },
+  {
+    "text": "tuh namanya? Di aplikasi HP kita selama",
+    "start": 1913.679,
+    "duration": 4.641
+  },
+  {
+    "text": "tanpa butuh kuota gitu ya, selama ee",
+    "start": 1915.84,
+    "duration": 5.28
+  },
+  {
+    "text": "penyimpanannya masih ada gitu ya. Nah,",
+    "start": 1918.32,
+    "duration": 5.079
+  },
+  {
+    "text": "itu tentang database lokal. Nah,",
+    "start": 1921.12,
+    "duration": 5.399
+  },
+  {
+    "text": "keuntungan database lokal dengan eh",
+    "start": 1923.399,
+    "duration": 7.681
+  },
+  {
+    "text": "database ee ini ya eh lokal dan database",
+    "start": 1926.519,
+    "duration": 6.321
+  },
+  {
+    "text": "server base gitu ya, kayak yang harus",
+    "start": 1931.08,
+    "duration": 3.439
+  },
+  {
+    "text": "connect Wii kayak misalnya Google Drive",
+    "start": 1932.84,
+    "duration": 4.16
+  },
+  {
+    "text": "atau OneDrive gitu ya. Nah, itu kan ee",
+    "start": 1934.519,
+    "duration": 4.921
+  },
+  {
+    "text": "penyimpanannya ee di server gitu ya, di",
+    "start": 1937.0,
+    "duration": 4.679
+  },
+  {
+    "text": "cloud. Nah, kalau kita menyimpannya",
+    "start": 1939.44,
+    "duration": 4.52
+  },
+  {
+    "text": "aplikasi kita menggunakan ee database",
+    "start": 1941.679,
+    "duration": 5.6
+  },
+  {
+    "text": "lokal itu dia kita bisa gunakan tanpa",
+    "start": 1943.96,
+    "duration": 5.24
+  },
+  {
+    "text": "koneksi internet gitu ya. Jadi, aplikasi",
+    "start": 1947.279,
+    "duration": 4.52
+  },
+  {
+    "text": "kita bisa nyimpan data, keuangan kita,",
+    "start": 1949.2,
+    "duration": 5.199
+  },
+  {
+    "text": "bisa nyimpan permainan kita, skor game",
+    "start": 1951.799,
+    "duration": 5.72
+  },
+  {
+    "text": "kita gitu ya, tanpa harus ee terhubung",
+    "start": 1954.399,
+    "duration": 6.081
+  },
+  {
+    "text": "dengan Wi-Fi atau internet.",
+    "start": 1957.519,
+    "duration": 5.88
+  },
+  {
+    "text": "Nah, kemudian ee kecepatannya juga",
+    "start": 1960.48,
+    "duration": 4.559
+  },
+  {
+    "text": "lumayan cepat ya kalau misalnya kita",
+    "start": 1963.399,
+    "duration": 4.201
+  },
+  {
+    "text": "menggunakan database lokal gitu. Karena",
+    "start": 1965.039,
+    "duration": 5.76
+  },
+  {
+    "text": "kalau misalnya ee karena kita enggak",
+    "start": 1967.6,
+    "duration": 8.079
+  },
+  {
+    "text": "perlu connect internet, Wi-Fi atau ya",
+    "start": 1970.799,
+    "duration": 7.681
+  },
+  {
+    "text": "mengakses server gitu ya kan ee kecepat",
+    "start": 1975.679,
+    "duration": 4.321
+  },
+  {
+    "text": "yang langsung simpan di telepon kita kan",
+    "start": 1978.48,
+    "duration": 3.12
+  },
+  {
+    "text": "kita enggak bergantung pada kecepatan",
+    "start": 1980.0,
+    "duration": 3.679
+  },
+  {
+    "text": "internet dan segala macam gitu. Jadi dia",
+    "start": 1981.6,
+    "duration": 4.12
+  },
+  {
+    "text": "ya sudah baca datanya terus dia simpan",
+    "start": 1983.679,
+    "duration": 4.081
+  },
+  {
+    "text": "datanya sudah secepat itu. Kemudian",
+    "start": 1985.72,
+    "duration": 4.079
+  },
+  {
+    "text": "datanya tidak akan hilang kecuali",
+    "start": 1987.76,
+    "duration": 4.08
+  },
+  {
+    "text": "aplikasinya diinstal dan instal atau",
+    "start": 1989.799,
+    "duration": 3.961
+  },
+  {
+    "text": "direset gitu ya teman-teman. Nah itu",
+    "start": 1991.84,
+    "duration": 5.559
+  },
+  {
+    "text": "keuntungan database lokal. Nah database",
+    "start": 1993.76,
+    "duration": 6.2
+  },
+  {
+    "text": "lokal inilah kalau misalnya di ketika",
+    "start": 1997.399,
+    "duration": 5.841
+  },
+  {
+    "text": "kita menggunakan MIT App Inventor itu",
+    "start": 1999.96,
+    "duration": 6.24
+  },
+  {
+    "text": "sebutannya Tiny DB gitu ya. Nah tiny",
+    "start": 2003.24,
+    "duration": 5.24
+  },
+  {
+    "text": "artinya kecil ya. DB itu singkatan dari",
+    "start": 2006.2,
+    "duration": 4.92
+  },
+  {
+    "text": "database ya. database yaitu tadi tempat",
+    "start": 2008.48,
+    "duration": 4.799
+  },
+  {
+    "text": "penyimpanan ee apa tuh namanya? data",
+    "start": 2011.12,
+    "duration": 5.399
+  },
+  {
+    "text": "yang jangka panjang. Nah, database",
+    "start": 2013.279,
+    "duration": 5.28
+  },
+  {
+    "text": "ringan yang sangat kuat untuk menyimpan",
+    "start": 2016.519,
+    "duration": 4.081
+  },
+  {
+    "text": "teks, angka, dan list. Jadi, dia apa tuh",
+    "start": 2018.559,
+    "duration": 5.08
+  },
+  {
+    "text": "namanya? Ee menyimpan teks, angka, dan",
+    "start": 2020.6,
+    "duration": 7.16
+  },
+  {
+    "text": "juga list. Nah, selanjutnya kita sudah",
+    "start": 2023.639,
+    "duration": 6.721
+  },
+  {
+    "text": "tahu nih tentang Tiny DB gitu kan ya.",
+    "start": 2027.76,
+    "duration": 5.6
+  },
+  {
+    "text": "Tiny DB itu dia sifatnya bekerja di",
+    "start": 2030.36,
+    "duration": 4.88
+  },
+  {
+    "text": "belakang layar yang artinya dia enggak",
+    "start": 2033.36,
+    "duration": 3.88
+  },
+  {
+    "text": "kelihatan, enggak ada tombol yang",
+    "start": 2035.24,
+    "duration": 3.799
+  },
+  {
+    "text": "menyatakan bahwa kita mau menyimpan dia",
+    "start": 2037.24,
+    "duration": 4.48
+  },
+  {
+    "text": "ke database, enggak ada. Jadi kita ee",
+    "start": 2039.039,
+    "duration": 5.081
+  },
+  {
+    "text": "apa itu aplikasinya akan langsung gitu",
+    "start": 2041.72,
+    "duration": 5.079
+  },
+  {
+    "text": "ya, akan langsung nyimpan di database",
+    "start": 2044.12,
+    "duration": 4.88
+  },
+  {
+    "text": "gitu, langsung di belakang layar tanpa",
+    "start": 2046.799,
+    "duration": 5.681
+  },
+  {
+    "text": "kita harus ngeklik apapun. Nah, jadi ee",
+    "start": 2049.0,
+    "duration": 6.76
+  },
+  {
+    "text": "apa itu namanya?",
+    "start": 2052.48,
+    "duration": 5.199
+  },
+  {
+    "text": "Kalau kita lihat di sini, nah ini ya",
+    "start": 2055.76,
+    "duration": 3.639
+  },
+  {
+    "text": "teman-teman ya. ketika kita desain",
+    "start": 2057.679,
+    "duration": 3.48
+  },
+  {
+    "text": "website gitu kan ya, terus kita harus",
+    "start": 2059.399,
+    "duration": 4.121
+  },
+  {
+    "text": "gear komponennya dari kiri gitu ya, dari",
+    "start": 2061.159,
+    "duration": 5.24
+  },
+  {
+    "text": "list komponen yang ada di MITF Inventor",
+    "start": 2063.52,
+    "duration": 4.96
+  },
+  {
+    "text": "kan kita ngeklik misalnya textbox untuk",
+    "start": 2066.399,
+    "duration": 4.72
+  },
+  {
+    "text": "input terus itu button dan label segala",
+    "start": 2068.48,
+    "duration": 4.679
+  },
+  {
+    "text": "macam ya. Tiny DB-nya itu enggak akan",
+    "start": 2071.119,
+    "duration": 4.04
+  },
+  {
+    "text": "masuk ke dalam layar HP-nya gitu ya.",
+    "start": 2073.159,
+    "duration": 3.96
+  },
+  {
+    "text": "Tiny DB-nya itu akan ada di bawah gitu",
+    "start": 2075.159,
+    "duration": 4.121
+  },
+  {
+    "text": "ya. Tulisannya ada nonvisible component.",
+    "start": 2077.119,
+    "duration": 4.28
+  },
+  {
+    "text": "Jadi dia komponennya ada di HP itu,",
+    "start": 2079.28,
+    "duration": 4.28
+  },
+  {
+    "text": "komponennya ada di aplikasi kita, namun",
+    "start": 2081.399,
+    "duration": 4.76
+  },
+  {
+    "text": "dia ee tidak terlihat gitu dan kita",
+    "start": 2083.56,
+    "duration": 4.44
+  },
+  {
+    "text": "tidak bisa otak-atik, tapi kita bisa",
+    "start": 2086.159,
+    "duration": 6.041
+  },
+  {
+    "text": "tambahkan ee kodenya.",
+    "start": 2088.0,
+    "duration": 4.2
+  },
+  {
+    "text": "Nah, Tiny DB ini dia menyimpan datanya",
+    "start": 2092.96,
+    "duration": 7.08
+  },
+  {
+    "text": "itu menggunakan yang namanya tag",
+    "start": 2096.399,
+    "duration": 5.321
+  },
+  {
+    "text": "store. Jadi, kalau misalnya kita",
+    "start": 2100.04,
+    "duration": 4.44
+  },
+  {
+    "text": "menggunakan variabel kan kita cuman ee",
+    "start": 2101.72,
+    "duration": 5.2
+  },
+  {
+    "text": "membuat nama variabel globalnya, terus",
+    "start": 2104.48,
+    "duration": 4.72
+  },
+  {
+    "text": "itu kita simpan isinya apa gitu ya. Nah,",
+    "start": 2106.92,
+    "duration": 5.199
+  },
+  {
+    "text": "kalau misalnya kita menggunakan tiny DB",
+    "start": 2109.2,
+    "duration": 5.44
+  },
+  {
+    "text": "itu dia ada pasangannya gitu ya.",
+    "start": 2112.119,
+    "duration": 4.24
+  },
+  {
+    "text": "Pasangan apa? Dia ada yang menggunakan",
+    "start": 2114.64,
+    "duration": 4.04
+  },
+  {
+    "text": "namanya tag, terus itu ada namanya value",
+    "start": 2116.359,
+    "duration": 5.561
+  },
+  {
+    "text": "to store. Value berarti data atau nilai.",
+    "start": 2118.68,
+    "duration": 4.56
+  },
+  {
+    "text": "To store itu berarti yang ingin",
+    "start": 2121.92,
+    "duration": 3.4
+  },
+  {
+    "text": "disimpan. Berarti value to store ini",
+    "start": 2123.24,
+    "duration": 3.72
+  },
+  {
+    "text": "artinya",
+    "start": 2125.32,
+    "duration": 3.799
+  },
+  {
+    "text": "data yang mau disimpan. Nah, ini kita",
+    "start": 2126.96,
+    "duration": 4.44
+  },
+  {
+    "text": "kasih tag, kita kasih tanda ya.",
+    "start": 2129.119,
+    "duration": 4.881
+  },
+  {
+    "text": "Maksudnya gimana? Coba kita lanjut dulu.",
+    "start": 2131.4,
+    "duration": 5.52
+  },
+  {
+    "text": "Tek itu adalah label atau pengenal atau",
+    "start": 2134.0,
+    "duration": 5.8
+  },
+  {
+    "text": "judul dari datamu. Biasanya itu dia",
+    "start": 2136.92,
+    "duration": 5.0
+  },
+  {
+    "text": "pasti tipenya itu berupa teks ya, string",
+    "start": 2139.8,
+    "duration": 4.84
+  },
+  {
+    "text": "ya. Misalnya tag-nya nama pemain, skor",
+    "start": 2141.92,
+    "duration": 4.679
+  },
+  {
+    "text": "tertinggi kalau misalnya game ini ya,",
+    "start": 2144.64,
+    "duration": 4.6
+  },
+  {
+    "text": "nama pemainnya siapa? Di dalam ee apa",
+    "start": 2146.599,
+    "duration": 4.841
+  },
+  {
+    "text": "tuh namanya? Ee dalam aplikasi ini kita",
+    "start": 2149.24,
+    "duration": 4.24
+  },
+  {
+    "text": "menyimpan nama pemainnya terus skor",
+    "start": 2151.44,
+    "duration": 3.679
+  },
+  {
+    "text": "tertinggi yang pernah dia mainkan tuh",
+    "start": 2153.48,
+    "duration": 3.92
+  },
+  {
+    "text": "berapa? Terus level dia sekarang atau",
+    "start": 2155.119,
+    "duration": 4.601
+  },
+  {
+    "text": "level dia sebelumnya itu level berapa",
+    "start": 2157.4,
+    "duration": 4.199
+  },
+  {
+    "text": "gitu ya. Jadi dia menyimpan tiga data",
+    "start": 2159.72,
+    "duration": 3.92
+  },
+  {
+    "text": "ini, itu kita kasih dulu tag dulu gitu",
+    "start": 2161.599,
+    "duration": 4.76
+  },
+  {
+    "text": "ya. Nah, kemudian",
+    "start": 2163.64,
+    "duration": 5.36
+  },
+  {
+    "text": "ee selain tag itu ada namanya value,",
+    "start": 2166.359,
+    "duration": 5.561
+  },
+  {
+    "text": "value to store. Nilainya apa? Jadi nilai",
+    "start": 2169.0,
+    "duration": 4.96
+  },
+  {
+    "text": "ini yang nanti kita simpan ke dalam",
+    "start": 2171.92,
+    "duration": 4.36
+  },
+  {
+    "text": "tag-nya ini. Jadi misalnya nama pemain",
+    "start": 2173.96,
+    "duration": 4.96
+  },
+  {
+    "text": "ee misalnya Rizki skor tertingginya 100,",
+    "start": 2176.28,
+    "duration": 6.2
+  },
+  {
+    "text": "levelnya 1. Nah, jadi anggap aja T ini",
+    "start": 2178.92,
+    "duration": 6.8
+  },
+  {
+    "text": "DB itu dia bisa menyimpan data ini semua",
+    "start": 2182.48,
+    "duration": 6.599
+  },
+  {
+    "text": "dalam satu ee dalam satu ee apa tuh",
+    "start": 2185.72,
+    "duration": 6.8
+  },
+  {
+    "text": "namanya? Tiny DB gitu ya. Nah, value to",
+    "start": 2189.079,
+    "duration": 5.401
+  },
+  {
+    "text": "store tuh nilainya. Jadi bayangkan aja",
+    "start": 2192.52,
+    "duration": 4.64
+  },
+  {
+    "text": "Ty DB ini tag sama value to store ini",
+    "start": 2194.48,
+    "duration": 4.359
+  },
+  {
+    "text": "kayak misalnya kita punya lima jenis",
+    "start": 2197.16,
+    "duration": 4.04
+  },
+  {
+    "text": "buku. Ada lima buku ya yang identikal",
+    "start": 2198.839,
+    "duration": 6.201
+  },
+  {
+    "text": "sama persis. Tapi buku yang satu itu dia",
+    "start": 2201.2,
+    "duration": 6.08
+  },
+  {
+    "text": "ee buku khusus untuk matematika. Yang",
+    "start": 2205.04,
+    "duration": 4.72
+  },
+  {
+    "text": "satu untuk IPA, yang satu untuk ee",
+    "start": 2207.28,
+    "duration": 4.68
+  },
+  {
+    "text": "fisika gitu ya atau biologi. Nah, jadi",
+    "start": 2209.76,
+    "duration": 4.0
+  },
+  {
+    "text": "masing-masing beda. Tapi karena bukunya",
+    "start": 2211.96,
+    "duration": 3.96
+  },
+  {
+    "text": "sama kita kan enggak tahu nih ini buku",
+    "start": 2213.76,
+    "duration": 4.559
+  },
+  {
+    "text": "apa. Akhirnya di depan bukunya itu kita",
+    "start": 2215.92,
+    "duration": 4.88
+  },
+  {
+    "text": "kasih nama gitu ya. Nah, namanya itu",
+    "start": 2218.319,
+    "duration": 5.241
+  },
+  {
+    "text": "adalah tag-nya. Terus itu mata pelajaran",
+    "start": 2220.8,
+    "duration": 4.44
+  },
+  {
+    "text": "yang kita simpan itu adalah value to",
+    "start": 2223.56,
+    "duration": 4.24
+  },
+  {
+    "text": "store-nya. Kayak misalnya pelajaran",
+    "start": 2225.24,
+    "duration": 4.04
+  },
+  {
+    "text": "matematika yang kita simpan di buku",
+    "start": 2227.8,
+    "duration": 3.12
+  },
+  {
+    "text": "matematika gitu ya. Kan enggak mungkin",
+    "start": 2229.28,
+    "duration": 4.44
+  },
+  {
+    "text": "nih kita tulis teksnya depannya ee apa",
+    "start": 2230.92,
+    "duration": 4.32
+  },
+  {
+    "text": "namanya? Buku matematika tapi yang",
+    "start": 2233.72,
+    "duration": 3.24
+  },
+  {
+    "text": "disimpan adalah pelajaran fisika atau",
+    "start": 2235.24,
+    "duration": 3.68
+  },
+  {
+    "text": "bahasa Inggris kan enggak nyambung ya.",
+    "start": 2236.96,
+    "duration": 5.44
+  },
+  {
+    "text": "Jadi ketika kita apa tag sama value to",
+    "start": 2238.92,
+    "duration": 6.36
+  },
+  {
+    "text": "store-nya itu akan berhubungan ya itu",
+    "start": 2242.4,
+    "duration": 4.64
+  },
+  {
+    "text": "ya. E ini kalau misalnya masih bingung",
+    "start": 2245.28,
+    "duration": 4.16
+  },
+  {
+    "text": "anggap aja tag itu sebagai stiker gitu",
+    "start": 2247.04,
+    "duration": 3.68
+  },
+  {
+    "text": "ya. Jadi kayak misalnya kita punya",
+    "start": 2249.44,
+    "duration": 4.159
+  },
+  {
+    "text": "kotakem ee mainan gitu di gudang kita",
+    "start": 2250.72,
+    "duration": 5.52
+  },
+  {
+    "text": "ada banyak kotak-kotak. Nah tulisan di",
+    "start": 2253.599,
+    "duration": 5.041
+  },
+  {
+    "text": "luarnya ini yang oh ini ee apa tuh",
+    "start": 2256.24,
+    "duration": 4.359
+  },
+  {
+    "text": "namanya? kotak ini untuk menyimpan",
+    "start": 2258.64,
+    "duration": 4.52
+  },
+  {
+    "text": "mainan lama gitu ya. Nah, mainan yang",
+    "start": 2260.599,
+    "duration": 4.841
+  },
+  {
+    "text": "ada di dalam kotak itu disebut dengan",
+    "start": 2263.16,
+    "duration": 4.08
+  },
+  {
+    "text": "value-nya tadi, nilainya gitu ya yang",
+    "start": 2265.44,
+    "duration": 3.32
+  },
+  {
+    "text": "disimpan.",
+    "start": 2267.24,
+    "duration": 3.96
+  },
+  {
+    "text": "Nah, ini yang harus ee penting harus",
+    "start": 2268.76,
+    "duration": 4.88
+  },
+  {
+    "text": "kita ketahui ketika kita membuat tag ya,",
+    "start": 2271.2,
+    "duration": 4.96
+  },
+  {
+    "text": "membuat tiny DB. Pastikan ketika kita",
+    "start": 2273.64,
+    "duration": 5.0
+  },
+  {
+    "text": "membuat tag itu dia harus unik. Jadi,",
+    "start": 2276.16,
+    "duration": 5.36
+  },
+  {
+    "text": "kita enggak boleh membuat tag yang sama",
+    "start": 2278.64,
+    "duration": 5.84
+  },
+  {
+    "text": "untuk menyimpan data yang berbeda jenis.",
+    "start": 2281.52,
+    "duration": 5.559
+  },
+  {
+    "text": "Jadi kalau kamu lupa nama tag yang kamu",
+    "start": 2284.48,
+    "duration": 5.879
+  },
+  {
+    "text": "buat, kita tidak akan bisa apa memanggil",
+    "start": 2287.079,
+    "duration": 5.481
+  },
+  {
+    "text": "datanya tadi gitu ya. Misalnya kita lupa",
+    "start": 2290.359,
+    "duration": 4.76
+  },
+  {
+    "text": "eh tadi kita nyimpan nama pemainnya itu",
+    "start": 2292.56,
+    "duration": 4.16
+  },
+  {
+    "text": "di nama tag-nya apa ya. Nah, itu jangan",
+    "start": 2295.119,
+    "duration": 3.161
+  },
+  {
+    "text": "sampai lupa gitu ya. Silakan dilihat",
+    "start": 2296.72,
+    "duration": 4.08
+  },
+  {
+    "text": "lagi, diperbaiki lagi dan intinya dia",
+    "start": 2298.28,
+    "duration": 4.6
+  },
+  {
+    "text": "harus unik gitu ya. Jangan sampai lupa.",
+    "start": 2300.8,
+    "duration": 3.92
+  },
+  {
+    "text": "Maksudnya unik ya jangan sampai ada dua",
+    "start": 2302.88,
+    "duration": 3.84
+  },
+  {
+    "text": "nama tag yang sama gitu ya. Kayak",
+    "start": 2304.72,
+    "duration": 5.28
+  },
+  {
+    "text": "misalnya kotak mainan lama sama kotak",
+    "start": 2306.72,
+    "duration": 4.8
+  },
+  {
+    "text": "mainan baru tapi kita tulisnya cuman",
+    "start": 2310.0,
+    "duration": 3.2
+  },
+  {
+    "text": "kotak mainan aja. Nah, dia itu bingung",
+    "start": 2311.52,
+    "duration": 4.12
+  },
+  {
+    "text": "kita mau ngambil mainan yang lama atau",
+    "start": 2313.2,
+    "duration": 4.84
+  },
+  {
+    "text": "mainan yang baru gitu kan. Kot tag-nya",
+    "start": 2315.64,
+    "duration": 4.24
+  },
+  {
+    "text": "namanya sama. Jadi jangan sampai kita",
+    "start": 2318.04,
+    "duration": 4.279
+  },
+  {
+    "text": "melakukan kesalahan tersebut. Oke,",
+    "start": 2319.88,
+    "duration": 6.239
+  },
+  {
+    "text": "lanjut. Sekarang",
+    "start": 2322.319,
+    "duration": 3.8
+  },
+  {
+    "text": "cara kita men kalau misalnya dalam MITP",
+    "start": 2326.359,
+    "duration": 4.841
+  },
+  {
+    "text": "Inventor cara kita menyimpan bareng ke",
+    "start": 2329.119,
+    "duration": 4.441
+  },
+  {
+    "text": "dalam bok atau men dalam laci tadi itu",
+    "start": 2331.2,
+    "duration": 5.6
+  },
+  {
+    "text": "ya ke dalam Tiny DB-nya itu ya kita",
+    "start": 2333.56,
+    "duration": 5.32
+  },
+  {
+    "text": "harus menggunakan perintah ya bloknya",
+    "start": 2336.8,
+    "duration": 3.799
+  },
+  {
+    "text": "biasanya warnanya ungu ya teman-teman",
+    "start": 2338.88,
+    "duration": 6.0
+  },
+  {
+    "text": "namanya call tiny db 1 ya kan karena",
+    "start": 2340.599,
+    "duration": 6.441
+  },
+  {
+    "text": "database apa tiny db-nya kan bisa banyak",
+    "start": 2344.88,
+    "duration": 5.0
+  },
+  {
+    "text": "ya jadi di sini kita tiny db satu nah",
+    "start": 2347.04,
+    "duration": 4.76
+  },
+  {
+    "text": "perintahnya namanya store valu itu",
+    "start": 2349.88,
+    "duration": 4.28
+  },
+  {
+    "text": "berarti untuk menyimpan nilai store.",
+    "start": 2351.8,
+    "duration": 4.44
+  },
+  {
+    "text": "Store itu kan menyimpan gitu ya sama",
+    "start": 2354.16,
+    "duration": 3.919
+  },
+  {
+    "text": "value nilai. Nah, biasa bentuknya",
+    "start": 2356.24,
+    "duration": 5.72
+  },
+  {
+    "text": "seperti ini. Call T di DP1 store value.",
+    "start": 2358.079,
+    "duration": 5.76
+  },
+  {
+    "text": "Nah, tag-nya kita kasih tag-nya. Habis",
+    "start": 2361.96,
+    "duration": 4.96
+  },
+  {
+    "text": "tag kita tambahin eh box tag di sini ya.",
+    "start": 2363.839,
+    "duration": 5.681
+  },
+  {
+    "text": "Kita kasih tulisannya nih nih score",
+    "start": 2366.92,
+    "duration": 4.679
+  },
+  {
+    "text": "game. Nah, ini enggak boleh pakai spasi",
+    "start": 2369.52,
+    "duration": 3.68
+  },
+  {
+    "text": "ya. Bagusnya jangan pakai spasi untuk",
+    "start": 2371.599,
+    "duration": 3.201
+  },
+  {
+    "text": "ngasih teks. Sama kayak kita mengasih",
+    "start": 2373.2,
+    "duration": 3.879
+  },
+  {
+    "text": "nama variabel gitu ya. Terus value to",
+    "start": 2374.8,
+    "duration": 3.64
+  },
+  {
+    "text": "store-nya berapa kita kasih nilainya?",
+    "start": 2377.079,
+    "duration": 2.921
+  },
+  {
+    "text": "Mungkin kalau misalnya kita mau nyimpan",
+    "start": 2378.44,
+    "duration": 4.159
+  },
+  {
+    "text": "dia integer, maka kita tampilnya teks di",
+    "start": 2380.0,
+    "duration": 4.2
+  },
+  {
+    "text": "sini. Kalau misalnya mau nyimpan teks",
+    "start": 2382.599,
+    "duration": 3.921
+  },
+  {
+    "text": "juga bisa. Berarti di sini tinggal kita",
+    "start": 2384.2,
+    "duration": 5.159
+  },
+  {
+    "text": "ganti menggunakan ee apa itu namanya?",
+    "start": 2386.52,
+    "duration": 6.4
+  },
+  {
+    "text": "Menggunakan teks seperti itu.",
+    "start": 2389.359,
+    "duration": 7.601
+  },
+  {
+    "text": "Oke, lanjut.",
+    "start": 2392.92,
+    "duration": 4.04
+  },
+  {
+    "text": "Nah, ketika kita menggunakan store value",
+    "start": 2397.4,
+    "duration": 5.08
+  },
+  {
+    "text": "gitu ya, pastikan",
+    "start": 2400.44,
+    "duration": 5.6
+  },
+  {
+    "text": "ee apa itu namanya? Jenisnya juga benar",
+    "start": 2402.48,
+    "duration": 5.16
+  },
+  {
+    "text": "ya. Jadi kayak misalnya kalau misalnya",
+    "start": 2406.04,
+    "duration": 3.68
+  },
+  {
+    "text": "dia teks berarti kita ngambil box yang",
+    "start": 2407.64,
+    "duration": 4.719
+  },
+  {
+    "text": "warna pink gitu ya yang ee apa tu",
+    "start": 2409.72,
+    "duration": 3.879
+  },
+  {
+    "text": "namanya yang berarti dia kita mau",
+    "start": 2412.359,
+    "duration": 2.921
+  },
+  {
+    "text": "menyimpan teks. Tapi kalau misalnya dia",
+    "start": 2413.599,
+    "duration": 3.441
+  },
+  {
+    "text": "angka pakainya blok biru yang dari",
+    "start": 2415.28,
+    "duration": 4.64
+  },
+  {
+    "text": "variabel-angka gitu, yang dari variabel.",
+    "start": 2417.04,
+    "duration": 6.24
+  },
+  {
+    "text": "Nah, ketika kita save ya ee itu sudah",
+    "start": 2419.92,
+    "duration": 5.96
+  },
+  {
+    "text": "pasti tersimpan di memori HP gitu ya.",
+    "start": 2423.28,
+    "duration": 4.24
+  },
+  {
+    "text": "Kalau kita enggak hapus, maka dia akan",
+    "start": 2425.88,
+    "duration": 4.76
+  },
+  {
+    "text": "otomatis akan selalu tersimpan di situ.",
+    "start": 2427.52,
+    "duration": 6.72
+  },
+  {
+    "text": "Nah, kalau kita sudah menyimpan datanya,",
+    "start": 2430.64,
+    "duration": 6.88
+  },
+  {
+    "text": "sekarang kita mau mengambil datanya gitu",
+    "start": 2434.24,
+    "duration": 5.359
+  },
+  {
+    "text": "ya. Kita mau ngasih lihat loh, wah tadi",
+    "start": 2437.52,
+    "duration": 3.48
+  },
+  {
+    "text": "skornya berapa ya yang sudah kita",
+    "start": 2439.599,
+    "duration": 4.041
+  },
+  {
+    "text": "simpan. Nah, untuk memanggil ya",
+    "start": 2441.0,
+    "duration": 4.4
+  },
+  {
+    "text": "menampilkan",
+    "start": 2443.64,
+    "duration": 5.0
+  },
+  {
+    "text": "data yang ada di Tiny DB, kita pakai get",
+    "start": 2445.4,
+    "duration": 4.64
+  },
+  {
+    "text": "value sekarang. Jadi kalau yang",
+    "start": 2448.64,
+    "duration": 3.28
+  },
+  {
+    "text": "sebelumnya itu store value, sekarang",
+    "start": 2450.04,
+    "duration": 4.72
+  },
+  {
+    "text": "kita get value-nya, kita ambil. Nah,",
+    "start": 2451.92,
+    "duration": 5.52
+  },
+  {
+    "text": "bentuknya seperti ini kurang lebih. Set",
+    "start": 2454.76,
+    "duration": 4.319
+  },
+  {
+    "text": "label score. Jadi, kita mau nyimpan",
+    "start": 2457.44,
+    "duration": 3.0
+  },
+  {
+    "text": "datanya itu di mana? Entah kita mau",
+    "start": 2459.079,
+    "duration": 2.881
+  },
+  {
+    "text": "nyimpan di label kah atau mau langsung",
+    "start": 2460.44,
+    "duration": 4.04
+  },
+  {
+    "text": "di dalam textbox kah itu bebas. Nah,",
+    "start": 2461.96,
+    "duration": 4.52
+  },
+  {
+    "text": "kita set dulu labelnya. Kalau kita taruh",
+    "start": 2464.48,
+    "duration": 5.24
+  },
+  {
+    "text": "di label terus kita set dia ke dalam",
+    "start": 2466.48,
+    "duration": 5.32
+  },
+  {
+    "text": "kita panggil nama tiny db-nya ya, tiny",
+    "start": 2469.72,
+    "duration": 5.04
+  },
+  {
+    "text": "db 1. Terus kita klik get value maka di",
+    "start": 2471.8,
+    "duration": 5.24
+  },
+  {
+    "text": "sini otomatis akan mengambil scornya,",
+    "start": 2474.76,
+    "duration": 4.559
+  },
+  {
+    "text": "mengambil nilainya.",
+    "start": 2477.04,
+    "duration": 5.52
+  },
+  {
+    "text": "Nah, terus di dalam Ty DB ada loh yang",
+    "start": 2479.319,
+    "duration": 6.681
+  },
+  {
+    "text": "namanya value if not depth. Jadi ketika",
+    "start": 2482.56,
+    "duration": 8.24
+  },
+  {
+    "text": "kita eh misalnya nih kita mau mencoba",
+    "start": 2486.0,
+    "duration": 7.839
+  },
+  {
+    "text": "mengambil data yang nama TK Score game,",
+    "start": 2490.8,
+    "duration": 5.96
+  },
+  {
+    "text": "tapi ternyata ini pemainnya baru pertama",
+    "start": 2493.839,
+    "duration": 5.401
+  },
+  {
+    "text": "kali main nih. Jadi datanya kosong. Nah,",
+    "start": 2496.76,
+    "duration": 5.44
+  },
+  {
+    "text": "daripada ee aplikasinya error karena",
+    "start": 2499.24,
+    "duration": 5.16
+  },
+  {
+    "text": "datanya kosong, nah, kita bisa",
+    "start": 2502.2,
+    "duration": 5.72
+  },
+  {
+    "text": "menggunakan nilai default ya, nilai",
+    "start": 2504.4,
+    "duration": 6.52
+  },
+  {
+    "text": "nilai ee darurat lah istilahnya ya.",
+    "start": 2507.92,
+    "duration": 5.28
+  },
+  {
+    "text": "Maksud nilai darurat ini ya berarti dia",
+    "start": 2510.92,
+    "duration": 4.08
+  },
+  {
+    "text": "ee kalau dia pertama main ya berarti",
+    "start": 2513.2,
+    "duration": 4.119
+  },
+  {
+    "text": "akan nilainya akan selalu nol gitu kalau",
+    "start": 2515.0,
+    "duration": 4.04
+  },
+  {
+    "text": "misalnya dia kosong. Tapi kalau misalnya",
+    "start": 2517.319,
+    "duration": 3.321
+  },
+  {
+    "text": "dia udah ada skor game-nya misalnya dia",
+    "start": 2519.04,
+    "duration": 3.68
+  },
+  {
+    "text": "sudah main ketiga kalinya skor game-nya",
+    "start": 2520.64,
+    "duration": 5.479
+  },
+  {
+    "text": "100 gitu ya. Oh, berarti ee teks teks",
+    "start": 2522.72,
+    "duration": 5.72
+  },
+  {
+    "text": "score game itu value-nya 100. Tapi kalau",
+    "start": 2526.119,
+    "duration": 3.841
+  },
+  {
+    "text": "misalnya 100nya enggak ada, dia akan",
+    "start": 2528.44,
+    "duration": 5.04
+  },
+  {
+    "text": "otomatis ngisi jadi nol gitu ya. Jadi",
+    "start": 2529.96,
+    "duration": 5.44
+  },
+  {
+    "text": "ketika kita menggunakan ini dib jangan",
+    "start": 2533.48,
+    "duration": 4.68
+  },
+  {
+    "text": "sampai datanya itu kosong ya, value-nya",
+    "start": 2535.4,
+    "duration": 5.439
+  },
+  {
+    "text": "itu kosong selalu harus diisi entah itu",
+    "start": 2538.16,
+    "duration": 5.8
+  },
+  {
+    "text": "nol atau petik 20 gitu ya. Kalau teks",
+    "start": 2540.839,
+    "duration": 5.24
+  },
+  {
+    "text": "yang penting dia harus ada datanya ya",
+    "start": 2543.96,
+    "duration": 5.72
+  },
+  {
+    "text": "harus menyimpan sesuatu.",
+    "start": 2546.079,
+    "duration": 3.601
+  },
+  {
+    "text": "Nah, sekarang teman-teman kita akan",
+    "start": 2560.319,
+    "duration": 6.561
+  },
+  {
+    "text": "membahas cara mengelola data yang aman",
+    "start": 2563.079,
+    "duration": 6.321
+  },
+  {
+    "text": "dan kita mau membahas juga tentang CRUD",
+    "start": 2566.88,
+    "duration": 4.92
+  },
+  {
+    "text": "atau crud ya yang ada di dalam MIT App",
+    "start": 2569.4,
+    "duration": 5.48
+  },
+  {
+    "text": "Inventor dan Tiny DB. Nah, sebelumnya",
+    "start": 2571.8,
+    "duration": 5.559
+  },
+  {
+    "text": "kita bahas dulu apa sih CRUD itu atau",
+    "start": 2574.88,
+    "duration": 5.88
+  },
+  {
+    "text": "CRU ya. Nah, CRU itu adalah singkatan",
+    "start": 2577.359,
+    "duration": 5.24
+  },
+  {
+    "text": "yang ada di dalam dunia pemrograman ya",
+    "start": 2580.76,
+    "duration": 4.68
+  },
+  {
+    "text": "dan di dalam khususnya di bagian",
+    "start": 2582.599,
+    "duration": 5.601
+  },
+  {
+    "text": "database ya, database engineering yang",
+    "start": 2585.44,
+    "duration": 4.119
+  },
+  {
+    "text": "eh jadi CRU itu singkatan ya",
+    "start": 2588.2,
+    "duration": 2.879
+  },
+  {
+    "text": "teman-teman. Singkatannya itu dari apa",
+    "start": 2589.559,
+    "duration": 4.921
+  },
+  {
+    "text": "nih? C itu adalah singkatan dari create.",
+    "start": 2591.079,
+    "duration": 6.361
+  },
+  {
+    "text": "Jadi ketika kita mau membuat sesuatu itu",
+    "start": 2594.48,
+    "duration": 5.96
+  },
+  {
+    "text": "eh C ya kita pakainya C create membuat",
+    "start": 2597.44,
+    "duration": 5.679
+  },
+  {
+    "text": "data atau membuat sesuatu yang baru. R",
+    "start": 2600.44,
+    "duration": 4.96
+  },
+  {
+    "text": "itu singkatan dari read atau membaca",
+    "start": 2603.119,
+    "duration": 5.761
+  },
+  {
+    "text": "membaca data. U itu update berarti kita",
+    "start": 2605.4,
+    "duration": 5.64
+  },
+  {
+    "text": "mau memperbarui data yang sudah ada yang",
+    "start": 2608.88,
+    "duration": 4.959
+  },
+  {
+    "text": "sudah kita buat dan delete untuk",
+    "start": 2611.04,
+    "duration": 5.92
+  },
+  {
+    "text": "menghapus data gitu ya. Oke. Nah,",
+    "start": 2613.839,
+    "duration": 5.321
+  },
+  {
+    "text": "sekarang coba kita bahas dari C sama",
+    "start": 2616.96,
+    "duration": 6.24
+  },
+  {
+    "text": "R-nya dulu. Create sama read. Nah, dari",
+    "start": 2619.16,
+    "duration": 6.32
+  },
+  {
+    "text": "sebelumnya ya video sebelumnya kita juga",
+    "start": 2623.2,
+    "duration": 5.08
+  },
+  {
+    "text": "sudah membahas tentang create sama read.",
+    "start": 2625.48,
+    "duration": 5.0
+  },
+  {
+    "text": "Nah, ketika kita menggunakan store value",
+    "start": 2628.28,
+    "duration": 4.44
+  },
+  {
+    "text": "itu artinya kita ketika kita menggunakan",
+    "start": 2630.48,
+    "duration": 5.52
+  },
+  {
+    "text": "tiny DB dan kita mau ngambil isinya itu",
+    "start": 2632.72,
+    "duration": 6.2
+  },
+  {
+    "text": "kan kita pakai tiny db. store value.",
+    "start": 2636.0,
+    "duration": 5.96
+  },
+  {
+    "text": "Berarti kita mau menyimpan membuat data",
+    "start": 2638.92,
+    "duration": 5.36
+  },
+  {
+    "text": "yang belum pernah kita buat sebelumnya.",
+    "start": 2641.96,
+    "duration": 5.159
+  },
+  {
+    "text": "Nah, maka itu store value apa? store",
+    "start": 2644.28,
+    "duration": 6.039
+  },
+  {
+    "text": "value itu sama aja dengan create. Nah,",
+    "start": 2647.119,
+    "duration": 5.321
+  },
+  {
+    "text": "kalau get value berarti kita mau ngambil",
+    "start": 2650.319,
+    "duration": 4.081
+  },
+  {
+    "text": "value-nya, mau memperlihatkan nilainya,",
+    "start": 2652.44,
+    "duration": 3.879
+  },
+  {
+    "text": "isinya apa sih yang ada di dalam tag",
+    "start": 2654.4,
+    "duration": 4.36
+  },
+  {
+    "text": "itu. Nah, itu juga itu disebut dengan",
+    "start": 2656.319,
+    "duration": 6.921
+  },
+  {
+    "text": "read membaca data gitu ya. Nah, kalau U",
+    "start": 2658.76,
+    "duration": 7.24
+  },
+  {
+    "text": "itu artinya update memperbarui data.",
+    "start": 2663.24,
+    "duration": 4.76
+  },
+  {
+    "text": "Nah, misalnya nih kita udah kita main",
+    "start": 2666.0,
+    "duration": 4.52
+  },
+  {
+    "text": "game misalnya skor tertinggi kita 100,",
+    "start": 2668.0,
+    "duration": 4.119
+  },
+  {
+    "text": "tapi karena kita mainin-mainin lagi kan",
+    "start": 2670.52,
+    "duration": 3.319
+  },
+  {
+    "text": "kita harus update dong high score-nya",
+    "start": 2672.119,
+    "duration": 5.801
+  },
+  {
+    "text": "kita. Nah, 100 menjadi 500 itu kita",
+    "start": 2673.839,
+    "duration": 6.201
+  },
+  {
+    "text": "perlu menggunakan yang namanya update",
+    "start": 2677.92,
+    "duration": 3.72
+  },
+  {
+    "text": "value.",
+    "start": 2680.04,
+    "duration": 4.16
+  },
+  {
+    "text": "Nah, apakah ada blok khusus bernama",
+    "start": 2681.64,
+    "duration": 4.36
+  },
+  {
+    "text": "update value? Kan kita sebelumnya sudah",
+    "start": 2684.2,
+    "duration": 4.359
+  },
+  {
+    "text": "bahas store value untuk menyimpan, get",
+    "start": 2686.0,
+    "duration": 4.24
+  },
+  {
+    "text": "untuk mengambil. Tapi kalau untuk",
+    "start": 2688.559,
+    "duration": 4.361
+  },
+  {
+    "text": "update, apakah ada data apa ada bloknya?",
+    "start": 2690.24,
+    "duration": 3.839
+  },
+  {
+    "text": "Nah, bloknya itu enggak ada ya,",
+    "start": 2692.92,
+    "duration": 3.12
+  },
+  {
+    "text": "Teman-teman. Enggak ada. Kalau kita cari",
+    "start": 2694.079,
+    "duration": 3.801
+  },
+  {
+    "text": "update value itu enggak ada. Kenapa",
+    "start": 2696.04,
+    "duration": 3.4
+  },
+  {
+    "text": "enggak ada?",
+    "start": 2697.88,
+    "duration": 4.12
+  },
+  {
+    "text": "Karena kalau misalnya kita meng-update",
+    "start": 2699.44,
+    "duration": 5.879
+  },
+  {
+    "text": "itu kita tinggal pakai perintah yang",
+    "start": 2702.0,
+    "duration": 6.88
+  },
+  {
+    "text": "namanya store value lagi, tapi tag-nya",
+    "start": 2705.319,
+    "duration": 5.561
+  },
+  {
+    "text": "tag yang sama yang sudah ada gitu ya.",
+    "start": 2708.88,
+    "duration": 3.52
+  },
+  {
+    "text": "Karena kita mau mengganti, mau",
+    "start": 2710.88,
+    "duration": 3.6
+  },
+  {
+    "text": "meng-update gitu. Karena tadi kita",
+    "start": 2712.4,
+    "duration": 4.6
+  },
+  {
+    "text": "menyimpan itu sama dengan store. Nah,",
+    "start": 2714.48,
+    "duration": 4.96
+  },
+  {
+    "text": "jadi apa tuh namanya? Perintahnya pun",
+    "start": 2717.0,
+    "duration": 5.2
+  },
+  {
+    "text": "juga sama. Ingat yang harus diperhatikan",
+    "start": 2719.44,
+    "duration": 5.52
+  },
+  {
+    "text": "di sini tag-nya itu harus sama persis.",
+    "start": 2722.2,
+    "duration": 4.8
+  },
+  {
+    "text": "Huruf besar sama kecilnya itu harus sama",
+    "start": 2724.96,
+    "duration": 5.8
+  },
+  {
+    "text": "persis. Jadi T ini DB itu bisa menimpa",
+    "start": 2727.0,
+    "duration": 7.24
+  },
+  {
+    "text": "data yang lama dengan data yang baru.",
+    "start": 2730.76,
+    "duration": 7.76
+  },
+  {
+    "text": "Oke, sekarang anggap aja misalnya gini,",
+    "start": 2734.24,
+    "duration": 6.56
+  },
+  {
+    "text": "kalau update itu kenapa si update ini",
+    "start": 2738.52,
+    "duration": 5.28
+  },
+  {
+    "text": "dia perintahnya sama dengan menyimpan?",
+    "start": 2740.8,
+    "duration": 5.4
+  },
+  {
+    "text": "Oke, bayangkan kita punya kardus ya,",
+    "start": 2743.8,
+    "duration": 5.6
+  },
+  {
+    "text": "kardus. Terus itu kardusnya tag-nya eh",
+    "start": 2746.2,
+    "duration": 6.0
+  },
+  {
+    "text": "atau namanya itu level gitu ya. Nah,",
+    "start": 2749.4,
+    "duration": 4.88
+  },
+  {
+    "text": "ketika kita melakukan update itu sama",
+    "start": 2752.2,
+    "duration": 4.879
+  },
+  {
+    "text": "aja dengan kita melakukan override atau",
+    "start": 2754.28,
+    "duration": 5.52
+  },
+  {
+    "text": "menimpa data. Jadi, kita punya data gitu",
+    "start": 2757.079,
+    "duration": 5.401
+  },
+  {
+    "text": "ya, misalnya kardus. Kardusnya ini",
+    "start": 2759.8,
+    "duration": 6.0
+  },
+  {
+    "text": "isinya itu pas di pagi hari ee menyimpan",
+    "start": 2762.48,
+    "duration": 4.92
+  },
+  {
+    "text": "kardus ini menyimpan angka satu gitu.",
+    "start": 2765.8,
+    "duration": 3.72
+  },
+  {
+    "text": "Anggap aja kita punya kardus fisik,",
+    "start": 2767.4,
+    "duration": 4.0
+  },
+  {
+    "text": "terus itu di dalamnya ada balon huruf",
+    "start": 2769.52,
+    "duration": 4.4
+  },
+  {
+    "text": "angka satu. Nah, di sore hari kita mau",
+    "start": 2771.4,
+    "duration": 5.08
+  },
+  {
+    "text": "mengubah kita punya kita mau menyimpan",
+    "start": 2773.92,
+    "duration": 5.8
+  },
+  {
+    "text": "balon huruf dua ya angka dua gitu ke",
+    "start": 2776.48,
+    "duration": 6.119
+  },
+  {
+    "text": "dalam kardus yang sama. Nah, karena",
+    "start": 2779.72,
+    "duration": 5.2
+  },
+  {
+    "text": "enggak cukup ya, karena kardusnya itu",
+    "start": 2782.599,
+    "duration": 5.601
+  },
+  {
+    "text": "hanya bisa menyimpan satu ee benda aja,",
+    "start": 2784.92,
+    "duration": 6.24
+  },
+  {
+    "text": "maka angka satu yang kita simpan di pagi",
+    "start": 2788.2,
+    "duration": 5.879
+  },
+  {
+    "text": "hari itu akan dibuang dan digantikan",
+    "start": 2791.16,
+    "duration": 5.8
+  },
+  {
+    "text": "dengan angka dua. Jadi, overright kita",
+    "start": 2794.079,
+    "duration": 6.881
+  },
+  {
+    "text": "mengganti datanya ya, menimpa karah jadi",
+    "start": 2796.96,
+    "duration": 6.599
+  },
+  {
+    "text": "yang angka satu itu otomatis dibuang",
+    "start": 2800.96,
+    "duration": 5.0
+  },
+  {
+    "text": "sama programnya terus diganti jadi angka",
+    "start": 2803.559,
+    "duration": 4.321
+  },
+  {
+    "text": "dua. Intinya intinya seperti itu ya. dia",
+    "start": 2805.96,
+    "duration": 5.04
+  },
+  {
+    "text": "akan mengganti. Nah, ini sekali lagi",
+    "start": 2807.88,
+    "duration": 5.64
+  },
+  {
+    "text": "penting jangan sampai ada typo ya ketika",
+    "start": 2811.0,
+    "duration": 4.8
+  },
+  {
+    "text": "kita menggunakan apa memanggil tagnya",
+    "start": 2813.52,
+    "duration": 4.48
+  },
+  {
+    "text": "kalau kita mau mengoverride. Ketika",
+    "start": 2815.8,
+    "duration": 4.96
+  },
+  {
+    "text": "misalnya kita punya ee tag gitu ya, kita",
+    "start": 2818.0,
+    "duration": 5.16
+  },
+  {
+    "text": "punya tadi DB terus itu tag-nya itu",
+    "start": 2820.76,
+    "duration": 4.72
+  },
+  {
+    "text": "skore S-nya besar tapi kita mau",
+    "start": 2823.16,
+    "duration": 4.159
+  },
+  {
+    "text": "melakukan update tapi kita salah nih",
+    "start": 2825.48,
+    "duration": 4.2
+  },
+  {
+    "text": "tag-nya kita pakai score-nya S-nya",
+    "start": 2827.319,
+    "duration": 6.121
+  },
+  {
+    "text": "kecil. Nah, kalau kita punya Tiny DB",
+    "start": 2829.68,
+    "duration": 5.72
+  },
+  {
+    "text": "dengan ee apa tu namanya? tag-nya",
+    "start": 2833.44,
+    "duration": 3.919
+  },
+  {
+    "text": "berbeda seperti ini. Ini dia dianggap",
+    "start": 2835.4,
+    "duration": 4.679
+  },
+  {
+    "text": "sebagai dua tiny baby. Jadi dia skor",
+    "start": 2837.359,
+    "duration": 6.2
+  },
+  {
+    "text": "kecil ini S kecil sama skor S-nya ee",
+    "start": 2840.079,
+    "duration": 7.561
+  },
+  {
+    "text": "skornya 2 ini itu dia eh S-nya besar sor",
+    "start": 2843.559,
+    "duration": 7.441
+  },
+  {
+    "text": "itu dia dianggap jadi dua tiny DB dua",
+    "start": 2847.64,
+    "duration": 7.4
+  },
+  {
+    "text": "database yang berbeda gitu ya. Jadi ee",
+    "start": 2851.0,
+    "duration": 5.92
+  },
+  {
+    "text": "apa teranya? Kalau perhatikan kalau",
+    "start": 2855.04,
+    "duration": 3.36
+  },
+  {
+    "text": "misalnya kita mau mengupdate atau",
+    "start": 2856.92,
+    "duration": 5.28
+  },
+  {
+    "text": "mengubah sesuatu ya itu dia tetap ee",
+    "start": 2858.4,
+    "duration": 6.76
+  },
+  {
+    "text": "namanya tag-nya jangan sampai salah.",
+    "start": 2862.2,
+    "duration": 6.56
+  },
+  {
+    "text": "Oke, kita lanjut dulu. Nah, sekarang",
+    "start": 2865.16,
+    "duration": 6.159
+  },
+  {
+    "text": "kalau misalnya di dalam ee apa tuh",
+    "start": 2868.76,
+    "duration": 4.079
+  },
+  {
+    "text": "namanya? Bentuknya di app inventor tuh",
+    "start": 2871.319,
+    "duration": 4.321
+  },
+  {
+    "text": "gimana nih? Sama ya. Call tiny DB store",
+    "start": 2872.839,
+    "duration": 4.321
+  },
+  {
+    "text": "value. Kita tetap sama kalau mau",
+    "start": 2875.64,
+    "duration": 3.76
+  },
+  {
+    "text": "menyimpan kita pakai store value terus",
+    "start": 2877.16,
+    "duration": 4.6
+  },
+  {
+    "text": "kita kasih tag ya, terus kita kasih",
+    "start": 2879.4,
+    "duration": 4.959
+  },
+  {
+    "text": "value-nya eh berapa. Nah, kalau misalnya",
+    "start": 2881.76,
+    "duration": 4.2
+  },
+  {
+    "text": "kita mau mengupdate sama juga. Jadi",
+    "start": 2884.359,
+    "duration": 3.441
+  },
+  {
+    "text": "kalau misalnya di sini awalnya 100 maka",
+    "start": 2885.96,
+    "duration": 5.08
+  },
+  {
+    "text": "di sini akan terapis jadi 100",
+    "start": 2887.8,
+    "duration": 5.6
+  },
+  {
+    "text": "kayak gitu.",
+    "start": 2891.04,
+    "duration": 5.36
+  },
+  {
+    "text": "Nah,",
+    "start": 2893.4,
+    "duration": 3.0
+  },
+  {
+    "text": "nah sekarang kita mau membahas tentang",
+    "start": 2896.8,
+    "duration": 4.96
+  },
+  {
+    "text": "delete atau menghapus data. Kalau kita",
+    "start": 2899.28,
+    "duration": 4.48
+  },
+  {
+    "text": "mau menghapus data, kapan kita perlu",
+    "start": 2901.76,
+    "duration": 3.88
+  },
+  {
+    "text": "menghapus data? Ya, kayak misalnya",
+    "start": 2903.76,
+    "duration": 4.16
+  },
+  {
+    "text": "aplikasi kita ee biar enggak kebanyakan",
+    "start": 2905.64,
+    "duration": 4.88
+  },
+  {
+    "text": "kapan sih ee tidak kebanyakan memorinya,",
+    "start": 2907.92,
+    "duration": 3.919
+  },
+  {
+    "text": "kapan sih kita harus menghapus data?",
+    "start": 2910.52,
+    "duration": 4.72
+  },
+  {
+    "text": "Misalnya ketika kita log akun yang sudah",
+    "start": 2911.839,
+    "duration": 5.961
+  },
+  {
+    "text": "diiloginin. Terus misalnya kita punya",
+    "start": 2915.24,
+    "duration": 4.599
+  },
+  {
+    "text": "button yang dia bisa mer-reset skore",
+    "start": 2917.8,
+    "duration": 4.4
+  },
+  {
+    "text": "atau merreset data atau ketika kita",
+    "start": 2919.839,
+    "duration": 5.161
+  },
+  {
+    "text": "menghapus histori ee histori pencarian",
+    "start": 2922.2,
+    "duration": 4.72
+  },
+  {
+    "text": "gitu ya. Misalnya nih dalam konteks",
+    "start": 2925.0,
+    "duration": 5.319
+  },
+  {
+    "text": "misalnya kita cari cara mm makan sushi",
+    "start": 2926.92,
+    "duration": 5.679
+  },
+  {
+    "text": "di sushi TI gitu misalnya kan itu kayak",
+    "start": 2930.319,
+    "duration": 4.681
+  },
+  {
+    "text": "malu banget tuh misalnya gitu ya. Nah",
+    "start": 2932.599,
+    "duration": 4.72
+  },
+  {
+    "text": "kita mau menghapus history maka data",
+    "start": 2935.0,
+    "duration": 4.48
+  },
+  {
+    "text": "yang ada itu harus dihapus gitu. sama",
+    "start": 2937.319,
+    "duration": 4.881
+  },
+  {
+    "text": "juga dengan app Inventor. Nah, ketika",
+    "start": 2939.48,
+    "duration": 5.2
+  },
+  {
+    "text": "kita menghapus",
+    "start": 2942.2,
+    "duration": 4.24
+  },
+  {
+    "text": "itu kita agak berbeda ya, kayak kita",
+    "start": 2944.68,
+    "duration": 5.24
+  },
+  {
+    "text": "meng-update nilai ee kita ee untuk",
+    "start": 2946.44,
+    "duration": 5.6
+  },
+  {
+    "text": "menghapus itu kita bisa juga menggunakan",
+    "start": 2949.92,
+    "duration": 3.919
+  },
+  {
+    "text": "sama dengan menyimpan dan juga",
+    "start": 2952.04,
+    "duration": 4.4
+  },
+  {
+    "text": "meng-update. Jadi pakai store value.",
+    "start": 2953.839,
+    "duration": 4.72
+  },
+  {
+    "text": "Nah, kita bisa store value-nya yang",
+    "start": 2956.44,
+    "duration": 4.399
+  },
+  {
+    "text": "awalnya kita panggil tek set apa tuh",
+    "start": 2958.559,
+    "duration": 5.321
+  },
+  {
+    "text": "namanya? Highest score yang awalnya 100.",
+    "start": 2960.839,
+    "duration": 5.921
+  },
+  {
+    "text": "Nah, ini kita ubah jadi nol gitu. Nah,",
+    "start": 2963.88,
+    "duration": 5.04
+  },
+  {
+    "text": "tapi kalau misalnya kita menggunakan",
+    "start": 2966.76,
+    "duration": 4.28
+  },
+  {
+    "text": "cara yang tadi ya, eh set value-nya jadi",
+    "start": 2968.92,
+    "duration": 4.399
+  },
+  {
+    "text": "nol itu kita enggak menghapus",
+    "start": 2971.04,
+    "duration": 4.12
+  },
+  {
+    "text": "database-nya kita itu bukan menghapus,",
+    "start": 2973.319,
+    "duration": 5.04
+  },
+  {
+    "text": "kita hanya ee mengosongkan aja nilainya.",
+    "start": 2975.16,
+    "duration": 6.24
+  },
+  {
+    "text": "Nah, untuk benar-benar nghapus data yang",
+    "start": 2978.359,
+    "duration": 4.601
+  },
+  {
+    "text": "dengan tag yang itu ya, misalnya high",
+    "start": 2981.4,
+    "duration": 3.6
+  },
+  {
+    "text": "score, kita mau menghapus tuh high score",
+    "start": 2982.96,
+    "duration": 4.56
+  },
+  {
+    "text": "misalnya kita nama pemainnya ee apa",
+    "start": 2985.0,
+    "duration": 4.359
+  },
+  {
+    "text": "namanya? Kak Yazid, terus itu high",
+    "start": 2987.52,
+    "duration": 4.0
+  },
+  {
+    "text": "scornya 500. Nah, kita mau menghapus",
+    "start": 2989.359,
+    "duration": 4.2
+  },
+  {
+    "text": "data, semua data yang terkait dengan Kak",
+    "start": 2991.52,
+    "duration": 5.52
+  },
+  {
+    "text": "Yazid, maka kita jangan pakai set value",
+    "start": 2993.559,
+    "duration": 5.641
+  },
+  {
+    "text": "lagi. Nah, kita pakainya apa? Kita",
+    "start": 2997.04,
+    "duration": 4.0
+  },
+  {
+    "text": "pakainya",
+    "start": 2999.2,
+    "duration": 5.399
+  },
+  {
+    "text": "delete. Nah, di sini untuk delete itu",
+    "start": 3001.04,
+    "duration": 6.279
+  },
+  {
+    "text": "kita pakai yang namanya clear tag. Nah,",
+    "start": 3004.599,
+    "duration": 4.72
+  },
+  {
+    "text": "clear tag itu berarti menghapus ya",
+    "start": 3007.319,
+    "duration": 4.641
+  },
+  {
+    "text": "tag-nya. Kalau misalnya tag-nya kita",
+    "start": 3009.319,
+    "duration": 5.401
+  },
+  {
+    "text": "hapus, maka otomatis value-nya pun akan",
+    "start": 3011.96,
+    "duration": 5.92
+  },
+  {
+    "text": "dihapus juga gitu ya. Jadi, selain ee",
+    "start": 3014.72,
+    "duration": 6.56
+  },
+  {
+    "text": "apa tuh namanya? select eh set value",
+    "start": 3017.88,
+    "duration": 5.6
+  },
+  {
+    "text": "atau call value ini eh apa itu namanya",
+    "start": 3021.28,
+    "duration": 4.92
+  },
+  {
+    "text": "kita pakainya clear tag juga gitu ya.",
+    "start": 3023.48,
+    "duration": 4.92
+  },
+  {
+    "text": "Nah, cukup masukin nama clear tag terus",
+    "start": 3026.2,
+    "duration": 4.48
+  },
+  {
+    "text": "masukin apa yang mau dihapus. Nih,",
+    "start": 3028.4,
+    "duration": 5.48
+  },
+  {
+    "text": "misalnya clear tag-nya nama siswa. Kalau",
+    "start": 3030.68,
+    "duration": 6.08
+  },
+  {
+    "text": "udah kita mau ada label yang menampaikan",
+    "start": 3033.88,
+    "duration": 5.04
+  },
+  {
+    "text": "oh akunnya sudah dihapus gitu ya. Ini",
+    "start": 3036.76,
+    "duration": 6.12
+  },
+  {
+    "text": "contoh di App Inventor.",
+    "start": 3038.92,
+    "duration": 3.96
+  },
+  {
+    "text": "Ketika kita menyimpan data itu apa atau",
+    "start": 3050.68,
+    "duration": 5.159
+  },
+  {
+    "text": "ee kita membuat menggunakan Ting DB.",
+    "start": 3053.599,
+    "duration": 4.0
+  },
+  {
+    "text": "Jangan lupa ya teman-teman ketika kita",
+    "start": 3055.839,
+    "duration": 3.641
+  },
+  {
+    "text": "membuat sesuatu kita harus buat dulu",
+    "start": 3057.599,
+    "duration": 4.121
+  },
+  {
+    "text": "flow chart-nya. Kita harus pastikan",
+    "start": 3059.48,
+    "duration": 5.119
+  },
+  {
+    "text": "flow-nya itu benar aplikasinya. Nah,",
+    "start": 3061.72,
+    "duration": 5.04
+  },
+  {
+    "text": "jadi ee apa tuh namanya? sebelum",
+    "start": 3064.599,
+    "duration": 4.441
+  },
+  {
+    "text": "aplikasinya disentuh pengguna, ee",
+    "start": 3066.76,
+    "duration": 4.96
+  },
+  {
+    "text": "pastikan kita alur aplikasinya dari awal",
+    "start": 3069.04,
+    "duration": 4.6
+  },
+  {
+    "text": "dibuka sampai aplikasinya ditutup tuh",
+    "start": 3071.72,
+    "duration": 4.399
+  },
+  {
+    "text": "udah ada flowchart-nya udah ada. Nah,",
+    "start": 3073.64,
+    "duration": 5.4
+  },
+  {
+    "text": "ketika kita ee yang paling penting itu",
+    "start": 3076.119,
+    "duration": 5.161
+  },
+  {
+    "text": "ee ketika aplikasinya dibuka ya yang",
+    "start": 3079.04,
+    "duration": 4.559
+  },
+  {
+    "text": "paling awal. Jadi kalau screen 1 do",
+    "start": 3081.28,
+    "duration": 4.16
+  },
+  {
+    "text": "initialize ketika HP-nya pertama kali",
+    "start": 3083.599,
+    "duration": 3.361
+  },
+  {
+    "text": "nyala atau aplikasinya pertama kali",
+    "start": 3085.44,
+    "duration": 4.159
+  },
+  {
+    "text": "dibuka itu flow-nya apa aja gitu ya.",
+    "start": 3086.96,
+    "duration": 4.56
+  },
+  {
+    "text": "Misalnya",
+    "start": 3089.599,
+    "duration": 4.96
+  },
+  {
+    "text": "ee misalnya nih di sini kita lihat kalau",
+    "start": 3091.52,
+    "duration": 6.279
+  },
+  {
+    "text": "misalnya screen satu dibuka itu aplikasi",
+    "start": 3094.559,
+    "duration": 6.24
+  },
+  {
+    "text": "akan ngelihat database-nya. Dia akan",
+    "start": 3097.799,
+    "duration": 5.721
+  },
+  {
+    "text": "ngelihat nih apakah ada skor, apakah ada",
+    "start": 3100.799,
+    "duration": 5.8
+  },
+  {
+    "text": "Tiny DB yang menyimpan skor gitu ya.",
+    "start": 3103.52,
+    "duration": 5.839
+  },
+  {
+    "text": "Kalau misalnya ada, maka kita langsung",
+    "start": 3106.599,
+    "duration": 5.081
+  },
+  {
+    "text": "update label skor-nya berdasarkan data",
+    "start": 3109.359,
+    "duration": 4.681
+  },
+  {
+    "text": "yang kita punya ini. Kalau misalnya",
+    "start": 3111.68,
+    "duration": 4.56
+  },
+  {
+    "text": "enggak ada, maka angkanya akan by",
+    "start": 3114.04,
+    "duration": 4.4
+  },
+  {
+    "text": "default dia akan nol, Gu, ya. Jadi",
+    "start": 3116.24,
+    "duration": 4.64
+  },
+  {
+    "text": "pastikan aplikasinya itu dari awal udah",
+    "start": 3118.44,
+    "duration": 4.119
+  },
+  {
+    "text": "nge-update. Jangan sampai pas kita klik",
+    "start": 3120.88,
+    "duration": 4.08
+  },
+  {
+    "text": "update dulu baru nanti nilainya e apa e",
+    "start": 3122.559,
+    "duration": 5.081
+  },
+  {
+    "text": "aplikasinya mengupdate gitu ya. Jadi ee",
+    "start": 3124.96,
+    "duration": 6.04
+  },
+  {
+    "text": "harusnya dari awal udah kita set. Oke,",
+    "start": 3127.64,
+    "duration": 5.88
+  },
+  {
+    "text": "lanjut dulu nih. Misalnya contohnya",
+    "start": 3131.0,
+    "duration": 4.96
+  },
+  {
+    "text": "kodenya seperti ini. Ketika screen 1 itu",
+    "start": 3133.52,
+    "duration": 6.079
+  },
+  {
+    "text": "diinitialize atau mulai kita mau tampil",
+    "start": 3135.96,
+    "duration": 5.119
+  },
+  {
+    "text": "score misalnya ini kita bikin game di",
+    "start": 3139.599,
+    "duration": 3.121
+  },
+  {
+    "text": "atas itu ada total score, highest",
+    "start": 3141.079,
+    "duration": 4.641
+  },
+  {
+    "text": "score-nya. Nah, ini kita kasih call ini",
+    "start": 3142.72,
+    "duration": 5.24
+  },
+  {
+    "text": "DB get value terus kita kasih tag-nya",
+    "start": 3145.72,
+    "duration": 4.92
+  },
+  {
+    "text": "skor game-nya berapa. Nah, di sini di",
+    "start": 3147.96,
+    "duration": 5.599
+  },
+  {
+    "text": "sini lihat value-nya itu enggak cuman",
+    "start": 3150.64,
+    "duration": 6.64
+  },
+  {
+    "text": "ini ya nama ininya bukan value ya, bukan",
+    "start": 3153.559,
+    "duration": 5.8
+  },
+  {
+    "text": "value tapi value tag if not there. Jadi",
+    "start": 3157.28,
+    "duration": 4.16
+  },
+  {
+    "text": "kalau misalnya enggak ada data yang ada",
+    "start": 3159.359,
+    "duration": 5.121
+  },
+  {
+    "text": "di dalam tiny DB1 maka dia akan otomatis",
+    "start": 3161.44,
+    "duration": 4.96
+  },
+  {
+    "text": "ngasih nol. Tapi kalau misalnya di sini",
+    "start": 3164.48,
+    "duration": 4.079
+  },
+  {
+    "text": "ternyata value-nya ada 100 maka di sini",
+    "start": 3166.4,
+    "duration": 5.719
+  },
+  {
+    "text": "akan otomatis terisi 100. Oke.",
+    "start": 3168.559,
+    "duration": 5.961
+  },
+  {
+    "text": "Nah, sekarang kalau misalnya kita",
+    "start": 3172.119,
+    "duration": 4.881
+  },
+  {
+    "text": "nyimpan data di dalam menggunakan Ting",
+    "start": 3174.52,
+    "duration": 4.839
+  },
+  {
+    "text": "DB di HP kita, kira-kira aman enggak ya?",
+    "start": 3177.0,
+    "duration": 6.079
+  },
+  {
+    "text": "Nah, jawabannya sangat aman karena ee",
+    "start": 3179.359,
+    "duration": 5.601
+  },
+  {
+    "text": "MIT App Inventor itu dia menerapkan",
+    "start": 3183.079,
+    "duration": 4.48
+  },
+  {
+    "text": "sesuatu yang namanya sandboxing. Apa sih",
+    "start": 3184.96,
+    "duration": 5.839
+  },
+  {
+    "text": "sandbox itu? Nah, sandbox itu bayangkan",
+    "start": 3187.559,
+    "duration": 5.681
+  },
+  {
+    "text": "kita kalian pernah enggak kalau misalnya",
+    "start": 3190.799,
+    "duration": 5.28
+  },
+  {
+    "text": "ke taman bermain kadang kan kalau kita",
+    "start": 3193.24,
+    "duration": 4.52
+  },
+  {
+    "text": "di taman bermain ada misalnya area",
+    "start": 3196.079,
+    "duration": 3.641
+  },
+  {
+    "text": "khusus untuk pasir sisanya mungkin",
+    "start": 3197.76,
+    "duration": 4.039
+  },
+  {
+    "text": "serumput-rumput atau sisanya mungkin",
+    "start": 3199.72,
+    "duration": 5.52
+  },
+  {
+    "text": "kayak area ee yang sudah dikasih semen",
+    "start": 3201.799,
+    "duration": 6.721
+  },
+  {
+    "text": "gitu ya. Nah, kotak pasir itu sebutannya",
+    "start": 3205.24,
+    "duration": 5.28
+  },
+  {
+    "text": "sandbox. Jadi kita hanya bisa bermain",
+    "start": 3208.52,
+    "duration": 4.44
+  },
+  {
+    "text": "kayak mobil-mobilan yang gali-galian itu",
+    "start": 3210.52,
+    "duration": 4.48
+  },
+  {
+    "text": "di kotak pasir itu. Jadi sama persis",
+    "start": 3212.96,
+    "duration": 5.2
+  },
+  {
+    "text": "gitu ya. Area khusus. area khusus",
+    "start": 3215.0,
+    "duration": 5.359
+  },
+  {
+    "text": "intinya sandbox. Nah, kalau misalnya di",
+    "start": 3218.16,
+    "duration": 4.48
+  },
+  {
+    "text": "dalam konteks aplikasi sandbox itu dia",
+    "start": 3220.359,
+    "duration": 4.2
+  },
+  {
+    "text": "membuatkan area khusus atau tempat",
+    "start": 3222.64,
+    "duration": 4.64
+  },
+  {
+    "text": "khusus yang nanti dia menyimpan aplikasi",
+    "start": 3224.559,
+    "duration": 5.441
+  },
+  {
+    "text": "kita. Jadi, data apa tu namanya aplikasi",
+    "start": 3227.28,
+    "duration": 5.6
+  },
+  {
+    "text": "lain misalnya aplikasi Instagram ee atau",
+    "start": 3230.0,
+    "duration": 4.52
+  },
+  {
+    "text": "aplikasi apapun dia enggak akan",
+    "start": 3232.88,
+    "duration": 4.04
+  },
+  {
+    "text": "terpengaruh gitu ya karena dia punya",
+    "start": 3234.52,
+    "duration": 6.0
+  },
+  {
+    "text": "area khusus, sandbox khusus gitu.",
+    "start": 3236.92,
+    "duration": 6.399
+  },
+  {
+    "text": "Nah, jadi dia sangat aman. Nah, tapi",
+    "start": 3240.52,
+    "duration": 5.64
+  },
+  {
+    "text": "kalau misalnya dia ee karena dia di e",
+    "start": 3243.319,
+    "duration": 4.641
+  },
+  {
+    "text": "apa tuh namanya? Di area khusus itu",
+    "start": 3246.16,
+    "duration": 3.399
+  },
+  {
+    "text": "kalau misalnya ada orang yang masuk ke",
+    "start": 3247.96,
+    "duration": 3.32
+  },
+  {
+    "text": "area khusus itu maksudnya itu kayak",
+    "start": 3249.559,
+    "duration": 3.881
+  },
+  {
+    "text": "orangnya buka aplikasi kita. Nah,",
+    "start": 3251.28,
+    "duration": 4.2
+  },
+  {
+    "text": "berarti dia bisa melihat semua data yang",
+    "start": 3253.44,
+    "duration": 4.879
+  },
+  {
+    "text": "kita masukin di sandbox itu ya. Nah,",
+    "start": 3255.48,
+    "duration": 4.8
+  },
+  {
+    "text": "makanya kalau misalnya datanya sensitif",
+    "start": 3258.319,
+    "duration": 3.28
+  },
+  {
+    "text": "gitu ya, kayak menyimpan data-data",
+    "start": 3260.28,
+    "duration": 3.36
+  },
+  {
+    "text": "keuangan atau data catatan-catatan",
+    "start": 3261.599,
+    "duration": 5.48
+  },
+  {
+    "text": "pribadi itu baiknya selalu buatkan",
+    "start": 3263.64,
+    "duration": 5.439
+  },
+  {
+    "text": "password ya. Kalau misalnya kita membuat",
+    "start": 3267.079,
+    "duration": 4.801
+  },
+  {
+    "text": "aplikasi yang ada ee menyimpan data",
+    "start": 3269.079,
+    "duration": 5.681
+  },
+  {
+    "text": "digital kita, data privied kita. Nah,",
+    "start": 3271.88,
+    "duration": 4.8
+  },
+  {
+    "text": "ini",
+    "start": 3274.76,
+    "duration": 5.64
+  },
+  {
+    "text": "bisa kalian buat.",
+    "start": 3276.68,
+    "duration": 3.72
+  },
+  {
+    "text": "Oke, untuk ee menghitung kehadiran",
+    "start": 3289.64,
+    "duration": 5.199
+  },
+  {
+    "text": "kalian silakan buat sebuah aplikasi",
+    "start": 3291.72,
+    "duration": 5.2
+  },
+  {
+    "text": "untuk Tiny DB ya. Nah, di mana",
+    "start": 3294.839,
+    "duration": 5.121
+  },
+  {
+    "text": "aplikasinya itu dia ee apa tuh namanya?",
+    "start": 3296.92,
+    "duration": 5.0
+  },
+  {
+    "text": "Ada label di sini ya, ada label sama",
+    "start": 3299.96,
+    "duration": 4.56
+  },
+  {
+    "text": "textbox. Nah, dari textbox-nya ini kita",
+    "start": 3301.92,
+    "duration": 4.439
+  },
+  {
+    "text": "mau menyimpan",
+    "start": 3304.52,
+    "duration": 4.599
+  },
+  {
+    "text": "ke dalam tiny DB. Terus itu kita bisa",
+    "start": 3306.359,
+    "duration": 4.841
+  },
+  {
+    "text": "ngebaca. Berarti kalau ngebaca dia ada",
+    "start": 3309.119,
+    "duration": 3.68
+  },
+  {
+    "text": "output-nya di bawah sini ada label yang",
+    "start": 3311.2,
+    "duration": 4.24
+  },
+  {
+    "text": "menyampilkan. Terus dia bisa menghapus",
+    "start": 3312.799,
+    "duration": 6.721
+  },
+  {
+    "text": "isinya gitu ya. coba ee kerjakan terus",
+    "start": 3315.44,
+    "duration": 6.0
+  },
+  {
+    "text": "itu kumpulkan aplikasinya di kotak di",
+    "start": 3319.52,
+    "duration": 4.36
+  },
+  {
+    "text": "bawah ini.",
+    "start": 3321.44,
+    "duration": 2.44
+  }
+]

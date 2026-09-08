@@ -1,0 +1,1278 @@
+[2.44] Halo teman-teman, pada video kali ini
+[5.28] kita akan membahas mengenai algoritma.
+[8.16] Apa sih algoritma itu? Yuk, kita
+[10.00] perhatikan slide berikut ini. Algoritma
+[13.84] e secara pengertian artinya adalah
+[16.08] langkah-langkah untuk menyelesaikan
+[17.68] masalah. Nah, sehari-hari biasanya kita
+[20.84] tuh sudah sebenarnya sudah melakukan
+[22.76] algoritma tapi kita tidak menyadarinya
+[25.56] secara langsung. Misalnya ketika kita
+[28.36] membuat mie instan, langkah-langkah yang
+[31.16] kita lakukan adalah misalnya merebus air
+[33.44] terlebih dahulu, terus memasukkan mie,
+[36.24] kemudian menunggu mie matang. Kalau
+[38.92] sudah matang, kita campurkan dengan
+[40.56] bumbu, kemudian kita sajikan. Nah,
+[43.40] langkah-langkah yang barusan kita
+[44.76] lakukan tadi dalam coding itu disebut
+[47.48] juga algoritma. Jadi algoritma itu juga
+[51.40] sama seperti sebuah resep atau tata cara
+[54.72] langkah demi langkah dalam menyelesaikan
+[57.08] suatu masalah.
+[59.00] Nah, algoritma itu dia bisa berbeda-beda
+[61.56] loh, Teman-teman. Masalahnya, maksudnya
+[63.68] yang berbeda-beda itu apa ya? Misalnya
+[65.52] kita punya sebuah masalah.
+[68.24] Contoh masalah yang kita punya adalah
+[71.00] kita ingin mencari nama Budi di dalam
+[74.44] list daftar absen siswa gitu. Nah, ada
+[77.04] dua cara yang bisa kita lakukan. Cara
+[79.08] pertama kita bisa cek tuh satu persatu
+[81.92] namanya dari atas sampai bawah dan
+[84.04] mencari nama Budi yang ada. Nah, cara
+[86.72] kedua kita mencari abset yang sudah urut
+[90.20] sesuai abset. Kemudian kita bisa cari
+[92.56] tuh namanya Budi sesuai dengan abjat
+[95.00] namanya yang pertama. Nah, jadi walaupun
+[98.04] cara ee
+[99.96] kita mempunyai masalah yang sama, cara
+[103.04] penyelesaiannya atau algoritmanya pun
+[105.16] bisa berbeda.
+[109.04] Nah, di dalam algoritma ada yang disebut
+[111.96] dengan optimasi algoritma. Optimasi
+[114.52] algoritma itu adalah sebuah usaha untuk
+[118.48] membuat langkah ee menyelesaikan suatu
+[121.04] masalah menjadi lebih efisien. Nah, yang
+[124.08] dimaksud dengan efisien itu apa sih?
+[125.76] Efisien yang dimaksud di sini di dalam
+[128.76] optimasi algoritma adalah yang pertama
+[131.16] langkah yang dilakukan sebuah algoritma
+[133.36] itu lebih sedikit. Kemudian waktu untuk
+[136.52] menyelesaikan masalah menggunakan
+[138.32] algoritma satu misal atau dua itu
+[140.84] waktunya lebih cepat. Yang ketiga
+[143.24] kodenya jauh lebih rapi. Dan yang
+[146.04] keempat tidak melakukan hal yang tidak
+[148.60] perlu dilakukan. Jadi program itu tetap
+[151.80] menyelesaikan tugasnya yang sama atau
+[154.64] masalah yang sama, tapi caranya lebih
+[157.84] optimal atau lebih pintar.
+[160.76] Nah, contoh dari optimasi algoritma
+[164.40] misalnya kita mempunyai masalah nih atau
+[167.16] ee ada sesuatu yang mau kita selesaikan
+[169.80] di sini kita mau mencari buku matematika
+[172.60] di perpustakaan. Nah, cara yang pertama
+[176.36] yang belum dioptimasi, cara yang lambat
+[178.72] itu kita mengecek buku satu persatu dari
+[182.36] rak paling ujung kiri sampai rak ujung
+[185.00] paling kanan. Nah, ketika kita
+[188.40] mengoptimasi algoritma kita tadi, kita
+[192.00] bisa melakukan dengan cara yang kedua.
+[194.96] Misalnya kita cari dulu ya katalog
+[198.48] pembel bukunya. Oh, ternyata buku
+[200.76] matematika terdapat di rak nomor 17.
+[203.32] Berarti kita langsung aja lanjut ke
+[207.92] menuju rak 17 untuk mencari buku
+[209.80] matematika yang kita mau cari. Nah,
+[212.44] walaupun tujuannya sama, tapi cara yang
+[215.20] kedua yang telah dioptimasi tadi lebih
+[217.08] efisien karena langkah yang dilakukan
+[219.12] itu jauh lebih sedikit. Karena tidak
+[220.96] kita tidak perlu berjalan dari ujung
+[222.96] paling kiri sampai ujung paling kanan.
+[229.12] Nah, untuk mengecek apakah teman-teman
+[231.12] sudah paham tentang optimasi algoritma
+[233.40] dan juga algoritma, silakan kerjakan
+[236.44] kuis berikut ini.
+[240.56] Nah, Teman-teman, dalam implementasi
+[243.68] algoritma di bahasa pemrograman Python
+[246.92] ada suatu istilah yaitu step count. Apa
+[249.88] sih step count itu? Step count adalah
+[252.44] jumlah langkah yang dilakukan oleh
+[254.48] sebuah algoritma. Misalnya jika kita
+[257.32] membuat sebuah program yang di mana dia
+[259.80] mengecek lima data satu persatu, maka
+[262.84] algoritma tersebut menyatakan bahwa ada
+[265.24] lima langkah pengecekan. Kurang lebih
+[267.32] lima langkah pengecekan yang dilakukan.
+[270.76] Yang kedua, kita membuat program yang
+[273.68] mengecek 100 data satu persatu. Maka
+[277.32] programnya harus akan membuat kurang
+[279.44] lebih sekitar 100 langkah untuk
+[282.00] melakukan sebuah task. Nah, bisa
+[284.52] dibilang semakin banyak langkah yang
+[286.28] dilakukan, maka semakin lama progres
+[289.68] atau proses sebuah program itu ee
+[293.08] menjalankan ee kodenya.
+[296.80] Nah, di dalam bahasa pemrograman Python,
+[300.60] ups, dalam sebuah bahasa pemroganan
+[303.08] Python contohnya contoh sederhana dari
+[306.08] step itu seperti ini. Misalnya kita
+[308.68] mempunyai sebuah array. Nah, array ini
+[311.64] menyimpan beberapa data.
+[314.08] datanya di sini ada integer angka ya
+[316.36] teman-teman. Angka 3, angka 7, angka 10,
+[320.08] 15, dan juga 20. Misalnya kita mau
+[323.24] membuat sebuah algoritma, sebuah program
+[326.40] yang ingin mencari angka 15 dari
+[329.28] tumpukan atau ee susunan angka yang kita
+[332.28] punya. Nah, secara algoritma, secara
+[335.72] langkah-langkah program itu pertama akan
+[338.24] mengecek dari awal ya sampai akhir.
+[340.72] Pertama dia mengecek dulu yang pertama
+[344.36] dari array, data pertama dari array
+[346.40] nomor 3. Nah, dia mengecek apakah 3
+[349.60] adalah 15, apakah 3 = 15? Oh, ternyata
+[354.28] bukan. Maka programnya akan melanjutkan
+[357.48] ke data yang kedua. Apakah 7 = 15? Bukan
+[362.28] juga.
+[363.24] maka dia akan lanjut ke data yang
+[365.24] ketiga. Apakah 10 = 15? Ternyata bukan.
+[369.92] Nah,
+[371.44] berarti dia pindah ke data yang keempat.
+[374.96] Apakah 15 = 15? Oh, ternyata iya. Maka
+[379.56] dari program kita buat algoritma program
+[382.28] yang kita buat tadi kurang lebih ada
+[384.96] empat count ya, empat step yang kita
+[387.92] lakukan. Pertama kita ngecek apakah 3 =
+[390.44] 15, 7 = 15 atau 10 = 15. Nah, kalau yang
+[396.16] terakhir ada, maka eh count-nya ya kan
+[399.80] step count-nya akan berhenti di situ.
+[402.04] Maka dari algoritma kita tadi totalnya
+[405.52] ada empat step count yang kita lakukan.
+[416.88] berat.
+[420.68] Nah, dalam bahasa pemrograman Python
+[424.04] berikut merupakan contoh simulasi
+[426.60] mencari sebuah angka berdasarkan array.
+[429.56] Kita perhatikan sama-sama ya,
+[430.80] Teman-teman. Pertama, di sini kita
+[433.60] mempunyai array yang sama seperti contoh
+[435.92] yang tadi ya. Array ini dinamakan dengan
+[438.88] number. dan numbers ini dia memiliki
+[441.88] data 3, 7, 10, 15, dan 20. Nah, kita
+[447.72] juga menyimpan sebuah variabel untuk
+[451.40] menetapkan data yang mau kita cari.
+[453.88] misalnya kita targetnya mau mencari
+[455.72] angka 15 dari array numbers tadi. Nah,
+[459.80] kemudian kita perlu mendeklarasikan juga
+[462.60] step count-nya. Mendeklarasikan variabel
+[465.68] untuk menyimpan berapa kali sih step
+[468.52] yang sudah kita lakukan untuk mencari,
+[470.64] untuk mencapai target yang sudah kita
+[472.68] tetapkan sebelumnya. Nah, di sini karena
+[476.24] kita melakukan hal yang sama berulang,
+[478.20] berulang, berulang, maka alangkah
+[480.20] baiknya kita menggunakan perulangan for.
+[484.68] Dalam perulangan for di sini
+[486.72] dideklarasikan perulangan for ini
+[488.76] mencari angka membuat variabel number ya
+[491.64] untuk menyimpan angka sementara yang
+[494.36] sesuai jumlahnya sesuai dengan angka
+[497.68] yang ada di dalam array numbers tadi.
+[501.24] Kemudian di sini dia
+[504.36] pertama kali yang akan dia lakukan untuk
+[506.76] ee kalau misalnya programnya sudah
+[508.04] jalan, pertama dia akan menambahkan dulu
+[511.16] angka satu ke dalam variabel steps ini
+[514.48] ya. Jadi awal nol kalau programnya sudah
+[518.16] jalan maka dia akan mendeklarasikan oh
+[520.40] ini langkah pertama gitu ya. Jadi anggap
+[523.12] aja ini kita langkah pertama ya. Langkah
+[524.84] pertama masih 0 kita tambah S. Oh
+[528.68] berarti sekarang stepnya step yang
+[530.36] pertama.
+[531.92] Nah, di sini ada sebuah condition yang
+[534.80] di mana dia mencari apa sih yang kita
+[537.84] cari? Oh, yang kita cari adalah angka 15
+[542.00] dari semua number yang ada di dalam
+[544.32] array numbers ini. Nah, variabel numbers
+[548.00] number yang ada di dalam yang baru kita
+[550.28] buat dari perulangan for ini itu kita
+[553.20] taruh nih sementara angka tiga. Angka
+[555.64] yang pertama kita taruh di dalam number
+[557.72] nih tiga. Sekarang dia mengecek jika
+[560.96] number oh number tadi kita simpannya
+[562.76] angka 3 ya. Jika atau if 3 = sama dengan
+[567.40] target targetnya berapa? 15. Maka di
+[570.56] sini kita cek apakah 3 = 15. Kalau benar
+[575.16] maka kita akan nge-print angka ditemukan
+[578.28] kemudian kita akan break. Nah apa itu
+[581.52] break? Nanti akan kita bahas, ya. Kalau
+[583.88] misalnya dia salah gimana? 3 kan kita
+[586.80] cek angka yang pertama tadi 3. 3 tidak
+[589.80] sama dengan sama dengan 15 ternyata
+[591.92] hasilnya tidak atau false. Maka
+[593.88] programnya akan mengulang lagi dari
+[596.44] awal. Nah, tadi angka 3 sudah kita cek.
+[601.56] Kemudian stepnya juga udah satu. Nah,
+[604.32] karena dia mengulang lagi dari sini dari
+[607.40] steps ini, sekarang angka 1 kita
+[610.56] tambahkan 1. 1 + 1 maka 2. Berarti
+[614.52] sekarang steps ini menyimpan angka dua
+[616.80] yang menandakan bahwa sekarang kita
+[618.56] sedang masuk tahap kedua.
+[622.28] Kita ambil angka yang kedua, angka 7.
+[626.28] Kita cek nih apakah 7 = 15? Oh, tidak.
+[632.64] maka dia akan mengulang kembali. Dilihat
+[636.28] ya di sini ya, kenapa yang ini tidak
+[637.84] jalan? Karena di sini ada indentation
+[640.04] yang berarti dia dua kode ini hanya akan
+[643.16] berjalan ketika kondisi if-nya ini
+[646.24] terpenuhi atau true. Nah, kalau tadi kan
+[648.64] 7 = 15 masih false, maka programnya akan
+[652.60] mengulang kembali.
+[654.88] Tadi kita sudah menyimpan angka dua,
+[657.12] sekarang kita menambahkan satu lagi ke
+[659.60] dalam duanya. Maka sekarang di sini
+[661.68] menyimpan langkah 3. Langkah ketiga dia
+[665.16] mengecek nih apakah 10 = sama 15 masih
+[669.96] false. Maka dia akan kembali ke langkah
+[673.28] steps tadi. Sekarang dia ngecek lagi
+[676.60] tadi. Langkah yang ketiga kita tambahkan
+[679.80] 1. Maka 3 + 1 4. Kita ada di langkah
+[683.40] keempat. Kita ambil nomor yang keempat.
+[687.60] Apakah 15 = sama dengan target? Wah,
+[690.88] ternyata benar atau true? Maka kita mau
+[694.24] nge-print, kita akan ee cetak tulisan
+[697.76] angka ditemukan dan juga kita akan
+[700.12] melakukan break yang berarti programnya
+[702.44] akan stop. Kalau bukan programnya story,
+[705.88] programnya enggak stop ya berarti
+[707.44] perulangan ini akan stop. Nah, kalau
+[710.44] misalnya perulangannya sudah stop, maka
+[713.16] dia akan menge-print jumlah langkahnya.
+[716.40] Nih yang tadi kita sudah tulis ya. Oh,
+[718.36] tadi kan kita sudah di langkah keempat
+[720.04] ya. Maka kita akan tulis jumlah
+[722.52] langkahnya. Baru dia akan memanggil isi
+[724.80] dari variabel steps tadi. Empat. Jumlah
+[727.00] langkah adalah 4 gitu ya. Jadi dia
+[730.08] nge-print dulu angkanya ditemukan baru
+[732.20] dia akan ngasih tahu ada berapa total
+[733.88] langkah yang dilakukan. Jadi ini
+[736.48] merupakan sebuah contoh menggunakan step
+[740.00] count dan juga loop di dalam bahasa
+[742.64] pemrograman Python. Nah, sekarang kita
+[745.52] bahas dulu yuk. Kenapa sih di sini harus
+[747.76] ada break?
+[750.40] Break itu digunakan untuk menghentikan
+[753.04] sebuah perulangan atau loop. Kalau
+[756.08] targetnya sudah ditemukan, seperti yang
+[758.00] kita contoh kita tadi ya, program tidak
+[760.00] perlu lagi mengecek data berikutnya.
+[762.92] Kalau enggak ada break, [berdehem]
+[765.20] program akan mengecek dari awal sampai
+[767.48] akhir padahal jawabannya sudah
+[769.96] ditemukan.
+[771.52] Nah, dengan menggunakan break ini, break
+[773.88] ini merupakan salah satu contoh dari
+[775.84] optimasi sederhana sebuah algoritma.
+[780.80] Nah, berikut merupakan contoh gimana
+[784.32] sebuah algoritma atau sebuah bahasa
+[786.88] pemroganan Python tadi tidak menggunakan
+[789.32] break. Di sini kita ee programnya sama
+[793.24] persis ya seperti yang tadi. Cuman
+[795.08] bedanya ketika kita sudah step keempat
+[797.92] tadi kan kita step keempat di sini udah
+[800.60] ini ya udah ketemu ya angkanya
+[802.40] ditemukan. Nah karena dia tidak ada
+[804.88] break maka programnya akan melanjutkan
+[807.40] perulangannya lagi sampai angka
+[809.96] numbers-nya ini sudah habis. dia akan
+[812.48] menambahkan stepnya yang awalnya 4 + 1
+[816.24] jadi 5. Kemudian apakah 5 sama dengan
+[820.36] apakah 20 ini ya kata angka yang kelima
+[823.72] apakah 20 sama dengan sama dengan
+[826.16] targetnya 15? Kalau enggak, maka dia
+[828.92] enggak akan nge-print si targetnya ini.
+[831.48] Nah, hasil output dari program ini itu
+[835.48] angkanya ditetemukan tapi jumlah langkah
+[838.12] yang dilakukan ada lima karena dia
+[839.84] mengecek semua angka yang tersedia di
+[843.48] dalam array numbers itu tadi. Jadi,
+[846.44] jangan lupa gunakan break untuk
+[850.20] menghentikan programnya. Menghentikan
+[852.68] loops-nya sor ya. Jadi menghentikan
+[854.80] bukan menghentikan program, menghentikan
+[856.20] loopnya.
+[857.80] supaya dia bisa melakukan langkah yang
+[860.40] selanjutnya.
+[862.08] Oke, itu contoh dari penggunaan optimasi
+[865.92] algoritma dengan ee break.
+[870.80] Nah, untuk mengecek pemahaman
+[872.72] teman-teman terkait
+[875.48] pemaha materi step count dan optimasi
+[878.44] algoritma, silakan kerjakan kuis berikut
+[881.24] ini.
+[884.52] Nah, Teman-teman, karena Teman-teman
+[886.16] sudah mengetahui apa itu optimasi dalam
+[888.56] sebuah algoritma dan juga Teman-teman
+[891.04] sudah tahu nih bentuknya optim
+[893.72] mengoptimas sebuah kode atau sebuah
+[896.52] algoritma,
+[898.40] sebenarnya kita sebagai programmer harus
+[902.00] lebih paham lagi cara mengoptimasikan
+[905.52] sebuah Aku enggak bisa ngomong soal
+[907.64] banget ya.
+[910.16] Nah, Teman-teman, dalam
+[913.04] mengimplementasikan optimasi sebuah
+[915.52] program atau algoritma, kita perlu
+[918.76] melakukan yang namanya dalam bahasa
+[920.52] pemrograman itu ada sesuatu yang disebut
+[923.80] dengan dry atau don't repeat your code.
+[926.64] Berarti kita tuh harus menghindari
+[929.32] membuat kode kita dilakukan secara ee
+[932.00] berulang. Misalnya di sini kita mau
+[935.72] melakukan sebuah print, ya. nge-print
+[938.96] semua nama-nama anak-anak yang ada di
+[941.48] kelas kita dengan sapaan halo. Jadi di
+[944.32] sini kita buat programnya menyapa halo
+[947.00] Andi, halo Budi, halo Citra, dan halo
+[949.40] Diana. Nah, pada saat kita melakukan ini
+[952.56] kan kodenya lumayan banyak ya. Kalau
+[955.12] dalam contoh ini kebetulan contohnya
+[957.56] hanya ada empat nama, tapi gimana kalau
+[959.40] misalnya di dalam satu kelas kalian ada
+[961.12] 20 anak gitu ya kan pasti panjang banget
+[964.00] ya kode yang harus kita tulis. Dan juga
+[966.28] misalnya kalian ingin mengganti nih, oh
+[968.48] kita enggak mau teksnya yang ditaruh di
+[970.72] sini hello, tapi kita mau ganti jadi
+[972.68] high. Bayangkan kalian harus mengganti
+[975.24] 40 baris yang awal halo jadi high. Nah,
+[979.36] itu kan sangat tidak efisien ya. Nah,
+[981.92] dalam bahasa Python ada nih cara yang
+[984.60] lebih efisien yang bisa kita lakukan
+[987.16] dengan menggunakan looping atau
+[989.84] perulangan. Nah, contoh yang di sini
+[992.68] kita bisa lakukan, kita bisa memasukkan
+[995.40] semua nama murid-murid yang ada di dalam
+[997.60] kelas kita ke dalam sebuah array. Anggap
+[1000.40] aja di sini ada [berdehem] perwakilan 4
+[1003.32] L siswa ya. Oh, empat siswa. Sori.
+[1006.68] Empat siswa ini dimasukkan ke dalam
+[1008.48] sebuah array. nama arrayanya adalah
+[1010.44] names.
+[1012.04] Di sini kita untuk mau kalau misal kita
+[1014.48] mau nge-print halo dan juga nama
+[1017.04] masing-masing anak yang ada di sini,
+[1019.12] kita tinggal menggunakan perulangan for.
+[1022.32] Di sini kita buat variabel name yang
+[1025.28] nanti akan menampung nama anak-anak ini
+[1027.28] sementara yang ada di dalam names ini.
+[1029.72] For name in names. Jadi intinya program
+[1032.96] ini akan berjalan sampai semua
+[1037.16] array ini habis gitu ya. Apa yang mau
+[1039.56] kita lakukan? Oh, kita mau nge-print.
+[1041.36] Halo, terus itu namanya nih ya. Jadi
+[1044.28] bentuknya misalnya programnya kita
+[1045.88] jalankan. pertama Andi akan e karena dia
+[1049.08] indeks ke nol ya indeks yang pertama
+[1051.44] maka dia akan dimasukkan duluan nih Andi
+[1053.92] ini namanya Andi ini datanya akan
+[1055.88] dimasukin ke dalam variabel sementara
+[1057.92] ini namanya name.
+[1060.52] Andi eh array pertama dia akan ngprint
+[1063.84] halo name. Maka dia akan ngprint halo
+[1066.84] Andi. Kemudian programnya kalau udah dia
+[1068.88] akan ngulang lagi. Setelah Andi ditarik
+[1071.24] dia akan narik Budi. Baru dia akan
+[1073.28] ngprint Budi. Citra dia taruh di dalam
+[1077.36] variabel name akan nge-print Citra dan
+[1080.08] sampai Diana. Setelah Diana, setelah
+[1083.00] nge-print Diana apakah datanya ada? Oh,
+[1084.96] ternyata tidak ada. Maka programnya akan
+[1087.04] stop. Bayangkan tadi kita ee mengetik ya
+[1091.60] di atasnya kita mengetik empat baris
+[1094.48] untuk menyapa empat teman kita. Di sini
+[1097.32] kita bisa gunakan tiga baris untuk
+[1100.76] menyapa empat teman kita. Bahkan bisa
+[1102.40] kita lebih ya, bisa 40 sesuai dengan
+[1104.96] data yang ada di dalam array names ini.
+[1107.52] Tadi kode di sini bisa dibilang sangat
+[1112.04] efisien dan sudah teroptimasi dengan
+[1114.52] maksimal. Nah, kenapa sih loop itu bisa
+[1118.16] membantu kita dalam mengoptimasi sebuah
+[1120.40] program atau algoritma? Loop membantu
+[1123.28] kita melakukan aksi yang sama yang kita
+[1126.04] lakukan berkali-kali tanpa harus membuat
+[1129.12] kita mengulang kode-kode tersebut.
+[1131.16] misalnya kita copy paste atau ya kita
+[1134.44] lakukan berulanglah.
+[1137.20] Jika datanya bertambah kita cubah kita
+[1140.64] cukup mengubah isi dari list yang ada e
+[1143.36] yang sudah kita buat. Misalnya di sini
+[1145.00] kita membuat list eh array eh
+[1149.96] names ya, nama array-nya names gitu ya,
+[1152.04] nama listnya names. Nah, kalau misalnya
+[1154.20] kita mau nambah datanya ya udah kita
+[1155.64] tinggal tambahin aja yang ada di dalam
+[1157.44] sini. kita tidak perlu meng-copy paste
+[1160.00] barisnya tadi
+[1163.64] program dengan menggunakan loop yang
+[1165.84] pertama pastinya jadi lebih rapi. Yang
+[1167.96] kedua jadi lebih murah mudah dirawat
+[1170.04] maksud lebih mudah dirawat ini tadi ya
+[1172.00] kalau misalnya kita mau mengganti halo
+[1174.00] menjadi high kan jauh lebih cepat kalau
+[1176.16] misalnya kita tinggal mengubah satu teks
+[1178.52] ini saja gitu ya. Kemudian yang ketiga
+[1181.64] programnya jadi lebih mudah
+[1183.08] dikembangkan. Jadi kita mau kalau
+[1184.56] misalnya mau say terus itu di bawahnya
+[1187.60] kita masukin nomor absennya. Nah, itu
+[1189.36] bisa lebih mudah lagi mengembangkan kode
+[1192.24] sederhananya tadi.
+[1195.48] Nah, dalam mengoptimasikan
+[1198.40] sebuah algoritma atau bahasa pemrograman
+[1200.48] Python
+[1202.08] itu kita bisa lihat contohnya seperti
+[1205.04] berikut ini ya. Misalnya kita mempunyai
+[1208.48] lima angka dan kita mau menjumlahkan
+[1210.88] semua angka. [berdehem]
+[1212.48] Bayangkan kalian membuat sebuah ee
+[1215.68] variabel di sini ya, variabel. Dan di
+[1217.88] dalam variabel ini dia akan menjumlahkan
+[1220.64] semuanya langsung seperti ini. Jadi sama
+[1222.28] seperti kalkulator ya, Teman-teman ya.
+[1224.48] Nah, setelah dia menjumlahkan dia akan
+[1226.60] simpan ke dalam variabel total yang
+[1228.76] kemudian totalnya itu variabel total itu
+[1230.72] akan diprint. Nah,
+[1233.96] cara yang seperti ini itu masih mudah
+[1237.88] ya, mudah kita lakukan kalau datanya
+[1240.52] masih sedikit. angkanya masih sedikit,
+[1243.28] tapi bagaimana kalau kita mau
+[1244.60] menjumlahkan tambah 60 + 70 saya terusa
+[1248.04] sampai 100. Itu pasti melelahkan kan ya,
+[1250.96] Teman-teman ya. Nah, dengan kita
+[1253.60] melakukan optimasi kita bisa menggunakan
+[1256.92] contoh
+[1258.44] cara yang sebelumnya kita sudah
+[1259.64] pelajarin nih. Di sini kita membuat
+[1261.96] listnya dulu, membuat array-nya. Kita
+[1264.20] bikin namanya numbers. Semua number-nya
+[1267.44] kita simpan ke dalam sebuah array.
+[1270.44] Kemudian kita membuat total variabel
+[1273.44] yang nanti akan menampung totalnya.
+[1276.48] Di sini kita menggunakan perulangan for
+[1279.32] loop.
+[1281.28] Perulangan for loop ini pertama dia
+[1283.40] menggunakan variabel sementara namanya
+[1285.76] number dan dia akan menjalankan semua
+[1288.68] data yang ada di dalam array namanya
+[1290.60] numbers.
+[1292.16] Yang dia lakukan perulangannya yang
+[1293.80] dilakukan apa? Oh, dia akan menjumlahkan
+[1297.36] berapapun nilai yang ada di tootal
+[1299.16] dengan data yang ada di dalam variabel
+[1301.96] number sementara ini tadi. Nah,
+[1303.60] maksudnya tuh gimana? Misalnya kita coba
+[1305.56] misalnya programnya kita jalankan
+[1308.68] for number. Pertama dia akan turunkan
+[1310.84] dulu 10 dan simpan ke dalam variabel
+[1313.52] number ini. Variabel sementaranya
+[1316.32] totalnya berapa? Yang pertama totalnya
+[1319.12] 0. 0 kita tambahkan datanya yang pertama
+[1322.44] 10. 0 + 10 berapa? Oh, nilainya 10.
+[1326.04] Berarti kita simpan 10 tadi ke dalam
+[1328.80] variabel total. Kemudian kita ambil data
+[1331.60] kedua, kita masukkan ke dalam variabel
+[1333.64] sementara number ini tadi. Total tadi
+[1336.88] totalnya sekarang nilainya 10 kita
+[1339.04] tambah 20 nilainya berapa? 10 + 20 30
+[1343.04] maka dia akan menyimpan ke dalam total
+[1345.52] jadi 30. Begitu seterusnya seterusnya
+[1349.04] sampai data yang ada di dalam variable
+[1351.00] numbers itu telah habis.
+[1353.80] Nah, [berdehem] berarti di sini nilai
+[1355.96] total nilai yang kita dapatkan adalah
+[1358.24] 150.
+[1360.00] Karena tadi 30 kita misalnya datanya
+[1362.52] terakhir 30 tambahin 30 60
+[1366.44] + 40
+[1368.20] 100 + 50 nilai 150.
+[1372.20] Jadi programnya bisa dipakai untuk
+[1375.56] jumlah data yang lebih banyak secara
+[1377.20] otomatis. Nah, ini kan datanya masih
+[1379.68] lima. Misalnya kita mau nambahkan 100
+[1381.76] data lagi misalnya sampai 1.000 ya
+[1384.40] misalnya teman-teman atau 10.000. Nah
+[1386.48] kalau misalnya kita mau menambahkan
+[1387.88] penjumlahannya kita tinggal masukkan dia
+[1389.84] ke dalam list ini tadi ke dalam array
+[1392.96] numbers-nya ini tadi. Dan ketika
+[1395.00] programnya dijalankan akan jauh lebih
+[1396.80] efisien daripada kita harus ngetik plus
+[1399.28] sebelum plus plus dan seterusnya.
+[1402.72] Oke. Nah, ada cara lagi yang lebih
+[1406.08] efisien lagi teman-teman. Secara yang
+[1408.20] lebih efisien lagi, dalam bahasa
+[1410.32] pemrograman Python itu ada sebuah
+[1412.60] function bawaan namanya SU atau
+[1416.28] tulisannya su buka kurung tutupung.
+[1418.68] Ingat ya, Teman-teman ya, kalau ada buka
+[1420.04] kurung tutup kurung ini berarti dia
+[1421.44] sebuah function. Misalnya di sini sama
+[1424.52] ya, kita simpan datanya ke dalam sebuah
+[1426.72] list. Kemudian dalam variabel total itu
+[1430.20] tadi daripada kita tuliskan jumlah ya 10
+[1434.84] + 20 dan seterusnya kita tuliskan
+[1439.04] function-nya namanya SU ini terus kita
+[1441.68] masukkan nih yang mana yang mau kita eh
+[1444.60] yang mana yang mau kita sukan atau kita
+[1447.08] jumlahkan. Oh, yang mau kita jumlahkan
+[1449.12] adalah array atau list namanya numbers.
+[1451.92] Ya udah berarti kita turunin ini sum
+[1453.88] numbers berarti hitung atau jumlahkan
+[1456.32] numbers ini tadi ketika kita jumlahkan
+[1458.72] sama nilainya kan 150 [mendengus] tapi
+[1461.52] programnya jauh lebih singkat dan lebih
+[1464.24] mudah dibaca ee di mata ya ee kita
+[1468.08] sebagai seorang programmer.
+[1471.60] Nah, dari tiga cara tadi coba kita
+[1473.96] bandingkan. Ternyata kalau misal ada
+[1477.56] tiga cara atau tiga algoritma yang bisa
+[1479.72] kita pakai, yang pertama kita bisa
+[1482.80] lakukan secara manual ya, jumlahkan
+[1484.48] manual atau kita gunakan looping atau
+[1488.44] kita bisa juga menggunakan S. Ya, semua
+[1491.80] cara ini benar, Teman-teman. Semua cara
+[1494.20] ini bisa kita lakukan. Tapi konteksnya
+[1497.16] berbeda-beda. Misalnya kalau kita
+[1499.36] menggunakan cara manual itu kebetulan oh
+[1501.48] datanya terlalu sedikit nih. Kita
+[1503.32] misalnya menjumlahkan dua atau tiga aja
+[1505.60] berarti manual aja enggak masalah. Tapi
+[1507.32] kalau datanya udah 5, 10, 100 itu lebih
+[1510.36] baik gunakan loop. Atau kalau misalnya
+[1513.00] mau lebih ringkas lagi ya gitu ya,
+[1515.36] misalnya datanya enggak udah enggak
+[1516.40] berubah-berubah lagi kita bisa
+[1517.72] menggunakan SAM juga. konteksnya berbeda
+[1522.24] kap ee di sini sudah kita coba tadi ya
+[1525.04] kapan kita bisa pakai ee cara-cara tadi
+[1528.36] intinya kita bisa sesuaikan dengan use
+[1530.12] cas kita tadi. Nah, dalam melakukan
+[1532.96] sebuah optimasi bahasa algoritma atau
+[1536.24] bahasa pemrograman Python,
+[1539.64] kode terpendek itu belum bukan berarti
+[1542.20] selalu yang paling benar.
+[1544.56] kode yang pendek itu belum tentu paling
+[1547.28] mudah kita pahami. Ketika kita melakukan
+[1550.52] sebuah optimasi, ada beberapa yang perlu
+[1554.04] menjadi pertimbangannya. Yang pertama,
+[1556.32] jumlah langkah yang dilakukan, kecepatan
+[1559.44] kode itu mengeksekusi
+[1562.00] ee tugas yang kita berikan. Terus gimana
+[1564.88] sih kodenya supaya bisa rapi? Kemudian
+[1567.96] apa walaupun rapi apakah bisa dibaca?
+[1570.84] Kemudian kalau nanti ada error atau bug,
+[1572.96] apakah kita bisa memperbaikinya? Jadi
+[1576.04] pilihlah sebuah algoritma [berdehem]
+[1577.96] yang cocok dengan konteksnya. Kalau
+[1580.24] misalnya data kalian cuman tiga, terus
+[1583.16] itu kalian menggunakan Zoom, apakah
+[1585.20] menurut kalian nanti bisa mudah dibaca
+[1588.56] atau menurut kalian algoritma yang
+[1590.20] kalian mau pakai itu cuman langsung
+[1591.76] ditambahkan? Nah, itu kalian cocokkan,
+[1594.60] kalian sesuaikan dengan konteks yang
+[1596.88] ingin kalian selesaikan.
+[1599.72] Nah, untuk mengetahui
+[1602.96] pemahaman teman-teman mm sampai mana
+[1606.08] gitu ya dalam memahami
+[1610.40] log ee algoritma optimasi algoritma
+[1613.68] tadi, silakan lakukan kuis berikut ini.
+[1618.80] Nah, Teman-teman
+[1621.12] untuk dijadikan sebagai absensi gitu ya
+[1624.32] atau ee dijadikan sebagai eh dijadikan
+[1628.36] dijadikan
+[1630.20] agar teman-teman bisa memahami lebih
+[1632.48] jauh lagi tentang optimasi dalam bahasa
+[1635.44] pemrograman Python, silakan kerjakan
+[1638.00] mini project atau mini kuis berikut ini.
+[1641.16] Jadi, di sini kita akan membuat perlu
+[1643.40] membuat sebuah program yang mencari nama
+[1645.48] dalam daftar siswa. Syarat program yang
+[1648.20] harus kalian buat yang pertama dia
+[1650.60] mempunyai list atau array yang bisa
+[1652.76] menyimpan daftar nama anak-anak gitu ya.
+[1655.64] Kalian bisa tambahkan 5 sampai 10 data
+[1658.04] DAMI yang nanti dijadikan mm sebagai
+[1661.92] data eh project kalian gitu ya. Kemudian
+[1665.88] buat sebuah sat target. Misalnya kalian
+[1668.40] mau mencari nama yang paling tengah atau
+[1670.60] nama yang paling kanan. Kemudian
+[1673.60] programnya harus bisa menghitung berapa
+[1676.24] langkah yang dilakukan oleh sebuah
+[1678.20] algoritma atau sebuah program tadi dalam
+[1680.40] mencapai targetnya tadi, mencari
+[1682.08] targetnya tadi. Dan programnya harus
+[1686.04] berhenti jika namanya sudah ditemukan.
+[1689.04] Jadi, programnya tidak mengecek
+[1690.28] keseluruhan daftar nama atau list nama
+[1692.92] kalian yang tadi kalian sudah buat. Tapi
+[1694.72] kalau misalnya sudah ketemu, dia akan
+[1695.92] stop. Kemudian dia akan menampilkan
+[1698.40] apakah datanya ditemukan atau tidak.
+[1700.56] silakan mengerjakan pada
+[1703.48] ee kotak berikut ini.
+[1712.28] Baik, Teman-teman. Pada video kali ini
+[1714.60] kita akan membahas tentang function. Apa
+[1717.76] sih function itu? Yuk, perhatikan
+[1720.04] berikut ini.
+[1722.76] Function itu adalah sebuah kumpulan
+[1726.80] perintah yang kita beri nama.
+[1729.52] Kalau kita butuh menjalankan perintah
+[1731.28] itu lagi, kita cukup memanggil nama yang
+[1733.72] kita sudah buat. Contoh sederhananya,
+[1736.72] function itu seperti sebuah tombol
+[1738.56] otomatis yang sekali ditekan beberapa
+[1741.36] perintah langsung bisa ikut berjalan.
+[1744.16] Nah, analogi dari function itu bisa kita
+[1749.44] bayangkan sebagai mesin jus atau blender
+[1753.92] yang khusus pembuat jus gitu ya. Nah,
+[1757.04] ketika kita memasukkan buah ke dalam
+[1759.36] blender jus itu tadi, mesin tadi akan
+[1762.92] memprosesnya ya dengan mencincangnya
+[1765.12] jadi halus, kemudian memisahkan antara
+[1767.88] jus dengan ampas dari buah itu tadi.
+[1771.08] Lalu kemudian jusnya akan keluar gitu
+[1773.72] ya, minum ee inti dari ee buahnya tadi
+[1776.48] jusnya akan keluar. Nah, bayangkan buah
+[1780.44] yang kita masukkan itu tadi itu adalah
+[1782.60] sebuah input yang kita berikan gitu ya.
+[1787.08] memproses memotong-motong buah tadi jadi
+[1789.96] kecil-kecil, kemudian memisahkan antara
+[1792.28] ampas dengan airnya, intisari buahnya
+[1795.40] itu kita anggap sebagai sebuah proses.
+[1798.84] Kemudian jusnya, air jus-nya itu kita
+[1803.24] disebut dengan output. Jadi kalau kita
+[1806.96] bayangkan function itu sebagai mesine
+[1808.88] jus-nya, function itu sama ya, in ada
+[1812.72] input, proses, sama output. Kalau
+[1815.04] inputnya tadi buah yang kita masukkan
+[1817.64] proses itu tadi yang dilakukan oleh
+[1819.36] juizernya tadi atau blendernya tadi
+[1821.44] outputnya itu hasil yang dikeluarkan
+[1823.16] oleh function atau mesine jus-nya itu ya
+[1826.28] mesin juice yang sudah kita sebutkan
+[1827.92] tadi. Jadi intinya function itu membantu
+[1832.80] sebuah program berjalan bekerja jadi
+[1835.32] lebih rapi karena di sini ada input,
+[1837.24] proses, dan output. Coba kita bahas
+[1839.16] lebih lanjut yuk. Nah, contoh lainnya
+[1842.00] nih misalnya kalau eh Jer tadi masih
+[1845.00] kurang paham, anggap aja function tadi
+[1847.32] seperti sebuah resep. Misalnya kita mau
+[1851.12] membuat roti. Nah, kalau roti kan kalau
+[1854.88] ketika kita membuat roti kan kita punya
+[1856.88] langkah-langkah yang perlu kita lakukan
+[1858.28] ya. Ada algoritma yang perlu kita
+[1859.88] lakukan. Pertama siapkan bahannya. Kita
+[1863.60] campur adonannya kita panggang kemudian
+[1866.68] kita sajikan. Nah, misalnya kita mau
+[1869.52] program apa? Mau membuat rotinya itu
+[1872.84] tiga kali. Nah,
+[1876.48] bayangkan dalam sebuah program kita mau
+[1879.44] ee membuat
+[1881.84] resep roti tadi diprint sebanyak tiga
+[1883.92] kali, Teman-teman. Nah, dari tiga kali
+[1886.88] tadi kan kita sudah bikin sekali baru
+[1889.40] kita biasanya kita lakukan copy paste
+[1891.72] gitu ya. Nah, atau kita menggunakan loop
+[1894.64] gitu.
+[1896.88] Kalau kita melakukan dua hal tadi ya,
+[1899.00] mengcopy pasta, ngetik copy paste tiga
+[1901.36] kali atau menggunakan loop, sebenarnya
+[1903.00] algoritmanya benar ya. Langkah yang kita
+[1905.04] lakukan benar, tapi langkah tersebut
+[1907.24] kurang optimal, kurang efisien. Nah,
+[1910.28] daripada melakukan dua hal yang tadi
+[1912.76] kita bisa mengkasih nama, membuat nama.
+[1916.32] Langkah-langkah tadi kita kasih nama
+[1917.92] misalnya buat undroti gitu ya. Nah,
+[1921.56] nanti kalau misalnya kita mau
+[1923.04] menjalankan atau mau nge-print tiga
+[1924.96] kali, kita tinggal panggil nama atau
+[1928.44] langkah yang sudah kita kasih nama tadi.
+[1930.28] Oh, kalau kita buat roti, maka dia ee
+[1933.24] manggil buat roti maka dia akan
+[1935.16] dijalankan tiga kali nih langkah ini
+[1937.40] tadi. Jadi, satu baris perintah bisa
+[1941.04] menjalankan
+[1942.72] ratusan bahkan puluh ee ribuan baris
+[1946.36] kode gitu. Kalau ee kita membahas
+[1950.24] tentang function,
+[1952.24] nah function itu kenapa sih dia berguna?
+[1955.00] Function sangat berguna karena kita bisa
+[1957.80] membuat kodenya tidak berulang-ulang.
+[1960.96] Bayangkan kita tadi kalau kita
+[1962.60] menggunakan copy paste gitu ya kan
+[1964.56] kodenya jadi terlihat terlalu banyak dan
+[1966.72] baris yang digunakan tuh juga ee sangat
+[1970.44] banyak gitu dan membuat programnya jadi
+[1973.24] tidak rapi. Kalau kita menggunakan
+[1975.72] function itu programnya bisa lebih rapi
+[1977.88] dan kita bisa lebih mudah lagi dalam
+[1979.64] membaca programnya karena kita ee cuman
+[1982.64] deklarasikan satu kali ya langkahnya
+[1984.32] kita bikin satu kali terus kita kasih
+[1986.12] nama langkah-langkahnya itu tadi.
+[1988.32] Kemudian kalau kita mau function-nya
+[1991.08] bisa kita ee gunakan kembali. Jadi kalau
+[1994.08] misalnya kita mau nge-print kembali,
+[1995.80] nge-print kembali itu kita bisa panggil.
+[2002.04] Nah, lebih simpel lagi teman-teman
+[2004.64] sebenarnya function ini sudah kita
+[2006.40] lakukan sehari-hari ya, sudah kita
+[2008.88] temukan di kehidupan kita sehari-hari
+[2011.20] cuman kita kurang sadar. Nah, contoh
+[2013.20] yang sudah kita lakukan tadi di sini ada
+[2016.20] ee ini ya, mesin jus tadi ya. Itu kan ee
+[2018.88] contohnya udah kita proses tadi, udah
+[2020.72] kita bahas tadi ya. Oh, inputnya buah.
+[2022.88] Misalnya kita mau membuat ee buah apel,
+[2026.28] inputnya berarti buah apel. Kemudian
+[2028.32] prosesnya sama semua ya, prosesnya sama,
+[2030.44] outputnya berupa jus. Nah, ada juga
+[2033.40] kalkulator ya kan ya. Kalkulator itu
+[2035.80] nanti dia fungsinya apa? Fungsinya
+[2038.36] menghitung angka yang kita masukkan gitu
+[2040.24] ya. Kemudian nanti akan menghasilkan
+[2042.80] sebuah bilangan yang udah dihitung. Ada
+[2046.24] mesin ATM yang kalau kita masukin kartu
+[2049.16] sama pin kita itu dia akan kita bisa
+[2052.00] ngakses akun kita yang nanti bisa kita
+[2054.52] mengeluarkan uang atau mentrasfer uang
+[2056.68] dan seterusnya. Misal kemudian ada Maps,
+[2060.20] Google Maps gitu ya yang kita bisa
+[2062.28] masukin lokasi kita tujuan sama ee kita
+[2067.40] bisa masukin tujuan sama destinasinya.
+[2069.80] maka nanti dari aplikasi Maps tadi
+[2072.48] mengeluarkan rute perjalanan. Jadi
+[2075.20] intinya function tadi selain dia
+[2077.84] meringkas kode yang kita buat, dia
+[2080.44] menerima sesuatu diproses baru dia
+[2083.52] menghasilkan sesuatu.
+[2085.84] Nah, coba
+[2088.20] sekarang kita bahas bagaimana sebuah
+[2091.72] function itu bekerja di dalam bahasa
+[2094.76] pemrograman Python.
+[2096.80] Nah, di dalam pemorogan Python kita
+[2099.88] perlu mendeklarasikan
+[2102.96] sebuah function dengan eh keyword
+[2106.16] namanya def ya. Def itu singkatan dari
+[2109.36] define ya teman-teman. Kita definis
+[2115.32] kita mau membuat sebuah
+[2117.84] function namanya grid atau dia menyapa
+[2121.52] gitu ya teman-teman bahasa Indonesianya
+[2123.36] grid. Kemudian setelah kita kasih nama
+[2126.20] untuk kita mengasih tahu nih ke dalam ee
+[2130.40] ke dalam bahasa pemogram Python, hei,
+[2132.28] kita mau membuat sebuah function namanya
+[2134.88] grid. Nah, dia kalau misalnya kita mau
+[2138.56] tahu dia sebuah apakah sebuah apakah
+[2141.48] kata-kata grid ini sebuah function atau
+[2143.36] tidak, itu dideklarasikan dengan
+[2147.48] buka dan tutup kurung gitu ya. Jadi
+[2150.72] untuk membuat sebuah function kita harus
+[2152.80] pakai dev ya, definisikan define
+[2156.76] kemudian kita masukkan nama function-nya
+[2159.52] kemudian dilanjut dengan buka dan tutup
+[2161.48] kurung. Nah, kalau sudah dilanjut dengan
+[2164.40] titik dua [berdehem] dan juga kita
+[2166.44] tambahkan indentasi. Nah, indentasi ini
+[2169.36] teman-teman bisa lakukan dengan mengetik
+[2171.20] tab yang ada di atasnya. Shift itu kan
+[2173.48] ada ee di keyboard ada tombol tab atau
+[2176.36] kalau misalnya teman-teman menggunakan
+[2177.76] handphone itu teman-teman bisa
+[2180.20] menggunakan spasi sebanyak empat kali.
+[2182.64] Yang penting perintah yang di bawah ini
+[2185.80] itu tidak boleh sejajar dengan
+[2187.72] define-nya yang di atas supaya
+[2191.08] programnya, python-nya tahu kalau ini
+[2193.72] itu bagian dari sebuah function gitu ya.
+[2197.60] Nah, di sini program grid ini dia akan
+[2200.68] nge-print e melakukan satu hal dulu.
+[2203.04] Misalnya melakukan halo gitu ya. Atau
+[2205.40] misalnya kita mau membuat function
+[2207.24] namanya resepi gitu ya, membuat roti,
+[2210.20] resep membuat roti. Nah, di sini kita
+[2212.52] print yang pertama siapkan alat dan
+[2214.84] bahan, yang kedua dan ketiga dan
+[2216.48] seterusnya gitu ya. Jadi kita bisa
+[2218.68] tuliskan sekali. Kemudian kalau kita mau
+[2221.48] panggil, kita tinggal tuliskan namanya.
+[2224.64] Kita ketikkan nama dari function yang
+[2227.08] sudah kita buat tadi. Kemudian diikuti
+[2229.08] dengan buka dan tutup kurung. Nah, nanti
+[2232.48] hasilnya kalau kita manggil sekali
+[2235.20] berarti dia akan muncul sekali aja ya
+[2236.88] output-nya ya. Halo gitu. Tapi kalau
+[2239.04] misalnya di sini kita ee ada banyak
+[2241.64] langkah yang kita tuliskan, maka
+[2243.08] semuanya akan terprint sekali gitu. Jadi
+[2245.68] kita enggak perlu nulis banyak-banyak,
+[2247.88] enggak perlu copy paste, enggak perlu
+[2249.96] for loop. Kita tinggal print aja di sini
+[2252.88] sekali, maka semua yang kita tulis di
+[2255.16] dalam function tadi akan auto muncul.
+[2259.80] Nah, ini ya tadi sama ya cara
+[2263.24] membacanya. Setelah kita membuat
+[2265.08] function bernama grid tadi
+[2267.84] saat dipanggil, jadi ketika kita
+[2269.44] menuliskan grid buka kurung tutup kurung
+[2272.16] maka dia akan langsung menjalankan
+[2275.24] perintahnya apa yang ada di dalam
+[2277.04] function tadi.
+[2279.24] Nah, kalau kita hanya membuat function
+[2282.92] aja dia tidak akan berjalan. Jadi,
+[2286.12] misalnya nih, Teman-teman, membuat
+[2288.24] sebuah variab eh membuat sebuah function
+[2290.28] namanya grid. Terus pada saat
+[2292.24] teman-teman run atau jalankan dia tidak
+[2294.28] akan terjadi apa-apa karena kode tadi
+[2297.20] belum dipanggil. Jadi kita ketika kita
+[2300.20] membuat sebuah function jangan lupa
+[2301.80] dipanggil menggunakan nama dari
+[2304.40] function-nya tadi diikuti dengan buka
+[2306.76] dan tutup kurung. Jadi itu ya kalau
+[2308.80] misal ada error program function yang
+[2311.00] enggak jalan, apakah sudah dipanggil
+[2312.72] atau belum? Kalau udah kita cek ya
+[2316.48] salahnya di mana. Kalau belum maka
+[2318.04] silakan langsung mengetikkan nama
+[2320.92] functionnya. Nah, untuk mengecek
+[2324.00] pemahaman teman-teman terkait function
+[2326.88] yang ada di dalam Python, silakan
+[2329.76] kerjakan kuis berikut ini.
+[2337.60] Oke, Teman-teman. Function di dalam
+[2340.60] Python itu banyak jenisnya. function
+[2343.04] yang baru baru kita bahas sebelumnya itu
+[2346.88] function yang simpel ya teman-teman yang
+[2348.44] bisa kita buat secara simpel tanpa ada
+[2352.72] tambahan lain-lainnya. Jadi pure kita
+[2355.00] hanya membuat sebuah function
+[2358.52] kemudian kita panggil. Nah sekarang kita
+[2361.44] mau membahas jenis function yang kedua
+[2364.32] namanya function dengan parameter.
+[2367.40] Parameter itu apa sih? Parameter adalah
+[2370.80] sebuah data yang dikirim ke dalam
+[2373.24] function.
+[2375.44] Kalau function itu adalah mesin juice,
+[2377.76] anggap aja parameter itu buah yang kita
+[2380.24] masukkan tadi. Jadi, inputnya
+[2383.36] nih bentuknya function dengan parameter
+[2386.52] itu seperti ini ya bentuknya,
+[2387.76] Teman-teman. Ketika kita mendefinisikan
+[2390.56] sebuah function dengan menuliskan
+[2393.40] namanya, sebelumnya kan kita hanya
+[2395.80] memasukkan buka dan tutup kurung gitu
+[2398.16] ya.
+[2399.08] Nah, di dalam function dengan parameter
+[2402.96] buka dalam kurungnya tadi kita masukkan
+[2405.56] sebuah parameter atau kakak biasanya
+[2408.16] sebut parameter ini variabel sementara
+[2411.36] karena kan variabel tempat menyimpan.
+[2414.04] Kalau misalnya parameter itu tempat
+[2415.68] menyimpan juga tapi sementara yang
+[2417.56] artinya dia tidak perlu apa isinya akan
+[2420.08] berubah-berubah dan dia akan ee apa ya
+[2425.56] intinya dia akan berubah-berubah sesuai
+[2427.28] yang kita masukkan. Misalnya kita bikin
+[2429.72] function mesin juice. Nah, di sini itu
+[2433.68] buah yang kita masukkan nanti misalnya
+[2435.48] mesin jus di sini ada apel. Jadi
+[2437.48] misalnya di sini mesin jus setelah kita
+[2440.20] proses di sini kita tulis misalnya buah
+[2444.32] jus bla bla bla telah selesai dibuat
+[2446.92] gitu ya. Nah nanti kita bisa panggil di
+[2449.16] sini sama di sini ya. Contohnya di sini
+[2451.80] deh misalnya di sini kita membuat
+[2453.44] function namanya grid dan dia mempunyai
+[2456.16] parameter name. Nah parameter name ini
+[2459.72] tadi hanya bisa dijalankan dan dipanggil
+[2462.64] di dalam function ini aja. Jadi kalau
+[2464.76] misalnya kita bikin function ada dua,
+[2466.88] maka dia tidak akan bisa dijalankan nih
+[2468.72] si name ini. Kemudian kita tinggal
+[2471.52] panggil maka dia akan memasukkan nih
+[2474.28] name-nya apa gitu ya. Tuh dia akan
+[2476.92] lompat ke sini. Jadi kalau misalnya kita
+[2479.32] bikin ee
+[2482.04] namanya misalnya angel, maka di sini dia
+[2485.28] akan nge-print hello angel. Coba kita
+[2487.76] cek ya. ini bentuk dari eh function-nya
+[2490.88] dengan parameter. Intinya dia hanya
+[2492.48] menambahkan sebuah variabel sementara
+[2494.40] atau yang disebut dengan parameter ke
+[2496.00] dalam buka dan tutup kurungnya. Nah,
+[2498.80] ketika kita mau memanggil function-nya,
+[2501.44] caranya kita jangan hanya memanggil si
+[2505.68] function itu tadi. Kita juga perlu
+[2508.92] memasukkan nama yang mau kita panggil.
+[2512.12] Jadi parameternya, variabel sementaranya
+[2514.96] itu kita kasih nilai, kita kasih nama,
+[2516.76] kita kasih sesuatu, kita berikan
+[2518.08] sesuatu. Jadi di sini kan tadi kita
+[2520.76] punya name ya. Nah, dia menunggu nih
+[2523.16] varia function grid ini dia menunggu
+[2525.76] sebuah isian. Nah, jadi ketika kita
+[2528.12] memanggil grid baru di dalamnya ada
+[2530.80] Alya, maka si Alya ini akan dikirim ke
+[2534.00] dalam function-nya. Kemudian
+[2536.84] function-nya akan memproses mengirim
+[2539.12] kembali kata Alya ini dan menggabung
+[2541.52] dengan teks halo dengan string halo maka
+[2545.24] nanti hasilnya akan halo Alya dan juga
+[2548.40] halo Bima. Jadi function-nya sama ya
+[2552.48] sama functionnya sama namanya grid tapi
+[2555.56] data yang kita berikan berbeda-beda.
+[2557.88] Jadi itu ya fungsinya function.
+[2560.16] fungsinya function itu bisa terlihat ya
+[2563.32] ketika kita mau meng-grid orang yang
+[2565.08] berbeda tapi ee namanya beda-beda.
+[2569.08] Menggrid orang yang berbeda tapi kita
+[2570.56] hanya menggunakan satu function saja
+[2572.76] gitu ya, Teman-teman.
+[2575.40] Nah, parameter itu tadi dia enggak hanya
+[2578.16] bisa satu aja teman-teman. kita bisa
+[2580.28] tambahkan sebanyak yang kita mau.
+[2583.36] Misalnya function ini kita masukkan
+[2588.20] nama dan umur. Jadi di sini kita
+[2592.84] pisahkan parameternya dengan koma. Nanti
+[2596.12] kalau misalnya kita mau pakai kita
+[2598.00] tinggal panggil aja name age. Nah,
+[2602.44] misalnya di sini kita membuat function
+[2604.92] namanya introduce.
+[2607.44] kita ketika kita memanggil introduce
+[2609.92] maka kita masukkan dua parameter yang
+[2613.04] kita buat ya kita buat parameteran name
+[2617.72] sama agiskan
+[2620.52] introduce kita ketika ketika kita
+[2622.68] panggil Alya dan 16 maka si Alya ini
+[2625.96] akan dijadikan parameter nama dan juga
+[2630.00] 16 ini akan dijadikan parameter umur.
+[2633.08] Nah, jangan sampai kebalik ya
+[2634.28] teman-teman. Kalau misal teman-teman
+[2635.76] tuliskan 16 dan di sini Alya, maka di
+[2639.96] sini namanya akan ditulis 16 dan umurnya
+[2643.76] jadi Alya. Jadi parameter itu ketika
+[2647.28] kita memanggil harus sesuaikan dengan
+[2650.28] urutan yang kita buat di dalam deklarasi
+[2653.68] function-nya.
+[2655.56] itu untuk function dengan multiple
+[2659.72] parameter.
+[2661.68] Bayangkan aja parameter itu sebagai
+[2664.28] ketika kita mengisi formulir gitu ya.
+[2666.44] Misalnya kita ngisi formul formulir kan
+[2668.68] ada nama, umur, sama kelas. Nah, kita
+[2671.96] bisa masukkan semuanya ke dalam
+[2674.08] parameter dan parameter ee dan function
+[2677.24] tadi bisa memproses parameter tadi.
+[2680.28] Entah kita cuman nge-print kah atau kita
+[2683.12] lakukan penjumlahan kah. Intinya satu
+[2686.24] parameter itu hanya menyimpan satu
+[2688.28] informasi dan setiap parameter itu pada
+[2691.72] saat dipanggil harus sesuai urutannya
+[2694.24] gitu ya. Jadi jangan sampai kebalik.
+[2696.56] Misalnya kalian nulis grade-nya duluan
+[2698.52] baru namanya. Padahal di sini di
+[2700.44] function-nya kita define namanya dulu,
+[2703.44] nanti dia akan ee
+[2706.40] apa? menampilkan data yang tidak sesuai
+[2708.88] karena kita memanggilnya pun tidak
+[2710.40] sesuai juga. Nah, untuk ee memantapkan
+[2714.04] pemahaman teman-teman terkait function,
+[2716.84] silakan kerjakan kuis berikut ini.
+[2723.32] Nah, setelah teman-teman mengerjakan
+[2726.32] function dan juga teman-teman sudah
+[2728.84] paham nih, ada dua jenis function. Ada
+[2731.00] function yang biasa dan juga ada
+[2733.24] function dengan parameter. Nah, ada
+[2735.84] jenis function yang ketiga yaitu
+[2738.24] function dengan return. Nah, apa sih
+[2741.00] return itu tadi? Yuk, kita bahas. Return
+[2744.04] digunakan untuk mengembalikan hasil dari
+[2747.52] sebuah function. Misalnya kalau function
+[2751.40] dua function yang kita buat sebelumnya
+[2753.88] itu kan hanya menge-print ya atau
+[2756.16] menampilkan hasilnya langsung ke layar
+[2758.04] gitu ya. Nah, dengan menggunakan return
+[2761.32] kita memberikan hasilnya ke programnya
+[2764.60] agar bisa dipakai lagi.
+[2767.24] Sederhana gini, ketika kita menggunakan
+[2769.60] print misalnya kita eh function-nya tadi
+[2773.12] langsung di dalam function-nya kita
+[2774.80] tulis langsung print gitu ya. Nah,
+[2776.72] ketika kita menggunakan itu ketika kita
+[2779.04] panggil functionnya itu tadi dia akan
+[2781.24] hanya menampilkan aja. Nanti kalau
+[2783.44] misalnya kita mau memproses hasilnya
+[2785.04] tadi enggak bisa lagi dipakai lagi gitu.
+[2788.40] Ketika kita menggunakan return, kita
+[2790.96] bisa menggunakan apapun yang hasil
+[2793.80] diolah oleh function tadi untuk dipakai
+[2797.68] ke bagian dari program kita yang lain.
+[2800.72] Nah, coba kita ee bahas lagi ya.
+[2803.88] Misalnya bayangkan return itu sebagai
+[2806.96] mesin kasir. Nah, mesin kasir ini dia
+[2810.56] menghitung total belanja. Jadi, kita
+[2812.40] bikin function kasir gitu ya. Nah,
+[2816.76] ketika kita menggunakan print, kita
+[2819.36] tulis tuh oh totalnya Rp50.000.
+[2822.84] Kalau kita menggunakan return, maka dia
+[2825.88] hanya mengembalikan stroke. Istilahnya
+[2828.92] seperti itu. Mesinnya memberikan stroke
+[2830.84] yang bisa dipakai untuk pembayaran atau
+[2833.76] digunakan untuk function yang lainnya.
+[2836.36] intinya return membuat hasil function
+[2839.36] bisa diproses lagi. Oke, contohnya
+[2842.84] seperti ini.
+[2845.44] Ketika kita mendeklarasikan sebuah
+[2848.56] function, ya, kita membuat sebuah
+[2850.32] function, mendeklarasikan sebuah
+[2851.64] function namanya menambahkan angka.
+[2856.64] Di sini kita buat dua parameter A dan
+[2859.60] parameter B. Nah, parameter A sama B-nya
+[2862.56] ini kita print, kita jumlahkan A + B,
+[2865.04] gitu ya.
+[2866.52] Kemudian kita panggil nih function-nya
+[2870.04] add number tadi kita kasih nilai 5 dan
+[2873.92] juga 3. 5 kita masukin ke jadi A, 3 jadi
+[2878.32] B. 5 + 3 hasilnya 8, Teman-teman, ya.
+[2883.84] Nah, output-nya hanya akan menampilkan
+[2886.60] angka 8 aja ya. Karena dia akan hanya
+[2888.96] langsung mencetak ini kalau kita
+[2891.12] menggunakan print programnya
+[2894.88] tidak bisa di kita pakai lagi karena ini
+[2896.72] sudah selesai nih udah jadi output ya
+[2898.64] kan kita tidak bisa pakai lagi.
+[2900.44] Sedangkan ketika kita menggunakan return
+[2902.72] itu bentuknya seperti ini.
+[2905.20] Kita membuat sebuah function yang sama
+[2908.04] ya function yang sama add numbers.
+[2911.60] Kemudian kita menggunakan dua parameter
+[2915.12] A dan B. Nah, daripada kita menggunakan
+[2919.20] print, kita ubah print-nya menjadi
+[2922.16] return atau kembalikan
+[2925.56] A + B. Nah, di sini pada saat kita
+[2930.00] memanggil sebuah apa? Function add
+[2933.04] number tadi kita kasih nilai 5 sama 3
+[2936.56] itu kita simpan dia ke dalam variabel
+[2939.12] result. Nah, variabelnya ini kita bisa
+[2942.76] kita print lagi atau kita jumlahkan gitu
+[2945.68] ya atau kita bisa lakukan banyak hal
+[2947.60] gitu ya. Kita bisa langsung print
+[2949.96] hasilnya atau kita bisa tambahkan teks
+[2953.16] hasil penjumlahan sama dengan result
+[2956.28] gitu ya. Atau hasil result-nya ini bisa
+[2958.52] kita kalikan 2, kita kalikan 4 gitu ya.
+[2963.44] Ini hasil dari function ini itu dia sama
+[2966.56] sebenarnya delan tapi kita bisa
+[2968.96] ubah-ubah dia menjadi ee kita bisa
+[2972.60] jadikan ee karena kita kembalikan gitu
+[2976.36] ya nih maksud kakak nih ya. Jadi
+[2978.64] hasilnya 8 ini tadi hasil penjumlahannya
+[2981.44] del itu dieturn dikembalikan ke tempat
+[2984.08] dia memanggil. Tadi kan kita panggil di
+[2986.08] baris ketiga ini ya. Nah, angkaannya
+[2988.48] disimpan di sini itu dia disimpan
+[2991.24] hasilnya ke dalam sebuah variabel
+[2993.12] namanya result. Nah, kalau misalnya kita
+[2994.96] simpan ke dalam variabel kan berarti
+[2996.36] kita bisa olah lagi gitu ya. Pada saat
+[2998.40] programnya stop maka dia ee tetap bisa
+[3002.40] diolah lagi. Kalau misalnya kita tidak
+[3004.32] menggunakan return ya udah kalau dia
+[3006.32] programnya stop udah tidak bisa kita
+[3007.96] gunakan lagi. Dia akan hilang gitu ya
+[3009.64] dari memori programnya.
+[3012.68] Kenapa sih return itu penting? dengan
+[3015.12] return tadi, hasil function-nya tadi
+[3017.92] bisa kita proses ke proses berikutnya.
+[3021.20] Ini ee yang seperti yang Kakak bilang
+[3022.92] tadi ya, misalnya hasil proses
+[3025.16] perhitungan penjumlahan tadi itu kita
+[3027.60] bisa jadikan [berdehem] skornya ya, kita
+[3029.84] bisa jadikan final skore dengan ee kita
+[3032.88] bisa kalikan lagi, kita bisa tambahkan
+[3035.36] lagi atau kita bisa ee masukkan lagi dia
+[3039.52] ke dalam sebuah function bebas. Banyak
+[3041.60] hal yang bisa kita lakukan. Tapi ketika
+[3044.00] kita intinya ketika kita menggunakan
+[3045.84] return, kita bisa memprosesnya lagi
+[3048.08] seperti ini. Kalau kita tadi pakai print
+[3050.48] doang kan programnya hanya stop aja udah
+[3052.40] langsung stop. Kalau ini kita bisa
+[3054.20] lakukan hal yang lain. Nah, ini
+[3056.28] programnya [berdehem]
+[3058.12] karena di sini 8 maka 8 * 10 maka
+[3062.56] hasilnya akan jadi 80. Jadi hasil
+[3065.12] function bisa dipakai lagi untuk
+[3066.76] menghitung final score.
+[3070.12] Di sini ada dua ini ya, ada dua
+[3072.56] keunggulannya
+[3074.20] antara print dengan menggunakan return.
+[3077.08] Kalau print kita langsung menampilkan
+[3078.84] hasilnya ke layar. Kalau return dia
+[3080.84] mengembalikan hasilnya ke tempat dia
+[3083.24] dipanggil. Kalau dia dipanggil di baris
+[3085.00] ketiga, maka dia akan dikembalikan
+[3086.48] nilainya ke sini. Makanya dia harus
+[3088.60] disimpan ke dalam sebuah variabel supaya
+[3090.28] kita bisa pakai lagi ya, Teman-teman.
+[3092.52] Kemudian print ini cocok untuk kalau
+[3094.88] misalnya kita mau hanya menampilkan teks
+[3097.44] doang. Tapi kalau kita udah mulai mau
+[3100.12] menghitung sesuatu [berdehem] itu kita
+[3101.84] bisa menggunakan return. Kalau kita
+[3104.64] menggunakan print, oh kita enggak bisa
+[3106.12] pakai lagi karena kan dia cuman
+[3107.28] menampilkan aja. Makanya cocok untuk
+[3109.28] pesan.
+[3110.92] Nah, kalau kita pakai print itu dia
+[3112.44] tidak cocok untuk program yang banyak
+[3114.36] atau besar gitu ya.
+[3116.60] supaya dia supaya ee lebih rapi dan
+[3119.24] programnya bisa dipakai berulang
+[3121.68] berulang berulang itu kita gunakan
+[3123.72] return gitu ya. Itu untuk print versus
+[3127.00] return. Nah, untuk memahamkan teman
+[3130.04] lebih lanjut tentang return function,
+[3131.92] silakan kerjakan kuis berikut ini.
+[3138.16] Oke, Teman-teman, karena kita sudah
+[3140.48] membahas tentang parameter dan juga
+[3143.08] return function, sekarang gimana kalau
+[3145.40] kita coba gabungkan kedua pemahaman
+[3147.96] kita? Misalnya di sini kita mau membuat
+[3150.80] sebuah function yang menggunakan
+[3152.44] parameter, multiple parameter dan juga
+[3156.08] return. menggunakan return ya, function.
+[3158.04] Nah, misalnya di sini kita mau ee
+[3161.28] bayangkan kita mau bikin program untuk
+[3164.12] di kasir gitu ya, Teman-teman. Kita
+[3166.12] buatkan function yang dia mengcalculate
+[3169.28] total misalnya gitu ya. Mengcalculate
+[3170.92] total yang harus dibayar sama pengguna
+[3172.48] itu berapa sih? Oke, kita bikin
+[3174.88] calculate total. Ingat ya teman-teman,
+[3178.00] function itu tidak boleh menggunakan
+[3179.64] spasi sama seperti variabel ya. Jadi
+[3182.00] gunakan unders atau capital first letter
+[3185.48] untuk penamaan function.
+[3188.40] Di sini kita masukkan dua dua parameter
+[3191.64] namanya price dan juga quantity. Jadi
+[3194.20] harganya berapa? Terus si ee customer
+[3198.44] kita itu belanjanya berapa gitu ya. Nah
+[3201.60] di sini kita mau menghitung
+[3205.44] harga dari item yang dibeli tadi. Di
+[3208.28] sini harganya dikali dengan totalnya
+[3210.60] berapa? Kemudian dari program ini eh
+[3213.84] dari function ini itu dia akan
+[3215.96] mengembalikan totalnya. Oke, berarti di
+[3220.08] sini kita udah ada parametra price sama
+[3223.68] quantity. Kemudian kita gunakan kita
+[3227.40] gunakan return dan yang kita return itu
+[3229.48] apa? Oh, total. Nah, sebenarnya ini
+[3231.20] boleh kalian langsung return price kali
+[3234.08] quantity. Cuman supaya lebih rapi, kita
+[3236.32] simpan hasilnya ke dalam variabel dulu
+[3238.96] baru kemudian variabelnya yang kita
+[3240.80] return. Either way enggak masalah tapi
+[3243.64] yang penting kalian pertama bisa membaca
+[3246.76] programnya dan yang kedua menurut kalian
+[3248.88] lebih rapi yang mana apakah menggunakan
+[3250.56] variabel atau tidak. Nah, di sini ketika
+[3253.80] kita menggunakan return jangan lupa
+[3255.36] supaya dia bisa digunakan kembali simpan
+[3257.96] bikin dulu variabel tempat menampungnya
+[3260.16] sementara. Kemudian kita panggil nih
+[3263.64] variabel yang sudah kita buat. Sori
+[3266.28] function yang sudah kita buat. Nama
+[3268.04] function-nya calculate total. Kemudian
+[3270.96] kita masukin harganya sama quantity-nya.
+[3274.84] Kemudian kalau udah kita bisa cetak tuh
+[3279.64] hasilnya total bayar. Dia akan memanggil
+[3283.36] total payment-nya ini tadi. Misalnya di
+[3285.24] sini 15.000 * 3. 15.000 1000 * 3 itu
+[3289.92] hasilnya
+[3291.76] 45.000 ya, Teman-teman ya. Nah, 45 maka
+[3295.80] di sini akan ng-return 45-nya ke bawah
+[3299.36] sini 45. Kemudian yang R5.000 akan
+[3302.68] disimpan ke dalam total payment yang
+[3304.92] kemudian akan dimasukkan ke dalam
+[3308.04] perintah print yang ada di sini. Jadi
+[3311.12] ini bentuk dari
+[3313.84] function dengan multiple parameter dan
+[3316.24] juga return value. Nah, coba lengkapi
+[3320.24] kuis berikut ini.
+[3328.32] Nah, dalam program yang lebih besar
+[3330.36] kadang sebuah function itu tidak hanya
+[3333.44] satu saja teman-teman. Bah ada yang 5,
+[3336.80] 10, bahkan ratusan functionnya,
+[3338.68] tergantung kompleksitas dari ee program
+[3342.20] yang dibuat. Nah, di sini kita lihat
+[3344.56] contohnya ya. Tadi kan kita sudah
+[3346.68] membuat ee total harga dari kasir kita
+[3350.60] ya, Teman-teman. Nah, di sini kita mau
+[3352.60] menambahkan lagi sebuah function yang
+[3354.68] dia yang dia itu menghitung
+[3357.60] ee yang dia itu menghitung disun,
+[3360.40] Teman-teman. Nah, inilah di sinilah eh
+[3364.36] implementasi dari return function tadi
+[3367.00] mulai terlihat gitu ya. Misalnya di sini
+[3370.44] kita programnya masih sama ya ee dia
+[3373.32] calculate total
+[3375.40] mengkalikan antara harga dan juga
+[3378.12] quantity-nya jumlah barangnya. Nah, di
+[3380.52] sini dia tadi ee tidak langsung
+[3382.52] menggunakan variabel ya, boleh kan kalau
+[3384.52] seperti ini. Dan juga dia bisa dibaca
+[3386.72] gitu karena kebetulan program ee
+[3389.68] rumusnya sangat mudah. Di sini kita
+[3393.08] membuat variabel total. Terus itu kita
+[3395.56] panggil nih function-nya.
+[3398.56] Function-nya di sini harganya Rp20.000
+[3400.96] kita kti di sini Rp20.000 * 3.000 * 3
+[3405.60] hasilnya ee Rp60.000.
+[3408.92] maka kita akan return 60.000 tadi dan
+[3411.48] simpan dia ke dalam variabel total. Nah,
+[3414.28] di sini variabel total ini tadi
+[3416.84] dijadikan nilai parameter di function
+[3420.28] yang kedua. Di function kedua ada yang
+[3422.64] namanya apply discount dan dia meminta
+[3425.36] parameter total harganya tadi kan ya.
+[3429.28] Misalnya diskonnya 9%, maka di sini kita
+[3432.80] return totalnya ee untuk ee menghitung
+[3435.96] diskon itu dia harga totalnya dikali 0,9
+[3440.76] karena 9% tuh 0,9 ya, Teman-teman. Nah,
+[3444.04] karena kita tadi 60.000-nya nya itu
+[3446.04] sudah simpan di dalam total, maka di
+[3448.48] sini kita tinggal panggil aja variabel
+[3451.40] total ketika kita mendeklarasi atau
+[3454.44] memanggil variabel apply eh function
+[3457.24] apply discount ya. Apply discount
+[3459.88] 60.000-nya tinggal kita masukin sini.
+[3462.16] Nah, di sini langsung muncul final
+[3464.16] price-nya atau harga akhirnya. Bayangkan
+[3467.20] kita enggak pakai return nih,
+[3468.24] Teman-teman. Kita langsung print. Nah,
+[3470.12] ketika kita mau apply diskon harus
+[3472.64] gimana tuh? kita enggak bisa nih
+[3474.56] mendapatkan nilai yang ada dari function
+[3477.64] calculate total tadi yang menghitung
+[3479.16] totalnya tadi gitu ya. Jadi ketika kita
+[3482.84] menggunakan return hasil function-nya
+[3485.76] bisa digunakan untuk function yang lain
+[3488.16] atau bisa dihitung atau dilakukan
+[3491.00] perhitungan lain yang seperti eh final
+[3493.80] score yang kita sudah coba sebelumnya
+[3495.60] tadi ya, Teman-teman. Nah, itu untuk eh
+[3499.40] function dengan multiple eh bukan
+[3502.28] multiple ya, function dengan di program
+[3504.08] yang lebih besar, yang lebih kompleks.

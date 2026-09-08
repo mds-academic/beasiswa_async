@@ -1,0 +1,6392 @@
+[
+  {
+    "text": "Halo teman-teman, pada video kali ini",
+    "start": 2.44,
+    "duration": 5.72
+  },
+  {
+    "text": "kita akan membahas mengenai algoritma.",
+    "start": 5.279,
+    "duration": 4.721
+  },
+  {
+    "text": "Apa sih algoritma itu? Yuk, kita",
+    "start": 8.16,
+    "duration": 5.679
+  },
+  {
+    "text": "perhatikan slide berikut ini. Algoritma",
+    "start": 10.0,
+    "duration": 6.08
+  },
+  {
+    "text": "e secara pengertian artinya adalah",
+    "start": 13.839,
+    "duration": 3.841
+  },
+  {
+    "text": "langkah-langkah untuk menyelesaikan",
+    "start": 16.08,
+    "duration": 4.76
+  },
+  {
+    "text": "masalah. Nah, sehari-hari biasanya kita",
+    "start": 17.68,
+    "duration": 5.08
+  },
+  {
+    "text": "tuh sudah sebenarnya sudah melakukan",
+    "start": 20.84,
+    "duration": 4.72
+  },
+  {
+    "text": "algoritma tapi kita tidak menyadarinya",
+    "start": 22.76,
+    "duration": 5.599
+  },
+  {
+    "text": "secara langsung. Misalnya ketika kita",
+    "start": 25.56,
+    "duration": 5.6
+  },
+  {
+    "text": "membuat mie instan, langkah-langkah yang",
+    "start": 28.359,
+    "duration": 5.081
+  },
+  {
+    "text": "kita lakukan adalah misalnya merebus air",
+    "start": 31.16,
+    "duration": 5.079
+  },
+  {
+    "text": "terlebih dahulu, terus memasukkan mie,",
+    "start": 33.44,
+    "duration": 5.48
+  },
+  {
+    "text": "kemudian menunggu mie matang. Kalau",
+    "start": 36.239,
+    "duration": 4.32
+  },
+  {
+    "text": "sudah matang, kita campurkan dengan",
+    "start": 38.92,
+    "duration": 4.479
+  },
+  {
+    "text": "bumbu, kemudian kita sajikan. Nah,",
+    "start": 40.559,
+    "duration": 4.201
+  },
+  {
+    "text": "langkah-langkah yang barusan kita",
+    "start": 43.399,
+    "duration": 4.081
+  },
+  {
+    "text": "lakukan tadi dalam coding itu disebut",
+    "start": 44.76,
+    "duration": 6.639
+  },
+  {
+    "text": "juga algoritma. Jadi algoritma itu juga",
+    "start": 47.48,
+    "duration": 7.239
+  },
+  {
+    "text": "sama seperti sebuah resep atau tata cara",
+    "start": 51.399,
+    "duration": 5.68
+  },
+  {
+    "text": "langkah demi langkah dalam menyelesaikan",
+    "start": 54.719,
+    "duration": 4.281
+  },
+  {
+    "text": "suatu masalah.",
+    "start": 57.079,
+    "duration": 4.48
+  },
+  {
+    "text": "Nah, algoritma itu dia bisa berbeda-beda",
+    "start": 59.0,
+    "duration": 4.68
+  },
+  {
+    "text": "loh, Teman-teman. Masalahnya, maksudnya",
+    "start": 61.559,
+    "duration": 3.96
+  },
+  {
+    "text": "yang berbeda-beda itu apa ya? Misalnya",
+    "start": 63.68,
+    "duration": 4.56
+  },
+  {
+    "text": "kita punya sebuah masalah.",
+    "start": 65.519,
+    "duration": 5.481
+  },
+  {
+    "text": "Contoh masalah yang kita punya adalah",
+    "start": 68.24,
+    "duration": 6.199
+  },
+  {
+    "text": "kita ingin mencari nama Budi di dalam",
+    "start": 71.0,
+    "duration": 6.04
+  },
+  {
+    "text": "list daftar absen siswa gitu. Nah, ada",
+    "start": 74.439,
+    "duration": 4.641
+  },
+  {
+    "text": "dua cara yang bisa kita lakukan. Cara",
+    "start": 77.04,
+    "duration": 4.88
+  },
+  {
+    "text": "pertama kita bisa cek tuh satu persatu",
+    "start": 79.08,
+    "duration": 4.96
+  },
+  {
+    "text": "namanya dari atas sampai bawah dan",
+    "start": 81.92,
+    "duration": 4.8
+  },
+  {
+    "text": "mencari nama Budi yang ada. Nah, cara",
+    "start": 84.04,
+    "duration": 6.16
+  },
+  {
+    "text": "kedua kita mencari abset yang sudah urut",
+    "start": 86.72,
+    "duration": 5.84
+  },
+  {
+    "text": "sesuai abset. Kemudian kita bisa cari",
+    "start": 90.2,
+    "duration": 4.8
+  },
+  {
+    "text": "tuh namanya Budi sesuai dengan abjat",
+    "start": 92.56,
+    "duration": 5.48
+  },
+  {
+    "text": "namanya yang pertama. Nah, jadi walaupun",
+    "start": 95.0,
+    "duration": 4.96
+  },
+  {
+    "text": "cara ee",
+    "start": 98.04,
+    "duration": 5.0
+  },
+  {
+    "text": "kita mempunyai masalah yang sama, cara",
+    "start": 99.96,
+    "duration": 5.199
+  },
+  {
+    "text": "penyelesaiannya atau algoritmanya pun",
+    "start": 103.04,
+    "duration": 5.439
+  },
+  {
+    "text": "bisa berbeda.",
+    "start": 105.159,
+    "duration": 3.32
+  },
+  {
+    "text": "Nah, di dalam algoritma ada yang disebut",
+    "start": 109.04,
+    "duration": 5.48
+  },
+  {
+    "text": "dengan optimasi algoritma. Optimasi",
+    "start": 111.96,
+    "duration": 6.519
+  },
+  {
+    "text": "algoritma itu adalah sebuah usaha untuk",
+    "start": 114.52,
+    "duration": 6.519
+  },
+  {
+    "text": "membuat langkah ee menyelesaikan suatu",
+    "start": 118.479,
+    "duration": 5.6
+  },
+  {
+    "text": "masalah menjadi lebih efisien. Nah, yang",
+    "start": 121.039,
+    "duration": 4.72
+  },
+  {
+    "text": "dimaksud dengan efisien itu apa sih?",
+    "start": 124.079,
+    "duration": 4.68
+  },
+  {
+    "text": "Efisien yang dimaksud di sini di dalam",
+    "start": 125.759,
+    "duration": 5.401
+  },
+  {
+    "text": "optimasi algoritma adalah yang pertama",
+    "start": 128.759,
+    "duration": 4.601
+  },
+  {
+    "text": "langkah yang dilakukan sebuah algoritma",
+    "start": 131.16,
+    "duration": 5.359
+  },
+  {
+    "text": "itu lebih sedikit. Kemudian waktu untuk",
+    "start": 133.36,
+    "duration": 4.959
+  },
+  {
+    "text": "menyelesaikan masalah menggunakan",
+    "start": 136.519,
+    "duration": 4.321
+  },
+  {
+    "text": "algoritma satu misal atau dua itu",
+    "start": 138.319,
+    "duration": 4.92
+  },
+  {
+    "text": "waktunya lebih cepat. Yang ketiga",
+    "start": 140.84,
+    "duration": 5.2
+  },
+  {
+    "text": "kodenya jauh lebih rapi. Dan yang",
+    "start": 143.239,
+    "duration": 5.36
+  },
+  {
+    "text": "keempat tidak melakukan hal yang tidak",
+    "start": 146.04,
+    "duration": 5.76
+  },
+  {
+    "text": "perlu dilakukan. Jadi program itu tetap",
+    "start": 148.599,
+    "duration": 6.041
+  },
+  {
+    "text": "menyelesaikan tugasnya yang sama atau",
+    "start": 151.8,
+    "duration": 6.04
+  },
+  {
+    "text": "masalah yang sama, tapi caranya lebih",
+    "start": 154.64,
+    "duration": 6.12
+  },
+  {
+    "text": "optimal atau lebih pintar.",
+    "start": 157.84,
+    "duration": 6.56
+  },
+  {
+    "text": "Nah, contoh dari optimasi algoritma",
+    "start": 160.76,
+    "duration": 6.399
+  },
+  {
+    "text": "misalnya kita mempunyai masalah nih atau",
+    "start": 164.4,
+    "duration": 5.4
+  },
+  {
+    "text": "ee ada sesuatu yang mau kita selesaikan",
+    "start": 167.159,
+    "duration": 5.44
+  },
+  {
+    "text": "di sini kita mau mencari buku matematika",
+    "start": 169.8,
+    "duration": 6.56
+  },
+  {
+    "text": "di perpustakaan. Nah, cara yang pertama",
+    "start": 172.599,
+    "duration": 6.121
+  },
+  {
+    "text": "yang belum dioptimasi, cara yang lambat",
+    "start": 176.36,
+    "duration": 6.0
+  },
+  {
+    "text": "itu kita mengecek buku satu persatu dari",
+    "start": 178.72,
+    "duration": 6.28
+  },
+  {
+    "text": "rak paling ujung kiri sampai rak ujung",
+    "start": 182.36,
+    "duration": 6.04
+  },
+  {
+    "text": "paling kanan. Nah, ketika kita",
+    "start": 185.0,
+    "duration": 7.0
+  },
+  {
+    "text": "mengoptimasi algoritma kita tadi, kita",
+    "start": 188.4,
+    "duration": 6.559
+  },
+  {
+    "text": "bisa melakukan dengan cara yang kedua.",
+    "start": 192.0,
+    "duration": 6.48
+  },
+  {
+    "text": "Misalnya kita cari dulu ya katalog",
+    "start": 194.959,
+    "duration": 5.801
+  },
+  {
+    "text": "pembel bukunya. Oh, ternyata buku",
+    "start": 198.48,
+    "duration": 4.839
+  },
+  {
+    "text": "matematika terdapat di rak nomor 17.",
+    "start": 200.76,
+    "duration": 7.16
+  },
+  {
+    "text": "Berarti kita langsung aja lanjut ke",
+    "start": 203.319,
+    "duration": 6.48
+  },
+  {
+    "text": "menuju rak 17 untuk mencari buku",
+    "start": 207.92,
+    "duration": 4.519
+  },
+  {
+    "text": "matematika yang kita mau cari. Nah,",
+    "start": 209.799,
+    "duration": 5.401
+  },
+  {
+    "text": "walaupun tujuannya sama, tapi cara yang",
+    "start": 212.439,
+    "duration": 4.641
+  },
+  {
+    "text": "kedua yang telah dioptimasi tadi lebih",
+    "start": 215.2,
+    "duration": 3.92
+  },
+  {
+    "text": "efisien karena langkah yang dilakukan",
+    "start": 217.08,
+    "duration": 3.879
+  },
+  {
+    "text": "itu jauh lebih sedikit. Karena tidak",
+    "start": 219.12,
+    "duration": 3.839
+  },
+  {
+    "text": "kita tidak perlu berjalan dari ujung",
+    "start": 220.959,
+    "duration": 6.761
+  },
+  {
+    "text": "paling kiri sampai ujung paling kanan.",
+    "start": 222.959,
+    "duration": 4.761
+  },
+  {
+    "text": "Nah, untuk mengecek apakah teman-teman",
+    "start": 229.12,
+    "duration": 4.28
+  },
+  {
+    "text": "sudah paham tentang optimasi algoritma",
+    "start": 231.12,
+    "duration": 5.319
+  },
+  {
+    "text": "dan juga algoritma, silakan kerjakan",
+    "start": 233.4,
+    "duration": 6.8
+  },
+  {
+    "text": "kuis berikut ini.",
+    "start": 236.439,
+    "duration": 3.761
+  },
+  {
+    "text": "Nah, Teman-teman, dalam implementasi",
+    "start": 240.56,
+    "duration": 6.36
+  },
+  {
+    "text": "algoritma di bahasa pemrograman Python",
+    "start": 243.68,
+    "duration": 6.199
+  },
+  {
+    "text": "ada suatu istilah yaitu step count. Apa",
+    "start": 246.92,
+    "duration": 5.519
+  },
+  {
+    "text": "sih step count itu? Step count adalah",
+    "start": 249.879,
+    "duration": 4.601
+  },
+  {
+    "text": "jumlah langkah yang dilakukan oleh",
+    "start": 252.439,
+    "duration": 4.881
+  },
+  {
+    "text": "sebuah algoritma. Misalnya jika kita",
+    "start": 254.48,
+    "duration": 5.319
+  },
+  {
+    "text": "membuat sebuah program yang di mana dia",
+    "start": 257.32,
+    "duration": 5.52
+  },
+  {
+    "text": "mengecek lima data satu persatu, maka",
+    "start": 259.799,
+    "duration": 5.441
+  },
+  {
+    "text": "algoritma tersebut menyatakan bahwa ada",
+    "start": 262.84,
+    "duration": 4.48
+  },
+  {
+    "text": "lima langkah pengecekan. Kurang lebih",
+    "start": 265.24,
+    "duration": 5.519
+  },
+  {
+    "text": "lima langkah pengecekan yang dilakukan.",
+    "start": 267.32,
+    "duration": 6.36
+  },
+  {
+    "text": "Yang kedua, kita membuat program yang",
+    "start": 270.759,
+    "duration": 6.561
+  },
+  {
+    "text": "mengecek 100 data satu persatu. Maka",
+    "start": 273.68,
+    "duration": 5.76
+  },
+  {
+    "text": "programnya harus akan membuat kurang",
+    "start": 277.32,
+    "duration": 4.68
+  },
+  {
+    "text": "lebih sekitar 100 langkah untuk",
+    "start": 279.44,
+    "duration": 5.08
+  },
+  {
+    "text": "melakukan sebuah task. Nah, bisa",
+    "start": 282.0,
+    "duration": 4.28
+  },
+  {
+    "text": "dibilang semakin banyak langkah yang",
+    "start": 284.52,
+    "duration": 5.16
+  },
+  {
+    "text": "dilakukan, maka semakin lama progres",
+    "start": 286.28,
+    "duration": 6.8
+  },
+  {
+    "text": "atau proses sebuah program itu ee",
+    "start": 289.68,
+    "duration": 7.12
+  },
+  {
+    "text": "menjalankan ee kodenya.",
+    "start": 293.08,
+    "duration": 7.52
+  },
+  {
+    "text": "Nah, di dalam bahasa pemrograman Python,",
+    "start": 296.8,
+    "duration": 6.28
+  },
+  {
+    "text": "ups, dalam sebuah bahasa pemroganan",
+    "start": 300.6,
+    "duration": 5.48
+  },
+  {
+    "text": "Python contohnya contoh sederhana dari",
+    "start": 303.08,
+    "duration": 5.6
+  },
+  {
+    "text": "step itu seperti ini. Misalnya kita",
+    "start": 306.08,
+    "duration": 5.559
+  },
+  {
+    "text": "mempunyai sebuah array. Nah, array ini",
+    "start": 308.68,
+    "duration": 5.4
+  },
+  {
+    "text": "menyimpan beberapa data.",
+    "start": 311.639,
+    "duration": 4.721
+  },
+  {
+    "text": "datanya di sini ada integer angka ya",
+    "start": 314.08,
+    "duration": 6.0
+  },
+  {
+    "text": "teman-teman. Angka 3, angka 7, angka 10,",
+    "start": 316.36,
+    "duration": 6.88
+  },
+  {
+    "text": "15, dan juga 20. Misalnya kita mau",
+    "start": 320.08,
+    "duration": 6.32
+  },
+  {
+    "text": "membuat sebuah algoritma, sebuah program",
+    "start": 323.24,
+    "duration": 6.04
+  },
+  {
+    "text": "yang ingin mencari angka 15 dari",
+    "start": 326.4,
+    "duration": 5.88
+  },
+  {
+    "text": "tumpukan atau ee susunan angka yang kita",
+    "start": 329.28,
+    "duration": 6.44
+  },
+  {
+    "text": "punya. Nah, secara algoritma, secara",
+    "start": 332.28,
+    "duration": 5.96
+  },
+  {
+    "text": "langkah-langkah program itu pertama akan",
+    "start": 335.72,
+    "duration": 5.0
+  },
+  {
+    "text": "mengecek dari awal ya sampai akhir.",
+    "start": 338.24,
+    "duration": 6.12
+  },
+  {
+    "text": "Pertama dia mengecek dulu yang pertama",
+    "start": 340.72,
+    "duration": 5.68
+  },
+  {
+    "text": "dari array, data pertama dari array",
+    "start": 344.36,
+    "duration": 5.24
+  },
+  {
+    "text": "nomor 3. Nah, dia mengecek apakah 3",
+    "start": 346.4,
+    "duration": 7.88
+  },
+  {
+    "text": "adalah 15, apakah 3 = 15? Oh, ternyata",
+    "start": 349.6,
+    "duration": 7.879
+  },
+  {
+    "text": "bukan. Maka programnya akan melanjutkan",
+    "start": 354.28,
+    "duration": 8.0
+  },
+  {
+    "text": "ke data yang kedua. Apakah 7 = 15? Bukan",
+    "start": 357.479,
+    "duration": 5.761
+  },
+  {
+    "text": "juga.",
+    "start": 362.28,
+    "duration": 2.96
+  },
+  {
+    "text": "maka dia akan lanjut ke data yang",
+    "start": 363.24,
+    "duration": 6.679
+  },
+  {
+    "text": "ketiga. Apakah 10 = 15? Ternyata bukan.",
+    "start": 365.24,
+    "duration": 6.2
+  },
+  {
+    "text": "Nah,",
+    "start": 369.919,
+    "duration": 5.041
+  },
+  {
+    "text": "berarti dia pindah ke data yang keempat.",
+    "start": 371.44,
+    "duration": 8.12
+  },
+  {
+    "text": "Apakah 15 = 15? Oh, ternyata iya. Maka",
+    "start": 374.96,
+    "duration": 7.32
+  },
+  {
+    "text": "dari program kita buat algoritma program",
+    "start": 379.56,
+    "duration": 5.4
+  },
+  {
+    "text": "yang kita buat tadi kurang lebih ada",
+    "start": 382.28,
+    "duration": 5.639
+  },
+  {
+    "text": "empat count ya, empat step yang kita",
+    "start": 384.96,
+    "duration": 5.48
+  },
+  {
+    "text": "lakukan. Pertama kita ngecek apakah 3 =",
+    "start": 387.919,
+    "duration": 8.241
+  },
+  {
+    "text": "15, 7 = 15 atau 10 = 15. Nah, kalau yang",
+    "start": 390.44,
+    "duration": 9.36
+  },
+  {
+    "text": "terakhir ada, maka eh count-nya ya kan",
+    "start": 396.16,
+    "duration": 5.879
+  },
+  {
+    "text": "step count-nya akan berhenti di situ.",
+    "start": 399.8,
+    "duration": 5.72
+  },
+  {
+    "text": "Maka dari algoritma kita tadi totalnya",
+    "start": 402.039,
+    "duration": 8.361
+  },
+  {
+    "text": "ada empat step count yang kita lakukan.",
+    "start": 405.52,
+    "duration": 4.88
+  },
+  {
+    "text": "berat.",
+    "start": 416.879,
+    "duration": 3.0
+  },
+  {
+    "text": "Nah, dalam bahasa pemrograman Python",
+    "start": 420.68,
+    "duration": 5.919
+  },
+  {
+    "text": "berikut merupakan contoh simulasi",
+    "start": 424.039,
+    "duration": 5.521
+  },
+  {
+    "text": "mencari sebuah angka berdasarkan array.",
+    "start": 426.599,
+    "duration": 4.201
+  },
+  {
+    "text": "Kita perhatikan sama-sama ya,",
+    "start": 429.56,
+    "duration": 4.039
+  },
+  {
+    "text": "Teman-teman. Pertama, di sini kita",
+    "start": 430.8,
+    "duration": 5.119
+  },
+  {
+    "text": "mempunyai array yang sama seperti contoh",
+    "start": 433.599,
+    "duration": 5.28
+  },
+  {
+    "text": "yang tadi ya. Array ini dinamakan dengan",
+    "start": 435.919,
+    "duration": 5.96
+  },
+  {
+    "text": "number. dan numbers ini dia memiliki",
+    "start": 438.879,
+    "duration": 8.841
+  },
+  {
+    "text": "data 3, 7, 10, 15, dan 20. Nah, kita",
+    "start": 441.879,
+    "duration": 9.521
+  },
+  {
+    "text": "juga menyimpan sebuah variabel untuk",
+    "start": 447.72,
+    "duration": 6.159
+  },
+  {
+    "text": "menetapkan data yang mau kita cari.",
+    "start": 451.4,
+    "duration": 4.32
+  },
+  {
+    "text": "misalnya kita targetnya mau mencari",
+    "start": 453.879,
+    "duration": 5.921
+  },
+  {
+    "text": "angka 15 dari array numbers tadi. Nah,",
+    "start": 455.72,
+    "duration": 6.879
+  },
+  {
+    "text": "kemudian kita perlu mendeklarasikan juga",
+    "start": 459.8,
+    "duration": 5.88
+  },
+  {
+    "text": "step count-nya. Mendeklarasikan variabel",
+    "start": 462.599,
+    "duration": 5.921
+  },
+  {
+    "text": "untuk menyimpan berapa kali sih step",
+    "start": 465.68,
+    "duration": 4.959
+  },
+  {
+    "text": "yang sudah kita lakukan untuk mencari,",
+    "start": 468.52,
+    "duration": 4.16
+  },
+  {
+    "text": "untuk mencapai target yang sudah kita",
+    "start": 470.639,
+    "duration": 5.601
+  },
+  {
+    "text": "tetapkan sebelumnya. Nah, di sini karena",
+    "start": 472.68,
+    "duration": 5.519
+  },
+  {
+    "text": "kita melakukan hal yang sama berulang,",
+    "start": 476.24,
+    "duration": 3.959
+  },
+  {
+    "text": "berulang, berulang, maka alangkah",
+    "start": 478.199,
+    "duration": 6.481
+  },
+  {
+    "text": "baiknya kita menggunakan perulangan for.",
+    "start": 480.199,
+    "duration": 6.521
+  },
+  {
+    "text": "Dalam perulangan for di sini",
+    "start": 484.68,
+    "duration": 4.079
+  },
+  {
+    "text": "dideklarasikan perulangan for ini",
+    "start": 486.72,
+    "duration": 4.919
+  },
+  {
+    "text": "mencari angka membuat variabel number ya",
+    "start": 488.759,
+    "duration": 5.601
+  },
+  {
+    "text": "untuk menyimpan angka sementara yang",
+    "start": 491.639,
+    "duration": 6.041
+  },
+  {
+    "text": "sesuai jumlahnya sesuai dengan angka",
+    "start": 494.36,
+    "duration": 6.88
+  },
+  {
+    "text": "yang ada di dalam array numbers tadi.",
+    "start": 497.68,
+    "duration": 6.68
+  },
+  {
+    "text": "Kemudian di sini dia",
+    "start": 501.24,
+    "duration": 5.519
+  },
+  {
+    "text": "pertama kali yang akan dia lakukan untuk",
+    "start": 504.36,
+    "duration": 3.679
+  },
+  {
+    "text": "ee kalau misalnya programnya sudah",
+    "start": 506.759,
+    "duration": 4.4
+  },
+  {
+    "text": "jalan, pertama dia akan menambahkan dulu",
+    "start": 508.039,
+    "duration": 6.44
+  },
+  {
+    "text": "angka satu ke dalam variabel steps ini",
+    "start": 511.159,
+    "duration": 7.0
+  },
+  {
+    "text": "ya. Jadi awal nol kalau programnya sudah",
+    "start": 514.479,
+    "duration": 5.92
+  },
+  {
+    "text": "jalan maka dia akan mendeklarasikan oh",
+    "start": 518.159,
+    "duration": 4.961
+  },
+  {
+    "text": "ini langkah pertama gitu ya. Jadi anggap",
+    "start": 520.399,
+    "duration": 4.44
+  },
+  {
+    "text": "aja ini kita langkah pertama ya. Langkah",
+    "start": 523.12,
+    "duration": 5.56
+  },
+  {
+    "text": "pertama masih 0 kita tambah S. Oh",
+    "start": 524.839,
+    "duration": 5.521
+  },
+  {
+    "text": "berarti sekarang stepnya step yang",
+    "start": 528.68,
+    "duration": 3.24
+  },
+  {
+    "text": "pertama.",
+    "start": 530.36,
+    "duration": 4.44
+  },
+  {
+    "text": "Nah, di sini ada sebuah condition yang",
+    "start": 531.92,
+    "duration": 5.919
+  },
+  {
+    "text": "di mana dia mencari apa sih yang kita",
+    "start": 534.8,
+    "duration": 7.2
+  },
+  {
+    "text": "cari? Oh, yang kita cari adalah angka 15",
+    "start": 537.839,
+    "duration": 6.481
+  },
+  {
+    "text": "dari semua number yang ada di dalam",
+    "start": 542.0,
+    "duration": 6.0
+  },
+  {
+    "text": "array numbers ini. Nah, variabel numbers",
+    "start": 544.32,
+    "duration": 5.959
+  },
+  {
+    "text": "number yang ada di dalam yang baru kita",
+    "start": 548.0,
+    "duration": 5.2
+  },
+  {
+    "text": "buat dari perulangan for ini itu kita",
+    "start": 550.279,
+    "duration": 5.361
+  },
+  {
+    "text": "taruh nih sementara angka tiga. Angka",
+    "start": 553.2,
+    "duration": 4.52
+  },
+  {
+    "text": "yang pertama kita taruh di dalam number",
+    "start": 555.64,
+    "duration": 5.319
+  },
+  {
+    "text": "nih tiga. Sekarang dia mengecek jika",
+    "start": 557.72,
+    "duration": 5.04
+  },
+  {
+    "text": "number oh number tadi kita simpannya",
+    "start": 560.959,
+    "duration": 6.44
+  },
+  {
+    "text": "angka 3 ya. Jika atau if 3 = sama dengan",
+    "start": 562.76,
+    "duration": 7.8
+  },
+  {
+    "text": "target targetnya berapa? 15. Maka di",
+    "start": 567.399,
+    "duration": 7.761
+  },
+  {
+    "text": "sini kita cek apakah 3 = 15. Kalau benar",
+    "start": 570.56,
+    "duration": 7.719
+  },
+  {
+    "text": "maka kita akan nge-print angka ditemukan",
+    "start": 575.16,
+    "duration": 6.359
+  },
+  {
+    "text": "kemudian kita akan break. Nah apa itu",
+    "start": 578.279,
+    "duration": 5.601
+  },
+  {
+    "text": "break? Nanti akan kita bahas, ya. Kalau",
+    "start": 581.519,
+    "duration": 5.281
+  },
+  {
+    "text": "misalnya dia salah gimana? 3 kan kita",
+    "start": 583.88,
+    "duration": 5.92
+  },
+  {
+    "text": "cek angka yang pertama tadi 3. 3 tidak",
+    "start": 586.8,
+    "duration": 5.12
+  },
+  {
+    "text": "sama dengan sama dengan 15 ternyata",
+    "start": 589.8,
+    "duration": 4.08
+  },
+  {
+    "text": "hasilnya tidak atau false. Maka",
+    "start": 591.92,
+    "duration": 4.52
+  },
+  {
+    "text": "programnya akan mengulang lagi dari",
+    "start": 593.88,
+    "duration": 7.68
+  },
+  {
+    "text": "awal. Nah, tadi angka 3 sudah kita cek.",
+    "start": 596.44,
+    "duration": 7.88
+  },
+  {
+    "text": "Kemudian stepnya juga udah satu. Nah,",
+    "start": 601.56,
+    "duration": 5.839
+  },
+  {
+    "text": "karena dia mengulang lagi dari sini dari",
+    "start": 604.32,
+    "duration": 6.24
+  },
+  {
+    "text": "steps ini, sekarang angka 1 kita",
+    "start": 607.399,
+    "duration": 7.12
+  },
+  {
+    "text": "tambahkan 1. 1 + 1 maka 2. Berarti",
+    "start": 610.56,
+    "duration": 6.24
+  },
+  {
+    "text": "sekarang steps ini menyimpan angka dua",
+    "start": 614.519,
+    "duration": 4.041
+  },
+  {
+    "text": "yang menandakan bahwa sekarang kita",
+    "start": 616.8,
+    "duration": 5.479
+  },
+  {
+    "text": "sedang masuk tahap kedua.",
+    "start": 618.56,
+    "duration": 7.719
+  },
+  {
+    "text": "Kita ambil angka yang kedua, angka 7.",
+    "start": 622.279,
+    "duration": 10.361
+  },
+  {
+    "text": "Kita cek nih apakah 7 = 15? Oh, tidak.",
+    "start": 626.279,
+    "duration": 10.0
+  },
+  {
+    "text": "maka dia akan mengulang kembali. Dilihat",
+    "start": 632.64,
+    "duration": 5.199
+  },
+  {
+    "text": "ya di sini ya, kenapa yang ini tidak",
+    "start": 636.279,
+    "duration": 3.761
+  },
+  {
+    "text": "jalan? Karena di sini ada indentation",
+    "start": 637.839,
+    "duration": 5.321
+  },
+  {
+    "text": "yang berarti dia dua kode ini hanya akan",
+    "start": 640.04,
+    "duration": 6.2
+  },
+  {
+    "text": "berjalan ketika kondisi if-nya ini",
+    "start": 643.16,
+    "duration": 5.479
+  },
+  {
+    "text": "terpenuhi atau true. Nah, kalau tadi kan",
+    "start": 646.24,
+    "duration": 6.36
+  },
+  {
+    "text": "7 = 15 masih false, maka programnya akan",
+    "start": 648.639,
+    "duration": 6.241
+  },
+  {
+    "text": "mengulang kembali.",
+    "start": 652.6,
+    "duration": 4.52
+  },
+  {
+    "text": "Tadi kita sudah menyimpan angka dua,",
+    "start": 654.88,
+    "duration": 4.72
+  },
+  {
+    "text": "sekarang kita menambahkan satu lagi ke",
+    "start": 657.12,
+    "duration": 4.56
+  },
+  {
+    "text": "dalam duanya. Maka sekarang di sini",
+    "start": 659.6,
+    "duration": 5.56
+  },
+  {
+    "text": "menyimpan langkah 3. Langkah ketiga dia",
+    "start": 661.68,
+    "duration": 8.279
+  },
+  {
+    "text": "mengecek nih apakah 10 = sama 15 masih",
+    "start": 665.16,
+    "duration": 8.119
+  },
+  {
+    "text": "false. Maka dia akan kembali ke langkah",
+    "start": 669.959,
+    "duration": 6.641
+  },
+  {
+    "text": "steps tadi. Sekarang dia ngecek lagi",
+    "start": 673.279,
+    "duration": 6.521
+  },
+  {
+    "text": "tadi. Langkah yang ketiga kita tambahkan",
+    "start": 676.6,
+    "duration": 6.799
+  },
+  {
+    "text": "1. Maka 3 + 1 4. Kita ada di langkah",
+    "start": 679.8,
+    "duration": 7.8
+  },
+  {
+    "text": "keempat. Kita ambil nomor yang keempat.",
+    "start": 683.399,
+    "duration": 7.481
+  },
+  {
+    "text": "Apakah 15 = sama dengan target? Wah,",
+    "start": 687.6,
+    "duration": 6.64
+  },
+  {
+    "text": "ternyata benar atau true? Maka kita mau",
+    "start": 690.88,
+    "duration": 6.88
+  },
+  {
+    "text": "nge-print, kita akan ee cetak tulisan",
+    "start": 694.24,
+    "duration": 5.88
+  },
+  {
+    "text": "angka ditemukan dan juga kita akan",
+    "start": 697.76,
+    "duration": 4.68
+  },
+  {
+    "text": "melakukan break yang berarti programnya",
+    "start": 700.12,
+    "duration": 5.76
+  },
+  {
+    "text": "akan stop. Kalau bukan programnya story,",
+    "start": 702.44,
+    "duration": 5.0
+  },
+  {
+    "text": "programnya enggak stop ya berarti",
+    "start": 705.88,
+    "duration": 4.56
+  },
+  {
+    "text": "perulangan ini akan stop. Nah, kalau",
+    "start": 707.44,
+    "duration": 5.72
+  },
+  {
+    "text": "misalnya perulangannya sudah stop, maka",
+    "start": 710.44,
+    "duration": 5.959
+  },
+  {
+    "text": "dia akan menge-print jumlah langkahnya.",
+    "start": 713.16,
+    "duration": 5.2
+  },
+  {
+    "text": "Nih yang tadi kita sudah tulis ya. Oh,",
+    "start": 716.399,
+    "duration": 3.641
+  },
+  {
+    "text": "tadi kan kita sudah di langkah keempat",
+    "start": 718.36,
+    "duration": 4.159
+  },
+  {
+    "text": "ya. Maka kita akan tulis jumlah",
+    "start": 720.04,
+    "duration": 4.76
+  },
+  {
+    "text": "langkahnya. Baru dia akan memanggil isi",
+    "start": 722.519,
+    "duration": 4.481
+  },
+  {
+    "text": "dari variabel steps tadi. Empat. Jumlah",
+    "start": 724.8,
+    "duration": 5.279
+  },
+  {
+    "text": "langkah adalah 4 gitu ya. Jadi dia",
+    "start": 727.0,
+    "duration": 5.2
+  },
+  {
+    "text": "nge-print dulu angkanya ditemukan baru",
+    "start": 730.079,
+    "duration": 3.801
+  },
+  {
+    "text": "dia akan ngasih tahu ada berapa total",
+    "start": 732.2,
+    "duration": 4.28
+  },
+  {
+    "text": "langkah yang dilakukan. Jadi ini",
+    "start": 733.88,
+    "duration": 6.12
+  },
+  {
+    "text": "merupakan sebuah contoh menggunakan step",
+    "start": 736.48,
+    "duration": 6.159
+  },
+  {
+    "text": "count dan juga loop di dalam bahasa",
+    "start": 740.0,
+    "duration": 5.519
+  },
+  {
+    "text": "pemrograman Python. Nah, sekarang kita",
+    "start": 742.639,
+    "duration": 5.121
+  },
+  {
+    "text": "bahas dulu yuk. Kenapa sih di sini harus",
+    "start": 745.519,
+    "duration": 4.88
+  },
+  {
+    "text": "ada break?",
+    "start": 747.76,
+    "duration": 5.28
+  },
+  {
+    "text": "Break itu digunakan untuk menghentikan",
+    "start": 750.399,
+    "duration": 5.68
+  },
+  {
+    "text": "sebuah perulangan atau loop. Kalau",
+    "start": 753.04,
+    "duration": 4.96
+  },
+  {
+    "text": "targetnya sudah ditemukan, seperti yang",
+    "start": 756.079,
+    "duration": 3.921
+  },
+  {
+    "text": "kita contoh kita tadi ya, program tidak",
+    "start": 758.0,
+    "duration": 4.92
+  },
+  {
+    "text": "perlu lagi mengecek data berikutnya.",
+    "start": 760.0,
+    "duration": 5.199
+  },
+  {
+    "text": "Kalau enggak ada break, [berdehem]",
+    "start": 762.92,
+    "duration": 4.56
+  },
+  {
+    "text": "program akan mengecek dari awal sampai",
+    "start": 765.199,
+    "duration": 4.76
+  },
+  {
+    "text": "akhir padahal jawabannya sudah",
+    "start": 767.48,
+    "duration": 4.039
+  },
+  {
+    "text": "ditemukan.",
+    "start": 769.959,
+    "duration": 3.921
+  },
+  {
+    "text": "Nah, dengan menggunakan break ini, break",
+    "start": 771.519,
+    "duration": 4.32
+  },
+  {
+    "text": "ini merupakan salah satu contoh dari",
+    "start": 773.88,
+    "duration": 6.92
+  },
+  {
+    "text": "optimasi sederhana sebuah algoritma.",
+    "start": 775.839,
+    "duration": 8.481
+  },
+  {
+    "text": "Nah, berikut merupakan contoh gimana",
+    "start": 780.8,
+    "duration": 6.08
+  },
+  {
+    "text": "sebuah algoritma atau sebuah bahasa",
+    "start": 784.32,
+    "duration": 5.0
+  },
+  {
+    "text": "pemroganan Python tadi tidak menggunakan",
+    "start": 786.88,
+    "duration": 6.36
+  },
+  {
+    "text": "break. Di sini kita ee programnya sama",
+    "start": 789.32,
+    "duration": 5.759
+  },
+  {
+    "text": "persis ya seperti yang tadi. Cuman",
+    "start": 793.24,
+    "duration": 4.68
+  },
+  {
+    "text": "bedanya ketika kita sudah step keempat",
+    "start": 795.079,
+    "duration": 5.521
+  },
+  {
+    "text": "tadi kan kita step keempat di sini udah",
+    "start": 797.92,
+    "duration": 4.479
+  },
+  {
+    "text": "ini ya udah ketemu ya angkanya",
+    "start": 800.6,
+    "duration": 4.28
+  },
+  {
+    "text": "ditemukan. Nah karena dia tidak ada",
+    "start": 802.399,
+    "duration": 5.0
+  },
+  {
+    "text": "break maka programnya akan melanjutkan",
+    "start": 804.88,
+    "duration": 5.079
+  },
+  {
+    "text": "perulangannya lagi sampai angka",
+    "start": 807.399,
+    "duration": 5.081
+  },
+  {
+    "text": "numbers-nya ini sudah habis. dia akan",
+    "start": 809.959,
+    "duration": 6.281
+  },
+  {
+    "text": "menambahkan stepnya yang awalnya 4 + 1",
+    "start": 812.48,
+    "duration": 7.88
+  },
+  {
+    "text": "jadi 5. Kemudian apakah 5 sama dengan",
+    "start": 816.24,
+    "duration": 7.48
+  },
+  {
+    "text": "apakah 20 ini ya kata angka yang kelima",
+    "start": 820.36,
+    "duration": 5.8
+  },
+  {
+    "text": "apakah 20 sama dengan sama dengan",
+    "start": 823.72,
+    "duration": 5.2
+  },
+  {
+    "text": "targetnya 15? Kalau enggak, maka dia",
+    "start": 826.16,
+    "duration": 5.32
+  },
+  {
+    "text": "enggak akan nge-print si targetnya ini.",
+    "start": 828.92,
+    "duration": 6.56
+  },
+  {
+    "text": "Nah, hasil output dari program ini itu",
+    "start": 831.48,
+    "duration": 6.64
+  },
+  {
+    "text": "angkanya ditetemukan tapi jumlah langkah",
+    "start": 835.48,
+    "duration": 4.359
+  },
+  {
+    "text": "yang dilakukan ada lima karena dia",
+    "start": 838.12,
+    "duration": 5.36
+  },
+  {
+    "text": "mengecek semua angka yang tersedia di",
+    "start": 839.839,
+    "duration": 6.601
+  },
+  {
+    "text": "dalam array numbers itu tadi. Jadi,",
+    "start": 843.48,
+    "duration": 6.719
+  },
+  {
+    "text": "jangan lupa gunakan break untuk",
+    "start": 846.44,
+    "duration": 6.24
+  },
+  {
+    "text": "menghentikan programnya. Menghentikan",
+    "start": 850.199,
+    "duration": 4.601
+  },
+  {
+    "text": "loops-nya sor ya. Jadi menghentikan",
+    "start": 852.68,
+    "duration": 3.519
+  },
+  {
+    "text": "bukan menghentikan program, menghentikan",
+    "start": 854.8,
+    "duration": 3.0
+  },
+  {
+    "text": "loopnya.",
+    "start": 856.199,
+    "duration": 4.2
+  },
+  {
+    "text": "supaya dia bisa melakukan langkah yang",
+    "start": 857.8,
+    "duration": 4.279
+  },
+  {
+    "text": "selanjutnya.",
+    "start": 860.399,
+    "duration": 5.521
+  },
+  {
+    "text": "Oke, itu contoh dari penggunaan optimasi",
+    "start": 862.079,
+    "duration": 8.721
+  },
+  {
+    "text": "algoritma dengan ee break.",
+    "start": 865.92,
+    "duration": 6.8
+  },
+  {
+    "text": "Nah, untuk mengecek pemahaman",
+    "start": 870.8,
+    "duration": 4.68
+  },
+  {
+    "text": "teman-teman terkait",
+    "start": 872.72,
+    "duration": 5.72
+  },
+  {
+    "text": "pemaha materi step count dan optimasi",
+    "start": 875.48,
+    "duration": 5.76
+  },
+  {
+    "text": "algoritma, silakan kerjakan kuis berikut",
+    "start": 878.44,
+    "duration": 5.8
+  },
+  {
+    "text": "ini.",
+    "start": 881.24,
+    "duration": 3.0
+  },
+  {
+    "text": "Nah, Teman-teman, karena Teman-teman",
+    "start": 884.519,
+    "duration": 4.041
+  },
+  {
+    "text": "sudah mengetahui apa itu optimasi dalam",
+    "start": 886.16,
+    "duration": 4.88
+  },
+  {
+    "text": "sebuah algoritma dan juga Teman-teman",
+    "start": 888.56,
+    "duration": 5.16
+  },
+  {
+    "text": "sudah tahu nih bentuknya optim",
+    "start": 891.04,
+    "duration": 5.479
+  },
+  {
+    "text": "mengoptimas sebuah kode atau sebuah",
+    "start": 893.72,
+    "duration": 4.679
+  },
+  {
+    "text": "algoritma,",
+    "start": 896.519,
+    "duration": 5.481
+  },
+  {
+    "text": "sebenarnya kita sebagai programmer harus",
+    "start": 898.399,
+    "duration": 7.12
+  },
+  {
+    "text": "lebih paham lagi cara mengoptimasikan",
+    "start": 902.0,
+    "duration": 5.639
+  },
+  {
+    "text": "sebuah Aku enggak bisa ngomong soal",
+    "start": 905.519,
+    "duration": 4.641
+  },
+  {
+    "text": "banget ya.",
+    "start": 907.639,
+    "duration": 5.401
+  },
+  {
+    "text": "Nah, Teman-teman, dalam",
+    "start": 910.16,
+    "duration": 5.359
+  },
+  {
+    "text": "mengimplementasikan optimasi sebuah",
+    "start": 913.04,
+    "duration": 5.719
+  },
+  {
+    "text": "program atau algoritma, kita perlu",
+    "start": 915.519,
+    "duration": 5.0
+  },
+  {
+    "text": "melakukan yang namanya dalam bahasa",
+    "start": 918.759,
+    "duration": 5.041
+  },
+  {
+    "text": "pemrograman itu ada sesuatu yang disebut",
+    "start": 920.519,
+    "duration": 6.12
+  },
+  {
+    "text": "dengan dry atau don't repeat your code.",
+    "start": 923.8,
+    "duration": 5.519
+  },
+  {
+    "text": "Berarti kita tuh harus menghindari",
+    "start": 926.639,
+    "duration": 5.361
+  },
+  {
+    "text": "membuat kode kita dilakukan secara ee",
+    "start": 929.319,
+    "duration": 6.401
+  },
+  {
+    "text": "berulang. Misalnya di sini kita mau",
+    "start": 932.0,
+    "duration": 6.959
+  },
+  {
+    "text": "melakukan sebuah print, ya. nge-print",
+    "start": 935.72,
+    "duration": 5.76
+  },
+  {
+    "text": "semua nama-nama anak-anak yang ada di",
+    "start": 938.959,
+    "duration": 5.36
+  },
+  {
+    "text": "kelas kita dengan sapaan halo. Jadi di",
+    "start": 941.48,
+    "duration": 5.52
+  },
+  {
+    "text": "sini kita buat programnya menyapa halo",
+    "start": 944.319,
+    "duration": 5.08
+  },
+  {
+    "text": "Andi, halo Budi, halo Citra, dan halo",
+    "start": 947.0,
+    "duration": 5.56
+  },
+  {
+    "text": "Diana. Nah, pada saat kita melakukan ini",
+    "start": 949.399,
+    "duration": 5.721
+  },
+  {
+    "text": "kan kodenya lumayan banyak ya. Kalau",
+    "start": 952.56,
+    "duration": 5.0
+  },
+  {
+    "text": "dalam contoh ini kebetulan contohnya",
+    "start": 955.12,
+    "duration": 4.279
+  },
+  {
+    "text": "hanya ada empat nama, tapi gimana kalau",
+    "start": 957.56,
+    "duration": 3.56
+  },
+  {
+    "text": "misalnya di dalam satu kelas kalian ada",
+    "start": 959.399,
+    "duration": 4.601
+  },
+  {
+    "text": "20 anak gitu ya kan pasti panjang banget",
+    "start": 961.12,
+    "duration": 5.159
+  },
+  {
+    "text": "ya kode yang harus kita tulis. Dan juga",
+    "start": 964.0,
+    "duration": 4.48
+  },
+  {
+    "text": "misalnya kalian ingin mengganti nih, oh",
+    "start": 966.279,
+    "duration": 4.441
+  },
+  {
+    "text": "kita enggak mau teksnya yang ditaruh di",
+    "start": 968.48,
+    "duration": 4.2
+  },
+  {
+    "text": "sini hello, tapi kita mau ganti jadi",
+    "start": 970.72,
+    "duration": 4.52
+  },
+  {
+    "text": "high. Bayangkan kalian harus mengganti",
+    "start": 972.68,
+    "duration": 6.68
+  },
+  {
+    "text": "40 baris yang awal halo jadi high. Nah,",
+    "start": 975.24,
+    "duration": 6.68
+  },
+  {
+    "text": "itu kan sangat tidak efisien ya. Nah,",
+    "start": 979.36,
+    "duration": 5.24
+  },
+  {
+    "text": "dalam bahasa Python ada nih cara yang",
+    "start": 981.92,
+    "duration": 5.24
+  },
+  {
+    "text": "lebih efisien yang bisa kita lakukan",
+    "start": 984.6,
+    "duration": 5.239
+  },
+  {
+    "text": "dengan menggunakan looping atau",
+    "start": 987.16,
+    "duration": 5.52
+  },
+  {
+    "text": "perulangan. Nah, contoh yang di sini",
+    "start": 989.839,
+    "duration": 5.56
+  },
+  {
+    "text": "kita bisa lakukan, kita bisa memasukkan",
+    "start": 992.68,
+    "duration": 4.92
+  },
+  {
+    "text": "semua nama murid-murid yang ada di dalam",
+    "start": 995.399,
+    "duration": 5.0
+  },
+  {
+    "text": "kelas kita ke dalam sebuah array. Anggap",
+    "start": 997.6,
+    "duration": 5.719
+  },
+  {
+    "text": "aja di sini ada [berdehem] perwakilan 4",
+    "start": 1000.399,
+    "duration": 6.281
+  },
+  {
+    "text": "L siswa ya. Oh, empat siswa. Sori.",
+    "start": 1003.319,
+    "duration": 5.161
+  },
+  {
+    "text": "Empat siswa ini dimasukkan ke dalam",
+    "start": 1006.68,
+    "duration": 3.76
+  },
+  {
+    "text": "sebuah array. nama arrayanya adalah",
+    "start": 1008.48,
+    "duration": 3.56
+  },
+  {
+    "text": "names.",
+    "start": 1010.44,
+    "duration": 4.04
+  },
+  {
+    "text": "Di sini kita untuk mau kalau misal kita",
+    "start": 1012.04,
+    "duration": 5.0
+  },
+  {
+    "text": "mau nge-print halo dan juga nama",
+    "start": 1014.48,
+    "duration": 4.64
+  },
+  {
+    "text": "masing-masing anak yang ada di sini,",
+    "start": 1017.04,
+    "duration": 5.279
+  },
+  {
+    "text": "kita tinggal menggunakan perulangan for.",
+    "start": 1019.12,
+    "duration": 6.16
+  },
+  {
+    "text": "Di sini kita buat variabel name yang",
+    "start": 1022.319,
+    "duration": 4.961
+  },
+  {
+    "text": "nanti akan menampung nama anak-anak ini",
+    "start": 1025.28,
+    "duration": 4.44
+  },
+  {
+    "text": "sementara yang ada di dalam names ini.",
+    "start": 1027.28,
+    "duration": 5.679
+  },
+  {
+    "text": "For name in names. Jadi intinya program",
+    "start": 1029.72,
+    "duration": 7.44
+  },
+  {
+    "text": "ini akan berjalan sampai semua",
+    "start": 1032.959,
+    "duration": 6.6
+  },
+  {
+    "text": "array ini habis gitu ya. Apa yang mau",
+    "start": 1037.16,
+    "duration": 4.2
+  },
+  {
+    "text": "kita lakukan? Oh, kita mau nge-print.",
+    "start": 1039.559,
+    "duration": 4.721
+  },
+  {
+    "text": "Halo, terus itu namanya nih ya. Jadi",
+    "start": 1041.36,
+    "duration": 4.52
+  },
+  {
+    "text": "bentuknya misalnya programnya kita",
+    "start": 1044.28,
+    "duration": 4.8
+  },
+  {
+    "text": "jalankan. pertama Andi akan e karena dia",
+    "start": 1045.88,
+    "duration": 5.56
+  },
+  {
+    "text": "indeks ke nol ya indeks yang pertama",
+    "start": 1049.08,
+    "duration": 4.839
+  },
+  {
+    "text": "maka dia akan dimasukkan duluan nih Andi",
+    "start": 1051.44,
+    "duration": 4.44
+  },
+  {
+    "text": "ini namanya Andi ini datanya akan",
+    "start": 1053.919,
+    "duration": 4.0
+  },
+  {
+    "text": "dimasukin ke dalam variabel sementara",
+    "start": 1055.88,
+    "duration": 4.64
+  },
+  {
+    "text": "ini namanya name.",
+    "start": 1057.919,
+    "duration": 5.921
+  },
+  {
+    "text": "Andi eh array pertama dia akan ngprint",
+    "start": 1060.52,
+    "duration": 6.32
+  },
+  {
+    "text": "halo name. Maka dia akan ngprint halo",
+    "start": 1063.84,
+    "duration": 5.04
+  },
+  {
+    "text": "Andi. Kemudian programnya kalau udah dia",
+    "start": 1066.84,
+    "duration": 4.4
+  },
+  {
+    "text": "akan ngulang lagi. Setelah Andi ditarik",
+    "start": 1068.88,
+    "duration": 4.4
+  },
+  {
+    "text": "dia akan narik Budi. Baru dia akan",
+    "start": 1071.24,
+    "duration": 6.12
+  },
+  {
+    "text": "ngprint Budi. Citra dia taruh di dalam",
+    "start": 1073.28,
+    "duration": 6.8
+  },
+  {
+    "text": "variabel name akan nge-print Citra dan",
+    "start": 1077.36,
+    "duration": 5.64
+  },
+  {
+    "text": "sampai Diana. Setelah Diana, setelah",
+    "start": 1080.08,
+    "duration": 4.88
+  },
+  {
+    "text": "nge-print Diana apakah datanya ada? Oh,",
+    "start": 1083.0,
+    "duration": 4.039
+  },
+  {
+    "text": "ternyata tidak ada. Maka programnya akan",
+    "start": 1084.96,
+    "duration": 6.64
+  },
+  {
+    "text": "stop. Bayangkan tadi kita ee mengetik ya",
+    "start": 1087.039,
+    "duration": 7.441
+  },
+  {
+    "text": "di atasnya kita mengetik empat baris",
+    "start": 1091.6,
+    "duration": 5.72
+  },
+  {
+    "text": "untuk menyapa empat teman kita. Di sini",
+    "start": 1094.48,
+    "duration": 6.28
+  },
+  {
+    "text": "kita bisa gunakan tiga baris untuk",
+    "start": 1097.32,
+    "duration": 5.08
+  },
+  {
+    "text": "menyapa empat teman kita. Bahkan bisa",
+    "start": 1100.76,
+    "duration": 4.2
+  },
+  {
+    "text": "kita lebih ya, bisa 40 sesuai dengan",
+    "start": 1102.4,
+    "duration": 5.12
+  },
+  {
+    "text": "data yang ada di dalam array names ini.",
+    "start": 1104.96,
+    "duration": 7.079
+  },
+  {
+    "text": "Tadi kode di sini bisa dibilang sangat",
+    "start": 1107.52,
+    "duration": 7.0
+  },
+  {
+    "text": "efisien dan sudah teroptimasi dengan",
+    "start": 1112.039,
+    "duration": 6.12
+  },
+  {
+    "text": "maksimal. Nah, kenapa sih loop itu bisa",
+    "start": 1114.52,
+    "duration": 5.88
+  },
+  {
+    "text": "membantu kita dalam mengoptimasi sebuah",
+    "start": 1118.159,
+    "duration": 5.121
+  },
+  {
+    "text": "program atau algoritma? Loop membantu",
+    "start": 1120.4,
+    "duration": 5.639
+  },
+  {
+    "text": "kita melakukan aksi yang sama yang kita",
+    "start": 1123.28,
+    "duration": 5.84
+  },
+  {
+    "text": "lakukan berkali-kali tanpa harus membuat",
+    "start": 1126.039,
+    "duration": 5.12
+  },
+  {
+    "text": "kita mengulang kode-kode tersebut.",
+    "start": 1129.12,
+    "duration": 5.32
+  },
+  {
+    "text": "misalnya kita copy paste atau ya kita",
+    "start": 1131.159,
+    "duration": 6.041
+  },
+  {
+    "text": "lakukan berulanglah.",
+    "start": 1134.44,
+    "duration": 6.2
+  },
+  {
+    "text": "Jika datanya bertambah kita cubah kita",
+    "start": 1137.2,
+    "duration": 6.16
+  },
+  {
+    "text": "cukup mengubah isi dari list yang ada e",
+    "start": 1140.64,
+    "duration": 4.36
+  },
+  {
+    "text": "yang sudah kita buat. Misalnya di sini",
+    "start": 1143.36,
+    "duration": 6.6
+  },
+  {
+    "text": "kita membuat list eh array eh",
+    "start": 1145.0,
+    "duration": 7.039
+  },
+  {
+    "text": "names ya, nama array-nya names gitu ya,",
+    "start": 1149.96,
+    "duration": 4.24
+  },
+  {
+    "text": "nama listnya names. Nah, kalau misalnya",
+    "start": 1152.039,
+    "duration": 3.601
+  },
+  {
+    "text": "kita mau nambah datanya ya udah kita",
+    "start": 1154.2,
+    "duration": 3.24
+  },
+  {
+    "text": "tinggal tambahin aja yang ada di dalam",
+    "start": 1155.64,
+    "duration": 4.36
+  },
+  {
+    "text": "sini. kita tidak perlu meng-copy paste",
+    "start": 1157.44,
+    "duration": 6.0
+  },
+  {
+    "text": "barisnya tadi",
+    "start": 1160.0,
+    "duration": 3.44
+  },
+  {
+    "text": "program dengan menggunakan loop yang",
+    "start": 1163.64,
+    "duration": 4.32
+  },
+  {
+    "text": "pertama pastinya jadi lebih rapi. Yang",
+    "start": 1165.84,
+    "duration": 4.199
+  },
+  {
+    "text": "kedua jadi lebih murah mudah dirawat",
+    "start": 1167.96,
+    "duration": 4.04
+  },
+  {
+    "text": "maksud lebih mudah dirawat ini tadi ya",
+    "start": 1170.039,
+    "duration": 3.961
+  },
+  {
+    "text": "kalau misalnya kita mau mengganti halo",
+    "start": 1172.0,
+    "duration": 4.159
+  },
+  {
+    "text": "menjadi high kan jauh lebih cepat kalau",
+    "start": 1174.0,
+    "duration": 4.52
+  },
+  {
+    "text": "misalnya kita tinggal mengubah satu teks",
+    "start": 1176.159,
+    "duration": 5.481
+  },
+  {
+    "text": "ini saja gitu ya. Kemudian yang ketiga",
+    "start": 1178.52,
+    "duration": 4.56
+  },
+  {
+    "text": "programnya jadi lebih mudah",
+    "start": 1181.64,
+    "duration": 2.919
+  },
+  {
+    "text": "dikembangkan. Jadi kita mau kalau",
+    "start": 1183.08,
+    "duration": 4.52
+  },
+  {
+    "text": "misalnya mau say terus itu di bawahnya",
+    "start": 1184.559,
+    "duration": 4.801
+  },
+  {
+    "text": "kita masukin nomor absennya. Nah, itu",
+    "start": 1187.6,
+    "duration": 4.64
+  },
+  {
+    "text": "bisa lebih mudah lagi mengembangkan kode",
+    "start": 1189.36,
+    "duration": 6.12
+  },
+  {
+    "text": "sederhananya tadi.",
+    "start": 1192.24,
+    "duration": 6.16
+  },
+  {
+    "text": "Nah, dalam mengoptimasikan",
+    "start": 1195.48,
+    "duration": 5.0
+  },
+  {
+    "text": "sebuah algoritma atau bahasa pemrograman",
+    "start": 1198.4,
+    "duration": 3.68
+  },
+  {
+    "text": "Python",
+    "start": 1200.48,
+    "duration": 4.559
+  },
+  {
+    "text": "itu kita bisa lihat contohnya seperti",
+    "start": 1202.08,
+    "duration": 6.4
+  },
+  {
+    "text": "berikut ini ya. Misalnya kita mempunyai",
+    "start": 1205.039,
+    "duration": 5.841
+  },
+  {
+    "text": "lima angka dan kita mau menjumlahkan",
+    "start": 1208.48,
+    "duration": 4.0
+  },
+  {
+    "text": "semua angka. [berdehem]",
+    "start": 1210.88,
+    "duration": 4.799
+  },
+  {
+    "text": "Bayangkan kalian membuat sebuah ee",
+    "start": 1212.48,
+    "duration": 5.4
+  },
+  {
+    "text": "variabel di sini ya, variabel. Dan di",
+    "start": 1215.679,
+    "duration": 4.961
+  },
+  {
+    "text": "dalam variabel ini dia akan menjumlahkan",
+    "start": 1217.88,
+    "duration": 4.4
+  },
+  {
+    "text": "semuanya langsung seperti ini. Jadi sama",
+    "start": 1220.64,
+    "duration": 3.84
+  },
+  {
+    "text": "seperti kalkulator ya, Teman-teman ya.",
+    "start": 1222.28,
+    "duration": 4.32
+  },
+  {
+    "text": "Nah, setelah dia menjumlahkan dia akan",
+    "start": 1224.48,
+    "duration": 4.28
+  },
+  {
+    "text": "simpan ke dalam variabel total yang",
+    "start": 1226.6,
+    "duration": 4.12
+  },
+  {
+    "text": "kemudian totalnya itu variabel total itu",
+    "start": 1228.76,
+    "duration": 5.2
+  },
+  {
+    "text": "akan diprint. Nah,",
+    "start": 1230.72,
+    "duration": 7.16
+  },
+  {
+    "text": "cara yang seperti ini itu masih mudah",
+    "start": 1233.96,
+    "duration": 6.56
+  },
+  {
+    "text": "ya, mudah kita lakukan kalau datanya",
+    "start": 1237.88,
+    "duration": 5.4
+  },
+  {
+    "text": "masih sedikit. angkanya masih sedikit,",
+    "start": 1240.52,
+    "duration": 4.08
+  },
+  {
+    "text": "tapi bagaimana kalau kita mau",
+    "start": 1243.28,
+    "duration": 4.759
+  },
+  {
+    "text": "menjumlahkan tambah 60 + 70 saya terusa",
+    "start": 1244.6,
+    "duration": 6.36
+  },
+  {
+    "text": "sampai 100. Itu pasti melelahkan kan ya,",
+    "start": 1248.039,
+    "duration": 5.561
+  },
+  {
+    "text": "Teman-teman ya. Nah, dengan kita",
+    "start": 1250.96,
+    "duration": 5.959
+  },
+  {
+    "text": "melakukan optimasi kita bisa menggunakan",
+    "start": 1253.6,
+    "duration": 4.84
+  },
+  {
+    "text": "contoh",
+    "start": 1256.919,
+    "duration": 2.721
+  },
+  {
+    "text": "cara yang sebelumnya kita sudah",
+    "start": 1258.44,
+    "duration": 3.52
+  },
+  {
+    "text": "pelajarin nih. Di sini kita membuat",
+    "start": 1259.64,
+    "duration": 4.56
+  },
+  {
+    "text": "listnya dulu, membuat array-nya. Kita",
+    "start": 1261.96,
+    "duration": 5.48
+  },
+  {
+    "text": "bikin namanya numbers. Semua number-nya",
+    "start": 1264.2,
+    "duration": 6.24
+  },
+  {
+    "text": "kita simpan ke dalam sebuah array.",
+    "start": 1267.44,
+    "duration": 6.0
+  },
+  {
+    "text": "Kemudian kita membuat total variabel",
+    "start": 1270.44,
+    "duration": 6.04
+  },
+  {
+    "text": "yang nanti akan menampung totalnya.",
+    "start": 1273.44,
+    "duration": 5.88
+  },
+  {
+    "text": "Di sini kita menggunakan perulangan for",
+    "start": 1276.48,
+    "duration": 4.799
+  },
+  {
+    "text": "loop.",
+    "start": 1279.32,
+    "duration": 4.08
+  },
+  {
+    "text": "Perulangan for loop ini pertama dia",
+    "start": 1281.279,
+    "duration": 4.481
+  },
+  {
+    "text": "menggunakan variabel sementara namanya",
+    "start": 1283.4,
+    "duration": 5.279
+  },
+  {
+    "text": "number dan dia akan menjalankan semua",
+    "start": 1285.76,
+    "duration": 4.84
+  },
+  {
+    "text": "data yang ada di dalam array namanya",
+    "start": 1288.679,
+    "duration": 3.48
+  },
+  {
+    "text": "numbers.",
+    "start": 1290.6,
+    "duration": 3.199
+  },
+  {
+    "text": "Yang dia lakukan perulangannya yang",
+    "start": 1292.159,
+    "duration": 5.201
+  },
+  {
+    "text": "dilakukan apa? Oh, dia akan menjumlahkan",
+    "start": 1293.799,
+    "duration": 5.36
+  },
+  {
+    "text": "berapapun nilai yang ada di tootal",
+    "start": 1297.36,
+    "duration": 4.6
+  },
+  {
+    "text": "dengan data yang ada di dalam variabel",
+    "start": 1299.159,
+    "duration": 4.441
+  },
+  {
+    "text": "number sementara ini tadi. Nah,",
+    "start": 1301.96,
+    "duration": 3.599
+  },
+  {
+    "text": "maksudnya tuh gimana? Misalnya kita coba",
+    "start": 1303.6,
+    "duration": 5.079
+  },
+  {
+    "text": "misalnya programnya kita jalankan",
+    "start": 1305.559,
+    "duration": 5.281
+  },
+  {
+    "text": "for number. Pertama dia akan turunkan",
+    "start": 1308.679,
+    "duration": 4.841
+  },
+  {
+    "text": "dulu 10 dan simpan ke dalam variabel",
+    "start": 1310.84,
+    "duration": 5.48
+  },
+  {
+    "text": "number ini. Variabel sementaranya",
+    "start": 1313.52,
+    "duration": 5.6
+  },
+  {
+    "text": "totalnya berapa? Yang pertama totalnya",
+    "start": 1316.32,
+    "duration": 6.12
+  },
+  {
+    "text": "0. 0 kita tambahkan datanya yang pertama",
+    "start": 1319.12,
+    "duration": 6.919
+  },
+  {
+    "text": "10. 0 + 10 berapa? Oh, nilainya 10.",
+    "start": 1322.44,
+    "duration": 6.359
+  },
+  {
+    "text": "Berarti kita simpan 10 tadi ke dalam",
+    "start": 1326.039,
+    "duration": 5.561
+  },
+  {
+    "text": "variabel total. Kemudian kita ambil data",
+    "start": 1328.799,
+    "duration": 4.841
+  },
+  {
+    "text": "kedua, kita masukkan ke dalam variabel",
+    "start": 1331.6,
+    "duration": 5.28
+  },
+  {
+    "text": "sementara number ini tadi. Total tadi",
+    "start": 1333.64,
+    "duration": 5.399
+  },
+  {
+    "text": "totalnya sekarang nilainya 10 kita",
+    "start": 1336.88,
+    "duration": 6.159
+  },
+  {
+    "text": "tambah 20 nilainya berapa? 10 + 20 30",
+    "start": 1339.039,
+    "duration": 6.481
+  },
+  {
+    "text": "maka dia akan menyimpan ke dalam total",
+    "start": 1343.039,
+    "duration": 6.0
+  },
+  {
+    "text": "jadi 30. Begitu seterusnya seterusnya",
+    "start": 1345.52,
+    "duration": 5.48
+  },
+  {
+    "text": "sampai data yang ada di dalam variable",
+    "start": 1349.039,
+    "duration": 4.76
+  },
+  {
+    "text": "numbers itu telah habis.",
+    "start": 1351.0,
+    "duration": 4.96
+  },
+  {
+    "text": "Nah, [berdehem] berarti di sini nilai",
+    "start": 1353.799,
+    "duration": 4.441
+  },
+  {
+    "text": "total nilai yang kita dapatkan adalah",
+    "start": 1355.96,
+    "duration": 4.04
+  },
+  {
+    "text": "150.",
+    "start": 1358.24,
+    "duration": 4.28
+  },
+  {
+    "text": "Karena tadi 30 kita misalnya datanya",
+    "start": 1360.0,
+    "duration": 6.44
+  },
+  {
+    "text": "terakhir 30 tambahin 30 60",
+    "start": 1362.52,
+    "duration": 5.68
+  },
+  {
+    "text": "+ 40",
+    "start": 1366.44,
+    "duration": 5.76
+  },
+  {
+    "text": "100 + 50 nilai 150.",
+    "start": 1368.2,
+    "duration": 7.359
+  },
+  {
+    "text": "Jadi programnya bisa dipakai untuk",
+    "start": 1372.2,
+    "duration": 5.0
+  },
+  {
+    "text": "jumlah data yang lebih banyak secara",
+    "start": 1375.559,
+    "duration": 4.12
+  },
+  {
+    "text": "otomatis. Nah, ini kan datanya masih",
+    "start": 1377.2,
+    "duration": 4.56
+  },
+  {
+    "text": "lima. Misalnya kita mau nambahkan 100",
+    "start": 1379.679,
+    "duration": 4.721
+  },
+  {
+    "text": "data lagi misalnya sampai 1.000 ya",
+    "start": 1381.76,
+    "duration": 4.72
+  },
+  {
+    "text": "misalnya teman-teman atau 10.000. Nah",
+    "start": 1384.4,
+    "duration": 3.48
+  },
+  {
+    "text": "kalau misalnya kita mau menambahkan",
+    "start": 1386.48,
+    "duration": 3.36
+  },
+  {
+    "text": "penjumlahannya kita tinggal masukkan dia",
+    "start": 1387.88,
+    "duration": 5.08
+  },
+  {
+    "text": "ke dalam list ini tadi ke dalam array",
+    "start": 1389.84,
+    "duration": 5.16
+  },
+  {
+    "text": "numbers-nya ini tadi. Dan ketika",
+    "start": 1392.96,
+    "duration": 3.839
+  },
+  {
+    "text": "programnya dijalankan akan jauh lebih",
+    "start": 1395.0,
+    "duration": 4.279
+  },
+  {
+    "text": "efisien daripada kita harus ngetik plus",
+    "start": 1396.799,
+    "duration": 5.921
+  },
+  {
+    "text": "sebelum plus plus dan seterusnya.",
+    "start": 1399.279,
+    "duration": 6.801
+  },
+  {
+    "text": "Oke. Nah, ada cara lagi yang lebih",
+    "start": 1402.72,
+    "duration": 5.48
+  },
+  {
+    "text": "efisien lagi teman-teman. Secara yang",
+    "start": 1406.08,
+    "duration": 4.24
+  },
+  {
+    "text": "lebih efisien lagi, dalam bahasa",
+    "start": 1408.2,
+    "duration": 4.4
+  },
+  {
+    "text": "pemrograman Python itu ada sebuah",
+    "start": 1410.32,
+    "duration": 5.959
+  },
+  {
+    "text": "function bawaan namanya SU atau",
+    "start": 1412.6,
+    "duration": 6.079
+  },
+  {
+    "text": "tulisannya su buka kurung tutupung.",
+    "start": 1416.279,
+    "duration": 3.76
+  },
+  {
+    "text": "Ingat ya, Teman-teman ya, kalau ada buka",
+    "start": 1418.679,
+    "duration": 2.761
+  },
+  {
+    "text": "kurung tutup kurung ini berarti dia",
+    "start": 1420.039,
+    "duration": 4.481
+  },
+  {
+    "text": "sebuah function. Misalnya di sini sama",
+    "start": 1421.44,
+    "duration": 5.28
+  },
+  {
+    "text": "ya, kita simpan datanya ke dalam sebuah",
+    "start": 1424.52,
+    "duration": 5.68
+  },
+  {
+    "text": "list. Kemudian dalam variabel total itu",
+    "start": 1426.72,
+    "duration": 8.12
+  },
+  {
+    "text": "tadi daripada kita tuliskan jumlah ya 10",
+    "start": 1430.2,
+    "duration": 8.839
+  },
+  {
+    "text": "+ 20 dan seterusnya kita tuliskan",
+    "start": 1434.84,
+    "duration": 6.839
+  },
+  {
+    "text": "function-nya namanya SU ini terus kita",
+    "start": 1439.039,
+    "duration": 5.561
+  },
+  {
+    "text": "masukkan nih yang mana yang mau kita eh",
+    "start": 1441.679,
+    "duration": 5.401
+  },
+  {
+    "text": "yang mana yang mau kita sukan atau kita",
+    "start": 1444.6,
+    "duration": 4.52
+  },
+  {
+    "text": "jumlahkan. Oh, yang mau kita jumlahkan",
+    "start": 1447.08,
+    "duration": 4.839
+  },
+  {
+    "text": "adalah array atau list namanya numbers.",
+    "start": 1449.12,
+    "duration": 4.76
+  },
+  {
+    "text": "Ya udah berarti kita turunin ini sum",
+    "start": 1451.919,
+    "duration": 4.401
+  },
+  {
+    "text": "numbers berarti hitung atau jumlahkan",
+    "start": 1453.88,
+    "duration": 4.84
+  },
+  {
+    "text": "numbers ini tadi ketika kita jumlahkan",
+    "start": 1456.32,
+    "duration": 5.2
+  },
+  {
+    "text": "sama nilainya kan 150 [mendengus] tapi",
+    "start": 1458.72,
+    "duration": 5.52
+  },
+  {
+    "text": "programnya jauh lebih singkat dan lebih",
+    "start": 1461.52,
+    "duration": 6.56
+  },
+  {
+    "text": "mudah dibaca ee di mata ya ee kita",
+    "start": 1464.24,
+    "duration": 7.36
+  },
+  {
+    "text": "sebagai seorang programmer.",
+    "start": 1468.08,
+    "duration": 5.88
+  },
+  {
+    "text": "Nah, dari tiga cara tadi coba kita",
+    "start": 1471.6,
+    "duration": 5.959
+  },
+  {
+    "text": "bandingkan. Ternyata kalau misal ada",
+    "start": 1473.96,
+    "duration": 5.76
+  },
+  {
+    "text": "tiga cara atau tiga algoritma yang bisa",
+    "start": 1477.559,
+    "duration": 5.24
+  },
+  {
+    "text": "kita pakai, yang pertama kita bisa",
+    "start": 1479.72,
+    "duration": 4.76
+  },
+  {
+    "text": "lakukan secara manual ya, jumlahkan",
+    "start": 1482.799,
+    "duration": 5.641
+  },
+  {
+    "text": "manual atau kita gunakan looping atau",
+    "start": 1484.48,
+    "duration": 7.319
+  },
+  {
+    "text": "kita bisa juga menggunakan S. Ya, semua",
+    "start": 1488.44,
+    "duration": 5.76
+  },
+  {
+    "text": "cara ini benar, Teman-teman. Semua cara",
+    "start": 1491.799,
+    "duration": 5.36
+  },
+  {
+    "text": "ini bisa kita lakukan. Tapi konteksnya",
+    "start": 1494.2,
+    "duration": 5.16
+  },
+  {
+    "text": "berbeda-beda. Misalnya kalau kita",
+    "start": 1497.159,
+    "duration": 4.321
+  },
+  {
+    "text": "menggunakan cara manual itu kebetulan oh",
+    "start": 1499.36,
+    "duration": 3.96
+  },
+  {
+    "text": "datanya terlalu sedikit nih. Kita",
+    "start": 1501.48,
+    "duration": 4.12
+  },
+  {
+    "text": "misalnya menjumlahkan dua atau tiga aja",
+    "start": 1503.32,
+    "duration": 4.0
+  },
+  {
+    "text": "berarti manual aja enggak masalah. Tapi",
+    "start": 1505.6,
+    "duration": 4.76
+  },
+  {
+    "text": "kalau datanya udah 5, 10, 100 itu lebih",
+    "start": 1507.32,
+    "duration": 5.68
+  },
+  {
+    "text": "baik gunakan loop. Atau kalau misalnya",
+    "start": 1510.36,
+    "duration": 5.0
+  },
+  {
+    "text": "mau lebih ringkas lagi ya gitu ya,",
+    "start": 1513.0,
+    "duration": 3.399
+  },
+  {
+    "text": "misalnya datanya enggak udah enggak",
+    "start": 1515.36,
+    "duration": 2.36
+  },
+  {
+    "text": "berubah-berubah lagi kita bisa",
+    "start": 1516.399,
+    "duration": 5.841
+  },
+  {
+    "text": "menggunakan SAM juga. konteksnya berbeda",
+    "start": 1517.72,
+    "duration": 7.319
+  },
+  {
+    "text": "kap ee di sini sudah kita coba tadi ya",
+    "start": 1522.24,
+    "duration": 6.12
+  },
+  {
+    "text": "kapan kita bisa pakai ee cara-cara tadi",
+    "start": 1525.039,
+    "duration": 5.081
+  },
+  {
+    "text": "intinya kita bisa sesuaikan dengan use",
+    "start": 1528.36,
+    "duration": 4.6
+  },
+  {
+    "text": "cas kita tadi. Nah, dalam melakukan",
+    "start": 1530.12,
+    "duration": 6.12
+  },
+  {
+    "text": "sebuah optimasi bahasa algoritma atau",
+    "start": 1532.96,
+    "duration": 6.68
+  },
+  {
+    "text": "bahasa pemrograman Python,",
+    "start": 1536.24,
+    "duration": 5.96
+  },
+  {
+    "text": "kode terpendek itu belum bukan berarti",
+    "start": 1539.64,
+    "duration": 4.919
+  },
+  {
+    "text": "selalu yang paling benar.",
+    "start": 1542.2,
+    "duration": 5.079
+  },
+  {
+    "text": "kode yang pendek itu belum tentu paling",
+    "start": 1544.559,
+    "duration": 5.961
+  },
+  {
+    "text": "mudah kita pahami. Ketika kita melakukan",
+    "start": 1547.279,
+    "duration": 6.76
+  },
+  {
+    "text": "sebuah optimasi, ada beberapa yang perlu",
+    "start": 1550.52,
+    "duration": 5.8
+  },
+  {
+    "text": "menjadi pertimbangannya. Yang pertama,",
+    "start": 1554.039,
+    "duration": 5.401
+  },
+  {
+    "text": "jumlah langkah yang dilakukan, kecepatan",
+    "start": 1556.32,
+    "duration": 5.68
+  },
+  {
+    "text": "kode itu mengeksekusi",
+    "start": 1559.44,
+    "duration": 5.44
+  },
+  {
+    "text": "ee tugas yang kita berikan. Terus gimana",
+    "start": 1562.0,
+    "duration": 5.96
+  },
+  {
+    "text": "sih kodenya supaya bisa rapi? Kemudian",
+    "start": 1564.88,
+    "duration": 5.96
+  },
+  {
+    "text": "apa walaupun rapi apakah bisa dibaca?",
+    "start": 1567.96,
+    "duration": 5.0
+  },
+  {
+    "text": "Kemudian kalau nanti ada error atau bug,",
+    "start": 1570.84,
+    "duration": 5.199
+  },
+  {
+    "text": "apakah kita bisa memperbaikinya? Jadi",
+    "start": 1572.96,
+    "duration": 5.0
+  },
+  {
+    "text": "pilihlah sebuah algoritma [berdehem]",
+    "start": 1576.039,
+    "duration": 4.201
+  },
+  {
+    "text": "yang cocok dengan konteksnya. Kalau",
+    "start": 1577.96,
+    "duration": 5.199
+  },
+  {
+    "text": "misalnya data kalian cuman tiga, terus",
+    "start": 1580.24,
+    "duration": 4.96
+  },
+  {
+    "text": "itu kalian menggunakan Zoom, apakah",
+    "start": 1583.159,
+    "duration": 5.4
+  },
+  {
+    "text": "menurut kalian nanti bisa mudah dibaca",
+    "start": 1585.2,
+    "duration": 5.0
+  },
+  {
+    "text": "atau menurut kalian algoritma yang",
+    "start": 1588.559,
+    "duration": 3.201
+  },
+  {
+    "text": "kalian mau pakai itu cuman langsung",
+    "start": 1590.2,
+    "duration": 4.4
+  },
+  {
+    "text": "ditambahkan? Nah, itu kalian cocokkan,",
+    "start": 1591.76,
+    "duration": 5.12
+  },
+  {
+    "text": "kalian sesuaikan dengan konteks yang",
+    "start": 1594.6,
+    "duration": 5.12
+  },
+  {
+    "text": "ingin kalian selesaikan.",
+    "start": 1596.88,
+    "duration": 6.08
+  },
+  {
+    "text": "Nah, untuk mengetahui",
+    "start": 1599.72,
+    "duration": 6.36
+  },
+  {
+    "text": "pemahaman teman-teman mm sampai mana",
+    "start": 1602.96,
+    "duration": 7.36
+  },
+  {
+    "text": "gitu ya dalam memahami",
+    "start": 1606.08,
+    "duration": 4.24
+  },
+  {
+    "text": "log ee algoritma optimasi algoritma",
+    "start": 1610.399,
+    "duration": 8.16
+  },
+  {
+    "text": "tadi, silakan lakukan kuis berikut ini.",
+    "start": 1613.679,
+    "duration": 4.88
+  },
+  {
+    "text": "Nah, Teman-teman",
+    "start": 1618.799,
+    "duration": 5.521
+  },
+  {
+    "text": "untuk dijadikan sebagai absensi gitu ya",
+    "start": 1621.12,
+    "duration": 7.24
+  },
+  {
+    "text": "atau ee dijadikan sebagai eh dijadikan",
+    "start": 1624.32,
+    "duration": 5.88
+  },
+  {
+    "text": "dijadikan",
+    "start": 1628.36,
+    "duration": 4.12
+  },
+  {
+    "text": "agar teman-teman bisa memahami lebih",
+    "start": 1630.2,
+    "duration": 5.24
+  },
+  {
+    "text": "jauh lagi tentang optimasi dalam bahasa",
+    "start": 1632.48,
+    "duration": 5.52
+  },
+  {
+    "text": "pemrograman Python, silakan kerjakan",
+    "start": 1635.44,
+    "duration": 5.719
+  },
+  {
+    "text": "mini project atau mini kuis berikut ini.",
+    "start": 1638.0,
+    "duration": 5.399
+  },
+  {
+    "text": "Jadi, di sini kita akan membuat perlu",
+    "start": 1641.159,
+    "duration": 4.321
+  },
+  {
+    "text": "membuat sebuah program yang mencari nama",
+    "start": 1643.399,
+    "duration": 4.801
+  },
+  {
+    "text": "dalam daftar siswa. Syarat program yang",
+    "start": 1645.48,
+    "duration": 5.12
+  },
+  {
+    "text": "harus kalian buat yang pertama dia",
+    "start": 1648.2,
+    "duration": 4.56
+  },
+  {
+    "text": "mempunyai list atau array yang bisa",
+    "start": 1650.6,
+    "duration": 5.04
+  },
+  {
+    "text": "menyimpan daftar nama anak-anak gitu ya.",
+    "start": 1652.76,
+    "duration": 5.279
+  },
+  {
+    "text": "Kalian bisa tambahkan 5 sampai 10 data",
+    "start": 1655.64,
+    "duration": 6.279
+  },
+  {
+    "text": "DAMI yang nanti dijadikan mm sebagai",
+    "start": 1658.039,
+    "duration": 7.841
+  },
+  {
+    "text": "data eh project kalian gitu ya. Kemudian",
+    "start": 1661.919,
+    "duration": 6.48
+  },
+  {
+    "text": "buat sebuah sat target. Misalnya kalian",
+    "start": 1665.88,
+    "duration": 4.72
+  },
+  {
+    "text": "mau mencari nama yang paling tengah atau",
+    "start": 1668.399,
+    "duration": 5.201
+  },
+  {
+    "text": "nama yang paling kanan. Kemudian",
+    "start": 1670.6,
+    "duration": 5.64
+  },
+  {
+    "text": "programnya harus bisa menghitung berapa",
+    "start": 1673.6,
+    "duration": 4.6
+  },
+  {
+    "text": "langkah yang dilakukan oleh sebuah",
+    "start": 1676.24,
+    "duration": 4.159
+  },
+  {
+    "text": "algoritma atau sebuah program tadi dalam",
+    "start": 1678.2,
+    "duration": 3.88
+  },
+  {
+    "text": "mencapai targetnya tadi, mencari",
+    "start": 1680.399,
+    "duration": 5.64
+  },
+  {
+    "text": "targetnya tadi. Dan programnya harus",
+    "start": 1682.08,
+    "duration": 6.959
+  },
+  {
+    "text": "berhenti jika namanya sudah ditemukan.",
+    "start": 1686.039,
+    "duration": 4.24
+  },
+  {
+    "text": "Jadi, programnya tidak mengecek",
+    "start": 1689.039,
+    "duration": 3.88
+  },
+  {
+    "text": "keseluruhan daftar nama atau list nama",
+    "start": 1690.279,
+    "duration": 4.441
+  },
+  {
+    "text": "kalian yang tadi kalian sudah buat. Tapi",
+    "start": 1692.919,
+    "duration": 3.0
+  },
+  {
+    "text": "kalau misalnya sudah ketemu, dia akan",
+    "start": 1694.72,
+    "duration": 3.679
+  },
+  {
+    "text": "stop. Kemudian dia akan menampilkan",
+    "start": 1695.919,
+    "duration": 4.64
+  },
+  {
+    "text": "apakah datanya ditemukan atau tidak.",
+    "start": 1698.399,
+    "duration": 5.081
+  },
+  {
+    "text": "silakan mengerjakan pada",
+    "start": 1700.559,
+    "duration": 7.081
+  },
+  {
+    "text": "ee kotak berikut ini.",
+    "start": 1703.48,
+    "duration": 4.16
+  },
+  {
+    "text": "Baik, Teman-teman. Pada video kali ini",
+    "start": 1712.279,
+    "duration": 5.481
+  },
+  {
+    "text": "kita akan membahas tentang function. Apa",
+    "start": 1714.6,
+    "duration": 5.439
+  },
+  {
+    "text": "sih function itu? Yuk, perhatikan",
+    "start": 1717.76,
+    "duration": 5.0
+  },
+  {
+    "text": "berikut ini.",
+    "start": 1720.039,
+    "duration": 6.76
+  },
+  {
+    "text": "Function itu adalah sebuah kumpulan",
+    "start": 1722.76,
+    "duration": 6.759
+  },
+  {
+    "text": "perintah yang kita beri nama.",
+    "start": 1726.799,
+    "duration": 4.48
+  },
+  {
+    "text": "Kalau kita butuh menjalankan perintah",
+    "start": 1729.519,
+    "duration": 4.201
+  },
+  {
+    "text": "itu lagi, kita cukup memanggil nama yang",
+    "start": 1731.279,
+    "duration": 5.441
+  },
+  {
+    "text": "kita sudah buat. Contoh sederhananya,",
+    "start": 1733.72,
+    "duration": 4.839
+  },
+  {
+    "text": "function itu seperti sebuah tombol",
+    "start": 1736.72,
+    "duration": 4.64
+  },
+  {
+    "text": "otomatis yang sekali ditekan beberapa",
+    "start": 1738.559,
+    "duration": 5.6
+  },
+  {
+    "text": "perintah langsung bisa ikut berjalan.",
+    "start": 1741.36,
+    "duration": 8.08
+  },
+  {
+    "text": "Nah, analogi dari function itu bisa kita",
+    "start": 1744.159,
+    "duration": 9.76
+  },
+  {
+    "text": "bayangkan sebagai mesin jus atau blender",
+    "start": 1749.44,
+    "duration": 7.599
+  },
+  {
+    "text": "yang khusus pembuat jus gitu ya. Nah,",
+    "start": 1753.919,
+    "duration": 5.441
+  },
+  {
+    "text": "ketika kita memasukkan buah ke dalam",
+    "start": 1757.039,
+    "duration": 5.88
+  },
+  {
+    "text": "blender jus itu tadi, mesin tadi akan",
+    "start": 1759.36,
+    "duration": 5.76
+  },
+  {
+    "text": "memprosesnya ya dengan mencincangnya",
+    "start": 1762.919,
+    "duration": 4.961
+  },
+  {
+    "text": "jadi halus, kemudian memisahkan antara",
+    "start": 1765.12,
+    "duration": 5.96
+  },
+  {
+    "text": "jus dengan ampas dari buah itu tadi.",
+    "start": 1767.88,
+    "duration": 5.84
+  },
+  {
+    "text": "Lalu kemudian jusnya akan keluar gitu",
+    "start": 1771.08,
+    "duration": 5.4
+  },
+  {
+    "text": "ya, minum ee inti dari ee buahnya tadi",
+    "start": 1773.72,
+    "duration": 6.72
+  },
+  {
+    "text": "jusnya akan keluar. Nah, bayangkan buah",
+    "start": 1776.48,
+    "duration": 6.12
+  },
+  {
+    "text": "yang kita masukkan itu tadi itu adalah",
+    "start": 1780.44,
+    "duration": 6.64
+  },
+  {
+    "text": "sebuah input yang kita berikan gitu ya.",
+    "start": 1782.6,
+    "duration": 7.36
+  },
+  {
+    "text": "memproses memotong-motong buah tadi jadi",
+    "start": 1787.08,
+    "duration": 5.199
+  },
+  {
+    "text": "kecil-kecil, kemudian memisahkan antara",
+    "start": 1789.96,
+    "duration": 5.439
+  },
+  {
+    "text": "ampas dengan airnya, intisari buahnya",
+    "start": 1792.279,
+    "duration": 6.561
+  },
+  {
+    "text": "itu kita anggap sebagai sebuah proses.",
+    "start": 1795.399,
+    "duration": 7.841
+  },
+  {
+    "text": "Kemudian jusnya, air jus-nya itu kita",
+    "start": 1798.84,
+    "duration": 8.12
+  },
+  {
+    "text": "disebut dengan output. Jadi kalau kita",
+    "start": 1803.24,
+    "duration": 5.64
+  },
+  {
+    "text": "bayangkan function itu sebagai mesine",
+    "start": 1806.96,
+    "duration": 5.76
+  },
+  {
+    "text": "jus-nya, function itu sama ya, in ada",
+    "start": 1808.88,
+    "duration": 6.159
+  },
+  {
+    "text": "input, proses, sama output. Kalau",
+    "start": 1812.72,
+    "duration": 4.92
+  },
+  {
+    "text": "inputnya tadi buah yang kita masukkan",
+    "start": 1815.039,
+    "duration": 4.321
+  },
+  {
+    "text": "proses itu tadi yang dilakukan oleh",
+    "start": 1817.64,
+    "duration": 3.8
+  },
+  {
+    "text": "juizernya tadi atau blendernya tadi",
+    "start": 1819.36,
+    "duration": 3.799
+  },
+  {
+    "text": "outputnya itu hasil yang dikeluarkan",
+    "start": 1821.44,
+    "duration": 4.839
+  },
+  {
+    "text": "oleh function atau mesine jus-nya itu ya",
+    "start": 1823.159,
+    "duration": 4.76
+  },
+  {
+    "text": "mesin juice yang sudah kita sebutkan",
+    "start": 1826.279,
+    "duration": 6.52
+  },
+  {
+    "text": "tadi. Jadi intinya function itu membantu",
+    "start": 1827.919,
+    "duration": 7.401
+  },
+  {
+    "text": "sebuah program berjalan bekerja jadi",
+    "start": 1832.799,
+    "duration": 4.441
+  },
+  {
+    "text": "lebih rapi karena di sini ada input,",
+    "start": 1835.32,
+    "duration": 3.839
+  },
+  {
+    "text": "proses, dan output. Coba kita bahas",
+    "start": 1837.24,
+    "duration": 4.76
+  },
+  {
+    "text": "lebih lanjut yuk. Nah, contoh lainnya",
+    "start": 1839.159,
+    "duration": 5.841
+  },
+  {
+    "text": "nih misalnya kalau eh Jer tadi masih",
+    "start": 1842.0,
+    "duration": 5.32
+  },
+  {
+    "text": "kurang paham, anggap aja function tadi",
+    "start": 1845.0,
+    "duration": 6.12
+  },
+  {
+    "text": "seperti sebuah resep. Misalnya kita mau",
+    "start": 1847.32,
+    "duration": 7.56
+  },
+  {
+    "text": "membuat roti. Nah, kalau roti kan kalau",
+    "start": 1851.12,
+    "duration": 5.76
+  },
+  {
+    "text": "ketika kita membuat roti kan kita punya",
+    "start": 1854.88,
+    "duration": 3.399
+  },
+  {
+    "text": "langkah-langkah yang perlu kita lakukan",
+    "start": 1856.88,
+    "duration": 3.0
+  },
+  {
+    "text": "ya. Ada algoritma yang perlu kita",
+    "start": 1858.279,
+    "duration": 5.321
+  },
+  {
+    "text": "lakukan. Pertama siapkan bahannya. Kita",
+    "start": 1859.88,
+    "duration": 6.799
+  },
+  {
+    "text": "campur adonannya kita panggang kemudian",
+    "start": 1863.6,
+    "duration": 5.919
+  },
+  {
+    "text": "kita sajikan. Nah, misalnya kita mau",
+    "start": 1866.679,
+    "duration": 6.161
+  },
+  {
+    "text": "program apa? Mau membuat rotinya itu",
+    "start": 1869.519,
+    "duration": 6.961
+  },
+  {
+    "text": "tiga kali. Nah,",
+    "start": 1872.84,
+    "duration": 6.6
+  },
+  {
+    "text": "bayangkan dalam sebuah program kita mau",
+    "start": 1876.48,
+    "duration": 5.36
+  },
+  {
+    "text": "ee membuat",
+    "start": 1879.44,
+    "duration": 4.479
+  },
+  {
+    "text": "resep roti tadi diprint sebanyak tiga",
+    "start": 1881.84,
+    "duration": 5.04
+  },
+  {
+    "text": "kali, Teman-teman. Nah, dari tiga kali",
+    "start": 1883.919,
+    "duration": 5.48
+  },
+  {
+    "text": "tadi kan kita sudah bikin sekali baru",
+    "start": 1886.88,
+    "duration": 4.84
+  },
+  {
+    "text": "kita biasanya kita lakukan copy paste",
+    "start": 1889.399,
+    "duration": 5.24
+  },
+  {
+    "text": "gitu ya. Nah, atau kita menggunakan loop",
+    "start": 1891.72,
+    "duration": 5.16
+  },
+  {
+    "text": "gitu.",
+    "start": 1894.639,
+    "duration": 4.361
+  },
+  {
+    "text": "Kalau kita melakukan dua hal tadi ya,",
+    "start": 1896.88,
+    "duration": 4.48
+  },
+  {
+    "text": "mengcopy pasta, ngetik copy paste tiga",
+    "start": 1899.0,
+    "duration": 4.0
+  },
+  {
+    "text": "kali atau menggunakan loop, sebenarnya",
+    "start": 1901.36,
+    "duration": 3.679
+  },
+  {
+    "text": "algoritmanya benar ya. Langkah yang kita",
+    "start": 1903.0,
+    "duration": 4.24
+  },
+  {
+    "text": "lakukan benar, tapi langkah tersebut",
+    "start": 1905.039,
+    "duration": 5.24
+  },
+  {
+    "text": "kurang optimal, kurang efisien. Nah,",
+    "start": 1907.24,
+    "duration": 5.52
+  },
+  {
+    "text": "daripada melakukan dua hal yang tadi",
+    "start": 1910.279,
+    "duration": 6.041
+  },
+  {
+    "text": "kita bisa mengkasih nama, membuat nama.",
+    "start": 1912.76,
+    "duration": 5.159
+  },
+  {
+    "text": "Langkah-langkah tadi kita kasih nama",
+    "start": 1916.32,
+    "duration": 5.239
+  },
+  {
+    "text": "misalnya buat undroti gitu ya. Nah,",
+    "start": 1917.919,
+    "duration": 5.12
+  },
+  {
+    "text": "nanti kalau misalnya kita mau",
+    "start": 1921.559,
+    "duration": 3.401
+  },
+  {
+    "text": "menjalankan atau mau nge-print tiga",
+    "start": 1923.039,
+    "duration": 5.401
+  },
+  {
+    "text": "kali, kita tinggal panggil nama atau",
+    "start": 1924.96,
+    "duration": 5.319
+  },
+  {
+    "text": "langkah yang sudah kita kasih nama tadi.",
+    "start": 1928.44,
+    "duration": 4.8
+  },
+  {
+    "text": "Oh, kalau kita buat roti, maka dia ee",
+    "start": 1930.279,
+    "duration": 4.88
+  },
+  {
+    "text": "manggil buat roti maka dia akan",
+    "start": 1933.24,
+    "duration": 4.159
+  },
+  {
+    "text": "dijalankan tiga kali nih langkah ini",
+    "start": 1935.159,
+    "duration": 5.88
+  },
+  {
+    "text": "tadi. Jadi, satu baris perintah bisa",
+    "start": 1937.399,
+    "duration": 5.321
+  },
+  {
+    "text": "menjalankan",
+    "start": 1941.039,
+    "duration": 5.321
+  },
+  {
+    "text": "ratusan bahkan puluh ee ribuan baris",
+    "start": 1942.72,
+    "duration": 7.52
+  },
+  {
+    "text": "kode gitu. Kalau ee kita membahas",
+    "start": 1946.36,
+    "duration": 5.88
+  },
+  {
+    "text": "tentang function,",
+    "start": 1950.24,
+    "duration": 4.76
+  },
+  {
+    "text": "nah function itu kenapa sih dia berguna?",
+    "start": 1952.24,
+    "duration": 5.559
+  },
+  {
+    "text": "Function sangat berguna karena kita bisa",
+    "start": 1955.0,
+    "duration": 5.96
+  },
+  {
+    "text": "membuat kodenya tidak berulang-ulang.",
+    "start": 1957.799,
+    "duration": 4.801
+  },
+  {
+    "text": "Bayangkan kita tadi kalau kita",
+    "start": 1960.96,
+    "duration": 3.599
+  },
+  {
+    "text": "menggunakan copy paste gitu ya kan",
+    "start": 1962.6,
+    "duration": 4.12
+  },
+  {
+    "text": "kodenya jadi terlihat terlalu banyak dan",
+    "start": 1964.559,
+    "duration": 5.881
+  },
+  {
+    "text": "baris yang digunakan tuh juga ee sangat",
+    "start": 1966.72,
+    "duration": 6.52
+  },
+  {
+    "text": "banyak gitu dan membuat programnya jadi",
+    "start": 1970.44,
+    "duration": 5.28
+  },
+  {
+    "text": "tidak rapi. Kalau kita menggunakan",
+    "start": 1973.24,
+    "duration": 4.64
+  },
+  {
+    "text": "function itu programnya bisa lebih rapi",
+    "start": 1975.72,
+    "duration": 3.919
+  },
+  {
+    "text": "dan kita bisa lebih mudah lagi dalam",
+    "start": 1977.88,
+    "duration": 4.759
+  },
+  {
+    "text": "membaca programnya karena kita ee cuman",
+    "start": 1979.639,
+    "duration": 4.681
+  },
+  {
+    "text": "deklarasikan satu kali ya langkahnya",
+    "start": 1982.639,
+    "duration": 3.481
+  },
+  {
+    "text": "kita bikin satu kali terus kita kasih",
+    "start": 1984.32,
+    "duration": 4.0
+  },
+  {
+    "text": "nama langkah-langkahnya itu tadi.",
+    "start": 1986.12,
+    "duration": 4.96
+  },
+  {
+    "text": "Kemudian kalau kita mau function-nya",
+    "start": 1988.32,
+    "duration": 5.76
+  },
+  {
+    "text": "bisa kita ee gunakan kembali. Jadi kalau",
+    "start": 1991.08,
+    "duration": 4.719
+  },
+  {
+    "text": "misalnya kita mau nge-print kembali,",
+    "start": 1994.08,
+    "duration": 6.8
+  },
+  {
+    "text": "nge-print kembali itu kita bisa panggil.",
+    "start": 1995.799,
+    "duration": 5.081
+  },
+  {
+    "text": "Nah, lebih simpel lagi teman-teman",
+    "start": 2002.039,
+    "duration": 4.36
+  },
+  {
+    "text": "sebenarnya function ini sudah kita",
+    "start": 2004.639,
+    "duration": 4.241
+  },
+  {
+    "text": "lakukan sehari-hari ya, sudah kita",
+    "start": 2006.399,
+    "duration": 4.801
+  },
+  {
+    "text": "temukan di kehidupan kita sehari-hari",
+    "start": 2008.88,
+    "duration": 4.32
+  },
+  {
+    "text": "cuman kita kurang sadar. Nah, contoh",
+    "start": 2011.2,
+    "duration": 5.0
+  },
+  {
+    "text": "yang sudah kita lakukan tadi di sini ada",
+    "start": 2013.2,
+    "duration": 5.68
+  },
+  {
+    "text": "ee ini ya, mesin jus tadi ya. Itu kan ee",
+    "start": 2016.2,
+    "duration": 4.52
+  },
+  {
+    "text": "contohnya udah kita proses tadi, udah",
+    "start": 2018.88,
+    "duration": 4.0
+  },
+  {
+    "text": "kita bahas tadi ya. Oh, inputnya buah.",
+    "start": 2020.72,
+    "duration": 5.559
+  },
+  {
+    "text": "Misalnya kita mau membuat ee buah apel,",
+    "start": 2022.88,
+    "duration": 5.44
+  },
+  {
+    "text": "inputnya berarti buah apel. Kemudian",
+    "start": 2026.279,
+    "duration": 4.161
+  },
+  {
+    "text": "prosesnya sama semua ya, prosesnya sama,",
+    "start": 2028.32,
+    "duration": 5.079
+  },
+  {
+    "text": "outputnya berupa jus. Nah, ada juga",
+    "start": 2030.44,
+    "duration": 5.359
+  },
+  {
+    "text": "kalkulator ya kan ya. Kalkulator itu",
+    "start": 2033.399,
+    "duration": 4.961
+  },
+  {
+    "text": "nanti dia fungsinya apa? Fungsinya",
+    "start": 2035.799,
+    "duration": 4.441
+  },
+  {
+    "text": "menghitung angka yang kita masukkan gitu",
+    "start": 2038.36,
+    "duration": 4.439
+  },
+  {
+    "text": "ya. Kemudian nanti akan menghasilkan",
+    "start": 2040.24,
+    "duration": 6.0
+  },
+  {
+    "text": "sebuah bilangan yang udah dihitung. Ada",
+    "start": 2042.799,
+    "duration": 6.36
+  },
+  {
+    "text": "mesin ATM yang kalau kita masukin kartu",
+    "start": 2046.24,
+    "duration": 5.76
+  },
+  {
+    "text": "sama pin kita itu dia akan kita bisa",
+    "start": 2049.159,
+    "duration": 5.361
+  },
+  {
+    "text": "ngakses akun kita yang nanti bisa kita",
+    "start": 2052.0,
+    "duration": 4.679
+  },
+  {
+    "text": "mengeluarkan uang atau mentrasfer uang",
+    "start": 2054.52,
+    "duration": 5.68
+  },
+  {
+    "text": "dan seterusnya. Misal kemudian ada Maps,",
+    "start": 2056.679,
+    "duration": 5.601
+  },
+  {
+    "text": "Google Maps gitu ya yang kita bisa",
+    "start": 2060.2,
+    "duration": 7.199
+  },
+  {
+    "text": "masukin lokasi kita tujuan sama ee kita",
+    "start": 2062.28,
+    "duration": 7.52
+  },
+  {
+    "text": "bisa masukin tujuan sama destinasinya.",
+    "start": 2067.399,
+    "duration": 5.081
+  },
+  {
+    "text": "maka nanti dari aplikasi Maps tadi",
+    "start": 2069.8,
+    "duration": 5.4
+  },
+  {
+    "text": "mengeluarkan rute perjalanan. Jadi",
+    "start": 2072.48,
+    "duration": 5.359
+  },
+  {
+    "text": "intinya function tadi selain dia",
+    "start": 2075.2,
+    "duration": 5.24
+  },
+  {
+    "text": "meringkas kode yang kita buat, dia",
+    "start": 2077.839,
+    "duration": 5.681
+  },
+  {
+    "text": "menerima sesuatu diproses baru dia",
+    "start": 2080.44,
+    "duration": 5.399
+  },
+  {
+    "text": "menghasilkan sesuatu.",
+    "start": 2083.52,
+    "duration": 4.68
+  },
+  {
+    "text": "Nah, coba",
+    "start": 2085.839,
+    "duration": 5.881
+  },
+  {
+    "text": "sekarang kita bahas bagaimana sebuah",
+    "start": 2088.2,
+    "duration": 6.56
+  },
+  {
+    "text": "function itu bekerja di dalam bahasa",
+    "start": 2091.72,
+    "duration": 5.08
+  },
+  {
+    "text": "pemrograman Python.",
+    "start": 2094.76,
+    "duration": 5.12
+  },
+  {
+    "text": "Nah, di dalam pemorogan Python kita",
+    "start": 2096.8,
+    "duration": 6.16
+  },
+  {
+    "text": "perlu mendeklarasikan",
+    "start": 2099.88,
+    "duration": 6.28
+  },
+  {
+    "text": "sebuah function dengan eh keyword",
+    "start": 2102.96,
+    "duration": 6.399
+  },
+  {
+    "text": "namanya def ya. Def itu singkatan dari",
+    "start": 2106.16,
+    "duration": 8.24
+  },
+  {
+    "text": "define ya teman-teman. Kita definis",
+    "start": 2109.359,
+    "duration": 5.041
+  },
+  {
+    "text": "kita mau membuat sebuah",
+    "start": 2115.32,
+    "duration": 6.2
+  },
+  {
+    "text": "function namanya grid atau dia menyapa",
+    "start": 2117.839,
+    "duration": 5.52
+  },
+  {
+    "text": "gitu ya teman-teman bahasa Indonesianya",
+    "start": 2121.52,
+    "duration": 4.68
+  },
+  {
+    "text": "grid. Kemudian setelah kita kasih nama",
+    "start": 2123.359,
+    "duration": 7.041
+  },
+  {
+    "text": "untuk kita mengasih tahu nih ke dalam ee",
+    "start": 2126.2,
+    "duration": 6.08
+  },
+  {
+    "text": "ke dalam bahasa pemogram Python, hei,",
+    "start": 2130.4,
+    "duration": 4.48
+  },
+  {
+    "text": "kita mau membuat sebuah function namanya",
+    "start": 2132.28,
+    "duration": 6.28
+  },
+  {
+    "text": "grid. Nah, dia kalau misalnya kita mau",
+    "start": 2134.88,
+    "duration": 6.6
+  },
+  {
+    "text": "tahu dia sebuah apakah sebuah apakah",
+    "start": 2138.56,
+    "duration": 4.799
+  },
+  {
+    "text": "kata-kata grid ini sebuah function atau",
+    "start": 2141.48,
+    "duration": 6.0
+  },
+  {
+    "text": "tidak, itu dideklarasikan dengan",
+    "start": 2143.359,
+    "duration": 7.361
+  },
+  {
+    "text": "buka dan tutup kurung gitu ya. Jadi",
+    "start": 2147.48,
+    "duration": 5.32
+  },
+  {
+    "text": "untuk membuat sebuah function kita harus",
+    "start": 2150.72,
+    "duration": 6.04
+  },
+  {
+    "text": "pakai dev ya, definisikan define",
+    "start": 2152.8,
+    "duration": 6.72
+  },
+  {
+    "text": "kemudian kita masukkan nama function-nya",
+    "start": 2156.76,
+    "duration": 4.72
+  },
+  {
+    "text": "kemudian dilanjut dengan buka dan tutup",
+    "start": 2159.52,
+    "duration": 4.88
+  },
+  {
+    "text": "kurung. Nah, kalau sudah dilanjut dengan",
+    "start": 2161.48,
+    "duration": 4.96
+  },
+  {
+    "text": "titik dua [berdehem] dan juga kita",
+    "start": 2164.4,
+    "duration": 4.959
+  },
+  {
+    "text": "tambahkan indentasi. Nah, indentasi ini",
+    "start": 2166.44,
+    "duration": 4.76
+  },
+  {
+    "text": "teman-teman bisa lakukan dengan mengetik",
+    "start": 2169.359,
+    "duration": 4.121
+  },
+  {
+    "text": "tab yang ada di atasnya. Shift itu kan",
+    "start": 2171.2,
+    "duration": 5.159
+  },
+  {
+    "text": "ada ee di keyboard ada tombol tab atau",
+    "start": 2173.48,
+    "duration": 4.28
+  },
+  {
+    "text": "kalau misalnya teman-teman menggunakan",
+    "start": 2176.359,
+    "duration": 3.841
+  },
+  {
+    "text": "handphone itu teman-teman bisa",
+    "start": 2177.76,
+    "duration": 4.88
+  },
+  {
+    "text": "menggunakan spasi sebanyak empat kali.",
+    "start": 2180.2,
+    "duration": 5.6
+  },
+  {
+    "text": "Yang penting perintah yang di bawah ini",
+    "start": 2182.64,
+    "duration": 5.08
+  },
+  {
+    "text": "itu tidak boleh sejajar dengan",
+    "start": 2185.8,
+    "duration": 5.279
+  },
+  {
+    "text": "define-nya yang di atas supaya",
+    "start": 2187.72,
+    "duration": 6.0
+  },
+  {
+    "text": "programnya, python-nya tahu kalau ini",
+    "start": 2191.079,
+    "duration": 6.52
+  },
+  {
+    "text": "itu bagian dari sebuah function gitu ya.",
+    "start": 2193.72,
+    "duration": 6.96
+  },
+  {
+    "text": "Nah, di sini program grid ini dia akan",
+    "start": 2197.599,
+    "duration": 5.441
+  },
+  {
+    "text": "nge-print e melakukan satu hal dulu.",
+    "start": 2200.68,
+    "duration": 4.72
+  },
+  {
+    "text": "Misalnya melakukan halo gitu ya. Atau",
+    "start": 2203.04,
+    "duration": 4.2
+  },
+  {
+    "text": "misalnya kita mau membuat function",
+    "start": 2205.4,
+    "duration": 4.8
+  },
+  {
+    "text": "namanya resepi gitu ya, membuat roti,",
+    "start": 2207.24,
+    "duration": 5.28
+  },
+  {
+    "text": "resep membuat roti. Nah, di sini kita",
+    "start": 2210.2,
+    "duration": 4.639
+  },
+  {
+    "text": "print yang pertama siapkan alat dan",
+    "start": 2212.52,
+    "duration": 3.96
+  },
+  {
+    "text": "bahan, yang kedua dan ketiga dan",
+    "start": 2214.839,
+    "duration": 3.841
+  },
+  {
+    "text": "seterusnya gitu ya. Jadi kita bisa",
+    "start": 2216.48,
+    "duration": 5.0
+  },
+  {
+    "text": "tuliskan sekali. Kemudian kalau kita mau",
+    "start": 2218.68,
+    "duration": 5.96
+  },
+  {
+    "text": "panggil, kita tinggal tuliskan namanya.",
+    "start": 2221.48,
+    "duration": 5.599
+  },
+  {
+    "text": "Kita ketikkan nama dari function yang",
+    "start": 2224.64,
+    "duration": 4.439
+  },
+  {
+    "text": "sudah kita buat tadi. Kemudian diikuti",
+    "start": 2227.079,
+    "duration": 5.401
+  },
+  {
+    "text": "dengan buka dan tutup kurung. Nah, nanti",
+    "start": 2229.079,
+    "duration": 6.121
+  },
+  {
+    "text": "hasilnya kalau kita manggil sekali",
+    "start": 2232.48,
+    "duration": 4.4
+  },
+  {
+    "text": "berarti dia akan muncul sekali aja ya",
+    "start": 2235.2,
+    "duration": 3.84
+  },
+  {
+    "text": "output-nya ya. Halo gitu. Tapi kalau",
+    "start": 2236.88,
+    "duration": 4.76
+  },
+  {
+    "text": "misalnya di sini kita ee ada banyak",
+    "start": 2239.04,
+    "duration": 4.039
+  },
+  {
+    "text": "langkah yang kita tuliskan, maka",
+    "start": 2241.64,
+    "duration": 4.04
+  },
+  {
+    "text": "semuanya akan terprint sekali gitu. Jadi",
+    "start": 2243.079,
+    "duration": 4.801
+  },
+  {
+    "text": "kita enggak perlu nulis banyak-banyak,",
+    "start": 2245.68,
+    "duration": 4.28
+  },
+  {
+    "text": "enggak perlu copy paste, enggak perlu",
+    "start": 2247.88,
+    "duration": 5.0
+  },
+  {
+    "text": "for loop. Kita tinggal print aja di sini",
+    "start": 2249.96,
+    "duration": 5.2
+  },
+  {
+    "text": "sekali, maka semua yang kita tulis di",
+    "start": 2252.88,
+    "duration": 6.92
+  },
+  {
+    "text": "dalam function tadi akan auto muncul.",
+    "start": 2255.16,
+    "duration": 8.08
+  },
+  {
+    "text": "Nah, ini ya tadi sama ya cara",
+    "start": 2259.8,
+    "duration": 5.279
+  },
+  {
+    "text": "membacanya. Setelah kita membuat",
+    "start": 2263.24,
+    "duration": 4.599
+  },
+  {
+    "text": "function bernama grid tadi",
+    "start": 2265.079,
+    "duration": 4.361
+  },
+  {
+    "text": "saat dipanggil, jadi ketika kita",
+    "start": 2267.839,
+    "duration": 4.321
+  },
+  {
+    "text": "menuliskan grid buka kurung tutup kurung",
+    "start": 2269.44,
+    "duration": 5.8
+  },
+  {
+    "text": "maka dia akan langsung menjalankan",
+    "start": 2272.16,
+    "duration": 4.88
+  },
+  {
+    "text": "perintahnya apa yang ada di dalam",
+    "start": 2275.24,
+    "duration": 4.0
+  },
+  {
+    "text": "function tadi.",
+    "start": 2277.04,
+    "duration": 5.88
+  },
+  {
+    "text": "Nah, kalau kita hanya membuat function",
+    "start": 2279.24,
+    "duration": 6.879
+  },
+  {
+    "text": "aja dia tidak akan berjalan. Jadi,",
+    "start": 2282.92,
+    "duration": 5.32
+  },
+  {
+    "text": "misalnya nih, Teman-teman, membuat",
+    "start": 2286.119,
+    "duration": 4.161
+  },
+  {
+    "text": "sebuah variab eh membuat sebuah function",
+    "start": 2288.24,
+    "duration": 4.0
+  },
+  {
+    "text": "namanya grid. Terus pada saat",
+    "start": 2290.28,
+    "duration": 4.0
+  },
+  {
+    "text": "teman-teman run atau jalankan dia tidak",
+    "start": 2292.24,
+    "duration": 4.96
+  },
+  {
+    "text": "akan terjadi apa-apa karena kode tadi",
+    "start": 2294.28,
+    "duration": 5.92
+  },
+  {
+    "text": "belum dipanggil. Jadi kita ketika kita",
+    "start": 2297.2,
+    "duration": 4.6
+  },
+  {
+    "text": "membuat sebuah function jangan lupa",
+    "start": 2300.2,
+    "duration": 4.2
+  },
+  {
+    "text": "dipanggil menggunakan nama dari",
+    "start": 2301.8,
+    "duration": 4.96
+  },
+  {
+    "text": "function-nya tadi diikuti dengan buka",
+    "start": 2304.4,
+    "duration": 4.4
+  },
+  {
+    "text": "dan tutup kurung. Jadi itu ya kalau",
+    "start": 2306.76,
+    "duration": 4.24
+  },
+  {
+    "text": "misal ada error program function yang",
+    "start": 2308.8,
+    "duration": 3.92
+  },
+  {
+    "text": "enggak jalan, apakah sudah dipanggil",
+    "start": 2311.0,
+    "duration": 5.48
+  },
+  {
+    "text": "atau belum? Kalau udah kita cek ya",
+    "start": 2312.72,
+    "duration": 5.32
+  },
+  {
+    "text": "salahnya di mana. Kalau belum maka",
+    "start": 2316.48,
+    "duration": 4.44
+  },
+  {
+    "text": "silakan langsung mengetikkan nama",
+    "start": 2318.04,
+    "duration": 5.96
+  },
+  {
+    "text": "functionnya. Nah, untuk mengecek",
+    "start": 2320.92,
+    "duration": 5.96
+  },
+  {
+    "text": "pemahaman teman-teman terkait function",
+    "start": 2324.0,
+    "duration": 5.76
+  },
+  {
+    "text": "yang ada di dalam Python, silakan",
+    "start": 2326.88,
+    "duration": 7.12
+  },
+  {
+    "text": "kerjakan kuis berikut ini.",
+    "start": 2329.76,
+    "duration": 4.24
+  },
+  {
+    "text": "Oke, Teman-teman. Function di dalam",
+    "start": 2337.599,
+    "duration": 5.441
+  },
+  {
+    "text": "Python itu banyak jenisnya. function",
+    "start": 2340.599,
+    "duration": 6.281
+  },
+  {
+    "text": "yang baru baru kita bahas sebelumnya itu",
+    "start": 2343.04,
+    "duration": 5.4
+  },
+  {
+    "text": "function yang simpel ya teman-teman yang",
+    "start": 2346.88,
+    "duration": 5.84
+  },
+  {
+    "text": "bisa kita buat secara simpel tanpa ada",
+    "start": 2348.44,
+    "duration": 6.56
+  },
+  {
+    "text": "tambahan lain-lainnya. Jadi pure kita",
+    "start": 2352.72,
+    "duration": 5.8
+  },
+  {
+    "text": "hanya membuat sebuah function",
+    "start": 2355.0,
+    "duration": 6.44
+  },
+  {
+    "text": "kemudian kita panggil. Nah sekarang kita",
+    "start": 2358.52,
+    "duration": 5.799
+  },
+  {
+    "text": "mau membahas jenis function yang kedua",
+    "start": 2361.44,
+    "duration": 5.96
+  },
+  {
+    "text": "namanya function dengan parameter.",
+    "start": 2364.319,
+    "duration": 6.481
+  },
+  {
+    "text": "Parameter itu apa sih? Parameter adalah",
+    "start": 2367.4,
+    "duration": 5.84
+  },
+  {
+    "text": "sebuah data yang dikirim ke dalam",
+    "start": 2370.8,
+    "duration": 4.64
+  },
+  {
+    "text": "function.",
+    "start": 2373.24,
+    "duration": 4.52
+  },
+  {
+    "text": "Kalau function itu adalah mesin juice,",
+    "start": 2375.44,
+    "duration": 4.8
+  },
+  {
+    "text": "anggap aja parameter itu buah yang kita",
+    "start": 2377.76,
+    "duration": 5.599
+  },
+  {
+    "text": "masukkan tadi. Jadi, inputnya",
+    "start": 2380.24,
+    "duration": 6.28
+  },
+  {
+    "text": "nih bentuknya function dengan parameter",
+    "start": 2383.359,
+    "duration": 4.401
+  },
+  {
+    "text": "itu seperti ini ya bentuknya,",
+    "start": 2386.52,
+    "duration": 4.04
+  },
+  {
+    "text": "Teman-teman. Ketika kita mendefinisikan",
+    "start": 2387.76,
+    "duration": 5.64
+  },
+  {
+    "text": "sebuah function dengan menuliskan",
+    "start": 2390.56,
+    "duration": 5.24
+  },
+  {
+    "text": "namanya, sebelumnya kan kita hanya",
+    "start": 2393.4,
+    "duration": 4.76
+  },
+  {
+    "text": "memasukkan buka dan tutup kurung gitu",
+    "start": 2395.8,
+    "duration": 3.279
+  },
+  {
+    "text": "ya.",
+    "start": 2398.16,
+    "duration": 4.8
+  },
+  {
+    "text": "Nah, di dalam function dengan parameter",
+    "start": 2399.079,
+    "duration": 6.481
+  },
+  {
+    "text": "buka dalam kurungnya tadi kita masukkan",
+    "start": 2402.96,
+    "duration": 5.2
+  },
+  {
+    "text": "sebuah parameter atau kakak biasanya",
+    "start": 2405.56,
+    "duration": 5.799
+  },
+  {
+    "text": "sebut parameter ini variabel sementara",
+    "start": 2408.16,
+    "duration": 5.88
+  },
+  {
+    "text": "karena kan variabel tempat menyimpan.",
+    "start": 2411.359,
+    "duration": 4.321
+  },
+  {
+    "text": "Kalau misalnya parameter itu tempat",
+    "start": 2414.04,
+    "duration": 3.52
+  },
+  {
+    "text": "menyimpan juga tapi sementara yang",
+    "start": 2415.68,
+    "duration": 4.399
+  },
+  {
+    "text": "artinya dia tidak perlu apa isinya akan",
+    "start": 2417.56,
+    "duration": 8.0
+  },
+  {
+    "text": "berubah-berubah dan dia akan ee apa ya",
+    "start": 2420.079,
+    "duration": 7.201
+  },
+  {
+    "text": "intinya dia akan berubah-berubah sesuai",
+    "start": 2425.56,
+    "duration": 4.16
+  },
+  {
+    "text": "yang kita masukkan. Misalnya kita bikin",
+    "start": 2427.28,
+    "duration": 6.4
+  },
+  {
+    "text": "function mesin juice. Nah, di sini itu",
+    "start": 2429.72,
+    "duration": 5.76
+  },
+  {
+    "text": "buah yang kita masukkan nanti misalnya",
+    "start": 2433.68,
+    "duration": 3.8
+  },
+  {
+    "text": "mesin jus di sini ada apel. Jadi",
+    "start": 2435.48,
+    "duration": 4.72
+  },
+  {
+    "text": "misalnya di sini mesin jus setelah kita",
+    "start": 2437.48,
+    "duration": 6.839
+  },
+  {
+    "text": "proses di sini kita tulis misalnya buah",
+    "start": 2440.2,
+    "duration": 6.72
+  },
+  {
+    "text": "jus bla bla bla telah selesai dibuat",
+    "start": 2444.319,
+    "duration": 4.841
+  },
+  {
+    "text": "gitu ya. Nah nanti kita bisa panggil di",
+    "start": 2446.92,
+    "duration": 4.88
+  },
+  {
+    "text": "sini sama di sini ya. Contohnya di sini",
+    "start": 2449.16,
+    "duration": 4.28
+  },
+  {
+    "text": "deh misalnya di sini kita membuat",
+    "start": 2451.8,
+    "duration": 4.36
+  },
+  {
+    "text": "function namanya grid dan dia mempunyai",
+    "start": 2453.44,
+    "duration": 6.28
+  },
+  {
+    "text": "parameter name. Nah parameter name ini",
+    "start": 2456.16,
+    "duration": 6.48
+  },
+  {
+    "text": "tadi hanya bisa dijalankan dan dipanggil",
+    "start": 2459.72,
+    "duration": 5.04
+  },
+  {
+    "text": "di dalam function ini aja. Jadi kalau",
+    "start": 2462.64,
+    "duration": 4.24
+  },
+  {
+    "text": "misalnya kita bikin function ada dua,",
+    "start": 2464.76,
+    "duration": 3.96
+  },
+  {
+    "text": "maka dia tidak akan bisa dijalankan nih",
+    "start": 2466.88,
+    "duration": 4.64
+  },
+  {
+    "text": "si name ini. Kemudian kita tinggal",
+    "start": 2468.72,
+    "duration": 5.56
+  },
+  {
+    "text": "panggil maka dia akan memasukkan nih",
+    "start": 2471.52,
+    "duration": 5.4
+  },
+  {
+    "text": "name-nya apa gitu ya. Tuh dia akan",
+    "start": 2474.28,
+    "duration": 5.039
+  },
+  {
+    "text": "lompat ke sini. Jadi kalau misalnya kita",
+    "start": 2476.92,
+    "duration": 5.12
+  },
+  {
+    "text": "bikin ee",
+    "start": 2479.319,
+    "duration": 5.961
+  },
+  {
+    "text": "namanya misalnya angel, maka di sini dia",
+    "start": 2482.04,
+    "duration": 5.72
+  },
+  {
+    "text": "akan nge-print hello angel. Coba kita",
+    "start": 2485.28,
+    "duration": 5.6
+  },
+  {
+    "text": "cek ya. ini bentuk dari eh function-nya",
+    "start": 2487.76,
+    "duration": 4.72
+  },
+  {
+    "text": "dengan parameter. Intinya dia hanya",
+    "start": 2490.88,
+    "duration": 3.52
+  },
+  {
+    "text": "menambahkan sebuah variabel sementara",
+    "start": 2492.48,
+    "duration": 3.52
+  },
+  {
+    "text": "atau yang disebut dengan parameter ke",
+    "start": 2494.4,
+    "duration": 4.4
+  },
+  {
+    "text": "dalam buka dan tutup kurungnya. Nah,",
+    "start": 2496.0,
+    "duration": 5.44
+  },
+  {
+    "text": "ketika kita mau memanggil function-nya,",
+    "start": 2498.8,
+    "duration": 6.88
+  },
+  {
+    "text": "caranya kita jangan hanya memanggil si",
+    "start": 2501.44,
+    "duration": 7.48
+  },
+  {
+    "text": "function itu tadi. Kita juga perlu",
+    "start": 2505.68,
+    "duration": 6.439
+  },
+  {
+    "text": "memasukkan nama yang mau kita panggil.",
+    "start": 2508.92,
+    "duration": 6.04
+  },
+  {
+    "text": "Jadi parameternya, variabel sementaranya",
+    "start": 2512.119,
+    "duration": 4.641
+  },
+  {
+    "text": "itu kita kasih nilai, kita kasih nama,",
+    "start": 2514.96,
+    "duration": 3.119
+  },
+  {
+    "text": "kita kasih sesuatu, kita berikan",
+    "start": 2516.76,
+    "duration": 4.0
+  },
+  {
+    "text": "sesuatu. Jadi di sini kan tadi kita",
+    "start": 2518.079,
+    "duration": 5.081
+  },
+  {
+    "text": "punya name ya. Nah, dia menunggu nih",
+    "start": 2520.76,
+    "duration": 5.0
+  },
+  {
+    "text": "varia function grid ini dia menunggu",
+    "start": 2523.16,
+    "duration": 4.959
+  },
+  {
+    "text": "sebuah isian. Nah, jadi ketika kita",
+    "start": 2525.76,
+    "duration": 5.04
+  },
+  {
+    "text": "memanggil grid baru di dalamnya ada",
+    "start": 2528.119,
+    "duration": 5.881
+  },
+  {
+    "text": "Alya, maka si Alya ini akan dikirim ke",
+    "start": 2530.8,
+    "duration": 6.039
+  },
+  {
+    "text": "dalam function-nya. Kemudian",
+    "start": 2534.0,
+    "duration": 5.119
+  },
+  {
+    "text": "function-nya akan memproses mengirim",
+    "start": 2536.839,
+    "duration": 4.681
+  },
+  {
+    "text": "kembali kata Alya ini dan menggabung",
+    "start": 2539.119,
+    "duration": 6.121
+  },
+  {
+    "text": "dengan teks halo dengan string halo maka",
+    "start": 2541.52,
+    "duration": 6.88
+  },
+  {
+    "text": "nanti hasilnya akan halo Alya dan juga",
+    "start": 2545.24,
+    "duration": 7.24
+  },
+  {
+    "text": "halo Bima. Jadi function-nya sama ya",
+    "start": 2548.4,
+    "duration": 7.159
+  },
+  {
+    "text": "sama functionnya sama namanya grid tapi",
+    "start": 2552.48,
+    "duration": 5.4
+  },
+  {
+    "text": "data yang kita berikan berbeda-beda.",
+    "start": 2555.559,
+    "duration": 4.601
+  },
+  {
+    "text": "Jadi itu ya fungsinya function.",
+    "start": 2557.88,
+    "duration": 5.439
+  },
+  {
+    "text": "fungsinya function itu bisa terlihat ya",
+    "start": 2560.16,
+    "duration": 4.919
+  },
+  {
+    "text": "ketika kita mau meng-grid orang yang",
+    "start": 2563.319,
+    "duration": 5.76
+  },
+  {
+    "text": "berbeda tapi ee namanya beda-beda.",
+    "start": 2565.079,
+    "duration": 5.48
+  },
+  {
+    "text": "Menggrid orang yang berbeda tapi kita",
+    "start": 2569.079,
+    "duration": 3.681
+  },
+  {
+    "text": "hanya menggunakan satu function saja",
+    "start": 2570.559,
+    "duration": 4.841
+  },
+  {
+    "text": "gitu ya, Teman-teman.",
+    "start": 2572.76,
+    "duration": 5.4
+  },
+  {
+    "text": "Nah, parameter itu tadi dia enggak hanya",
+    "start": 2575.4,
+    "duration": 4.88
+  },
+  {
+    "text": "bisa satu aja teman-teman. kita bisa",
+    "start": 2578.16,
+    "duration": 5.199
+  },
+  {
+    "text": "tambahkan sebanyak yang kita mau.",
+    "start": 2580.28,
+    "duration": 7.92
+  },
+  {
+    "text": "Misalnya function ini kita masukkan",
+    "start": 2583.359,
+    "duration": 9.48
+  },
+  {
+    "text": "nama dan umur. Jadi di sini kita",
+    "start": 2588.2,
+    "duration": 7.919
+  },
+  {
+    "text": "pisahkan parameternya dengan koma. Nanti",
+    "start": 2592.839,
+    "duration": 5.161
+  },
+  {
+    "text": "kalau misalnya kita mau pakai kita",
+    "start": 2596.119,
+    "duration": 6.321
+  },
+  {
+    "text": "tinggal panggil aja name age. Nah,",
+    "start": 2598.0,
+    "duration": 6.92
+  },
+  {
+    "text": "misalnya di sini kita membuat function",
+    "start": 2602.44,
+    "duration": 5.0
+  },
+  {
+    "text": "namanya introduce.",
+    "start": 2604.92,
+    "duration": 5.0
+  },
+  {
+    "text": "kita ketika kita memanggil introduce",
+    "start": 2607.44,
+    "duration": 5.6
+  },
+  {
+    "text": "maka kita masukkan dua parameter yang",
+    "start": 2609.92,
+    "duration": 7.8
+  },
+  {
+    "text": "kita buat ya kita buat parameteran name",
+    "start": 2613.04,
+    "duration": 7.48
+  },
+  {
+    "text": "sama agiskan",
+    "start": 2617.72,
+    "duration": 4.96
+  },
+  {
+    "text": "introduce kita ketika ketika kita",
+    "start": 2620.52,
+    "duration": 5.44
+  },
+  {
+    "text": "panggil Alya dan 16 maka si Alya ini",
+    "start": 2622.68,
+    "duration": 7.32
+  },
+  {
+    "text": "akan dijadikan parameter nama dan juga",
+    "start": 2625.96,
+    "duration": 7.119
+  },
+  {
+    "text": "16 ini akan dijadikan parameter umur.",
+    "start": 2630.0,
+    "duration": 4.28
+  },
+  {
+    "text": "Nah, jangan sampai kebalik ya",
+    "start": 2633.079,
+    "duration": 2.681
+  },
+  {
+    "text": "teman-teman. Kalau misal teman-teman",
+    "start": 2634.28,
+    "duration": 5.68
+  },
+  {
+    "text": "tuliskan 16 dan di sini Alya, maka di",
+    "start": 2635.76,
+    "duration": 8.0
+  },
+  {
+    "text": "sini namanya akan ditulis 16 dan umurnya",
+    "start": 2639.96,
+    "duration": 7.32
+  },
+  {
+    "text": "jadi Alya. Jadi parameter itu ketika",
+    "start": 2643.76,
+    "duration": 6.52
+  },
+  {
+    "text": "kita memanggil harus sesuaikan dengan",
+    "start": 2647.28,
+    "duration": 6.4
+  },
+  {
+    "text": "urutan yang kita buat di dalam deklarasi",
+    "start": 2650.28,
+    "duration": 5.279
+  },
+  {
+    "text": "function-nya.",
+    "start": 2653.68,
+    "duration": 6.04
+  },
+  {
+    "text": "itu untuk function dengan multiple",
+    "start": 2655.559,
+    "duration": 6.121
+  },
+  {
+    "text": "parameter.",
+    "start": 2659.72,
+    "duration": 4.56
+  },
+  {
+    "text": "Bayangkan aja parameter itu sebagai",
+    "start": 2661.68,
+    "duration": 4.76
+  },
+  {
+    "text": "ketika kita mengisi formulir gitu ya.",
+    "start": 2664.28,
+    "duration": 4.4
+  },
+  {
+    "text": "Misalnya kita ngisi formul formulir kan",
+    "start": 2666.44,
+    "duration": 5.52
+  },
+  {
+    "text": "ada nama, umur, sama kelas. Nah, kita",
+    "start": 2668.68,
+    "duration": 5.399
+  },
+  {
+    "text": "bisa masukkan semuanya ke dalam",
+    "start": 2671.96,
+    "duration": 5.28
+  },
+  {
+    "text": "parameter dan parameter ee dan function",
+    "start": 2674.079,
+    "duration": 6.201
+  },
+  {
+    "text": "tadi bisa memproses parameter tadi.",
+    "start": 2677.24,
+    "duration": 5.879
+  },
+  {
+    "text": "Entah kita cuman nge-print kah atau kita",
+    "start": 2680.28,
+    "duration": 5.96
+  },
+  {
+    "text": "lakukan penjumlahan kah. Intinya satu",
+    "start": 2683.119,
+    "duration": 5.161
+  },
+  {
+    "text": "parameter itu hanya menyimpan satu",
+    "start": 2686.24,
+    "duration": 5.48
+  },
+  {
+    "text": "informasi dan setiap parameter itu pada",
+    "start": 2688.28,
+    "duration": 5.96
+  },
+  {
+    "text": "saat dipanggil harus sesuai urutannya",
+    "start": 2691.72,
+    "duration": 4.839
+  },
+  {
+    "text": "gitu ya. Jadi jangan sampai kebalik.",
+    "start": 2694.24,
+    "duration": 4.28
+  },
+  {
+    "text": "Misalnya kalian nulis grade-nya duluan",
+    "start": 2696.559,
+    "duration": 3.881
+  },
+  {
+    "text": "baru namanya. Padahal di sini di",
+    "start": 2698.52,
+    "duration": 4.92
+  },
+  {
+    "text": "function-nya kita define namanya dulu,",
+    "start": 2700.44,
+    "duration": 5.96
+  },
+  {
+    "text": "nanti dia akan ee",
+    "start": 2703.44,
+    "duration": 5.44
+  },
+  {
+    "text": "apa? menampilkan data yang tidak sesuai",
+    "start": 2706.4,
+    "duration": 4.0
+  },
+  {
+    "text": "karena kita memanggilnya pun tidak",
+    "start": 2708.88,
+    "duration": 5.16
+  },
+  {
+    "text": "sesuai juga. Nah, untuk ee memantapkan",
+    "start": 2710.4,
+    "duration": 6.439
+  },
+  {
+    "text": "pemahaman teman-teman terkait function,",
+    "start": 2714.04,
+    "duration": 7.6
+  },
+  {
+    "text": "silakan kerjakan kuis berikut ini.",
+    "start": 2716.839,
+    "duration": 4.801
+  },
+  {
+    "text": "Nah, setelah teman-teman mengerjakan",
+    "start": 2723.319,
+    "duration": 5.52
+  },
+  {
+    "text": "function dan juga teman-teman sudah",
+    "start": 2726.319,
+    "duration": 4.681
+  },
+  {
+    "text": "paham nih, ada dua jenis function. Ada",
+    "start": 2728.839,
+    "duration": 4.401
+  },
+  {
+    "text": "function yang biasa dan juga ada",
+    "start": 2731.0,
+    "duration": 4.839
+  },
+  {
+    "text": "function dengan parameter. Nah, ada",
+    "start": 2733.24,
+    "duration": 5.0
+  },
+  {
+    "text": "jenis function yang ketiga yaitu",
+    "start": 2735.839,
+    "duration": 5.161
+  },
+  {
+    "text": "function dengan return. Nah, apa sih",
+    "start": 2738.24,
+    "duration": 5.8
+  },
+  {
+    "text": "return itu tadi? Yuk, kita bahas. Return",
+    "start": 2741.0,
+    "duration": 6.52
+  },
+  {
+    "text": "digunakan untuk mengembalikan hasil dari",
+    "start": 2744.04,
+    "duration": 7.36
+  },
+  {
+    "text": "sebuah function. Misalnya kalau function",
+    "start": 2747.52,
+    "duration": 6.36
+  },
+  {
+    "text": "dua function yang kita buat sebelumnya",
+    "start": 2751.4,
+    "duration": 4.76
+  },
+  {
+    "text": "itu kan hanya menge-print ya atau",
+    "start": 2753.88,
+    "duration": 4.16
+  },
+  {
+    "text": "menampilkan hasilnya langsung ke layar",
+    "start": 2756.16,
+    "duration": 5.159
+  },
+  {
+    "text": "gitu ya. Nah, dengan menggunakan return",
+    "start": 2758.04,
+    "duration": 6.559
+  },
+  {
+    "text": "kita memberikan hasilnya ke programnya",
+    "start": 2761.319,
+    "duration": 5.921
+  },
+  {
+    "text": "agar bisa dipakai lagi.",
+    "start": 2764.599,
+    "duration": 5.0
+  },
+  {
+    "text": "Sederhana gini, ketika kita menggunakan",
+    "start": 2767.24,
+    "duration": 5.879
+  },
+  {
+    "text": "print misalnya kita eh function-nya tadi",
+    "start": 2769.599,
+    "duration": 5.201
+  },
+  {
+    "text": "langsung di dalam function-nya kita",
+    "start": 2773.119,
+    "duration": 3.601
+  },
+  {
+    "text": "tulis langsung print gitu ya. Nah,",
+    "start": 2774.8,
+    "duration": 4.24
+  },
+  {
+    "text": "ketika kita menggunakan itu ketika kita",
+    "start": 2776.72,
+    "duration": 4.52
+  },
+  {
+    "text": "panggil functionnya itu tadi dia akan",
+    "start": 2779.04,
+    "duration": 4.4
+  },
+  {
+    "text": "hanya menampilkan aja. Nanti kalau",
+    "start": 2781.24,
+    "duration": 3.8
+  },
+  {
+    "text": "misalnya kita mau memproses hasilnya",
+    "start": 2783.44,
+    "duration": 4.96
+  },
+  {
+    "text": "tadi enggak bisa lagi dipakai lagi gitu.",
+    "start": 2785.04,
+    "duration": 5.92
+  },
+  {
+    "text": "Ketika kita menggunakan return, kita",
+    "start": 2788.4,
+    "duration": 5.4
+  },
+  {
+    "text": "bisa menggunakan apapun yang hasil",
+    "start": 2790.96,
+    "duration": 6.72
+  },
+  {
+    "text": "diolah oleh function tadi untuk dipakai",
+    "start": 2793.8,
+    "duration": 6.92
+  },
+  {
+    "text": "ke bagian dari program kita yang lain.",
+    "start": 2797.68,
+    "duration": 6.2
+  },
+  {
+    "text": "Nah, coba kita ee bahas lagi ya.",
+    "start": 2800.72,
+    "duration": 6.24
+  },
+  {
+    "text": "Misalnya bayangkan return itu sebagai",
+    "start": 2803.88,
+    "duration": 6.679
+  },
+  {
+    "text": "mesin kasir. Nah, mesin kasir ini dia",
+    "start": 2806.96,
+    "duration": 5.44
+  },
+  {
+    "text": "menghitung total belanja. Jadi, kita",
+    "start": 2810.559,
+    "duration": 6.201
+  },
+  {
+    "text": "bikin function kasir gitu ya. Nah,",
+    "start": 2812.4,
+    "duration": 6.959
+  },
+  {
+    "text": "ketika kita menggunakan print, kita",
+    "start": 2816.76,
+    "duration": 6.079
+  },
+  {
+    "text": "tulis tuh oh totalnya Rp50.000.",
+    "start": 2819.359,
+    "duration": 6.521
+  },
+  {
+    "text": "Kalau kita menggunakan return, maka dia",
+    "start": 2822.839,
+    "duration": 6.081
+  },
+  {
+    "text": "hanya mengembalikan stroke. Istilahnya",
+    "start": 2825.88,
+    "duration": 4.959
+  },
+  {
+    "text": "seperti itu. Mesinnya memberikan stroke",
+    "start": 2828.92,
+    "duration": 4.84
+  },
+  {
+    "text": "yang bisa dipakai untuk pembayaran atau",
+    "start": 2830.839,
+    "duration": 5.52
+  },
+  {
+    "text": "digunakan untuk function yang lainnya.",
+    "start": 2833.76,
+    "duration": 5.599
+  },
+  {
+    "text": "intinya return membuat hasil function",
+    "start": 2836.359,
+    "duration": 6.48
+  },
+  {
+    "text": "bisa diproses lagi. Oke, contohnya",
+    "start": 2839.359,
+    "duration": 6.081
+  },
+  {
+    "text": "seperti ini.",
+    "start": 2842.839,
+    "duration": 5.72
+  },
+  {
+    "text": "Ketika kita mendeklarasikan sebuah",
+    "start": 2845.44,
+    "duration": 4.879
+  },
+  {
+    "text": "function, ya, kita membuat sebuah",
+    "start": 2848.559,
+    "duration": 3.081
+  },
+  {
+    "text": "function, mendeklarasikan sebuah",
+    "start": 2850.319,
+    "duration": 6.321
+  },
+  {
+    "text": "function namanya menambahkan angka.",
+    "start": 2851.64,
+    "duration": 7.959
+  },
+  {
+    "text": "Di sini kita buat dua parameter A dan",
+    "start": 2856.64,
+    "duration": 5.919
+  },
+  {
+    "text": "parameter B. Nah, parameter A sama B-nya",
+    "start": 2859.599,
+    "duration": 5.441
+  },
+  {
+    "text": "ini kita print, kita jumlahkan A + B,",
+    "start": 2862.559,
+    "duration": 3.961
+  },
+  {
+    "text": "gitu ya.",
+    "start": 2865.04,
+    "duration": 5.0
+  },
+  {
+    "text": "Kemudian kita panggil nih function-nya",
+    "start": 2866.52,
+    "duration": 7.4
+  },
+  {
+    "text": "add number tadi kita kasih nilai 5 dan",
+    "start": 2870.04,
+    "duration": 8.279
+  },
+  {
+    "text": "juga 3. 5 kita masukin ke jadi A, 3 jadi",
+    "start": 2873.92,
+    "duration": 9.919
+  },
+  {
+    "text": "B. 5 + 3 hasilnya 8, Teman-teman, ya.",
+    "start": 2878.319,
+    "duration": 8.28
+  },
+  {
+    "text": "Nah, output-nya hanya akan menampilkan",
+    "start": 2883.839,
+    "duration": 5.121
+  },
+  {
+    "text": "angka 8 aja ya. Karena dia akan hanya",
+    "start": 2886.599,
+    "duration": 4.52
+  },
+  {
+    "text": "langsung mencetak ini kalau kita",
+    "start": 2888.96,
+    "duration": 5.92
+  },
+  {
+    "text": "menggunakan print programnya",
+    "start": 2891.119,
+    "duration": 5.601
+  },
+  {
+    "text": "tidak bisa di kita pakai lagi karena ini",
+    "start": 2894.88,
+    "duration": 3.76
+  },
+  {
+    "text": "sudah selesai nih udah jadi output ya",
+    "start": 2896.72,
+    "duration": 3.72
+  },
+  {
+    "text": "kan kita tidak bisa pakai lagi.",
+    "start": 2898.64,
+    "duration": 4.08
+  },
+  {
+    "text": "Sedangkan ketika kita menggunakan return",
+    "start": 2900.44,
+    "duration": 4.76
+  },
+  {
+    "text": "itu bentuknya seperti ini.",
+    "start": 2902.72,
+    "duration": 5.32
+  },
+  {
+    "text": "Kita membuat sebuah function yang sama",
+    "start": 2905.2,
+    "duration": 6.399
+  },
+  {
+    "text": "ya function yang sama add numbers.",
+    "start": 2908.04,
+    "duration": 7.079
+  },
+  {
+    "text": "Kemudian kita menggunakan dua parameter",
+    "start": 2911.599,
+    "duration": 7.601
+  },
+  {
+    "text": "A dan B. Nah, daripada kita menggunakan",
+    "start": 2915.119,
+    "duration": 7.041
+  },
+  {
+    "text": "print, kita ubah print-nya menjadi",
+    "start": 2919.2,
+    "duration": 6.359
+  },
+  {
+    "text": "return atau kembalikan",
+    "start": 2922.16,
+    "duration": 7.84
+  },
+  {
+    "text": "A + B. Nah, di sini pada saat kita",
+    "start": 2925.559,
+    "duration": 7.481
+  },
+  {
+    "text": "memanggil sebuah apa? Function add",
+    "start": 2930.0,
+    "duration": 6.559
+  },
+  {
+    "text": "number tadi kita kasih nilai 5 sama 3",
+    "start": 2933.04,
+    "duration": 6.079
+  },
+  {
+    "text": "itu kita simpan dia ke dalam variabel",
+    "start": 2936.559,
+    "duration": 6.201
+  },
+  {
+    "text": "result. Nah, variabelnya ini kita bisa",
+    "start": 2939.119,
+    "duration": 6.561
+  },
+  {
+    "text": "kita print lagi atau kita jumlahkan gitu",
+    "start": 2942.76,
+    "duration": 4.839
+  },
+  {
+    "text": "ya atau kita bisa lakukan banyak hal",
+    "start": 2945.68,
+    "duration": 4.28
+  },
+  {
+    "text": "gitu ya. Kita bisa langsung print",
+    "start": 2947.599,
+    "duration": 5.561
+  },
+  {
+    "text": "hasilnya atau kita bisa tambahkan teks",
+    "start": 2949.96,
+    "duration": 6.32
+  },
+  {
+    "text": "hasil penjumlahan sama dengan result",
+    "start": 2953.16,
+    "duration": 5.36
+  },
+  {
+    "text": "gitu ya. Atau hasil result-nya ini bisa",
+    "start": 2956.28,
+    "duration": 7.16
+  },
+  {
+    "text": "kita kalikan 2, kita kalikan 4 gitu ya.",
+    "start": 2958.52,
+    "duration": 8.039
+  },
+  {
+    "text": "Ini hasil dari function ini itu dia sama",
+    "start": 2963.44,
+    "duration": 5.52
+  },
+  {
+    "text": "sebenarnya delan tapi kita bisa",
+    "start": 2966.559,
+    "duration": 6.04
+  },
+  {
+    "text": "ubah-ubah dia menjadi ee kita bisa",
+    "start": 2968.96,
+    "duration": 7.399
+  },
+  {
+    "text": "jadikan ee karena kita kembalikan gitu",
+    "start": 2972.599,
+    "duration": 6.041
+  },
+  {
+    "text": "ya nih maksud kakak nih ya. Jadi",
+    "start": 2976.359,
+    "duration": 5.081
+  },
+  {
+    "text": "hasilnya 8 ini tadi hasil penjumlahannya",
+    "start": 2978.64,
+    "duration": 5.439
+  },
+  {
+    "text": "del itu dieturn dikembalikan ke tempat",
+    "start": 2981.44,
+    "duration": 4.639
+  },
+  {
+    "text": "dia memanggil. Tadi kan kita panggil di",
+    "start": 2984.079,
+    "duration": 4.401
+  },
+  {
+    "text": "baris ketiga ini ya. Nah, angkaannya",
+    "start": 2986.079,
+    "duration": 5.161
+  },
+  {
+    "text": "disimpan di sini itu dia disimpan",
+    "start": 2988.48,
+    "duration": 4.639
+  },
+  {
+    "text": "hasilnya ke dalam sebuah variabel",
+    "start": 2991.24,
+    "duration": 3.72
+  },
+  {
+    "text": "namanya result. Nah, kalau misalnya kita",
+    "start": 2993.119,
+    "duration": 3.24
+  },
+  {
+    "text": "simpan ke dalam variabel kan berarti",
+    "start": 2994.96,
+    "duration": 3.44
+  },
+  {
+    "text": "kita bisa olah lagi gitu ya. Pada saat",
+    "start": 2996.359,
+    "duration": 6.041
+  },
+  {
+    "text": "programnya stop maka dia ee tetap bisa",
+    "start": 2998.4,
+    "duration": 5.919
+  },
+  {
+    "text": "diolah lagi. Kalau misalnya kita tidak",
+    "start": 3002.4,
+    "duration": 3.919
+  },
+  {
+    "text": "menggunakan return ya udah kalau dia",
+    "start": 3004.319,
+    "duration": 3.641
+  },
+  {
+    "text": "programnya stop udah tidak bisa kita",
+    "start": 3006.319,
+    "duration": 3.321
+  },
+  {
+    "text": "gunakan lagi. Dia akan hilang gitu ya",
+    "start": 3007.96,
+    "duration": 4.72
+  },
+  {
+    "text": "dari memori programnya.",
+    "start": 3009.64,
+    "duration": 5.479
+  },
+  {
+    "text": "Kenapa sih return itu penting? dengan",
+    "start": 3012.68,
+    "duration": 5.24
+  },
+  {
+    "text": "return tadi, hasil function-nya tadi",
+    "start": 3015.119,
+    "duration": 6.081
+  },
+  {
+    "text": "bisa kita proses ke proses berikutnya.",
+    "start": 3017.92,
+    "duration": 5.0
+  },
+  {
+    "text": "Ini ee yang seperti yang Kakak bilang",
+    "start": 3021.2,
+    "duration": 3.96
+  },
+  {
+    "text": "tadi ya, misalnya hasil proses",
+    "start": 3022.92,
+    "duration": 4.679
+  },
+  {
+    "text": "perhitungan penjumlahan tadi itu kita",
+    "start": 3025.16,
+    "duration": 4.679
+  },
+  {
+    "text": "bisa jadikan [berdehem] skornya ya, kita",
+    "start": 3027.599,
+    "duration": 5.281
+  },
+  {
+    "text": "bisa jadikan final skore dengan ee kita",
+    "start": 3029.839,
+    "duration": 5.52
+  },
+  {
+    "text": "bisa kalikan lagi, kita bisa tambahkan",
+    "start": 3032.88,
+    "duration": 6.64
+  },
+  {
+    "text": "lagi atau kita bisa ee masukkan lagi dia",
+    "start": 3035.359,
+    "duration": 6.24
+  },
+  {
+    "text": "ke dalam sebuah function bebas. Banyak",
+    "start": 3039.52,
+    "duration": 4.48
+  },
+  {
+    "text": "hal yang bisa kita lakukan. Tapi ketika",
+    "start": 3041.599,
+    "duration": 4.24
+  },
+  {
+    "text": "kita intinya ketika kita menggunakan",
+    "start": 3044.0,
+    "duration": 4.079
+  },
+  {
+    "text": "return, kita bisa memprosesnya lagi",
+    "start": 3045.839,
+    "duration": 4.641
+  },
+  {
+    "text": "seperti ini. Kalau kita tadi pakai print",
+    "start": 3048.079,
+    "duration": 4.321
+  },
+  {
+    "text": "doang kan programnya hanya stop aja udah",
+    "start": 3050.48,
+    "duration": 3.72
+  },
+  {
+    "text": "langsung stop. Kalau ini kita bisa",
+    "start": 3052.4,
+    "duration": 3.88
+  },
+  {
+    "text": "lakukan hal yang lain. Nah, ini",
+    "start": 3054.2,
+    "duration": 3.919
+  },
+  {
+    "text": "programnya [berdehem]",
+    "start": 3056.28,
+    "duration": 6.279
+  },
+  {
+    "text": "karena di sini 8 maka 8 * 10 maka",
+    "start": 3058.119,
+    "duration": 7.0
+  },
+  {
+    "text": "hasilnya akan jadi 80. Jadi hasil",
+    "start": 3062.559,
+    "duration": 4.201
+  },
+  {
+    "text": "function bisa dipakai lagi untuk",
+    "start": 3065.119,
+    "duration": 5.0
+  },
+  {
+    "text": "menghitung final score.",
+    "start": 3066.76,
+    "duration": 5.799
+  },
+  {
+    "text": "Di sini ada dua ini ya, ada dua",
+    "start": 3070.119,
+    "duration": 4.081
+  },
+  {
+    "text": "keunggulannya",
+    "start": 3072.559,
+    "duration": 4.52
+  },
+  {
+    "text": "antara print dengan menggunakan return.",
+    "start": 3074.2,
+    "duration": 4.639
+  },
+  {
+    "text": "Kalau print kita langsung menampilkan",
+    "start": 3077.079,
+    "duration": 3.76
+  },
+  {
+    "text": "hasilnya ke layar. Kalau return dia",
+    "start": 3078.839,
+    "duration": 4.401
+  },
+  {
+    "text": "mengembalikan hasilnya ke tempat dia",
+    "start": 3080.839,
+    "duration": 4.161
+  },
+  {
+    "text": "dipanggil. Kalau dia dipanggil di baris",
+    "start": 3083.24,
+    "duration": 3.24
+  },
+  {
+    "text": "ketiga, maka dia akan dikembalikan",
+    "start": 3085.0,
+    "duration": 3.599
+  },
+  {
+    "text": "nilainya ke sini. Makanya dia harus",
+    "start": 3086.48,
+    "duration": 3.8
+  },
+  {
+    "text": "disimpan ke dalam sebuah variabel supaya",
+    "start": 3088.599,
+    "duration": 3.921
+  },
+  {
+    "text": "kita bisa pakai lagi ya, Teman-teman.",
+    "start": 3090.28,
+    "duration": 4.6
+  },
+  {
+    "text": "Kemudian print ini cocok untuk kalau",
+    "start": 3092.52,
+    "duration": 4.92
+  },
+  {
+    "text": "misalnya kita mau hanya menampilkan teks",
+    "start": 3094.88,
+    "duration": 5.239
+  },
+  {
+    "text": "doang. Tapi kalau kita udah mulai mau",
+    "start": 3097.44,
+    "duration": 4.399
+  },
+  {
+    "text": "menghitung sesuatu [berdehem] itu kita",
+    "start": 3100.119,
+    "duration": 4.521
+  },
+  {
+    "text": "bisa menggunakan return. Kalau kita",
+    "start": 3101.839,
+    "duration": 4.28
+  },
+  {
+    "text": "menggunakan print, oh kita enggak bisa",
+    "start": 3104.64,
+    "duration": 2.64
+  },
+  {
+    "text": "pakai lagi karena kan dia cuman",
+    "start": 3106.119,
+    "duration": 3.161
+  },
+  {
+    "text": "menampilkan aja. Makanya cocok untuk",
+    "start": 3107.28,
+    "duration": 3.64
+  },
+  {
+    "text": "pesan.",
+    "start": 3109.28,
+    "duration": 3.16
+  },
+  {
+    "text": "Nah, kalau kita pakai print itu dia",
+    "start": 3110.92,
+    "duration": 3.439
+  },
+  {
+    "text": "tidak cocok untuk program yang banyak",
+    "start": 3112.44,
+    "duration": 4.159
+  },
+  {
+    "text": "atau besar gitu ya.",
+    "start": 3114.359,
+    "duration": 4.881
+  },
+  {
+    "text": "supaya dia supaya ee lebih rapi dan",
+    "start": 3116.599,
+    "duration": 5.081
+  },
+  {
+    "text": "programnya bisa dipakai berulang",
+    "start": 3119.24,
+    "duration": 4.48
+  },
+  {
+    "text": "berulang berulang itu kita gunakan",
+    "start": 3121.68,
+    "duration": 5.32
+  },
+  {
+    "text": "return gitu ya. Itu untuk print versus",
+    "start": 3123.72,
+    "duration": 6.32
+  },
+  {
+    "text": "return. Nah, untuk memahamkan teman",
+    "start": 3127.0,
+    "duration": 4.92
+  },
+  {
+    "text": "lebih lanjut tentang return function,",
+    "start": 3130.04,
+    "duration": 6.759
+  },
+  {
+    "text": "silakan kerjakan kuis berikut ini.",
+    "start": 3131.92,
+    "duration": 4.879
+  },
+  {
+    "text": "Oke, Teman-teman, karena kita sudah",
+    "start": 3138.16,
+    "duration": 4.919
+  },
+  {
+    "text": "membahas tentang parameter dan juga",
+    "start": 3140.48,
+    "duration": 4.92
+  },
+  {
+    "text": "return function, sekarang gimana kalau",
+    "start": 3143.079,
+    "duration": 4.881
+  },
+  {
+    "text": "kita coba gabungkan kedua pemahaman",
+    "start": 3145.4,
+    "duration": 5.399
+  },
+  {
+    "text": "kita? Misalnya di sini kita mau membuat",
+    "start": 3147.96,
+    "duration": 4.48
+  },
+  {
+    "text": "sebuah function yang menggunakan",
+    "start": 3150.799,
+    "duration": 5.28
+  },
+  {
+    "text": "parameter, multiple parameter dan juga",
+    "start": 3152.44,
+    "duration": 5.6
+  },
+  {
+    "text": "return. menggunakan return ya, function.",
+    "start": 3156.079,
+    "duration": 5.201
+  },
+  {
+    "text": "Nah, misalnya di sini kita mau ee",
+    "start": 3158.04,
+    "duration": 6.079
+  },
+  {
+    "text": "bayangkan kita mau bikin program untuk",
+    "start": 3161.28,
+    "duration": 4.839
+  },
+  {
+    "text": "di kasir gitu ya, Teman-teman. Kita",
+    "start": 3164.119,
+    "duration": 5.161
+  },
+  {
+    "text": "buatkan function yang dia mengcalculate",
+    "start": 3166.119,
+    "duration": 4.801
+  },
+  {
+    "text": "total misalnya gitu ya. Mengcalculate",
+    "start": 3169.28,
+    "duration": 3.2
+  },
+  {
+    "text": "total yang harus dibayar sama pengguna",
+    "start": 3170.92,
+    "duration": 3.96
+  },
+  {
+    "text": "itu berapa sih? Oke, kita bikin",
+    "start": 3172.48,
+    "duration": 5.52
+  },
+  {
+    "text": "calculate total. Ingat ya teman-teman,",
+    "start": 3174.88,
+    "duration": 4.76
+  },
+  {
+    "text": "function itu tidak boleh menggunakan",
+    "start": 3178.0,
+    "duration": 4.0
+  },
+  {
+    "text": "spasi sama seperti variabel ya. Jadi",
+    "start": 3179.64,
+    "duration": 5.84
+  },
+  {
+    "text": "gunakan unders atau capital first letter",
+    "start": 3182.0,
+    "duration": 6.4
+  },
+  {
+    "text": "untuk penamaan function.",
+    "start": 3185.48,
+    "duration": 6.16
+  },
+  {
+    "text": "Di sini kita masukkan dua dua parameter",
+    "start": 3188.4,
+    "duration": 5.8
+  },
+  {
+    "text": "namanya price dan juga quantity. Jadi",
+    "start": 3191.64,
+    "duration": 6.8
+  },
+  {
+    "text": "harganya berapa? Terus si ee customer",
+    "start": 3194.2,
+    "duration": 7.399
+  },
+  {
+    "text": "kita itu belanjanya berapa gitu ya. Nah",
+    "start": 3198.44,
+    "duration": 7.0
+  },
+  {
+    "text": "di sini kita mau menghitung",
+    "start": 3201.599,
+    "duration": 6.681
+  },
+  {
+    "text": "harga dari item yang dibeli tadi. Di",
+    "start": 3205.44,
+    "duration": 5.159
+  },
+  {
+    "text": "sini harganya dikali dengan totalnya",
+    "start": 3208.28,
+    "duration": 5.559
+  },
+  {
+    "text": "berapa? Kemudian dari program ini eh",
+    "start": 3210.599,
+    "duration": 5.361
+  },
+  {
+    "text": "dari function ini itu dia akan",
+    "start": 3213.839,
+    "duration": 6.24
+  },
+  {
+    "text": "mengembalikan totalnya. Oke, berarti di",
+    "start": 3215.96,
+    "duration": 7.72
+  },
+  {
+    "text": "sini kita udah ada parametra price sama",
+    "start": 3220.079,
+    "duration": 7.321
+  },
+  {
+    "text": "quantity. Kemudian kita gunakan kita",
+    "start": 3223.68,
+    "duration": 5.8
+  },
+  {
+    "text": "gunakan return dan yang kita return itu",
+    "start": 3227.4,
+    "duration": 3.8
+  },
+  {
+    "text": "apa? Oh, total. Nah, sebenarnya ini",
+    "start": 3229.48,
+    "duration": 4.599
+  },
+  {
+    "text": "boleh kalian langsung return price kali",
+    "start": 3231.2,
+    "duration": 5.119
+  },
+  {
+    "text": "quantity. Cuman supaya lebih rapi, kita",
+    "start": 3234.079,
+    "duration": 4.881
+  },
+  {
+    "text": "simpan hasilnya ke dalam variabel dulu",
+    "start": 3236.319,
+    "duration": 4.48
+  },
+  {
+    "text": "baru kemudian variabelnya yang kita",
+    "start": 3238.96,
+    "duration": 4.68
+  },
+  {
+    "text": "return. Either way enggak masalah tapi",
+    "start": 3240.799,
+    "duration": 5.961
+  },
+  {
+    "text": "yang penting kalian pertama bisa membaca",
+    "start": 3243.64,
+    "duration": 5.24
+  },
+  {
+    "text": "programnya dan yang kedua menurut kalian",
+    "start": 3246.76,
+    "duration": 3.799
+  },
+  {
+    "text": "lebih rapi yang mana apakah menggunakan",
+    "start": 3248.88,
+    "duration": 4.919
+  },
+  {
+    "text": "variabel atau tidak. Nah, di sini ketika",
+    "start": 3250.559,
+    "duration": 4.8
+  },
+  {
+    "text": "kita menggunakan return jangan lupa",
+    "start": 3253.799,
+    "duration": 4.161
+  },
+  {
+    "text": "supaya dia bisa digunakan kembali simpan",
+    "start": 3255.359,
+    "duration": 4.801
+  },
+  {
+    "text": "bikin dulu variabel tempat menampungnya",
+    "start": 3257.96,
+    "duration": 5.68
+  },
+  {
+    "text": "sementara. Kemudian kita panggil nih",
+    "start": 3260.16,
+    "duration": 6.12
+  },
+  {
+    "text": "variabel yang sudah kita buat. Sori",
+    "start": 3263.64,
+    "duration": 4.4
+  },
+  {
+    "text": "function yang sudah kita buat. Nama",
+    "start": 3266.28,
+    "duration": 4.68
+  },
+  {
+    "text": "function-nya calculate total. Kemudian",
+    "start": 3268.04,
+    "duration": 6.799
+  },
+  {
+    "text": "kita masukin harganya sama quantity-nya.",
+    "start": 3270.96,
+    "duration": 8.68
+  },
+  {
+    "text": "Kemudian kalau udah kita bisa cetak tuh",
+    "start": 3274.839,
+    "duration": 8.52
+  },
+  {
+    "text": "hasilnya total bayar. Dia akan memanggil",
+    "start": 3279.64,
+    "duration": 5.6
+  },
+  {
+    "text": "total payment-nya ini tadi. Misalnya di",
+    "start": 3283.359,
+    "duration": 6.561
+  },
+  {
+    "text": "sini 15.000 * 3. 15.000 1000 * 3 itu",
+    "start": 3285.24,
+    "duration": 6.52
+  },
+  {
+    "text": "hasilnya",
+    "start": 3289.92,
+    "duration": 5.879
+  },
+  {
+    "text": "45.000 ya, Teman-teman ya. Nah, 45 maka",
+    "start": 3291.76,
+    "duration": 7.599
+  },
+  {
+    "text": "di sini akan ng-return 45-nya ke bawah",
+    "start": 3295.799,
+    "duration": 6.881
+  },
+  {
+    "text": "sini 45. Kemudian yang R5.000 akan",
+    "start": 3299.359,
+    "duration": 5.561
+  },
+  {
+    "text": "disimpan ke dalam total payment yang",
+    "start": 3302.68,
+    "duration": 5.36
+  },
+  {
+    "text": "kemudian akan dimasukkan ke dalam",
+    "start": 3304.92,
+    "duration": 6.199
+  },
+  {
+    "text": "perintah print yang ada di sini. Jadi",
+    "start": 3308.04,
+    "duration": 5.799
+  },
+  {
+    "text": "ini bentuk dari",
+    "start": 3311.119,
+    "duration": 5.121
+  },
+  {
+    "text": "function dengan multiple parameter dan",
+    "start": 3313.839,
+    "duration": 6.401
+  },
+  {
+    "text": "juga return value. Nah, coba lengkapi",
+    "start": 3316.24,
+    "duration": 7.879
+  },
+  {
+    "text": "kuis berikut ini.",
+    "start": 3320.24,
+    "duration": 3.879
+  },
+  {
+    "text": "Nah, dalam program yang lebih besar",
+    "start": 3328.319,
+    "duration": 5.121
+  },
+  {
+    "text": "kadang sebuah function itu tidak hanya",
+    "start": 3330.359,
+    "duration": 6.44
+  },
+  {
+    "text": "satu saja teman-teman. Bah ada yang 5,",
+    "start": 3333.44,
+    "duration": 5.24
+  },
+  {
+    "text": "10, bahkan ratusan functionnya,",
+    "start": 3336.799,
+    "duration": 5.401
+  },
+  {
+    "text": "tergantung kompleksitas dari ee program",
+    "start": 3338.68,
+    "duration": 5.879
+  },
+  {
+    "text": "yang dibuat. Nah, di sini kita lihat",
+    "start": 3342.2,
+    "duration": 4.48
+  },
+  {
+    "text": "contohnya ya. Tadi kan kita sudah",
+    "start": 3344.559,
+    "duration": 6.04
+  },
+  {
+    "text": "membuat ee total harga dari kasir kita",
+    "start": 3346.68,
+    "duration": 5.919
+  },
+  {
+    "text": "ya, Teman-teman. Nah, di sini kita mau",
+    "start": 3350.599,
+    "duration": 4.081
+  },
+  {
+    "text": "menambahkan lagi sebuah function yang",
+    "start": 3352.599,
+    "duration": 5.0
+  },
+  {
+    "text": "dia yang dia itu menghitung",
+    "start": 3354.68,
+    "duration": 5.72
+  },
+  {
+    "text": "ee yang dia itu menghitung disun,",
+    "start": 3357.599,
+    "duration": 6.76
+  },
+  {
+    "text": "Teman-teman. Nah, inilah di sinilah eh",
+    "start": 3360.4,
+    "duration": 6.6
+  },
+  {
+    "text": "implementasi dari return function tadi",
+    "start": 3364.359,
+    "duration": 6.081
+  },
+  {
+    "text": "mulai terlihat gitu ya. Misalnya di sini",
+    "start": 3367.0,
+    "duration": 6.319
+  },
+  {
+    "text": "kita programnya masih sama ya ee dia",
+    "start": 3370.44,
+    "duration": 4.96
+  },
+  {
+    "text": "calculate total",
+    "start": 3373.319,
+    "duration": 4.8
+  },
+  {
+    "text": "mengkalikan antara harga dan juga",
+    "start": 3375.4,
+    "duration": 5.12
+  },
+  {
+    "text": "quantity-nya jumlah barangnya. Nah, di",
+    "start": 3378.119,
+    "duration": 4.401
+  },
+  {
+    "text": "sini dia tadi ee tidak langsung",
+    "start": 3380.52,
+    "duration": 4.0
+  },
+  {
+    "text": "menggunakan variabel ya, boleh kan kalau",
+    "start": 3382.52,
+    "duration": 4.2
+  },
+  {
+    "text": "seperti ini. Dan juga dia bisa dibaca",
+    "start": 3384.52,
+    "duration": 5.16
+  },
+  {
+    "text": "gitu karena kebetulan program ee",
+    "start": 3386.72,
+    "duration": 6.359
+  },
+  {
+    "text": "rumusnya sangat mudah. Di sini kita",
+    "start": 3389.68,
+    "duration": 5.879
+  },
+  {
+    "text": "membuat variabel total. Terus itu kita",
+    "start": 3393.079,
+    "duration": 5.48
+  },
+  {
+    "text": "panggil nih function-nya.",
+    "start": 3395.559,
+    "duration": 5.401
+  },
+  {
+    "text": "Function-nya di sini harganya Rp20.000",
+    "start": 3398.559,
+    "duration": 7.04
+  },
+  {
+    "text": "kita kti di sini Rp20.000 * 3.000 * 3",
+    "start": 3400.96,
+    "duration": 7.96
+  },
+  {
+    "text": "hasilnya ee Rp60.000.",
+    "start": 3405.599,
+    "duration": 5.881
+  },
+  {
+    "text": "maka kita akan return 60.000 tadi dan",
+    "start": 3408.92,
+    "duration": 5.36
+  },
+  {
+    "text": "simpan dia ke dalam variabel total. Nah,",
+    "start": 3411.48,
+    "duration": 5.359
+  },
+  {
+    "text": "di sini variabel total ini tadi",
+    "start": 3414.28,
+    "duration": 6.0
+  },
+  {
+    "text": "dijadikan nilai parameter di function",
+    "start": 3416.839,
+    "duration": 5.801
+  },
+  {
+    "text": "yang kedua. Di function kedua ada yang",
+    "start": 3420.28,
+    "duration": 5.079
+  },
+  {
+    "text": "namanya apply discount dan dia meminta",
+    "start": 3422.64,
+    "duration": 6.64
+  },
+  {
+    "text": "parameter total harganya tadi kan ya.",
+    "start": 3425.359,
+    "duration": 7.44
+  },
+  {
+    "text": "Misalnya diskonnya 9%, maka di sini kita",
+    "start": 3429.28,
+    "duration": 6.68
+  },
+  {
+    "text": "return totalnya ee untuk ee menghitung",
+    "start": 3432.799,
+    "duration": 7.961
+  },
+  {
+    "text": "diskon itu dia harga totalnya dikali 0,9",
+    "start": 3435.96,
+    "duration": 8.079
+  },
+  {
+    "text": "karena 9% tuh 0,9 ya, Teman-teman. Nah,",
+    "start": 3440.76,
+    "duration": 5.279
+  },
+  {
+    "text": "karena kita tadi 60.000-nya nya itu",
+    "start": 3444.039,
+    "duration": 4.441
+  },
+  {
+    "text": "sudah simpan di dalam total, maka di",
+    "start": 3446.039,
+    "duration": 5.361
+  },
+  {
+    "text": "sini kita tinggal panggil aja variabel",
+    "start": 3448.48,
+    "duration": 5.96
+  },
+  {
+    "text": "total ketika kita mendeklarasi atau",
+    "start": 3451.4,
+    "duration": 5.84
+  },
+  {
+    "text": "memanggil variabel apply eh function",
+    "start": 3454.44,
+    "duration": 5.44
+  },
+  {
+    "text": "apply discount ya. Apply discount",
+    "start": 3457.24,
+    "duration": 4.92
+  },
+  {
+    "text": "60.000-nya tinggal kita masukin sini.",
+    "start": 3459.88,
+    "duration": 4.28
+  },
+  {
+    "text": "Nah, di sini langsung muncul final",
+    "start": 3462.16,
+    "duration": 5.04
+  },
+  {
+    "text": "price-nya atau harga akhirnya. Bayangkan",
+    "start": 3464.16,
+    "duration": 4.08
+  },
+  {
+    "text": "kita enggak pakai return nih,",
+    "start": 3467.2,
+    "duration": 2.919
+  },
+  {
+    "text": "Teman-teman. Kita langsung print. Nah,",
+    "start": 3468.24,
+    "duration": 4.4
+  },
+  {
+    "text": "ketika kita mau apply diskon harus",
+    "start": 3470.119,
+    "duration": 4.44
+  },
+  {
+    "text": "gimana tuh? kita enggak bisa nih",
+    "start": 3472.64,
+    "duration": 5.0
+  },
+  {
+    "text": "mendapatkan nilai yang ada dari function",
+    "start": 3474.559,
+    "duration": 4.601
+  },
+  {
+    "text": "calculate total tadi yang menghitung",
+    "start": 3477.64,
+    "duration": 5.199
+  },
+  {
+    "text": "totalnya tadi gitu ya. Jadi ketika kita",
+    "start": 3479.16,
+    "duration": 6.6
+  },
+  {
+    "text": "menggunakan return hasil function-nya",
+    "start": 3482.839,
+    "duration": 5.321
+  },
+  {
+    "text": "bisa digunakan untuk function yang lain",
+    "start": 3485.76,
+    "duration": 5.24
+  },
+  {
+    "text": "atau bisa dihitung atau dilakukan",
+    "start": 3488.16,
+    "duration": 5.639
+  },
+  {
+    "text": "perhitungan lain yang seperti eh final",
+    "start": 3491.0,
+    "duration": 4.599
+  },
+  {
+    "text": "score yang kita sudah coba sebelumnya",
+    "start": 3493.799,
+    "duration": 5.601
+  },
+  {
+    "text": "tadi ya, Teman-teman. Nah, itu untuk eh",
+    "start": 3495.599,
+    "duration": 6.681
+  },
+  {
+    "text": "function dengan multiple eh bukan",
+    "start": 3499.4,
+    "duration": 4.679
+  },
+  {
+    "text": "multiple ya, function dengan di program",
+    "start": 3502.28,
+    "duration": 5.279
+  },
+  {
+    "text": "yang lebih besar, yang lebih kompleks.",
+    "start": 3504.079,
+    "duration": 3.48
+  }
+]

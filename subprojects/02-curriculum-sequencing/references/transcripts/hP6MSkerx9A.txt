@@ -1,0 +1,782 @@
+[2.24] Nah, Teman-teman, dalam bahasa
+[4.48] pemrograman Python ada yang disebut
+[8.08] dengan namanya modular desain. Apa sih
+[11.08] modular desain itu? Yuk, kita perhatikan
+[13.12] slide berikut ini. Modular desain adalah
+[17.88] ee cara program membagi sesuatu program
+[22.64] yang besar menjadi bagian-bagian kecil
+[25.28] sehingga programnya bisa lebih teratur.
+[28.16] Nah, setiap bagian yang dibagi tadi itu
+[31.16] punya tugasnya sendiri, Mas. Tugasnya
+[33.04] sendiri masing-masing gitu ya. Dalam
+[34.96] Python bagian bagian kecil ini biasanya
+[37.76] disebut dan dibuat ee menjadi sebuah
+[41.00] function ya, Teman-teman.
+[43.60] Sederhananya seperti ini. Ketika program
+[46.16] yang kita buat itu ada 100 line atau
+[49.80] 1000 line gitu ya, 100.000 Ibu baris,
+[52.92] program tersebut perlu dipotong
+[54.52] kecil-kecil agar kita mudah dalam ee
+[58.40] memperbaiki ketika ada bug atau ada
+[60.56] perubahan-perubahan minor gitu ya. Dan
+[63.24] juga agar kita sebagai developer lebih
+[66.12] mudah juga untuk mengembangkannya nanti
+[68.76] atau ee membuat kodenya gitu ya.
+[72.92] Ah, enggak jelas, enggak jelas,
+[76.92] enggak jelas, enggak jelas.
+[80.36] Ulang ulang ulang ulang ulang ulang.
+[86.32] Oke, Teman-teman. Sekarang di dalam
+[88.92] bahasa pemrograman Python dan di dalam
+[92.04] bahasa pemrograman eh in general ada loh
+[94.68] yang disebut dengan modular desain. Apa
+[96.80] sih sebenarnya modular desain itu? Yuk,
+[99.36] perhatikan slide berikut. Modular desain
+[102.12] itu adalah cara sebuah program besar
+[107.36] dibagi menjadi bagian-bagian yang lebih
+[109.36] kecil. Nah, setiap bagian kecil tadi itu
+[113.00] dia memiliki tugasnya masing-masing. Di
+[115.72] dalam bahasa peman Python, bagian-bagian
+[118.32] kecil ini yang dibagi-bagi tadi itu
+[120.60] biasanya disebut juga dengan function.
+[123.44] Nah, bayangkan kalian membuat sebuah
+[125.76] program gitu ya. programnya ada 100 line
+[128.08] atau 1.000 line. Nah, dari program itu
+[130.56] kan kita kalau langsung nulis 1000 baris
+[133.64] tuh kan kadang kalau pertama kalau
+[135.60] misalnya kita mau memperbaiki bug-nya
+[138.20] atau menambahkan fiturnya itu kan kita
+[140.04] bingung ya harus mencari dari 100 atau
+[142.52] 1000 baris tadi. Nah, ketika kita
+[145.12] membagi-bagi kode kita menjadi
+[147.12] bagian-bagian kecil ee atau biasa
+[150.48] disebut dengan function itu kan kita
+[152.00] lebih mudah jauh lebih mudah mencari
+[154.12] berdasarkan bagian-bagian kita tadi gitu
+[156.08] ya.
+[156.88] Nah, untuk lebih memahami tentang
+[159.84] modular desain, coba bayangkan sebuah
+[161.92] restoran. Di dalam restoran kan dalam
+[165.88] kita tidak satu orang tidak mengerjakan
+[169.32] banyak hal. Di dalam restoran ada
+[172.20] beberapa bagian-bagian yang berjalan
+[174.72] secara bersamaan. Misalnya ada orang
+[177.04] yang bertugas menjadi sebagai kasir, ada
+[179.24] yang menjadi koki, ada yang menjadi
+[181.56] pelayan atau ada yang menjadi ee petugas
+[184.56] kebersihan.
+[186.16] Nah, setiap bagian-bagiannya ini
+[188.12] memiliki tugasnya masing-masing yang
+[191.32] kalau kita
+[193.48] masukkan ke dalam program gitu ya,
+[195.60] program itu sama juga seperti itu. Jadi,
+[197.84] setiap function itu punya tugas yang
+[200.32] masing-masing yang kita bagi-bagi untuk
+[202.68] memudahkan kita. Nah, sekarang coba kita
+[207.08] lihat nih kalau program tidak kalau ada
+[211.44] ee program yang tidak menggunakan
+[213.28] modular desain atau tanpa menggunakan
+[215.60] function itu coba lihat deh seperti ini
+[217.24] ya. Jadi ee ini ada sebuah program yang
+[221.56] pertama dia meminta input ya programnya
+[224.28] ya. Dia minta nama, harga nama barangnya
+[227.60] gitu ya, harga barangnya, terus tuh
+[229.80] jumlah barang yang dibeli gitu misalnya.
+[231.52] ini anggap aja ini ee program kasir.
+[234.56] Kemudian setelah dia input di bagian
+[237.36] tengah itu ada bagian yang menghitung
+[241.28] perhitungan ininya ya kayak total
+[243.44] harganya, terus itu total diskonnya,
+[246.00] terus itu ada jumlah ee besar barang
+[251.80] dan juga harganya yang harus dibayarkan
+[253.76] oleh pengguna gitu ya. Nah, kemudian di
+[256.92] paling bawah itu programnya ada dia
+[260.40] menampilkan hasil dari
+[261.92] perhitungan-perhitungan yang sudah kita
+[263.84] proses tadi. Nah, sekarang yang kita
+[266.84] lihat ini kebetulan programnya itu masih
+[269.24] sedikit ya, masih ada totalnya 6 7 8 9
+[273.12] 10. Ada 10 baris. Bayangkan kalau kalian
+[275.84] membuat 100 bahkan 1.000. Misalnya ada
+[278.76] perhitungannya sendiri aja membutuhkan
+[281.76] 500 baris gitu. Nah, bayangkan itu kan
+[285.00] agak susah ya, Teman-teman ya, ketika
+[286.72] kita mau mencari oh mana sih yang
+[289.24] digunakan untuk menghitung totalnya,
+[291.64] yang mana sih yang digunakan untuk
+[293.60] menghitung diskonnya gitu. Misalnya kita
+[295.56] enggak mau diskonnya 10%, kita mau
+[297.68] naikin diskonnya jadi 50%. Nah, itu kan
+[301.04] kalau programnya sedikit seperti ini 10
+[303.52] baris mungkin bisa terlihat ya.
+[305.08] Bayangkan kalau programnya ada ribu atau
+[307.84] ratusan ribu sih pasti bingung kan. Nah,
+[311.00] ketika kita berubah atau beranjak gitu
+[314.08] ya menggunakan kode dengan modular
+[317.36] design ini bentuknya akan seperti ini.
+[320.64] Jauh lebih rapi ya, Teman-teman. Nah,
+[322.92] [berdehem] ketika kita menggunakan
+[323.96] modular desain atau menggunakan eh
+[326.20] Python, function Python ya di sini kita
+[329.56] lihat kita definisikan dulu
+[331.72] function-function-nya yang digunakan
+[333.40] [berdehem] untuk memproses
+[334.76] informasi-informasi tadi. Oh, kalau kita
+[337.44] mau menghitung totalnya itu berarti kita
+[341.16] bikin rumus. Terus itu di sini ada
+[343.92] parameternya gitu ya, berapa harganya,
+[346.52] berapa banyak barangnya, terus itu nanti
+[348.56] dia akan ngr [berdehem] supaya bisa
+[350.44] diproses lagi ya. ee hasil
+[352.52] perhitungannya ke entah itu dimasukkan
+[355.20] ke dalam function lain atau langsung
+[357.20] dihitung di dalam ee line baris kodenya
+[360.56] gitu ya. Di sini ada disun dan di sini
+[363.28] ada final price-nya. Jadi kita sangat
+[365.88] lebih mudah lagi ya dalam mencari oh
+[368.24] misalnya kita mau mengganti diskonnya
+[369.92] dari 10% jadi 50%. Oh berarti kita
+[372.56] tinggal cari keyword-nya atau
+[374.92] function-nya yang membuat menambahkan
+[377.08] diskon gitu ya. Nah, ini diskonnya 0,1
+[380.44] kita ganti jadi 0,5 kalau 50% gitu ya
+[383.60] teman-teman ya. Jadi memudahkan kita
+[386.40] kalau misalnya mencari bug atau untuk
+[389.20] menambahkan feature gitu. Misalnya di
+[391.16] sini dia dapat diskon. Kalau misalnya
+[392.88] dia belanjanya quantity-nya lebih dari
+[395.28] 16 barang, diskonnya jadi 20 gitu. Nah,
+[399.20] itu kan bisa kita ee tambahkan fiturnya
+[401.56] di sini gitu tanpa mengganggu program
+[403.60] yang lain gitu ya. Nah, kenapa sih
+[407.24] modular desain itu sangat berguna? Ya,
+[409.40] seperti yang kita lihat sendiri tadi ya,
+[411.20] ketika kita menggunakan modular desain,
+[413.28] program kita tuh jadi lebih mudah dibaca
+[415.84] dan kita tuh bisa mengubah atau
+[417.56] menambahkan fitur tadi tanpa mengubah
+[420.04] atau merusak yang lainnya, gitu.
+[422.12] Bayangin kalau kita program sebelumnya
+[423.96] nih, kita yang di sini kita mau nambahin
+[426.32] if-if tadi gitu ya. Ee kalau if quantity
+[429.84] lebih dari 20 disount plus 20% gitu
+[433.52] misalnya. Nah, ini kan programnya akan
+[436.16] jadi hancur nih ya. Jadi, dia akan
+[437.48] menambahkan lagi baris satu terus nanti
+[440.44] malah bingung nyarinya.
+[442.84] Kemudian kita bisa menggunakan
+[444.48] function-nya berulang kali gitu ya. Jadi
+[446.24] kalau misalnya kita bikin function
+[448.56] misalnya functionnya get discount terus
+[450.48] itu disunnya di dalamnya ada if. Nah,
+[452.36] itu kan kita tinggal panggil aja
+[454.64] function yang sudah kita buat tadi tanpa
+[456.80] harus membuat yang baru gitu kan. Terus
+[459.40] itu kalau ada error kita bisa lebih
+[461.08] mencepat mencarinya. Kemudian kalau kita
+[464.32] proyeknya tadi sudah 100usan bahkan
+[466.08] ratus ribuan line itu dia bisa
+[468.24] terstruktur dan lebih teratur terlihat.
+[470.40] Nah, itu untuk modular design. Nah, di
+[474.64] dalam bahasa peman Python selain modular
+[477.00] desain ada yang disebut juga dengan
+[479.08] reusable code atau kode yang bisa kita
+[482.12] pakai ulang. Contohnya misalnya di sini
+[485.00] kita mempunyai sebuah function yang di
+[487.84] mana dia
+[489.68] menghitung ini ya total harganya. Jadi
+[492.68] di sini dia masukin harga terus itu
+[496.20] banyak barang yang dibeli terus nanti
+[497.84] dia ng-retn. Nah di sini function yang
+[500.76] ini kita gunakan untuk menghitung total
+[503.76] belanja makanan.
+[505.64] Terus itu kalau misalnya kita
+[508.56] gunakan ulang kodenya misalnya kita ada
+[511.12] project membuat ee
+[514.44] di toko alat tulis gitu misalnya berarti
+[516.84] di sini dia tinggal ubah aja menghitung
+[519.24] total pembilian alat tulis atau kita
+[522.04] gunakan kembali kodenya untuk menghitung
+[524.60] modal usaha atau untuk membayar tiket.
+[527.76] Nah, kode ini tadi ya walaupun simpel
+[530.20] itu bisa dipakai berulang-ulang kali
+[532.84] tanpa harus mengubah banyak hal gitu ya.
+[534.96] Paling yang diubah cuma nama
+[536.64] function-nya gitu ya atau nama ee
+[539.28] parameternya. Kan intinya dia sama
+[542.04] rumusnya sama terus itu ee parameternya
+[545.52] ada sama namanya semuanya sama gitu ya.
+[547.48] dan kita bisa ulang-ulang, kita gunakan
+[549.80] kembali kode kode yang sudah kita buat
+[552.32] tadi. Nah, di dalam program modular
+[556.28] design kadang ada beberapa error nih.
+[559.16] Nah, eh untuk bagi yang baru belajar
+[562.24] bahasa permogam Python, kadang ketika
+[565.28] kita ee mengikan kode kadang kita tidak
+[568.24] sadar kalau kita melakukan kesalahan.
+[570.32] Nah, misalnya nih dia harusnya
+[572.08] menghitung total ya, karena yang
+[573.84] menghitung total ada harga sama jumlah
+[576.20] barang. Tapi di sini rumusnya
+[579.52] kok malah dia harga ditambah jumlah
+[582.88] barang gitu. Misalnya harganya Rp10.000,
+[584.80] barangnya dia beli 10, berarti total
+[587.64] yang dia harus bayarkan adalah 10.01
+[592.32] perak gitu. Nah, itu kan kayak aneh ya,
+[595.16] salah ya kodenya. harusnya kodenya
+[598.32] dikali gitu ya menggunakan bintang
+[600.00] simbolnya. Nah, dengan adanya modular
+[602.28] desain kita bisa memperbaiki gitu ya
+[605.44] function-nya secara langsung tanpa harus
+[607.84] mengotak-atik bagian yang lainnya.
+[610.88] Kemudian coba di sini kita lihat ya ee
+[615.04] ada soal boleh kalian lihat kira-kira
+[618.52] apa ya yang salah dari kode ini. Silakan
+[620.56] kerjakan pada pop up berikut.
+[626.64] Nah, untuk mengetahui seberapa dalam
+[629.64] kalian telah mengenali terkait function
+[633.08] dan juga modular desain, coba yuk kita
+[635.68] kerjakan mini project berikut. Jadi,
+[638.24] kalian diminta untuk membuat sebuah
+[640.64] program modular eh namanya modular
+[643.96] shopping calculator. Jadi, di dalam
+[646.68] program kalian ini,
+[649.12] ini shopping ya, berarti untuk ee
+[651.12] berbelanja gitu ya. Terus itu dia kalau
+[653.24] kalkulator berarti menghitung.
+[654.48] Kebanyakan menghitung. Nah, berarti di
+[656.72] sini dalam program ini kalian diminta
+[658.36] untuk membuat sebuah program yang ada
+[660.64] function untuk menghitung total
+[662.24] belanjanya. Berarti dia harganya pertama
+[664.60] harganya berapa? Terus tu yang kedua
+[666.96] berapa sih ee
+[669.68] banyak barang yang dia beli. Kemudian
+[672.92] ada function yang dia bisa menghitung
+[674.76] diskon gitu. Kalau ada diskon berarti
+[677.04] dia masukin diskonnya berapa persen,
+[678.92] 10%, 20% dan seterusnya gitu ya. Kalau
+[681.92] enggak ada berarti dia enggak usah pakai
+[683.04] function ini. Tapi tetap harus ada ya eh
+[685.60] untuk use case ini buat sebuah function
+[688.52] juga yang dia bisa menghitung diskon
+[690.32] berapap pun banyaknya gitu ya. Kemudian
+[693.00] setelah kadang kan kalau misalnya kita
+[695.52] udah tahu total yang harus dibayarkan
+[697.44] tapi kalau ada diskon kan harusnya
+[698.96] berkurang ya. Yang awalnya dia Rp10.000
+[701.52] dapat diskon misalnya diskonnya 1.000
+[703.88] berarti yang dia bayarkan kan harus
+[705.48] R9.000. Nah coba bikin function yang dia
+[707.88] menghitung harga akhir yang harus
+[709.96] dibayarkan oleh pengguna. Kemudian
+[712.08] tampilkan dengan rapi hasilnya. Boleh
+[714.96] dihias-hias ya menggunakan ASCI atau
+[717.96] menggunakan tabel bebas. Silakan
+[720.28] kerjakan di bawah ini.
+[725.88] Oke, Teman-teman. Sekarang kita akan
+[727.96] membahas materi tentang financial
+[730.16] literacy. Yang pertama kita akan
+[732.68] membahas tentang menabung. Apa sih
+[735.08] menabung itu? menabung adalah menyimpan
+[739.08] uang entah itu sebagian atau seluruhnya
+[742.56] agar bisa digunakan di masa depan. Nah,
+[746.72] menabung itu biasanya di
+[750.40] sertai dengan tujuannya. Ada yang mau
+[752.96] menabung untuk membeli buku, ada yang
+[755.76] menabung untuk membeli laptop atau hanya
+[758.36] sebagai dana darurat gitu ya kalau
+[760.00] misalnya harus ke rumah sakit atau harus
+[761.96] membeli barang arjin-lainnya.
+[764.24] Nah, dengan menabung kita belajar untuk
+[767.52] menunda keinginan untuk mencapai tujuan
+[770.88] yang lebih besar gitu atau mencapai goal
+[773.32] yang ee kita inginkan. Nah, selain
+[777.20] menabung, kita juga akan membahas apa
+[780.12] sih itu bunga. Nah, bunga itu adalah
+[783.76] tambahan uang yang bisa didapatkan dari
+[786.24] tabungan atau pinjaman. Contoh
+[788.44] sederhananya nih, misalnya kalian
+[790.48] menabung di bank sebanyak Rp100.000
+[792.84] R000. Nah, setelah beberapa waktu pas
+[796.72] kalian cek di rekening kalian kok
+[798.60] uangnya bertambah sebesar 1005.000.
+[802.84] Nah, tambahan 5.000 itulah yang disebut
+[805.92] dengan bunga. Berarti dia adalah
+[808.16] tambahan uang yang didapat dari sebuah
+[810.52] tabungan. Nah, kemudian selain bunga ada
+[815.12] juga yang disebut dengan bunga tunggal.
+[817.60] Apa sih bunga tunggal itu? Bunga tunggal
+[820.32] adalah bunga yang dihitung dari awal
+[822.72] saja. Rumusnya seperti ini. Kalau kita
+[826.64] mau menghitung bunga, pertama kita akan
+[828.84] menghitung dulu uang awalnya dikali
+[832.24] jumlah bunga yang didapat per tahun
+[834.96] dikali lamanya kita menabung. Contohnya
+[838.40] kita lihat di bawah sini ya.
+[841.44] Di sini kita mau menabung uang awal kita
+[844.92] tuh Rp100.000 seperti yang tadi ya.
+[847.88] Kemudian selama kita menabung itu kita
+[851.56] dapat bunga sebanyak 5% atau 0,05
+[855.72] gitu ya, 5% doang. Kemudian
+[860.52] bunga tadi kita dapatkan sebanyak
+[863.28] setelah kita menabung selama 2 tahun.
+[866.20] Nah, ketika kita mau mencari bunga
+[868.44] tunggalnya maka Rp100.000 kita kalikan
+[872.00] 5% tadi ya, 0,05
+[874.44] kita kalikan 2 tahun. Maka kita dapatkan
+[877.80] bunga yang kita dapatin itu Rp10.000.
+[882.28] Berarti total yang kita dapatkan nanti
+[885.64] adalah Rp100.000 tabungan kita ditambah
+[889.36] total bunga ee tunggal yang kita dapatin
+[892.68] itu Rp10.000. Berarti kita punya uang
+[895.04] sekarang Rp10.000.
+[898.72] Nah, dalam menghitung bunga tunggal
+[902.40] bunga atau menghitung tabungan gitu ya
+[905.08] dalam bahasa Python itu sangat cocok
+[907.32] kalau kita menggunakan function. Kenapa
+[909.96] kita eh disarankan untuk menggunakan
+[912.56] Python? Karena ketika kita mau
+[914.72] menghitung bunga kan itu sesuatu
+[916.68] aktivitas yang kita lakukan berkali-kali
+[919.08] tapi angkanya berbeda-beda gitu ya. Jadi
+[921.60] kadang kita punya uang awalnya
+[923.24] beda-beda, terus itu persentasi bunganya
+[925.64] beda-beda, lama nabungnya juga
+[927.36] beda-beda. Kan daripada kita harus copy
+[929.72] paste kodenya berulang-ulang kali, lebih
+[932.12] baik kita buatkan sebuah function yang
+[935.12] nanti dia akan otomatis menghitung dan
+[937.76] me-return hasilnya, total akhir
+[940.36] tabungannya dan seterusnya. Nah, di sini
+[944.44] kalau misalnya
+[946.56] kita bayangkan dias programnya di
+[950.16] program Python itu function-nya intinya
+[952.44] pertama dia membutuhkan inputan nih, dia
+[954.32] membutuhkan data berarti dia membutuhkan
+[956.36] parameter ya. Parameternya berarti uang
+[958.16] awalnya, bunga yang didapatkan sama
+[960.76] lamanya menabung. Nanti yang dikeluarkan
+[963.40] adalah jumlah bunganya sama total akhir
+[966.44] tabungannya itu ya. Kalau eh rencananya
+[969.84] kita mau membuat Python tuh seperti ini
+[972.04] kurang lebih. Nah, ini bentuknya kita
+[975.60] mau ee membuat kalkulator bunga tunggal.
+[979.12] Pertama kita lihat dulu nih di sini ada
+[983.40] function
+[985.64] calculate simple interest ya. Kalkulator
+[989.24] simpel yang menghitung interest kita. Di
+[992.36] sini ada principlnya uang awal kita
+[994.72] berapa, terus itu bunga kita berapa.
+[998.12] Terus berapa lama kita menabung? Ya kan?
+[1001.32] Kalau udah kita tinggal hitung nih
+[1003.64] semuanya. Entah boleh kita masukkan ke
+[1006.24] dalam variabel interest, kemudian kita
+[1009.88] hitung semuanya, kita kalikan semuanya
+[1012.08] atau kita bisa ee langsung masukkan
+[1016.44] rumus ini tadi ke dalam return. Itu
+[1018.44] enggak enggak apa-apa, sama aja. Yang
+[1020.28] pasti nanti kalau kita ng-return dia
+[1022.12] akan kembalikan ke tempat dia dipanggil.
+[1024.48] Oh, dia dipanggil di baris keempat. maka
+[1026.28] nanti dia akan menyimpan nilainya ke
+[1028.44] baris keempat yang kemudian akan
+[1030.48] disimpan ke interest. Nih contohnya kita
+[1033.44] membuat variabel interest kemudian kita
+[1036.80] panggil function-nya. Di sini kita
+[1039.88] initial eh tabungannya principalnya
+[1042.84] Rp100.000 berarti kita kirim di sini
+[1045.28] Rp100.000 R. Terus itu bunganya 0,5 kita
+[1048.88] kirim 0,55-nya di situ. Lama nabungnya
+[1052.04] itu 2 tahun kita kirim juga di situ.
+[1054.48] Nah, 100.000
+[1057.04] * 0,5 * 2 tahun. Tadi kita sudah hitung
+[1060.40] ya nilainya ee 10.000 gitu. Maka bunga
+[1064.12] yang kita dapatkan totalnya ada
+[1065.84] Rp10.000.
+[1067.40] Coba kita cek benar enggak. Oh, iya
+[1069.00] benar. Ternyata hasil bunganya adalah
+[1071.28] Rp10.000.
+[1072.80] Nah, untuk kalau yang tadi kan hanya
+[1075.64] menghitung bunga ee bunganya ya. Nah,
+[1078.36] sekarang coba kita lihat nih di sini
+[1080.08] untuk menghitung total tabungan kita
+[1082.64] berapa kalau dijumlahkan dengan bunga,
+[1084.92] kalkulatornya seperti apa. Nah, di sini
+[1088.52] sama ya kita sudah ee tambahkan rumus ee
+[1092.16] masukkan rumusnya sebelumnya, tapi yang
+[1095.00] berbeda adalah kita membuat sebuah
+[1097.52] variabel baru yang dia menghitung total
+[1100.08] tabungan awal kita plus berapa sih bunga
+[1103.36] yang kita dapatkan. Oh, kalau misalnya
+[1105.64] sudah kita jumlahkan keduanya baru kita
+[1108.48] return. Udah kalau kita return hasilnya
+[1111.40] dikumpulin di sini. Tadi kan kalau kita
+[1114.28] hitung kan dengan
+[1117.64] uang Rp100.000
+[1120.36] bunganya 5% dan 2 tahun menabung itu
+[1123.96] kita tadi mendapatkan total bunganya
+[1126.04] Rp10.000. Kalau 100.000 + 10.000 maka
+[1129.60] totallah harusnya Rp10.000.
+[1132.20] Nah, kalau kita lihat hasilnya
+[1133.56] output-nya Rp10.000.
+[1136.72] Nah, ini tadi bisa kita ee lihat ya
+[1142.08] kalau tadi ketika kita merretn
+[1145.60] me-return total tabungannya. Tapi kalau
+[1147.84] misalnya kita mau interest-nya, bunganya
+[1151.44] sama totalnya itu dua-duanya
+[1152.68] dikembalikan juga. Nah, itu bisa kita
+[1154.40] langsung return secara bersamaan nih,
+[1157.68] secara langsung. Python tetap bisa
+[1159.92] mengenali ini ya, Teman-teman ya. Di
+[1161.56] sini kita return pertama apa yang mau
+[1163.44] direturn dulu bunganya. Terus itu kita
+[1165.80] mau ng-return totalnya. Nah, ini kan ada
+[1169.04] dua yang direturn ya. Karena ada dua
+[1171.60] yang dieturn maka kita akan wajib untuk
+[1176.52] membuat dua variabel yang baru juga.
+[1180.00] Nah, ini
+[1182.68] seperti ini bukan berarti salah ya,
+[1184.76] Teman-teman ya. Ini bentuk yang dianggap
+[1186.76] benar oleh Python gitu ya. Oh, kalau
+[1189.24] Python dia membacanya ada dua variabel
+[1192.04] namanya interest dan total. Nanti
+[1195.36] nilainya kan kalau variabel salah satu
+[1197.72] syarat pembuatan variabel adalah kita
+[1199.88] mengendeklarasikan variabel lah harus
+[1201.96] ada isinya ya. Nah, di sini isinya
+[1204.08] berdasarkan hasil ee perkalkulasian
+[1209.08] yang kita panggil function-nya ini ya.
+[1210.64] Kalau kita lihat self saving ini ya.
+[1212.76] Nah, berarti di sini ketika kita return
+[1215.84] interest maka dia akan menyimpan ke
+[1217.36] dalam variable interest. Ketika kita
+[1219.52] ng-return total dia row totalnya akan
+[1221.44] dikirim ke total. Dia variabelnya enggak
+[1224.68] harus sama yang penting urutannya benar.
+[1226.72] Dia akan menyesuaikan gitu ya,
+[1228.84] Teman-teman ya. Jadi, kita bisa langsung
+[1230.64] nge-print
+[1232.48] e hasil variabelnya yang nanti akan
+[1235.60] menampilkan isinya di printer ini. Coba
+[1238.60] kita lihat ya bentuk output-nya itu
+[1240.48] seperti apa sih. Nah, bunganya 10.000,
+[1244.24] total akhirnya Rp10.000. Jadi, dia
+[1247.20] function itu bisa mengembalikan nilai
+[1250.28] lebih dari satu secara sekaligus gitu
+[1252.60] ya. Jadi enggak perlu e bikin dua ya,
+[1255.68] return interest return total enggak
+[1257.12] perlu. Jadi bisa langsung dua.
+[1260.16] Oke, ini tadi ee udah kita bahas
+[1263.80] bagaimana kita membuat parameter. Jadi,
+[1266.04] principle itu uang awal ya tadi uang
+[1267.96] awal rate itu
+[1270.60] bunganya yang kita dapatkan per tahun.
+[1272.52] Jers itu lama kita menabung gitu ya.
+[1275.52] Oke, sekarang misalnya kita di sini ada
+[1280.00] skenario ya. Jadi kadang ketika kita ee
+[1284.68] sudah menabung gitu ya, kita mau
+[1287.80] membandingkan gitu ya berdasarkan
+[1290.48] skenario yang berbeda-beda. Misalnya di
+[1293.20] sini kita mau kita punya data gitu ya.
+[1295.96] Kita punya data yang di mana
+[1299.12] uang awalnya Rp100.000, Bu, bunganya
+[1302.64] sama juga, tapi lama menabung itu
+[1305.64] beda-beda. Kita lihat apakah bunga yang
+[1308.96] didapatkan
+[1310.52] itu lebih yang yang lebih besar itu yang
+[1312.48] mana? Apakah ketika kita nabung 1 tahun,
+[1314.84] apakah kita nabung 3 tahun atau nabung 5
+[1317.00] tahun. Nah, kalau kita lihat di sini
+[1320.08] misalnya nih 100.000
+[1322.56] dikali 5% dikali 1 tahun. Terus itu kita
+[1326.64] kirim semuanya ke dalam function. Terus
+[1329.56] dia ng-return ya, ng-return
+[1332.52] yang dikembalikan ke skenario 1 dan
+[1334.72] kemudian diprint. Coba kita lihat
+[1336.36] hasilnya ya, hasil perhitungan
+[1338.32] kalkulasinya. Kalau kita menabung
+[1341.80] sebanyak ee jumlahnya sama dan bunganya
+[1344.04] sama, tapi jumlah e lama menabungnya itu
+[1346.44] beda-beda. Nih kita bisa lihat nih kalau
+[1349.00] kita 1 tahun itu kita bisa mendapatkan
+[1353.84] 105.000
+[1356.12] ya bunganya. Total uang kita tuh jadi ee
+[1360.36] 5.000. Kalau kita nabungnya 3 tahun,
+[1363.64] maka bunga yang kita dapatkan itu ee
+[1367.84] R.000 ya. Rp15.000. Kemudian kalau 5
+[1371.20] tahun kita dapat bunganya Rp25.000 gitu
+[1374.12] ya. Jadi berdasarkan data yang kita
+[1376.44] punya itu kita bisa menganalisis
+[1378.64] kira-kira oh kalau semakin lama kita
+[1380.88] menabung maka bunga yang kita dapatkan
+[1383.36] pun semakin besar gitu ya. Nah, untuk
+[1386.16] mengecek pemahaman teman-teman sejauh
+[1388.36] ini boleh kerjakan kuis pop up berikut
+[1391.76] ini.
+[1398.92] Nah, sebelumnya kita sudah membahas
+[1401.32] tentang bunga tunggal. Sekarang kita
+[1404.20] lanjutkan membahas tentang ada yang
+[1406.96] namanya bunga majemuk. Apa sih bunga
+[1409.12] majemuk itu? Yuk, kita perhatikan slide
+[1411.04] berikut. Nah, bunga majemuk adalah bunga
+[1415.08] yang dia nilainya akan terus bertambah
+[1417.80] setiap periode. Sederhananya seperti
+[1420.40] ini. Misalnya pada tahun pertama kita
+[1423.16] dapat ee bunga gitu ya. Nah, di tahun
+[1426.48] kedua bunganya itu dihitung bunga nilai
+[1430.32] bunga itu enggak sama. Misalnya kita di
+[1432.04] tahun pertama dapat bunganya R10.000.
+[1434.68] Nah, tahun depannya itu dia enggak
+[1436.56] R.000. Jadi bunganya akan terus
+[1438.92] bertambah, bertambah, bertambah setiap
+[1441.08] tahun kita menabung. Jadi uangnya bisa
+[1444.36] tumbuh lebih cepat dibandingkan dengan
+[1446.88] ee bunga tunggal yang kita dapatkan yang
+[1448.80] kita bahas sebelumnya. Contohnya seperti
+[1451.04] ini. Biar lebih gampang lagi, bayangkan
+[1454.28] bunga tunggal itu seperti uang jajan
+[1456.96] yang kita diberikan oleh orang tua.
+[1459.12] Misalnya kamu dapat bonus Rp10.000
+[1461.80] setiap dari mama dari mama kamu setiap
+[1464.56] kali kamu menabung. Nah, ketika kamu
+[1468.40] mendapatkan bunga tunggal yaitu uang
+[1471.48] bonus uang Rp10.000 tadi ini ya, ketika
+[1474.04] celenganmu makin bertambah ee nilainya
+[1476.40] gitu ya, misalnya kalian menabung
+[1477.44] Rp100.000, nambah lagi Rp100.000, lambah
+[1480.00] lagi Rp100.000. Nah, uang di celengan
+[1483.16] kita kan lebih tambah lebih besar ya,
+[1485.00] tambah lebih banyak. Nah, tapi bonus
+[1487.52] yang kita dapatkan itu tetap R.000.
+[1490.48] Itulah bunga majemuk nilainya ee
+[1493.16] bunganya akan terus sama gitu ya, tahun
+[1496.76] ke tahun tanpa ada perubahan. Sedangkan
+[1500.40] kalau kita mau ee kita ketika kita
+[1502.92] mendapatkan bunga majemuk, bayangkan
+[1504.84] ketika kita berternak anak gitu ya,
+[1506.52] berternak ayam soru punya ee punya ayam
+[1510.00] dan ayamnya itu bertelur, saat anaknya
+[1512.80] menetas dan kemudian besar, anak ayam
+[1515.48] itu akan bertelur lagi yang nanti dia
+[1518.04] akan tumbuh jadi ayam lagi dan dia akan
+[1520.56] ee bertelur lagi dan akan tumbuh dan
+[1523.88] bertelur lagi dan seterusnya dan
+[1525.20] seterusnya hingga kamu mempunyai telur
+[1528.00] yang sangat baik. banyak gitu ya. Nah,
+[1530.04] itulah disebut dengan bunga majemuk.
+[1532.08] Jadi, bunganya istilahnya adalah
+[1533.72] bunganya ikut berbunga lagi. Nilainya
+[1535.92] akan bertambah, bertambah, bertambah.
+[1538.40] Nah, di sini inti perbedaan antara bunga
+[1542.88] tunggal dan bunga majemuk hanya uang
+[1545.44] asli kamu yang akan menghasilkan bunga
+[1547.40] di dalam bunga tunggal. Jadi, yang akan
+[1549.44] dihitung ee ketika kita menghitung
+[1551.40] bunganya tadi itu hanya uang yang kamu
+[1553.80] punya. Misalnya Rp100.000. Kalau kita ee
+[1556.32] dapat bunga Rp10.000
+[1558.08] di tahun berikutnya bukan 110.000-nya
+[1560.44] yang dihitung di ee bunganya gitu, tetap
+[1563.68] Rp100.000 sesuai dengan jumlah uang yang
+[1565.56] kita punya yang kita awal setorkan gitu
+[1568.80] ya. Nah, beda dengan bunga majemuk.
+[1571.08] Bunga majemuk uang yang kamu taruh itu
+[1573.88] dia akan berkembang lagi.
+[1576.96] Cara kerja bunga tunggal itu dia wah dia
+[1580.52] setiap tahun hanya akan bertambah
+[1582.04] Rp10.000. Jadi berapapun uang yang kita
+[1584.20] punya ya dia akan R.000 RIB terus
+[1585.88] bertambahan bunganya gitu ya. Kalau
+[1587.48] misalnya kita dapat bunganya 10%
+[1589.08] misalnya gitu. Nah, kalau bunga majemuk
+[1592.52] itu dia tahun pertama nambah Rp10.000,
+[1595.36] tahun dua nambahnya 11.000, tahun ketiga
+[1598.16] nambahnya 12.100 dan seterusnya dan
+[1600.64] seterusnya. Jadi makin lama tahunnya
+[1603.28] makin gede juga nilainya. nih misalnya.
+[1607.28] Nah, untuk menggunakan ya untuk
+[1610.56] menghitung bunga majemuk itu kita perlu
+[1614.60] menggunakan looping ya. Nah, kenapa kita
+[1618.04] menggunakan looping? Karena prosesnya
+[1620.00] itu berulang gitu ya. Maksudnya berulang
+[1622.16] nih. Tahun pertama kita menghitung bunga
+[1623.96] kita, uang kita plus bunga kita.
+[1626.12] Kemudian total uang kita tadi plus
+[1629.12] bunganya tadi dihitung ditambahkan
+[1631.08] dengan bunganya lagi. Jadi dia bertambah
+[1632.84] lagi gitu. bertambah lagi, bertambah
+[1634.80] lagi gitu ya. Nah, ini karena proses
+[1638.04] berulang maka kita menggunakan loop.
+[1639.96] Bentuknya loop-nya seperti apa nih?
+[1641.72] Contohnya seperti ini. Sama seperti yang
+[1644.44] sebelumnya kita setoran uang misalnya
+[1646.80] awalnya Rp100.000 dengan bunga sebesar
+[1650.36] 10%.
+[1654.04] Di sini kita menabung selama 3 tahun.
+[1658.20] Nah, karena kita mau menghitung bunga
+[1660.72] majemuk, maka kita menggunakan
+[1662.36] perulangan 4. Dalam perulangan four ini
+[1665.92] kita menyimpan variabel sementara yang
+[1668.00] namanya year ya, untuk menghitung ee
+[1670.84] tahunnya. Kemudian kita ini hitung nih
+[1673.76] range-nya kita mau perulangannya ee
+[1676.52] berapa kali gitu ya. Karena di sini ada
+[1679.20] 3 tahun gitu ya ee perulangannya.
+[1682.88] Maka di sini kita tulis, kita mau
+[1685.76] menghitung dari tahun pertama ya.
+[1688.08] Makanya di sini kita tulisnya satu.
+[1689.84] Karena kan kalau perulangan for
+[1691.36] range-nya kita mulai dari angka pertama
+[1693.36] gitu kan ya. Kemudian angka keduanya
+[1696.16] akhirnya batasnya sampai mana. Nah,
+[1698.36] karena di sini karena for loop itu
+[1700.48] menggunakan indexing ya teman-teman ya.
+[1702.28] Berarti dia dimulai dari 0 1 2. Nah, 012
+[1705.72] itu berarti yang tahun kedua itu dia
+[1707.72] akan stop. Padahal kan kita mau dia
+[1710.12] menghitungnya sampai 3. Maka di sini
+[1712.24] kita kasih tahu, oh year + 1 berarti 0 1
+[1716.28] 2 3 gitu. Menghitungnya sampai 3.
+[1718.84] Makanya di sini jangan lupa tambahkan
+[1720.88] year plus 1 supaya perulangannya
+[1722.40] berulang sebanyak tiga kali supaya
+[1724.16] tahunnya muncul, tahun ketiganya muncul.
+[1727.84] Nah, di sini kita hitung berapa sih
+[1730.48] bunga yang kita dapatkan? Uang kita
+[1732.36] Rp100.000
+[1734.12] dikali 0,1% gitu ya. Nah, hasilnya itu
+[1738.88] kita jumlahkan tuh. Kita jumlahkan
+[1741.68] kemudian kita print tahun ke berapa,
+[1744.00] uangnya berapa. Nih hasilnya seperti
+[1746.32] ini. Uang tahun pertama ternyata kita
+[1749.48] dapat uang kita ee bunga kita itu
+[1753.92] Rp10.000 gitu ya. Nah, Rp10.000 kalau
+[1757.48] kita bunga majemuk itu yang akan
+[1761.36] dihitung ke tahun kedua itu Rp10.000 R
+[1764.12] dikali
+[1766.80] bunganya gitu ya. Jadi kalau misalnya
+[1769.36] kita bunga tunggal itu mandinya ini akan
+[1771.40] tetap Rp100.000. Tapi karena kita bunga
+[1773.84] majemuk uang yang kita masukkan tuh yang
+[1775.92] ini yang udah dijumlahkan dengan
+[1777.48] bunganya gitu ya. Jadi bunga itu kan
+[1779.36] tadi bonus gitu ya. Jadi uang kita
+[1781.52] bertambah terus-menerus gitu. Nih tahun
+[1784.68] kedua dia enggak cuman bertambah 10.000
+[1787.08] aja dia jadi
+[1789.52] 121.000.
+[1791.76] tahun ketiga Rp13.100
+[1797.52] gitu ya. Jadi nilai akan bertambah
+[1799.32] bertambah bertambah selama kita
+[1801.32] menabung.
+[1803.20] Nah ini tadi kalau kita lihat di sini
+[1808.44] awal uang kita Rp100.000 ya kan ya dan
+[1812.16] dia akan di loop setiap tahunnya. Di
+[1815.04] sini program menghitungkan bunga
+[1817.40] berdasarkan uang saat ini. Jadi bukan
+[1819.60] uang yang kita masukkan, uang awal gitu
+[1822.20] ya. Intinya seperti itu. Kalau misalnya
+[1823.76] kita menghitung bunga majemuk kemudian
+[1826.64] uangnya bunganya ditambah dengan uang
+[1829.08] kita saat sini. Karena uangnya bertambah
+[1831.24] setiap tahun, bunga tahunnya tahun
+[1833.24] berikutnya juga akan bertambah gitu ya.
+[1835.32] Jadi mungkin awalnya 1% 10% nambah jadi
+[1839.56] 20% nambah jadi 2,5% dan seterusnya dan
+[1843.08] seterusnya gitu ya. Jadi perhitungan dia
+[1844.64] akan bertambah. Nah, supaya tidak ee
+[1848.56] kodenya itu tidak clattery atau
+[1851.48] berantakan, kita bisa menambahkan juga
+[1854.36] function ke dalam program kita. Nah, di
+[1857.76] sini tetap kita menggunakan for loop.
+[1860.24] Cuman for loop-nya ini kita masukkan ke
+[1862.12] dalam sebuah function yang mengcalculate
+[1865.32] bunga majemuk atau compound interest.
+[1868.28] Nah, sama di sini kita masukin juga
+[1870.72] princiip kita berapa, uang awalnya
+[1872.80] berapa, rate-nya berapa, terus rate
+[1876.04] awalnya berapa, berapa lama kita
+[1877.84] menabung gitu ya. Nah, di sini kita buat
+[1880.64] variabel sementara namanya money yang di
+[1883.20] sini nanti akan menghitung total uang
+[1884.84] kita berapa gitu. Nah, kalau ee tahun
+[1887.32] pertama kan uangnya sama dengan yang
+[1888.88] kita tabung ya Rp100.000 ya. Nah,
+[1890.96] setelah dia melakukan perhitungan bunga
+[1892.88] kan harusnya dia bertambah terus ya
+[1894.48] money-nya. Nah, money-nya akan
+[1895.96] bertambah, bertambah, dan bertambah.
+[1898.04] kemudian dia akan mengembalikan hasil
+[1900.24] akhirnya seperti itu. Jadi ini bentuk
+[1903.44] ketika dia menggunakan modular design
+[1906.44] ya. Oke. Ini kita bisa juga menampilkan
+[1911.12] simulasi gitu ya. Nah, kalau misalnya
+[1914.20] kita mau dia jauh lebih rapi, kita bisa
+[1917.12] menggunakan ee ala-ala tabel gitu ya,
+[1919.40] ala-ala tabel di konsol dengan
+[1921.60] menggunakan ee karakter-karakter seperti
+[1924.40] ini bisa dibuat lebih rapi gitu ya. Oh,
+[1926.56] tahun kesatu total uangan segini, tahun
+[1929.16] kedua dan tahun ketiga gitu ya. Jadi
+[1931.04] jauh lebih rapi. Jadi selain kita buat
+[1932.92] function, kita bisa ngprint juga ya,
+[1935.04] bisa menampilkan apa sih gitu yang kita
+[1939.40] dapatkan bunganya.
+[1941.72] Oke. Kemudian
+[1944.68] kita bisa juga membuat sebuah function
+[1947.44] yang di mana dia bisa membandingkan
+[1949.96] antara bunga tunggal dan bunga majemuk
+[1952.84] yang kita dapatkan. Ini bentuknya
+[1954.56] seperti ini ya. Jadi kalau misalnya kita
+[1957.72] bunga tunggal, kita kan hanya menghitung
+[1960.64] ininya aja ya. Kita hanya menghitung
+[1962.44] total bunga yang kita dapetin. Udah
+[1964.76] total uang kita berapa dijumlahkan
+[1966.72] dengan bunga yang kita dapatin. Nah,
+[1969.04] kalau misalnya
+[1971.64] bunga majemuk itu kita perhitungan
+[1973.40] dengan menggunakan for loop tadi ya.
+[1975.52] Nah, ini kita bisa bandingkan, tampil
+[1978.16] bandingkan hasilnya. Kalau kita
+[1981.04] mendapatkan benefit bunga tunggal aja
+[1983.36] ketika kita menabung, berarti uang kita
+[1985.24] di tahun ketiga 130 ri.000. Tapi kalau
+[1989.08] kita dapetin bunga sama jemuk kita
+[1991.08] untungnya 33.100
+[1994.92] perak gitu ya. Karena uang menabung kita
+[1996.56] Rp100.000 gitu. Jadi kita bisa bandingin
+[1998.56] nih berapa benefit yang kita dapatkan
+[2001.08] ketika kita mendapatkan bunga tunggal
+[2003.08] dan juga bunga majemuk. Oke. Nah, kenapa
+[2007.32] sih bunga majemuk ini lebih untung gitu
+[2009.64] ya? Kalau misalnya kita menabung terus
+[2011.32] itu dapat bunga majemuk gitu ya. Kalau
+[2014.56] intinya kalau bunga tunggal tadi kita
+[2016.16] cuma dapat bonus Rp10.000 walaupun kita
+[2018.28] menabung terus-menerut gitu ya. Tapi
+[2020.16] kalau kitaapat menggunakan bunga,
+[2022.00] mendapatkan bunga majemuk dan kita
+[2023.80] hitung gitu ya, dia akan bertambahnya
+[2026.40] lebih banyak seperti yang sudah kita
+[2028.20] lihat tadi. Anggap aja kalau kalian
+[2030.28] pernah main salju gitu ya, di bola salju
+[2032.72] itu kan semakin kita dorong ee
+[2036.48] salju yang ada di bawahnya bola salju
+[2038.68] kita itu akan ikut nempel gitu ya. Nanti
+[2040.36] dia akan semakin besar, semakin besar,
+[2041.72] semakin membesar gitu. Ee sama seperti
+[2043.56] uang kita gitu ya, semakin membesar.
+[2046.08] Nah, untuk mengetahui pemahaman
+[2048.08] teman-teman tentang bunga majemuk,
+[2050.48] silakan kerjakan tes berikut ini.
+[2056.48] Oke, Teman-teman. Begitulah tadi materi
+[2059.00] kita tentang financial literacy. Jadi,
+[2061.24] kita sudah membahas tentang menabung.
+[2063.32] Kita telah membahas perbandingan antara
+[2065.68] bunga tunggal dan bunga majemuk. Dan
+[2067.84] kita bisa mensimulasikan keuangan kita.
+[2069.92] Kalau misalnya kita dapat bunga majemuk,
+[2073.40] uang kita akan jadi berapa? Kalau kita
+[2075.84] dapat bunga tunggal itu kita
+[2078.12] keuntungannya berapa? Oke, sampai sini
+[2080.64] dulu materinya.

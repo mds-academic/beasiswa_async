@@ -1,0 +1,3159 @@
+[
+  {
+    "stepId": "hs-0-0",
+    "sourceFile": "Highschool/sesi25-26/grup-hs-2-a/src/courseData.js",
+    "sourceKey": "0",
+    "differences": {},
+    "legacyTiming": {
+      "bookmarks": [
+        {
+          "time": 0,
+          "label": "Pengenalan Async Learning"
+        },
+        {
+          "time": 25,
+          "label": "Ritme Belajar & Pause"
+        },
+        {
+          "time": 55,
+          "label": "Alur Belajar Step-by-Step"
+        },
+        {
+          "time": 85,
+          "label": "Pop-up Quiz Interaktif"
+        },
+        {
+          "time": 115,
+          "label": "Materi Bacaan & Praktik Mandiri"
+        }
+      ],
+      "quizzes": []
+    }
+  },
+  {
+    "stepId": "hs-1-1",
+    "sourceFile": "Highschool/sesi30-32/grup-hs-2-c/src/courseData.js",
+    "sourceKey": "1",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 9,
+      "endSeconds": 760,
+      "bookmarks": [
+        {
+          "time": 9,
+          "label": "Apa yang Akan Kita Pelajari? 🎯"
+        },
+        {
+          "time": 60,
+          "label": "Apa Itu Input? 📥"
+        },
+        {
+          "time": 145,
+          "label": "Input Pengguna Tidak Selalu Benar! 🤯"
+        },
+        {
+          "time": 284,
+          "label": "Apa Itu Validasi Input? 🚦"
+        },
+        {
+          "time": 499,
+          "label": "Apa Itu Sanitasi Input? 🧹"
+        },
+        {
+          "time": 581,
+          "label": ".strip() dan .lower() di Python 🐍"
+        }
+      ],
+      "quizzes": [
+        {
+          "time": 256,
+          "resume": false,
+          "questions": [
+            {
+              "type": "info",
+              "title": "Huruf Kapital itu Berbeda! ⚠️",
+              "html": "\n              <div style=\"font-family: 'Outfit', sans-serif; text-align: center;\">\n                <style>\n                  @keyframes compareAnim {\n                    0%, 20% { content: '\"PEMASUKAN\" == \"pemasukan\"'; color: #1a1a1a; transform: scale(1); }\n                    40%, 60% { content: '\"PEMASUKAN\" != \"pemasukan\"'; color: #ff3333; transform: scale(1.1); }\n                    80%, 100% { content: 'FALSE ❌'; color: #ff3333; transform: scale(1.2); }\n                  }\n                  .compare-anim::after {\n                    content: '\"PEMASUKAN\" == \"pemasukan\"';\n                    display: inline-block;\n                    animation: compareAnim 5s infinite;\n                    font-weight: 900;\n                    font-size: 28px;\n                  }\n                </style>\n                <div style=\"display: inline-block; background-color: #ff3333; padding: 10px 24px; border-radius: 12px; border: 3px solid #1a1a1a; box-shadow: 4px 4px 0px #1a1a1a; margin-bottom: 24px;\">\n                  <h3 style=\"margin: 0; font-size: 22px; font-weight: 800; color: #fff;\">Info Penting: Huruf Kapital itu Berbeda! ⚠️</h3>\n                </div>\n                <p style=\"font-size: 18px; font-weight: 600; text-align: left; background: #f0f0f0; padding: 16px; border-radius: 8px; color: #1a1a1a; border: 2px solid #1a1a1a;\">\n                  Bagi manusia, kata <strong>\"PEMASUKAN\"</strong> dan <strong>\"pemasukan\"</strong> artinya sama saja.<br><br>\n                  Tapi bagi Python, mereka adalah dua data yang <strong>sepenuhnya berbeda!</strong> Python sangat sensitif terhadap huruf besar dan kecil <i>(Case Sensitive)</i>.\n                </p>\n                <div style=\"margin: 30px 0; min-height: 50px;\" class=\"compare-anim\"></div>\n                <p style=\"font-size: 18px; font-weight: 800; color: #ff3333; border: 3px dashed #ff3333; padding: 12px; border-radius: 8px;\">\n                  Jika pengguna tak sengaja mengetik \"PEMASUKAN\", dan sistem mengecek <code style=\"background: #ffeb3b; padding: 4px 8px; border-radius: 4px;\">if input == \"pemasukan\"</code>, hasilnya pasti <strong>FALSE (Salah)</strong> dan akan ditolak! 🤯<br>Itulah kenapa kita harus menyeragamkan teksnya terlebih dahulu.\n                </p>\n              </div>\n            "
+            }
+          ]
+        },
+        {
+          "time": 700,
+          "resume": false,
+          "questions": [
+            {
+              "type": "input",
+              "title": "Mini Quiz: Sanitasi String 🧹",
+              "html": "\n              <div style=\"text-align: left; font-family: 'Outfit', sans-serif;\">\n                <div style=\"display: inline-block; background-color: #00c6ff; padding: 10px 24px; border-radius: 12px; border: 3px solid #1a1a1a; box-shadow: 4px 4px 0px #1a1a1a; margin-bottom: 24px; margin-top: 10px;\">\n                  <h3 style=\"margin: 0; font-size: 22px; font-weight: 800; color: #1a1a1a;\">Mini Quiz: Sanitasi String 🧹</h3>\n                </div>\n                <p style=\"font-weight: 800; font-size: 18px; color: #1a1a1a; margin-bottom: 16px;\">Ketik perintah Python yang tepat untuk mengecilkan semua huruf kapital dari input user:</p>\n                <p style=\"font-size: 14px; color: #555;\">(Petunjuk: Pastikan ada tanda titik (.) dan kurung () pada jawabanmu)</p>\n              </div>\n            ",
+              "correct": ".lower()",
+              "explanation": "Benar! .lower() mengubah semua teks menjadi huruf kecil."
+            },
+            {
+              "type": "input",
+              "title": "Mini Quiz: Hapus Spasi ✂️",
+              "html": "\n              <div style=\"text-align: left; font-family: 'Outfit', sans-serif;\">\n                <div style=\"display: inline-block; background-color: #00c6ff; padding: 10px 24px; border-radius: 12px; border: 3px solid #1a1a1a; box-shadow: 4px 4px 0px #1a1a1a; margin-bottom: 24px; margin-top: 10px;\">\n                  <h3 style=\"margin: 0; font-size: 22px; font-weight: 800; color: #1a1a1a;\">Mini Quiz: Hapus Spasi ✂️</h3>\n                </div>\n                <p style=\"font-weight: 800; font-size: 18px; color: #1a1a1a; margin-bottom: 16px;\">Lanjut! Apa perintah Python untuk menghapus spasi di depan dan di akhir sebuah teks?</p>\n                <p style=\"font-size: 14px; color: #555;\">(Petunjuk: Pastikan ada tanda titik (.) dan kurung () pada jawabanmu)</p>\n              </div>\n            ",
+              "correct": ".strip()",
+              "explanation": "Sempurna! .strip() akan menghapus sisa-sisa spasi tak terlihat di depan/belakang teks."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "hs-1-2",
+    "sourceFile": "Highschool/sesi30-32/grup-hs-2-c/src/courseData.js",
+    "sourceKey": "2",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 761,
+      "endSeconds": 1585,
+      "bookmarks": [
+        {
+          "time": 761,
+          "label": "Validasi Input Kosong 📭"
+        },
+        {
+          "time": 918,
+          "label": "Validasi Jenis Transaksi 🔄"
+        },
+        {
+          "time": 1020,
+          "label": "Kenapa Nominal Negatif Berbahaya? ⚠️"
+        },
+        {
+          "time": 1268,
+          "label": "Membuat Function clean_text 🧼"
+        },
+        {
+          "time": 1415,
+          "label": "Function validate_type & validate_amount ✅"
+        },
+        {
+          "time": 1576,
+          "label": "Kuis Sanitasi dan Validasi 🧠"
+        }
+      ],
+      "quizzes": [
+        {
+          "time": 1077,
+          "resume": false,
+          "questions": [
+            {
+              "type": "info",
+              "title": "Bahayanya Angka Negatif! ⚠️",
+              "html": "\n              <div style=\"font-family: 'Outfit', sans-serif; text-align: center;\">\n                <style>\n                  @keyframes mathFail {\n                    0%, 20% { content: '1.000 - (-5.000)'; color: #1a1a1a; transform: scale(1); }\n                    40%, 60% { content: '1.000 + 5.000'; color: #ff3333; transform: scale(1.1); }\n                    80%, 100% { content: '= 6.000 😱'; color: #ff3333; transform: scale(1.2); }\n                  }\n                  .math-anim::after {\n                    content: '1.000 - (-5.000)';\n                    display: inline-block;\n                    animation: mathFail 5s infinite;\n                    font-weight: 900;\n                    font-size: 28px;\n                  }\n                </style>\n                <div style=\"display: inline-block; background-color: #ff3333; padding: 10px 24px; border-radius: 12px; border: 3px solid #1a1a1a; box-shadow: 4px 4px 0px #1a1a1a; margin-bottom: 24px;\">\n                  <h3 style=\"margin: 0; font-size: 22px; font-weight: 800; color: #fff;\">Info Penting: Bahayanya Angka Negatif! ⚠️</h3>\n                </div>\n                <p style=\"font-size: 18px; font-weight: 600; text-align: left; background: #f0f0f0; padding: 16px; border-radius: 8px; color: #1a1a1a; border: 2px solid #1a1a1a;\">\n                  Bayangkan saldo awalmu <strong>Rp 1.000</strong>.<br><br>\n                  Lalu ada pengguna usil yang memasukkan pengeluaran <strong>-5.000</strong>.<br>\n                  Sistem akan menghitung: <code style=\"background: #ffeb3b; padding: 4px 8px; border-radius: 4px;\">Saldo = Saldo Awal - Pengeluaran</code>\n                </p>\n                <div style=\"margin: 30px 0; min-height: 50px;\" class=\"math-anim\"></div>\n                <p style=\"font-size: 18px; font-weight: 800; color: #ff3333; border: 3px dashed #ff3333; padding: 12px; border-radius: 8px;\">\n                  Aneh kan? Saldo malah bertambah jadi 6.000! 🤯<br>Kalian ingat pelajaran Matematika? <strong>Minus ketemu Minus jadinya Plus!</strong><br><br>Itulah kenapa kita HARUS memvalidasi angka agar tidak boleh kurang dari 0.\n                </p>\n              </div>\n            "
+            }
+          ]
+        },
+        {
+          "time": 1583,
+          "resume": false,
+          "questions": [
+            {
+              "type": "input",
+              "title": "Latihan: Lengkapi Function! 🧩",
+              "html": "\n              <div style=\"text-align: left; font-family: 'Outfit', sans-serif;\">\n                <div style=\"display: inline-block; background-color: #ffe600; padding: 10px 24px; border-radius: 12px; border: 3px solid #1a1a1a; box-shadow: 4px 4px 0px #1a1a1a; margin-bottom: 24px; margin-top: 10px;\">\n                  <h3 style=\"margin: 0; font-size: 22px; font-weight: 800; color: #1a1a1a;\">Latihan: Lengkapi Function! 🧩</h3>\n                </div>\n                <p style=\"font-weight: 800; font-size: 18px; color: #1a1a1a; margin-bottom: 16px;\">Ketik nama function yang tepat untuk melengkapi kode di bawah ini!</p>\n                <div class=\"code-block\" style=\"background-color: #1a1a1a; padding: 24px; border-radius: 16px; font-family: 'Courier New', Courier, monospace; font-size: 16px; margin-bottom: 24px; border: 3px solid #ffe600; box-shadow: 4px 4px 0px #ffe600; color: #f8f8f2; line-height: 1.6; font-weight: bold; text-align: left;\">\n<span style=\"color: #ff79c6;\">def</span> <span style=\"background-color: #ffe600; color: #1a1a1a; padding: 2px 10px; border-radius: 4px;\">_________________</span>(text):<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"color: #ff79c6;\">return</span> text.strip().lower()<br><br>\ncategory = clean_text(<span style=\"color: #f1fa8c;\">\"  PENGELUARAN  \"</span>)<br>\n<span style=\"color: #8be9fd;\">print</span>(category)\n                </div>\n              </div>\n            ",
+              "correct": "clean_text",
+              "explanation": "Tepat sekali! Nama function-nya adalah clean_text."
+            },
+            {
+              "type": "input",
+              "title": "Latihan: Lengkapi Method! 🧩",
+              "html": "\n              <div style=\"text-align: left; font-family: 'Outfit', sans-serif;\">\n                <div style=\"display: inline-block; background-color: #ffe600; padding: 10px 24px; border-radius: 12px; border: 3px solid #1a1a1a; box-shadow: 4px 4px 0px #1a1a1a; margin-bottom: 24px; margin-top: 10px;\">\n                  <h3 style=\"margin: 0; font-size: 22px; font-weight: 800; color: #1a1a1a;\">Latihan: Lengkapi Method! 🧩</h3>\n                </div>\n                <p style=\"font-weight: 800; font-size: 18px; color: #1a1a1a; margin-bottom: 16px;\">Bagus! Sekarang lengkapi baris return agar teks dibersihkan dari spasi berlebih dan diubah ke huruf kecil semua!</p>\n                <div class=\"code-block\" style=\"background-color: #1a1a1a; padding: 24px; border-radius: 16px; font-family: 'Courier New', Courier, monospace; font-size: 16px; margin-bottom: 24px; border: 3px solid #ffe600; box-shadow: 4px 4px 0px #ffe600; color: #f8f8f2; line-height: 1.6; font-weight: bold; text-align: left;\">\n<span style=\"color: #ff79c6;\">def</span> <span style=\"color: #50fa7b;\">clean_text</span>(text):<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"color: #ff79c6;\">return</span> text<span style=\"background-color: #ffe600; color: #1a1a1a; padding: 2px 10px; border-radius: 4px;\">__________________</span><br><br>\ncategory = clean_text(<span style=\"color: #f1fa8c;\">\"  PENGELUARAN  \"</span>)<br>\n<span style=\"color: #8be9fd;\">print</span>(category)\n                </div>\n              </div>\n            ",
+              "correct": [
+                ".strip().lower()",
+                ".lower().strip()"
+              ],
+              "explanation": "Kombinasi .strip().lower() atau .lower().strip() sama-sama bisa digunakan dan sangat berguna untuk membersihkan teks input dari pengguna."
+            },
+            {
+              "type": "input",
+              "title": "Latihan: Lengkapi Function `validate_amount` 🧩",
+              "html": "\n              <div style=\"text-align: left; font-family: 'Outfit', sans-serif;\">\n                <div style=\"display: inline-block; background-color: #ffe600; padding: 10px 24px; border-radius: 12px; border: 3px solid #1a1a1a; box-shadow: 4px 4px 0px #1a1a1a; margin-bottom: 24px; margin-top: 10px;\">\n                  <h3 style=\"margin: 0; font-size: 22px; font-weight: 800; color: #1a1a1a;\">Latihan: Lengkapi Function `validate_amount` 🧩</h3>\n                </div>\n                <p style=\"font-weight: 800; font-size: 18px; color: #1a1a1a; margin-bottom: 16px;\">Lengkapi function berikut agar nominal Rp0 atau negatif ditolak (mengembalikan nilai False):</p>\n                <div class=\"code-block\" style=\"background-color: #1a1a1a; padding: 24px; border-radius: 16px; font-family: 'Courier New', Courier, monospace; font-size: 16px; margin-bottom: 24px; border: 3px solid #ffe600; box-shadow: 4px 4px 0px #ffe600; color: #f8f8f2; line-height: 1.6; font-weight: bold; text-align: left;\">\n<span style=\"color: #ff79c6;\">def</span> <span style=\"color: #50fa7b;\">validate_amount</span>(amount):<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"color: #ff79c6;\">if</span> amount <span style=\"background-color: #ffe600; color: #1a1a1a; padding: 2px 10px; border-radius: 4px;\">_________</span> 0:<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"color: #ff79c6;\">return</span> <span style=\"color: #bd93f9;\">False</span><br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"color: #ff79c6;\">else</span>:<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"color: #ff79c6;\">return</span> <span style=\"color: #bd93f9;\">True</span>\n                </div>\n              </div>\n            ",
+              "correct": "<=",
+              "explanation": "Benar sekali! Operator <= artinya 'kurang dari atau sama dengan', jadi angka minus dan nol akan ditolak."
+            },
+            {
+              "type": "custom",
+              "title": "Kuis Kilat: Sanitasi vs Validasi ⚖️",
+              "html": "\n              <div style=\"text-align: left; font-family: 'Outfit', sans-serif;\">\n                <div style=\"display: inline-block; background-color: #ffe600; padding: 10px 24px; border-radius: 12px; border: 3px solid #1a1a1a; box-shadow: 4px 4px 0px #1a1a1a; margin-bottom: 24px; margin-top: 10px;\">\n                  <h3 style=\"margin: 0; font-size: 22px; font-weight: 800; color: #1a1a1a;\">Kuis Kilat: Manakah yang termasuk tindakan VALIDASI?</h3>\n                </div>\n              </div>\n            ",
+              "choices": [
+                "Mengubah input 'PENGELUARAN' menjadi 'pengeluaran'",
+                "Memastikan nominal tidak boleh negatif (<= 0)",
+                "Membuang spasi kosong di depan dan belakang kata"
+              ],
+              "correct": "Memastikan nominal tidak boleh negatif (<= 0)",
+              "explanation": "Memastikan nominal negatif adalah pengecekan aturan (Validasi), sedangkan sisanya mengubah format data (Sanitasi)."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "hs-1-3",
+    "sourceFile": "Highschool/sesi30-32/grup-hs-2-c/src/courseData.js",
+    "sourceKey": "3",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 1590,
+      "endSeconds": 1695,
+      "bookmarks": [],
+      "quizzes": [
+        {
+          "time": 99999,
+          "resume": false,
+          "questions": [
+            {
+              "type": "pyscript",
+              "title": "Mini Project: Safe Transaction Input 🛡️",
+              "html": "<p style=\"font-size: 18px; margin-bottom: 10px;\">Buat program pencatat transaksi sederhana yang menolak input tidak valid.</p><div style=\"background-color: rgba(0, 198, 255, 0.15); border: 4px solid var(--black); padding: 25px; border-radius: 16px; box-shadow: 6px 6px 0px var(--black); margin: 20px 0;\"><h3 style=\"margin-bottom: 10px; font-size: 20px;\">Syarat:</h3><ul style=\"padding-left: 25px; font-size: 18px; line-height: 1.6;\"><li>Minta input nama transaksi, jenis transaksi, dan nominal.</li><li>Nama transaksi tidak boleh kosong.</li><li>Jenis transaksi hanya boleh <code>pemasukan</code> atau <code>pengeluaran</code>.</li><li>Nominal harus lebih dari 0.</li><li>Jika semua valid, tampilkan dictionary transaksi.</li></ul></div>",
+              "initialCode": "def clean_text(text):\n    return text.strip().lower()\n\nname = input(\"Nama transaksi: \").strip()\ntransaction_type = clean_text(input(\"Jenis transaksi: \"))\namount = int(input(\"Nominal transaksi: \"))\n\n# Lengkapi validasi di bawah ini!\n",
+              "expectedCode": "def clean_text(text):\n    return text.strip().lower()\n\nname = input(\"Nama transaksi: \").strip()\ntransaction_type = clean_text(input(\"Jenis transaksi: \"))\namount = int(input(\"Nominal transaksi: \"))\n\nif name == \"\":\n    print(\"Nama transaksi tidak boleh kosong.\")\nelif transaction_type != \"pemasukan\" and transaction_type != \"pengeluaran\":\n    print(\"Jenis transaksi harus pemasukan atau pengeluaran.\")\nelif amount <= 0:\n    print(\"Nominal harus lebih dari 0.\")\nelse:\n    transaction = {\"name\": name, \"type\": transaction_type, \"amount\": amount}\n    print(\"Transaksi valid:\", transaction)",
+              "requiredCodeIncludes": [
+                "if",
+                "elif",
+                "<=",
+                "transaction"
+              ],
+              "successKeywords": [
+                "Transaksi valid",
+                "Snack",
+                "pengeluaran",
+                "10000"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "hs-2-1",
+    "sourceFile": "Highschool/sesi25-26/grup-hs-2-a/src/courseData.js",
+    "sourceKey": "1",
+    "differences": {},
+    "legacyTiming": {
+      "bookmarks": [
+        {
+          "time": 0,
+          "label": "Pengenalan Conditional"
+        },
+        {
+          "time": 21,
+          "label": "Program Tidak Lurus"
+        },
+        {
+          "time": 59,
+          "label": "Keputusan Sehari-hari"
+        },
+        {
+          "time": 85,
+          "label": "Apa Itu Condition?"
+        },
+        {
+          "time": 126,
+          "label": "Condition Kayak Pintu"
+        }
+      ],
+      "quizzes": []
+    }
+  },
+  {
+    "stepId": "hs-2-2",
+    "sourceFile": "Highschool/sesi25-26/grup-hs-2-a/src/courseData.js",
+    "sourceKey": "2",
+    "differences": {},
+    "legacyTiming": {
+      "bookmarks": [
+        {
+          "time": 0,
+          "label": "If dan Else di Python"
+        },
+        {
+          "time": 43,
+          "label": "Conditional if"
+        },
+        {
+          "time": 133,
+          "label": "Cara Membaca if"
+        },
+        {
+          "time": 201,
+          "label": "True atau False"
+        },
+        {
+          "time": 264,
+          "label": "Kalau Kondisi Salah"
+        },
+        {
+          "time": 409,
+          "label": "Menambahkan else"
+        },
+        {
+          "time": 433,
+          "label": "Seperti Dua Jalan"
+        },
+        {
+          "time": 506,
+          "label": "Contoh Program Game"
+        }
+      ],
+      "quizzes": [
+        {
+          "time": 300,
+          "shown": false,
+          "resume": true,
+          "resumeTime": 306,
+          "questions": [
+            {
+              "question": "Syarat dalam pemrograman yang bernilai benar disebut dengan True.",
+              "answer": true,
+              "explanation": "Benar. True berarti kondisi tersebut terpenuhi."
+            },
+            {
+              "question": "Keputusan dalam pemrograman mirip seperti kita memilih tindakan di kehidupan nyata berdasarkan suatu syarat.",
+              "answer": true,
+              "explanation": "Benar. Keduanya memakai pola: jika syarat terpenuhi, lakukan aksi."
+            },
+            {
+              "question": "Komputer akan tetap menjalankan perintah di dalam 'if' walaupun syaratnya bernilai False.",
+              "answer": false,
+              "explanation": "Salah. Jika syarat bernilai False, perintah di dalam blok if akan dilewati."
+            },
+            {
+              "question": "Dalam membuat syarat (kondisi), kita tidak bisa membandingkan angka.",
+              "answer": false,
+              "explanation": "Salah. Kita bisa menggunakan operator perbandingan seperti >, <, ==, dll pada angka."
+            }
+          ]
+        },
+        {
+          "time": 617,
+          "shown": false,
+          "resume": true,
+          "resumeTime": 620,
+          "questions": [
+            {
+              "html": "\n              <h2 class=\"slide-title\">Tebak Output 1 🕵️‍♂️</h2>\n              <div class=\"slide-text\">\n              <p>Perhatikan kode berikut:</p>\n              <div class=\"code-block\">\n<span class=\"keyword\">weather</span> <span class=\"operator\">=</span> <span class=\"string\">\"hujan\"</span><br><br>\n<span class=\"keyword\">if</span> weather <span class=\"operator\">==</span> <span class=\"string\">\"cerah\"</span>:<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"function\">print</span>(\"Main bola di luar!\")<br>\n<span class=\"keyword\">else</span>:<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"function\">print</span>(\"Main game di rumah.\")\n              </div>\n              <p>Apa yang akan dicetak oleh program di atas?</p>\n              \n              <div style=\"display: flex; gap: 20px; justify-content: center; margin-top: 20px;\">\n                  <button class=\"answer-opt-btn\" data-correct=\"false\" data-explanation=\"Karena <code>weather</code> adalah <code>&quot;hujan&quot;</code>, maka kondisi <code>if</code> bernilai <b>False</b>, jadi program pindah to <code>else</code>.\" style=\"background-color: #FFFFFF; border: 4px solid #1A1A1A; border-radius: 16px; padding: 15px 30px; font-size: 20px; font-family: 'Fredoka', sans-serif; font-weight: bold; cursor: pointer; box-shadow: 6px 6px 0px #1A1A1A; transition: transform 0.1s;\">Main bola di luar!</button>\n                  <button class=\"answer-opt-btn\" data-correct=\"true\" data-explanation=\"Karena <code>weather</code> adalah <code>&quot;hujan&quot;</code>, maka kondisi <code>if</code> bernilai <b>False</b>, jadi program pindah to <code>else</code>.\" style=\"background-color: #FFFFFF; border: 4px solid #1A1A1A; border-radius: 16px; padding: 15px 30px; font-size: 20px; font-family: 'Fredoka', sans-serif; font-weight: bold; cursor: pointer; box-shadow: 6px 6px 0px #1A1A1A; transition: transform 0.1s;\">Main game di rumah.</button>\n              </div>\n              <div class=\"guess-feedback\" style=\"display: none; padding: 15px; border-radius: 12px; border: 3px solid #1A1A1A; font-size: 20px; font-weight: bold; text-align: center; margin-top: 20px; line-height: 1.4;\"></div>\n              </div>"
+            },
+            {
+              "html": "\n              <h2 class=\"slide-title\">Tebak Output 2 🕵️‍♂️</h2>\n              <div class=\"slide-text\">\n              <p>Perhatikan kode berikut:</p>\n              <div class=\"code-block\">\n<span class=\"keyword\">score</span> <span class=\"operator\">=</span> <span class=\"string\">80</span><br><br>\n<span class=\"keyword\">if</span> score <span class=\"operator\">&gt;</span> <span class=\"string\">75</span>:<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"function\">print</span>(\"Kamu Lulus!\")<br>\n<span class=\"keyword\">else</span>:<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"function\">print</span>(\"Coba lagi tahun depan.\")\n              </div>\n              <p>Apa yang akan dicetak oleh program di atas?</p>\n              \n              <div style=\"display: flex; gap: 20px; justify-content: center; margin-top: 20px;\">\n                  <button class=\"answer-opt-btn\" data-correct=\"true\" data-explanation=\"Karena <code>80</code> memang lebih besar dari <code>75</code>, maka kondisi bernilai <b>True</b>.\" style=\"background-color: #FFFFFF; border: 4px solid #1A1A1A; border-radius: 16px; padding: 15px 30px; font-size: 20px; font-family: 'Fredoka', sans-serif; font-weight: bold; cursor: pointer; box-shadow: 6px 6px 0px #1A1A1A; transition: transform 0.1s;\">Kamu Lulus!</button>\n                  <button class=\"answer-opt-btn\" data-correct=\"false\" data-explanation=\"Karena <code>80</code> memang lebih besar dari <code>75</code>, maka kondisi bernilai <b>True</b>.\" style=\"background-color: #FFFFFF; border: 4px solid #1A1A1A; border-radius: 16px; padding: 15px 30px; font-size: 20px; font-family: 'Fredoka', sans-serif; font-weight: bold; cursor: pointer; box-shadow: 6px 6px 0px #1A1A1A; transition: transform 0.1s;\">Coba lagi tahun depan.</button>\n              </div>\n              <div class=\"guess-feedback\" style=\"display: none; padding: 15px; border-radius: 12px; border: 3px solid #1A1A1A; font-size: 20px; font-weight: bold; text-align: center; margin-top: 20px; line-height: 1.4;\"></div>\n              </div>"
+            },
+            {
+              "html": "\n              <h2 class=\"slide-title\">Tebak Output 3 🕵️‍♂️</h2>\n              <div class=\"slide-text\">\n              <p>Perhatikan kode berikut:</p>\n              <div class=\"code-block\">\n<span class=\"keyword\">is_hungry</span> <span class=\"operator\">=</span> <span class=\"keyword\">False</span><br><br>\n<span class=\"keyword\">if</span> is_hungry <span class=\"operator\">==</span> <span class=\"keyword\">True</span>:<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"function\">print</span>(\"Waktunya makan!\")<br>\n<span class=\"keyword\">else</span>:<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"function\">print</span>(\"Lanjut belajar.\")\n              </div>\n              <p>Apa yang akan dicetak oleh program di atas?</p>\n              \n              <div style=\"display: flex; gap: 20px; justify-content: center; margin-top: 20px;\">\n                  <button class=\"answer-opt-btn\" data-correct=\"false\" data-explanation=\"Karena <code>is_hungry</code> adalah <b>False</b>, pengecekan <code>False == True</code> bernilai salah, jadi pindah ke <code>else</code>.\" style=\"background-color: #FFFFFF; border: 4px solid #1A1A1A; border-radius: 16px; padding: 15px 30px; font-size: 20px; font-family: 'Fredoka', sans-serif; font-weight: bold; cursor: pointer; box-shadow: 6px 6px 0px #1A1A1A; transition: transform 0.1s;\">Waktunya makan!</button>\n                  <button class=\"answer-opt-btn\" data-correct=\"true\" data-explanation=\"Karena <code>is_hungry</code> adalah <b>False</b>, pengecekan <code>False == True</code> bernilai salah, jadi pindah ke <code>else</code>.\" style=\"background-color: #FFFFFF; border: 4px solid #1A1A1A; border-radius: 16px; padding: 15px 30px; font-size: 20px; font-family: 'Fredoka', sans-serif; font-weight: bold; cursor: pointer; box-shadow: 6px 6px 0px #1A1A1A; transition: transform 0.1s;\">Lanjut belajar.</button>\n              </div>\n              <div class=\"guess-feedback\" style=\"display: none; padding: 15px; border-radius: 12px; border: 3px solid #1A1A1A; font-size: 20px; font-weight: bold; text-align: center; margin-top: 20px; line-height: 1.4;\"></div>\n              </div>"
+            }
+          ]
+        },
+        {
+          "time": 617,
+          "shown": false,
+          "resume": false,
+          "questions": [
+            {
+              "question": "Multi-branch decision adalah keputusan dengan banyak cabang pilihan yang dapat dieksekusi bersamaan.",
+              "answer": false,
+              "explanation": "Salah. Program hanya akan menjalankan satu cabang yang kondisinya pertama kali terpenuhi, tidak bersamaan."
+            },
+            {
+              "question": "Dalam Python, kita dapat membuat percabangan yang lebih dari dua jalan menggunakan kata kunci 'elif'.",
+              "answer": true,
+              "explanation": "Benar. 'elif' (else if) memungkinkan kita mengecek kondisi baru jika kondisi sebelumnya bernilai salah."
+            },
+            {
+              "question": "Urutan kondisi pada if-elif sangat penting karena Python membaca dari atas ke bawah dan berhenti pada kondisi pertama yang benar.",
+              "answer": true,
+              "explanation": "Benar. Python akan mengeksekusi blok kode dari kondisi pertama yang True dan mengabaikan pengecekan di bawahnya."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "hs-2-3",
+    "sourceFile": "Highschool/sesi25-26/grup-hs-2-a/src/courseData.js",
+    "sourceKey": "3",
+    "differences": {},
+    "legacyTiming": {
+      "bookmarks": [
+        {
+          "time": 0,
+          "label": "Mengenal Elif"
+        },
+        {
+          "time": 14,
+          "label": "Lebih dari Dua Pilihan?"
+        },
+        {
+          "time": 111,
+          "label": "Multi-Branch Decision"
+        },
+        {
+          "time": 230,
+          "label": "Contoh di Python"
+        },
+        {
+          "time": 422,
+          "label": "Kenapa Urutan Penting?"
+        }
+      ],
+      "quizzes": [
+        {
+          "time": 594,
+          "shown": false,
+          "resume": false,
+          "questions": [
+            {
+              "html": "\n              <h2 class=\"slide-title\">Latihan 1: Lengkapi Kode! 🧩</h2>\n              <div class=\"slide-text\">\n              <p>Instruksi: Program mengecek kategori usia. Jika usia 18 tahun ke atas dianggap \"Dewasa\", kalau di bawah 18 tahun masih \"Biasa aja\".</p>\n              <p>Lengkapi bagian yang kosong dengan mengetik <strong>keyword percabangan</strong> dan <strong>kondisi pengecekannya</strong> secara manual!</p>\n              <div class=\"code-block\" style=\"font-size: 16px;\">\n<span class=\"keyword\">age</span> <span class=\"operator\">=</span> <span class=\"string\">15</span><br><br>\n<span class=\"keyword\">if</span> age <span class=\"operator\">&gt;=</span> <span class=\"string\">18</span>:<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"function\">print</span>(\"Dewasa\")<br>\n<input type=\"text\" id=\"mb1-kw\" placeholder=\"keyword\" style=\"width: 90px; font-family: monospace; font-size: 16px; padding: 5px; border: 3px solid #1A1A1A; border-radius: 8px; color: #1A1A1A;\"> <input type=\"text\" id=\"mb1-cond\" placeholder=\"kondisinya...\" style=\"width: 150px; font-family: monospace; font-size: 16px; padding: 5px; border: 3px solid #1A1A1A; border-radius: 8px; color: #1A1A1A;\"> :<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"function\">print</span>(\"Biasa aja\")\n              </div>\n              \n              <div style=\"display: flex; gap: 20px; justify-content: center; margin-top: 20px;\">\n                  <button id=\"mb1-check-btn\" style=\"background-color: #FFE500; border: 4px solid #1A1A1A; border-radius: 16px; padding: 15px 30px; font-size: 20px; font-family: 'Fredoka', sans-serif; font-weight: bold; cursor: pointer; box-shadow: 6px 6px 0px #1A1A1A; transition: transform 0.1s;\">Cek Kode Saya!</button>\n              </div>\n              <div class=\"guess-feedback\" style=\"display: none; padding: 15px; border-radius: 12px; border: 3px solid #1A1A1A; font-size: 20px; font-weight: bold; text-align: center; margin-top: 20px; line-height: 1.4;\"></div>\n              </div>"
+            },
+            {
+              "html": "\n              <h2 class=\"slide-title\">Latihan 2: Perbaiki Bug! 🐛</h2>\n              <div class=\"slide-text\">\n              <p>Ada bug (kesalahan) di kode ini! Siswa dengan nilai 95 harusnya dapat \"A\", tapi dia malah dapat \"B\" karena urutannya salah.</p>\n              <p>Ketik langsung angka yang benar pada kotak untuk memperbaiki urutan prioritas pengecekannya!</p>\n              <div class=\"code-block\" style=\"font-size: 16px;\">\n<span class=\"keyword\">score</span> <span class=\"operator\">=</span> <span class=\"string\">95</span><br><br>\n<span class=\"keyword\">if</span> score <span class=\"operator\">&gt;=</span> <input type=\"text\" id=\"mb2-val1\" placeholder=\"angka\" style=\"width: 80px; font-family: monospace; font-size: 16px; padding: 5px; border: 3px solid #1A1A1A; border-radius: 8px; color: #1A1A1A;\"> :<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"function\">print</span>(\"A\")<br>\n<span class=\"keyword\">elif</span> score <span class=\"operator\">&gt;=</span> <input type=\"text\" id=\"mb2-val2\" placeholder=\"angka\" style=\"width: 80px; font-family: monospace; font-size: 16px; padding: 5px; border: 3px solid #1A1A1A; border-radius: 8px; color: #1A1A1A;\"> :<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"function\">print</span>(\"B\")<br>\n<span class=\"keyword\">else</span>:<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"function\">print</span>(\"C\")\n              </div>\n              \n              <div style=\"display: flex; gap: 20px; justify-content: center; margin-top: 20px; flex-wrap: wrap;\">\n                  <button id=\"mb2-check-btn\" style=\"background-color: #FFE500; border: 4px solid #1A1A1A; border-radius: 16px; padding: 15px 30px; font-size: 20px; font-family: 'Fredoka', sans-serif; font-weight: bold; cursor: pointer; box-shadow: 6px 6px 0px #1A1A1A; transition: transform 0.1s;\">Cek Kode Saya!</button>\n              </div>\n              <div class=\"guess-feedback\" style=\"display: none; padding: 15px; border-radius: 12px; border: 3px solid #1A1A1A; font-size: 20px; font-weight: bold; text-align: center; margin-top: 20px; line-height: 1.4;\"></div>\n              </div>"
+            },
+            {
+              "html": "\n              <h2 class=\"slide-title\">Latihan 3: Tebak Output 🕵️‍♂️</h2>\n              <div class=\"slide-text\">\n              <p>Perhatikan baik-baik kode berikut:</p>\n              <div class=\"code-block\">\n<span class=\"keyword\">hari</span> <span class=\"operator\">=</span> <span class=\"string\">\"Rabu\"</span><br><br>\n<span class=\"keyword\">if</span> hari <span class=\"operator\">==</span> <span class=\"string\">\"Sabtu\"</span>:<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"function\">print</span>(\"Bermain\")<br>\n<span class=\"keyword\">elif</span> hari <span class=\"operator\">==</span> <span class=\"string\">\"Minggu\"</span>:<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"function\">print</span>(\"Jalan-jalan\")<br>\n<span class=\"keyword\">else</span>:<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"function\">print</span>(\"Sekolah\")\n              </div>\n              <p>Menurutmu apa yang akan dicetak di layar?</p>\n              \n              <div style=\"display: flex; gap: 20px; justify-content: center; margin-top: 20px;\">\n                  <button class=\"answer-opt-btn\" data-correct=\"false\" data-explanation=\"Salah! Hari yang dicek bukan Sabtu.\" style=\"background-color: #FFFFFF; border: 4px solid #1A1A1A; border-radius: 16px; padding: 15px 30px; font-size: 20px; font-family: 'Fredoka', sans-serif; font-weight: bold; cursor: pointer; box-shadow: 6px 6px 0px #1A1A1A; transition: transform 0.1s;\">Bermain</button>\n                  <button class=\"answer-opt-btn\" data-correct=\"false\" data-explanation=\"Salah! Hari yang dicek bukan Minggu.\" style=\"background-color: #FFFFFF; border: 4px solid #1A1A1A; border-radius: 16px; padding: 15px 30px; font-size: 20px; font-family: 'Fredoka', sans-serif; font-weight: bold; cursor: pointer; box-shadow: 6px 6px 0px #1A1A1A; transition: transform 0.1s;\">Jalan-jalan</button>\n                  <button class=\"answer-opt-btn\" data-correct=\"true\" data-explanation=\"Benar! Karena bukan Sabtu dan bukan Minggu, program akan menjalankan <code>else</code> dan mencetak Sekolah.\" style=\"background-color: #FFFFFF; border: 4px solid #1A1A1A; border-radius: 16px; padding: 15px 30px; font-size: 20px; font-family: 'Fredoka', sans-serif; font-weight: bold; cursor: pointer; box-shadow: 6px 6px 0px #1A1A1A; transition: transform 0.1s;\">Sekolah</button>\n              </div>\n              <div class=\"guess-feedback\" style=\"display: none; padding: 15px; border-radius: 12px; border: 3px solid #1A1A1A; font-size: 20px; font-weight: bold; text-align: center; margin-top: 20px; line-height: 1.4;\"></div>\n              </div>"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "hs-2-4",
+    "sourceFile": "Highschool/sesi25-26/grup-hs-2-a/src/courseData.js",
+    "sourceKey": "4",
+    "differences": {},
+    "legacyTiming": {
+      "bookmarks": [
+        {
+          "time": 0,
+          "label": "Nested Conditionals"
+        },
+        {
+          "time": 133,
+          "label": "Analogi Nested Condition"
+        },
+        {
+          "time": 267,
+          "label": "Nested Condition di Python"
+        },
+        {
+          "time": 461,
+          "label": "Contoh Kasus Game"
+        },
+        {
+          "time": 601,
+          "label": "Masalah Nested Condition"
+        }
+      ],
+      "quizzes": [
+        {
+          "time": 649,
+          "shown": false,
+          "resume": true,
+          "resumeTime": 652,
+          "questions": [
+            {
+              "html": "\n              <h2 class=\"slide-title\">Latihan: Kurung Penyelamat! 🛡️</h2>\n              <div class=\"slide-text\">\n              <p><strong>Skenario Game Online:</strong> Seorang pemain bisa login jika password-nya benar <strong>DAN</strong> (dia adalah admin <strong>ATAU</strong> pemain premium).</p>\n              <ul>\n                  <li><strong>Instruksi:</strong> Tuliskan logika yang tepat di dalam kotak. Jangan lupa gunakan <strong>tanda kurung</strong> agar pengecekan \"admin atau premium\" didahulukan!</li>\n              </ul>\n              <div class=\"code-block\" style=\"font-size: 18px;\">\n<span class=\"keyword\">password_ok</span> <span class=\"operator\">=</span> <span class=\"keyword\">True</span><br>\n<span class=\"keyword\">is_admin</span> <span class=\"operator\">=</span> <span class=\"keyword\">False</span><br>\n<span class=\"keyword\">is_premium</span> <span class=\"operator\">=</span> <span class=\"keyword\">True</span><br><br>\n<span class=\"keyword\">if</span> <input type=\"text\" id=\"paren-input\" placeholder=\"ketik kondisinya...\" style=\"width: 450px; font-family: monospace; font-size: 18px; padding: 5px; border: 3px solid #1A1A1A; border-radius: 8px; color: #1A1A1A;\"> :<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"function\">print</span>(\"Welcome back, Player!\")<br>\n<span class=\"keyword\">else</span>:<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"function\">print</span>(\"Akses ditolak.\")\n              </div>\n              \n              <div style=\"display: flex; gap: 20px; justify-content: center; margin-top: 20px;\">\n                  <button id=\"paren-check-btn\" style=\"background-color: #FFE500; border: 4px solid #1A1A1A; border-radius: 16px; padding: 15px 30px; font-size: 20px; font-family: 'Fredoka', sans-serif; font-weight: bold; cursor: pointer; box-shadow: 6px 6px 0px #1A1A1A; transition: transform 0.1s;\">Cek Kode Saya!</button>\n              </div>\n              <div class=\"guess-feedback\" style=\"display: none; padding: 15px; border-radius: 12px; border: 3px solid #1A1A1A; font-size: 20px; font-weight: bold; text-align: center; margin-top: 20px; line-height: 1.4;\"></div>\n              </div>"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "hs-2-5",
+    "sourceFile": "Highschool/sesi25-26/grup-hs-2-a/src/courseData.js",
+    "sourceKey": "5",
+    "differences": {},
+    "legacyTiming": {
+      "bookmarks": [
+        {
+          "time": 0,
+          "label": "Penggabungan Kondisi"
+        },
+        {
+          "time": 108,
+          "label": "Operator \"and\""
+        },
+        {
+          "time": 337,
+          "label": "Operator \"or\""
+        },
+        {
+          "time": 541,
+          "label": "Operator \"not\""
+        },
+        {
+          "time": 763,
+          "label": "Menggabungkan 3+ Kondisi"
+        },
+        {
+          "time": 938,
+          "label": "Prioritas Operator"
+        },
+        {
+          "time": 1028,
+          "label": "Tanda Kurung ()"
+        }
+      ],
+      "quizzes": [
+        {
+          "time": 326,
+          "shown": false,
+          "resume": true,
+          "resumeTime": 330,
+          "questions": [
+            {
+              "html": "\n              <h2 class=\"slide-title\">Latihan: Logika <code>and</code> 🧩</h2>\n              <div class=\"slide-text\">\n              <p><strong>Instruksi:</strong> Lengkapi program beasiswa berikut agar berjalan dengan benar!</p>\n              <ul>\n                  <li>Syarat Beasiswa: Nilai harus lebih dari 80 <strong>dan</strong> aktif organisasi bernilai True.</li>\n                  <li>Ketik operator logika dan variabel kondisi yang tepat di dalam kotak.</li>\n              </ul>\n              <div class=\"code-block\">\n<span class=\"keyword\">nilai</span> <span class=\"operator\">=</span> <span class=\"string\">85</span><br>\n<span class=\"keyword\">aktif_organisasi</span> <span class=\"operator\">=</span> <span class=\"keyword\">True</span><br><br>\n<span class=\"keyword\">if</span> nilai <span class=\"operator\">&gt;</span> <span class=\"string\">80</span> <input type=\"text\" id=\"and-input\" placeholder=\"ketik kondisinya...\" style=\"width: 350px; font-family: monospace; font-size: 20px; padding: 5px; border: 3px solid #1A1A1A; border-radius: 8px; color: #1A1A1A;\"> :<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"function\">print</span>(\"Selamat, kamu dapat beasiswa!\")<br>\n<span class=\"keyword\">else</span>:<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"function\">print</span>(\"Belum memenuhi syarat.\")\n              </div>\n              \n              <div style=\"display: flex; gap: 20px; justify-content: center; margin-top: 20px;\">\n                  <button id=\"and-check-btn\" style=\"background-color: #FFE500; border: 4px solid #1A1A1A; border-radius: 16px; padding: 15px 30px; font-size: 20px; font-family: 'Fredoka', sans-serif; font-weight: bold; cursor: pointer; box-shadow: 6px 6px 0px #1A1A1A; transition: transform 0.1s;\">Cek Kode Saya!</button>\n              </div>\n              <div class=\"guess-feedback\" style=\"display: none; padding: 15px; border-radius: 12px; border: 3px solid #1A1A1A; font-size: 20px; font-weight: bold; text-align: center; margin-top: 20px; line-height: 1.4;\"></div>\n              </div>"
+            }
+          ]
+        },
+        {
+          "time": 535,
+          "shown": false,
+          "resume": true,
+          "resumeTime": 539,
+          "questions": [
+            {
+              "html": "\n              <h2 class=\"slide-title\">Latihan: Logika <code>or</code> 🧩</h2>\n              <div class=\"slide-text\">\n              <p><strong>Instruksi:</strong> Lengkapi program diskon berikut!</p>\n              <ul>\n                  <li>Syarat Diskon: Pembeli adalah pelajar <strong>atau</strong> memiliki kupon diskon.</li>\n                  <li>Ketik operator logika dan variabel kondisi yang tepat di dalam kotak.</li>\n              </ul>\n              <div class=\"code-block\">\n<span class=\"keyword\">status</span> <span class=\"operator\">=</span> <span class=\"string\">\"umum\"</span><br>\n<span class=\"keyword\">ada_kupon</span> <span class=\"operator\">=</span> <span class=\"keyword\">True</span><br><br>\n<span class=\"keyword\">if</span> status <span class=\"operator\">==</span> <span class=\"string\">\"pelajar\"</span> <input type=\"text\" id=\"or-input\" placeholder=\"ketik kondisinya...\" style=\"width: 250px; font-family: monospace; font-size: 20px; padding: 5px; border: 3px solid #1A1A1A; border-radius: 8px; color: #1A1A1A;\"> :<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"function\">print</span>(\"Hore! Kamu dapat diskon.\")<br>\n<span class=\"keyword\">else</span>:<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"function\">print</span>(\"Harga normal.\")\n              </div>\n              \n              <div style=\"display: flex; gap: 20px; justify-content: center; margin-top: 20px;\">\n                  <button id=\"or-check-btn\" style=\"background-color: #FFE500; border: 4px solid #1A1A1A; border-radius: 16px; padding: 15px 30px; font-size: 20px; font-family: 'Fredoka', sans-serif; font-weight: bold; cursor: pointer; box-shadow: 6px 6px 0px #1A1A1A; transition: transform 0.1s;\">Cek Kode Saya!</button>\n              </div>\n              <div class=\"guess-feedback\" style=\"display: none; padding: 15px; border-radius: 12px; border: 3px solid #1A1A1A; font-size: 20px; font-weight: bold; text-align: center; margin-top: 20px; line-height: 1.4;\"></div>\n              </div>"
+            }
+          ]
+        },
+        {
+          "time": 1097,
+          "shown": false,
+          "resume": true,
+          "resumeTime": 1101,
+          "questions": [
+            {
+              "html": "\n              <h2 class=\"slide-title\">Latihan: Nested ke Logical 🛠️</h2>\n              <div class=\"slide-text\">\n              <p>Ubah kode bercabang yang ribet ini menjadi satu baris kondisi dengan operator logika!</p>\n              <div class=\"code-block\" style=\"font-size: 16px; margin-bottom: 10px;\">\n<span style=\"color: #6c757d; font-style: italic;\"># Kode Awal (Ribet):</span><br>\n<span class=\"keyword\">if</span> hari <span class=\"operator\">==</span> <span class=\"string\">\"sabtu\"</span>:<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"keyword\">if</span> cuaca <span class=\"operator\">==</span> <span class=\"string\">\"cerah\"</span>:<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"function\">print</span>(\"Main bola\")\n              </div>\n              <div class=\"code-block\" style=\"font-size: 16px;\">\n<span style=\"color: #6c757d; font-style: italic;\"># Kode Barumu (Singkat):</span><br>\n<span class=\"keyword\">if</span> hari <span class=\"operator\">==</span> <span class=\"string\">\"sabtu\"</span> <input type=\"text\" id=\"logical-input\" placeholder=\"ketik kelanjutannya...\" style=\"width: 250px; font-family: monospace; font-size: 16px; padding: 5px; border: 3px solid #1A1A1A; border-radius: 8px; color: #1A1A1A;\"> :<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"function\">print</span>(\"Main bola\")\n              </div>\n              \n              <div style=\"display: flex; gap: 20px; justify-content: center; margin-top: 20px;\">\n                  <button id=\"logical-check-btn\" style=\"background-color: #FFE500; border: 4px solid #1A1A1A; border-radius: 16px; padding: 15px 30px; font-size: 20px; font-family: 'Fredoka', sans-serif; font-weight: bold; cursor: pointer; box-shadow: 6px 6px 0px #1A1A1A; transition: transform 0.1s;\">Cek Kode Saya!</button>\n              </div>\n              <div class=\"guess-feedback\" style=\"display: none; padding: 15px; border-radius: 12px; border: 3px solid #1A1A1A; font-size: 20px; font-weight: bold; text-align: center; margin-top: 20px; line-height: 1.4;\"></div>\n              </div>"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "hs-2-6",
+    "sourceFile": "Highschool/sesi25-26/grup-hs-2-a/src/courseData.js",
+    "sourceKey": "6",
+    "differences": {},
+    "legacyTiming": {
+      "bookmarks": [
+        {
+          "time": 0,
+          "label": "Financial Literacy"
+        },
+        {
+          "time": 133,
+          "label": "Kebutuhan vs Keinginan"
+        },
+        {
+          "time": 151,
+          "label": "Apa Itu Kebutuhan?"
+        },
+        {
+          "time": 182,
+          "label": "Apa Itu Keinginan?"
+        },
+        {
+          "time": 402,
+          "label": "Program Cek Kategori"
+        },
+        {
+          "time": 791,
+          "label": "Budgeting"
+        },
+        {
+          "time": 1403,
+          "label": "Risiko Finansial"
+        },
+        {
+          "time": 1659,
+          "label": "Menilai Risiko"
+        }
+      ],
+      "quizzes": [
+        {
+          "time": 176,
+          "shown": false,
+          "resume": true,
+          "resumeTime": 176,
+          "questions": [
+            {
+              "html": "\n              <h2 class=\"slide-title\">Latihan 1: Kebutuhan Siswa 📚</h2>\n              <div class=\"slide-text\">\n              <p>Apa contoh <strong>Kebutuhan</strong> kamu sebagai seorang siswa/i (selain yang disebutkan di video)?</p>\n              <p>Tuliskan 5 contoh di bawah ini:</p>\n              <div style=\"display: flex; flex-direction: column; gap: 10px; align-items: center;\">\n                <input type=\"text\" class=\"needs-input\" placeholder=\"Kebutuhan 1...\" style=\"width: 80%; font-family: 'Fredoka', sans-serif; font-size: 16px; padding: 10px; border: 3px solid #1A1A1A; border-radius: 8px;\">\n                <input type=\"text\" class=\"needs-input\" placeholder=\"Kebutuhan 2...\" style=\"width: 80%; font-family: 'Fredoka', sans-serif; font-size: 16px; padding: 10px; border: 3px solid #1A1A1A; border-radius: 8px;\">\n                <input type=\"text\" class=\"needs-input\" placeholder=\"Kebutuhan 3...\" style=\"width: 80%; font-family: 'Fredoka', sans-serif; font-size: 16px; padding: 10px; border: 3px solid #1A1A1A; border-radius: 8px;\">\n                <input type=\"text\" class=\"needs-input\" placeholder=\"Kebutuhan 4...\" style=\"width: 80%; font-family: 'Fredoka', sans-serif; font-size: 16px; padding: 10px; border: 3px solid #1A1A1A; border-radius: 8px;\">\n                <input type=\"text\" class=\"needs-input\" placeholder=\"Kebutuhan 5...\" style=\"width: 80%; font-family: 'Fredoka', sans-serif; font-size: 16px; padding: 10px; border: 3px solid #1A1A1A; border-radius: 8px;\">\n              </div>\n              \n              <div style=\"display: flex; justify-content: center; margin-top: 20px;\">\n                  <button id=\"needs-check-btn\" style=\"background-color: #FFE500; border: 4px solid #1A1A1A; border-radius: 16px; padding: 15px 30px; font-size: 20px; font-family: 'Fredoka', sans-serif; font-weight: bold; cursor: pointer; box-shadow: 6px 6px 0px #1A1A1A; transition: transform 0.1s;\">Kumpulkan</button>\n              </div>\n              <div class=\"guess-feedback\" style=\"display: none; padding: 15px; border-radius: 12px; border: 3px solid #1A1A1A; font-size: 20px; font-weight: bold; text-align: center; margin-top: 20px; line-height: 1.4;\"></div>\n              </div>"
+            }
+          ]
+        },
+        {
+          "time": 220,
+          "shown": false,
+          "resume": true,
+          "resumeTime": 220,
+          "questions": [
+            {
+              "html": "\n              <h2 class=\"slide-title\">Latihan 2: Keinginan Siswa 🎮</h2>\n              <div class=\"slide-text\">\n              <p>Nah, sekarang apa contoh <strong>Keinginan</strong> yang mau kamu beli yang masih berkaitan dengan sekolah?</p>\n              <p>Tuliskan 5 contoh di bawah ini:</p>\n              <div style=\"display: flex; flex-direction: column; gap: 10px; align-items: center;\">\n                <input type=\"text\" class=\"wants-input\" placeholder=\"Keinginan 1...\" style=\"width: 80%; font-family: 'Fredoka', sans-serif; font-size: 16px; padding: 10px; border: 3px solid #1A1A1A; border-radius: 8px;\">\n                <input type=\"text\" class=\"wants-input\" placeholder=\"Keinginan 2...\" style=\"width: 80%; font-family: 'Fredoka', sans-serif; font-size: 16px; padding: 10px; border: 3px solid #1A1A1A; border-radius: 8px;\">\n                <input type=\"text\" class=\"wants-input\" placeholder=\"Keinginan 3...\" style=\"width: 80%; font-family: 'Fredoka', sans-serif; font-size: 16px; padding: 10px; border: 3px solid #1A1A1A; border-radius: 8px;\">\n                <input type=\"text\" class=\"wants-input\" placeholder=\"Keinginan 4...\" style=\"width: 80%; font-family: 'Fredoka', sans-serif; font-size: 16px; padding: 10px; border: 3px solid #1A1A1A; border-radius: 8px;\">\n                <input type=\"text\" class=\"wants-input\" placeholder=\"Keinginan 5...\" style=\"width: 80%; font-family: 'Fredoka', sans-serif; font-size: 16px; padding: 10px; border: 3px solid #1A1A1A; border-radius: 8px;\">\n              </div>\n              \n              <div style=\"display: flex; justify-content: center; margin-top: 20px;\">\n                  <button id=\"wants-check-btn\" style=\"background-color: #FFE500; border: 4px solid #1A1A1A; border-radius: 16px; padding: 15px 30px; font-size: 20px; font-family: 'Fredoka', sans-serif; font-weight: bold; cursor: pointer; box-shadow: 6px 6px 0px #1A1A1A; transition: transform 0.1s;\">Kumpulkan</button>\n              </div>\n              <div class=\"guess-feedback\" style=\"display: none; padding: 15px; border-radius: 12px; border: 3px solid #1A1A1A; font-size: 20px; font-weight: bold; text-align: center; margin-top: 20px; line-height: 1.4;\"></div>\n              </div>"
+            }
+          ]
+        },
+        {
+          "time": 772,
+          "shown": false,
+          "resume": true,
+          "resumeTime": 785,
+          "questions": [
+            {
+              "html": "\n              <h2 class=\"slide-title\">Mini Activity: Tentukan Kategori 🎯</h2>\n              <div class=\"slide-text\">\n              <p>Pilih 3 barang dari tabel ini dan buat program Python untuk mengecek Kategorinya (Kebutuhan/Keinginan)!</p>\n              <table style=\"width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 14px; margin-bottom: 15px;\">\n                  <thead>\n                      <tr style=\"background-color: var(--blue); color: var(--white);\">\n                          <th style=\"padding: 5px; border: 2px solid var(--black);\">Barang</th>\n                          <th style=\"padding: 5px; border: 2px solid var(--black);\">Kategori</th>\n                      </tr>\n                  </thead>\n                  <tbody>\n                      <tr><td style=\"padding: 5px; border: 1px solid var(--black);\">Buku tulis</td><td style=\"padding: 5px; border: 1px solid var(--black);\">Kebutuhan</td></tr>\n                      <tr><td style=\"padding: 5px; border: 1px solid var(--black);\">Air minum</td><td style=\"padding: 5px; border: 1px solid var(--black);\">Kebutuhan</td></tr>\n                      <tr><td style=\"padding: 5px; border: 1px solid var(--black);\">Skin game</td><td style=\"padding: 5px; border: 1px solid var(--black);\">Keinginan</td></tr>\n                      <tr><td style=\"padding: 5px; border: 1px solid var(--black);\">Snack tambahan</td><td style=\"padding: 5px; border: 1px solid var(--black);\">Keinginan</td></tr>\n                      <tr><td style=\"padding: 5px; border: 1px solid var(--black);\">Pulsa internet kelas online</td><td style=\"padding: 5px; border: 1px solid var(--black);\">Kebutuhan</td></tr>\n                      <tr><td style=\"padding: 5px; border: 1px solid var(--black);\">Gantungan kunci</td><td style=\"padding: 5px; border: 1px solid var(--black);\">Keinginan</td></tr>\n                  </tbody>\n              </table>\n              \n              <textarea id=\"python-ide-6\" spellcheck=\"false\" placeholder=\"# Tulis programmu di sini\" style=\"width: 100%; height: 180px; background-color: #1e1e1e; color: #d4d4d4; font-family: monospace; font-size: 14px; padding: 10px; border-radius: 8px; border: 1px solid #444; margin-bottom: 10px;\"></textarea>\n              \n              <div style=\"display: flex; gap: 10px; justify-content: center; margin-bottom: 10px;\">\n                  <button id=\"ide6-run-btn\" style=\"background-color: var(--green); border: 2px solid #1A1A1A; border-radius: 8px; padding: 8px 16px; font-weight: bold; cursor: pointer; color: black;\">Jalankan Kode</button>\n                  <button id=\"ide6-submit-btn\" style=\"background-color: #FFE500; border: 2px solid #1A1A1A; border-radius: 8px; padding: 8px 16px; font-weight: bold; cursor: pointer; color: black;\">Kumpulkan</button>\n              </div>\n              \n              <div id=\"ide-output-6\" style=\"background-color: black; color: white; padding: 10px; border-radius: 8px; min-height: 50px; font-family: monospace; white-space: pre-wrap; font-size: 12px; margin-bottom: 10px;\">Output program akan muncul di sini...</div>\n              \n              <div class=\"guess-feedback\" style=\"display: none; padding: 10px; border-radius: 8px; border: 2px solid #1A1A1A; font-weight: bold; text-align: center;\"></div>\n              </div>"
+            }
+          ]
+        },
+        {
+          "time": 2123,
+          "shown": false,
+          "resume": false,
+          "resumeTime": 2127,
+          "questions": [
+            {
+              "continueOnly": true,
+              "type": "info",
+              "html": "\n              <h2 class=\"slide-title\">Selesai Menonton! 🎉</h2>\n              <div class=\"slide-text\">\n              <p>Kamu sudah menyelesaikan Video 6!</p>\n              <p>Mari kita ulas sebentar: Mengelola keuangan itu soal membuat keputusan. Kamu harus menimbang antara Kebutuhan dan Keinginan, serta Level Risiko dari setiap pengeluaran.</p>\n              <p>Silakan lanjut ke Tab 7 untuk mengerjakan <strong>Tugas Akhir</strong> misi Conditional ini.</p>\n              </div>\n            "
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "hs-2-7",
+    "sourceFile": "Highschool/sesi25-26/grup-hs-2-a/src/courseData.js",
+    "sourceKey": "7",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 2137,
+      "quizzes": []
+    }
+  },
+  {
+    "stepId": "hs-3-1",
+    "sourceFile": "Highschool/sesi27-29/grup-hs-2-b/src/courseData.js",
+    "sourceKey": "1",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 2,
+      "endSeconds": 239,
+      "bookmarks": [
+        {
+          "time": 2,
+          "label": "Pengenalan Algoritma"
+        },
+        {
+          "time": 65,
+          "label": "Perbedaan Algoritma"
+        },
+        {
+          "time": 109,
+          "label": "Optimasi Algoritma"
+        },
+        {
+          "time": 160,
+          "label": "Contoh Optimasi Algoritma"
+        }
+      ],
+      "quizzes": [
+        {
+          "time": 238,
+          "resume": false,
+          "questions": [
+            {
+              "type": "essay",
+              "title": "Analogi Logika: Menebak Angka 1-100",
+              "question": "Temanmu memikirkan angka 1 sampai 100. Kamu hanya boleh bertanya 'Apakah lebih besar/kecil?'. Bagaimana cara tercepat untuk menebak angka tersebut dengan jumlah tebakan sesedikit mungkin? Jelaskan logikamu!",
+              "minChars": 150,
+              "keywords": [
+                "tengah",
+                "50",
+                "bagi dua",
+                "setengah",
+                "dibagi dua",
+                "nilai tengah"
+              ],
+              "successMessage": "Selamat! Kamu menemukan cara yang paling efisien (Binary Search / selalu membagi dua rentang angka).",
+              "failureMessage": "Usaha yang bagus! Tapi ada cara yang jauh lebih cepat, yaitu selalu menebak nilai tengahnya (50, lalu 75, dst.) karena akan langsung membuang setengah kemungkinan salah. Ini disebut Binary Search!"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "hs-3-2",
+    "sourceFile": "Highschool/sesi27-29/grup-hs-2-b/src/courseData.js",
+    "sourceKey": "2",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 240,
+      "endSeconds": 882,
+      "bookmarks": [
+        {
+          "time": 240,
+          "label": "Apa itu Step Count?"
+        },
+        {
+          "time": 420,
+          "label": "Mencari Angka pada Array"
+        },
+        {
+          "time": 480,
+          "label": "Implementasi For Loop"
+        },
+        {
+          "time": 750,
+          "label": "Optimasi dengan Break"
+        }
+      ],
+      "quizzes": [
+        {
+          "time": 881,
+          "resume": false,
+          "questions": [
+            {
+              "type": "input",
+              "title": "Mini Activity: Hitung Step Count 🎯",
+              "html": "\n              <div style=\"text-align: left; font-family: 'Outfit', sans-serif;\">\n                <div style=\"display: inline-block; background-color: #ffe600; padding: 10px 24px; border-radius: 12px; border: 3px solid #1a1a1a; box-shadow: 4px 4px 0px #1a1a1a; margin-bottom: 24px; margin-top: 10px;\">\n                  <h3 style=\"margin: 0; font-size: 22px; font-weight: 800; color: #1a1a1a;\">Mini Activity: Hitung Step Count 🎯</h3>\n                </div>\n                \n                <p style=\"font-weight: 800; font-size: 18px; color: #1a1a1a; margin-bottom: 16px;\">Perhatikan daftar ini:</p>\n                \n                <div style=\"background-color: #1a1a1a; padding: 24px; border-radius: 16px; font-family: 'Courier New', Courier, monospace; font-size: 16px; margin-bottom: 24px; border: 3px solid #ffe600; box-shadow: 4px 4px 0px #ffe600; color: #f8f8f2; line-height: 1.6; font-weight: bold;\">\n                  <div><span style=\"color: #ff79c6;\">numbers</span> <span style=\"color: #ffb86c;\">=</span> <span style=\"color: #f1fa8c;\">[</span><span style=\"color: #50fa7b;\">5</span><span style=\"color: #f8f8f2;\">,</span> <span style=\"color: #50fa7b;\">8</span><span style=\"color: #f8f8f2;\">,</span> <span style=\"color: #50fa7b;\">12</span><span style=\"color: #f8f8f2;\">,</span> <span style=\"color: #50fa7b;\">20</span><span style=\"color: #f8f8f2;\">,</span> <span style=\"color: #50fa7b;\">25</span><span style=\"color: #f8f8f2;\">,</span> <span style=\"color: #50fa7b;\">30</span><span style=\"color: #f1fa8c;\">]</span></div>\n                  <div style=\"margin-top: 8px;\"><span style=\"color: #ff79c6;\">target</span> <span style=\"color: #ffb86c;\">=</span> <span style=\"color: #50fa7b;\">20</span></div>\n                </div>\n                \n                <p style=\"font-weight: 800; font-size: 18px; color: #1a1a1a;\">Jika program mencari dari kiri ke kanan dan berhenti saat ketemu, berapa step count-nya?</p>\n              </div>\n            ",
+              "correct": "4",
+              "explanation": "Program mengecek satu per satu: 5, 8, 12, dan terakhir 20. Total ada 4 langkah."
+            },
+            {
+              "type": "input",
+              "title": "Latihan: Tebak Output 🕵️‍♂️",
+              "html": "\n              <div style=\"text-align: left; font-family: 'Outfit', sans-serif;\">\n                <div style=\"display: inline-block; background-color: #ffe600; padding: 10px 24px; border-radius: 12px; border: 3px solid #1a1a1a; box-shadow: 4px 4px 0px #1a1a1a; margin-bottom: 24px; margin-top: 10px;\">\n                  <h3 style=\"margin: 0; font-size: 22px; font-weight: 800; color: #1a1a1a;\">Latihan: Tebak Output 🕵️‍♂️</h3>\n                </div>\n                \n                <div style=\"background-color: #1a1a1a; padding: 24px; border-radius: 16px; font-family: 'Courier New', Courier, monospace; font-size: 16px; margin-bottom: 24px; border: 3px solid #ffe600; box-shadow: 4px 4px 0px #ffe600; color: #f8f8f2; line-height: 1.6; font-weight: bold;\">\n                  <div><span style=\"color: #ff79c6;\">numbers</span> <span style=\"color: #ffb86c;\">=</span> <span style=\"color: #f1fa8c;\">[</span><span style=\"color: #50fa7b;\">2</span><span style=\"color: #f8f8f2;\">,</span> <span style=\"color: #50fa7b;\">4</span><span style=\"color: #f8f8f2;\">,</span> <span style=\"color: #50fa7b;\">6</span><span style=\"color: #f8f8f2;\">,</span> <span style=\"color: #50fa7b;\">8</span><span style=\"color: #f8f8f2;\">,</span> <span style=\"color: #50fa7b;\">10</span><span style=\"color: #f1fa8c;\">]</span></div>\n                  <div style=\"margin-top: 8px;\"><span style=\"color: #ff79c6;\">target</span> <span style=\"color: #ffb86c;\">=</span> <span style=\"color: #50fa7b;\">6</span></div>\n                  <br>\n                  <div><span style=\"color: #ff79c6;\">steps</span> <span style=\"color: #ffb86c;\">=</span> <span style=\"color: #50fa7b;\">0</span></div>\n                  <br>\n                  <div><span style=\"color: #ff79c6;\">for</span> <span style=\"color: #f8f8f2;\">number</span> <span style=\"color: #ff79c6;\">in</span> <span style=\"color: #f8f8f2;\">numbers:</span></div>\n                  <div style=\"padding-left: 32px;\"><span style=\"color: #f8f8f2;\">steps</span> <span style=\"color: #ffb86c;\">+=</span> <span style=\"color: #50fa7b;\">1</span></div>\n                  <div style=\"padding-left: 32px;\"><span style=\"color: #ff79c6;\">if</span> <span style=\"color: #f8f8f2;\">number</span> <span style=\"color: #ffb86c;\">==</span> <span style=\"color: #f8f8f2;\">target:</span></div>\n                  <div style=\"padding-left: 64px; color: #ff79c6;\">break</div>\n                  <br>\n                  <div><span style=\"color: #8be9fd;\">print</span><span style=\"color: #f1fa8c;\">(</span><span style=\"color: #f8f8f2;\">steps</span><span style=\"color: #f1fa8c;\">)</span></div>\n                </div>\n                \n                <p style=\"font-weight: 800; font-size: 18px; color: #1a1a1a;\">Apa output-nya?</p>\n              </div>\n            ",
+              "correct": "3",
+              "explanation": "Program mengecek 2, 4, lalu 6. Saat di angka 6, loop melakukan `break` lalu menampilkan isi variabel steps yaitu 3."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "hs-3-3",
+    "sourceFile": "Highschool/sesi27-29/grup-hs-2-b/src/courseData.js",
+    "sourceKey": "3",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 909,
+      "endSeconds": 1617,
+      "bookmarks": [
+        {
+          "time": 910,
+          "label": "Prinsip DRY (Don't Repeat)"
+        },
+        {
+          "time": 981,
+          "label": "Looping untuk Efisiensi"
+        },
+        {
+          "time": 1200,
+          "label": "Menjumlahkan Data Array"
+        },
+        {
+          "time": 1402,
+          "label": "Menggunakan Function sum()"
+        },
+        {
+          "time": 1471,
+          "label": "Memilih Algoritma yang Tepat"
+        }
+      ],
+      "quizzes": [
+        {
+          "time": 1616,
+          "resume": false,
+          "questions": [
+            {
+              "type": "card_choice",
+              "title": "Latihan: Pilih Algoritma Lebih Efisien 🤔",
+              "html": "\n              <div style=\"text-align: left; font-family: 'Outfit', sans-serif;\">\n                <div style=\"background-color: #00c3ff; color: #000; font-weight: 800; font-size: 16px; padding: 6px 14px; border-radius: 8px; border: 2px solid #000; display: inline-block; margin-bottom: 15px; box-shadow: 2px 2px 0px #000;\">\n                  Kasus:\n                </div>\n                <span style=\"font-weight: 800; font-size: 18px; color: #1a1a1a; margin-left: 10px;\">Kamu ingin menghitung total nilai dari 30 siswa.</span>\n                <p style=\"font-weight: 800; font-size: 18px; color: #1a1a1a; margin-top: 20px; margin-bottom: 10px;\">Mana yang lebih efisien?</p>\n              </div>\n            ",
+              "cards": [
+                {
+                  "id": "A",
+                  "title": "Cara A:",
+                  "html": "Menulis semua nilai satu per satu<br>dalam operasi tambah."
+                },
+                {
+                  "id": "B",
+                  "title": "Cara B:",
+                  "html": "Menyimpan nilai dalam list, lalu<br>memakai loop atau <code style='font-family: monospace; background: rgba(0,0,0,0.1); padding: 2px 4px; border-radius: 4px;'>sum()</code>."
+                }
+              ],
+              "correct": "B",
+              "explanation": "Cara B jauh lebih efisien karena list dan loop memudahkan operasi perhitungan sekaligus, tidak perlu mengetik nama variabel satu per satu!"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "hs-3-4",
+    "sourceFile": "Highschool/sesi27-29/grup-hs-2-b/src/courseData.js",
+    "sourceKey": "4",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 1618,
+      "endSeconds": 1705,
+      "bookmarks": [
+        {
+          "time": 1618,
+          "label": "Instruksi Mini Project"
+        },
+        {
+          "time": 1648,
+          "label": "Syarat dan Panduan Pengerjaan"
+        }
+      ],
+      "quizzes": []
+    }
+  },
+  {
+    "stepId": "hs-3-5",
+    "sourceFile": "Highschool/sesi27-29/grup-hs-2-b/src/courseData.js",
+    "sourceKey": "5",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 1712,
+      "endSeconds": 3497,
+      "bookmarks": [
+        {
+          "time": 1712,
+          "label": "Apa itu Function?"
+        },
+        {
+          "time": 2085,
+          "label": "Membuat Function (def)"
+        },
+        {
+          "time": 2337,
+          "label": "Function dengan Parameter"
+        },
+        {
+          "time": 2575,
+          "label": "Multiple Parameter"
+        },
+        {
+          "time": 2723,
+          "label": "Mengembalikan Nilai (return)"
+        }
+      ],
+      "quizzes": [
+        {
+          "time": 2332,
+          "questions": [
+            {
+              "type": "input",
+              "html": "\n              <div class=\"code-block\" style=\"font-size: 16px; margin-bottom: 15px; background-color: #282a36; color: #f8f8f2; padding: 15px; border-radius: 8px; text-align: left; font-family: monospace;\">\n<span style=\"color: #ff79c6;\">def</span> <span style=\"color: #50fa7b;\">say_hello</span>():<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"color: #8be9fd;\">print</span>(<span style=\"color: #f1fa8c;\">\"Selamat pagi!\"</span>)<br><br>\n<span style=\"color: #f8f8f2;\">say_hello</span>()<br>\n<span style=\"color: #f8f8f2;\">say_hello</span>()\n              </div>\n              <p style=\"margin-bottom: 5px; font-weight: bold;\">Apa output-nya? (Ketikkan jawabanmu di bawah)</p>\n            ",
+              "correct": "Selamat pagi"
+            }
+          ]
+        },
+        {
+          "time": 2719,
+          "questions": [
+            {
+              "type": "input",
+              "html": "\n              <h3 style=\"margin-bottom: 10px; font-weight: bold; font-family: 'Fredoka', sans-serif;\">Latihan: Lengkapi Function 🧩</h3>\n              <p style=\"margin-bottom: 15px;\">Lengkapi kode berikut agar function bisa menampilkan nama dan skor.</p>\n              <div class=\"code-block\" style=\"font-size: 16px; margin-bottom: 15px; background-color: #282a36; color: #f8f8f2; padding: 15px; border-radius: 8px; text-align: left; font-family: monospace;\">\n<span style=\"color: #ff79c6;\">def</span> <span style=\"color: #50fa7b;\">show_score</span>(___, ___):<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"color: #8be9fd;\">print</span>(<span style=\"color: #f1fa8c;\">\"Nama:\"</span>, name)<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"color: #8be9fd;\">print</span>(<span style=\"color: #f1fa8c;\">\"Score:\"</span>, score)<br><br>\n<span style=\"color: #f8f8f2;\">show_score</span>(<span style=\"color: #f1fa8c;\">\"Dina\"</span>, <span style=\"color: #bd93f9;\">90</span>)\n              </div>\n              <p style=\"margin-bottom: 5px; font-weight: bold;\">Parameter apa yang harus diisi? (Ketikkan, pisahkan dengan koma)</p>\n            ",
+              "correct": "name, score"
+            }
+          ]
+        },
+        {
+          "time": 3134,
+          "questions": [
+            {
+              "title": "Latihan: Print atau Return? 🤔",
+              "html": "\n              <div style=\"background-color: #00c3ff; color: #000; font-weight: 800; font-size: 16px; padding: 6px 14px; border-radius: 8px; border: 2px solid #000; display: inline-block; margin-bottom: 10px; box-shadow: 2px 2px 0px #000;\">\n                Kasus 1:\n              </div>\n              <p style=\"font-weight: bold; font-size: 18px; color: #1a1a1a;\">Function hanya menampilkan pesan \"Selamat datang\".</p>\n              <p style=\"font-weight: bold; font-size: 18px; color: #1a1a1a; margin-top: 10px;\">Lebih cocok pakai apa?</p>\n            ",
+              "choices": [
+                "print()",
+                "return"
+              ],
+              "correct": "print()",
+              "explanation": "Karena tujuannya HANYA menampilkan pesan ke layar (tidak diproses lebih lanjut), maka menggunakan print()."
+            },
+            {
+              "title": "Latihan: Print atau Return? 🤔",
+              "html": "\n              <div style=\"background-color: #00c3ff; color: #000; font-weight: 800; font-size: 16px; padding: 6px 14px; border-radius: 8px; border: 2px solid #000; display: inline-block; margin-bottom: 10px; box-shadow: 2px 2px 0px #000;\">\n                Kasus 2:\n              </div>\n              <p style=\"font-weight: bold; font-size: 18px; color: #1a1a1a;\">Function menghitung total harga dan hasilnya mau dipakai untuk menghitung diskon.</p>\n              <p style=\"font-weight: bold; font-size: 18px; color: #1a1a1a; margin-top: 10px;\">Lebih cocok pakai apa?</p>\n            ",
+              "choices": [
+                "print()",
+                "return"
+              ],
+              "correct": "return",
+              "explanation": "Karena nilainya (total harga) akan digunakan lagi di proses selanjutnya (menghitung diskon), maka kita wajib menggunakan return."
+            }
+          ]
+        },
+        {
+          "time": 3321,
+          "questions": [
+            {
+              "type": "essay",
+              "minChars": 10,
+              "html": "\n              <h3 style=\"margin-bottom: 10px; font-weight: bold; font-family: 'Fredoka', sans-serif;\">Latihan: Tulis Kode Lengkap 📝</h3>\n              <p style=\"margin-bottom: 15px;\">Sekarang saatnya menggabungkan semuanya! Tulis kembali KODE LENGKAP untuk function <code>calculate_area</code> di bawah.</p>\n              <div class=\"code-block\" style=\"font-size: 16px; margin-bottom: 15px; background-color: #282a36; color: #f8f8f2; padding: 15px; border-radius: 8px; text-align: left; font-family: monospace;\">\n<span style=\"color: #ff79c6;\">def</span> <span style=\"color: #50fa7b;\">calculate_area</span>(___, ___):<br>\n&nbsp;&nbsp;&nbsp;&nbsp;area = length * width<br>\n&nbsp;&nbsp;&nbsp;&nbsp;____ area<br><br>\nresult = calculate_area(___, ___)<br>\n____(____)\n              </div>\n              <p style=\"margin-bottom: 5px; font-weight: bold;\">Tulis kodemu (lengkap) di kotak ini:</p>\n            "
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "hs-3-6",
+    "sourceFile": "Highschool/sesi27-29/grup-hs-2-b/src/courseData.js",
+    "sourceKey": "6",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 85,
+      "endSeconds": 723,
+      "bookmarks": [
+        {
+          "time": 86,
+          "label": "Konsep Modular Design"
+        },
+        {
+          "time": 207,
+          "label": "Tanpa Modular Design"
+        },
+        {
+          "time": 311,
+          "label": "Dengan Modular Design"
+        },
+        {
+          "time": 407,
+          "label": "Manfaat Modular Design"
+        },
+        {
+          "time": 474,
+          "label": "Reusable Code"
+        },
+        {
+          "time": 552,
+          "label": "Memperbaiki Bug"
+        }
+      ],
+      "quizzes": [
+        {
+          "time": 622,
+          "resume": false,
+          "questions": [
+            {
+              "type": "custom",
+              "title": "Latihan Debugging 🕵️‍♂️",
+              "html": "\n              <div style=\"text-align: left; font-family: 'Outfit', sans-serif;\">\n                <div style=\"display: inline-block; background-color: #ffe600; padding: 10px 24px; border-radius: 12px; border: 3px solid #1a1a1a; box-shadow: 4px 4px 0px #1a1a1a; margin-bottom: 24px; margin-top: 10px;\">\n                  <h3 style=\"margin: 0; font-size: 22px; font-weight: 800; color: #1a1a1a;\">Latihan Debugging 🕵️‍♂️</h3>\n                </div>\n                \n                <p style=\"font-weight: 800; font-size: 18px; color: #1a1a1a; margin-bottom: 16px;\">Perbaiki langsung baris kode yang rusak di bawah ini!</p>\n                \n                <div class=\"code-block\" style=\"background-color: #1a1a1a; padding: 24px; border-radius: 16px; font-family: 'Courier New', Courier, monospace; font-size: 16px; margin-bottom: 24px; border: 3px solid #ffe600; box-shadow: 4px 4px 0px #ffe600; color: #f8f8f2; line-height: 1.6; font-weight: bold; text-align: left;\">\n<span style=\"color: #ff79c6;\">def</span> <span style=\"color: #8be9fd;\">calculate_total</span>(<span style=\"color: #f1fa8c;\">price</span>, <span style=\"color: #f1fa8c;\">quantity</span>):<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<input id=\"tab6-inline-input\" type=\"text\" value=\"return harga + jumlah\" spellcheck=\"false\" style=\"background: rgba(255, 230, 0, 0.1); color: #f8f8f2; border: 1px dashed #ffe600; border-radius: 4px; padding: 4px 8px; outline: none; font-family: 'Courier New', Courier, monospace; font-size: 16px; width: 300px;\"><br><br>\n<span style=\"color: #ff79c6;\">total</span> <span style=\"color: #ffb86c;\">=</span> <span style=\"color: #8be9fd;\">calculate_total</span>(<span style=\"color: #50fa7b;\">10000</span>, <span style=\"color: #50fa7b;\">3</span>)<br>\n<span style=\"color: #8be9fd;\">print</span>(<span style=\"color: #f8f8f2;\">total</span>)\n                </div>\n                \n                <p style=\"font-weight: 800; font-size: 18px; color: #1a1a1a; margin-bottom: 16px;\">Output yang benar harusnya: 30000</p>\n                \n                <div>\n                  <button onclick=\"window.checkTab6Guess(this)\" style=\"background-color: #ffe600; color: #1a1a1a; font-weight: bold; padding: 12px 24px; border-radius: 8px; border: 2px solid #1a1a1a; cursor: pointer; font-family: 'Outfit', sans-serif; font-size: 16px; box-shadow: 3px 3px 0px #1a1a1a;\">Cek Jawaban!</button>\n                </div>\n                <div class=\"feedback\" style=\"display:none; margin-top:15px; padding:15px; border-radius:8px; border: 2px solid #1a1a1a; box-shadow: 3px 3px 0px #1a1a1a; font-weight:bold; font-family:'Outfit', sans-serif; font-size: 16px;\"></div>\n              </div>\n            "
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "hs-3-7",
+    "sourceFile": "Highschool/sesi27-29/grup-hs-2-b/src/courseData.js",
+    "sourceKey": "7",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 626,
+      "endSeconds": 721,
+      "bookmarks": [
+        {
+          "time": 626,
+          "label": "Instruksi Mini Project"
+        },
+        {
+          "time": 646,
+          "label": "Panduan Pengerjaan"
+        }
+      ],
+      "quizzes": []
+    }
+  },
+  {
+    "stepId": "hs-3-8",
+    "sourceFile": "Highschool/sesi27-29/grup-hs-2-b/src/courseData.js",
+    "sourceKey": "8",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 725,
+      "bookmarks": [
+        {
+          "time": 725,
+          "label": "Pengenalan Menabung & Bunga"
+        },
+        {
+          "time": 815,
+          "label": "Bunga Tunggal"
+        },
+        {
+          "time": 898,
+          "label": "Bunga Tunggal di Python"
+        },
+        {
+          "time": 1280,
+          "label": "Simulasi Bunga Tunggal"
+        },
+        {
+          "time": 1398,
+          "label": "Pengenalan Bunga Majemuk"
+        },
+        {
+          "time": 1607,
+          "label": "Bunga Majemuk di Python"
+        },
+        {
+          "time": 1941,
+          "label": "Tunggal vs Majemuk"
+        }
+      ],
+      "quizzes": [
+        {
+          "time": 1392,
+          "resume": false,
+          "questions": [
+            {
+              "type": "custom",
+              "title": "Latihan: Lengkapi Function 🧩",
+              "html": "\n              <div style=\"text-align: left; font-family: 'Outfit', sans-serif;\">\n                <div style=\"display: inline-block; background-color: #ffe600; padding: 10px 24px; border-radius: 12px; border: 3px solid #1a1a1a; box-shadow: 4px 4px 0px #1a1a1a; margin-bottom: 24px; margin-top: 10px;\">\n                  <h3 style=\"margin: 0; font-size: 22px; font-weight: 800; color: #1a1a1a;\">Latihan: Lengkapi Function 🧩</h3>\n                </div>\n                \n                <p style=\"font-weight: 800; font-size: 18px; color: #1a1a1a; margin-bottom: 16px;\">Lengkapi kode berikut.</p>\n                <p style=\"font-weight: 700; font-size: 16px; color: #e74c3c; margin-bottom: 16px; background-color: #fadbd8; padding: 10px; border-radius: 8px; border: 2px solid #e74c3c;\">💡 <strong>Clue:</strong> Rumusnya ada di video! Silakan tonton kembali video untuk mencari rumus menghitung Bunga Tunggal.</p>\n                \n                <div class=\"code-block\" style=\"background-color: #1a1a1a; padding: 24px; border-radius: 16px; font-family: 'Courier New', Courier, monospace; font-size: 16px; margin-bottom: 24px; border: 3px solid #ffe600; box-shadow: 4px 4px 0px #ffe600; color: #f8f8f2; line-height: 1.6; font-weight: bold; text-align: left;\">\n<span style=\"color: #ff79c6;\">def</span> <span style=\"color: #8be9fd;\">simple_interest</span>(<span style=\"color: #f1fa8c;\">principal</span>, <span style=\"color: #f1fa8c;\">rate</span>, <span style=\"color: #f1fa8c;\">years</span>):<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<input id=\"tab8-input-1\" type=\"text\" placeholder=\"rumus...\" spellcheck=\"false\" style=\"background: rgba(255, 230, 0, 0.1); color: #f8f8f2; border: 1px dashed #ffe600; border-radius: 4px; padding: 4px 8px; outline: none; font-family: 'Courier New', Courier, monospace; font-size: 16px; width: 320px;\"><br>\n&nbsp;&nbsp;&nbsp;&nbsp;<input id=\"tab8-input-2\" type=\"text\" placeholder=\"____\" spellcheck=\"false\" style=\"background: rgba(255, 230, 0, 0.1); color: #f8f8f2; border: 1px dashed #ffe600; border-radius: 4px; padding: 4px 8px; outline: none; font-family: 'Courier New', Courier, monospace; font-size: 16px; width: 80px;\"> interest<br><br>\n<span style=\"color: #ff79c6;\">result</span> <span style=\"color: #ffb86c;\">=</span> <span style=\"color: #8be9fd;\">simple_interest</span>(<span style=\"color: #50fa7b;\">200000</span>, <span style=\"color: #50fa7b;\">0.05</span>, <span style=\"color: #50fa7b;\">2</span>)<br>\n<span style=\"color: #8be9fd;\">print</span>(<span style=\"color: #f8f8f2;\">result</span>)\n                </div>\n                \n                <div>\n                  <button onclick=\"window.checkTab8Guess(this)\" style=\"background-color: #ffe600; color: #1a1a1a; font-weight: bold; padding: 12px 24px; border-radius: 8px; border: 2px solid #1a1a1a; cursor: pointer; font-family: 'Outfit', sans-serif; font-size: 16px; box-shadow: 3px 3px 0px #1a1a1a;\">Cek Jawaban!</button>\n                </div>\n                <div class=\"feedback\" style=\"display:none; margin-top:15px; padding:15px; border-radius:8px; border: 2px solid #1a1a1a; box-shadow: 3px 3px 0px #1a1a1a; font-weight:bold; font-family:'Outfit', sans-serif; font-size: 16px;\"></div>\n              </div>\n            "
+            }
+          ]
+        },
+        {
+          "time": 2052,
+          "resume": false,
+          "questions": [
+            {
+              "type": "custom",
+              "title": "Latihan: Tebak Hasil Tahun Pertama 🧠",
+              "html": "\n              <div style=\"text-align: left; font-family: 'Outfit', sans-serif;\">\n                <div style=\"display: inline-block; background-color: #ffe600; padding: 10px 24px; border-radius: 12px; border: 3px solid #1a1a1a; box-shadow: 4px 4px 0px #1a1a1a; margin-bottom: 24px; margin-top: 10px;\">\n                  <h3 style=\"margin: 0; font-size: 22px; font-weight: 800; color: #1a1a1a;\">Latihan: Tebak Hasil Tahun Pertama 🧠</h3>\n                </div>\n                \n                <p style=\"font-weight: 800; font-size: 18px; color: #1a1a1a; margin-bottom: 16px;\">Perhatikan potongan kode berikut:</p>\n                \n                <div class=\"code-block\" style=\"background-color: #1a1a1a; padding: 24px; border-radius: 16px; font-family: 'Courier New', Courier, monospace; font-size: 16px; margin-bottom: 24px; border: 3px solid #ffe600; box-shadow: 4px 4px 0px #ffe600; color: #f8f8f2; line-height: 1.6; font-weight: bold; text-align: left;\">\n<span style=\"color: #f8f8f2;\">money</span> <span style=\"color: #ffb86c;\">=</span> <span style=\"color: #50fa7b;\">200000</span><br>\n<span style=\"color: #f8f8f2;\">rate</span> <span style=\"color: #ffb86c;\">=</span> <span style=\"color: #50fa7b;\">0.05</span><br><br>\n<span style=\"color: #f8f8f2;\">interest</span> <span style=\"color: #ffb86c;\">=</span> <span style=\"color: #f8f8f2;\">money</span> <span style=\"color: #ffb86c;\">*</span> <span style=\"color: #f8f8f2;\">rate</span><br>\n<span style=\"color: #f8f8f2;\">money</span> <span style=\"color: #ffb86c;\">=</span> <span style=\"color: #f8f8f2;\">money</span> <span style=\"color: #ffb86c;\">+</span> <span style=\"color: #f8f8f2;\">interest</span><br><br>\n<span style=\"color: #8be9fd;\">print</span>(<span style=\"color: #f8f8f2;\">money</span>)\n                </div>\n                \n                <div style=\"display: inline-block; background-color: #00bfff; padding: 8px 16px; border-radius: 8px; border: 3px solid #1a1a1a; box-shadow: 3px 3px 0px #1a1a1a; margin-bottom: 16px;\">\n                  <h4 style=\"margin: 0; font-size: 18px; font-weight: 800; color: #1a1a1a;\">Berapakah nilai yang akan tercetak di layar?</h4>\n                </div>\n                \n                <div style=\"display: flex; gap: 10px; align-items: stretch;\">\n                  <input id=\"tab8-quiz2-input\" type=\"text\" placeholder=\"Ketik angka hasil output...\" style=\"flex: 1; padding: 12px; font-size: 16px; font-family: 'Outfit', sans-serif; border: 2px solid #1a1a1a; border-radius: 8px; outline: none;\">\n                  <button onclick=\"window.checkTab8Quiz2Guess(this)\" style=\"background-color: #ffe600; color: #1a1a1a; font-weight: bold; padding: 0 24px; border-radius: 8px; border: 2px solid #1a1a1a; cursor: pointer; font-family: 'Outfit', sans-serif; font-size: 16px; box-shadow: 3px 3px 0px #1a1a1a;\">Cek Jawaban</button>\n                </div>\n                <div class=\"feedback\" style=\"display:none; margin-top:15px; padding:15px; border-radius:8px; border: 2px solid #1a1a1a; box-shadow: 3px 3px 0px #1a1a1a; font-weight:bold; font-family:'Outfit', sans-serif; font-size: 16px;\"></div>\n              </div>\n            "
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "hs-4-1",
+    "sourceFile": "Highschool/sesi30-32/grup-hs-2-c/src/courseData.js",
+    "sourceKey": "4",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 1714,
+      "endSeconds": 2298,
+      "bookmarks": [
+        {
+          "time": 1714,
+          "label": "Ketika Program Python Error 🛑"
+        },
+        {
+          "time": 1808,
+          "label": "Tiga Jenis Error yang Sering Muncul 🐛"
+        },
+        {
+          "time": 2027,
+          "label": "Mengenal Penyelamat: try-except 🛡️"
+        },
+        {
+          "time": 2137,
+          "label": "Contoh Menangani ValueError 🧯"
+        }
+      ],
+      "quizzes": [
+        {
+          "time": 1882,
+          "resume": false,
+          "questions": [
+            {
+              "type": "custom",
+              "title": "Jenis Error yang Sering Muncul 🐛",
+              "html": "\n              <div style=\"text-align: left; font-family: 'Outfit', sans-serif;\">\n                <div style=\"display: inline-block; background-color: #ffe600; padding: 10px 24px; border-radius: 12px; border: 3px solid #1a1a1a; box-shadow: 4px 4px 0px #1a1a1a; margin-bottom: 24px; margin-top: 10px;\">\n                  <h3 style=\"margin: 0; font-size: 22px; font-weight: 800; color: #1a1a1a;\">Jenis Error yang Sering Muncul 🐛</h3>\n                </div>\n                <p style=\"font-weight: 800; font-size: 18px; color: #1a1a1a; margin-bottom: 16px;\">Error (exception) di Python terjadi ketika kode melanggar aturan sistem saat berjalan.</p>\n                <table style=\"width: 100%; border-collapse: collapse; border: 4px solid #1a1a1a; box-shadow: 6px 6px 0px #1a1a1a; background: white; margin-bottom: 24px;\">\n                  <thead>\n                    <tr style=\"background-color: #ffe600; border-bottom: 4px solid #1a1a1a;\">\n                      <th style=\"padding: 15px; border-right: 4px solid #1a1a1a; font-size: 18px; font-weight: 900; width: 40%;\">Tipe Error</th>\n                      <th style=\"padding: 15px; font-size: 18px; font-weight: 900;\">Penyebabnya</th>\n                    </tr>\n                  </thead>\n                  <tbody>\n                    <tr style=\"border-bottom: 2px solid #1a1a1a;\">\n                      <td style=\"padding: 15px; border-right: 4px solid #1a1a1a; text-align: center;\">\n                        <div class=\"drop-zone\" data-expected=\"ValueError\" style=\"min-height: 50px; border: 3px dashed #ccc; border-radius: 8px; display: flex; align-items: center; justify-content: center; background: #fafafa;\">\n                          <span style=\"color: #aaa; font-weight: bold;\">Tarik ke sini</span>\n                        </div>\n                      </td>\n                      <td style=\"padding: 15px; font-weight: bold; font-size: 16px;\">Tipe data tidak bisa diubah secara paksa (misal: huruf diubah ke int).</td>\n                    </tr>\n                    <tr style=\"border-bottom: 2px solid #1a1a1a;\">\n                      <td style=\"padding: 15px; border-right: 4px solid #1a1a1a; text-align: center;\">\n                        <div class=\"drop-zone\" data-expected=\"TypeError\" style=\"min-height: 50px; border: 3px dashed #ccc; border-radius: 8px; display: flex; align-items: center; justify-content: center; background: #fafafa;\">\n                          <span style=\"color: #aaa; font-weight: bold;\">Tarik ke sini</span>\n                        </div>\n                      </td>\n                      <td style=\"padding: 15px; font-weight: bold; font-size: 16px;\">Melakukan operasi pada dua tipe data yang tidak cocok (misal: string + int).</td>\n                    </tr>\n                    <tr>\n                      <td style=\"padding: 15px; border-right: 4px solid #1a1a1a; text-align: center;\">\n                        <div class=\"drop-zone\" data-expected=\"ZeroDivisionError\" style=\"min-height: 50px; border: 3px dashed #ccc; border-radius: 8px; display: flex; align-items: center; justify-content: center; background: #fafafa;\">\n                          <span style=\"color: #aaa; font-weight: bold;\">Tarik ke sini</span>\n                        </div>\n                      </td>\n                      <td style=\"padding: 15px; font-weight: bold; font-size: 16px;\">Membagi suatu angka dengan angka 0.</td>\n                    </tr>\n                  </tbody>\n                </table>\n                <div class=\"drag-container\" style=\"display: flex; gap: 15px; justify-content: center; margin-bottom: 20px;\">\n                  <div class=\"drag-item\" draggable=\"true\" data-type=\"ZeroDivisionError\" style=\"background-color: #00c6ff; padding: 10px 20px; border: 3px solid #1a1a1a; border-radius: 8px; font-weight: bold; font-family: 'Courier New', Courier, monospace; cursor: grab; box-shadow: 3px 3px 0px #1a1a1a;\">ZeroDivisionError</div>\n                  <div class=\"drag-item\" draggable=\"true\" data-type=\"ValueError\" style=\"background-color: #00c6ff; padding: 10px 20px; border: 3px solid #1a1a1a; border-radius: 8px; font-weight: bold; font-family: 'Courier New', Courier, monospace; cursor: grab; box-shadow: 3px 3px 0px #1a1a1a;\">ValueError</div>\n                  <div class=\"drag-item\" draggable=\"true\" data-type=\"TypeError\" style=\"background-color: #00c6ff; padding: 10px 20px; border: 3px solid #1a1a1a; border-radius: 8px; font-weight: bold; font-family: 'Courier New', Courier, monospace; cursor: grab; box-shadow: 3px 3px 0px #1a1a1a;\">TypeError</div>\n                </div>\n                <div style=\"text-align: center;\">\n                  <button id=\"check-drag-btn\" style=\"background-color: #50fa7b; padding: 12px 30px; border: 3px solid #1a1a1a; border-radius: 12px; font-weight: 900; font-size: 18px; cursor: pointer; box-shadow: 4px 4px 0px #1a1a1a; transition: all 0.2s;\">Periksa Jawaban</button>\n                </div>\n                <div id=\"drag-feedback\" style=\"margin-top: 15px; font-weight: bold; font-size: 16px; text-align: center;\"></div>\n              </div>\n            "
+            }
+          ]
+        },
+        {
+          "time": 2297,
+          "resume": false,
+          "questions": [
+            {
+              "type": "custom",
+              "title": "Latihan: Tebak Jenis Error! 🕵️‍♂️",
+              "html": "\n      <div style=\"text-align: left; font-family: 'Outfit', sans-serif;\">\n        <div style=\"display: inline-block; background-color: #ffe600; padding: 10px 24px; border-radius: 12px; border: 3px solid #1a1a1a; box-shadow: 4px 4px 0px #1a1a1a; margin-bottom: 24px; margin-top: 10px;\">\n          <h3 style=\"margin: 0; font-size: 22px; font-weight: 800; color: #1a1a1a;\">Latihan: Tebak Jenis Error! 🕵️‍♂️</h3>\n        </div>\n        <p style=\"font-weight: 800; font-size: 18px; color: #1a1a1a; margin-bottom: 16px;\">Perhatikan baris kode Python berikut:</p>\n        <div class=\"code-block\" style=\"background-color: #1a1a1a; padding: 24px; border-radius: 16px; font-family: 'Courier New', Courier, monospace; font-size: 16px; margin-bottom: 24px; border: 3px solid #ffe600; box-shadow: 4px 4px 0px #ffe600; color: #f8f8f2; line-height: 1.6; font-weight: bold; text-align: left;\">\n          <span style=\"color: #f8f8f2;\">number </span><span style=\"color: #ff79c6;\">=</span> <span style=\"color: #8be9fd;\">int</span>(<span style=\"color: #f1fa8c;\">\"abc\"</span>)\n        </div>\n        <div style=\"background-color: #00c6ff; padding: 8px 16px; border-radius: 8px; border: 3px solid #1a1a1a; display: inline-block; margin-bottom: 16px;\">\n          <h4 style=\"margin: 0; font-size: 18px; font-weight: 800; color: #1a1a1a;\">Jika baris di atas dijalankan, error jenis apa yang akan muncul?</h4>\n        </div>\n      </div>\n    ",
+              "choices": [
+                "ValueError 💥",
+                "TypeError 💥",
+                "ZeroDivisionError 💥"
+              ],
+              "correct": "ValueError 💥",
+              "explanation": "Benar! Karena teks 'abc' tidak bisa diubah menjadi angka bulat, maka akan menghasilkan ValueError."
+            },
+            {
+              "type": "input",
+              "title": "Latihan: Lengkapi Blok `try-except` 🧩",
+              "html": "\n              <div style=\"text-align: left; font-family: 'Outfit', sans-serif;\">\n                <div style=\"display: inline-block; background-color: #ffe600; padding: 10px 24px; border-radius: 12px; border: 3px solid #1a1a1a; box-shadow: 4px 4px 0px #1a1a1a; margin-bottom: 24px; margin-top: 10px;\">\n                  <h3 style=\"margin: 0; font-size: 22px; font-weight: 800; color: #1a1a1a;\">Latihan: Lengkapi Blok `try-except` 🧩</h3>\n                </div>\n                <p style=\"font-weight: 800; font-size: 18px; color: #1a1a1a; margin-bottom: 16px;\">Ketik potongan kode yang harus mengisi bagian kuning di bawah ini:</p>\n                <div class=\"code-block\" style=\"background-color: #1a1a1a; padding: 24px; border-radius: 16px; font-family: 'Courier New', Courier, monospace; font-size: 16px; margin-bottom: 24px; border: 3px solid #ffe600; box-shadow: 4px 4px 0px #ffe600; color: #f8f8f2; line-height: 1.6; font-weight: bold; text-align: left;\">\n<span style=\"color: #ff79c6;\">try</span>:<br>\n&nbsp;&nbsp;&nbsp;&nbsp;amount <span style=\"color: #ff79c6;\">=</span> <span style=\"color: #8be9fd;\">int</span>(<span style=\"color: #8be9fd;\">input</span>(<span style=\"color: #f1fa8c;\">\"Nominal: \"</span>))<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"color: #8be9fd;\">print</span>(amount)<br>\n<span style=\"color: #ff79c6;\">except</span> <span style=\"background-color: #ffe600; color: #1a1a1a; padding: 2px 10px; border-radius: 4px;\">____________________</span>:<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"color: #8be9fd;\">print</span>(<span style=\"color: #f1fa8c;\">\"Nominal harus berupa angka.\"</span>)\n                </div>\n              </div>\n            ",
+              "correct": [
+                "ValueError",
+                "valueerror"
+              ],
+              "explanation": "Benar! ValueError digunakan untuk menangkap error karena isi datanya tidak sesuai (misal: huruf diubah ke angka)."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "hs-4-2",
+    "sourceFile": "Highschool/sesi30-32/grup-hs-2-c/src/courseData.js",
+    "sourceKey": "5",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 2301,
+      "endSeconds": 2356,
+      "bookmarks": [],
+      "quizzes": [
+        {
+          "time": 2356,
+          "resume": false,
+          "questions": [
+            {
+              "type": "pyscript",
+              "title": "Mini Project: Safe Input with Error Handling 🛡️",
+              "html": "\n            <p style=\"font-size: 18px; margin-bottom: 10px;\">Sekarang, mari kita tingkatkan keamanan program pencatat transaksi dengan menambahkan penanganan error (try-except).</p>\n            <div style=\"background-color: rgba(0, 198, 255, 0.15); border: 4px solid var(--black); padding: 25px; border-radius: 16px; box-shadow: 6px 6px 0px var(--black); margin: 20px 0;\">\n              <h3 style=\"margin-bottom: 10px; font-size: 20px;\">Aturan Tambahan:</h3>\n              <ul style=\"padding-left: 25px; font-size: 18px; line-height: 1.6;\">\n                <li>Program harus tetap melakukan sanitasi spasi & lower.</li>\n                <li>Validasi nama (tidak boleh kosong) dan jenis (harus pemasukan/pengeluaran).</li>\n                <li><span style=\"background-color: #00c6ff; padding: 2px 6px; border-radius: 4px; font-weight: bold; border: 2px solid #1a1a1a;\">Gunakan try-except</span> saat mengambil input nominal transaksi agar program tidak crash ketika diisi huruf.</li>\n              </ul>\n            </div>\n          ",
+              "initialCode": "def clean_text(text):\n    return text.strip().lower()\n\ndef validate_type(transaction_type):\n    transaction_type = clean_text(transaction_type)\n    return transaction_type == \"pemasukan\" or transaction_type == \"pengeluaran\"\n\ndef validate_amount(amount):\n    return amount > 0\n\nname = input(\"Nama transaksi: \").strip()\ntransaction_type = clean_text(input(\"Jenis transaksi: \"))\n\n# Tambahkan try-except di bawah ini!\namount = int(input(\"Nominal transaksi: \"))\nif name == \"\":\n    print(\"Nama transaksi tidak boleh kosong.\")\nelif not validate_type(transaction_type):\n    print(\"Jenis transaksi tidak valid.\")\nelif not validate_amount(amount):\n    print(\"Nominal harus lebih dari 0.\")\nelse:\n    transaction = {\"name\": name, \"type\": transaction_type, \"amount\": amount}\n    print(\"Transaksi berhasil disimpan:\", transaction)",
+              "expectedCode": "def clean_text(text):\n    return text.strip().lower()\n\ndef validate_type(transaction_type):\n    transaction_type = clean_text(transaction_type)\n    return transaction_type == \"pemasukan\" or transaction_type == \"pengeluaran\"\n\ndef validate_amount(amount):\n    return amount > 0\n\nname = input(\"Nama transaksi: \").strip()\ntransaction_type = clean_text(input(\"Jenis transaksi: \"))\n\ntry:\n    amount = int(input(\"Nominal transaksi: \"))\n    if name == \"\":\n        print(\"Nama transaksi tidak boleh kosong.\")\n    elif not validate_type(transaction_type):\n        print(\"Jenis transaksi tidak valid.\")\n    elif not validate_amount(amount):\n        print(\"Nominal harus lebih dari 0.\")\n    else:\n        transaction = {\"name\": name, \"type\": transaction_type, \"amount\": amount}\n        print(\"Transaksi berhasil disimpan:\", transaction)\nexcept ValueError:\n    print(\"Nominal harus berupa angka.\")",
+              "requiredCodeIncludes": [
+                "try:",
+                "except ValueError",
+                "int(input"
+              ],
+              "successKeywords": [
+                "Transaksi berhasil disimpan",
+                "Snack",
+                "pengeluaran",
+                "10000"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "hs-4-3",
+    "sourceFile": "Highschool/sesi30-32/grup-hs-2-c/src/courseData.js",
+    "sourceKey": "6",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 2362,
+      "endSeconds": 2949,
+      "bookmarks": [
+        {
+          "time": 2362,
+          "label": "Apa Itu Debugging? 🕵️‍♂️"
+        },
+        {
+          "time": 2520,
+          "label": "Rantai Function Program Belanja 🔗"
+        },
+        {
+          "time": 2681,
+          "label": "Function Saling Bergantung 🧩"
+        },
+        {
+          "time": 2721,
+          "label": "Langkah Debugging Step-by-Step ✅"
+        },
+        {
+          "time": 2800,
+          "label": "Debugging dengan print() 🖨️"
+        }
+      ],
+      "quizzes": [
+        {
+          "time": 2948,
+          "resume": false,
+          "questions": [
+            {
+              "type": "custom",
+              "title": "Latihan: Cari Sumber Bug 🔎",
+              "html": "\n              <div style=\"text-align: left; font-family: 'Outfit', sans-serif;\">\n                <div style=\"text-align: center; margin-bottom: 24px; margin-top: 10px;\">\n                  <span style=\"display: inline-block; background-color: #ffe600; padding: 10px 24px; border-radius: 12px; border: 3px solid #1a1a1a; box-shadow: 4px 4px 0px #1a1a1a; font-size: 22px; font-weight: 800; color: #1a1a1a;\">LATIHAN</span>\n                </div>\n                <p style=\"font-weight: 800; font-size: 18px; color: #1a1a1a; margin-bottom: 16px;\">Di bawah ini terdapat rantai function untuk menghitung harga akhir belanjaan:</p>\n                <div class=\"code-block\" style=\"background-color: #1a1a1a; padding: 24px; border-radius: 16px; font-family: 'Courier New', Courier, monospace; font-size: 16px; margin-bottom: 24px; border: 3px solid #ffe600; box-shadow: 4px 4px 0px #ffe600; color: #f8f8f2; line-height: 1.6; font-weight: bold; text-align: left;\">\n<span style=\"color: #ff79c6;\">def</span> <span style=\"color: #00c6ff;\">get_total</span>(price, quantity):<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"color: #ff79c6;\">return</span> price + quantity<br><br>\n<span style=\"color: #ff79c6;\">def</span> <span style=\"color: #00c6ff;\">get_discount</span>(total):<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"color: #ff79c6;\">return</span> total * <span style=\"color: #bd93f9;\">0.1</span><br><br>\n<span style=\"color: #ff79c6;\">def</span> <span style=\"color: #00c6ff;\">get_final_price</span>(total, discount):<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"color: #ff79c6;\">return</span> total - discount\n                </div>\n                <div style=\"background-color: #00c6ff; padding: 8px 16px; border-radius: 8px; border: 3px solid #1a1a1a; display: inline-block; margin-bottom: 16px;\">\n                  <h4 style=\"margin: 0; font-size: 18px; font-weight: 800; color: #1a1a1a;\">Pertanyaan: Di function manakah bug tersebut berada?</h4>\n                </div>\n              </div>\n            ",
+              "choices": [
+                "get_total() ⚙️",
+                "get_discount() ⚙️",
+                "get_final_price() ⚙️"
+              ],
+              "correct": "get_total() ⚙️",
+              "explanation": "Benar! Seharusnya total harga dihitung dengan perkalian (price * quantity), bukan pertambahan."
+            },
+            {
+              "type": "input",
+              "title": "Latihan: Perbaiki Nilai Diskon 🛠️",
+              "html": "\n              <div style=\"text-align: left; font-family: 'Outfit', sans-serif;\">\n                <div style=\"display: inline-block; background-color: #ffe600; padding: 10px 24px; border-radius: 12px; border: 3px solid #1a1a1a; box-shadow: 4px 4px 0px #1a1a1a; margin-bottom: 24px; margin-top: 10px;\">\n                  <h3 style=\"margin: 0; font-size: 22px; font-weight: 800; color: #1a1a1a;\">Latihan: Perbaiki Nilai Diskon 🛠️</h3>\n                </div>\n                <p style=\"font-weight: 800; font-size: 18px; color: #1a1a1a; margin-bottom: 16px;\">Perhatikan fungsi diskon berikut yang salah menghitung diskon sebesar 10%:</p>\n                <div class=\"code-block\" style=\"background-color: #1a1a1a; padding: 24px; border-radius: 16px; font-family: 'Courier New', Courier, monospace; font-size: 16px; margin-bottom: 24px; border: 3px solid #ffe600; box-shadow: 4px 4px 0px #ffe600; color: #f8f8f2; line-height: 1.6; font-weight: bold; text-align: left;\">\n<span style=\"color: #ff79c6;\">def</span> <span style=\"color: #00c6ff;\">get_discount</span>(total):<br>\n&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"color: #ff79c6;\">return</span> total * <span style=\"background-color: #ffe600; color: #1a1a1a; padding: 2px 6px; border-radius: 4px;\">10</span> <span style=\"color: #6272a4;\"># Diskon terlalu besar!</span>\n                </div>\n                <div style=\"background-color: #00c6ff; padding: 8px 16px; border-radius: 8px; border: 3px solid #1a1a1a; display: inline-block; margin-bottom: 16px;\">\n                  <h4 style=\"margin: 0; font-size: 18px; font-weight: 800; color: #1a1a1a;\">Ketik angka perkalian yang benar untuk mewakili diskon 10% (dalam desimal):</h4>\n                </div>\n              </div>\n            ",
+              "correct": [
+                "0.1",
+                "0.10",
+                ".1"
+              ],
+              "explanation": "Tepat sekali! Diskon 10% sama dengan 10/100 atau 0.1."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "hs-4-4",
+    "sourceFile": "Highschool/sesi30-32/grup-hs-2-c/src/courseData.js",
+    "sourceKey": "7",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 2959,
+      "endSeconds": 2971,
+      "bookmarks": [],
+      "quizzes": [
+        {
+          "time": 99999,
+          "resume": false,
+          "questions": [
+            {
+              "type": "pyscript",
+              "title": "Mini Project: Debugging Program Belanja 🛍️🕵️‍♂️",
+              "html": "\n            <p style=\"font-size: 18px; margin-bottom: 10px;\">Temukan dan perbaiki semua bug dari program belanja berikut agar menghasilkan output yang benar:</p>\n            <div style=\"background-color: rgba(0, 198, 255, 0.15); border: 4px solid var(--black); padding: 25px; border-radius: 16px; box-shadow: 6px 6px 0px var(--black); margin: 20px 0;\">\n              <ul style=\"padding-left: 25px; font-size: 18px; line-height: 1.6; list-style: none;\">\n                <li style=\"margin-bottom: 10px;\"><span style=\"background-color: #00c6ff; padding: 2px 6px; border-radius: 4px; font-weight: bold; border: 2px solid #1a1a1a; margin-right: 10px;\">Target Bug 1:</span> Total belanja harus dikali (*), bukan ditambah (+).</li>\n                <li style=\"margin-bottom: 10px;\"><span style=\"background-color: #00c6ff; padding: 2px 6px; border-radius: 4px; font-weight: bold; border: 2px solid #1a1a1a; margin-right: 10px;\">Target Bug 2:</span> Nilai diskon member 10% harus dikali 0.1, bukan 10.</li>\n                <li><span style=\"background-color: #00c6ff; padding: 2px 6px; border-radius: 4px; font-weight: bold; border: 2px solid #1a1a1a; margin-right: 10px;\">Target Bug 3:</span> Harga akhir didapatkan dari total - discount, bukan sebaliknya.</li>\n              </ul>\n            </div>\n          ",
+              "initialCode": "def get_total(price, quantity):\n    return price + quantity\n\ndef get_discount(total, member):\n    if member:\n        return total * 10\n    else:\n        return 0\n\ndef get_final_price(total, discount):\n    return discount - total",
+              "expectedCode": "def get_total(price, quantity):\n    return price * quantity\n\ndef get_discount(total, member):\n    if member:\n        return total * 0.1\n    else:\n        return 0\n\ndef get_final_price(total, discount):\n    return total - discount",
+              "validationTest": "print(get_total(30000, 2))\nprint(get_discount(60000, True))\nprint(get_final_price(60000, 6000))",
+              "expectedOutput": "60000\n6000.0\n54000"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "hs-4-5",
+    "sourceFile": "Highschool/sesi30-32/grup-hs-2-c/src/courseData.js",
+    "sourceKey": "8",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 3000,
+      "endSeconds": 3893,
+      "bookmarks": [
+        {
+          "time": 3000,
+          "label": "Apa Itu Dictionary di Python? 📖"
+        },
+        {
+          "time": 3200,
+          "label": "Membuat Dictionary Transaksi 🧱"
+        },
+        {
+          "time": 3414,
+          "label": "List of Dictionaries 🗂️"
+        },
+        {
+          "time": 3582,
+          "label": "Menghitung Pemasukan dan Pengeluaran 🧮"
+        },
+        {
+          "time": 3660,
+          "label": "Menambahkan Transaksi Baru ➕"
+        },
+        {
+          "time": 3830,
+          "label": "Function untuk Merangkum Transaksi 📊"
+        }
+      ],
+      "quizzes": [
+        {
+          "time": 3414,
+          "resume": false,
+          "questions": [
+            {
+              "type": "pyscript",
+              "title": "Pemahaman: Dictionary & Keys 🔑",
+              "html": "\n                  <div style=\"text-align: left; font-family: 'Outfit', sans-serif;\">\n                    <p style=\"font-size: 18px; font-weight: 800; color: #1a1a1a;\">Dictionary di Python dibungkus oleh kurung kurawal <code>{}</code> dan memiliki pasangan <strong>key</strong> dan <strong>value</strong>.</p>\n                    <p style=\"font-size: 16px; color: #1a1a1a; margin-bottom: 16px;\">Di bawah ini ada dictionary bernama <code>transaction</code>. Untuk mencetak nilainya, kita harus memanggil <strong>key</strong>-nya menggunakan kurung siku <code>[]</code>.</p>\n                    <div style=\"background-color: #00c6ff; padding: 10px 16px; border-radius: 8px; border: 3px solid #1a1a1a; display: inline-block; margin-bottom: 16px;\">\n                      <h4 style=\"margin: 0; font-size: 16px; font-weight: 800; color: #1a1a1a;\">Tugasmu: Ketik kode untuk mencetak isi dari key <code>\"name\"</code>, <code>\"type\"</code>, dan <code>\"amount\"</code> secara berurutan dengan fungsi <code>print()</code>!</h4>\n                    </div>\n                  </div>\n                ",
+              "initialCode": "transaction = {\n    \"name\": \"Beli buku\",\n    \"type\": \"pengeluaran\",\n    \"amount\": 25000\n}\n\n# Tulis kode print() kamu di bawah ini!\n",
+              "expectedCode": "transaction = {\n    \"name\": \"Beli buku\",\n    \"type\": \"pengeluaran\",\n    \"amount\": 25000\n}\n\nprint(transaction[\"name\"])\nprint(transaction[\"type\"])\nprint(transaction[\"amount\"])",
+              "allowAnyOutput": true
+            }
+          ]
+        },
+        {
+          "time": 3893,
+          "resume": false,
+          "questions": [
+            {
+              "type": "custom",
+              "title": "Latihan: Data Structures 🧩",
+              "html": "\n                  <div style=\"text-align: left; font-family: 'Outfit', sans-serif;\">\n                    <div style=\"text-align: center; margin-bottom: 24px; margin-top: 10px;\">\n                      <div style=\"display: inline-block; background-color: #00c6ff; padding: 10px 24px; border-radius: 12px; border: 3px solid #1a1a1a; box-shadow: 4px 4px 0px #1a1a1a;\">\n                        <h3 style=\"margin: 0; font-size: 22px; font-weight: 800; color: #ffffff; text-shadow: 1px 1px 0 #1a1a1a, -1px -1px 0 #1a1a1a, 1px -1px 0 #1a1a1a, -1px 1px 0 #1a1a1a;\">DATA STRUCTURES</h3>\n                      </div>\n                      <div style=\"margin-top: -15px;\">\n                        <span style=\"display: inline-block; background-color: #ffe600; padding: 4px 16px; border-radius: 12px; border: 3px solid #1a1a1a; font-size: 14px; font-weight: 800; color: #1a1a1a;\">LATIHAN</span>\n                      </div>\n                    </div>\n                    <p style=\"font-weight: 800; font-size: 18px; color: #1a1a1a; margin-bottom: 16px;\">Perhatikan potongan kode berikut:</p>\n                    <div class=\"code-block\" style=\"background-color: #1a1a1a; padding: 24px; border-radius: 16px; font-family: 'Courier New', Courier, monospace; font-size: 16px; margin-bottom: 24px; border: 3px solid #ffe600; box-shadow: 4px 4px 0px #ffe600; color: #f8f8f2; line-height: 1.6; font-weight: bold; text-align: left;\">\n<span style=\"color: #f8f8f2;\">transaction = {</span><br>\n<span style=\"color: #f8f8f2;\">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=\"color: #50fa7b;\">\"name\"</span><span style=\"color: #f8f8f2;\">: </span><span style=\"color: #50fa7b;\">\"Beli snack\"</span><span style=\"color: #f8f8f2;\">,</span><br>\n<span style=\"color: #f8f8f2;\">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=\"color: #50fa7b;\">\"type\"</span><span style=\"color: #f8f8f2;\">: </span><span style=\"color: #50fa7b;\">\"pengeluaran\"</span><span style=\"color: #f8f8f2;\">,</span><br>\n<span style=\"color: #f8f8f2;\">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=\"color: #50fa7b;\">\"amount\"</span><span style=\"color: #f8f8f2;\">: </span><span style=\"color: #50fa7b;\">10000</span><br>\n<span style=\"color: #f8f8f2;\">}</span><br><br>\n<span style=\"color: #8be9fd;\">print</span><span style=\"color: #f8f8f2;\">(transaction[</span><span style=\"color: #50fa7b;\">\"amount\"</span><span style=\"color: #f8f8f2;\">])</span>\n                    </div>\n                    <div style=\"background-color: #00c6ff; padding: 8px 16px; border-radius: 8px; border: 3px solid #1a1a1a; display: inline-block; margin-bottom: 16px;\">\n                      <h4 style=\"margin: 0; font-size: 18px; font-weight: 800; color: #1a1a1a;\">Berapa nilai output yang dicetak oleh baris di atas?</h4>\n                    </div>\n                  </div>\n                ",
+              "choices": [
+                "\"Beli snack\" 💬",
+                "\"pengeluaran\" 💬",
+                "10000 🔢"
+              ],
+              "correct": "10000 🔢",
+              "explanation": "Benar sekali! Karena kita mencetak data dengan key 'amount', maka outputnya adalah 10000."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "hs-4-6",
+    "sourceFile": "Highschool/sesi30-32/grup-hs-2-c/src/courseData.js",
+    "sourceKey": "9",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 3931,
+      "endSeconds": 4408,
+      "bookmarks": [
+        {
+          "time": 3932,
+          "label": "Mengapa Data Keuangan Perlu Dianalisis? 🔎"
+        },
+        {
+          "time": 3960,
+          "label": "Dataset Pengeluaran Bulanan 📝"
+        },
+        {
+          "time": 4026,
+          "label": "Menghitung Total dengan sum() ➕"
+        },
+        {
+          "time": 4081,
+          "label": "Mencari Terbesar dan Terkecil dengan max()/min() 📏"
+        },
+        {
+          "time": 4153,
+          "label": "Menghitung Rata-Rata dengan sum()/len() 📊"
+        },
+        {
+          "time": 4264,
+          "label": "Analisis Berdasarkan Kategori 📂"
+        },
+        {
+          "time": 4421,
+          "label": "Final Project Kehadiran 🏁"
+        }
+      ],
+      "quizzes": [
+        {
+          "time": 4263,
+          "resume": false,
+          "questions": [
+            {
+              "type": "input",
+              "title": "Perintah Python 🐍 (1/4)",
+              "html": "\n          <div style=\"text-align: left; font-family: 'Outfit', sans-serif;\">\n            <p style=\"font-size: 18px; font-weight: 800; color: #1a1a1a; margin-bottom: 16px;\">Lengkapi tabel perintah Python berikut ini berdasarkan list <code>pengeluaran</code>:</p>\n            <table style=\"width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 16px; font-weight: 600; color: #1a1a1a;\">\n              <tr style=\"background-color: #00c6ff; color: #1a1a1a; border: 2px solid #1a1a1a;\">\n                <th style=\"padding: 10px; border: 2px solid #1a1a1a;\">Fungsi</th>\n                <th style=\"padding: 10px; border: 2px solid #1a1a1a;\">Perintah Python</th>\n              </tr>\n              <tr>\n                <td style=\"padding: 10px; border: 2px solid #1a1a1a; background-color: #fff;\">Menghitung Total</td>\n                <td style=\"padding: 10px; border: 2px solid #1a1a1a; background-color: #ffe600; font-family: monospace; font-weight: bold;\">...</td>\n              </tr>\n            </table>\n            <p style=\"font-size: 16px; font-weight: 800; color: #1a1a1a;\">Ketik perintah untuk <b>Menghitung Total</b> pada kotak di bawah:</p>\n          </div>\n        ",
+              "correct": [
+                "sum()",
+                "sum(pengeluaran)",
+                "sum( pengeluaran )"
+              ],
+              "explanation": "Benar! Gunakan sum(pengeluaran) untuk menghitung total."
+            },
+            {
+              "type": "input",
+              "title": "Perintah Python 🐍 (2/4)",
+              "html": "\n          <div style=\"text-align: left; font-family: 'Outfit', sans-serif;\">\n            <p style=\"font-size: 18px; font-weight: 800; color: #1a1a1a; margin-bottom: 16px;\">Lengkapi tabel perintah Python berikut ini berdasarkan list <code>pengeluaran</code>:</p>\n            <table style=\"width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 16px; font-weight: 600; color: #1a1a1a;\">\n              <tr style=\"background-color: #00c6ff; color: #1a1a1a; border: 2px solid #1a1a1a;\">\n                <th style=\"padding: 10px; border: 2px solid #1a1a1a;\">Fungsi</th>\n                <th style=\"padding: 10px; border: 2px solid #1a1a1a;\">Perintah Python</th>\n              </tr>\n              <tr>\n                <td style=\"padding: 10px; border: 2px solid #1a1a1a; background-color: #fff;\">Mencari Nilai Terbesar</td>\n                <td style=\"padding: 10px; border: 2px solid #1a1a1a; background-color: #ffe600; font-family: monospace; font-weight: bold;\">...</td>\n              </tr>\n            </table>\n            <p style=\"font-size: 16px; font-weight: 800; color: #1a1a1a;\">Ketik perintah untuk <b>Mencari Nilai Terbesar</b> pada kotak di bawah:</p>\n          </div>\n        ",
+              "correct": [
+                "max()",
+                "max(pengeluaran)",
+                "max( pengeluaran )"
+              ],
+              "explanation": "Benar! Gunakan max(pengeluaran) untuk mencari nilai terbesar."
+            },
+            {
+              "type": "input",
+              "title": "Perintah Python 🐍 (3/4)",
+              "html": "\n          <div style=\"text-align: left; font-family: 'Outfit', sans-serif;\">\n            <p style=\"font-size: 18px; font-weight: 800; color: #1a1a1a; margin-bottom: 16px;\">Lengkapi tabel perintah Python berikut ini berdasarkan list <code>pengeluaran</code>:</p>\n            <table style=\"width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 16px; font-weight: 600; color: #1a1a1a;\">\n              <tr style=\"background-color: #00c6ff; color: #1a1a1a; border: 2px solid #1a1a1a;\">\n                <th style=\"padding: 10px; border: 2px solid #1a1a1a;\">Fungsi</th>\n                <th style=\"padding: 10px; border: 2px solid #1a1a1a;\">Perintah Python</th>\n              </tr>\n              <tr>\n                <td style=\"padding: 10px; border: 2px solid #1a1a1a; background-color: #fff;\">Mencari Nilai Terkecil</td>\n                <td style=\"padding: 10px; border: 2px solid #1a1a1a; background-color: #ffe600; font-family: monospace; font-weight: bold;\">...</td>\n              </tr>\n            </table>\n            <p style=\"font-size: 16px; font-weight: 800; color: #1a1a1a;\">Ketik perintah untuk <b>Mencari Nilai Terkecil</b> pada kotak di bawah:</p>\n          </div>\n        ",
+              "correct": [
+                "min()",
+                "min(pengeluaran)",
+                "min( pengeluaran )"
+              ],
+              "explanation": "Benar! Gunakan min(pengeluaran) untuk mencari nilai terkecil."
+            },
+            {
+              "type": "input",
+              "title": "Perintah Python 🐍 (4/4)",
+              "html": "\n          <div style=\"text-align: left; font-family: 'Outfit', sans-serif;\">\n            <p style=\"font-size: 18px; font-weight: 800; color: #1a1a1a; margin-bottom: 16px;\">Lengkapi tabel perintah Python berikut ini berdasarkan list <code>pengeluaran</code>:</p>\n            <table style=\"width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 16px; font-weight: 600; color: #1a1a1a;\">\n              <tr style=\"background-color: #00c6ff; color: #1a1a1a; border: 2px solid #1a1a1a;\">\n                <th style=\"padding: 10px; border: 2px solid #1a1a1a;\">Fungsi</th>\n                <th style=\"padding: 10px; border: 2px solid #1a1a1a;\">Perintah Python</th>\n              </tr>\n              <tr>\n                <td style=\"padding: 10px; border: 2px solid #1a1a1a; background-color: #fff;\">Menghitung Rata-Rata</td>\n                <td style=\"padding: 10px; border: 2px solid #1a1a1a; background-color: #ffe600; font-family: monospace; font-weight: bold;\">...</td>\n              </tr>\n            </table>\n            <p style=\"font-size: 16px; font-weight: 800; color: #1a1a1a;\">Ketik perintah untuk <b>Menghitung Rata-Rata</b> pada kotak di bawah (gunakan simbol <code>/</code>):</p>\n          </div>\n        ",
+              "correct": [
+                "sum()/len()",
+                "sum() / len()",
+                "sum(pengeluaran)/len(pengeluaran)",
+                "sum(pengeluaran) / len(pengeluaran)"
+              ],
+              "explanation": "Luar biasa! Rata-rata dihitung dengan membagi total (sum) dengan jumlah data (len)."
+            }
+          ]
+        },
+        {
+          "time": 4406,
+          "resume": false,
+          "questions": [
+            {
+              "type": "pyscript",
+              "title": "Perintah Python 🐍 (1/4)",
+              "html": "<div style=\"text-align: left; font-family: 'Outfit', sans-serif;\"><p style=\"font-size: 18px; font-weight: 800; color: #1a1a1a;\">Ketik kode Python untuk menghitung <b>Total Pengeluaran</b> dari list di bawah ini!</p></div>",
+              "initialCode": "pengeluaran = [30000, 5000, 20000, 25000]\n\n# Ganti titik-titik dengan kode yang benar\nprint( ... )",
+              "expectedOutput": "80000"
+            },
+            {
+              "type": "pyscript",
+              "title": "Perintah Python 🐍 (2/4)",
+              "html": "<div style=\"text-align: left; font-family: 'Outfit', sans-serif;\"><p style=\"font-size: 18px; font-weight: 800; color: #1a1a1a;\">Ketik kode Python untuk mencari nilai <b>Pengeluaran Terbesar</b>!</p></div>",
+              "initialCode": "pengeluaran = [30000, 5000, 20000, 25000]\n\n# Ganti titik-titik dengan kode yang benar\nprint( ... )",
+              "expectedOutput": "30000"
+            },
+            {
+              "type": "pyscript",
+              "title": "Perintah Python 🐍 (3/4)",
+              "html": "<div style=\"text-align: left; font-family: 'Outfit', sans-serif;\"><p style=\"font-size: 18px; font-weight: 800; color: #1a1a1a;\">Ketik kode Python untuk mencari nilai <b>Pengeluaran Terkecil</b>!</p></div>",
+              "initialCode": "pengeluaran = [30000, 5000, 20000, 25000]\n\n# Ganti titik-titik dengan kode yang benar\nprint( ... )",
+              "expectedOutput": "5000"
+            },
+            {
+              "type": "pyscript",
+              "title": "Perintah Python 🐍 (4/4)",
+              "html": "<div style=\"text-align: left; font-family: 'Outfit', sans-serif;\"><p style=\"font-size: 18px; font-weight: 800; color: #1a1a1a;\">Bagaimana kode untuk menghitung <b>Rata-Rata</b> dari list tersebut? (Gunakan operator pembagian <code>/</code>)</p></div>",
+              "initialCode": "pengeluaran = [30000, 5000, 20000, 25000]\n\n# Ganti titik-titik dengan kode yang benar\nprint( ... )",
+              "expectedOutput": "20000.0"
+            }
+          ]
+        }
+      ],
+      "skipSegments": [
+        {
+          "start": 4387,
+          "end": 4400
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "hs-5-1",
+    "sourceFile": "Highschool/sesi40-44/grup-hs-2-d/src/courseData.js",
+    "sourceKey": "1",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 3,
+      "endSeconds": 1102,
+      "bookmarks": [
+        {
+          "time": 2,
+          "label": "Pembuka"
+        },
+        {
+          "time": 19,
+          "label": "Masalah Butuh Rencana"
+        },
+        {
+          "time": 63,
+          "label": "Menuju Design Thinking"
+        },
+        {
+          "time": 78,
+          "label": "Apa Itu Design Thinking"
+        },
+        {
+          "time": 195,
+          "label": "Contoh Boros"
+        },
+        {
+          "time": 321,
+          "label": "Analogi Sandwich"
+        },
+        {
+          "time": 525,
+          "label": "Siapa User Kita"
+        },
+        {
+          "time": 603,
+          "label": "Problem Statement"
+        },
+        {
+          "time": 775,
+          "label": "Masalah Jadi Fitur"
+        },
+        {
+          "time": 963,
+          "label": "Feasible atau Nanti"
+        }
+      ],
+      "quizzes": [
+        {
+          "time": 171,
+          "questions": [
+            {
+              "type": "classify_problem",
+              "question": "Susun Kalimat Masalah Sendiri",
+              "statement": "Seorang siswa SMA sering kehabisan uang jajan karena tergoda membeli keinginan sehingga sulit menabung.",
+              "parts": [
+                {
+                  "id": "p1",
+                  "text": "Seorang siswa SMA",
+                  "target": "Siapa (Objek)"
+                },
+                {
+                  "id": "p2",
+                  "text": "sering kehabisan uang jajan",
+                  "target": "Kesulitan (Masalah)"
+                },
+                {
+                  "id": "p3",
+                  "text": "karena tergoda membeli keinginan",
+                  "target": "Penyebab"
+                },
+                {
+                  "id": "p4",
+                  "text": "sehingga sulit menabung.",
+                  "target": "Dampak"
+                }
+              ],
+              "buckets": [
+                "Siapa (Objek)",
+                "Kesulitan (Masalah)",
+                "Penyebab",
+                "Dampak"
+              ]
+            }
+          ]
+        },
+        {
+          "time": 959,
+          "questions": [
+            {
+              "type": "match_pairs",
+              "question": "Pasangkan Kebutuhan Pengguna dengan Fitur yang Cocok",
+              "needs": [
+                {
+                  "id": "A",
+                  "text": "Ingin tahu belanja apa yang paling boros"
+                },
+                {
+                  "id": "B",
+                  "text": "Ingin tahu sisa uang di celengan saat ini"
+                },
+                {
+                  "id": "C",
+                  "text": "Ingin mendapat saran biar hemat"
+                },
+                {
+                  "id": "D",
+                  "text": "Ingin menulis uang masuk & keluar"
+                }
+              ],
+              "features": [
+                {
+                  "id": "1",
+                  "text": "Saran hemat otomatis"
+                },
+                {
+                  "id": "2",
+                  "text": "Analisis transaksi terboros"
+                },
+                {
+                  "id": "3",
+                  "text": "Tambah catatan transaksi"
+                },
+                {
+                  "id": "4",
+                  "text": "Ringkasan sisa saldo celengan"
+                }
+              ],
+              "correctPairs": {
+                "A": "2",
+                "B": "4",
+                "C": "1",
+                "D": "3"
+              }
+            }
+          ]
+        },
+        {
+          "time": 1101,
+          "questions": [
+            {
+              "type": "feasibility_buckets",
+              "question": "Bisa Dibuat Sekarang atau Nanti? (Feasibility)",
+              "items": [
+                {
+                  "id": "i1",
+                  "text": "Menyimpan catatan transaksi",
+                  "answer": "feasible"
+                },
+                {
+                  "id": "i2",
+                  "text": "Login sidik jari / wajah",
+                  "answer": "not_feasible"
+                },
+                {
+                  "id": "i3",
+                  "text": "Menghitung rata-rata jajan",
+                  "answer": "feasible"
+                },
+                {
+                  "id": "i4",
+                  "text": "Transfer otomatis antar Bank",
+                  "answer": "not_feasible"
+                },
+                {
+                  "id": "i5",
+                  "text": "Memberi saran tips hemat",
+                  "answer": "feasible"
+                },
+                {
+                  "id": "i6",
+                  "text": "Grafik game 3D interaktif",
+                  "answer": "not_feasible"
+                },
+                {
+                  "id": "i7",
+                  "text": "Cek saldo rekening asli",
+                  "answer": "not_feasible"
+                },
+                {
+                  "id": "i8",
+                  "text": "Mengelompokkan belanja per kategori",
+                  "answer": "feasible"
+                }
+              ],
+              "followUp": {
+                "type": "fill_in_blank",
+                "question": "Latihan: Susun Kalimat Masalah",
+                "template": "Siswa mengalami [kesulitan...] karena [penyebab...] sehingga [dampaknya...]",
+                "blanks": [
+                  "kesulitan...",
+                  "penyebab...",
+                  "dampaknya..."
+                ],
+                "correctAnswers": {
+                  "kesulitan...": "kesulitan memantau pengeluaran",
+                  "penyebab...": "tidak ada catatan",
+                  "dampaknya...": "uang cepat habis tanpa sadar"
+                },
+                "options": [
+                  "kesulitan memantau pengeluaran",
+                  "tidak ada catatan",
+                  "uang cepat habis tanpa sadar",
+                  "hp nya rusak",
+                  "tidak bisa login"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "hs-5-2",
+    "sourceFile": "Highschool/sesi40-44/grup-hs-2-d/src/courseData.js",
+    "sourceKey": "2",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 1107,
+      "endSeconds": 2231,
+      "bookmarks": [
+        {
+          "time": 1107,
+          "label": "Use Case"
+        },
+        {
+          "time": 1284,
+          "label": "Rancangan Tombol"
+        },
+        {
+          "time": 1517,
+          "label": "Tombol Jadi Fungsi"
+        },
+        {
+          "time": 1695,
+          "label": "Flowchart"
+        },
+        {
+          "time": 1905,
+          "label": "Menu Python"
+        },
+        {
+          "time": 2045,
+          "label": "Pilihan Menu"
+        },
+        {
+          "time": 2103,
+          "label": "Kerangka Fungsi"
+        }
+      ],
+      "quizzes": [
+        {
+          "time": 1847,
+          "questions": [
+            {
+              "type": "arrange_flow",
+              "question": "Mini Activity: Rakit Peta Petualangan ⚙️\nKlik tombol alur di bawah secara berurutan agar aplikasi celengan kita berjalan benar!",
+              "items": [
+                {
+                  "id": "f1",
+                  "text": "Mulai"
+                },
+                {
+                  "id": "f2",
+                  "text": "Tampilkan menu"
+                },
+                {
+                  "id": "f3",
+                  "text": "Pilih fitur"
+                },
+                {
+                  "id": "f4",
+                  "text": "Jalankan function"
+                },
+                {
+                  "id": "f5",
+                  "text": "Tampilkan hasil"
+                },
+                {
+                  "id": "f6",
+                  "text": "Keluar"
+                }
+              ],
+              "correctOrder": [
+                "f1",
+                "f2",
+                "f3",
+                "f4",
+                "f5",
+                "f6"
+              ]
+            }
+          ]
+        },
+        {
+          "time": 1996,
+          "questions": [
+            {
+              "type": "info",
+              "question": "Cara Memasukkan ASCII Art ke Python",
+              "html": "\n              <p style=\"margin-bottom: 10px;\">Kamu bisa membuat teks keren menggunakan <b>Text to ASCII Art Generator</b>.</p>\n              <p style=\"margin-bottom: 15px;\"><a href=\"https://patorjk.com/software/taag/\" target=\"_blank\" style=\"color: #00c3ff; text-decoration: underline;\">Buka Web ASCII Art Generator di sini</a></p>\n              <p style=\"margin-bottom: 10px;\">Copy teks ascii yang kamu mau, lalu tambahkan ke Python menggunakan tiga tanda kutip (<code>\"\"\"</code>) seperti contoh berikut:</p>\n              <div style=\"background: #282a36; color: #f8f8f2; padding: 15px; border-radius: 8px; font-family: monospace; text-align: left; margin-bottom: 15px; font-size: 14px;\">\n<pre style=\"margin: 0;\">title = \"\"\" \nPaste ascii here\n\"\"\"\n\nprint(title)</pre>\n              </div>\n            "
+            }
+          ]
+        },
+        {
+          "time": 2227,
+          "questions": [
+            {
+              "type": "match_pairs",
+              "question": "Latihan: Pasangkan Tombol & Fungsi 🧩",
+              "needs": [
+                {
+                  "id": "A",
+                  "text": "Menambah data jajan baru"
+                },
+                {
+                  "id": "B",
+                  "text": "Menghitung sisa saldo"
+                },
+                {
+                  "id": "C",
+                  "text": "Mencari tahu jajan terboros"
+                },
+                {
+                  "id": "D",
+                  "text": "Memberi tips hemat otomatis"
+                },
+                {
+                  "id": "E",
+                  "text": "Membersihkan spasi input teks"
+                }
+              ],
+              "features": [
+                {
+                  "id": "1",
+                  "text": "analyze_expenses()"
+                },
+                {
+                  "id": "2",
+                  "text": "clean_text()"
+                },
+                {
+                  "id": "3",
+                  "text": "add_transaction()"
+                },
+                {
+                  "id": "4",
+                  "text": "give_recommendation()"
+                },
+                {
+                  "id": "5",
+                  "text": "summarize_transactions()"
+                }
+              ],
+              "correctPairs": {
+                "A": "3",
+                "B": "5",
+                "C": "1",
+                "D": "4",
+                "E": "2"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "hs-5-3",
+    "sourceFile": "Highschool/sesi40-44/grup-hs-2-d/src/courseData.js",
+    "sourceKey": "3",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 2231,
+      "endSeconds": 2615,
+      "bookmarks": [
+        {
+          "time": 2231,
+          "label": "Aplikasi Pintar"
+        },
+        {
+          "time": 2298,
+          "label": "Insight Data"
+        },
+        {
+          "time": 2420,
+          "label": "If Saldo"
+        },
+        {
+          "time": 2555,
+          "label": "Dictionary"
+        }
+      ],
+      "quizzes": []
+    }
+  },
+  {
+    "stepId": "hs-5-4",
+    "sourceFile": "Highschool/sesi40-44/grup-hs-2-d/src/courseData.js",
+    "sourceKey": "4",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 2619,
+      "endSeconds": 2974,
+      "bookmarks": [
+        {
+          "time": 2619,
+          "label": "Mencari Kategori Terbesar"
+        },
+        {
+          "time": 2825,
+          "label": "Kategori Berubah Sesuai Data"
+        },
+        {
+          "time": 2828,
+          "label": "Saran Kategori"
+        },
+        {
+          "time": 2916,
+          "label": "Saran Harus Jelas"
+        },
+        {
+          "time": 2966,
+          "label": "Latihan Rekomendasi"
+        }
+      ],
+      "quizzes": [
+        {
+          "time": 2973,
+          "questions": [
+            {
+              "type": "input",
+              "question": "Tebak Rahasia Data 🕵️",
+              "html": "\n              <p style=\"margin-bottom: 10px;\">Ketik nominal uang jarmu untuk menguji jalannya fungsi Python <code>give_balance_recommendation()</code>:</p>\n              <div style=\"background: #282a36; color: #f8f8f2; padding: 15px; border-radius: 8px; font-family: monospace; text-align: left; margin-bottom: 15px; font-size: 14px;\">\n<pre style=\"margin: 0;\">def kasih_saran_saldo(saldo):\n    if saldo < 10000:\n        return \"Tunda pembelian keinginan.\"\n    elif saldo < 30000:\n        return \"Hati-hati, saldo mulai terbatas.\"\n    else:\n        return \"Saldo masih cukup aman.\"\n\nsaran = kasih_saran_saldo(<span style=\"color: #fbc02d; font-weight: bold;\">[input]</span>)\nprint(saran)</pre>\n              </div>\n            "
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "hs-5-5",
+    "sourceFile": "Highschool/sesi40-44/grup-hs-2-d/src/courseData.js",
+    "sourceKey": "5",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 2989,
+      "endSeconds": 3662,
+      "bookmarks": [
+        {
+          "time": 2989,
+          "label": "Menyatukan Konsep"
+        },
+        {
+          "time": 3123,
+          "label": "Kode Modular"
+        },
+        {
+          "time": 3203,
+          "label": "Loop Menu"
+        },
+        {
+          "time": 3252,
+          "label": "Prinsip DRY"
+        }
+      ],
+      "quizzes": [
+        {
+          "time": 3121,
+          "questions": [
+            {
+              "type": "match_pairs",
+              "question": "Pasangkan Kekuatan Konsep! 🧩",
+              "needs": [
+                {
+                  "id": "A",
+                  "text": "Fungsi (Function)"
+                },
+                {
+                  "id": "B",
+                  "text": "Loop (`while`)"
+                },
+                {
+                  "id": "C",
+                  "text": "Dictionary"
+                },
+                {
+                  "id": "D",
+                  "text": "List"
+                }
+              ],
+              "features": [
+                {
+                  "id": "1",
+                  "text": "Mencatat detail 1 belanjaan"
+                },
+                {
+                  "id": "2",
+                  "text": "Membuat blok fitur terpisah yang rapi"
+                },
+                {
+                  "id": "3",
+                  "text": "Kantong besar untuk menampung banyak data"
+                },
+                {
+                  "id": "4",
+                  "text": "Memutar menu agar tidak langsung mati"
+                }
+              ],
+              "correctPairs": {
+                "A": "2",
+                "B": "4",
+                "C": "1",
+                "D": "3"
+              }
+            }
+          ]
+        },
+        {
+          "time": 3661,
+          "questions": [
+            {
+              "type": "input",
+              "subtype": "jinakkan_loop",
+              "question": "Misi Penyelamatan: Jinakkan Loop Gila! 🕵️‍♂️",
+              "html": "",
+              "correct": [
+                "break"
+              ],
+              "feedback": {
+                "correct": "Tepat sekali! Loop berhasil dihentikan. 🛡️",
+                "incorrect": "Loop masih berjalan, coba ingat kata kuncinya!"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "ms-0-0",
+    "sourceFile": "Middleschool/grupA/dashboard/src/courseData.js",
+    "sourceKey": "0",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 0,
+      "bookmarks": [
+        {
+          "time": 0,
+          "label": "Pengenalan Async Learning"
+        },
+        {
+          "time": 25,
+          "label": "Ritme Belajar & Pause"
+        },
+        {
+          "time": 55,
+          "label": "Alur Belajar Step-by-Step"
+        },
+        {
+          "time": 85,
+          "label": "Pop-up Quiz Interaktif"
+        },
+        {
+          "time": 115,
+          "label": "Materi Bacaan & Praktik Mandiri"
+        }
+      ],
+      "quizzes": []
+    }
+  },
+  {
+    "stepId": "ms-1-1",
+    "sourceFile": "Middleschool/grupA/dashboard/src/courseData.js",
+    "sourceKey": "1",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 0,
+      "endSeconds": 1338,
+      "bookmarks": [
+        {
+          "time": 14,
+          "label": "Pengenalan Input Aman"
+        },
+        {
+          "time": 255,
+          "label": "Studi Kasus Meminjam Buku"
+        },
+        {
+          "time": 421,
+          "label": "Validasi Input User"
+        },
+        {
+          "time": 551,
+          "label": "Pengecekan Input"
+        }
+      ],
+      "quizzes": [
+        {
+          "time": 1337,
+          "shown": false,
+          "resume": false,
+          "title": "MINI QUIZ 1",
+          "questions": [
+            {
+              "question": "Kamu membuat aplikasi data anggota klub sekolah. Kolom nama wajib diisi.<br><br>Kondisi mana yang paling tepat untuk mengecek nama kosong?",
+              "choices": [
+                "A. Jika TextBoxNama berwarna putih.",
+                "B. Jika TextBoxNama.Text = \"\".",
+                "C. Langsung simpan saja, nanti dicek belakangan."
+              ],
+              "answer": "B. Jika TextBoxNama.Text = \"\".",
+              "explanation": "Untuk mengecek apakah TextBox kosong, kita menggunakan blok <b>TextBoxNama.Text = \"\"</b>."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "ms-1-2",
+    "sourceFile": "Middleschool/grupA/dashboard/src/courseData.js",
+    "sourceKey": "2",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 1349,
+      "endSeconds": 1392,
+      "bookmarks": [
+        {
+          "time": 1349,
+          "label": "Instruksi Mini Project"
+        }
+      ],
+      "quizzes": []
+    }
+  },
+  {
+    "stepId": "ms-1-3",
+    "sourceFile": "Middleschool/grupA/dashboard/src/courseData.js",
+    "sourceKey": "3",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 1394,
+      "endSeconds": 2079,
+      "bookmarks": [
+        {
+          "time": 1424,
+          "label": "Pengenalan Flowchart"
+        },
+        {
+          "time": 1499,
+          "label": "Pentingnya Flowchart"
+        },
+        {
+          "time": 1794,
+          "label": "Komponen Flowchart"
+        },
+        {
+          "time": 2037,
+          "label": "Menyusun Flowchart"
+        }
+      ],
+      "quizzes": [
+        {
+          "time": 2077,
+          "resume": false,
+          "questions": [
+            {
+              "question": "<span class=\"slide-title\">Mini Quiz: Urutan Flowchart</span><br><br>Kamu membuat aplikasi cek umur. Aplikasi harus menerima umur, memastikan umur angka, lalu menampilkan kategori.<br><br>Urutan yang paling masuk akal adalah...",
+              "choices": [
+                "A. Tampilkan hasil, lalu minta input, lalu cek angka.",
+                "B. Ambil input, cek apakah angka, lalu tampilkan kategori.",
+                "C. Tekan reset, tampilkan hasil, lalu ambil input."
+              ],
+              "answer": 1,
+              "explanation": "Urutan yang benar adalah menerima input, memproses input tersebut (validasi tipe data), lalu menampilkan hasilnya."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "ms-1-4",
+    "sourceFile": "Middleschool/grupA/dashboard/src/courseData.js",
+    "sourceKey": "4",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 2096,
+      "endSeconds": 2572,
+      "bookmarks": [
+        {
+          "time": 2118,
+          "label": "Apa Itu Privacy?"
+        },
+        {
+          "time": 2337,
+          "label": "Empat Prinsip Data Privacy"
+        },
+        {
+          "time": 2527,
+          "label": "Menerapkan Data Privacy"
+        },
+        {
+          "time": 2591,
+          "label": "Memahami Data Privacy"
+        }
+      ],
+      "quizzes": [
+        {
+          "time": 2567,
+          "resume": false,
+          "questions": [
+            {
+              "question": "<span class=\"slide-title\">Mini Quiz: Data Privacy</span><br><br>Kamu membuat aplikasi penghitung uang saku. Aplikasi hanya perlu tahu nominal uang saku dan pengeluaran.<br><br>Data mana yang tidak perlu diminta?",
+              "choices": [
+                "A. Nominal uang saku hari ini.",
+                "B. Total pengeluaran hari ini.",
+                "C. Alamat rumah lengkap pengguna."
+              ],
+              "answer": 2,
+              "explanation": "Aplikasi penghitung uang saku tidak membutuhkan alamat rumah pengguna. Meminta data yang tidak perlu melanggar prinsip data privacy."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "ms-1-5",
+    "sourceFile": "Middleschool/grupA/dashboard/src/courseData.js",
+    "sourceKey": "5",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 2584,
+      "endSeconds": 2618,
+      "bookmarks": [
+        {
+          "time": 2584,
+          "label": "Instruksi Mini Project"
+        }
+      ],
+      "quizzes": []
+    }
+  },
+  {
+    "stepId": "ms-1-6",
+    "sourceFile": "Middleschool/grupB/dashboard/src/courseData.js",
+    "sourceKey": "1",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 2,
+      "endSeconds": 887,
+      "bookmarks": [
+        {
+          "time": 10,
+          "label": "Pengantar Data Pribadi"
+        },
+        {
+          "time": 300,
+          "label": "Data Sensitif vs Publik"
+        },
+        {
+          "time": 600,
+          "label": "Penggunaan Data di Aplikasi"
+        }
+      ],
+      "quizzes": [
+        {
+          "time": 483,
+          "resumeTime": 488,
+          "skipTo": 488,
+          "title": "Mini Kuis 1 🧠",
+          "questions": [
+            {
+              "qid": "V1_Q1",
+              "question": "Manakah di bawah ini yang merupakan Data Pribadi SENSITIF?",
+              "options": [
+                "Warna kesukaanmu",
+                "Nomor Induk Kependudukan (NIK)",
+                "Merek sepatu yang sering kamu pakai"
+              ],
+              "answer": "Nomor Induk Kependudukan (NIK)",
+              "explanation": "NIK adalah identitas unik yang sangat rahasia dan dapat disalahgunakan jika jatuh ke tangan yang salah."
+            }
+          ]
+        },
+        {
+          "time": 735,
+          "resumeTime": 740,
+          "skipTo": 740,
+          "title": "Mini Kuis 2 🧠",
+          "questions": [
+            {
+              "qid": "V1_Q2",
+              "question": "Aplikasi apa yang wajar dan masuk akal jika meminta izin mengakses Microphone (Mic)?",
+              "options": [
+                "Aplikasi Perekam Suara (Voice Note)",
+                "Aplikasi Senter HP",
+                "Aplikasi Kalkulator"
+              ],
+              "answer": "Aplikasi Perekam Suara (Voice Note)",
+              "explanation": "Aplikasi perekam suara butuh Mic, sedangkan senter atau kalkulator tidak masuk akal jika meminta mic."
+            }
+          ]
+        },
+        {
+          "time": 885,
+          "title": "Mini Kuis 3 🧠",
+          "questions": [
+            {
+              "qid": "V1_Q3",
+              "question": "Di manakah sebaiknya kamu menaruh 'Password Akun Game'-mu?",
+              "options": [
+                "Di profil Bio Instagram (Publik)",
+                "Di catatan/brankas yang aman (Sensitif)",
+                "Di grup WhatsApp kelas (Publik)"
+              ],
+              "answer": "Di catatan/brankas yang aman (Sensitif)",
+              "explanation": "Password adalah data sensitif yang harus disimpan dengan aman dan tidak dipublikasikan ke publik."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "ms-1-7",
+    "sourceFile": "Middleschool/grupB/dashboard/src/courseData.js",
+    "sourceKey": "2",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 899,
+      "endSeconds": 1701,
+      "bookmarks": [
+        {
+          "time": 900,
+          "label": "Etika Berinternet"
+        },
+        {
+          "time": 1200,
+          "label": "Phishing & Penipuan"
+        },
+        {
+          "time": 1400,
+          "label": "Membuat Password Kuat"
+        }
+      ],
+      "quizzes": [
+        {
+          "time": 1273,
+          "resumeTime": 1278,
+          "skipTo": 1278,
+          "title": "Mini Kuis 4 🧠",
+          "questions": [
+            {
+              "qid": "V2_Q1",
+              "question": "Jika ada seseorang menelepon mengaku dari pihak Bank dan meminta nomor PIN ATM-mu, apa yang harus kamu lakukan?",
+              "options": [
+                "Berikan PIN-nya agar masalah cepat selesai",
+                "Matikan telepon, Bank tidak pernah meminta PIN nasabah",
+                "Berikan setengah PIN saja"
+              ],
+              "answer": "Matikan telepon, Bank tidak pernah meminta PIN nasabah",
+              "explanation": "Pihak bank resmi TIDAK PERNAH meminta PIN, password, atau kode OTP kepada nasabahnya."
+            }
+          ]
+        },
+        {
+          "time": 1408,
+          "resumeTime": 1413,
+          "skipTo": 1413,
+          "title": "Latihan Praktik 💻",
+          "questions": [
+            {
+              "qid": "V2_LP",
+              "html": "\n              <div class=\"interactive-sandbox\">\n                <p style=\"margin-top:0; margin-bottom:12px; font-size:1.05rem;\"><strong>Buat Password yang Kuat!</strong></p>\n                <p style=\"margin-bottom:16px; font-size:0.95rem; color:var(--text-gray);\">Pastikan password-mu minimal 8 karakter, mengandung huruf besar, huruf kecil, angka, dan simbol.</p>\n                <div style=\"display:flex; flex-direction:column; gap:12px; margin-bottom:16px;\">\n                  <input type=\"text\" id=\"pass-input\" placeholder=\"Masukkan password kuat (contoh: Kucing@123)\" style=\"padding:12px; border:2px solid var(--line); border-radius:8px; font-size:1rem;\">\n                </div>\n                <div>\n                  <button type=\"button\" class=\"check-code-btn\" onclick=\"window.checkPasswordGuess(this)\">Cek Kekuatan Password</button>\n                </div>\n                <div class=\"sandbox-feedback\" style=\"display:none; margin-top:16px; padding:12px; border-radius:8px; font-size:0.95rem;\"></div>\n              </div>\n            "
+            }
+          ]
+        },
+        {
+          "time": 1548,
+          "resumeTime": 1553,
+          "skipTo": 1553,
+          "title": "Mini Kuis 5 🧠",
+          "questions": [
+            {
+              "qid": "V2_Q2",
+              "question": "Manakah password di bawah ini yang paling kuat dan aman dari serangan hacker?",
+              "options": [
+                "12345678",
+                "namakucingku",
+                "G@r0d4_B1rU!99"
+              ],
+              "answer": "G@r0d4_B1rU!99",
+              "explanation": "Password tersebut mengandung huruf besar, huruf kecil, angka, dan simbol (karakter khusus)."
+            }
+          ]
+        },
+        {
+          "time": 1700,
+          "title": "Mini Kuis 6 🧠",
+          "questions": [
+            {
+              "qid": "V2_Q3",
+              "question": "Mengapa kita menggunakan blok 'is empty' saat memproses form Login?",
+              "options": [
+                "Untuk menghapus password pengguna",
+                "Untuk mencegah pengguna mengirim form jika belum mengisi password",
+                "Untuk mengecek apakah HP kehabisan baterai"
+              ],
+              "answer": "Untuk mencegah pengguna mengirim form jika belum mengisi password",
+              "explanation": "Blok 'is empty' memastikan bahwa pengguna tidak mengirimkan data yang kosong."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "ms-2-1",
+    "sourceFile": "Middleschool/grupC/dashboard/src/courseData.js",
+    "sourceKey": "1",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 3,
+      "endSeconds": 472,
+      "bookmarks": [
+        {
+          "time": 10,
+          "label": "Pendahuluan"
+        },
+        {
+          "time": 60,
+          "label": "Logika Percabangan"
+        },
+        {
+          "time": 120,
+          "label": "If-Then-Else"
+        },
+        {
+          "time": 300,
+          "label": "Flowchart"
+        }
+      ],
+      "quizzes": [
+        {
+          "time": 331,
+          "resumeTime": 336,
+          "skipTo": 336,
+          "title": "Kuis Logika Dasar 🧠",
+          "questions": [
+            {
+              "qid": "V1_Q1",
+              "question": "Apa fungsi dari blok ELSE?",
+              "options": [
+                "A. Mengakhiri seluruh program",
+                "B. Menjalankan perintah jika IF bernilai SALAH",
+                "C. Menjalankan perintah berulang-ulang tanpa henti"
+              ],
+              "answer": "B. Menjalankan perintah jika IF bernilai SALAH",
+              "explanation": "ELSE digunakan untuk mengeksekusi aksi alternatif jika kondisi pada blok IF tidak terpenuhi atau bernilai SALAH."
+            }
+          ]
+        },
+        {
+          "time": 470,
+          "title": "Kuis Flowchart 🧠",
+          "questions": [
+            {
+              "qid": "V1_Q2",
+              "question": "Simbol apakah yang digunakan untuk membuat percabangan kondisi (IF) dalam flowchart?",
+              "options": [
+                "A. Persegi",
+                "B. Belah Ketupat",
+                "C. Lingkaran/Oval"
+              ],
+              "answer": "B. Belah Ketupat",
+              "explanation": "Simbol belah ketupat digunakan untuk merepresentasikan keputusan (decision) atau percabangan dalam suatu flowchart."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "ms-2-2",
+    "sourceFile": "Middleschool/grupC/dashboard/src/courseData.js",
+    "sourceKey": "2",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 484,
+      "endSeconds": 721,
+      "bookmarks": [
+        {
+          "time": 490,
+          "label": "App Inventor"
+        },
+        {
+          "time": 540,
+          "label": "UI Designer"
+        },
+        {
+          "time": 600,
+          "label": "Blok Event"
+        },
+        {
+          "time": 700,
+          "label": "Logika"
+        }
+      ],
+      "quizzes": [
+        {
+          "time": 719,
+          "title": "Kuis Fungsi Mutator 🧠",
+          "questions": [
+            {
+              "qid": "V2_Q1",
+              "question": "Apa yang harus diklik untuk memunculkan pilihan ELSE?",
+              "options": [
+                "A. Klik Kanan > Add Else",
+                "B. Ikon roda gigi biru di blok IF"
+              ],
+              "answer": "B. Ikon roda gigi biru di blok IF",
+              "explanation": "Ikon roda gigi biru (mutator) pada blok IF di App Inventor digunakan untuk menambahkan opsi ELSE atau ELSE IF."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "ms-2-3",
+    "sourceFile": "Middleschool/grupC/dashboard/src/courseData.js",
+    "sourceKey": "3",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 733,
+      "endSeconds": 1173,
+      "bookmarks": [
+        {
+          "time": 740,
+          "label": "Literasi Keuangan"
+        },
+        {
+          "time": 840,
+          "label": "Uang Digital"
+        },
+        {
+          "time": 900,
+          "label": "E-Wallet"
+        },
+        {
+          "time": 1100,
+          "label": "QRIS"
+        }
+      ],
+      "quizzes": [
+        {
+          "time": 1171,
+          "title": "Kuis Digital 1 🧠",
+          "questions": [
+            {
+              "qid": "V3_Q1",
+              "question": "Menerima transfer hadiah Rp 50.000 ke akun Dana disebut?",
+              "options": [
+                "A. Pengeluaran digital",
+                "B. Pendapatan digital"
+              ],
+              "answer": "B. Pendapatan digital",
+              "explanation": "Setiap uang yang masuk atau menambah saldo kita disebut sebagai pendapatan (income)."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "ms-2-4",
+    "sourceFile": "Middleschool/grupC/dashboard/src/courseData.js",
+    "sourceKey": "4",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 1181,
+      "endSeconds": 1593,
+      "bookmarks": [
+        {
+          "time": 1190,
+          "label": "Needs vs Wants"
+        },
+        {
+          "time": 1300,
+          "label": "Kebutuhan & Keinginan"
+        },
+        {
+          "time": 1400,
+          "label": "Aturan 50-30-20"
+        }
+      ],
+      "quizzes": [
+        {
+          "time": 1590,
+          "resume": false,
+          "title": "Kuis Prioritas 🧠",
+          "questions": [
+            {
+              "qid": "V4_Q1",
+              "question": "Membeli paket internet agar bisa mengirim tugas presentasi besok pagi termasuk...",
+              "options": [
+                "A. Kebutuhan (Needs)",
+                "B. Keinginan (Wants)"
+              ],
+              "answer": "A. Kebutuhan (Needs)",
+              "explanation": "Paket internet untuk mengirim tugas adalah kebutuhan (needs) karena wajib dipenuhi untuk kegiatan belajarmu."
+            },
+            {
+              "qid": "V4_Q2",
+              "question": "Membeli gacha/top-up diamond agar karakter game-mu lebih keren adalah...",
+              "options": [
+                "A. Kebutuhan mutlak",
+                "B. Keinginan (Wants)"
+              ],
+              "answer": "B. Keinginan (Wants)",
+              "explanation": "Top-up game merupakan keinginan (wants) karena hanya untuk kesenangan dan bukan hal yang harus dipenuhi segera."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "ms-2-5",
+    "sourceFile": "Middleschool/grupC/dashboard/src/courseData.js",
+    "sourceKey": "5",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 1605,
+      "endSeconds": 1908,
+      "bookmarks": [
+        {
+          "time": 1620,
+          "label": "App Keuangan"
+        },
+        {
+          "time": 1700,
+          "label": "UI Nabung"
+        },
+        {
+          "time": 1800,
+          "label": "Blok Keuangan"
+        }
+      ],
+      "quizzes": [
+        {
+          "time": 1906,
+          "title": "Kuis Blok Keuangan 🧠",
+          "questions": [
+            {
+              "qid": "V5_Q1",
+              "question": "Blok warna apa yang digunakan untuk operasi pengurangan (-)?",
+              "options": [
+                "A. Coklat/Emas (Control)",
+                "B. Biru (Math)",
+                "C. Merah Muda (Text)"
+              ],
+              "answer": "B. Biru (Math)",
+              "explanation": "Blok operasi matematika seperti pengurangan (-) berada di dalam laci Math yang berwarna biru di App Inventor."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "ms-2-6",
+    "sourceFile": "Middleschool/grupC/dashboard/src/courseData.js",
+    "sourceKey": "6",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 1922,
+      "bookmarks": [
+        {
+          "time": 1930,
+          "label": "Mini Project"
+        }
+      ],
+      "quizzes": []
+    }
+  },
+  {
+    "stepId": "ms-3-1",
+    "sourceFile": "Middleschool/grupD/dashboard/src/courseData.js",
+    "sourceKey": "1",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 4,
+      "endSeconds": 794,
+      "bookmarks": [
+        {
+          "time": 10,
+          "label": "Pengenalan Procedures"
+        },
+        {
+          "time": 119,
+          "label": "Kebiasaan buruk copy paste"
+        },
+        {
+          "time": 286,
+          "label": "Prosedur atau Function"
+        },
+        {
+          "time": 442,
+          "label": "Kategori Prosedur"
+        },
+        {
+          "time": 541,
+          "label": "Prosedur Do"
+        },
+        {
+          "time": 696,
+          "label": "Prosedur Result"
+        },
+        {
+          "time": 803,
+          "label": "Mini Project Kalkulator"
+        }
+      ],
+      "quizzes": [
+        {
+          "time": 793,
+          "resumeTime": 794,
+          "skipTo": 794,
+          "title": "Mini Kuis 1 🧠",
+          "questions": [
+            {
+              "qid": "V1_Q1",
+              "question": "Kenapa kita menggunakan Procedure di App Inventor?",
+              "options": [
+                "Agar warna aplikasi menjadi lebih bagus.",
+                "Untuk mengumpulkan beberapa perintah menjadi satu sehingga bisa dipakai berkali-kali tanpa mengulang.",
+                "Untuk membuat baterai HP menjadi hemat 100%."
+              ],
+              "answer": "Untuk mengumpulkan beberapa perintah menjadi satu sehingga bisa dipakai berkali-kali tanpa mengulang.",
+              "explanation": "Ini membuat kode kita tidak berulang-ulang, sehingga lebih ringan dan rapi."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "ms-3-2",
+    "sourceFile": "Middleschool/grupD/dashboard/src/courseData.js",
+    "sourceKey": "2",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 798,
+      "endSeconds": 879,
+      "bookmarks": [
+        {
+          "time": 798,
+          "label": "Instruksi Mini Project"
+        }
+      ],
+      "quizzes": []
+    }
+  },
+  {
+    "stepId": "ms-3-3",
+    "sourceFile": "Middleschool/grupD/dashboard/src/courseData.js",
+    "sourceKey": "3",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 883,
+      "endSeconds": 1194,
+      "bookmarks": [
+        {
+          "time": 883,
+          "label": "Modularisasi"
+        },
+        {
+          "time": 991,
+          "label": "Spaghetti Code vs Modular"
+        }
+      ],
+      "quizzes": [
+        {
+          "time": 1193,
+          "resumeTime": 1194,
+          "skipTo": 1194,
+          "title": "Mini Kuis 3 🧠",
+          "questions": [
+            {
+              "qid": "V3_Q1",
+              "question": "Mengapa memecah program menjadi modul-modul (procedure) kecil itu sangat membantu saat terjadi error (bug)?",
+              "options": [
+                "Karena kita bisa mengisolasi masalah dan mencari error di satu \"kotak\" modul spesifik.",
+                "Karena modul akan secara otomatis menghapus bug tanpa kita suruh.",
+                "Karena jika memakai modul, App Inventor tidak akan pernah error."
+              ],
+              "answer": "Karena kita bisa mengisolasi masalah dan mencari error di satu \"kotak\" modul spesifik.",
+              "explanation": "Kita bisa langsung fokus mencari error di modul yang bermasalah saja, tanpa membaca ribuan baris kode yang lain."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "ms-3-4",
+    "sourceFile": "Middleschool/grupD/dashboard/src/courseData.js",
+    "sourceKey": "4",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 1201,
+      "endSeconds": 1685,
+      "bookmarks": [
+        {
+          "time": 1206,
+          "label": "Membahas bug dan error"
+        },
+        {
+          "time": 1307,
+          "label": "Apa itu bug?"
+        },
+        {
+          "time": 1402,
+          "label": "Bug/crash tipe data"
+        },
+        {
+          "time": 1461,
+          "label": "Deteksi is a number?"
+        },
+        {
+          "time": 1525,
+          "label": "Fitur rahasia: Do it"
+        },
+        {
+          "time": 1556,
+          "label": "Tiny DB untuk keamanan"
+        }
+      ],
+      "quizzes": [
+        {
+          "time": 1684,
+          "resumeTime": 1685,
+          "skipTo": 1685,
+          "title": "Mini Kuis 4 🧠",
+          "questions": [
+            {
+              "qid": "V4_Q1",
+              "question": "Apa fungsi dari blok TinyDB di App Inventor?",
+              "options": [
+                "Menyimpan data kecil secara lokal di handphone pengguna sehingga data tidak hilang saat aplikasi ditutup.",
+                "Membagikan foto otomatis ke Instagram pengguna.",
+                "Menyimpan gambar ukuran besar yang dibuat dengan MS Paint."
+              ],
+              "answer": "Menyimpan data kecil secara lokal di handphone pengguna sehingga data tidak hilang saat aplikasi ditutup.",
+              "explanation": "TinyDB menyimpan data secara aman di dalam HP pengguna (penyimpanan lokal)."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "ms-3-5",
+    "sourceFile": "Middleschool/grupD/dashboard/src/courseData.js",
+    "sourceKey": "5",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 1704,
+      "endSeconds": 2008,
+      "bookmarks": [
+        {
+          "time": 1704,
+          "label": "Mempresentasikan project"
+        },
+        {
+          "time": 1790,
+          "label": "Empat poin presentasi"
+        },
+        {
+          "time": 1903,
+          "label": "Persiapan live demo"
+        },
+        {
+          "time": 1955,
+          "label": "Menerima feedback"
+        }
+      ],
+      "quizzes": [
+        {
+          "time": 2007,
+          "resumeTime": 2008,
+          "skipTo": 2008,
+          "title": "Mini Kuis 5 🧠",
+          "questions": [
+            {
+              "qid": "V5_Q1",
+              "question": "Saat presentasi, kelompok lain memberi kritik: \"Aplikasi kalian keren, tapi teks petunjuknya sulit dibaca karena warnanya gelap.\" Sikap yang tepat adalah:",
+              "options": [
+                "Menyuruh mereka memeriksa mata ke dokter karena teksnya sudah jelas.",
+                "Pura-pura mencatat, tapi tidak pernah memperbaiki aplikasinya.",
+                "Berterima kasih atas feedback tersebut, dan berjanji akan mengubah warna teks menjadi lebih terang."
+              ],
+              "answer": "Berterima kasih atas feedback tersebut, dan berjanji akan mengubah warna teks menjadi lebih terang.",
+              "explanation": "Feedback yang membangun harus diterima untuk menyempurnakan aplikasi."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "ms-4-1",
+    "sourceFile": "Middleschool/grupB/dashboard/src/courseData.js",
+    "sourceKey": "3",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 1715,
+      "endSeconds": 2547,
+      "bookmarks": [
+        {
+          "time": 1715,
+          "label": "Konsep Database Lokal"
+        },
+        {
+          "time": 2000,
+          "label": "Fungsi TinyDB"
+        },
+        {
+          "time": 2300,
+          "label": "Data Sementara vs Permanen"
+        }
+      ],
+      "quizzes": [
+        {
+          "time": 2090,
+          "resumeTime": 2092,
+          "skipTo": 2092,
+          "title": "Mini Kuis 7 🧠",
+          "questions": [
+            {
+              "qid": "V3_Q1",
+              "question": "Jika kamu ingin membuat fitur 'To-Do List' yang datanya tidak terhapus walau HP direstart, komponen apa yang WAJIB dipakai?",
+              "options": [
+                "Global Variable",
+                "TextBox Component",
+                "TinyDB (Database Lokal)"
+              ],
+              "answer": "TinyDB (Database Lokal)",
+              "explanation": "TinyDB menyimpan data secara permanen di memori HP, berbeda dengan variabel yang terhapus saat aplikasi ditutup."
+            }
+          ]
+        },
+        {
+          "time": 2546,
+          "title": "Mini Kuis 8 🧠",
+          "questions": [
+            {
+              "qid": "V3_Q2",
+              "question": "Dalam konsep TinyDB, apa fungsi dari sebuah 'Tag'?",
+              "options": [
+                "Sebagai isi data sesungguhnya yang akan disimpan",
+                "Sebagai stiker penamaan (judul) agar data mudah dicari di laci",
+                "Sebagai warna latar belakang aplikasi"
+              ],
+              "answer": "Sebagai stiker penamaan (judul) agar data mudah dicari di laci",
+              "explanation": "Tag berfungsi seperti label di laci agar kita tahu data mana yang sedang kita simpan atau ambil."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "ms-4-2",
+    "sourceFile": "Middleschool/grupB/dashboard/src/courseData.js",
+    "sourceKey": "4",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 2555,
+      "endSeconds": 3272,
+      "bookmarks": [
+        {
+          "time": 2555,
+          "label": "Menampilkan & Update Data"
+        },
+        {
+          "time": 2800,
+          "label": "Menghapus Data (Delete)"
+        },
+        {
+          "time": 3060,
+          "label": "Flowchart Penyimpanan"
+        },
+        {
+          "time": 3150,
+          "label": "Keamanan Data Lokal"
+        }
+      ],
+      "quizzes": [
+        {
+          "time": 2892,
+          "resumeTime": 2896,
+          "skipTo": 2896,
+          "title": "Mini Kuis 9 🧠",
+          "questions": [
+            {
+              "qid": "V4_Q1",
+              "question": "Kamu menggunakan StoreValue dengan Tag 'Koin' nilainya 10. Lalu kamu memakai StoreValue lagi dengan Tag 'Koin' nilainya 50. Berapa nilai 'Koin' saat ini?",
+              "options": [
+                "60 (karena ditambah)",
+                "50 (karena ditimpa / di-update)",
+                "10 (data pertama yang permanen)"
+              ],
+              "answer": "50 (karena ditimpa / di-update)",
+              "explanation": "Menyimpan data dengan Tag yang sama akan menimpa/mengganti data lama dengan data baru yang kita masukkan."
+            }
+          ]
+        },
+        {
+          "time": 3041,
+          "resumeTime": 3050,
+          "skipTo": 3050,
+          "title": "Mini Kuis 10 🧠",
+          "questions": [
+            {
+              "qid": "V4_Q2",
+              "question": "Jika kita ingin aplikasi 'melupakan' seluruh data pada sebuah tag tertentu secara permanen, blok apa yang digunakan?",
+              "options": [
+                "TinyDB1.GetValue",
+                "TinyDB1.ClearTag",
+                "TinyDB1.StoreValue dengan nilai 0"
+              ],
+              "answer": "TinyDB1.ClearTag",
+              "explanation": "Blok ClearTag digunakan khusus untuk menghapus atau melupakan data berdasarkan nama Tag yang dipilih."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "ms-4-3",
+    "sourceFile": "Middleschool/grupB/dashboard/src/courseData.js",
+    "sourceKey": "5",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 3285,
+      "endSeconds": 3323,
+      "bookmarks": [
+        {
+          "time": 3285,
+          "label": "Instruksi Mini Project"
+        }
+      ],
+      "quizzes": []
+    }
+  },
+  {
+    "stepId": "ms-4-4",
+    "sourceFile": "Middleschool/grupA/dashboard/src/courseData.js",
+    "sourceKey": "6",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 2621,
+      "endSeconds": 2844,
+      "bookmarks": [
+        {
+          "time": 2632,
+          "label": "Menganalisis Data Finansial"
+        },
+        {
+          "time": 2664,
+          "label": "Pencatatan Keuangan"
+        }
+      ],
+      "quizzes": []
+    }
+  },
+  {
+    "stepId": "ms-4-5",
+    "sourceFile": "Middleschool/grupA/dashboard/src/courseData.js",
+    "sourceKey": "7",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 2847,
+      "endSeconds": 3000,
+      "bookmarks": [
+        {
+          "time": 2847,
+          "label": "Instruksi Mini Project"
+        }
+      ],
+      "quizzes": []
+    }
+  },
+  {
+    "stepId": "ms-4-6",
+    "sourceFile": "Middleschool/grupA/dashboard/src/courseData.js",
+    "sourceKey": "8",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 3155,
+      "endSeconds": 3683,
+      "bookmarks": [
+        {
+          "time": 3228,
+          "label": "Transaksi Digital"
+        },
+        {
+          "time": 3491,
+          "label": "Keamanan Transaksi & OTP"
+        }
+      ],
+      "quizzes": [
+        {
+          "time": 3681,
+          "resume": false,
+          "questions": [
+            {
+              "question": "<span class=\"slide-title\">Mini Quiz: Finansial & Keamanan</span><br><br>Kamu menerima pesan: \"Selamat, kamu menang voucher game. Balas pesan ini dengan email dan password akunmu.\"<br><br>Apa tindakan paling aman?",
+              "choices": [
+                "A. Balas dengan email dan password agar voucher dikirim.",
+                "B. Abaikan pesan, blokir pengirim, dan cek ke sumber resmi.",
+                "C. Berikan password lama saja supaya tidak terlalu bahaya."
+              ],
+              "answer": 1,
+              "explanation": "Sangat penting untuk tidak membagikan password kepada siapapun. Pihak resmi tidak pernah meminta password. Mengabaikan dan memblokir pengirim adalah langkah yang tepat."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "ms-5-1",
+    "sourceFile": "Middleschool/grupD/dashboard/src/courseData.js",
+    "sourceKey": "6",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 2018,
+      "endSeconds": 2261,
+      "bookmarks": [
+        {
+          "time": 2018,
+          "label": "Aplikasi berdampak positif"
+        },
+        {
+          "time": 2086,
+          "label": "Mengidentifikasi masalah nyata"
+        },
+        {
+          "time": 2189,
+          "label": "Contoh aplikasi alarm ibu"
+        },
+        {
+          "time": 2260,
+          "label": "Brainstorming idea"
+        }
+      ],
+      "quizzes": [
+        {
+          "time": 2260,
+          "resumeTime": 2261,
+          "skipTo": 2261,
+          "title": "Mini Kuis 6 🧠",
+          "questions": [
+            {
+              "qid": "V6_Q1",
+              "question": "Manakah dari ide aplikasi di bawah ini yang merupakan \"Solusi Digital Berdampak Positif\" untuk memecahkan masalah di sekolah?",
+              "options": [
+                "Game tebak-tebakan artis korea.",
+                "Aplikasi pengingat jadwal piket kelas yang terhubung dengan notifikasi harian.",
+                "Aplikasi senter yang hanya hidup dan mati secara random."
+              ],
+              "answer": "Aplikasi pengingat jadwal piket kelas yang terhubung dengan notifikasi harian.",
+              "explanation": "Ini adalah solusi digital yang punya manfaat dan memecahkan masalah nyata."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "stepId": "ms-5-2",
+    "sourceFile": "Middleschool/grupD/dashboard/src/courseData.js",
+    "sourceKey": "7",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 2267,
+      "endSeconds": 2303,
+      "bookmarks": [],
+      "quizzes": []
+    }
+  },
+  {
+    "stepId": "ms-5-3",
+    "sourceFile": "Middleschool/grupA/dashboard/src/courseData.js",
+    "sourceKey": "9",
+    "differences": {},
+    "legacyTiming": {
+      "startSeconds": 3700,
+      "bookmarks": [
+        {
+          "time": 3700,
+          "label": "Instruksi Final Project"
+        }
+      ],
+      "quizzes": []
+    }
+  }
+]

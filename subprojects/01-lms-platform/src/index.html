@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101828" />
+    <title>UOB My Digital Space — LMS Prototype</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main id="app" class="app-shell">
+      <section class="login-card" aria-labelledby="page-title">
+        <p class="eyebrow">UOB MY DIGITAL SPACE</p>
+        <h1 id="page-title">Belajar coding dengan ritmemu sendiri.</h1>
+        <p class="lede">Prototype HTML awal untuk satu portal LMS SD, SMP, dan SMA.</p>
+        <form id="login-form" class="login-form">
+          <label>Nama siswa<input name="name" required autocomplete="name" placeholder="Nama lengkap" /></label>
+          <label>Nama sekolah / kelas<input name="school" required placeholder="Cari sekolah atau kelas" /></label>
+          <label>Email akademia<input name="email" type="email" required autocomplete="email" placeholder="nama@sekolah.sch.id" /></label>
+          <button type="submit" class="button button-primary">Masuk ke kelas</button>
+        </form>
+        <p id="login-status" class="status" role="status"></p>
+      </section>
+
+      <section id="dashboard" class="dashboard" hidden>
+        <header class="dashboard-header">
+          <div><p class="eyebrow">KELAS TERVERIFIKASI</p><h2 id="student-heading"></h2></div>
+          <button id="logout-button" class="button button-quiet">Keluar</button>
+        </header>
+        <nav class="module-tabs" aria-label="Modul belajar"><button class="module-tab is-active">01 · Fondasi</button><button class="module-tab" disabled>02 · Logika</button><button class="module-tab" disabled>03 · Proyek</button></nav>
+        <article class="lesson-card">
+          <div class="lesson-meta"><span class="pill">Materi 01</span><span>HTML shell</span></div>
+          <h3>Mengenal area belajar</h3>
+          <div class="media-frame"><div class="media-placeholder"><span class="media-icon">▶</span><p>Slot media: video YouTube atau HTML slides</p><small>Renderer akan mempertahankan bookmark dan batas start/end sumber.</small></div></div>
+          <div class="quiz-strip"><span>Pop-up pada materi ini</span><strong>0 selesai</strong><button class="button button-secondary" id="open-advisory">Lihat informasi</button></div>
+          <section class="summary"><p class="eyebrow">RANGKUMAN</p><h4>Yang akan kamu lakukan</h4><p>Belajar mandiri, membuka materi, mengerjakan kuis secara fleksibel, lalu melanjutkan setelah semua aktivitas wajib selesai.</p></section>
+        </article>
+      </section>
+    </main>
+
+    <dialog id="advisory-modal" class="modal"><div class="modal-icon">✦</div><h2>Siap belajar?</h2><p>Untuk kenyamanan dan kemudahan belajar optimal, disarankan menggunakan laptop, komputer, atau tablet.</p><button id="dismiss-advisory" class="button button-primary">Mengerti, tetap lanjutkan</button></dialog>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,409 @@
+[0.00] belum dijelas seperti yang sudah
+[1.32] dijelaskan sebelumnya, nestedate
+[3.52] condition itu bisa membuat program kita
+[5.80] more complicated dengan if yang
+[7.92] bercabang, bercabang, bercabang, dan
+[9.40] bercabang ya, yang membuat program kita
+[11.64] eh jadi panjang ke kanan gitu ya. Nah,
+[15.12] supaya nest eh nested condition tadi
+[18.40] tidak terlalu panjang itu kita bisa
+[20.84] menggunakan trik yang kedua yaitu
+[22.84] menggunakan logical operator atau
+[24.88] operator logika. Nah, kita bahas yuk,
+[27.68] Teman-teman. Nah, untuk logical operator
+[31.64] itu di dalam Python diimplementasikan
+[34.96] dengan tiga ini. N, or, sama not. N itu
+[40.76] artinya dan or tidak. Eh, sori. N itu
+[46.08] artinya, or itu artinya dan, ornya atau
+[51.04] dan not itu artinya tidak, ya,
+[52.48] Teman-teman. Nah, tiga ini disebut
+[54.68] dengan logical operator. Untuk
+[56.96] pengertiannya sendiri, logical operator
+[59.20] itu membantu program membuat keputusan
+[62.32] atau condition, ya, membuat kondisi yang
+[64.72] jauh lebih kompleks. Jadi, sebelumnya
+[66.80] kalau kita lihat condition yang
+[68.40] sebelumnya kan if kita bisa login dengan
+[72.12] true kita, apakah dia terverifikasi,
+[74.64] apakah balance-nya ee apakah uangnya
+[77.96] lebih banyak dari harganya. Ini kalau
+[79.52] misalnya kita mau membeli sebuah item
+[81.60] gitu ya. Nah, ini kan ada tiga kondisi
+[83.68] yang harus benar semua gitu ya. Ee
+[86.64] loginnya harus sudah benar, apakah dia
+[89.16] sudah terverifikasi email gitu misalnya.
+[91.32] Dan juga balance-nya lebih besar dari
+[94.48] sama dengan eh harga yang mau dibeli
+[96.64] gitu tadi. Nah, itu kita bisa
+[99.32] menggunakan logical operators ini dalam
+[102.36] satu baris instead of kita nulis dia ke
+[104.84] tiga baris yang berbeda. Nah, kita bahas
+[108.08] yuk satu-satu. Dimulai dari operator N.
+[111.28] Nah, atau dan digunakan kalau kita mau
+[116.92] kondisinya semuanya benar gitu ya.
+[120.64] Misalnya contohnya ketika kita mau
+[124.72] mengikuti sebuah lomba. Nah, ketika kita
+[127.76] mau mengikuti semua lomba, ada tiga
+[130.68] persyaratan yang harus kita ikutin. Yang
+[133.96] pertama,
+[135.72] peserta kita sebagai peserta harus sudah
+[137.96] mendaftar dan kita harus sudah membayar
+[141.76] uang pendaftaran dan juga kita harus
+[146.04] sudah mengumpulkan karya yang mau kita
+[148.32] lombakan, gitu ya. Jadi ada tiga
+[151.12] persyaratan dan semuanya harus sudah
+[154.24] diikutin atau sudah harus di e benar
+[157.52] kondisinya gitu ya. Kalau salah satu aja
+[160.04] belum, maka kita tidak bisa ikut
+[162.28] kondisinya itu ya tadi teman-teman ya.
+[164.56] Jadi kalau misalnya kita punya sebuah
+[166.68] kondisi dan dia itu harus benar semua,
+[169.92] berarti kita bisa menggunakan operator
+[172.24] dan gitu ya. Sudah mendaftar, sudah
+[175.00] membayar, sama sudah mengumpulkan
+[176.68] karyanya gitu. Contoh bahasa Python-nya
+[180.28] seperti ini. Nah, seperti biasa kita
+[183.96] deklarasikan dulu eh variabelnya. Tiga
+[188.04] variabel di atasnya. Yang pertama apakah
+[190.40] dia sudah mendaftar? Apakah dia sudah
+[192.88] membayar? Apakah dia sudah submit
+[196.20] project-nya gitu ya. Kondisinya. Nah,
+[199.60] kondisinya itu kita tidak perlu lagi ya
+[201.60] mengetik seperti nestedate condition
+[204.08] yang sebelumnya. if registered titik du
+[207.24] if paid titik du if submitted titik du
+[210.28] enggak instead of itu kita bisa
+[212.72] menggunakan done atau gitu ya dalam
+[216.56] bahasa pemogan Python dan dia harus
+[218.24] lower case semua ya nih if registered
+[222.80] equals true. Jadi kalau misal ini ee
+[225.60] tulisan ininya ya. Kalau misalnya
+[227.24] teman-teman masih bingung yang seperti
+[228.80] ini dia tulisan sebenarnya if registered
+[234.32] sama eh registered sama dengan true dan
+[239.88] n ya berarti n paid equals equal equals
+[244.84] true
+[246.76] and submitted
+[249.80] equals equals true gitu ya. Karena kan
+[252.72] eh dalam kondisi ketika kita membuat
+[255.04] conditional kita harus menggunakan
+[256.76] operator comparison ya. Nah, kalau
+[259.20] misalnya tadi kalau misalnya nilainya
+[261.36] true atau false aja itu kita bisa
+[263.24] langsung menuliskannya seperti ini ya,
+[265.20] Teman-teman. Nah,
+[267.88] itu
+[269.40] ee di sini if registered-nya benar
+[274.68] dan
+[276.24] paid-nya juga benar dan submittednya
+[278.60] juga benar, maka di sini kita bisa
+[281.52] langsung lihat. Berarti kalau misalnya
+[284.08] benar semua kita langsung nge-print, oh
+[286.84] berarti dia boleh ikut lomba. Tapi kalau
+[289.32] misalnya salah satu aja yang ada yang
+[291.08] salah misalnya registered-nya dia di
+[293.52] sini kita tulis false maka kita langsung
+[296.96] ee tulis belum bisa ikut lomba. Karena
+[299.00] gimana dia mau ikut lomba kalau dia
+[300.40] belum bayar atau belum mendaftar atau
+[302.44] belum mengumpulkan apa yang mau dinilai
+[304.12] atau dilombakan gitu ya. Nah, jadi untuk
+[307.88] N itu dia menggantikan eh next if kalau
+[312.12] misalnya dia harus benar semua seperti
+[314.08] itu. Nah, mungkin untuk ee menggali
+[318.84] lebih lanjut pemahaman teman-teman
+[320.68] tentang logic n itu teman-teman boleh
+[323.60] mengerjakan kuis berikut ini.
+[328.80] Nah, teman-teman telah menyelesaikan
+[331.64] pemahaman latihan soal tentang M.
+[334.64] Setelah n logical operator yang kedua
+[337.56] itu ada yang namanya or yang bahasa
+[340.64] Indonesianya artinya atau ya or ini
+[343.68] berbeda dengan n kebalikan dari n or
+[347.52] digunakan kalau kita mau cukup salah
+[352.72] satu kondisi aja yang benar maka dia
+[355.00] sudah bisa jalan gitu kondisinya ya.
+[357.40] Jadi kalau contohnya deh kita langsung
+[359.16] ke contoh. Misalnya kita mau login ke
+[361.96] Instagram. Kalau misalnya kita mau login
+[364.20] ke Instagram kan kita bisa menggunakan
+[366.60] email atau kita bisa menggunakan
+[369.40] username Instagram kita atau kita bisa
+[373.00] menggunakan nomor HP yang sudah
+[374.40] terdaftar. Jadi sebenarnya kita enggak
+[376.52] harus ee login menggunakan email user
+[379.04] dan nomor HP ya. Kecuali kita pada saat
+[381.32] ee sign in atau apa mendaftar gitu ya.
+[384.04] Tapi kalau misalnya login karena kita
+[385.88] sebelumnya sudah mendaftarkan tiga hal
+[387.60] tersebut, kita bisa memilih nih salah
+[389.28] satu aja kalau mau login bisa
+[391.12] menggunakan email or username kita or
+[395.68] phone number kita. Jadi enggak harus
+[397.44] semuanya, salah satu aja sudah cukup.
+[399.76] Contoh implementasinya dalam bahasa
+[401.60] pemrograman Python nih, as usual as
+[405.12] always, kita perlu menambahkan eh
+[409.60] ini nih variabel ya. kita perlu
+[411.44] mendeklarasikan variabel yang nanti akan
+[414.20] dijadikan condition-nya yang pertama
+[416.92] gini ya. Nah, di sini ada use email, use
+[421.08] username, sama use phone. Untuk eh use
+[424.04] case ini kita mau menggunakan username
+[426.96] gitu ya. Usernya eh masuk loginnya
+[429.84] menggunakan username. Maka di sini kita
+[433.72] tinggal masukin nih kondisinya. If use
+[436.72] email
+[438.40] yang use email ini apa? Oh, use
+[440.80] email-nya false. Nah, programnya enggak
+[442.68] akan langsung stop karena di sampingnya
+[444.20] itu ada OR. Kecuali di sini kita
+[447.16] pakainya N. Kalauya dia pakai N,
+[449.84] programnya akan langsung stop. Dia akan
+[451.20] langsung pindah ke nah since kita
+[454.16] pakainya or, programnya enggak akan stop
+[456.56] walaupun use email yang kondisi yang
+[458.40] pertama itu salah.
+[460.52] Use emailnya false, baru dia akan ngecek
+[462.88] yang kedua. use username-nya true. Wah,
+[465.68] kalau use username-nya true, maka dia
+[467.52] akan langsung print login. Jadi, dia
+[469.72] enggak membaca sampai selesai. Yang
+[471.64] penting dia udah ada salah satu aja ya,
+[473.56] ada yang eh true, maka dia akan langsung
+[476.72] menjalankan ini. Beda dengan yang N yang
+[479.36] sebelumnya ya. Kalau N yang sebelumnya
+[481.64] kalau ada satu aja ini misalnya di sini
+[485.40] N if use email sama true, oh berarti dia
+[489.64] akan langsung ngprint nih di sini gitu
+[491.44] ya, Teman-teman ya. Jadi semuanya harus
+[493.24] benar kalau misalnya menggunakan N. Tapi
+[496.00] kalau misalnya salah satu aja kita bisa
+[497.96] menggunakan logic operators yang namanya
+[501.48] word. Kalau misalnya semua apa itu
+[504.32] namanya? Semuanya salah gimana? Use
+[506.44] email salah, username salah, font salah.
+[509.32] Ya udah berarti di sini dia akan
+[511.40] langsung menjalankan else gitu ya.
+[513.40] Karena yang ini kan hanya perintah yang
+[517.08] ini hanya muncul ketika kita ee
+[520.60] kondisinya terpenuhi. atau benar semua.
+[523.92] Oke, itu untuk logic operator OR.
+[527.60] Teman-teman bisa melakukan latihan
+[529.88] berikut ini untuk memahami lebih lanjut
+[532.56] tentang logika OR.
+[537.84] Oke, Teman-teman kita sudah membahas.
+[541.40] Nah, ada logical operator yang ketiga
+[543.40] namanya not. Nah, note ini dia digunakan
+[546.16] untuk membalikkan nilai sebuah kondisi.
+[548.92] Ingat ya, membalikkan nilai sebuah
+[550.68] kondisi. Nah, contohnya not ini dia
+[553.48] selain di ee gunakan dalam kondisi, kita
+[556.04] bisa gunakan dia juga dalam sebuah
+[557.60] variabel. Nah, membalikkan nilai itu
+[559.52] maksudnya ini kalau misalnya ada
+[561.20] variabel yang nilainya true, maka dia
+[563.48] akan balik menjadi sebuah false ketika
+[565.52] kita masukkan dia node ini ke dalam
+[567.20] kondisi atau kita bisa implementasikan
+[569.56] langsung di dalam baris di Python ini,
+[572.56] ya. Coba kita buka Google Colab.
+[575.16] Kemudian di Google Colab ini kita
+[576.72] membuat sebuah variabel namanya is
+[579.48] raining.
+[581.92] Raining. Nah, misalnya sekarang tidak
+[584.20] hujan nih, tidak hujan. Maka di sini
+[586.32] kita tulis variabelnya nilainya false.
+[588.92] Ketika kita print
+[593.08] sprint string sekarang
+[601.36] apakah hujan?
+[603.04] Apakah
+[604.84] hujan atau mungkin kita bikin yang
+[607.08] simpel aja dulu ya. Kita ngecek dulu
+[609.64] nilainya is raining ini apa. Oh, is
+[611.48] raining ini harusnya jawabannya false
+[614.44] ya. Kita cek, kita run. Nah, ini ya.
+[617.68] Karena kita di sini nulisnya false.
+[619.56] Gimana kalau misalnya kita tambahkan not
+[621.80] di depannya?
+[623.60] not ising. Kalau kita tambahkan not di
+[626.92] depannya, maka dia akan mengubah menjadi
+[629.88] true. Karena not ini fungsinya adalah
+[633.56] membalikkan sebuah nilai yang awal
+[635.76] false, dia akan menjadikan true. Dan
+[638.12] biasanya
+[640.08] variabel eh logical operator node ini
+[643.08] digunakan untuk membalikan nilai dari di
+[645.24] dalam sebuah condition. Misalnya kalau
+[648.28] kita mau membuat sebuah program yang
+[650.72] menampilkan kalau belum hujan kita ee
+[653.52] bisa bermain di luar gitu. Kita mau
+[654.96] menampilkan teks bisa bermain di luar.
+[657.28] Nah, di sini kita tulis is raining sama
+[660.72] dengan false. If not is raining, kita
+[664.04] print eh boleh bermain di luar. Oke,
+[666.20] kita coba copy, kita tambahkan ke dalam
+[668.84] Google Colab. Nah, di sini ketika kita
+[671.84] run bermain di luar ya, padahal di sini
+[675.08] false. Nah, sebelumnya kan kita kalau
+[678.40] misalnya mau pakai eh is raining doang,
+[681.64] kalau kita mau nambahkan variabel doang,
+[683.48] is raining doang, ini kan dia eh harus
+[686.12] true ya nilainya ya. Jadi dia harus sama
+[688.52] dengan sama dengan true baru dia boleh
+[690.56] menjalankan yang di bawahnya ini gitu
+[692.52] ya. Tapi ketika kita menggunakan ini ee
+[695.96] ketika kita menggunakan sama dengan sama
+[697.76] dengan itu kan kayak ribet gitu ya.
+[700.52] Makanya ee kita hapuskan kalau misalnya
+[704.36] dia true dia bisa kayak gini aja dia
+[706.48] bisa gitu ya. Nah, tapi kalau misalnya
+[709.48] kita kasih dia is raining ini aja ya,
+[712.20] misalnya nilainya di sini false, terus
+[713.84] itu kita mau ngecek apakah is raining
+[715.72] true, maka di sini dia programnya enggak
+[718.08] jalankan apa-apa karena is raining-nya
+[720.04] false. Nah, untuk mengcat supaya dia
+[723.56] untuk mengubah programnya supaya dia
+[726.00] bisa menjalankan perintah ini tapi kita
+[728.12] enggak mau nulis ribut-ribut sama dengan
+[729.92] sama dengan, maka di sini kita tambahin
+[731.92] aja not gitu. Jadi yang ini kan dia
+[735.08] ngecek apakah true. Nah, di sini dia
+[737.56] mengecek apakah false. Kalau benar false
+[740.36] maka dia akan menjalankan ini. Coba kita
+[742.20] cek. Nah, seperti itu. Jadi ee
+[744.96] kesimpulannya kalau kita menggunakan not
+[747.68] di dalam sebuah kondisi, ya kan di dalam
+[750.36] sebuah eh condition mm di sininya itu
+[754.76] dia membalik gitu. Jadi kita enggak
+[756.40] perlu dologi tulis sama dengan sama
+[757.92] dengan. Nah, oke kita balik lagi untuk
+[761.40] dalam ee untuk logical operator itu kita
+[763.80] bisa menggabungkan sekaligus tiga
+[765.80] operator tadi. Misalnya nih kita sedang
+[769.24] kursus atau sedang di sekolah. Ketika
+[773.08] kita bisa naik atau belajar di kelas di
+[775.64] semester berikutnya ada tiga kondisi
+[778.08] yang harus lengkap. misalnya nilainya
+[781.04] harus minimal 75 dan sudah menyelesaikan
+[785.52] tugas-tugasnya
+[787.48] dan tidak sedang masa remedial. Misalnya
+[790.12] udah udah ujian akhir final eh final
+[793.08] exam tapi remedial. Nah, kalau remedial
+[795.92] dia enggak boleh ikut kelas selanjutnya
+[797.84] itu ya. Kita bikin eh kondisinya seperti
+[800.04] itu. First thing first as usual kita
+[802.40] bikin tiga variabelnya ya. Variabel yang
+[805.60] nanti akan dicompare menjadi sebuah
+[808.24] condition. ee ee di sininya ya, di sini
+[812.00] nilainya minimal 75. Misalnya kita mau
+[814.16] bikin skornya lebih dari 75, terus itu
+[817.16] kita bikin apakah dia sudah
+[818.52] menyelesaikan semua tugas, kita bilang
+[820.52] di sini true. Nah, apakah dia sedang
+[822.60] remedial? Kita bilang di sini false.
+[825.40] Nah, bahasa programnya dalam Python-nya
+[828.76] itu seperti ini nih tampilannya.
+[831.32] Ada if skor lebih 75 tapi dia kita tidak
+[835.68] turunin ke bawah gitu ya. Kalau next
+[837.24] condition kan sisanya kita taruh di
+[839.28] bawah ya, di dalamnya sini. Nah, kalau
+[841.28] ketika kita menggunakan logical operator
+[843.44] itu kita tulis aja nih N karena kan kita
+[846.24] selain nilainya lebih di atas atau sama
+[848.20] dengan 75, dia harus sudah mengerjakan
+[850.56] semua tugasnya dan dia sedang tidak
+[853.96] remedial gitu kan. Ini kalau misalnya
+[856.52] kita enggak mau pakai not remedial,
+[858.92] berarti kita harus remedial sama dengan
+[860.76] sama dengan false. Nah, itu kan capek.
+[862.96] Berarti kita tulis aja and not remedial.
+[866.36] Berarti di sini dia kalau eh di sini
+[869.36] false maka dia akan menjalankan ini
+[872.84] gitu. Nah, ee cara membacanya berarti
+[877.08] dia di sini mengecek dulu nih apakah
+[879.64] skornya lebih dari 75. True. Skornya
+[883.64] sama dengan 75. true. Terus dia ngelihat
+[886.28] lagi and apakah task-nya udah selesai.
+[889.48] Tadi kan kalau kita lihat variabelnya eh
+[893.20] task-nya dan juga ya true ya, maka di
+[895.36] sini nilainya true juga. Apakah dia not
+[898.12] remedial? Not remedialnya true juga
+[900.32] karena apa? Tadi kan remedial nilainya
+[902.00] false, kita menggunakan not dia akan
+[904.24] menjadi true. Karena tiga-tiganya true
+[906.80] maka semua syaratnya benar. Nah, karena
+[910.16] kita nah karena kita tadi menggunakan N
+[912.36] operator logical N di sini, maka kalau
+[915.12] ada salah satu aja ada yang salah, maka
+[917.28] dia akan langsung menjalankan else-nya
+[919.52] belum boleh ikut kelas lanjutan. Tapi
+[921.56] kalau misalnya ada salah satu aja yang
+[923.28] kalau kita menggunakan OR misalnya
+[925.64] antara skornya 80 atau dia sudah ee dia
+[931.16] tidak sedang remedial, maka dia boleh
+[932.88] ikut kelas selanjutnya gitu ya.
+[935.76] Nah, untuk
+[938.28] operator logika dia itu memiliki
+[940.64] prioritas untuk membacanya. Nah,
+[943.24] urutannya prioritas membacanya pertama
+[945.52] dia akan mengecek not dulu. Jadi apapun
+[948.16] yang nilainya not dia akan ubah menjadi
+[951.04] eh kebalikannya. Misalnya kalau nilainya
+[953.16] false dia akan ngubah jadi true. Kalau
+[955.20] misalnya nilainya true dia akan ubah
+[956.72] dulu jadi false. Gitu. Setelah dia
+[959.08] ngecek note, maka dia akan ngecek lagi
+[961.32] yang yang akan pertama kali dicek gitu
+[963.84] setelah not itu dia n yang kedua berarti
+[966.24] ya. Yang kedua dia akan ngecek N-nya
+[968.00] dulu. Jadi yang dijalankan yang
+[969.28] dicompare itu yang ada N-nya dulu.
+[971.44] Setelah N baru dia akan ngecek OR-nya
+[974.80] karena ee apa itu namanya? N itu
+[978.16] keduanya harus benar gitu ya. Misalnya
+[980.28] nih di sini ada kondisi
+[982.56] true or false and false. Nah, kalau
+[988.00] seperti ini maka dia akan ngecek yang n
+[990.12] dulu. Karena di sini enggak ada not ya.
+[991.48] Berarti dia akan ngecek yang pertama
+[992.80] yang false dulu. Jadi di sini false dia
+[995.16] cek pertama false sama false. Kalau
+[998.08] keduanya false berarti kan nilainya akan
+[1000.88] false ya. Berarti di sini nilainya
+[1002.80] false. Berarti sekarang kita cek true or
+[1006.32] false. Nah, kalau misalnya variabel or
+[1008.92] itu tadi kan kalau salah satunya aja ada
+[1011.12] yang true, maka dia nilainya akan true,
+[1013.44] maka hasil akhirnya akan menghasilkan
+[1015.72] true.
+[1017.44] Oke. Nah, untuk ee membuat programnya
+[1022.00] itu tidak complicated, tidak
+[1023.40] membingungkan, kita ee ketika
+[1026.52] menggunakan logical operator, usahakan
+[1028.48] untuk menggunakan tanda kurung supaya ee
+[1032.04] program itu tahu mana duluan yang harus
+[1034.08] di-compare gitu. Misalnya kita ada nilai
+[1036.52] OR duluan yang harus di ee harus dicek,
+[1039.64] berarti kita gunakan dia kurung sebagai
+[1041.60] prioritas. Nah, di sini ada misalnya
+[1046.04] skornya lebih dari 75 dan task dan or
+[1049.72] atau punya dia punya bonus nih misalnya
+[1051.56] contohnya kasusnya nilainya harus 75 dan
+[1054.48] tugasnya harus sudah semua nilai atau
+[1056.96] kalau misalnya skornya mm
+[1060.60] tidak 75 sama tasnya belum selesai semua
+[1063.64] tapi dia bonusnya misalnya ikut
+[1065.80] olimpiade maka dia tetap lolos begitu.
+[1069.84] Nah, ini kalau kita menggunakan tanda
+[1071.40] kurung berarti dia akan mengecek end
+[1072.80] dulu walaupun dalam Python tuh
+[1074.80] sebenarnya dia sudah mengecek end dulu
+[1077.20] gitu. Itu untuk ee apa itu namanya?
+[1080.72] Memberikan prioritas yang mana yang
+[1082.88] harus dikerjakan terlebih dahulu oleh
+[1085.40] Pak itu tadi. Oke, untuk logical
+[1089.24] operator e seperti itu dulu
+[1091.76] penjelasannya. Silakan ee kerjakan kuis
+[1095.24] dan latihan ee berikut ini.

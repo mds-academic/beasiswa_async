@@ -1,0 +1,1737 @@
+[1.60] Halo teman-teman, hari ini kita akan
+[4.04] membahas
+[7.86] [berdehem]
+[9.08] Halo teman-teman, dalam video kali ini
+[11.20] kita akan membahas tentang input
+[13.08] validation. Nah, sebelum kita membahas
+[15.32] lebih jauh apa sih input validation? Yuk
+[17.84] kita pelajari dulu apa itu input.
+[20.72] Input adalah sebuah data atau informasi
+[24.36] yang dimasukkan oleh pengguna atau user
+[26.64] ke dalam program kita. Nah, bayangkan
+[28.80] teman-teman ketika membuat program ee
+[31.76] misalnya mau menghitung A + B. Nah,
+[34.40] kadang kan kita ee dalam bahasa P
+[36.64] sederhana kita bisa memasukkan nilai
+[39.08] A-nya itu dalam sebuah variabel, nilai
+[40.96] B-nya ke dalam sebuah variabel yang
+[42.48] nanti kemudian bisa dihitung A B gitu
+[46.08] ya. Nah, cuman kadang kita nilainya
+[48.08] enggak cuman misalnya A yang kita
+[50.20] masukkan ke dalam variabel a = 2, b = 5.
+[53.24] Nah, kan kadang kita a-nya itu enggak
+[54.64] selalu 2, b-nya enggak selalu 5. Nah,
+[57.16] kita mau datanya berubah-berubah. Nah,
+[59.40] dengan kita menggunakan input itu kita
+[61.80] bisa ee menambahkan ee menjalankan
+[65.36] programnya dengan data yang
+[67.12] berbeda-beda. Dalam bahasa pemrograman
+[69.48] Python itu menggunakan sebuah function
+[72.96] yang namanya bukaung.
+[75.48] Nah, untuk input sendiri bentuknya
+[79.08] seperti ini. Pertama kita tuliskan in
+[82.00] yang di dalam kurung itu adalah
+[83.88] perintahnya ya. Kayak apa yang mau
+[86.00] diinputkan ke dalam program ini.
+[87.56] Misalnya di sini kita mau memasukkan
+[89.64] nama transaksinya gitu ya atau kita mau
+[92.32] memasukkan minta user untuk memasukkan
+[94.88] nominal transaksinya. Nah, semua ini
+[98.64] harus disimpan ke dalam sebuah variabel
+[101.08] ya teman-teman. Ingat, sebuah input dia
+[103.16] harus disimpan ke dalam sebuah variabel.
+[105.48] Karena ketika kita hanya menggunakan
+[106.76] input, datanya tidak akan bisa diproses.
+[109.00] Nah, dalam Python kalau datanya mau mau
+[112.44] ee diproses ke proses selanjutnya itu
+[115.44] harus disimpan ke dalam sebuah variabel.
+[118.32] Nah, di sini untuk nama transaksi kita
+[120.68] masukkan ke dalam sebuah variabel.
+[122.48] Contohnya namanya name. And then di sini
+[125.40] kita kalau nominal transaksinya kita
+[127.48] masukin ke dalam variabel namanya
+[129.16] amount. Tipe transaksinya kita masukin
+[131.92] namanya transaction type. Ingat ya,
+[134.64] dalam variabel juga tidak boleh
+[135.96] menggunakan spasi. Jadi kita bisa
+[137.32] menggunakan unders atau capital first
+[140.08] letter. Nah, itu untuk input di dalam
+[142.84] bahasa pemrograman Python. Nah, bayangin
+[145.92] teman-teman kadang kalau misalnya kita
+[148.52] membuat sebuah program gitu ya, misalnya
+[150.96] kita mau membuat program yang dia
+[152.72] mencatat ee data keuangan kita. Nah,
+[155.64] ketika kita pakai ee berikan kode kita
+[158.36] ke user, kadang user itu melakukan
+[161.08] beberapa kesalahan yang mereka tidak
+[162.48] sadari gitu atau misalnya usernya tidak
+[165.32] pandai dalam menggunakan teknologi. Nah,
+[169.08] misalnya kita harus masukin, ayo kita
+[171.24] masukin nama transaksinya gitu ya supaya
+[173.16] tahu oh ini kita barusan membeli apa.
+[175.40] Tapi karena kita enggak sengaja, kita
+[177.08] masukin enter gitu di dalam programnya.
+[179.88] Atau pada saat kita masukin nominalnya
+[182.12] berapa, dia malah masukin angka.
+[184.60] Disuruhnya 500
+[186.88] dia tulisnya pakai angka apa? Ee pakai
+[190.16] abjet ya, L A L I M A gitu. Nah, malah
+[193.44] ABC yang dia tulis. atau misalnya karena
+[197.44] walaupun ya udah benar nih menggunakan
+[200.32] angka gitu ya, tapi dia tambahin
+[202.44] minusnya atau tambahin karakter-karakter
+[204.48] yang bukan sebuah angka gitu. Nah,
+[208.00] banyak banget contoh kasus-contoh kasus
+[209.76] lain misalnya kayak oh dia kelebihan
+[213.28] masukin spasi atau enggak sengaja
+[214.84] masukin spasi di depannya atau bahkan
+[217.20] kita masukkan pengguna enggak sengaja
+[219.80] masukin pakai capital capslock semuanya.
+[222.76] Nah, kadang kan kita ee dalam program
+[225.40] itu perlu memvalidasi gitu ya. Kita
+[228.24] perlu kita membuat sebuah kondisi di
+[230.88] mana jika tipe transaksinya adalah
+[234.08] pemasukan, kita mau masuk ee uangnya
+[237.16] dikurangin bla bla bla kayak gitu, Mas.
+[239.44] Hitung persenannya bla bla bla. Nah, kan
+[241.48] kita ketika menggunakan membuat kondisi
+[243.52] itu pemasukannya sama dengan sama kecil.
+[245.88] Nah, Python itu dia akan menganggap
+[247.96] kapital pemasukan yang kapital semua
+[249.96] sama yang di dalam if kita tadi yang
+[252.00] kecil semua itu. Itu dua hal yang
+[254.44] berbeda padahal tulisannya sama. Nah,
+[256.24] kalau masih bingung kita akan lanjut ee
+[257.72] bahas selanjutnya gitu ya. Nah, dalam
+[260.28] sebuah sebagai programmer program yang
+[263.44] kita buat itu kita harus bisa
+[266.96] membuat programnya itu pandai dan juga
+[270.40] paham. Oh, ini ada hal-hal yang mungkin
+[274.32] bisa dilakukan. user daripada kita
+[276.20] ngasih tahu user oh programnya error
+[278.16] gitu, kita kasih tahu aja oh ada yang
+[280.68] salah nih dalam programnya. Nah, itulah
+[284.20] yang disebut dengan validasi input.
+[286.72] Validasi input itu intinya adalah sebuah
+[289.48] proses yang di mana kita
+[292.56] ya memeriksa semua inputan user karena
+[295.36] kan kita validasi input. Berarti yang
+[296.92] divalidasi adalah input gitu. berarti
+[298.84] validasi adalah proses memeriksa gitu ya
+[301.36] dan memastikan bahwa data yang
+[303.20] dimasukkan oleh user itu udah tepat gitu
+[306.00] dengan cara program yang kita ee buat
+[310.08] itu seperti apa gitu.
+[313.56] Golden rule-nya adalah kita sebagai
+[315.32] programmer jangan pernah langsung
+[316.88] percaya gitu ya kalau user itu akan
+[319.60] memasukkan data atau memasukkan sesuatu
+[321.80] dengan benar atau menggunakan aplikasi
+[323.44] kita dengan benar gitu. kita harus
+[326.12] membuat program lebih pintar lagi gitu
+[328.04] ya. Jadi kalau misalnya user ada iseng
+[330.28] itu kita bisa langsung kasih solusi gitu
+[333.56] ya. Jadi programnya enggak langsung
+[335.20] error begitu aja. Nah, ada beberapa
+[338.08] validasi. Misalnya kita mau membuat
+[340.16] program keuangan gitu ya, ada beberapa
+[342.16] validasi yang perlu kita lakukan.
+[344.04] Misalnya
+[345.92] apakah yang di ketika kita minta mereka
+[348.12] masukin jumlah transaksi yang dia
+[350.44] lakukan apakah datanya kosong apa enggak
+[352.48] gitu ya. Karena kan untuk mencatat kan
+[354.32] harus ada datanya. Kalau enggak ada yang
+[356.40] dicatat berarti kalau enggak ada datanya
+[358.88] berarti apa yang dicatat gitu maksudnya.
+[361.04] Kemudian apakah angka yang dimasukin itu
+[363.40] berupa angka atau angkanya positif?
+[366.40] Apakah kategorinya sesuai misalnya
+[368.36] seperti itu ya dan banyak la yang
+[370.68] lainnya yang bisa kita tambahkan gitu
+[372.00] ya. Tapi untuk kasus ini ada empat
+[374.28] validasi yang perlu kita lakukan. Nah,
+[376.96] sekarang kita bahas dulu validasi input
+[380.52] itu
+[385.16] anggap saja seperti kita mau naik roller
+[388.28] coaster yang ada di Duupfan gitu kan ya.
+[390.44] Nah, ketika kita mau naik roller coaster
+[392.16] kan kita pertama harus masuk dulu ke
+[393.80] dalam Dufan dan untuk masuk ke Dufan itu
+[395.64] kita harus punya tiket gitu ya. Nah,
+[397.56] validasi itu anggap aja seperti kita
+[400.40] mengecek tiketnya gitu ya. Apakah
+[402.24] tiketnya sudah benar apa enggak gitu ya.
+[404.12] Apakah tiketnya ada apa tidak. Kalau
+[406.12] tiketnya ada, apakah tiketnya ini benar
+[408.48] apa enggak? Maksud benar apa enggak itu
+[410.04] apakah palsu gitu atau tiketnya salah
+[412.44] tanggal atau tiketnya ternyata cuman
+[415.64] kertas doang gitu. Nah, itu perlu
+[417.20] divalidasi ya kan validasi yang pertama
+[419.64] gitu. Nah, setelah sudah masuk kita
+[422.00] lakukan validasi yang kedua. Nah, untuk
+[424.28] roller coaster kan ada tinggi minimal
+[426.28] yang harus kita mm
+[429.72] harus yang ee kita punya gitu ya.
+[431.68] Misalnya tinggi kita harus sesuai dengan
+[433.76] batas amannya gitu ya. Jadi di
+[435.80] pemeriksaan kedua sebelum kita naik
+[437.68] roller coasternya itu dicek dulu apakah
+[439.76] kaput terlalu ee tingginya cukup apa
+[441.96] enggak. Kalau enggak cukup berarti dia
+[443.96] enggak bisa naik gitu ya. Nah, kedua hal
+[446.72] ini untuk naik coasterer ya naik roller
+[448.96] coaster itu ya dalam contoh kasus itu
+[451.20] keduanya harus benar. Jadi tiketnya
+[452.80] harus punya untuk masuk ke depan dan
+[454.56] tinggi badannya harus tinggi juga. Kalau
+[456.68] ada salah satu syarat aja yang gagal
+[459.56] maka programnya pun eh maka kita enggak
+[462.40] akan bisa masuk naik roller closer gitu
+[463.92] ya. Kalau contoh kasusnya ini sama juga
+[465.52] dengan program komputer. Jadi kita harus
+[467.72] punya ee sebuah validasi pemeriksaan
+[471.64] yang pertama dan kedua dan ketiga dan
+[473.44] seterusnya. Kalau salah satu aja enggak
+[476.16] terpenuhi maka programnya akan stop,
+[478.20] enggak bisa lanjut gitu ya. Itulah mm
+[481.64] juga bisa juga disebut dengan keamanan
+[483.76] data gitu. Jadi misalnya kita kalau
+[485.32] masukin username sama password kalau
+[487.08] salah satu aja enggak enggak benar kan
+[488.96] kita enggak bisa lanjut tuh masuk ke
+[490.12] akun kita. Nah, itu ee salah satu bentuk
+[493.84] keamanan data juga gitu ya. Nah,
+[496.40] sekarang di dalam validasi input itu ada
+[499.68] juga yang namanya sanitasi input.
+[501.52] Sanitasi input itu apa sih? Sanitasi itu
+[503.80] artinya kan kalau dalam bahasa Indonesia
+[505.84] artinya membersihkan ya, Teman-teman.
+[507.60] Nah, sanitasi itu dia artinya adalah
+[511.00] merapikan data. Jadi, user nih kita
+[513.72] minta masukin data misalnya kita mau
+[517.24] mereka masukin ini jenis pengeluaran
+[519.04] transaksinya apa? apakah pemasukan atau
+[522.52] pengeluaran gitu. Nah, user itu kadang
+[524.72] misalnya iseng nih mau masukin misalnya
+[527.36] ada spasinya di depan gitu ya atau
+[530.96] kapitalnya beda-beda gitu. Nah, kan
+[533.04] program kita enggak bisa ngecek nih
+[534.52] apakah ini pemasukan atau pengeluaran.
+[538.28] Nah, ketika kita menggunakan sanitasi
+[540.08] input, kita bisa membersihkan gitu ya,
+[542.36] membersihkan. Oh, ini ada spasi di depan
+[544.04] sama di belakangnya. Yuk, kita
+[545.20] bersihkan, kita hapus. Terus ini
+[547.32] semuanya ee ada yang huruf besar, ada
+[549.80] yang huruf kecil. Yuk, kita kecilkan aja
+[551.80] semua biar program kita bisa ngebaca.
+[554.12] Nah, ini jadi pemasukan yang awalnya
+[556.80] kotor seperti ini. Kita bersihkan dia.
+[559.24] Jadi, katanya seperti ini, gitu ya. Nah,
+[563.48] dalam bahasa pemrograman Python untuk
+[567.08] menggunakan untuk membersihkan ini untuk
+[569.32] mensanitasi input ini kita bisa
+[571.40] menggunakan dua function bawaan ya yang
+[574.48] ada di di dalam bahasa pemukan Python.
+[576.32] Jadi kita enggak perlu instal-install
+[577.52] lagi. Namanya adalah dotstrip dan juga
+[581.08] dot lower.
+[583.20] Kalau dotstrip itu dia fungsinya untuk
+[585.36] menghapus spasi yang tidak berguna. Jadi
+[588.12] di awal sama di akhir kalau ada spasi ya
+[589.88] sudah dia akan hapus itu. Kemudian kalau
+[592.56] lower itu dia mengecilkan semua hurufnya
+[595.16] jadi lower case gitu ya. Jadi itu salah
+[598.24] satu pentingnya menggunakan sanitasi.
+[601.20] Coba deh kita cek lagi. [berdehem]
+[603.40] Pertama kita bahas dulu tentang
+[605.32] dotstrip. Nah, dotstrip ini tadi seperti
+[608.12] yang kakak bilang dia membersihkan gitu
+[611.56] ya. membersihkan data yang ada spasinya
+[615.56] di depan nih. Misalnya kita ee menulis
+[618.36] ayam goreng atau kita ee tulis yang lain
+[621.40] ya misalnya
+[623.44] mm
+[625.04] MSIG
+[626.88] tower
+[628.84] misalnya gitu. Nah, ketika kita
+[630.60] menggunakan dotstrip,
+[633.28] nah yang awal ada spasi itu dia akan
+[636.16] menghapus. Jadi spasinya yang hilang tuh
+[638.64] hanya di awal sama yang di
+[641.68] yang di tengah enggak dihapus ya, karena
+[643.20] kan yang ini dianggap sebagai dari
+[645.48] datanya gitu ya. Jadi intinya
+[648.08] dotstripnya dotstrip ini membersihkan
+[650.68] spasi yang kelebihan di awal dan di
+[652.44] akhir aja gitu ya teman-teman. Nah,
+[654.72] selanjut selain dotstip itu ada yang
+[657.04] namanya dot lower. Dot lower ini dia
+[659.64] fungsinya
+[661.16] mengecilkan gitu ya. Jadi semua
+[662.60] data-data yang lower case, yang upper
+[665.40] caseur
+[668.20] itu dia bisa dikecilkan gitu. Nih
+[671.84] misalnya di sini kita punya ee
+[674.72] programnya coba kita jalanin di sini.
+[677.00] Contohnya kalau kita menggunakan lower
+[679.20] atau misalnya kita
+[681.84] oh kita ini aja ya transaksi misalnya
+[684.60] pengeluaran.
+[686.80] Nah semuanya caps log depan ya. Ketika
+[689.24] kita run nih di sini pengeluaran
+[692.44] dia akan dikecilkan menjadi sebuah
+[696.60] ee lower case gitu ya. Jadi dia bisa
+[699.56] dibandingkan. Nah, bentuknya itu seperti
+[701.88] apa sih? Coba kita lihat nih. Tapi
+[703.72] sebelum kita lihat bentuk programnya,
+[706.72] kita harus pahami dulu bahwa ketika kita
+[709.44] melakukan sanitasi dan validasi itu
+[711.88] adalah dua hal yang berbeda ya,
+[712.96] Teman-teman. Nah, sanitasi itu dia
+[715.40] artinya adalah membersihkan. Jadi
+[718.64] intinya ketika ada data yang tidak benar
+[721.68] dimasukkan oleh user itu kita bersihkan
+[723.92] gitu ya menggunakan strip sama lower.
+[726.12] Nah, validasi ini dia lebih mengecek
+[728.52] misalnya ada oh kita suruh dia masukin
+[732.60] angka gitu ya tapi dia masukinnya ee
+[736.64] huruf atau misalnya dia di sini data
+[739.68] yang kita masukin berapa jumlah
+[741.12] pengeluarannya misalnya minus R.000
+[743.28] padahal kan kita maunya datanya itu
+[745.36] R.000 Rp50.000 dan seterusnya. Nah,
+[747.76] itulah fungsinya validasi untuk mengecek
+[749.56] apakah data yang sudah dimasukin benar
+[751.56] apa enggak. Kalau sanitasi ini dia
+[753.68] membersihkan datanya gitu. Nah, itu
+[756.28] untuk sanitasi versus validasi.
+[761.96] Nah, sekarang kita akan membahas tentang
+[765.20] validasi.
+[767.16] Validasi yang pertama yang mau kita buat
+[769.64] kan tadi ada beberapa syarat yang harus
+[771.96] dilakukan oleh program kita supaya dia
+[774.04] bisa berjalan dengan benar. Nah,
+[776.72] validasi yang pertama kita mau
+[778.36] programnya bisa berjalan gitu ya, tanpa
+[781.44] mengeluarkan error dan kita harus
+[782.72] memvalidasi, oh user ini ternyata salah
+[785.08] loh. Misalnya dia belum memasukkan data
+[787.88] apapun. Nah, di sini dia kita minta
+[792.56] untuk masukkan nama transaksinya gitu
+[794.60] ya. Apakah dia sebuah pemasukan atau
+[797.00] pengeluaran. Nah, di sini sudah kita
+[799.20] buatkan input yang disimpan ke dalam
+[801.08] sebuah variabel dan juga kita sudah
+[803.48] bersihkan ya programnya ya. kita
+[805.08] sanitasi sekalian gitu. Nah, di sini
+[807.96] kita mulai validasinya.
+[810.20] Validasinya simpel aja, Teman-teman.
+[811.64] Kita menggunakan condition aja.
+[813.80] Condition-nya simpel banget. Kalau
+[815.72] variabel name ini kosong, ya. Kalau
+[818.36] kosong itu kan berarti di ee tandain
+[820.44] dengan petik tanpa ada datanya di
+[822.60] tengah. Kalau nama yang dimasukkan yang
+[824.96] diinputkan itu kosong, maka kita mau
+[827.96] programnya akan nge-print nama
+[829.72] transaksinya enggak boleh kosong. Gitu.
+[831.64] kita kasih tahu user, "Hei, nama
+[833.32] transaksinya kok enggak boleh kosong
+[834.80] gitu ya. Kita harus masukin. Nah, kalau
+[837.96] misalnya kita nama transaksinya benar,
+[840.28] kita bisa programnya kita bisa buat oh
+[843.04] nama transaksinya
+[845.16] apapun yang dimasukin, pemasukan atau
+[846.64] pengeluaran gitu ya, Teman-teman. Jadi
+[849.00] ee programnya bisa memasukkan data yang
+[852.40] ini. Kalau misalnya salah atau kosong
+[854.44] ya, jika namanya sama dengan sama dengan
+[856.08] kosong atau enggak ada isinya, kita
+[858.08] kasih tahu. Nah, ini bentuk validasi
+[861.48] kalau inputnya kosong. Nah, ada lagi
+[864.04] validasi kalau misalnya jenis
+[865.76] transaksinya itu berbeda. Kita mau jenis
+[868.16] transaksi itu ada dua, ada pemasukan,
+[870.68] ada pengeluaran, gitu ya. Misalnya user
+[873.16] nih iseng nih ya di dalam transaction
+[876.48] type-nya dia masukin misalnya utang
+[879.40] gitu. Nah, kalau utang
+[884.20] nah setelah kita mengetahui tentang
+[886.32] validasi.
+[896.88] Nah, setelah kita mengetahui tentang
+[898.48] validasi input kosong, sekarang kita mau
+[901.96] memvalidasi data yang ee
+[915.04] [berdehem]
+[917.00] Nah, Teman-teman setelah kita mengetahui
+[918.92] tentang validasi jenis transaksi
+[923.32] kalau misalnya datanya kosong gitu ya.
+[925.76] Nah, sekarang kita mau mempelajari
+[928.44] validasi jenis transaksi. Nah, ini
+[932.08] merupakan gabungan nih, Teman-teman.
+[933.60] Gabungan antara validasi dan juga
+[935.40] sanitasi. Nah, tadi kita sudah
+[937.68] mensanitasi kan kalau misalnya ada
+[940.36] inputan misalnya kalau dia masukin
+[943.60] pemasukan misalnya capslock semua atau
+[946.24] ada ee input spasi di depan dan di
+[949.52] akhir, nah itu kita bisa menggunakan
+[950.88] strip dan juga lower. Nah, selain itu
+[953.44] kita juga bisa me
+[957.36] menambahkan validasi gitu ya. Jadi
+[959.96] setelah kita sanitasi data yang input eh
+[962.32] user masukkan yang user inputkan, kita
+[964.36] bisa validasi dengan menggunakan if ya
+[966.88] kan condition. Nah, di sini kan kita
+[969.08] dalam programnya seperti yang sudah kita
+[970.76] bahas sebelumnya untuk tipe transaksinya
+[975.12] hanya dua, ada pemasukan dan juga
+[976.96] pengeluaran. Jadi kalau misalnya dia
+[979.88] memasukkannya tulisannya pemasukan maka
+[983.68] dan juga atau ee transaksi tipenya dia
+[986.96] tulisnya pengeluaran gitu ya di yang
+[988.68] user masukkan pengeluaran maka dia akan
+[991.60] nge-print programnya akan nge-print oh
+[993.48] jenis transaksinya valid berarti bisa
+[995.64] dilanjutkan transaksinya. Kalau tapi
+[997.92] kalau misalnya dia enggak bisa jenis
+[999.96] harus pemasukan atau keluaran misalnya
+[1001.44] dia masukin ngutang gitu kan ya. Nah itu
+[1004.44] kan berarti bukan jenis transaksi ya.
+[1006.96] Nah, karena yang diminta cuman dua,
+[1008.68] pemasukan atau pengeluaran. Nah, itu
+[1011.84] datanya sudah distrip, sudah di lower.
+[1013.44] Harusnya dia udah ee bersih gitu ya.
+[1016.28] Oke. Kenapa sih validasi itu penting di
+[1019.16] dalam program keuangan? Nah, ini jadi
+[1021.40] sekali lagi ini mau menekankan kenapa
+[1023.72] sih harus ada validasi? Nah, selah kalau
+[1026.72] misalnya kita buat program khususnya
+[1028.84] program keuangan ya, data keuangan itu
+[1031.72] kan sensitif ya. Bayangin teman-teman
+[1033.48] membuat program untuk perbankan misalnya
+[1035.92] gitu.
+[1037.24] Ada user nih misalnya dia iseng masukin
+[1041.28] uang itu minus Rp50.000. Jadi dia
+[1044.76] masukin minus gitu ya di ATM atau di
+[1047.12] mungkin di mobile bankingnya dia
+[1048.24] tambahin minus R500.000. Nah, kalau di
+[1051.40] dalam dunia perbankan justru kalau
+[1054.12] misalnya angkanya negatif itu bisa
+[1056.44] menambah karena kan ee kadang ada rumus
+[1059.00] matematika minus. Kalau sama minus itu
+[1061.44] jadinya plus gitu ya. Nah, bayangin
+[1063.52] kalau saldonya dia cuman 5.000 gitu kan,
+[1066.68] minus 5.000 berarti kan dia saldonya
+[1068.48] kurang gitu. Terus dia nambahin lagi
+[1070.64] minus R50.000 berarti saldonya R5.000
+[1073.68] gitu karena kan dalam matematika seperti
+[1077.16] itu ya. Nah, ini tuh bisa dianggap
+[1079.56] sebagai bug yang bisa dixploit atau
+[1082.56] disalahgunakan oleh pengguna dan ini
+[1085.28] bisa berbahaya bagi ee program kita
+[1087.72] gitu. Nah, makanya sekali lagi validasi
+[1090.28] itu kita perlu ngecek apa sih yang user
+[1092.96] masukkan. Nah, kalau misalnya user
+[1095.64] masukin minus itu gimana nih?
+[1097.36] Transaksinya kurang dari nol. Nah, kalau
+[1099.68] misalnya transaksi kurang dari nol maka
+[1101.52] kita tinggal masukin aja kondisinya
+[1104.28] adalah
+[1106.20] amount atau jumlah ini kan variabel yang
+[1108.36] menyimpan uang yang dimasukkan oleh user
+[1110.64] ini tadi kan ya. Nah, ini kan user
+[1112.12] menginput ya menginput nominalnya dia
+[1113.92] berapa. Nah, supaya dia bisa dihitung
+[1116.40] dalam bahasa pemban Python kan kalau
+[1118.80] angka itu perlu diubah jadi integer ya.
+[1121.04] Karena input itu dia akan memasukkan
+[1123.52] data eh bertipe string ya atau teks ya.
+[1126.68] Jadi walaupun kita masukin 500 itu tetap
+[1129.76] dianggap sama program Python kita tuh
+[1132.16] sebagai string. Nah, makanya supaya dia
+[1135.32] bisa dibandingkan, supaya dia bisa
+[1137.56] dihitung, ditambah, dikurang, dan segala
+[1139.68] macam itu kita perlu konversi data-data
+[1141.96] tipe datanya ke integer. Nah, ini bagian
+[1144.16] dari data sanitasi juga ya, Teman-teman.
+[1147.08] Kemudian di sini kita bisa ee masukkan
+[1150.68] kondisi kalau yang dia masukin itu
+[1153.52] kurang dari atau sama dengan 0 ya kan
+[1156.04] ya. Kalau minus kan berarti dia kurang
+[1157.56] dari no ya teman-teman. Maka dia akan
+[1161.72] menal menampilkan teks nominal harus
+[1164.56] lebih dari nol atau kalau dia nulis nol
+[1166.36] ya udah jangan dong harusnya lebih dari
+[1168.52] nol gitu kan. Nah, kalau misalnya dia
+[1170.76] benar, maka kita akan nge-print oh
+[1173.60] nominalnya valid sebanyak 5.000,
+[1176.24] Rp50.000 dan seterusnya gitu ya. Jadi
+[1179.24] kalau misalnya dia enggak lebih dari
+[1182.16] nol, maka dia tidak akan tercatat. Oke.
+[1186.32] Nah, dalam memberikan pesan. Jadi, kan
+[1188.32] tadi kita sudah ee kasih tahu kalau dia
+[1191.64] benar dia akan melakukan apa, kalau dia
+[1194.60] salah dia akan melakukan apa. Nah,
+[1196.40] ketika dia salah daripada kita tulisan
+[1199.60] error gitu aja kan kadang [berdehem]
+[1201.52] pengguna program kita tuh enggak tahu
+[1203.72] apa sih yang error gitu kan, dia
+[1205.72] melakukan apa gitu. Nah, inilah yang apa
+[1208.88] kita harus perhatikan juga bahwa ketika
+[1211.60] kita menuliskan pesan ya kan ya, pesan
+[1214.16] error itu jangan lupa
+[1217.08] tuliskan
+[1218.68] dengan baik dan juga benar gitu. Jadi
+[1220.88] jangan sampai cuma nulis error doang
+[1223.56] atau nulis salah atau error doang. Nah,
+[1226.24] ini kan user bingung salahku di mana.
+[1228.56] Lebih baik tuliskan lebih ee pesannya
+[1231.64] itu positif atau jelas clear apa yang
+[1234.40] harus lakukan selanjutnya gitu ya.
+[1236.64] Misalnya oh yang dia masukkan nominalnya
+[1240.32] berarti kurang dari 0. Maka pesannya
+[1242.44] masukkan nominal. Nominal harus lebih
+[1244.56] dari nol. Masukkan angka positif. Nah,
+[1246.40] ini contohnya kalau misalnya dia masukin
+[1247.76] minus di depannya gitu ya. Kita kali
+[1249.20] user, oh no, you cannot do that gitu ya.
+[1251.20] Jangan tambahin minus di depannya gitu.
+[1254.34] [berdehem] Nah, ini pesan yang error.
+[1255.88] Jangan sampai user kebingungan cuman
+[1258.24] error doang gitu ya. Jadi dia harus tahu
+[1261.28] cara memperbaiki selanjutnya gimana.
+[1263.64] Oke, selanjutnya. Nah, tadi [berdehem]
+[1266.92] daripada kita bikin kodenya satu satu
+[1270.20] panjang, ada baiknya kalau kita
+[1273.44] menambahkan validasi dan juga sanitasi
+[1277.12] data kita itu dibuatkan ke dalam sebuah
+[1280.00] function ya, Teman-teman ya. Kenapa
+[1282.04] harus dimasukin ke dalam function?
+[1283.36] Sebenarnya enggak wajib harus dimasukin
+[1284.80] function ya, tapi sebaiknya dimasukkan
+[1286.92] ke dalam function. Kenapa? Supaya dia
+[1288.92] bisa digunakan kembali, bisa di-reuse
+[1291.76] lagi, gitu ya.
+[1293.96] Nah, di sini [berdehem] ada contohnya
+[1297.32] kalau kita misalnya mau mensanitasi
+[1299.76] datanya gitu ya. Nah, kan kalau input
+[1303.04] itu banyak banget ya yang user inputkan
+[1304.76] ke dalam program kita supaya apa tuh
+[1307.48] namanya? Supaya programnya itu bersih
+[1310.16] gitu ya. kita. Oh, misalnya kita selain
+[1312.32] sanitasi mau ada cek lower case sama
+[1315.88] strip-nya atau nanti mau ada sanitasi
+[1318.20] yang lain, sanitasi yang lain misalnya
+[1320.12] dia akan ngecek kalau misalnya ada tanda
+[1322.52] minusnya di nominal gitu-gitu. Nah, ini
+[1324.60] kita bisa tuliskan function seperti ini.
+[1326.96] Jadi di sini kita definisikan atau
+[1329.68] define dulu function-nya apa namanya
+[1332.64] ini. Kemudian kita bikin parameter teks
+[1335.00] yang mana ini yang mau diid yang mau
+[1336.92] disanitasi gitu. Nah, ini enggak apa
+[1341.80] bentuknya harus seperti ini ya. Jangan
+[1342.96] dimasukin input ee bla bla bla di sini.
+[1345.40] Jangan. Jadi buat dulu variabel
+[1346.92] sementara baru jadikan dia parameter.
+[1349.68] Nah, udah deh kalau udah [berdehem]
+[1352.32] jangan dimasukin print atau segala macam
+[1354.20] ya, Teman-teman. Kita kasih aja return.
+[1356.12] Jadi kita kembalikan ke tempat dia
+[1357.56] manggil. Misalnya di sini kita
+[1359.56] nge-return text.strip. Oh, berarti di
+[1362.92] sini teks yang ada di sini ya kan kita
+[1365.48] masukin dstrip d. lower. ini jangan ada
+[1368.12] spasinya ya. Nah, jadi teks yang kita
+[1370.68] masukkan itu kita strip spasinya terus
+[1373.88] kita jadikan lower case. Nih contoh
+[1376.04] case-nya kita manggil nih nama
+[1378.08] variabelnya kan clean. Kita panggil nih
+[1379.88] di bawah di baris ketiga clean. Yang
+[1382.64] mana yang mau dibersihkan? Oh, ini ada
+[1384.40] ee langsung masukin teksnya atau teksnya
+[1386.68] ini mau dimasukin variabel dulu ya, yang
+[1389.04] nanti ada inputnya itu bisa. Nah, di
+[1391.44] sini kita masukin variabel sementara
+[1393.88] gitu ya yang menampung hasilnya. Udah
+[1395.88] deh, nanti dia akan nge-print. Hasilnya
+[1397.64] tuh nanti kurang lebih harusnya seperti
+[1399.40] ini ya, pemasukan enggak ada spasi di
+[1401.56] awal dan di akhir dan juga dia semuanya
+[1403.64] lower cash. Nah, itu jadi kita bisa
+[1405.92] masukin dia ke dalam variabel. Nah,
+[1408.12] setelah variabel dia juga bisa
+[1410.04] memasukkan kita juga bisa bikin function
+[1412.72] yang dia memvalidasi gitu. Misalnya kita
+[1415.00] mau memvalidasi kalau misalnya yang dia
+[1418.84] masukin ini apakah pemasukan atau
+[1420.60] pengeluaran. Kalau misalnya dia masukin
+[1422.52] pemasukan,
+[1424.08] maka dia kita kasih tahu, "Oh, true nih,
+[1426.80] datanya valid. Kalau enggak kita return
+[1429.28] aja false." Oh, data yang kamu masukin
+[1431.20] false. Jadi nanti berdasarkan function
+[1433.56] ini kita bisa tulis nih, kita coba cek
+[1435.12] dulu ya function-nya ini ya. Di sini
+[1437.12] kita define nama function-nya, validate
+[1439.08] type. Kita data [berdehem] validasi eh
+[1443.48] validate type eh tipenya kita validasi.
+[1446.84] Terus di sini parameternya tipe
+[1448.52] transaksinya. Ini variabel sementaranya
+[1450.28] transaksi type ya. Nah, udah deh di sini
+[1453.00] pertama kan kita panggil dulu nih.
+[1455.28] Pertama kita panggil dulu function clean
+[1457.52] text. Ini kan tadi sebelumnya kita sudah
+[1458.88] membuat sebuah function ya clean text
+[1462.76] ini untuk membersihkan datanya gitu ya.
+[1466.04] Nah, ini di sini kita panggil nih
+[1467.64] transaction
+[1469.24] type-nya itu kita bersihkan dulu ya.
+[1472.16] Kita bersihkan. Terus kalau udah
+[1474.28] dibersihkan, kita simpan lagi dia ke
+[1476.44] dalam variabel yang sama gitu. Ini
+[1478.16] enggak masalah gitu ya. Nah, baru habis
+[1480.80] itu kita ngecek kalau transaction
+[1483.04] type-nya pemasukan atau pemasuk eh
+[1485.76] transaction type-nya pengeluaran maka
+[1487.76] dia akan ngreturn through. Jadi nanti di
+[1490.04] bawahnya [berdehem] di tempat dia
+[1492.48] manggil misalnya di baris di bawahnya di
+[1494.04] sini kita tinggal tuliskan aja if
+[1498.12] sama dengan sama dengan true gitu kan
+[1499.76] ya. berarti datanya benar nih. Kalau
+[1501.60] misalnya yang dimasukin true, maka kita
+[1503.76] oh datanya disimpan atau lanjut proses
+[1505.84] segala macam. Kalau yang lain, maka kita
+[1508.24] suruh dia mengulang lagi, memasukkan
+[1510.20] lagi datanya. Nah, kurang lebih seperti
+[1512.68] itu ya. Jadi di sini dalam satu function
+[1514.72] ada dua. Jadi function bisa dipanggil ke
+[1516.72] dalam function lain selama kita
+[1519.24] menggunakan return ini ya, Teman-teman
+[1521.24] ya. Kita menggunakan return karena kalau
+[1522.84] misalnya kita langsung nge-print di sini
+[1524.60] udah programnya stop. Nah, ketika kita
+[1526.64] menggunakan return di sini ya, kita
+[1528.28] ng-return teks yang sudah benar. Nah,
+[1530.44] maka di dalam function ini kita bisa
+[1532.00] panggil lagi gitu. Oke. Nah, sekarang
+[1537.52] kita lanjut. Ini ada lagi sebuah
+[1540.92] validasi, function validasi yang dia
+[1543.20] mengecek apakah jumlahnya yang dimasukin
+[1546.12] itu lebih dari nol. Kan kita enggak mau
+[1548.00] programnya ee yang programnya memasukkan
+[1552.16] data yang uangnya tuh lebih dari kurang
+[1554.36] dari nol gitu ya. Jadi dia harus lebih
+[1555.92] dari nol. Nah, ini kita tinggal bikin
+[1557.96] validate amount. Masukin amount-nya
+[1560.12] berapa terus dia ngecek. Nah, udah deh
+[1563.24] kalau misalnya mau dicek validate amount
+[1566.12] masukin panggil function-nya terus kita
+[1568.28] masukin nilai. Nah, ini oh dia masukin
+[1570.92] lebih dari nol maka outputnya seperti
+[1573.52] itu ya. Oke, itu sekarang untuk
+[1576.92] mengetahui pemahaman teman-teman tentang
+[1579.88] sanitation and validation, silakan
+[1581.76] kerjakan kuis berikut ini.
+[1590.96] Oke, Teman-teman, setelah kita memahami
+[1594.12] tentang validation dan sanitation,
+[1596.68] silakan kerjakan mini kuiz ini sebagai
+[1599.12] ee penghitung kehadiran ya, Teman-teman.
+[1601.40] Jadi di sini kita akan membuat save
+[1605.32] transaction input gitu ya. Di sini ada
+[1608.12] beberapa atu ke dalam programnya harus
+[1610.60] ada beberapa hal yang harus ada gitu ya.
+[1613.20] Yang pertama programnya itu harus bisa
+[1617.00] menolak kalau misalnya transak nama
+[1619.88] transaksinya kosong gitu ya. Jadi kita
+[1622.52] minta usernya input nama transaksinya
+[1624.48] apa nih gitu ya. Jadi boleh kalian bikin
+[1626.56] kayak ala-ala kasir atau ala-ala
+[1628.40] pencatat keuangan kalian. Bebas temanya
+[1630.40] bebas. Nah, sekarang di sini dalam
+[1632.56] programnya harus ada yang dia minta
+[1634.20] input nama transaksinya membeli buku
+[1636.64] gitu atau ee membeli buah gitu ya,
+[1639.52] membeli jajan. Kalau misalnya dia kosong
+[1641.96] atau langsung enter maka langsung ada
+[1644.24] pesan error gitu. Oh, datanya enggak
+[1647.44] boleh kosong. Nah, kemudian yang kedua,
+[1650.80] programnya bisa menolak kalau jenis
+[1654.04] transaksinya itu bukan pemasukan atau
+[1656.60] pengeluaran gitu ya. Jadi harus antara
+[1658.28] dua ini. Kemudian
+[1661.28] itu harus bentuk semuanya harus
+[1662.64] bentuknya input ya. Nah, jadi kalau
+[1664.76] misalnya dia bukan pemasukan atau
+[1666.24] pengeluaran kita tolak. Yang ketiga dia
+[1670.00] akan menolak kalau kurang dari atau sama
+[1672.84] dengan 0 gitu ya. Oh, salah masukin
+[1676.44] suruh penggunanya masukin lagi. Kemudian
+[1679.36] tampilkan dictionary transaksi jika
+[1682.04] semua data valid. Jadi kalau misalnya
+[1683.84] udah valid coba datanya diprintkan gitu.
+[1686.64] Oh, dia melakukan transaksi apa,
+[1688.96] jenisnya apa, kemudian berapa nominal
+[1691.36] lah gitu ya. Silakan kerjakan di kotak
+[1693.92] di bawah ini.
+[1703.02] [berdehem]
+[1714.64] Nah, pernahkah teman-teman ketika sedang
+[1716.92] menganulis program Python gitu ya,
+[1719.00] ketika teman-teman ketik terus itu
+[1720.92] jalankan programnya, kadang ketika
+[1723.08] programnya itu error, Pakistan itu akan
+[1725.80] stop. Dia enggak bisa ee lanjut misal
+[1730.52] ada tiga input sama ada proses
+[1733.32] penghitungan gitu ya dalam program
+[1735.16] kalian contohnya. Kemudian dari error,
+[1737.72] dari input kedua misalnya langsung ada
+[1740.36] error gitu. Nah, itu programnya akan
+[1742.24] stop kan. kita harus mulai start lagi,
+[1744.76] harus run lagi kodenya supaya kodenya
+[1746.84] bisa berjalan lagi. Nah, kadang itu kan
+[1749.08] sangat membuat frustrasi ya, karena
+[1751.68] kadang ee kita harus menjalankan run
+[1755.04] berkali-kali terus perbaiki errornya,
+[1757.00] run lagi terus itu run lagi tanpa kita
+[1759.40] tahu oh ini sebenarnya errornya ada apa
+[1761.60] sih, erornya yang mana sih gitu. Nah,
+[1763.48] bayangkan kalau misalnya program kalian
+[1765.32] tuh dikasih ke user. Nah, user tuh
+[1767.52] bingung loh kok misalnya dia pakai
+[1770.64] aplikasi gitu ya, terus aplikasinya dia
+[1773.12] melakukan kesalahan gitu misalnya dia
+[1774.92] enggak sengaja masukin minus gitu terus
+[1777.20] program langsung ter keluar sendiri.
+[1778.64] Nah, itu kan error ya. Nah, supaya
+[1781.64] error-error tadi itu bisa di-handle dulu
+[1784.84] tanpa Python harus menghentikan
+[1787.84] seluruh prosesnya, seluruh proses
+[1790.08] programnya itu kita bisa menggunakan
+[1792.12] yang error handling namanya itu try
+[1794.92] accept. Apa sih try accept itu? Yuk,
+[1796.88] kita perhatikan slide berikut. Nah, try
+[1799.88] accept sebelumnya kita
+[1802.96] sebelum kita bahas try accept-nya tadi,
+[1805.44] kita bahas dulu kira kalau di dalam
+[1808.12] Python itu biasanya ada tiga jenis error
+[1810.72] yang sering kita temuin ya. Nah, tipe
+[1813.32] yang pertama itu ada tipe error yang
+[1815.84] pertama itu ada yang namanya value error
+[1818.40] atau error di nilainya. Misalnya tipe
+[1822.36] data yang dipakai itu string, tapi
+[1826.60] string malah kalian gunakan gunakan ke
+[1828.96] dalam penjumlahan gitu ya. Misalnya
+[1830.96] string angka satu tapi dia string gitu
+[1834.16] ya, ada petik duanya terus ditambah 1
+[1837.12] yang enggak ada petik duanya yang tipe
+[1838.64] datanya berarti integer kan. Nah, itu
+[1840.16] dia value-nya error ya kan. Oh itu sor
+[1843.56] yang tadi itu tipe datanya error itu
+[1845.96] yang kedua ya. tipe datanya error.
+[1847.56] Ketika kita menjumlahkan tipe datanya
+[1850.36] enggak cocok. Kalau value error itu tipe
+[1853.04] data tidak bisa diubah secara paksa.
+[1855.28] Misalnya menjadi integer, misalnya ada
+[1858.48] kata-kata ee misalnya 5 L I M itu mau
+[1863.28] kita ubah jadi integer gitu kan. Nah,
+[1865.64] itu enggak bisa ya karena itu kan teks
+[1867.68] ya, bukan angka gitu. Jadi dia akan eh
+[1871.24] menampilkan value error atau ada yang
+[1873.76] namanya zero division error. Misalnya
+[1876.24] angka yang kita ini kita masukin kita
+[1879.04] bagi dengan 0. Nah, itu dia akan
+[1880.72] menghasilkan zero division error. Nah,
+[1883.52] dari ketiga error itu tadi
+[1886.44] kita coba lihat contohnya di sini ya.
+[1889.68] Kita mau input ya dari kita nih sebagai
+[1892.40] programmer udah nge-set nih oh apapun
+[1894.92] yang user masukkan itu nanti kita ubah
+[1897.92] dia menjadi integer. Berarti angka 2000
+[1900.08] jangan sampai dia tersimpan menjadi
+[1901.92] string gitu ya. Harus dimasukin integer.
+[1904.00] Tapi kan kadang ada yang error, ada user
+[1906.16] yang suka bikin error yang iseng-iseng
+[1907.96] mencoba gitu ya. Misalnya kita coba di
+[1909.84] sini 5.000
+[1912.28] gitu. Instead of 5.000 kita tulis.
+[1914.44] Ketika kita tulis 5.000 nah di sini akan
+[1917.32] ada value error gitu ya. Karena 5.000
+[1920.08] enggak bisa nih diubah menjadi integer
+[1922.60] gitu ya. Terus programnya sudah akan
+[1924.40] stop gitu ya. dia enggak akan lanjut ke
+[1925.92] ke input yang lain. Dia enggak akan
+[1927.96] menjalankan proses atau memanggil
+[1929.52] function apapun. Dia akan stop. Nah, dia
+[1932.32] cuman ngasih tahu value error bla bla
+[1934.20] bla bla bla bla. Dah, gini doang.
+[1936.52] Selanjutnya kalau misalnya
+[1940.56] ada yang namanya tipe error, type error
+[1944.12] ya kan di sini kita punya variabel yang
+[1946.60] menyimpan amount gitu ya, nilainya
+[1948.88] 5.000. Nah, 5.000 ini kita mau tambah
+[1952.72] tambahkan nih kita tulis di sini message
+[1954.76] nominal transaksi plus amount. Nah, ini
+[1957.52] kan biasa normal kalau misalnya kita
+[1959.76] menggunakan print ya. Cuma di sini kan
+[1962.12] bukan sebuah print ya. Kita mau mencetak
+[1964.84] sebuah string dan juga variabel. Nah,
+[1967.60] ini dia enggak tahu nih maksudnya apa
+[1969.52] gitu ya. yang harusnya benar itu kita
+[1972.60] ubah dulu integer-nya ini menjadi sebuah
+[1976.24] string baru dia bisa nih diprint secara
+[1980.52] langsung seperti ini yang artinya
+[1982.00] menggabung gitu ya atau concatenation.
+[1984.96] Nah, ini contoh salah satu contoh yang
+[1987.80] error gitu. Tipe datanya beda, type-nya
+[1990.12] beda.
+[1991.96] Terus itu ada juga zero division error.
+[1994.76] Misalnya uang kita totalnya Rp10.000.
+[1997.76] Oh, kita mau bagi-bagi uang gitu ya, ada
+[2000.68] berapa tiap orang dapatnya berapa gitu
+[2003.12] ya. Kalau misalnya uang ini dibagi rata.
+[2005.96] Nah, ini kita orangnya kita enggak
+[2007.88] sengaja masukin nol. Nah, ini dia akan
+[2010.24] menghasilkan error gitu ya. Misalnya di
+[2012.76] sini mm
+[2017.36] masukin nol. Nah, division by zero dia
+[2020.16] akan programnya tuh si Python akan
+[2022.36] ngetik division by zero. Udah gitu doang
+[2024.20] dan dia akan stop. Nah, solusinya kita
+[2027.52] bisa menggunakan yang namanya try
+[2029.24] accept. Nah, di dalam try accept ini
+[2032.84] bayangkan aja kalian menginstruksikan
+[2036.20] komputernya seperti ini. Coba jalankan
+[2038.00] kode ini dulu A B C D E. Terus kalau ada
+[2041.20] ee kalau ada error jangan diop. Jalankan
+[2045.56] kode cadangannya. Jadi try itu mencoba
+[2048.08] kodenya dulu. Kalau ada error dia akan
+[2051.20] mencoba kode yang lain gitu. Jadi enggak
+[2053.24] langsung stop. Coba dulu kode ini dulu.
+[2055.20] Jalankan ini dulu. Nah, ini bentuknya
+[2057.96] try and accept tuh seperti ini ya untuk
+[2059.60] mendeklarasikan. Nah, pertama kita tulis
+[2061.64] try titik dua. Jangan lupa ada
+[2064.28] indentation-nya
+[2065.96] ya. Dia agak masuk ke dalam. Terus ada
+[2068.24] accept, terus itu titik dua dan juga ada
+[2071.28] indentation. Jadi kodenya ini eh
+[2074.76] berpasangan ya, try sama accept. Nah,
+[2078.28] bentuknya seperti apa? Coba kita lihat
+[2081.36] sebelum kita lihat bentuknya dulu ya.
+[2083.32] Kita bahas lagi deh. Coba try sama ini.
+[2086.44] Mm bayangkan kalau kita mau mencoba
+[2089.28] masuk ke rumah pakai kunci gitu ya. Kita
+[2091.60] try dulu kita masukin kuncinya ke lubang
+[2093.52] kuncinya. Tapi ternyata error nih.
+[2096.48] Enggak bisa masuk, enggak bisa diputar.
+[2098.48] Ada dua cara, ada dua langkah yang bisa
+[2100.96] kita lakukan. Kita bisa dobrak gitu ya.
+[2103.00] Wah ini terlalu violent gitu ya. Atau
+[2105.68] kita bisa minta tolong ee teman kita
+[2108.56] yang di dalam untuk bukain itu dengan
+[2110.16] kunci sarap. Nah, intinya try accept itu
+[2113.48] enggak langsung mematikan programnya.
+[2115.56] Dia akan mencoba cara kedua, cara ketiga
+[2118.08] dan seterusnya gitu ya. Nah, oke.
+[2122.32] Di sini
+[2124.16] contoh
+[2125.92] menghandle value error gitu ya. Jadi
+[2128.92] kalau misalnya ada value-nya error ini
+[2131.36] try accept-nya seperti ini. Misalnya
+[2134.56] programnya pertama kita suruh kita suruh
+[2137.40] usernya try dulu gini ya. try. Dia akan
+[2140.48] nginput nominal transaksinya.
+[2143.00] Oke, nominal transaksinya dia input
+[2144.80] terus dia ubah tipe datanya jadi integer
+[2147.32] terus dia simpan ke dalam amount. Nah,
+[2149.96] kalau misalnya dia masukin 5.000, oh ya
+[2152.60] udah 5.000-nya ini akan diubah jadi
+[2154.48] integer dan dia amountnya ini sekarang
+[2156.84] jadi integer. Benar ya kan ya? Nah,
+[2159.68] kalau misalnya ada error value error
+[2163.32] kita mau use muncul pesan masukkan
+[2168.12] nominal harus berupa angka misalnya
+[2170.32] gitu. Nah, ini bentuknya. Jadi di dalam
+[2173.28] try kita coba dulu kode apa yang mau
+[2175.64] dicoba terus kita accept ya. Kita coba
+[2179.64] oh kalau ada error. Nah, tipe errornya
+[2182.28] tadi apa? Oh, misalnya kalau misalnya
+[2183.96] ada tipe errornya value error jalankan
+[2186.56] ini gitu ya.
+[2188.88] Ini kalau misalnya kita sudah tahu value
+[2190.44] error yang error tuh ternyata value
+[2192.32] error apa yang harus dilakukan. Nah,
+[2194.60] kalau supaya tahu untuk eh ini errornya
+[2197.96] tipenya apa ya, value error kah atau
+[2199.88] type error kah itu jalanin aja dulu
+[2201.72] programnya. Kita cek nanti yang
+[2203.04] kemungkinan errornya apa ya. Nah,
+[2205.72] seperti itu untuk eh apa itu namanya?
+[2209.04] Try and accept value error gitu.
+[2213.96] Jadi programnya ketika dia error, dia
+[2215.80] akan nge-print ini, dia akan nge-print
+[2218.48] teks ini tanpa stop gitu ya. Baru nanti
+[2221.36] kita bisa bikin looping yang dia bisa
+[2223.16] mencoba ini lagi gitu. Nah, itu untuk eh
+[2228.68] multi eh apa sih namanya? Try and accept
+[2231.44] kalau value error. Nah, misalnya di
+[2233.80] dalam error ini kita mau
+[2237.92] ada accept-nya tuh lebih dari satu atau
+[2240.08] multiple accept. Nah, di sini kita bisa
+[2242.24] tulis seperti ini kurang lebih ya
+[2243.56] bentuknya teman-teman. Di sini kalau
+[2246.20] misalnya value error kita nge-print apa
+[2248.60] atau kalau misalnya dia enggak sengaja
+[2250.84] masukin dibagi dengan zero gitu ya.
+[2253.92] Misalnya yang dia masukin peopleah dia
+[2256.40] masukin nol gitu ya. Nah, ini sebenarnya
+[2258.36] bisa kita masukin sanitasi gitu ya.
+[2260.60] Kayak kita kasih validasi oh data people
+[2263.36] enggak boleh dari nol tapi supaya
+[2265.52] programnya enggak error juga gitu ya.
+[2267.76] ini kita bisa masukin eh try accept-nya.
+[2271.76] Accept-nya nama acceptnya itu zero
+[2273.80] division error. Kita print ini seperti
+[2276.00] ini. Jadi di dalam program itu dalam
+[2279.12] satu kali try itu boleh membuat
+[2281.20] sebanyak-banyaknya accept gitu ya. Jadi
+[2283.84] kalau ada cara satu salah, cara kedua
+[2286.44] jalankan. Cara ketiga dan seterusnya dan
+[2288.28] seterusnya sesuai case by case. Nah,
+[2291.16] sekarang untuk lebih memahami pemahaman
+[2294.56] teman-teman, kerjakan kuis berikut ini
+[2296.28] dulu ya.
+[2302.76] Nah, setelah teman-teman mengerjakan
+[2305.04] kuis, sekarang kita bikin yuk project
+[2308.48] mini yang nanti akan dihitung sebagai
+[2310.32] kehadiran. Kita mau bikin program yang
+[2313.08] dia bisa menginput, ya kan usernya
+[2315.16] menginput tapi ada try and accept-nya.
+[2318.24] Jadi aturannya di sini yang pertama
+[2320.72] programnya harus melakukan sanitasi
+[2322.68] spasi sama lower ya, karena kita sudah
+[2324.20] belajar sebelumnya. Nah, validasi nama
+[2327.84] enggak boleh kosong dan jenis harus
+[2329.88] pemasukan dan pengeluaran. Jadi, boleh
+[2331.60] masukkan ee memasukkan program yang
+[2334.48] sebelumnya gitu yang tadi teman-teman
+[2336.00] sudah buat. Kemudian gunakan try and
+[2338.88] accept. Jadi kalau misalnya transaksinya
+[2342.32] ee nominalnya misalnya kurang dari nol
+[2346.28] itu coba dong pakainya try sama accept.
+[2348.80] Jadi jangan ee langsung error itu pakai
+[2352.12] gunakan try accept. Oke, silakan
+[2354.28] dikerjakan di kotak di bawah ini.
+[2361.96] Oke, Teman-teman. Sekarang kita mau
+[2364.24] membahas tentang analisis sebuah kode
+[2366.92] dan juga dibaging atau memperbaiki kode
+[2370.08] yang error. Apa sih dibaging itu dan
+[2372.88] gimana sih cara menganalisis? Yuk,
+[2374.44] perhatikan slide berikut. Nah, di dalam
+[2377.88] sebuah program gitu kan ya atau misalnya
+[2380.64] sebelum kita ke program kita coba lihat
+[2383.68] contoh yang mungkin pernah terjadi di
+[2385.40] kita ya. Misalnya kita lagi diam di
+[2387.28] kamar terus tiba-tiba lampunya mati.
+[2389.64] Nah, ketika lampunya itu mati hal yang
+[2392.28] pertama kita lakukan apa? Nah, kita di
+[2394.52] otak kita itu sebenarnya sudah membuat
+[2396.04] list dulu ya. Kira-kira kenapa sih ee
+[2398.96] lampunya itu mati. Nah, yang pertama
+[2401.08] kita ee anggap aja ini ada daftar gitu
+[2404.00] ya. Yang pertama kita ngecek apakah
+[2406.24] lampunya itu sebenarnya udah dinyalain
+[2408.04] apa belum gitu. Misalnya, oh lampunya
+[2409.92] sakelarnya udah nyala kok gitu. Kemudian
+[2412.48] apakah bolam lampunya putus atau rusak?
+[2414.60] Apakah kita cek, kita putar-putar apakah
+[2416.64] lampunya ee goyang gitu atau longgar
+[2419.24] gitu. Oh, ternyata masih kok masih ee
+[2422.44] ketat kok tapi mati gitu kan. Terus kita
+[2425.32] cek apakah seing listrik di rumah kita
+[2427.56] tuh padam. Nah, baru kita cek.
+[2431.00] ee ternyata kita cek lampunya itu
+[2433.60] ternyata ee sack ringnya turun. Nah,
+[2437.84] jadi ternyata berdasarkan tiga ee list
+[2441.48] yang kita lakukan tadi, ternyata yang
+[2444.40] penyebab masalahnya itu adalah sekring
+[2446.16] di rumah kita tuh ceklekannya pindah
+[2448.20] gitu ya atau turun. Nah, makanya
+[2450.64] lampunya semuanya mati rumah kita. Lampu
+[2452.92] semua rumah kita tuh mati. Jadi
+[2454.68] masalahnya bukan di saklarknya belum
+[2457.08] nyala atau ee lampunya itu sudah goyang
+[2460.32] gitu ya atau putus. Ternyata masalahnya
+[2462.84] itu di seluruh rumah. Nah, begitu ya.
+[2465.76] Jadi dalam begitu pula juga dengan
+[2467.96] program. Ketika ada program kita error,
+[2470.08] kita akan ngecek nih dari atas
+[2472.52] programnya sampai bawah kita cek sampai
+[2474.60] errornya tuh di mana gitu ya. Karena kan
+[2476.72] kadang program itu akan ngasih tahu ya
+[2478.40] errornya misalnya error di line 10. Nah,
+[2480.84] berarti kita cek dari line 1 sampai line
+[2482.76] 10 itu apa nih kira-kira yang membuat
+[2485.24] error atau di line 10-nya kah yang
+[2486.92] membuat error? Nah, itu kita cek di situ
+[2488.88] ya. Nah,
+[2491.28] dalam program yang besar gitu ya, kita
+[2493.40] sudah membahas sebelumnya tentang
+[2494.72] function. Jadi untuk membuat kodenya ee
+[2498.28] mudah dibaca dan juga terlihat rapi,
+[2501.88] kode yang banyak atau besar itu harus
+[2504.04] dibagi-bagi menjadi beberapa function.
+[2506.60] Nah, function-function inilah yang nanti
+[2509.00] ee menjadi backbond atau tulang punggung
+[2511.44] dari program kita. Nah, misalnya ini di
+[2514.52] sini kita punya ee pertama dia ada kita
+[2519.40] cek dulu ya function yang kita punya
+[2520.72] apa. Yang pertama itu dia menghitung
+[2523.32] total ya. Jadi misalnya ini kayak
+[2525.28] kasir-kasir ya, program kasir ya
+[2527.16] harganya berapa, terus itu berapa banyak
+[2529.36] dia beli gitu. Nah, terus itu dia
+[2531.72] menghitung totalnya berapa. Kemudian
+[2534.52] dapat diskon apa enggak. Kalau ada
+[2536.12] diskon kita hitung diskonnya, ya kan?
+[2539.20] Terus itu kalau misalnya dia dapat
+[2541.24] diskon maka kita hitung total
+[2543.08] belanjaannya berapa. Oke. Nah, di sini
+[2546.36] ada contoh nih. Kalau misalnya kita
+[2548.32] masukin ee di sini ada program yang dia
+[2551.44] masukin harganya misalnya Rp30.000 gitu
+[2553.96] ya. R30.000 diskon 10%. Dia beli harga
+[2557.68] R30.000 barangnya dua gitu. salah ini
+[2559.92] permen karet mahal banget ya permen
+[2561.76] karetnya. Nah, ketika dihitung nah di
+[2564.40] sini kan function get total dia menerima
+[2567.44] uang R30.000
+[2569.36] terus romelnya du berarti totalnya yang
+[2573.00] harus dibayarkan adalah Rp60.000 ya
+[2574.68] karena R30.000 * 2 berarti function yang
+[2577.72] pertama benar. Kemudian kita cek nih
+[2580.44] diskon itu dia meminta parameter
+[2583.56] totalnya yang harus dibayarin ya kan ya.
+[2585.80] Nah berarti di sini totalnya Rp60.000
+[2588.32] dia masukin ke sini. Terus kalau kena
+[2591.24] apa? Rp0.000
+[2593.44] diskon 10% itu berarti dia dapat
+[2595.36] potongan 6.000. Nah, berarti total price
+[2598.60] itu kan dia harus ngambil data dari
+[2602.68] total harganya dikurangin sama diskon
+[2605.76] maka dia akan mengampilkan data 5.400.
+[2608.76] Nah, ini berarti datanya benar gitu ya.
+[2611.00] Nah, datanya benar terus itu programnya
+[2614.00] juga benar gitu. Nah, dalam function
+[2617.48] yang tadi kita bisa lihat ya,
+[2619.12] Teman-teman. Function yang tadi dia itu
+[2622.56] saling bergantung sama satu sama lain
+[2625.04] gitu atau dependent satu sama lain. Nah,
+[2627.88] maksudnya dependen gimana nih? Coba kita
+[2629.96] lihat pada function sebelumnya ya. Di
+[2632.16] sini dia menghitung total ya kan
+[2634.40] totalnya berapa. Nah, terus itu di sini
+[2636.88] yang function yang kedua dia menghitung
+[2638.96] diskon. Nah, diskonnya ini hanya bisa
+[2641.92] berjalan kalau misalnya function
+[2644.44] totalnya itu benar. Dia menjumlahkan ee
+[2647.52] totalnya dengan benar, mengkalikan
+[2649.00] totalnya dengan benar. Kalau yang ini
+[2651.32] salah atau programnya error, maka si
+[2653.44] diskaun ini dia enggak punya data ya,
+[2655.40] enggak punya nilai untuk dihitung.
+[2658.52] Begitu juga dengan final price-nya.
+[2661.16] Kalau dia enggak punya totalnya berapa,
+[2663.60] terus itu diskonnya berapa, dia enggak
+[2665.96] akan bisa jalan nih function itu. Jadi,
+[2668.20] function-nya itu dipunya mempunyai yang
+[2670.64] namanya dependensi atau bergantung ee
+[2673.72] antara satu funsi dengan function dan
+[2675.76] lainnya gitu ya.
+[2678.32] Nah, untuk mencari bug pada rantai kalau
+[2681.40] misalnya kita programnya seperti itu ya,
+[2683.28] bergantung satu sama lain ya, kayak
+[2684.76] ngalir gitu itu nyari bugnya itu lumayan
+[2688.76] butuh ketelitian yang sangat-sangat
+[2691.04] ekstra gitu ya. Karena tadi kita kalau
+[2693.84] misalnya ada error di fungsi yang bawah,
+[2697.00] kita cek dulu kalau misalnya yang
+[2699.00] function yang paling bawah ini benar,
+[2700.60] finalnya benar, kita lihat yang salah
+[2702.44] diskonnya kah? Oh, kalau diskonnya udah
+[2704.96] benar kok. Kalau misalnya diskonnya
+[2706.36] benar, berarti totalnya yang salah atau
+[2708.56] sebaliknya gitu ya. Jadi harus dicek
+[2710.52] benar-benar sampai eh program
+[2712.92] function-function yang lainnya. Nah, ini
+[2715.16] ada saran kalau kita mau dibagging itu
+[2719.00] lakukan langkah-langkah berikut. Yang
+[2721.20] pertama kalau misalnya ada error kita
+[2723.36] baca dulu errornya gitu ya. Karena kalau
+[2725.92] ada dari error itu kan tadi kita sudah
+[2727.84] belajar try and accept gitu ya. Errornya
+[2730.16] ini apa? Apakah value-nya error? Apakah
+[2732.96] tipenya error atau apa gitu ya? Kita
+[2735.64] baca pesannya. Nah, kalau misalnya udah
+[2738.08] kita baca barulah kita cari barisnya.
+[2741.12] Baris mana yang error. Karena kadang
+[2742.84] kode itu kalau error dia akan ngasih
+[2744.72] tahu error inline bla bla bla gitu ya.
+[2747.68] Kita cek nih di baris itu langsung kita
+[2749.76] cek yang di situ. Kalau di baris itu
+[2751.80] ternyata dia memanggil function berarti
+[2753.56] kita cari langsung function-nya.
+[2756.48] Terus kita cek input datanya karena kan
+[2758.68] ini data dari user itu kadang sering
+[2760.60] error ya. Nah, ini ee paling banyak
+[2762.88] error. Makanya dia harus divalidasi dan
+[2764.84] disanitasi gitu ya. Makanya kita harus
+[2767.44] cek dulu data itu. Kemudian cara yang
+[2770.44] keempat nih kita akan bahas juga
+[2772.72] tambahkan print. Nah, coba nanti kita ee
+[2776.20] cek ya maksudnya tambahin print ini
+[2777.68] gimana. Kemudian seperti yang tadi sudah
+[2779.92] Kakak bilang, oh kita cek dulu
+[2781.68] function-function-nya tadi ya. Kalau dia
+[2783.52] berkaitan
+[2785.04] terus itu by keyogic-nya sama jalankan
+[2787.88] ulang gitu ya. Oke, ini bisa dilakukan
+[2792.72] ee yang pertama ee yang pertama nih yang
+[2795.24] paling sering bisa yang selalu bisa
+[2798.44] dilakukan pertama itu kita print.
+[2801.36] Misalnya kita enggak tahu nih yang error
+[2803.28] tuh dari mana ya, dari function yang
+[2805.28] mana. Nah, untuk memastikan supaya kita
+[2808.68] enggak bingung gitu ya atau enggak tahu
+[2810.76] nih program dari mana, coba kita kasih
+[2812.76] print. Misalnya di sini ada program gitu
+[2815.72] ya. Oh, kita memanggil function get
+[2818.24] total kita kasih harganya Rp10.000
+[2820.04] barang yang dibeli 3. Nah, di sini kita
+[2823.20] bisa print nih apakah benar si function
+[2825.80] itu dia menerima data yang sama dengan
+[2828.72] yang kita kirimkan. Kita ngirimnya
+[2830.16] Rp10.000 terus tuh jangan sampai yang
+[2832.32] dia hitung itu Rp100.000 gitu ya. Kadang
+[2835.16] ada bisa seperti itu ya kalau misalnya
+[2836.84] kita enggak sengaja nambahin nol kah
+[2838.76] atau ee seperti apa. Nah, ini kita cek
+[2841.76] ya. Jadi kita print aja nih berapa sih
+[2844.80] yang harga yang dia hitung tuh yang mau
+[2847.00] dihitung. Oh ternyata yang mau dihitung
+[2848.24] benar nih datanya Rp10.000
+[2851.00] terus itu ee banyaknya quantity-nya 3.
+[2854.48] Nah di sini 10.000 * 3 harus harusnya
+[2857.20] harusnya hasilnya R30.000. Nah ini benar
+[2859.48] nih programnya benar gitu. Jadi untuk
+[2862.92] memastikan boleh tuh kita print dulu
+[2865.48] semuanya sebelum di-return, sebelum di
+[2868.84] ee apa tuh namanya? sebelum dikembalikan
+[2871.16] ke kode yang memanggil, print dulu
+[2874.16] berapa data yang mau dihitung sama
+[2875.72] hasilah apakah benar apa enggak gitu.
+[2878.12] Kalau misalnya benar ya udah berarti
+[2879.92] yang function ini benar berarti error di
+[2882.12] function yang lain. Kalau salah berarti
+[2884.56] harus segera diperbaikin.
+[2887.40] Nah, ini ada e ada contoh gitu ya.
+[2890.84] Misalnya dia masukin get total masukin
+[2894.52] datanya benar nih 10.000 R datanya 3,
+[2897.68] tapi hasil output yang dia terima itu
+[2900.72] 10.003.
+[2903.36] Padahal kan harusnya 10.000 kalau dikali
+[2905.24] 3 logikanya kan R30.000 ya. Nah, berarti
+[2907.80] ini ada error. Nah, errornya ini kita
+[2910.80] cek. Oh, ternyata errornya ada di bagian
+[2914.68] datanya ini, penghitungannya ini.
+[2916.80] Ternyata dia menambahkan instead of
+[2919.44] mengkalikan gitu ya. Jadi programnya ini
+[2922.64] deh cuma menambahkan bukan dikali. Nah,
+[2925.36] sudah ketahuan nih bugnya.
+[2927.72] Kalau ini kalau misalnya ee dia
+[2929.88] programnya sedikit gitu ya, tapi kalau
+[2931.16] misalnya banyak gitu ya dalam function
+[2933.20] ini ada kompleks perhitungannya gitu.
+[2935.04] Misalnya menghitung volume kubus gitu
+[2937.44] atau volume segitiga gitu ee piramid.
+[2940.16] Nah, ini kan ee ribet. Maka perlu di apa
+[2943.92] tuh namanya? Diprint aja satu-satu
+[2945.56] boleh.
+[2947.16] Nah, silakan kerjakan.
+[2960.16] Untuk memahamkan pemahaman teman-teman
+[2962.24] tentang ee Python, tentang debugging di
+[2966.00] dalam bahasa pemrograman Python, silakan
+[2968.52] kerjakan mini kuis di bawah ini ya.
+[2976.20] Untuk membantu teman-teman memahami
+[2977.68] lebih lanjut tentang debaging tadi, coba
+[2980.52] teman-teman cari error yang mungkin ada
+[2983.12] di dalam kode di bawah ini.
+[2998.72] Nah, Teman-teman kadang
+[3001.52] Nah, Teman-teman kadang ketika kita ee
+[3004.80] membuat sebuah program gitu ya, misalnya
+[3006.80] kita membuat program mm yang dia bisa
+[3010.60] mencatat keuangan kita. Nah, ketika kita
+[3013.12] mencatat ee membuat program mencatat
+[3014.92] keuangan itu bayangkan kita kan kita
+[3017.44] kadang enggak tahu ya berapa sih data
+[3019.80] yang harus kita simpan gitu. Misal kita
+[3022.04] enggak tahu bisa aja dalam sehari kita
+[3024.84] bisa melakukan transaksi sebanyak 10
+[3026.60] kali. Nah, besoknya kan berarti beda
+[3028.36] gitu ya. Ee jumlah transaksinya bisa
+[3030.52] jadi lebih banyak atau lebih sedikit.
+[3032.44] Nah, kalau kita hanya mengandalkan
+[3034.36] variabel aja untuk menyimpan data-data
+[3036.44] transaksi tadi itu kan sangat tidak
+[3039.08] efektif ya. Ee dan juga variabelnya tuh
+[3043.24] pasti bakal banyak banget gitu. Misalnya
+[3044.88] variabel transaksi satu, variabel
+[3047.08] transaksi kedua dan juga kadang yang
+[3049.44] harus dicatat itu bukan hanya ee nama
+[3052.00] transaksinya sih. Transaksinya apa ya?
+[3054.32] Kadang kita selain nama transaksinya
+[3055.84] misalnya membeli buku atau membeli bakso
+[3057.76] gitu ya, membeli makan itu kita harus
+[3059.84] catat juga berapa sih yang kita beli,
+[3061.96] yang kita gunakan uangnya, berapa sih
+[3063.72] totalnya gitu. Nah, dari ee kasus-kasus
+[3067.76] tadi untuk membantu kita selain
+[3070.32] menggunakan variabel itu kita bisa
+[3072.88] menggunakan sebuah eh function di Python
+[3077.96] yang namanya dictionary. Nah, apa sih
+[3080.44] dictionary itu? Ya, coba kita lihat di
+[3082.32] sini dictionary itu bayangkan aja
+[3085.48] sebagai wadah penyimpanan data gitu ya.
+[3087.84] Nah, kalau variabel itu sama juga
+[3089.76] menyimpan data, tapi bedanya dictionary
+[3092.64] itu bisa menyimpan lebih dari satu data.
+[3096.24] Kalau variabel kan hanya bisa menyimpan
+[3097.76] satu data ya. Dan juga mungkin kalau
+[3100.04] kita sudah pernah membahas array gitu
+[3102.56] ya, kalau array itu dia juga bisa
+[3103.88] menyimpan data juga tapi dia datanya
+[3105.64] cuman ee enggak cuman satu ya kalau
+[3107.64] array ya. Kalau array bisa banyak. Nah,
+[3109.56] bedanya dictionary dengan array dan juga
+[3112.36] variabel. Bedanya kalau di dictionary
+[3115.48] itu dia memiliki key ya, kunci
+[3120.76] atau label dan juga datanya gitu. Jadi
+[3124.80] kalau misalnya variabel kan kita bikin
+[3126.20] variabel udah datanya apa. Nah, kalau
+[3128.80] misalnya ee array itu kan kita menyimpan
+[3131.40] data terus itu kita bikin nama array-nya
+[3133.96] apa. Kemudian kita isi nih data yang
+[3136.68] sesuai misalnya data nilai nama
+[3138.60] array-nya data nilai berarti semua
+[3140.36] isinya itu data-data nilai enggak bisa
+[3142.48] kita masukin data yang lain gitu. Nanti
+[3144.12] bingung pas memanggil. Nah, kalau
+[3146.44] dictionary itu kita bisa kasih ke ya.
+[3150.52] Kita kasih ke maksudnya kita kasih
+[3151.88] label. Oh, data yang ini itu nama
+[3154.88] transaksinya.
+[3156.56] Data ee yang QE yang kedua itu tipenya,
+[3159.76] Q yang ketiga itu jumlahnya. Jadi
+[3162.48] sebenarnya di dalam dictionary itu
+[3164.64] selain kita bisa nyimpan datanya kita
+[3167.44] bisa kasih label. Jadi nanti kalau
+[3169.56] misalnya kita mau menghitung program
+[3172.00] kita gitu ya, kayak kita mau melihat
+[3173.68] pengeluaran kita dalam sehari, kita
+[3175.48] tinggal panggil aja yang key-nya amount
+[3177.80] gitu. Berarti oh kita harus membuat
+[3181.24] amount-nya seperti ee kita menghitungnya
+[3183.68] berdasarkan yang punya label amount aja.
+[3185.56] Berarti yang nama transaksi sama tipe
+[3187.92] transaksinya kan enggak bisa dihitung di
+[3189.60] jumlah-jumlahin itu kan enggak bisa cuma
+[3191.56] amount doang kan karena dia integer.
+[3193.24] Nah, itu dia bisa dilakukan menggunakan
+[3195.32] dictionary. Oke, kita bahas lagi caranya
+[3198.92] dictionary itu seperti apa sih membuat
+[3200.80] dictionary? Nah, dictionary itu pertama
+[3204.72] yang harus kita buat adalah deklarasi
+[3206.92] dulu ya. sama kayak function eh sama
+[3209.92] kayak variabel atau array itu pertama
+[3212.32] kita harus deklarasikan dulu namanya
+[3214.72] apa. Nah, kalau namanya itu
+[3219.92] ee di sini transaction ya, kita buat
+[3222.84] namanya transaction. Nah, di sini
+[3225.76] berarti
+[3228.12] kita bikin dictionary untuk membedakan
+[3229.92] dia dictionary dan array. Kalau array
+[3231.52] kan kita pakai kurung siku ya, kurung
+[3233.60] siku seperti ini. Nah, kalau dictionary
+[3236.08] itu dia pakai curly bracket atau kurung
+[3239.28] kurawal. Nah, udah deh kurung kurawal di
+[3242.64] awal sama kurung kurawal di akhir. Nah,
+[3245.84] datanya kita bisa enter-enter enggak
+[3247.60] masalah ya. Nah, ini pertama kita harus
+[3250.08] bikin dulu key-nya apa, kuncinya apa.
+[3253.00] Nah, di sini kan kita di dalam ee di
+[3255.24] dalam transaksi ini misalnya transaksi
+[3257.28] satu gitu ya. Di sini dalam transaksi
+[3259.52] satu
+[3261.40] itu dia akan menyimpan nama
+[3263.96] transaksinya, tipe transaksinya, sama
+[3266.32] jumlah transaksinya gitu ya. Nah, ini di
+[3269.56] sini ada labelnya. Oh, nama namanya itu
+[3273.20] kita tulis saja name labelnya gitu ya.
+[3275.52] Terus itu di sini kita masukin nama
+[3278.32] transaksinya apa. Nah, karena juga kita
+[3280.76] udah pakai petik berarti enggak masalah
+[3282.40] kita pakai spasi itu enggak masalah gitu
+[3284.44] ya asalkan kita sudah pakai petik.
+[3287.12] Kemudian yang kedua ada tipe dan juga
+[3288.84] ada amount. Nih kalau kita enggak pakai
+[3290.92] petik dua berarti dia bukan string.
+[3292.76] Berarti ini integer gitu ya. Udah deh.
+[3295.56] Cara kita ng-printnya gimana? Cara
+[3297.32] nge-printnya kita tinggal panggil nama
+[3299.76] array-nya
+[3301.28] ya. Di sini kita panggil nih eh sor nama
+[3303.56] dictionary-nya apa? Nama dictionarynya
+[3305.64] transaction. Terus kalau kita mau
+[3307.32] ng-print namanya aja itu berarti kita
+[3310.36] panggil kurung sikunya. Kita pakai
+[3312.28] kurung siku gitu ya. Pakai kurung siku.
+[3314.60] Terus itu panggil nama labelnya. Jadi
+[3317.08] labelnya itu kan name dan dia pakai
+[3319.40] petik dua berarti dia string. Maka kita
+[3321.48] panggil dia pakai string juga sama gitu
+[3324.24] ya. Nah ini [berdehem] bentuk atau
+[3326.52] contoh dari penggunaan ee
+[3332.20] sejarah menggunakan dan membuat
+[3334.60] dictionary. Itu untuk
+[3338.68] di sini kita cek dulu.
+[3343.12] Kita cek kalau kita transaction name
+[3345.52] maka dia akan menampilkan name aja atau
+[3347.96] kalau kita ubah nih yang diprint
+[3349.92] transaction type. Oh berarti dia
+[3352.76] type-nya pengeluaran dan juga kalau
+[3354.76] amount dia akan
+[3357.20] menampilkan jumlahnya gitu. Kurang lebih
+[3360.28] seperti itu ya. Jadi intinya transaction
+[3363.12] buat seperti kita membuat variabel
+[3365.08] diikuti dengan buka kurung dan tutup
+[3368.52] kurung kurawal ya atau curly bracket
+[3371.72] kemudian diikuti dengan label titik du
+[3374.68] terus itu isinya dan jangan lupa nih
+[3376.76] koma. Jadi harus dipisahkan dengan koma
+[3378.88] ya sama kayak array dipisahkan dengan
+[3380.72] koma. Setelah koma boleh di-enter atau
+[3382.84] mau panjang ke kanan juga enggak masalah
+[3384.72] tapi supaya datanya rapi dan bisa dibug
+[3387.12] nantinya itu kita bisa enter-enter
+[3389.08] seperti itu. Misalkan jangan lupa koma
+[3392.56] dan juga petik ee kurung kurawalah sama
+[3395.00] nih
+[3396.52] ininya apa ee yang disebut dengan
+[3399.32] labelnya atau key-nya ya sebutannya key.
+[3402.08] Yang ini namanya value atau nilainya.
+[3404.80] Oke kita lanjut dulu.
+[3407.35] [berdehem]
+[3408.20] Kalau misalnya kita mau menyimpan data
+[3410.12] yang banyak. Nah, ini bisa kita langsung
+[3412.12] seperti ini ya. Kalau misalnya kita
+[3414.16] punya list of dictionaries gitu ya. Jadi
+[3417.80] di dalam dictionaries itu ada listnya
+[3421.28] lagi. Nah, di sini kita di kita bisa
+[3425.32] bikin list di dalam dictionary tadi.
+[3428.36] Jadi, di dalam data transaction ya, di
+[3430.96] dalam eh sini kita mau membuat sebuah
+[3435.24] list ya. List itu bisa disebut juga
+[3436.96] dengan array gitu ya. Nah, kita bikin
+[3439.24] array namanya transaction. Nah, di dalam
+[3441.48] transation itu ada banyak dictionary.
+[3444.28] Dictionary data pertama, data kedua, dan
+[3446.48] data ketiga. Dan ini dictionaries-nya
+[3448.68] enggak perlu kita eh enggak perlu kita
+[3451.48] kasih nama lagi ya dictionaries-nya.
+[3453.36] Pokoknya dia udah karena dia udah
+[3454.76] terhitung di dalam transaction itu data
+[3457.32] keenol, data kesatu, data kedua gitu.
+[3459.60] Jadi kita enggak perlu lagi menulis
+[3462.04] nama, membuat nama dictionaries-nya.
+[3465.40] Karena di sini kita sudah membuat array
+[3467.44] ya karena atau list karena dia pakai nih
+[3469.28] lihat nih dia pakainya kurung siku.
+[3472.96] Oke di sini dia memanggilnya itu
+[3475.88] memanggilnya pakai indeks. Jadi kalau
+[3477.96] kita cek indeks ke nol nih print nama
+[3482.04] array-nya apa? Nama listnya apa? Nama
+[3485.56] list kita itu transaction ya. Nama
+[3487.44] arraynya transaction. Terus kita mau
+[3489.24] panggil data yang ke mana? Data yang
+[3491.08] mana? Dictionary yang mana? Oh data ke
+[3492.52] nol. Nah ini datanya. gitu. Jadi apa?
+[3496.04] Supaya kita enggak harus kita enggak
+[3498.44] bikin banyak variabel, banyak
+[3501.84] dictionaries, cukup bikin satu aja array
+[3504.40] atau list gitu ya yang menampung semua
+[3506.60] transaksi kita.
+[3508.68] Oke. Terus misalnya di sini ada untuk
+[3512.36] menghitung, untuk membuat programnya ee
+[3515.76] jadi bisa kayak berjalan terus gitu ya.
+[3519.24] minta data. Minta data atau misalnya
+[3521.28] kita mau ngecek nih. Nah, ini kita bisa
+[3524.20] ee apa itu namanya? Membuat menggunakan
+[3530.72] perulangan for nih ya. Di sini ada
+[3532.64] perulangan for. Nah, di sini perulangan
+[3534.96] for dia akan nge-print semua
+[3538.72] dictionaries yang tipenya pemasukan
+[3541.48] gitu. Nih misalnya di sini di dalam
+[3544.16] kalau simulasinya tadi yang putaran
+[3546.20] pertama dia masukin user masukin uangnya
+[3549.72] pemasukan 5.000 dia enggak ada
+[3551.44] pengeluaran maka sisa saldonya 5.000
+[3554.44] gitu. Terus ada lagi dia ee pemasukannya
+[3559.04] tadi Rp50.000 ya uangnya, tapi dia
+[3561.92] melakukan pengeluaran maka expens-nya
+[3564.48] bertambah Rp20.000 dan dia uang saldonya
+[3567.44] berkurang. Nah, ini dia akan ngeloop
+[3569.40] ngeloop terus sampai ee apa itu namanya?
+[3572.72] Hasilnya teriset gitu ya, sampai
+[3574.80] loop-nya terpenuhi gitu. Nah, ini bisa
+[3578.08] kita buat seperti ini. Jadi dia kita
+[3580.28] untuk ini contoh untuk mengambil hanya
+[3582.60] tipe datanya yang pemasukan. Terus itu
+[3585.16] kita kalau misalnya yang dia pemasukan,
+[3588.88] input yang dia masukin itu tipenya
+[3590.56] pemasukan, maka dia akan hanya menambah
+[3593.40] variabel yang income aja gitu. Kalau
+[3596.00] misalnya dia tipenya pengeluaran, maka
+[3597.72] dia akan menambahkan pengeluaran total
+[3599.76] pengeluarannya berapa gitu. Ini salah
+[3601.40] satu contoh aja.
+[3603.84] Nah,
+[3605.80] kita sudah punya pemasukan, kita sudah
+[3608.20] punya pengeluaran itu kita bisa langsung
+[3610.68] hitung nih saldonya berapa dengan
+[3614.44] menggunakan rumus pemasukan dikurangin
+[3616.56] dengan pengeluaran. Kalau misalnya
+[3618.64] hasilnya masih positif, ya. Kalau hasil
+[3620.68] pengurangannya ini nilainya positif,
+[3622.68] maka pengeluaran keuanganmu masih aman
+[3624.84] gitu karena masih ada sisa uang. Tapi
+[3626.52] kalau sudah negatif berarti keuanganmu
+[3629.48] lagi enggak aman gitu ya. Jadi
+[3630.84] programnya bisa menyarankan, "Oh,
+[3632.56] keuanganmu lagi aman." Kalau misalnya ee
+[3635.36] hasil pengurangannya positif. Kalau
+[3637.24] negatif maka [berdehem] atau kurang dari
+[3639.40] nol maka dia pengeluarannya kurang ee
+[3641.96] keuangannya kurang aman.
+[3644.16] Nah, untuk menambahkan data ya, kita
+[3646.16] balik lagi ke dictionary. Kalau kita mau
+[3648.28] menambahkan data ke dalam dictionary itu
+[3650.88] kita bisa menggunakan [berdehem] yang
+[3652.64] namanya function bawaannya namanya
+[3655.04] appen. Jadi, misalnya kita membuat e
+[3658.08] sebuah dictionary namanya new
+[3659.48] transaction. Di sini ada labelnya nama,
+[3662.64] namanya uang saku, tipenya pemasukan,
+[3664.60] amountnya Rp50.000. Nah, misalnya kita
+[3667.32] tadi sebelumnya sudah punya transaksi
+[3669.20] ya, nama ee kalau kita balik ke depan
+[3671.80] sebentar. Nah, di sini kita udah punya
+[3674.36] data namanya transaction ya, dictionary
+[3677.28] namanya transaction. Jadi kita bikin
+[3679.00] lagi sebuah dictionary, terus kita
+[3681.52] tuliskan namanya transaction. Nih tadi
+[3684.04] kita mau masukin ke dalam dictionary.
+[3687.00] New transaction ini kita append, kita
+[3689.48] masukin ke dalam eh dictionary
+[3691.92] transaction gitu ya. Misalnya kita beli
+[3695.48] S R.000 terus itu kita masukin dia
+[3698.88] pemasukan
+[3701.04] kita jalankan.
+[3702.64] Oh, ini nama ya. Oh, sori. Ini nama
+[3704.56] harusnya kita masukin di sini.
+[3707.96] Beli SER
+[3712.96] baru nominalnya Rp20.000.
+[3715.72] Terus kita jalankan. Nah, ini akan masuk
+[3719.36] ke dalam sebuah list. Misalnya kita
+[3720.96] masukin lagi ya. Misalnya kita mau beli
+[3724.76] mie goreng. Mie goreng misalnya.
+[3728.44] Oh, ini pengeluaran ya. pengeluaran ini
+[3730.64] 110.000
+[3732.20] gitu pas kita jalankan, nah nih dia
+[3734.32] bertambah lagi gitu ya. Jadi bentuknya
+[3736.68] kalau kita menggunakan pen dia akan
+[3738.48] bertambah. Ini kalau misalnya kita
+[3740.64] menggunakan eh apa itu namanya?
+[3743.96] Transactions ini ada list ya, list
+[3746.08] transaction ini ada data yang ditambahin
+[3748.32] gitu. Jadi datanya akan terus berterus
+[3750.16] terus-menerus bertambah gitu. Nah supaya
+[3754.52] dia bisa lebih rapi, kita bungkus logic
+[3757.72] tadi ke dalam sebuah function. Jadi kita
+[3760.04] ee kalau tadi kan harus membuat namanya
+[3763.28] ini langsung satu satu gitu ya. Nah,
+[3766.00] supaya kita ee enggak repot harus
+[3768.88] membuat buka kurung atau bikin ini lagi
+[3771.80] gitu ya, labelnya lagi, kita bikin aja
+[3774.40] sebuah function add transaction yang di
+[3776.68] mana dia meminta parameter nama
+[3779.84] transaksi tipenya sama momnya. Jadi pas
+[3782.12] kita panggil kita tinggal masukin add
+[3783.68] transaction.
+[3785.28] Kita masukin nama yang kayak tadi ya
+[3786.92] programnya ya. Kita masukin jenis
+[3789.36] pembeliannya terus itu misalnya kita
+[3792.44] pengeluaran atau pemasukan gitu ya.
+[3794.68] Terus jumlahnya berapa udah deh nanti
+[3796.52] dia akan otomatis masuk ke dalam listnya
+[3799.08] gitu ya. Ini salah satu contoh aja biar
+[3801.08] kodenya rapi. Nah, ini ada juga contoh
+[3805.72] function yang bisa kita gunakan untuk
+[3807.56] menghitung ee
+[3810.56] total pengeluaran kita itu gimana sih
+[3812.84] kita summarize, kita ee rangkum gitu.
+[3815.88] Nah, jadi di sini dia akan ngecek gitu
+[3818.36] ya
+[3819.88] income-nya berapa, expens-nya berapa
+[3821.80] gitu. Uang kita masuk berapa,
+[3823.88] pengeluaran kita berapa. Kalau misalnya
+[3827.08] udah nih kita ngecek nih ya kan ya.
+[3829.08] Kalau misalnya setiap data transaksinya
+[3831.16] ini bertambah, itu dia akan menghitung
+[3832.76] ya. Kalau data transak, dia akan ngecek
+[3835.24] nih dari data transaction. Kalau dia
+[3837.72] tipenya pemasukan, dia jumlahin semua
+[3839.48] pemasukannya. Kalau tipe data
+[3841.04] pengeluarannya, dia jumlahin semua
+[3842.48] variabel e pengeluarannya. Kalau udah ke
+[3845.16] hitung ya dalam eh transaction ini dalam
+[3848.36] dictionary atau list transaction ini
+[3850.88] berapa aja pemasukannya sama
+[3853.84] pengeluarannya. N. Terus ini kita bisa
+[3855.32] hitung nih balance-nya berapa?
+[3857.72] Income-nya dikurang expend. Kalau
+[3859.80] misalnya dia kita bisa tambahin juga nih
+[3862.48] if ini kan cuman function ya nanti dia
+[3864.60] bisa cuman nampilin aja. Nanti setelah
+[3867.04] ini kita bisa kasih if eh balance lebih
+[3872.28] dari nol maka kita bilang congratulation
+[3876.04] your money is safe gitu ya. Your
+[3878.08] budgeting is safe. Kalau else berarti oh
+[3880.96] your money is not safe gitu karena
+[3882.44] uangnya kurang dan segala macam. ini ya
+[3884.68] salah satu contoh yang bisa kalian
+[3886.04] terapkan ke dalam program kalian gitu.
+[3889.16] Next, silakan kerjakan kuis latihan
+[3892.40] berikut ini ya, Teman-teman.
+[3897.28] Nah, untuk me
+[3900.24] buat teman-teman lebih paham
+[3932.04] Oke, Teman-teman. Setelah kita belajar
+[3934.48] tentang cara bagaimana kita bisa membuat
+[3938.60] program Python yang bisa menghitung dan
+[3942.52] menyimpan data gitu ya, data financial
+[3945.52] kita, sekarang data yang kita punya itu
+[3948.20] kita perlu analisis, Teman-teman. Nah,
+[3950.40] gimana cara nganalisisnya? Coba kita
+[3951.92] perhatikan nih slide berikut. Nah, di
+[3955.00] sini
+[3956.60] kita bisa ee cek misalnya kita mempunyai
+[3960.64] list gitu ya, list data pengeluaran
+[3963.24] keuangan bulanan kita gitu. Misalnya
+[3965.76] contoh aja ada lima, hanya ada lima lima
+[3968.88] data ya di sini.
+[3973.16] Data pertama itu dia R.000, data yang
+[3976.76] kedua Rp15.000, 10.000, R30.000, dan
+[3979.36] juga R5.000. Nah, dari data ini coba
+[3983.00] kita cek data ini kita perlu totalkan
+[3986.12] ya. Jadi kalau misalnya kita
+[3987.36] menganalisis data keuangan, yang pertama
+[3990.32] kali kita harus cek itu adalah pengeluar
+[3992.44] apa? Ee karena ini dia data pengeluaran
+[3994.68] ya, kita harus jumlahkan dulu berapa
+[3997.16] data pengeluaran kita ya, berapa total
+[3999.84] pengeluaran kita. Nah, supaya kita
+[4002.36] enggak pusing ya, nambahkan misalnya 20
+[4004.80] pakai atau menggunakan for loop atau
+[4007.24] harus kita tambahin satu satu satu gitu.
+[4009.24] Nambahin plus plus. ada function Python
+[4012.12] yang bisa membantu
+[4014.84] menjumlahkan sebuah list secara otomatis
+[4017.64] gitu ya, asalkan dia sudah disimpan rapi
+[4019.84] ke dalam sebuah list seperti ini atau
+[4022.00] kita bisa gunakan juga list dictionary
+[4024.04] itu boleh gitu ya. Nah, caranya kita
+[4026.36] bisa menggunakan S ya, S buka kurung
+[4029.28] tutup kurung terus apa nih yang mau di
+[4032.12] ee apa yang mau di
+[4036.04] hitung dijumlahkan gitu. Kalau ini kan
+[4038.36] array ya. Kalau bentuknya dictionaries
+[4040.52] berarti kita masukin nih expenses buka
+[4043.40] kurung eh type apa gitu kan type sama
+[4047.52] dengan sama dengan ini gitu eh expenses
+[4051.32] dan segala macam itu boleh teman-teman
+[4052.96] ee tambahkan seperti itu ya kalau
+[4054.36] dictionaries. Nah, kalau yang ini kita
+[4057.52] bisa cek
+[4059.52] kalau kita menggunakan SAM itu dia bisa
+[4061.64] langsung muncul nih hasilnya berapa
+[4064.00] 20.000 + 15.000 + 10.000 + 30.000 R +
+[4067.16] 5.000 totalnya R8.000 Rp80.000 ya. Nah,
+[4070.96] jadi kita enggak perlu lagi tambah
+[4072.28] tambah tambah tambah kita bisa langsung
+[4074.28] menggunakan SA. Nah, dari SAM itu tadi
+[4078.16] selain kita menghitung jumlah totalnya,
+[4081.12] kita harus melihat nih dari data yang
+[4083.12] kita punya manakah pengeluaran yang
+[4086.12] paling besar sama manakah pengeluaran
+[4088.96] yang paling kecil. Nah, misalnya di sini
+[4091.20] dari data yang kita punya sebelumnya ini
+[4093.00] ya, R.000, 15.000, 10.000, R.000 R sama
+[4096.00] R5 5.000. Kalau kita bikin programnya
+[4099.76] itu kita bisa menggunakan untuk
+[4101.76] menghitung
+[4103.28] pengeluaran terbesar itu kita bisa
+[4104.92] menggunakan max atau maksimum ya. Tulis
+[4107.60] saja max. Terus data mana yang mau dicek
+[4110.12] max-nya terus lowest ini data? Kalau
+[4113.76] lowest itu yang terkecil berarti minimum
+[4115.72] ya, Min? Ee mana pengeluaran kita yang
+[4118.80] paling rendah gitu. Kalau yang terbesar
+[4121.44] ternyata R30.000 ya. dan yang terkecil,
+[4124.76] oh ternyata yang terkecil 5.000 gitu.
+[4126.64] Jadi datanya ee apa itu namanya?
+[4129.20] Berdasarkan area yang kita punya, dia
+[4130.80] akan langsung mencari, dia akan
+[4132.32] membandingkan otomatis gitu ya, mana
+[4134.20] yang paling besar, mana yang paling
+[4135.16] kecil. Nah, setelah kita ee menghitung
+[4140.12] paling besar paling kecil, terus itu
+[4142.04] totalnya berapa, kita harus juga bisa
+[4144.68] menghitung rata-ratanya kita
+[4146.88] mengeluarkan di bulan ini berapa sih
+[4148.44] pengeluaran kita dan nanti bisa
+[4150.24] dibandingkan dengan bulan-bulan yang
+[4151.60] lain gitu ya. Nah, untuk menghitung
+[4153.72] rata-rata itu kita rumusnya adalah total
+[4157.76] belanja kita, total expenses kita dibagi
+[4160.32] dengan berapa kali kita belanja gitu,
+[4162.60] berapa kali kita mengeluarkan uang. Nah,
+[4165.16] misalnya di sini untuk menghitung berapa
+[4167.40] kali kita mengeluarkan uang itu kita
+[4170.28] bisa menggunakan Lens. Lens itu
+[4172.48] singkatan dari length atau panjang ya,
+[4174.64] bahasa Inggris, bahasa Indonesianya
+[4176.48] length itu kan bahasa Inggris ya. Kita
+[4178.92] singkat di dalam Python itu singkatannya
+[4180.36] lens. Nah, line ini kita mau hitung ada
+[4183.20] berapa banyak datanya. Oh, kalau di sini
+[4185.96] kita sum dulu ya. Kita sum totalnya
+[4188.64] berapa gitu. Misalnya tadi totalnya kan
+[4191.00] Rp80.000, Lens-nya berapa datanya? Nah,
+[4193.72] datanya itu 5 gitu. Maka rata-ratanya
+[4196.12] kita hitung Rp80.000 di length-nya
+[4199.92] panjang datanya, jumlah datanya 5. Maka
+[4203.88] Rp80.000
+[4205.64] dibagi 5 = 16.000. Berarti rata-rata
+[4209.32] pengeluaran kita per hari di bulan ini
+[4211.64] itu rata-ratanya 16.000 gitu ya. Nah,
+[4214.92] jadi itu kita sudah bisa menghitung nih
+[4217.12] kita sudah menganalisis.
+[4219.96] Setelah kita analisis kita bisa melihat
+[4222.44] ya, kita bisa membaca polanya kira-kira
+[4225.64] dari pengeluaran kita, pengeluaran kita
+[4228.84] segini, pemasukan kita, ber total
+[4231.80] pengeluaran kita berapa terus itu ee
+[4235.16] pengeluaran terbesarnya berapa,
+[4236.52] terkecilnya berapa. rata-ratanya berapa.
+[4238.84] Nah, di sini kita bisa mengevaluasi,
+[4241.44] kita bisa melihat, oh ternyata kita
+[4244.24] kalau rata-rata 16.000 berarti kita
+[4247.00] enggak terlalu boros ya. Berarti kan
+[4249.16] masih aman aja ya. Atau kalau misalnya
+[4251.24] kita kayak misalnya, "Uh, ternyata
+[4252.60] rata-ratanya R juta banyak banget ya,
+[4254.36] boros banget ya." Nah, itu kita bisa
+[4256.04] tahu nih berdasarkan data yang sudah
+[4258.00] kita buat tadi. Nah, itulah pentingnya
+[4260.16] kita mempunyai data gitu ya. Nah,
+[4264.04] misalnya agar analisis lebih mendalam,
+[4267.12] kita harus mencatat juga kategorinya
+[4270.88] ee keuangan kita, transaksi kita tuh
+[4273.24] tipenya apa sih, gitu. Kategorinya tuh
+[4275.36] misalnya pengeluaran kita untuk beli
+[4277.64] makan atau membeli buku atau membeli
+[4279.72] sekolah. Kenapa kita harus mencatat
+[4282.20] kategori supaya kita tahu gitu ya,
+[4285.72] kita bisa mengelompokkan, kita bisa
+[4287.40] menghitung, kita bisa buat program yang
+[4289.12] di mana dia bisa menghitung kalau
+[4291.20] makanan itu total makanan yang dibeli
+[4293.08] itu berapa sih? Terus untuk keperluan
+[4295.96] sekolah itu berapa sih yang kita
+[4297.36] butuhkan, gitu. Jadi misalnya kita pas
+[4300.28] kita mau melakukan budgeting di bulan
+[4302.28] depan, oh kita harus sudah menyisihkan
+[4304.04] uang segini gitu ya berdasarkan rata
+[4306.40] data kita di bulan ini.
+[4308.96] Oh kita harus menyisihkan misalnya
+[4310.08] R30.000 untuk ee uang sekolah atau
+[4313.28] misalnya Rp300.000 untuk uang makan
+[4315.28] seperti itu. Nah ini di sini kita bisa
+[4318.84] membuat perulangan ee apa? Membuat
+[4322.08] python-nya seperti ini ya. Kita membuat
+[4324.84] dictionary baru namanya kategori total
+[4327.12] gitu ya. Nah, di sini for t in
+[4329.36] transaction di dalam apa? Kita buat
+[4331.16] variabel sementara namanya t. Terus tadi
+[4333.40] nama array-nya adalah transaction ya.
+[4335.80] Nah, kalau kategorinya itu jadi dia akan
+[4339.08] menyimpan nih memanggil si T ini akan
+[4341.96] menyimpan indeks ke berapa, data ke
+[4344.28] berapa. Misalnya indeks ke nol kan t
+[4346.28] dimulai dari 0 ya karena datanya masih
+[4348.00] nol. Nah, indeks ke nol dia akan milih
+[4350.52] kategorinya yang makanan gitu. misalnya
+[4353.40] ee dia kategorinya makanan, nanti dia
+[4356.16] akan mengghitung nih, dia akan
+[4357.48] menjumlahkan, terus nanti dia bisa ee
+[4361.12] pindah ke indeks selanjutnya, indeks
+[4363.16] data yang kedua, data yang ketiga, dan
+[4364.76] seterusnya. Nah, nanti sampai akhirnya
+[4367.24] dia muncul seperti ini.
+[4370.16] Kemudian ketika kita mempunyai data gitu
+[4374.24] ya, tadi kita sudah menghitung datanya.
+[4376.44] Setelah kita menghitung datanya, kita
+[4378.88] bisa membuat keputusan apakah kita boros
+[4382.48] apa enggak gitu ya. Apakah kita pola
+[4385.32] keuangan kita sehat apa enggak gitu.
+[4388.12] Nah, untuk itulah.
+[4394.16] Nah, sekarang untuk membantu teman-teman
+[4397.44] memahami
+[4401.04] untuk membantu teman-teman memahami
+[4402.64] lebih lanjut, coba silakan kerjakan kuis
+[4405.44] berikut ini.
+[4420.12] Nah, setelah teman-teman mengerjakan
+[4421.60] kuis, silakan kerjakan project untuk
+[4425.40] dinilai kehadiran ini ya, mini project
+[4427.76] tersebut ya. Nah, di sini ada data. Nah,
+[4430.76] dari data ini coba kalian bisa ee ubah
+[4434.20] ya. Kalian bisa ubah nih list datanya ee
+[4437.32] minimal harus ada lima data, ya. Nah,
+[4439.52] kalian mas buat variable expenses.
+[4441.88] Kemudian dari variable expenses ini coba
+[4443.88] hitung totalnya berapa, nilai
+[4445.96] terbesarnya, terkecilnya berapa, sama
+[4448.20] rata-ratanya. Nah, terus itu kalian
+[4451.28] gunakan if else ya. Kalau pengeluarannya
+[4454.32] jika rata-rata pengeluarannya tadi kita
+[4457.28] sudah ngitung rata-rata ya, balance-nya
+[4459.36] berapa. Kalau rata-rata pengeluarannya
+[4461.16] itu lebih dari Rp20.000 maka
+[4463.08] pengeluarannya tinggi. Kalau misalnya
+[4465.64] enggak berarti dia kurang dari Rp2.000
+[4468.20] maka dia akan nge-print pengeluaran.
+[4471.20] Coba silakan dikotak kerjakan di kotak
+[4473.24] di bawah ini.

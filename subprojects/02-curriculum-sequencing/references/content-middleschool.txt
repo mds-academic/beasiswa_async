@@ -1,0 +1,1764 @@
+
+## ms-0-0 Introduction to Async Learning
+Video yxmLOk5vcFg 0–None
+{'time': 0, 'label': 'Pengenalan Async Learning'}
+{'time': 25, 'label': 'Ritme Belajar & Pause'}
+{'time': 55, 'label': 'Alur Belajar Step-by-Step'}
+{'time': 85, 'label': 'Pop-up Quiz Interaktif'}
+{'time': 115, 'label': 'Materi Bacaan & Praktik Mandiri'}
+
+       
+         
+           Materi Bacaan 00 
+           Panduan Pembelajaran Mandiri (Async Learning) 
+         
+       
+       
+         Selamat Datang di Pembelajaran Mandiri! 
+         
+           Program pembelajaran mandiri ini dipersembahkan oleh  UOB My Digital Space . Di platform ini, kamu memegang kendali penuh atas ritme dan kecepatan belajarmu. 
+           Belajar mandiri bukan tentang siapa yang paling cepat selesai, tetapi tentang siapa yang benar-benar memahami materi yang dipelajari. 
+         
+         Aturan Penting Selama Belajar 
+         
+           
+             
+               1. Video Step-by-Step 
+               Materi disusun secara bertahap. Tonton setiap video sampai selesai (minimal hingga 20 detik sebelum video berakhir) agar modul berikutnya terbuka otomatis. 
+             
+             
+               2. Pop-up Quiz Tiba-tiba 
+               Di tengah video, Pop-up Quiz akan muncul secara interaktif. Jawablah dengan benar untuk melanjutkan video. Gunakan tombol ulangi 30 detik jika perlu mengulang penjelasan. 
+             
+             
+               3. Rangkuman & Praktik 
+               Tepat di bawah video terdapat rangkuman materi bacaan dan area pengumpulan proyek mandiri yang terhubung ke sistem penilaian. 
+             
+           
+         
+         Tips Sukses Belajar 
+         
+           
+              Fokus pada layar:  Jangan tinggalkan video saat sedang berjalan agar tidak ketinggalan quiz interaktif. 
+              Pause & Catat:  Jangan ragu mem-pause video untuk mencatat poin-poin penting. 
+              Kerjakan Proyek:  Terapkan konsep yang sudah dipelajari pada mini project di setiap checkpoint. 
+           
+         
+       
+    
+
+## ms-1-1 Input Aman
+Video UhutS4BVKhk 0–1338
+{'time': 14, 'label': 'Pengenalan Input Aman'}
+{'time': 255, 'label': 'Studi Kasus Meminjam Buku'}
+{'time': 421, 'label': 'Validasi Input User'}
+{'time': 551, 'label': 'Pengecekan Input'}
+
+       
+         
+           Materi Bacaan 01 
+           Input Aman 
+         
+       
+       
+         Teori Input 
+ 
+  Input  adalah data yang dimasukkan pengguna ke aplikasi. Bisa berupa nama, umur, pilihan menu, nominal uang, password, lokasi, atau jawaban quiz. 
+ Masalahnya, aplikasi tidak otomatis tahu apakah data itu masuk akal. Kalau pengguna mengisi umur dengan kata  "tigabelas" , mengosongkan nama, atau mengetik nominal uang dengan huruf, aplikasi bisa salah menghitung. 
+ Aplikasi yang baik tidak langsung percaya semua input. Aplikasi harus mengecek dulu. 
+ Di MIT App Inventor, bagian input biasanya dibuat dengan komponen  TextBox ,  PasswordTextBox ,  ListPicker ,  CheckBox , atau  Slider . 
+ 
+ Contoh Sekitar 
+ 
+ Bayangkan kamu menjadi petugas perpustakaan sekolah. Temanmu mau meminjam buku, tetapi kartu anggota tidak ada namanya. Apakah boleh langsung diproses? 
+ 
+ 
+ Di Perpustakaan 
+ 
+ Nama peminjam harus ada. 
+ Nomor anggota harus benar. 
+ Buku yang dipinjam harus tercatat. 
+ 
+ 
+ 
+ Di Aplikasi 
+ 
+ Nama tidak boleh kosong. 
+ Umur harus angka. 
+ Nominal uang harus lebih dari 0. 
+ 
+ 
+ 
+ Kesimpulannya: validasi membuat aplikasi lebih rapi, lebih aman, dan lebih mudah dipercaya. 
+ 
+ Validasi Input 
+ 
+  Validasi input  adalah proses memeriksa data sebelum data dipakai oleh aplikasi. Untuk SMP, kita mulai dari tiga validasi yang paling sering dipakai. 
+ 
+ 
+ 1. Tidak Kosong 
+ Contoh: nama pengguna wajib diisi sebelum tombol daftar bisa diproses. 
+ 
+ 
+ 2. Tipe Data Tepat 
+ Contoh: umur, harga, dan jumlah barang harus berupa angka. 
+ 
+ 
+ 3. Nilai Masuk Akal 
+ Contoh: umur siswa SMP biasanya bukan 2 tahun dan bukan 90 tahun. 
+ 
+ 
+ Bonus: Data Sensitif 
+ Password dan PIN tidak boleh ditampilkan terang-terangan di layar. 
+ 
+ 
+ 
+ MIT App Inventor 
+ 
+ Kita akan membuat aplikasi sederhana: pengguna memasukkan nama dan umur, lalu aplikasi memberi sapaan hanya jika datanya valid. 
+ 
+  Komponen Designer:  
+  TextBoxNama   TextBoxUmur   ButtonCek   LabelHasil   Notifier1  
+ 
+ 
+ when ButtonCek.Click  
+ if   TextBoxNama.Text   =   ""  
+ then   Notifier1.ShowAlert   "Nama belum diisi"  
+ else if   not is a number?   TextBoxUmur.Text  
+ then   Notifier1.ShowAlert   "Umur harus angka"  
+ else   set LabelHasil.Text   "Data aman diproses" 
+ 
+ Urutan pengecekan penting: cek kosong dulu, cek angka, baru proses. Jangan memproses data sebelum yakin data itu benar. 
+ 
+ Designer 
+ 
+ Siswa membuat layar aplikasi seperti form pendaftaran klub sekolah. Fokusnya bukan login sungguhan, tetapi latihan membuat input yang jelas dan bisa divalidasi. 
+ 
+ 
+ 
+ Data Anggota Klub 
+ Nama lengkap 
+ contoh: Naya Putri 
+ Umur 
+ contoh: 13 
+ Kelas 
+ pilih: 7A / 7B / 8A 
+ CEK DATA 
+ Status akan muncul di sini. 
+ 
+ 
+ 
+ Komponen di Designer 
+ VerticalArrangement 
+ LabelJudul 
+ TextBoxNama 
+ TextBoxUmur 
+ ListPickerKelas 
+ ButtonCek 
+ LabelStatus 
+ Notifier1 
+ Properti yang perlu disetel: Hint pada TextBox, Text tombol, warna LabelStatus, dan pilihan kelas pada ListPicker. 
+ 
+ 
+ 
+ Blocks 
+ 
+ Susunan Blocks dibuat bertahap. Siswa jangan langsung membuat semua blok; mulai dari cek nama kosong, lalu cek umur angka, lalu cek umur masuk akal. 
+ 
+ Gambaran Blocks 
+ when ButtonCek.Click 
+ if TextBoxNama.Text = "" 
+ call Notifier1.ShowAlert "Nama belum boleh kosong" 
+ else if not is a number? TextBoxUmur.Text 
+ call Notifier1.ShowAlert "Umur harus angka, contoh: 13" 
+ else if TextBoxUmur.Text < 10 or TextBoxUmur.Text > 16 
+ call Notifier1.ShowAlert "Umur belum sesuai untuk klub SMP" 
+ else set LabelStatus.Text to "Data aman. Selamat bergabung!" 
+ 
+ Latihan tambahan: minta siswa menguji tiga input salah, lalu screenshot hasil Notifier yang muncul. 
+ 
+       
+    
+{"question": "Kamu membuat aplikasi data anggota klub sekolah. Kolom nama wajib diisi.  Kondisi mana yang paling tepat untuk mengecek nama kosong?", "choices": ["A. Jika TextBoxNama berwarna putih.", "B. Jika TextBoxNama.Text = \"\".", "C. Langsung simpan saja, nanti dicek belakangan."], "answer": "B. Jika TextBoxNama.Text = \"\".", "explanation": "Untuk mengecek apakah TextBox kosong, kita menggunakan blok  TextBoxNama.Text = \"\" ."}
+
+## ms-1-2 Mini Project Form Aman
+Video UhutS4BVKhk 1349–1392
+{'time': 1349, 'label': 'Instruksi Mini Project'}
+
+       
+         
+           Mini Project 
+           Form Aman 
+         
+       
+       
+         
+           Tonton instruksi video di atas untuk mengerjakan mini project ini. 
+         
+       
+    
+
+## ms-1-3 Flowchart Logika Data
+Video UhutS4BVKhk 1394–2079
+{'time': 1424, 'label': 'Pengenalan Flowchart'}
+{'time': 1499, 'label': 'Pentingnya Flowchart'}
+{'time': 1794, 'label': 'Komponen Flowchart'}
+{'time': 2037, 'label': 'Menyusun Flowchart'}
+
+       
+         
+           Materi Bacaan 03 
+           Flowchart Logika Data 
+         
+       
+       
+         Alur Aplikasi 
+ 
+  Flowchart  adalah gambar alur langkah yang menunjukkan bagaimana aplikasi berjalan dari awal sampai akhir. 
+ Flowchart membantu kita berpikir sebelum menyusun blok. Kalau alurnya belum jelas, blok App Inventor biasanya jadi berantakan dan sulit diperbaiki. 
+ 
+ Mulai 
+  
+  Input Data  
+  
+ 
+  
+ Cek Kondisi 
+ 
+ 
+ Tidak Valid 
+  
+ Ya/Tidak 
+  
+ Valid (Proses) 
+ 
+  
+  Tampilkan Output  
+  
+ Selesai 
+ 
+ Di bagian ini, siswa belajar bahwa aplikasi yang baik tidak dibuat asal klik blok. Aplikasi dimulai dari alur logika. 
+ 
+ Contoh Sekitar 
+ 
+ Bayangkan aturan masuk kelas setelah bel istirahat selesai. 
+ 
+ Bel berbunyi 
+  
+ Siswa menuju kelas 
+  
+ 
+  
+ Apakah membawa buku? 
+ 
+ 
+ 
+ TIDAK 
+ Ambil buku dulu 
+ 
+ 
+ YA 
+ Mulai belajar 
+ 
+ 
+  
+ Pelajaran dimulai 
+ 
+ Alur ini mirip aplikasi: ada awal, ada input/kondisi, ada percabangan, lalu ada hasil. Bedanya, di aplikasi semua aturan harus ditulis jelas dalam blok. 
+ 
+ Simbol Flowchart 
+ 
+ 
+ 
+ Term 
+ 
+ Terminator 
+ Menandai Mulai dan Selesai. Biasanya berbentuk oval. 
+ 
+ 
+ 
+  In/Out  
+ 
+ Input / Output 
+ Data masuk/hasil. Biasanya jajar genjang. 
+ 
+ 
+ 
+ Proses 
+ 
+ Process 
+ Langkah pengolahan (seperti menghitung). 
+ 
+ 
+ 
+ 
+  
+ Cek? 
+ 
+ 
+ Decision 
+ Pertanyaan Ya/Tidak. Berbentuk belah ketupat. 
+ 
+ 
+ 
+ Untuk anak SMP, yang paling penting bukan menggambar simbol sempurna, tetapi membuat alur yang runtut dan bisa diterjemahkan menjadi blok. 
+ 
+ MIT App Inventor 
+ 
+ Contoh flowchart aplikasi "Cek Pengeluaran": 
+ 
+ Mulai ketika tombol ditekan. 
+ Ambil angka dari TextBoxPengeluaran. 
+ Cek apakah input kosong atau bukan angka. 
+ Jika tidak valid, tampilkan pesan error. 
+ Jika valid, cek apakah pengeluaran > Rp25.000. 
+ Tampilkan saran hemat atau saran aman. 
+ 
+ 
+ when ButtonCek.Click  
+ if   input tidak valid   then   ShowAlert  
+ else if   pengeluaran   >   25000   then   "Awas boros"  
+ else   "Masih aman" 
+ 
+ 
+ Latihan Blocks 
+ 
+ Guru bisa menampilkan flowchart ini, lalu siswa menyusun Blocks yang cocok. Ini melatih urutan berpikir sebelum mereka membuka editor Blocks. 
+ 
+ 
+ 
+ ButtonCek Click 
+  
+  Ambil pengeluaran  
+  
+ 
+  
+ Input Valid? 
+ 
+ 
+ 
+ TIDAK 
+  ShowAlert  
+ 
+ 
+ YA 
+ Hitung status 
+ 
+ 
+ 
+ 
+ 
+ Blocks yang Cocok 
+ when ButtonCek.Click 
+ if input kosong atau bukan angka 
+ Notifier1.ShowAlert 
+ else hitung dan bandingkan pengeluaran 
+ set LabelStatus.Text 
+ 
+ 
+ Kegiatan kelas: minta siswa menukar posisi dua blok, lalu jelaskan bug yang muncul. 
+ 
+ Debugging 
+ 
+ Berikan kasus bug: aplikasi tetap menghitung walaupun kotak pengeluaran kosong. Siswa harus menemukan bagian alur yang salah. 
+ 
+ 
+ Bug yang Terjadi 
+ Pengguna menekan ANALISIS tanpa mengisi pengeluaran. Aplikasi tetap menampilkan sisa uang, padahal datanya belum lengkap. 
+ 
+ 
+ Perbaikan 
+ Pindahkan proses hitung ke bagian  else , setelah semua validasi berhasil. 
+ 
+ 
+ 
+ Alur yang Benar 
+ if input bermasalah 
+ tampilkan pesan error 
+ else baru hitung data 
+ tampilkan hasil keputusan 
+ 
+ 
+       
+    
+{"question": " Mini Quiz: Urutan Flowchart   Kamu membuat aplikasi cek umur. Aplikasi harus menerima umur, memastikan umur angka, lalu menampilkan kategori.  Urutan yang paling masuk akal adalah...", "choices": ["A. Tampilkan hasil, lalu minta input, lalu cek angka.", "B. Ambil input, cek apakah angka, lalu tampilkan kategori.", "C. Tekan reset, tampilkan hasil, lalu ambil input."], "answer": 1, "explanation": "Urutan yang benar adalah menerima input, memproses input tersebut (validasi tipe data), lalu menampilkan hasilnya."}
+
+## ms-1-4 Data & Privacy App
+Video UhutS4BVKhk 2096–2572
+{'time': 2118, 'label': 'Apa Itu Privacy?'}
+{'time': 2337, 'label': 'Empat Prinsip Data Privacy'}
+{'time': 2527, 'label': 'Menerapkan Data Privacy'}
+{'time': 2591, 'label': 'Memahami Data Privacy'}
+
+       
+         
+           Materi Bacaan 04 
+           Data & Privacy App 
+         
+       
+       
+         Privacy App 
+ 
+  Privacy  berarti menjaga data pribadi agar tidak digunakan, dilihat, atau dibagikan sembarangan. 
+ Data pribadi bukan hanya password. Nama lengkap, nomor telepon, alamat rumah, lokasi, foto, kebiasaan belanja, dan riwayat aktivitas juga bisa menjadi data pribadi. 
+ Pertanyaan penting pembuat aplikasi: "Apakah aplikasi benar-benar perlu meminta data ini?" 
+ Kalau data tidak diperlukan, jangan diminta. Semakin sedikit data sensitif yang dikumpulkan, semakin kecil risiko penyalahgunaan. 
+ 
+ Contoh Sekitar 
+ 
+ Di sekolah, loker menyimpan barang pribadi. Kamu tidak memberikan kunci loker kepada semua orang, karena isinya milikmu. 
+ 
+ 
+ Kunci Loker 
+ Diberikan hanya ke orang yang berhak. Kalau hilang, barang bisa diambil orang lain. 
+ 
+ 
+ Password / PIN 
+ Diketahui hanya oleh pemilik akun. Kalau bocor, akun bisa disalahgunakan. 
+ 
+ 
+ Itulah alasan aplikasi harus menjaga tampilan, penyimpanan, dan proses data pribadi. 
+ 
+ Prinsip Aman 
+ 
+ 
+ 
+ 1. Minta Seperlunya 
+ Kalau aplikasi hanya menghitung uang saku, tidak perlu meminta alamat rumah. 
+ 
+ 
+ 2. Sembunyikan Data Rahasia 
+ Password ditulis di  PasswordTextBox , bukan TextBox biasa. 
+ 
+ 
+ 3. Beri Peringatan Jelas 
+ Kalau data berisiko, aplikasi memberi pesan yang mudah dipahami pengguna. 
+ 
+ 
+ 4. Jangan Tampilkan Berlebihan 
+ Jangan menampilkan password, nomor PIN, atau data sensitif di Label biasa. 
+ 
+ 
+ 
+ MIT App Inventor 
+ 
+ Kita tidak membuat sistem login sungguhan yang rumit. Kita belajar cara membuat tampilan input yang lebih aman dan memberi peringatan saat password kosong. 
+ 
+  Komponen Designer:  
+  TextBoxUsername   PasswordTextBox1   ButtonLogin   Notifier1   LabelStatus  
+ 
+ 
+ if   PasswordTextBox1.Text   =   ""  
+ then   Notifier1.ShowAlert   "Password belum diisi"  
+ else   LabelStatus.Text   "Input diterima" 
+ 
+ Untuk proyek sekolah, jangan minta password asli siswa. Gunakan password latihan atau kode demo. 
+ 
+ Designer 
+ 
+ Tujuan praktik ini adalah mengenalkan cara aplikasi memperlakukan data rahasia. Gunakan akun demo, bukan akun asli siswa. 
+ 
+ 
+ 
+ Ruang Data Aman 
+ Nama pengguna 
+ contoh: demo_siswa 
+ Kode rahasia 
+ ******** 
+ MASUK 
+ Status: kode belum dicek 
+ 
+ 
+ 
+ Komponen di Designer 
+ TextBoxUsername 
+ PasswordTextBoxKode 
+ ButtonMasuk 
+ LabelStatus 
+ Notifier1 
+ CheckBoxSetuju 
+ Tambahkan CheckBoxSetuju dengan teks: "Saya paham tidak boleh membagikan kode rahasia." 
+ 
+ 
+ 
+ Blocks 
+ 
+ Bloknya bukan untuk membuat keamanan profesional, tetapi untuk mengajarkan kebiasaan aman: jangan kosong, jangan terlalu pendek, dan pengguna harus paham aturan privasi. 
+ 
+ Gambaran Blocks 
+ when ButtonMasuk.Click 
+ if TextBoxUsername.Text = "" 
+ Notifier1.ShowAlert "Username belum diisi" 
+ else if PasswordTextBoxKode.Text = "" 
+ Notifier1.ShowAlert "Kode rahasia belum diisi" 
+ else if length PasswordTextBoxKode.Text < 6 
+ Notifier1.ShowAlert "Kode minimal 6 karakter" 
+ else if CheckBoxSetuju.Checked = false 
+ Notifier1.ShowAlert "Centang persetujuan privasi dulu" 
+ else set LabelStatus.Text to "Input aman untuk latihan" 
+ 
+ Diskusi kelas: kenapa aplikasi tidak boleh menampilkan isi PasswordTextBox di LabelStatus? 
+ 
+ Evaluasi Aplikasi 
+ 
+ Sebelum aplikasi dianggap selesai, siswa bisa memakai checklist ini. 
+ 
+ 
+ Input 
+ 
+ Apakah kolom wajib sudah divalidasi? 
+ Apakah angka benar-benar dicek sebagai angka? 
+ 
+ 
+ 
+ Output 
+ 
+ Apakah pesan mudah dipahami? 
+ Apakah data sensitif tidak ditampilkan? 
+ 
+ 
+ 
+ Logika 
+ 
+ Apakah alurnya sesuai flowchart? 
+ Apakah setiap kondisi punya hasil? 
+ 
+ 
+ 
+ Privacy 
+ 
+ Apakah aplikasi meminta data seperlunya? 
+ Apakah pengguna tahu kenapa data diminta? 
+ 
+ 
+ 
+ 
+       
+    
+{"question": " Mini Quiz: Data Privacy   Kamu membuat aplikasi penghitung uang saku. Aplikasi hanya perlu tahu nominal uang saku dan pengeluaran.  Data mana yang tidak perlu diminta?", "choices": ["A. Nominal uang saku hari ini.", "B. Total pengeluaran hari ini.", "C. Alamat rumah lengkap pengguna."], "answer": 2, "explanation": "Aplikasi penghitung uang saku tidak membutuhkan alamat rumah pengguna. Meminta data yang tidak perlu melanggar prinsip data privacy."}
+
+## ms-1-5 Mini Project Cek Pesan Aman
+Video UhutS4BVKhk 2584–2618
+{'time': 2584, 'label': 'Instruksi Mini Project'}
+
+       
+         
+           Mini Project 
+           Cek Pesan Aman 
+         
+       
+       
+         
+           Tonton instruksi video di atas untuk mengerjakan mini project ini. 
+         
+       
+    
+
+## ms-1-6 Eksplorasi Data Pribadi
+Video cWfbcaSg7Eo 2–887
+{'time': 10, 'label': 'Pengantar Data Pribadi'}
+{'time': 300, 'label': 'Data Sensitif vs Publik'}
+{'time': 600, 'label': 'Penggunaan Data di Aplikasi'}
+
+       
+         
+           Materi Bacaan 01 
+           Eksplorasi Data Pribadi 
+         
+       
+       
+         Apa itu Data Pribadi? 
+         
+            Data Pribadi  adalah informasi khusus yang menunjuk  LANGSUNG  kepadamu. Informasi ini bisa membuat orang lain mengenali siapa dirimu, di mana kamu tinggal, dan bagaimana cara menghubungimu. 
+           Informasi pribadi adalah milikmu seutuhnya (privat). Jangan membagikannya sembarangan! 
+         
+         Jenis-jenis Data 
+         
+           
+             
+               Data Publik (Aman) 🟢 
+               Informasi yang aman diketahui orang banyak (contoh: hobi, film kesukaan, nama panggilan). 
+             
+             
+               Data Sensitif (Rahasia) 🔴 
+               Informasi krusial yang bisa disalahgunakan (contoh: Password, NIK, lokasi akurat, nama ibu kandung). 
+             
+           
+         
+         Izin Aplikasi (App Permissions) 
+         
+           Aplikasi sering meminta izin akses ke perangkatmu. Kita harus selalu bertanya:  "Apakah aplikasinya benar-benar butuh data itu?"  
+           
+              Wajar:  Aplikasi Ojek Online meminta akses Lokasi (GPS). 
+              Mencurigakan:  Aplikasi Kalkulator meminta akses Kamera dan Kontak Telepon. 
+           
+         
+         Praktek MIT App Inventor 
+         
+           Di App Inventor, kita mengumpulkan data menggunakan input dari pengguna. 
+           
+              Komponen Input Dasar:  
+              TextBoxNama   TextBoxUsername   ButtonSimpan  
+           
+         
+       
+    
+{"qid": "V1_Q1", "question": "Manakah di bawah ini yang merupakan Data Pribadi SENSITIF?", "options": ["Warna kesukaanmu", "Nomor Induk Kependudukan (NIK)", "Merek sepatu yang sering kamu pakai"], "answer": "Nomor Induk Kependudukan (NIK)", "explanation": "NIK adalah identitas unik yang sangat rahasia dan dapat disalahgunakan jika jatuh ke tangan yang salah."}
+{"qid": "V1_Q2", "question": "Aplikasi apa yang wajar dan masuk akal jika meminta izin mengakses Microphone (Mic)?", "options": ["Aplikasi Perekam Suara (Voice Note)", "Aplikasi Senter HP", "Aplikasi Kalkulator"], "answer": "Aplikasi Perekam Suara (Voice Note)", "explanation": "Aplikasi perekam suara butuh Mic, sedangkan senter atau kalkulator tidak masuk akal jika meminta mic."}
+{"qid": "V1_Q3", "question": "Di manakah sebaiknya kamu menaruh 'Password Akun Game'-mu?", "options": ["Di profil Bio Instagram (Publik)", "Di catatan/brankas yang aman (Sensitif)", "Di grup WhatsApp kelas (Publik)"], "answer": "Di catatan/brankas yang aman (Sensitif)", "explanation": "Password adalah data sensitif yang harus disimpan dengan aman dan tidak dipublikasikan ke publik."}
+
+## ms-1-7 Etika dan Tanggung Jawab Digital
+Video cWfbcaSg7Eo 899–1701
+{'time': 900, 'label': 'Etika Berinternet'}
+{'time': 1200, 'label': 'Phishing & Penipuan'}
+{'time': 1400, 'label': 'Membuat Password Kuat'}
+
+       
+         
+           Materi Bacaan 02 
+           Etika dan Tanggung Jawab Digital 
+         
+       
+       
+         Dampak Data Bocor 
+         
+           Jika data sensitifmu bocor, orang tak bertanggung jawab bisa menyalahgunakannya. Dampaknya sangat fatal: 
+           
+              Pencurian Identitas:  Hacker menggunakan nama & fotomu untuk menipu orang lain. 
+              Kerugian Finansial:  Peretas mengakses rekening atau menipu keluargamu. 
+              Ancaman Fisik:  Oversharing lokasi (Live Location) bisa mengundang kejahatan. 
+           
+         
+         Cara Melindungi Privasi 
+         
+           
+             
+               1. Password Kuat 🔑 
+               Gunakan kombinasi Huruf Besar, Kecil, Angka, dan Simbol. Jangan gunakan tanggal lahir! 
+             
+             
+               2. Waspada Phishing 🎣 
+               Jangan klik link mencurigakan dari WhatsApp yang menawarkan hadiah tak masuk akal. 
+             
+           
+         
+         Fitur Keamanan di App Inventor 
+         
+           Sebagai developer, kita wajib menjaga data pengguna. Salah satunya dengan mengamankan form Login. 
+           
+              Komponen Keamanan:  
+             Gunakan  PasswordTextBox  agar teks yang diketik berubah menjadi bintang-bintang (••••••). 
+           
+           
+             when ButtonLogin.Click  
+             if   is empty   PasswordTextBox.Text  
+             then   set LabelPeringatan.Text   "Error: Password kosong!" 
+           
+         
+       
+    
+{"qid": "V2_Q1", "question": "Jika ada seseorang menelepon mengaku dari pihak Bank dan meminta nomor PIN ATM-mu, apa yang harus kamu lakukan?", "options": ["Berikan PIN-nya agar masalah cepat selesai", "Matikan telepon, Bank tidak pernah meminta PIN nasabah", "Berikan setengah PIN saja"], "answer": "Matikan telepon, Bank tidak pernah meminta PIN nasabah", "explanation": "Pihak bank resmi TIDAK PERNAH meminta PIN, password, atau kode OTP kepada nasabahnya."}
+{"qid": "V2_LP", "html": "\n               \n                  Buat Password yang Kuat!  \n                 Pastikan password-mu minimal 8 karakter, mengandung huruf besar, huruf kecil, angka, dan simbol. \n                 \n                   \n                 \n                 \n                   Cek Kekuatan Password \n                 \n                  \n               \n            "}
+{"qid": "V2_Q2", "question": "Manakah password di bawah ini yang paling kuat dan aman dari serangan hacker?", "options": ["12345678", "namakucingku", "G@r0d4_B1rU!99"], "answer": "G@r0d4_B1rU!99", "explanation": "Password tersebut mengandung huruf besar, huruf kecil, angka, dan simbol (karakter khusus)."}
+{"qid": "V2_Q3", "question": "Mengapa kita menggunakan blok 'is empty' saat memproses form Login?", "options": ["Untuk menghapus password pengguna", "Untuk mencegah pengguna mengirim form jika belum mengisi password", "Untuk mengecek apakah HP kehabisan baterai"], "answer": "Untuk mencegah pengguna mengirim form jika belum mengisi password", "explanation": "Blok 'is empty' memastikan bahwa pengguna tidak mengirimkan data yang kosong."}
+
+## ms-2-1 PERCABANGAN GANDA
+Video tDkIcceTzII 3–472
+{'time': 10, 'label': 'Pendahuluan'}
+{'time': 60, 'label': 'Logika Percabangan'}
+{'time': 120, 'label': 'If-Then-Else'}
+{'time': 300, 'label': 'Flowchart'}
+
+       
+         
+           Materi Bacaan 01 
+           PERCABANGAN GANDA: Logika di Dunia Nyata 
+         
+       
+       
+         Ribuan Pilihan Setiap Hari 🤯 
+ 
+ Tahukah kamu bahwa otak kita membuat ribuan pilihan setiap harinya? 
+ 
+     Jam berapa harus bangun? 
+     Baju apa yang harus dipakai? 
+     Makan ayam atau ikan? 
+ 
+ Proses memilih inilah yang dalam ilmu komputer disebut  Logika Percabangan . 
+ 
+
+         Apa Itu Percabangan? 🤔 
+ 
+ Percabangan berarti menentukan jalan berdasarkan suatu  kondisi . 
+ "Jika (IF) hari ini hujan, maka (THEN) aku bawa payung." ☔ 
+ Jika kondisi "hujan" benar, maka instruksi "bawa payung" dilakukan. Ini adalah contoh percabangan tunggal. 
+ 
+
+         Kelemahan Kondisi Tunggal 🛑 
+ 
+ Bayangkan robot penjaga dengan perintah:  "Jika ada tamu, bukakan pintu."  
+ Apa yang terjadi jika tamu itu adalah pencuri yang tidak dikenal? Robot tetap membukakan pintu! 
+ Ini karena robot hanya punya satu kondisi tanpa jalan keluar alternatif. 
+ 
+
+         If-Then-Else (Ganda) 🔀 
+ 
+ Untuk membuat robot cerdas, kita gunakan  Else (Selain itu) . 
+ 
+      Jika (If)  tamu adalah orang yang dikenal,  Maka (Then)  bukakan pintu. 
+      Selain itu (Else) , bunyikan alarm peringatan! 🚨 
+ 
+ Sekarang robot tahu harus berbuat apa di kedua situasi. 
+ 
+
+         Analogi: Lampu Lalu Lintas 🚥 
+ 
+ 
+     Logika Lampu Pejalan Kaki   
+     Jika (If)  tombol ditekan oleh pejalan kaki, 
+     Maka (Then)  Nyalakan lampu merah untuk mobil. 
+     Selain itu (Else) , 
+    Biarkan lampu hijau menyala untuk mobil.
+ 
+ 
+
+         Analogi: Game Over 🎮 
+ 
+ 
+     Logika Nyawa Pemain   
+     Jika (If)  nyawa pemain habis (0), 
+     Maka (Then)  Tampilkan layar "Game Over". 
+     Selain itu (Else) , 
+    Lanjutkan permainan seperti biasa.
+ 
+ 
+
+         Menggambar Logika (Flowchart) 🗺️ 
+ 
+ Programmer menjelaskan logika ini ke dalam gambar yang disebut  Flowchart . 
+ 
+      Oval:  Mulai / Selesai (Start/End) 
+      Persegi:  Proses / Tindakan / Perintah 
+      Belah Ketupat 🔷:  Pertanyaan Kondisi (Bercabang 2 jalan: YA dan TIDAK) 
+ 
+ 
+
+         Contoh Flowchart Hujan 🔷 
+ 
+ 
+     Mulai 
+      
+     
+          
+         Apakah Hujan? 
+     
+    
+     
+         TIDAK 
+          
+          
+          
+         YA 
+     
+    
+     
+         Pakai Topi 
+         Bawa Payung 
+     
+ 
+ 
+
+         Tugas Mandiri 🕵️‍♂️ 
+ 
+ 
+     Detektif Flowchart! 
+     1. Amati sistem lampu taman yang menyala malam hari. 
+    2. Gambarkan flowchart  If-Then-Else  di kertasmu. 
+    3. Tentukan pertanyaan di dalam Belah Ketupat (Misal: Apakah sudah gelap?). 
+    4. Tentukan aksi jika YA, dan jika TIDAK. 
+ 
+ 
+       
+{"qid": "V1_Q1", "question": "Apa fungsi dari blok ELSE?", "options": ["A. Mengakhiri seluruh program", "B. Menjalankan perintah jika IF bernilai SALAH", "C. Menjalankan perintah berulang-ulang tanpa henti"], "answer": "B. Menjalankan perintah jika IF bernilai SALAH", "explanation": "ELSE digunakan untuk mengeksekusi aksi alternatif jika kondisi pada blok IF tidak terpenuhi atau bernilai SALAH."}
+{"qid": "V1_Q2", "question": "Simbol apakah yang digunakan untuk membuat percabangan kondisi (IF) dalam flowchart?", "options": ["A. Persegi", "B. Belah Ketupat", "C. Lingkaran/Oval"], "answer": "B. Belah Ketupat", "explanation": "Simbol belah ketupat digunakan untuk merepresentasikan keputusan (decision) atau percabangan dalam suatu flowchart."}
+
+## ms-2-2 APP INVENTOR
+Video tDkIcceTzII 484–721
+{'time': 490, 'label': 'App Inventor'}
+{'time': 540, 'label': 'UI Designer'}
+{'time': 600, 'label': 'Blok Event'}
+{'time': 700, 'label': 'Logika'}
+
+       
+         
+           Materi Bacaan 02 
+           APP INVENTOR: Percabangan Blok 
+         
+       
+       
+         Blok IF di App Inventor 🧩 
+ 
+ Di App Inventor, logika percabangan bersembunyi di laci  Control  yang berwarna coklat. 
+ 
+     
+         
+               if    
+         
+         then 
+         
+            
+         
+     
+ 
+ Perhatikan bahwa bentuk blok ini seperti penjepit (bracket) yang bisa memeluk blok lainnya di dalam  then . 
+ 
+
+         Memunculkan ELSE dengan Mutator ⚙️ 
+ 
+ Awalnya, blok IF hanya punya "Then". Tidak ada "Else" sama sekali. 
+ Untuk menambah Else, kamu HARUS mengklik ikon  Roda Gigi (Mutator) ⚙️  kecil warna biru di sudut kiri atas blok tersebut. 
+ Sebuah pop-up kecil akan muncul, tarik blok  else  dan gabungkan ke blok  if  di dalam pop-up tersebut. 
+ 
+
+         Blok Lengkap If-Then-Else 🔀 
+ 
+ Setelah menarik blok else, blok aslimu akan berubah menjadi seperti ini: 
+ 
+     
+         
+               if    
+         
+         then 
+          
+         else 
+          
+     
+ 
+ Sekarang kamu punya 2 tempat kosong untuk diisi aksi yang berbeda! 
+ 
+
+         UI Designer: Aplikasi Kelulusan 🎨 
+ 
+ Mari kita siapkan tampilan layar aplikasi di halaman Designer terlebih dahulu. 
+     
+         
+             
+                 Screen1 
+                 Masukkan Nilai Ujian:  Hint: 80  CEK KELULUSAN  Hasil: ??? 
+             
+         
+         
+             ⚙️ Properties 
+              TextBox1  Rename jadi txtNilai    Button1  Rename jadi btnCek    Label2  Rename jadi lblHasil  
+         
+     
+ 
+
+         Koding Blok Event (When Click) 👆 
+ 
+ Pertama, kita ambil blok kejadian (event) berwarna emas dari laci  btnCek . 
+ 
+     
+         
+            when  btnCek  .Click
+         
+         do 
+         
+            
+         
+     
+ 
+ Ini artinya: "Ketika tombol btnCek diklik, lakukan apa yang ada di dalam pelukanku". 
+ 
+
+         Menambahkan Logika & Kondisi 🧠 
+ 
+ Lalu kita masukkan blok IF dan kondisi matematika (biru) dari laci Math. 
+ 
+     
+         
+            when  btnCek  .Click
+         
+         do 
+         
+             
+                 
+                       if   txtNilai  .Text ≥ 75 
+                 
+                 then 
+                  
+                 else 
+                  
+             
+         
+     
+ 
+ 
+
+         Mengisi Aksi (Set Label Text) ✏️ 
+ 
+ Terakhir, kita gunakan blok hijau tua dari laci lblHasil untuk mengubah teks sesuai kondisi! 
+ 
+     
+         
+            when  btnCek  .Click
+         
+         do 
+         
+             
+                 
+                       if   txtNilai  .Text ≥ 75 
+                 
+                 then 
+                 
+                     
+                        set  lblHasil  .Text to  "Kamu Lulus!" 
+                     
+                 
+                 else 
+                 
+                     
+                        set  lblHasil  .Text to  "Belajar Lagi!" 
+                     
+                 
+             
+         
+     
+ 
+ 
+
+         Latihan Mandiri 🚀 
+ 
+ 
+     Aplikasi Cek Suhu 
+     1. Buat aplikasi sederhana dengan input Suhu (TextBox). 
+    2.  If (Suhu > 30) , then set label jadi "Panas Sekali!" 
+    3.  Else , set label jadi "Cuaca Nyaman." 
+    4. Test di Companion! 
+ 
+ 
+       
+{"qid": "V2_Q1", "question": "Apa yang harus diklik untuk memunculkan pilihan ELSE?", "options": ["A. Klik Kanan > Add Else", "B. Ikon roda gigi biru di blok IF"], "answer": "B. Ikon roda gigi biru di blok IF", "explanation": "Ikon roda gigi biru (mutator) pada blok IF di App Inventor digunakan untuk menambahkan opsi ELSE atau ELSE IF."}
+
+## ms-2-3 LITERASI KEUANGAN
+Video tDkIcceTzII 733–1173
+{'time': 740, 'label': 'Literasi Keuangan'}
+{'time': 840, 'label': 'Uang Digital'}
+{'time': 900, 'label': 'E-Wallet'}
+{'time': 1100, 'label': 'QRIS'}
+
+       
+         
+           Materi Bacaan 03 
+           LITERASI KEUANGAN: Uang Digital 
+         
+       
+       
+         Sejarah Uang Singkat ⏳ 
+ 
+ Ribuan tahun lalu, orang bertukar barang langsung (Barter). Lalu muncul koin emas, kemudian uang kertas yang mudah dibawa. 
+ Hari ini? Uang bahkan tidak terlihat bentuknya. Hanya berupa angka di sistem komputer! 
+ Itulah yang disebut dengan Era Uang Digital. 
+ 
+
+         Pendapatan (Income) 📥 
+ 
+  Pendapatan  = Semua uang yang mengalir masuk ke kantongmu. 
+ Sebutkan 3 sumber pendapatanmu saat ini! 💰 
+ Mungkin dari uang saku mingguan orang tua, amplop lebaran, atau hasil jualan stiker di kelas. 
+ 
+
+         Pengeluaran (Expense) 📤 
+ 
+  Pengeluaran  = Uang yang keluar untuk ditukar dengan barang/jasa. 
+ Membeli makanan, bayar ongkos angkot, hingga top-up diamond game adalah pengeluaran. 
+ Jika pengeluaran lebih besar dari pendapatan? Kamu akan berhutang! 
+ 
+
+         Tabungan (Savings) 🐷 
+ 
+  Rumus Sakti: Tabungan = Pendapatan - Pengeluaran  
+ Tabungan berfungsi sebagai "benteng pertahanan" ketika ada hal darurat atau ketika kamu ingin membeli sesuatu yang mahal di masa depan tanpa harus meminjam uang. 
+ 
+
+         E-Wallet (Dompet Digital) 📱 
+ 
+ Sama seperti dompet kulit, tapi di dalam handphone. 
+ 
+    Aplikasi seperti Gopay, OVO, Dana, LinkAja bertugas menjaga "saldo" digital kita. Uang fisik kita diserahkan ke sistem mereka, ditukar dengan saldo digital.
+ 
+ 
+
+         QRIS Bikin Semua Mudah ⬛⬜ 
+ 
+  QRIS  (Quick Response Code Indonesian Standard) 
+ Di balik kotak-kotak hitam putih QRIS, tersimpan data rekening penjual. Saat kameramu memindainya, aplikasi e-wallet langsung tahu ke mana uang harus ditransfer dalam hitungan detik! 
+ 
+
+         Diskusi Kelompok 🗣️ 
+ 
+ 
+     Bahaya Uang Digital? 
+     Apakah uang digital membuat orang lebih boros? 
+    Karena kita tidak melihat uang fisiknya berkurang, kadang kita terus men-scan QRIS sampai saldo habis. 
+    Diskusikan dengan temanmu bagaimana cara mengatasinya! 
+ 
+ 
+       
+{"qid": "V3_Q1", "question": "Menerima transfer hadiah Rp 50.000 ke akun Dana disebut?", "options": ["A. Pengeluaran digital", "B. Pendapatan digital"], "answer": "B. Pendapatan digital", "explanation": "Setiap uang yang masuk atau menambah saldo kita disebut sebagai pendapatan (income)."}
+
+## ms-2-4 LITERASI KEUANGAN
+Video tDkIcceTzII 1181–1593
+{'time': 1190, 'label': 'Needs vs Wants'}
+{'time': 1300, 'label': 'Kebutuhan & Keinginan'}
+{'time': 1400, 'label': 'Aturan 50-30-20'}
+
+       
+         
+           Materi Bacaan 04 
+           LITERASI KEUANGAN: Needs vs Wants 
+         
+       
+       
+         Jebakan Batman Finansial 🦇 
+ 
+ Banyak orang kehabisan uang bukan karena pendapatannya kecil, tapi karena mereka tidak bisa membedakan mana yang  BUTUH  dan mana yang  INGIN . 
+ Ini adalah jebakan terbesar dalam mengelola uang saku! 
+ 
+
+         Kebutuhan (Needs) 🍞 
+ 
+ Kebutuhan (Needs) adalah hal yang  HARUS  dipenuhi. 
+ 
+     Tanpanya, kita sakit (Makanan pokok) 
+     Tanpanya, kita dihukum (Seragam sekolah) 
+     Tanpanya, kita tidak bisa belajar (Alat tulis, Kuota tugas) 
+ 
+ 
+
+         Keinginan (Wants) 🎮 
+ 
+ Keinginan (Wants) adalah hal yang dipengaruhi nafsu atau gengsi. 
+ 
+     Kamu sudah punya sepatu yang bagus, tapi ingin beli sepatu merk Hypebeast. 
+     Kamu sudah minum air putih, tapi ingin beli Thai Tea Boba yang mahal. 
+ 
+ Keinginan tidak salah, tapi  harus ditunda  sampai uang lebih. 
+ 
+
+         Aturan 50-30-20 📊 
+ 
+ Salah satu cara membagi uang saku: 
+ 
+     50%  untuk Kebutuhan (Needs) 
+     30%  untuk Keinginan (Wants) 
+     20%  untuk Tabungan (Savings)
+ 
+ Tentu saja porsi Tabungan bisa lebih besar jika kamu sedang hemat! 
+ 
+
+         Aturan Tunggu 24 Jam 🛑 
+ 
+ Jangan beli langsung! Tunggu 1 hari! 
+ Seringkali, keinginan membeli (impulsive buying) akan hilang setelah kita tidur satu malam. 
+ Jika besoknya kamu merasa tidak butuh lagi, selamat! Kamu baru saja menghemat uang. 
+ 
+
+         Latihan: Buat Budgetmu 📝 
+ 
+ 
+     Jadilah Menteri Keuangan! 
+     1. Anggap uang sakumu minggu ini Rp 50.000. 
+    2. Tulis di kertas: 2 Needs (Kebutuhan) yang pasti dibeli. 
+    3. Tulis 1 Wants (Keinginan) yang ingin dibeli jika sisa uang cukup. 
+    4. Tulis alokasi Tabungan! (Minimal Rp 5.000) 
+ 
+ 
+       
+{"qid": "V4_Q1", "question": "Membeli paket internet agar bisa mengirim tugas presentasi besok pagi termasuk...", "options": ["A. Kebutuhan (Needs)", "B. Keinginan (Wants)"], "answer": "A. Kebutuhan (Needs)", "explanation": "Paket internet untuk mengirim tugas adalah kebutuhan (needs) karena wajib dipenuhi untuk kegiatan belajarmu."}
+{"qid": "V4_Q2", "question": "Membeli gacha/top-up diamond agar karakter game-mu lebih keren adalah...", "options": ["A. Kebutuhan mutlak", "B. Keinginan (Wants)"], "answer": "B. Keinginan (Wants)", "explanation": "Top-up game merupakan keinginan (wants) karena hanya untuk kesenangan dan bukan hal yang harus dipenuhi segera."}
+
+## ms-2-5 APP INVENTOR + FINANSIAL
+Video tDkIcceTzII 1605–1908
+{'time': 1620, 'label': 'App Keuangan'}
+{'time': 1700, 'label': 'UI Nabung'}
+{'time': 1800, 'label': 'Blok Keuangan'}
+
+       
+         
+           Materi Bacaan 05 
+           APP INVENTOR + FINANSIAL: Aplikasi Kalkulator Keuangan 
+         
+       
+       
+         Mengapa Komputer & Uang? 🤖 
+ 
+ Manusia sering lapar mata dan salah hitung. Komputer tidak pernah bohong! 
+ Kita bisa menggabungkan  Logika IF  dengan  Matematika Keuangan  di App Inventor untuk menjaga kita tetap disiplin berhemat. 
+ 
+
+         UI Designer: Aplikasi Nabung 🎨 
+ 
+ Kita buat desain Kalkulator Target Tabungan. 
+     
+         
+             
+                 Screen1 
+                 Harga Barang Impian (Rp):  Misal: 50000  Tabungan Saat Ini (Rp):  Misal: 20000  CEK BISA BELI?  Status: ??? 
+             
+         
+         
+             ⚙️ Properties 
+              TextBox_Harga  Input tipe: Numbers Only    TextBox_Tabungan  Input tipe: Numbers Only    Label_Status  Font: Bold, Size: 18  
+         
+     
+ 
+
+         Menyusun Blok Logika Keuangan 🧩 
+ 
+ Gunakan operasi perbandingan (≥) dari laci Math. 
+ 
+     
+         
+            when  btnCek  .Click
+         
+         do 
+         
+             
+                 
+                       if   txtTabungan  .Text ≥  txtHarga  .Text 
+                 
+                 then 
+                 
+                     
+                        set  lblStatus  .Text to  "Uang Cukup! Boleh Beli!" 
+                     
+                 
+                 else 
+                 
+                     
+                        set  lblStatus  .Text to  "Nabung lagi ya!" 
+                     
+                 
+             
+         
+     
+ 
+ 
+
+         Menghitung Kekurangan (-) ➖ 
+ 
+ Jika uang tidak cukup (Else), aplikasinya bisa menghitung kekurangan! 
+ Ambil blok  Math Minus (-) . 
+ 
+     
+         txtHarga  .Text -  txtTabungan  .Text
+     
+ 
+ Ini adalah logika pengurangan dasar: Harga Barang dikurangi Tabungan kita. 
+ 
+
+         Blok Join (Menggabung Teks) 🔗 
+ 
+ Untuk membuat kalimat seperti "Kurang Rp 30000", kita butuh blok  join  dari laci Text (Pink/Merah Muda). 
+ 
+     
+         
+             join 
+             "Kurang Rp " 
+         
+         
+               txtHarga  .Text -  txtTabungan  .Text 
+         
+     
+ 
+ Masukkan hasil Join ini ke  set Label_Status.Text to  pada blok Else! 
+ 
+
+         Mini Project Final 🏆 
+ 
+ 
+     Aplikasi Target Tabungan! 
+     Praktik di MIT App Inventor sekarang! 
+     
+         Buat desain UI (TextBox Tabungan, TextBox Harga, Tombol Cek). 
+         Susun blok If-Then-Else membandingkan nilai keduanya. 
+         Tambahkan blok Math dan Join di bagian Else agar aplikasi memberi tahu berapa selisih kekurangannya. 
+         Jalankan di HP dengan MIT Companion dan tunjukkan hasilnya! 
+     
+ 
+ 
+       
+{"qid": "V5_Q1", "question": "Blok warna apa yang digunakan untuk operasi pengurangan (-)?", "options": ["A. Coklat/Emas (Control)", "B. Biru (Math)", "C. Merah Muda (Text)"], "answer": "B. Biru (Math)", "explanation": "Blok operasi matematika seperti pengurangan (-) berada di dalam laci Math yang berwarna biru di App Inventor."}
+
+## ms-2-6 FINAL PROJECT
+Video tDkIcceTzII 1922–None
+{'time': 1930, 'label': 'Mini Project'}
+
+       
+         
+           Materi Bacaan 06 
+           Tugas Akhir: Pengganti Kehadiran 
+         
+       
+       
+         Aplikasi Target Tabungan! 🏆 
+         
+           
+               Praktik di MIT App Inventor sekarang! 
+               
+                   Buat desain UI (TextBox Tabungan, TextBox Harga, Tombol Cek). 
+                   Susun blok If-Then-Else membandingkan nilai keduanya. 
+                   Tambahkan blok Math dan Join di bagian Else agar aplikasi memberi tahu berapa selisih kekurangannya. 
+                   Jalankan di HP dengan MIT Companion dan tunjukkan hasilnya! 
+               
+                Submit link/screenshot aplikasi kamu pada form di bawah ini sebagai bukti kehadiran.  
+           
+         
+       
+
+## ms-3-1 Membuat dan Memanggil Procedures
+Video P8Ea0v8Gy2o 4–794
+{'time': 10, 'label': 'Pengenalan Procedures'}
+{'time': 119, 'label': 'Kebiasaan buruk copy paste'}
+{'time': 286, 'label': 'Prosedur atau Function'}
+{'time': 442, 'label': 'Kategori Prosedur'}
+{'time': 541, 'label': 'Prosedur Do'}
+{'time': 696, 'label': 'Prosedur Result'}
+{'time': 803, 'label': 'Mini Project Kalkulator'}
+
+       
+         
+           Materi Bacaan 01 
+           Membuat dan Memanggil Procedures 
+         
+       
+       
+         Apa itu Procedure? 
+         
+           Saat membuat aplikasi yang besar, ada blok kode yang  sama persis  dan digunakan berulang kali. Copy-Paste membuat aplikasi berat dan membingungkan. 
+           Solusinya? Kita menggunakan  PROCEDURE  (atau fungsi). Mengumpulkan perintah menjadi satu yang bisa dipanggil berkali-kali. 
+         
+         Dua Jenis Procedure 
+         
+           
+             
+               Procedure "Do" 🏃 
+               Hanya menjalankan perintah tanpa hasil (misal: mengosongkan layar). 
+             
+             
+               Procedure "Result" 🎁 
+               Melakukan perhitungan dan  mengembalikan  hasil/jawaban. 
+             
+           
+         
+       
+    
+{"qid": "V1_Q1", "question": "Kenapa kita menggunakan Procedure di App Inventor?", "options": ["Agar warna aplikasi menjadi lebih bagus.", "Untuk mengumpulkan beberapa perintah menjadi satu sehingga bisa dipakai berkali-kali tanpa mengulang.", "Untuk membuat baterai HP menjadi hemat 100%."], "answer": "Untuk mengumpulkan beberapa perintah menjadi satu sehingga bisa dipakai berkali-kali tanpa mengulang.", "explanation": "Ini membuat kode kita tidak berulang-ulang, sehingga lebih ringan dan rapi."}
+
+## ms-3-2 Mini Project Kalkulator
+Video P8Ea0v8Gy2o 798–879
+{'time': 798, 'label': 'Instruksi Mini Project'}
+
+       
+         
+           Mini Project 
+           Tugas Pertama: Kalkulator Cerdas 🛠️ 
+         
+       
+       
+         
+           Tonton instruksi video untuk mengerjakan mini project ini. Ikuti langkah-langkah di bawah ini: 
+           
+             Buka proyek baru di MIT App Inventor. 
+             Buat UI dengan 2 TextBox, 1 Label, dan 2 Button (TAMBAH dan RESET). 
+             Buat Procedure "Do" dengan nama  ResetLayar  untuk mengosongkan TextBox dan Label. 
+             Buat Procedure "Result" dengan nama  JumlahkanAngka  yang menambahkan TextBox1 dan TextBox2. 
+             Panggil procedure tersebut di masing-masing tombol seperti contoh di video. 
+           
+         
+       
+    
+
+## ms-3-3 Optimasi dan Modularisasi Kode
+Video P8Ea0v8Gy2o 883–1194
+{'time': 883, 'label': 'Modularisasi'}
+{'time': 991, 'label': 'Spaghetti Code vs Modular'}
+
+       
+         
+           Materi Bacaan 03 
+           Optimasi dan Modularisasi Kode 
+         
+       
+       
+         Apa itu Modularisasi? 
+         
+           Memecah aplikasi besar menjadi modul-modul kecil yang lebih fokus dan teratur, menghindari kode yang berantakan (Spaghetti Code). 
+         
+         Manfaat Modularisasi 
+         
+           Flowchart program menjadi lebih sederhana (contoh: [START] -> Cek Input -> Hitung -> [END]). 
+           Modularisasi juga berlaku untuk desain UI (contoh: pakai Horizontal Arrangement). 
+         
+       
+    
+{"qid": "V3_Q1", "question": "Mengapa memecah program menjadi modul-modul (procedure) kecil itu sangat membantu saat terjadi error (bug)?", "options": ["Karena kita bisa mengisolasi masalah dan mencari error di satu \"kotak\" modul spesifik.", "Karena modul akan secara otomatis menghapus bug tanpa kita suruh.", "Karena jika memakai modul, App Inventor tidak akan pernah error."], "answer": "Karena kita bisa mengisolasi masalah dan mencari error di satu \"kotak\" modul spesifik.", "explanation": "Kita bisa langsung fokus mencari error di modul yang bermasalah saja, tanpa membaca ribuan baris kode yang lain."}
+
+## ms-3-4 Uji Coba dan Debugging
+Video P8Ea0v8Gy2o 1201–1685
+{'time': 1206, 'label': 'Membahas bug dan error'}
+{'time': 1307, 'label': 'Apa itu bug?'}
+{'time': 1402, 'label': 'Bug/crash tipe data'}
+{'time': 1461, 'label': 'Deteksi is a number?'}
+{'time': 1525, 'label': 'Fitur rahasia: Do it'}
+{'time': 1556, 'label': 'Tiny DB untuk keamanan'}
+
+       
+         
+           Materi Bacaan 04 
+           Uji Coba dan Debugging 
+         
+       
+       
+         Apa itu Bug? 
+         
+           Kesalahan atau cacat dalam program. Debugging adalah proses memperbaikinya. 
+         
+         Solusi dan Keamanan 
+         
+           
+             Validasi Data: Gunakan blok 'is a number?' untuk mencegah crash karena tipe data salah. 
+             Keamanan Data: Gunakan TinyDB untuk menyimpan data secara aman di memori lokal HP. 
+           
+         
+       
+    
+{"qid": "V4_Q1", "question": "Apa fungsi dari blok TinyDB di App Inventor?", "options": ["Menyimpan data kecil secara lokal di handphone pengguna sehingga data tidak hilang saat aplikasi ditutup.", "Membagikan foto otomatis ke Instagram pengguna.", "Menyimpan gambar ukuran besar yang dibuat dengan MS Paint."], "answer": "Menyimpan data kecil secara lokal di handphone pengguna sehingga data tidak hilang saat aplikasi ditutup.", "explanation": "TinyDB menyimpan data secara aman di dalam HP pengguna (penyimpanan lokal)."}
+
+## ms-3-5 Presentasi dan Refleksi
+Video P8Ea0v8Gy2o 1704–2008
+{'time': 1704, 'label': 'Mempresentasikan project'}
+{'time': 1790, 'label': 'Empat poin presentasi'}
+{'time': 1903, 'label': 'Persiapan live demo'}
+{'time': 1955, 'label': 'Menerima feedback'}
+
+       
+         
+           Materi Bacaan 05 
+           Presentasi dan Refleksi 
+         
+       
+       
+         Struktur Presentasi Aplikasi 
+         
+           
+             Latar Belakang (Mengapa aplikasi dibuat) 
+             Fitur Utama 
+             Demo Langsung (Live Demo) 
+             Tantangan Tersulit 
+           
+           Umpan balik (feedback) adalah hadiah untuk membuat aplikasi menjadi lebih baik! 
+         
+       
+    
+{"qid": "V5_Q1", "question": "Saat presentasi, kelompok lain memberi kritik: \"Aplikasi kalian keren, tapi teks petunjuknya sulit dibaca karena warnanya gelap.\" Sikap yang tepat adalah:", "options": ["Menyuruh mereka memeriksa mata ke dokter karena teksnya sudah jelas.", "Pura-pura mencatat, tapi tidak pernah memperbaiki aplikasinya.", "Berterima kasih atas feedback tersebut, dan berjanji akan mengubah warna teks menjadi lebih terang."], "answer": "Berterima kasih atas feedback tersebut, dan berjanji akan mengubah warna teks menjadi lebih terang.", "explanation": "Feedback yang membangun harus diterima untuk menyempurnakan aplikasi."}
+
+## ms-4-1 Penyimpanan Data dengan TinyDB
+Video cWfbcaSg7Eo 1715–2547
+{'time': 1715, 'label': 'Konsep Database Lokal'}
+{'time': 2000, 'label': 'Fungsi TinyDB'}
+{'time': 2300, 'label': 'Data Sementara vs Permanen'}
+
+       
+         
+           Materi Bacaan 03 
+           Penyimpanan Data dengan TinyDB 
+         
+       
+       
+         Masalah Data Sementara 
+         
+           Menyimpan skor menggunakan  Global Variable  sangat rawan hilang. Begitu aplikasi ditutup, data akan kembali ke angka 0. 
+           Untuk data permanen (tidak terhapus walau HP direstart), kita menggunakan Database Lokal. 
+         
+         Berkenalan dengan TinyDB 
+         
+            TinyDB  adalah database lokal (penyimpanan di memori fisik HP) yang tidak butuh kuota internet. TinyDB merupakan  Non-Visible Component  (bekerja di latar belakang). 
+           
+             
+               Tag (Label) 🏷️ 
+               Nama/judul tempat menyimpan data. Harus unik! Contoh:  "SkorTertinggi" . 
+             
+             
+               Value (Isi) 📦 
+               Isi data yang disimpan. Contoh: angka  100  atau teks  "Budi" . 
+             
+           
+         
+         Blok StoreValue di App Inventor 
+         
+           Untuk menaruh data ke dalam TinyDB, kita menggunakan perintah  StoreValue . 
+           
+             call TinyDB1.StoreValue  
+                tag:  "SkorGame"  
+                valueToStore:  100 
+           
+           Blok di atas berarti: Simpan angka 100 ke dalam laci bernama "SkorGame". 
+         
+       
+    
+{"qid": "V3_Q1", "question": "Jika kamu ingin membuat fitur 'To-Do List' yang datanya tidak terhapus walau HP direstart, komponen apa yang WAJIB dipakai?", "options": ["Global Variable", "TextBox Component", "TinyDB (Database Lokal)"], "answer": "TinyDB (Database Lokal)", "explanation": "TinyDB menyimpan data secara permanen di memori HP, berbeda dengan variabel yang terhapus saat aplikasi ditutup."}
+{"qid": "V3_Q2", "question": "Dalam konsep TinyDB, apa fungsi dari sebuah 'Tag'?", "options": ["Sebagai isi data sesungguhnya yang akan disimpan", "Sebagai stiker penamaan (judul) agar data mudah dicari di laci", "Sebagai warna latar belakang aplikasi"], "answer": "Sebagai stiker penamaan (judul) agar data mudah dicari di laci", "explanation": "Tag berfungsi seperti label di laci agar kita tahu data mana yang sedang kita simpan atau ambil."}
+
+## ms-4-2 Mengelola Data Aman di TinyDB
+Video cWfbcaSg7Eo 2555–3272
+{'time': 2555, 'label': 'Menampilkan & Update Data'}
+{'time': 2800, 'label': 'Menghapus Data (Delete)'}
+{'time': 3060, 'label': 'Flowchart Penyimpanan'}
+{'time': 3150, 'label': 'Keamanan Data Lokal'}
+
+       
+         
+           Materi Bacaan 04 
+           Mengelola Data Aman di TinyDB 
+         
+       
+       
+         Mengambil Data (GetValue) 
+         
+           Setelah data disimpan menggunakan StoreValue, kita bisa memanggilnya kembali menggunakan  GetValue . 
+           
+             set LabelOutput.Text to   
+             call TinyDB1.GetValue  
+                tag:  "SkorGame"  
+                valueIfTagNotThere:  0 
+           
+           Jika Tag tidak ditemukan (karena belum pernah disimpan), aplikasi akan menggunakan  valueIfTagNotThere  sebagai cadangan. 
+         
+         Menghapus Data (ClearTag) 
+         
+           Jika pengguna ingin mereset akun atau menghapus data riwayat, kita harus menyediakan fitur Hapus Data (ClearTag). 
+           
+             call TinyDB1.ClearTag  
+                tag:  "SkorGame" 
+           
+         
+         Keamanan Database Lokal 
+         
+           Meskipun data disimpan lokal di HP, ada risiko jika HP-mu hilang atau dipinjam orang tanpa izin. Oleh karena itu: 
+           
+             Gunakan sistem kunci (Login Screen) sebelum bisa masuk ke halaman yang menampilkan isi TinyDB. 
+             Jangan pernah membuat aplikasi menyimpan data pengguna tanpa persetujuan mereka. 
+           
+         
+       
+    
+{"qid": "V4_Q1", "question": "Kamu menggunakan StoreValue dengan Tag 'Koin' nilainya 10. Lalu kamu memakai StoreValue lagi dengan Tag 'Koin' nilainya 50. Berapa nilai 'Koin' saat ini?", "options": ["60 (karena ditambah)", "50 (karena ditimpa / di-update)", "10 (data pertama yang permanen)"], "answer": "50 (karena ditimpa / di-update)", "explanation": "Menyimpan data dengan Tag yang sama akan menimpa/mengganti data lama dengan data baru yang kita masukkan."}
+{"qid": "V4_Q2", "question": "Jika kita ingin aplikasi 'melupakan' seluruh data pada sebuah tag tertentu secara permanen, blok apa yang digunakan?", "options": ["TinyDB1.GetValue", "TinyDB1.ClearTag", "TinyDB1.StoreValue dengan nilai 0"], "answer": "TinyDB1.ClearTag", "explanation": "Blok ClearTag digunakan khusus untuk menghapus atau melupakan data berdasarkan nama Tag yang dipilih."}
+
+## ms-4-3 Mini Project Tiny DB
+Video cWfbcaSg7Eo 3285–3323
+{'time': 3285, 'label': 'Instruksi Mini Project'}
+
+       
+         
+           Mini Project 
+           Tantangan Akhir: Sistem CRUD Data Rahasia 
+         
+       
+       
+         Misi Kalian 🏆 
+         
+           Sekarang giliranmu merakit aplikasi secara utuh! Tonton instruksi video untuk mengerjakan mini project ini. 
+           
+             Desain UI yang rapi dan menarik. 
+             Gunakan  StoreValue  untuk tombol Simpan. (Pastikan pakai Tag rahasiamu sendiri). 
+             Gunakan  GetValue  untuk tombol Baca dan tampilkan hasilnya ke Label Output. 
+             Gunakan  ClearTag  untuk tombol Hancurkan Data agar memori kembali bersih! 
+           
+         
+       
+    
+
+## ms-4-4 Menganalisis Data Finansial
+Video UhutS4BVKhk 2621–2844
+{'time': 2632, 'label': 'Menganalisis Data Finansial'}
+{'time': 2664, 'label': 'Pencatatan Keuangan'}
+
+       
+         
+           Materi Bacaan 05 
+           Finansial & Transaksi Digital 
+         
+       
+       
+         Analisis Data 
+ 
+ Data finansial sederhana adalah catatan tentang uang masuk, uang keluar, sisa uang, dan kebiasaan belanja. 
+ Untuk SMP, tujuannya bukan belajar akuntansi berat. Tujuannya adalah melihat pola: apakah pengeluaran terlalu besar, apakah ada kebiasaan jajan yang bisa dikurangi, dan apakah uang masih cukup untuk kebutuhan penting. 
+ Keputusan finansial yang baik dimulai dari mencatat data dengan jujur. 
+ 
+ Contoh Sekitar 
+ 
+ 
+ 
+ 
+ Hari 
+ Uang Saku 
+ Pengeluaran 
+ Sisa 
+ 
+ 
+ 
+  Senin  30.000  20.000  10.000  
+  Selasa  30.000  28.000  2.000  
+  Rabu  30.000  15.000  15.000  
+ 
+ 
+ Dari data ini, aplikasi bisa menampilkan hari paling boros, sisa uang terkecil, dan saran agar siswa punya target menabung. 
+ 
+ MIT App Inventor 
+ 
+ Aplikasi "Smart Jajan" membantu pengguna mengecek apakah pengeluaran hari ini aman. 
+ 
+  Fitur:  
+ 
+ Input uang saku dan pengeluaran. 
+ Validasi angka dan tidak kosong. 
+ Hitung sisa uang. 
+ Beri status: hemat, aman, atau boros. 
+ 
+ 
+ 
+ if   pengeluaran   >   uangSaku  
+ then   "Pengeluaran melebihi uang saku"  
+ else if   sisa   >=   10000  
+ then   "Hemat, sisa uangmu bagus"  
+ else   "Aman, tapi coba sisakan lebih banyak" 
+ 
+ 
+ Designer 
+ 
+ Versi lebih lengkap dari aplikasi uang saku: siswa memasukkan kategori pengeluaran agar aplikasi tidak hanya menghitung sisa, tetapi juga membaca pola. 
+ 
+ 
+ 
+ Smart Jajan 
+ Uang saku 
+ 30000 
+ Pengeluaran 
+ 22000 
+ Kategori 
+ Makanan / Transport / Hiburan 
+ CEK POLA 
+ Kategori terbesar: Makanan Saran: kurangi jajan minuman manis. 
+ 
+ 
+ 
+ Komponen di Designer 
+ TextBoxUangSaku 
+ TextBoxPengeluaran 
+ ListPickerKategori 
+ ButtonCekPola 
+ LabelSisa 
+ LabelSaran 
+ TinyDB1 
+ TinyDB opsional: dipakai jika ingin menyimpan catatan pengeluaran antar percobaan. 
+ 
+ 
+ 
+ Blocks 
+ 
+ Blocks ini membuat aplikasi memberi status yang lebih kaya: melebihi uang saku, hemat, aman, atau perlu mengurangi kategori tertentu. 
+ 
+ Gambaran Blocks 
+ when ButtonCekPola.Click 
+ validasi uang saku, pengeluaran, dan kategori 
+ set sisa to UangSaku - Pengeluaran 
+ if Pengeluaran > UangSaku 
+ set LabelSaran.Text to "Pengeluaran melebihi uang saku" 
+ else if sisa >= 10000 
+ set LabelSaran.Text to "Hemat, sisa uangmu bagus" 
+ else if Kategori = "Hiburan" 
+ set LabelSaran.Text to "Coba batasi hiburan dulu" 
+ else set LabelSaran.Text to "Masih aman, tetap catat pengeluaran" 
+ 
+ Tantangan tambahan: simpan kategori dan pengeluaran ke TinyDB, lalu tampilkan riwayat sederhana. 
+ 
+ Transaksi Digital 
+ 
+ Transaksi digital terjadi saat kita membeli, membayar, top up, transfer, atau berlangganan lewat perangkat digital. 
+ Risikonya bukan hanya uang hilang. Data pribadi juga bisa dicuri jika pengguna tertipu link palsu atau memberikan OTP/password kepada orang lain. 
+ 
+ 
+ Risiko 
+ 
+ Phishing lewat link palsu. 
+ Hadiah palsu yang meminta password. 
+ Nomor tidak dikenal meminta OTP. 
+ 
+ 
+ 
+ Langkah Aman 
+ 
+ Cek sumber pesan. 
+ Jangan bagikan OTP atau PIN. 
+ Gunakan aplikasi resmi. 
+ 
+ 
+ 
+ 
+ Phishing 
+ 
+ Phishing adalah penipuan yang menyamar sebagai pihak resmi untuk mencuri data atau uang. 
+ 
+ Tanda bahaya: 
+ 
+ Meminta password, PIN, kode OTP, atau data kartu. 
+ Mendesak: "Akun akan diblokir dalam 5 menit!" 
+ Hadiah terlalu bagus untuk dipercaya. 
+ Link terlihat aneh atau berbeda dari situs resmi. 
+ 
+ 
+ Aturan sederhana: kalau pesan membuat kamu panik, buru-buru, atau diminta memberi data rahasia, berhenti dulu dan cek ke orang dewasa/akun resmi. 
+ 
+ Designer 
+ 
+ Aplikasi ini membantu siswa membaca pesan digital dengan lebih kritis. Pengguna memilih tanda bahaya yang muncul, lalu aplikasi memberi status risiko. 
+ 
+ 
+ 
+ Cek Pesan Aman 
+ Isi pesan 
+ "Kirim OTP agar hadiah masuk" 
+ Tanda bahaya 
+ Meminta OTP 
+ CEK RISIKO 
+ Risiko tinggi: jangan balas pesan. 
+ 
+ 
+ 
+ Komponen di Designer 
+ TextBoxPesan 
+ CheckBoxOTP 
+ CheckBoxPassword 
+ CheckBoxLinkAneh 
+ CheckBoxHadiah 
+ ButtonCekRisiko 
+ LabelRisiko 
+ Komponen CheckBox cocok untuk latihan ini karena tanda bahaya bisa lebih dari satu. 
+ 
+ 
+ 
+ Blocks 
+ 
+ Siswa belajar membuat skor risiko. Semakin banyak tanda bahaya yang dicentang, semakin tinggi risikonya. 
+ 
+ Gambaran Blocks 
+ when ButtonCekRisiko.Click 
+ set global skor to 0 
+ if CheckBoxOTP.Checked then set skor to skor + 2 
+ if CheckBoxPassword.Checked then set skor to skor + 2 
+ if CheckBoxLinkAneh.Checked then set skor to skor + 1 
+ if CheckBoxHadiah.Checked then set skor to skor + 1 
+ if skor >= 3 set LabelRisiko.Text to "Risiko tinggi: jangan klik atau balas" 
+ else set LabelRisiko.Text to "Tetap cek sumber resmi sebelum percaya" 
+ 
+ Pertanyaan diskusi: kenapa OTP dan password diberi skor lebih tinggi daripada kata "hadiah"? 
+ 
+       
+    
+
+## ms-4-5 Mini Project C
+Video UhutS4BVKhk 2847–3000
+{'time': 2847, 'label': 'Instruksi Mini Project'}
+
+       
+         
+           Mini Project 
+           Mini Project C 
+         
+       
+       
+         
+           Tonton instruksi video di atas untuk mengerjakan mini project ini. 
+         
+       
+    
+
+## ms-4-6 Keamanan dalam Bertransaksi Digital
+Video UhutS4BVKhk 3155–3683
+{'time': 3228, 'label': 'Transaksi Digital'}
+{'time': 3491, 'label': 'Keamanan Transaksi & OTP'}
+
+       
+         
+           Materi Bacaan 08 
+           Keamanan dalam Bertransaksi Digital 
+         
+       
+       
+         
+           Materi tentang keamanan saat melakukan transaksi digital, mengenali penipuan (phishing), dan menjaga kerahasiaan OTP serta password. 
+         
+       
+    
+{"question": " Mini Quiz: Finansial & Keamanan   Kamu menerima pesan: \"Selamat, kamu menang voucher game. Balas pesan ini dengan email dan password akunmu.\"  Apa tindakan paling aman?", "choices": ["A. Balas dengan email dan password agar voucher dikirim.", "B. Abaikan pesan, blokir pengirim, dan cek ke sumber resmi.", "C. Berikan password lama saja supaya tidak terlalu bahaya."], "answer": 1, "explanation": "Sangat penting untuk tidak membagikan password kepada siapapun. Pihak resmi tidak pernah meminta password. Mengabaikan dan memblokir pengirim adalah langkah yang tepat."}
+
+## ms-5-1 Merancang Solusi Digital
+Video P8Ea0v8Gy2o 2018–2261
+{'time': 2018, 'label': 'Aplikasi berdampak positif'}
+{'time': 2086, 'label': 'Mengidentifikasi masalah nyata'}
+{'time': 2189, 'label': 'Contoh aplikasi alarm ibu'}
+{'time': 2260, 'label': 'Brainstorming idea'}
+
+       
+         
+           Materi Bacaan 06 
+           Merancang Solusi Digital 
+         
+       
+       
+         Solusi yang Berdampak Positif 
+         
+           Programmer terbaik adalah problem solver. Mulailah dari empati (peduli) melihat masalah di sekitar. 
+           Kamu telah membuktikan dirimu bukan sekadar pengguna HP, tapi PENCIPTA TEKNOLOGI! 
+         
+       
+    
+{"qid": "V6_Q1", "question": "Manakah dari ide aplikasi di bawah ini yang merupakan \"Solusi Digital Berdampak Positif\" untuk memecahkan masalah di sekolah?", "options": ["Game tebak-tebakan artis korea.", "Aplikasi pengingat jadwal piket kelas yang terhubung dengan notifikasi harian.", "Aplikasi senter yang hanya hidup dan mati secara random."], "answer": "Aplikasi pengingat jadwal piket kelas yang terhubung dengan notifikasi harian.", "explanation": "Ini adalah solusi digital yang punya manfaat dan memecahkan masalah nyata."}
+
+## ms-5-2 Merancang Solusi Digital
+Video P8Ea0v8Gy2o 2267–2303
+
+       
+         
+           Tugas Akhir 
+           Misi Brainstorming Ide Aplikasi! 🚀 
+         
+       
+       
+         
+           Waktunya menerapkan ilmu yang sudah kamu pelajari untuk memecahkan masalah nyata di sekitarmu. 
+         
+       
+    
+
+## ms-5-3 Final Project
+Video UhutS4BVKhk 3700–None
+{'time': 3700, 'label': 'Instruksi Final Project'}
+
+       
+         
+           Final Project 
+           Final Project 
+         
+       
+       
+         
+           Tonton instruksi video di atas untuk menyelesaikan Final Project dan mengakhiri pembelajaran. 
+            
+         
+       
+    

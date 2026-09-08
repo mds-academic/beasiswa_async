@@ -1,0 +1,1296 @@
+[0.32] two
+[1.92] one.
+[7.64] Halo teman-teman, hari ini kita akan
+[10.28] membahas tentang eksplorasi data
+[12.72] pribadi. Nah, apa sih eksplorasi data
+[16.28] pribadi itu? Apa? Yuk, kita bahas nih.
+[18.52] Pertama, kita harus tahu dulu apa sih
+[20.64] data itu. Jadi, sederhananya data itu
+[23.60] adalah kumpulan informasi. Jadi kalau
+[26.08] misalnya kita tahu informasi tentang
+[28.60] diri kita atau informasi mengenai
+[31.12] pengeluaran kita, nah itu kalau misalnya
+[32.80] kita kumpulkan itu dia bisa menjadi
+[34.68] sebuah data. Jadi dia bisa sebuah
+[37.00] informasi atau fakta ya, Teman-teman.
+[38.80] Kayak misalnya kita tahu tentang kita
+[41.08] mengetahui sebuah fakta bahwa di dunia
+[44.44] ini ada 1 miliar di dalam Milky Way itu
+[47.64] ada misalnya 100.000 planet gitu ya.
+[50.92] Nah, itu kan fakta dan itu bisa
+[52.40] dijadikan sebuah data gitu ya. Nah, data
+[54.84] itu dia macam-macam jenisnya. Ada berupa
+[57.40] bisa berupa angka, bisa berupa huruf,
+[60.28] gambar pun dia bisa termasuk juga dengan
+[63.20] data gitu. Intinya dia kalau dikumpulkan
+[66.52] itu dia bisa disebut sebagai data. Nah,
+[70.24] di era digital sekarang ini banyak hal
+[73.08] yang kita lakukan di internet gitu ya.
+[75.40] ketika kita ee ya kita menonton video,
+[79.12] kita mengerjakan tugas
+[81.56] ee apa itu namanya atau sekedar
+[84.56] browsing-browsing, hal itu kalau
+[86.36] misalnya kita kumpulkan itu bisa menjadi
+[88.12] data loh, Teman-teman. Nah, datanya yang
+[90.08] seperti apa sih? Coba kita lihat di
+[93.04] dalam di dunia nyata gitu ya. di nyata
+[97.32] dan di dunia digital itu jenis datanya
+[101.00] itu ya kurang lebih sama lah. Kalau
+[103.12] misalnya di dunia nyata datanya itu
+[105.64] misalnya adalah data berat badan, warna
+[107.92] rambut, jadi tentang diri kita gitu ya.
+[110.32] Nah, kalau di dunia digital
+[113.40] data itu dia bisa apa? tentang riwayat
+[116.36] pencarian YouTube, foto-foto yang kita
+[119.28] upload di Instagram gitu kan ya atau
+[121.84] data ee codingan kita gitu ya atau game
+[125.36] yang kita mainkan berdasarkan
+[126.76] username-nya gitu kan. Nah, semua itu
+[129.08] merupakan data diri kita gitu ya
+[131.52] teman-teman. Cuman bedanya yang ada yang
+[133.80] ee dunia di dunia nyata dan juga ada di
+[137.20] dunia digital atau di dunia maya gitu
+[139.12] ya. Nah,
+[142.00] sekarang data yang tadi kita sebut itu
+[144.88] kan data pribadi. Intinya data pribadi
+[147.32] itu adalah data atau kumpulan informasi
+[150.44] ya. Kalau informasi apa tuh namanya?
+[151.72] Data itu kan kumpulan informasi.
+[154.00] Kumpulan informasi khusus yang menunjuk
+[156.52] langsung kepadamu. Jadi, data pribadi
+[158.32] itu adalah fakta-fakta gitu ya,
+[160.72] Teman-teman ya. eh informasi-informasi
+[163.64] tentang diri kita sendiri, data kita
+[165.64] pribadi. Nah, informasi ini data-data
+[169.72] yang kita punya, data pribadi kita itu
+[172.44] bisa membuat orang lain mengenali lebih
+[174.60] jauh tentang siapa sih kita, gitu ya
+[177.00] kan, ya. Pokoknya data pribadi kita gitu
+[178.92] ya. Tadi kita sudah bahas kayak misalnya
+[180.96] oh kita sering nonton YouTube tutorial
+[183.36] coding. Oh berarti kita nih ternyata
+[185.44] orangnya suka ngoding ya. Nah, itu kan
+[187.68] orang lain bisa menyimpulkan gitu ya
+[189.60] berdasarkan data yang kita punya. Nah,
+[192.40] itu untuk data pribadi. Nah, kenapa sih
+[195.16] disebut pribadi? Pribadi karena
+[197.68] informasi yang
+[200.04] ee ada di data pribadi tuh seutuhnya
+[202.28] punya kita gitu ya. Private orang lain
+[204.24] tuh enggak pun apa tuh namanya? Mm apa
+[206.92] ya? Enggak ada yang punya data sama
+[209.16] persis dengan kita ya. Sama persis. Ada
+[211.92] yang sama tapi enggak mungkin ada yang
+[213.56] sama ee sama persis gitu ya. Contohnya
+[216.56] misalnya di kota kita itu ada 1000 anak
+[219.40] yang namanya Andi. Misalnya nama kita
+[220.84] Andi. Terus di kota kita pas kita cek ke
+[223.52] Duk Capil gitu ya, ada 1000 anak yang
+[226.32] namanya Andi juga. Nah, cara membedanya
+[228.84] ya dengan apa ya? Dengan data
+[231.16] private-nya dia. Karena kan setiap
+[232.56] Anding mungkin ada tujuh anak yang
+[235.64] namanya Andi suka ngoding gitu ya. atau
+[238.32] ada dari tujuh anak itu kita bisa
+[240.08] kecilkan lagi misalnya tiga anak itu
+[242.72] tinggallah di kota Jakarta Utara. Nah,
+[245.08] yang kayak gitu. Jadi, setiap Andi ini
+[248.24] setiap orang ini memiliki data yang
+[250.28] berbeda-beda walau seperti tanggal lahir
+[253.08] atau alamat rumah gitu ya. Jadi data
+[255.12] pribadi itu intinya data di tentang kita
+[257.96] pribadi private gitu ya, yang unik
+[260.00] dengan ee kita gitu. Oke. Nah, sekarang
+[265.24] misalnya kita punya analogi seperti ini.
+[268.36] Ada KTP versus eh browser diskon. Kan
+[272.32] dua-duanya ini KTP sama browser diskon
+[275.04] ini sama-sama informasi ya, sama-sama
+[278.04] informasi. Cuman yang satu adalah
+[280.12] informasi pribadi, yang satu informasi
+[282.12] publik. Coba kita lihat lagi lebih jauh
+[285.00] di sini. Kalau KTP atau kartu pelajar
+[287.80] itu dia berisi detail gitu ya. ada nama,
+[290.32] alamat rumah kita, dan bahkan kadang ada
+[292.84] foto kita. Kalau misalnya KTP atau kartu
+[296.04] pelajar kita itu hilang atau di ee apa
+[299.16] tuh namanya? disalahgunakan orang lain,
+[300.80] itu tuh kita ada loh orang yang bisa
+[302.64] menyamar.
+[304.20] misalnya dia buatkan kita akun terus ee
+[308.16] akun misalnya untuk nge-scam orang gitu
+[310.64] ya ee pakai data pribadi kita, dia
+[313.84] bikinin Instagram account terus itu dia
+[315.80] ngirimin link fishing atau link palsu
+[318.56] gitu ya untuk menguras ee informasi
+[321.08] tentang orang apa ee perbankan atau
+[324.23] [berdehem] informasi orang lain gitu kan
+[325.56] ya menggunakan kita. Jadi kalau misalnya
+[327.36] ada sesuatu terjadi karena dia menyamar
+[330.28] sebagai kita itu bisa kita yang kena,
+[332.32] kita yang terkena ee hukum gitu ya. Nah,
+[335.32] jadi intinya KTP itu ee kalau kartu
+[338.36] pelajar atau KTP itu dia data pribadi
+[340.76] murni data pribadi. Beda sama brosur ya
+[343.60] kan. Brosur misalnya di sini diskon
+[345.28] sepatu. Nah, kalau browser ini kan dia
+[348.44] bisa dicetak sebanyak-banyaknya dan bisa
+[351.24] dibagikan ke semua orang. Karena di
+[353.84] dalam browser itu enggak ada data
+[355.44] rahasia gitu ya. Enggak ada orang tuh
+[357.92] enggak bisa nyamar jadi sabun. Misalkan
+[360.68] brosur sabun enggak ada yang bisa nyamar
+[362.40] jadi sabun. Nah, ee jadi browur itu
+[365.08] tidak dianggap sebagai data pribadi dan
+[367.64] dia dianggap sebagai informasi publik
+[369.92] gitu. Karena di situ ya infonya siapa
+[372.08] yang mau pakai, siapa yang butuh gitu.
+[374.96] ee baru dia bisa relevan. Tapi kalau KTP
+[377.72] kan dia emang data kita gitu. Oke. Nah,
+[382.56] data pribadi itu ada banyak ya contohnya
+[384.52] ya teman-teman di sini kalau nama
+[386.24] lengkap sama nama ibu kandung itu adalah
+[388.76] identitas kalau misalnya kita ee ke
+[390.72] perbankan ya kita ee ke bank atau kita
+[393.72] mau daftar ee digital wallet gitu. Nah,
+[397.44] pasti yang ditanyakan adalah nama
+[398.92] lengkap sama nama ibu kandung gitu ya.
+[401.56] Jadi jangan sampai nama lengkap dan nama
+[403.92] ibu kandung kita itu tersebar gitu.
+[405.80] Jangan sampai kita nulis dia di bio
+[408.20] profil game kita gitu ya atau di mana
+[410.32] pun jangan pernah menuliskannya. Dan
+[412.56] kedua tempat tanggal lahir gitu ya.
+[414.60] Banyak password itu makainya tanggal
+[417.80] tempat tanggal lahir gitu ya. Misalnya
+[420.16] ee Jakarta 31 Maret gitu kan. itu kayak
+[423.64] ketebak ya orang-orang kalau misalnya
+[425.20] tahu misalnya dia bisa menemukan dia ee
+[429.44] ketemu KTP kalian, kartu pelajar kalian
+[431.84] gitu. Dia langsung tahu, "Oh, ini
+[434.00] anaknya ini aku kenal nih, username-nya
+[436.08] ada nih." Terus dia coba masukin
+[438.68] password-nya tanggal lahir kita yang
+[440.44] langsung masuk gitu ya. Jadi mudah
+[442.08] ditebak gitu. Jadi, data kita enggak
+[443.88] aman. Nah, ini data pribadi yang harus
+[447.32] kita jaga. Selain itu ada alamat rumah
+[450.32] gitu ya. Karena kan tadi kalau kita
+[452.68] lihat kayak misalnya, oh di kota kita
+[455.60] ada 1000 anak yang namanya Andi, tapi
+[457.52] kan alamatnya beda-beda gitu ya. Nah,
+[459.68] jadi ee kita harus lindungin juga data
+[461.52] pribadi ini. Terus lokasi GPS ya, live
+[464.20] location gitu. Kemudian ada sidik jari,
+[467.28] fingurprint, scan wajah ya, Face ID.
+[470.28] Kalau misalnya HP kalian mm bisa
+[473.08] nge-unlock pakai wajah. Nah, itu kan
+[474.92] kalau misalnya disalahgunakan tuh dia
+[476.80] bisa mengakses semua data pribadi kita.
+[478.96] nomor HP, alamat email itu juga
+[481.24] merupakan data pribadi gitu ya. Nah,
+[488.32] nah kenapa sih aplikasi itu meminta data
+[491.28] kita gitu? Jadi kadang ketika kita
+[493.60] menginstal aplikasi atau ketika kita mau
+[495.96] membuat aplikasi gitu ya, kadang kita
+[497.92] tuh butuh beberapa data
+[500.88] supaya kita bisa menggunakan aplikasinya
+[504.88] dengan sepenuhnya gitu. Coba lihat di
+[507.84] sini pas kita instal misalnya ketika
+[511.36] kita nginstal Instagram aja kan kadang
+[513.12] dia minta izin akses kamera, dia minta
+[516.04] akses lokasi gitu ya. Karena
+[517.96] kadang-kadang kita mau ng-post di
+[519.48] Instagram tuh kayak kita mau kasih tahu,
+[520.84] "Oh, kita di sini loh." gitu. Terus
+[522.76] kadang dia ee butuh informasi kontak
+[525.20] kita gitu kan. Dia mau ngakses kontak
+[527.00] kita apakah ee ada yang mungkin yang
+[530.28] kita kenal orangnya pakai Instagram gitu
+[532.24] biar kita bisa langsung berteman gitu.
+[533.92] Nah, ini ee kadang aplikasi banyak ya
+[536.68] meminta izin akses itu. Nah, aplikasi
+[539.36] butuh datamu agar data fiturnya bisa
+[541.76] berjalan gitu ya. Nah, kayak misalnya
+[544.00] kamera kan kalau Instagram kita harus
+[545.52] ngupload-ngupload foto gitu ya, dia
+[547.16] harus punya akses ke kamera gitu. Tapi
+[549.88] kadang ketika kita membuat aplikasi atau
+[552.80] kita melihat aplikasi kita harus
+[554.32] menanyakan juga, kita harus melihat juga
+[556.16] apakah aplikasinya benar-benar butuh
+[558.72] data itu gitu ya untuk bisa berjalan
+[560.92] dengan ee apa terama? Baik gitu. Nah,
+[563.84] itu yang perlu kita tanyakan ketika kita
+[565.52] membuat dan mau menginstal sesuatu. Nah,
+[569.16] ada beberapa izin yang mungkin ee izin
+[572.36] untuk menggunakan aplikasi yang mungkin
+[574.24] kita mau implementasikan ke project kita
+[576.72] atau mungkin kalian pada saat ee mau
+[579.04] menginstal aplikasi baru itu ee ya ada
+[582.68] beberapa izin nih coba kita cek. Yang
+[584.64] pertama misalnya aplikasi Maps gitu ya,
+[588.08] kadang ee ada beberapa aplikasi seperti
+[590.92] Google Maps gitu ya, dia butuh lokasi
+[593.28] kita yang tepat gitu kan ya, GPS kita.
+[596.12] Dia butuh GPS HP kita supaya dia tahu
+[599.32] nih untuk ee memberikan saran rute atau
+[604.00] arah perjalanan yang benar itu ya dia
+[606.32] harus punya izin GPS kita kan ya. Nah,
+[609.00] dan ini wajar kalau dia di maps. Yang
+[611.64] tidak wajar itu kalau misalnya dia
+[614.00] aplikasi untuk mencatat keuangan tapi
+[616.80] dia minta izin lokasi GPS. Nah, ini
+[619.72] berarti ada yang salah nih. Entah kita
+[621.16] salah download aplikasinya, kita pakai
+[623.52] aplikasi yang palsu gitu kan ya. Atau
+[626.32] memang ee ini enggak benar aja nih, gitu
+[628.72] ya. Jadi hati-hati. Selanjutnya
+[632.08] kalau misalnya ee apa ojek online itu
+[635.32] kan dia butuh alamat kan ya. Dia butuh
+[637.28] alat data pribadi kita, alamat rumah
+[639.12] kalau kita mau pulang ke rumah atau
+[640.52] alamat sekolah kita sama nomor HP supaya
+[643.40] si ojeknya, driver ojeknya itu bisa ee
+[647.76] menghubungi kita. Nah, ini wajar nih kan
+[649.84] yang seperti ini gitu. Kemudian kalau ee
+[654.48] yang lain tuh ada aplikasi kamera sama
+[656.84] aplikasi kalkulator ya kan ya. Nah, di
+[660.12] sini kalau misalnya aplikasi ya ini
+[662.80] logikanya gini ya. Kalau misalnya
+[664.20] aplikasi kita buat aplikasi yang kayak
+[666.68] Instagram gitu ya, aplikasi kamera ya
+[668.88] itu pasti wajar dia harus mengakses
+[671.32] galeri sama ee harus mengakses kamera
+[674.00] gitu. Karena untuk menyimpan fotonya
+[676.04] atau videonya itu kan butuh kamera dan
+[677.88] butuh akses galeri. Tapi kalau misalnya
+[680.20] kita instal nih kalkulator dari Play
+[681.80] Store atau App Store tapi dia minta
+[684.24] kontak telepon kan itu sudah tidak wajar
+[686.40] gitu ya. Karena kan dia hanya menghitung
+[688.00] kan dia tidak perlu mengakses apapun.
+[690.40] Dia enggak perlu butuh GPS, dia enggak
+[692.44] perlu butuh kamera dan segala macam.
+[694.28] Jadi kalau kita mau mengizinkan sesuatu
+[696.92] coba kita pakai analogi. Kita pikirkan
+[699.04] logikanya ini benar enggak sih gitu.
+[702.52] Nah, ee kalau misalnya ada aplikasi yang
+[705.12] minta ee izin-izin enggak jelas tadi,
+[707.68] itu berarti aplikasinya mencurigakan.
+[710.44] Jangan lupa untuk segera tolak ya. Kalau
+[712.80] misalnya ada permintaan apapun ya kita
+[714.88] tolak aja gitu kayak denay denay denay
+[716.96] atau kalau misalnya kita pakai HP itu
+[719.00] bisa kita ke setting terus itu kita e
+[721.24] tolak semuanya karena bisa jadi aplikasi
+[724.08] tersebut itu malware atau virus gitu ya
+[726.48] yang bisa ee ya dia bisa ngakses semua
+[730.08] yang ada di HP kita kayak misalnya
+[731.32] mbanking kita misalnya ada di HP gitu
+[733.16] kan. Nah, ini bisa berbahaya gitu ya.
+[736.12] Oke,
+[739.84] sekarang data itu dia memiliki tingkat
+[743.92] sensitivitas
+[746.60] yang berbeda. Nah, karena di mata hacker
+[750.44] gitu ya, di mata hacker itu enggak semua
+[753.24] data itu sama gitu ya. Ada data ee kalau
+[757.20] di hacker itu dia bisa ngebagi jadi dua
+[759.72] data. Ada data publik sama ada data
+[762.36] sensitif. Jadi misalnya kalau di sini
+[766.36] nih,
+[768.60] oke kalau data publik itu berarti data
+[771.24] yang boleh dibagikan yang tidak contain,
+[774.12] yang tidak ada ee data pribadi kita
+[777.60] gitu. Misalnya nama panggilan atau nama
+[781.04] username kita, gametag kita. Nah, ini
+[783.16] kan data yang publik boleh tahu gitu kan
+[785.56] ya. Karena di mungkin di username
+[787.68] sebaiknya kalau kalian bikin game tag
+[789.52] apa e username ee game kalian jangan
+[792.64] sampai kalian masukin nama kalian
+[793.96] panjang gitu ya. Lebih baik ya nama-nama
+[795.76] panggilan kalian lah, nama panggilan
+[797.28] kecil kalian atau nama karakter favorit
+[799.20] kalian. Terus itu kayak hobi atau
+[801.72] makanan favorit itu kan data publik ya,
+[804.76] band atau film kesukaan. Nah, itu enggak
+[806.80] apa-apa gitu. kayak ee kalau misalnya
+[808.36] orang tahu tuh dia ee hal-hal ini kan
+[811.60] tidak ditanyakan ketika dia mau ngakses
+[813.72] ini ya perbankan gitu. Jadi enggak
+[815.88] masalah kalau orang tahu itu data
+[817.44] publik. Tapi data ada juga yang namanya
+[819.80] data sensitif dan ini yang ee apa tuh
+[822.20] namanya? Yang krusial dan sangat dicari
+[825.08] oleh hacker gitu ya. Nah, misalnya
+[827.24] password atau pin ATM,
+[830.08] kode OTP. OTP itu one time password ya
+[832.88] ee yang biasanya dikirimin lewat SMS
+[834.52] atau lewat WhatsApp gitu ya. sama tadi
+[836.68] nama ibu kandung dan detail lengkap
+[838.72] alamat rumah kita. Jadi kalau kita mau
+[841.76] ada orang yang minta ini, itu pastikan
+[844.80] ini benar-benar butuh enggak ya orang
+[846.52] ini atau sesuatu ini ee data pribadi,
+[849.40] data sensitif kita ini. Kalau enggak ya
+[851.36] mohon maaf kita tidak bisa membagikannya
+[853.28] gitu ya. Oke. Ee ini ada analogi lagi
+[856.92] misalnya ee anggap aja data yang
+[859.92] bersifat publik itu kayak papan mading
+[862.20] gitu ya. kayak di sekolah kita ada
+[863.68] mading yang dia kita bisa nempelin
+[865.84] apapun di situ kayak ya udah dia sekedar
+[868.48] informasi aja enggak ada data yang
+[870.44] sensitif sedangkan kayak kalau misalnya
+[873.96] dia kita di rumah punya brangkas gitu ya
+[876.36] atau loker nah itu kan dia tempat kita
+[879.40] menyimpan data-data berharga gitu ya nah
+[882.00] yang kita enggak mau orang lain tahu
+[883.56] atau bisa mengaksesnya maka itu bisa
+[885.48] disebut juga dengan data sensitif
+[899.98] [musik]
+[904.16] Oke, Teman-teman. Kita hari ini akan
+[906.36] membahas etika dan tanggung jawab data
+[909.20] digital kita. Nah, pernah enggak kalian
+[911.92] teman-teman mendengar atau membaca
+[914.08] berita gak ada data-data
+[917.44] ee data-data pribadi orang itu bocor
+[919.76] bocor di internet dan diperjual belikan
+[921.88] gitu kan ya. Nah, bayangkan itu terjadi
+[923.88] sama kita. Kalau misalnya data sensitif
+[927.04] kita kayak ya data password kita mungkin
+[930.12] data sensitif bisa password, bisa juga
+[933.00] alamat tinggal kita. kan orang-orang
+[936.00] yang tidak bertanggung jawab gitu ya
+[937.44] atau orang yang dengan niat jahat itu
+[939.60] dia bisa menyalahkan menyalahgunakan
+[942.48] data kita atau biasanya disebut juga
+[944.40] dengan data misuse. Nah, misalnya nih
+[949.32] hacker dia mendapatkan akses ke foto
+[952.88] wajah kita gitu ya dan dia dapat akses
+[955.36] nama lengkap. Nah, kalau misalnya dia
+[957.60] sudah punya dua ini, dia bisa loh
+[960.12] membuat ee akun di media sosial yang
+[964.04] ngaku ngaku itu seolah-olah kita. Nah,
+[967.24] kalau terus itu setelah dia bikin sosial
+[969.72] media palsu, dia menggunakan ee aplikasi
+[973.04] itu atau sosial media tersebut untuk
+[974.76] menipu orang lain. Nah, kalau misalnya
+[977.96] ee ini terjadi kan berarti reputasi kita
+[981.24] bisa hancur dong. nya kayak misalnya
+[982.60] kita terkenal ee
+[985.24] anak yang baik-baik gitu ya contohnya.
+[987.72] Terus itu karena kita wah ini ternyata
+[990.00] si ini menipu nih suka nipu orang lain
+[992.16] nih gitu ya suka minta-minta pulsa
+[993.92] padahal kita enggak pernah nih melakukan
+[995.36] hal itu. Padahal data kita foto wajah
+[998.36] sama nama lengkap itu di sedang dimisuse
+[1001.92] untuk dibuat ee dibuatkan Instagram
+[1004.84] palsu gitu atau WA palsu untuk menipu
+[1007.28] orang lain gitu ya. Dan itu dan selain
+[1009.68] merugikan orang lain itu merugikan diri
+[1011.48] kita juga ya, padahal kita enggak
+[1012.64] ngapa-ngapain. Nah, kemudian selain itu
+[1016.76] dampak dari data misus itu ketika orang
+[1020.52] lain dapat ee dapat data yang lebih
+[1023.52] sensitif lagi kayak misalnya nomor HP
+[1025.56] dan informasi nama kandungmu, dia bisa
+[1027.96] loh nelepon ke bank. Terus itu kan kalau
+[1030.00] orang bank untuk verifikasi itu dia
+[1031.60] perlu tahu nama ibu kita, nama panggilan
+[1034.44] ibu kita dan segala macam. Nah, orang
+[1035.96] tuh bisa pura-pura, "Oh, saya lupa
+[1038.32] password, saya lupa ini, ini, ini." gitu
+[1040.84] kan ya. Ngaku-ngaku sebagai kita. Terus
+[1042.88] kalau misalnya dia udah dikasih, sudah
+[1044.88] dapat ee aksesnya, uang tabungan kita
+[1048.04] bisa di apa? Bisa ludes, bisa habis gitu
+[1050.40] ya dalam hitungan menit. karena
+[1052.00] keteladoran misalnya kita enggak sengaja
+[1054.64] ee masukin data kita di website yang
+[1056.96] fishing kah atau mungkin ee apa ya
+[1061.00] mungkin mm pas kita masuk ke aplikasi
+[1064.92] perbankan dilihat orang lain lah itu
+[1066.60] contoh yang lainnya. Nah itu jadi ee ini
+[1069.84] bisa ee ketika data kita di misuse itu
+[1072.40] kita bisa
+[1075.00] apa mendapatkan kerugian finansial. Nah,
+[1078.72] terus itu pernah enggak kalian dapat SMS
+[1082.12] gitu ya, SMS atau WhatsApp kirimkan uang
+[1084.48] segera ke rekening ini. Mama sedang di
+[1086.96] kantor polisi gitu ya. Jadi dia
+[1088.44] ngaku-ngaku sebagai orang atau keluarga
+[1091.00] terdekat kita yang ee apa itu namanya?
+[1094.60] Diminta untuk ngirim uang gitu. Nah,
+[1096.52] kalau kita pernah dapat SMS atau pesan
+[1099.00] seperti ini di WhatsApp, berarti nomor
+[1101.36] HP kita itu sudah tersebar di internet
+[1103.48] dan disalah gunakan ya untuk penipuan
+[1106.08] atau kadang kita dapat ee pesan-pesan
+[1108.40] spam gitu ya. Nah, itu ee jadi kita
+[1111.20] harus berhati-hati ya, Teman-teman. Nah,
+[1114.36] kalau misalnya sampai data pribadi kita
+[1118.08] itu
+[1120.12] ee apa namanya? diketahui sama orang
+[1121.72] lain misalnya password itu sama aja
+[1124.00] kayak kita ngasih kunci rumah kita ke
+[1125.76] orang lain gitu ya. Ya udah ee apa itu
+[1128.20] namanya dia udah tahu alamat lengkap
+[1130.48] kali apa dia punya bisa tahu alamat
+[1132.96] lengkap kita, kita tinggal ngasih gitu
+[1135.04] ya. Kalau misalnya dia punya passwordnya
+[1136.36] kita kayak ngasih orang itu masuk ke
+[1139.00] rumah kita gitu ya. Akibatnya ya dia
+[1141.32] bisa masuk ke rumah kita dan ee mencuri
+[1143.60] barang-barang kita gitu ya. Nah,
+[1145.88] kemudian ancaman lain ketika kita ee
+[1148.80] data kita di misuse gitu ya. ada ancaman
+[1151.36] keselamatan fisik gitu ya. Misalnya nih
+[1154.24] kita sering ee apa namama over sharing
+[1157.04] kita live location. Kita sedang live di
+[1159.40] Instagram terus ada caption-nya kalian
+[1161.88] bilang, "Wih, lagi sendirian nih di
+[1164.56] kafe" gitu ya atau di ee supermarket.
+[1168.36] Nah, ini kan berbahaya ya kalau misalnya
+[1169.92] orang lihat, "Wih, ternyata si ini lagi
+[1172.28] sendirian nih." Wah, itu kalau misalnya
+[1174.00] dia punya niat jahat itu dia bisa ee ya
+[1177.48] mencelakai kita gitu ya. Nah, ketika
+[1181.32] kita ee melakukan oversharing itu bisa
+[1186.12] ee apa ya, merugikan diri kita gitu ya.
+[1188.96] Nah, oversharing itu sendiri merupakan
+[1191.20] sebuah kebiasaan yang di mana kita tuh
+[1193.92] terlalu ee terlalu membagikan keseharian
+[1198.96] kita, detail hidup kita ke internet gitu
+[1201.60] ya. Jadi orang kalau internet tuh kan
+[1203.04] berarti orang lain bisa ngakses itu sama
+[1205.16] kayak kita seolah-olah data publik gitu
+[1207.64] ya, bukan data pribadi kita lagi. Kayak
+[1209.32] misalnya kita enggak sengaja ee buka
+[1211.72] paket nih, kalian e habis beli paket
+[1213.64] kalian show nih, kalian unboxing di live
+[1216.24] IG gitu kan. Di situ kelihatan tuh
+[1217.92] alamat rumah kalian gitu kan, terus
+[1219.88] kalian beli apa tuh kan kelihatan orang
+[1221.52] main bisa tahu. Padahal kan alamat itu
+[1224.32] harusnya menjadi data pribadi kita, data
+[1226.96] private kita ya. Tapi kalau misalnya
+[1228.76] kalian udah masukin internet, itu
+[1230.16] berarti bisa jadi data publik gitu yang
+[1232.88] orang lain bisa eh trace back gitu ya.
+[1235.68] Orang lain bisa ngelihat alamat kalian
+[1237.60] di internet terus itu ya bisa datangin
+[1240.20] kalian gitu ya. Bahaya banget. Jadi
+[1242.08] jangan sampai kita melakukan oversharing
+[1244.64] ini ya. Karena kalau datanya udah masuk
+[1246.48] di internet itu udah pasti jadi ee data
+[1250.28] ee ini ya, udah jadi data publik dan
+[1252.36] juga itu meninggalkan jejak-jejak
+[1254.28] digital dan jejak digital tuh pasti
+[1256.40] abadi. No matter how hard ya enggak apa
+[1259.32] itu namanya sesusah apapun kita mencoba
+[1262.44] untuk menghapus eh data itu dia akan
+[1265.00] tetap ada di situ. Karena once it goes
+[1266.88] to the internet apa tu namanya dia akan
+[1270.48] selalu akan ada di situ gitu ya. enggak
+[1272.44] bisa dihapus permanen mungkin kita.
+[1278.36] Nah, untuk melawan ancaman-ancaman yang
+[1281.48] kita bahas tadi ini ada beberapa tips ya
+[1284.32] yang kita bisa lakukan untuk menjaga
+[1286.32] privasi kita. Yang pertama, pastikan
+[1288.88] ketika kita membuat password itu jangan
+[1291.36] sampai sesuatu yang mudah ditebak. kayak
+[1294.32] misalnya tanggal lahir atau nama kita
+[1296.36] sendiri atau sesuatu yang berurutan
+[1298.80] kayak 1 2 3 4 5 6 atau kebalikan 654 321
+[1302.80] ya jangan kalau bisa ketika kita mau
+[1305.60] pakai password misalnya kita suka lupa
+[1307.68] gitu ya mau pakai nama sendiri ya enggak
+[1309.80] apa-apa tapi dilihat nih at least
+[1311.60] dikombinasikan jadi misalnya nama nama
+[1314.24] kita yang paling depan sama yang paling
+[1316.00] akhir itu huruf besar sisanya huruf
+[1317.84] kecil terus kita masukin juga angka
+[1320.04] kelahiran kita gitu ya walaupun
+[1321.72] berbahaya supaya lebih aman lag lagi
+[1324.04] tambahin simbol khusus gitu ya kan
+[1325.96] misalnya add atau hashtag. Jadi kalau
+[1328.68] misalnya kita suka lupa mau pakai data
+[1330.80] kita tanggal prib tanggal lahir sama
+[1332.40] nama sendiri ya boleh gitu ya tapi ingat
+[1335.96] harus dikombinasikan tapi lebih baik
+[1338.04] lagi kita pakai password yang
+[1339.68] benar-benar random gitu ya. Oke. Nah,
+[1342.64] untuk password juga kadang kan sekarang
+[1344.72] sudah ada aplikasinya kayak Google tuh
+[1346.20] ada yang namanya Google Authentificator.
+[1348.32] Microsoft juga punya. Jadi dia bisa
+[1350.72] kalau misalnya mau masuk ke sebuah
+[1352.60] account itu harus benar-benar harus scan
+[1354.56] barcode terus itu skin jadi jari dan
+[1356.76] segala macam gitu ya.
+[1359.16] Nah, ini ada contoh password yang buruk
+[1362.48] ini kayak Andi 2010 tanggal lahirnya apa
+[1365.60] tahun lahirnya 2010 misalnya sayang mama
+[1368.60] atau berurutan. Ini buruk ya
+[1370.12] password-nya ya. Nah, kalau lebih baik
+[1372.40] gini, lebih baik tuh seperti ini ya. M4
+[1375.44] K N-nya besar nasi goreng, O-nya jadi 0,
+[1380.96] E-nya jadi 3, terus digabung-gabung.
+[1383.12] Nah, ini kan dia panjang unik, terus itu
+[1386.04] ya mungkin mudah diingat ya. Tapi ee apa
+[1388.44] namanya? Di mungkin kita sering nulis
+[1390.88] gini sama teman-teman kita ya. Jadi
+[1392.16] kayak wah ini password-nya gampang
+[1393.76] diingat gitu ya sama kita kan gitu ya.
+[1396.00] Nah, komputer tuh susah nebaknya gitu
+[1397.80] ya. Karena dia kalau mau nyusun nih bisa
+[1400.24] ee kalau mau nge-crack bisa ee puluhan
+[1403.72] bakal bahkan ratusan tahun nih untuk
+[1406.04] bisa mengakses password kita.
+[1409.36] Terus itu yang kemud yang kedua jangan
+[1411.08] sampai kita asal mengklik sebuah link
+[1413.20] gitu ya. Jadi kalau misalnya ada
+[1416.00] klink-kling yang langsung ngasih hadiah
+[1418.52] kayak misalnya kamu mendapatkan uang
+[1422.00] senilai Rp100 juta, kamu mendapatkan HP,
+[1424.32] kamu mendapatkan ee kipas angin atau
+[1427.12] motor. Nah, ini kan enggak masuk akal
+[1428.60] ya. Maksudnya kita enggak melakukan
+[1430.08] apa-apa, kita dapat hadiah. Nah, itu
+[1431.48] hati-hati karena itu bisa jadi dia
+[1433.00] sebuah fishing atau ee apa itu namanya?
+[1436.44] Link ilegal atau link penipuan. Kalau
+[1439.36] misalnya kamu klik, bisa jadi dia
+[1441.52] menyimpan datamu atau dia bisa
+[1444.08] menyusupkan virus ke HP-mu yang dia bisa
+[1446.56] meng-copy nih. Jadi apa yang kalian
+[1448.52] buka, apa yang kalian ketikkan itu
+[1450.00] tercopy ke servernya mereka gitu ya.
+[1452.24] Nah, ini kan berbahaya banget ya. Jadi
+[1454.04] jangan sampai klik asal-asal klikan ya,
+[1456.96] klik link-link gitu ya. Jangan. Oke,
+[1459.84] selanjutnya
+[1462.76] gembok akun metsos. Jadi kalau bisa
+[1464.96] kalau memungkinkan diprivate aja account
+[1467.48] kalian gitu ya. akun Instagram, akun
+[1469.48] TikTok kalian, gitu ya. Jadi yang apa
+[1472.32] namanya? Hanya orang-orang yang kalian
+[1473.92] mau aja, yang kalian setujui, yang
+[1476.24] kalian accept aja yang bisa melihat foto
+[1478.88] sama videomu. Jadi kayak misalnya
+[1480.76] penculik atau penjahat yang pengin tahu
+[1483.40] tinggalmu atau keseharianmu itu dia
+[1486.36] enggak punya akses gitu karena kita
+[1487.64] gembok account gitu. Kemudian yang bisa
+[1490.16] kita lakukan adalah kita matikan izin
+[1492.80] lokasi gitu ya. Kalau misalnya ee enggak
+[1495.28] digunakan ya udah matiin aja fitur
+[1497.04] GPS-nya. Mungkin pas kita makainya kalau
+[1499.32] misalnya mau pakai peta aja atau mau
+[1501.36] pakai ojol boleh kita nyalain lagi. Tapi
+[1504.00] sisanya dimatiin aja. Selain membuat
+[1506.24] kita aman, kadang baterainya bisa lebih
+[1508.20] hemat juga ya. Nah,
+[1511.28] ya intinya ee kalau kita menggunakan
+[1514.08] password yang lebih mudah ditebak itu
+[1516.48] sama aja kayak kita mau pergi jauh tapi
+[1519.00] kita biarin rumah kita terbuka lebar
+[1521.04] gitu ya. Nah, supaya aman selain eh kita
+[1524.44] pakai password, passwordnya susah
+[1525.84] ditebak, password-nya kuat gitu ya, kita
+[1528.56] tambahin ada yang namanya 2 FA atau to
+[1531.60] eh verification authentificator, to
+[1533.76] factor authentification.
+[1536.64] Jadi dia selain harus masukin password,
+[1539.20] dia harus kirim OTP dari SMS atau dari
+[1541.64] WA atau pakai aplikasi yang Kakak bilang
+[1543.96] tadi yang kayak Google Authentificator
+[1546.00] atau Microsoft Authentificator.
+[1550.56] Nah, di App Inventor itu dia ada fitur
+[1553.80] yang dia bis ee apa ya? Fitur yang bisa
+[1558.36] menyimpan data pribadi kita. Contohnya
+[1561.20] password. Kan kalau misalnya dia mau ee
+[1564.00] masukin password, dia harus ini ya kayak
+[1567.56] orang lain jangan sampai tahu dong apa
+[1569.52] bisa ngelihat dong password yang kita ee
+[1571.64] masukkan gitu kan ya. Nah, kenapa sih
+[1574.52] harus ada keamanannya gitu ya? Kalau
+[1577.32] misalnya aplikasi kita aman gitu ya,
+[1580.12] berarti pengguna itu kayak tenang gitu.
+[1582.92] pengguna jadi tenang dan e pengguna jadi
+[1585.56] trust kalau misalnya dia mau menggunakan
+[1587.08] aplikasi kita dan dia bisa menyarankan
+[1589.44] aplikasi kita ke orang lain tanpa
+[1591.40] khawatir data kita bisa disalahgunakan
+[1593.92] gitu ya. Jadi intinya data pengguna
+[1596.32] adalah harta yang paling berharga bagi
+[1598.32] seorang developer gitu ya. Nah, kalau di
+[1601.80] ini ya bentuknya ya, kalau misalnya kita
+[1603.64] mau mengguna ee mau minta user
+[1606.16] memasukkan password, jangan lupa
+[1608.28] inputnya itu tipenya jangan sampai
+[1610.60] textbox biasa ya, tapi gunakan textbox
+[1613.92] yang password. Oke, itu untuk eh
+[1617.76] keamanan digital di menggunakan MIT App
+[1620.32] Inventor.
+[1625.56] Nah, kemudian ketika kita ee apa itu
+[1629.36] namanya?
+[1630.60] ketika kita menggunakan App Inventor
+[1634.40] gitu ya, kita harus ngecek juga ketika
+[1636.16] kita bikin aplikasi menggunakan MIT App
+[1638.48] Inventor, pastikan pada saat dia klik
+[1641.64] login misalnya ini di sini dia ngeklik
+[1644.08] tombol login gitu ya. Nih di sini dia
+[1646.64] ngeklik tombol login tanpa masukin
+[1648.76] password. Kalau misalnya dia cuman tahu
+[1650.80] username aja ya kita bisa kebobol akun
+[1652.80] kita ya kan ya. Nah pastikan harus ada
+[1656.32] input validation gitu ya. inputnya harus
+[1659.20] divalidasi dulu oleh program kita supaya
+[1663.44] kalau misalnya dia password-nya empty
+[1665.96] atau kosong, maka kita harus kirim pesan
+[1669.32] error, password-nya harus diisi gitu ya
+[1671.48] sebelum dia masuk.
+[1673.56] Nah, block is empty itu sebuah adalah
+[1677.08] sebuah function yang ada di MITF
+[1679.36] Inventor yang dia bertugas apakah
+[1681.92] textbox-nya itu ada isinya atau kosong
+[1685.60] gitu ya. Kalau benar-benar kosong then
+[1687.64] kita minta dia eh ya lakukan sesuatu.
+[1690.04] Misalnya di sini kita mau ada label
+[1692.40] peringatan atau kita bisa munculin
+[1694.32] notifikasi error gitu ya. Nah, itu is
+[1698.80] MIT App Inventor.
+[1720.60] Halo teman-teman, hari ini kita akan
+[1722.76] membahas terkait Tiny Dib. Nah, apa sih
+[1725.88] Tiny DB itu? Yuk, kita bahas.
+[1728.84] Nah, pernah enggak kalian pada saat
+[1731.28] kalian ee bermain game gitu ya, ketika
+[1735.00] kita membuat game atau membuat aplikasi
+[1736.92] di App Inventor misalnya aplikasinya itu
+[1740.28] menghitung skor atau menghitung uang
+[1742.16] gitu ya. Tapi ketika kita tutup
+[1744.12] aplikasinya gitu ya, ketika kita close
+[1746.28] atau HP kita kita tutup, nah pas kita
+[1749.40] buka lagi mungkin besok harinya atau
+[1751.92] beberapa jam kemudian atau beberapa
+[1753.40] menit kemudian bahkan. Nah, apa sih yang
+[1756.16] terjadi? Kadang yang terjadi adalah
+[1759.60] ee levelnya atau skornya atau semua yang
+[1763.56] kita simpan ke dalam aplikasinya itu dia
+[1765.60] teriset atau apa ee dia jadi nol lagi
+[1769.08] gitu ya. Kembali menjadi nilai awalnya.
+[1771.80] misalnya nol ya, kalau misalnya di
+[1773.56] aplikasi kita kita setnya nol skornya
+[1776.16] atau nyawanya lima. Nah, misalnya kita
+[1778.68] sudah main game, sudah capek-capek nih
+[1780.20] gitu kan ya ee skornya jadi kembali ke
+[1782.72] nol. Nah, ini terjadi karena ketika kita
+[1786.92] menyimpan data itu kita menyimpannya
+[1789.24] menggunakan variabel. Nah, kalau
+[1792.04] misalnya kita tutup aplikasi tadi, dia
+[1794.56] itu variabelnya itu bisa teriset yang
+[1797.32] menyebabkan nilai yang ada di dalam
+[1799.32] variabel itu pun juga kembali ke nilai
+[1802.12] awalnya ya, misalnya 0 atau 5 dan
+[1804.52] seterusnya. Nah, bayangin juga ketika
+[1808.12] kita ee main game udah sampai di level
+[1810.88] 99 gitu ya, udah capek-capek tiba-tiba
+[1813.32] baterainya habis gitu atau HP-nya
+[1815.36] teriset gitu ya, kayak nge-lag. Jadi
+[1817.20] kita harus ng-riset kan karena kita
+[1819.88] menyimpan datanya menggunakan variabel
+[1821.96] itu kan jadi kayak wah datanya akan
+[1824.76] hilang gitu ya kan. Jadi bikin prasi
+[1826.92] gitu ya. Kita sudah capek-capek main,
+[1828.76] sudah capek-capek menggunakan
+[1829.72] aplikasinya tapi datanya enggak bisa
+[1831.12] disimpan. Nah, itulah kita membut ee
+[1834.24] kenapa ee daripada kita menggunakan
+[1836.64] variabel ketika kita mau menyimpan data,
+[1838.72] sebaiknya kita menggunakan database.
+[1841.40] Nah, ketika kita menggunakan variabel
+[1843.52] itu bayangkan aja kayak misalnya kalian
+[1845.76] ee melihat plat nomor mobil yang ada di
+[1848.72] jalanan gitu ya. Nah, pas kalian tidur
+[1851.20] besoknya kalian diminta untuk mengingat
+[1853.36] kembali nomor platnya kan udah lupa
+[1855.16] gitu. Karena data tersebut itu sementara
+[1857.08] karena kita cuma nyimpannya di otak.
+[1858.88] Tapi ketika kita menyimpannya,
+[1860.52] menuliskan nomornya tadi di buku gitu
+[1862.64] ya. Nah, itu kan selama bukunya masih
+[1865.56] ada, catatan kita pun masih tetap ada
+[1867.76] gitu ya. Nah, anggap aja otak kita
+[1870.40] penyimpanan sementara itu namanya
+[1872.28] variabel dan penyimpanan yang dalam
+[1875.24] jangka panjang itu namanya database ya,
+[1877.68] Teman-teman. Nah, selanjutnya
+[1881.56] kalau misalnya kita mau mengaplikasikan
+[1885.32] database dalam aplikasi kita agar
+[1888.80] datanya kalau misalnya aplikasinya kita
+[1891.04] reset atau kita matikan itu dia ee apa
+[1894.52] ter datanya tetap ada, datanya permanen
+[1896.84] di memori HP kita. Nah, kalau misalnya
+[1899.40] datanya disimpan hanya di HP kita, itu
+[1901.36] namanya database lokal. Nah, database
+[1904.12] lokal itu berarti dia menyimpan datanya
+[1906.40] di memori fisik HP. Jadi kita enggak
+[1908.20] perlu upload dia ke internet, dia akan
+[1910.60] stay dan bisa disimpan di dalam ee apa
+[1913.68] tuh namanya? Di aplikasi HP kita selama
+[1915.84] tanpa butuh kuota gitu ya, selama ee
+[1918.32] penyimpanannya masih ada gitu ya. Nah,
+[1921.12] itu tentang database lokal. Nah,
+[1923.40] keuntungan database lokal dengan eh
+[1926.52] database ee ini ya eh lokal dan database
+[1931.08] server base gitu ya, kayak yang harus
+[1932.84] connect Wii kayak misalnya Google Drive
+[1934.52] atau OneDrive gitu ya. Nah, itu kan ee
+[1937.00] penyimpanannya ee di server gitu ya, di
+[1939.44] cloud. Nah, kalau kita menyimpannya
+[1941.68] aplikasi kita menggunakan ee database
+[1943.96] lokal itu dia kita bisa gunakan tanpa
+[1947.28] koneksi internet gitu ya. Jadi, aplikasi
+[1949.20] kita bisa nyimpan data, keuangan kita,
+[1951.80] bisa nyimpan permainan kita, skor game
+[1954.40] kita gitu ya, tanpa harus ee terhubung
+[1957.52] dengan Wi-Fi atau internet.
+[1960.48] Nah, kemudian ee kecepatannya juga
+[1963.40] lumayan cepat ya kalau misalnya kita
+[1965.04] menggunakan database lokal gitu. Karena
+[1967.60] kalau misalnya ee karena kita enggak
+[1970.80] perlu connect internet, Wi-Fi atau ya
+[1975.68] mengakses server gitu ya kan ee kecepat
+[1978.48] yang langsung simpan di telepon kita kan
+[1980.00] kita enggak bergantung pada kecepatan
+[1981.60] internet dan segala macam gitu. Jadi dia
+[1983.68] ya sudah baca datanya terus dia simpan
+[1985.72] datanya sudah secepat itu. Kemudian
+[1987.76] datanya tidak akan hilang kecuali
+[1989.80] aplikasinya diinstal dan instal atau
+[1991.84] direset gitu ya teman-teman. Nah itu
+[1993.76] keuntungan database lokal. Nah database
+[1997.40] lokal inilah kalau misalnya di ketika
+[1999.96] kita menggunakan MIT App Inventor itu
+[2003.24] sebutannya Tiny DB gitu ya. Nah tiny
+[2006.20] artinya kecil ya. DB itu singkatan dari
+[2008.48] database ya. database yaitu tadi tempat
+[2011.12] penyimpanan ee apa tuh namanya? data
+[2013.28] yang jangka panjang. Nah, database
+[2016.52] ringan yang sangat kuat untuk menyimpan
+[2018.56] teks, angka, dan list. Jadi, dia apa tuh
+[2020.60] namanya? Ee menyimpan teks, angka, dan
+[2023.64] juga list. Nah, selanjutnya kita sudah
+[2027.76] tahu nih tentang Tiny DB gitu kan ya.
+[2030.36] Tiny DB itu dia sifatnya bekerja di
+[2033.36] belakang layar yang artinya dia enggak
+[2035.24] kelihatan, enggak ada tombol yang
+[2037.24] menyatakan bahwa kita mau menyimpan dia
+[2039.04] ke database, enggak ada. Jadi kita ee
+[2041.72] apa itu aplikasinya akan langsung gitu
+[2044.12] ya, akan langsung nyimpan di database
+[2046.80] gitu, langsung di belakang layar tanpa
+[2049.00] kita harus ngeklik apapun. Nah, jadi ee
+[2052.48] apa itu namanya?
+[2055.76] Kalau kita lihat di sini, nah ini ya
+[2057.68] teman-teman ya. ketika kita desain
+[2059.40] website gitu kan ya, terus kita harus
+[2061.16] gear komponennya dari kiri gitu ya, dari
+[2063.52] list komponen yang ada di MITF Inventor
+[2066.40] kan kita ngeklik misalnya textbox untuk
+[2068.48] input terus itu button dan label segala
+[2071.12] macam ya. Tiny DB-nya itu enggak akan
+[2073.16] masuk ke dalam layar HP-nya gitu ya.
+[2075.16] Tiny DB-nya itu akan ada di bawah gitu
+[2077.12] ya. Tulisannya ada nonvisible component.
+[2079.28] Jadi dia komponennya ada di HP itu,
+[2081.40] komponennya ada di aplikasi kita, namun
+[2083.56] dia ee tidak terlihat gitu dan kita
+[2086.16] tidak bisa otak-atik, tapi kita bisa
+[2088.00] tambahkan ee kodenya.
+[2092.96] Nah, Tiny DB ini dia menyimpan datanya
+[2096.40] itu menggunakan yang namanya tag
+[2100.04] store. Jadi, kalau misalnya kita
+[2101.72] menggunakan variabel kan kita cuman ee
+[2104.48] membuat nama variabel globalnya, terus
+[2106.92] itu kita simpan isinya apa gitu ya. Nah,
+[2109.20] kalau misalnya kita menggunakan tiny DB
+[2112.12] itu dia ada pasangannya gitu ya.
+[2114.64] Pasangan apa? Dia ada yang menggunakan
+[2116.36] namanya tag, terus itu ada namanya value
+[2118.68] to store. Value berarti data atau nilai.
+[2121.92] To store itu berarti yang ingin
+[2123.24] disimpan. Berarti value to store ini
+[2125.32] artinya
+[2126.96] data yang mau disimpan. Nah, ini kita
+[2129.12] kasih tag, kita kasih tanda ya.
+[2131.40] Maksudnya gimana? Coba kita lanjut dulu.
+[2134.00] Tek itu adalah label atau pengenal atau
+[2136.92] judul dari datamu. Biasanya itu dia
+[2139.80] pasti tipenya itu berupa teks ya, string
+[2141.92] ya. Misalnya tag-nya nama pemain, skor
+[2144.64] tertinggi kalau misalnya game ini ya,
+[2146.60] nama pemainnya siapa? Di dalam ee apa
+[2149.24] tuh namanya? Ee dalam aplikasi ini kita
+[2151.44] menyimpan nama pemainnya terus skor
+[2153.48] tertinggi yang pernah dia mainkan tuh
+[2155.12] berapa? Terus level dia sekarang atau
+[2157.40] level dia sebelumnya itu level berapa
+[2159.72] gitu ya. Jadi dia menyimpan tiga data
+[2161.60] ini, itu kita kasih dulu tag dulu gitu
+[2163.64] ya. Nah, kemudian
+[2166.36] ee selain tag itu ada namanya value,
+[2169.00] value to store. Nilainya apa? Jadi nilai
+[2171.92] ini yang nanti kita simpan ke dalam
+[2173.96] tag-nya ini. Jadi misalnya nama pemain
+[2176.28] ee misalnya Rizki skor tertingginya 100,
+[2178.92] levelnya 1. Nah, jadi anggap aja T ini
+[2182.48] DB itu dia bisa menyimpan data ini semua
+[2185.72] dalam satu ee dalam satu ee apa tuh
+[2189.08] namanya? Tiny DB gitu ya. Nah, value to
+[2192.52] store tuh nilainya. Jadi bayangkan aja
+[2194.48] Ty DB ini tag sama value to store ini
+[2197.16] kayak misalnya kita punya lima jenis
+[2198.84] buku. Ada lima buku ya yang identikal
+[2201.20] sama persis. Tapi buku yang satu itu dia
+[2205.04] ee buku khusus untuk matematika. Yang
+[2207.28] satu untuk IPA, yang satu untuk ee
+[2209.76] fisika gitu ya atau biologi. Nah, jadi
+[2211.96] masing-masing beda. Tapi karena bukunya
+[2213.76] sama kita kan enggak tahu nih ini buku
+[2215.92] apa. Akhirnya di depan bukunya itu kita
+[2218.32] kasih nama gitu ya. Nah, namanya itu
+[2220.80] adalah tag-nya. Terus itu mata pelajaran
+[2223.56] yang kita simpan itu adalah value to
+[2225.24] store-nya. Kayak misalnya pelajaran
+[2227.80] matematika yang kita simpan di buku
+[2229.28] matematika gitu ya. Kan enggak mungkin
+[2230.92] nih kita tulis teksnya depannya ee apa
+[2233.72] namanya? Buku matematika tapi yang
+[2235.24] disimpan adalah pelajaran fisika atau
+[2236.96] bahasa Inggris kan enggak nyambung ya.
+[2238.92] Jadi ketika kita apa tag sama value to
+[2242.40] store-nya itu akan berhubungan ya itu
+[2245.28] ya. E ini kalau misalnya masih bingung
+[2247.04] anggap aja tag itu sebagai stiker gitu
+[2249.44] ya. Jadi kayak misalnya kita punya
+[2250.72] kotakem ee mainan gitu di gudang kita
+[2253.60] ada banyak kotak-kotak. Nah tulisan di
+[2256.24] luarnya ini yang oh ini ee apa tuh
+[2258.64] namanya? kotak ini untuk menyimpan
+[2260.60] mainan lama gitu ya. Nah, mainan yang
+[2263.16] ada di dalam kotak itu disebut dengan
+[2265.44] value-nya tadi, nilainya gitu ya yang
+[2267.24] disimpan.
+[2268.76] Nah, ini yang harus ee penting harus
+[2271.20] kita ketahui ketika kita membuat tag ya,
+[2273.64] membuat tiny DB. Pastikan ketika kita
+[2276.16] membuat tag itu dia harus unik. Jadi,
+[2278.64] kita enggak boleh membuat tag yang sama
+[2281.52] untuk menyimpan data yang berbeda jenis.
+[2284.48] Jadi kalau kamu lupa nama tag yang kamu
+[2287.08] buat, kita tidak akan bisa apa memanggil
+[2290.36] datanya tadi gitu ya. Misalnya kita lupa
+[2292.56] eh tadi kita nyimpan nama pemainnya itu
+[2295.12] di nama tag-nya apa ya. Nah, itu jangan
+[2296.72] sampai lupa gitu ya. Silakan dilihat
+[2298.28] lagi, diperbaiki lagi dan intinya dia
+[2300.80] harus unik gitu ya. Jangan sampai lupa.
+[2302.88] Maksudnya unik ya jangan sampai ada dua
+[2304.72] nama tag yang sama gitu ya. Kayak
+[2306.72] misalnya kotak mainan lama sama kotak
+[2310.00] mainan baru tapi kita tulisnya cuman
+[2311.52] kotak mainan aja. Nah, dia itu bingung
+[2313.20] kita mau ngambil mainan yang lama atau
+[2315.64] mainan yang baru gitu kan. Kot tag-nya
+[2318.04] namanya sama. Jadi jangan sampai kita
+[2319.88] melakukan kesalahan tersebut. Oke,
+[2322.32] lanjut. Sekarang
+[2326.36] cara kita men kalau misalnya dalam MITP
+[2329.12] Inventor cara kita menyimpan bareng ke
+[2331.20] dalam bok atau men dalam laci tadi itu
+[2333.56] ya ke dalam Tiny DB-nya itu ya kita
+[2336.80] harus menggunakan perintah ya bloknya
+[2338.88] biasanya warnanya ungu ya teman-teman
+[2340.60] namanya call tiny db 1 ya kan karena
+[2344.88] database apa tiny db-nya kan bisa banyak
+[2347.04] ya jadi di sini kita tiny db satu nah
+[2349.88] perintahnya namanya store valu itu
+[2351.80] berarti untuk menyimpan nilai store.
+[2354.16] Store itu kan menyimpan gitu ya sama
+[2356.24] value nilai. Nah, biasa bentuknya
+[2358.08] seperti ini. Call T di DP1 store value.
+[2361.96] Nah, tag-nya kita kasih tag-nya. Habis
+[2363.84] tag kita tambahin eh box tag di sini ya.
+[2366.92] Kita kasih tulisannya nih nih score
+[2369.52] game. Nah, ini enggak boleh pakai spasi
+[2371.60] ya. Bagusnya jangan pakai spasi untuk
+[2373.20] ngasih teks. Sama kayak kita mengasih
+[2374.80] nama variabel gitu ya. Terus value to
+[2377.08] store-nya berapa kita kasih nilainya?
+[2378.44] Mungkin kalau misalnya kita mau nyimpan
+[2380.00] dia integer, maka kita tampilnya teks di
+[2382.60] sini. Kalau misalnya mau nyimpan teks
+[2384.20] juga bisa. Berarti di sini tinggal kita
+[2386.52] ganti menggunakan ee apa itu namanya?
+[2389.36] Menggunakan teks seperti itu.
+[2392.92] Oke, lanjut.
+[2397.40] Nah, ketika kita menggunakan store value
+[2400.44] gitu ya, pastikan
+[2402.48] ee apa itu namanya? Jenisnya juga benar
+[2406.04] ya. Jadi kayak misalnya kalau misalnya
+[2407.64] dia teks berarti kita ngambil box yang
+[2409.72] warna pink gitu ya yang ee apa tu
+[2412.36] namanya yang berarti dia kita mau
+[2413.60] menyimpan teks. Tapi kalau misalnya dia
+[2415.28] angka pakainya blok biru yang dari
+[2417.04] variabel-angka gitu, yang dari variabel.
+[2419.92] Nah, ketika kita save ya ee itu sudah
+[2423.28] pasti tersimpan di memori HP gitu ya.
+[2425.88] Kalau kita enggak hapus, maka dia akan
+[2427.52] otomatis akan selalu tersimpan di situ.
+[2430.64] Nah, kalau kita sudah menyimpan datanya,
+[2434.24] sekarang kita mau mengambil datanya gitu
+[2437.52] ya. Kita mau ngasih lihat loh, wah tadi
+[2439.60] skornya berapa ya yang sudah kita
+[2441.00] simpan. Nah, untuk memanggil ya
+[2443.64] menampilkan
+[2445.40] data yang ada di Tiny DB, kita pakai get
+[2448.64] value sekarang. Jadi kalau yang
+[2450.04] sebelumnya itu store value, sekarang
+[2451.92] kita get value-nya, kita ambil. Nah,
+[2454.76] bentuknya seperti ini kurang lebih. Set
+[2457.44] label score. Jadi, kita mau nyimpan
+[2459.08] datanya itu di mana? Entah kita mau
+[2460.44] nyimpan di label kah atau mau langsung
+[2461.96] di dalam textbox kah itu bebas. Nah,
+[2464.48] kita set dulu labelnya. Kalau kita taruh
+[2466.48] di label terus kita set dia ke dalam
+[2469.72] kita panggil nama tiny db-nya ya, tiny
+[2471.80] db 1. Terus kita klik get value maka di
+[2474.76] sini otomatis akan mengambil scornya,
+[2477.04] mengambil nilainya.
+[2479.32] Nah, terus di dalam Ty DB ada loh yang
+[2482.56] namanya value if not depth. Jadi ketika
+[2486.00] kita eh misalnya nih kita mau mencoba
+[2490.80] mengambil data yang nama TK Score game,
+[2493.84] tapi ternyata ini pemainnya baru pertama
+[2496.76] kali main nih. Jadi datanya kosong. Nah,
+[2499.24] daripada ee aplikasinya error karena
+[2502.20] datanya kosong, nah, kita bisa
+[2504.40] menggunakan nilai default ya, nilai
+[2507.92] nilai ee darurat lah istilahnya ya.
+[2510.92] Maksud nilai darurat ini ya berarti dia
+[2513.20] ee kalau dia pertama main ya berarti
+[2515.00] akan nilainya akan selalu nol gitu kalau
+[2517.32] misalnya dia kosong. Tapi kalau misalnya
+[2519.04] dia udah ada skor game-nya misalnya dia
+[2520.64] sudah main ketiga kalinya skor game-nya
+[2522.72] 100 gitu ya. Oh, berarti ee teks teks
+[2526.12] score game itu value-nya 100. Tapi kalau
+[2528.44] misalnya 100nya enggak ada, dia akan
+[2529.96] otomatis ngisi jadi nol gitu ya. Jadi
+[2533.48] ketika kita menggunakan ini dib jangan
+[2535.40] sampai datanya itu kosong ya, value-nya
+[2538.16] itu kosong selalu harus diisi entah itu
+[2540.84] nol atau petik 20 gitu ya. Kalau teks
+[2543.96] yang penting dia harus ada datanya ya
+[2546.08] harus menyimpan sesuatu.
+[2560.32] Nah, sekarang teman-teman kita akan
+[2563.08] membahas cara mengelola data yang aman
+[2566.88] dan kita mau membahas juga tentang CRUD
+[2569.40] atau crud ya yang ada di dalam MIT App
+[2571.80] Inventor dan Tiny DB. Nah, sebelumnya
+[2574.88] kita bahas dulu apa sih CRUD itu atau
+[2577.36] CRU ya. Nah, CRU itu adalah singkatan
+[2580.76] yang ada di dalam dunia pemrograman ya
+[2582.60] dan di dalam khususnya di bagian
+[2585.44] database ya, database engineering yang
+[2588.20] eh jadi CRU itu singkatan ya
+[2589.56] teman-teman. Singkatannya itu dari apa
+[2591.08] nih? C itu adalah singkatan dari create.
+[2594.48] Jadi ketika kita mau membuat sesuatu itu
+[2597.44] eh C ya kita pakainya C create membuat
+[2600.44] data atau membuat sesuatu yang baru. R
+[2603.12] itu singkatan dari read atau membaca
+[2605.40] membaca data. U itu update berarti kita
+[2608.88] mau memperbarui data yang sudah ada yang
+[2611.04] sudah kita buat dan delete untuk
+[2613.84] menghapus data gitu ya. Oke. Nah,
+[2616.96] sekarang coba kita bahas dari C sama
+[2619.16] R-nya dulu. Create sama read. Nah, dari
+[2623.20] sebelumnya ya video sebelumnya kita juga
+[2625.48] sudah membahas tentang create sama read.
+[2628.28] Nah, ketika kita menggunakan store value
+[2630.48] itu artinya kita ketika kita menggunakan
+[2632.72] tiny DB dan kita mau ngambil isinya itu
+[2636.00] kan kita pakai tiny db. store value.
+[2638.92] Berarti kita mau menyimpan membuat data
+[2641.96] yang belum pernah kita buat sebelumnya.
+[2644.28] Nah, maka itu store value apa? store
+[2647.12] value itu sama aja dengan create. Nah,
+[2650.32] kalau get value berarti kita mau ngambil
+[2652.44] value-nya, mau memperlihatkan nilainya,
+[2654.40] isinya apa sih yang ada di dalam tag
+[2656.32] itu. Nah, itu juga itu disebut dengan
+[2658.76] read membaca data gitu ya. Nah, kalau U
+[2663.24] itu artinya update memperbarui data.
+[2666.00] Nah, misalnya nih kita udah kita main
+[2668.00] game misalnya skor tertinggi kita 100,
+[2670.52] tapi karena kita mainin-mainin lagi kan
+[2672.12] kita harus update dong high score-nya
+[2673.84] kita. Nah, 100 menjadi 500 itu kita
+[2677.92] perlu menggunakan yang namanya update
+[2680.04] value.
+[2681.64] Nah, apakah ada blok khusus bernama
+[2684.20] update value? Kan kita sebelumnya sudah
+[2686.00] bahas store value untuk menyimpan, get
+[2688.56] untuk mengambil. Tapi kalau untuk
+[2690.24] update, apakah ada data apa ada bloknya?
+[2692.92] Nah, bloknya itu enggak ada ya,
+[2694.08] Teman-teman. Enggak ada. Kalau kita cari
+[2696.04] update value itu enggak ada. Kenapa
+[2697.88] enggak ada?
+[2699.44] Karena kalau misalnya kita meng-update
+[2702.00] itu kita tinggal pakai perintah yang
+[2705.32] namanya store value lagi, tapi tag-nya
+[2708.88] tag yang sama yang sudah ada gitu ya.
+[2710.88] Karena kita mau mengganti, mau
+[2712.40] meng-update gitu. Karena tadi kita
+[2714.48] menyimpan itu sama dengan store. Nah,
+[2717.00] jadi apa tuh namanya? Perintahnya pun
+[2719.44] juga sama. Ingat yang harus diperhatikan
+[2722.20] di sini tag-nya itu harus sama persis.
+[2724.96] Huruf besar sama kecilnya itu harus sama
+[2727.00] persis. Jadi T ini DB itu bisa menimpa
+[2730.76] data yang lama dengan data yang baru.
+[2734.24] Oke, sekarang anggap aja misalnya gini,
+[2738.52] kalau update itu kenapa si update ini
+[2740.80] dia perintahnya sama dengan menyimpan?
+[2743.80] Oke, bayangkan kita punya kardus ya,
+[2746.20] kardus. Terus itu kardusnya tag-nya eh
+[2749.40] atau namanya itu level gitu ya. Nah,
+[2752.20] ketika kita melakukan update itu sama
+[2754.28] aja dengan kita melakukan override atau
+[2757.08] menimpa data. Jadi, kita punya data gitu
+[2759.80] ya, misalnya kardus. Kardusnya ini
+[2762.48] isinya itu pas di pagi hari ee menyimpan
+[2765.80] kardus ini menyimpan angka satu gitu.
+[2767.40] Anggap aja kita punya kardus fisik,
+[2769.52] terus itu di dalamnya ada balon huruf
+[2771.40] angka satu. Nah, di sore hari kita mau
+[2773.92] mengubah kita punya kita mau menyimpan
+[2776.48] balon huruf dua ya angka dua gitu ke
+[2779.72] dalam kardus yang sama. Nah, karena
+[2782.60] enggak cukup ya, karena kardusnya itu
+[2784.92] hanya bisa menyimpan satu ee benda aja,
+[2788.20] maka angka satu yang kita simpan di pagi
+[2791.16] hari itu akan dibuang dan digantikan
+[2794.08] dengan angka dua. Jadi, overright kita
+[2796.96] mengganti datanya ya, menimpa karah jadi
+[2800.96] yang angka satu itu otomatis dibuang
+[2803.56] sama programnya terus diganti jadi angka
+[2805.96] dua. Intinya intinya seperti itu ya. dia
+[2807.88] akan mengganti. Nah, ini sekali lagi
+[2811.00] penting jangan sampai ada typo ya ketika
+[2813.52] kita menggunakan apa memanggil tagnya
+[2815.80] kalau kita mau mengoverride. Ketika
+[2818.00] misalnya kita punya ee tag gitu ya, kita
+[2820.76] punya tadi DB terus itu tag-nya itu
+[2823.16] skore S-nya besar tapi kita mau
+[2825.48] melakukan update tapi kita salah nih
+[2827.32] tag-nya kita pakai score-nya S-nya
+[2829.68] kecil. Nah, kalau kita punya Tiny DB
+[2833.44] dengan ee apa tu namanya? tag-nya
+[2835.40] berbeda seperti ini. Ini dia dianggap
+[2837.36] sebagai dua tiny baby. Jadi dia skor
+[2840.08] kecil ini S kecil sama skor S-nya ee
+[2843.56] skornya 2 ini itu dia eh S-nya besar sor
+[2847.64] itu dia dianggap jadi dua tiny DB dua
+[2851.00] database yang berbeda gitu ya. Jadi ee
+[2855.04] apa teranya? Kalau perhatikan kalau
+[2856.92] misalnya kita mau mengupdate atau
+[2858.40] mengubah sesuatu ya itu dia tetap ee
+[2862.20] namanya tag-nya jangan sampai salah.
+[2865.16] Oke, kita lanjut dulu. Nah, sekarang
+[2868.76] kalau misalnya di dalam ee apa tuh
+[2871.32] namanya? Bentuknya di app inventor tuh
+[2872.84] gimana nih? Sama ya. Call tiny DB store
+[2875.64] value. Kita tetap sama kalau mau
+[2877.16] menyimpan kita pakai store value terus
+[2879.40] kita kasih tag ya, terus kita kasih
+[2881.76] value-nya eh berapa. Nah, kalau misalnya
+[2884.36] kita mau mengupdate sama juga. Jadi
+[2885.96] kalau misalnya di sini awalnya 100 maka
+[2887.80] di sini akan terapis jadi 100
+[2891.04] kayak gitu.
+[2893.40] Nah,
+[2896.80] nah sekarang kita mau membahas tentang
+[2899.28] delete atau menghapus data. Kalau kita
+[2901.76] mau menghapus data, kapan kita perlu
+[2903.76] menghapus data? Ya, kayak misalnya
+[2905.64] aplikasi kita ee biar enggak kebanyakan
+[2907.92] kapan sih ee tidak kebanyakan memorinya,
+[2910.52] kapan sih kita harus menghapus data?
+[2911.84] Misalnya ketika kita log akun yang sudah
+[2915.24] diiloginin. Terus misalnya kita punya
+[2917.80] button yang dia bisa mer-reset skore
+[2919.84] atau merreset data atau ketika kita
+[2922.20] menghapus histori ee histori pencarian
+[2925.00] gitu ya. Misalnya nih dalam konteks
+[2926.92] misalnya kita cari cara mm makan sushi
+[2930.32] di sushi TI gitu misalnya kan itu kayak
+[2932.60] malu banget tuh misalnya gitu ya. Nah
+[2935.00] kita mau menghapus history maka data
+[2937.32] yang ada itu harus dihapus gitu. sama
+[2939.48] juga dengan app Inventor. Nah, ketika
+[2942.20] kita menghapus
+[2944.68] itu kita agak berbeda ya, kayak kita
+[2946.44] meng-update nilai ee kita ee untuk
+[2949.92] menghapus itu kita bisa juga menggunakan
+[2952.04] sama dengan menyimpan dan juga
+[2953.84] meng-update. Jadi pakai store value.
+[2956.44] Nah, kita bisa store value-nya yang
+[2958.56] awalnya kita panggil tek set apa tuh
+[2960.84] namanya? Highest score yang awalnya 100.
+[2963.88] Nah, ini kita ubah jadi nol gitu. Nah,
+[2966.76] tapi kalau misalnya kita menggunakan
+[2968.92] cara yang tadi ya, eh set value-nya jadi
+[2971.04] nol itu kita enggak menghapus
+[2973.32] database-nya kita itu bukan menghapus,
+[2975.16] kita hanya ee mengosongkan aja nilainya.
+[2978.36] Nah, untuk benar-benar nghapus data yang
+[2981.40] dengan tag yang itu ya, misalnya high
+[2982.96] score, kita mau menghapus tuh high score
+[2985.00] misalnya kita nama pemainnya ee apa
+[2987.52] namanya? Kak Yazid, terus itu high
+[2989.36] scornya 500. Nah, kita mau menghapus
+[2991.52] data, semua data yang terkait dengan Kak
+[2993.56] Yazid, maka kita jangan pakai set value
+[2997.04] lagi. Nah, kita pakainya apa? Kita
+[2999.20] pakainya
+[3001.04] delete. Nah, di sini untuk delete itu
+[3004.60] kita pakai yang namanya clear tag. Nah,
+[3007.32] clear tag itu berarti menghapus ya
+[3009.32] tag-nya. Kalau misalnya tag-nya kita
+[3011.96] hapus, maka otomatis value-nya pun akan
+[3014.72] dihapus juga gitu ya. Jadi, selain ee
+[3017.88] apa tuh namanya? select eh set value
+[3021.28] atau call value ini eh apa itu namanya
+[3023.48] kita pakainya clear tag juga gitu ya.
+[3026.20] Nah, cukup masukin nama clear tag terus
+[3028.40] masukin apa yang mau dihapus. Nih,
+[3030.68] misalnya clear tag-nya nama siswa. Kalau
+[3033.88] udah kita mau ada label yang menampaikan
+[3036.76] oh akunnya sudah dihapus gitu ya. Ini
+[3038.92] contoh di App Inventor.
+[3050.68] Ketika kita menyimpan data itu apa atau
+[3053.60] ee kita membuat menggunakan Ting DB.
+[3055.84] Jangan lupa ya teman-teman ketika kita
+[3057.60] membuat sesuatu kita harus buat dulu
+[3059.48] flow chart-nya. Kita harus pastikan
+[3061.72] flow-nya itu benar aplikasinya. Nah,
+[3064.60] jadi ee apa tuh namanya? sebelum
+[3066.76] aplikasinya disentuh pengguna, ee
+[3069.04] pastikan kita alur aplikasinya dari awal
+[3071.72] dibuka sampai aplikasinya ditutup tuh
+[3073.64] udah ada flowchart-nya udah ada. Nah,
+[3076.12] ketika kita ee yang paling penting itu
+[3079.04] ee ketika aplikasinya dibuka ya yang
+[3081.28] paling awal. Jadi kalau screen 1 do
+[3083.60] initialize ketika HP-nya pertama kali
+[3085.44] nyala atau aplikasinya pertama kali
+[3086.96] dibuka itu flow-nya apa aja gitu ya.
+[3089.60] Misalnya
+[3091.52] ee misalnya nih di sini kita lihat kalau
+[3094.56] misalnya screen satu dibuka itu aplikasi
+[3097.80] akan ngelihat database-nya. Dia akan
+[3100.80] ngelihat nih apakah ada skor, apakah ada
+[3103.52] Tiny DB yang menyimpan skor gitu ya.
+[3106.60] Kalau misalnya ada, maka kita langsung
+[3109.36] update label skor-nya berdasarkan data
+[3111.68] yang kita punya ini. Kalau misalnya
+[3114.04] enggak ada, maka angkanya akan by
+[3116.24] default dia akan nol, Gu, ya. Jadi
+[3118.44] pastikan aplikasinya itu dari awal udah
+[3120.88] nge-update. Jangan sampai pas kita klik
+[3122.56] update dulu baru nanti nilainya e apa e
+[3124.96] aplikasinya mengupdate gitu ya. Jadi ee
+[3127.64] harusnya dari awal udah kita set. Oke,
+[3131.00] lanjut dulu nih. Misalnya contohnya
+[3133.52] kodenya seperti ini. Ketika screen 1 itu
+[3135.96] diinitialize atau mulai kita mau tampil
+[3139.60] score misalnya ini kita bikin game di
+[3141.08] atas itu ada total score, highest
+[3142.72] score-nya. Nah, ini kita kasih call ini
+[3145.72] DB get value terus kita kasih tag-nya
+[3147.96] skor game-nya berapa. Nah, di sini di
+[3150.64] sini lihat value-nya itu enggak cuman
+[3153.56] ini ya nama ininya bukan value ya, bukan
+[3157.28] value tapi value tag if not there. Jadi
+[3159.36] kalau misalnya enggak ada data yang ada
+[3161.44] di dalam tiny DB1 maka dia akan otomatis
+[3164.48] ngasih nol. Tapi kalau misalnya di sini
+[3166.40] ternyata value-nya ada 100 maka di sini
+[3168.56] akan otomatis terisi 100. Oke.
+[3172.12] Nah, sekarang kalau misalnya kita
+[3174.52] nyimpan data di dalam menggunakan Ting
+[3177.00] DB di HP kita, kira-kira aman enggak ya?
+[3179.36] Nah, jawabannya sangat aman karena ee
+[3183.08] MIT App Inventor itu dia menerapkan
+[3184.96] sesuatu yang namanya sandboxing. Apa sih
+[3187.56] sandbox itu? Nah, sandbox itu bayangkan
+[3190.80] kita kalian pernah enggak kalau misalnya
+[3193.24] ke taman bermain kadang kan kalau kita
+[3196.08] di taman bermain ada misalnya area
+[3197.76] khusus untuk pasir sisanya mungkin
+[3199.72] serumput-rumput atau sisanya mungkin
+[3201.80] kayak area ee yang sudah dikasih semen
+[3205.24] gitu ya. Nah, kotak pasir itu sebutannya
+[3208.52] sandbox. Jadi kita hanya bisa bermain
+[3210.52] kayak mobil-mobilan yang gali-galian itu
+[3212.96] di kotak pasir itu. Jadi sama persis
+[3215.00] gitu ya. Area khusus. area khusus
+[3218.16] intinya sandbox. Nah, kalau misalnya di
+[3220.36] dalam konteks aplikasi sandbox itu dia
+[3222.64] membuatkan area khusus atau tempat
+[3224.56] khusus yang nanti dia menyimpan aplikasi
+[3227.28] kita. Jadi, data apa tu namanya aplikasi
+[3230.00] lain misalnya aplikasi Instagram ee atau
+[3232.88] aplikasi apapun dia enggak akan
+[3234.52] terpengaruh gitu ya karena dia punya
+[3236.92] area khusus, sandbox khusus gitu.
+[3240.52] Nah, jadi dia sangat aman. Nah, tapi
+[3243.32] kalau misalnya dia ee karena dia di e
+[3246.16] apa tuh namanya? Di area khusus itu
+[3247.96] kalau misalnya ada orang yang masuk ke
+[3249.56] area khusus itu maksudnya itu kayak
+[3251.28] orangnya buka aplikasi kita. Nah,
+[3253.44] berarti dia bisa melihat semua data yang
+[3255.48] kita masukin di sandbox itu ya. Nah,
+[3258.32] makanya kalau misalnya datanya sensitif
+[3260.28] gitu ya, kayak menyimpan data-data
+[3261.60] keuangan atau data catatan-catatan
+[3263.64] pribadi itu baiknya selalu buatkan
+[3267.08] password ya. Kalau misalnya kita membuat
+[3269.08] aplikasi yang ada ee menyimpan data
+[3271.88] digital kita, data privied kita. Nah,
+[3274.76] ini
+[3276.68] bisa kalian buat.
+[3289.64] Oke, untuk ee menghitung kehadiran
+[3291.72] kalian silakan buat sebuah aplikasi
+[3294.84] untuk Tiny DB ya. Nah, di mana
+[3296.92] aplikasinya itu dia ee apa tuh namanya?
+[3299.96] Ada label di sini ya, ada label sama
+[3301.92] textbox. Nah, dari textbox-nya ini kita
+[3304.52] mau menyimpan
+[3306.36] ke dalam tiny DB. Terus itu kita bisa
+[3309.12] ngebaca. Berarti kalau ngebaca dia ada
+[3311.20] output-nya di bawah sini ada label yang
+[3312.80] menyampilkan. Terus dia bisa menghapus
+[3315.44] isinya gitu ya. coba ee kerjakan terus
+[3319.52] itu kumpulkan aplikasinya di kotak di
+[3321.44] bawah ini.

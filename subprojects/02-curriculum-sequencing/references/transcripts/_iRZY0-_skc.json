@@ -1,0 +1,2047 @@
+[
+  {
+    "text": "belum dijelas seperti yang sudah",
+    "start": 0.0,
+    "duration": 3.52
+  },
+  {
+    "text": "dijelaskan sebelumnya, nestedate",
+    "start": 1.319,
+    "duration": 4.48
+  },
+  {
+    "text": "condition itu bisa membuat program kita",
+    "start": 3.52,
+    "duration": 4.399
+  },
+  {
+    "text": "more complicated dengan if yang",
+    "start": 5.799,
+    "duration": 3.601
+  },
+  {
+    "text": "bercabang, bercabang, bercabang, dan",
+    "start": 7.919,
+    "duration": 3.72
+  },
+  {
+    "text": "bercabang ya, yang membuat program kita",
+    "start": 9.4,
+    "duration": 5.72
+  },
+  {
+    "text": "eh jadi panjang ke kanan gitu ya. Nah,",
+    "start": 11.639,
+    "duration": 6.761
+  },
+  {
+    "text": "supaya nest eh nested condition tadi",
+    "start": 15.12,
+    "duration": 5.72
+  },
+  {
+    "text": "tidak terlalu panjang itu kita bisa",
+    "start": 18.4,
+    "duration": 4.44
+  },
+  {
+    "text": "menggunakan trik yang kedua yaitu",
+    "start": 20.84,
+    "duration": 4.04
+  },
+  {
+    "text": "menggunakan logical operator atau",
+    "start": 22.84,
+    "duration": 4.839
+  },
+  {
+    "text": "operator logika. Nah, kita bahas yuk,",
+    "start": 24.88,
+    "duration": 6.76
+  },
+  {
+    "text": "Teman-teman. Nah, untuk logical operator",
+    "start": 27.679,
+    "duration": 7.281
+  },
+  {
+    "text": "itu di dalam Python diimplementasikan",
+    "start": 31.64,
+    "duration": 9.12
+  },
+  {
+    "text": "dengan tiga ini. N, or, sama not. N itu",
+    "start": 34.96,
+    "duration": 11.119
+  },
+  {
+    "text": "artinya dan or tidak. Eh, sori. N itu",
+    "start": 40.76,
+    "duration": 10.279
+  },
+  {
+    "text": "artinya, or itu artinya dan, ornya atau",
+    "start": 46.079,
+    "duration": 6.401
+  },
+  {
+    "text": "dan not itu artinya tidak, ya,",
+    "start": 51.039,
+    "duration": 3.641
+  },
+  {
+    "text": "Teman-teman. Nah, tiga ini disebut",
+    "start": 52.48,
+    "duration": 4.48
+  },
+  {
+    "text": "dengan logical operator. Untuk",
+    "start": 54.68,
+    "duration": 4.519
+  },
+  {
+    "text": "pengertiannya sendiri, logical operator",
+    "start": 56.96,
+    "duration": 5.36
+  },
+  {
+    "text": "itu membantu program membuat keputusan",
+    "start": 59.199,
+    "duration": 5.521
+  },
+  {
+    "text": "atau condition, ya, membuat kondisi yang",
+    "start": 62.32,
+    "duration": 4.479
+  },
+  {
+    "text": "jauh lebih kompleks. Jadi, sebelumnya",
+    "start": 64.72,
+    "duration": 3.68
+  },
+  {
+    "text": "kalau kita lihat condition yang",
+    "start": 66.799,
+    "duration": 5.32
+  },
+  {
+    "text": "sebelumnya kan if kita bisa login dengan",
+    "start": 68.4,
+    "duration": 6.24
+  },
+  {
+    "text": "true kita, apakah dia terverifikasi,",
+    "start": 72.119,
+    "duration": 5.841
+  },
+  {
+    "text": "apakah balance-nya ee apakah uangnya",
+    "start": 74.64,
+    "duration": 4.88
+  },
+  {
+    "text": "lebih banyak dari harganya. Ini kalau",
+    "start": 77.96,
+    "duration": 3.64
+  },
+  {
+    "text": "misalnya kita mau membeli sebuah item",
+    "start": 79.52,
+    "duration": 4.16
+  },
+  {
+    "text": "gitu ya. Nah, ini kan ada tiga kondisi",
+    "start": 81.6,
+    "duration": 5.04
+  },
+  {
+    "text": "yang harus benar semua gitu ya. Ee",
+    "start": 83.68,
+    "duration": 5.479
+  },
+  {
+    "text": "loginnya harus sudah benar, apakah dia",
+    "start": 86.64,
+    "duration": 4.68
+  },
+  {
+    "text": "sudah terverifikasi email gitu misalnya.",
+    "start": 89.159,
+    "duration": 5.32
+  },
+  {
+    "text": "Dan juga balance-nya lebih besar dari",
+    "start": 91.32,
+    "duration": 5.32
+  },
+  {
+    "text": "sama dengan eh harga yang mau dibeli",
+    "start": 94.479,
+    "duration": 4.841
+  },
+  {
+    "text": "gitu tadi. Nah, itu kita bisa",
+    "start": 96.64,
+    "duration": 5.72
+  },
+  {
+    "text": "menggunakan logical operators ini dalam",
+    "start": 99.32,
+    "duration": 5.52
+  },
+  {
+    "text": "satu baris instead of kita nulis dia ke",
+    "start": 102.36,
+    "duration": 5.719
+  },
+  {
+    "text": "tiga baris yang berbeda. Nah, kita bahas",
+    "start": 104.84,
+    "duration": 6.44
+  },
+  {
+    "text": "yuk satu-satu. Dimulai dari operator N.",
+    "start": 108.079,
+    "duration": 8.841
+  },
+  {
+    "text": "Nah, atau dan digunakan kalau kita mau",
+    "start": 111.28,
+    "duration": 9.36
+  },
+  {
+    "text": "kondisinya semuanya benar gitu ya.",
+    "start": 116.92,
+    "duration": 7.799
+  },
+  {
+    "text": "Misalnya contohnya ketika kita mau",
+    "start": 120.64,
+    "duration": 7.119
+  },
+  {
+    "text": "mengikuti sebuah lomba. Nah, ketika kita",
+    "start": 124.719,
+    "duration": 5.96
+  },
+  {
+    "text": "mau mengikuti semua lomba, ada tiga",
+    "start": 127.759,
+    "duration": 6.2
+  },
+  {
+    "text": "persyaratan yang harus kita ikutin. Yang",
+    "start": 130.679,
+    "duration": 5.041
+  },
+  {
+    "text": "pertama,",
+    "start": 133.959,
+    "duration": 4.0
+  },
+  {
+    "text": "peserta kita sebagai peserta harus sudah",
+    "start": 135.72,
+    "duration": 6.04
+  },
+  {
+    "text": "mendaftar dan kita harus sudah membayar",
+    "start": 137.959,
+    "duration": 8.081
+  },
+  {
+    "text": "uang pendaftaran dan juga kita harus",
+    "start": 141.76,
+    "duration": 6.559
+  },
+  {
+    "text": "sudah mengumpulkan karya yang mau kita",
+    "start": 146.04,
+    "duration": 5.08
+  },
+  {
+    "text": "lombakan, gitu ya. Jadi ada tiga",
+    "start": 148.319,
+    "duration": 5.92
+  },
+  {
+    "text": "persyaratan dan semuanya harus sudah",
+    "start": 151.12,
+    "duration": 6.399
+  },
+  {
+    "text": "diikutin atau sudah harus di e benar",
+    "start": 154.239,
+    "duration": 5.801
+  },
+  {
+    "text": "kondisinya gitu ya. Kalau salah satu aja",
+    "start": 157.519,
+    "duration": 4.761
+  },
+  {
+    "text": "belum, maka kita tidak bisa ikut",
+    "start": 160.04,
+    "duration": 4.52
+  },
+  {
+    "text": "kondisinya itu ya tadi teman-teman ya.",
+    "start": 162.28,
+    "duration": 4.4
+  },
+  {
+    "text": "Jadi kalau misalnya kita punya sebuah",
+    "start": 164.56,
+    "duration": 5.36
+  },
+  {
+    "text": "kondisi dan dia itu harus benar semua,",
+    "start": 166.68,
+    "duration": 5.559
+  },
+  {
+    "text": "berarti kita bisa menggunakan operator",
+    "start": 169.92,
+    "duration": 5.08
+  },
+  {
+    "text": "dan gitu ya. Sudah mendaftar, sudah",
+    "start": 172.239,
+    "duration": 4.441
+  },
+  {
+    "text": "membayar, sama sudah mengumpulkan",
+    "start": 175.0,
+    "duration": 5.28
+  },
+  {
+    "text": "karyanya gitu. Contoh bahasa Python-nya",
+    "start": 176.68,
+    "duration": 7.279
+  },
+  {
+    "text": "seperti ini. Nah, seperti biasa kita",
+    "start": 180.28,
+    "duration": 7.76
+  },
+  {
+    "text": "deklarasikan dulu eh variabelnya. Tiga",
+    "start": 183.959,
+    "duration": 6.441
+  },
+  {
+    "text": "variabel di atasnya. Yang pertama apakah",
+    "start": 188.04,
+    "duration": 4.839
+  },
+  {
+    "text": "dia sudah mendaftar? Apakah dia sudah",
+    "start": 190.4,
+    "duration": 5.8
+  },
+  {
+    "text": "membayar? Apakah dia sudah submit",
+    "start": 192.879,
+    "duration": 6.72
+  },
+  {
+    "text": "project-nya gitu ya. Kondisinya. Nah,",
+    "start": 196.2,
+    "duration": 5.399
+  },
+  {
+    "text": "kondisinya itu kita tidak perlu lagi ya",
+    "start": 199.599,
+    "duration": 4.481
+  },
+  {
+    "text": "mengetik seperti nestedate condition",
+    "start": 201.599,
+    "duration": 5.64
+  },
+  {
+    "text": "yang sebelumnya. if registered titik du",
+    "start": 204.08,
+    "duration": 6.2
+  },
+  {
+    "text": "if paid titik du if submitted titik du",
+    "start": 207.239,
+    "duration": 5.481
+  },
+  {
+    "text": "enggak instead of itu kita bisa",
+    "start": 210.28,
+    "duration": 6.28
+  },
+  {
+    "text": "menggunakan done atau gitu ya dalam",
+    "start": 212.72,
+    "duration": 5.519
+  },
+  {
+    "text": "bahasa pemogan Python dan dia harus",
+    "start": 216.56,
+    "duration": 6.239
+  },
+  {
+    "text": "lower case semua ya nih if registered",
+    "start": 218.239,
+    "duration": 7.36
+  },
+  {
+    "text": "equals true. Jadi kalau misal ini ee",
+    "start": 222.799,
+    "duration": 4.44
+  },
+  {
+    "text": "tulisan ininya ya. Kalau misalnya",
+    "start": 225.599,
+    "duration": 3.2
+  },
+  {
+    "text": "teman-teman masih bingung yang seperti",
+    "start": 227.239,
+    "duration": 7.08
+  },
+  {
+    "text": "ini dia tulisan sebenarnya if registered",
+    "start": 228.799,
+    "duration": 11.08
+  },
+  {
+    "text": "sama eh registered sama dengan true dan",
+    "start": 234.319,
+    "duration": 10.521
+  },
+  {
+    "text": "n ya berarti n paid equals equal equals",
+    "start": 239.879,
+    "duration": 6.881
+  },
+  {
+    "text": "true",
+    "start": 244.84,
+    "duration": 4.959
+  },
+  {
+    "text": "and submitted",
+    "start": 246.76,
+    "duration": 5.96
+  },
+  {
+    "text": "equals equals true gitu ya. Karena kan",
+    "start": 249.799,
+    "duration": 5.241
+  },
+  {
+    "text": "eh dalam kondisi ketika kita membuat",
+    "start": 252.72,
+    "duration": 4.039
+  },
+  {
+    "text": "conditional kita harus menggunakan",
+    "start": 255.04,
+    "duration": 4.159
+  },
+  {
+    "text": "operator comparison ya. Nah, kalau",
+    "start": 256.759,
+    "duration": 4.6
+  },
+  {
+    "text": "misalnya tadi kalau misalnya nilainya",
+    "start": 259.199,
+    "duration": 4.041
+  },
+  {
+    "text": "true atau false aja itu kita bisa",
+    "start": 261.359,
+    "duration": 3.84
+  },
+  {
+    "text": "langsung menuliskannya seperti ini ya,",
+    "start": 263.24,
+    "duration": 4.64
+  },
+  {
+    "text": "Teman-teman. Nah,",
+    "start": 265.199,
+    "duration": 4.201
+  },
+  {
+    "text": "itu",
+    "start": 267.88,
+    "duration": 6.8
+  },
+  {
+    "text": "ee di sini if registered-nya benar",
+    "start": 269.4,
+    "duration": 6.84
+  },
+  {
+    "text": "dan",
+    "start": 274.68,
+    "duration": 3.92
+  },
+  {
+    "text": "paid-nya juga benar dan submittednya",
+    "start": 276.24,
+    "duration": 5.28
+  },
+  {
+    "text": "juga benar, maka di sini kita bisa",
+    "start": 278.6,
+    "duration": 5.48
+  },
+  {
+    "text": "langsung lihat. Berarti kalau misalnya",
+    "start": 281.52,
+    "duration": 5.32
+  },
+  {
+    "text": "benar semua kita langsung nge-print, oh",
+    "start": 284.08,
+    "duration": 5.24
+  },
+  {
+    "text": "berarti dia boleh ikut lomba. Tapi kalau",
+    "start": 286.84,
+    "duration": 4.24
+  },
+  {
+    "text": "misalnya salah satu aja yang ada yang",
+    "start": 289.32,
+    "duration": 4.2
+  },
+  {
+    "text": "salah misalnya registered-nya dia di",
+    "start": 291.08,
+    "duration": 5.88
+  },
+  {
+    "text": "sini kita tulis false maka kita langsung",
+    "start": 293.52,
+    "duration": 5.48
+  },
+  {
+    "text": "ee tulis belum bisa ikut lomba. Karena",
+    "start": 296.96,
+    "duration": 3.44
+  },
+  {
+    "text": "gimana dia mau ikut lomba kalau dia",
+    "start": 299.0,
+    "duration": 3.44
+  },
+  {
+    "text": "belum bayar atau belum mendaftar atau",
+    "start": 300.4,
+    "duration": 3.72
+  },
+  {
+    "text": "belum mengumpulkan apa yang mau dinilai",
+    "start": 302.44,
+    "duration": 5.44
+  },
+  {
+    "text": "atau dilombakan gitu ya. Nah, jadi untuk",
+    "start": 304.12,
+    "duration": 8.0
+  },
+  {
+    "text": "N itu dia menggantikan eh next if kalau",
+    "start": 307.88,
+    "duration": 6.2
+  },
+  {
+    "text": "misalnya dia harus benar semua seperti",
+    "start": 312.12,
+    "duration": 6.72
+  },
+  {
+    "text": "itu. Nah, mungkin untuk ee menggali",
+    "start": 314.08,
+    "duration": 6.6
+  },
+  {
+    "text": "lebih lanjut pemahaman teman-teman",
+    "start": 318.84,
+    "duration": 4.76
+  },
+  {
+    "text": "tentang logic n itu teman-teman boleh",
+    "start": 320.68,
+    "duration": 8.12
+  },
+  {
+    "text": "mengerjakan kuis berikut ini.",
+    "start": 323.6,
+    "duration": 8.039
+  },
+  {
+    "text": "Nah, teman-teman telah menyelesaikan",
+    "start": 328.8,
+    "duration": 5.839
+  },
+  {
+    "text": "pemahaman latihan soal tentang M.",
+    "start": 331.639,
+    "duration": 5.921
+  },
+  {
+    "text": "Setelah n logical operator yang kedua",
+    "start": 334.639,
+    "duration": 6.0
+  },
+  {
+    "text": "itu ada yang namanya or yang bahasa",
+    "start": 337.56,
+    "duration": 6.12
+  },
+  {
+    "text": "Indonesianya artinya atau ya or ini",
+    "start": 340.639,
+    "duration": 6.881
+  },
+  {
+    "text": "berbeda dengan n kebalikan dari n or",
+    "start": 343.68,
+    "duration": 9.04
+  },
+  {
+    "text": "digunakan kalau kita mau cukup salah",
+    "start": 347.52,
+    "duration": 7.48
+  },
+  {
+    "text": "satu kondisi aja yang benar maka dia",
+    "start": 352.72,
+    "duration": 4.68
+  },
+  {
+    "text": "sudah bisa jalan gitu kondisinya ya.",
+    "start": 355.0,
+    "duration": 4.16
+  },
+  {
+    "text": "Jadi kalau contohnya deh kita langsung",
+    "start": 357.4,
+    "duration": 4.56
+  },
+  {
+    "text": "ke contoh. Misalnya kita mau login ke",
+    "start": 359.16,
+    "duration": 5.039
+  },
+  {
+    "text": "Instagram. Kalau misalnya kita mau login",
+    "start": 361.96,
+    "duration": 4.639
+  },
+  {
+    "text": "ke Instagram kan kita bisa menggunakan",
+    "start": 364.199,
+    "duration": 5.201
+  },
+  {
+    "text": "email atau kita bisa menggunakan",
+    "start": 366.599,
+    "duration": 6.401
+  },
+  {
+    "text": "username Instagram kita atau kita bisa",
+    "start": 369.4,
+    "duration": 5.0
+  },
+  {
+    "text": "menggunakan nomor HP yang sudah",
+    "start": 373.0,
+    "duration": 3.52
+  },
+  {
+    "text": "terdaftar. Jadi sebenarnya kita enggak",
+    "start": 374.4,
+    "duration": 4.639
+  },
+  {
+    "text": "harus ee login menggunakan email user",
+    "start": 376.52,
+    "duration": 4.799
+  },
+  {
+    "text": "dan nomor HP ya. Kecuali kita pada saat",
+    "start": 379.039,
+    "duration": 5.0
+  },
+  {
+    "text": "ee sign in atau apa mendaftar gitu ya.",
+    "start": 381.319,
+    "duration": 4.561
+  },
+  {
+    "text": "Tapi kalau misalnya login karena kita",
+    "start": 384.039,
+    "duration": 3.56
+  },
+  {
+    "text": "sebelumnya sudah mendaftarkan tiga hal",
+    "start": 385.88,
+    "duration": 3.4
+  },
+  {
+    "text": "tersebut, kita bisa memilih nih salah",
+    "start": 387.599,
+    "duration": 3.521
+  },
+  {
+    "text": "satu aja kalau mau login bisa",
+    "start": 389.28,
+    "duration": 6.4
+  },
+  {
+    "text": "menggunakan email or username kita or",
+    "start": 391.12,
+    "duration": 6.32
+  },
+  {
+    "text": "phone number kita. Jadi enggak harus",
+    "start": 395.68,
+    "duration": 4.079
+  },
+  {
+    "text": "semuanya, salah satu aja sudah cukup.",
+    "start": 397.44,
+    "duration": 4.159
+  },
+  {
+    "text": "Contoh implementasinya dalam bahasa",
+    "start": 399.759,
+    "duration": 5.361
+  },
+  {
+    "text": "pemrograman Python nih, as usual as",
+    "start": 401.599,
+    "duration": 8.0
+  },
+  {
+    "text": "always, kita perlu menambahkan eh",
+    "start": 405.12,
+    "duration": 6.32
+  },
+  {
+    "text": "ini nih variabel ya. kita perlu",
+    "start": 409.599,
+    "duration": 4.6
+  },
+  {
+    "text": "mendeklarasikan variabel yang nanti akan",
+    "start": 411.44,
+    "duration": 5.479
+  },
+  {
+    "text": "dijadikan condition-nya yang pertama",
+    "start": 414.199,
+    "duration": 6.881
+  },
+  {
+    "text": "gini ya. Nah, di sini ada use email, use",
+    "start": 416.919,
+    "duration": 7.12
+  },
+  {
+    "text": "username, sama use phone. Untuk eh use",
+    "start": 421.08,
+    "duration": 5.88
+  },
+  {
+    "text": "case ini kita mau menggunakan username",
+    "start": 424.039,
+    "duration": 5.801
+  },
+  {
+    "text": "gitu ya. Usernya eh masuk loginnya",
+    "start": 426.96,
+    "duration": 6.76
+  },
+  {
+    "text": "menggunakan username. Maka di sini kita",
+    "start": 429.84,
+    "duration": 6.88
+  },
+  {
+    "text": "tinggal masukin nih kondisinya. If use",
+    "start": 433.72,
+    "duration": 4.68
+  },
+  {
+    "text": "email",
+    "start": 436.72,
+    "duration": 4.08
+  },
+  {
+    "text": "yang use email ini apa? Oh, use",
+    "start": 438.4,
+    "duration": 4.28
+  },
+  {
+    "text": "email-nya false. Nah, programnya enggak",
+    "start": 440.8,
+    "duration": 3.399
+  },
+  {
+    "text": "akan langsung stop karena di sampingnya",
+    "start": 442.68,
+    "duration": 4.48
+  },
+  {
+    "text": "itu ada OR. Kecuali di sini kita",
+    "start": 444.199,
+    "duration": 5.641
+  },
+  {
+    "text": "pakainya N. Kalauya dia pakai N,",
+    "start": 447.16,
+    "duration": 4.039
+  },
+  {
+    "text": "programnya akan langsung stop. Dia akan",
+    "start": 449.84,
+    "duration": 4.32
+  },
+  {
+    "text": "langsung pindah ke nah since kita",
+    "start": 451.199,
+    "duration": 5.361
+  },
+  {
+    "text": "pakainya or, programnya enggak akan stop",
+    "start": 454.16,
+    "duration": 4.24
+  },
+  {
+    "text": "walaupun use email yang kondisi yang",
+    "start": 456.56,
+    "duration": 3.96
+  },
+  {
+    "text": "pertama itu salah.",
+    "start": 458.4,
+    "duration": 4.479
+  },
+  {
+    "text": "Use emailnya false, baru dia akan ngecek",
+    "start": 460.52,
+    "duration": 5.16
+  },
+  {
+    "text": "yang kedua. use username-nya true. Wah,",
+    "start": 462.879,
+    "duration": 4.641
+  },
+  {
+    "text": "kalau use username-nya true, maka dia",
+    "start": 465.68,
+    "duration": 4.04
+  },
+  {
+    "text": "akan langsung print login. Jadi, dia",
+    "start": 467.52,
+    "duration": 4.119
+  },
+  {
+    "text": "enggak membaca sampai selesai. Yang",
+    "start": 469.72,
+    "duration": 3.84
+  },
+  {
+    "text": "penting dia udah ada salah satu aja ya,",
+    "start": 471.639,
+    "duration": 5.081
+  },
+  {
+    "text": "ada yang eh true, maka dia akan langsung",
+    "start": 473.56,
+    "duration": 5.8
+  },
+  {
+    "text": "menjalankan ini. Beda dengan yang N yang",
+    "start": 476.72,
+    "duration": 4.919
+  },
+  {
+    "text": "sebelumnya ya. Kalau N yang sebelumnya",
+    "start": 479.36,
+    "duration": 6.04
+  },
+  {
+    "text": "kalau ada satu aja ini misalnya di sini",
+    "start": 481.639,
+    "duration": 8.0
+  },
+  {
+    "text": "N if use email sama true, oh berarti dia",
+    "start": 485.4,
+    "duration": 6.04
+  },
+  {
+    "text": "akan langsung ngprint nih di sini gitu",
+    "start": 489.639,
+    "duration": 3.601
+  },
+  {
+    "text": "ya, Teman-teman ya. Jadi semuanya harus",
+    "start": 491.44,
+    "duration": 4.56
+  },
+  {
+    "text": "benar kalau misalnya menggunakan N. Tapi",
+    "start": 493.24,
+    "duration": 4.72
+  },
+  {
+    "text": "kalau misalnya salah satu aja kita bisa",
+    "start": 496.0,
+    "duration": 5.479
+  },
+  {
+    "text": "menggunakan logic operators yang namanya",
+    "start": 497.96,
+    "duration": 6.359
+  },
+  {
+    "text": "word. Kalau misalnya semua apa itu",
+    "start": 501.479,
+    "duration": 4.961
+  },
+  {
+    "text": "namanya? Semuanya salah gimana? Use",
+    "start": 504.319,
+    "duration": 5.0
+  },
+  {
+    "text": "email salah, username salah, font salah.",
+    "start": 506.44,
+    "duration": 4.96
+  },
+  {
+    "text": "Ya udah berarti di sini dia akan",
+    "start": 509.319,
+    "duration": 4.08
+  },
+  {
+    "text": "langsung menjalankan else gitu ya.",
+    "start": 511.4,
+    "duration": 5.68
+  },
+  {
+    "text": "Karena yang ini kan hanya perintah yang",
+    "start": 513.399,
+    "duration": 7.2
+  },
+  {
+    "text": "ini hanya muncul ketika kita ee",
+    "start": 517.08,
+    "duration": 6.839
+  },
+  {
+    "text": "kondisinya terpenuhi. atau benar semua.",
+    "start": 520.599,
+    "duration": 7.001
+  },
+  {
+    "text": "Oke, itu untuk logic operator OR.",
+    "start": 523.919,
+    "duration": 5.961
+  },
+  {
+    "text": "Teman-teman bisa melakukan latihan",
+    "start": 527.6,
+    "duration": 4.96
+  },
+  {
+    "text": "berikut ini untuk memahami lebih lanjut",
+    "start": 529.88,
+    "duration": 7.72
+  },
+  {
+    "text": "tentang logika OR.",
+    "start": 532.56,
+    "duration": 5.04
+  },
+  {
+    "text": "Oke, Teman-teman kita sudah membahas.",
+    "start": 537.839,
+    "duration": 5.56
+  },
+  {
+    "text": "Nah, ada logical operator yang ketiga",
+    "start": 541.399,
+    "duration": 4.761
+  },
+  {
+    "text": "namanya not. Nah, note ini dia digunakan",
+    "start": 543.399,
+    "duration": 5.521
+  },
+  {
+    "text": "untuk membalikkan nilai sebuah kondisi.",
+    "start": 546.16,
+    "duration": 4.52
+  },
+  {
+    "text": "Ingat ya, membalikkan nilai sebuah",
+    "start": 548.92,
+    "duration": 4.56
+  },
+  {
+    "text": "kondisi. Nah, contohnya not ini dia",
+    "start": 550.68,
+    "duration": 5.36
+  },
+  {
+    "text": "selain di ee gunakan dalam kondisi, kita",
+    "start": 553.48,
+    "duration": 4.12
+  },
+  {
+    "text": "bisa gunakan dia juga dalam sebuah",
+    "start": 556.04,
+    "duration": 3.479
+  },
+  {
+    "text": "variabel. Nah, membalikkan nilai itu",
+    "start": 557.6,
+    "duration": 3.6
+  },
+  {
+    "text": "maksudnya ini kalau misalnya ada",
+    "start": 559.519,
+    "duration": 3.961
+  },
+  {
+    "text": "variabel yang nilainya true, maka dia",
+    "start": 561.2,
+    "duration": 4.319
+  },
+  {
+    "text": "akan balik menjadi sebuah false ketika",
+    "start": 563.48,
+    "duration": 3.72
+  },
+  {
+    "text": "kita masukkan dia node ini ke dalam",
+    "start": 565.519,
+    "duration": 4.041
+  },
+  {
+    "text": "kondisi atau kita bisa implementasikan",
+    "start": 567.2,
+    "duration": 5.36
+  },
+  {
+    "text": "langsung di dalam baris di Python ini,",
+    "start": 569.56,
+    "duration": 5.6
+  },
+  {
+    "text": "ya. Coba kita buka Google Colab.",
+    "start": 572.56,
+    "duration": 4.16
+  },
+  {
+    "text": "Kemudian di Google Colab ini kita",
+    "start": 575.16,
+    "duration": 4.32
+  },
+  {
+    "text": "membuat sebuah variabel namanya is",
+    "start": 576.72,
+    "duration": 5.2
+  },
+  {
+    "text": "raining.",
+    "start": 579.48,
+    "duration": 4.72
+  },
+  {
+    "text": "Raining. Nah, misalnya sekarang tidak",
+    "start": 581.92,
+    "duration": 4.4
+  },
+  {
+    "text": "hujan nih, tidak hujan. Maka di sini",
+    "start": 584.2,
+    "duration": 4.72
+  },
+  {
+    "text": "kita tulis variabelnya nilainya false.",
+    "start": 586.32,
+    "duration": 6.68
+  },
+  {
+    "text": "Ketika kita print",
+    "start": 588.92,
+    "duration": 4.08
+  },
+  {
+    "text": "sprint string sekarang",
+    "start": 593.079,
+    "duration": 5.161
+  },
+  {
+    "text": "apakah hujan?",
+    "start": 601.36,
+    "duration": 3.479
+  },
+  {
+    "text": "Apakah",
+    "start": 603.04,
+    "duration": 4.039
+  },
+  {
+    "text": "hujan atau mungkin kita bikin yang",
+    "start": 604.839,
+    "duration": 4.801
+  },
+  {
+    "text": "simpel aja dulu ya. Kita ngecek dulu",
+    "start": 607.079,
+    "duration": 4.401
+  },
+  {
+    "text": "nilainya is raining ini apa. Oh, is",
+    "start": 609.64,
+    "duration": 4.8
+  },
+  {
+    "text": "raining ini harusnya jawabannya false",
+    "start": 611.48,
+    "duration": 6.2
+  },
+  {
+    "text": "ya. Kita cek, kita run. Nah, ini ya.",
+    "start": 614.44,
+    "duration": 5.12
+  },
+  {
+    "text": "Karena kita di sini nulisnya false.",
+    "start": 617.68,
+    "duration": 4.12
+  },
+  {
+    "text": "Gimana kalau misalnya kita tambahkan not",
+    "start": 619.56,
+    "duration": 4.04
+  },
+  {
+    "text": "di depannya?",
+    "start": 621.8,
+    "duration": 5.12
+  },
+  {
+    "text": "not ising. Kalau kita tambahkan not di",
+    "start": 623.6,
+    "duration": 6.28
+  },
+  {
+    "text": "depannya, maka dia akan mengubah menjadi",
+    "start": 626.92,
+    "duration": 6.64
+  },
+  {
+    "text": "true. Karena not ini fungsinya adalah",
+    "start": 629.88,
+    "duration": 5.88
+  },
+  {
+    "text": "membalikkan sebuah nilai yang awal",
+    "start": 633.56,
+    "duration": 4.56
+  },
+  {
+    "text": "false, dia akan menjadikan true. Dan",
+    "start": 635.76,
+    "duration": 4.319
+  },
+  {
+    "text": "biasanya",
+    "start": 638.12,
+    "duration": 4.959
+  },
+  {
+    "text": "variabel eh logical operator node ini",
+    "start": 640.079,
+    "duration": 5.161
+  },
+  {
+    "text": "digunakan untuk membalikan nilai dari di",
+    "start": 643.079,
+    "duration": 5.2
+  },
+  {
+    "text": "dalam sebuah condition. Misalnya kalau",
+    "start": 645.24,
+    "duration": 5.48
+  },
+  {
+    "text": "kita mau membuat sebuah program yang",
+    "start": 648.279,
+    "duration": 5.24
+  },
+  {
+    "text": "menampilkan kalau belum hujan kita ee",
+    "start": 650.72,
+    "duration": 4.239
+  },
+  {
+    "text": "bisa bermain di luar gitu. Kita mau",
+    "start": 653.519,
+    "duration": 3.76
+  },
+  {
+    "text": "menampilkan teks bisa bermain di luar.",
+    "start": 654.959,
+    "duration": 5.761
+  },
+  {
+    "text": "Nah, di sini kita tulis is raining sama",
+    "start": 657.279,
+    "duration": 6.761
+  },
+  {
+    "text": "dengan false. If not is raining, kita",
+    "start": 660.72,
+    "duration": 5.48
+  },
+  {
+    "text": "print eh boleh bermain di luar. Oke,",
+    "start": 664.04,
+    "duration": 4.799
+  },
+  {
+    "text": "kita coba copy, kita tambahkan ke dalam",
+    "start": 666.2,
+    "duration": 5.639
+  },
+  {
+    "text": "Google Colab. Nah, di sini ketika kita",
+    "start": 668.839,
+    "duration": 6.24
+  },
+  {
+    "text": "run bermain di luar ya, padahal di sini",
+    "start": 671.839,
+    "duration": 6.56
+  },
+  {
+    "text": "false. Nah, sebelumnya kan kita kalau",
+    "start": 675.079,
+    "duration": 6.56
+  },
+  {
+    "text": "misalnya mau pakai eh is raining doang,",
+    "start": 678.399,
+    "duration": 5.081
+  },
+  {
+    "text": "kalau kita mau nambahkan variabel doang,",
+    "start": 681.639,
+    "duration": 4.481
+  },
+  {
+    "text": "is raining doang, ini kan dia eh harus",
+    "start": 683.48,
+    "duration": 5.039
+  },
+  {
+    "text": "true ya nilainya ya. Jadi dia harus sama",
+    "start": 686.12,
+    "duration": 4.44
+  },
+  {
+    "text": "dengan sama dengan true baru dia boleh",
+    "start": 688.519,
+    "duration": 4.0
+  },
+  {
+    "text": "menjalankan yang di bawahnya ini gitu",
+    "start": 690.56,
+    "duration": 5.399
+  },
+  {
+    "text": "ya. Tapi ketika kita menggunakan ini ee",
+    "start": 692.519,
+    "duration": 5.241
+  },
+  {
+    "text": "ketika kita menggunakan sama dengan sama",
+    "start": 695.959,
+    "duration": 4.56
+  },
+  {
+    "text": "dengan itu kan kayak ribet gitu ya.",
+    "start": 697.76,
+    "duration": 6.6
+  },
+  {
+    "text": "Makanya ee kita hapuskan kalau misalnya",
+    "start": 700.519,
+    "duration": 5.961
+  },
+  {
+    "text": "dia true dia bisa kayak gini aja dia",
+    "start": 704.36,
+    "duration": 5.12
+  },
+  {
+    "text": "bisa gitu ya. Nah, tapi kalau misalnya",
+    "start": 706.48,
+    "duration": 5.72
+  },
+  {
+    "text": "kita kasih dia is raining ini aja ya,",
+    "start": 709.48,
+    "duration": 4.359
+  },
+  {
+    "text": "misalnya nilainya di sini false, terus",
+    "start": 712.2,
+    "duration": 3.52
+  },
+  {
+    "text": "itu kita mau ngecek apakah is raining",
+    "start": 713.839,
+    "duration": 4.24
+  },
+  {
+    "text": "true, maka di sini dia programnya enggak",
+    "start": 715.72,
+    "duration": 4.32
+  },
+  {
+    "text": "jalankan apa-apa karena is raining-nya",
+    "start": 718.079,
+    "duration": 5.481
+  },
+  {
+    "text": "false. Nah, untuk mengcat supaya dia",
+    "start": 720.04,
+    "duration": 5.96
+  },
+  {
+    "text": "untuk mengubah programnya supaya dia",
+    "start": 723.56,
+    "duration": 4.56
+  },
+  {
+    "text": "bisa menjalankan perintah ini tapi kita",
+    "start": 726.0,
+    "duration": 3.92
+  },
+  {
+    "text": "enggak mau nulis ribut-ribut sama dengan",
+    "start": 728.12,
+    "duration": 3.8
+  },
+  {
+    "text": "sama dengan, maka di sini kita tambahin",
+    "start": 729.92,
+    "duration": 5.159
+  },
+  {
+    "text": "aja not gitu. Jadi yang ini kan dia",
+    "start": 731.92,
+    "duration": 5.64
+  },
+  {
+    "text": "ngecek apakah true. Nah, di sini dia",
+    "start": 735.079,
+    "duration": 5.281
+  },
+  {
+    "text": "mengecek apakah false. Kalau benar false",
+    "start": 737.56,
+    "duration": 4.639
+  },
+  {
+    "text": "maka dia akan menjalankan ini. Coba kita",
+    "start": 740.36,
+    "duration": 4.599
+  },
+  {
+    "text": "cek. Nah, seperti itu. Jadi ee",
+    "start": 742.199,
+    "duration": 5.481
+  },
+  {
+    "text": "kesimpulannya kalau kita menggunakan not",
+    "start": 744.959,
+    "duration": 5.401
+  },
+  {
+    "text": "di dalam sebuah kondisi, ya kan di dalam",
+    "start": 747.68,
+    "duration": 7.08
+  },
+  {
+    "text": "sebuah eh condition mm di sininya itu",
+    "start": 750.36,
+    "duration": 6.039
+  },
+  {
+    "text": "dia membalik gitu. Jadi kita enggak",
+    "start": 754.76,
+    "duration": 3.16
+  },
+  {
+    "text": "perlu dologi tulis sama dengan sama",
+    "start": 756.399,
+    "duration": 5.0
+  },
+  {
+    "text": "dengan. Nah, oke kita balik lagi untuk",
+    "start": 757.92,
+    "duration": 5.88
+  },
+  {
+    "text": "dalam ee untuk logical operator itu kita",
+    "start": 761.399,
+    "duration": 4.401
+  },
+  {
+    "text": "bisa menggabungkan sekaligus tiga",
+    "start": 763.8,
+    "duration": 5.44
+  },
+  {
+    "text": "operator tadi. Misalnya nih kita sedang",
+    "start": 765.8,
+    "duration": 7.279
+  },
+  {
+    "text": "kursus atau sedang di sekolah. Ketika",
+    "start": 769.24,
+    "duration": 6.399
+  },
+  {
+    "text": "kita bisa naik atau belajar di kelas di",
+    "start": 773.079,
+    "duration": 5.0
+  },
+  {
+    "text": "semester berikutnya ada tiga kondisi",
+    "start": 775.639,
+    "duration": 5.401
+  },
+  {
+    "text": "yang harus lengkap. misalnya nilainya",
+    "start": 778.079,
+    "duration": 7.44
+  },
+  {
+    "text": "harus minimal 75 dan sudah menyelesaikan",
+    "start": 781.04,
+    "duration": 6.44
+  },
+  {
+    "text": "tugas-tugasnya",
+    "start": 785.519,
+    "duration": 4.601
+  },
+  {
+    "text": "dan tidak sedang masa remedial. Misalnya",
+    "start": 787.48,
+    "duration": 5.599
+  },
+  {
+    "text": "udah udah ujian akhir final eh final",
+    "start": 790.12,
+    "duration": 5.8
+  },
+  {
+    "text": "exam tapi remedial. Nah, kalau remedial",
+    "start": 793.079,
+    "duration": 4.76
+  },
+  {
+    "text": "dia enggak boleh ikut kelas selanjutnya",
+    "start": 795.92,
+    "duration": 4.12
+  },
+  {
+    "text": "itu ya. Kita bikin eh kondisinya seperti",
+    "start": 797.839,
+    "duration": 4.56
+  },
+  {
+    "text": "itu. First thing first as usual kita",
+    "start": 800.04,
+    "duration": 5.56
+  },
+  {
+    "text": "bikin tiga variabelnya ya. Variabel yang",
+    "start": 802.399,
+    "duration": 5.841
+  },
+  {
+    "text": "nanti akan dicompare menjadi sebuah",
+    "start": 805.6,
+    "duration": 6.4
+  },
+  {
+    "text": "condition. ee ee di sininya ya, di sini",
+    "start": 808.24,
+    "duration": 5.92
+  },
+  {
+    "text": "nilainya minimal 75. Misalnya kita mau",
+    "start": 812.0,
+    "duration": 5.16
+  },
+  {
+    "text": "bikin skornya lebih dari 75, terus itu",
+    "start": 814.16,
+    "duration": 4.359
+  },
+  {
+    "text": "kita bikin apakah dia sudah",
+    "start": 817.16,
+    "duration": 3.359
+  },
+  {
+    "text": "menyelesaikan semua tugas, kita bilang",
+    "start": 818.519,
+    "duration": 4.081
+  },
+  {
+    "text": "di sini true. Nah, apakah dia sedang",
+    "start": 820.519,
+    "duration": 4.88
+  },
+  {
+    "text": "remedial? Kita bilang di sini false.",
+    "start": 822.6,
+    "duration": 6.16
+  },
+  {
+    "text": "Nah, bahasa programnya dalam Python-nya",
+    "start": 825.399,
+    "duration": 5.921
+  },
+  {
+    "text": "itu seperti ini nih tampilannya.",
+    "start": 828.76,
+    "duration": 6.92
+  },
+  {
+    "text": "Ada if skor lebih 75 tapi dia kita tidak",
+    "start": 831.32,
+    "duration": 5.92
+  },
+  {
+    "text": "turunin ke bawah gitu ya. Kalau next",
+    "start": 835.68,
+    "duration": 3.599
+  },
+  {
+    "text": "condition kan sisanya kita taruh di",
+    "start": 837.24,
+    "duration": 4.039
+  },
+  {
+    "text": "bawah ya, di dalamnya sini. Nah, kalau",
+    "start": 839.279,
+    "duration": 4.161
+  },
+  {
+    "text": "ketika kita menggunakan logical operator",
+    "start": 841.279,
+    "duration": 4.961
+  },
+  {
+    "text": "itu kita tulis aja nih N karena kan kita",
+    "start": 843.44,
+    "duration": 4.759
+  },
+  {
+    "text": "selain nilainya lebih di atas atau sama",
+    "start": 846.24,
+    "duration": 4.32
+  },
+  {
+    "text": "dengan 75, dia harus sudah mengerjakan",
+    "start": 848.199,
+    "duration": 5.76
+  },
+  {
+    "text": "semua tugasnya dan dia sedang tidak",
+    "start": 850.56,
+    "duration": 5.959
+  },
+  {
+    "text": "remedial gitu kan. Ini kalau misalnya",
+    "start": 853.959,
+    "duration": 4.961
+  },
+  {
+    "text": "kita enggak mau pakai not remedial,",
+    "start": 856.519,
+    "duration": 4.24
+  },
+  {
+    "text": "berarti kita harus remedial sama dengan",
+    "start": 858.92,
+    "duration": 4.039
+  },
+  {
+    "text": "sama dengan false. Nah, itu kan capek.",
+    "start": 860.759,
+    "duration": 5.601
+  },
+  {
+    "text": "Berarti kita tulis aja and not remedial.",
+    "start": 862.959,
+    "duration": 6.401
+  },
+  {
+    "text": "Berarti di sini dia kalau eh di sini",
+    "start": 866.36,
+    "duration": 6.479
+  },
+  {
+    "text": "false maka dia akan menjalankan ini",
+    "start": 869.36,
+    "duration": 7.719
+  },
+  {
+    "text": "gitu. Nah, ee cara membacanya berarti",
+    "start": 872.839,
+    "duration": 6.8
+  },
+  {
+    "text": "dia di sini mengecek dulu nih apakah",
+    "start": 877.079,
+    "duration": 6.56
+  },
+  {
+    "text": "skornya lebih dari 75. True. Skornya",
+    "start": 879.639,
+    "duration": 6.64
+  },
+  {
+    "text": "sama dengan 75. true. Terus dia ngelihat",
+    "start": 883.639,
+    "duration": 5.841
+  },
+  {
+    "text": "lagi and apakah task-nya udah selesai.",
+    "start": 886.279,
+    "duration": 6.92
+  },
+  {
+    "text": "Tadi kan kalau kita lihat variabelnya eh",
+    "start": 889.48,
+    "duration": 5.88
+  },
+  {
+    "text": "task-nya dan juga ya true ya, maka di",
+    "start": 893.199,
+    "duration": 4.921
+  },
+  {
+    "text": "sini nilainya true juga. Apakah dia not",
+    "start": 895.36,
+    "duration": 4.96
+  },
+  {
+    "text": "remedial? Not remedialnya true juga",
+    "start": 898.12,
+    "duration": 3.88
+  },
+  {
+    "text": "karena apa? Tadi kan remedial nilainya",
+    "start": 900.32,
+    "duration": 3.92
+  },
+  {
+    "text": "false, kita menggunakan not dia akan",
+    "start": 902.0,
+    "duration": 4.8
+  },
+  {
+    "text": "menjadi true. Karena tiga-tiganya true",
+    "start": 904.24,
+    "duration": 5.92
+  },
+  {
+    "text": "maka semua syaratnya benar. Nah, karena",
+    "start": 906.8,
+    "duration": 5.56
+  },
+  {
+    "text": "kita nah karena kita tadi menggunakan N",
+    "start": 910.16,
+    "duration": 4.96
+  },
+  {
+    "text": "operator logical N di sini, maka kalau",
+    "start": 912.36,
+    "duration": 4.919
+  },
+  {
+    "text": "ada salah satu aja ada yang salah, maka",
+    "start": 915.12,
+    "duration": 4.399
+  },
+  {
+    "text": "dia akan langsung menjalankan else-nya",
+    "start": 917.279,
+    "duration": 4.281
+  },
+  {
+    "text": "belum boleh ikut kelas lanjutan. Tapi",
+    "start": 919.519,
+    "duration": 3.76
+  },
+  {
+    "text": "kalau misalnya ada salah satu aja yang",
+    "start": 921.56,
+    "duration": 4.079
+  },
+  {
+    "text": "kalau kita menggunakan OR misalnya",
+    "start": 923.279,
+    "duration": 7.881
+  },
+  {
+    "text": "antara skornya 80 atau dia sudah ee dia",
+    "start": 925.639,
+    "duration": 7.241
+  },
+  {
+    "text": "tidak sedang remedial, maka dia boleh",
+    "start": 931.16,
+    "duration": 4.599
+  },
+  {
+    "text": "ikut kelas selanjutnya gitu ya.",
+    "start": 932.88,
+    "duration": 5.399
+  },
+  {
+    "text": "Nah, untuk",
+    "start": 935.759,
+    "duration": 4.88
+  },
+  {
+    "text": "operator logika dia itu memiliki",
+    "start": 938.279,
+    "duration": 4.961
+  },
+  {
+    "text": "prioritas untuk membacanya. Nah,",
+    "start": 940.639,
+    "duration": 4.88
+  },
+  {
+    "text": "urutannya prioritas membacanya pertama",
+    "start": 943.24,
+    "duration": 4.92
+  },
+  {
+    "text": "dia akan mengecek not dulu. Jadi apapun",
+    "start": 945.519,
+    "duration": 5.521
+  },
+  {
+    "text": "yang nilainya not dia akan ubah menjadi",
+    "start": 948.16,
+    "duration": 5.0
+  },
+  {
+    "text": "eh kebalikannya. Misalnya kalau nilainya",
+    "start": 951.04,
+    "duration": 4.159
+  },
+  {
+    "text": "false dia akan ngubah jadi true. Kalau",
+    "start": 953.16,
+    "duration": 3.56
+  },
+  {
+    "text": "misalnya nilainya true dia akan ubah",
+    "start": 955.199,
+    "duration": 3.88
+  },
+  {
+    "text": "dulu jadi false. Gitu. Setelah dia",
+    "start": 956.72,
+    "duration": 4.599
+  },
+  {
+    "text": "ngecek note, maka dia akan ngecek lagi",
+    "start": 959.079,
+    "duration": 4.76
+  },
+  {
+    "text": "yang yang akan pertama kali dicek gitu",
+    "start": 961.319,
+    "duration": 4.921
+  },
+  {
+    "text": "setelah not itu dia n yang kedua berarti",
+    "start": 963.839,
+    "duration": 4.161
+  },
+  {
+    "text": "ya. Yang kedua dia akan ngecek N-nya",
+    "start": 966.24,
+    "duration": 3.039
+  },
+  {
+    "text": "dulu. Jadi yang dijalankan yang",
+    "start": 968.0,
+    "duration": 3.44
+  },
+  {
+    "text": "dicompare itu yang ada N-nya dulu.",
+    "start": 969.279,
+    "duration": 5.521
+  },
+  {
+    "text": "Setelah N baru dia akan ngecek OR-nya",
+    "start": 971.44,
+    "duration": 6.72
+  },
+  {
+    "text": "karena ee apa itu namanya? N itu",
+    "start": 974.8,
+    "duration": 5.479
+  },
+  {
+    "text": "keduanya harus benar gitu ya. Misalnya",
+    "start": 978.16,
+    "duration": 4.4
+  },
+  {
+    "text": "nih di sini ada kondisi",
+    "start": 980.279,
+    "duration": 7.721
+  },
+  {
+    "text": "true or false and false. Nah, kalau",
+    "start": 982.56,
+    "duration": 7.56
+  },
+  {
+    "text": "seperti ini maka dia akan ngecek yang n",
+    "start": 988.0,
+    "duration": 3.48
+  },
+  {
+    "text": "dulu. Karena di sini enggak ada not ya.",
+    "start": 990.12,
+    "duration": 2.68
+  },
+  {
+    "text": "Berarti dia akan ngecek yang pertama",
+    "start": 991.48,
+    "duration": 3.68
+  },
+  {
+    "text": "yang false dulu. Jadi di sini false dia",
+    "start": 992.8,
+    "duration": 5.279
+  },
+  {
+    "text": "cek pertama false sama false. Kalau",
+    "start": 995.16,
+    "duration": 5.72
+  },
+  {
+    "text": "keduanya false berarti kan nilainya akan",
+    "start": 998.079,
+    "duration": 4.721
+  },
+  {
+    "text": "false ya. Berarti di sini nilainya",
+    "start": 1000.88,
+    "duration": 5.439
+  },
+  {
+    "text": "false. Berarti sekarang kita cek true or",
+    "start": 1002.8,
+    "duration": 6.12
+  },
+  {
+    "text": "false. Nah, kalau misalnya variabel or",
+    "start": 1006.319,
+    "duration": 4.801
+  },
+  {
+    "text": "itu tadi kan kalau salah satunya aja ada",
+    "start": 1008.92,
+    "duration": 4.52
+  },
+  {
+    "text": "yang true, maka dia nilainya akan true,",
+    "start": 1011.12,
+    "duration": 4.6
+  },
+  {
+    "text": "maka hasil akhirnya akan menghasilkan",
+    "start": 1013.44,
+    "duration": 4.0
+  },
+  {
+    "text": "true.",
+    "start": 1015.72,
+    "duration": 6.28
+  },
+  {
+    "text": "Oke. Nah, untuk ee membuat programnya",
+    "start": 1017.44,
+    "duration": 5.959
+  },
+  {
+    "text": "itu tidak complicated, tidak",
+    "start": 1022.0,
+    "duration": 4.52
+  },
+  {
+    "text": "membingungkan, kita ee ketika",
+    "start": 1023.399,
+    "duration": 5.081
+  },
+  {
+    "text": "menggunakan logical operator, usahakan",
+    "start": 1026.52,
+    "duration": 5.519
+  },
+  {
+    "text": "untuk menggunakan tanda kurung supaya ee",
+    "start": 1028.48,
+    "duration": 5.599
+  },
+  {
+    "text": "program itu tahu mana duluan yang harus",
+    "start": 1032.039,
+    "duration": 4.481
+  },
+  {
+    "text": "di-compare gitu. Misalnya kita ada nilai",
+    "start": 1034.079,
+    "duration": 5.561
+  },
+  {
+    "text": "OR duluan yang harus di ee harus dicek,",
+    "start": 1036.52,
+    "duration": 5.08
+  },
+  {
+    "text": "berarti kita gunakan dia kurung sebagai",
+    "start": 1039.64,
+    "duration": 6.399
+  },
+  {
+    "text": "prioritas. Nah, di sini ada misalnya",
+    "start": 1041.6,
+    "duration": 8.12
+  },
+  {
+    "text": "skornya lebih dari 75 dan task dan or",
+    "start": 1046.039,
+    "duration": 5.52
+  },
+  {
+    "text": "atau punya dia punya bonus nih misalnya",
+    "start": 1049.72,
+    "duration": 4.76
+  },
+  {
+    "text": "contohnya kasusnya nilainya harus 75 dan",
+    "start": 1051.559,
+    "duration": 5.401
+  },
+  {
+    "text": "tugasnya harus sudah semua nilai atau",
+    "start": 1054.48,
+    "duration": 6.12
+  },
+  {
+    "text": "kalau misalnya skornya mm",
+    "start": 1056.96,
+    "duration": 6.68
+  },
+  {
+    "text": "tidak 75 sama tasnya belum selesai semua",
+    "start": 1060.6,
+    "duration": 5.199
+  },
+  {
+    "text": "tapi dia bonusnya misalnya ikut",
+    "start": 1063.64,
+    "duration": 6.2
+  },
+  {
+    "text": "olimpiade maka dia tetap lolos begitu.",
+    "start": 1065.799,
+    "duration": 5.601
+  },
+  {
+    "text": "Nah, ini kalau kita menggunakan tanda",
+    "start": 1069.84,
+    "duration": 2.959
+  },
+  {
+    "text": "kurung berarti dia akan mengecek end",
+    "start": 1071.4,
+    "duration": 3.399
+  },
+  {
+    "text": "dulu walaupun dalam Python tuh",
+    "start": 1072.799,
+    "duration": 4.401
+  },
+  {
+    "text": "sebenarnya dia sudah mengecek end dulu",
+    "start": 1074.799,
+    "duration": 5.921
+  },
+  {
+    "text": "gitu. Itu untuk ee apa itu namanya?",
+    "start": 1077.2,
+    "duration": 5.68
+  },
+  {
+    "text": "Memberikan prioritas yang mana yang",
+    "start": 1080.72,
+    "duration": 4.68
+  },
+  {
+    "text": "harus dikerjakan terlebih dahulu oleh",
+    "start": 1082.88,
+    "duration": 6.36
+  },
+  {
+    "text": "Pak itu tadi. Oke, untuk logical",
+    "start": 1085.4,
+    "duration": 6.36
+  },
+  {
+    "text": "operator e seperti itu dulu",
+    "start": 1089.24,
+    "duration": 6.0
+  },
+  {
+    "text": "penjelasannya. Silakan ee kerjakan kuis",
+    "start": 1091.76,
+    "duration": 7.48
+  },
+  {
+    "text": "dan latihan ee berikut ini.",
+    "start": 1095.24,
+    "duration": 4.0
+  }
+]

@@ -1,0 +1,1399 @@
+[2.04] 3 2 1. Halo teman-teman, pada video kali
+[5.00] ini kita akan membahas bagaimana sih
+[7.00] cara kita membuat aplikasi dari awal
+[9.92] dari master planning sampai aplikasinya
+[12.28] selesai. Nah, untuk ee untuk itu yuk
+[15.56] kita perhatikan video berikut ini.
+[19.84] Nah, Teman-teman pernah enggak sih
+[21.36] ketika kita melihat sebuah masalah kita
+[24.52] pengin banget nih segera menyelesaikan
+[26.60] masalah gitu. Mungkin kita dengan
+[28.52] membuat aplikasi atau membuat yang
+[30.84] lainnya gitu ya. Dalam konteks ini kita
+[32.44] mau membuat aplikasi untuk menyelesaikan
+[34.12] masalah yang kita punya gitu ya. Nah,
+[36.80] tak jarang kita mungkin langsung pengin
+[38.76] buat aja aplikasinya. Nanti kalau
+[40.64] misalnya ada revisi ya tinggal direvisi.
+[42.84] Kalau misal ada pembaruan atau
+[44.56] pertambahan ya kita tambahin. Nah, hal
+[47.08] itu sah-sah saja. Namun ee sebaiknya
+[50.24] kita punya harus menyusun [mendengus]
+[52.12] rencana dulu ya. Kita harus planning
+[54.48] dulu. Nah, ada banyak cara, ada banyak
+[56.88] framework yang bisa kita lakukan untuk e
+[59.84] planning untuk membuat suatu aplikasi
+[61.96] gitu ya. Nah, untuk dalam video kali ini
+[64.76] kita akan membahas ee salah satu cara
+[68.04] penyelesaian masalah ee perancangan
+[70.24] sebuah menyelesaikan masalah itu dengan
+[72.48] yang namanya design thinking. Apa sih
+[74.36] desain thinking itu? Yuk, kita lihat
+[75.72] video ini.
+[77.94] [berdehem] Nah, desain thinking itu
+[80.64] adalah mencari tahu kesulitan apa yang
+[84.04] teman kita punya. Kalau misalnya usernya
+[86.00] teman kita atau kita sendiri gitu ya.
+[88.04] Atau ini bisa juga kita sebut juga
+[90.04] dengan user kita gitu. sebelum kita
+[92.36] membuat membuatkan solusinya. Jadi
+[95.40] intinya sebelum [berdehem] kita membuat
+[97.08] aplikasi itu ketika kita melakukan
+[99.88] design thinking, kita thinking dulu.
+[101.48] Kita cari tahu dulu masalahnya itu apa.
+[105.00] Kalau udah tahu masalahnya baru kita
+[107.16] buat solusinya. Nah, kenapa sih kita
+[109.48] penting harus ee mencari tahu dulu
+[112.48] masalahnya? Misalnya nih, ada contohnya
+[115.92] teman kita punya masalah kalau dia itu,
+[118.00] "Oh, kayaknya aku boros banget gitu ya.
+[120.28] ee uang aku sering habis gitu. Nah,
+[123.36] mungkin dari situ kita langsung
+[124.88] kepikiran, oh, kita bisa bikin aplikasi
+[127.20] yang di mana dia bisa canggih banget,
+[130.16] bisa ee mendeteksi kalau ada kebocoran
+[133.32] uang, terus itu dia bisa langsung
+[135.40] terhubung dengan banknya yang dia
+[137.20] mencatat keuangan yang di banknya dan
+[138.64] segala macam dan segala macam. Jadi,
+[140.68] kita butuh ee website, kita harus butuh
+[144.16] server, kita harus butuh database, wah
+[146.44] banyak banget gitu. Nah, itu kan
+[148.04] ternyata terlalu besar gitu kan. dia.
+[150.24] Padahal masalahnya itu ternyata uangnya
+[153.56] cepat habis karena dia lupa nyatat.
+[156.68] Karena dia enggak nyatet nih apa aja
+[158.24] pengeluarannya dia selama ini sehingga
+[160.84] dia enggak aware kalau misalnya uang dia
+[162.92] itu sisa Rp15.000 tapi dia belanja
+[165.24] misalnya beli cireng ee Rp1.000 gitu.
+[168.44] Nah, uangnya sisa R.000. Dia enggak
+[169.96] aware kalau uang dia itu sisa Rp15.000.
+[172.44] Nah, ternyata masalahnya itu dia tidak
+[174.72] mencatat atau lupa mencatat uang
+[176.72] masalahnya. Nah, berarti kan aplikasinya
+[179.64] enggak perlu harus terkoneksi ke
+[181.84] perbankan, enggak perlu ada database
+[183.72] yang harus sampai menyewa server gitu
+[185.84] ya. Nah, makanya itulah pentingnya kita
+[188.72] perlu
+[190.32] mencari tahu dulu masalahnya sebelum
+[192.32] kita pikirkan kira-kira solusi yang
+[194.36] visible yang cocok gitu ya untuk
+[196.92] aplikasi yang akan kita buat tuh apa
+[198.56] gitu. Nah, selanjutnya
+[201.96] bayangkan lagi gini ya. Kalau misalnya
+[204.20] kita bahas desain thinking, mencari
+[207.24] mencari masalahnya, ketik misalnya
+[210.00] kalian di sekolah itu kalian dan teman
+[213.28] sebangku kalian ee ingin membuat seperti
+[216.36] swap bekal gitu ya ee apa itu namanya?
+[219.00] tukaran bekal. Nah, untuk ee tukaran
+[222.08] bekal hari ini kalian pengin membuatkan
+[224.08] teman kalian itu roti, membuatkan teman
+[227.00] kalian roti sandwich. Nah, kan tapi
+[230.60] sebelum kita membuatkan roti sandwich
+[233.60] itu kita harus tahu dulu ya kan ya tahu
+[236.08] beberapa hal kita harus tahu mm kita
+[239.52] harus menanyakan ke teman kita beberapa
+[242.32] hal yang penting untuk membuat aplikasi
+[244.44] eh membuat roti ini. Sandwich roti ini
+[246.84] supaya dia mau makan, supaya dia enak
+[248.92] makannya. Pertama mungkin kita harus
+[251.40] tahu dulu dia suka yang manis atau yang
+[255.12] suka yang asin gitu. dia suka pakai
+[257.68] coklat, stroberi atau dia maunya pakai
+[260.32] keju atau gula gitu atau susu doang.
+[262.80] Nah, itu kita harus tanya gitu kan ya.
+[264.68] Nanti kalau misalnya dia sekalinya
+[265.84] enggak suka yang manis kan dia apa
+[268.28] bekalnya jadi enggak dimakan gitu.
+[270.08] Kemudian kita cek apakah dia alergi
+[272.24] tertentu. Misalnya dia alergi kacang, oh
+[274.00] berarti kita enggak bisa pakai selai
+[275.24] kacang atau dia alergi susu berarti dia
+[278.32] enggak boleh pakai keju dan segala
+[279.88] macam. Itu penting nih ya kan. Kemudian
+[282.52] porsinya. Nah, dia ini biasanya makan
+[285.24] bekelnya ini ee apakah dia sudah sarapan
+[287.36] di rumah dulu apa enggak gitu kan ya.
+[290.04] Kalau misalnya sudah sarapan maka dia
+[291.84] akan makan eh bawa kita akan bawakan dia
+[294.20] bekalannya ya udah sedikit aja gitu kan
+[295.76] ya untuk ganjal perut doang.
+[299.12] Kemudian tempatnya dia makan di mana
+[301.32] gitu. Apakah dia mau makan di kita mau
+[303.36] makan di kelas aja atau mau makannya di
+[306.16] mm kayak di taman gitu. Kalau di taman
+[309.88] kan harus dibungkus dengan rapi dan
+[311.20] segala macam. Jadi sama juga dengan
+[313.60] membuat aplikasi gitu ya, kita harus
+[315.60] tahu beberapa hal, kita harus tahu
+[317.36] beberapa detailnya supaya aplikasi kita
+[319.84] itu bisa digunakan oleh pengguna kita
+[322.20] ya, Teman-teman. Nah, jadi jangan lupa
+[325.80] tanyakan dulu masalahnya apa. Nah, untuk
+[329.72] aplikasi ini anggap aja kita ee mau
+[334.48] membuat aplikasi celengan gitu ya. Tapi
+[336.80] sebelum kita tahu eh apa m planningnya
+[340.48] lebih jauh, yang pertama kita yang kita
+[342.76] harus tahu itu siapa sih yang mau kita
+[344.72] bantu? User kita siapa, siapa yang
+[347.80] kira-kira akan menggunakan aplikasi ini,
+[349.52] gitu. Kalau misalnya mau menggunakan
+[351.24] aplikasi anak-anak, berarti aplikasinya
+[353.68] harus sesimpel mungkin. Tapi kalau yang
+[355.84] misalnya kita mau jual aplikasinya ke
+[357.96] orang tua-orang tua, berarti aplikasinya
+[359.84] itu harus sesimpel mungkin dan sejelas
+[362.56] mungkin gitu ya. Jadi, kita harus tahu
+[364.44] dulu user kita siapa.
+[366.64] Nah, kalau misalnya di aplikasi kita ini
+[368.52] kita mau [berdehem]
+[370.12] mau bikin aplikasi celengan pintar gitu
+[372.04] kan. Nah, kita sudah jelas nih kalau
+[374.52] celengan pintar berarti anak-anak. Terus
+[376.64] yang kita mau tawarin aplikasi ini ke
+[379.08] siapanya itu berarti kita kasih kita
+[381.68] tawarin teman kita dulu ya, teman
+[383.84] sekolah kita yang sekiranya sudah paham
+[387.60] tentang financial literacy dan mau
+[389.68] belajar menghemat uang dan mau menabung
+[392.40] gitu. Misalnya kalau misalnya kita sudah
+[395.40] tahu siapa yang mau akan menggunakan
+[397.84] aplikasi kita, sekarang kita listkan,
+[400.64] kita tanya tuh ke user kita, ke usernya
+[403.96] enggak harus eh and user ya sebenarnya.
+[406.76] Maksudnya kita enggak harus tanya teman
+[408.00] sekolah kita ya. Bisa kita bisa tanya
+[410.00] diri kita sendiri dulu. Kalau kita mau
+[412.48] bikin aplikasi, kalau kita mau bikin
+[414.56] aplikasi yang dia bisa mencatat
+[417.64] keuangan kita atau catat tabungan kita,
+[420.56] nah itu kita tanya diri sendiri dulu
+[422.20] atau tanya adik kita ya kan, tanya teman
+[425.44] sebangku kita atau sahabat kita. Coba
+[427.76] kita tanya dulu masalah apa sih yang
+[429.76] sering mereka ee tamukan gitu. Nah,
+[433.61] [berdehem] misalnya untuk aplikasi
+[435.00] celengan pintar ini kita mau aplikasinya
+[437.96] ee masalah yang biasa kita temukan di
+[439.80] teman-teman kita ini adalah dia tuh lupa
+[442.32] ya kan lupa kemarin jajan apa ya gitu
+[445.00] kemarin beli apa aja ya gitu terus tu
+[447.80] dia mau beli sesuatu tiba-tiba uangnya
+[449.92] habis
+[451.52] kompetnya dompetnya itu kosong kemudian
+[455.44] kadang dia tuh bingung nih mau beli buku
+[459.04] tulis yang itu kebutuhan atau dia harus
+[461.92] harus beli. Dia mau beli mainan baru
+[463.76] nih. Jadi dia butuh dua, mau beli dua
+[466.04] hal, tapi dia bingung apa antara dia
+[468.20] beli buku tulis dulu atau beli mainan
+[470.28] dulu gitu. Misalnya mainannya limited
+[472.92] [berdehem] edition gitu ya, harus dibeli
+[474.68] sekarang juga. Nah, tapi kan kita harus
+[476.84] tahu dulu nih keuangan kita kira-kira
+[478.88] yang mana yang harus dibeli dulu
+[480.24] berdasarkan laporan keuangan kita.
+[483.20] Kemudian
+[484.84] ada goal apa sih yang user kita
+[486.88] penginkan? misalnya oh dia pengin
+[489.04] menabung untuk membeli misalnya membeli
+[491.44] sepeda, membeli handphone baru atau
+[494.00] membeli ee
+[496.72] barang-barang yang dia inginkan, tapi
+[498.40] dia sebenarnya enggak tahu caranya itu
+[500.12] gimana, cara menabungnya itu gimana
+[502.04] gitu. Terus itu mungkin masalah yang
+[504.36] user kita hadapi mungkin tidak terkait
+[506.64] dengan ee aplikasi yang ee sesuatu yang
+[509.24] kita mau selesaikan gitu ya. Tapi di
+[511.16] sini user kita cerita curhat gitu. Teman
+[514.04] kita curhat dia gampang ee tergiur gitu.
+[517.44] Kalau temannya ajak jajan beli gorengan
+[521.04] gitu ya atau beli cilor terus itu
+[525.24] karena dia diajak ya udah dia ikut-ikut
+[526.84] juga dia beli. Padahal dia kayak oh udah
+[528.92] makan di rumah atau nanti kalau pulang
+[530.80] udah disediain makanan siang di rumah
+[532.56] sama mamanya gitu ya atau dapat MBG. Nah
+[536.08] jadi tuh kayak ee uangnya bisa cepat
+[539.28] habis. Nah, jadi itu masalah-masalah
+[542.36] yang kita temukan di user kita. Kita
+[543.88] tulis aja apakah itu terkait apakah kita
+[545.96] mau menyelesaikan masalah itu apa
+[547.72] enggak. Kita tulis aja dulu supaya kita
+[550.20] bisa memilah, kita bisa memilih mana sih
+[552.24] yang kira-kira bisa diselesaikan. Nah,
+[555.44] setelah kita tahu masalahnya, kita tulis
+[558.32] dulu problem statement-nya. kita state
+[561.04] kan di dalam aplikasi ini ee sori di
+[564.64] dalam ee aplikasi yang mau kita bangun
+[568.48] itu masalahnya itu apa ya? Nah, jadi
+[572.16] kita mau membuat dulu setelah kita tahu
+[574.28] user, kita tahu masalahnya apa, kita
+[575.96] buat problem statement-nya, kita pilih
+[577.92] yang mana yang mau kita selesaikan. Nah,
+[580.24] jadi problem statement atau kalimat
+[582.96] masalah itu adalah sebuah kalimat pendek
+[585.64] yang menceritakan siapa yang kesusahan
+[588.36] ya, siapa. terus apa kesulitannya dan
+[591.68] mengapa itu terjadi gitu. Jadi enggak
+[594.48] harus kita tawarkan solusi di situ. Kita
+[596.92] mau masalah mana yang mau kita
+[598.80] selesaikan gitu ya. Misalnya nih ada
+[603.68] contoh problem statement.
+[606.52] Teman kita kasihan
+[609.40] karena kesulitan
+[611.36] akibat
+[612.92] sehingga Oh ini sori ini rumusnya ya.
+[615.40] Ini rumusnya ini teman kita ini berarti
+[618.40] penggunanya ya siapanya ya kan ya baru
+[621.76] kesulitan ini apa kesulitannya ya nih
+[625.20] siapa nih misalnya contohnya teman kita
+[627.60] gitu ya teman kita kenapa nah ini di
+[631.16] bawah nih ada contohnya teman kita
+[633.24] misalnya ee di sini teman kita siswa SMA
+[638.16] gitu ya anak SMA kesulitannya apa
+[641.12] kesulitannya dia uang jajannya habis
+[643.72] terus nih gitu kesulit kulitannya,
+[645.56] masalah yang dia punya apa. Nah, kenapa
+[648.16] sih dia itu uangnya habis? Kita harus
+[650.04] tahu, cari tahu dulu kenapa uangnya
+[651.72] habis gitu. Nanti mungkin dia curhat ya,
+[654.28] pengguna kita pas kita cari dia curhat,
+[656.12] "Coba kita kira-kira nih apa misalnya
+[659.32] dia uang jajannya habis, ternyata dia
+[661.56] tergoda dengan keinginan, dia pengin
+[663.72] sesuatu gitu kan. Nah, dampaknya apa
+[667.04] gitu dari masalah tadi gitu kan
+[670.80] muncullah aki ee penyebabnya ya kan?
+[673.88] penyebabnya akibatnya apa, dampaknya
+[675.92] apa? Misalnya karena dia sering tergoda
+[678.32] keinginan, karena dia beli apa yang dia
+[680.92] mau, terus dia misalnya sangat sulit
+[683.64] menabung, padahal dia butuh ee misalnya
+[686.92] butuh laptop untuk sekolah gitu untuk
+[689.56] belajar coding. Nah, jadinya dia
+[692.72] berdampak nih karena dia sering jajon
+[694.80] apa tuh namanya? Sering tergoda
+[696.00] keinginan. Nah, inilah bentuknya kurang
+[699.48] lebih problem statement yang bisa muncul
+[703.32] dari permasalahan tadi. Siswa SMA
+[706.60] mengalami uang jajan habis.
+[710.40] Ini di sini ada kita bisa
+[711.72] tambah-tambahin ya kalimat pendukungnya
+[713.80] sebelum hari Jumat gitu kan ya. dari
+[715.88] mungkin dia kasih orang tuanya hari
+[717.12] Senin ya karena dia tergoda membeli apa
+[721.64] yang dia inginkan sehingga sulit
+[724.56] menyisihkan tabungan gitu. Nah, bisa
+[728.80] kita ganti-ganti gitu ya. Misalnya ee
+[731.88] siswa SMA juga dia lupa mencatat
+[734.16] keuangannya
+[735.72] karena tidak mencatat ee pengeluaran
+[739.72] sehingga dia tidak punya sisa uang
+[742.12] darurat gitu. Kalau misalnya dia harus
+[743.68] beli buku gitu atau pengin berenang sama
+[745.64] teman-temannya gitu kan. Nah, itu bisa
+[748.40] kita susun-susun, bisa kita atur-atur.
+[750.20] Boleh dampaknya dulu, boleh kesulitannya
+[752.36] dulu. Yang penting dalam masalah ee
+[755.56] kalimat masalahnya atau problem
+[757.00] statement-nya itu kita punya rumus ini
+[759.68] ya, usernya siapa, kesulitannya apa,
+[764.72] why, kenapa dia bisa terjadi, terus itu
+[768.48] dampaknya. Oke, itu untuk problem
+[771.52] statement.
+[773.64] Nah,
+[775.16] kemudian setelah kita punya problem
+[777.48] statement gitu ya, Mas. Tadi kita udah
+[780.80] state nih, kita sudah menyatakan oh ini
+[783.20] ada masalah satu, masalah dua, masalah
+[785.44] 3. Nah, setiap masalah yang kita ee
+[790.72] approve gitu, maksudnya setiap masalah
+[792.36] yang kita pilih itu kadang dia butuh
+[796.48] fitur yang berbeda di dalam aplikasi
+[798.32] kita. Jadi kalau misalnya kita mau
+[799.60] membantu teman kita menyelesaikan
+[800.92] masalah-masalah itu, maka fitur-fiturnya
+[804.68] gitu kan ya ee yang harus ada di
+[807.04] aplikasi kita juga beda. Apa aja sih
+[809.32] yang harus beda? Nih misalnya nih
+[810.96] contohnya
+[812.80] di sini ada masalah. Pertama siswa
+[815.20] bingung uangnya ke mana habis karena
+[816.76] tidak dicatat dengan rapi. Berarti
+[818.52] solusi yang kita tawarkan di aplikasi
+[820.36] kita adalah dia ada ee menghitung
+[823.80] belanja paling mahal dan rekap otomatis
+[826.60] gitu ya. Karena kan uangnya habis nih.
+[828.52] Kita cek nih aplikasinya harus mengecek
+[830.76] kira-kira dia habis belanja apa sih yang
+[832.84] paling mahal yang bisa bikin uangnya
+[835.00] habis. Terus itu kita mau dia merekap ya
+[839.12] dia akan menyus aplikasinya tercatat
+[841.44] dengan rapi secara otomatis gitu ya.
+[843.96] Karena kan dia sering lupa jadi harus
+[845.32] otomatis nih kayak gitu. Kemudian
+[848.28] masalah yang kedua, siswa sering bolos
+[851.72] boros beli mainan ketika tidak karena
+[855.40] tidak cek sisa uang dulu sebelum
+[857.44] belanja. Uangnya sisa Rp15.000, beli
+[860.00] cireknya Rp14.000.
+[861.96] Nah, kan jadi kayak jadinya jatuhnya
+[864.56] boros banget ya. Nah, kita mau di
+[866.76] aplikasi kita ada alarm yang
+[868.96] mengingatkan saat uang kita itu sisa
+[872.24] sedikit atau kritis gitu ya.
+[876.04] Kemudian masalah yang ketiga, siswa
+[878.76] ingin menabung tapi ragu uang sakunya
+[882.00] cukup apa enggak. Berarti aplikasinya
+[885.12] ini harus ada
+[889.08] tips ketika kita mau mm membeli sesuatu
+[893.76] muncul dulu tipsnya gitu ya. Nah, itu
+[896.60] perlu kita pikirkan seperti apa
+[899.92] kira-kira
+[901.44] ee bagaimana menyelesai membuat
+[904.84] aplikasinya itu gitu. Tapi enggak usah
+[906.52] dipikirin cara membuatnya dulu. Kita
+[908.24] pikirkan bentuknya aja dulu, gitu ya.
+[910.72] Oh, tips hemat itu mungkin mm nanti ada
+[913.84] menu pop up sendiri kah atau ada menu
+[916.92] sendiri gitu. Nah, itu bisa kita
+[919.60] bayangkan dulu gitu ya. Belum harus ee
+[922.20] ada dulu gitu. Nah, jadi kita kelihatan
+[925.28] kan dari masalah yang kita pilih, tiga
+[927.28] masalah yang kita pilih ini, oh ternyata
+[930.64] ini yang solusi yang bisa kita tawarkan.
+[933.36] Oke.
+[934.92] Nah, sebelum kita tulis Python tadi,
+[939.12] coba kita ee ya tadi ya kita masalah ee
+[943.08] pikirkan solusinya apa. Nah,
+[947.36] coba kalian kerjakan ya kuis berikut ini
+[951.76] kira-kira.
+[953.72] Mana sih yang cocok dengan aplikasi
+[956.24] celengan pintar kita? silakan kerjakan
+[958.68] di pop up berikut ini.
+[963.84] Nah, setelah kita tahu gitu kan ya, apa
+[966.36] aja fitur-fitur yang mau ada di aplikasi
+[968.48] kita dan fitur tadi itu ee [berdehem]
+[971.40] menyelesaikan masalah apa sekarang
+[973.52] sebelum kita membuat aplikasinya ya,
+[975.80] sebelum kita merancang aplikasinya,
+[977.56] belum membuat nih, masih merancang ya,
+[980.04] itu kita harus tahu dulu kira-kira
+[983.32] dari fitur-fitur tadi, dari
+[984.96] masalah-masalah tadi ya, itu dia mana
+[988.28] yang visible, mana yang not visible.
+[992.00] Masota visible itu berarti dia mana yang
+[994.64] bisa dibuat sekarang juga gitu. Misalnya
+[998.76] ee dari aplikasi kita tadi ee dari
+[1001.64] masalah yang sebelumnya kita sebutkan
+[1003.12] gitu ya. Oh, ternyata yang visible itu
+[1006.24] dia harus bisa mencatat keuangannya
+[1008.84] gitu. Tapi yang not visible-nya dia
+[1011.24] enggak harus otomatis kok gitu. Jadi
+[1013.56] kita bisa ee munculkan dia mm menu untuk
+[1018.80] masukkan dulu, untuk mencatat dulu
+[1020.44] keuangannya. Yang penting uangnya,
+[1021.80] aplikasi kita bisa mencatat dulu
+[1023.32] keuangannya, nanti baru kita tambahin
+[1025.60] fiturnya. Misalnya fiturnya dia ee
+[1028.84] setelah kita masukkan pengeluaran kita
+[1031.52] atau pemasukan kita di hari ini gitu
+[1033.68] atau di saat ini juga dia nantinya
+[1035.72] muncul apa ee di masa depan kita mau dia
+[1038.32] akan otomatis muncul top up wah uang
+[1041.16] kamu sisa segini kamu sangat boros
+[1043.28] gini-gini gitu kita akan ngasih saran
+[1045.28] gitu ya ada fitur otomatisnya ada fitur
+[1047.72] AI-nya gitu nah kita pilih dulu
+[1050.52] kira-kira apakah mungkin kita bikin
+[1053.08] fitur AI-nya sekarang kalau enggak
+[1056.12] enggak ya berarti kita masukkan ke dalam
+[1058.44] box not visible dulu. Kalau mungkin maka
+[1061.68] kita masukkan dulu ke yang visible gitu
+[1064.08] ya. Yang mudah-mudah dulu karena nanti
+[1065.96] aplikasinya kan kadang kalian ee lihat
+[1069.32] misalnya aplikasi apa ya WhatsApp gitu
+[1071.88] ya mungkin awalnya dia cuman chatan
+[1073.96] doang gitu kan baru nanti ditambahin
+[1075.96] fitur dia bisa telepon, ditambahin fitur
+[1078.00] bisa video, ditambahin fitur bisa bikin
+[1080.24] status gitu ya. Jadi dia bertambah
+[1082.88] fiturnya daripada kita pusing
+[1085.48] aplikasinya enggak launching-launching,
+[1087.24] mendingan kita bikin aplikasinya yang
+[1090.08] kita pisahkan dulu mana yang visible,
+[1092.16] mana yang not visible. Silakan kerjakan
+[1095.00] kuis popup berikut untuk
+[1097.60] mengecek ya apakah kalian paham tentang
+[1099.68] visible dan not visible tas.
+[1107.52] Oke, setelah kita tahu masalah apa yang
+[1110.16] ingin kita selesaikan dan solusi apa
+[1112.68] yang bisa ditawarkan oleh aplikasi kita,
+[1115.72] sekarang kita kita mulai masuk merancang
+[1119.36] aplikasinya nih ya. Jadi kita sudah
+[1121.12] merancang ee penggunanya dan bagaimana
+[1124.60] masalah yang dihadapi oleh pengguna
+[1126.36] tadi. Kemudian kita ee tawarkan
+[1129.24] solusinya. Nah, sekarang kita buat
+[1130.84] solusinya. Tapi sebelum kita buat, kita
+[1133.08] rancang dulu. Nah, dalam merancang ee
+[1136.48] solusi tadi, aplikasi tadi itu penting
+[1139.32] kita mengetahui kira-kira
+[1142.28] penggunanya ini nanti akan ngapain aja
+[1144.84] sih di aplikasi kita. Nah, coba kita cek
+[1147.08] dulu di slide berikut.
+[1149.54] [berdehem] Jadi, ada sebuah eh istilah
+[1153.44] ya dalam programming itu yang namanya
+[1155.76] use case. Use case itu ee bisa diartikan
+[1159.76] sebagai aksi pengguna. kira-kira
+[1162.28] pengguna itu apa sih yang akan dilakukan
+[1166.12] si pengguna ini? Dia akan melakukan apa
+[1168.04] di dalam aplikasi kita? Bayangkan
+[1171.88] use case ini seperti daftar tombol ya
+[1174.36] kan? Daftar tombol mungkin yang ada di
+[1176.12] aplikasi yang kalian punya gitu atau di
+[1178.44] misalnya daftar tombol yang ada di game
+[1180.40] kalian gitu kan ya. Nah, atau daftar
+[1183.92] tombol, daftar menu yang ada di dalam
+[1186.84] laptop kalian gitu atau di WhatsApp atau
+[1188.88] di Instagram, di banyak aplikasi yang
+[1190.60] kalian sudah temukan. Nah, tombol-tombol
+[1193.92] itu ada use case-nya gitu ya. Jadi kayak
+[1196.60] oh pengguna akan memencet tombol ini
+[1198.72] untuk memposting foto gitu. Kalau
+[1200.32] misalnya kita pilih Instagram, pengguna
+[1203.08] akan pergi ke beranda halamannya untuk
+[1205.56] melihat foto-foto yang sudah di-upload
+[1207.24] ketika dia mengeklik tombol rumah, gitu
+[1209.44] misalnya.
+[1211.08] Jadi kita sudah memikirkan
+[1213.36] apa sih yang kira-kira nanti user
+[1214.76] lakukan gitu. Kita pikirin aja dulu
+[1216.60] gitu. Di sini contohnya
+[1219.84] kita mau di dalam aplikasi gini
+[1221.80] penggunanya dia nanti oh dia akan
+[1223.76] mencatat keuangannya. Dia mencatat
+[1225.60] uangnya. Jadi ee setiap uang yang masuk
+[1229.08] dan setiap uang yang keluar dia nanti
+[1230.96] akan mencatat gitu. Dia akan masukin,
+[1232.96] dia akan mengetik. Kemudian
+[1236.92] pengguna juga setelah dia memasukkan
+[1239.80] tadi ya kan memasukkan ee uangnya,
+[1243.44] transaksinya dia harus bisa lihat sisa
+[1245.64] uangnya di tabungannya itu dia berapa
+[1248.16] gitu kan. Karena kita sebutan
+[1249.48] aplikasinya itu celengan. Nah, di sini
+[1251.24] tulisan di celengan. Terus itu kira di
+[1254.44] dalam aplikasi kita si user bisa melihat
+[1258.24] belanja apa sih yang paling besar gitu
+[1261.56] ya. apa yang dibeli sama user yang ee
+[1265.60] nominalnya besar dan banyak gitu ya
+[1268.28] sehingga membuat dia jadi boros gitu.
+[1271.56] Nah, dari sini kita mau juga membuat
+[1274.16] kayak mm ada section tertentu gitu yang
+[1278.92] di mana dia nanti bisa menampilkan
+[1282.36] saran-saran cara berhemat gitu kan ya,
+[1285.60] cara menabung. Terus itu kita mau ee
+[1289.16] pengguna kita bisa menutup aplikasi
+[1291.28] kita. gitu ya.
+[1294.00] Nah,
+[1296.26] [berdehem] nah di sini Kakak sudah punya
+[1297.92] contohnya kalau misalnya di aplikasi
+[1300.00] kita ketika dia mengklik tombol tambah
+[1303.36] transaksi gitu ya, kita gambarkan aja.
+[1305.36] Kalian bisa gambarkan di kertas atau
+[1307.60] kalian bisa langsung bikin kalian ketik
+[1310.44] di bentuk kata-kata atau teks gitu ya.
+[1312.68] Nah, kalau di sini ketika user ngeklik
+[1315.40] tombol tambah transaksi, maka dia muncul
+[1318.80] nanti misalnya dia akan masukin nih ee
+[1321.76] misalnya yang dia nama transaksinya
+[1324.44] adalah makan siang gitu. Terus itu nanti
+[1327.36] dia akan ee aplikasi kita akan minta
+[1329.92] tipenya apa nih? Tipe transaksinya
+[1332.04] apakah pemasukan atau pengeluaran. Oh,
+[1333.68] dia tulisnya pengeluaran. Kemudian dia
+[1335.96] masukin nih nominalnya berapa gitu.
+[1338.60] 1.000 eh R.000 Ibu baru kita nanti
+[1341.72] aplikasinya kita buat supaya dia ngasih
+[1344.20] tahu kalau misalnya transaksinya
+[1345.80] berhasil apa enggak. Kalau terhasil ya
+[1348.16] udah berarti kita kasih tombol apa?
+[1349.80] Kasih kayak teks warna hijau. Oh,
+[1351.84] tombolnya berhasil disimpan. Kemudian
+[1354.28] nanti transaksinya di back end di apa
+[1357.24] namanya ya? Berarti kalau di backend itu
+[1359.08] berarti enggak ditampilkan ke pengguna
+[1360.32] ya. Nah, nanti datanya akan tersimpan ke
+[1362.64] dalam sebuah ee table ya, bukan sebuah
+[1366.12] table, sebuah list atau array namanya
+[1368.56] transaction. Di dalam array transaction
+[1370.88] kita bikin array namanya bukan kita
+[1374.84] bikin dictionary gitu ya. Jadi di setiap
+[1377.36] eh data yang kita simpan itu mempunyai
+[1379.92] label, mempunyai key, dan mempunyai
+[1382.76] value masing-masing gitu ya. Nah, ini
+[1385.40] kalau misalnya dia mengklik tambah
+[1386.96] transaksi gimana kalau dia mau melihat
+[1389.80] sisa uangnya. Kalau dia mau melihat sisa
+[1392.24] uangnya nanti dia akan muncul
+[1395.28] ringkasan keuangan gitu. Jadi muncul
+[1397.24] teks gitu, berapa uang yang dia masukin,
+[1399.88] yang dia punya gitu kan yang
+[1401.76] pemasukannya mungkin ini allowance dari
+[1403.76] orang tuanya sama berapa sih pengeluaran
+[1406.44] yang dia dapatkan. Nah, terus itu kita
+[1410.60] bisa ngih aplikasinya akan menampilkan
+[1412.56] sisa saldonya. Berarti kalau sisa saldo
+[1414.52] itu kan pemasukan dikurang pengeluaran.
+[1417.32] Nah, ini karena dia uangnya masih sisa
+[1420.00] banyak gitu ya. Misalnya di kita set
+[1421.92] nanti dia di bawah Rp20.000 warnanya
+[1424.44] hijau gitu. Nah, tapi itu not visible ya
+[1427.92] e untuk ngasih warna ini. Mungkin kita
+[1430.64] kasih dulu teksnya aja gitu. Oke. Itu
+[1433.82] [berdehem] kalau misalnya dia mau
+[1435.16] melihat sisa uang. Kalau mau ngecek
+[1439.24] belanjanya dia yang paling boros apa
+[1441.52] gitu. Misalnya di sini total
+[1443.32] pengeluarannya Rp15.000, yang terbesar
+[1445.80] apa 15.000 makan siang. Nah, aplikasinya
+[1448.04] akan langsung ee ngecek nih maksimum
+[1450.92] spending-nya berapa sama dia akan ngecek
+[1453.40] rata-rata pengeluarannya dia berapa gitu
+[1455.92] ya dalam ee sekali cycle pencatatan
+[1458.72] gitu. Terus itu ada saran hemat. Kalau
+[1462.04] di salah-salan hemat itu muncul teks
+[1464.52] saldo kamu masih aman gitu ya. Ada 70%
+[1467.64] dari sisa uang. Pertahankan uangnya
+[1470.08] untuk menabung gitu, ditabung dan segala
+[1472.40] macam. Jadi banyak banget yang bisa kita
+[1475.48] ee lakukan gitu ya. kita kita mau
+[1478.24] aplikasi kita ini kalau diklik ini nanti
+[1480.76] muncul teks apa, gambarannya seperti
+[1482.76] apa, coba kita gambarkan dulu ya. Boleh
+[1485.08] berbentuk teks dulu seperti tadi atau
+[1487.40] kalian mau kalau misalnya kalian
+[1488.80] menggunakan ee MIT App Invantor atau
+[1492.00] langsung yang berb visual bisa langsung
+[1493.88] di ee instalkan. Kalau menggunakan
+[1496.60] Python bisa langsung di ee apa itu
+[1499.60] namanya? Bisa kita teks tuliskan dulu
+[1501.96] teksnya apa gitu ya. Nah, ini untuk
+[1506.28] merancang tombolnya.
+[1508.84] Kalau tombolnya itu sudah selesai, ya
+[1511.56] kan ya, tadi kita sudah tahu fitur-fitur
+[1513.88] apa masalah apa aja yang user butuhkan
+[1517.00] eh apa yang hadapi user hadapi, kemudian
+[1519.72] dari masalah itu fitur apa yang kita
+[1521.40] tawarkan. Nah, fitur tadi sudah kita
+[1523.88] rancang, tampilannya seperti apa. Nah,
+[1526.52] berarti fitur tadi itu kita aktifkan,
+[1530.72] kita ubah. Kalau dalam bahasa Python ya,
+[1533.68] dalam beberapa bahasa pemrograman itu
+[1536.40] kita ubah
+[1539.28] fitur fitur tadi menjadi sebuah function
+[1542.56] yang berbeda gitu ya. Jadi kalau
+[1545.88] misalnya dia mengklik tombol apa atau
+[1549.28] mengklik memilih fitur sebuah fitur yang
+[1551.96] ada di dalam aplikasi kita ketika dia
+[1554.20] memilih use case ya kan ya ketika dia
+[1556.64] memilih use case yang sudah kita
+[1558.32] siapkan, maka dia akan menjalankan
+[1561.00] perintah tertentu ya atau fun yang sudah
+[1564.36] e perintah tersebut kita sudah simpan,
+[1566.48] sudah kita gabungkan ke dalam sebuah
+[1568.80] function. Misalnya kita nanti bikin
+[1572.48] ketika kita aplikasi kita ee ketika
+[1576.12] pengguna mengklik aplikasi kita gitu ya.
+[1579.20] Nah, ketika dia klik tambah catatan gitu
+[1581.68] ya, catat keuangan, catat transaksi,
+[1584.44] tambahkan transaksi gitu ya. Nah, nanti
+[1586.80] kita akan memanggil function namanya apa
+[1590.84] gitu. Di sini misalnya kalau kita mau
+[1592.68] menambahkan transaction, kita bikin
+[1594.76] @_tr.
+[1596.44] Ingat ya, dalam eh Python dalam beberapa
+[1600.52] bahasa pemrograman jangan gunakan spasi
+[1602.88] dalam memberi nama variabel, memberi
+[1605.44] nama function dan sebagai macam gitu ya.
+[1608.32] Jadi kalau misalnya mau pakai eh spasi
+[1610.96] tambahin aja unders dan juga karena ini
+[1613.84] function supaya programnya tahu ini
+[1616.44] adalah sebuah function, kita kasih buka
+[1618.84] kurung tutup kurung di akhirnya supaya
+[1621.28] jelas nih. Oh, ini bukan variabel tapi
+[1623.08] ini function. yang berarti kalau dia
+[1625.88] dipanggil maka akan ada sesuatu yang
+[1628.08] terjadi dalam program. Programnya akan
+[1629.84] diproses gitu ya. Terus itu banyak
+[1632.40] banget yang bisa kita lihat di sini
+[1633.68] contohnya ketika dia ngeklik tampilkan
+[1635.60] sisa uang dia akan menjalankan function
+[1639.40] summarized transaction
+[1642.16] dan seterusnya dan seterusnya. Jadi
+[1644.76] dengan cara ini kita jadi tahu, oh nanti
+[1647.76] yang ini namanya ini, yang ini namanya
+[1650.64] ini gitu. Jadi program kita tuh terlihat
+[1653.08] lebih rapi,
+[1654.96] teratur dan juga tidak bertumpuk gitu.
+[1657.64] Jadi kita enak kalau misalnya ada error,
+[1660.16] oh misalnya ketika dia nambahin cata apa
+[1664.12] em nambahin uang dia masukinnya Rp10.000
+[1667.96] tapi yang tercatat cuman 1.000 nolnya
+[1670.20] hilang satu. Nah berarti kan yang harus
+[1672.72] kita cek itu ini add transaction ya kan
+[1675.92] ya function yang add transaction. Jadi
+[1678.68] kita enggak perlu ngecek apa perhitungan
+[1681.68] sisa uang, terus itu analy expenses dan
+[1684.56] segala macam. Kita cukup fokus di fungsi
+[1686.56] yang menyimpan tadi karena masalahnya
+[1688.68] ada di menyimpan uangnya tidak tersimpan
+[1690.84] dengan benar gitu. Nah, sekarang
+[1695.80] setelah kita udah merancang nih ya kan
+[1699.48] function-nya bentuknya seperti apa,
+[1701.76] isinya nanti apa, kita mulai bikin flow
+[1705.60] chart-nya atau diagram alurnya.
+[1708.64] Nah, diagram alur ini kalian boleh buat
+[1710.92] yang simpel dulu ya kan. Intinya adalah
+[1714.16] dia harus mulai diawali dengan start dan
+[1717.92] diakhiri dengan end gitu ya teman-teman.
+[1720.48] Nah, maksudnya gimana? Dia harus kita
+[1723.28] bayangkan user itu journinya ya
+[1725.96] perjalanannya user dari dia ee mengklik
+[1730.88] aplikasi kita sampai uangnya tercatat
+[1732.92] gitu. misalnya dalam ee kasus dia
+[1737.04] menat keuangan gitu kan ya. Nah, di sini
+[1740.00] dalam alur aplikasi contohnya pertama
+[1742.20] kita mulai dulu. Setelah aplikasinya
+[1744.72] dimulai dia akan menampilkan menunya.
+[1749.24] Setelah menunya ditampilkan, kita pilih
+[1752.80] fiturnya apa aja apa? Pengguna kan akan
+[1755.96] milih fitur tadi. Berdasarkan menu yang
+[1758.32] kita kasih. Pengguna milih gitu. Setelah
+[1762.00] fiturnya dipilih tadi kan ada function
+[1764.20] yang berjalan nih kan kita jalankan
+[1765.76] kodenya. Nah, kalau kodenya sudah
+[1768.20] dijalankan nanti akan ada hasil yang
+[1770.16] keluar. Kalau hasilnya sudah keluar
+[1773.44] nanti kita tanya user lagi apakah dia
+[1775.84] mau mengulangi hal yang tadi gitu ya
+[1779.20] atau
+[1781.16] kembali ke menu atau dia penginnya
+[1784.04] keluar dari aplikasinya karena dia udah
+[1785.76] cuma mau mencatat doang gitu. Nah, peta
+[1789.12] ini kita buat supaya jelas, supaya kita
+[1791.92] tidak tersesat,
+[1793.80] supaya kita jelas nanti dia
+[1795.12] perulangannya sampai mana. Nah, terus
+[1797.80] itu kita supaya tahu juga condition-nya
+[1800.80] seperti apa dan pilihan-pilihan lainnya.
+[1804.00] Bentuknya itu boleh seperti ini ya, yang
+[1807.00] simpel seperti ini. Atau kalau kalian
+[1808.88] sudah belajar tentang flowchart boleh
+[1811.20] nih kalian
+[1812.96] ee apa itu namanya? gunakan bentuk
+[1815.92] flowchart yang seperti yang sudah kalian
+[1818.88] diajarkan di oleh guru kalian ya.
+[1820.92] Misalnya bentuk ee flowchart yang guru
+[1823.08] kalian sudah ajarin nih seperti ini nih.
+[1825.16] Ada start read A, read B segala macam.
+[1828.76] Di sini kalau misalnya dia bentuk ke
+[1830.24] lingkaran atau elipse berarti ini start
+[1832.24] sama N. Kalau eh jajar genjang ini
+[1835.04] berarti dia sebuah input atau output.
+[1837.60] Kalau proses itu berarti dia persegi
+[1839.28] panjang. Nah, ini boleh kalian buat
+[1840.72] seperti ini atau kalau misalnya masih
+[1843.28] bingung boleh silakan menggunakan yang
+[1846.52] simpel seperti ini dulu. Oke.
+[1850.68] Nah, tadi setelah itu ini bentuknya
+[1853.88] boleh kayak gini juga ya. Bentuk lainnya
+[1856.48] ee boleh ee boleh berbentuk dropdown
+[1860.28] seperti ini juga. Yang penting tuh kita
+[1862.20] punya rencana dulu alurnya pengguna dari
+[1864.60] awal menggunakan
+[1866.56] aplikasi sampai selesai itu seperti apa.
+[1868.40] Kita harus gambarkan dulu. Jangan sampai
+[1870.84] kita sendiri yang buat aplikasinya
+[1872.72] enggak tahu kira-kira gambaran aplikasi
+[1874.84] yang sudah jadi nanti seperti apa gitu
+[1876.80] kan. Nanti malah aneh gitu kan ya.
+[1879.96] Kita yang buat aja bingung apalagi nanti
+[1881.60] pengguna yang membuat gitu. Oke. Ini
+[1884.40] bentuknya boleh dibuatkan dropdown
+[1886.20] seperti ini atau boleh yang bentuk
+[1888.48] gambar. Nah.
+[1891.04] Sekarang kita kan tadi udah membuat
+[1895.16] ininya ya, kita sudah membuat alurnya.
+[1897.80] Nah, sekarang kita bikin menunya gitu
+[1900.68] ya. Kan aplikasi setelah dijalankan dia
+[1903.28] akan menampilkan menu. Nah, tampilan
+[1905.84] menunya itu tadi boleh kita bikin ee
+[1909.56] yang rapi gitu ya. Kita bisa bikin yang
+[1911.60] rapi mungkin dengan print-print aja gitu
+[1914.12] ya. Kayak yang simpel kayak dikasih
+[1916.48] hiasan-hiasan sama dengan sama dengan
+[1918.16] ini ya. Enggak wajib sebenarnya. Tapi
+[1919.80] kan kalau aplikasinya bagus ya jadi
+[1922.04] lebih bagus juga gitu. Atau kalian bisa
+[1924.24] tambahkan ini ada yang namanya ee di
+[1927.60] sini ada yang namanya ASC art kalau
+[1930.12] misalnya kita menggunakan Python ya.
+[1932.56] Nah, ada generator namanya ASC art.
+[1936.64] Asart generator deh. Coba kita cari ya.
+[1938.72] AS art generator.
+[1941.56] Nah, di sini kita boleh kita klik aja
+[1944.60] yang mana aja. Nah, ini kita bisa lihat
+[1947.08] nih ketika kita mengklik something
+[1949.20] misalnya UOB my digital space.
+[1954.54] [berdehem] Nah, nih muncul nih teksnya
+[1957.00] kan lebih bagus ya, headernya lebih
+[1959.20] bagus ya, nama aplikasinya muncul di
+[1961.00] awal gitu. Kita bisa ganti juga
+[1963.12] font-fontnya sesuai yang kita mau, yang
+[1965.68] kita menurut kita bagus gitu ya, yang
+[1968.56] sekiranya bisa dibaca oleh user gitu
+[1971.04] tapi disesuaikan juga ya dengan usernya
+[1973.00] siapa. Kalau usernya anak-anak berarti
+[1975.28] kita bisa bikin yang fun gitu kan ya.
+[1977.56] Kalau orang tua kan susah ya membaca
+[1979.28] yang seperti ini gitu atau yang ini ada
+[1982.56] contohnya yang crazy. Nah, ini kan susah
+[1984.60] terbaca dah. Jadi bisa nih kalian eh
+[1987.60] gunakan AS generator ini. ASG art
+[1990.64] generator ini tinggal kalian copy aja ya
+[1993.16] baru kalian paste di terminal kalian
+[1995.20] atau masukin ke dalam print gitu ya.
+[1997.68] Nah, kemudian setelah kita tulis nih,
+[2001.72] kita bikin art-nya, kita tulis nih apa
+[2003.68] aja gitu ya. Kita bikin ee print 1
+[2008.24] tambah transaksi
+[2010.20] dua sisa uang dan seterusnya. Baru nanti
+[2012.76] ada input gitu kan kita bikin inputnya.
+[2015.76] Inputnya user nih pilih mana dari menu
+[2018.00] yang kita tampilkan dia milih menu yang
+[2019.84] mana nomor satu atau nomor dua atau
+[2021.88] seterusnya. Misal kita pilih nomor 3.
+[2024.80] Kalau nomor berarti dia menjalankan
+[2028.04] analisis pengeluaran gitu ya. Kalau
+[2030.16] input nih bentuknya input
+[2033.36] pilihan apa ter ee yang nanti muncul ya
+[2036.76] pilih menu atau misalnya kamu mau apa
+[2039.72] hari ini itu dimasukkan ke dalam petik
+[2041.60] duanya dalam input. Kemudian hasil
+[2044.12] inputnya pilih ee masukkan ke dalam
+[2046.16] choice gitu. masukkan dalam variabel
+[2049.00] choice. Itu itu bentuk ee menu pilihan
+[2053.88] atau teks menu yang ada di dalam bahasa
+[2056.00] pemrograman Python. Nah, setelah kita
+[2059.04] buatkan menu tadi ya kan tadi kita sudah
+[2061.76] simpan pilihannya ke dalam variabel
+[2064.00] choice. Nah, harusnya setiap pilihan
+[2066.88] angka yang pengguna masukkan itu dia
+[2070.56] akan men-trigger, akan memanggil fungsi
+[2073.60] yang berbeda-beda gitu ya. Kalau dia
+[2076.16] pilih nomor satu berarti dia memanggil
+[2078.24] function add transaction. Kalau dia
+[2080.76] nomor dua summarize transaction
+[2082.88] seterusnya dan seterusnya sesuai dengan
+[2085.56] apa yang udah kita buat. Kalau
+[2088.04] functionnya belum terbuat, enggak
+[2089.40] apa-apa. Kita tulis aja dulu di sini.
+[2091.92] Karena kan kita mau mempetakan dulu nih.
+[2094.36] Jadi kita bikin berurut dulu ya sesuai
+[2096.64] dengan alur yang sudah kita tetapin
+[2098.36] tadi. [mendengus] Nah, selanjutnya
+[2101.84] setelah kita buat menunya tadi baru kita
+[2105.36] deklarasikan,
+[2107.00] kita deklarasikan
+[2109.28] function-nya ini tadi. Nah, untuk
+[2113.04] mendeklarasikan function itu kita bisa
+[2116.76] menggunakan perintahnya ini ya. kita
+[2119.00] pakai def define baru nama function-nya
+[2122.00] apa. Enggak usah dimasukin parameter
+[2124.60] dulu, enggak usah dimasukin kodenya dulu
+[2128.04] untuk membuat ee nanti supaya dia
+[2132.20] programnya enggak error pas dijalanin ya
+[2134.60] itu kita boleh menggunakan pas. Ada
+[2137.56] dalam Python itu perintah namanya pas
+[2139.92] gitu ya. Yang artinya pas dulu deh
+[2142.44] function-nya ini belum ada isinya belum
+[2144.00] sempat kita bikin. Jadi kita pas dulu ya
+[2147.12] lewat dulu. Nanti diisinya nanti ya kita
+[2149.96] tambahin di sini pas. Nah, hashag ini
+[2152.40] kan komen ya. Ini enggak perlu kalian
+[2153.88] tulis juga enggak apa-apa cukup tuliskan
+[2156.32] pas aja. Jangan lupa kalau misalnya
+[2158.92] kalian memasukkan pas ini ada indentasi
+[2162.28] ya dari ee pendeklarasian function-nya
+[2166.24] dengan ininya dengan perintah pasnya ya.
+[2169.56] Ada indentasi ketik tab aja atau kalian
+[2172.68] bisa spasi empat kali. Yang penting dia
+[2174.76] enggak boleh sejajar dengan deklarasi.
+[2177.76] function-nya gitu supaya dia tahu, oh
+[2180.20] ini function-nya ini kodenya bagian dari
+[2182.80] function yang ini, gitu. Nah,
+[2186.28] lakukan hal yang sama untuk ke semua
+[2190.28] function yang nanti kita mau bikin gitu
+[2192.56] ya. Kalau udah kan kita butuh menyimpan
+[2195.44] datanya ya. Untuk menyimpan datanya kita
+[2197.76] enggak perlu pakai jason, kita enggak
+[2199.28] perlu pakai database, cukup menggunakan
+[2201.80] array saja atau list aja ya. berarti dia
+[2205.96] nama array-nya diikuti dengan kurung
+[2209.60] siku ya, kurung siku yang seperti ini.
+[2212.00] Nah, gitu. Oke, itu untuk membuat
+[2216.48] function-nya. Belum membuat function-nya
+[2218.20] ya, untuk baru mendeklarasikan.
+[2221.12] Nah, untuk supaya teman teman-teman
+[2223.96] lebih paham lagi, coba kerjakan kuis
+[2226.60] berikut ini.
+[2231.60] Nah, Teman-teman tadi kita sudah latihan
+[2234.64] juga terkait bagaimana kita bisa membuat
+[2238.76] aplikasi, merancang ya aplikasinya ya
+[2240.88] dari awal kanvas putih gitu sampai
+[2243.64] aplikasinya sudah kita masukkan ke
+[2245.28] Python. Nah, sekarang kita mau
+[2249.04] aplikasinya itu dia bisa pintar. Nah,
+[2252.32] salah satu cara buat aplikasinya pintar
+[2254.04] itu berarti kita mau aplikasinya
+[2256.24] membantu user atau pengguna
+[2259.36] dalam mengambil keputusan. Jadi, dia
+[2262.16] harus mengasih reminder kayak misalnya
+[2264.60] sebelum dia membeli sesuatu, hei, uang
+[2266.80] kamu sisa segini. Apakah kamu yakin akan
+[2269.16] mengeluarkan uang sebanyak ini? Gitu.
+[2271.32] Jadi akan kita mau dia ada
+[2273.04] peringatan-peringatan ya kan ya, ada
+[2275.12] kayak saran-saran kalau misalnya kita
+[2277.56] sudah terlalu banyak jajan atau uang
+[2279.24] kita sisa sedikit atau kita ee bisa
+[2282.84] bikin aplikasinya menargetkan tabungan
+[2284.92] gitu. Jadi ya kalau ada sisa uang di
+[2287.08] bulan ini dia bisa masuk ke tabungan
+[2290.40] gitu. Nah,
+[2293.44] untuk supaya dia pintar itu supaya data
+[2296.52] ee supaya aplikasi kita itu pintar, dia
+[2298.80] membutuhkan yang namanya data gitu kan
+[2300.84] ya. Datanya itu apa aja? Oh, datanya itu
+[2303.68] ee data keuangan yang sudah dimasukkan
+[2306.36] sama user kita tadi gitu ya. Nah,
+[2308.68] berdasarkan data itu tadi kita harus
+[2310.84] lihat insight-nya. Kita harus ee bisa
+[2314.80] membaca insight-nya. Insight itu apa
+[2317.08] sih? Insight adalah kesimpulan.
+[2320.24] kesimpulan pintar yang kita dapatkan
+[2322.92] setelah kita memeriksa data gitu ya.
+[2325.76] Jadi setelah kita memeriksa datanya
+[2328.68] barulah kita bisa tahu gitu ya. Baru
+[2331.96] kita bisa tahu kalau misalnya ee
+[2336.16] misalnya nih contohnya ya ada data
+[2338.76] makanan Rp80.000, transportasi Rp20.000,
+[2341.92] terus itu hiburan Rp10.000. Dari data
+[2344.72] ini saja kita bisa lihat mana yang
+[2347.12] paling besar pengeluarannya. Oh, yang
+[2349.36] paling besar pengeluaran itu makanan.
+[2351.80] Berarti berdasarkan data ini kita ngecek
+[2355.20] yang mana yang nilai yang paling tinggi.
+[2356.96] Terus dia ngasih insight, "Wah, ternyata
+[2360.52] yang uang jajanmu itu paling banyak
+[2364.00] habis untuk beli makan." Nah, setelah
+[2366.96] dia kasih insight, kita bisa kasih
+[2369.40] saran. Misalnya besok coba bawa bekal
+[2372.72] gitu ya atau apa segala macam. Nah, ini
+[2375.44] enggak wajib ya ini ee karena kan ini
+[2377.84] harus banyak use case-nya gitu ya. Kalau
+[2379.64] misalnya yang jadi kita harus bikin
+[2381.96] kondisi di mana makanan yang paling
+[2384.12] besar, ada kondisi di mana transportasi
+[2386.52] yang paling besar, hiburan paling besar
+[2387.96] gitu. Jadi dia ee ini agak susah kalau
+[2391.52] ada weh berarti keren banget ya
+[2393.56] aplikasinya lengkap ada AI eh
+[2395.76] suggestion-nya gitu ya. Kita bisa sebut
+[2397.48] dia AI suggestion ya karena kan komputer
+[2399.44] yang memberikan suggestion. Nah itu ya.
+[2402.20] Jadi berdasarkan data yang kita punya,
+[2405.12] kita cek terus itu kita bisa
+[2407.52] menyimpulkan, oh yang paling besar tuh
+[2409.76] yang mana, yang paling kecil yang mana,
+[2412.12] rata-ratanya berapa itu ya biasanya
+[2414.32] insight itu. Oke. Nah, sekarang kalau
+[2418.40] misalnya kita ee lihat di sini ada
+[2421.36] alurnya ya, tangganya gitu. Jadi intinya
+[2424.76] dalam program kita itu dia ngecek
+[2427.20] angkanya, ngecek datanya gitu ya.
+[2429.88] Kemudian dari data itulah muncul si
+[2432.16] insight tadi yang nanti bisa muncul juga
+[2435.20] sarannya gitu. Oke, lanjut. Di sini
+[2440.88] untuk membuat programnya itu bisa
+[2444.84] pintar, kita menggunakan yang namanya
+[2448.00] condition gitu ya. Nah, misalnya
+[2450.68] contohnya di sini sisa uang yang kita
+[2453.84] punya itu R5.000 gitu. Nah, kita mau
+[2457.72] aplikasinya itu nanti ngasih saran-saran
+[2460.04] gitu ya, ngasih insight-insit.
+[2462.48] Nah, di sini kita bikin ada dua kondisi,
+[2466.64] tiga kondisi ya totalnya ya. Nah, kalau
+[2469.72] balance-nya sisa uang kita kurang dari
+[2472.52] Rp10.000,
+[2474.12] maka kita kasih saran tunda beli mainan
+[2477.12] dulu gitu ya atau tunda ee simat ee
+[2480.76] simpan-simpan uangnya hemat-hemat gitu.
+[2483.96] Atau kalau misalnya uang kita itu kurang
+[2487.56] dari Rp30.000.
+[2489.96] Kalau dia kurang dari Rp30.000, maka
+[2492.60] kita kasih saran, hati-hati uangmu mulai
+[2495.12] menipis.
+[2496.96] Kalau misalnya dia lebih dari R.000 dan
+[2500.36] lebih dari R30.000, kita kasih tahu ee
+[2502.64] kita kasih insight ya. Kita kasih tahu
+[2505.08] pengguna kita, oh saldo kita masih aman
+[2508.16] gitu. Nah, ini salah satu
+[2510.16] implementasinya di program kita if tadi
+[2512.08] ya. Misalnya uang kita R30.000,
+[2515.68] R30.000, wah berarti uang kita masih
+[2517.88] aman gitu ya. Apalagi Rp50.000. Tapi
+[2520.44] kalau misalnya uang kita itu R30.000 pas
+[2523.04] masih aman gitu ya. Tapi kalau dia
+[2524.76] kurang dari itu misalnya R9.000 aja atau
+[2527.32] Rp27.000, nah nanti uangnya akan
+[2529.56] muncullah seperti ini ya. Berarti dia
+[2531.88] akan e masuk ke if yang seperti ini.
+[2533.96] Kalau uangnya lebih tipis lagi, nah
+[2536.16] berarti kita tunda keinginan gitu ya.
+[2538.24] Jadi output-nya akan muncul berbeda-beda
+[2541.72] sesuai dengan nilai uang saku yang di ee
+[2544.76] yang ada di dalam aplikasi kita gitu
+[2547.32] yang dimasukkan oleh user. Kalau user
+[2549.40] enggak masukin ee datanya ya dia kita
+[2552.28] enggak bisa ngasih insight dengan benar
+[2553.72] gitu.
+[2555.32] Nah, untuk menyimpan data keuangan gitu
+[2558.48] ya, itu kita kalau dalam Python itu
+[2561.24] sebaiknya disarankan lebih mudah
+[2563.08] menggunakan dictionary ya teman-teman.
+[2565.20] Jadi, dictionary, dictionary ini eh
+[2568.52] pembuatan ee contohnya itu dia
+[2571.60] menggunakan curly bracket gitu ya,
+[2573.68] kurung kurawal dan juga ada key-nya
+[2577.80] gitu. Maksudnya key ini apa? Ada key,
+[2579.68] ada value. Jadi, key-nya ini oh dia
+[2581.76] nyimpan apa sih? Oh, dia dia beli apa
+[2584.24] sih? Dia beli makanan dan makanan
+[2586.04] harganya berapa? Rp8.000. Berarti di
+[2588.24] sini key-nya makanan harganya value-nya
+[2591.32] nilainya Rp8.000 gitu ya. Jadi dia bisa
+[2593.88] menyimpan banyak banget kategorinya,
+[2596.40] banyak data langsung gitu daripada kita
+[2598.72] harus menyimpan variabel misalnya
+[2600.28] makanan 1 = 8.000, makanan 2 = 8.000.
+[2604.12] Kalau misalnya kita mau bikin aplikasi
+[2605.60] yang dia berjalan 1 bulan, berarti kan
+[2607.84] ada 30 variabel hanya untuk makanan aja
+[2610.96] kan ribet ya kan ya. Nah, supaya dia
+[2613.40] datanya terkumpul dengan rapi, kita bisa
+[2615.16] menggunakan dictionary.
+[2619.64] Setelah itu, kita bisa ee membuat ya
+[2625.28] programnya itu mengecek kira-kira
+[2628.36] mana sih data ee dari data kita itu mana
+[2633.00] pengeluaran yang paling besar. Nah,
+[2635.32] untuk mengecek pengeluaran paling besar,
+[2637.88] ups, itu kita bisa menggunakan yang
+[2640.52] namanya max gitu ya. Nah, di sini kita
+[2645.60] buat ee variabel yang menyimpan
+[2648.80] kira-kira nanti kategori mana yang
+[2650.52] paling besar. Nah, di sini kita panggil
+[2653.24] nih maksimum mana yang maksimum gitu kan
+[2656.68] ya. Dari misalnya ada dictionary, kita
+[2659.12] punya dictionary namanya tadi kategori
+[2661.32] total ya. Coba kalau kita lihat ke
+[2662.76] sebelumnya, kita punya ee
+[2666.40] dictionary yang dia menyimpan
+[2668.56] kategori-kategori dan juga pengeluaran.
+[2670.84] Intinya ini pengeluaran yang kita
+[2672.04] keluarkan gitu ya, namanya kategori
+[2674.04] unders total. Nah, dari kategori total
+[2677.60] ini tadi kita mau ambil key-nya yang
+[2682.80] paling besar category.total key. Get
+[2685.88] kita ambil gitu ya. Jadi kita panggil
+[2687.96] nama dictionary-nya terus kita tambahin
+[2690.52] dotgget. Berarti kita ngambil nama
+[2693.04] dictionary-nya. Jadi dia kita enggak
+[2694.76] perlu ngambil semua datanya gitu ya.
+[2696.88] Karena di sini kita udah tuliskan di
+[2698.72] sini pokoknya dari data kategori total
+[2701.44] kamu yang cek gitu yang mana yang
+[2703.16] maksimum. Jadi dia ngecek nih oh yang
+[2705.76] Rp80.000 Rp2.000 sama R.000. Oh yang
+[2709.24] paling gede itu Rp80.000 maka data yang
+[2711.80] ini yang diambil. Nah tapi kan kita
+[2714.08] enggak mau enggak perlu R0.000-nya itu
+[2716.20] kan karena kita mau programnya nyaranin
+[2718.16] mana sih yang terbesar gitu. Kita mau
+[2719.80] nampilin gitu.
+[2721.28] Berarti untuk ngambil satu key-nya aja
+[2724.16] kita ngambil lagi ni
+[2726.80] category.total.get
+[2729.04] yang Q-nya ini kita ngambil Q-nya. Kalau
+[2731.44] misalnya kita mau ngambil nilainya
+[2732.76] Rp80.000 maka di sini kita ubah jadi
+[2735.00] value. Value sama dengan kategori_total.
+[2738.72] Tapi kalau kita karena kita mau ngambil
+[2740.88] ee nama nih ya nama transaksinya t kanan
+[2745.08] berarti kita masukin di sininya key-nya
+[2747.12] yang mau kita ambil. Udah deh baru kita
+[2749.40] masukin. Kita print kategori terbesar.
+[2752.44] Oh, tadi datanya disimpan sementara di
+[2754.16] largest kategori. Kita masukin largest
+[2756.48] kategori. Jumlahnya kita apa? Kalau
+[2759.08] misalnya kita mau nampilin jumlahnya
+[2760.96] kategori total largestori gitu ya. Jadi
+[2764.12] kita manggil dictionary kategori total.
+[2768.12] Terus di sini kita mau manggil eh data
+[2771.72] apa gitu. Misalnya di sini kan di lagis
+[2773.40] kategori nanti dia ngambil key-nya
+[2775.48] makanan. maka di sini dia akan memanggil
+[2777.56] makanan. Tapi kalau misalnya nanti
+[2779.04] datanya berubah transportasi, maka di
+[2781.48] sini nanti akan berubah juga ee
+[2783.64] transportasi gitu ya. Jadi dia
+[2785.40] berubah-ubah nilainya sesuai dengan data
+[2788.76] yang ada di sini yang sudah di ee
+[2791.20] kategorikan tadi gitu. Yang sudah di
+[2794.00] sori yang sudah dinilai hitung mana yang
+[2796.48] maksimumnya gitu ya. Nah, ini misalnya
+[2798.76] kita coba ubah lagi ya. Misalnya yang
+[2800.96] paling besar eh transportasinya kita
+[2802.48] Rp200.000 R karena kita naik Gojek pas
+[2805.36] kita hitung. Nah, kategori terbesarnya
+[2807.84] transportasi sekarang dan jumlahnya
+[2809.76] R200.000. Karena tadi dia melihat nih
+[2813.16] mana yang paling besar, kemudian ngambil
+[2815.88] Q-nya yang mana. Yang Q-nya dia ngambil
+[2818.72] transportasi kemudian dia ambil nih
+[2822.20] berdasarkan ee indeks yang mana gitu.
+[2825.48] Setelah itu kita bisa bikin programnya
+[2828.08] ngasih nasehat gitu ya.
+[2830.44] Jadi dari data yang kita punya, oh
+[2832.08] ternyata yang paling besar makanan. Nah,
+[2834.28] kita bisa kasih saran-saran tadi. Nah,
+[2836.64] saran-sarannya misal kalau kategori ee
+[2840.68] ini tadi contohnya kategori terbesarnya
+[2842.92] ee sudah otomatis muncul ya. Ini kita
+[2844.52] tampilkan karena programnya kita potong.
+[2846.68] Di sini kita lihat
+[2849.12] kalau kategori terbesarnya itu makanan,
+[2851.72] kita akan ngasih saran kita print coba
+[2854.44] kurangin jajan ya atau bawa bekal. Kalau
+[2858.88] kategori terbesar transportasi, maka
+[2861.40] coba bareng teman atau jalan kaki jika
+[2863.72] dekat. Kalau hiburan batasi main game
+[2866.96] atau nonton bioskop atau jajan ke segala
+[2869.72] macam gitu ya. Jadi di sini ada
+[2872.84] saran-saran
+[2874.60] yang ee kita buat berdasarkan
+[2877.24] kondisi-kondisi. Kondisinya apa? Kalau
+[2879.12] yang yang kategori yang terbesarnya itu
+[2881.92] ternyata makanan, transportasi, hiburan.
+[2884.40] Kalau datanya lebih banyak lagi berarti
+[2886.40] eh if-nya lebih panjang lagi gitu. Jadi
+[2889.00] programnya lebih complicated, lebih
+[2890.88] banyak lagi gitu ya. Oke. Misalnya ya
+[2894.32] ini ee simulasi aja kalau yang mulai ee
+[2897.96] paling banyak hiburan gitu ya. Jadi kita
+[2900.48] harus bikin datanya itu jangan selalu
+[2903.12] muncul kurangin jajan kurangin jajan.
+[2905.24] Kita harus bikin dia ee datanya itu
+[2907.96] insight-nya itu berubah-berubah gitu
+[2909.48] kan. Kita mau bikin dia pintar bisa
+[2911.08] melihat berdasarkan data gitu ya. Oke,
+[2915.08] sekarang
+[2916.72] kalau kita misalnya ee memberikan alasan
+[2920.80] gitu, kalau memberikan saran, jangan
+[2923.12] juga sarannya itu terlalu simpel atau
+[2925.40] terlalu apa ya, mudah atau terlalu
+[2929.60] membingungkan. Misalnya kamu harus hemat
+[2931.84] gitu. Hah? Ee mungkin kalau kamu harus
+[2934.48] hemat ya memang harus hemat, tapi karena
+[2936.84] apa kita harus hemat gitu. Oh, kalau di
+[2939.68] sini kan jelas kita lihat sampingnya.
+[2941.52] Uangmu habis paling banyak diajan, coba
+[2943.84] hemat. Nah, berarti kan kita hemat
+[2945.52] karena uang kita habis banyak di makanan
+[2947.96] gitu. Jadi, user tuh paham, oh ternyata
+[2949.88] yang yang bikin kenapa kau harus tuh
+[2953.16] jajan aku kebanyakan kayak gitu ya.
+[2955.28] Jadi, user tuh langsung paham ya. Jadi,
+[2957.36] jangan sampai bikin sebuah saran yang
+[2959.08] membingungkan. Jadi, ketika kita membuat
+[2960.68] kondisi if yang di sini tadi bikin
+[2962.96] selengkap mungkin gitu.
+[2966.24] Oke, sekarang coba kita mm kerjakan
+[2971.68] latihan berikut ini.
+[2989.00] Oke, Teman-teman kita sudah belajar
+[2991.44] bagaimana merancang. Kita juga sudah
+[2993.84] belajar basic-basic dari pemrograman
+[2996.28] Python ini. Sekarang ini waktunya kita
+[3000.08] menjadikan satu semua yang sudah kita
+[3002.16] pelajarin. Jadi kalau ee sebelumnya
+[3006.12] harusnya kita sudah belajar mengenai
+[3008.12] function dan juga perulangan loop gitu
+[3010.20] ya atau looping gitu. Jadi dalam
+[3013.32] function ini perannya dalam kode kita
+[3015.76] itu dia membagi programnya jadi
+[3017.60] modul-modul kecil yang rapi gitu ya.
+[3019.72] Tadi kita sudah buat ee rancangan
+[3021.84] awalnya gitu ya. Oh, kalau F button ini
+[3025.00] diklik atau user milih menu A gitu atau
+[3027.24] menu nomor satu maka dia akan
+[3029.12] menjalankan misalnya tambahkan transaksi
+[3031.56] @_trung
+[3033.60] tutupung gitu ya. Dan juga nanti
+[3036.24] loop-nya digunakan untuk kalau misalnya
+[3038.48] dia sudah masukin transaksi berarti kan
+[3040.20] dia harus muncul menu lagi berarti dia
+[3041.96] akan masuk ke dalam perulangan looping
+[3044.24] gitu ya. Nah, terus itu kita juga sudah
+[3046.60] belajar tentang dictionary. Jadi, data
+[3048.96] yang kita udah masukkan, yang user
+[3051.44] masukkan itu harus disimpan ke dalam
+[3053.40] sebuah dictionary gitu ya, biar dia
+[3055.44] rapi, biar dia ee tercatat dengan ee ini
+[3060.44] ya, supaya datanya nanti bisa
+[3061.80] dibanding-bandingkan dan juga dianalisis
+[3064.88] oleh program kita. Kemudian kita perlu
+[3067.80] juga menambahkan if else condition gitu
+[3070.60] ya, di mana kita mau program kita itu
+[3073.40] bisa melihat gitu ya kira-kira kalau if
+[3077.24] data e dia bisa menganalisis dan juga
+[3079.80] memberi pilihan gitu ya. Kalau misalnya
+[3082.20] if user pilih menu satu berarti yang
+[3084.84] dijalankan adalah function add
+[3086.84] transaction dan seterusnya dan
+[3088.56] seterusnya. Atau kalau tadi ya kalau
+[3091.04] datanya yang terbesar ternyata data yang
+[3093.76] terboros itu data makanan. maka berarti
+[3097.04] dia akan menampilkan pesan A B C D E
+[3099.76] gitu ya. Jadi kita akan menggunakan tiga
+[3102.72] fungsi utama plus kita akan menggunakan
+[3105.72] juga boleh kalian gunakan juga ee
+[3109.44] pemeriksaan error atau error handling
+[3111.16] bisa menggunakan try and catch ya kan ya
+[3113.72] atau bisa mm e apa kita menggunakan
+[3117.60] validasi dan juga sanitasi. Oke, coba
+[3123.20] sekarang untuk ee membuat kode jangan
+[3126.72] lupa kita perlu menggunakan modular yang
+[3129.96] tadi ya. Kita e kode yang modular adalah
+[3132.24] kode yang rapi gitu. Kode yang rapi
+[3134.72] berarti kita membuat function-function
+[3138.08] sendiri yang di mana nanti kita bisa
+[3139.92] gunakan dia, kita panggil lagi dia
+[3142.72] sesuai ee fungsinya gitu. Misalnya nih
+[3146.84] kita bikinin function namanya bersihkan
+[3149.52] teks gitu ya. Nah, kalau membersihkan
+[3152.16] teks kan berarti dia akan mengirimkan
+[3154.72] gitu ya. Kita ketika memanggilkan
+[3156.20] function ini dia mengirimkan teksnya.
+[3158.76] Berarti ini kan ada ada input yang user
+[3161.04] masukkan gitu kan ya. Nanti kita
+[3162.92] kembalikan tuh text.strip.lower.
+[3165.88] Berarti kita menghapus spasi di awal dan
+[3168.44] di akhir dan juga membuat tulisannya
+[3170.36] jadi lower case gitu supaya ee rapi
+[3173.32] lebih rapi di dalam program kita. Nah,
+[3176.48] untuk kalau misalnya kalian masih belum
+[3178.16] tahu isinya nanti seperti apa, boleh
+[3180.16] kalian tulis dulu pas gitu ya, supaya
+[3182.56] nanti pas kalian run itu dia enggak
+[3184.32] error gitu. Kalau pas tuh artinya
+[3185.92] lewatin dulu gitu. Jangan lupa sekali
+[3188.52] lagi ada ee tambahkan indentasi ya
+[3191.36] supaya programnya ee dianggap bagian
+[3194.24] dari function yang ada di atasnya bukan
+[3197.00] ee program sendiri gitu.
+[3199.92] Lanjut. Sekarang jangan lupa kita perlu
+[3203.76] menambahkan looping gitu ya. Mm coba
+[3206.68] kalian buka lagi program kalian apa yang
+[3209.92] sudah kalian pelajarin tentang looping.
+[3212.36] Nah, ketika kita menggunakan looping,
+[3214.36] jangan lupa kalau di akhir pada saat di
+[3217.68] akhir gitu ya programnya kalau misalnya
+[3220.64] pengguna mengklik nomor lima atau keluar
+[3224.64] jangan lupa tambahkan break ya di akhir
+[3227.44] if else-nya if user if user choice sama
+[3231.84] 1 berarti kita print apa segala macam
+[3234.32] atau panggil function apa gitu. Tapi
+[3237.04] kalau user pilihnya if user choice sama
+[3240.44] 5 berarti kita tulisnya break ya. Jangan
+[3243.24] lupa tambahkan break untuk menstop
+[3245.72] programnya supaya dia tidak
+[3247.40] terus-menerus berjalan atau memanggil
+[3249.36] fungsinya lagi. Nah, terus itu pada saat
+[3252.96] kita membuat kode jangan menggunakan dry
+[3256.08] ya do not repeat yourself atau DRC gitu
+[3259.20] ya. singkatan dari do not repeat your
+[3261.40] code. Jangan diulang-ulang, jangan pai
+[3263.68] lagi kodenya, jangan dicopy paste. Kalau
+[3267.52] misalnya kan kita lihat contohnya
+[3269.08] misalnya yang harus dicopy paste itu ada
+[3271.00] menu gitu. Nah, menu ini itu daripada
+[3275.32] kita copy paste copy paste mending kita
+[3277.80] masukkan dia ke dalam sebuah function
+[3280.96] dan nanti function-nya kita tinggal
+[3283.20] panggil aja nama function-nya. kan lima
+[3287.16] baris ini diselamatkan oleh satu baris.
+[3289.76] Jadi, kode kita enggak terlalu banyak
+[3291.60] gitu ya. Jadi, jangan diulang. Kalau
+[3294.36] bisa menggunakan loop ya di loop
+[3296.40] menggunakan for loop atau menggunakan eh
+[3299.36] while loop. Tapi bisa juga kita kalau
+[3302.16] misalnya dia yang berupa print-print
+[3303.68] kita bisa menggunakan function. Nah,
+[3307.24] untuk ini ada contoh ya. Ketika kita
+[3310.24] menambahkan transaction atau add
+[3312.04] transaction ini kita bisa ee berarti kan
+[3315.36] ketika dia pengguna pilih eh nomor satu
+[3318.40] tambahkan transaction dia akan manggil
+[3321.00] tambah transaksi menu eh function tambah
+[3323.36] transaksi. Nah, udah deh. Berarti apa
+[3325.60] aja sih yang kita minta user? Oh, dia
+[3327.56] minta nama. Jangan lupa namanya distrip
+[3330.40] ya depan belakangnya gitu. ee apakah ada
+[3333.68] ee misalnya ee dia kelebihan spasi di
+[3336.72] awal sama di akhir itu kita strip dulu.
+[3338.56] Enggak perlu di lower ya, karena kan ee
+[3340.84] nama orang beda-beda gitu. Boleh e
+[3343.20] bebasnya dia aja ya. Ini bukan nama
+[3345.48] orang ya, nama belanjaan gitu. Kemudian
+[3348.00] di sini jenis transaksinya apakah
+[3350.92] pemasukan atau pengeluaran. Nah, kan di
+[3353.24] program kita kan nanti kita bikin tuh if
+[3357.36] jenis sama dengan sama dengan pemasukan
+[3359.44] maka apa gitu ya. Eh, terus if jenis
+[3362.48] sama dengan pengeluaran maka dia akan
+[3364.00] menjalankan fungsi apa gitu. Jadi karena
+[3366.44] kita ngetik kodenya pakai lower case,
+[3368.88] disarankan juga pakai lower case ya.
+[3370.84] Nah, maka kita strip juga sama kita ubah
+[3373.92] dia menjadi lower case. Kemudian kita
+[3377.08] masukin kategori sama kita strip sama
+[3379.36] kita lower case kan juga. Nah, terus itu
+[3382.00] kodenya kita menggunakan try and accept.
+[3384.28] Kalau dia akan mencoba menjalankan ini
+[3386.24] ya, dia akan memasukkan nominal. Kalau
+[3389.00] misalnya nominalnya dia masukin enggak
+[3391.64] masukin nominal value-nya error kan
+[3394.12] berarti apa? Atau misalnya dia kita
+[3396.32] minta nominalnya integer gitu ya masukin
+[3398.28] angka 5.000 tapi dia tulis li a rior.
+[3404.84] Tapi supaya errornya enggak
+[3406.04] memberhentikan program kita, kita
+[3408.20] tangkap dia. Kita tangkap di accept
+[3411.16] value error. Kita print dulu nominalnya
+[3413.44] harus angka ya. baru programnya akan
+[3415.20] menjalankan ini lagi. Nah, dia nge-try
+[3418.04] lagi gitu kan. Terus di sini dia setelah
+[3420.76] masukin input nominalnya kalau namanya
+[3424.76] kosong atau nominalnya ternyata kurang
+[3427.24] dari atau sama dengan 0 gitu ya, dia
+[3430.24] masukinnya minus misalnya atau dia
+[3432.52] masukinnya
+[3434.08] minus 10.000 atau dia masukinnya 0 atau
+[3437.16] nama
+[3438.80] transaksinya ini dia tulis kosong kita
+[3441.40] tulis prena salah. Kalau benar, maka
+[3444.88] kita bikin kita bikin sebuah ee ini ya,
+[3448.92] kita bikin sebuah variabel sementara,
+[3451.88] dictionary sementara ini insyaallah
+[3453.24] dictionary ya, dictionary sementara yang
+[3455.72] dia mencatat nih ada key-nya nanti
+[3458.80] value-nya sesuai dengan apa yang kita
+[3461.04] variabel sementaranya ini ya. nama,
+[3463.40] jenis dia masukin ke sini. Terus itu
+[3466.60] kategori dia masukin, nominal dia
+[3468.80] masukin ke sini. Baru nanti semua ini
+[3472.00] dictionary-nya dimasukin ke dalam data
+[3474.84] diction apa list namanya transaction.
+[3477.76] Transaction. Dia akan masukin semua data
+[3480.32] ini. Jadi semuanya akan tersimpan gitu.
+[3482.84] Itu dan ini hanya menyimpan kalau data
+[3486.36] semuanya ini benar dan enggak ada error
+[3488.80] itu ya. Jadi kita bisa masukkan
+[3490.80] menggunakan function, menggunakan eh
+[3493.88] data data
+[3496.84] sanitation dan juga data validation dan
+[3499.88] juga try and accept untuk menangkap
+[3502.16] error itu. Ini kita bisa eh bikin
+[3506.32] programnya menghitung sisa uangnya
+[3508.28] berapa gitu ya. Untuk menghitung sisa
+[3510.00] uang berarti kan kita total pemasukan
+[3513.00] dikurang total pengeluaran. Nah, di sini
+[3516.04] berarti dia membaca transaksi 1
+[3518.92] Rp15.000, transaksi 2 Rp50.000,
+[3521.12] transaksi 3 pengeluaran 20.000. Berarti
+[3524.48] untuk menghitung nih kan kita totalkan
+[3526.48] dulu pemasukannya berapa. Total
+[3528.28] pemasukannya Rp50.000, total
+[3530.28] pengeluarannya Rp35.000 kan transaksi 1
+[3533.12] pengeluaran, transaksi 3 itu pengeluaran
+[3536.24] juga. Nah, untuk mengecek sisa saldo
+[3539.20] maka kita pemasukan dikurangin
+[3541.64] pengeluaran. Jadi kita lihatlah sisa
+[3544.00] saldonya berapa. Nah, di sini bisa kita
+[3546.24] tambahin if if kalau saldonya lebih dari
+[3548.80] R30.000 kita print uangnya aman. Kalau
+[3552.28] kurang dari R30.000 berarti wah kamu
+[3554.60] harus mulai berhenti spending gitu. Nah,
+[3558.60] ini kita bisa mengelompokkan juga gitu
+[3560.76] ya. Kalau misalnya ee kita mau filter
+[3565.32] dia jenisnya pengeluaran aja, kita mau
+[3567.52] ngecek berapa sih pengeluaran kita. Nah,
+[3569.56] ini kita bisa menggunakan kode ini, gitu
+[3571.48] ya.
+[3572.88] Terus itu kita juga bisa menambahkan if
+[3576.44] kalau misalnya ada yang paling boros
+[3578.32] tadi ya kita sudah bahas. Kalau misalnya
+[3581.00] ee saldonya kurang dari sekian maka dia
+[3583.92] akan ngasih saran gitu ya. Jadi kita
+[3587.12] bisa menggunakan if dan else tadi. Nah,
+[3590.60] setelah itu kita bisa bikin ee kita ya
+[3594.68] ini kalau nambahin datanya ini bentuknya
+[3596.88] kalau misalnya bentuknya ini ya kalau
+[3600.36] bentuknya dashboard tapi kan kalau
+[3602.68] kalian kan bikinnya Python ya harusnya
+[3604.56] enggak seperti ini gitu. Kategorinya
+[3607.40] misalnya makanan.
+[3610.24] Oh ini ini lain ya. Nominalnya nih
+[3611.96] R.200. Ini harusnya Rp10.000 pemasukan.
+[3614.84] Oh, ini allowance.
+[3618.00] Yang ini apa nih? Yang ini nama jajan.
+[3620.56] Oh, enggak ada karena enggak jajan ya.
+[3622.88] Oh, ini bukan jajan nih. Berarti ini
+[3625.04] allowance. Kita coba copy.
+[3629.40] Nah, jenisnya pemasukan
+[3631.80] namanya allowance, terus nominalnya
+[3634.20] Rp10.000. Kalau kita klik ringkasan,
+[3637.00] nanti dia muncul saldonya berapa,
+[3639.56] pengeluarannya berapa, menganalisisnya
+[3642.36] apa yang sudah dihabiskan gitu kan ya.
+[3644.84] Terus sama rekomendasi berdasarkan data
+[3646.84] kita, oh saldonya masih cukup aman kok
+[3648.80] karena kan tadi uang kita 170, makanan
+[3651.36] kita, pengeluaran kita cuma Rp15.000
+[3653.44] gitu. Nah, ini jadi bentuk hasil kodenya
+[3656.20] itu bisa kita buat kurang lebih
+[3657.72] tampilannya seperti ini. Nah, coba
+[3660.48] silakan kerjakan kuis berikut ini untuk
+[3662.60] memaham ee lebih memahami pemahaman
+[3665.24] kalian.
+[3668.32] Memahami pemahaman kalian. Oke.
+[3674.96] Hah
+[3677.84] deh. Kasihan anak-anak kalau ditambahin
+[3680.40] tugas

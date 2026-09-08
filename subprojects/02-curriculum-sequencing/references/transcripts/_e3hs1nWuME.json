@@ -1,0 +1,1232 @@
+[
+  {
+    "text": "Nested condition itu apa sih? Nested",
+    "start": 0.08,
+    "duration": 5.279
+  },
+  {
+    "text": "condition adalah sebuah conditional yang",
+    "start": 2.32,
+    "duration": 5.32
+  },
+  {
+    "text": "ada di dalam conditional. Nah, maksudnya",
+    "start": 5.359,
+    "duration": 4.24
+  },
+  {
+    "text": "seperti apa, Kak? Contoh sederhana",
+    "start": 7.64,
+    "duration": 4.28
+  },
+  {
+    "text": "seperti ini. Setelah program mengecek",
+    "start": 9.599,
+    "duration": 5.08
+  },
+  {
+    "text": "sebuah kondisi, program akan mengecek",
+    "start": 11.92,
+    "duration": 5.439
+  },
+  {
+    "text": "kondisi lain di dalamnya. Jadi, di sini",
+    "start": 14.679,
+    "duration": 4.68
+  },
+  {
+    "text": "bukan berarti kalau misalnya kita di",
+    "start": 17.359,
+    "duration": 5.281
+  },
+  {
+    "text": "multiple eh conditional sebelumnya itu",
+    "start": 19.359,
+    "duration": 6.24
+  },
+  {
+    "text": "kan kita kalau ada kondisi satu, kondisi",
+    "start": 22.64,
+    "duration": 5.2
+  },
+  {
+    "text": "dua, dan kondisi ketiga gitu ya. Nah,",
+    "start": 25.599,
+    "duration": 4.481
+  },
+  {
+    "text": "kalau di dalam nestedate conditionals",
+    "start": 27.84,
+    "duration": 4.759
+  },
+  {
+    "text": "itu berarti dia di dalam kondisi satu",
+    "start": 30.08,
+    "duration": 5.479
+  },
+  {
+    "text": "itu ada kondisi lain. Berarti dia eh",
+    "start": 32.599,
+    "duration": 5.521
+  },
+  {
+    "text": "kondisi satu benar terus dia akan",
+    "start": 35.559,
+    "duration": 4.281
+  },
+  {
+    "text": "mengecek kondisi yang ada di dalam",
+    "start": 38.12,
+    "duration": 3.72
+  },
+  {
+    "text": "kondisi satu tadi. Kalau multiple",
+    "start": 39.84,
+    "duration": 3.68
+  },
+  {
+    "text": "condition yang sebelumnya itu kalau",
+    "start": 41.84,
+    "duration": 3.76
+  },
+  {
+    "text": "misalnya kondisi satu tidak benar maka",
+    "start": 43.52,
+    "duration": 3.96
+  },
+  {
+    "text": "dia akan ngecek nih kondisi yang",
+    "start": 45.6,
+    "duration": 4.119
+  },
+  {
+    "text": "sebelumnya, kondisi yang kedua. Kalau",
+    "start": 47.48,
+    "duration": 4.04
+  },
+  {
+    "text": "misalkan kondisi kedua salah, dia akan",
+    "start": 49.719,
+    "duration": 3.84
+  },
+  {
+    "text": "mengecek kondisi ketiga. Nah, kalau next",
+    "start": 51.52,
+    "duration": 4.24
+  },
+  {
+    "text": "state conditional ini dia kondisi satu",
+    "start": 53.559,
+    "duration": 3.881
+  },
+  {
+    "text": "misalnya benar, maka dia akan mengecek",
+    "start": 55.76,
+    "duration": 3.479
+  },
+  {
+    "text": "kondisi yang ada di dalam kondisi satu",
+    "start": 57.44,
+    "duration": 4.04
+  },
+  {
+    "text": "itu tadi. Nah, contohnya di dalam",
+    "start": 59.239,
+    "duration": 5.32
+  },
+  {
+    "text": "kehidupan nyata. Bayangkan di kita mau",
+    "start": 61.48,
+    "duration": 6.04
+  },
+  {
+    "text": "menonton sebuah film. Nah, ketika kita",
+    "start": 64.559,
+    "duration": 5.641
+  },
+  {
+    "text": "mau masuk bioskop, kita harus dicek dulu",
+    "start": 67.52,
+    "duration": 4.56
+  },
+  {
+    "text": "nih. Kita dicek nih sama sapam apakah",
+    "start": 70.2,
+    "duration": 3.84
+  },
+  {
+    "text": "kita punya tiket apa tidak. Kalau",
+    "start": 72.08,
+    "duration": 3.6
+  },
+  {
+    "text": "misalnya kita punya tiket, maka kita",
+    "start": 74.04,
+    "duration": 3.92
+  },
+  {
+    "text": "boleh masuk ke dalam bioskop. Nah,",
+    "start": 75.68,
+    "duration": 4.079
+  },
+  {
+    "text": "setelah kita masuk ke dalam bioskop",
+    "start": 77.96,
+    "duration": 5.119
+  },
+  {
+    "text": "tadi, kita ngecek lagi apakah kamu kita",
+    "start": 79.759,
+    "duration": 5.68
+  },
+  {
+    "text": "mau misalnya mau menonton sebuah film",
+    "start": 83.079,
+    "duration": 6.201
+  },
+  {
+    "text": "yang ada parental guidance-nya. Nah,",
+    "start": 85.439,
+    "duration": 5.601
+  },
+  {
+    "text": "berarti petugas yang ada di dalam",
+    "start": 89.28,
+    "duration": 4.159
+  },
+  {
+    "text": "bioskop itu dia akan mengecek kembali",
+    "start": 91.04,
+    "duration": 4.32
+  },
+  {
+    "text": "apakah kamu cukup umur. Mungkin",
+    "start": 93.439,
+    "duration": 3.881
+  },
+  {
+    "text": "dibuktikan dengan KTP gitu ya. Apakah",
+    "start": 95.36,
+    "duration": 4.48
+  },
+  {
+    "text": "kamu punya KTP untuk menonton film?",
+    "start": 97.32,
+    "duration": 6.439
+  },
+  {
+    "text": "Kalau misalnya dia ee punya KTP dan dia",
+    "start": 99.84,
+    "duration": 6.4
+  },
+  {
+    "text": "bisa ee apa memverifikasi kalau misalnya",
+    "start": 103.759,
+    "duration": 4.32
+  },
+  {
+    "text": "umurnya cukup, maka dia boleh menonton",
+    "start": 106.24,
+    "duration": 4.8
+  },
+  {
+    "text": "filmnya. Jadi di sini ada pengecekan",
+    "start": 108.079,
+    "duration": 5.281
+  },
+  {
+    "text": "dalam pengecekan. Pengecekan pertama",
+    "start": 111.04,
+    "duration": 4.92
+  },
+  {
+    "text": "apakah dia punya tiket, pengecekan kedua",
+    "start": 113.36,
+    "duration": 4.92
+  },
+  {
+    "text": "apakah umurnya cukup. Jadi kondisi",
+    "start": 115.96,
+    "duration": 3.839
+  },
+  {
+    "text": "pertama dia cek dulu apakah dia punya",
+    "start": 118.28,
+    "duration": 3.28
+  },
+  {
+    "text": "tiket. Kalau dia punya tiket dia baru",
+    "start": 119.799,
+    "duration": 4.121
+  },
+  {
+    "text": "ngecek apakah umurnya cukup gitu ya.",
+    "start": 121.56,
+    "duration": 5.28
+  },
+  {
+    "text": "Jadi di sini bukan kondisi satu, bukan",
+    "start": 123.92,
+    "duration": 5.839
+  },
+  {
+    "text": "kondisi dua, tapi kondisi 1 memiliki",
+    "start": 126.84,
+    "duration": 6.2
+  },
+  {
+    "text": "kondisi 1A misalnya seperti itu. Nah,",
+    "start": 129.759,
+    "duration": 6.361
+  },
+  {
+    "text": "kita bahas lebih dalam yuk. Analoginya",
+    "start": 133.04,
+    "duration": 5.72
+  },
+  {
+    "text": "seperti ini. Contoh lainnya ketika kita",
+    "start": 136.12,
+    "duration": 5.479
+  },
+  {
+    "text": "mau mau mau memasuki sebuah gedung atau",
+    "start": 138.76,
+    "duration": 5.96
+  },
+  {
+    "text": "kita mau memasuki sebuah museum. Nah,",
+    "start": 141.599,
+    "duration": 5.161
+  },
+  {
+    "text": "ketika kita masuk museum itu kan kita",
+    "start": 144.72,
+    "duration": 4.12
+  },
+  {
+    "text": "harus mendaftarkan ya, mendaftar dan",
+    "start": 146.76,
+    "duration": 5.08
+  },
+  {
+    "text": "mendapatkan kartu akses. Di pintu awal",
+    "start": 148.84,
+    "duration": 5.28
+  },
+  {
+    "text": "kita dicek apakah kita punya kartu akses",
+    "start": 151.84,
+    "duration": 4.36
+  },
+  {
+    "text": "masuk ke museum. Oh iya, kita punya",
+    "start": 154.12,
+    "duration": 5.119
+  },
+  {
+    "text": "kartu akses maka kita akan masuk ke",
+    "start": 156.2,
+    "duration": 6.8
+  },
+  {
+    "text": "dalam museum. Nah, misalnya di dalam",
+    "start": 159.239,
+    "duration": 5.801
+  },
+  {
+    "text": "museum ini kita melihat sebuah ruangan",
+    "start": 163.0,
+    "duration": 5.48
+  },
+  {
+    "text": "nih. Nah, misalnya dia ruang rapat atau",
+    "start": 165.04,
+    "duration": 5.08
+  },
+  {
+    "text": "misalnya dalam museum itu ada ruangan",
+    "start": 168.48,
+    "duration": 4.2
+  },
+  {
+    "text": "khusus staf. Nah, kalau kita mau masuk",
+    "start": 170.12,
+    "duration": 4.6
+  },
+  {
+    "text": "ke dalam ruang staf itu di depan tuh ada",
+    "start": 172.68,
+    "duration": 4.8
+  },
+  {
+    "text": "kondisinya lagi ya. Apakah kamu punya",
+    "start": 174.72,
+    "duration": 5.519
+  },
+  {
+    "text": "izin untuk masuk ke ruangan khusus tadi,",
+    "start": 177.48,
+    "duration": 5.0
+  },
+  {
+    "text": "ruang rapat tadi atau ruang staf tadi.",
+    "start": 180.239,
+    "duration": 4.401
+  },
+  {
+    "text": "Kalau kamu punya maka dia akan",
+    "start": 182.48,
+    "duration": 3.88
+  },
+  {
+    "text": "menjalankan sesuatu. Kalau kamu tidak",
+    "start": 184.64,
+    "duration": 3.159
+  },
+  {
+    "text": "punya maka dia akan menjalankan yang",
+    "start": 186.36,
+    "duration": 4.4
+  },
+  {
+    "text": "lainnya. Jadi kalau dalam nonstate",
+    "start": 187.799,
+    "duration": 6.041
+  },
+  {
+    "text": "condition kita syaratnya adalah harus",
+    "start": 190.76,
+    "duration": 6.28
+  },
+  {
+    "text": "lulus dulu kondisi pertama",
+    "start": 193.84,
+    "duration": 5.8
+  },
+  {
+    "text": "baru kita pergi ke kondisi kedua gitu",
+    "start": 197.04,
+    "duration": 5.96
+  },
+  {
+    "text": "ya. Kalau misalnya yang multi branch eh",
+    "start": 199.64,
+    "duration": 5.319
+  },
+  {
+    "text": "conditional sebelumnya kan kita kalau",
+    "start": 203.0,
+    "duration": 3.76
+  },
+  {
+    "text": "kondisi pertama tidak lolos dia akan",
+    "start": 204.959,
+    "duration": 3.961
+  },
+  {
+    "text": "mengecek kondisi kedua. Kalau di sini",
+    "start": 206.76,
+    "duration": 4.24
+  },
+  {
+    "text": "kalau lolos maka dia akan ngecek lagi",
+    "start": 208.92,
+    "duration": 4.08
+  },
+  {
+    "text": "kondisi kedua tidak langsung menjalankan",
+    "start": 211.0,
+    "duration": 6.08
+  },
+  {
+    "text": "sebuah perintah. Oke kita lanjut bahasa",
+    "start": 213.0,
+    "duration": 6.4
+  },
+  {
+    "text": "dalam bahasa peman Python nestedate",
+    "start": 217.08,
+    "duration": 4.239
+  },
+  {
+    "text": "conditional itu diimplementasikan",
+    "start": 219.4,
+    "duration": 4.88
+  },
+  {
+    "text": "seperti ini. Nah ini kita eh gunakan",
+    "start": 221.319,
+    "duration": 5.881
+  },
+  {
+    "text": "analogi ee bioskop sebelumnya gitu ya.",
+    "start": 224.28,
+    "duration": 5.44
+  },
+  {
+    "text": "anggap aja e bioskop ini punya peraturan",
+    "start": 227.2,
+    "duration": 6.039
+  },
+  {
+    "text": "beli tiketnya harus sebelum masuk dan eh",
+    "start": 229.72,
+    "duration": 5.2
+  },
+  {
+    "text": "kalau sudah masuk kita boleh pilih",
+    "start": 233.239,
+    "duration": 3.441
+  },
+  {
+    "text": "langsung film yang mau kita tonton apa",
+    "start": 234.92,
+    "duration": 4.519
+  },
+  {
+    "text": "gitu contohnya ya. Nah, di sini kita",
+    "start": 236.68,
+    "duration": 6.08
+  },
+  {
+    "text": "punya bahasa Python ada pertama",
+    "start": 239.439,
+    "duration": 6.8
+  },
+  {
+    "text": "deklarasi variabel dulu. Nah, deklarasi",
+    "start": 242.76,
+    "duration": 8.08
+  },
+  {
+    "text": "variabelnya di sini ada dua, has ticket",
+    "start": 246.239,
+    "duration": 8.481
+  },
+  {
+    "text": "atau eh bukan atau dan juga age. Nah,",
+    "start": 250.84,
+    "duration": 6.04
+  },
+  {
+    "text": "kalau misalnya di sini kita lihat",
+    "start": 254.72,
+    "duration": 4.919
+  },
+  {
+    "text": "misalnya eh kondisinya",
+    "start": 256.88,
+    "duration": 7.24
+  },
+  {
+    "text": "Kak Nurul itu punya tiket dia true. Nah,",
+    "start": 259.639,
+    "duration": 7.921
+  },
+  {
+    "text": "dan juga Kak Nurul itu usianya 16 tahun.",
+    "start": 264.12,
+    "duration": 5.84
+  },
+  {
+    "text": "Nah, di sini nested conditionalnya",
+    "start": 267.56,
+    "duration": 6.12
+  },
+  {
+    "text": "seperti ini. Pertama, dia ngecek apakah,",
+    "start": 269.96,
+    "duration": 7.92
+  },
+  {
+    "text": "if, jika dia mempunyai tiket. Nah, kalau",
+    "start": 273.68,
+    "duration": 6.48
+  },
+  {
+    "text": "misalnya dalam bahasa pemrograman Python",
+    "start": 277.88,
+    "duration": 4.68
+  },
+  {
+    "text": "untuk nilai true sama false, kalau",
+    "start": 280.16,
+    "duration": 4.64
+  },
+  {
+    "text": "nilainya true dia langsung nulis seperti",
+    "start": 282.56,
+    "duration": 5.359
+  },
+  {
+    "text": "ini bisa ya. Jadi dia enggak perlu ada",
+    "start": 284.8,
+    "duration": 4.88
+  },
+  {
+    "text": "lebih besar atau sama dengan sama dengan",
+    "start": 287.919,
+    "duration": 4.441
+  },
+  {
+    "text": "true. Kalau kita juga bisa nulis seperti",
+    "start": 289.68,
+    "duration": 7.0
+  },
+  {
+    "text": "ini ya, Teman-teman ya. if eh has ticket",
+    "start": 292.36,
+    "duration": 7.24
+  },
+  {
+    "text": "has ticket",
+    "start": 296.68,
+    "duration": 5.4
+  },
+  {
+    "text": "sama dengan sama dengan true. Nah, ini",
+    "start": 299.6,
+    "duration": 5.0
+  },
+  {
+    "text": "kita bisa tulis seperti ini. Tapi Python",
+    "start": 302.08,
+    "duration": 4.48
+  },
+  {
+    "text": "itu dia sudah sangat canggih. Ketika",
+    "start": 304.6,
+    "duration": 3.92
+  },
+  {
+    "text": "kita tulis has ticket aja, dia akan",
+    "start": 306.56,
+    "duration": 5.52
+  },
+  {
+    "text": "ngecek nih apakah ee apakah dia benar",
+    "start": 308.52,
+    "duration": 6.32
+  },
+  {
+    "text": "kondisinya apa tidak gitu ya. Jadi ee",
+    "start": 312.08,
+    "duration": 6.08
+  },
+  {
+    "text": "apa itu namanya? Dia akan langsung",
+    "start": 314.84,
+    "duration": 5.0
+  },
+  {
+    "text": "mengecek.",
+    "start": 318.16,
+    "duration": 4.92
+  },
+  {
+    "text": "Nah, kalau sudah nih dia ngecek apakah",
+    "start": 319.84,
+    "duration": 5.639
+  },
+  {
+    "text": "dia punya tiket, kalau dia benar, maka",
+    "start": 323.08,
+    "duration": 5.119
+  },
+  {
+    "text": "akan ada kondisi kedua di dalamnya.",
+    "start": 325.479,
+    "duration": 5.681
+  },
+  {
+    "text": "Kondisi keduanya apa? Jika umurnya lebih",
+    "start": 328.199,
+    "duration": 6.401
+  },
+  {
+    "text": "dari atau sama dengan 13, maka dia boleh",
+    "start": 331.16,
+    "duration": 6.0
+  },
+  {
+    "text": "masuk ke dalam studio A misalnya. Tapi",
+    "start": 334.6,
+    "duration": 5.12
+  },
+  {
+    "text": "kalau misalnya tidak, kita tuliskan else",
+    "start": 337.16,
+    "duration": 4.72
+  },
+  {
+    "text": "di sini, maka dia akan menampilkan",
+    "start": 339.72,
+    "duration": 4.72
+  },
+  {
+    "text": "tulisan umur belum cukup. Nah, jadi",
+    "start": 341.88,
+    "duration": 3.92
+  },
+  {
+    "text": "kondisi pertamanya dia ngecek dulu",
+    "start": 344.44,
+    "duration": 3.08
+  },
+  {
+    "text": "apakah punya tiket apa enggak. Kalau",
+    "start": 345.8,
+    "duration": 4.2
+  },
+  {
+    "text": "misalnya dia enggak punya tiket, maka",
+    "start": 347.52,
+    "duration": 4.28
+  },
+  {
+    "text": "program yang ada di dalam yang di",
+    "start": 350.0,
+    "duration": 4.319
+  },
+  {
+    "text": "bawahnya itu akan dikip. Dia akan",
+    "start": 351.8,
+    "duration": 4.48
+  },
+  {
+    "text": "langsung menjalankan yang else karena di",
+    "start": 354.319,
+    "duration": 4.401
+  },
+  {
+    "text": "sini kondisinya dia tidak punya tiket",
+    "start": 356.28,
+    "duration": 4.0
+  },
+  {
+    "text": "kalau misalnya di sini nilainya false",
+    "start": 358.72,
+    "duration": 3.44
+  },
+  {
+    "text": "ya. Nah, dia akan langsung ke bawah",
+    "start": 360.28,
+    "duration": 3.8
+  },
+  {
+    "text": "sini. Tapi kalau misalnya true maka dia",
+    "start": 362.16,
+    "duration": 4.28
+  },
+  {
+    "text": "akan menjalankan if yang ada di dalamnya",
+    "start": 364.08,
+    "duration": 5.6
+  },
+  {
+    "text": "seperti ini. Nah, kalau e kalau perintah",
+    "start": 366.44,
+    "duration": 5.199
+  },
+  {
+    "text": "biasanya kan dia langsung ngprint atau",
+    "start": 369.68,
+    "duration": 3.959
+  },
+  {
+    "text": "melakukan perhitungan atau segala macam.",
+    "start": 371.639,
+    "duration": 3.761
+  },
+  {
+    "text": "Nah, kalau di sini dia di dalam if-nya",
+    "start": 373.639,
+    "duration": 4.28
+  },
+  {
+    "text": "ada if-nya lagi seperti itu,",
+    "start": 375.4,
+    "duration": 6.0
+  },
+  {
+    "text": "Teman-teman. Oke, itu untuk multi eh",
+    "start": 377.919,
+    "duration": 5.601
+  },
+  {
+    "text": "nested conditional yang ada di dalam",
+    "start": 381.4,
+    "duration": 4.88
+  },
+  {
+    "text": "bahasa pemrograman Python.",
+    "start": 383.52,
+    "duration": 5.04
+  },
+  {
+    "text": "Cara bacanya tadi kita sudah bahas ya,",
+    "start": 386.28,
+    "duration": 4.72
+  },
+  {
+    "text": "Teman-teman ya. Kondisi satu dan juga",
+    "start": 388.56,
+    "duration": 6.079
+  },
+  {
+    "text": "kondisi dua. Dan ini ada notice nih, ada",
+    "start": 391.0,
+    "duration": 6.759
+  },
+  {
+    "text": "warning. Jangan lupa ketika kita membuat",
+    "start": 394.639,
+    "duration": 7.761
+  },
+  {
+    "text": "sebuah ear itu dia akan ada",
+    "start": 397.759,
+    "duration": 7.681
+  },
+  {
+    "text": "coindentasi ya, indentation yang harus",
+    "start": 402.4,
+    "duration": 5.32
+  },
+  {
+    "text": "kita letakkan secara tepat. Nih",
+    "start": 405.44,
+    "duration": 6.72
+  },
+  {
+    "text": "contohnya di sini kondisi pertama apakah",
+    "start": 407.72,
+    "duration": 7.12
+  },
+  {
+    "text": "dia punya tiket itu kan dia harus ada",
+    "start": 412.16,
+    "duration": 5.159
+  },
+  {
+    "text": "tab-nya ya, indentation-nya dulu atau",
+    "start": 414.84,
+    "duration": 5.96
+  },
+  {
+    "text": "spasi empat kali. Nah, kalau misalnya",
+    "start": 417.319,
+    "duration": 6.28
+  },
+  {
+    "text": "kita tambahin if lagi di dalamnya, maka",
+    "start": 420.8,
+    "duration": 5.72
+  },
+  {
+    "text": "di bawahnya itu kita perlu tambahkan",
+    "start": 423.599,
+    "duration": 4.801
+  },
+  {
+    "text": "indentation juga. Harusnya ketika kita",
+    "start": 426.52,
+    "duration": 4.359
+  },
+  {
+    "text": "mengetik if",
+    "start": 428.4,
+    "duration": 4.12
+  },
+  {
+    "text": "kita enter dia akan langsung auto",
+    "start": 430.879,
+    "duration": 3.88
+  },
+  {
+    "text": "indentation juga atau kalau misalnya dia",
+    "start": 432.52,
+    "duration": 3.84
+  },
+  {
+    "text": "indentation-nya hilang bisa kita spasi",
+    "start": 434.759,
+    "duration": 3.961
+  },
+  {
+    "text": "empat kali. Yang penting perintahnya",
+    "start": 436.36,
+    "duration": 6.959
+  },
+  {
+    "text": "jangan sampai mereka semua ada di dalam",
+    "start": 438.72,
+    "duration": 7.08
+  },
+  {
+    "text": "ee satu garis yang sama gitu ya. Jadi",
+    "start": 443.319,
+    "duration": 5.401
+  },
+  {
+    "text": "if-nya semuanya ee rata. Kalau if-nya",
+    "start": 445.8,
+    "duration": 5.239
+  },
+  {
+    "text": "sama rata seperti ini semua, maka dia",
+    "start": 448.72,
+    "duration": 4.24
+  },
+  {
+    "text": "dianggap bukan nested conditional, tapi",
+    "start": 451.039,
+    "duration": 4.201
+  },
+  {
+    "text": "if biasa gitu, Teman-teman, ya. Jadi,",
+    "start": 452.96,
+    "duration": 5.56
+  },
+  {
+    "text": "jangan sampai kita eh salah atau kurang",
+    "start": 455.24,
+    "duration": 6.359
+  },
+  {
+    "text": "menambahkan indentation.",
+    "start": 458.52,
+    "duration": 6.679
+  },
+  {
+    "text": "Sekarang contoh lain, nested condition",
+    "start": 461.599,
+    "duration": 8.04
+  },
+  {
+    "text": "di dalam sebuah game. Misalnya kita mau",
+    "start": 465.199,
+    "duration": 7.68
+  },
+  {
+    "text": "ee menambahkan sebuah level bonus gitu",
+    "start": 469.639,
+    "duration": 5.641
+  },
+  {
+    "text": "ya. Jadi ee supaya kita bisa",
+    "start": 472.879,
+    "duration": 5.6
+  },
+  {
+    "text": "nambahin ee koinnya atau uangnya gitu",
+    "start": 475.28,
+    "duration": 4.479
+  },
+  {
+    "text": "ya.",
+    "start": 478.479,
+    "duration": 4.041
+  },
+  {
+    "text": "Dan di sini kita kalau mau masuk level",
+    "start": 479.759,
+    "duration": 8.12
+  },
+  {
+    "text": "bonus, kita kasih kondisi jika ee pemain",
+    "start": 482.52,
+    "duration": 8.72
+  },
+  {
+    "text": "sudah menyelesaikan level 1 dan pemain",
+    "start": 487.879,
+    "duration": 6.44
+  },
+  {
+    "text": "punya minimal 100 koin. Jadi untuk masuk",
+    "start": 491.24,
+    "duration": 5.079
+  },
+  {
+    "text": "ke level bonus dia sudah menyelesaikan",
+    "start": 494.319,
+    "duration": 5.0
+  },
+  {
+    "text": "level 1 dan pemain punya minimal 100",
+    "start": 496.319,
+    "duration": 5.761
+  },
+  {
+    "text": "koin. Nah, nested condition-nya seperti",
+    "start": 499.319,
+    "duration": 6.32
+  },
+  {
+    "text": "ini. Pertama, as always, kita harus",
+    "start": 502.08,
+    "duration": 7.079
+  },
+  {
+    "text": "tambahkan dulu, kita deklarasikan dulu",
+    "start": 505.639,
+    "duration": 5.921
+  },
+  {
+    "text": "sebuah variabel, ya. Eh, variabelnya",
+    "start": 509.159,
+    "duration": 5.521
+  },
+  {
+    "text": "yang pertama di sini apakah levelnya",
+    "start": 511.56,
+    "duration": 5.52
+  },
+  {
+    "text": "sudah komplit? Kalau sudah, kita tulis",
+    "start": 514.68,
+    "duration": 3.919
+  },
+  {
+    "text": "di sini true, kalau belum kita tulis",
+    "start": 517.08,
+    "duration": 3.839
+  },
+  {
+    "text": "false. Baru kita tambahkan variabel yang",
+    "start": 518.599,
+    "duration": 5.961
+  },
+  {
+    "text": "akan mengecek koinnya. Apakah koinnya ee",
+    "start": 520.919,
+    "duration": 5.281
+  },
+  {
+    "text": "lebih dari 100 apa enggak, nanti kita",
+    "start": 524.56,
+    "duration": 4.8
+  },
+  {
+    "text": "cek, ya. Nah, di sini kita masuk ke",
+    "start": 526.2,
+    "duration": 5.16
+  },
+  {
+    "text": "condition yang pertama. Apakah levelnya",
+    "start": 529.36,
+    "duration": 4.599
+  },
+  {
+    "text": "sudah komplit? Kalau misalnya salah,",
+    "start": 531.36,
+    "duration": 4.2
+  },
+  {
+    "text": "misalnya di sini anggap aja false ya",
+    "start": 533.959,
+    "duration": 4.201
+  },
+  {
+    "text": "yang di sini. Kalau misalnya dia",
+    "start": 535.56,
+    "duration": 4.68
+  },
+  {
+    "text": "levelnya belum complete, maka dia akan",
+    "start": 538.16,
+    "duration": 5.4
+  },
+  {
+    "text": "langsung menjalankan else-nya. Dia akan",
+    "start": 540.24,
+    "duration": 5.56
+  },
+  {
+    "text": "ng-print selesaikan level terlebih",
+    "start": 543.56,
+    "duration": 5.64
+  },
+  {
+    "text": "dahulu. Tapi kalau misalnya dia benar,",
+    "start": 545.8,
+    "duration": 6.12
+  },
+  {
+    "text": "since kita nulis di sini benar, maka di",
+    "start": 549.2,
+    "duration": 4.92
+  },
+  {
+    "text": "sini dia akan langsung mengecek kondisi",
+    "start": 551.92,
+    "duration": 5.32
+  },
+  {
+    "text": "yang kedua. dia ngecek kondisi keduanya",
+    "start": 554.12,
+    "duration": 7.32
+  },
+  {
+    "text": "apakah koinnya lebih dari 100. Apakah",
+    "start": 557.24,
+    "duration": 7.2
+  },
+  {
+    "text": "120? Ini kan koinnya tadi 120 ya. Apakah",
+    "start": 561.44,
+    "duration": 6.6
+  },
+  {
+    "text": "120 lebih dari 100? Oh iya. Maka dia",
+    "start": 564.44,
+    "duration": 6.839
+  },
+  {
+    "text": "akan langsung ee ngprint masuk ke level",
+    "start": 568.04,
+    "duration": 5.08
+  },
+  {
+    "text": "bonus. Dia akan bisa langsung masuk.",
+    "start": 571.279,
+    "duration": 3.321
+  },
+  {
+    "text": "Tapi misalnya di sini kita koinnya",
+    "start": 573.12,
+    "duration": 5.56
+  },
+  {
+    "text": "anggap aja masih 20. Kita cek di sini",
+    "start": 574.6,
+    "duration": 7.479
+  },
+  {
+    "text": "apakah koinnya apakah 20 lebih dari 100?",
+    "start": 578.68,
+    "duration": 5.08
+  },
+  {
+    "text": "Tidak. Oh. Maka dia akan langsung",
+    "start": 582.079,
+    "duration": 5.121
+  },
+  {
+    "text": "menjalankan el. koin belum cukup, maka",
+    "start": 583.76,
+    "duration": 5.92
+  },
+  {
+    "text": "programnya dia tidak bisa masuk ke level",
+    "start": 587.2,
+    "duration": 6.0
+  },
+  {
+    "text": "bonus. Jadi, itulah contoh dari",
+    "start": 589.68,
+    "duration": 7.48
+  },
+  {
+    "text": "nestedate condition. Untuk",
+    "start": 593.2,
+    "duration": 7.96
+  },
+  {
+    "text": "eh next condition ini ada beberapa",
+    "start": 597.16,
+    "duration": 6.72
+  },
+  {
+    "text": "masalah. Nah, masalahnya",
+    "start": 601.16,
+    "duration": 6.48
+  },
+  {
+    "text": "apa? Masalahnya ini ketika kita",
+    "start": 603.88,
+    "duration": 6.199
+  },
+  {
+    "text": "menggunakan nested condition terlalu",
+    "start": 607.64,
+    "duration": 5.48
+  },
+  {
+    "text": "banyak, kadang dia sama masalahnya",
+    "start": 610.079,
+    "duration": 5.801
+  },
+  {
+    "text": "seperti multiple conditional yang",
+    "start": 613.12,
+    "duration": 4.959
+  },
+  {
+    "text": "sebelumnya. Dia akan menjorok ke kanan,",
+    "start": 615.88,
+    "duration": 4.399
+  },
+  {
+    "text": "ke kanan dan ke kanan terus-menerus gitu",
+    "start": 618.079,
+    "duration": 5.681
+  },
+  {
+    "text": "ya. Jadi programnya terlalu panjang.",
+    "start": 620.279,
+    "duration": 7.521
+  },
+  {
+    "text": "Nah, untuk me",
+    "start": 623.76,
+    "duration": 6.88
+  },
+  {
+    "text": "membantu kita gitu ya membaca program",
+    "start": 627.8,
+    "duration": 6.039
+  },
+  {
+    "text": "yang punya nested condition yang eh ada",
+    "start": 630.64,
+    "duration": 6.04
+  },
+  {
+    "text": "banyak gitu ya eh condition-nya, kita",
+    "start": 633.839,
+    "duration": 5.68
+  },
+  {
+    "text": "perlu menggunakan yang namanya logical",
+    "start": 636.68,
+    "duration": 5.76
+  },
+  {
+    "text": "operators. Tapi sebelum kita ke logical",
+    "start": 639.519,
+    "duration": 6.56
+  },
+  {
+    "text": "operators, silakan kerjakan latihan",
+    "start": 642.44,
+    "duration": 8.199
+  },
+  {
+    "text": "conditionals berikut ini.",
+    "start": 646.079,
+    "duration": 4.56
+  },
+  {
+    "text": "Baik, Teman-teman. Sebelumnya kita telah",
+    "start": 652.32,
+    "duration": 6.199
+  },
+  {
+    "text": "membahas tentang ifal.",
+    "start": 654.519,
+    "duration": 4.0
+  }
+]

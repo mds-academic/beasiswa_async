@@ -1,0 +1,1412 @@
+[1.31] [musik]
+[5.72] Halo teman-teman, hari ini kita akan
+[8.24] membahas tentang input yang aman di MIT
+[11.92] App Inventor. [mendengus] Namun sebelum
+[13.84] kita membahas lebih jauh tentang input
+[15.76] aman itu apa, yuk kita ee bahas dulu apa
+[18.84] sih sebenarnya input itu. Nah, di sini
+[21.32] kita bisa lihat kalau input itu adalah
+[24.16] data yang dimasukkan pengguna ke dalam
+[26.64] aplikasi kita, gitu ya. Jadi kalau
+[29.08] misalnya kita bikin aplikasi misalnya
+[31.20] masukkan umur gitu baru pengguna
+[33.32] memasukkan ee umurnya gitu ya misal
+[36.44] umurnya 12 tahun atau aplikasinya minta
+[40.04] masukkan nama berarti misalnya nama kita
+[42.96] Ahmad. Nah Kak Ahmad dan 12 itu adalah
+[46.16] datanya yang diinputkan yang dimasukkan
+[49.40] ke dalam aplikasi kita, gitu ya. Nah,
+[53.32] input itu dia bisa berupa nama, umur,
+[55.48] pilihan menu, nominal uang, passwort,
+[58.80] password, lokasi, dan juga jawaban kuis.
+[61.68] Jadi banyak banget ya ee apa tuh
+[63.52] namanya? Intinya apapun yang dimasukkan
+[65.56] ke dalam program kita atau aplikasi yang
+[67.80] kita buat itu namanya adalah input gitu.
+[70.88] Nah, kadang ee ketika kita membuat
+[74.40] aplikasi gitu kan ya, kita meminta user
+[76.92] untuk memasukkan sesuatu, kadang
+[79.60] pengguna aplikasi itu enggak tahu ya.
+[81.88] Jadi ada kebingungan dari dua arah. Yang
+[84.20] pertama kebingungan dari aplikasinya.
+[86.20] maksudnya kebingungan dari aplikasi
+[87.64] gini, dia enggak tahu gitu ya, apakah ee
+[92.08] input yang diberikan sama pengguna itu
+[94.84] itu tipenya apa. Misalnya contohnya di
+[97.40] sini kalau pengguna mengisi umur dengan
+[100.80] kata 13 misalnya kita minta oh masukkan
+[103.28] umurmu. Gitu kan ya. Nah, terus itu kita
+[105.80] masukinnya 13. Penggunanya ee ketika dia
+[109.08] menggunakan ee aplikasinya dia pakainya
+[112.68] 13 ketika dia nginputnya. Nah, itu kan
+[115.24] kayak menimbulkan kebingungan gitu ya.
+[117.84] Kenapa kok dia masukinnya 13 bukan angka
+[120.08] gitu. Padahal di aplikasi kita bikin
+[122.60] supaya kalau misalnya dia ee masukin ee
+[126.84] angka 13 berarti dia bisa dicek nih oh
+[129.20] kalau usianya ee lebih dari 10 tahun
+[133.04] berarti kita bisa ab c gitu ya. Jadi
+[135.20] kita sudah nge-set nih aplikasinya akan
+[137.00] menjalankan apa berdasarkan inputan yang
+[139.08] kita berikan. Nah itu bukan hanya itu ya
+[142.88] aplikasinya bingung ya. Kayak misalnya
+[144.20] kita minta angka tapi dia masukinnya
+[145.80] kata-kata. Yang kedua, kemudian kita ee
+[149.68] minta user untuk masukin nama tapi dia
+[152.08] lanjut aja padahal namanya belum diisi.
+[154.72] Atau dia ngetik nominal uang gitu kan
+[157.12] kalau ya. Sama tadi ya dia masukin
+[158.92] harusnya masukin Rp10.000 dia tulis ee
+[161.12] bukannya
+[163.56] dia masukinnya 10.000 gitu dieja dengan
+[166.56] huruf. Nah, kalau kayak gini kan
+[169.04] aplikasinya kan bingung kan ya. misalnya
+[170.80] kita mau menghitung catatan ee pemasukan
+[174.36] keuangan kita gitu kan ya. Nah, kalau
+[176.32] kita pakai huruf kan dia enggak bisa
+[177.84] dihitung ya, enggak bisa ditambah. Nah,
+[180.80] aplikasi yang baik itu dia tidak
+[182.68] langsung percaya semua input gitu.
+[185.52] Aplikasinya itu harusnya aplikasi yang
+[188.12] baik itu harusnya ngecek dulu ngecek
+[190.20] pengguna apakah yang dimasukin nama
+[192.28] pengguna ini benar apa enggak gitu ya.
+[194.68] Nah, oh sori. Di sini kalau di MIT App
+[198.56] Inventor itu dia ada
+[203.24] ee kalau misalnya input itu kan dia
+[205.68] masukinnya ke dalam komponen ya,
+[207.36] komponen-komponen. Nah, itu kita bisa
+[208.68] masukin ke dalam textbox gitu ya atau
+[211.40] kita masukin password ya. Kalau misalnya
+[213.20] dia password kan dia kalau kita masukin
+[215.20] password dia jadi bintang-bintang
+[216.20] bintang atau kita pakai list speaker
+[218.68] supaya dia bisa ee diklik klik klik
+[220.84] dipilih gitu ya. Atau kita maunya pakai
+[222.60] checkbox aja. atau kita bisa pakai side.
+[226.16] Nah, dan banyak lainnya ya eh
+[228.20] komponen-komponen input yang ada di
+[230.04] dalam MIT Adventor. Jadi sebaiknya
+[233.16] sebelum aplikasinya itu masuk atau ee
+[236.16] melanjutkan ke proses yang berikutnya
+[238.80] itu kita harus cek dulu inputnya. Nah,
+[242.12] kenapa sih data yang diinput itu harus
+[244.60] dicek? Nih, bayangkan kamu menjadi ee
+[247.60] bayangkan kamu menjadi petugas
+[248.92] perpustakaan di sekolah gitu ya. Nah, di
+[251.84] dalam di perpustakaan itu ada siswa yang
+[255.56] datang gitu ya ingin meminjam buku
+[257.24] misalnya teman kamu tapi kartu
+[260.40] anggotanya itu enggak ada namanya gitu
+[263.04] ya kan. Kalau misalnya kita mau minjam
+[264.44] ke perpustakaan itu harus ada kartu
+[266.44] anggota. Nah, kalau kita seperti ee
+[270.84] misalnya teman kita datang terus kartu
+[272.92] anggotanya enggak ada namanya, terus
+[274.16] kita harus ngapain itu? kita enggak tahu
+[276.48] harus mau ngapain kan kayak kita enggak
+[278.20] bisa ngecek namanya sudah terdaftar
+[279.72] beneran apa enggak, kita enggak bisa
+[281.32] lanjut dia untuk proses bukunya gitu kan
+[283.52] ya. Nah, makanya pada saat kita bikin
+[286.92] aplikasi atau kalau di sini contohnya
+[288.92] ketika kita mau bikin ee kartu gitu ya,
+[292.44] kartu perpustakaan itu kita harus bikin
+[295.24] list dulu. Kita bikin ceklis dulu
+[297.28] kira-kira apa sih yang harus ada di
+[299.60] dalam ee kartu perpustakaan. Di sini
+[302.16] contohnya kalau misalnya ma bikin kartu
+[304.72] perpustakaan, nama yang meminjam itu
+[306.60] harus ada. Terus kalau misalnya ee
+[310.28] perpustakaan di besar itu kan harus ada
+[311.84] nomor anggota ya. Biar misalnya ada
+[313.68] namanya sama-sama Muhammad gitu kan ya
+[316.32] atau Richard namanya sama-sama nih. Tapi
+[319.20] kan nomor anggotanya beda gitu ya. Nah,
+[321.56] makanya nomor anggota yang dikasih harus
+[323.52] benar. Terus semua buku yang sudah
+[326.08] dipinjam itu harus tercatat. Nah, ini
+[328.56] ada beberapa persyaratan yang harus
+[330.64] dicek. ee kepada seorang kita ya, oleh
+[334.20] kita seorang petugas perpustakaan ketika
+[336.84] kita mau ee memproses peminjaman buku
+[340.36] dari pengunjung ee pengunjung mm
+[343.60] perpustakaan kita. Nah, kalau misalnya
+[346.20] di aplikasi berarti kan kalau misalnya
+[348.76] kita mau ada yang mendaftar nih menjadi
+[352.20] ee anggota perpustakaannya. Nah, di
+[354.96] aplikasi berarti ada ceklist yang harus
+[358.12] kita lakukan sebelum kita mencetak. Yang
+[360.92] pertama kita pastikan namanya, nama
+[363.32] pengguna nama ya ee calon pengguna lah
+[367.24] ya kita sebutnya calon pengguna
+[369.92] perpustakaan itu dia namanya enggak
+[371.80] boleh kosong. Terus umurnya harus
+[374.28] benar-benar angka. Terus kalau misalnya
+[377.48] ee ada nominal buku gitu ya atau kalau
+[380.52] kita bikin aplikasi keuangan nominal
+[382.12] uang gitu ya itu dia harus lebih dari
+[384.24] nol karena kan kita gimana mau ee
+[387.44] misalnya nih mau minjam buku, kamu mau
+[389.88] minjam berapa buku? Nol lah. Ngapain
+[391.80] diproses gitu kan ya. Makanya kalau
+[393.48] supaya bisa diproses gitu kalau kita
+[396.40] ngomongin buku gitu ya berarti buku yang
+[398.60] dipinjam harus lebih dari nol. Kalau
+[400.04] kalau uang berarti misalnya kita hari
+[401.76] ini sudah ee
+[404.32] membeli barang apa, harganya berapa, nah
+[407.24] kan harganya itu harus dimasukin. Jadi
+[409.72] ee apa itu namanya? Harganya harus lebih
+[411.96] dari nol kayak gitu.
+[414.60] Oke, lanjut. Nah, jadi ee dari datanya
+[418.60] tadi setelah dicek itu pengecekan itu
+[421.04] namanya validasi ya, validasi input.
+[424.20] Nah, validasi input itu adalah sebuah
+[425.92] proses memeriksa data sebelum data
+[428.80] dipakai dan diproses sama aplikasinya.
+[432.36] Nah, kalau misalnya untuk MITF Inventor
+[436.20] itu yang paling awal gitu ya, sebelum
+[439.36] datanya apa sebelum aplikasinya kita
+[441.48] lanjutin ke misalnya ke layar yang kedua
+[445.16] atau kita mulai proses perhitungan dan
+[447.52] segala macam itu kita harus ada validasi
+[451.08] inputnya. Nah, validasi input yang biasa
+[453.60] kita gunakan tuh apa? Yang pertama tidak
+[456.20] boleh kosong. Jadi, ada beberapa tekt
+[458.84] box yang harus diisi. Ya, kita harus
+[462.36] pastikan dulu sebelum dia lanjut ini
+[465.20] enggak boleh kosong gitu ya. Nah,
+[468.04] kemudian tipe datanya tepat. Berarti
+[470.68] kita harus pastikan kalau kita mintanya
+[473.32] angka berarti dia harus masukin angka.
+[475.88] Kalau misalnya dia enggak masukin angka,
+[477.76] pengguna enggak masukin angka ke dalam
+[479.88] aplikasi MIT App Inventor kita, ya
+[482.20] berarti enggak bisa lanjut. Terus
+[485.24] nilainya harus ee masuk lebih akal gitu
+[488.16] ya. Misalnya ee kalau nginput data
+[492.92] seperti yang tadi ya, kalau misalnya
+[494.56] nginput data ee kalau data uang gitu ya,
+[498.60] misalnya mencatat data pengeluaran. Nah,
+[501.24] maka itu kita harus nulis lebih dari nol
+[505.52] gitu. Kita harus pastikan datanya lebih
+[507.12] dari nol. Jangan sampai dia masukin nol
+[509.04] terus datanya bisa diproses daripada
+[510.52] error nantinya kan. Nah, terus itu harus
+[513.00] ada cekin juga kalau misalnya ada data
+[516.12] sensitif seperti PIN atau masukin
+[518.52] password itu berarti kita enggak boleh
+[520.64] pakai textbox biasa ya. Kita harus pakai
+[523.64] ee harus menggunakan eh password textbox
+[526.40] area yang password gitu. Oke, lanjut.
+[529.92] Nah, untuk membuat form input, coba deh
+[533.28] kalian lihat kita ee di sini ya. Kalau
+[536.32] misalnya mau mendesain berarti kan kita
+[538.84] butuh textbox untuk masukin nama. Kita
+[541.96] butuh textbox isinya umur sama button
+[544.96] yang nanti nge-trigger untuk mengecek
+[547.20] gitu kan ya. Nah, label hasil ini cuman
+[549.88] contoh aja kayak misalnya kita mau
+[551.16] ngecek apakah ee inputan kita udah
+[554.24] tervalidasi apa enggak gitu. sama
+[556.16] notifier ini untuk memastikan kalau
+[558.80] misalnya ada kesalahan user tuh enggak
+[560.64] bingung. Jadi kalau misalnya eh user
+[563.12] masukin namanya kosong gitu ya, dia
+[564.84] terus fisik eh button cek-nya dia klik
+[567.72] next gitu ya atau cek gitu ya, terus
+[570.44] aplikasinya langsung error atau langsung
+[572.64] stop di situ aja tanpa ada pemberitahuan
+[574.56] kalau dia telah melakukan kesalahan gitu
+[576.48] ya atau kalau misalnya di sini kasusnya
+[578.72] dia belum mengisi namanya dengan
+[580.20] lengkap. Nah, makanya kita pakai ee ee
+[582.64] apa? Komponen notifier. Nah, rumusnya
+[586.36] codingnya berarti kita bisa pakai yang
+[588.64] seperti ini. When button cek diklik
+[592.20] ketika button ceknya diklik gitu ya.
+[594.60] Kalau button ceknya diklik kita pakai
+[596.40] if. Kalau textbox namanya kita ambil
+[599.76] sama dengan baru kita ambil teks kosong
+[602.72] petik aja. Berarti kalau petik aja
+[604.28] berarti datanya kosong ya, enggak ada
+[605.68] isinya ya. Kalau teksnya sama dengan
+[608.24] kosong dan dia berarti ini enggak ada
+[609.72] isinya ya. Maka kita panggil
+[611.80] notifier-nya, kita kasih tahu, oh
+[614.04] namanya belum diisi, gitu. Dan terus itu
+[617.52] kita kecek yang kedua, apakah textbox
+[620.44] umur itu kalau misalnya dia tidak sebuah
+[624.12] number gitu ya, bukan sebuah angka, maka
+[627.04] dia kita minta untuk bikin alert umurnya
+[630.80] harus angka gitu ya. Nah, kalau misalnya
+[634.48] udah benar, maka label hasilnya kita
+[637.20] suruh dia print datanya aman untuk
+[639.48] diproses gitu ya. Jadi di sini kita
+[642.32] bikin tiga apa ada dua kondisi gitu ya.
+[644.80] Dua kondisi penting yang di mana kalau
+[647.20] misalnya namanya kosong sama di sini ee
+[650.04] dia teks apa tuh namanya untuk masukin
+[652.68] umur dia bukan sebuah number gitu, bukan
+[654.92] sebuah integer. Nah, kalau misalnya dia
+[657.64] dua-duanya benar maka dia masuk ke else
+[659.72] nih data aman diproses gitu ya. Oke.
+[663.12] Nah, di sini ada warning untuk urutan
+[665.32] pengecekannya itu penting. Pertama itu
+[667.72] cek yang kosong dulu,
+[670.20] cek angka baru proses. Jadi pastikan
+[673.16] jangan ee jangan sampai prosesnya lanjut
+[676.32] gitu ya, programnya lanjut ke proses
+[677.92] selanjutnya. Misalnya menghitung atau
+[679.84] menampilkan data tanpa dicek dulu ee apa
+[683.16] itu namanya? Datanya, divalidasi dulu
+[685.52] inputnya.
+[692.12] Oke, Teman-teman untuk ee mengetahui
+[695.40] seberapa jelas Teman-teman mengetahui
+[697.76] tentang input yang aman atau validasi
+[701.08] input, silakan buat MITP Inventor. Ini
+[704.68] contohnya ada ya, kita bikin data
+[706.84] anggota klub untuk anak SMP gitu ya.
+[709.60] Nah, di sini kita minta penggunanya
+[711.56] untuk masukin nama, masukin umur gitu
+[714.36] sama kita masuk ee minta dia masukin
+[716.64] kelas. Nah, ee di sini kita mau ada ada
+[721.12] komponen-komponen yang bisa kalian
+[722.64] gunakan gitu ya. Ada eh vertical
+[725.52] arrangement karena kan kalau di MT App
+[727.28] Inventor supaya rapi kan kita harus
+[728.72] pakai vertical arrangement ya. Terus ada
+[731.04] label judul, ada textbox dan segala
+[733.80] macam. Nah, silakan buat aplikasi ini
+[737.12] tapi harus ada tiga validasi. Validasi
+[739.56] yang pertama itu dia pastikan namanya
+[741.64] enggak boleh kosong. Yang kedua, umurnya
+[745.12] tidak boleh ee umurnya tidak boleh
+[749.36] menggunakan huruf, harus berupa angka.
+[752.72] Nah, kemudian kalau misalnya dia ee
+[756.08] ngeklik cek data itu dia harus ngecek
+[758.80] juga umurnya. Jadi umur yang dimasukkan
+[761.44] itu tidak boleh kurang dari 10. Jadi dia
+[764.28] harus lebih dari 10 tahun dan tidak
+[766.28] lebih dari 16 tahun gitu ya. Jadi dia e
+[769.04] umurnya harus antara 10 tahun sampai 16
+[773.12] tahun. Kalau dia masuknya sudah 17
+[774.84] tahun, oh berarti anak SMA dia enggak
+[776.36] boleh masuk klub kita, gitu ya. Nah,
+[778.56] jadi silakan bikinkan aplikasinya ini
+[781.24] dan kumpul di bok di bawah ini.
+[787.97] [musik]
+[791.96] Oke, Teman-teman, kita sudah belajar
+[794.20] gimana kita memvalidasi input dari
+[796.32] sebuah data. Sekarang kita mau dari
+[799.52] data-data yang kita kumpulkan tadi, kita
+[801.72] mau membuat dia supaya bisa membuat
+[804.88] keputusan berdasarkan data tadi gitu ya.
+[807.64] Nah, setelah data ee yang kita input itu
+[810.04] aman, data tersebut kita bisa pakai
+[812.88] untuk membuat keputusan. Jadi, selain
+[814.76] kita ee bisa gunakan data itu untuk
+[817.76] diproses gitu ya, kayak misalnya
+[819.48] mencatat keuangannya, kita bisa juga
+[821.96] gunakan datanya itu membuat keputusan.
+[824.40] Nah, maksudnya keputusan itu di mana?
+[826.04] Gimana sih? Misal jika sebuah kondisi
+[828.96] tertentu terjadi, aplikasi memberi saran
+[832.04] atau hasil tertentu. Misalnya jika total
+[835.84] pengeluaran hari ini lebih dari
+[837.88] Rp25.000,
+[839.40] kita mau bikin aplikasinya mengeluarkan
+[842.28] alert gitu ya, mengeluarkan notifikasi
+[845.04] coba hemat berhemat di besok hari gitu
+[848.00] ya. Jadi kita bikin apa misalnya
+[850.72] aplikasi yang di mana dia mencatat semua
+[853.60] pengeluaran yang kita lakukan di hari
+[854.92] ini. Misalnya kita beli cireng, kita
+[857.60] beli batagor, kita beli es teh dua daun
+[861.32] gitu kan ya. Nah, dari ee
+[863.88] pengeluaran-pengeluaran kita tadi itu
+[865.56] kan sama aplikasi kita di tootal. Kalau
+[868.20] misalnya totalnya itu udah 20 lebih dari
+[870.80] R25.000 Ibu misalnya contohnya ya,
+[873.92] aplikasinya akan muncul pop up. Hei,
+[875.96] coba berhemat besok ya, karena ee kamu
+[879.84] telah mengeluarkan lebih dari budget
+[881.64] yang ada yaitu Rp25.000 gitu ya. Nah,
+[884.80] jadi data yang kita punya itu tuh bukan
+[887.80] cuman sekedar angka gitu ya teman-teman,
+[890.00] tapi kita bisa jadikan data itu menjadi
+[892.76] petunjuk gitu ya. Mana yang sering
+[895.16] terjadi, mana yang paling besar, mana
+[897.60] yang perlu diperbaiki, dan mana yang
+[899.12] sebaiknya dilakukan gitu ya. Jadi kita
+[901.32] bikin programnya udah kita bikin
+[904.16] programnya itu mengolah datanya tadi ya.
+[906.32] Dari datanya tadi kita bisa menghitung
+[908.44] jumlah total ee pengeluaran kita per
+[910.96] hari itu. Terus itu dari total
+[913.56] pengeluaran kita, dari seluruh total
+[915.16] pengeluaran kita mana sih pengeluarannya
+[916.96] yang paling besar yang maksimum itu
+[918.76] berapa, mana yang minimum gitu ya. Nah,
+[921.68] kalau misalnya yang maksimum berarti
+[923.28] kita harus ngelebihin apa? Pas kita
+[925.56] budgeting gitu ya, pas kita mau ngatur
+[927.28] keuangan kita, kita harus set oh karena
+[929.72] misalnya kita ee pengeluaran terbesar
+[932.36] itu ditransportasi ini naik Gojek,
+[934.32] berarti bulan depan kalau kita dikasih
+[936.16] uang sama orang tua kita gitu misalnya,
+[938.48] itu kita harus setting oh uangnya
+[940.80] sebanyak sebagian besar itu ditaruh di
+[942.92] transportasi karena itu pengeluaran
+[944.40] terbesar. Nah, itulah
+[946.00] keputusan-keputusan yang tadi kita buat
+[948.04] itu berdasarkan data tadi yang sudah
+[950.04] kita punya ya, Teman-teman. Nah, itu
+[952.76] untuk tentang teori data. Nah, nih
+[955.20] contohnya lagi. Misalnya kalian adalah
+[958.76] anggota OSIS gitu ya. Nah, terus itu
+[961.88] teman-teman kalian di kelas atau di
+[964.44] kelas sebelah gitu ya sering ngomel,
+[967.36] "Aku pengin resol tapi enggak ada gitu."
+[971.16] Terus itu ada lagi teman-teman yang
+[972.80] lain, "Aku enggak suka risol. Aku maunya
+[975.04] tahu gorengnya ditambah gitu ya. Nah,
+[978.08] itu kan tadi berdasarkan ee data-data
+[981.00] yang kita punya dari teman-teman kita,
+[983.32] dari guru-guru juga misalnya kan kita
+[986.52] bisa tahu nih, kita bisa cari tahu, kita
+[988.52] bisa bikin survei gitu ya kira-kira menu
+[991.80] di kantin itu menu gorengan di kantin
+[994.40] mana ya yang perlu ditambah gitu ya.
+[997.04] Jadi kita enggak perlu menemak-nembak.
+[998.56] Oh ini kayaknya e orang-orang suka nih
+[1000.84] kalau misalnya kita bikin ee lumpia
+[1003.64] gitu. Padahal orang-orang sukanya maunya
+[1006.00] risol gitu ya atau maunya tahu bukan
+[1008.96] tempe mendoan gitu misalnya. Nah, jadi
+[1012.60] kita misal sebagai anggota OSIS kita
+[1014.60] membuat aplikasi yang bisa mengumpulkan
+[1017.00] data. Data apa aja? Data menu yang
+[1019.68] sering dibeli oleh teman-teman kita atau
+[1022.48] pengguna kantin gitu ya. pengguna kantin
+[1024.56] enggak e pengguna kantin kan enggak
+[1026.48] cuman teman-teman sekelas kita ada juga
+[1028.84] Pak Sapam ada juga guru gitu ya yang
+[1031.80] sering makan di kantin berarti kita
+[1033.88] harus bikin nih ee menu apa yang sering
+[1036.64] dibel kemudian harga mana di dalam ee
+[1040.56] makanan di kantin itu yang dirasa mahal
+[1043.12] oleh ee pembeli gitu ya pelanggan. Nah,
+[1046.44] kita cek juga jam kantin itu. Kantin itu
+[1049.56] paling ramai dia di jam berapa gitu.
+[1051.80] Misalnya pas ee ternyata orang-orang tuh
+[1054.44] lebih suka sarapan di kantin. Nanti
+[1056.72] makan siangnya beli aja tapi makannya di
+[1059.28] kelas kayak gitu-gitu ya. Itu contohnya.
+[1062.00] Nah, berdasarkan data yang dikumpulkan
+[1064.28] tadi kita bisa membuat keputusan. Oh,
+[1067.68] kalau misalnya yang sering dibeli itu
+[1069.76] mendoan, maka karena dia populer ya
+[1072.64] stoknya ditambah. Berarti besoknya
+[1074.60] buleknya misalnya enggak jangan cuman
+[1076.20] goreng 15 biji ya bule, gorengnya 25
+[1079.56] biji gitu. karena ini menunya yang
+[1081.96] populer. Nah, kemudian di sini
+[1086.32] kita minta kan yang mana menu di kantin
+[1089.40] itu yang mahal. Misalnya di kantin
+[1091.00] kalian jualan pizza. Nah, kalau pizzanya
+[1094.24] kayaknya kalau pizza kemahalan deh. Ee
+[1097.20] satu slice Rp25.000 gitu misalnya. Nah,
+[1100.32] kalau menunya mahal berarti kita harus
+[1102.00] ee kalau misalnya dari 17 siswa gitu ya,
+[1106.16] contohnya di kelas kalian 10 orang
+[1108.60] bilang pizzanya itu mahal ee gitu ya.
+[1111.80] Nah, berarti kita oh kayaknya 10 orang
+[1114.52] ini pengin makan pizza tapi harganya
+[1116.08] mahal gitu. Berarti kan kita harus
+[1117.40] evaluasi kira-kira apakah menunya
+[1119.16] diganti atau bahan bakunya dibuat murah
+[1121.92] gitu ya. Nah, kemudian kalau misalnya
+[1124.12] kita sudah tahu jam kantin yang paling
+[1126.24] ee ramai itu yang mana, kita bisa bikin
+[1129.04] antre gitu kan ya. Jadi misalnya di
+[1132.60] jam-jam tertentu kayak misalnya jam
+[1134.00] istirahat kita bikin sistem antre gitu
+[1136.16] ya. Jadi enggak ada yang
+[1137.16] nyerobot-nyerobot atau enggak ada yang
+[1139.04] lupa bayar dan segala macam gitu ya.
+[1141.52] Jadi itu keputusan yang kita bisa
+[1143.56] tampil, yang kita bisa tambahkan
+[1145.92] berdasarkan data. Jadi enggak ada
+[1147.40] nebak-nebak. Kayaknya yang paling ramai
+[1149.16] istirahat deh atau kayaknya yang paling
+[1151.12] ramai pas jam pulang sekolah deh. Enggak
+[1152.44] ada gitu ya. Ini sudah berdasarkan data
+[1154.28] gitu ya. Nah, di dalam sebuah aplikasi
+[1157.92] pola seperti ini bisa dibuat dengan
+[1160.68] input pilihan gitu ya. Terus itu ada
+[1163.44] tombol hitung juga terus nanti
+[1166.44] ditampilkan menggunakan hasil gitu ya,
+[1168.64] menggunakan label gitu ya. Oh, ini loh
+[1170.52] hasil ya. Nah, itu untuk ee keputusan
+[1173.76] data. Contoh keputusan data. Nah, kalian
+[1177.00] bisa membuat nih aplikasi proyek kecil.
+[1181.44] Jadi, nanti aplikasinya ini dia ee
+[1186.28] di projectnya ini pengguna gitu ya,
+[1188.76] memasukkan uang saku yang dia dapat dari
+[1191.56] orang tua hari ini. Terus throughout the
+[1194.08] day, sepanjang hari dia akan mencatat
+[1196.60] nih pengeluaran apa yang dia ee lakukan
+[1200.16] gitu ya. Misalnya dia beli apa, beli
+[1202.40] apa, beli buku, beli pulpen dan segala
+[1204.72] macam. Nah, dari terus dari situ
+[1207.20] aplikasinya mau kita buat supaya dia
+[1210.60] ngasih saran gitu ya kayak sebelumnya.
+[1213.12] Nah, contohnya nih seperti ini. Misalnya
+[1215.12] komponen-komponen yang kita perlukan itu
+[1217.04] kan berarti textbox untuk uang pemasukan
+[1219.56] uangnya ya berapa, terus tuh ada
+[1221.80] pengeluarannya terus ada button yang
+[1225.08] menganalisis gitu kan ya, terus ada
+[1227.64] label ngasih tahu sisanya berapa. Jadi
+[1230.20] ketika kita mengeluaran ee mengeluarkan
+[1232.72] sesuatu kan berarti uang saku dikurang
+[1235.00] pengeluaran. Nanti dia akan menampilkan
+[1237.24] sisa uangnya berapa sama ada label atau
+[1240.24] notifikasi saran gitu ya. Nah, kita di
+[1242.76] sini bisa nih bikin kalau button
+[1244.40] analisisnya diklik kita bikin if ee apa?
+[1248.40] Pertama kita bikin variabel dulu ya. Set
+[1250.52] sisa uang saku
+[1252.96] dikur ee sisa uang itu dia artinya uang
+[1256.56] saku dikurang pengeluaran gitu ya. Jadi,
+[1258.68] uang yang kita terima dikurang sama
+[1260.96] semua pengeluaran kita. Nah, jika
+[1263.76] variabel sisa yang barusan kita buat
+[1265.88] tadi itu uangnya kurang dari Rp5.000,
+[1269.80] maka kita kasih tahu, "Hei, kalian perlu
+[1274.20] berhemat di besok hari, gitu ya. Karena
+[1277.08] uangnya kurang dari 5.000 nih, misalnya
+[1279.04] R.000 kah, 1.000 kah, atau bahkan bisa
+[1281.48] minus gitu ya. Nah, kalau misalnya
+[1283.56] kurang dari 55.000 Ibu, kita kasih u
+[1285.64] kamu harus berhemat lagi besok karena
+[1287.80] uangmu minus kah gitu ya atau ee apa
+[1291.44] terama uangnya sisa 1.000 atau 2.000.
+[1293.84] Nah, itu bisa kita kasih contoh ini
+[1296.88] menggunakan if. Kemudian kita kalau
+[1299.76] misalnya dia uangnya lebih dari 5.000
+[1301.68] kan berarti kondisi yang ini enggak
+[1302.96] dipenuhin ya. Berarti dia akan lanjut ke
+[1305.92] berarti sarannya teksnya akan berubah
+[1308.48] menjadi pengeluaranmu masih aman.
+[1311.64] Nah, di sini ada catatan penting.
+[1314.20] Sebelum kalian menghitung, validasi dulu
+[1316.68] apakah uang, saku, dan pengeluaran
+[1318.64] benar-benar angka. Jadi, kita mau ee
+[1321.72] menginkorporasi, memasukkan
+[1324.72] pengetahuan kita sebelumnya tentang
+[1326.96] validasi data tadi ya. Jadi, pastikan
+[1329.76] uang sakunya enggak kosong sama uang
+[1332.68] saku dan pengeluaran itu dia ee
+[1336.12] bentuknya itu angka bukan sebuah ee apa
+[1340.08] itu namanya? bukan sebuah
+[1342.76] huruf gitu.
+[1354.92] Oke, Teman-teman sekarang kalian udah
+[1357.40] tahu nih caranya bagaimana
+[1360.12] untuk menambahkan alert gitu ya. Jadi
+[1363.08] berdasarkan data yang kita punya, kita
+[1365.04] mau bikin keputusan gitu ya. Misalnya
+[1367.32] keputusan atau ngasih saran gitu ya. Oh,
+[1369.76] misalnya di sini kalau contoh yang
+[1371.12] sebelumnya itu keputusannya kalau
+[1372.60] uangnya sisanya kurang dari R5.000, maka
+[1375.16] keputusannya harus berhemat gitu ya.
+[1377.40] Nah, di sini kita harus buat juga
+[1380.32] aplikasinya. Silakan kalian buat
+[1382.12] aplikasinya.
+[1383.64] Kemudian dari aplikasi yang kalian buat
+[1385.76] tadi ee silakan kumpulkan di bok
+[1390.12] pengumpulan di bawah ini.
+[1399.64] Oke, Teman-teman. Jadi dalam kita ee
+[1402.00] ketika kita membuat sebuah aplikasi gitu
+[1404.88] ya ee atau membuat sebuah program,
+[1408.28] selain kita harus memperhatikan data apa
+[1410.88] aja yang kita perlukan dan data yang di
+[1413.76] akan diproses,
+[1415.88] sebaiknya sebelumnya pada saat ee pada
+[1419.52] saat tahap perancangan gitu ya, kita
+[1422.08] harus membuat dulu yang namanya
+[1424.12] flowchart. Nah, flowchart itu apa sih
+[1426.68] dan apa ee hubungan flowchart dan
+[1428.84] aplikasi? Oke, kita lihat di sini
+[1431.24] flowchart itu adalah gambar gitu ya.
+[1434.24] Jadi gambar jadi kalau misalnya kita
+[1436.52] breakdown kan dulu tulisannya flowchart
+[1438.32] ya. Flow kan itu alur anu alur ya alur
+[1441.76] atau aliran gitu ya. Aliran bisa disebut
+[1444.40] juga aliran air gitu ya atau semua
+[1446.28] aliran lah namanya flow.
+[1448.64] Kemudian chart itu kan e bagan gitu ya.
+[1451.76] Jadi bisa aja kita eh translate dari
+[1454.00] bahasa Inggris ke Indonesia. Jadi ini
+[1455.64] bagan alur gitu ya. Karena kan kalau
+[1457.64] bahasa Inggris dari belakang ke depan.
+[1459.64] Nah, flowchart itu kalau dalam aplikasi
+[1462.72] adalah gambar ya, gambar alur langkah
+[1466.44] gitu ya, alur langkah yang menunjukkan
+[1469.04] bagaimana aplikasi berjalan dari awal
+[1472.44] sampai akhir. Nah, kalau kita ngomongin
+[1474.88] flow air kan kalau air tuh mengalir dari
+[1478.52] e hulu ke hilir ya kan ya. Nah, kalau
+[1483.28] misalnya flowchart aplikasi itu dia
+[1486.84] menggambarkan
+[1488.56] alur dari awal aplikasinya dibuka sampai
+[1493.12] ee akhir aplikasinya itu nanti ditutup
+[1495.76] gitu ya. Nah, flowchart kenapa sih
+[1499.08] flowchart ini penting? Kenapa flowchart
+[1501.44] harus dibuat sebelum aplikasinya ee
+[1504.44] dibuat gitu. Flowchart ini membantu kita
+[1507.64] berpikir dulu sebelum kita menyusun
+[1510.40] codingnya, sebelum kita bahkan mendesain
+[1512.92] aplikasinya. Kalau alurnya sendiri belum
+[1515.84] jelas, maka blognya itu atau aplikasi
+[1519.84] yang kita buat itu bisa jadi berantakan
+[1522.80] dan sulit diperbaiki.
+[1525.40] Bentuknya si alur tuh seperti apa sih
+[1527.20] nih? Bentuknya seperti ini. Misalnya di
+[1529.72] sini kita mau ada ee mau membuat
+[1533.52] flowchart untuk validasi data gitu ya.
+[1536.64] Validasi data. Nah, di sini kita lihat
+[1540.08] aplikasinya dimulai, aplikasinya diklik
+[1542.56] ya atau app-nya kita ee buka gitu. Nah,
+[1545.88] di sini kita mulai. Kemudian ada proses
+[1549.12] di mana user akan menginputkan data,
+[1552.08] gitu. Jadi, oh dia masukkan nama, dia
+[1554.84] akan masukkan usia gitu ya atau masukkan
+[1557.04] ee jumlah uang yang dia terima. Nah,
+[1560.52] setelah ini ada proses yang kita
+[1562.88] lakukan, ada if else-nya kan, ada
+[1565.44] kondisinya yang harus dipenuhin. Kita
+[1568.32] ngecek apakah data yang dimasukkan itu
+[1571.48] valid. Kalau misalnya dia tidak valid
+[1575.36] gitu kan ya, maka kita akan tampilkan
+[1577.84] output. Tapi kalau misalnya datanya itu
+[1581.24] valid gitu ya, berarti datanya benar.
+[1584.04] Maka kita lanjut ke proses selanjutnya.
+[1586.48] Entah kita menghitung sisa uang atau
+[1589.32] kita ee bisa munculkan menu gitu ya.
+[1594.72] Nah, inilah yang disebut dengan
+[1597.52] flowchart ya. Jadi ada bagannya,
+[1599.52] alurnya. Ini agak salah ya. Harusnya
+[1600.92] enggak boleh seperti ini ya. Ya, ya.
+[1602.52] Tidaknya ini. Jadi, harusnya cek kondisi
+[1604.60] ada panahnya ke kiri sama ada panahnya
+[1607.68] ke kanan.
+[1609.12] Kalau dia ke kiri, kalau dia tidak
+[1610.76] valid, maka harusnya ada panah yang dia
+[1613.20] akan mengulang kembali. Kita minta
+[1615.28] usernya untuk ei, input lagi datanya
+[1618.64] karena datanya tidak valid. Tapi kalau
+[1621.44] misalnya kondisinya benar atau datanya
+[1623.68] itu valid, maka kita minta dia tampilkan
+[1627.40] outputnya atau lanjut ke proses
+[1629.16] selanjutnya. Jangan lupa prosesnya nanti
+[1631.80] dia kalau udah makanya dia akan selesai,
+[1634.04] gitu ya.
+[1635.84] Ini bentuk atau contoh aplik flowchart
+[1639.44] sederhana yang bisa kita buat. Oke.
+[1645.20] Nah, contoh ee yang contoh lain dari
+[1649.92] flowchart itu tadi ya, kita bisa membuat
+[1652.28] flowchart ini enggak hanya untuk
+[1653.92] aplikasi, tapi kita bisa terapin ke
+[1656.96] seluruh mm
+[1660.08] kejadian yang ada di sekitar kita.
+[1663.04] misalnya ada aturan terkait masuk ke
+[1667.72] kelas gitu ya. Nah, di sini aturannya
+[1671.24] kita mau buat sebelum bel istirahatnya
+[1674.80] selesai itu siswa harus sudah di ee
+[1677.08] sudah ada di ee kelas gitu ya. Nah,
+[1681.08] sebelum maka sebelum bel-nya itu
+[1683.52] berbunyi kita buatin flowchart nih.
+[1685.80] Contohnya
+[1687.40] ketika bel berbunyi maka siswa berjalan
+[1691.12] menuju kelas gitu ya. siswa jalan ee
+[1693.36] menuju kelas. Nah, di depan kelas itu
+[1696.48] guru atau ketua kelas itu ngecek dulu
+[1699.84] apakah kalian membawa buku apa tidak.
+[1703.44] Kalau kalian ee tidak membawa buku, maka
+[1707.24] panahnya akan ke bawah sini ya. Ada
+[1709.36] panah ke bawah sini maka dia ambil buku
+[1712.04] dulu. Ambil bukunya entah di loker atau
+[1715.76] ketinggalan di perpus atau ketinggalan
+[1718.20] di kantin gitu ya. Terus itu nanti
+[1720.76] prosesnya akan kembali ke siswa menuju
+[1723.88] kelas karena kan kita ambil buku bukan
+[1726.08] di kelas kan ya. Jadi nanti dia akan
+[1728.12] berjalan menuju kelas lagi karena nanti
+[1730.36] ketua kelasnya atau gurunya akan ngecek
+[1732.52] lagi apakah kita sudah bawa bukunya.
+[1734.88] Kalau kita udah bawa bukunya maka
+[1736.88] panahnya akan ke kanan.
+[1739.44] Kalau misalnya sudah bawa buku, berarti
+[1741.32] kita bisa mulai belajar di kelas dan
+[1744.04] pelajaran pun bisa dimulai. Maka
+[1745.88] panahnya dari ya gitu ya. Kalau tidak
+[1748.40] dia enggak ada panahnya ke bawah gitu
+[1749.88] ya. Karena dia harus ngulang nih proses
+[1752.20] sebelumnya yang salah itu harus dia
+[1753.60] ngulang sebelum melakukan kondisinya
+[1756.16] ini. Tuh. Nah, alur ini
+[1763.72] alur ini mirip seperti aplikasi gitu ya.
+[1766.52] Karena ada awalnya ini awalnya belnya
+[1768.92] berbunyi. Ada input sama ada kondisinya
+[1772.96] ada percabangan yang mengecek kondisinya
+[1775.40] lalu ada hasilnya. Kalau misalnya ee apa
+[1778.36] namanya? kondisinya benar atau ee valid
+[1781.72] gitu ya atau tidak valid. Nah, itu
+[1783.20] semuanya ada hasilnya. Bedanya kalau
+[1785.88] misalnya di aplikasi semuanya itu harus
+[1788.40] ditulis dengan jelas. Teksnya itu harus
+[1791.04] jelas. Nah, apa aja ini bentuk-bentuknya
+[1794.08] flowchart ini apa aja sih? Coba kita
+[1795.80] lihat nih di sini. Nah, simbol yang
+[1798.84] dipakai dalam flowchart itu ada empat
+[1801.04] selain panah tadi ya. Nah, yang pertama
+[1804.20] itu ada yang namanya terminator.
+[1807.08] Nah, Terminator ini dia menandakan
+[1809.36] aplikasinya mulai dan juga selesai.
+[1812.96] Bentuknya itu seperti pil seperti ini
+[1815.20] ya, seperti obat gitu ya. Nah, pil-nya
+[1818.24] ini biasanya kalau misalnya kita mau
+[1820.68] start aplikasinya maka di sini
+[1822.68] tulisannya jadi start atau kalau
+[1825.44] misalnya dia di paling bawah maka dia
+[1827.12] jadi N gitu.
+[1829.64] Selanjutnya ada input atau output. Jadi
+[1833.68] ketika pengguna itu memasukkan data ke
+[1837.04] dalam aplikasi kita, maka dia
+[1840.16] direpresentasikan dengan jajar genjang
+[1842.76] seperti ini ya, Teman-teman. kita ambil
+[1844.44] yang gejer kencang ini menandakan oh
+[1846.80] kita minta user untuk memasukkan nama
+[1850.80] atau memasukkan umur. Nah, ini kita
+[1853.24] harus masukin jelas dan ini jangan
+[1855.64] sampai biasanya kalau keti ee kita
+[1858.52] ketika kita membuat flowchart itu jangan
+[1860.88] digabung jadi satu. Maksudnya digabung
+[1863.52] jadi satu. Misalnya kita mau user
+[1865.88] memasukkan nama dan memasukkan umur.
+[1868.40] Nah, itu dimasukkan dibuatkan hanya satu
+[1871.16] pil aja. Jangan, jangan dibuatkan satu
+[1873.44] jejer genjang aja ya. Harus jelas. Oh,
+[1875.56] user memasukkan nama, user memasukkan
+[1880.00] ee umur. Karena inputnya itu kan nanti
+[1883.28] di aplikasi beda tuh ee labelnya kan
+[1886.12] beda ya, yang labelnya beda, teks
+[1888.36] areanya, teks inputnya juga beda. Karena
+[1890.92] berbeda supaya jelas ketika nanti kita
+[1893.32] biar tahu nih ada berapa input yang ada
+[1896.36] di dalam aplikasi kita dijelasin ya.
+[1899.04] Jangan sampai hanya menggunakan satu
+[1900.36] jejer genjang. Masukkan data gitu aja.
+[1902.32] Enggak dikasih jelasin apa data yang
+[1904.16] dimasukin.
+[1906.16] Kemudian ada proses. Nah, kalau proses
+[1909.72] itu ada sesuatu yang dilakukan kayak
+[1912.32] misalnya menghitung uang
+[1915.28] atau kita berarti di situ ada mengurang
+[1917.88] uang gitu ya atau di situ ada proses
+[1920.52] apaagi? Validasi gitu ya. Ya kan
+[1923.04] diproses validasi. Oh kalau validasi
+[1925.12] maksudnya decision. Tapi semua yang
+[1927.08] berbau proses itu dia bentuknya tuh
+[1929.84] persegi gitu ya. Kayak sebelumnya e kita
+[1933.00] sudah bahas. Oh, contohnya itu ada ini
+[1935.96] ya siswa menuju kelas. Nah, itu kan ada
+[1937.88] proses berjalan untuk menuju kelas gitu.
+[1940.56] Nah, itu direpresentasikan, digambarkan
+[1943.04] dengan bentuknya adalah persegi panjang.
+[1947.44] Nah, yang ketiga ada yang namanya
+[1951.20] decision atau condition. Jadi di sini
+[1955.24] nanti dia intinya akan mengecek apakah
+[1959.48] dari proses atau dari input itu dia
+[1963.24] benar atau salah ya atau tidak gitu ya.
+[1966.72] Kalau misalnya ya nanti dia melanjutkan
+[1969.20] proses ke bawahnya. Kalau salah berarti
+[1972.00] biasanya dia harus mengulang sebelum
+[1973.96] decision ini mulai gitu ya. Jadi kalau
+[1976.72] misalnya kita balik lagi kembali lagi ke
+[1979.92] yang awal ini ya, input ee validasi
+[1984.12] data. Nah, kalau misalnya dia tidak
+[1986.48] valid, misalnya datanya enggak dimasuki,
+[1988.56] dia nginput usernya, nginput data terus
+[1991.88] kondisinya tidak valid. Nah, kan kita
+[1994.56] bukan aplikasinya enggak langsung
+[1996.36] selesai dong harusnya ya kan ya.
+[1998.32] harusnya dia mengulang kembali ke
+[2000.80] sebelum kondisinya dimulai. Atau kalau
+[2004.56] kita lihat ke eh flowchart masuk kelas
+[2007.64] di sini kalau misalnya dia tidak membawa
+[2010.16] buku ya berarti dia harus ambil buku
+[2012.00] dulu. Nah, kalau bukunya sudah diambil
+[2013.76] kan dia harus berjalan lagi kan ke kelas
+[2015.76] kan sebelum dia ketemu ketua kelasnya
+[2018.04] lagi atau guru sekolahnya lagi gitu ya.
+[2020.68] Nah, baru nanti kalau iya maka
+[2022.56] aplikasinya akan jalan atau lanjut ke
+[2024.84] proses selanjutnya ya. Itu empat. simbol
+[2029.00] penting yang ada di dalam eh flow chart
+[2032.68] yang biasanya sering dipakai karena ini
+[2035.04] paling dasar.
+[2037.68] Nah, setelah kita buat flowchart-nya
+[2040.92] tadi kita udah bisa bikin aplikasinya
+[2043.92] gitu ya. Kita bisa langsung bikinin
+[2046.00] implementasikan ke dalam blog dari ee
+[2049.28] app MIT App Inventor gitu. Contohnya
+[2052.16] ketika tombol B apa tombol apapun ya
+[2055.92] dicek gitu kan ya atau tombol cek atau
+[2058.44] tombol hitung ditekan. Nah misalnya dia
+[2061.64] akan ambil angka dari tektok pengeluaran
+[2065.12] terus dia ngecek inputnya kosong atau
+[2066.92] bukan angka. Nah ini kan dijelaskan
+[2069.24] semua dan dibuat ke dalam ee aplikasi
+[2073.44] dibuatkan ke dalam blok kode yang
+[2075.60] sebelumnya kita sudah bahas gitu ya
+[2077.24] untuk memvalidasi data. Oke.
+[2096.68] [musik]
+[2101.68] Oke, Teman-teman. Setelah kita membahas
+[2104.08] tentang masih terkait tentang data gitu
+[2106.60] ya, sebelumnya kita ee membahas tentang
+[2109.20] validasi data, terus itu gimana ee
+[2112.56] membuat data itu bisa mengambil
+[2114.64] keputusan berdasarkan data tersebut.
+[2116.20] Sekarang kita mau membahas tentang data
+[2118.88] privacy.
+[2120.16] Nah, apa sih privacy itu? Nah, privacy
+[2123.52] itu berarti rahasia gitu ya. private
+[2127.44] privacy. Jadi kayak maksudnya ee intinya
+[2130.44] adalah private gitu ya yang kalau
+[2133.84] misalnya kita di sini data privacy yang
+[2136.44] berarti kita harus menjaga data pribadi
+[2139.12] kita gitu ya agar tidak digunakan,
+[2142.60] dilihat atau dibagikan ke sembarangan
+[2145.80] orang gitu ya. Nah, ee data privacy itu
+[2149.84] biasanya terkait data pribadi gitu ya.
+[2153.20] Nah, data pribadi itu dia bukan hanya e
+[2157.08] bukan cuma password gitu ya, tapi
+[2158.88] sebenarnya nama lengkap kita, nomor
+[2161.92] telepon, alamat rumah, terus itu lokasi,
+[2165.88] foto, terus itu data-data. Misalnya kita
+[2170.44] misalnya aplikasinya menyimpan ee
+[2172.92] kebiasaan belanja kita gitu. Misalnya
+[2174.72] kita setiap Kamis selalu membeli cireng.
+[2177.32] Nah, ini kan data ini kebiasaan belanja
+[2179.68] ini kan bisa disalahgunakan orang gitu
+[2181.80] ya. Misalnya contohnya ee amit-amit ada
+[2185.32] yang mau ee apa menculik gitu nanti oh
+[2188.60] iya sih misalnya Saras nih suka ee makan
+[2192.04] cireng berarti dia bisa diculik dari
+[2194.12] Palek Cireng. Nah, itu kan kebiasa
+[2196.08] data-data pribadi gitu ya yang kita tuh
+[2198.84] enggak bisa ee
+[2201.52] orang lain tuh enggak bisa tuh jangan
+[2203.36] sampai tahu gitu. Dan riwayat aktivitas
+[2206.88] kita itu juga bisa masuk jadi data
+[2208.84] pribadi. Jadi ketika kita membuat sebuah
+[2212.88] aplikasi itu kita harus ee harus ee
+[2216.76] tanyakan pertanyaan ini terlebih dahulu.
+[2219.64] Apakah aplikasinya benar-benar perlu
+[2221.56] meminta data ini gitu ya. misalnya
+[2224.04] aplikasinya itu hanya membuat ee membuat
+[2227.00] catatan pengeluaran keuangan gitu ya,
+[2229.72] tapi dia minta foto KTP.
+[2232.92] Nah, ini kan mencurigakan ya,
+[2234.84] Teman-teman. Jadi ee kita tanyakan dulu
+[2238.56] apakah aplikasinya benar-benar butuh ee
+[2241.32] data ini? Kalau iya untuk apa? Itu kita
+[2244.08] harus sudah siap jawabannya. Oke, kita
+[2246.44] lanjut. Nah, data pribadi itu ibaratkan
+[2250.48] aja seperti kunci loker gitu ya. Kalau
+[2252.64] misalnya di sekolah kan ada loker ya.
+[2254.92] Nah, kalau misalnya kita nyimpan data di
+[2257.52] ee menyimpan barang pribadi kita di
+[2259.16] loker, kita kan enggak ngasih kunci
+[2261.40] lokernya itu ke teman-teman gitu ya atau
+[2263.16] ke siapapun. Nah, kalau ee orang lain
+[2267.80] tahu atau bisa punya kuncinya gitu kan
+[2271.12] ya, berarti kan ee loker kita itu udah
+[2273.48] enggak aman. Berarti kita enggak bisa
+[2274.72] nih nyimpan bareng-bareng berharga kita
+[2277.16] di loker tersebut. Nah, makanya biasanya
+[2279.96] kunci locker itu diberikan hanya kepada
+[2282.48] orang-orang yang berhak yang sudah
+[2283.80] terdata gitu ya. Kalau misalnya
+[2286.04] barangnya hilang
+[2288.28] berarti orang lain yang mengambil gitu.
+[2291.80] Ee karena kan kunci loker tuh hanya
+[2293.80] misalnya dipegang oleh yang punya loker
+[2296.64] atau juga misalnya guru gitu ya yang ee
+[2300.00] admin sekolah yang memegang loker itu.
+[2302.84] Nah, sama juga kalau misalnya aplikasi
+[2305.72] kita butuh password atau PIN. Jadi, PIN
+[2307.92] ini hanya diketahui sama yang punya
+[2310.16] akun. Kalau misalnya PIN-nya bocor akan
+[2313.24] bisa disalahgunakan. Nah, itulah kenapa
+[2316.32] aplikasi yang kita buat itu selain hanya
+[2319.92] selain ee tidak ada bug gitu ya, selain
+[2323.36] kita harus bikin dia cakep atau
+[2325.48] tampilannya bagus, kita harus bisa
+[2327.64] menjaga datanya supaya ketika disimpan
+[2331.48] atau diproses data pribadinya itu enggak
+[2334.00] bocor. Oke.
+[2337.44] Nah, ada empat prinsip data privacy yang
+[2340.48] kita harus paham nih. Nah, yang pertama
+[2343.28] ketika kita meminta data pribadi itu
+[2346.56] minta seperlunya aja. Misalnya kalau
+[2349.44] misalnya aplikasi kita itu hanya
+[2351.24] menghitung uang saku, berarti kita kan
+[2353.32] enggak perlu tahu alamat rumahnya,
+[2355.80] enggak perlu minta dia verifikasi
+[2357.60] menggunakan wajah gitu ya. Jadi kita
+[2359.92] minta seperlunya aja. Yang kedua,
+[2363.12] sembunyikan data rahasia. Jadi kalau
+[2365.48] misalnya kita membuat misalnya
+[2367.60] aplikasinya ini ada ee supaya secure
+[2370.76] gitu ya datanya kan karena kita misalnya
+[2372.72] benar-benar butuh alamat gitu ya supaya
+[2375.76] ee mungkin pengguna kita banyak gitu.
+[2378.36] Nah, kita mau user bikin account. Nah,
+[2380.84] supaya account-nya secure dan
+[2382.16] data-datanya secure kita butuh password.
+[2384.48] Nah, jangan lupa ketika kita membuat
+[2386.16] password itu tipe boxnya itu password
+[2389.88] textbox ya, bukan textbox biasa. Karena
+[2392.92] kalau password textbox kan dia nanti
+[2394.52] akan jadi bintang-bintang gitu ya. Nah,
+[2398.56] jadi pastikan dia kalau password atau
+[2400.88] sensitif gunakan password textbox. Yang
+[2404.48] ketiga, beri peringatan jelas. Kalau
+[2407.36] misalnya ada data yang beresiko gitu ya,
+[2411.40] kita bisa ee buat aplikasinya ngasih
+[2415.00] pesan yang mudah dipahami pengguna.
+[2417.52] Misalnya nih kita mau memasukkan alamat
+[2423.00] rumah gitu. Nah, kita harus kasih
+[2425.24] peringatan alamat rumah ini pastikan ee
+[2428.84] apa itu namanya?
+[2431.08] Ee pastikan alamat rumah ini dengan
+[2434.08] benar gitu ya kalau alamat rumah. Tapi
+[2435.84] contohnya misalnya peringatan yang jelas
+[2438.16] ini bisa oh aplikasi kita tuh ada
+[2440.84] PIN-nya gitu ya. Pas user masukin PIN,
+[2443.32] pastikan PIN ini tidak sama dengan nama
+[2445.52] ee hari ulang tahun atau alamat rumah
+[2449.96] gitu ya. Jadi kita kasih peringatan ke
+[2451.60] dia kalau datanya itu sensitif atau
+[2453.64] beresiko diketahui oleh orang lain
+[2455.64] dengan ee cepat gitu ya. Nah, atau
+[2458.36] password-nya jangan sampai masukin
+[2459.80] password sama kayak username yang kayak
+[2461.56] gitu-gitu kan. Nah, itu kita harus kasih
+[2463.72] peringatan ke user. Hei, hati-hati gitu.
+[2467.60] Yang keempat jangan tampilkan secara
+[2470.32] berlebihan gitu ya. Maksudnya ketika
+[2472.92] kita buka misalnya dalam aplikasi yang
+[2474.80] kita buat ada pengaturan setting. Nah,
+[2477.00] di setting ini kita masukin misalnya
+[2479.68] semua data sensitif, password, pin, sama
+[2482.40] data sensitifnya itu langsung ditampilin
+[2484.84] gitu. Kayak misalnya langsung ada oh
+[2488.12] password-nya ABC enggak disembunyiin
+[2490.40] dulu. Kan biasanya kalau kita mau lihat
+[2492.48] password kan kalau kita login misalnya
+[2494.24] ke Facebook atau ke em Gmail itu kan ada
+[2498.72] yang kayak ikon matanya gitu ya. Kalau
+[2500.96] diklik baru nanti muncul password-nya.
+[2502.68] Nah, ini kita buat seperti itu juga.
+[2504.80] Jangan sampai datanya itu terpampang
+[2507.00] nyata gitu ya. Jadi kali kalau misalnya
+[2508.76] ada yang orang ngintip misalnya Aisyah
+[2510.40] nih lagi ee main ee apa tuh namanya?
+[2513.00] Buka aplikasinya terus Saras kebetulan
+[2515.16] duduk di sampingnya. Nah, kalau misalnya
+[2517.76] enggak di ee sembunyikan kan Saras bisa
+[2520.28] tahu pin sama password-nya Aisyah. Nah,
+[2522.28] itu kan membuat datanya enggak private
+[2524.84] lagi gitu. Jadi kita pastikan aplikasi
+[2527.48] yang kita buat itu data privacy-nya
+[2530.36] terjaga.
+[2532.80] Nah eh dalam ee App Inventor itu kita
+[2536.84] MIT App Inventor kita bisa
+[2539.08] mengimplementasikan hal tersebut ya kita
+[2541.44] ketika kita menggunakan ee ketika kita
+[2545.92] menggunakan validasi data dulu gitu ya.
+[2548.12] misalnya nih ee password-nya misalnya
+[2551.28] jangan sampai passwordnya diisi kosong
+[2553.24] karena kita betul-betul butuh password
+[2555.08] gitu ya. Atau misalnya password-nya ee
+[2559.00] nih Bu menggunakan textbox. Text biasa
+[2562.72] aja bukan password textbox. Nah, itu
+[2564.88] harus benar-benar dicek dulu ya ketika
+[2566.76] kita menggunakan ee ketika kita membuat
+[2569.60] dengan MIT App Inventor. Oke.
+[2577.76] Oh, kelihat pinjam ya.
+[2580.92] Degdekan jadinya tak Mojokerto.
+[2585.31] [musik]
+[2587.96] Oke, Teman-teman. Jadi ee sudah setelah
+[2591.64] kita mengetahui tentang data privacy,
+[2594.00] silakan buat aplikasi simpel yang dia
+[2596.84] minta login username atau nama pengguna
+[2599.84] dan pastikan dia ada validasinya ya.
+[2603.40] Ketika dia masuk pastikan dia
+[2604.84] password-nya enggak kosong dan juga ee
+[2608.08] datanya berupa eh ini ya password ya,
+[2610.88] password textbox bukan textbox yang
+[2613.68] biasa. silakan upload dan ee kerjakan
+[2616.28] dan upload di box di bawah ini.
+[2623.30] [musik]
+[2626.12] Oke, Teman-teman kita selanjutnya masih
+[2628.56] terkait dengan data. Kita mau sekarang
+[2632.24] kita mau menganalisis data finansial
+[2635.04] yang sudah kita punya secara sederhana.
+[2637.56] Nah, data finansial itu apa sih? data
+[2639.80] finansial itu adalah catatan tentang
+[2643.48] uang yang masuk,
+[2645.84] uang yang keluar, sisa uang, dan juga
+[2649.12] kebiasaan belanja yang kita lakukan.
+[2652.08] Nah, jadi tujuannya kita menganalis data
+[2655.16] itu sebenarnya supaya kita bisa melihat
+[2659.80] polanya, supaya kita bisa melihat
+[2661.60] patternnya. Kira-kira berdasarkan data
+[2664.52] finansial yang kita punya, apakah
+[2666.80] pengeluaran kita tergolong cukup besar?
+[2669.72] Apakah ada kebiasaan jajan yang bisa
+[2671.92] dikurangin gitu ya? Kalau misalnya
+[2673.92] jajannya terlalu banyak, bisa enggak
+[2675.76] kira-kira jajannya ini dikurangin aja?
+[2677.68] Apakah kita butuh banget gitu ya? Dan
+[2680.08] apakah uang ee yang kita punya itu masih
+[2682.96] cukup untuk kebutuhan penting seperti
+[2684.80] misalnya membeli buku
+[2687.40] atau ee membeli alat tulis yang lainnya
+[2690.60] gitu ya. Jadi kebutuhan yang penting
+[2692.80] yang primary. Nah, itulah kenapa ee kita
+[2697.48] ketika membuat ee catatan finansial,
+[2700.64] catatan keuangan itu kita mencatat tuh
+[2704.08] dengan lengkap dan juga dengan jujur
+[2706.48] supaya kita bisa melihat nih pola
+[2708.72] kebiasaan keuangan kita, finansial kita
+[2710.92] itu apa dan nantinya kita bisa ee
+[2713.64] dianalisis sehingga nanti bisa
+[2716.04] memunculkan sebuah keputusan. Oke. Nah,
+[2719.84] di sini kalau kita lihat ada contoh nih,
+[2722.96] kita punya data jajan 5 hari ya. Selama
+[2726.56] 5 hari ini kita ada pengeluaran yang
+[2730.60] perlu kita highlight gitu. Misalnya nih
+[2732.64] di hari Senin, Selasa, dan hari Rabu kan
+[2735.68] kita setiap hari misalnya uang sakunya
+[2737.88] Rp30.000. Nah, di hari Senin ternyata
+[2741.56] kita total pengeluaran kita itu
+[2743.44] Rp20.000,
+[2745.04] maka sisa uang kita di hari itu adalah
+[2747.48] R.000. R000
+[2749.48] di hari Selasa mungkin karena kita ada
+[2751.68] jam olahraga, kita pengeluarannya agak
+[2754.12] besar nih karena kita harus beli minum,
+[2756.60] harus beli makan untuk menambah tenaga.
+[2759.04] Jadinya pengeluaran kita Rp28.000 dan
+[2761.76] sisanya R2.000. Nah, di hari Rabu itu
+[2765.60] dia sama uang sakunya sama
+[2768.32] pengeluarannya lebih kecil karena
+[2769.96] biasanya hari Rabu ini kita pulangnya
+[2772.16] lebih cepat. Nah, dari sini kan kita
+[2774.68] sudah kelihatan nih uang saku yang
+[2777.00] pemasukan kita per hari Rp30.000.
+[2779.56] Pengeluaran kita itu ternyata paling
+[2781.52] besar itu di hari Selasa gitu. Nah,
+[2785.00] karena hari Selasa ini sekalinya harus
+[2788.08] ee ini ya ee olahraga gitu. Jadi ee
+[2792.00] tenaga kita cepat habis, cepat ngantuk.
+[2794.20] Jadi uang kita sisa R.000. Nah, dari
+[2796.44] sini kan kita bisa lihat, oh ternyata
+[2799.20] karena pengeluaran kita lumayan besar,
+[2801.20] kayaknya next apa sih kita yang bisa
+[2803.60] kita buat? Keputusan apa yang bisa kita
+[2805.64] buat? Misalnya kita mau ee nanti ee
+[2809.24] uangnya yang dari hari Senin sama yang
+[2811.40] hari Rabu itu ditabung untuk di setiap
+[2813.60] hari Selasa atau kita bisa ee karena
+[2816.84] pengeluarannya besar, kita bisa minta
+[2818.80] dia ee apa itu namanya? Kita bisa minta
+[2822.24] dia supaya bawa makan gitu. Jadi itu ee
+[2826.84] berdasarkan data tadi kita bisa ambil
+[2828.92] keputusannya.
+[2831.40] Nah, dari sini kita bisa buat ee
+[2834.20] pengeluaran kita bisa bikin aplikasinya
+[2837.08] ee jadi ee ada fitur-fitur yang kita
+[2839.64] punya gitu kan ya. Dan ini kita bisa
+[2842.00] implementasikan ke aplikasi kita.
+[2852.76] Oke, Teman-teman. Sekarang waktunya
+[2854.68] kalian membuat praktik membuat aplikasi
+[2858.56] untuk ee
+[2860.96] lebih mendalami tentang financial eh
+[2863.36] simple financial data gitu ya. Nah, ee
+[2867.28] di sini
+[2869.04] kita mau bikin aplikasi yang di mana
+[2871.24] penggunanya itu masukin uang saku ya kan
+[2874.80] ya menggunakan ya pasti pakai textbox ya
+[2877.16] kan ya yang nanti divalidasi memastikan
+[2879.84] user menggunakan eh integer gitu ya
+[2883.12] angka ee bukan teks. Nah, terus itu ada
+[2887.20] uang saku. Pemasukan uang saku terus itu
+[2889.32] pengeluarannya berapa total hari ini ya
+[2891.36] kita masukin manual aja. Nah, kemudian
+[2893.76] di sini kita tambahkan kategori gitu.
+[2896.00] Jadi, kita mau nanti usernya antara ee
+[2899.16] masukin kategorinya antara makanan,
+[2900.76] transport, sama hiburan. Di sini kita
+[2903.24] mau pakai tiga kondisi. Nah, jadi coba
+[2906.24] bikin dia nanti akan muncul. Kalau di
+[2909.16] sini kan kita mau bikin aplikasinya ada
+[2911.08] kayak ee apa terima? Ketika kita klik
+[2913.40] cek pola, dia muncul seperti saran gitu
+[2915.92] ya, seperti ee ada ada label label saran
+[2920.12] nih yang ngasih tahu ee ee apa itu?
+[2922.76] Ngasih saran berdasarkan apa yang kita
+[2925.36] input. Misalnya kalau pengeluaran kita
+[2930.32] itu lebih dari uang saku. Jadi
+[2932.96] pengeluaran kita lebih besar dari
+[2934.48] pemasukan, maka sarannya akan ee
+[2936.68] nampilin teks ya kan. Oh, pengeluaranmu
+[2938.96] lebih banyak nih dari uang saku.
+[2941.00] Hati-hati pokoknya dikasih teks yang
+[2943.16] sesuai gitu ya. Kemudian ada kondisi di
+[2945.84] mana kalau sisa uangnya itu dia kalau
+[2949.60] sisa uang kan berarti uang saku dikurang
+[2951.44] pelongaran ya teman-teman. Nah, kalau
+[2953.12] uang sisanya itu lebih dari Rp10.000 wah
+[2955.76] berarti kita bisa dianggap hemat gitu
+[2957.48] lah ya. Atau kita bisa tulis di sini
+[2959.68] Rp100.000 apa barangkalian aja gitu ya.
+[2962.92] Kemudian yang ketiga, kalau kategorinya
+[2965.36] itu hiburan. Jadi kan ee ini
+[2967.16] pengeluarannya harusnya ee kalau kita
+[2969.36] dikasih uang saku sama orang tua kan
+[2970.80] harusnya untuk keperluan sekolah gitu
+[2972.36] ya. Tapi kalau misalnya kita masukin
+[2974.32] kategorinya hiburan itu coba kita kasih
+[2977.20] muncul sarana eh coba dong kamu terlalu
+[2979.88] banyak ee pengeluaran untuk hiburan,
+[2982.56] tahan-tahan dulu gitu ya. Nah, kayak
+[2984.48] gitu. Jadi coba buat ee saran seperti
+[2988.16] ini. Kemudian ada challenge kalau kalian
+[2990.84] bisa tambahin dia masukin datanya ke
+[2992.92] Tiny DB itu lebih bagus lagi karena kita
+[2995.52] bisa melihat riwayat pengeluaran kita.
+[2998.32] Silakan kerjakan dan kumpulkan di boks
+[3000.16] di bawah ini.
+[3006.48] [musik]
+[3010.20] Oke, Teman-teman. Sekarang kita akan
+[3012.60] membahas tentang keamanan transaksi
+[3014.80] digital. Nah, jadi sebelumnya kita sudah
+[3017.60] membahas gimana sih pentingnya kita
+[3020.04] menjaga ee data private kita. Nah,
+[3023.40] sekarang kita mau membahas tentang
+[3024.96] keamanan dalam bertransaksi digital.
+[3028.56] Nah, transaksi digital itu dia terjadi
+[3031.48] ketika kita membeli atau membayar gitu
+[3034.44] ya atau kita mengisi top up gitu atau
+[3038.04] mentransfer atau berlangganan sesuatu
+[3041.08] atau platform gitu ya lewat perangkat
+[3043.72] digital. Nah, kalau misalnya ada sesuatu
+[3047.08] yang terjadi gitu ya ee ketika transaksi
+[3050.48] digital ini kita lakukan kayak misalnya
+[3052.28] kita transfer ee uang ee ke orang tua
+[3056.36] atau misalnya kita membeli kita top up
+[3058.60] untuk game gitu ya, ketika ada sesuatu
+[3060.84] yang terjadi gitu ya, resikonya itu
+[3063.64] bukan hanya uang kita hilang tapi bisa
+[3066.00] di ee salahgunakan oleh orang lain gitu
+[3068.84] ya. Nah, dalam penyalahgunaan ini ee dia
+[3073.44] itu bisa diakibatkan ketika data pribadi
+[3077.60] kita gitu ya, misalnya ee dia tahu pin
+[3080.48] kita gitu ya atau dia nih di sini dia
+[3084.32] tertipu nih pengguna tertipu dan dia
+[3088.04] ngeklik link gitu. Misalnya dia harusnya
+[3090.32] mau top up ee game gitu ya, misalnya
+[3094.00] game RPG.com gitu misalnya. Nah, tapi
+[3097.52] yang dia klik adalah rpg.co.id
+[3100.00] atau linknya aneh. Nah, itu kan dia bisa
+[3103.72] menyebabkan ee resikonya nih. Misalnya
+[3108.40] di sini ada ee ketika kita top up gitu
+[3114.04] ya di link yang salah, kita masukin
+[3116.68] password kita, nah password kita itu
+[3118.52] malah tersimpan. Jadi orang lain tuh
+[3120.48] tahu password kita untuk mengakses akun
+[3123.24] ee bank kita. Nah, akibatnya kan berarti
+[3126.00] dia bisa transfer atau memindahkan uang
+[3128.52] yang kita punya ke akun yang lain atau
+[3131.72] dia menggunakan uang kita untuk top up
+[3134.20] yang ee di game yang kita punya gitu
+[3137.80] kan. Jadi itu kayak em intinya data
+[3141.52] pribadi kita udah diambil orang lain
+[3143.60] ketika kita melakukan finansi apa
+[3145.72] financial aku enggak bisa ngomong loh.
+[3148.88] Kayak apa tuh Kak Laras?
+[3152.44] Kak Laras.
+[3156.48] [musik]
+[3160.52] Oke, Teman-teman. Sekarang kita mau
+[3162.24] membahas tentang financial keamanan
+[3165.32] dalam ee bertransaksi secara digital.
+[3169.40] Jadi transaksi digital itu maksudnya
+[3171.80] adalah ketika kita melakukan ee
+[3174.12] melakukan ini ya pembelian, pembayaran
+[3177.96] atau misalnya kita top up akun game kita
+[3180.48] atau kita mengirimkan uang transfer atau
+[3183.24] kita subscription atau berlangganan ke
+[3186.96] ee apa itu namanya? Sebuah platform
+[3188.88] digital atau ke antar apa transfer uang
+[3191.16] ke antar bank itu pokoknya semua yang
+[3193.64] melalui perangkat digital itu disebut
+[3195.56] transaksi digital. Nah, ketika kita
+[3197.72] melakukan transaksi digital ee transaksi
+[3201.24] ini dia tuh apa ya resikonya tinggi
+[3204.24] banget ketika kita ee
+[3210.72] aduh kok enggak bisa. Oke, ulangin lagi.
+[3213.64] Ulang lagi. Logini.
+[3216.74] [musik]
+[3221.08] Halo, Teman-teman. Sekarang kita akan
+[3223.80] membahas tentang keamanan transaksi
+[3226.20] digital. Nah, apa sih transaksi digital
+[3228.60] itu? Transaksi digital adalah suatu ee
+[3232.24] ini ya, suatu aktivitas yang kita
+[3234.40] lakukan seperti membeli, membayar, top
+[3237.72] up atau transfer. Intinya kita melakukan
+[3239.60] transaksi melalui perangkat digital.
+[3242.20] Nah, itu namanya ee bisa juga disebut
+[3244.12] dengan transaksi digital. Nah, transaksi
+[3246.44] digital ini dia sangat berisiko,
+[3248.16] Teman-teman. Resikonya itu gimana?
+[3250.08] Resikonya kalau misalnya ada yang ee
+[3255.56] misalnya kita kena hack gitu ya, akun
+[3257.48] kita kena hack atau perangkat kita kena
+[3259.84] hack itu bisa mengakibatkan data-data
+[3262.92] kita tuh di ee diilihat oleh orang lain.
+[3267.08] Nah, data-data seperti apa? misalnya
+[3268.48] datas password terus itu pin untuk ee
+[3271.68] melakukan transaksi gitu ya kalau
+[3273.24] perbankan atau top up. Nah, kalau
+[3275.92] misalnya orang lain tahu data ee data
+[3278.16] private kita itu kan bisa jadi resikonya
+[3281.20] wah uang kita bisa hangus tuh di
+[3284.04] misalnya uang kita diambil semua atau
+[3286.36] uang kita digunakan untuk membeli
+[3288.32] token-token digital gitu ya di apa
+[3290.72] skin-skin di game gitu kan ya. Nah,
+[3293.68] kalau misalnya data kita dicuri itu
+[3296.64] biasanya diakibatkan mungkin ada banyak
+[3299.36] sih akibatnya. Misalnya di sini dia ada
+[3303.16] kita menerima ee link palsu gitu ya.
+[3308.00] Misalnya kita mau transfer atau kita mau
+[3311.28] top up gitu ya, top up game. Nah,
+[3313.16] misalnya linknya rpg.com,
+[3315.76] tapi yang kita klik tuh bukan RPG.com,
+[3318.96] RPG.c0M.
+[3321.24] Nah, itu kan terlihat sama gitu ya,
+[3323.12] Teman-teman ya. Tapi itu kan linknya
+[3324.72] salah gitu ya dan itu link fishing atau
+[3327.12] link palsu. Jadi ketika kita ee
+[3330.00] melakukan transaksi di situ bukannya
+[3332.40] malah ee transaksinya berjalan ya, dia
+[3334.96] menyimpan tuh password yang kita
+[3336.84] masukkan, pin yang kita masukkan
+[3338.44] sehingga dia bisa punya akses ke
+[3340.48] data-data private kita gitu ya. Nah,
+[3343.80] selain link palsu ee e untuk transaksi
+[3348.80] digital itu bisa juga beresiko ketika
+[3351.84] kita menerima link yang ya oh kamu
+[3355.12] mendapatkan hadiah palsu, silakan klaim
+[3357.68] hadiahnya di sini gitu. Kayak kita
+[3359.20] disuruh bikin ee kita disuruh bikin
+[3361.64] account terus itu kita disuruh masukin
+[3363.44] password gitu ya. Nah, itu kan beresiko
+[3365.72] banget ya, Teman-teman. Ee karena kita
+[3367.52] memasukkan memberikan data pribadi kita
+[3370.16] ee di suatu website yang tidak diketahui
+[3374.44] gitu ya ee apanya emar
+[3378.44] enggak gitu ya. Nah, selain itu
+[3380.68] resikonya juga muncul ketika orang tidak
+[3383.04] dikenal itu minta OTP gitu ya. Dia
+[3384.96] berusaha login ke perbankan, akun
+[3386.96] perbankan kita, dia minta OTP ke nomor
+[3389.08] kita. Nah, itu kan ee apa itu namanya?
+[3393.60] Kalau kita kasih aja OTP-nya tanpa kita
+[3395.68] aware kalau ini merupakan ee sebuah
+[3398.28] penipuan, wah kita apa ee data-data kita
+[3401.20] bisa diambil semua gitu ya. Nah, untuk
+[3403.76] langkah amannya supaya resiko ini tidak
+[3405.92] terjadi, penting bagi kita sebelum kita
+[3408.48] mengklik gitu ya, sebelum kita mengklik
+[3410.28] apapun kita cek dulu nih ini sumbernya
+[3413.08] dari mana, benar enggak linknya benar
+[3415.16] enggak atau misalnya kalau kalian dapat
+[3417.16] email hadiah-hadiah palsu gitu lewat
+[3419.48] email gitu kan, perhatikan tuh emailnya.
+[3422.00] Kalau emailnya misalnya kita dapat
+[3424.68] contohnya dapat email dari ruangguru.com
+[3427.12] gitu kan ya, kita ee dapat hadiah
+[3429.32] merchandise COC gitu misalnya. Nah,
+[3431.96] perhatikan lagi apakah tulisannya
+[3433.44] Ruangguru.com atau Ruangguru C0M gitu
+[3437.60] atau dia Ruangguru.com-nya benar tapi di
+[3440.40] belakang ada slash hadiah lewat sini
+[3443.56] atau gimana. Nah, kalau Ruang Guru kan
+[3445.24] dia ee emailnya selalu Ruangguru.com
+[3448.00] gitu kan ya, @ruangguru.com. Jadi ee
+[3452.08] perhatikan lagi sumbernya dari mana.
+[3454.80] Terus itu penting bagi kita ini harus
+[3457.48] kita pahami, harus kita ee ini ya kasih
+[3461.72] tahu juga orang-orang terdekat kita
+[3463.56] kalau misalnya ada yang minta OTP atau
+[3466.28] minta pin ya baik itu lewat SMS terus
+[3469.96] itu lewat email. Nah, kalau dia minta
+[3473.08] OTP untuk masuk ke perbankan atau lewat
+[3476.80] ee apa tu namanya? untuk masuk ke akun
+[3478.68] kitalah, akun Google atau outkon apapun
+[3480.52] itu jangan dikasih. Walaupun dia mengaku
+[3483.52] sebagai orang terdekat kita ya misalnya
+[3485.12] ayah kita, ibu kita, adik kita itu
+[3487.44] jangan dikasih. Lebih baik langsung
+[3489.00] telepon verifikasi apakah benar minta
+[3491.28] OTP gitu ya. Dan ee lagi ee lagi pula
+[3494.32] itu jangan sampai dikasih ke siapa-siapa
+[3495.68] ya. Karena kan ini data pribadi ya. Data
+[3497.52] pribadi itu harusnya cuman kita yang
+[3498.96] tahu ya seperti password dan PIN. Jadi
+[3500.96] jangan sekali lagi jangan pernah bagikan
+[3503.00] OTP atau PIN ee yang diberikan oleh ee
+[3506.56] apa yang direquest oleh orang lain yang
+[3508.80] mungkin kita tidak kenal. Nah, jangan
+[3510.76] lupa juga gunakan aplikasi resmi ketika
+[3513.52] bertransaksi gitu ya. Jangan lewat web,
+[3516.12] jangan klik lewat link-link sembarangan
+[3518.36] ketika ada iklan gitu ya. Kadang kan
+[3520.12] kita ee dapat aplikasi ee aplikasi
+[3524.00] bayangan gitu ya, kan kita enggak pernah
+[3525.76] tahu gitu. Jadi pastikan kita hanya
+[3527.72] menggunakan aplikasi atau link-link yang
+[3529.36] resmi aja.
+[3531.24] Oke, itu untuk keamanan financial
+[3533.36] digital. Nah, eh untuk apa itu namanya?
+[3537.84] Fehing. Feishing itu apa sih? Fehing itu
+[3540.12] adalah penipuan yang menyamar sebagai
+[3542.00] pihak resmi. Nah, fishing ini sering
+[3544.28] kita temukan gitu ya. Mungkin kalian
+[3546.08] pernah ada yang merasakan juga. Nah,
+[3548.44] pasti kalian udah e udah paham, udah
+[3551.28] pernah mendapatkannya juga ya tentang
+[3553.68] fishing ini. Jadi intinya fishing itu
+[3555.88] kalau misalnya dia minta data pribadi
+[3557.72] udah pasti bisa dipastikan itu fishing.
+[3559.88] karena dia minta password, dia minta
+[3562.12] pin, dia minta kode OTP atau data kartu
+[3565.80] KTP kalian kalau misalnya kalian sudah
+[3567.48] KT punya KTP gitu ya. Nah, terus itu dia
+[3570.16] ada kata-kata mendesak gitu ya. Kayak ee
+[3574.52] klik link ini untuk mengaktifkan kembali
+[3577.28] akun ee apa ya, Mobile Legends Anda
+[3580.76] kalau tidak akan diblokir dalam 5 menit.
+[3582.92] Nah, seharusnya enggak kayak gitu ya.
+[3584.88] Karena kalau misalnya yang aplikasi
+[3586.56] resmi itu bisa dipastikan itu dia enggak
+[3588.84] akan melakukan yang seperti ini.
+[3590.44] Biasanya dia eh akan ngasih tahu user
+[3593.12] tuh kayak 30 hari sebelumnya, 15 hari
+[3596.36] sebelumnya. Enggak langsung yang 5 menit
+[3597.96] seperti ini ya yang menyebabkan keraguan
+[3600.76] atau kayak deg-degan. Nah, itu itu udah
+[3603.04] pasti fishing ya. Kemudian hadiahnya
+[3605.48] terlalu bagus untuk dipercaya. Misalnya
+[3608.28] kalian dapat email Ruang Guru, selamat
+[3611.00] kamu mendapatkan iPhone 16 dari Ruang
+[3614.52] Guru lah. Padahal kalian enggak pernah
+[3616.08] melakukan apa-apa gitu kan ya. Kalian
+[3618.24] enggak pernah isi form apa-apa. Nah,
+[3620.96] hadiahnya kan terlalu bagus tuh iPhone
+[3622.36] 16 hadiahnya mahal nih. Atau dapat
+[3624.80] mobil, dapat TV itu kan kayak wah ini
+[3627.24] enggak masuk akal. Kalau enggak masuk
+[3628.68] akal hadiahnya berarti wah ini udah
+[3631.56] pasti fishing nih. Kemudian kalau
+[3633.68] linknya terlihat aneh atau berbeda dari
+[3635.60] situs resmi gitu ya. Jadi kalau misalnya
+[3637.64] kalian ee pakai ruangguru.com pastikan
+[3641.24] dia O-nya itu O0 gitu ya. Atau M-nya itu
+[3644.88] bukan ruangguru.co.
+[3647.04] Kadang NN digabung jadi dia terlihatnya
+[3650.24] sebagai M tapi padahal dia NN. Nah itu
+[3652.24] kan udah enggak resmi gitu ya, bukan ee
+[3656.24] udah ya udah salahlah dari terlihatnya
+[3658.20] udah salah berarti otomatis itu
+[3660.04] merupakanlah fisik. Nah, kalau dia buat
+[3663.24] panik intinya kalau dia buat kamu panik,
+[3665.40] buat kamu buru-buru atau intinya dia
+[3667.84] minta data, ya udah kita stop dulu, kita
+[3670.56] berhenti dulu. Coba kita tanyakan gitu
+[3672.72] ya. Entah kita tanya ke orang tua atau
+[3674.84] kita konfirmasi langsung ke pihak
+[3676.60] terkait gitu ya. Kak misalnya dari ruang
+[3678.16] guru, "Kak, ini benar enggak?" kita
+[3680.48] kirim email aja ya ke teman guru seperti
+[3683.12] itu.
+[3706.04] Oke, Teman-teman. Pada ee video terakhir
+[3709.24] ini untuk dianggap sebagai kalian telah
+[3712.84] hadir gitu ya dalam lima sesi
+[3715.56] pembelajaran ee ke belakang, kita butuh
+[3721.20] membuat project akhir ya, Teman-teman.
+[3723.84] Nah, dalam projek akhir ini kalian bebas
+[3726.16] mau membuat nama app-nya apapun gitu ya.
+[3729.12] Yang pasti dalam app-nya ini ada
+[3731.20] beberapa persyaratan yang harus ada.
+[3733.16] Nah, apa aja ee kita bahas nanti ya.
+[3736.04] Nah, sekarang pertama kalian pilih dulu
+[3738.12] IDF-nya. Ee yang penting dia sudah
+[3740.24] sesuai dengan persyaratan-persyaratan
+[3742.64] yang akan kita bahas gitu ya. Kemudian
+[3745.12] yang kedua itu kalian perlu gambar
+[3748.16] flowchart-nya. Kalian gambarkan nih
+[3749.92] kira-kira nanti gambaran aplikasinya tuh
+[3752.32] seperti apa ya. Dari awal aplikasinya
+[3754.00] diklik sampai di akhir itu dia ee
+[3756.68] ngapain aja boleh tuh ee kalian
+[3758.92] gambarkan dan juga upload gambarnya di
+[3761.40] ee kolom di bawah ini ya, di bawah video
+[3763.48] ini ya. Nah, kemudian setelah ee kalian
+[3767.24] gambar flowchart-nya boleh deh kalian
+[3769.24] langsung susun eh desain aplikasinya di
+[3772.72] MIT App Invector. Setelah kalian kalian
+[3775.56] desain, coba kalian buat kodenya. Nah,
+[3779.32] aplikasinya ini itu yang pertama harus
+[3782.48] udah ada inputnya gitu ya. Dia ada
+[3784.76] input, ada tombol, terus itu ada
+[3786.76] outputnya. Kalau bisa juga ada
+[3788.52] notifier-nya ya yang ngasih tahu kalau
+[3790.04] misal ada error apa atau eh ada kurang
+[3794.32] datanya. Nah, itu kita harus ada
+[3795.88] notifier-nya. Yang kedua harus ee
+[3798.96] datanya harus divalidasi gitu ya. Kalau
+[3801.04] misalnya ada data yang kosong atau
+[3803.16] datanya tidak sesuai dengan kita masukin
+[3804.96] misalnya harusnya dia masukin angka tapi
+[3806.48] dia masukinnya huruf. Nah, itu dia harus
+[3808.04] divalidasi. Kemudian yang ketiga,
+[3811.20] aplikasinya itu harus ee memberi saran
+[3813.36] gitu ya. E misalnya uangnya kurang atau
+[3817.24] pengeluarannya lebih dari Rp100.000
+[3819.20] dalam per bulan gitu. Nah, itu apa?
+[3822.04] Harus ada saran-saran itu tadi gitu ya.
+[3824.80] Silakan kerjakan projectnya dan
+[3827.12] kumpulkan projectnya di kolom di bawah
+[3829.76] ini. Semangat teman-teman.

@@ -1,0 +1,224 @@
+[0.16] Setelah mengetahui apa itu condition,
+[3.04] sekarang kita lihat yuk bagaimana
+[5.92] condition ini diimplementasikan dalam
+[8.68] bahasa pemrograman Python. Nah, di dalam
+[11.56] bahasa pemrograman Python, condition itu
+[14.44] tadi direpresentasikan dengan yang
+[17.36] namanya ifas Indonesianya adalah jika.
+[20.96] bentuk programnya seperti ini. Ini ada
+[24.20] contoh kondisinya seperti ini. Kalau
+[27.68] misalnya ada seorang anak atau seseorang
+[30.76] yang umurnya itu sama dengan atau lebih
+[34.44] dari 17 tahun, maka kita mau programnya
+[37.64] akan menampilkan tulisan boleh membuat
+[40.08] KTP. Tapi kalau misalnya dia kondisinya
+[43.40] salah atau misal ee berarti dia tidak
+[45.96] lebih besar terus umurnya tidak juga
+[48.48] sama dengan 17, maka programnya tidak
+[50.76] akan menampilkan apapun, tidak
+[52.68] menampilkan teks apapun. Nah, ini ada
+[55.72] contohnya nih programnya di sini di
+[58.72] atasnya ada sebuah deklarasi variabel
+[61.56] ya, Teman-teman ya. Ada sebuah variabel
+[64.16] nama variabelnya age. Kemudian variabel
+[67.00] age ini menyimpan nilai sebanyak 17
+[69.84] tahun. Nah, variabel H inilah yang nanti
+[72.36] akan dijadikan eh kondisinya. Oke, kita
+[76.16] lihat lebih dalam yuk tentang e bahasa
+[78.36] program Python ini. Nah, tulisan if-nya,
+[81.96] condition yang ada di dalam Python itu
+[84.96] seperti ini nih. Kalau kita lihat di
+[88.04] sini dia diawali dengan deklarasi if-nya
+[90.96] dulu. Kita harus tulis dulu if-nya.
+[93.12] Kemudian kita masukkan kondisinya apa?
+[96.52] Kondisinya kalau umurnya lebih besar
+[100.32] atau sama dengan 17. Karena kita mau 17
+[103.84] itu dia sudah boleh buat KTP gitu ya.
+[106.64] Karena kalau misalnya kita tulisnya ee
+[109.28] hanya lebih besar dari 17, maka kalau
+[111.72] misalnya umur kita 17, kita belum apa
+[114.56] tidak akan menampilkan teks ini nih.
+[116.96] Karena 17 itu tidak lebih ee 17 itu
+[120.32] tidak lebih besar dari 17 ya kan ya
+[122.96] kalau misalnya tidak ada sama dengan.
+[124.36] Nah, nah karena kita mau umur 17 itu dia
+[126.76] sudah boleh membuat TP maka kita
+[129.04] tambahkan sama dengan di sini lebih
+[130.76] besar sama dengan 17. Nah, cara
+[133.52] membacanya kita sebagai manusia jika
+[136.40] umur lebih dari atau sama dengan 17 maka
+[139.68] tampilkan sesuatu, tampilkan pesan. Nah,
+[142.28] bahasa pemrograman if itu di depan ada
+[144.64] if diikuti dengan 2.2 di belakangnya.
+[147.92] Ini jangan lupa ya, Teman-teman ya.
+[149.24] Kalau misalnya di belakangnya ada titik
+[150.68] dua kemudian ada indentasi. Nah, jadi
+[154.64] kalau misalnya kita ngetik print-nya itu
+[156.72] sejajar dengan if di sebelah sini, maka
+[159.36] dia tidak akan menganggap yang di
+[161.64] bawahnya ini sebagai pesannya atau
+[163.92] perintahnya dari if itu tadi. Nah, jadi
+[166.76] jangan lupa gunakan ee di keyboard ada
+[169.56] tab itu ya atau bisa klik spasi empat
+[172.84] kali.
+[174.28] Nah, yang di bawah ini yang kita lihat
+[177.00] ini ya, yang tadi kakak bilang age le =
+[181.24] 17 itu disebut dengan kondisi. Sedangkan
+[185.44] tulisan print itu disebut dengan action
+[188.16] atau sesuatu yang dilakukan oleh program
+[190.36] itu tadi. Nah, berdasarkan kondisi tadi
+[194.76] ya, nih, kondisi yang age le = 17,
+[199.32] sebenarnya kondisi itu tadi akan
+[201.76] menghasilkan salah satu dari dua jawaban
+[204.56] aja gitu ya. Jadi, if eh if itu sebuah
+[207.96] eh condition itu eh hanya akan
+[211.44] menghasilkan dua jawaban antara true
+[214.24] atau false atau salah gitu ya. Nah,
+[217.08] kalau kita lihat contohnya yang tadi
+[219.48] kita membuat mempunyai sebuah variabel
+[222.36] umurnya 17 ya, variabel dia menyimpan
+[225.04] angka 17 sebagai umurnya. Nah, ketika
+[227.56] kita melakukan sebuah print langsung ya
+[230.68] tanpa menggunakan eh if itu kita bisa
+[233.96] lihat di sini dia akan menghasilkan
+[236.28] true. Jadi si if-nya ini akan
+[238.60] menghasilkan true karena 17 itu memang
+[240.68] lebih besar atau sama dengan 17. Nah,
+[243.88] misalnya kalau misalnya kita ganti nih
+[246.00] ada kondisi lagi di variabel H-nya tadi
+[249.28] kita ganti nilainya 15. Nah, kalau
+[252.88] misalnya 15 programnya akan ngecek tadi
+[255.84] ya ee variabel H-nya ini diganti dengan
+[259.64] angka misalnya 15. Apakah 15 lebih dari
+[264.16] sama 17? Apakah 15 lebih dari 17? Salah,
+[267.88] ya kan? Kemudian dia ngecek yang kondisi
+[269.88] yang kedua. Apakah 15 = 17? Salah.
+[272.44] Karena dua-duanya salah, maka programnya
+[274.96] akan menghasilkan nilai false karena
+[278.44] kondisinya tidak muncul apa tidak
+[280.72] terpenuhi gitu ya. Ee karena kan yang
+[284.16] teksnya hanya muncul tadi sekali lagi
+[286.28] kalau misalnya umurnya lebih dari atau
+[288.60] sama dengan 17. Nah, untuk ee
+[292.40] memantapkan pemahaman teman-teman
+[294.68] tentang conditional di bahasa pembelan
+[297.36] Python, yuk kita kerjakan kuis berikut
+[300.08] ini.
+[306.76] Nah, karena Teman-teman sudah
+[308.08] mengerjakan kuis ee harusnya teman-teman
+[311.52] sudah lumayan paham ya terkait dengan
+[314.04] conditional if. Namun dalam bahasa
+[316.80] pemrograman kadang kita mau programnya
+[319.84] itu tetap melakukan sesuatu walaupun
+[322.44] kondisinya salah atau tidak terpenuhi.
+[324.96] Nah, di dalam eh bahasa pemorgan Python
+[327.88] selain if pasangannya itu kita harus
+[331.08] menggunakan yang namanya else atau bisa
+[334.32] juga disebut dengan lainnya gitu ya,
+[336.00] Teman-teman ya. Nah, misalnya di sini
+[338.28] ada sebuah kondisi
+[340.48] kalau kita menggunakan contoh yang sama
+[342.40] tadi ya, tentang ee membuat KTP. Kalau
+[345.32] umurnya minimal 17 tahun, berarti dia
+[347.60] lebih dari 17 tahun atau sama dengan 17
+[349.92] tahun. Maka kita mau membuat tulisan
+[352.88] boleh membuat KTP. Tapi kalau misalnya
+[355.24] dia belum atau ee kurang dari 17 tahun,
+[358.92] maka kita mau ada tulisan belum boleh
+[361.84] membuat KTP. Nah, bentuk bahasa
+[364.12] pemrogramannya
+[365.76] Python-nya itu seperti ini nih. Jadi,
+[368.36] sama seperti sebelumnya kita
+[370.16] mendeklarasikan sebuah variabel age yang
+[372.92] nanti menyimpan nilainya untuk dijadikan
+[374.96] sebuah kondisinya. Nah, kondisinya di
+[377.52] sini kita tulis satu kali saja ya,
+[379.08] Teman-teman. Jika if age lebih besar
+[382.72] dari sama 17, kalau misalnya umurnya
+[385.44] lebih besar atau sama dengan 17, maka
+[388.20] dia akan menjalankan perintah yang ada
+[390.08] di bawahnya, gitu ya. Gimana kalau dia
+[393.16] kondisinya enggak terpenuhi? Maka dia
+[394.96] akan menjalankan perintah yang lainnya
+[397.04] atau disebut juga dengan else. Nah,
+[399.92] lihat nih di sini. Jangan lupa
+[401.36] teman-teman kalau else itu dia tidak
+[403.80] memerlukan kondisi karena kondisinya
+[406.88] else ini eh else-nya ini dia akan
+[409.24] menjalankan jika kondisi yang pertama
+[411.52] tidak terpenuhi atau salah gitu ya. Jadi
+[415.12] bentuknya if dan kondisi. Kemudian
+[418.92] perintahnya if tadi kalau benar. Kalau
+[421.16] salah kita gunakan yang namanya else.
+[424.64] Nah, kita coba lihat lagi nih eh
+[428.48] deskripsinya if else itu bayangkan kalau
+[431.32] misalnya kalian tiba di persimpangan
+[433.32] jalan. Kalau misalnya jalan di sebelah
+[436.48] kiri terbuka, maka kita bisa lewat kiri.
+[439.24] Misalnya kita ee bayangkan kita sedang
+[442.48] membuat sebuah ee membuat sebuah game
+[444.84] gitu ya. kita mau di jalanan sebelah
+[447.00] kiri itu ee kalau mau di-unlock dia
+[450.44] harus bayar gitu. Tapi kalau jadi kalau
+[452.56] misalnya dia mau belok kiri, kalau
+[454.24] misalnya dia belum bayar maka dia belum
+[456.20] bisa tuh lewat jalan sebelah kiri maka
+[458.40] dia harus lewat sebelah kanan gitu ya.
+[461.08] Nah, jadi program itu akan melihat tuh
+[464.08] kondisinya tadi. Oh, udah dia ee apakah
+[468.04] sudah membeli jalan tersebut? Apakah
+[470.96] jalannya sudah terbuka? Kalau enggak dia
+[472.64] akan ee belok ke sebelah kanan. Nah,
+[475.20] ingat ya teman-teman, bahasa pemrograman
+[477.44] itu dia hanya memilih satu jalan saja.
+[480.56] Jadi misalnya kita ee melihat dalam
+[483.64] sebuah program kita ee tadi jalan
+[486.64] sebelah kiri kebuka, di sebelah kanan
+[489.04] buka. Nah, ee kan enggak mungkin tuh
+[490.92] mobil atau karakter yang kita laluin itu
+[493.04] dia lewat dua-duanya. Itu kan dia harus
+[495.04] pilih satu kan antara kiri atau kanan
+[497.20] itu ya. Sama dengan program kita.
+[499.76] Program hanya memilih satu saja.
+[503.48] Nah, ini contoh lain dari penerapan if
+[506.84] else. Misalnya kita punya sebuah game
+[509.60] yang nanti dia pada saat jalan akan
+[513.24] muncul kuis gitu ya, akan muncul sebuah
+[515.72] pertanyaan. Nah, di dalam pertanyaan itu
+[517.92] ada tiga pilihan, ada A, B, dan C. Dari
+[520.96] tiga pilihan ini ternyata pilihan yang
+[522.84] paling benar itu yang A. Nah, maka kita
+[525.44] tulis nih di sini kondisinya. Kalau
+[528.20] jawabannya itu yang apa itu namanya?
+[530.80] yang user masukin itu adalah A. Maka
+[533.60] kita kasih tahu, kita print bahwa
+[535.64] jawabannya itu benar. Tapi kalau
+[538.28] misalnya jawabannya bukan A, maka dia
+[541.16] akan print jawabannya salah. Nih
+[543.92] contohnya di sini
+[546.40] ee pengguna atau pemain game kita itu
+[550.32] memasukkan jawabannya A dan disimpan ke
+[552.52] dalam sebuah variabel answer. Nah, si
+[556.64] answer ini tadi dibandingkan di dalam
+[559.00] kondisi yang pertama. kondisi 1 ini ya.
+[562.44] If a = a, wah ternyata a = a. Benar dong
+[567.68] kondisinya, maka dia akan menuliskan
+[569.68] jawabannya benar. Tapi kalau misalnya
+[571.36] dia jawab B, dia ngecek nih di sini
+[573.96] apakah B = sama A? Salah, maka dia akan
+[577.20] langsung menjalankan yang else. Begitu
+[579.76] pula dengan yang C. Kalau di sini dia
+[583.44] ngecek nih apakah C = A, kan huruf C
+[586.52] bukan A ya. berarti dia akan langsung
+[588.32] menjalankan kondisinya yang paling
+[590.72] bawah. Jadi seperti itu ya, Teman-teman
+[592.52] ya. Kalau misalnya kita hanya punya satu
+[594.84] kondisi saja benar atau salah, maka kita
+[597.76] bisa menggunakan yang namanya if dan
+[601.52] else. Nih kalau di sini tadi jawabannya
+[604.64] benar, kalau misalnya bukan A, maka
+[606.88] jawabannya akan salah. Nah, untuk
+[609.80] mengetahui e pemahaman teman-teman
+[612.72] terkait if else ini, silakan kerjakan
+[615.36] tiga kuis berikut.
+[620.88] Yeah.

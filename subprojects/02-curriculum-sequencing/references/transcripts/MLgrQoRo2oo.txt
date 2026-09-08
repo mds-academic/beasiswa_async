@@ -1,0 +1,52 @@
+[2.12] Halo teman-teman, hari ini kita akan
+[4.20] membahas tentang conditional. Nah,
+[7.56] sebelum kita membahas conditional, yuk
+[9.88] kita perhatikan slide berikut ini. Nah,
+[13.12] slide berikut ini menunjukkan bla bla
+[16.20] bla bla bla bla. Ini tes aja kok enggak
+[18.24] bukan asli. Nah, jadi teman-teman pada
+[21.76] saat kita pada saat kita mencoding atau
+[24.24] memprogram sesuatu, sebuah program itu
+[26.72] dia tidak berjalan lurus-lurus aja loh
+[28.76] seperti kereta api teman-teman. Tapi
+[31.64] mereka itu juga kadang harus memilih
+[33.88] apakah ee harus menggunakan cara A atau
+[36.96] cara B, apakah harus menjalankan ee cara
+[40.28] A atau menjalankan cara B dulu. Jadi
+[42.88] program itu dia harus memilih. Nah,
+[47.24] di dalam dunia pemrograman konsep
+[49.24] memilih jalan ini disebut dengan
+[52.92] Nah, kita sebagai manusia juga
+[57.24] membuat keputusan. Contohnya misalnya
+[59.36] kalau hujan jatuh, hujan jatuh. Kalau
+[61.48] misalnya hujan turun kita harus bawa
+[63.16] payung. Kalau perut lapar kita harus
+[65.40] makan. Nah, hujan turun dan perut lapar
+[68.84] itu namanya adalah condition atau
+[71.56] kondisi. Jadi, komputer itu juga pintar
+[75.20] untuk melakukan dan ee memilih sesuatu
+[78.88] berdasarkan kondisi yang telah kita
+[80.84] tetapkan. Nah, condition itu apa sih?
+[85.08] Condition itu kalau dalam program adalah
+[88.28] sebuah cara gimana komputer berpikir.
+[90.84] Nah, misalnya kalian sedang membuat
+[92.80] game, di game itu kalian membuat kondisi
+[95.92] di mana kalau misalnya dia makan apel
+[98.64] nyawanya akan bertambah. Kalau misalnya
+[100.96] dia kena duri, maka dia nyawanya akan
+[104.16] berkurang. Nah, kondisinya adalah makan
+[106.96] apel dan kena duri. Itu contoh kalau di
+[111.16] game. Contoh lain, bayangkan kalian
+[113.24] sedang berjalan ke ee di tengah hutan
+[116.44] terus kalian menemukan sebuah castle
+[118.24] yang isinya itu penuh harta gitu ya.
+[120.76] Nah, untuk membuka castle tersebut kita
+[123.08] harus punya kunci. Kalau kita enggak
+[124.88] punya kunci, kita tidak bisa buka
+[126.60] pintunya. Kalau misalnya kita tidak bisa
+[129.00] buka pintunya, kita enggak bisa dapat
+[130.44] hartanya. Nah,
+[132.96] punya kunci itu disebut dengan kondisi
+[135.44] ya, Teman-teman. Oke, tuh untuk
+[138.28] condition.
+[140.32] B

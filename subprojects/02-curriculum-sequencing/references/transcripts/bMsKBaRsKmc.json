@@ -1,0 +1,4252 @@
+[
+  {
+    "text": "Nah, Teman-teman kita sudah belajar",
+    "start": 0.48,
+    "duration": 4.279
+  },
+  {
+    "text": "mengenai basic dari bahasa pemrograman",
+    "start": 2.36,
+    "duration": 4.8
+  },
+  {
+    "text": "Python. Sekarang mari kita terapkan",
+    "start": 4.759,
+    "duration": 5.76
+  },
+  {
+    "text": "pemahaman kita tentang Python ke dalam",
+    "start": 7.16,
+    "duration": 5.8
+  },
+  {
+    "text": "financial literacy. Mari kita perhatikan",
+    "start": 10.519,
+    "duration": 4.921
+  },
+  {
+    "text": "slide berikut ini.",
+    "start": 12.96,
+    "duration": 5.04
+  },
+  {
+    "text": "Sebelum kita ke financial literacy, coba",
+    "start": 15.44,
+    "duration": 4.88
+  },
+  {
+    "text": "kita review kembali pemahaman kita",
+    "start": 18.0,
+    "duration": 5.4
+  },
+  {
+    "text": "tentang bahasa peman Python, terutama",
+    "start": 20.32,
+    "duration": 5.44
+  },
+  {
+    "text": "tentang condition. kita sudah belajar",
+    "start": 23.4,
+    "duration": 4.959
+  },
+  {
+    "text": "dan kita sudah memahami bersama bahwa",
+    "start": 25.76,
+    "duration": 4.88
+  },
+  {
+    "text": "program bisa mengambil keputusan dan",
+    "start": 28.359,
+    "duration": 4.121
+  },
+  {
+    "text": "keputusan itu kalau kita menggunakan",
+    "start": 30.64,
+    "duration": 3.439
+  },
+  {
+    "text": "bahasa pemrograman Python",
+    "start": 32.48,
+    "duration": 4.48
+  },
+  {
+    "text": "direpresentasikan dengan if, elif, dan",
+    "start": 34.079,
+    "duration": 6.32
+  },
+  {
+    "text": "juga else. Nah, konsep itu tadi bisa",
+    "start": 36.96,
+    "duration": 6.079
+  },
+  {
+    "text": "kita terapkan untuk mengambil keputusan",
+    "start": 40.399,
+    "duration": 5.32
+  },
+  {
+    "text": "ketika kita mau menggunakan uang.",
+    "start": 43.039,
+    "duration": 5.801
+  },
+  {
+    "text": "misalnya apakah barang yang mau kita",
+    "start": 45.719,
+    "duration": 5.081
+  },
+  {
+    "text": "beli ini, yang mau kita spending ini",
+    "start": 48.84,
+    "duration": 3.84
+  },
+  {
+    "text": "sedang dibutuhkan",
+    "start": 50.8,
+    "duration": 4.84
+  },
+  {
+    "text": "atau apakah uang aku sekarang cukup",
+    "start": 52.68,
+    "duration": 5.76
+  },
+  {
+    "text": "untuk membeli barang tersebut?",
+    "start": 55.64,
+    "duration": 5.32
+  },
+  {
+    "text": "Kemudian apakah aku masih punya sisa",
+    "start": 58.44,
+    "duration": 6.359
+  },
+  {
+    "text": "budget uang untuk membeli barang lain?",
+    "start": 60.96,
+    "duration": 6.519
+  },
+  {
+    "text": "Nah, itu ada beberapa pertanyaan lainnya",
+    "start": 64.799,
+    "duration": 4.64
+  },
+  {
+    "text": "yang bisa kita terapkan dan tanyakan",
+    "start": 67.479,
+    "duration": 4.68
+  },
+  {
+    "text": "sebelum kita mengambil keputusan untuk",
+    "start": 69.439,
+    "duration": 5.841
+  },
+  {
+    "text": "membeli sesuatu. Nah, sebelumnya kita",
+    "start": 72.159,
+    "duration": 4.841
+  },
+  {
+    "text": "bahas dulu yuk apa itu financial",
+    "start": 75.28,
+    "duration": 4.36
+  },
+  {
+    "text": "literacy. Financial literacy adalah",
+    "start": 77.0,
+    "duration": 6.28
+  },
+  {
+    "text": "sebuah kemampuan kita dalam memahami dan",
+    "start": 79.64,
+    "duration": 6.165
+  },
+  {
+    "text": "mengatur uang dengan bijak. Nah,",
+    "start": 83.28,
+    "duration": 4.799
+  },
+  {
+    "text": "[berdehem] financial literacy itu bukan",
+    "start": 85.805,
+    "duration": 4.634
+  },
+  {
+    "text": "berarti kita tidak dapat membeli barang",
+    "start": 88.079,
+    "duration": 4.68
+  },
+  {
+    "text": "yang kita suka, ya. Tapi financial",
+    "start": 90.439,
+    "duration": 4.68
+  },
+  {
+    "text": "literacy ini membantu kita untuk belajar",
+    "start": 92.759,
+    "duration": 4.36
+  },
+  {
+    "text": "untuk bertanya dulu, seenggaknya",
+    "start": 95.119,
+    "duration": 4.881
+  },
+  {
+    "text": "bertanya kepada diri sendiri ee sebelum",
+    "start": 97.119,
+    "duration": 5.0
+  },
+  {
+    "text": "kita membeli suatu barang. Nah,",
+    "start": 100.0,
+    "duration": 3.479
+  },
+  {
+    "text": "pertanyaan-pertanyaan apa sih yang kita",
+    "start": 102.119,
+    "duration": 2.721
+  },
+  {
+    "text": "bisa tanyakan? Nah,",
+    "start": 103.479,
+    "duration": 2.96
+  },
+  {
+    "text": "pertanyaan-pertanyaannya di sini ada",
+    "start": 104.84,
+    "duration": 3.12
+  },
+  {
+    "text": "beberapa contohnya seperti yang sudah",
+    "start": 106.439,
+    "duration": 3.441
+  },
+  {
+    "text": "pernah disebutkan ya. Apakah kita",
+    "start": 107.96,
+    "duration": 4.119
+  },
+  {
+    "text": "benar-benar perlu barang itu sekarang?",
+    "start": 109.88,
+    "duration": 4.0
+  },
+  {
+    "text": "Apakah uangnya cukup untuk membeli",
+    "start": 112.079,
+    "duration": 4.481
+  },
+  {
+    "text": "barang tersebut atau apa ada kebutuhan",
+    "start": 113.88,
+    "duration": 4.96
+  },
+  {
+    "text": "lain yang lebih penting atau urgen untuk",
+    "start": 116.56,
+    "duration": 5.32
+  },
+  {
+    "text": "sebelum kita ee membeli barang tersebut?",
+    "start": 118.84,
+    "duration": 5.44
+  },
+  {
+    "text": "Nah, pertanyaan-pertanyaan tersebut",
+    "start": 121.88,
+    "duration": 5.08
+  },
+  {
+    "text": "kalau di coding itu disebut juga dengan",
+    "start": 124.28,
+    "duration": 4.599
+  },
+  {
+    "text": "condition.",
+    "start": 126.96,
+    "duration": 3.799
+  },
+  {
+    "text": "Nah,",
+    "start": 128.879,
+    "duration": 5.0
+  },
+  {
+    "text": "sekarang dalam financial literasi ada",
+    "start": 130.759,
+    "duration": 5.801
+  },
+  {
+    "text": "sesuatu yang namanya kebutuhan versus",
+    "start": 133.879,
+    "duration": 6.681
+  },
+  {
+    "text": "keinginan atau needs versus wants dan",
+    "start": 136.56,
+    "duration": 6.52
+  },
+  {
+    "text": "bagaimana kita mengimplementasikan",
+    "start": 140.56,
+    "duration": 5.88
+  },
+  {
+    "text": "conditional ke conditional bahasa peman",
+    "start": 143.08,
+    "duration": 6.159
+  },
+  {
+    "text": "Python ke dalam needs versus on ini tadi",
+    "start": 146.44,
+    "duration": 5.519
+  },
+  {
+    "text": "ya. Nah, sebelumnya kita bahas dulu yuk",
+    "start": 149.239,
+    "duration": 5.72
+  },
+  {
+    "text": "apa sih kebutuhan itu? kebutuhan itu",
+    "start": 151.959,
+    "duration": 5.64
+  },
+  {
+    "text": "adalah sesuatu yang penting untuk kita",
+    "start": 154.959,
+    "duration": 4.801
+  },
+  {
+    "text": "ee bertahan hidup, untuk kita belajar",
+    "start": 157.599,
+    "duration": 3.961
+  },
+  {
+    "text": "atau menjalankan aktivitas kita",
+    "start": 159.76,
+    "duration": 4.64
+  },
+  {
+    "text": "sehari-hari. Nah, ada beberapa contoh",
+    "start": 161.56,
+    "duration": 5.92
+  },
+  {
+    "text": "kebutuhan yang ee sudah Kakak di sini.",
+    "start": 164.4,
+    "duration": 6.72
+  },
+  {
+    "text": "Ada makanan, ada air, ada transportasi.",
+    "start": 167.48,
+    "duration": 5.92
+  },
+  {
+    "text": "Yuk, kita lis yuk kira-kira apaagi ya",
+    "start": 171.12,
+    "duration": 4.16
+  },
+  {
+    "text": "kebutuhan selain yang disebutkan yang",
+    "start": 173.4,
+    "duration": 3.759
+  },
+  {
+    "text": "ada di sini.",
+    "start": 175.28,
+    "duration": 3.8
+  },
+  {
+    "text": "Nah, setelah kita memahami apa itu",
+    "start": 177.159,
+    "duration": 5.0
+  },
+  {
+    "text": "kebutuhan, sekarang kita pahami juga yuk",
+    "start": 179.08,
+    "duration": 5.799
+  },
+  {
+    "text": "apa sih itu keinginan. Nah, keinginan",
+    "start": 182.159,
+    "duration": 5.761
+  },
+  {
+    "text": "itu adalah sesuatu yang kita suka, yang",
+    "start": 184.879,
+    "duration": 6.0
+  },
+  {
+    "text": "kita mau, tapi belum tentu harus banget",
+    "start": 187.92,
+    "duration": 5.28
+  },
+  {
+    "text": "kok dibeli untuk sekarang. Ada beberapa",
+    "start": 190.879,
+    "duration": 7.761
+  },
+  {
+    "text": "contoh nih, misalnya snack atau HP baru,",
+    "start": 193.2,
+    "duration": 9.0
+  },
+  {
+    "text": "games ee atau gantungan kunci atau",
+    "start": 198.64,
+    "duration": 6.64
+  },
+  {
+    "text": "stiker dan yang masih banyak lainnya.",
+    "start": 202.2,
+    "duration": 5.48
+  },
+  {
+    "text": "keinginan itu boleh dibeli, tapi",
+    "start": 205.28,
+    "duration": 5.28
+  },
+  {
+    "text": "sebaiknya setelah semua kebutuhan utama",
+    "start": 207.68,
+    "duration": 4.759
+  },
+  {
+    "text": "kita untuk bertahan hidup itu telah",
+    "start": 210.56,
+    "duration": 4.92
+  },
+  {
+    "text": "terpenuhi. Nah, coba yuk kita listkan",
+    "start": 212.439,
+    "duration": 5.44
+  },
+  {
+    "text": "lagi apa sih keinginan kamu yang kamu",
+    "start": 215.48,
+    "duration": 7.08
+  },
+  {
+    "text": "mau? Boleh tuliskan di sini ya.",
+    "start": 217.879,
+    "duration": 4.681
+  },
+  {
+    "text": "Nah, analoginya seperti ini.",
+    "start": 223.0,
+    "duration": 6.36
+  },
+  {
+    "text": "Bayangkan kamu mempunyai uang Rp50.000",
+    "start": 226.08,
+    "duration": 6.64
+  },
+  {
+    "text": "tapi Rp50.000 ini kamu perlu membeli",
+    "start": 229.36,
+    "duration": 6.0
+  },
+  {
+    "text": "beberapa hal. Yang pertama, kamu butuh",
+    "start": 232.72,
+    "duration": 5.719
+  },
+  {
+    "text": "buku tulis Rp15.000, tapi kamu juga",
+    "start": 235.36,
+    "duration": 6.12
+  },
+  {
+    "text": "butuh makan siang Rp20.000.",
+    "start": 238.439,
+    "duration": 6.44
+  },
+  {
+    "text": "Kemudian kita mau membeli stiker",
+    "start": 241.48,
+    "duration": 7.56
+  },
+  {
+    "text": "Rp10.000 sama minuman Rp15.000. Nah,",
+    "start": 244.879,
+    "duration": 6.44
+  },
+  {
+    "text": "kalau uang kita terbatas, kalau Rp50.000",
+    "start": 249.04,
+    "duration": 4.44
+  },
+  {
+    "text": "ya cukup terbatas ya, Teman-teman. Nah,",
+    "start": 251.319,
+    "duration": 4.801
+  },
+  {
+    "text": "kita harus milih nih dari semua list",
+    "start": 253.48,
+    "duration": 5.279
+  },
+  {
+    "text": "yang kita mau beli ini mana sih yang",
+    "start": 256.12,
+    "duration": 5.359
+  },
+  {
+    "text": "harus dibeli terlebih dahulu sama mana",
+    "start": 258.759,
+    "duration": 6.361
+  },
+  {
+    "text": "yang bisa kita tunda. Nah, di sinilah",
+    "start": 261.479,
+    "duration": 5.761
+  },
+  {
+    "text": "menulis inilah memilih inilah yang",
+    "start": 265.12,
+    "duration": 6.44
+  },
+  {
+    "text": "disebut dengan ee membedakan kebutuhan",
+    "start": 267.24,
+    "duration": 7.84
+  },
+  {
+    "text": "versus keinginan.",
+    "start": 271.56,
+    "duration": 6.44
+  },
+  {
+    "text": "Nah, setelah kita putuskan mana e untuk",
+    "start": 275.08,
+    "duration": 5.48
+  },
+  {
+    "text": "membantu kita memutuskan gitu ya. ee",
+    "start": 278.0,
+    "duration": 4.16
+  },
+  {
+    "text": "kalau misalnya kita sudah memutuskan",
+    "start": 280.56,
+    "duration": 3.44
+  },
+  {
+    "text": "tapi masih tetap bingung gitu. Nah, kita",
+    "start": 282.16,
+    "duration": 4.44
+  },
+  {
+    "text": "bisa menuliskan bahasa pemrograman",
+    "start": 284.0,
+    "duration": 6.32
+  },
+  {
+    "text": "Python-nya nih. Misalnya kita dalam",
+    "start": 286.6,
+    "duration": 5.96
+  },
+  {
+    "text": "kehidupan nyata",
+    "start": 290.32,
+    "duration": 4.439
+  },
+  {
+    "text": "ada beberapa barang yang merupakan",
+    "start": 292.56,
+    "duration": 4.76
+  },
+  {
+    "text": "kebutuhan, maka kita perlu prioritaskan",
+    "start": 294.759,
+    "duration": 5.16
+  },
+  {
+    "text": "dia. Tapi ada juga beberapa barang yang",
+    "start": 297.32,
+    "duration": 6.28
+  },
+  {
+    "text": "ternyata cuman keinginan kita aja. Maka",
+    "start": 299.919,
+    "duration": 6.361
+  },
+  {
+    "text": "kita harus cek dulu nih apakah uang sisa",
+    "start": 303.6,
+    "duration": 4.8
+  },
+  {
+    "text": "kita cukup untuk membeli barang yang",
+    "start": 306.28,
+    "duration": 4.44
+  },
+  {
+    "text": "kita inginkan tadi. Kalau uangnya tidak",
+    "start": 308.4,
+    "duration": 4.4
+  },
+  {
+    "text": "cukup, maka kita perlu menunda dulu",
+    "start": 310.72,
+    "duration": 5.16
+  },
+  {
+    "text": "membeli ee barang tersebut. Nah, contoh",
+    "start": 312.8,
+    "duration": 4.92
+  },
+  {
+    "text": "bahasa Python-nya kita bisa lihat nih di",
+    "start": 315.88,
+    "duration": 4.84
+  },
+  {
+    "text": "sini",
+    "start": 317.72,
+    "duration": 7.12
+  },
+  {
+    "text": "dalam Python kita bisa membuat eh",
+    "start": 320.72,
+    "duration": 7.24
+  },
+  {
+    "text": "menggunakan e conditional if ya. Nah,",
+    "start": 324.84,
+    "duration": 4.72
+  },
+  {
+    "text": "conditional if-nya di sini kita",
+    "start": 327.96,
+    "duration": 6.239
+  },
+  {
+    "text": "menggunakan eh metode eh multiple eh",
+    "start": 329.56,
+    "duration": 7.24
+  },
+  {
+    "text": "multi ya, yang di mana kondisinya enggak",
+    "start": 334.199,
+    "duration": 5.081
+  },
+  {
+    "text": "hanya satu tapi ada beberapa kondisi.",
+    "start": 336.8,
+    "duration": 3.839
+  },
+  {
+    "text": "Nah, seperti yang kita lihat di sini,",
+    "start": 339.28,
+    "duration": 4.52
+  },
+  {
+    "text": "kondisi yang pertama ada",
+    "start": 340.639,
+    "duration": 5.521
+  },
+  {
+    "text": "kategori. Jadi, kita mengkategorikan",
+    "start": 343.8,
+    "duration": 4.76
+  },
+  {
+    "text": "dulu apakah ini sebuah kebutuhan atau",
+    "start": 346.16,
+    "duration": 5.2
+  },
+  {
+    "text": "keinginan. Kalau dia kebutuhan, maka",
+    "start": 348.56,
+    "duration": 5.24
+  },
+  {
+    "text": "kita prioritaskan dalam membelinya. Tapi",
+    "start": 351.36,
+    "duration": 4.839
+  },
+  {
+    "text": "kalau ternyata barang yang kita mau itu",
+    "start": 353.8,
+    "duration": 4.6
+  },
+  {
+    "text": "hanya keinginan, maka kita harus cek",
+    "start": 356.199,
+    "duration": 3.961
+  },
+  {
+    "text": "dulu budgetnya.",
+    "start": 358.4,
+    "duration": 3.72
+  },
+  {
+    "text": "Ee terus itu ada kadang barang yang",
+    "start": 360.16,
+    "duration": 4.159
+  },
+  {
+    "text": "belum kita kategorikan, maka programnya",
+    "start": 362.12,
+    "duration": 4.32
+  },
+  {
+    "text": "akan ngecek, eh ini belum jelas nih,",
+    "start": 364.319,
+    "duration": 4.961
+  },
+  {
+    "text": "belum ada kategorinya. Maka kita harus",
+    "start": 366.44,
+    "duration": 4.759
+  },
+  {
+    "text": "kategorikan dulu supaya kita bisa",
+    "start": 369.28,
+    "duration": 6.28
+  },
+  {
+    "text": "tentukan apakah ini needs atau wants.",
+    "start": 371.199,
+    "duration": 7.12
+  },
+  {
+    "text": "Lanjut",
+    "start": 375.56,
+    "duration": 5.359
+  },
+  {
+    "text": "contohnya ya. Kalau tadi kan bahas ee",
+    "start": 378.319,
+    "duration": 5.401
+  },
+  {
+    "text": "apa itu namanya? Kode intinya ya. Nah,",
+    "start": 380.919,
+    "duration": 5.481
+  },
+  {
+    "text": "seperti biasa sebelum kita menulis ee",
+    "start": 383.72,
+    "duration": 5.919
+  },
+  {
+    "text": "menggunakan Python, kita perlu ee",
+    "start": 386.4,
+    "duration": 5.88
+  },
+  {
+    "text": "mendeklarasikan dulu variabelnya. Apa",
+    "start": 389.639,
+    "duration": 4.921
+  },
+  {
+    "text": "nih yang mau kita ee yang mau kita",
+    "start": 392.28,
+    "duration": 4.96
+  },
+  {
+    "text": "kategorikan? Misalnya di sini kita punya",
+    "start": 394.56,
+    "duration": 5.639
+  },
+  {
+    "text": "item buku tulis. Nah, ternyata buku",
+    "start": 397.24,
+    "duration": 5.28
+  },
+  {
+    "text": "tulis ini kita tulis sebagai sebuah",
+    "start": 400.199,
+    "duration": 4.041
+  },
+  {
+    "text": "kebutuhan karena kita sekolah",
+    "start": 402.52,
+    "duration": 4.679
+  },
+  {
+    "text": "membutuhkan buku. Nah, di sini seperti",
+    "start": 404.24,
+    "duration": 5.76
+  },
+  {
+    "text": "biasa Python akan mengecek nih apakah",
+    "start": 407.199,
+    "duration": 4.881
+  },
+  {
+    "text": "buku tulis ini sebuah kebutuhan. Nah,",
+    "start": 410.0,
+    "duration": 5.039
+  },
+  {
+    "text": "dia ngecek nih apa jika kategorinya sama",
+    "start": 412.08,
+    "duration": 4.839
+  },
+  {
+    "text": "dengan sama dengan kebutuhan. Nah,",
+    "start": 415.039,
+    "duration": 3.961
+  },
+  {
+    "text": "kebetulan kategorinya kebutuhan nih.",
+    "start": 416.919,
+    "duration": 4.921
+  },
+  {
+    "text": "Maka dia akan mencetak tulisan item.",
+    "start": 419.0,
+    "duration": 4.639
+  },
+  {
+    "text": "Berarti ee dia akan memanggil variabel",
+    "start": 421.84,
+    "duration": 4.759
+  },
+  {
+    "text": "item ya. Yang di sini buku tulis adalah",
+    "start": 423.639,
+    "duration": 5.761
+  },
+  {
+    "text": "kebutuhan prioritaskan untuk dibeli.",
+    "start": 426.599,
+    "duration": 4.401
+  },
+  {
+    "text": "Jadi simpelnya seperti itu ya",
+    "start": 429.4,
+    "duration": 3.639
+  },
+  {
+    "text": "teman-teman ya.",
+    "start": 431.0,
+    "duration": 4.0
+  },
+  {
+    "text": "Untuk buku tulis karena kita tulis dia",
+    "start": 433.039,
+    "duration": 5.72
+  },
+  {
+    "text": "kebutuhan maka dia akan menampilkan buku",
+    "start": 435.0,
+    "duration": 5.96
+  },
+  {
+    "text": "tulis adalah kebutuhan gitu ya. Jadi dia",
+    "start": 438.759,
+    "duration": 4.801
+  },
+  {
+    "text": "ee kondisi satu terpenuhi maka dia akan",
+    "start": 440.96,
+    "duration": 6.76
+  },
+  {
+    "text": "menuliskannya seperti itu. Nah ee selain",
+    "start": 443.56,
+    "duration": 8.639
+  },
+  {
+    "text": "kita bisa ee selain kita menuliskan item",
+    "start": 447.72,
+    "duration": 6.319
+  },
+  {
+    "text": "dan kategorinya, kita juga bisa loh",
+    "start": 452.199,
+    "duration": 5.321
+  },
+  {
+    "text": "menaruh apa sih ee harganya berapa buku",
+    "start": 454.039,
+    "duration": 6.6
+  },
+  {
+    "text": "tulis itu dan juga uang kita ada berapa",
+    "start": 457.52,
+    "duration": 6.239
+  },
+  {
+    "text": "gitu tadi ya. Nah, untuk membuat program",
+    "start": 460.639,
+    "duration": 5.24
+  },
+  {
+    "text": "realistis kita bisa tambahkan itu ya.",
+    "start": 463.759,
+    "duration": 6.201
+  },
+  {
+    "text": "Selain dia eh kategorinya apakah uangnya",
+    "start": 465.879,
+    "duration": 6.961
+  },
+  {
+    "text": "cukup? Nah, bentuk python-nya cukup",
+    "start": 469.96,
+    "duration": 5.6
+  },
+  {
+    "text": "complicated nih. Kita bahas satu-satu",
+    "start": 472.84,
+    "duration": 4.799
+  },
+  {
+    "text": "ya. Nah, pertama first thing first kita",
+    "start": 475.56,
+    "duration": 4.84
+  },
+  {
+    "text": "tetap membutuhkan",
+    "start": 477.639,
+    "duration": 6.28
+  },
+  {
+    "text": "variabel untuk menyimpan ee yang untuk",
+    "start": 480.4,
+    "duration": 6.799
+  },
+  {
+    "text": "menyimpan ee itemnya, harganya, dan",
+    "start": 483.919,
+    "duration": 5.84
+  },
+  {
+    "text": "seterusnya yang nanti akan dibandingkan",
+    "start": 487.199,
+    "duration": 4.641
+  },
+  {
+    "text": "dan akan dijadikan sebagai sebuah",
+    "start": 489.759,
+    "duration": 5.601
+  },
+  {
+    "text": "condition di percabangan if-nya. Nah, di",
+    "start": 491.84,
+    "duration": 5.919
+  },
+  {
+    "text": "sini kita lihat buku tulis itu adalah",
+    "start": 495.36,
+    "duration": 4.64
+  },
+  {
+    "text": "sebuah kebutuhan dan kebetulan harganya",
+    "start": 497.759,
+    "duration": 5.16
+  },
+  {
+    "text": "buku tulis itu Rp15.000 dan uang yang",
+    "start": 500.0,
+    "duration": 5.319
+  },
+  {
+    "text": "kita punya itu adalah Rp50.000. Nah,",
+    "start": 502.919,
+    "duration": 4.761
+  },
+  {
+    "text": "kondisi yang kita bangun di sini adalah",
+    "start": 505.319,
+    "duration": 5.681
+  },
+  {
+    "text": "kalau kategorinya kebutuhan dan uang",
+    "start": 507.68,
+    "duration": 6.44
+  },
+  {
+    "text": "kita itu lebih banyak lebih besar",
+    "start": 511.0,
+    "duration": 5.399
+  },
+  {
+    "text": "dibandingkan harganya. Lebih besar atau",
+    "start": 514.12,
+    "duration": 6.44
+  },
+  {
+    "text": "sama dengan ee harganya, maka kita ee",
+    "start": 516.399,
+    "duration": 7.2
+  },
+  {
+    "text": "bikin programnya. Oh, ini kebutuhan nih.",
+    "start": 520.56,
+    "duration": 5.279
+  },
+  {
+    "text": "Berarti kita butuh banget. Dan kebetulan",
+    "start": 523.599,
+    "duration": 4.561
+  },
+  {
+    "text": "uang kita lebih nih. Uang kita cukup",
+    "start": 525.839,
+    "duration": 4.721
+  },
+  {
+    "text": "untuk membeli. Lebih atau cukup gitu ya",
+    "start": 528.16,
+    "duration": 3.799
+  },
+  {
+    "text": "untuk membeli. Maka kita karena",
+    "start": 530.56,
+    "duration": 3.88
+  },
+  {
+    "text": "kebutuhan kita harus beli. Kondisi kedua",
+    "start": 531.959,
+    "duration": 7.481
+  },
+  {
+    "text": "nih, kalau dia kebutuhan tapi uangnya",
+    "start": 534.44,
+    "duration": 8.24
+  },
+  {
+    "text": "kurang untuk membeli umone kurang dari",
+    "start": 539.44,
+    "duration": 5.6
+  },
+  {
+    "text": "harganya, price-nya, maka kita print.",
+    "start": 542.68,
+    "duration": 4.44
+  },
+  {
+    "text": "Oh, uangnya belum cukup. Coba kita cari",
+    "start": 545.04,
+    "duration": 3.6
+  },
+  {
+    "text": "yang lebih murah. Kenapa kita cari yang",
+    "start": 547.12,
+    "duration": 3.36
+  },
+  {
+    "text": "lebih murah? Karena ini kebutuhan nih,",
+    "start": 548.64,
+    "duration": 3.639
+  },
+  {
+    "text": "ya kan? berarti kita harus beli dong.",
+    "start": 550.48,
+    "duration": 3.56
+  },
+  {
+    "text": "Berarti kita harus cari yang lebih murah",
+    "start": 552.279,
+    "duration": 5.361
+  },
+  {
+    "text": "supaya ee uangnya ee bisa lebih dari",
+    "start": 554.04,
+    "duration": 8.0
+  },
+  {
+    "text": "atau sama dengan harga ee itemnya. Atau",
+    "start": 557.64,
+    "duration": 6.24
+  },
+  {
+    "text": "misalnya ternyata kategorinya ini hanya",
+    "start": 562.04,
+    "duration": 4.88
+  },
+  {
+    "text": "keinginan dan kebetulan uangnya lebih",
+    "start": 563.88,
+    "duration": 5.88
+  },
+  {
+    "text": "uang kita lebih banyak dari ee harganya,",
+    "start": 566.92,
+    "duration": 5.08
+  },
+  {
+    "text": "lebih besar dari harganya, maka kita",
+    "start": 569.76,
+    "duration": 5.199
+  },
+  {
+    "text": "bisa tulis boleh beli tapi pastikan",
+    "start": 572.0,
+    "duration": 5.519
+  },
+  {
+    "text": "kebutuhan kita sudah aman. Nah, kalau",
+    "start": 574.959,
+    "duration": 4.88
+  },
+  {
+    "text": "yang lain kondisinya misalnya, oh",
+    "start": 577.519,
+    "duration": 4.88
+  },
+  {
+    "text": "ternyata ini kategorinya cuman keinginan",
+    "start": 579.839,
+    "duration": 6.24
+  },
+  {
+    "text": "tapi uangnya kurang dari harganya. Ya",
+    "start": 582.399,
+    "duration": 5.44
+  },
+  {
+    "text": "udah kita tunda dulu pembeliannya sampai",
+    "start": 586.079,
+    "duration": 5.44
+  },
+  {
+    "text": "uang kita cukup. Nah, itu implementasi",
+    "start": 587.839,
+    "duration": 7.281
+  },
+  {
+    "text": "sederhana needs wants ke dalam bahasa",
+    "start": 591.519,
+    "duration": 6.841
+  },
+  {
+    "text": "pemeraman Python. ini tadi ya kita sudah",
+    "start": 595.12,
+    "duration": 8.12
+  },
+  {
+    "text": "bahas ada ee di sini ada dua ya, ada dua",
+    "start": 598.36,
+    "duration": 7.44
+  },
+  {
+    "text": "kondisi yang kita gunakan ee ada dua",
+    "start": 603.24,
+    "duration": 4.12
+  },
+  {
+    "text": "kondisi yang pertama dia ngecek dulu",
+    "start": 605.8,
+    "duration": 4.96
+  },
+  {
+    "text": "apakah dia kebutuhan dan nih ada kata",
+    "start": 607.36,
+    "duration": 5.88
+  },
+  {
+    "text": "kuncinya ada logical eh operatornya",
+    "start": 610.76,
+    "duration": 4.04
+  },
+  {
+    "text": "menggunakan N ya berarti kalau kita",
+    "start": 613.24,
+    "duration": 4.039
+  },
+  {
+    "text": "menggunakan N dia di sebelah kiri harus",
+    "start": 614.8,
+    "duration": 4.8
+  },
+  {
+    "text": "true sebelah kanan juga harus true.",
+    "start": 617.279,
+    "duration": 4.841
+  },
+  {
+    "text": "Kalau misalnya dua-duanya true dia",
+    "start": 619.6,
+    "duration": 4.64
+  },
+  {
+    "text": "kebutuhan dan uangnya cukup maka kita",
+    "start": 622.12,
+    "duration": 5.64
+  },
+  {
+    "text": "bisa beli gitu ya. ee membeli ee barang",
+    "start": 624.24,
+    "duration": 5.96
+  },
+  {
+    "text": "itu tadi gitu. Kalau barang adalah",
+    "start": 627.76,
+    "duration": 5.0
+  },
+  {
+    "text": "keinginan dan uang cukup boleh beli tapi",
+    "start": 630.2,
+    "duration": 4.319
+  },
+  {
+    "text": "harus berhati-hati ya seperti yang tadi",
+    "start": 632.76,
+    "duration": 3.6
+  },
+  {
+    "text": "dijelaskan.",
+    "start": 634.519,
+    "duration": 4.801
+  },
+  {
+    "text": "Oke kita lanjut.",
+    "start": 636.36,
+    "duration": 5.84
+  },
+  {
+    "text": "Nah untuk membuat dia jadi lebih apa ya?",
+    "start": 639.32,
+    "duration": 5.28
+  },
+  {
+    "text": "Kalau tadi kan kita ee mendeklarasikan",
+    "start": 642.2,
+    "duration": 4.079
+  },
+  {
+    "text": "sebuah variabel ya di sini ya. Oh",
+    "start": 644.6,
+    "duration": 4.84
+  },
+  {
+    "text": "itemnya apa, kategorinya apa, harganya",
+    "start": 646.279,
+    "duration": 7.441
+  },
+  {
+    "text": "berapa, terus ee harga ee uang kita",
+    "start": 649.44,
+    "duration": 7.079
+  },
+  {
+    "text": "berapa. Nah, supaya dia lebih interaktif",
+    "start": 653.72,
+    "duration": 4.6
+  },
+  {
+    "text": "dan user tuh ngerasa, \"Wah, ini kayaknya",
+    "start": 656.519,
+    "duration": 4.361
+  },
+  {
+    "text": "programnya bagus, kita bisa menggunakan",
+    "start": 658.32,
+    "duration": 5.56
+  },
+  {
+    "text": "input.\" Nah, di sini kita tambahkan",
+    "start": 660.88,
+    "duration": 5.0
+  },
+  {
+    "text": "input karena kita memasukkan nama,",
+    "start": 663.88,
+    "duration": 4.759
+  },
+  {
+    "text": "barang dan kategorinya itu. Eh, kalau",
+    "start": 665.88,
+    "duration": 5.399
+  },
+  {
+    "text": "input kan dia ee tipe data yang",
+    "start": 668.639,
+    "duration": 4.481
+  },
+  {
+    "text": "dihasilkan adalah string ya. Jadi, di",
+    "start": 671.279,
+    "duration": 4.761
+  },
+  {
+    "text": "sini langsung input user akan memasukkan",
+    "start": 673.12,
+    "duration": 5.6
+  },
+  {
+    "text": "apa nih e item sama kategorinya. Nah,",
+    "start": 676.04,
+    "duration": 5.16
+  },
+  {
+    "text": "sedangkan untuk price sama kan kalau",
+    "start": 678.72,
+    "duration": 6.239
+  },
+  {
+    "text": "price sama ini dia eh tipe data yang",
+    "start": 681.2,
+    "duration": 5.68
+  },
+  {
+    "text": "kita butuhkan adalah integer. Maka kita",
+    "start": 684.959,
+    "duration": 3.921
+  },
+  {
+    "text": "harus menggunakan",
+    "start": 686.88,
+    "duration": 4.36
+  },
+  {
+    "text": "conversion dulu data type-nya. Karena",
+    "start": 688.88,
+    "duration": 4.68
+  },
+  {
+    "text": "input itu tipe datanya string, kita ubah",
+    "start": 691.24,
+    "duration": 4.599
+  },
+  {
+    "text": "menjadi integer supaya nanti kita bisa",
+    "start": 693.56,
+    "duration": 4.92
+  },
+  {
+    "text": "hitung nih uang kita ee apa tuh dan kita",
+    "start": 695.839,
+    "duration": 5.44
+  },
+  {
+    "text": "bandingkan antara uang kita sama harga",
+    "start": 698.48,
+    "duration": 6.359
+  },
+  {
+    "text": "item yang mau kita beli seperti itu.",
+    "start": 701.279,
+    "duration": 6.8
+  },
+  {
+    "text": "Oke. Ee sisanya sama ya, Teman-teman. ee",
+    "start": 704.839,
+    "duration": 5.041
+  },
+  {
+    "text": "apa itu namanya? Sisanya sama untuk",
+    "start": 708.079,
+    "duration": 5.0
+  },
+  {
+    "text": "logika pemrogramannya logika sama, terus",
+    "start": 709.88,
+    "duration": 4.92
+  },
+  {
+    "text": "itu printnya juga sama. Mungkin printnya",
+    "start": 713.079,
+    "duration": 4.401
+  },
+  {
+    "text": "kita tambahkan item yang mau dibeli apa",
+    "start": 714.8,
+    "duration": 6.159
+  },
+  {
+    "text": "sama item yang ee kategorinya apa gitu",
+    "start": 717.48,
+    "duration": 5.96
+  },
+  {
+    "text": "ya. Kurang lebih seperti itu. Nah,",
+    "start": 720.959,
+    "duration": 4.481
+  },
+  {
+    "text": "kenapa sih program ini berguna? Ya,",
+    "start": 723.44,
+    "duration": 6.12
+  },
+  {
+    "text": "mungkin teman-teman ada ee",
+    "start": 725.44,
+    "duration": 6.28
+  },
+  {
+    "text": "pengin banget membeli sesuatu tapi kayak",
+    "start": 729.56,
+    "duration": 3.959
+  },
+  {
+    "text": "bingung banget nih kira-kira butuh",
+    "start": 731.72,
+    "duration": 3.72
+  },
+  {
+    "text": "banget apa enggak banget nih ee enggak",
+    "start": 733.519,
+    "duration": 3.481
+  },
+  {
+    "text": "butuh banget nih gitu. Kita bisa",
+    "start": 735.44,
+    "duration": 3.56
+  },
+  {
+    "text": "menggunakan program ini. Terus ini kita",
+    "start": 737.0,
+    "duration": 3.959
+  },
+  {
+    "text": "bisa ngecek ternyata uangku cukup",
+    "start": 739.0,
+    "duration": 4.519
+  },
+  {
+    "text": "enggak. Oh, ternyata uangku enggak cukup",
+    "start": 740.959,
+    "duration": 4.961
+  },
+  {
+    "text": "gitu. Jadi dari pertanyaan-pertanyaan",
+    "start": 743.519,
+    "duration": 3.921
+  },
+  {
+    "text": "tadi kita bisa menjawab, \"Oh, ternyata",
+    "start": 745.92,
+    "duration": 3.0
+  },
+  {
+    "text": "uangku enggak cukup.\" Oh, ternyata",
+    "start": 747.44,
+    "duration": 3.92
+  },
+  {
+    "text": "barang ini cuman keinginan aku aja.",
+    "start": 748.92,
+    "duration": 6.2
+  },
+  {
+    "text": "seperti itu. Nah, coba teman-teman ee",
+    "start": 751.36,
+    "duration": 5.88
+  },
+  {
+    "text": "tuliskan bahasa pemroonggaman Python-nya",
+    "start": 755.12,
+    "duration": 5.68
+  },
+  {
+    "text": "tadi. Kemudian kalian masukkan nama",
+    "start": 757.24,
+    "duration": 6.24
+  },
+  {
+    "text": "barangnya dan kategorinya.",
+    "start": 760.8,
+    "duration": 4.96
+  },
+  {
+    "text": "Buat variabelnya. Terus itu tentukan",
+    "start": 763.48,
+    "duration": 5.719
+  },
+  {
+    "text": "apakah dia ee ini kebutuhan atau",
+    "start": 765.76,
+    "duration": 5.92
+  },
+  {
+    "text": "keinginan. coba diimplementasikan",
+    "start": 769.199,
+    "duration": 5.88
+  },
+  {
+    "text": "berikut ini.",
+    "start": 771.68,
+    "duration": 3.399
+  },
+  {
+    "text": "Nah, setelah kita mengetahui tentang",
+    "start": 785.959,
+    "duration": 5.921
+  },
+  {
+    "text": "needs versus one, sekarang kita harus",
+    "start": 789.079,
+    "duration": 5.2
+  },
+  {
+    "text": "membahas tentang budgeting dan",
+    "start": 791.88,
+    "duration": 4.72
+  },
+  {
+    "text": "perencanaan pengeluaran.",
+    "start": 794.279,
+    "duration": 5.721
+  },
+  {
+    "text": "Oke, sebelum ee kita lanjut, coba kita",
+    "start": 796.6,
+    "duration": 5.72
+  },
+  {
+    "text": "cek di sini. Nah, ada yang tahu apa itu",
+    "start": 800.0,
+    "duration": 5.88
+  },
+  {
+    "text": "budgeting? Budgeting adalah sebuah",
+    "start": 802.32,
+    "duration": 6.4
+  },
+  {
+    "text": "rencana dalam menggunakan uang yang kita",
+    "start": 805.88,
+    "duration": 5.6
+  },
+  {
+    "text": "punya. Tujuan kita melakukan budgeting",
+    "start": 808.72,
+    "duration": 5.44
+  },
+  {
+    "text": "adalah supaya kita sadar nih, oh uang",
+    "start": 811.48,
+    "duration": 5.919
+  },
+  {
+    "text": "yang kita punya kita harus belikan untuk",
+    "start": 814.16,
+    "duration": 5.679
+  },
+  {
+    "text": "hal A, hal B, hal C, dan seterusnya.",
+    "start": 817.399,
+    "duration": 4.601
+  },
+  {
+    "text": "Misalnya kita punya budget, kita punya",
+    "start": 819.839,
+    "duration": 5.321
+  },
+  {
+    "text": "uang sebesar Rp100.000 nih. Nah, dalam",
+    "start": 822.0,
+    "duration": 6.48
+  },
+  {
+    "text": "Rp100.000 R.000 ini kita perlu membagi",
+    "start": 825.16,
+    "duration": 6.119
+  },
+  {
+    "text": "dia misalnya kebutuhan kita itu kita",
+    "start": 828.48,
+    "duration": 5.68
+  },
+  {
+    "text": "butuh makan, kita butuh membeli alat ee",
+    "start": 831.279,
+    "duration": 5.56
+  },
+  {
+    "text": "sekolah, butuh transportasi, terus itu",
+    "start": 834.16,
+    "duration": 4.56
+  },
+  {
+    "text": "kita butuh menabung juga gitu ya kalau",
+    "start": 836.839,
+    "duration": 6.481
+  },
+  {
+    "text": "misalnya ee kita ee pengin sesuatu gitu.",
+    "start": 838.72,
+    "duration": 8.44
+  },
+  {
+    "text": "Nah, ini budgeting ini dia ee fungsinya",
+    "start": 843.32,
+    "duration": 6.439
+  },
+  {
+    "text": "membagi gitu ya, membagi. Dan kita juga",
+    "start": 847.16,
+    "duration": 4.239
+  },
+  {
+    "text": "bisa tahu dengan budgeting ini Rp100.000",
+    "start": 849.759,
+    "duration": 3.88
+  },
+  {
+    "text": "Ibu ini uangnya kita bagi ee kita",
+    "start": 851.399,
+    "duration": 4.841
+  },
+  {
+    "text": "gunakan untuk apa aja nih gitu ya. Nah,",
+    "start": 853.639,
+    "duration": 6.401
+  },
+  {
+    "text": "itulah ee budgeting di dalam financial.",
+    "start": 856.24,
+    "duration": 6.159
+  },
+  {
+    "text": "Nah, anggap aja budgeting itu seperti",
+    "start": 860.04,
+    "duration": 4.44
+  },
+  {
+    "text": "membagi ke dalam sebuah kotak. Anggap",
+    "start": 862.399,
+    "duration": 4.761
+  },
+  {
+    "text": "aja uang yang kamu punya Rp100.000 itu",
+    "start": 864.48,
+    "duration": 5.039
+  },
+  {
+    "text": "tadi sebagai sebuah kotak yang besar.",
+    "start": 867.16,
+    "duration": 4.2
+  },
+  {
+    "text": "Nah, kotak yang besar itu tadi kita",
+    "start": 869.519,
+    "duration": 5.281
+  },
+  {
+    "text": "potong-potong, kita pisah-pisah menjadi",
+    "start": 871.36,
+    "duration": 5.88
+  },
+  {
+    "text": "sebuah kotak, beberapa kotak kecil gitu",
+    "start": 874.8,
+    "duration": 4.8
+  },
+  {
+    "text": "ya. Jadi Rp100.000 tadi kalau misalnya",
+    "start": 877.24,
+    "duration": 6.039
+  },
+  {
+    "text": "makanan Rp40.000. transportasi Rp2.000.",
+    "start": 879.6,
+    "duration": 5.52
+  },
+  {
+    "text": "Nah, dalam Python kotak-kotak",
+    "start": 883.279,
+    "duration": 4.321
+  },
+  {
+    "text": "penyimpanan itu tadi itu disebutnya",
+    "start": 885.12,
+    "duration": 5.0
+  },
+  {
+    "text": "variabel. Nah, mungkin untuk me-refresh",
+    "start": 887.6,
+    "duration": 5.0
+  },
+  {
+    "text": "materi eh me-refresh pemahaman",
+    "start": 890.12,
+    "duration": 4.44
+  },
+  {
+    "text": "Teman-teman tentang variabel. Jadi,",
+    "start": 892.6,
+    "duration": 3.679
+  },
+  {
+    "text": "variabel itu adalah tempat untuk",
+    "start": 894.56,
+    "duration": 3.92
+  },
+  {
+    "text": "menyimpan data ya, Teman-teman. Nah,",
+    "start": 896.279,
+    "duration": 5.68
+  },
+  {
+    "text": "kita sudah menggunakan variabel itu ee",
+    "start": 898.48,
+    "duration": 5.68
+  },
+  {
+    "text": "variabel itu dari awal tadi ya untuk",
+    "start": 901.959,
+    "duration": 4.601
+  },
+  {
+    "text": "menyimpan misalnya uang kita berapa,",
+    "start": 904.16,
+    "duration": 4.52
+  },
+  {
+    "text": "budget kita berapa, dan segala macam.",
+    "start": 906.56,
+    "duration": 5.399
+  },
+  {
+    "text": "Nah, ini ya contohnya ee kita bisa lihat",
+    "start": 908.68,
+    "duration": 6.44
+  },
+  {
+    "text": "di sini artinya program sedang menyimpan",
+    "start": 911.959,
+    "duration": 5.32
+  },
+  {
+    "text": "nilai uang ke beberapa nama variabel",
+    "start": 915.12,
+    "duration": 5.159
+  },
+  {
+    "text": "gitu ya. Kurang lebih seperti itu.",
+    "start": 917.279,
+    "duration": 6.24
+  },
+  {
+    "text": "Nah, ee ini ada beberapa contoh ee kalau",
+    "start": 920.279,
+    "duration": 6.401
+  },
+  {
+    "text": "misalnya kita ee mau budgeting ke dan",
+    "start": 923.519,
+    "duration": 5.0
+  },
+  {
+    "text": "kita mau masukin budgetingnya itu ke",
+    "start": 926.68,
+    "duration": 3.839
+  },
+  {
+    "text": "dalam bahasa pemrograman Python. Ini ada",
+    "start": 928.519,
+    "duration": 4.8
+  },
+  {
+    "text": "beberapa contohnya nih kayak oh ee",
+    "start": 930.519,
+    "duration": 5.281
+  },
+  {
+    "text": "variabel total money ini dia variabel",
+    "start": 933.319,
+    "duration": 5.361
+  },
+  {
+    "text": "yang menyimpan jumlah uang utama kita.",
+    "start": 935.8,
+    "duration": 6.399
+  },
+  {
+    "text": "Kemudian kita bagi-bagi lagi ee apa tuh",
+    "start": 938.68,
+    "duration": 5.56
+  },
+  {
+    "text": "namanya? Variabel utama. Kita bikin",
+    "start": 942.199,
+    "duration": 3.841
+  },
+  {
+    "text": "variabel-variabel kecil yang menyimpan",
+    "start": 944.24,
+    "duration": 5.039
+  },
+  {
+    "text": "nilai uang yang lebih kecil dari total",
+    "start": 946.04,
+    "duration": 6.0
+  },
+  {
+    "text": "uang kita tadi nih ya. Kayak food budget",
+    "start": 949.279,
+    "duration": 5.68
+  },
+  {
+    "text": "Rp40.000 dan seterusnya dan seterusnya.",
+    "start": 952.04,
+    "duration": 6.719
+  },
+  {
+    "text": "Nah, setelah kita ee",
+    "start": 954.959,
+    "duration": 5.481
+  },
+  {
+    "text": "simpan ke dalam sebuah variabel",
+    "start": 958.759,
+    "duration": 3.361
+  },
+  {
+    "text": "nilai-nilai tadi, kita bisa tuh",
+    "start": 960.44,
+    "duration": 3.519
+  },
+  {
+    "text": "menghitung atau menjumlahkan,",
+    "start": 962.12,
+    "duration": 4.24
+  },
+  {
+    "text": "mentotalkan berapa sih budget yang sudah",
+    "start": 963.959,
+    "duration": 4.761
+  },
+  {
+    "text": "kita ee pisah-pisah tadi. Nah, tadi kan",
+    "start": 966.36,
+    "duration": 5.64
+  },
+  {
+    "text": "kita budgeting, kita set oh misalnya",
+    "start": 968.72,
+    "duration": 5.4
+  },
+  {
+    "text": "untuk makanan kita Rp40.000, kalau",
+    "start": 972.0,
+    "duration": 3.92
+  },
+  {
+    "text": "transport Rp20.000 dan seterusnya dan",
+    "start": 974.12,
+    "duration": 4.36
+  },
+  {
+    "text": "seterusnya itu kita bisa jumlahkan dia",
+    "start": 975.92,
+    "duration": 4.919
+  },
+  {
+    "text": "semua dan kita simpan lagi dia ke dalam",
+    "start": 978.48,
+    "duration": 5.56
+  },
+  {
+    "text": "sebuah variabel. Di sini kakak simpannya",
+    "start": 980.839,
+    "duration": 5.601
+  },
+  {
+    "text": "ke dalam variabel total budget, maka",
+    "start": 984.04,
+    "duration": 4.64
+  },
+  {
+    "text": "nanti programnya akan menghitung berapa",
+    "start": 986.44,
+    "duration": 6.839
+  },
+  {
+    "text": "sih hasil 40.000 + Rp2.000 + R.000 +",
+    "start": 988.68,
+    "duration": 7.639
+  },
+  {
+    "text": "Rp15.000. Nah, kalau ini ternyata total",
+    "start": 993.279,
+    "duration": 5.92
+  },
+  {
+    "text": "budgetnya setelah dihitung Rp100.000",
+    "start": 996.319,
+    "duration": 7.0
+  },
+  {
+    "text": "gitu ya. Ternyata budget yang kita ee",
+    "start": 999.199,
+    "duration": 6.361
+  },
+  {
+    "text": "bagi itu sama dengan total uang yang",
+    "start": 1003.319,
+    "duration": 6.241
+  },
+  {
+    "text": "kita punya. Nah, untuk itu untuk",
+    "start": 1005.56,
+    "duration": 6.079
+  },
+  {
+    "text": "mengecek gini ya, kan kita tadi ee",
+    "start": 1009.56,
+    "duration": 5.04
+  },
+  {
+    "text": "budgeting itu membagi ee uang yang kita",
+    "start": 1011.639,
+    "duration": 5.2
+  },
+  {
+    "text": "punya ke dalam beberapa kategori gitu",
+    "start": 1014.6,
+    "duration": 5.159
+  },
+  {
+    "text": "ya, beberapa kebutuhan kita. Nah, untuk",
+    "start": 1016.839,
+    "duration": 6.0
+  },
+  {
+    "text": "mengecek apakah dia ee budgetnya ini",
+    "start": 1019.759,
+    "duration": 5.601
+  },
+  {
+    "text": "aman apa tidak, apakah ee ternyata kita",
+    "start": 1022.839,
+    "duration": 4.921
+  },
+  {
+    "text": "melakukan budgeting, apakah ini uangnya",
+    "start": 1025.36,
+    "duration": 3.839
+  },
+  {
+    "text": "cukup atau kita kelebihan nih",
+    "start": 1027.76,
+    "duration": 4.039
+  },
+  {
+    "text": "nge-budgetingnya. Misalnya ee kita",
+    "start": 1029.199,
+    "duration": 3.961
+  },
+  {
+    "text": "uangnya punya Rp100.000, Ibu, tapi",
+    "start": 1031.799,
+    "duration": 4.361
+  },
+  {
+    "text": "setelah kita total di budgetingnya itu",
+    "start": 1033.16,
+    "duration": 5.32
+  },
+  {
+    "text": "ternyata totalnya 110. Nah, itu kan",
+    "start": 1036.16,
+    "duration": 4.08
+  },
+  {
+    "text": "berarti kita harus programnya harus bisa",
+    "start": 1038.48,
+    "duration": 3.8
+  },
+  {
+    "text": "menampilkan kan apakah budget yang kita",
+    "start": 1040.24,
+    "duration": 4.599
+  },
+  {
+    "text": "punya aman atau melebihi uang yang",
+    "start": 1042.28,
+    "duration": 4.84
+  },
+  {
+    "text": "dimiliki. Nah, untuk kasus itu kita",
+    "start": 1044.839,
+    "duration": 4.2
+  },
+  {
+    "text": "tinggal tambahin aja. Kita bisa",
+    "start": 1047.12,
+    "duration": 3.6
+  },
+  {
+    "text": "menambahkan",
+    "start": 1049.039,
+    "duration": 6.161
+  },
+  {
+    "text": "eh condition if total budget lebih dari",
+    "start": 1050.72,
+    "duration": 6.48
+  },
+  {
+    "text": "atau sama dengan total money, maka",
+    "start": 1055.2,
+    "duration": 4.8
+  },
+  {
+    "text": "budgetnya aman. Kalau misalnya enggak",
+    "start": 1057.2,
+    "duration": 5.16
+  },
+  {
+    "text": "aman ya berarti ini ya budgetnya",
+    "start": 1060.0,
+    "duration": 4.44
+  },
+  {
+    "text": "melebihi uang yang dimiliki. Berarti",
+    "start": 1062.36,
+    "duration": 4.6
+  },
+  {
+    "text": "variabel-variabel yang kita ee tulis",
+    "start": 1064.44,
+    "duration": 4.56
+  },
+  {
+    "text": "tadi sebelumnya itu harus kita adjust",
+    "start": 1066.96,
+    "duration": 5.24
+  },
+  {
+    "text": "lagi supaya dia ee budgetnya bisa",
+    "start": 1069.0,
+    "duration": 5.28
+  },
+  {
+    "text": "menjadi aman.",
+    "start": 1072.2,
+    "duration": 4.8
+  },
+  {
+    "text": "Oke, selanjutnya",
+    "start": 1074.28,
+    "duration": 6.12
+  },
+  {
+    "text": "kita cek nih kalau budgetnya lebih besar",
+    "start": 1077.0,
+    "duration": 5.96
+  },
+  {
+    "text": "ya berarti kita bisa ee ini kalau",
+    "start": 1080.4,
+    "duration": 4.72
+  },
+  {
+    "text": "contohnya budgetnya kelebihan gitu ya,",
+    "start": 1082.96,
+    "duration": 4.199
+  },
+  {
+    "text": "programnya akan menampilkan budgetnya",
+    "start": 1085.12,
+    "duration": 6.039
+  },
+  {
+    "text": "lebih gitu. Karena 50 + 30 + 30",
+    "start": 1087.159,
+    "duration": 8.161
+  },
+  {
+    "text": "+ 30.000 aja udah ee Rp0.000 + Rp50.000",
+    "start": 1091.159,
+    "duration": 6.4
+  },
+  {
+    "text": "+ Rp2.000 wah kebanyakan ya uangnya",
+    "start": 1095.32,
+    "duration": 5.8
+  },
+  {
+    "text": "kebanyakan gitu. Nah, kita juga bisa",
+    "start": 1097.559,
+    "duration": 6.041
+  },
+  {
+    "text": "menghitung sisa uang gitu. Jadi kita",
+    "start": 1101.12,
+    "duration": 4.559
+  },
+  {
+    "text": "sudah menghitung kan total yang budget",
+    "start": 1103.6,
+    "duration": 4.52
+  },
+  {
+    "text": "kita berapa yang kita budgetin. Misalnya",
+    "start": 1105.679,
+    "duration": 4.921
+  },
+  {
+    "text": "uang kita Rp10.000, budget yang kita",
+    "start": 1108.12,
+    "duration": 4.919
+  },
+  {
+    "text": "budgetin nih setelah dihitung ternyata",
+    "start": 1110.6,
+    "duration": 5.319
+  },
+  {
+    "text": "Rp90.000 nih ya kan uang kita Rp100.000,",
+    "start": 1113.039,
+    "duration": 5.52
+  },
+  {
+    "text": "budgeting kita Rp10.000. Nah, kita bisa",
+    "start": 1115.919,
+    "duration": 4.681
+  },
+  {
+    "text": "menghitung sisa uang kita berapa sih.",
+    "start": 1118.559,
+    "duration": 4.041
+  },
+  {
+    "text": "Tinggal kita kurangin aja. Total uang",
+    "start": 1120.6,
+    "duration": 4.68
+  },
+  {
+    "text": "yang kita punya ini kan Rp100.000. Terus",
+    "start": 1122.6,
+    "duration": 4.28
+  },
+  {
+    "text": "itu total budget yang sudah kita",
+    "start": 1125.28,
+    "duration": 4.399
+  },
+  {
+    "text": "tambahin tadi berapa? dan dia bisa ee",
+    "start": 1126.88,
+    "duration": 4.88
+  },
+  {
+    "text": "menampilkan nih,",
+    "start": 1129.679,
+    "duration": 4.88
+  },
+  {
+    "text": "oh ternyata budget kita Rp95.000 dan",
+    "start": 1131.76,
+    "duration": 6.44
+  },
+  {
+    "text": "sisa uangnya ternyata R 5.000 saja",
+    "start": 1134.559,
+    "duration": 7.6
+  },
+  {
+    "text": "seperti itu. Nah, selain itu untuk",
+    "start": 1138.2,
+    "duration": 6.839
+  },
+  {
+    "text": "membuat dia programnya lebih berwarna",
+    "start": 1142.159,
+    "duration": 5.801
+  },
+  {
+    "text": "lagi, untuk membuat programnya bisa",
+    "start": 1145.039,
+    "duration": 5.601
+  },
+  {
+    "text": "menampilkan ee",
+    "start": 1147.96,
+    "duration": 4.44
+  },
+  {
+    "text": "print-nya ya mungkin kondisinya kalau",
+    "start": 1150.64,
+    "duration": 5.12
+  },
+  {
+    "text": "ini kan ee total uangnya berapa, sisa",
+    "start": 1152.4,
+    "duration": 5.44
+  },
+  {
+    "text": "uangnya berapa gitu kan. atau kalau kita",
+    "start": 1155.76,
+    "duration": 4.12
+  },
+  {
+    "text": "pakai if tadi budgetnya aman atau tidak.",
+    "start": 1157.84,
+    "duration": 5.36
+  },
+  {
+    "text": "Nah, kita bisa tambahin condition yang",
+    "start": 1159.88,
+    "duration": 4.919
+  },
+  {
+    "text": "lebih banyak lagi nih, Teman-teman.",
+    "start": 1163.2,
+    "duration": 4.28
+  },
+  {
+    "text": "Misalnya kalau budgetnya lebih dari",
+    "start": 1164.799,
+    "duration": 5.161
+  },
+  {
+    "text": "total uang, wah budgetnya terlalu besar",
+    "start": 1167.48,
+    "duration": 4.439
+  },
+  {
+    "text": "ya kan?",
+    "start": 1169.96,
+    "duration": 3.92
+  },
+  {
+    "text": "Ee berarti kita terlalu apa? Ee",
+    "start": 1171.919,
+    "duration": 5.081
+  },
+  {
+    "text": "overbudgeting nih, gitu kan ya. Harusnya",
+    "start": 1173.88,
+    "duration": 5.919
+  },
+  {
+    "text": "misalnya budget yang kita eh budget yang",
+    "start": 1177.0,
+    "duration": 5.679
+  },
+  {
+    "text": "kita buat itu misalnya Rp10.000,",
+    "start": 1179.799,
+    "duration": 4.561
+  },
+  {
+    "text": "uang kita cuman Rp90.000. Nah, kan",
+    "start": 1182.679,
+    "duration": 3.081
+  },
+  {
+    "text": "budgetnya terlalu besar. berarti harus",
+    "start": 1184.36,
+    "duration": 5.12
+  },
+  {
+    "text": "ada adjusting. Nah, kemudian kalau sisa",
+    "start": 1185.76,
+    "duration": 6.08
+  },
+  {
+    "text": "uangnya nol gitu ya, jadi kita",
+    "start": 1189.48,
+    "duration": 4.679
+  },
+  {
+    "text": "ngebudgetinnya Rp100.000 untuk 1 bulan",
+    "start": 1191.84,
+    "duration": 4.56
+  },
+  {
+    "text": "gitu ya. Dan uang kita Rp100.000",
+    "start": 1194.159,
+    "duration": 4.561
+  },
+  {
+    "text": "totalnya. Kalau misalnya dia sisa",
+    "start": 1196.4,
+    "duration": 5.44
+  },
+  {
+    "text": "uangnya 100 cuman nol gitu ya, maka",
+    "start": 1198.72,
+    "duration": 5.079
+  },
+  {
+    "text": "budgetnya pas. Kita tampilin, oh",
+    "start": 1201.84,
+    "duration": 3.68
+  },
+  {
+    "text": "budgetnya pas nih, tidak ada sisa uang.",
+    "start": 1203.799,
+    "duration": 3.76
+  },
+  {
+    "text": "Atau kita bisa tulis, \"Wah, kamu",
+    "start": 1205.52,
+    "duration": 4.36
+  },
+  {
+    "text": "kayaknya budgetingnya terlalu banyak.\"",
+    "start": 1207.559,
+    "duration": 4.281
+  },
+  {
+    "text": "gitu gitu ya. Kalau misalnya pengin",
+    "start": 1209.88,
+    "duration": 3.84
+  },
+  {
+    "text": "menyisihkan uang gitu, menyisihkan",
+    "start": 1211.84,
+    "duration": 4.88
+  },
+  {
+    "text": "budget untuk ditabung. gh ya. Nah, atau",
+    "start": 1213.72,
+    "duration": 6.56
+  },
+  {
+    "text": "kita sisalah ee remaining money-nya itu",
+    "start": 1216.72,
+    "duration": 6.48
+  },
+  {
+    "text": "lebih dari nol gitu. Misalnya kayak ee",
+    "start": 1220.28,
+    "duration": 5.16
+  },
+  {
+    "text": "ternyata setelah dikurangin misalnya",
+    "start": 1223.2,
+    "duration": 5.16
+  },
+  {
+    "text": "total uangnya Rp100.000 tapi",
+    "start": 1225.44,
+    "duration": 4.76
+  },
+  {
+    "text": "budgetingnya Rp90.000. Oh, berarti kan",
+    "start": 1228.36,
+    "duration": 3.24
+  },
+  {
+    "text": "lebih dari nol ya, berarti budgetnya",
+    "start": 1230.2,
+    "duration": 3.56
+  },
+  {
+    "text": "aman masih ada sisa uang. Atau kalau",
+    "start": 1231.6,
+    "duration": 3.84
+  },
+  {
+    "text": "misalnya salah kita bisa cek ulang",
+    "start": 1233.76,
+    "duration": 3.96
+  },
+  {
+    "text": "budgetnya. Itu ya contoh condition yang",
+    "start": 1235.44,
+    "duration": 4.8
+  },
+  {
+    "text": "bisa kita gunakan dalam bahasa",
+    "start": 1237.72,
+    "duration": 5.6
+  },
+  {
+    "text": "menggunakan bahasa pemrograman Python.",
+    "start": 1240.24,
+    "duration": 7.919
+  },
+  {
+    "text": "Nah, ini juga kita bisa ee buat dalam ee",
+    "start": 1243.32,
+    "duration": 6.68
+  },
+  {
+    "text": "skenario ketika kita mau belanja gitu",
+    "start": 1248.159,
+    "duration": 3.921
+  },
+  {
+    "text": "ya. Kalau kita punya uang Rp100.000",
+    "start": 1250.0,
+    "duration": 4.24
+  },
+  {
+    "text": "terus kebutuhan kita mau belanja apa",
+    "start": 1252.08,
+    "duration": 4.599
+  },
+  {
+    "text": "aja. Terus kita cek dulu nih apakah yang",
+    "start": 1254.24,
+    "duration": 5.64
+  },
+  {
+    "text": "mau kita beli ini overbudgeting atau",
+    "start": 1256.679,
+    "duration": 6.321
+  },
+  {
+    "text": "budgetnya pas atau budgetnya lebih gitu",
+    "start": 1259.88,
+    "duration": 5.52
+  },
+  {
+    "text": "ya. Ee gitu ya, sisa uangnya lebih gitu",
+    "start": 1263.0,
+    "duration": 5.48
+  },
+  {
+    "text": "ya. Nah, ini kita bisa terapkan dengan",
+    "start": 1265.4,
+    "duration": 5.879
+  },
+  {
+    "text": "eh condition ini belum ada condition ya",
+    "start": 1268.48,
+    "duration": 4.52
+  },
+  {
+    "text": "dengan menggunakan program ini gitu ya.",
+    "start": 1271.279,
+    "duration": 4.841
+  },
+  {
+    "text": "Ini versi simpelnya dan kita bisa ee",
+    "start": 1273.0,
+    "duration": 5.12
+  },
+  {
+    "text": "tambahkan lagi condition-nya supaya",
+    "start": 1276.12,
+    "duration": 4.439
+  },
+  {
+    "text": "programnya bisa lebih berguna lagi gitu",
+    "start": 1278.12,
+    "duration": 4.48
+  },
+  {
+    "text": "ya untuk menampilkan oh kalau uangnya",
+    "start": 1280.559,
+    "duration": 4.801
+  },
+  {
+    "text": "lebih, kalau uangnya kurang atau uangnya",
+    "start": 1282.6,
+    "duration": 5.88
+  },
+  {
+    "text": "ee habis gitu.",
+    "start": 1285.36,
+    "duration": 5.76
+  },
+  {
+    "text": "Oke, ini contohnya tadi kita bisa",
+    "start": 1288.48,
+    "duration": 6.559
+  },
+  {
+    "text": "implementasikan juga. Nah, dari ee",
+    "start": 1291.12,
+    "duration": 6.08
+  },
+  {
+    "text": "hasil-hasil tadi itu hasil kita",
+    "start": 1295.039,
+    "duration": 5.041
+  },
+  {
+    "text": "mengurangi, hasil kita menjumlahkan",
+    "start": 1297.2,
+    "duration": 6.52
+  },
+  {
+    "text": "itu biasanya disebut juga dengan data.",
+    "start": 1300.08,
+    "duration": 7.079
+  },
+  {
+    "text": "Nah, program kita program itu dia",
+    "start": 1303.72,
+    "duration": 5.88
+  },
+  {
+    "text": "membuat keputusan itu berdasarkan data.",
+    "start": 1307.159,
+    "duration": 4.961
+  },
+  {
+    "text": "Jadi, misalnya data yang kalau misalnya",
+    "start": 1309.6,
+    "duration": 4.36
+  },
+  {
+    "text": "kita ngambil contoh yang tadi ya, e",
+    "start": 1312.12,
+    "duration": 3.96
+  },
+  {
+    "text": "pembelian barang itu data yang kita",
+    "start": 1313.96,
+    "duration": 4.04
+  },
+  {
+    "text": "pakai itu ada nama barang, harga",
+    "start": 1316.08,
+    "duration": 4.64
+  },
+  {
+    "text": "barangnya, kategorinya, jumlah uang,",
+    "start": 1318.0,
+    "duration": 4.919
+  },
+  {
+    "text": "sisa budgetan, dan seterusnya. Kalau",
+    "start": 1320.72,
+    "duration": 4.079
+  },
+  {
+    "text": "datanya berubah, maka keputusan",
+    "start": 1322.919,
+    "duration": 4.281
+  },
+  {
+    "text": "programnya juga berubah. Misalnya",
+    "start": 1324.799,
+    "duration": 5.081
+  },
+  {
+    "text": "harganya 50, uang kita Rp50.000, kita",
+    "start": 1327.2,
+    "duration": 5.44
+  },
+  {
+    "text": "mau membeli A, B, C, gitu ya. Nah, dari",
+    "start": 1329.88,
+    "duration": 5.0
+  },
+  {
+    "text": "hal-hal yang kita beli tadi kan dia",
+    "start": 1332.64,
+    "duration": 4.44
+  },
+  {
+    "text": "mempengaruhi keputusannya ini",
+    "start": 1334.88,
+    "duration": 4.44
+  },
+  {
+    "text": "mempengaruhi condition-nya ini ee",
+    "start": 1337.08,
+    "duration": 3.88
+  },
+  {
+    "text": "mempengaruhi hasil dari condition-nya",
+    "start": 1339.32,
+    "duration": 3.76
+  },
+  {
+    "text": "itu tadi. Kalau uang kita lebih terus",
+    "start": 1340.96,
+    "duration": 4.48
+  },
+  {
+    "text": "harga barangnya ee lebih mahal dari uang",
+    "start": 1343.08,
+    "duration": 4.04
+  },
+  {
+    "text": "yang kita punya gitu ya, berarti kan",
+    "start": 1345.44,
+    "duration": 4.8
+  },
+  {
+    "text": "hasilnya akan wah uangnya ee harusnya",
+    "start": 1347.12,
+    "duration": 4.439
+  },
+  {
+    "text": "kayaknya harus ditunda dulu belinya",
+    "start": 1350.24,
+    "duration": 3.12
+  },
+  {
+    "text": "karena uangnya belum cukup. Atau mungkin",
+    "start": 1351.559,
+    "duration": 4.161
+  },
+  {
+    "text": "misalnya uang kita lebih nih Rp50.000",
+    "start": 1353.36,
+    "duration": 4.16
+  },
+  {
+    "text": "tapi harga barangnya Rp10.000 aja. Wah",
+    "start": 1355.72,
+    "duration": 4.72
+  },
+  {
+    "text": "berarti kita bisa beli nih gitu. Nah itu",
+    "start": 1357.52,
+    "duration": 5.2
+  },
+  {
+    "text": "ya. Jadi berdasarkan data-data yang kita",
+    "start": 1360.44,
+    "duration": 4.52
+  },
+  {
+    "text": "punya, data uang kita berapa, harga",
+    "start": 1362.72,
+    "duration": 6.04
+  },
+  {
+    "text": "barangnya itu mempengaruh mempengaruhi",
+    "start": 1364.96,
+    "duration": 7.68
+  },
+  {
+    "text": "hasil akhir dari program yang kita buat.",
+    "start": 1368.76,
+    "duration": 7.6
+  },
+  {
+    "text": "Nah, dan program itu dia bisa ee",
+    "start": 1372.64,
+    "duration": 4.919
+  },
+  {
+    "text": "berdasarkan data dia bisa",
+    "start": 1376.36,
+    "duration": 3.12
+  },
+  {
+    "text": "merekomendasikan gitu ya. Tadi yang kita",
+    "start": 1377.559,
+    "duration": 3.36
+  },
+  {
+    "text": "buat kondisikannya tadi lebih baik",
+    "start": 1379.48,
+    "duration": 4.199
+  },
+  {
+    "text": "ditunda atau kita beli sekarang atau ee",
+    "start": 1380.919,
+    "duration": 4.921
+  },
+  {
+    "text": "pastikan udah ee cukup uangnya dan",
+    "start": 1383.679,
+    "duration": 5.801
+  },
+  {
+    "text": "seterusnya dan seterusnya.",
+    "start": 1385.84,
+    "duration": 3.64
+  },
+  {
+    "text": "Oke, Teman-teman. Sekarang kita akan",
+    "start": 1401.36,
+    "duration": 5.96
+  },
+  {
+    "text": "membahas materi tentang risiko financial",
+    "start": 1403.88,
+    "duration": 5.52
+  },
+  {
+    "text": "atau financial risk dan bagaimana kita",
+    "start": 1407.32,
+    "duration": 4.479
+  },
+  {
+    "text": "mengimplementasikan nested condition ke",
+    "start": 1409.4,
+    "duration": 5.92
+  },
+  {
+    "text": "dalam eh financial literacy yang akan",
+    "start": 1411.799,
+    "duration": 7.36
+  },
+  {
+    "text": "kita pelajari. Oke, sekarang apa sih",
+    "start": 1415.32,
+    "duration": 5.599
+  },
+  {
+    "text": "financial risk itu atau risiko",
+    "start": 1419.159,
+    "duration": 3.961
+  },
+  {
+    "text": "finansial? Risiko finansial adalah",
+    "start": 1420.919,
+    "duration": 4.76
+  },
+  {
+    "text": "kemungkinan uang kita, kemungkinan uang",
+    "start": 1423.12,
+    "duration": 4.52
+  },
+  {
+    "text": "kita berkurang, habis atau tidak",
+    "start": 1425.679,
+    "duration": 4.161
+  },
+  {
+    "text": "menghasilkan sesuai harapan. Jadi,",
+    "start": 1427.64,
+    "duration": 5.36
+  },
+  {
+    "text": "risiko finansial itu contoh sederhananya",
+    "start": 1429.84,
+    "duration": 5.48
+  },
+  {
+    "text": "kalau kita nyimpan uang di tempat aman,",
+    "start": 1433.0,
+    "duration": 4.88
+  },
+  {
+    "text": "maka resikonya akan kecil. Nah, berarti",
+    "start": 1435.32,
+    "duration": 4.44
+  },
+  {
+    "text": "kan finansial itu kan keuangan kita ya.",
+    "start": 1437.88,
+    "duration": 3.96
+  },
+  {
+    "text": "kita menyimpan uang di mana kalau",
+    "start": 1439.76,
+    "duration": 3.6
+  },
+  {
+    "text": "misalnya kita nyimpan di tempat aman",
+    "start": 1441.84,
+    "duration": 4.439
+  },
+  {
+    "text": "seperti bank, maka resiko hilang atau",
+    "start": 1443.36,
+    "duration": 5.04
+  },
+  {
+    "text": "resiko uangnya rusak itu sangat kecil",
+    "start": 1446.279,
+    "duration": 4.841
+  },
+  {
+    "text": "gitu ya. Atau contoh lainnya kalau kita",
+    "start": 1448.4,
+    "duration": 6.519
+  },
+  {
+    "text": "memakai uang gitu ya, kita ee melakukan",
+    "start": 1451.12,
+    "duration": 6.799
+  },
+  {
+    "text": "financing misalnya melakuk ee membeli",
+    "start": 1454.919,
+    "duration": 5.36
+  },
+  {
+    "text": "sesuatu gitu ya yang hasilnya belum tak",
+    "start": 1457.919,
+    "duration": 5.24
+  },
+  {
+    "text": "belum tentu pasti gitu maka risikonya",
+    "start": 1460.279,
+    "duration": 5.321
+  },
+  {
+    "text": "akan lebih besar. Nah, sebelum kita",
+    "start": 1463.159,
+    "duration": 5.921
+  },
+  {
+    "text": "melakukan ee purchasing atau melakukan",
+    "start": 1465.6,
+    "duration": 5.04
+  },
+  {
+    "text": "hal-hal yang berbau dengan ee yang",
+    "start": 1469.08,
+    "duration": 4.0
+  },
+  {
+    "text": "berkaitan dengan finansial kita itu kita",
+    "start": 1470.64,
+    "duration": 5.279
+  },
+  {
+    "text": "harus bertanya dulu apakah keputusan ini",
+    "start": 1473.08,
+    "duration": 5.76
+  },
+  {
+    "text": "aman? Jadi, kita harus mengukur ee",
+    "start": 1475.919,
+    "duration": 5.12
+  },
+  {
+    "text": "resiko dari keputusan finansial yang",
+    "start": 1478.84,
+    "duration": 4.64
+  },
+  {
+    "text": "akan kita buat. Apakah kita aman? Apakah",
+    "start": 1481.039,
+    "duration": 4.281
+  },
+  {
+    "text": "ada kita kemungkinan rugi? Apakah ini",
+    "start": 1483.48,
+    "duration": 3.96
+  },
+  {
+    "text": "sesuai dengan ee harapan kita nantinya",
+    "start": 1485.32,
+    "duration": 5.56
+  },
+  {
+    "text": "dan seterusnya. Nah, resiko finansial",
+    "start": 1487.44,
+    "duration": 5.52
+  },
+  {
+    "text": "itu memiliki beberapa level kesulitan,",
+    "start": 1490.88,
+    "duration": 4.159
+  },
+  {
+    "text": "ya. Jadi bayangkan kita kalau bermain",
+    "start": 1492.96,
+    "duration": 4.439
+  },
+  {
+    "text": "game ada tiga levelah, ada easy, ada",
+    "start": 1495.039,
+    "duration": 4.64
+  },
+  {
+    "text": "normal, sama ada hard. Kalau resiko",
+    "start": 1497.399,
+    "duration": 5.88
+  },
+  {
+    "text": "finansial, resiko keuangan itu kita",
+    "start": 1499.679,
+    "duration": 6.041
+  },
+  {
+    "text": "punya tiga level juga. Yang pertama ada",
+    "start": 1503.279,
+    "duration": 4.88
+  },
+  {
+    "text": "low risk, medium risk, dan juga high",
+    "start": 1505.72,
+    "duration": 5.36
+  },
+  {
+    "text": "risk. Kita bahas satu-satu ya. Nah, low",
+    "start": 1508.159,
+    "duration": 5.201
+  },
+  {
+    "text": "risk itu artinya resikonya rendah.",
+    "start": 1511.08,
+    "duration": 6.0
+  },
+  {
+    "text": "Berarti dia ee kegiatan finansial yang",
+    "start": 1513.36,
+    "duration": 6.0
+  },
+  {
+    "text": "kita lakukan itu biasanya aman, tapi",
+    "start": 1517.08,
+    "duration": 4.36
+  },
+  {
+    "text": "hasilnya juga tidak terlalu besar, gitu.",
+    "start": 1519.36,
+    "duration": 4.28
+  },
+  {
+    "text": "Misalnya ketika kita menabung itu kan",
+    "start": 1521.44,
+    "duration": 4.0
+  },
+  {
+    "text": "lebih aman gitu ya, uang yang kita punya",
+    "start": 1523.64,
+    "duration": 5.0
+  },
+  {
+    "text": "kita simpan ee ya hasilnya enggak",
+    "start": 1525.44,
+    "duration": 4.2
+  },
+  {
+    "text": "terlalu besar karena kan kita",
+    "start": 1528.64,
+    "duration": 5.919
+  },
+  {
+    "text": "menyisihkan uang tadi. Nah, ee",
+    "start": 1529.64,
+    "duration": 9.0
+  },
+  {
+    "text": "menabung ke dalam bank walaupun uangnya",
+    "start": 1534.559,
+    "duration": 5.84
+  },
+  {
+    "text": "kecil tapi resikonya juga rendah ya,",
+    "start": 1538.64,
+    "duration": 3.519
+  },
+  {
+    "text": "enggak mungkin hilang dan tidak mungkin",
+    "start": 1540.399,
+    "duration": 4.88
+  },
+  {
+    "text": "ee rusak uangnya. Terus itu ee kita",
+    "start": 1542.159,
+    "duration": 4.321
+  },
+  {
+    "text": "membeli barang yang benar-benar",
+    "start": 1545.279,
+    "duration": 3.4
+  },
+  {
+    "text": "dibutuhkan atau membuat dana cadangan",
+    "start": 1546.48,
+    "duration": 5.36
+  },
+  {
+    "text": "dan seterusnya. Nah, low risk financing",
+    "start": 1548.679,
+    "duration": 4.88
+  },
+  {
+    "text": "ini cocok untuk uang yang tidak boleh",
+    "start": 1551.84,
+    "duration": 4.199
+  },
+  {
+    "text": "hilang atau uang yang akan dipakai dalam",
+    "start": 1553.559,
+    "duration": 5.36
+  },
+  {
+    "text": "ee jangka waktu yang dekat. Nah, untuk",
+    "start": 1556.039,
+    "duration": 5.721
+  },
+  {
+    "text": "medium risk itu artinya eh resikonya itu",
+    "start": 1558.919,
+    "duration": 5.161
+  },
+  {
+    "text": "sedang. berarti resikonya masih bisa",
+    "start": 1561.76,
+    "duration": 4.2
+  },
+  {
+    "text": "dipertimbangkan. Tapi kita perlu",
+    "start": 1564.08,
+    "duration": 3.839
+  },
+  {
+    "text": "berhati-hati lagi dalam melakukan",
+    "start": 1565.96,
+    "duration": 4.92
+  },
+  {
+    "text": "financial ee itu tadi misalnya kita mau",
+    "start": 1567.919,
+    "duration": 5.561
+  },
+  {
+    "text": "membeli barang untuk dijual lagi atau",
+    "start": 1570.88,
+    "duration": 5.799
+  },
+  {
+    "text": "kita mau ee",
+    "start": 1573.48,
+    "duration": 6.28
+  },
+  {
+    "text": "mencoba untuk",
+    "start": 1576.679,
+    "duration": 5.801
+  },
+  {
+    "text": "berdagang atau membuka usaha kecil dan",
+    "start": 1579.76,
+    "duration": 5.44
+  },
+  {
+    "text": "seterusnya. Jadi ketika kita mau",
+    "start": 1582.48,
+    "duration": 6.0
+  },
+  {
+    "text": "melakukan sesuatu ee yang memiliki",
+    "start": 1585.2,
+    "duration": 5.88
+  },
+  {
+    "text": "financial risk yang medium itu kita",
+    "start": 1588.48,
+    "duration": 4.679
+  },
+  {
+    "text": "perlu sudah punya rencana yang matang",
+    "start": 1591.08,
+    "duration": 8.12
+  },
+  {
+    "text": "sama sisa uang yang ee aman. M sisa uang",
+    "start": 1593.159,
+    "duration": 9.0
+  },
+  {
+    "text": "yang nanti bisa menopang kita ketika ee",
+    "start": 1599.2,
+    "duration": 5.079
+  },
+  {
+    "text": "rencana tadi gagal atau tidak memenuhi",
+    "start": 1602.159,
+    "duration": 4.24
+  },
+  {
+    "text": "ekspektasi kita gitu ya, Teman-teman.",
+    "start": 1604.279,
+    "duration": 4.4
+  },
+  {
+    "text": "Nah, kalau high risk berarti dia",
+    "start": 1606.399,
+    "duration": 4.041
+  },
+  {
+    "text": "kemungkinannya",
+    "start": 1608.679,
+    "duration": 4.041
+  },
+  {
+    "text": "untung bisa, tapi kemungkinan ruginya",
+    "start": 1610.44,
+    "duration": 4.52
+  },
+  {
+    "text": "juga lebih besar gitu ya. Jadi dia bisa",
+    "start": 1612.72,
+    "duration": 4.48
+  },
+  {
+    "text": "untung tapi ruginya bisa lebih besar",
+    "start": 1614.96,
+    "duration": 4.68
+  },
+  {
+    "text": "gitu ya. Misalnya kita membeli barang",
+    "start": 1617.2,
+    "duration": 4.44
+  },
+  {
+    "text": "mahal yang belum tentu berguna gitu kan.",
+    "start": 1619.64,
+    "duration": 4.84
+  },
+  {
+    "text": "Beli barangnya mahal terus itu ya kalau",
+    "start": 1621.64,
+    "duration": 5.12
+  },
+  {
+    "text": "barangnya rusak kan kita rugi benar ya.",
+    "start": 1624.48,
+    "duration": 4.64
+  },
+  {
+    "text": "Nah, terus itu kita mengeluarkan modal",
+    "start": 1626.76,
+    "duration": 6.08
+  },
+  {
+    "text": "untuk ee misalnya ikut",
+    "start": 1629.12,
+    "duration": 7.48
+  },
+  {
+    "text": "tes atau ikut ee bootcampot gitu. Tapi",
+    "start": 1632.84,
+    "duration": 5.439
+  },
+  {
+    "text": "kita enggak punya plan nih setelah kita",
+    "start": 1636.6,
+    "duration": 4.52
+  },
+  {
+    "text": "ikut bootcamp ini kita mau apakan hasil",
+    "start": 1638.279,
+    "duration": 4.561
+  },
+  {
+    "text": "sertifikatnya gitu. Misalnya ikut",
+    "start": 1641.12,
+    "duration": 3.279
+  },
+  {
+    "text": "bootcamp bahasa Inggris tapi enggak",
+    "start": 1642.84,
+    "duration": 3.48
+  },
+  {
+    "text": "punya rencana, oh misal untuk kuliah ke",
+    "start": 1644.399,
+    "duration": 4.201
+  },
+  {
+    "text": "luar negeri atau untuk bekerja. Nah, itu",
+    "start": 1646.32,
+    "duration": 5.16
+  },
+  {
+    "text": "kan ee uangnya sia-sia dikeluarkan gitu",
+    "start": 1648.6,
+    "duration": 5.28
+  },
+  {
+    "text": "ya. Jadi kita perlu dipikirkan sangat",
+    "start": 1651.48,
+    "duration": 5.319
+  },
+  {
+    "text": "hati-hati dalam ee mengeluarkan uang",
+    "start": 1653.88,
+    "duration": 5.64
+  },
+  {
+    "text": "dengan high risk tadi. Nah, untuk",
+    "start": 1656.799,
+    "duration": 5.081
+  },
+  {
+    "text": "menilai risiko itu tadi kita bisa",
+    "start": 1659.52,
+    "duration": 4.399
+  },
+  {
+    "text": "menanyakan beberapa pertanyaan. Apakah",
+    "start": 1661.88,
+    "duration": 4.799
+  },
+  {
+    "text": "uang ini untuk kebutuhan penting? Apakah",
+    "start": 1663.919,
+    "duration": 4.76
+  },
+  {
+    "text": "uangnya terlalu besar? Dan apakah kita",
+    "start": 1666.679,
+    "duration": 4.281
+  },
+  {
+    "text": "punya rencana cadangan dan seterusnya.",
+    "start": 1668.679,
+    "duration": 4.161
+  },
+  {
+    "text": "Semakin banyak jawaban yang membuat kita",
+    "start": 1670.96,
+    "duration": 3.88
+  },
+  {
+    "text": "ragu, semakin tinggi risikonya, maka",
+    "start": 1672.84,
+    "duration": 5.0
+  },
+  {
+    "text": "sebaikbaiknya kita hindari dulu. Nah,",
+    "start": 1674.84,
+    "duration": 4.959
+  },
+  {
+    "text": "ini ada contohnya. Kalau misalnya kita",
+    "start": 1677.84,
+    "duration": 5.439
+  },
+  {
+    "text": "beli buku uang ee buku sekolah, beli",
+    "start": 1679.799,
+    "duration": 5.24
+  },
+  {
+    "text": "buku sekolah yang harganya Rp25.000 tapi",
+    "start": 1683.279,
+    "duration": 3.681
+  },
+  {
+    "text": "uang kita Rp100.000, wah ternyata uang",
+    "start": 1685.039,
+    "duration": 3.64
+  },
+  {
+    "text": "kita masih bersisa banyak kan. Dan",
+    "start": 1686.96,
+    "duration": 4.16
+  },
+  {
+    "text": "kebetulan ee buku sekolah itu sebuah",
+    "start": 1688.679,
+    "duration": 4.88
+  },
+  {
+    "text": "kebutuhan, maka ee membeli buku sekolah",
+    "start": 1691.12,
+    "duration": 6.2
+  },
+  {
+    "text": "itu low rista kita ee membeli bahan",
+    "start": 1693.559,
+    "duration": 6.161
+  },
+  {
+    "text": "untuk jualan Rp60.000 tapi uang kita",
+    "start": 1697.32,
+    "duration": 7.0
+  },
+  {
+    "text": "Rp100.000. Nah, ini peluangnya ee ya",
+    "start": 1699.72,
+    "duration": 7.12
+  },
+  {
+    "text": "kemungkinan besar bisa untung kalau",
+    "start": 1704.32,
+    "duration": 4.44
+  },
+  {
+    "text": "misalnya dagangan kita laku. Tapi kan",
+    "start": 1706.84,
+    "duration": 3.959
+  },
+  {
+    "text": "belum pasti ya ee belum tentu orang suka",
+    "start": 1708.76,
+    "duration": 4.08
+  },
+  {
+    "text": "dengan jualan kita gitu ya. Makanya",
+    "start": 1710.799,
+    "duration": 5.321
+  },
+  {
+    "text": "resikonya medium atau kalau resikonya",
+    "start": 1712.84,
+    "duration": 5.4
+  },
+  {
+    "text": "yang ha itu",
+    "start": 1716.12,
+    "duration": 4.84
+  },
+  {
+    "text": "kita punya uangnya R95.000. Ee uang kita",
+    "start": 1718.24,
+    "duration": 5.6
+  },
+  {
+    "text": "Rp100.000 terus kita beli sesuatu",
+    "start": 1720.96,
+    "duration": 5.04
+  },
+  {
+    "text": "R90.000 misalnya kita beli jaket yang",
+    "start": 1723.84,
+    "duration": 4.36
+  },
+  {
+    "text": "sedang tren gitu ya. Nah, uang kita",
+    "start": 1726.0,
+    "duration": 4.72
+  },
+  {
+    "text": "habis dan bersisa R5.000.",
+    "start": 1728.2,
+    "duration": 5.24
+  },
+  {
+    "text": "hanya untuk",
+    "start": 1730.72,
+    "duration": 4.88
+  },
+  {
+    "text": "apa ya memenuhi keinginan yang kita mau",
+    "start": 1733.44,
+    "duration": 4.16
+  },
+  {
+    "text": "gitu tadi ya. Nah, ini berarti ee",
+    "start": 1735.6,
+    "duration": 5.919
+  },
+  {
+    "text": "resikonya high atau tinggi. Nah, kita",
+    "start": 1737.6,
+    "duration": 6.36
+  },
+  {
+    "text": "bisa mengimplementasikan resiko-resiko",
+    "start": 1741.519,
+    "duration": 4.801
+  },
+  {
+    "text": "tadi ke dalam bahasa pemrograman Python",
+    "start": 1743.96,
+    "duration": 6.4
+  },
+  {
+    "text": "ya. Ee di sini kita bisa implementasikan",
+    "start": 1746.32,
+    "duration": 6.599
+  },
+  {
+    "text": "dia. Kita simpan dulu dia ke dalam ee",
+    "start": 1750.36,
+    "duration": 4.559
+  },
+  {
+    "text": "apa itu namanya? Sebuah variabel. Terus",
+    "start": 1752.919,
+    "duration": 3.961
+  },
+  {
+    "text": "variabelnya kita bisa tambahkan",
+    "start": 1754.919,
+    "duration": 4.401
+  },
+  {
+    "text": "conditionnya. Nah, untuk financial risk",
+    "start": 1756.88,
+    "duration": 3.56
+  },
+  {
+    "text": "ini karena ada beberapa",
+    "start": 1759.32,
+    "duration": 3.239
+  },
+  {
+    "text": "pertanyaan-pertanyaan tadi, kita bisa",
+    "start": 1760.44,
+    "duration": 4.28
+  },
+  {
+    "text": "mengimplementasikan nested condition",
+    "start": 1762.559,
+    "duration": 4.081
+  },
+  {
+    "text": "yang sebelumnya kita sudah pelajarin.",
+    "start": 1764.72,
+    "duration": 4.199
+  },
+  {
+    "text": "Misalnya kalau misalnya kategori barang",
+    "start": 1766.64,
+    "duration": 4.44
+  },
+  {
+    "text": "yang kita punya itu sebuah kebutuhan,",
+    "start": 1768.919,
+    "duration": 5.561
+  },
+  {
+    "text": "dia akan cek apakah uang kita lebih atau",
+    "start": 1771.08,
+    "duration": 6.76
+  },
+  {
+    "text": "sama dengan ee lebih dari harga barang",
+    "start": 1774.48,
+    "duration": 5.199
+  },
+  {
+    "text": "yang mau kita beli, gitu ya. Kalau",
+    "start": 1777.84,
+    "duration": 3.959
+  },
+  {
+    "text": "misalnya uang kita tuh lebih dari",
+    "start": 1779.679,
+    "duration": 5.88
+  },
+  {
+    "text": "harganya, maka oh risikonya low sama oh",
+    "start": 1781.799,
+    "duration": 5.201
+  },
+  {
+    "text": "barang ini sebuah kebutuhan dan uang",
+    "start": 1785.559,
+    "duration": 3.36
+  },
+  {
+    "text": "kita cukup. Tapi gimana kalau uang kita",
+    "start": 1787.0,
+    "duration": 4.76
+  },
+  {
+    "text": "lebih ee kurang dari harganya gitu ya,",
+    "start": 1788.919,
+    "duration": 5.201
+  },
+  {
+    "text": "maka oh resikonya medium, barang ini",
+    "start": 1791.76,
+    "duration": 4.48
+  },
+  {
+    "text": "kebutuhan tapi uangnya belum cukup gitu.",
+    "start": 1794.12,
+    "duration": 5.799
+  },
+  {
+    "text": "Jadi kita bisa ee mengukur gitu ya, kita",
+    "start": 1796.24,
+    "duration": 5.319
+  },
+  {
+    "text": "bisa membuat program yang mengukur oh",
+    "start": 1799.919,
+    "duration": 6.441
+  },
+  {
+    "text": "ini apakah sebuah ee financial eh",
+    "start": 1801.559,
+    "duration": 7.761
+  },
+  {
+    "text": "risknya itu apakah dia medium, low atau",
+    "start": 1806.36,
+    "duration": 7.439
+  },
+  {
+    "text": "high. Ini ya ee kondisinya ada banyak ee",
+    "start": 1809.32,
+    "duration": 7.199
+  },
+  {
+    "text": "yang bisa kita ee gunakan gitu ya. Ini",
+    "start": 1813.799,
+    "duration": 4.521
+  },
+  {
+    "text": "kalau misalnya barang kategorinya bukan",
+    "start": 1816.519,
+    "duration": 5.321
+  },
+  {
+    "text": "kebutuhan berarti e wants ya keinginan.",
+    "start": 1818.32,
+    "duration": 5.68
+  },
+  {
+    "text": "Kalau keinginannya harganya lebih besar",
+    "start": 1821.84,
+    "duration": 4.36
+  },
+  {
+    "text": "dari separuh uang kita gitu. Misalnya",
+    "start": 1824.0,
+    "duration": 4.84
+  },
+  {
+    "text": "harga ee",
+    "start": 1826.2,
+    "duration": 5.24
+  },
+  {
+    "text": "kita mau membeli sweater tadi Rp95.000,",
+    "start": 1828.84,
+    "duration": 4.559
+  },
+  {
+    "text": "terus itu kita hitung nih uang kita",
+    "start": 1831.44,
+    "duration": 3.88
+  },
+  {
+    "text": "Rp100.000.",
+    "start": 1833.399,
+    "duration": 4.241
+  },
+  {
+    "text": "Nah, kita cek nih separuhnya uang kita",
+    "start": 1835.32,
+    "duration": 4.44
+  },
+  {
+    "text": "misalkan kan tadi Rp100.000 kalau kita",
+    "start": 1837.64,
+    "duration": 4.56
+  },
+  {
+    "text": "hitung setengahnya kan Rp50.000. Apa",
+    "start": 1839.76,
+    "duration": 6.279
+  },
+  {
+    "text": "R95.000 lebih besar dari Rp50.000 tadi",
+    "start": 1842.2,
+    "duration": 6.92
+  },
+  {
+    "text": "berarti resikonya high gitu ya. ee",
+    "start": 1846.039,
+    "duration": 4.721
+  },
+  {
+    "text": "karena barang harga barangnya terlalu",
+    "start": 1849.12,
+    "duration": 3.52
+  },
+  {
+    "text": "besar untuk melakukan keinginan. Nah,",
+    "start": 1850.76,
+    "duration": 5.6
+  },
+  {
+    "text": "ini kenapa ee mengukur ee setengah dari",
+    "start": 1852.64,
+    "duration": 6.32
+  },
+  {
+    "text": "uang kita ya? Karena kalau misalnya kita",
+    "start": 1856.36,
+    "duration": 4.159
+  },
+  {
+    "text": "anggap aja kalau misalnya kita bisa",
+    "start": 1858.96,
+    "duration": 3.839
+  },
+  {
+    "text": "membeli barang itu dua kali gitu ya,",
+    "start": 1860.519,
+    "duration": 4.76
+  },
+  {
+    "text": "berarti ee kalau kita beli satu kita",
+    "start": 1862.799,
+    "duration": 4.921
+  },
+  {
+    "text": "enggak terlalu rugi gitu ya. Ee misalnya",
+    "start": 1865.279,
+    "duration": 4.64
+  },
+  {
+    "text": "harga barangnya Rp50.000, uang kita",
+    "start": 1867.72,
+    "duration": 4.919
+  },
+  {
+    "text": "Rp100.000 ee Rp150.000. Nah, berarti kan",
+    "start": 1869.919,
+    "duration": 5.201
+  },
+  {
+    "text": "kalau misalnya barang itu tadi ee apa",
+    "start": 1872.639,
+    "duration": 5.361
+  },
+  {
+    "text": "ya? Kalau barang itu tadi rusak atau",
+    "start": 1875.12,
+    "duration": 5.0
+  },
+  {
+    "text": "hilang itu kita masih punya uang",
+    "start": 1878.0,
+    "duration": 3.639
+  },
+  {
+    "text": "Rp100.000 gitu. Kita bisa beli lagi",
+    "start": 1880.12,
+    "duration": 3.96
+  },
+  {
+    "text": "kalau kita butuh banget gitu ya. Nah,",
+    "start": 1881.639,
+    "duration": 4.4
+  },
+  {
+    "text": "itu bisa kita implementasikan dengan",
+    "start": 1884.08,
+    "duration": 5.76
+  },
+  {
+    "text": "nested conditional tadi. Nah, itu kita",
+    "start": 1886.039,
+    "duration": 6.281
+  },
+  {
+    "text": "bisa eh lihat ya. Pertama dia akan",
+    "start": 1889.84,
+    "duration": 4.88
+  },
+  {
+    "text": "ngecek conditionnya, condition-nya",
+    "start": 1892.32,
+    "duration": 5.239
+  },
+  {
+    "text": "apakah dia eh kategorinya kebutuhan atau",
+    "start": 1894.72,
+    "duration": 4.439
+  },
+  {
+    "text": "needs gitu. Kalau kebutuhan dia akan",
+    "start": 1897.559,
+    "duration": 4.72
+  },
+  {
+    "text": "menjalankan A else itu berarti kalau ee",
+    "start": 1899.159,
+    "duration": 5.88
+  },
+  {
+    "text": "dia ini kebetulan kalau kondisinya ada",
+    "start": 1902.279,
+    "duration": 4.88
+  },
+  {
+    "text": "dua aja ya kebutuhan needs sama once.",
+    "start": 1905.039,
+    "duration": 3.6
+  },
+  {
+    "text": "Kalau ada kebutuhan yang lain berarti di",
+    "start": 1907.159,
+    "duration": 4.441
+  },
+  {
+    "text": "sini pakai else if atau el if kategori",
+    "start": 1908.639,
+    "duration": 4.481
+  },
+  {
+    "text": "sama dengan sama dengan needs. Sama yang",
+    "start": 1911.6,
+    "duration": 3.039
+  },
+  {
+    "text": "paling bawah nanti else gitu ya",
+    "start": 1913.12,
+    "duration": 4.6
+  },
+  {
+    "text": "teman-teman. Nah eh di sini ada contoh",
+    "start": 1914.639,
+    "duration": 6.28
+  },
+  {
+    "text": "lain yang kita bisa terapin. Misalnya",
+    "start": 1917.72,
+    "duration": 5.959
+  },
+  {
+    "text": "kalau sisa uangnya kurang dari R.000",
+    "start": 1920.919,
+    "duration": 5.401
+  },
+  {
+    "text": "maka resikonya high gitu ya. Kalau",
+    "start": 1923.679,
+    "duration": 5.681
+  },
+  {
+    "text": "misalnya ini sebuah needs, tapi uangnya",
+    "start": 1926.32,
+    "duration": 5.319
+  },
+  {
+    "text": "sisa uangnya itu kurang dari R.000",
+    "start": 1929.36,
+    "duration": 4.84
+  },
+  {
+    "text": "misalnya Rp9.000, R8.000, wah ini",
+    "start": 1931.639,
+    "duration": 4.441
+  },
+  {
+    "text": "ternyata harganya terlalu mahal nih,",
+    "start": 1934.2,
+    "duration": 5.319
+  },
+  {
+    "text": "gitu ya. Maka kita bisa ee menentukan",
+    "start": 1936.08,
+    "duration": 5.319
+  },
+  {
+    "text": "program bisa menampilkan oh resikonya",
+    "start": 1939.519,
+    "duration": 3.441
+  },
+  {
+    "text": "high atau resikonya medium atau",
+    "start": 1941.399,
+    "duration": 3.24
+  },
+  {
+    "text": "resikonya low dan seterusnya dan",
+    "start": 1942.96,
+    "duration": 5.559
+  },
+  {
+    "text": "seterusnya. Oke. Terus itu kita ee dalam",
+    "start": 1944.639,
+    "duration": 6.28
+  },
+  {
+    "text": "program kita selain kita bisa memasukkan",
+    "start": 1948.519,
+    "duration": 4.561
+  },
+  {
+    "text": "ee beberapa kategori-kategori tadi ya,",
+    "start": 1950.919,
+    "duration": 4.36
+  },
+  {
+    "text": "kayak misalnya uang kita berapa, harga",
+    "start": 1953.08,
+    "duration": 4.88
+  },
+  {
+    "text": "barangnya, sama kategorinya atau nama",
+    "start": 1955.279,
+    "duration": 4.481
+  },
+  {
+    "text": "item yang mau kita beli, itu kita bisa",
+    "start": 1957.96,
+    "duration": 4.679
+  },
+  {
+    "text": "tambahkan sebuah ee variabel baru yang",
+    "start": 1959.76,
+    "duration": 5.2
+  },
+  {
+    "text": "dia nanti mengecek nih apakah dia kita",
+    "start": 1962.639,
+    "duration": 4.681
+  },
+  {
+    "text": "punya sebuah plan untuk membelinya itu",
+    "start": 1964.96,
+    "duration": 4.959
+  },
+  {
+    "text": "tadi gitu. Misalnya nih kalau kita lihat",
+    "start": 1967.32,
+    "duration": 5.199
+  },
+  {
+    "text": "di sini ee ini merupakan sebuah",
+    "start": 1969.919,
+    "duration": 4.76
+  },
+  {
+    "text": "keinginan gitu ya. Terus itu dia",
+    "start": 1972.519,
+    "duration": 4.76
+  },
+  {
+    "text": "risikonya high. Tapi ternyata kita",
+    "start": 1974.679,
+    "duration": 4.801
+  },
+  {
+    "text": "memiliki plan. Oh, barang ini akan",
+    "start": 1977.279,
+    "duration": 5.081
+  },
+  {
+    "text": "digunakan untuk eh dijual kembali dan",
+    "start": 1979.48,
+    "duration": 4.159
+  },
+  {
+    "text": "seterusnya dan seterusnya. Berarti kan",
+    "start": 1982.36,
+    "duration": 3.12
+  },
+  {
+    "text": "kita punya plan gitu ya. Kita tahu",
+    "start": 1983.639,
+    "duration": 3.801
+  },
+  {
+    "text": "perkiraan biayanya berapa sama target",
+    "start": 1985.48,
+    "duration": 4.079
+  },
+  {
+    "text": "hasilnya berapa. Berarti intinya kita",
+    "start": 1987.44,
+    "duration": 4.64
+  },
+  {
+    "text": "sudah punya plan. Kalau kita punya plan,",
+    "start": 1989.559,
+    "duration": 5.921
+  },
+  {
+    "text": "maka ee kita bisa meloloskan barang",
+    "start": 1992.08,
+    "duration": 5.479
+  },
+  {
+    "text": "tersebut gitu ya. Misalnya kayak oh kita",
+    "start": 1995.48,
+    "duration": 5.559
+  },
+  {
+    "text": "punya plan kok enggak apa-apa. Maka, mm",
+    "start": 1997.559,
+    "duration": 5.281
+  },
+  {
+    "text": "misalnya nih contohnya kalau misalnya",
+    "start": 2001.039,
+    "duration": 4.6
+  },
+  {
+    "text": "kategorinya usaha gitu ya. Untuk usaha",
+    "start": 2002.84,
+    "duration": 5.199
+  },
+  {
+    "text": "misalnya tadi ada keinginan on sama ada",
+    "start": 2005.639,
+    "duration": 4.4
+  },
+  {
+    "text": "satu lagi kategorinya usaha. Nah, kita",
+    "start": 2008.039,
+    "duration": 3.841
+  },
+  {
+    "text": "cek nih kalau usahanya punya plan ya",
+    "start": 2010.039,
+    "duration": 4.441
+  },
+  {
+    "text": "udah kita cek kondisinya. Tapi kalau eh",
+    "start": 2011.88,
+    "duration": 4.44
+  },
+  {
+    "text": "dia enggak punya plan ya has plannya",
+    "start": 2014.48,
+    "duration": 3.52
+  },
+  {
+    "text": "sama dengan false, dia akan weh",
+    "start": 2016.32,
+    "duration": 3.56
+  },
+  {
+    "text": "risikonya high nih karena belum ada",
+    "start": 2018.0,
+    "duration": 3.399
+  },
+  {
+    "text": "rencana yang jelas. Jadi kita enggak",
+    "start": 2019.88,
+    "duration": 4.0
+  },
+  {
+    "text": "perlu spending money yang berlebihan.",
+    "start": 2021.399,
+    "duration": 5.041
+  },
+  {
+    "text": "Kurang lebih seperti itu untuk financial",
+    "start": 2023.88,
+    "duration": 5.6
+  },
+  {
+    "text": "ris itu tadi ya, Teman-teman. Kenapa",
+    "start": 2026.44,
+    "duration": 5.76
+  },
+  {
+    "text": "alasan itu penting? Karena supaya kita",
+    "start": 2029.48,
+    "duration": 6.6
+  },
+  {
+    "text": "tahu nih ee",
+    "start": 2032.2,
+    "duration": 5.68
+  },
+  {
+    "text": "supaya kita tahu dan programnya bisa",
+    "start": 2036.08,
+    "duration": 3.319
+  },
+  {
+    "text": "merekomendasikan",
+    "start": 2037.88,
+    "duration": 3.96
+  },
+  {
+    "text": "ee berdasarkan data yang kita punya gitu",
+    "start": 2039.399,
+    "duration": 4.88
+  },
+  {
+    "text": "ya. Nah, dalam financial literacy",
+    "start": 2041.84,
+    "duration": 4.36
+  },
+  {
+    "text": "keputusan itu harus kita bisa jelasin",
+    "start": 2044.279,
+    "duration": 3.681
+  },
+  {
+    "text": "nih. Oh, kalau misalnya kita mau membeli",
+    "start": 2046.2,
+    "duration": 5.439
+  },
+  {
+    "text": "sesuatu resikonya segini. Terus itu ee",
+    "start": 2047.96,
+    "duration": 6.679
+  },
+  {
+    "text": "alasannya karena uang kita lebih dari ee",
+    "start": 2051.639,
+    "duration": 5.24
+  },
+  {
+    "text": "harga barang yang akan dibeli dan",
+    "start": 2054.639,
+    "duration": 4.161
+  },
+  {
+    "text": "seterusnya dan seterusnya. Jadi dalam",
+    "start": 2056.879,
+    "duration": 3.76
+  },
+  {
+    "text": "financial planning, financial literasi",
+    "start": 2058.8,
+    "duration": 4.319
+  },
+  {
+    "text": "itu kita enggak boleh mendebak-mendebak,",
+    "start": 2060.639,
+    "duration": 4.321
+  },
+  {
+    "text": "kita harus berdasarkan data yang kita",
+    "start": 2063.119,
+    "duration": 4.76
+  },
+  {
+    "text": "punya gitu ya, Teman-teman ya. Nah, ini",
+    "start": 2064.96,
+    "duration": 5.439
+  },
+  {
+    "text": "ee ada beberapa contoh. Kalau misalnya",
+    "start": 2067.879,
+    "duration": 4.76
+  },
+  {
+    "text": "kita uang kita Rp100.000,",
+    "start": 2070.399,
+    "duration": 4.321
+  },
+  {
+    "text": "harganya Rp80.000 dan ternyata dia cuman",
+    "start": 2072.639,
+    "duration": 6.28
+  },
+  {
+    "text": "keinginan gitu ya. Nah, kita ee program",
+    "start": 2074.72,
+    "duration": 6.8
+  },
+  {
+    "text": "yang kita buat ternyata mengutputkan,",
+    "start": 2078.919,
+    "duration": 4.2
+  },
+  {
+    "text": "mengasih tahu, \"Oh, risikonya tinggi",
+    "start": 2081.52,
+    "duration": 3.92
+  },
+  {
+    "text": "banget nih. Karena lebih baik kita tunda",
+    "start": 2083.119,
+    "duration": 4.56
+  },
+  {
+    "text": "dulu karena uangnya terlalu sedikit.\"",
+    "start": 2085.44,
+    "duration": 5.239
+  },
+  {
+    "text": "Nah, keputusan yang program buat ini",
+    "start": 2087.679,
+    "duration": 5.361
+  },
+  {
+    "text": "kenapa dia masih ngasihnya resikonya",
+    "start": 2090.679,
+    "duration": 4.761
+  },
+  {
+    "text": "high? Karena sisa uangnya Rp20.000. Nih",
+    "start": 2093.04,
+    "duration": 4.36
+  },
+  {
+    "text": "kan ini cuman keinginan. Gimana nanti",
+    "start": 2095.44,
+    "duration": 3.28
+  },
+  {
+    "text": "kalau misalnya ada kebutuhan-kebutuhan,",
+    "start": 2097.4,
+    "duration": 4.04
+  },
+  {
+    "text": "misal kita harus beli makan, harus ee",
+    "start": 2098.72,
+    "duration": 4.56
+  },
+  {
+    "text": "jalan gitu ya, tapi uang kita sisa",
+    "start": 2101.44,
+    "duration": 3.56
+  },
+  {
+    "text": "Rp20.000. Sedangkan makan kita perlu",
+    "start": 2103.28,
+    "duration": 4.2
+  },
+  {
+    "text": "R.000. Nah, ini kan resikonya high kalau",
+    "start": 2105.0,
+    "duration": 3.8
+  },
+  {
+    "text": "misalnya kita mau membeli barang",
+    "start": 2107.48,
+    "duration": 5.2
+  },
+  {
+    "text": "tersebut. Jadi, seperti itu untuk ee",
+    "start": 2108.8,
+    "duration": 7.92
+  },
+  {
+    "text": "implementasi data untuk ee menganalisis",
+    "start": 2112.68,
+    "duration": 7.159
+  },
+  {
+    "text": "kebutuhan sama wants ya. Nah, ini",
+    "start": 2116.72,
+    "duration": 5.119
+  },
+  {
+    "text": "teman-teman bisa mengerjakan mini",
+    "start": 2119.839,
+    "duration": 6.0
+  },
+  {
+    "text": "activity berikut ini.",
+    "start": 2121.839,
+    "duration": 4.0
+  },
+  {
+    "text": "Nah, Teman-teman kita telah membahas",
+    "start": 2138.28,
+    "duration": 3.92
+  },
+  {
+    "text": "beberapa materi tentang financial",
+    "start": 2140.4,
+    "duration": 5.28
+  },
+  {
+    "text": "literacy tadi untuk ee membuat",
+    "start": 2142.2,
+    "duration": 5.32
+  },
+  {
+    "text": "teman-teman",
+    "start": 2145.68,
+    "duration": 4.679
+  },
+  {
+    "text": "lebih paham lagi tentang beberapa materi",
+    "start": 2147.52,
+    "duration": 5.839
+  },
+  {
+    "text": "financial literacy. Sekarang coba buat",
+    "start": 2150.359,
+    "duration": 4.96
+  },
+  {
+    "text": "tugas yang nanti akan dihitung sebagai",
+    "start": 2153.359,
+    "duration": 4.0
+  },
+  {
+    "text": "kehadiran teman-teman dalam mengikuti",
+    "start": 2155.319,
+    "duration": 6.121
+  },
+  {
+    "text": "sesi ini. Jadi, kita ee harus membuat",
+    "start": 2157.359,
+    "duration": 7.041
+  },
+  {
+    "text": "program smart budgeting dan ris planner.",
+    "start": 2161.44,
+    "duration": 5.32
+  },
+  {
+    "text": "Di sini ada beberapa ee kondisi-kondisi",
+    "start": 2164.4,
+    "duration": 4.679
+  },
+  {
+    "text": "yang teman-teman harus ee punya dalam",
+    "start": 2166.76,
+    "duration": 4.64
+  },
+  {
+    "text": "programnya. Kita coba cek sama-sama ya.",
+    "start": 2169.079,
+    "duration": 5.361
+  },
+  {
+    "text": "Di sini ada menyimpan jumlah uang, dia",
+    "start": 2171.4,
+    "duration": 5.439
+  },
+  {
+    "text": "bisa mengecek level resiko, terus bisa",
+    "start": 2174.44,
+    "duration": 4.399
+  },
+  {
+    "text": "memberikan rekomendasi dan alasan logis",
+    "start": 2176.839,
+    "duration": 4.401
+  },
+  {
+    "text": "lainnya. Kemudian harus ada",
+    "start": 2178.839,
+    "duration": 4.361
+  },
+  {
+    "text": "variabel-variabelnya,",
+    "start": 2181.24,
+    "duration": 4.28
+  },
+  {
+    "text": "kondisinya harus ada ini. Terus itu",
+    "start": 2183.2,
+    "duration": 5.04
+  },
+  {
+    "text": "minimal harus menggunakan satu logical",
+    "start": 2185.52,
+    "duration": 5.72
+  },
+  {
+    "text": "operator.",
+    "start": 2188.24,
+    "duration": 3.0
+  },
+  {
+    "text": "Nah, untuk ee supaya programnya dianggap",
+    "start": 2191.599,
+    "duration": 5.561
+  },
+  {
+    "text": "selesai atau benar ini ada beberapa",
+    "start": 2195.079,
+    "duration": 5.52
+  },
+  {
+    "text": "kriteria yang teman-teman wajib ee harus",
+    "start": 2197.16,
+    "duration": 6.12
+  },
+  {
+    "text": "ada gitu ya. Punya variabel, menentukan",
+    "start": 2200.599,
+    "duration": 4.881
+  },
+  {
+    "text": "risiko, dan menentukan rekomendasi akhir",
+    "start": 2203.28,
+    "duration": 5.039
+  },
+  {
+    "text": "dan seterusnya dan seterusnya.",
+    "start": 2205.48,
+    "duration": 4.92
+  },
+  {
+    "text": "Oke, itu tadi materi tentang financial",
+    "start": 2208.319,
+    "duration": 5.161
+  },
+  {
+    "text": "literacy. Ee semoga teman-teman bisa",
+    "start": 2210.4,
+    "duration": 5.76
+  },
+  {
+    "text": "paham. Sampai jumpa di penjelasan",
+    "start": 2213.48,
+    "duration": 5.68
+  },
+  {
+    "text": "selanjutnya.",
+    "start": 2216.16,
+    "duration": 3.0
+  }
+]

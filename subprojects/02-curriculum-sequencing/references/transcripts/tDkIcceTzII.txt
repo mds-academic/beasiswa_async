@@ -1,0 +1,757 @@
+[1.44] Ready, set, action.
+[8.56] Halo, Teman-teman. Hari ini kita akan
+[10.60] melanjutkan ee pembahasan kita tentang
+[14.44] percabangan ganda. Nah, percabangan
+[16.76] ganda itu apa sih dan apa sih
+[18.52] hubungannya dengan logik? Oke, yuk kita
+[21.40] perhatikan slide berikut. Nah,
+[23.88] Teman-teman pernah enggak dihadapkan
+[26.24] pada suatu kondisi di mana Teman-teman
+[28.68] tuh diminta untuk ee dihadapkan dengan
+[32.00] ribuan pilihan setiap hari gitu ya? Jadi
+[35.04] misalnya nih contohnya setiap pagi kita
+[37.48] tuh harus mikir kita harus bangun jam
+[39.72] berapa ya. ee misalnya kita ada pilihan
+[43.24] kalau misalnya hari ini hari ee untuk
+[45.96] pergi sekolah ya, hari weekday berarti
+[48.08] kan kita harus bangunnya pagi. Tapi
+[49.52] kalau misalnya hari ini hari Minggu
+[51.52] berarti kan kita bisa ee tidur lebih
+[53.96] lama gitu kan ya. Terus baju apa sih
+[56.24] yang harus dipakai? Kan kadang sekolah
+[57.92] tuh ee setiap harinya bajunya beda-beda
+[60.68] ya. Nah, itu baju apa yang harus di
+[63.12] dipakai, terus kita mau makan apa ya ee
+[66.12] hari ini. Nah, dari pilihan-pilihan tadi
+[69.08] kan kita harus memilih ya. Nah, proses
+[71.64] memilih berdasarkan pilihan kita tadi
+[74.08] itu ada disebut juga dengan namanya
+[76.36] logika percabangan. Nah, percabangan itu
+[80.08] apa sih? Percabangan berarti menentukan
+[82.72] jalan gitu ya. menentukan jalan atau
+[84.76] memilih
+[86.28] berdasarkan suatu kondisi. Nah,
+[89.28] contohnya nih kalau bentuknya
+[91.00] percabangan yang biasa sering dipakai
+[93.44] adalah kalau hari ini hujan maka atau
+[97.04] bahasa Inggrisnya then ya aku akan bawa
+[99.36] payung gitu. Jadi di sini kalau
+[102.48] kondisinya benar, kalau di sini kan kita
+[104.64] contoh e statementnya adalah hujan gitu.
+[106.80] Kalau misalnya hari ini hujan aku bawa
+[108.00] payung berarti kondisinya hujan. dia
+[110.24] tergantung kondisi itu kayak dia
+[112.36] tergantung apa gitu. Tergantung sesuatu.
+[114.44] Nah, sesuatunya itu disebut juga dengan
+[115.96] kondisi. Nah, di sini kondisinya itu
+[118.28] adalah hujan. Kalau kondisinya hujan,
+[121.00] maka aku akan bawa payung. Ini bawa
+[123.16] payung ini kan berarti action-nya yang
+[124.92] kita lakukan, gitu ya. Nah, itu
+[127.68] merupakan contoh dari percabangan
+[129.60] tunggal atau percabangan yang cuman
+[131.12] satu. Nah, kalau misalnya percabangan
+[134.44] tunggal itu biasanya sangat simpel ya.
+[136.28] Kalau hujan ya udah kitaak apa bawa
+[139.20] payung. Tapi ee kondisi tunggal,
+[141.96] percabangan kondisi tunggal itu dia
+[144.44] hanya ee apa itu namanya? Hanya punya
+[147.24] satu kondisi tanpa adanya alternatif
+[150.64] gitu. Misalnya di sini ada jika ada tamu
+[154.20] bukakan pintu gitu. Apa yang terjadi
+[157.20] jika tamu itu adalah pencuri yang tidak
+[159.36] dikenal? Nah, karena dia tidak ada
+[161.36] kondisinya, maka robot akan tetap
+[163.16] membuka pintu. Intinya dia kalau ada
+[165.00] yang ngetok rumah atau ada tamu gitu ya,
+[167.60] ee kita mau programnya atau misalnya ee
+[170.64] kita lagi bikin aplikasi yang dia bisa
+[172.92] buka pintu otomatis gitu ya kalau ada
+[174.52] tamu. Nah, itu kan kalau kondisinya
+[176.64] cuman satu jika ada tamu bukan pintu itu
+[179.60] kan berbahaya gitu kan ya. Nah,
+[183.12] supaya dia lebih lengkap lagi percabang
+[186.24] ini itu ada yang namanya enggak cuman if
+[189.32] aja. Kan tadi kalau misalnya kita lihat
+[191.28] contoh itu kan di sini if jika hari ini
+[194.60] hujan then maka dia akan melakukan satu
+[197.00] if jikanya kondisinya terus then-nya itu
+[200.24] eh apa itu namanya apa yang dia lakukan.
+[202.36] Nah, selain if then ada loh yang namanya
+[204.88] else atau juga bisa juga disebut juga
+[207.36] dengan selain itu. Nah, kalau jika itu
+[211.16] if-nya itu tadi adalah kondisinya
+[214.00] misalnya nih jika tamu adalah orang yang
+[216.28] dikenal maka atau then kita bukakan
+[219.68] pintu else atau selain itu kita bunyikan
+[223.24] alarm peringatan gitu ya. Jadi dia bisa
+[226.64] merespon kalau misalnya kondisinya tepat
+[230.36] ya. Kalau kondisinya tepat kan tamunya
+[231.92] orang yang dikenal berarti dia akan
+[233.12] bukakan pintu. Tapi kalau dia bukan
+[235.04] orang yang dikenal maka dia akan
+[236.48] melakukan yang lain atau yang else itu
+[238.80] tadi gitu ya. Jadi sekarang ee apa
+[242.36] terama program yang kita buat itu tahu
+[244.32] kondisinya kalau misalnya ada ee dua
+[247.12] kejadian yang berbeda. Nah, contohnya
+[249.96] lagi ada kan misalnya lampu lalu lintas
+[252.88] kan biasa kalau misalnya mau nyebrang
+[255.40] gitu. Kalau di Jakarta kan harus pencet
+[257.68] tombol pedestrian dulu gitu supaya
+[259.76] lampunya bisa berubah, supaya kita bisa
+[261.76] nyebrang. Nah, jika if tombol ee
+[266.84] pedestriannya dipencet oleh pejalan
+[269.16] kaki, maka nyalakan lampu merah untuk
+[271.76] mobil. Tapi kalau misalnya enggak ada
+[274.08] yang mencet, else kalau enggak ada yang
+[276.68] mencet ya kan ya di sini kan kondisinya
+[278.72] kalau ditekan kalau ada yang pencet.
+[280.60] Tapi kalau enggak ada yang pencet, ya
+[281.92] udah maka biarkan lampu hijau menyala
+[284.16] untuk mobil, gitu ya. Jadi dia e apa itu
+[287.08] namanya kondisinya kalau enggak ada yang
+[289.00] terjadi, kondisinya yang ini enggak ada
+[291.08] e enggak terjadi maka dia akan selalu
+[293.08] menjalankan else. Tapi kalau ada sesuatu
+[295.12] terjadi maka kita pakainya dan oke. Nah,
+[299.28] sekarang ada contoh lagi yang lain.
+[301.60] Misalnya kita main game, terus itu kita
+[303.84] bikin game over. Nah, game over itu kita
+[306.52] bikin dia supaya ketika ketika
+[309.36] kondisinya itu nyawanya sudah habis gitu
+[312.12] ya. Nah, kalau misalnya habis kita mau
+[315.64] dia menampilkan layar game over gitu ya.
+[318.36] Berarti kita pindah ke ee apa itu
+[320.68] namanya? Screen game over. Tapi kalau
+[322.64] misalnya masih ada, maka dia akan
+[325.00] seperti biasa gitu layarnya belum
+[326.92] berpindah. Nah, itu tadi contoh lain
+[330.04] dalam bentuk game gitu ya. Nah, tadi
+[333.32] kondisi tadi, percabangan tadi itu
+[335.76] sebenarnya dalam dunia pemograman itu
+[338.60] digambarkan menggunakan flowchart gitu
+[340.76] ya. Nah, flowchart itu adalah kalau kita
+[343.36] lihat flowchart sendiri namanya itu
+[345.64] pertama ada flow sama chart. Flow itu
+[348.12] kan bahasa Inggrisnya alur ya, mengalir
+[350.16] gitu ya. Jadi kalau air itu kan dia
+[353.24] water flowing gitu, air mengalir. Nah,
+[356.44] kalau di sini flow chart itu gambar
+[358.80] kayak kan kalau misalnya kita pernah
+[360.76] lihat soal-soal matematika atau
+[362.16] statistika itu kan dia ada gambarnya
+[364.56] chart-chart-nya kalau di Excel. Nah,
+[366.60] berarti kita bisa ee mengartikan flow
+[369.52] chart karena bahasa Inggris itu dimulai
+[371.04] dari belakang ya. Chart berarti gambaran
+[373.72] alur, gambar alur gitu ya. Nah, gambar
+[376.72] alur ini biasa dimulai dengan kalau ee
+[379.76] bentuknya ada banyak ya, ada ee tiga
+[383.24] harusnya. Yang pertama tuh ada oval.
+[385.28] Oval itu dia eh yang memulai yang
+[388.16] bentuknya kayak pil gitu ya, yang kayak
+[389.76] ini. Nah, bentuknya pil seperti ini.
+[392.48] Terus kalau dia menandakan proses dia
+[394.24] persegi sama belah kutupat. Itu kalau
+[396.52] misalnya ada logika percabangannya, ada
+[399.52] kondisinya. Kan tadi kalau misalnya kita
+[402.32] lihat contohnya di sini yang ini ya. Ee
+[409.60] oke kita lihat dulu.
+[413.96] Nah di sini jika kalau misalnya ini ya
+[418.08] kan jika kondisinya ini ya maka dia akan
+[420.28] menjalankan yang then. Tapi kalau
+[422.72] kondisinya ini tidak maka dia akan
+[424.44] menjalankan yang else gitu ya. Nah,
+[427.20] makanya di sini belah ketubat dia punya
+[429.08] kondisi percabangan yang dia bercabang
+[431.16] kedua jalan yang nantinya dia ya atau
+[433.84] tidak. Nih contohnya. Nah, pertama
+[436.72] sebuah floucher itu harus dimulai dengan
+[438.56] bentuk pil seperti ini ya, memulai dan
+[441.04] nanti harusnya di bawahnya itu ada N
+[442.64] gitu. Nah, di sini pas program mulai dia
+[445.56] mengecek dulu kondisinya apakah hari ini
+[448.16] hujan. Kalau hari ini hujan maka kita
+[450.84] mau proses bawa payung gitu ya. Nah, ini
+[453.32] harusnya panahnya gini ya. Kalau iya
+[455.12] turun ke sini. Tapi kalau misalnya
+[457.68] apakah hari ini hujan? Tidak. Maka
+[459.80] panahnya akan ke kanan. Jadi dia akan
+[462.16] bergantung panahnya, arah panahnya.
+[465.00] Terus itu bloknya, kondisinya akan
+[466.84] bergantung sesuai dengan kondisinya.
+[469.24] Kalau misalnya dia benar sama kalau
+[470.92] misalnya dia salah gitu. Nah,
+[480.00] three two one action.
+[485.36] [musik]
+[488.76] Nah, Teman-teman kita sudah berkenalan
+[492.24] dengan bercabangan, ya. Percabangan. Apa
+[494.76] itu percabangan? Nah, sekarang kalau
+[497.40] misalnya di Epinventor seperti apa sih
+[499.52] percabangan itu? Coba kita lihat. Nah,
+[502.20] kalau logika percabangan itu dia ada di
+[505.24] dalam kontrol ya. Dia ada di dalam blok
+[508.12] bagian kontrol nih. Bentuknya yang
+[510.20] seperti ini ya. sama namanya juga if dan
+[513.20] juga then if then. Nah, perhatikan di
+[517.12] sini dia ada bracketnya ya yang membeluk
+[519.88] blok di dalamnya. Berarti dia apapun
+[521.92] kondisinya kita masukin ke dalam bloknya
+[524.52] ini nanti gitu. Nah, itu bentuk if else
+[528.24] atau percabangan yang ada di dalam eh
+[531.12] apa itu namanya? MIT App Inventor. Nah,
+[534.12] kalau kita lihat tadi bentuknya kan dia
+[536.28] cuman if sama aja, dia enggak ada else.
+[539.44] Nah, kalau misalnya kita mau menampilkan
+[541.64] else-nya itu kita harus klik ininya nih
+[544.28] yang ada apa setting-nya ini kan rodanya
+[547.44] ini. Nah, kita harus klik dulu supaya
+[549.96] dia bisa menampilkan else-nya. Nah,
+[553.04] nanti dia ada pop up kecil, nanti kalian
+[556.00] tarik tuh-nya ke dalam blok if-nya itu
+[558.04] tadi. Nah, sehingga nanti bentuknya akan
+[560.92] seperti ini ya. Ada tiga, ada if, jika,
+[564.04] terus itu dia akan melakukan apa. Tapi
+[566.04] kalau yang if-nya ini salah atau
+[567.56] kondisinya enggak benar kayak misalnya
+[569.00] hari ini enggak hujan kok, maka dia akan
+[570.64] menjalankan langsung yang else yang then
+[572.92] itu nanti dikip gitu ya. Jadi akan ada
+[575.40] dua tempat ee yang nanti kita taruh
+[578.36] perintah atau kodenya yang nanti
+[580.52] berjalan sesuai dengan apakah kondisinya
+[582.60] ini benar apa salah gitu. Nah,
+[588.84] di sini contohnya misalnya kita mau
+[592.48] bikin aplikasi yang di mana dia itu bisa
+[595.20] ngecek apakah kita lulus ujian atau
+[597.96] tidak berdasarkan nilai yang kita punya
+[599.96] gitu ya. Nah, di sini kita ee bisa
+[602.52] tambahin misalnya kita tambahin textbox
+[605.04] ya, textbox yang ini kita nanti tempat
+[606.92] kita masukin angka, terus ada button
+[609.20] yang nanti untuk men-trigger si if-nya
+[611.56] gitu kan ya. Terus itu ada label yang
+[613.80] nanti akan menghasil menampilkan
+[616.12] hasilnya. Nah, kalau kita lihat di sini
+[618.56] kan dia ee apa tuh namanya? Harus tambah
+[622.04] ee col codingnya ya. Nih pertama kita
+[624.96] ambil blok e event-nya dulu. Berarti di
+[627.72] dalam button-nya kita ambil blok ini ya,
+[630.56] when button cek diklik. Kalau buttonnya
+[633.36] diklik maka kita akan ee apa itu
+[636.00] namanya? Memulai programnya gitu. Kita
+[638.64] akan memulai pengkondisiannya. Nah, di
+[641.20] sini kita tambahin block if dan kita
+[643.56] tadi ya. Nah, di sini kita mau bikin ee
+[647.48] di dalam if-nya kita ditambahin kondisi
+[650.16] kalau button teks nilai ya labelnya tadi
+[652.92] namanya kan teks nilai ya. Kalau eh
+[655.64] bukan label teks area. Kalau teks
+[657.76] areanya button nilainya itu nilainya
+[660.80] lebih dari atau sama dengan 75 berarti
+[664.16] dia lolos kan. Berarti dia nilai ee apa
+[667.72] itu namanya nanti bisa lanjut gitu
+[670.12] enggak remedial gitu kan ya. Nah kita
+[672.28] tambahin di sini di dalam block if kita
+[675.56] masukin kondisi dari eh M ya e bagian M
+[679.92] yang warnanya biru seperti ini. Oke kita
+[683.20] lanjut. setelahnya baru kita bisa
+[686.28] mengubah kondisinya. Kalau misalnya
+[688.72] nilainya lebih dari 75, kita akan ubah
+[691.84] label hasilnya jadi kamu lulus. Tapi
+[694.96] kalau misalnya dia enggak ee apa tuh
+[697.28] namanya? Yang ini kondisinya gender
+[699.40] misalnya dia masukin 65 kan ini salah.
+[701.60] Berarti yang then ini akan dikip dia
+[704.00] akan langsung menjalankan ini dia akan
+[706.04] ng-set hasilnya, label hasilnya menjadi
+[708.48] belajar lagi gitu ya. Jadi dia akan auto
+[711.76] ter ee terganti gitu. ya. Oke, itu untuk
+[715.92] bentuk simpel dari percabangan di MIT
+[719.68] App Inventor
+[732.68] action.
+[734.26] [musik]
+[738.12] Oke, Teman-teman. Sekarang kita akan
+[739.88] melanjutkan mengenai literasi keuangan.
+[743.20] ee kita akan bahas membahas tentang
+[744.96] pendapatan, pengeluaran, dan juga
+[746.60] e-wallet. Oke, pertama kita harus
+[749.52] belajar dulu nih uang tuh sebenarnya
+[751.56] dari mana sih? Apa sih usul-usul uang?
+[753.96] Nah, ribuan tahun lalu sebelum adanya
+[756.28] uang di dunia modern kan kita semua
+[758.16] pakai uang ya. Nah, di ee sebelum adanya
+[761.36] uang orang lain itu melakukan yang
+[764.04] namanya barter atau bertukar barang ee
+[766.76] secara langsung. Misalnya kita butuh ee
+[771.80] butuh nasi gitu ya. Kita butuh beras
+[773.60] untuk memasak nasi, tapi kita enggak
+[775.64] punya ee beras, tapi kita punya misalnya
+[778.32] buah-buahan. Nah, kita tuh bisa tuh
+[780.52] langsung berter ke petani atau tetangga
+[782.60] kita gitu yang dekat. Kamu punya beras
+[784.56] enggak? Ini aku apa? Punya buah. Kalau
+[787.04] misalnya punya dan kamu mau tukaran, yuk
+[789.20] kita tukaran atau barter. Nah, itu
+[791.32] biasanya ee kalau zaman dulu tuh
+[793.16] langsung bertukaran seperti itu. Jadi,
+[795.36] dia akan bertukar barang yang value-nya
+[797.72] yang nilainya sama. Nah, kemudian
+[801.28] ee dengan berkembangnya zaman muncul
+[804.32] yang dinamakan koin emas ya. Muncul koin
+[806.28] emas karena ee koin emas itu kan
+[808.44] berharga gitu ya. Nah, itu bisa ditukar
+[811.64] ee yang kemudian orang-orang enggak jadi
+[814.12] enggak langsung barter gitu ya. Oh, dia
+[815.72] kalau misalnya punya koin emas nih, aku
+[817.28] punya emas segini ee aku mau beli itu,
+[820.52] aku mau ee apa itu namanya? Suatu barang
+[823.76] gitu. Jadi sudah mulai transaksi ee
+[825.76] dengan menggunakan koin baru ee dengan
+[828.56] berkembang zaman. Kalau koin emas tuh
+[830.64] kan kayak berat gitu ya, bawa koin ke
+[832.36] mana-mana. Terus itu ya apa tuh namanya?
+[835.08] Harus selalu bawa poskan jadi enggak apa
+[837.24] ya dia enggak ee ya enggak efektif lah
+[841.00] jadinya. ee manusia menciptakan yang
+[843.44] namanya uang kertas yang bisa dimudah
+[845.72] mudah dibawa ke mana-mana. Tapi dimasuki
+[848.56] era digital ini uang itu makin ee lebih
+[852.56] jarang lagi dibawa karena zaman sekarang
+[855.80] uang tuh dia enggak terlihat bentuknya
+[858.24] gitu ya. Uang tuh sekarang tuh bentuknya
+[860.56] hanya berupa angka aja. Nah, itulah yang
+[864.04] disebut dengan uang di era digital. Nah,
+[866.84] di era digital ee sebelum kita ke uang
+[869.52] di era digital, pertama kalau dalam
+[872.32] literasi keuangan itu ada yang namanya
+[874.84] kita harus pahami ada yang namanya
+[876.56] pendapatan atau income. Jadi, pendapatan
+[879.20] itu adalah semua uang yang mengalir
+[881.36] masuk ke kantongmu. Nah, jadi intinya
+[883.60] income ini adalah sumber pendapatan gitu
+[885.40] ya. Nah, coba deh kalian sebutkan tiga
+[887.96] sumber pendapatan kalian apa aja sih
+[890.12] gitu. Misalnya dari ee dikasih orang
+[892.88] tua, dikasih nenek gitu. coba sebutin.
+[895.52] Nah, itu ya. Jadi ee tiga income ini
+[898.72] uang kita datangnya muncul dari mana
+[900.80] gitu. Oke, selanjutnya
+[903.76] selain ada pemasukan, ada yang namanya
+[906.08] pengeluaran. Income versus expense.
+[909.40] Expense itu artinya pengeluaran.
+[911.48] Pengeluaran itu berarti uang yang kita
+[913.52] ee keluarkan yang ditukar dengan barang
+[916.52] atau jasa gitu ya. Misalnya kita membeli
+[919.04] makanan,
+[920.60] kita beli barang-barang yang kita mau
+[922.84] gitu kan. mainan, beli handphone, beli
+[925.56] ee apa tuh namanya? Komputer dan segala
+[927.84] macam. Nah, jadi pengeluaran sama
+[930.88] pemasukan ini berkaitan satu sama lain
+[932.88] ya. Karena kita harus tahu nih pemasukan
+[936.44] kita berapa, pengeluaran kita berapa.
+[939.00] Nah, kenapa kita harus tahu? Karena di
+[941.60] sini nih yang bahaya. Kalau pengeluaran
+[944.04] kita ternyata lebih dari pendapatan,
+[946.72] maka kita ee harus berhutang gitu ya,
+[949.48] Teman-teman. Jadi kayak ya ini enggak
+[951.36] disarankan. Jadi jangan sampai kita ee
+[953.32] berhutang. Jadi kita harus tahu dulu
+[955.56] gitu kan berapa pemasukan kita, dari
+[957.88] mana pemasukan itu berasal, terus kita
+[960.12] harus cek pengeluaran kita berapa,
+[962.00] expense kita itu berapa, kita harus
+[963.60] catat gitu ya. Nah,
+[967.32] untuk ee apa itu namanya? Selain
+[970.32] pemasukan pengeluaran ada juga yang
+[972.72] namanya tabungan. Kalau di dalam
+[974.24] literasi keuangan yang namanya ee
+[977.00] savings. Jadi, savings itu artinya
+[979.72] tabungan yang di mana tabungan itu
+[984.08] adalah uang gitu ya atau sesuatu yang
+[986.48] kita sisihkan dari pemasukan kita yang
+[989.36] tidak akan kita pakai untuk pengeluaran
+[991.76] gitu ya. Rumusnya bisa kita pakai
+[993.88] seperti ini. Tabungan itu bisa ee kita
+[997.40] hitung dari pendapatan dikurang
+[999.84] pengeluaran. Jadi misalnya kita dapat
+[1001.72] uang Rp10.000 R dari orang tua gitu ya.
+[1004.00] Terus kita pengeluarannya sehari untuk
+[1005.72] jajan itu R5.000. Berarti 10.000 - 5.000
+[1009.72] itu 5.000. Nah, 5.000 itulah yang nanti
+[1012.16] dimasukin ke tabungan. Jadi, tabungan
+[1014.56] ini sangat penting ya, Teman-teman.
+[1016.08] Karena dia berfungsi sebagai benteng
+[1018.28] pertahanan gitu ya, atau kayak jaga-jaga
+[1021.16] gitu uang ee apa itu namanya? Uang ee
+[1025.76] simpanan gitu loh ya. Karena kalau
+[1027.76] misalnya ada hal darurat gitu, misalnya
+[1029.72] kita ee harus pulang ke sekolah, pulang
+[1033.12] sekolah harus naik ojek gitu ya, Kak
+[1035.44] atau ojeknya harus mobil gitu. Kita
+[1038.04] harus pesan mobil karena hujan. Nah, itu
+[1040.12] kan kita supaya kita bisa pesan mobil
+[1042.08] kan oh ada nih tabungan kita. Jadi ya
+[1044.84] udah kita bisa langsung pesan mobil gitu
+[1046.68] pakai ojek online. Nah, seperti itu ya.
+[1049.64] Atau misalnya kita pengin beli membeli
+[1051.84] sesuatu yang mahal gitu, yang penting
+[1053.92] gitu. Kayak misalnya laptop, kita butuh
+[1055.72] laptop. T kan mahal. Nah, karena kita
+[1057.76] punya tabungan kita bisa tuh langsung
+[1059.44] membeli tanpa harus minjam uang gitu ya,
+[1062.36] Teman-teman. Oke. Nah, sekarang di dunia
+[1065.92] digital ee kita enggak lagi pakai ini ya
+[1069.88] ke bank, setor uang, tarik uang. Itu
+[1072.04] jarang banget ya. Kita mungkin sekarang
+[1074.36] udah ee mungkin di antara teman-teman
+[1076.08] kita atau mungkin dari orang tua kalian
+[1077.52] enggak langsung ngasih cash ya, kita
+[1079.36] langsung dikasihnya transfer gitu atau
+[1082.20] misalnya top up gitu misalnya pakai ee
+[1084.96] e-owallet gitu. E-wallet di dunia luar
+[1087.08] kan banyak ya. Nah, ewallet ini dia jadi
+[1090.28] saldo digital kita gitu. Uang fisik kita
+[1092.96] itu dikasih ke mereka gitu ya
+[1094.60] sebenarnya. Mm. Terus itu nanti ditukar
+[1097.88] dengan saldo digital. Kurang lebih
+[1099.68] bentuknya seperti itu ya. Ewallet
+[1101.20] intinya ewallet itu dia
+[1104.48] saldo digital lah yang ada gitu. Karena
+[1107.08] kan kita enggak perlu kayak harus bikin
+[1109.20] rekening dan segala macam. Karena dia
+[1111.04] simpel kan kalau ewallet gitu atau
+[1113.52] dompet digital. Jadi dia tuh kayak ee
+[1115.84] pengeluaran-pengeluaran kecil. Nah,
+[1118.36] selain itu di era digital sekarang
+[1120.88] khususnya di Indonesia ya ada yang
+[1122.52] namanya Kris ya atau singkatan dari
+[1125.36] quick response Code Indonesian Standard.
+[1128.00] Jadi kayak itu ada Kris itu kode yang
+[1131.40] dibuat gitu kan yang dia bentuknya QR
+[1134.48] gitu ya bukan barcode ya. Kalau barcode
+[1136.04] itu yang batang-batang. Nah kalau Kris
+[1137.92] kan dia bentuknya QR kan. Nah, ee yang
+[1141.76] dia itu terstandarisasi di Indonesia
+[1144.76] gitu. Jadi, kita kalau melakukan
+[1146.04] transaksi jual beli pakai Kris itu kan
+[1147.96] dia langsung gitu ya, uang kita yang
+[1150.48] kita beli itu langsung tertransfer atau
+[1152.68] masuk ke rekening penjualnya gitu ya.
+[1154.96] Jadi kita tinggal scan terus itu nanti
+[1158.08] entah dari e-wallet atau dari uang ee
+[1160.76] kalau misalnya kalian sudah cukup tua
+[1162.48] untuk mempunyai mbanking gitu ya. Nah,
+[1165.56] itu nanti dia ee uangnya akan langsung
+[1168.52] ditransfer atau dipindahkan ke rekening
+[1170.60] penjualnya gitu ya. Untuk Kris
+[1179.52] 3, two, one, action.
+[1182.29] [musik]
+[1186.36] Nah, kita sudah membahas tentang
+[1188.28] literasi keuangan. Sekarang kita mau
+[1190.24] membahas tentang perencanaan keuangan
+[1193.32] gitu ya. Jadi kita sudah punya uang,
+[1195.04] kita tahu income kita berapa,
+[1196.72] pengeluaran kita berapa. Sekarang kita
+[1199.00] mau membahas kebutuhan versus keinginan.
+[1202.44] Nah, ada banyak jebakan B ee jebakan
+[1206.12] Batman gitu ya. Misalnya ee orang-orang
+[1209.88] itu misalnya kalian lihat teman-teman ee
+[1212.20] di sekolah kalian gitu ya atau ee di
+[1215.84] keluarga kalian misalnya adik kalian
+[1217.36] gitu ya sering dia kehabisan uang gitu
+[1220.96] ya karena pendapatannya kecil gitu.
+[1224.84] di mereka kira seperti itu gitu ya. Tapi
+[1227.96] padahal sebenarnya pendapatan itu tidak
+[1230.24] berpengaruh karena kan pendapatan
+[1231.68] uangnya ee udah kita terima gitu kan.
+[1234.40] Nah, sebenarnya uang yang kita terima
+[1236.20] itu kadang kita tuh pengin langsung
+[1238.24] beliin sesuatu gitu kan ya. Entah kita
+[1240.20] entah itu kita beli makanan atau entah
+[1242.24] kita beli barang-barang yang kita mau.
+[1244.40] Nah, itu bisa jadi ee jebakan Batman
+[1247.88] gitu ya. Kayak kita ee jebakan
+[1249.60] Batman-nya itu maksudnya kayak di suatu
+[1251.68] hari kita dapat uang R5.000, uang saku
+[1254.00] R5.000 atau Rp10.000 terus itu kita
+[1256.00] langsung belikan jajan gitu ya. Terus
+[1258.08] kita harus terus langsung belikan
+[1259.56] sesuatu. Di suatu saat kita butuh uang
+[1262.52] tersebut gitu ya, tapi kita tidak punya
+[1265.52] uang lagi gitu karena sudah
+[1266.96] dibelanjakan. Nah, itulah kita ee akibat
+[1270.68] dari kita tidak bisa membedakan mana
+[1273.08] yang merupakan kebutuhan, mana yang
+[1275.24] merupakan keinginan. Nah, jebakan itulah
+[1278.56] yang sangat besar gitu ya kalau misalnya
+[1280.76] kita ee enggak bisa mengelola uang yang
+[1283.44] kita punya. Nah, kita bahas dulu tentang
+[1286.12] kebutuhan atau bahasa Inggrisnya needs.
+[1288.88] Needs atau kebutuhan itu adalah hal-hal
+[1292.40] yang harus dipenuhi gitu ya. misalah
+[1295.80] hal-hal yang harus dipenuhi.
+[1298.60] Kalau misalnya ee rumusnya ini ya, kita
+[1301.00] bisa pakai rumus ini. Kalau enggak ada
+[1303.00] itu kita bisa sakit misalnya kita harus
+[1305.48] makan gitu ya atau misalnya kita harus
+[1310.08] minum gitu atau misalnya kita harus ee
+[1315.20] apa itu namanya? Pergi ke sekolah gitu
+[1317.64] ya. Kalau misalnya kita ke sekolah jalan
+[1319.24] kaki kan capek kita sakit nanti apa
+[1321.56] jalan jauh. Nah, maka di sini kita butuh
+[1324.16] transportasi, ya kan? Terus rumus yang
+[1327.00] kedua, kita bisa pakai needs itu sesuatu
+[1329.76] bisa dibilang needs atau kebutuhan.
+[1332.12] Ketika kalau kita enggak punya itu, kita
+[1334.32] bisa dihukum misalnya seragam sekolah,
+[1337.40] topi, ya kan dasi, buku, gitu. Nah,
+[1341.36] terus itu needs-nya kita bisa pakai
+[1343.48] rumus kalau dia enggak ada itu kita
+[1345.68] enggak bisa belajar. Misal alat tulis
+[1348.12] atau misalnya kuota gitu ya. Nah, ini
+[1350.52] merupakan rumus-rumus dari needs gitu.
+[1353.36] Jadi, eh apa itu namanya? Kita bisa
+[1355.72] implementasikan dengan seluruh yang ee
+[1358.64] apa tuh namanya ee kondisi yang ada di
+[1361.20] dalam hidup kita gitu ya. Terus kita cek
+[1363.72] apakah kita kalau enggak ada apakah kita
+[1365.64] betul-betul butuh itu gitu ya. Apakah
+[1367.60] harus benar-benar dipenuhi gitu ya.
+[1370.00] Kayak misalnya tampaknya kita tidak bisa
+[1371.76] belajar. Oh, berarti di sini ada HP.
+[1374.20] Apakah di rumah ada komputer orang tua?
+[1376.24] Apakah di sekolah ada perpustakaan gitu
+[1378.20] kan ya. Nah, ini bisa dicek gitu ya
+[1380.60] untuk mengetahui apakah sesuatu itu
+[1382.68] sebuah needs atau lain gitu ya. Nah, itu
+[1385.52] bisa disesuaikan juga dengan kondisi
+[1387.32] diri sendiri, kebiasaan, dan juga ee apa
+[1390.72] tuh namanya? Kondisi keuangan gitu ya
+[1392.68] teman-teman. Itu untuk kebutuhan atau
+[1395.24] needs. Nah, selanjutnya ada yang namanya
+[1397.88] wants atau keinginan. Kalau wants itu
+[1401.64] hanya sesuatu yang dipengaruhi kepingin
+[1404.44] atau gengsi gitu ya. Nah, misalnya kita
+[1407.12] udah punya sepatu, tapi kita pengin yang
+[1409.24] bagus, lebih bagus lagi. Misalnya kita
+[1410.92] mau yang bermerek gitu atau misalnya
+[1413.28] kita sebenarnya dari rumah udah bawa air
+[1415.20] putih, tapi karena kita lihat
+[1416.60] teman-teman kita beli Taiti ya udah kita
+[1418.76] beli apa ingin beli juga Taiti karena
+[1421.36] kita gengsi dong kalau kita cuma main
+[1423.32] putusih. Nah, keinginan itu adalah
+[1427.04] sebenarnya dia tidak salah gitu ya,
+[1428.60] sahja kita punya keinginan. Tapi
+[1431.16] terkadang kita harus menunda dulu sampai
+[1434.16] kita punya uang lebih gitu ya. Kalau
+[1436.96] misalnya uang kita terbatas gitu. Tapi
+[1439.92] kalau misalnya berdasarkan kehitungan,
+[1441.56] perhitungan dan ee pertimbangan kita, oh
+[1443.92] ini kayaknya enggak apa-apa kok kalau
+[1445.36] kita beli kita masih ada
+[1446.52] persimpanganimpanan uang tabungan, maka
+[1449.28] kita enggak apa-apa beli keinginan.
+[1451.68] Intinya kita kalau misalnya punya uang
+[1454.36] gitu ya, kita pakai aturan bisa pakai
+[1456.28] aturan nih 50, 30, 20, 50, 3020. Nah,
+[1460.68] 502, 3020 itu dibagi uang sakunya
+[1464.84] dibaginya tuh gimana? Misalnya 50% itu
+[1467.20] untuk kebutuhan. Jadi, hal-hal yang kita
+[1469.52] butuhkan ya kayak transportasi, kita
+[1471.92] butuhkan untuk makan gitu ya. Ini bukan
+[1474.44] jajan memang benar-benar uang makan
+[1476.32] gitu. Kemudian 30% itu bisa kita
+[1479.16] alokasikan untuk sesuatu yang kita
+[1481.48] inginkan gitu. Misalnya kita ee pengin
+[1484.40] ee dalam sehari itu kita pasti minum ya
+[1486.88] waktu walaupun enggak sehat kita pengin
+[1488.52] sehari itu minum es-es gitu ya. Entah
+[1490.56] itu boba atau ee es teh gitu kan ya.
+[1493.80] Jadi itu kita bisa alokasikan 30% dari
+[1496.08] uang saku kita.
+[1498.36] Terus itu 20%-nya itu kita bisa masukin
+[1501.08] tabungan. Misalnya nih kita uang kita
+[1503.20] Rp10.000. Oh, berarti 5.000-nya itu
+[1505.88] untuk kebutuhan ya. Karena 50% dari
+[1508.56] 10.000 itu 5.000. Oh, 5.000 ini misalnya
+[1511.48] kita pakai ojek 3.000, kemudian
+[1514.48] 2.000-nya untuk ee apa tuh namanya? Beli
+[1516.92] air putih kalau misalnya habis gitu ya.
+[1519.48] Nah, ons ini kayak misalnya kita berarti
+[1521.68] R30.000 ya eh Rp3.000 gitu untuk beli
+[1524.68] gorengan kah atau kita beli ee permen
+[1528.56] gitu. Nah, ini bisa 2.000-nya itu
+[1530.96] masukkan tabungan. Nah, itu ya. Jadi
+[1533.00] contohnya kita bisa pakai rumus ini
+[1535.24] untuk menghemat gitu ya. Nah, ada juga
+[1539.16] aturan kalau misalnya kita melihat
+[1541.00] sesuatu ya kayak kita pengin banget nih
+[1542.84] membeli sesuatu. Nah, kita boleh nih
+[1545.28] kasih peraturan buat diri sendiri kayak
+[1547.40] oh coba tunggu 24 jam dulu sebelum kita
+[1551.24] membeli. Gitu ya. Jadi kalau misalnya
+[1553.04] kita pengin satu tuh jangan sesuatu itu
+[1554.92] jangan langsung dibeli. Coba kita tunggu
+[1556.80] 1 hari. Karena kadang kalau misalnya
+[1558.64] udah sat hari kayak ah malas ah kayak ke
+[1561.20] sana lagi gitu. kayak oh kayaknya
+[1563.56] sebenarnya enggak butuh-butuh banget sih
+[1564.92] gue untuk beli itu gitu. Nah, terkadang
+[1567.84] kalau kita karena itu terjadi karena
+[1569.80] kadang kita ke pas mau membeli itu cuman
+[1572.84] ke impulse buying impulsif buying aja
+[1575.16] kayak pengin aja gitu dan apa setelah
+[1578.12] kita punya tuh kayak ah gitu sebenarnya
+[1580.48] enggak butuh-butuh amat gitu. Nah
+[1582.04] daripada kita menyesal gitu kan ya ee
+[1584.92] terus itu supaya kita bisa menghemat
+[1586.56] uang sebaiknya tunggu dulu 24 jam apakah
+[1589.76] kita benar-benar butuh apa enggak. Kalau
+[1591.64] enggak ya udah kita enggak perlu.
+[1594.60] Oke.
+[1601.24] Three, two, one, action.
+[1610.68] Nah, sekarang kita udah ee membahas gitu
+[1615.08] ya, gimana eh financial literacy dan
+[1618.76] juga condition yang ada di MIT App
+[1620.92] Inventor. Nah, sekarang kita coba mau
+[1623.12] membuat sebuah project di MIT App
+[1625.76] Inventor. Nah, di sini kita coba cek
+[1630.76] kenapa sih kita dalam ee apa tuh
+[1633.00] namanya? mencatat keuangan lebih baik
+[1635.40] menggunakan komputer gitu ya. Ee apa itu
+[1638.76] namanya? Kenap atau membuat program gitu
+[1641.32] ya. Karena kadang gini ee ketika kita
+[1644.20] punya uang tuh atau kita ee mencatatnya
+[1647.20] masih manual kadang tuh kita masih ee
+[1650.32] lupa gitu ya atau kadang kita tuh bisa
+[1652.36] manipulasi gitu ya yang kayak misalnya
+[1654.24] kita uang kita Rp10.000 tapi kita
+[1656.84] manipulasi oh kita uang yang masuk tuh
+[1659.08] cuman R5.000 gitu ya. Ee apa tuh
+[1661.60] namanya? Mm yang dikasih usak orang tua
+[1664.56] cuma 55.000, berarti 5.000-nya kita bisa
+[1666.28] langsung belikan apa yang kita mau gitu.
+[1668.40] 5.000-nya bisa kita catat gitu kan. Nah,
+[1671.04] ini ee apa itu namanya? Kan kadang kita
+[1673.28] khilaf ya, kayak sering lapar mata gitu
+[1675.16] kan ya. Kita bisa ee salah hitung
+[1677.32] ataupun kayak kita bisa manipulasi. Tapi
+[1679.76] kalau komputer tuh kan dia enggak bisa
+[1681.08] bohong. Kalau kita bisa kita bikin
+[1683.08] aplikasi gitu ya. Misalnya aplikasinya
+[1684.76] nanti akan ee mencatat berdasarkan
+[1687.36] mbanking atau notifikasi kita. Karena
+[1689.72] itu kan kita berapa yang ditransfer
+[1691.64] misalnya R.000, kita enggak bisa ditulis
+[1693.40] 5.000 karena pemasukannya itu buktinya
+[1695.80] itu apa itu namanya 10.000 bukan R5.000.
+[1699.04] Nah, terus tuh kalau misalnya kita pakai
+[1700.92] komputer juga gitu kita bisa
+[1702.40] menggabungkan tentang ee logika if ya
+[1705.24] kan yang ada di dalam pemrograman dan
+[1707.48] juga apa matematika keuangan yang ada di
+[1710.32] app Inventor. Jadi kita bisa lebih mudah
+[1712.80] dan kita bisa disiplin gitu dalam
+[1714.80] mencatat keuangan kita. Oke. Pertama
+[1717.96] mungkin kita ee bisa bikin misalnya
+[1721.04] kalkulator yang dia menghitung ee apa
+[1724.12] itu namanya? Supaya bukan menghitung dia
+[1727.08] ini bisa mengecek apakah kita bisa beli
+[1729.44] barangnya sekarang atau bisa ee ditunggu
+[1732.52] nanti dulu gitu ya. Nah, di sini kita ee
+[1735.60] bikin misalnya ada label harga barang
+[1738.40] impian. Nah, di sini ada teks area yang
+[1740.88] dia nanti Xbox yang dia masukin eh harga
+[1744.00] barangnya itu harga barang yang kita mau
+[1746.24] tuh berapa. Kemudian ada label lagi gitu
+[1749.68] kan. Tabungan kita emangnya sekarang
+[1751.00] sisa berapa? Nah, ada textbox lagi sama
+[1754.12] ada button yang nanti m-trigger
+[1756.48] ngeceknya. Nah, nanti ada label status
+[1759.40] juga yang nanti dia akan muncul ee apa?
+[1762.68] Berdasarkan kondisi yang kita punya gitu
+[1764.88] ya. Kondisinya gimana? Kalau misalnya ee
+[1768.00] tabungan kita tuh lebih besar dari tab
+[1771.72] lebih besar dari ee harga barang yang
+[1774.52] kita mau beli, maka berarti statusnya
+[1777.16] mungkin kita bisa ya udah enggak apa-apa
+[1778.76] kalau misalnya butuh ee bisa kamu beli
+[1781.12] sekarang gitu. Kalau enggak kalau
+[1782.72] misalnya harganya barangnya Rp50.000
+[1784.88] tapi tabungannya baru Rp20.000 berarti
+[1786.84] statusnya oh kamu enggak bisa beli
+[1789.00] sekarang gitu ya. Nah, di sini kita bisa
+[1792.56] tambahkan kodenya seperti ini. Nah,
+[1794.84] ketika button-nya diklik, ya kan
+[1797.04] triggernya event-nya adalah ketika
+[1798.88] button-nya itu tadi diklik, dia bikin
+[1801.76] apa? Mengecek kondisinya dulu. Kalau
+[1803.68] tabungan kita itu lebih besar dari harga
+[1808.00] barang yang kita punya, maka kita bisa
+[1811.20] print uangnya cukup, boleh beli sekarang
+[1813.76] gitu. Tapi kalau misalnya enggak gitu
+[1816.72] ya, dia enggak lebih besar gitu ya,
+[1818.44] misalnya ee berarti kondisi yang ini
+[1820.56] salah gitu, maka yang then ini dia akan
+[1822.92] dikip dia programnya akan langsung
+[1825.76] menjalankan yang ada di else ini tadi
+[1828.60] gitu ya. Sesimpel itu bikinnya kok. Oke.
+[1831.88] Nah, ee untuk menghitung ke ee untuk
+[1834.80] menghitung itu kita bisa pakai ini ya e
+[1837.32] apa tuh namanya? Pakai M yang ada di
+[1839.40] dalam app Inventor untuk mengurangin
+[1841.68] gitu ya. Jadi kita bisa mengurangi ee
+[1844.72] teks berdasarkan teks area harga, harga
+[1847.60] barang gitu ya, dan juga teks area
+[1849.72] tabungan gitu. Nah, inilah logika
+[1853.52] pengurangan dasar harga barang dikurangi
+[1855.64] harga tabungan kita gitu ya. Oke, itu ee
+[1860.08] bentuk app-nya. Nah, terus itu kadang
+[1863.12] kita mau ee menampilkan
+[1865.96] pas di ini ya, pas uangnya kurang itu
+[1868.16] kita mau nampilkan ee tulisannya uangnya
+[1871.16] kurang R30.000 gitu ya. Kalau misalnya
+[1873.72] kita mau ngasih tahu, "Oh, kamu mau beli
+[1875.84] sesuatu tapi uangmu kurang." Berarti
+[1878.24] kita kasih tahu, "Oh, uangmu kurang
+[1879.80] segini nih." gitu. Nah, untuk
+[1881.64] menambahkan teks dan juga angka kan
+[1884.40] kalau angka ini kan hasil pengurangan
+[1886.12] ini ya, harus hasil penghitungan ini ya.
+[1888.24] Maka kita bisa tambahkan yang namanya
+[1890.56] join
+[1892.28] kita tambahin teks kurang dari kurang
+[1895.52] atau kurang Rp gitu ya. Baru kita
+[1897.52] tambahin di bawahnya kita masukin ee
+[1899.96] rumusnya tadi langsung itu enggak
+[1901.68] masalah gitu ya. Nanti ee hasil join ini
+[1905.32] kita masukin ke dalam label statusnya.
+[1908.36] Oke.
+[1920.92] 3, two, one, action. [musik]
+[1926.48] Nah, Teman-teman sekarang waktunya
+[1928.48] kalian mengerjakan. Buatkan project
+[1931.04] sederhana entah itu aplikasi ee dia
+[1934.40] boleh aplikasinya bebas ya. Boleh sama
+[1936.64] seperti yang tadi gitu ya. membuat
+[1939.12] aplikasi yang ee menentukan apakah kita
+[1941.88] boleh beli barang sesuatu barang apa
+[1943.76] belum gitu ya atau dia barang ee
+[1946.60] aplikasinya simpel aja kayak misalnya
+[1949.92] menghitung tabungan kita gitu atau dia
+[1953.00] bisa mengecek kalau dia masukin uang
+[1955.04] gitu ya misalnya Rp50.000. Nah ee kita
+[1958.16] mau ee dia aplikasinya bisa mengeluarkan
+[1961.16] 50 30 gitu. Berarti kalau uang kita
+[1964.36] Rp100.000 R000. Nah, berarti dia 50-nya
+[1967.56] untuk needs itu berapa ribu gitu.
+[1970.12] Berarti Rp50.000 kan. Terus itu 30-nya
+[1973.56] yang wants-nya. Oh, berarti barangnya
+[1975.36] kita kita uangnya bisa belanjakan
+[1977.16] R30.000 dan tabungan itu berarti sisanya
+[1980.24] 20 berarti Rp200.000. Nah, itu boleh
+[1982.80] dikerjakan. Lalu kumpulkan di bok di
+[1985.80] bawah ini.

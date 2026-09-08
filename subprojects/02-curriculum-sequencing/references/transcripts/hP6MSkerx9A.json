@@ -1,0 +1,3912 @@
+[
+  {
+    "text": "Nah, Teman-teman, dalam bahasa",
+    "start": 2.24,
+    "duration": 5.84
+  },
+  {
+    "text": "pemrograman Python ada yang disebut",
+    "start": 4.48,
+    "duration": 6.6
+  },
+  {
+    "text": "dengan namanya modular desain. Apa sih",
+    "start": 8.08,
+    "duration": 5.04
+  },
+  {
+    "text": "modular desain itu? Yuk, kita perhatikan",
+    "start": 11.08,
+    "duration": 6.8
+  },
+  {
+    "text": "slide berikut ini. Modular desain adalah",
+    "start": 13.12,
+    "duration": 9.52
+  },
+  {
+    "text": "ee cara program membagi sesuatu program",
+    "start": 17.88,
+    "duration": 7.399
+  },
+  {
+    "text": "yang besar menjadi bagian-bagian kecil",
+    "start": 22.64,
+    "duration": 5.52
+  },
+  {
+    "text": "sehingga programnya bisa lebih teratur.",
+    "start": 25.279,
+    "duration": 5.881
+  },
+  {
+    "text": "Nah, setiap bagian yang dibagi tadi itu",
+    "start": 28.16,
+    "duration": 4.88
+  },
+  {
+    "text": "punya tugasnya sendiri, Mas. Tugasnya",
+    "start": 31.16,
+    "duration": 3.8
+  },
+  {
+    "text": "sendiri masing-masing gitu ya. Dalam",
+    "start": 33.04,
+    "duration": 4.72
+  },
+  {
+    "text": "Python bagian bagian kecil ini biasanya",
+    "start": 34.96,
+    "duration": 6.04
+  },
+  {
+    "text": "disebut dan dibuat ee menjadi sebuah",
+    "start": 37.76,
+    "duration": 5.84
+  },
+  {
+    "text": "function ya, Teman-teman.",
+    "start": 41.0,
+    "duration": 5.16
+  },
+  {
+    "text": "Sederhananya seperti ini. Ketika program",
+    "start": 43.6,
+    "duration": 6.2
+  },
+  {
+    "text": "yang kita buat itu ada 100 line atau",
+    "start": 46.16,
+    "duration": 6.76
+  },
+  {
+    "text": "1000 line gitu ya, 100.000 Ibu baris,",
+    "start": 49.8,
+    "duration": 4.72
+  },
+  {
+    "text": "program tersebut perlu dipotong",
+    "start": 52.92,
+    "duration": 5.479
+  },
+  {
+    "text": "kecil-kecil agar kita mudah dalam ee",
+    "start": 54.52,
+    "duration": 6.039
+  },
+  {
+    "text": "memperbaiki ketika ada bug atau ada",
+    "start": 58.399,
+    "duration": 4.84
+  },
+  {
+    "text": "perubahan-perubahan minor gitu ya. Dan",
+    "start": 60.559,
+    "duration": 5.56
+  },
+  {
+    "text": "juga agar kita sebagai developer lebih",
+    "start": 63.239,
+    "duration": 5.52
+  },
+  {
+    "text": "mudah juga untuk mengembangkannya nanti",
+    "start": 66.119,
+    "duration": 6.801
+  },
+  {
+    "text": "atau ee membuat kodenya gitu ya.",
+    "start": 68.759,
+    "duration": 8.161
+  },
+  {
+    "text": "Ah, enggak jelas, enggak jelas,",
+    "start": 72.92,
+    "duration": 7.44
+  },
+  {
+    "text": "enggak jelas, enggak jelas.",
+    "start": 76.92,
+    "duration": 7.519
+  },
+  {
+    "text": "Ulang ulang ulang ulang ulang ulang.",
+    "start": 80.36,
+    "duration": 4.079
+  },
+  {
+    "text": "Oke, Teman-teman. Sekarang di dalam",
+    "start": 86.32,
+    "duration": 5.72
+  },
+  {
+    "text": "bahasa pemrograman Python dan di dalam",
+    "start": 88.92,
+    "duration": 5.76
+  },
+  {
+    "text": "bahasa pemrograman eh in general ada loh",
+    "start": 92.04,
+    "duration": 4.759
+  },
+  {
+    "text": "yang disebut dengan modular desain. Apa",
+    "start": 94.68,
+    "duration": 4.68
+  },
+  {
+    "text": "sih sebenarnya modular desain itu? Yuk,",
+    "start": 96.799,
+    "duration": 5.32
+  },
+  {
+    "text": "perhatikan slide berikut. Modular desain",
+    "start": 99.36,
+    "duration": 8.0
+  },
+  {
+    "text": "itu adalah cara sebuah program besar",
+    "start": 102.119,
+    "duration": 7.241
+  },
+  {
+    "text": "dibagi menjadi bagian-bagian yang lebih",
+    "start": 107.36,
+    "duration": 5.64
+  },
+  {
+    "text": "kecil. Nah, setiap bagian kecil tadi itu",
+    "start": 109.36,
+    "duration": 6.359
+  },
+  {
+    "text": "dia memiliki tugasnya masing-masing. Di",
+    "start": 113.0,
+    "duration": 5.32
+  },
+  {
+    "text": "dalam bahasa peman Python, bagian-bagian",
+    "start": 115.719,
+    "duration": 4.881
+  },
+  {
+    "text": "kecil ini yang dibagi-bagi tadi itu",
+    "start": 118.32,
+    "duration": 5.119
+  },
+  {
+    "text": "biasanya disebut juga dengan function.",
+    "start": 120.6,
+    "duration": 5.159
+  },
+  {
+    "text": "Nah, bayangkan kalian membuat sebuah",
+    "start": 123.439,
+    "duration": 4.641
+  },
+  {
+    "text": "program gitu ya. programnya ada 100 line",
+    "start": 125.759,
+    "duration": 4.801
+  },
+  {
+    "text": "atau 1.000 line. Nah, dari program itu",
+    "start": 128.08,
+    "duration": 5.56
+  },
+  {
+    "text": "kan kita kalau langsung nulis 1000 baris",
+    "start": 130.56,
+    "duration": 5.039
+  },
+  {
+    "text": "tuh kan kadang kalau pertama kalau",
+    "start": 133.64,
+    "duration": 4.56
+  },
+  {
+    "text": "misalnya kita mau memperbaiki bug-nya",
+    "start": 135.599,
+    "duration": 4.441
+  },
+  {
+    "text": "atau menambahkan fiturnya itu kan kita",
+    "start": 138.2,
+    "duration": 4.319
+  },
+  {
+    "text": "bingung ya harus mencari dari 100 atau",
+    "start": 140.04,
+    "duration": 5.08
+  },
+  {
+    "text": "1000 baris tadi. Nah, ketika kita",
+    "start": 142.519,
+    "duration": 4.601
+  },
+  {
+    "text": "membagi-bagi kode kita menjadi",
+    "start": 145.12,
+    "duration": 5.36
+  },
+  {
+    "text": "bagian-bagian kecil ee atau biasa",
+    "start": 147.12,
+    "duration": 4.88
+  },
+  {
+    "text": "disebut dengan function itu kan kita",
+    "start": 150.48,
+    "duration": 3.64
+  },
+  {
+    "text": "lebih mudah jauh lebih mudah mencari",
+    "start": 152.0,
+    "duration": 4.08
+  },
+  {
+    "text": "berdasarkan bagian-bagian kita tadi gitu",
+    "start": 154.12,
+    "duration": 2.759
+  },
+  {
+    "text": "ya.",
+    "start": 156.08,
+    "duration": 3.76
+  },
+  {
+    "text": "Nah, untuk lebih memahami tentang",
+    "start": 156.879,
+    "duration": 5.041
+  },
+  {
+    "text": "modular desain, coba bayangkan sebuah",
+    "start": 159.84,
+    "duration": 6.039
+  },
+  {
+    "text": "restoran. Di dalam restoran kan dalam",
+    "start": 161.92,
+    "duration": 7.399
+  },
+  {
+    "text": "kita tidak satu orang tidak mengerjakan",
+    "start": 165.879,
+    "duration": 6.321
+  },
+  {
+    "text": "banyak hal. Di dalam restoran ada",
+    "start": 169.319,
+    "duration": 5.401
+  },
+  {
+    "text": "beberapa bagian-bagian yang berjalan",
+    "start": 172.2,
+    "duration": 4.84
+  },
+  {
+    "text": "secara bersamaan. Misalnya ada orang",
+    "start": 174.72,
+    "duration": 4.519
+  },
+  {
+    "text": "yang bertugas menjadi sebagai kasir, ada",
+    "start": 177.04,
+    "duration": 4.52
+  },
+  {
+    "text": "yang menjadi koki, ada yang menjadi",
+    "start": 179.239,
+    "duration": 5.321
+  },
+  {
+    "text": "pelayan atau ada yang menjadi ee petugas",
+    "start": 181.56,
+    "duration": 4.599
+  },
+  {
+    "text": "kebersihan.",
+    "start": 184.56,
+    "duration": 3.56
+  },
+  {
+    "text": "Nah, setiap bagian-bagiannya ini",
+    "start": 186.159,
+    "duration": 5.16
+  },
+  {
+    "text": "memiliki tugasnya masing-masing yang",
+    "start": 188.12,
+    "duration": 5.36
+  },
+  {
+    "text": "kalau kita",
+    "start": 191.319,
+    "duration": 4.28
+  },
+  {
+    "text": "masukkan ke dalam program gitu ya,",
+    "start": 193.48,
+    "duration": 4.36
+  },
+  {
+    "text": "program itu sama juga seperti itu. Jadi,",
+    "start": 195.599,
+    "duration": 4.72
+  },
+  {
+    "text": "setiap function itu punya tugas yang",
+    "start": 197.84,
+    "duration": 4.84
+  },
+  {
+    "text": "masing-masing yang kita bagi-bagi untuk",
+    "start": 200.319,
+    "duration": 6.761
+  },
+  {
+    "text": "memudahkan kita. Nah, sekarang coba kita",
+    "start": 202.68,
+    "duration": 8.759
+  },
+  {
+    "text": "lihat nih kalau program tidak kalau ada",
+    "start": 207.08,
+    "duration": 6.2
+  },
+  {
+    "text": "ee program yang tidak menggunakan",
+    "start": 211.439,
+    "duration": 4.16
+  },
+  {
+    "text": "modular desain atau tanpa menggunakan",
+    "start": 213.28,
+    "duration": 3.959
+  },
+  {
+    "text": "function itu coba lihat deh seperti ini",
+    "start": 215.599,
+    "duration": 5.961
+  },
+  {
+    "text": "ya. Jadi ee ini ada sebuah program yang",
+    "start": 217.239,
+    "duration": 7.041
+  },
+  {
+    "text": "pertama dia meminta input ya programnya",
+    "start": 221.56,
+    "duration": 6.039
+  },
+  {
+    "text": "ya. Dia minta nama, harga nama barangnya",
+    "start": 224.28,
+    "duration": 5.519
+  },
+  {
+    "text": "gitu ya, harga barangnya, terus tuh",
+    "start": 227.599,
+    "duration": 3.92
+  },
+  {
+    "text": "jumlah barang yang dibeli gitu misalnya.",
+    "start": 229.799,
+    "duration": 4.761
+  },
+  {
+    "text": "ini anggap aja ini ee program kasir.",
+    "start": 231.519,
+    "duration": 5.841
+  },
+  {
+    "text": "Kemudian setelah dia input di bagian",
+    "start": 234.56,
+    "duration": 6.72
+  },
+  {
+    "text": "tengah itu ada bagian yang menghitung",
+    "start": 237.36,
+    "duration": 6.079
+  },
+  {
+    "text": "perhitungan ininya ya kayak total",
+    "start": 241.28,
+    "duration": 4.72
+  },
+  {
+    "text": "harganya, terus itu total diskonnya,",
+    "start": 243.439,
+    "duration": 8.36
+  },
+  {
+    "text": "terus itu ada jumlah ee besar barang",
+    "start": 246.0,
+    "duration": 7.76
+  },
+  {
+    "text": "dan juga harganya yang harus dibayarkan",
+    "start": 251.799,
+    "duration": 5.12
+  },
+  {
+    "text": "oleh pengguna gitu ya. Nah, kemudian di",
+    "start": 253.76,
+    "duration": 6.64
+  },
+  {
+    "text": "paling bawah itu programnya ada dia",
+    "start": 256.919,
+    "duration": 5.0
+  },
+  {
+    "text": "menampilkan hasil dari",
+    "start": 260.4,
+    "duration": 3.44
+  },
+  {
+    "text": "perhitungan-perhitungan yang sudah kita",
+    "start": 261.919,
+    "duration": 4.921
+  },
+  {
+    "text": "proses tadi. Nah, sekarang yang kita",
+    "start": 263.84,
+    "duration": 5.4
+  },
+  {
+    "text": "lihat ini kebetulan programnya itu masih",
+    "start": 266.84,
+    "duration": 6.28
+  },
+  {
+    "text": "sedikit ya, masih ada totalnya 6 7 8 9",
+    "start": 269.24,
+    "duration": 6.6
+  },
+  {
+    "text": "10. Ada 10 baris. Bayangkan kalau kalian",
+    "start": 273.12,
+    "duration": 5.639
+  },
+  {
+    "text": "membuat 100 bahkan 1.000. Misalnya ada",
+    "start": 275.84,
+    "duration": 5.919
+  },
+  {
+    "text": "perhitungannya sendiri aja membutuhkan",
+    "start": 278.759,
+    "duration": 6.241
+  },
+  {
+    "text": "500 baris gitu. Nah, bayangkan itu kan",
+    "start": 281.759,
+    "duration": 4.961
+  },
+  {
+    "text": "agak susah ya, Teman-teman ya, ketika",
+    "start": 285.0,
+    "duration": 4.24
+  },
+  {
+    "text": "kita mau mencari oh mana sih yang",
+    "start": 286.72,
+    "duration": 4.919
+  },
+  {
+    "text": "digunakan untuk menghitung totalnya,",
+    "start": 289.24,
+    "duration": 4.36
+  },
+  {
+    "text": "yang mana sih yang digunakan untuk",
+    "start": 291.639,
+    "duration": 3.921
+  },
+  {
+    "text": "menghitung diskonnya gitu. Misalnya kita",
+    "start": 293.6,
+    "duration": 4.08
+  },
+  {
+    "text": "enggak mau diskonnya 10%, kita mau",
+    "start": 295.56,
+    "duration": 5.479
+  },
+  {
+    "text": "naikin diskonnya jadi 50%. Nah, itu kan",
+    "start": 297.68,
+    "duration": 5.84
+  },
+  {
+    "text": "kalau programnya sedikit seperti ini 10",
+    "start": 301.039,
+    "duration": 4.041
+  },
+  {
+    "text": "baris mungkin bisa terlihat ya.",
+    "start": 303.52,
+    "duration": 4.32
+  },
+  {
+    "text": "Bayangkan kalau programnya ada ribu atau",
+    "start": 305.08,
+    "duration": 5.92
+  },
+  {
+    "text": "ratusan ribu sih pasti bingung kan. Nah,",
+    "start": 307.84,
+    "duration": 6.24
+  },
+  {
+    "text": "ketika kita berubah atau beranjak gitu",
+    "start": 311.0,
+    "duration": 6.36
+  },
+  {
+    "text": "ya menggunakan kode dengan modular",
+    "start": 314.08,
+    "duration": 6.559
+  },
+  {
+    "text": "design ini bentuknya akan seperti ini.",
+    "start": 317.36,
+    "duration": 5.558
+  },
+  {
+    "text": "Jauh lebih rapi ya, Teman-teman. Nah,",
+    "start": 320.639,
+    "duration": 3.321
+  },
+  {
+    "text": "[berdehem] ketika kita menggunakan",
+    "start": 322.918,
+    "duration": 3.281
+  },
+  {
+    "text": "modular desain atau menggunakan eh",
+    "start": 323.96,
+    "duration": 5.6
+  },
+  {
+    "text": "Python, function Python ya di sini kita",
+    "start": 326.199,
+    "duration": 5.521
+  },
+  {
+    "text": "lihat kita definisikan dulu",
+    "start": 329.56,
+    "duration": 3.838
+  },
+  {
+    "text": "function-function-nya yang digunakan",
+    "start": 331.72,
+    "duration": 3.039
+  },
+  {
+    "text": "[berdehem] untuk memproses",
+    "start": 333.398,
+    "duration": 4.042
+  },
+  {
+    "text": "informasi-informasi tadi. Oh, kalau kita",
+    "start": 334.759,
+    "duration": 6.401
+  },
+  {
+    "text": "mau menghitung totalnya itu berarti kita",
+    "start": 337.44,
+    "duration": 6.479
+  },
+  {
+    "text": "bikin rumus. Terus itu di sini ada",
+    "start": 341.16,
+    "duration": 5.36
+  },
+  {
+    "text": "parameternya gitu ya, berapa harganya,",
+    "start": 343.919,
+    "duration": 4.641
+  },
+  {
+    "text": "berapa banyak barangnya, terus itu nanti",
+    "start": 346.52,
+    "duration": 3.92
+  },
+  {
+    "text": "dia akan ngr [berdehem] supaya bisa",
+    "start": 348.56,
+    "duration": 3.96
+  },
+  {
+    "text": "diproses lagi ya. ee hasil",
+    "start": 350.44,
+    "duration": 4.759
+  },
+  {
+    "text": "perhitungannya ke entah itu dimasukkan",
+    "start": 352.52,
+    "duration": 4.679
+  },
+  {
+    "text": "ke dalam function lain atau langsung",
+    "start": 355.199,
+    "duration": 5.361
+  },
+  {
+    "text": "dihitung di dalam ee line baris kodenya",
+    "start": 357.199,
+    "duration": 6.081
+  },
+  {
+    "text": "gitu ya. Di sini ada disun dan di sini",
+    "start": 360.56,
+    "duration": 5.32
+  },
+  {
+    "text": "ada final price-nya. Jadi kita sangat",
+    "start": 363.28,
+    "duration": 4.96
+  },
+  {
+    "text": "lebih mudah lagi ya dalam mencari oh",
+    "start": 365.88,
+    "duration": 4.039
+  },
+  {
+    "text": "misalnya kita mau mengganti diskonnya",
+    "start": 368.24,
+    "duration": 4.32
+  },
+  {
+    "text": "dari 10% jadi 50%. Oh berarti kita",
+    "start": 369.919,
+    "duration": 5.0
+  },
+  {
+    "text": "tinggal cari keyword-nya atau",
+    "start": 372.56,
+    "duration": 4.52
+  },
+  {
+    "text": "function-nya yang membuat menambahkan",
+    "start": 374.919,
+    "duration": 5.521
+  },
+  {
+    "text": "diskon gitu ya. Nah, ini diskonnya 0,1",
+    "start": 377.08,
+    "duration": 6.519
+  },
+  {
+    "text": "kita ganti jadi 0,5 kalau 50% gitu ya",
+    "start": 380.44,
+    "duration": 5.96
+  },
+  {
+    "text": "teman-teman ya. Jadi memudahkan kita",
+    "start": 383.599,
+    "duration": 5.6
+  },
+  {
+    "text": "kalau misalnya mencari bug atau untuk",
+    "start": 386.4,
+    "duration": 4.76
+  },
+  {
+    "text": "menambahkan feature gitu. Misalnya di",
+    "start": 389.199,
+    "duration": 3.681
+  },
+  {
+    "text": "sini dia dapat diskon. Kalau misalnya",
+    "start": 391.16,
+    "duration": 4.12
+  },
+  {
+    "text": "dia belanjanya quantity-nya lebih dari",
+    "start": 392.88,
+    "duration": 6.319
+  },
+  {
+    "text": "16 barang, diskonnya jadi 20 gitu. Nah,",
+    "start": 395.28,
+    "duration": 6.28
+  },
+  {
+    "text": "itu kan bisa kita ee tambahkan fiturnya",
+    "start": 399.199,
+    "duration": 4.4
+  },
+  {
+    "text": "di sini gitu tanpa mengganggu program",
+    "start": 401.56,
+    "duration": 5.68
+  },
+  {
+    "text": "yang lain gitu ya. Nah, kenapa sih",
+    "start": 403.599,
+    "duration": 5.801
+  },
+  {
+    "text": "modular desain itu sangat berguna? Ya,",
+    "start": 407.24,
+    "duration": 3.959
+  },
+  {
+    "text": "seperti yang kita lihat sendiri tadi ya,",
+    "start": 409.4,
+    "duration": 3.88
+  },
+  {
+    "text": "ketika kita menggunakan modular desain,",
+    "start": 411.199,
+    "duration": 4.641
+  },
+  {
+    "text": "program kita tuh jadi lebih mudah dibaca",
+    "start": 413.28,
+    "duration": 4.28
+  },
+  {
+    "text": "dan kita tuh bisa mengubah atau",
+    "start": 415.84,
+    "duration": 4.199
+  },
+  {
+    "text": "menambahkan fitur tadi tanpa mengubah",
+    "start": 417.56,
+    "duration": 4.56
+  },
+  {
+    "text": "atau merusak yang lainnya, gitu.",
+    "start": 420.039,
+    "duration": 3.921
+  },
+  {
+    "text": "Bayangin kalau kita program sebelumnya",
+    "start": 422.12,
+    "duration": 4.199
+  },
+  {
+    "text": "nih, kita yang di sini kita mau nambahin",
+    "start": 423.96,
+    "duration": 5.88
+  },
+  {
+    "text": "if-if tadi gitu ya. Ee kalau if quantity",
+    "start": 426.319,
+    "duration": 7.201
+  },
+  {
+    "text": "lebih dari 20 disount plus 20% gitu",
+    "start": 429.84,
+    "duration": 6.32
+  },
+  {
+    "text": "misalnya. Nah, ini kan programnya akan",
+    "start": 433.52,
+    "duration": 3.959
+  },
+  {
+    "text": "jadi hancur nih ya. Jadi, dia akan",
+    "start": 436.16,
+    "duration": 4.28
+  },
+  {
+    "text": "menambahkan lagi baris satu terus nanti",
+    "start": 437.479,
+    "duration": 5.361
+  },
+  {
+    "text": "malah bingung nyarinya.",
+    "start": 440.44,
+    "duration": 4.039
+  },
+  {
+    "text": "Kemudian kita bisa menggunakan",
+    "start": 442.84,
+    "duration": 3.4
+  },
+  {
+    "text": "function-nya berulang kali gitu ya. Jadi",
+    "start": 444.479,
+    "duration": 4.081
+  },
+  {
+    "text": "kalau misalnya kita bikin function",
+    "start": 446.24,
+    "duration": 4.239
+  },
+  {
+    "text": "misalnya functionnya get discount terus",
+    "start": 448.56,
+    "duration": 3.8
+  },
+  {
+    "text": "itu disunnya di dalamnya ada if. Nah,",
+    "start": 450.479,
+    "duration": 4.16
+  },
+  {
+    "text": "itu kan kita tinggal panggil aja",
+    "start": 452.36,
+    "duration": 4.44
+  },
+  {
+    "text": "function yang sudah kita buat tadi tanpa",
+    "start": 454.639,
+    "duration": 4.761
+  },
+  {
+    "text": "harus membuat yang baru gitu kan. Terus",
+    "start": 456.8,
+    "duration": 4.28
+  },
+  {
+    "text": "itu kalau ada error kita bisa lebih",
+    "start": 459.4,
+    "duration": 4.919
+  },
+  {
+    "text": "mencepat mencarinya. Kemudian kalau kita",
+    "start": 461.08,
+    "duration": 5.0
+  },
+  {
+    "text": "proyeknya tadi sudah 100usan bahkan",
+    "start": 464.319,
+    "duration": 3.921
+  },
+  {
+    "text": "ratus ribuan line itu dia bisa",
+    "start": 466.08,
+    "duration": 4.32
+  },
+  {
+    "text": "terstruktur dan lebih teratur terlihat.",
+    "start": 468.24,
+    "duration": 6.399
+  },
+  {
+    "text": "Nah, itu untuk modular design. Nah, di",
+    "start": 470.4,
+    "duration": 6.6
+  },
+  {
+    "text": "dalam bahasa peman Python selain modular",
+    "start": 474.639,
+    "duration": 4.441
+  },
+  {
+    "text": "desain ada yang disebut juga dengan",
+    "start": 477.0,
+    "duration": 5.12
+  },
+  {
+    "text": "reusable code atau kode yang bisa kita",
+    "start": 479.08,
+    "duration": 5.92
+  },
+  {
+    "text": "pakai ulang. Contohnya misalnya di sini",
+    "start": 482.12,
+    "duration": 5.72
+  },
+  {
+    "text": "kita mempunyai sebuah function yang di",
+    "start": 485.0,
+    "duration": 4.68
+  },
+  {
+    "text": "mana dia",
+    "start": 487.84,
+    "duration": 4.84
+  },
+  {
+    "text": "menghitung ini ya total harganya. Jadi",
+    "start": 489.68,
+    "duration": 6.519
+  },
+  {
+    "text": "di sini dia masukin harga terus itu",
+    "start": 492.68,
+    "duration": 5.16
+  },
+  {
+    "text": "banyak barang yang dibeli terus nanti",
+    "start": 496.199,
+    "duration": 4.56
+  },
+  {
+    "text": "dia ng-retn. Nah di sini function yang",
+    "start": 497.84,
+    "duration": 5.919
+  },
+  {
+    "text": "ini kita gunakan untuk menghitung total",
+    "start": 500.759,
+    "duration": 4.88
+  },
+  {
+    "text": "belanja makanan.",
+    "start": 503.759,
+    "duration": 4.801
+  },
+  {
+    "text": "Terus itu kalau misalnya kita",
+    "start": 505.639,
+    "duration": 5.481
+  },
+  {
+    "text": "gunakan ulang kodenya misalnya kita ada",
+    "start": 508.56,
+    "duration": 5.88
+  },
+  {
+    "text": "project membuat ee",
+    "start": 511.12,
+    "duration": 5.719
+  },
+  {
+    "text": "di toko alat tulis gitu misalnya berarti",
+    "start": 514.44,
+    "duration": 4.8
+  },
+  {
+    "text": "di sini dia tinggal ubah aja menghitung",
+    "start": 516.839,
+    "duration": 5.2
+  },
+  {
+    "text": "total pembilian alat tulis atau kita",
+    "start": 519.24,
+    "duration": 5.36
+  },
+  {
+    "text": "gunakan kembali kodenya untuk menghitung",
+    "start": 522.039,
+    "duration": 5.721
+  },
+  {
+    "text": "modal usaha atau untuk membayar tiket.",
+    "start": 524.6,
+    "duration": 5.6
+  },
+  {
+    "text": "Nah, kode ini tadi ya walaupun simpel",
+    "start": 527.76,
+    "duration": 5.079
+  },
+  {
+    "text": "itu bisa dipakai berulang-ulang kali",
+    "start": 530.2,
+    "duration": 4.759
+  },
+  {
+    "text": "tanpa harus mengubah banyak hal gitu ya.",
+    "start": 532.839,
+    "duration": 3.801
+  },
+  {
+    "text": "Paling yang diubah cuma nama",
+    "start": 534.959,
+    "duration": 4.32
+  },
+  {
+    "text": "function-nya gitu ya atau nama ee",
+    "start": 536.64,
+    "duration": 5.4
+  },
+  {
+    "text": "parameternya. Kan intinya dia sama",
+    "start": 539.279,
+    "duration": 6.24
+  },
+  {
+    "text": "rumusnya sama terus itu ee parameternya",
+    "start": 542.04,
+    "duration": 5.44
+  },
+  {
+    "text": "ada sama namanya semuanya sama gitu ya.",
+    "start": 545.519,
+    "duration": 4.281
+  },
+  {
+    "text": "dan kita bisa ulang-ulang, kita gunakan",
+    "start": 547.48,
+    "duration": 4.84
+  },
+  {
+    "text": "kembali kode kode yang sudah kita buat",
+    "start": 549.8,
+    "duration": 6.479
+  },
+  {
+    "text": "tadi. Nah, di dalam program modular",
+    "start": 552.32,
+    "duration": 6.84
+  },
+  {
+    "text": "design kadang ada beberapa error nih.",
+    "start": 556.279,
+    "duration": 5.961
+  },
+  {
+    "text": "Nah, eh untuk bagi yang baru belajar",
+    "start": 559.16,
+    "duration": 6.119
+  },
+  {
+    "text": "bahasa permogam Python, kadang ketika",
+    "start": 562.24,
+    "duration": 6.0
+  },
+  {
+    "text": "kita ee mengikan kode kadang kita tidak",
+    "start": 565.279,
+    "duration": 5.041
+  },
+  {
+    "text": "sadar kalau kita melakukan kesalahan.",
+    "start": 568.24,
+    "duration": 3.839
+  },
+  {
+    "text": "Nah, misalnya nih dia harusnya",
+    "start": 570.32,
+    "duration": 3.519
+  },
+  {
+    "text": "menghitung total ya, karena yang",
+    "start": 572.079,
+    "duration": 4.121
+  },
+  {
+    "text": "menghitung total ada harga sama jumlah",
+    "start": 573.839,
+    "duration": 5.68
+  },
+  {
+    "text": "barang. Tapi di sini rumusnya",
+    "start": 576.2,
+    "duration": 6.68
+  },
+  {
+    "text": "kok malah dia harga ditambah jumlah",
+    "start": 579.519,
+    "duration": 5.281
+  },
+  {
+    "text": "barang gitu. Misalnya harganya Rp10.000,",
+    "start": 582.88,
+    "duration": 4.76
+  },
+  {
+    "text": "barangnya dia beli 10, berarti total",
+    "start": 584.8,
+    "duration": 7.52
+  },
+  {
+    "text": "yang dia harus bayarkan adalah 10.01",
+    "start": 587.64,
+    "duration": 7.52
+  },
+  {
+    "text": "perak gitu. Nah, itu kan kayak aneh ya,",
+    "start": 592.32,
+    "duration": 6.0
+  },
+  {
+    "text": "salah ya kodenya. harusnya kodenya",
+    "start": 595.16,
+    "duration": 4.84
+  },
+  {
+    "text": "dikali gitu ya menggunakan bintang",
+    "start": 598.32,
+    "duration": 3.959
+  },
+  {
+    "text": "simbolnya. Nah, dengan adanya modular",
+    "start": 600.0,
+    "duration": 5.44
+  },
+  {
+    "text": "desain kita bisa memperbaiki gitu ya",
+    "start": 602.279,
+    "duration": 5.56
+  },
+  {
+    "text": "function-nya secara langsung tanpa harus",
+    "start": 605.44,
+    "duration": 5.44
+  },
+  {
+    "text": "mengotak-atik bagian yang lainnya.",
+    "start": 607.839,
+    "duration": 7.201
+  },
+  {
+    "text": "Kemudian coba di sini kita lihat ya ee",
+    "start": 610.88,
+    "duration": 7.639
+  },
+  {
+    "text": "ada soal boleh kalian lihat kira-kira",
+    "start": 615.04,
+    "duration": 5.52
+  },
+  {
+    "text": "apa ya yang salah dari kode ini. Silakan",
+    "start": 618.519,
+    "duration": 6.121
+  },
+  {
+    "text": "kerjakan pada pop up berikut.",
+    "start": 620.56,
+    "duration": 4.08
+  },
+  {
+    "text": "Nah, untuk mengetahui seberapa dalam",
+    "start": 626.64,
+    "duration": 6.439
+  },
+  {
+    "text": "kalian telah mengenali terkait function",
+    "start": 629.64,
+    "duration": 6.04
+  },
+  {
+    "text": "dan juga modular desain, coba yuk kita",
+    "start": 633.079,
+    "duration": 5.161
+  },
+  {
+    "text": "kerjakan mini project berikut. Jadi,",
+    "start": 635.68,
+    "duration": 4.959
+  },
+  {
+    "text": "kalian diminta untuk membuat sebuah",
+    "start": 638.24,
+    "duration": 5.719
+  },
+  {
+    "text": "program modular eh namanya modular",
+    "start": 640.639,
+    "duration": 6.041
+  },
+  {
+    "text": "shopping calculator. Jadi, di dalam",
+    "start": 643.959,
+    "duration": 5.161
+  },
+  {
+    "text": "program kalian ini,",
+    "start": 646.68,
+    "duration": 4.44
+  },
+  {
+    "text": "ini shopping ya, berarti untuk ee",
+    "start": 649.12,
+    "duration": 4.12
+  },
+  {
+    "text": "berbelanja gitu ya. Terus itu dia kalau",
+    "start": 651.12,
+    "duration": 3.36
+  },
+  {
+    "text": "kalkulator berarti menghitung.",
+    "start": 653.24,
+    "duration": 3.48
+  },
+  {
+    "text": "Kebanyakan menghitung. Nah, berarti di",
+    "start": 654.48,
+    "duration": 3.88
+  },
+  {
+    "text": "sini dalam program ini kalian diminta",
+    "start": 656.72,
+    "duration": 3.919
+  },
+  {
+    "text": "untuk membuat sebuah program yang ada",
+    "start": 658.36,
+    "duration": 3.88
+  },
+  {
+    "text": "function untuk menghitung total",
+    "start": 660.639,
+    "duration": 3.961
+  },
+  {
+    "text": "belanjanya. Berarti dia harganya pertama",
+    "start": 662.24,
+    "duration": 4.719
+  },
+  {
+    "text": "harganya berapa? Terus tu yang kedua",
+    "start": 664.6,
+    "duration": 5.08
+  },
+  {
+    "text": "berapa sih ee",
+    "start": 666.959,
+    "duration": 5.961
+  },
+  {
+    "text": "banyak barang yang dia beli. Kemudian",
+    "start": 669.68,
+    "duration": 5.08
+  },
+  {
+    "text": "ada function yang dia bisa menghitung",
+    "start": 672.92,
+    "duration": 4.12
+  },
+  {
+    "text": "diskon gitu. Kalau ada diskon berarti",
+    "start": 674.76,
+    "duration": 4.16
+  },
+  {
+    "text": "dia masukin diskonnya berapa persen,",
+    "start": 677.04,
+    "duration": 4.88
+  },
+  {
+    "text": "10%, 20% dan seterusnya gitu ya. Kalau",
+    "start": 678.92,
+    "duration": 4.12
+  },
+  {
+    "text": "enggak ada berarti dia enggak usah pakai",
+    "start": 681.92,
+    "duration": 3.68
+  },
+  {
+    "text": "function ini. Tapi tetap harus ada ya eh",
+    "start": 683.04,
+    "duration": 5.479
+  },
+  {
+    "text": "untuk use case ini buat sebuah function",
+    "start": 685.6,
+    "duration": 4.72
+  },
+  {
+    "text": "juga yang dia bisa menghitung diskon",
+    "start": 688.519,
+    "duration": 4.481
+  },
+  {
+    "text": "berapap pun banyaknya gitu ya. Kemudian",
+    "start": 690.32,
+    "duration": 5.199
+  },
+  {
+    "text": "setelah kadang kan kalau misalnya kita",
+    "start": 693.0,
+    "duration": 4.44
+  },
+  {
+    "text": "udah tahu total yang harus dibayarkan",
+    "start": 695.519,
+    "duration": 3.44
+  },
+  {
+    "text": "tapi kalau ada diskon kan harusnya",
+    "start": 697.44,
+    "duration": 4.079
+  },
+  {
+    "text": "berkurang ya. Yang awalnya dia Rp10.000",
+    "start": 698.959,
+    "duration": 4.921
+  },
+  {
+    "text": "dapat diskon misalnya diskonnya 1.000",
+    "start": 701.519,
+    "duration": 3.961
+  },
+  {
+    "text": "berarti yang dia bayarkan kan harus",
+    "start": 703.88,
+    "duration": 4.0
+  },
+  {
+    "text": "R9.000. Nah coba bikin function yang dia",
+    "start": 705.48,
+    "duration": 4.479
+  },
+  {
+    "text": "menghitung harga akhir yang harus",
+    "start": 707.88,
+    "duration": 4.199
+  },
+  {
+    "text": "dibayarkan oleh pengguna. Kemudian",
+    "start": 709.959,
+    "duration": 5.0
+  },
+  {
+    "text": "tampilkan dengan rapi hasilnya. Boleh",
+    "start": 712.079,
+    "duration": 5.88
+  },
+  {
+    "text": "dihias-hias ya menggunakan ASCI atau",
+    "start": 714.959,
+    "duration": 5.32
+  },
+  {
+    "text": "menggunakan tabel bebas. Silakan",
+    "start": 717.959,
+    "duration": 6.521
+  },
+  {
+    "text": "kerjakan di bawah ini.",
+    "start": 720.279,
+    "duration": 4.201
+  },
+  {
+    "text": "Oke, Teman-teman. Sekarang kita akan",
+    "start": 725.88,
+    "duration": 4.28
+  },
+  {
+    "text": "membahas materi tentang financial",
+    "start": 727.959,
+    "duration": 4.721
+  },
+  {
+    "text": "literacy. Yang pertama kita akan",
+    "start": 730.16,
+    "duration": 4.919
+  },
+  {
+    "text": "membahas tentang menabung. Apa sih",
+    "start": 732.68,
+    "duration": 6.399
+  },
+  {
+    "text": "menabung itu? menabung adalah menyimpan",
+    "start": 735.079,
+    "duration": 7.481
+  },
+  {
+    "text": "uang entah itu sebagian atau seluruhnya",
+    "start": 739.079,
+    "duration": 7.641
+  },
+  {
+    "text": "agar bisa digunakan di masa depan. Nah,",
+    "start": 742.56,
+    "duration": 7.839
+  },
+  {
+    "text": "menabung itu biasanya di",
+    "start": 746.72,
+    "duration": 6.239
+  },
+  {
+    "text": "sertai dengan tujuannya. Ada yang mau",
+    "start": 750.399,
+    "duration": 5.361
+  },
+  {
+    "text": "menabung untuk membeli buku, ada yang",
+    "start": 752.959,
+    "duration": 5.401
+  },
+  {
+    "text": "menabung untuk membeli laptop atau hanya",
+    "start": 755.76,
+    "duration": 4.24
+  },
+  {
+    "text": "sebagai dana darurat gitu ya kalau",
+    "start": 758.36,
+    "duration": 3.599
+  },
+  {
+    "text": "misalnya harus ke rumah sakit atau harus",
+    "start": 760.0,
+    "duration": 4.24
+  },
+  {
+    "text": "membeli barang arjin-lainnya.",
+    "start": 761.959,
+    "duration": 5.56
+  },
+  {
+    "text": "Nah, dengan menabung kita belajar untuk",
+    "start": 764.24,
+    "duration": 6.64
+  },
+  {
+    "text": "menunda keinginan untuk mencapai tujuan",
+    "start": 767.519,
+    "duration": 5.801
+  },
+  {
+    "text": "yang lebih besar gitu atau mencapai goal",
+    "start": 770.88,
+    "duration": 6.319
+  },
+  {
+    "text": "yang ee kita inginkan. Nah, selain",
+    "start": 773.32,
+    "duration": 6.8
+  },
+  {
+    "text": "menabung, kita juga akan membahas apa",
+    "start": 777.199,
+    "duration": 6.561
+  },
+  {
+    "text": "sih itu bunga. Nah, bunga itu adalah",
+    "start": 780.12,
+    "duration": 6.12
+  },
+  {
+    "text": "tambahan uang yang bisa didapatkan dari",
+    "start": 783.76,
+    "duration": 4.68
+  },
+  {
+    "text": "tabungan atau pinjaman. Contoh",
+    "start": 786.24,
+    "duration": 4.24
+  },
+  {
+    "text": "sederhananya nih, misalnya kalian",
+    "start": 788.44,
+    "duration": 4.399
+  },
+  {
+    "text": "menabung di bank sebanyak Rp100.000",
+    "start": 790.48,
+    "duration": 6.24
+  },
+  {
+    "text": "R000. Nah, setelah beberapa waktu pas",
+    "start": 792.839,
+    "duration": 5.761
+  },
+  {
+    "text": "kalian cek di rekening kalian kok",
+    "start": 796.72,
+    "duration": 6.119
+  },
+  {
+    "text": "uangnya bertambah sebesar 1005.000.",
+    "start": 798.6,
+    "duration": 7.32
+  },
+  {
+    "text": "Nah, tambahan 5.000 itulah yang disebut",
+    "start": 802.839,
+    "duration": 5.321
+  },
+  {
+    "text": "dengan bunga. Berarti dia adalah",
+    "start": 805.92,
+    "duration": 4.599
+  },
+  {
+    "text": "tambahan uang yang didapat dari sebuah",
+    "start": 808.16,
+    "duration": 6.96
+  },
+  {
+    "text": "tabungan. Nah, kemudian selain bunga ada",
+    "start": 810.519,
+    "duration": 7.081
+  },
+  {
+    "text": "juga yang disebut dengan bunga tunggal.",
+    "start": 815.12,
+    "duration": 5.2
+  },
+  {
+    "text": "Apa sih bunga tunggal itu? Bunga tunggal",
+    "start": 817.6,
+    "duration": 5.12
+  },
+  {
+    "text": "adalah bunga yang dihitung dari awal",
+    "start": 820.32,
+    "duration": 6.319
+  },
+  {
+    "text": "saja. Rumusnya seperti ini. Kalau kita",
+    "start": 822.72,
+    "duration": 6.119
+  },
+  {
+    "text": "mau menghitung bunga, pertama kita akan",
+    "start": 826.639,
+    "duration": 5.601
+  },
+  {
+    "text": "menghitung dulu uang awalnya dikali",
+    "start": 828.839,
+    "duration": 6.12
+  },
+  {
+    "text": "jumlah bunga yang didapat per tahun",
+    "start": 832.24,
+    "duration": 6.159
+  },
+  {
+    "text": "dikali lamanya kita menabung. Contohnya",
+    "start": 834.959,
+    "duration": 6.481
+  },
+  {
+    "text": "kita lihat di bawah sini ya.",
+    "start": 838.399,
+    "duration": 6.521
+  },
+  {
+    "text": "Di sini kita mau menabung uang awal kita",
+    "start": 841.44,
+    "duration": 6.44
+  },
+  {
+    "text": "tuh Rp100.000 seperti yang tadi ya.",
+    "start": 844.92,
+    "duration": 6.64
+  },
+  {
+    "text": "Kemudian selama kita menabung itu kita",
+    "start": 847.88,
+    "duration": 7.84
+  },
+  {
+    "text": "dapat bunga sebanyak 5% atau 0,05",
+    "start": 851.56,
+    "duration": 8.959
+  },
+  {
+    "text": "gitu ya, 5% doang. Kemudian",
+    "start": 855.72,
+    "duration": 7.559
+  },
+  {
+    "text": "bunga tadi kita dapatkan sebanyak",
+    "start": 860.519,
+    "duration": 5.68
+  },
+  {
+    "text": "setelah kita menabung selama 2 tahun.",
+    "start": 863.279,
+    "duration": 5.161
+  },
+  {
+    "text": "Nah, ketika kita mau mencari bunga",
+    "start": 866.199,
+    "duration": 5.801
+  },
+  {
+    "text": "tunggalnya maka Rp100.000 kita kalikan",
+    "start": 868.44,
+    "duration": 6.0
+  },
+  {
+    "text": "5% tadi ya, 0,05",
+    "start": 872.0,
+    "duration": 5.8
+  },
+  {
+    "text": "kita kalikan 2 tahun. Maka kita dapatkan",
+    "start": 874.44,
+    "duration": 7.839
+  },
+  {
+    "text": "bunga yang kita dapatin itu Rp10.000.",
+    "start": 877.8,
+    "duration": 7.839
+  },
+  {
+    "text": "Berarti total yang kita dapatkan nanti",
+    "start": 882.279,
+    "duration": 7.081
+  },
+  {
+    "text": "adalah Rp100.000 tabungan kita ditambah",
+    "start": 885.639,
+    "duration": 7.041
+  },
+  {
+    "text": "total bunga ee tunggal yang kita dapatin",
+    "start": 889.36,
+    "duration": 5.68
+  },
+  {
+    "text": "itu Rp10.000. Berarti kita punya uang",
+    "start": 892.68,
+    "duration": 6.04
+  },
+  {
+    "text": "sekarang Rp10.000.",
+    "start": 895.04,
+    "duration": 7.359
+  },
+  {
+    "text": "Nah, dalam menghitung bunga tunggal",
+    "start": 898.72,
+    "duration": 6.359
+  },
+  {
+    "text": "bunga atau menghitung tabungan gitu ya",
+    "start": 902.399,
+    "duration": 4.921
+  },
+  {
+    "text": "dalam bahasa Python itu sangat cocok",
+    "start": 905.079,
+    "duration": 4.88
+  },
+  {
+    "text": "kalau kita menggunakan function. Kenapa",
+    "start": 907.32,
+    "duration": 5.24
+  },
+  {
+    "text": "kita eh disarankan untuk menggunakan",
+    "start": 909.959,
+    "duration": 4.761
+  },
+  {
+    "text": "Python? Karena ketika kita mau",
+    "start": 912.56,
+    "duration": 4.12
+  },
+  {
+    "text": "menghitung bunga kan itu sesuatu",
+    "start": 914.72,
+    "duration": 4.359
+  },
+  {
+    "text": "aktivitas yang kita lakukan berkali-kali",
+    "start": 916.68,
+    "duration": 4.92
+  },
+  {
+    "text": "tapi angkanya berbeda-beda gitu ya. Jadi",
+    "start": 919.079,
+    "duration": 4.161
+  },
+  {
+    "text": "kadang kita punya uang awalnya",
+    "start": 921.6,
+    "duration": 4.039
+  },
+  {
+    "text": "beda-beda, terus itu persentasi bunganya",
+    "start": 923.24,
+    "duration": 4.12
+  },
+  {
+    "text": "beda-beda, lama nabungnya juga",
+    "start": 925.639,
+    "duration": 4.081
+  },
+  {
+    "text": "beda-beda. Kan daripada kita harus copy",
+    "start": 927.36,
+    "duration": 4.76
+  },
+  {
+    "text": "paste kodenya berulang-ulang kali, lebih",
+    "start": 929.72,
+    "duration": 5.4
+  },
+  {
+    "text": "baik kita buatkan sebuah function yang",
+    "start": 932.12,
+    "duration": 5.639
+  },
+  {
+    "text": "nanti dia akan otomatis menghitung dan",
+    "start": 935.12,
+    "duration": 5.24
+  },
+  {
+    "text": "me-return hasilnya, total akhir",
+    "start": 937.759,
+    "duration": 6.681
+  },
+  {
+    "text": "tabungannya dan seterusnya. Nah, di sini",
+    "start": 940.36,
+    "duration": 6.2
+  },
+  {
+    "text": "kalau misalnya",
+    "start": 944.44,
+    "duration": 5.72
+  },
+  {
+    "text": "kita bayangkan dias programnya di",
+    "start": 946.56,
+    "duration": 5.88
+  },
+  {
+    "text": "program Python itu function-nya intinya",
+    "start": 950.16,
+    "duration": 4.159
+  },
+  {
+    "text": "pertama dia membutuhkan inputan nih, dia",
+    "start": 952.44,
+    "duration": 3.92
+  },
+  {
+    "text": "membutuhkan data berarti dia membutuhkan",
+    "start": 954.319,
+    "duration": 3.841
+  },
+  {
+    "text": "parameter ya. Parameternya berarti uang",
+    "start": 956.36,
+    "duration": 4.399
+  },
+  {
+    "text": "awalnya, bunga yang didapatkan sama",
+    "start": 958.16,
+    "duration": 5.239
+  },
+  {
+    "text": "lamanya menabung. Nanti yang dikeluarkan",
+    "start": 960.759,
+    "duration": 5.681
+  },
+  {
+    "text": "adalah jumlah bunganya sama total akhir",
+    "start": 963.399,
+    "duration": 6.44
+  },
+  {
+    "text": "tabungannya itu ya. Kalau eh rencananya",
+    "start": 966.44,
+    "duration": 5.6
+  },
+  {
+    "text": "kita mau membuat Python tuh seperti ini",
+    "start": 969.839,
+    "duration": 5.761
+  },
+  {
+    "text": "kurang lebih. Nah, ini bentuknya kita",
+    "start": 972.04,
+    "duration": 7.08
+  },
+  {
+    "text": "mau ee membuat kalkulator bunga tunggal.",
+    "start": 975.6,
+    "duration": 7.799
+  },
+  {
+    "text": "Pertama kita lihat dulu nih di sini ada",
+    "start": 979.12,
+    "duration": 6.519
+  },
+  {
+    "text": "function",
+    "start": 983.399,
+    "duration": 5.841
+  },
+  {
+    "text": "calculate simple interest ya. Kalkulator",
+    "start": 985.639,
+    "duration": 6.721
+  },
+  {
+    "text": "simpel yang menghitung interest kita. Di",
+    "start": 989.24,
+    "duration": 5.48
+  },
+  {
+    "text": "sini ada principlnya uang awal kita",
+    "start": 992.36,
+    "duration": 5.76
+  },
+  {
+    "text": "berapa, terus itu bunga kita berapa.",
+    "start": 994.72,
+    "duration": 6.599
+  },
+  {
+    "text": "Terus berapa lama kita menabung? Ya kan?",
+    "start": 998.12,
+    "duration": 5.519
+  },
+  {
+    "text": "Kalau udah kita tinggal hitung nih",
+    "start": 1001.319,
+    "duration": 4.921
+  },
+  {
+    "text": "semuanya. Entah boleh kita masukkan ke",
+    "start": 1003.639,
+    "duration": 6.241
+  },
+  {
+    "text": "dalam variabel interest, kemudian kita",
+    "start": 1006.24,
+    "duration": 5.839
+  },
+  {
+    "text": "hitung semuanya, kita kalikan semuanya",
+    "start": 1009.88,
+    "duration": 6.56
+  },
+  {
+    "text": "atau kita bisa ee langsung masukkan",
+    "start": 1012.079,
+    "duration": 6.361
+  },
+  {
+    "text": "rumus ini tadi ke dalam return. Itu",
+    "start": 1016.44,
+    "duration": 3.839
+  },
+  {
+    "text": "enggak enggak apa-apa, sama aja. Yang",
+    "start": 1018.44,
+    "duration": 3.68
+  },
+  {
+    "text": "pasti nanti kalau kita ng-return dia",
+    "start": 1020.279,
+    "duration": 4.201
+  },
+  {
+    "text": "akan kembalikan ke tempat dia dipanggil.",
+    "start": 1022.12,
+    "duration": 4.16
+  },
+  {
+    "text": "Oh, dia dipanggil di baris keempat. maka",
+    "start": 1024.48,
+    "duration": 3.959
+  },
+  {
+    "text": "nanti dia akan menyimpan nilainya ke",
+    "start": 1026.28,
+    "duration": 4.2
+  },
+  {
+    "text": "baris keempat yang kemudian akan",
+    "start": 1028.439,
+    "duration": 5.0
+  },
+  {
+    "text": "disimpan ke interest. Nih contohnya kita",
+    "start": 1030.48,
+    "duration": 6.319
+  },
+  {
+    "text": "membuat variabel interest kemudian kita",
+    "start": 1033.439,
+    "duration": 6.441
+  },
+  {
+    "text": "panggil function-nya. Di sini kita",
+    "start": 1036.799,
+    "duration": 6.04
+  },
+  {
+    "text": "initial eh tabungannya principalnya",
+    "start": 1039.88,
+    "duration": 5.4
+  },
+  {
+    "text": "Rp100.000 berarti kita kirim di sini",
+    "start": 1042.839,
+    "duration": 6.041
+  },
+  {
+    "text": "Rp100.000 R. Terus itu bunganya 0,5 kita",
+    "start": 1045.28,
+    "duration": 6.759
+  },
+  {
+    "text": "kirim 0,55-nya di situ. Lama nabungnya",
+    "start": 1048.88,
+    "duration": 5.6
+  },
+  {
+    "text": "itu 2 tahun kita kirim juga di situ.",
+    "start": 1052.039,
+    "duration": 5.0
+  },
+  {
+    "text": "Nah, 100.000",
+    "start": 1054.48,
+    "duration": 5.92
+  },
+  {
+    "text": "* 0,5 * 2 tahun. Tadi kita sudah hitung",
+    "start": 1057.039,
+    "duration": 7.081
+  },
+  {
+    "text": "ya nilainya ee 10.000 gitu. Maka bunga",
+    "start": 1060.4,
+    "duration": 5.44
+  },
+  {
+    "text": "yang kita dapatkan totalnya ada",
+    "start": 1064.12,
+    "duration": 3.28
+  },
+  {
+    "text": "Rp10.000.",
+    "start": 1065.84,
+    "duration": 3.16
+  },
+  {
+    "text": "Coba kita cek benar enggak. Oh, iya",
+    "start": 1067.4,
+    "duration": 3.88
+  },
+  {
+    "text": "benar. Ternyata hasil bunganya adalah",
+    "start": 1069.0,
+    "duration": 3.799
+  },
+  {
+    "text": "Rp10.000.",
+    "start": 1071.28,
+    "duration": 4.36
+  },
+  {
+    "text": "Nah, untuk kalau yang tadi kan hanya",
+    "start": 1072.799,
+    "duration": 5.561
+  },
+  {
+    "text": "menghitung bunga ee bunganya ya. Nah,",
+    "start": 1075.64,
+    "duration": 4.44
+  },
+  {
+    "text": "sekarang coba kita lihat nih di sini",
+    "start": 1078.36,
+    "duration": 4.28
+  },
+  {
+    "text": "untuk menghitung total tabungan kita",
+    "start": 1080.08,
+    "duration": 4.839
+  },
+  {
+    "text": "berapa kalau dijumlahkan dengan bunga,",
+    "start": 1082.64,
+    "duration": 5.88
+  },
+  {
+    "text": "kalkulatornya seperti apa. Nah, di sini",
+    "start": 1084.919,
+    "duration": 7.24
+  },
+  {
+    "text": "sama ya kita sudah ee tambahkan rumus ee",
+    "start": 1088.52,
+    "duration": 6.48
+  },
+  {
+    "text": "masukkan rumusnya sebelumnya, tapi yang",
+    "start": 1092.159,
+    "duration": 5.361
+  },
+  {
+    "text": "berbeda adalah kita membuat sebuah",
+    "start": 1095.0,
+    "duration": 5.08
+  },
+  {
+    "text": "variabel baru yang dia menghitung total",
+    "start": 1097.52,
+    "duration": 5.84
+  },
+  {
+    "text": "tabungan awal kita plus berapa sih bunga",
+    "start": 1100.08,
+    "duration": 5.56
+  },
+  {
+    "text": "yang kita dapatkan. Oh, kalau misalnya",
+    "start": 1103.36,
+    "duration": 5.12
+  },
+  {
+    "text": "sudah kita jumlahkan keduanya baru kita",
+    "start": 1105.64,
+    "duration": 5.76
+  },
+  {
+    "text": "return. Udah kalau kita return hasilnya",
+    "start": 1108.48,
+    "duration": 5.8
+  },
+  {
+    "text": "dikumpulin di sini. Tadi kan kalau kita",
+    "start": 1111.4,
+    "duration": 6.24
+  },
+  {
+    "text": "hitung kan dengan",
+    "start": 1114.28,
+    "duration": 6.08
+  },
+  {
+    "text": "uang Rp100.000",
+    "start": 1117.64,
+    "duration": 6.32
+  },
+  {
+    "text": "bunganya 5% dan 2 tahun menabung itu",
+    "start": 1120.36,
+    "duration": 5.679
+  },
+  {
+    "text": "kita tadi mendapatkan total bunganya",
+    "start": 1123.96,
+    "duration": 5.64
+  },
+  {
+    "text": "Rp10.000. Kalau 100.000 + 10.000 maka",
+    "start": 1126.039,
+    "duration": 6.161
+  },
+  {
+    "text": "totallah harusnya Rp10.000.",
+    "start": 1129.6,
+    "duration": 3.959
+  },
+  {
+    "text": "Nah, kalau kita lihat hasilnya",
+    "start": 1132.2,
+    "duration": 4.52
+  },
+  {
+    "text": "output-nya Rp10.000.",
+    "start": 1133.559,
+    "duration": 8.521
+  },
+  {
+    "text": "Nah, ini tadi bisa kita ee lihat ya",
+    "start": 1136.72,
+    "duration": 8.88
+  },
+  {
+    "text": "kalau tadi ketika kita merretn",
+    "start": 1142.08,
+    "duration": 5.76
+  },
+  {
+    "text": "me-return total tabungannya. Tapi kalau",
+    "start": 1145.6,
+    "duration": 5.84
+  },
+  {
+    "text": "misalnya kita mau interest-nya, bunganya",
+    "start": 1147.84,
+    "duration": 4.839
+  },
+  {
+    "text": "sama totalnya itu dua-duanya",
+    "start": 1151.44,
+    "duration": 2.96
+  },
+  {
+    "text": "dikembalikan juga. Nah, itu bisa kita",
+    "start": 1152.679,
+    "duration": 5.0
+  },
+  {
+    "text": "langsung return secara bersamaan nih,",
+    "start": 1154.4,
+    "duration": 5.519
+  },
+  {
+    "text": "secara langsung. Python tetap bisa",
+    "start": 1157.679,
+    "duration": 3.88
+  },
+  {
+    "text": "mengenali ini ya, Teman-teman ya. Di",
+    "start": 1159.919,
+    "duration": 3.521
+  },
+  {
+    "text": "sini kita return pertama apa yang mau",
+    "start": 1161.559,
+    "duration": 4.24
+  },
+  {
+    "text": "direturn dulu bunganya. Terus itu kita",
+    "start": 1163.44,
+    "duration": 5.599
+  },
+  {
+    "text": "mau ng-return totalnya. Nah, ini kan ada",
+    "start": 1165.799,
+    "duration": 5.801
+  },
+  {
+    "text": "dua yang direturn ya. Karena ada dua",
+    "start": 1169.039,
+    "duration": 7.481
+  },
+  {
+    "text": "yang dieturn maka kita akan wajib untuk",
+    "start": 1171.6,
+    "duration": 8.4
+  },
+  {
+    "text": "membuat dua variabel yang baru juga.",
+    "start": 1176.52,
+    "duration": 6.159
+  },
+  {
+    "text": "Nah, ini",
+    "start": 1180.0,
+    "duration": 4.76
+  },
+  {
+    "text": "seperti ini bukan berarti salah ya,",
+    "start": 1182.679,
+    "duration": 4.081
+  },
+  {
+    "text": "Teman-teman ya. Ini bentuk yang dianggap",
+    "start": 1184.76,
+    "duration": 4.48
+  },
+  {
+    "text": "benar oleh Python gitu ya. Oh, kalau",
+    "start": 1186.76,
+    "duration": 5.279
+  },
+  {
+    "text": "Python dia membacanya ada dua variabel",
+    "start": 1189.24,
+    "duration": 6.12
+  },
+  {
+    "text": "namanya interest dan total. Nanti",
+    "start": 1192.039,
+    "duration": 5.681
+  },
+  {
+    "text": "nilainya kan kalau variabel salah satu",
+    "start": 1195.36,
+    "duration": 4.52
+  },
+  {
+    "text": "syarat pembuatan variabel adalah kita",
+    "start": 1197.72,
+    "duration": 4.24
+  },
+  {
+    "text": "mengendeklarasikan variabel lah harus",
+    "start": 1199.88,
+    "duration": 4.2
+  },
+  {
+    "text": "ada isinya ya. Nah, di sini isinya",
+    "start": 1201.96,
+    "duration": 7.12
+  },
+  {
+    "text": "berdasarkan hasil ee perkalkulasian",
+    "start": 1204.08,
+    "duration": 6.56
+  },
+  {
+    "text": "yang kita panggil function-nya ini ya.",
+    "start": 1209.08,
+    "duration": 3.68
+  },
+  {
+    "text": "Kalau kita lihat self saving ini ya.",
+    "start": 1210.64,
+    "duration": 5.2
+  },
+  {
+    "text": "Nah, berarti di sini ketika kita return",
+    "start": 1212.76,
+    "duration": 4.6
+  },
+  {
+    "text": "interest maka dia akan menyimpan ke",
+    "start": 1215.84,
+    "duration": 3.68
+  },
+  {
+    "text": "dalam variable interest. Ketika kita",
+    "start": 1217.36,
+    "duration": 4.08
+  },
+  {
+    "text": "ng-return total dia row totalnya akan",
+    "start": 1219.52,
+    "duration": 5.159
+  },
+  {
+    "text": "dikirim ke total. Dia variabelnya enggak",
+    "start": 1221.44,
+    "duration": 5.28
+  },
+  {
+    "text": "harus sama yang penting urutannya benar.",
+    "start": 1224.679,
+    "duration": 4.161
+  },
+  {
+    "text": "Dia akan menyesuaikan gitu ya,",
+    "start": 1226.72,
+    "duration": 3.92
+  },
+  {
+    "text": "Teman-teman ya. Jadi, kita bisa langsung",
+    "start": 1228.84,
+    "duration": 3.64
+  },
+  {
+    "text": "nge-print",
+    "start": 1230.64,
+    "duration": 4.96
+  },
+  {
+    "text": "e hasil variabelnya yang nanti akan",
+    "start": 1232.48,
+    "duration": 6.12
+  },
+  {
+    "text": "menampilkan isinya di printer ini. Coba",
+    "start": 1235.6,
+    "duration": 4.88
+  },
+  {
+    "text": "kita lihat ya bentuk output-nya itu",
+    "start": 1238.6,
+    "duration": 5.64
+  },
+  {
+    "text": "seperti apa sih. Nah, bunganya 10.000,",
+    "start": 1240.48,
+    "duration": 6.72
+  },
+  {
+    "text": "total akhirnya Rp10.000. Jadi, dia",
+    "start": 1244.24,
+    "duration": 6.04
+  },
+  {
+    "text": "function itu bisa mengembalikan nilai",
+    "start": 1247.2,
+    "duration": 5.4
+  },
+  {
+    "text": "lebih dari satu secara sekaligus gitu",
+    "start": 1250.28,
+    "duration": 5.399
+  },
+  {
+    "text": "ya. Jadi enggak perlu e bikin dua ya,",
+    "start": 1252.6,
+    "duration": 4.52
+  },
+  {
+    "text": "return interest return total enggak",
+    "start": 1255.679,
+    "duration": 4.48
+  },
+  {
+    "text": "perlu. Jadi bisa langsung dua.",
+    "start": 1257.12,
+    "duration": 6.679
+  },
+  {
+    "text": "Oke, ini tadi ee udah kita bahas",
+    "start": 1260.159,
+    "duration": 5.88
+  },
+  {
+    "text": "bagaimana kita membuat parameter. Jadi,",
+    "start": 1263.799,
+    "duration": 4.161
+  },
+  {
+    "text": "principle itu uang awal ya tadi uang",
+    "start": 1266.039,
+    "duration": 4.561
+  },
+  {
+    "text": "awal rate itu",
+    "start": 1267.96,
+    "duration": 4.56
+  },
+  {
+    "text": "bunganya yang kita dapatkan per tahun.",
+    "start": 1270.6,
+    "duration": 4.92
+  },
+  {
+    "text": "Jers itu lama kita menabung gitu ya.",
+    "start": 1272.52,
+    "duration": 7.48
+  },
+  {
+    "text": "Oke, sekarang misalnya kita di sini ada",
+    "start": 1275.52,
+    "duration": 9.159
+  },
+  {
+    "text": "skenario ya. Jadi kadang ketika kita ee",
+    "start": 1280.0,
+    "duration": 7.799
+  },
+  {
+    "text": "sudah menabung gitu ya, kita mau",
+    "start": 1284.679,
+    "duration": 5.801
+  },
+  {
+    "text": "membandingkan gitu ya berdasarkan",
+    "start": 1287.799,
+    "duration": 5.401
+  },
+  {
+    "text": "skenario yang berbeda-beda. Misalnya di",
+    "start": 1290.48,
+    "duration": 5.48
+  },
+  {
+    "text": "sini kita mau kita punya data gitu ya.",
+    "start": 1293.2,
+    "duration": 5.92
+  },
+  {
+    "text": "Kita punya data yang di mana",
+    "start": 1295.96,
+    "duration": 6.68
+  },
+  {
+    "text": "uang awalnya Rp100.000, Bu, bunganya",
+    "start": 1299.12,
+    "duration": 6.52
+  },
+  {
+    "text": "sama juga, tapi lama menabung itu",
+    "start": 1302.64,
+    "duration": 6.32
+  },
+  {
+    "text": "beda-beda. Kita lihat apakah bunga yang",
+    "start": 1305.64,
+    "duration": 4.88
+  },
+  {
+    "text": "didapatkan",
+    "start": 1308.96,
+    "duration": 3.52
+  },
+  {
+    "text": "itu lebih yang yang lebih besar itu yang",
+    "start": 1310.52,
+    "duration": 4.32
+  },
+  {
+    "text": "mana? Apakah ketika kita nabung 1 tahun,",
+    "start": 1312.48,
+    "duration": 4.52
+  },
+  {
+    "text": "apakah kita nabung 3 tahun atau nabung 5",
+    "start": 1314.84,
+    "duration": 5.24
+  },
+  {
+    "text": "tahun. Nah, kalau kita lihat di sini",
+    "start": 1317.0,
+    "duration": 5.559
+  },
+  {
+    "text": "misalnya nih 100.000",
+    "start": 1320.08,
+    "duration": 6.56
+  },
+  {
+    "text": "dikali 5% dikali 1 tahun. Terus itu kita",
+    "start": 1322.559,
+    "duration": 7.0
+  },
+  {
+    "text": "kirim semuanya ke dalam function. Terus",
+    "start": 1326.64,
+    "duration": 5.88
+  },
+  {
+    "text": "dia ng-return ya, ng-return",
+    "start": 1329.559,
+    "duration": 5.161
+  },
+  {
+    "text": "yang dikembalikan ke skenario 1 dan",
+    "start": 1332.52,
+    "duration": 3.84
+  },
+  {
+    "text": "kemudian diprint. Coba kita lihat",
+    "start": 1334.72,
+    "duration": 3.6
+  },
+  {
+    "text": "hasilnya ya, hasil perhitungan",
+    "start": 1336.36,
+    "duration": 5.439
+  },
+  {
+    "text": "kalkulasinya. Kalau kita menabung",
+    "start": 1338.32,
+    "duration": 5.719
+  },
+  {
+    "text": "sebanyak ee jumlahnya sama dan bunganya",
+    "start": 1341.799,
+    "duration": 4.641
+  },
+  {
+    "text": "sama, tapi jumlah e lama menabungnya itu",
+    "start": 1344.039,
+    "duration": 4.961
+  },
+  {
+    "text": "beda-beda. Nih kita bisa lihat nih kalau",
+    "start": 1346.44,
+    "duration": 7.4
+  },
+  {
+    "text": "kita 1 tahun itu kita bisa mendapatkan",
+    "start": 1349.0,
+    "duration": 7.12
+  },
+  {
+    "text": "105.000",
+    "start": 1353.84,
+    "duration": 6.52
+  },
+  {
+    "text": "ya bunganya. Total uang kita tuh jadi ee",
+    "start": 1356.12,
+    "duration": 7.52
+  },
+  {
+    "text": "5.000. Kalau kita nabungnya 3 tahun,",
+    "start": 1360.36,
+    "duration": 7.48
+  },
+  {
+    "text": "maka bunga yang kita dapatkan itu ee",
+    "start": 1363.64,
+    "duration": 7.56
+  },
+  {
+    "text": "R.000 ya. Rp15.000. Kemudian kalau 5",
+    "start": 1367.84,
+    "duration": 6.28
+  },
+  {
+    "text": "tahun kita dapat bunganya Rp25.000 gitu",
+    "start": 1371.2,
+    "duration": 5.24
+  },
+  {
+    "text": "ya. Jadi berdasarkan data yang kita",
+    "start": 1374.12,
+    "duration": 4.52
+  },
+  {
+    "text": "punya itu kita bisa menganalisis",
+    "start": 1376.44,
+    "duration": 4.44
+  },
+  {
+    "text": "kira-kira oh kalau semakin lama kita",
+    "start": 1378.64,
+    "duration": 4.72
+  },
+  {
+    "text": "menabung maka bunga yang kita dapatkan",
+    "start": 1380.88,
+    "duration": 5.279
+  },
+  {
+    "text": "pun semakin besar gitu ya. Nah, untuk",
+    "start": 1383.36,
+    "duration": 5.0
+  },
+  {
+    "text": "mengecek pemahaman teman-teman sejauh",
+    "start": 1386.159,
+    "duration": 5.601
+  },
+  {
+    "text": "ini boleh kerjakan kuis pop up berikut",
+    "start": 1388.36,
+    "duration": 6.4
+  },
+  {
+    "text": "ini.",
+    "start": 1391.76,
+    "duration": 3.0
+  },
+  {
+    "text": "Nah, sebelumnya kita sudah membahas",
+    "start": 1398.919,
+    "duration": 5.281
+  },
+  {
+    "text": "tentang bunga tunggal. Sekarang kita",
+    "start": 1401.32,
+    "duration": 5.64
+  },
+  {
+    "text": "lanjutkan membahas tentang ada yang",
+    "start": 1404.2,
+    "duration": 4.92
+  },
+  {
+    "text": "namanya bunga majemuk. Apa sih bunga",
+    "start": 1406.96,
+    "duration": 4.079
+  },
+  {
+    "text": "majemuk itu? Yuk, kita perhatikan slide",
+    "start": 1409.12,
+    "duration": 5.96
+  },
+  {
+    "text": "berikut. Nah, bunga majemuk adalah bunga",
+    "start": 1411.039,
+    "duration": 6.76
+  },
+  {
+    "text": "yang dia nilainya akan terus bertambah",
+    "start": 1415.08,
+    "duration": 5.32
+  },
+  {
+    "text": "setiap periode. Sederhananya seperti",
+    "start": 1417.799,
+    "duration": 5.36
+  },
+  {
+    "text": "ini. Misalnya pada tahun pertama kita",
+    "start": 1420.4,
+    "duration": 6.08
+  },
+  {
+    "text": "dapat ee bunga gitu ya. Nah, di tahun",
+    "start": 1423.159,
+    "duration": 7.161
+  },
+  {
+    "text": "kedua bunganya itu dihitung bunga nilai",
+    "start": 1426.48,
+    "duration": 5.559
+  },
+  {
+    "text": "bunga itu enggak sama. Misalnya kita di",
+    "start": 1430.32,
+    "duration": 4.359
+  },
+  {
+    "text": "tahun pertama dapat bunganya R10.000.",
+    "start": 1432.039,
+    "duration": 4.52
+  },
+  {
+    "text": "Nah, tahun depannya itu dia enggak",
+    "start": 1434.679,
+    "duration": 4.24
+  },
+  {
+    "text": "R.000. Jadi bunganya akan terus",
+    "start": 1436.559,
+    "duration": 4.521
+  },
+  {
+    "text": "bertambah, bertambah, bertambah setiap",
+    "start": 1438.919,
+    "duration": 5.441
+  },
+  {
+    "text": "tahun kita menabung. Jadi uangnya bisa",
+    "start": 1441.08,
+    "duration": 5.8
+  },
+  {
+    "text": "tumbuh lebih cepat dibandingkan dengan",
+    "start": 1444.36,
+    "duration": 4.439
+  },
+  {
+    "text": "ee bunga tunggal yang kita dapatkan yang",
+    "start": 1446.88,
+    "duration": 4.159
+  },
+  {
+    "text": "kita bahas sebelumnya. Contohnya seperti",
+    "start": 1448.799,
+    "duration": 5.48
+  },
+  {
+    "text": "ini. Biar lebih gampang lagi, bayangkan",
+    "start": 1451.039,
+    "duration": 5.921
+  },
+  {
+    "text": "bunga tunggal itu seperti uang jajan",
+    "start": 1454.279,
+    "duration": 4.841
+  },
+  {
+    "text": "yang kita diberikan oleh orang tua.",
+    "start": 1456.96,
+    "duration": 4.839
+  },
+  {
+    "text": "Misalnya kamu dapat bonus Rp10.000",
+    "start": 1459.12,
+    "duration": 5.439
+  },
+  {
+    "text": "setiap dari mama dari mama kamu setiap",
+    "start": 1461.799,
+    "duration": 6.6
+  },
+  {
+    "text": "kali kamu menabung. Nah, ketika kamu",
+    "start": 1464.559,
+    "duration": 6.921
+  },
+  {
+    "text": "mendapatkan bunga tunggal yaitu uang",
+    "start": 1468.399,
+    "duration": 5.64
+  },
+  {
+    "text": "bonus uang Rp10.000 tadi ini ya, ketika",
+    "start": 1471.48,
+    "duration": 4.919
+  },
+  {
+    "text": "celenganmu makin bertambah ee nilainya",
+    "start": 1474.039,
+    "duration": 3.401
+  },
+  {
+    "text": "gitu ya, misalnya kalian menabung",
+    "start": 1476.399,
+    "duration": 3.601
+  },
+  {
+    "text": "Rp100.000, nambah lagi Rp100.000, lambah",
+    "start": 1477.44,
+    "duration": 5.719
+  },
+  {
+    "text": "lagi Rp100.000. Nah, uang di celengan",
+    "start": 1480.0,
+    "duration": 5.0
+  },
+  {
+    "text": "kita kan lebih tambah lebih besar ya,",
+    "start": 1483.159,
+    "duration": 4.361
+  },
+  {
+    "text": "tambah lebih banyak. Nah, tapi bonus",
+    "start": 1485.0,
+    "duration": 5.48
+  },
+  {
+    "text": "yang kita dapatkan itu tetap R.000.",
+    "start": 1487.52,
+    "duration": 5.639
+  },
+  {
+    "text": "Itulah bunga majemuk nilainya ee",
+    "start": 1490.48,
+    "duration": 6.28
+  },
+  {
+    "text": "bunganya akan terus sama gitu ya, tahun",
+    "start": 1493.159,
+    "duration": 7.24
+  },
+  {
+    "text": "ke tahun tanpa ada perubahan. Sedangkan",
+    "start": 1496.76,
+    "duration": 6.159
+  },
+  {
+    "text": "kalau kita mau ee kita ketika kita",
+    "start": 1500.399,
+    "duration": 4.441
+  },
+  {
+    "text": "mendapatkan bunga majemuk, bayangkan",
+    "start": 1502.919,
+    "duration": 3.601
+  },
+  {
+    "text": "ketika kita berternak anak gitu ya,",
+    "start": 1504.84,
+    "duration": 5.16
+  },
+  {
+    "text": "berternak ayam soru punya ee punya ayam",
+    "start": 1506.52,
+    "duration": 6.279
+  },
+  {
+    "text": "dan ayamnya itu bertelur, saat anaknya",
+    "start": 1510.0,
+    "duration": 5.48
+  },
+  {
+    "text": "menetas dan kemudian besar, anak ayam",
+    "start": 1512.799,
+    "duration": 5.24
+  },
+  {
+    "text": "itu akan bertelur lagi yang nanti dia",
+    "start": 1515.48,
+    "duration": 5.079
+  },
+  {
+    "text": "akan tumbuh jadi ayam lagi dan dia akan",
+    "start": 1518.039,
+    "duration": 5.841
+  },
+  {
+    "text": "ee bertelur lagi dan akan tumbuh dan",
+    "start": 1520.559,
+    "duration": 4.641
+  },
+  {
+    "text": "bertelur lagi dan seterusnya dan",
+    "start": 1523.88,
+    "duration": 4.12
+  },
+  {
+    "text": "seterusnya hingga kamu mempunyai telur",
+    "start": 1525.2,
+    "duration": 4.839
+  },
+  {
+    "text": "yang sangat baik. banyak gitu ya. Nah,",
+    "start": 1528.0,
+    "duration": 4.08
+  },
+  {
+    "text": "itulah disebut dengan bunga majemuk.",
+    "start": 1530.039,
+    "duration": 3.681
+  },
+  {
+    "text": "Jadi, bunganya istilahnya adalah",
+    "start": 1532.08,
+    "duration": 3.839
+  },
+  {
+    "text": "bunganya ikut berbunga lagi. Nilainya",
+    "start": 1533.72,
+    "duration": 4.679
+  },
+  {
+    "text": "akan bertambah, bertambah, bertambah.",
+    "start": 1535.919,
+    "duration": 6.961
+  },
+  {
+    "text": "Nah, di sini inti perbedaan antara bunga",
+    "start": 1538.399,
+    "duration": 7.041
+  },
+  {
+    "text": "tunggal dan bunga majemuk hanya uang",
+    "start": 1542.88,
+    "duration": 4.519
+  },
+  {
+    "text": "asli kamu yang akan menghasilkan bunga",
+    "start": 1545.44,
+    "duration": 4.0
+  },
+  {
+    "text": "di dalam bunga tunggal. Jadi, yang akan",
+    "start": 1547.399,
+    "duration": 4.0
+  },
+  {
+    "text": "dihitung ee ketika kita menghitung",
+    "start": 1549.44,
+    "duration": 4.359
+  },
+  {
+    "text": "bunganya tadi itu hanya uang yang kamu",
+    "start": 1551.399,
+    "duration": 4.921
+  },
+  {
+    "text": "punya. Misalnya Rp100.000. Kalau kita ee",
+    "start": 1553.799,
+    "duration": 4.281
+  },
+  {
+    "text": "dapat bunga Rp10.000",
+    "start": 1556.32,
+    "duration": 4.12
+  },
+  {
+    "text": "di tahun berikutnya bukan 110.000-nya",
+    "start": 1558.08,
+    "duration": 5.599
+  },
+  {
+    "text": "yang dihitung di ee bunganya gitu, tetap",
+    "start": 1560.44,
+    "duration": 5.119
+  },
+  {
+    "text": "Rp100.000 sesuai dengan jumlah uang yang",
+    "start": 1563.679,
+    "duration": 5.12
+  },
+  {
+    "text": "kita punya yang kita awal setorkan gitu",
+    "start": 1565.559,
+    "duration": 5.521
+  },
+  {
+    "text": "ya. Nah, beda dengan bunga majemuk.",
+    "start": 1568.799,
+    "duration": 5.081
+  },
+  {
+    "text": "Bunga majemuk uang yang kamu taruh itu",
+    "start": 1571.08,
+    "duration": 5.88
+  },
+  {
+    "text": "dia akan berkembang lagi.",
+    "start": 1573.88,
+    "duration": 6.64
+  },
+  {
+    "text": "Cara kerja bunga tunggal itu dia wah dia",
+    "start": 1576.96,
+    "duration": 5.079
+  },
+  {
+    "text": "setiap tahun hanya akan bertambah",
+    "start": 1580.52,
+    "duration": 3.68
+  },
+  {
+    "text": "Rp10.000. Jadi berapapun uang yang kita",
+    "start": 1582.039,
+    "duration": 3.841
+  },
+  {
+    "text": "punya ya dia akan R.000 RIB terus",
+    "start": 1584.2,
+    "duration": 3.28
+  },
+  {
+    "text": "bertambahan bunganya gitu ya. Kalau",
+    "start": 1585.88,
+    "duration": 3.2
+  },
+  {
+    "text": "misalnya kita dapat bunganya 10%",
+    "start": 1587.48,
+    "duration": 5.04
+  },
+  {
+    "text": "misalnya gitu. Nah, kalau bunga majemuk",
+    "start": 1589.08,
+    "duration": 6.28
+  },
+  {
+    "text": "itu dia tahun pertama nambah Rp10.000,",
+    "start": 1592.52,
+    "duration": 5.639
+  },
+  {
+    "text": "tahun dua nambahnya 11.000, tahun ketiga",
+    "start": 1595.36,
+    "duration": 5.28
+  },
+  {
+    "text": "nambahnya 12.100 dan seterusnya dan",
+    "start": 1598.159,
+    "duration": 5.12
+  },
+  {
+    "text": "seterusnya. Jadi makin lama tahunnya",
+    "start": 1600.64,
+    "duration": 6.639
+  },
+  {
+    "text": "makin gede juga nilainya. nih misalnya.",
+    "start": 1603.279,
+    "duration": 7.28
+  },
+  {
+    "text": "Nah, untuk menggunakan ya untuk",
+    "start": 1607.279,
+    "duration": 7.321
+  },
+  {
+    "text": "menghitung bunga majemuk itu kita perlu",
+    "start": 1610.559,
+    "duration": 7.48
+  },
+  {
+    "text": "menggunakan looping ya. Nah, kenapa kita",
+    "start": 1614.6,
+    "duration": 5.4
+  },
+  {
+    "text": "menggunakan looping? Karena prosesnya",
+    "start": 1618.039,
+    "duration": 4.12
+  },
+  {
+    "text": "itu berulang gitu ya. Maksudnya berulang",
+    "start": 1620.0,
+    "duration": 3.96
+  },
+  {
+    "text": "nih. Tahun pertama kita menghitung bunga",
+    "start": 1622.159,
+    "duration": 3.961
+  },
+  {
+    "text": "kita, uang kita plus bunga kita.",
+    "start": 1623.96,
+    "duration": 5.16
+  },
+  {
+    "text": "Kemudian total uang kita tadi plus",
+    "start": 1626.12,
+    "duration": 4.96
+  },
+  {
+    "text": "bunganya tadi dihitung ditambahkan",
+    "start": 1629.12,
+    "duration": 3.72
+  },
+  {
+    "text": "dengan bunganya lagi. Jadi dia bertambah",
+    "start": 1631.08,
+    "duration": 3.719
+  },
+  {
+    "text": "lagi gitu. bertambah lagi, bertambah",
+    "start": 1632.84,
+    "duration": 5.199
+  },
+  {
+    "text": "lagi gitu ya. Nah, ini karena proses",
+    "start": 1634.799,
+    "duration": 5.161
+  },
+  {
+    "text": "berulang maka kita menggunakan loop.",
+    "start": 1638.039,
+    "duration": 3.681
+  },
+  {
+    "text": "Bentuknya loop-nya seperti apa nih?",
+    "start": 1639.96,
+    "duration": 4.48
+  },
+  {
+    "text": "Contohnya seperti ini. Sama seperti yang",
+    "start": 1641.72,
+    "duration": 5.079
+  },
+  {
+    "text": "sebelumnya kita setoran uang misalnya",
+    "start": 1644.44,
+    "duration": 5.92
+  },
+  {
+    "text": "awalnya Rp100.000 dengan bunga sebesar",
+    "start": 1646.799,
+    "duration": 6.561
+  },
+  {
+    "text": "10%.",
+    "start": 1650.36,
+    "duration": 3.0
+  },
+  {
+    "text": "Di sini kita menabung selama 3 tahun.",
+    "start": 1654.039,
+    "duration": 6.681
+  },
+  {
+    "text": "Nah, karena kita mau menghitung bunga",
+    "start": 1658.2,
+    "duration": 4.16
+  },
+  {
+    "text": "majemuk, maka kita menggunakan",
+    "start": 1660.72,
+    "duration": 5.199
+  },
+  {
+    "text": "perulangan 4. Dalam perulangan four ini",
+    "start": 1662.36,
+    "duration": 5.64
+  },
+  {
+    "text": "kita menyimpan variabel sementara yang",
+    "start": 1665.919,
+    "duration": 4.921
+  },
+  {
+    "text": "namanya year ya, untuk menghitung ee",
+    "start": 1668.0,
+    "duration": 5.76
+  },
+  {
+    "text": "tahunnya. Kemudian kita ini hitung nih",
+    "start": 1670.84,
+    "duration": 5.679
+  },
+  {
+    "text": "range-nya kita mau perulangannya ee",
+    "start": 1673.76,
+    "duration": 5.44
+  },
+  {
+    "text": "berapa kali gitu ya. Karena di sini ada",
+    "start": 1676.519,
+    "duration": 6.361
+  },
+  {
+    "text": "3 tahun gitu ya ee perulangannya.",
+    "start": 1679.2,
+    "duration": 6.56
+  },
+  {
+    "text": "Maka di sini kita tulis, kita mau",
+    "start": 1682.88,
+    "duration": 5.2
+  },
+  {
+    "text": "menghitung dari tahun pertama ya.",
+    "start": 1685.76,
+    "duration": 4.08
+  },
+  {
+    "text": "Makanya di sini kita tulisnya satu.",
+    "start": 1688.08,
+    "duration": 3.28
+  },
+  {
+    "text": "Karena kan kalau perulangan for",
+    "start": 1689.84,
+    "duration": 3.52
+  },
+  {
+    "text": "range-nya kita mulai dari angka pertama",
+    "start": 1691.36,
+    "duration": 4.799
+  },
+  {
+    "text": "gitu kan ya. Kemudian angka keduanya",
+    "start": 1693.36,
+    "duration": 5.0
+  },
+  {
+    "text": "akhirnya batasnya sampai mana. Nah,",
+    "start": 1696.159,
+    "duration": 4.321
+  },
+  {
+    "text": "karena di sini karena for loop itu",
+    "start": 1698.36,
+    "duration": 3.919
+  },
+  {
+    "text": "menggunakan indexing ya teman-teman ya.",
+    "start": 1700.48,
+    "duration": 5.24
+  },
+  {
+    "text": "Berarti dia dimulai dari 0 1 2. Nah, 012",
+    "start": 1702.279,
+    "duration": 5.441
+  },
+  {
+    "text": "itu berarti yang tahun kedua itu dia",
+    "start": 1705.72,
+    "duration": 4.4
+  },
+  {
+    "text": "akan stop. Padahal kan kita mau dia",
+    "start": 1707.72,
+    "duration": 4.52
+  },
+  {
+    "text": "menghitungnya sampai 3. Maka di sini",
+    "start": 1710.12,
+    "duration": 6.159
+  },
+  {
+    "text": "kita kasih tahu, oh year + 1 berarti 0 1",
+    "start": 1712.24,
+    "duration": 6.6
+  },
+  {
+    "text": "2 3 gitu. Menghitungnya sampai 3.",
+    "start": 1716.279,
+    "duration": 4.601
+  },
+  {
+    "text": "Makanya di sini jangan lupa tambahkan",
+    "start": 1718.84,
+    "duration": 3.559
+  },
+  {
+    "text": "year plus 1 supaya perulangannya",
+    "start": 1720.88,
+    "duration": 3.279
+  },
+  {
+    "text": "berulang sebanyak tiga kali supaya",
+    "start": 1722.399,
+    "duration": 5.441
+  },
+  {
+    "text": "tahunnya muncul, tahun ketiganya muncul.",
+    "start": 1724.159,
+    "duration": 6.321
+  },
+  {
+    "text": "Nah, di sini kita hitung berapa sih",
+    "start": 1727.84,
+    "duration": 4.52
+  },
+  {
+    "text": "bunga yang kita dapatkan? Uang kita",
+    "start": 1730.48,
+    "duration": 3.64
+  },
+  {
+    "text": "Rp100.000",
+    "start": 1732.36,
+    "duration": 6.52
+  },
+  {
+    "text": "dikali 0,1% gitu ya. Nah, hasilnya itu",
+    "start": 1734.12,
+    "duration": 7.559
+  },
+  {
+    "text": "kita jumlahkan tuh. Kita jumlahkan",
+    "start": 1738.88,
+    "duration": 5.12
+  },
+  {
+    "text": "kemudian kita print tahun ke berapa,",
+    "start": 1741.679,
+    "duration": 4.641
+  },
+  {
+    "text": "uangnya berapa. Nih hasilnya seperti",
+    "start": 1744.0,
+    "duration": 5.48
+  },
+  {
+    "text": "ini. Uang tahun pertama ternyata kita",
+    "start": 1746.32,
+    "duration": 7.599
+  },
+  {
+    "text": "dapat uang kita ee bunga kita itu",
+    "start": 1749.48,
+    "duration": 8.0
+  },
+  {
+    "text": "Rp10.000 gitu ya. Nah, Rp10.000 kalau",
+    "start": 1753.919,
+    "duration": 7.441
+  },
+  {
+    "text": "kita bunga majemuk itu yang akan",
+    "start": 1757.48,
+    "duration": 6.64
+  },
+  {
+    "text": "dihitung ke tahun kedua itu Rp10.000 R",
+    "start": 1761.36,
+    "duration": 5.439
+  },
+  {
+    "text": "dikali",
+    "start": 1764.12,
+    "duration": 5.24
+  },
+  {
+    "text": "bunganya gitu ya. Jadi kalau misalnya",
+    "start": 1766.799,
+    "duration": 4.6
+  },
+  {
+    "text": "kita bunga tunggal itu mandinya ini akan",
+    "start": 1769.36,
+    "duration": 4.48
+  },
+  {
+    "text": "tetap Rp100.000. Tapi karena kita bunga",
+    "start": 1771.399,
+    "duration": 4.52
+  },
+  {
+    "text": "majemuk uang yang kita masukkan tuh yang",
+    "start": 1773.84,
+    "duration": 3.64
+  },
+  {
+    "text": "ini yang udah dijumlahkan dengan",
+    "start": 1775.919,
+    "duration": 3.441
+  },
+  {
+    "text": "bunganya gitu ya. Jadi bunga itu kan",
+    "start": 1777.48,
+    "duration": 4.039
+  },
+  {
+    "text": "tadi bonus gitu ya. Jadi uang kita",
+    "start": 1779.36,
+    "duration": 5.319
+  },
+  {
+    "text": "bertambah terus-menerus gitu. Nih tahun",
+    "start": 1781.519,
+    "duration": 5.561
+  },
+  {
+    "text": "kedua dia enggak cuman bertambah 10.000",
+    "start": 1784.679,
+    "duration": 4.84
+  },
+  {
+    "text": "aja dia jadi",
+    "start": 1787.08,
+    "duration": 4.68
+  },
+  {
+    "text": "121.000.",
+    "start": 1789.519,
+    "duration": 6.561
+  },
+  {
+    "text": "tahun ketiga Rp13.100",
+    "start": 1791.76,
+    "duration": 4.32
+  },
+  {
+    "text": "gitu ya. Jadi nilai akan bertambah",
+    "start": 1797.519,
+    "duration": 3.801
+  },
+  {
+    "text": "bertambah bertambah selama kita",
+    "start": 1799.32,
+    "duration": 3.88
+  },
+  {
+    "text": "menabung.",
+    "start": 1801.32,
+    "duration": 7.12
+  },
+  {
+    "text": "Nah ini tadi kalau kita lihat di sini",
+    "start": 1803.2,
+    "duration": 8.959
+  },
+  {
+    "text": "awal uang kita Rp100.000 ya kan ya dan",
+    "start": 1808.44,
+    "duration": 6.599
+  },
+  {
+    "text": "dia akan di loop setiap tahunnya. Di",
+    "start": 1812.159,
+    "duration": 5.24
+  },
+  {
+    "text": "sini program menghitungkan bunga",
+    "start": 1815.039,
+    "duration": 4.561
+  },
+  {
+    "text": "berdasarkan uang saat ini. Jadi bukan",
+    "start": 1817.399,
+    "duration": 4.801
+  },
+  {
+    "text": "uang yang kita masukkan, uang awal gitu",
+    "start": 1819.6,
+    "duration": 4.16
+  },
+  {
+    "text": "ya. Intinya seperti itu. Kalau misalnya",
+    "start": 1822.2,
+    "duration": 4.44
+  },
+  {
+    "text": "kita menghitung bunga majemuk kemudian",
+    "start": 1823.76,
+    "duration": 5.32
+  },
+  {
+    "text": "uangnya bunganya ditambah dengan uang",
+    "start": 1826.64,
+    "duration": 4.6
+  },
+  {
+    "text": "kita saat sini. Karena uangnya bertambah",
+    "start": 1829.08,
+    "duration": 4.16
+  },
+  {
+    "text": "setiap tahun, bunga tahunnya tahun",
+    "start": 1831.24,
+    "duration": 4.08
+  },
+  {
+    "text": "berikutnya juga akan bertambah gitu ya.",
+    "start": 1833.24,
+    "duration": 6.319
+  },
+  {
+    "text": "Jadi mungkin awalnya 1% 10% nambah jadi",
+    "start": 1835.32,
+    "duration": 7.76
+  },
+  {
+    "text": "20% nambah jadi 2,5% dan seterusnya dan",
+    "start": 1839.559,
+    "duration": 5.081
+  },
+  {
+    "text": "seterusnya gitu ya. Jadi perhitungan dia",
+    "start": 1843.08,
+    "duration": 5.479
+  },
+  {
+    "text": "akan bertambah. Nah, supaya tidak ee",
+    "start": 1844.64,
+    "duration": 6.84
+  },
+  {
+    "text": "kodenya itu tidak clattery atau",
+    "start": 1848.559,
+    "duration": 5.801
+  },
+  {
+    "text": "berantakan, kita bisa menambahkan juga",
+    "start": 1851.48,
+    "duration": 6.28
+  },
+  {
+    "text": "function ke dalam program kita. Nah, di",
+    "start": 1854.36,
+    "duration": 5.88
+  },
+  {
+    "text": "sini tetap kita menggunakan for loop.",
+    "start": 1857.76,
+    "duration": 4.36
+  },
+  {
+    "text": "Cuman for loop-nya ini kita masukkan ke",
+    "start": 1860.24,
+    "duration": 5.08
+  },
+  {
+    "text": "dalam sebuah function yang mengcalculate",
+    "start": 1862.12,
+    "duration": 6.159
+  },
+  {
+    "text": "bunga majemuk atau compound interest.",
+    "start": 1865.32,
+    "duration": 5.4
+  },
+  {
+    "text": "Nah, sama di sini kita masukin juga",
+    "start": 1868.279,
+    "duration": 4.52
+  },
+  {
+    "text": "princiip kita berapa, uang awalnya",
+    "start": 1870.72,
+    "duration": 5.319
+  },
+  {
+    "text": "berapa, rate-nya berapa, terus rate",
+    "start": 1872.799,
+    "duration": 5.041
+  },
+  {
+    "text": "awalnya berapa, berapa lama kita",
+    "start": 1876.039,
+    "duration": 4.6
+  },
+  {
+    "text": "menabung gitu ya. Nah, di sini kita buat",
+    "start": 1877.84,
+    "duration": 5.36
+  },
+  {
+    "text": "variabel sementara namanya money yang di",
+    "start": 1880.639,
+    "duration": 4.201
+  },
+  {
+    "text": "sini nanti akan menghitung total uang",
+    "start": 1883.2,
+    "duration": 4.12
+  },
+  {
+    "text": "kita berapa gitu. Nah, kalau ee tahun",
+    "start": 1884.84,
+    "duration": 4.04
+  },
+  {
+    "text": "pertama kan uangnya sama dengan yang",
+    "start": 1887.32,
+    "duration": 3.64
+  },
+  {
+    "text": "kita tabung ya Rp100.000 ya. Nah,",
+    "start": 1888.88,
+    "duration": 4.0
+  },
+  {
+    "text": "setelah dia melakukan perhitungan bunga",
+    "start": 1890.96,
+    "duration": 3.52
+  },
+  {
+    "text": "kan harusnya dia bertambah terus ya",
+    "start": 1892.88,
+    "duration": 3.08
+  },
+  {
+    "text": "money-nya. Nah, money-nya akan",
+    "start": 1894.48,
+    "duration": 3.559
+  },
+  {
+    "text": "bertambah, bertambah, dan bertambah.",
+    "start": 1895.96,
+    "duration": 4.28
+  },
+  {
+    "text": "kemudian dia akan mengembalikan hasil",
+    "start": 1898.039,
+    "duration": 5.401
+  },
+  {
+    "text": "akhirnya seperti itu. Jadi ini bentuk",
+    "start": 1900.24,
+    "duration": 6.2
+  },
+  {
+    "text": "ketika dia menggunakan modular design",
+    "start": 1903.44,
+    "duration": 7.68
+  },
+  {
+    "text": "ya. Oke. Ini kita bisa juga menampilkan",
+    "start": 1906.44,
+    "duration": 7.76
+  },
+  {
+    "text": "simulasi gitu ya. Nah, kalau misalnya",
+    "start": 1911.12,
+    "duration": 6.0
+  },
+  {
+    "text": "kita mau dia jauh lebih rapi, kita bisa",
+    "start": 1914.2,
+    "duration": 5.199
+  },
+  {
+    "text": "menggunakan ee ala-ala tabel gitu ya,",
+    "start": 1917.12,
+    "duration": 4.48
+  },
+  {
+    "text": "ala-ala tabel di konsol dengan",
+    "start": 1919.399,
+    "duration": 5.0
+  },
+  {
+    "text": "menggunakan ee karakter-karakter seperti",
+    "start": 1921.6,
+    "duration": 4.959
+  },
+  {
+    "text": "ini bisa dibuat lebih rapi gitu ya. Oh,",
+    "start": 1924.399,
+    "duration": 4.76
+  },
+  {
+    "text": "tahun kesatu total uangan segini, tahun",
+    "start": 1926.559,
+    "duration": 4.48
+  },
+  {
+    "text": "kedua dan tahun ketiga gitu ya. Jadi",
+    "start": 1929.159,
+    "duration": 3.76
+  },
+  {
+    "text": "jauh lebih rapi. Jadi selain kita buat",
+    "start": 1931.039,
+    "duration": 4.0
+  },
+  {
+    "text": "function, kita bisa ngprint juga ya,",
+    "start": 1932.919,
+    "duration": 6.48
+  },
+  {
+    "text": "bisa menampilkan apa sih gitu yang kita",
+    "start": 1935.039,
+    "duration": 6.681
+  },
+  {
+    "text": "dapatkan bunganya.",
+    "start": 1939.399,
+    "duration": 5.28
+  },
+  {
+    "text": "Oke. Kemudian",
+    "start": 1941.72,
+    "duration": 5.72
+  },
+  {
+    "text": "kita bisa juga membuat sebuah function",
+    "start": 1944.679,
+    "duration": 5.281
+  },
+  {
+    "text": "yang di mana dia bisa membandingkan",
+    "start": 1947.44,
+    "duration": 5.4
+  },
+  {
+    "text": "antara bunga tunggal dan bunga majemuk",
+    "start": 1949.96,
+    "duration": 4.599
+  },
+  {
+    "text": "yang kita dapatkan. Ini bentuknya",
+    "start": 1952.84,
+    "duration": 4.88
+  },
+  {
+    "text": "seperti ini ya. Jadi kalau misalnya kita",
+    "start": 1954.559,
+    "duration": 6.08
+  },
+  {
+    "text": "bunga tunggal, kita kan hanya menghitung",
+    "start": 1957.72,
+    "duration": 4.72
+  },
+  {
+    "text": "ininya aja ya. Kita hanya menghitung",
+    "start": 1960.639,
+    "duration": 4.121
+  },
+  {
+    "text": "total bunga yang kita dapetin. Udah",
+    "start": 1962.44,
+    "duration": 4.28
+  },
+  {
+    "text": "total uang kita berapa dijumlahkan",
+    "start": 1964.76,
+    "duration": 4.279
+  },
+  {
+    "text": "dengan bunga yang kita dapatin. Nah,",
+    "start": 1966.72,
+    "duration": 4.919
+  },
+  {
+    "text": "kalau misalnya",
+    "start": 1969.039,
+    "duration": 4.36
+  },
+  {
+    "text": "bunga majemuk itu kita perhitungan",
+    "start": 1971.639,
+    "duration": 3.88
+  },
+  {
+    "text": "dengan menggunakan for loop tadi ya.",
+    "start": 1973.399,
+    "duration": 4.76
+  },
+  {
+    "text": "Nah, ini kita bisa bandingkan, tampil",
+    "start": 1975.519,
+    "duration": 5.52
+  },
+  {
+    "text": "bandingkan hasilnya. Kalau kita",
+    "start": 1978.159,
+    "duration": 5.201
+  },
+  {
+    "text": "mendapatkan benefit bunga tunggal aja",
+    "start": 1981.039,
+    "duration": 4.201
+  },
+  {
+    "text": "ketika kita menabung, berarti uang kita",
+    "start": 1983.36,
+    "duration": 5.72
+  },
+  {
+    "text": "di tahun ketiga 130 ri.000. Tapi kalau",
+    "start": 1985.24,
+    "duration": 5.84
+  },
+  {
+    "text": "kita dapetin bunga sama jemuk kita",
+    "start": 1989.08,
+    "duration": 5.839
+  },
+  {
+    "text": "untungnya 33.100",
+    "start": 1991.08,
+    "duration": 5.479
+  },
+  {
+    "text": "perak gitu ya. Karena uang menabung kita",
+    "start": 1994.919,
+    "duration": 3.64
+  },
+  {
+    "text": "Rp100.000 gitu. Jadi kita bisa bandingin",
+    "start": 1996.559,
+    "duration": 4.521
+  },
+  {
+    "text": "nih berapa benefit yang kita dapatkan",
+    "start": 1998.559,
+    "duration": 4.521
+  },
+  {
+    "text": "ketika kita mendapatkan bunga tunggal",
+    "start": 2001.08,
+    "duration": 6.24
+  },
+  {
+    "text": "dan juga bunga majemuk. Oke. Nah, kenapa",
+    "start": 2003.08,
+    "duration": 6.559
+  },
+  {
+    "text": "sih bunga majemuk ini lebih untung gitu",
+    "start": 2007.32,
+    "duration": 4.0
+  },
+  {
+    "text": "ya? Kalau misalnya kita menabung terus",
+    "start": 2009.639,
+    "duration": 4.92
+  },
+  {
+    "text": "itu dapat bunga majemuk gitu ya. Kalau",
+    "start": 2011.32,
+    "duration": 4.839
+  },
+  {
+    "text": "intinya kalau bunga tunggal tadi kita",
+    "start": 2014.559,
+    "duration": 3.72
+  },
+  {
+    "text": "cuma dapat bonus Rp10.000 walaupun kita",
+    "start": 2016.159,
+    "duration": 4.0
+  },
+  {
+    "text": "menabung terus-menerut gitu ya. Tapi",
+    "start": 2018.279,
+    "duration": 3.721
+  },
+  {
+    "text": "kalau kitaapat menggunakan bunga,",
+    "start": 2020.159,
+    "duration": 3.64
+  },
+  {
+    "text": "mendapatkan bunga majemuk dan kita",
+    "start": 2022.0,
+    "duration": 4.399
+  },
+  {
+    "text": "hitung gitu ya, dia akan bertambahnya",
+    "start": 2023.799,
+    "duration": 4.401
+  },
+  {
+    "text": "lebih banyak seperti yang sudah kita",
+    "start": 2026.399,
+    "duration": 3.88
+  },
+  {
+    "text": "lihat tadi. Anggap aja kalau kalian",
+    "start": 2028.2,
+    "duration": 4.52
+  },
+  {
+    "text": "pernah main salju gitu ya, di bola salju",
+    "start": 2030.279,
+    "duration": 6.201
+  },
+  {
+    "text": "itu kan semakin kita dorong ee",
+    "start": 2032.72,
+    "duration": 5.959
+  },
+  {
+    "text": "salju yang ada di bawahnya bola salju",
+    "start": 2036.48,
+    "duration": 3.88
+  },
+  {
+    "text": "kita itu akan ikut nempel gitu ya. Nanti",
+    "start": 2038.679,
+    "duration": 3.041
+  },
+  {
+    "text": "dia akan semakin besar, semakin besar,",
+    "start": 2040.36,
+    "duration": 3.199
+  },
+  {
+    "text": "semakin membesar gitu. Ee sama seperti",
+    "start": 2041.72,
+    "duration": 4.36
+  },
+  {
+    "text": "uang kita gitu ya, semakin membesar.",
+    "start": 2043.559,
+    "duration": 4.52
+  },
+  {
+    "text": "Nah, untuk mengetahui pemahaman",
+    "start": 2046.08,
+    "duration": 4.4
+  },
+  {
+    "text": "teman-teman tentang bunga majemuk,",
+    "start": 2048.079,
+    "duration": 7.32
+  },
+  {
+    "text": "silakan kerjakan tes berikut ini.",
+    "start": 2050.48,
+    "duration": 4.919
+  },
+  {
+    "text": "Oke, Teman-teman. Begitulah tadi materi",
+    "start": 2056.48,
+    "duration": 4.76
+  },
+  {
+    "text": "kita tentang financial literacy. Jadi,",
+    "start": 2059.0,
+    "duration": 4.32
+  },
+  {
+    "text": "kita sudah membahas tentang menabung.",
+    "start": 2061.24,
+    "duration": 4.439
+  },
+  {
+    "text": "Kita telah membahas perbandingan antara",
+    "start": 2063.32,
+    "duration": 4.519
+  },
+  {
+    "text": "bunga tunggal dan bunga majemuk. Dan",
+    "start": 2065.679,
+    "duration": 4.24
+  },
+  {
+    "text": "kita bisa mensimulasikan keuangan kita.",
+    "start": 2067.839,
+    "duration": 5.56
+  },
+  {
+    "text": "Kalau misalnya kita dapat bunga majemuk,",
+    "start": 2069.919,
+    "duration": 5.92
+  },
+  {
+    "text": "uang kita akan jadi berapa? Kalau kita",
+    "start": 2073.399,
+    "duration": 4.72
+  },
+  {
+    "text": "dapat bunga tunggal itu kita",
+    "start": 2075.839,
+    "duration": 4.8
+  },
+  {
+    "text": "keuntungannya berapa? Oke, sampai sini",
+    "start": 2078.119,
+    "duration": 5.52
+  },
+  {
+    "text": "dulu materinya.",
+    "start": 2080.639,
+    "duration": 3.0
+  }
+]

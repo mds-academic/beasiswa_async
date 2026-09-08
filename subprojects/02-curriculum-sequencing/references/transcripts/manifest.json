@@ -1,0 +1,126 @@
+{
+  "retrievedAt": "2026-09-08T09:41:08.963490+00:00",
+  "method": "youtube_transcript_api; Indonesian then English captions; no cookies",
+  "videos": [
+    {
+      "videoId": "-hYK440Vlr8",
+      "status": "fetched",
+      "language": "id",
+      "generated": true,
+      "snippets": 224,
+      "lastCaptionEnd": 622.92
+    },
+    {
+      "videoId": "MLgrQoRo2oo",
+      "status": "fetched",
+      "language": "id",
+      "generated": true,
+      "snippets": 52,
+      "lastCaptionEnd": 143.319
+    },
+    {
+      "videoId": "P8Ea0v8Gy2o",
+      "status": "fetched",
+      "language": "id",
+      "generated": true,
+      "snippets": 871,
+      "lastCaptionEnd": 2305.72
+    },
+    {
+      "videoId": "RnyYn2SzFVU",
+      "status": "fetched",
+      "language": "id",
+      "generated": true,
+      "snippets": 1278,
+      "lastCaptionEnd": 3507.559
+    },
+    {
+      "videoId": "S1j2gt3Up74",
+      "status": "fetched",
+      "language": "id",
+      "generated": true,
+      "snippets": 1399,
+      "lastCaptionEnd": 3683.4
+    },
+    {
+      "videoId": "UhutS4BVKhk",
+      "status": "fetched",
+      "language": "id",
+      "generated": true,
+      "snippets": 1412,
+      "lastCaptionEnd": 3833.5200000000004
+    },
+    {
+      "videoId": "_e3hs1nWuME",
+      "status": "fetched",
+      "language": "id",
+      "generated": true,
+      "snippets": 246,
+      "lastCaptionEnd": 658.519
+    },
+    {
+      "videoId": "_iRZY0-_skc",
+      "status": "fetched",
+      "language": "id",
+      "generated": true,
+      "snippets": 409,
+      "lastCaptionEnd": 1099.24
+    },
+    {
+      "videoId": "_jm2p3pstrM",
+      "status": "fetched",
+      "language": "id",
+      "generated": true,
+      "snippets": 224,
+      "lastCaptionEnd": 596.0
+    },
+    {
+      "videoId": "bMsKBaRsKmc",
+      "status": "fetched",
+      "language": "id",
+      "generated": true,
+      "snippets": 850,
+      "lastCaptionEnd": 2219.16
+    },
+    {
+      "videoId": "cWfbcaSg7Eo",
+      "status": "fetched",
+      "language": "id",
+      "generated": true,
+      "snippets": 1296,
+      "lastCaptionEnd": 3323.88
+    },
+    {
+      "videoId": "hP6MSkerx9A",
+      "status": "fetched",
+      "language": "id",
+      "generated": true,
+      "snippets": 782,
+      "lastCaptionEnd": 2083.639
+    },
+    {
+      "videoId": "pKYN1E60xtU",
+      "status": "fetched",
+      "language": "id",
+      "generated": true,
+      "snippets": 1737,
+      "lastCaptionEnd": 4475.799999999999
+    },
+    {
+      "videoId": "tDkIcceTzII",
+      "status": "fetched",
+      "language": "id",
+      "generated": true,
+      "snippets": 757,
+      "lastCaptionEnd": 1988.32
+    },
+    {
+      "videoId": "yxmLOk5vcFg",
+      "status": "fetched",
+      "language": "id",
+      "generated": true,
+      "snippets": 72,
+      "lastCaptionEnd": 190.08
+    }
+  ]
+}

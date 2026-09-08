@@ -1,0 +1,224 @@
+[0.20] Jika ada program atau sebu eh sesuatu
+[4.52] yang kondisinya hanya satu, maka kita
+[6.88] bisa menggunakan if dan else aja. Tapi
+[10.92] bagaimana kalau misalnya kita memiliki
+[14.28] lebih dari satu kondisi gitu ya?
+[16.56] Misalnya jawabannya enggak yang benar
+[18.44] itu enggak hanya yang Aja, tapi yang B
+[20.64] itu juga bisa benar. Tapi misalnya kalau
+[23.36] ee murid kita atau pemain game kita tuh
+[26.92] menjawabnya A, maka skornya misalnya 90.
+[30.44] Tapi kalau misalnya dia jawabnya B, maka
+[32.40] skornya hanya 80 gitu. Berarti ada dua
+[35.16] kondisi yang harus terpenuhi. Nah, kalau
+[38.84] misalnya kondisinya lebih dari satu,
+[41.60] maka kita ee tampilannya dalam bahasa
+[45.20] Python itu seharusnya seperti ini. Kita
+[48.04] tuliskan if-nya terlebih dahulu.
+[51.00] Kemudian kita masukkan else. Nah, di
+[54.48] dalam else ini kita tulis lagi if
+[56.48] kondisi yang kedua nih. Jadi kondisi
+[59.88] satu kalau misalnya kondisi satu tidak
+[62.72] terpenuhi maka kita tambahin else tadi
+[65.00] ya. Nah, di dalam else ini kita harus
+[66.72] ngecek lagi apakah kondisi yang kedua
+[69.04] terpenuhi juga. Kalau enggak, maka dia
+[72.04] akan menjalankan else-nya. Itu kalau
+[74.24] misalnya ada kondisi ketiga, ada kondisi
+[76.56] keempat, dan seterusnya. Jadi dalam
+[78.92] bahasa Python itu dia seharusnya
+[80.44] tertulisnya seperti ini. Nah, namun ee
+[83.60] tulisan seperti ini kan kadang
+[85.20] membingungkan ya, Teman-teman ya. Karena
+[87.72] dia semakin menjorok ke kanan semakin
+[89.52] jauh tuh. Dan kita sebagai pengguna,
+[92.80] sebagai yang mengetik programmer bingung
+[94.84] dong ketika membacanya. Nah, untungnya
+[98.68] Python itu selalu update dan dia
+[100.44] sekarang udah canggih. Sekarang kita
+[102.40] tidak perlu lagi menulis kode yang
+[104.44] berjenjang seperti ini. Kita bisa
+[107.52] menggunakan solusi berikut ini. Nah,
+[111.12] kalau ada kondisi yang lebih dari dua
+[114.04] misalnya contoh kasusnya ee mungkin pada
+[117.36] saat kalian bagi rapot, kalian melihat
+[119.40] nih ee di rapot kalian di palian di
+[122.48] bagian paling bawah ada ee semacam ee
+[127.32] akreditasi nilai gitu ya, predikat.
+[129.56] Misalnya kalau nilainya nilai kita di
+[131.76] rapot itu 90 sampai 100, maka
+[134.56] predikatnya sangat baik. atau misalnya
+[137.20] nilai kita 7 antara 75 sampai 89 karena
+[141.48] 90 kan sangat baik ya. Nah, maka
+[143.84] prediket akan baik dan seterusnya dan
+[146.40] seterusnya. Nah, kondisi ini kalau misal
+[149.40] kan kondisinya enggak hanya satu ya.
+[150.92] Pertama program tuh harus ngecek nih
+[152.36] apakah nilainya antara 90 sampai 100.
+[155.08] Terus itu dia ngecek lagi yang kedua dan
+[157.08] ketiga dan seterusnya. Nah, dalam bahasa
+[159.76] Python untuk
+[163.60] menggunakan kondisi yang lebih dari
+[165.88] satu, kita bisa menggunakan yang namanya
+[168.52] function yang namanya elif. Nah, elif
+[171.52] atau singkatan dari else if gitu ya,
+[174.48] Teman-teman. Karena di sini kan di sini
+[176.32] ada else, di dalamnya ada if. Nah, kalau
+[179.04] bahasa Python yang terbaru itu dia akan
+[181.60] ee mengganti e langsung digabung nih
+[183.92] sama dia. Jadi tulisannya elif yang
+[186.48] artinya kalau misalnya kondisi
+[188.88] sebelumnya salah, coba cek kondisi
+[190.96] bagian ini. Maka di sini bentuk bahasa
+[195.00] python-nya tadi itu seperti ini. Ift
+[198.76] kondisi yang paling pertama dicek itu
+[200.48] if, kemudian dibaca dengan eh
+[202.96] dilanjutkan dengan elif. Elif. Terus itu
+[205.68] kalau misalnya kondisinya tidak ada yang
+[207.20] terpenuhi kita tambahkan else. Nah,
+[210.08] kalau bahasa manusia kan kita melihatnya
+[211.96] seperti ini ya. Kalau nilai 90 ke atas
+[214.24] maka sangat baik dan seterusnya dan
+[216.12] seterusnya. Nah, ini kan bahasa manusia,
+[217.92] bahasa Python-nya itu if elif elif.
+[221.28] Terus kalau misalnya ada semua
+[222.96] kondisinya tidak terpenuhi maka kita
+[224.56] tambahin else gitu. Nah, bentuk bahasa
+[228.68] Python-nya itu seperti apa sih? Nah, ini
+[230.72] dia contohnya. Oh iya. Ee tadi yang
+[234.64] bercabang tadi ya ee nilai if yang
+[237.80] bercabang tadi if yang kondisinya lebih
+[239.60] dari satu itu disebut dengan multi
+[241.84] branch decision teman-teman. Nah bentuk
+[244.36] multi branch decision itu di Python nih
+[246.80] seperti ini sama ya seperti eh bahasa e
+[251.20] bahasa pemrograman Python yang if yang
+[253.92] kondisinya satu tadi itu di awal kita
+[257.40] harus mendeklarasikan dulu variabelnya.
+[260.28] Misal variabel skornya itu sama dengan
+[262.80] 82. Oh, nilai kita berarti 82 gitu ya.
+[266.08] Nah, programnya akan ngecek nih jika if
+[269.60] score lebih dari atau sama dengan 90 kan
+[272.24] tadi kita range-nya 90 sampai 100 maka
+[274.96] kita mau dia nge-print sangat baik. Nah,
+[277.96] kita cek nih kondisi yang kedua. Kita
+[280.36] tuliskan kondisi yang kedua. Nah, kita
+[282.08] tulisnya bukan else. Nah, misalnya kita
+[284.80] tuliskan digantikan dengan elif. Dan
+[287.52] kondisi yang kedua kalau misal skornya
+[291.04] variabel skornya itu nilainya lebih atau
+[293.24] sama dengan 75 karena kita mau range-nya
+[295.56] 75 sampai 89 itu dia akan ng-print
+[300.12] tulisan baik.
+[302.44] Ada if yang ketiga, kalau misalnya dia
+[304.40] antara 60 sampai 74 maka dia tulisannya
+[308.24] cukup. Tapi kalau misalnya dia tidak ada
+[310.72] yang terpenuhi, misalnya nilainya under
+[313.56] 60, maka kita akan ee nampilkan teks
+[318.28] perlu latihan lagi. Nah, kita cek nih
+[320.48] contoh kita 82 tadi. Dia akan
+[322.96] melemparkan ke dalam condition yang
+[325.40] pertama. Ingat ya, Teman-teman, dalam
+[327.32] bahasa program Python itu dia mengalir
+[329.44] dari atas sampai bawah gitu. Jadi nilai
+[333.44] ini akan dicek dulu dari atas. 82. Dicek
+[337.40] apakah 82
+[340.24] itu dia lebih besar dari 90. Oh, 82
+[343.44] tidak lebih besar dari 90. Kita cek lagi
+[345.48] karena di sini ada dua kondisi ya, ada
+[346.88] sama dengan apakah 82 = 90? Oh, tidak
+[351.16] juga. Maka kondisi yang A itu kita
+[354.12] tutup.
+[355.96] Eh, kondisinya akan pindah ke yang nomor
+[359.12] du. Kondisi yang kedua
+[361.52] apakah 82 lebih besar dari 75?
+[365.80] Wah, ternyata benar 82 lebih besar dari
+[368.40] 75. Apakah kita perlu ngecek lagi
+[370.32] kondisi kedua? Tidak. Karena dalam
+[372.40] bahasa pemegangan Python, kalau sudah
+[374.28] ada yang benar maka dia akan stop. Nah,
+[376.68] di sini 82 lebih besar dari 75 maka dia
+[379.60] akan langsung nge-print tulisan baik.
+[381.84] Yang di bawah ini akan dia lewatin pun
+[384.48] yang di perintah selanjutnya kan setelah
+[386.16] kita ngecek lebih besar ada sama dengan
+[388.24] ya. Kita harus ngecek juga programnya
+[389.92] karena kondisinya nih ngecek dua apakah
+[391.80] dia lebih besar dari 75 atau sama dengan
+[393.68] 75. karena dia lebih besar sudah benar
+[395.96] maka dia akan stop program di sini gitu
+[398.76] ya. Jadi 82 harusnya jawabannya baik.
+[402.76] Nah, kalau kita lihat hasilnya baik
+[405.36] karena nilainya sudah 82 ee sudah ee
+[409.12] belum mencapai 90 tapi sudah mencapai
+[411.20] lebih dari 75. Kurang lebih seperti itu.
+[414.72] Nah, ini yang perlu teman-teman pahami
+[417.36] dan ingat nih, Teman. ketika kita
+[419.60] menggunakan multi branch conditional,
+[422.32] urutan itu sangat penting dalam ee
+[425.04] mendeklarasikan sebuah kondisi.
+[427.60] Contohnya nih ada contoh kedua ya, kita
+[430.12] menggunakan ee prinsip yang sama ee
+[432.76] predikat nilai, tapi di sini kita ee
+[435.84] nulisnya dari bawah ke atas. Misalnya
+[438.96] kita mau ee misalnya skor kita tuh 95.
+[444.44] Kondisi yang pertama itu dia ngecek dulu
+[446.76] apakah skornya lebih besar sama dengan
+[449.48] 60. Kondisi yang kedua, dia ngecek
+[452.32] apakah ee skornya lebih besar atau sama
+[454.72] dengan 75. Yang ketiga skornya lebih
+[457.36] besar sama 90. Nah, kalau kita bahas
+[460.44] manusia, oh 95 kan dia lebih dari 90 ya.
+[463.44] Harusnya nanti programnya akan ng-print
+[465.72] sangat baik gitu ya. Nah, tapi kalau
+[468.20] kita lihat di sini, coba kita jalankan
+[470.80] programnya ya. Kita lihat kondisi
+[474.20] seperti yang Kakak bilang tadi,
+[475.48] programnya itu berjalan dari atas ke
+[477.32] bawah seperti air terjun ya mengalir ke
+[479.60] bawah, maka dia akan ngecek dari atas
+[481.48] dulu, bukan ngecek yang paling bawah.
+[483.88] Kalau kita manusia mungkin bisa langsung
+[485.48] ngecek ya, langsung paling bawah, tapi
+[486.92] program tidak seperti itu. Dia akan
+[488.44] ngecek dari atas dulu. Misalnya skornya
+[491.28] nilainya 95,
+[493.72] apakah 95 lebih besar dari 60? Wah,
+[497.32] ternyata 95 itu lebih besar dari 60.
+[500.76] Maka seperti yang Kakak bilang tadi,
+[502.12] kalau misalnya dia sudah ada yang benar,
+[503.92] maka dia akan programnya akan stop.
+[506.20] Harusnya di sini dia akan menjalankan
+[508.28] cukup. Nah, kalau kita lihat di bawah
+[511.48] hasilnya cukup. Nah, padahal nilainya
+[514.68] 95. Harusnya dia tulisannya yang muncul
+[517.44] itu sangat baik. Nah, kenapa? Padahal
+[520.04] skornya 795
+[522.00] nih. Karena Python membaca dari atas dan
+[524.48] ke bawah. Saat menemukan kondisi pertama
+[526.92] yang benar, Python akan langsung
+[528.52] menjalankan bagian itu dan melewatkan
+[530.20] sisanya. Ya, jadi yang lain yang ini
+[533.88] kalau misalnya kondisi pertama udah
+[536.12] benar, maka yang lain semuanya akan
+[538.60] diop. dia tidak akan dijalankan seperti
+[541.44] itu. Jadi kalau misalnya kita
+[544.04] menggunakan nilai gitu ya untuk
+[545.96] mengkategorikan sebuah nilai
+[548.96] teman-teman harus menambahkan kondisi
+[552.44] dari yang paling tinggi gitu ya.
+[555.68] Kondisinya yang paling tinggi batas yang
+[557.72] paling atas. Jadi kalau misalnya yang ee
+[561.00] skor kita 95 tadi nih bentuk yang benar
+[564.28] seperti ini ya. Jadi yang paling atas
+[566.24] itu lebih besar dari 90. dan dia akan
+[569.56] nge-print sangat baik. Jadi kalau
+[571.00] misalnya dia menjalankan apakah 95 lebih
+[574.12] besar dari 90 benar, maka dia akan
+[576.36] ng-print sangat baik seperti itu ya.
+[578.96] Jadi jangan lupa dipikirkan dan
+[581.60] diplanning secara hati-hati.
+[584.56] Untuk mengetahui pemahaman teman-teman
+[587.52] tentang eh multibranch conditional yang
+[590.24] ada di dalam bahasa Python, silakan
+[592.44] mengerjakan kuis berikut ini.

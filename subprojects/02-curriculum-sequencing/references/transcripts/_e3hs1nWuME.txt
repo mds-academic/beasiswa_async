@@ -1,0 +1,246 @@
+[0.08] Nested condition itu apa sih? Nested
+[2.32] condition adalah sebuah conditional yang
+[5.36] ada di dalam conditional. Nah, maksudnya
+[7.64] seperti apa, Kak? Contoh sederhana
+[9.60] seperti ini. Setelah program mengecek
+[11.92] sebuah kondisi, program akan mengecek
+[14.68] kondisi lain di dalamnya. Jadi, di sini
+[17.36] bukan berarti kalau misalnya kita di
+[19.36] multiple eh conditional sebelumnya itu
+[22.64] kan kita kalau ada kondisi satu, kondisi
+[25.60] dua, dan kondisi ketiga gitu ya. Nah,
+[27.84] kalau di dalam nestedate conditionals
+[30.08] itu berarti dia di dalam kondisi satu
+[32.60] itu ada kondisi lain. Berarti dia eh
+[35.56] kondisi satu benar terus dia akan
+[38.12] mengecek kondisi yang ada di dalam
+[39.84] kondisi satu tadi. Kalau multiple
+[41.84] condition yang sebelumnya itu kalau
+[43.52] misalnya kondisi satu tidak benar maka
+[45.60] dia akan ngecek nih kondisi yang
+[47.48] sebelumnya, kondisi yang kedua. Kalau
+[49.72] misalkan kondisi kedua salah, dia akan
+[51.52] mengecek kondisi ketiga. Nah, kalau next
+[53.56] state conditional ini dia kondisi satu
+[55.76] misalnya benar, maka dia akan mengecek
+[57.44] kondisi yang ada di dalam kondisi satu
+[59.24] itu tadi. Nah, contohnya di dalam
+[61.48] kehidupan nyata. Bayangkan di kita mau
+[64.56] menonton sebuah film. Nah, ketika kita
+[67.52] mau masuk bioskop, kita harus dicek dulu
+[70.20] nih. Kita dicek nih sama sapam apakah
+[72.08] kita punya tiket apa tidak. Kalau
+[74.04] misalnya kita punya tiket, maka kita
+[75.68] boleh masuk ke dalam bioskop. Nah,
+[77.96] setelah kita masuk ke dalam bioskop
+[79.76] tadi, kita ngecek lagi apakah kamu kita
+[83.08] mau misalnya mau menonton sebuah film
+[85.44] yang ada parental guidance-nya. Nah,
+[89.28] berarti petugas yang ada di dalam
+[91.04] bioskop itu dia akan mengecek kembali
+[93.44] apakah kamu cukup umur. Mungkin
+[95.36] dibuktikan dengan KTP gitu ya. Apakah
+[97.32] kamu punya KTP untuk menonton film?
+[99.84] Kalau misalnya dia ee punya KTP dan dia
+[103.76] bisa ee apa memverifikasi kalau misalnya
+[106.24] umurnya cukup, maka dia boleh menonton
+[108.08] filmnya. Jadi di sini ada pengecekan
+[111.04] dalam pengecekan. Pengecekan pertama
+[113.36] apakah dia punya tiket, pengecekan kedua
+[115.96] apakah umurnya cukup. Jadi kondisi
+[118.28] pertama dia cek dulu apakah dia punya
+[119.80] tiket. Kalau dia punya tiket dia baru
+[121.56] ngecek apakah umurnya cukup gitu ya.
+[123.92] Jadi di sini bukan kondisi satu, bukan
+[126.84] kondisi dua, tapi kondisi 1 memiliki
+[129.76] kondisi 1A misalnya seperti itu. Nah,
+[133.04] kita bahas lebih dalam yuk. Analoginya
+[136.12] seperti ini. Contoh lainnya ketika kita
+[138.76] mau mau mau memasuki sebuah gedung atau
+[141.60] kita mau memasuki sebuah museum. Nah,
+[144.72] ketika kita masuk museum itu kan kita
+[146.76] harus mendaftarkan ya, mendaftar dan
+[148.84] mendapatkan kartu akses. Di pintu awal
+[151.84] kita dicek apakah kita punya kartu akses
+[154.12] masuk ke museum. Oh iya, kita punya
+[156.20] kartu akses maka kita akan masuk ke
+[159.24] dalam museum. Nah, misalnya di dalam
+[163.00] museum ini kita melihat sebuah ruangan
+[165.04] nih. Nah, misalnya dia ruang rapat atau
+[168.48] misalnya dalam museum itu ada ruangan
+[170.12] khusus staf. Nah, kalau kita mau masuk
+[172.68] ke dalam ruang staf itu di depan tuh ada
+[174.72] kondisinya lagi ya. Apakah kamu punya
+[177.48] izin untuk masuk ke ruangan khusus tadi,
+[180.24] ruang rapat tadi atau ruang staf tadi.
+[182.48] Kalau kamu punya maka dia akan
+[184.64] menjalankan sesuatu. Kalau kamu tidak
+[186.36] punya maka dia akan menjalankan yang
+[187.80] lainnya. Jadi kalau dalam nonstate
+[190.76] condition kita syaratnya adalah harus
+[193.84] lulus dulu kondisi pertama
+[197.04] baru kita pergi ke kondisi kedua gitu
+[199.64] ya. Kalau misalnya yang multi branch eh
+[203.00] conditional sebelumnya kan kita kalau
+[204.96] kondisi pertama tidak lolos dia akan
+[206.76] mengecek kondisi kedua. Kalau di sini
+[208.92] kalau lolos maka dia akan ngecek lagi
+[211.00] kondisi kedua tidak langsung menjalankan
+[213.00] sebuah perintah. Oke kita lanjut bahasa
+[217.08] dalam bahasa peman Python nestedate
+[219.40] conditional itu diimplementasikan
+[221.32] seperti ini. Nah ini kita eh gunakan
+[224.28] analogi ee bioskop sebelumnya gitu ya.
+[227.20] anggap aja e bioskop ini punya peraturan
+[229.72] beli tiketnya harus sebelum masuk dan eh
+[233.24] kalau sudah masuk kita boleh pilih
+[234.92] langsung film yang mau kita tonton apa
+[236.68] gitu contohnya ya. Nah, di sini kita
+[239.44] punya bahasa Python ada pertama
+[242.76] deklarasi variabel dulu. Nah, deklarasi
+[246.24] variabelnya di sini ada dua, has ticket
+[250.84] atau eh bukan atau dan juga age. Nah,
+[254.72] kalau misalnya di sini kita lihat
+[256.88] misalnya eh kondisinya
+[259.64] Kak Nurul itu punya tiket dia true. Nah,
+[264.12] dan juga Kak Nurul itu usianya 16 tahun.
+[267.56] Nah, di sini nested conditionalnya
+[269.96] seperti ini. Pertama, dia ngecek apakah,
+[273.68] if, jika dia mempunyai tiket. Nah, kalau
+[277.88] misalnya dalam bahasa pemrograman Python
+[280.16] untuk nilai true sama false, kalau
+[282.56] nilainya true dia langsung nulis seperti
+[284.80] ini bisa ya. Jadi dia enggak perlu ada
+[287.92] lebih besar atau sama dengan sama dengan
+[289.68] true. Kalau kita juga bisa nulis seperti
+[292.36] ini ya, Teman-teman ya. if eh has ticket
+[296.68] has ticket
+[299.60] sama dengan sama dengan true. Nah, ini
+[302.08] kita bisa tulis seperti ini. Tapi Python
+[304.60] itu dia sudah sangat canggih. Ketika
+[306.56] kita tulis has ticket aja, dia akan
+[308.52] ngecek nih apakah ee apakah dia benar
+[312.08] kondisinya apa tidak gitu ya. Jadi ee
+[314.84] apa itu namanya? Dia akan langsung
+[318.16] mengecek.
+[319.84] Nah, kalau sudah nih dia ngecek apakah
+[323.08] dia punya tiket, kalau dia benar, maka
+[325.48] akan ada kondisi kedua di dalamnya.
+[328.20] Kondisi keduanya apa? Jika umurnya lebih
+[331.16] dari atau sama dengan 13, maka dia boleh
+[334.60] masuk ke dalam studio A misalnya. Tapi
+[337.16] kalau misalnya tidak, kita tuliskan else
+[339.72] di sini, maka dia akan menampilkan
+[341.88] tulisan umur belum cukup. Nah, jadi
+[344.44] kondisi pertamanya dia ngecek dulu
+[345.80] apakah punya tiket apa enggak. Kalau
+[347.52] misalnya dia enggak punya tiket, maka
+[350.00] program yang ada di dalam yang di
+[351.80] bawahnya itu akan dikip. Dia akan
+[354.32] langsung menjalankan yang else karena di
+[356.28] sini kondisinya dia tidak punya tiket
+[358.72] kalau misalnya di sini nilainya false
+[360.28] ya. Nah, dia akan langsung ke bawah
+[362.16] sini. Tapi kalau misalnya true maka dia
+[364.08] akan menjalankan if yang ada di dalamnya
+[366.44] seperti ini. Nah, kalau e kalau perintah
+[369.68] biasanya kan dia langsung ngprint atau
+[371.64] melakukan perhitungan atau segala macam.
+[373.64] Nah, kalau di sini dia di dalam if-nya
+[375.40] ada if-nya lagi seperti itu,
+[377.92] Teman-teman. Oke, itu untuk multi eh
+[381.40] nested conditional yang ada di dalam
+[383.52] bahasa pemrograman Python.
+[386.28] Cara bacanya tadi kita sudah bahas ya,
+[388.56] Teman-teman ya. Kondisi satu dan juga
+[391.00] kondisi dua. Dan ini ada notice nih, ada
+[394.64] warning. Jangan lupa ketika kita membuat
+[397.76] sebuah ear itu dia akan ada
+[402.40] coindentasi ya, indentation yang harus
+[405.44] kita letakkan secara tepat. Nih
+[407.72] contohnya di sini kondisi pertama apakah
+[412.16] dia punya tiket itu kan dia harus ada
+[414.84] tab-nya ya, indentation-nya dulu atau
+[417.32] spasi empat kali. Nah, kalau misalnya
+[420.80] kita tambahin if lagi di dalamnya, maka
+[423.60] di bawahnya itu kita perlu tambahkan
+[426.52] indentation juga. Harusnya ketika kita
+[428.40] mengetik if
+[430.88] kita enter dia akan langsung auto
+[432.52] indentation juga atau kalau misalnya dia
+[434.76] indentation-nya hilang bisa kita spasi
+[436.36] empat kali. Yang penting perintahnya
+[438.72] jangan sampai mereka semua ada di dalam
+[443.32] ee satu garis yang sama gitu ya. Jadi
+[445.80] if-nya semuanya ee rata. Kalau if-nya
+[448.72] sama rata seperti ini semua, maka dia
+[451.04] dianggap bukan nested conditional, tapi
+[452.96] if biasa gitu, Teman-teman, ya. Jadi,
+[455.24] jangan sampai kita eh salah atau kurang
+[458.52] menambahkan indentation.
+[461.60] Sekarang contoh lain, nested condition
+[465.20] di dalam sebuah game. Misalnya kita mau
+[469.64] ee menambahkan sebuah level bonus gitu
+[472.88] ya. Jadi ee supaya kita bisa
+[475.28] nambahin ee koinnya atau uangnya gitu
+[478.48] ya.
+[479.76] Dan di sini kita kalau mau masuk level
+[482.52] bonus, kita kasih kondisi jika ee pemain
+[487.88] sudah menyelesaikan level 1 dan pemain
+[491.24] punya minimal 100 koin. Jadi untuk masuk
+[494.32] ke level bonus dia sudah menyelesaikan
+[496.32] level 1 dan pemain punya minimal 100
+[499.32] koin. Nah, nested condition-nya seperti
+[502.08] ini. Pertama, as always, kita harus
+[505.64] tambahkan dulu, kita deklarasikan dulu
+[509.16] sebuah variabel, ya. Eh, variabelnya
+[511.56] yang pertama di sini apakah levelnya
+[514.68] sudah komplit? Kalau sudah, kita tulis
+[517.08] di sini true, kalau belum kita tulis
+[518.60] false. Baru kita tambahkan variabel yang
+[520.92] akan mengecek koinnya. Apakah koinnya ee
+[524.56] lebih dari 100 apa enggak, nanti kita
+[526.20] cek, ya. Nah, di sini kita masuk ke
+[529.36] condition yang pertama. Apakah levelnya
+[531.36] sudah komplit? Kalau misalnya salah,
+[533.96] misalnya di sini anggap aja false ya
+[535.56] yang di sini. Kalau misalnya dia
+[538.16] levelnya belum complete, maka dia akan
+[540.24] langsung menjalankan else-nya. Dia akan
+[543.56] ng-print selesaikan level terlebih
+[545.80] dahulu. Tapi kalau misalnya dia benar,
+[549.20] since kita nulis di sini benar, maka di
+[551.92] sini dia akan langsung mengecek kondisi
+[554.12] yang kedua. dia ngecek kondisi keduanya
+[557.24] apakah koinnya lebih dari 100. Apakah
+[561.44] 120? Ini kan koinnya tadi 120 ya. Apakah
+[564.44] 120 lebih dari 100? Oh iya. Maka dia
+[568.04] akan langsung ee ngprint masuk ke level
+[571.28] bonus. Dia akan bisa langsung masuk.
+[573.12] Tapi misalnya di sini kita koinnya
+[574.60] anggap aja masih 20. Kita cek di sini
+[578.68] apakah koinnya apakah 20 lebih dari 100?
+[582.08] Tidak. Oh. Maka dia akan langsung
+[583.76] menjalankan el. koin belum cukup, maka
+[587.20] programnya dia tidak bisa masuk ke level
+[589.68] bonus. Jadi, itulah contoh dari
+[593.20] nestedate condition. Untuk
+[597.16] eh next condition ini ada beberapa
+[601.16] masalah. Nah, masalahnya
+[603.88] apa? Masalahnya ini ketika kita
+[607.64] menggunakan nested condition terlalu
+[610.08] banyak, kadang dia sama masalahnya
+[613.12] seperti multiple conditional yang
+[615.88] sebelumnya. Dia akan menjorok ke kanan,
+[618.08] ke kanan dan ke kanan terus-menerus gitu
+[620.28] ya. Jadi programnya terlalu panjang.
+[623.76] Nah, untuk me
+[627.80] membantu kita gitu ya membaca program
+[630.64] yang punya nested condition yang eh ada
+[633.84] banyak gitu ya eh condition-nya, kita
+[636.68] perlu menggunakan yang namanya logical
+[639.52] operators. Tapi sebelum kita ke logical
+[642.44] operators, silakan kerjakan latihan
+[646.08] conditionals berikut ini.
+[652.32] Baik, Teman-teman. Sebelumnya kita telah
+[654.52] membahas tentang ifal.

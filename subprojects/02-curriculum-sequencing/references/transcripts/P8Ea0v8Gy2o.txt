@@ -1,0 +1,871 @@
+[1.72] 3 2 1 action.
+[8.60] Halo teman-teman, hari ini kita akan
+[10.84] membahas mengenai prosedures yang ada di
+[13.72] dalam MIT App Inventor. Tapi sebelum
+[16.80] kita bahas lebih jauh, coba kita pahami
+[18.96] dulu apa sih itu, apa sih prosedur itu.
+[22.32] Nah, bayangkan ketika ee kalian diminta
+[25.32] oleh ee guru sekolah kalian gitu ya atau
+[28.40] misalnya orang tua kalian coba bikinkan
+[30.92] kode ee bikinkan program gitu ya, entah
+[34.36] itu game untuk adik kalian atau kalian
+[37.76] disuruh membuat aplikasi untuk absen
+[40.28] gitu menggunakan MITF Inventor gitu
+[42.32] misalnya gitu kan ya. Nah, ketika kita
+[44.52] membuat ee aplikasi-aplikasi tersebut
+[47.08] itu kan dia ee enggak membutuhkan kode
+[50.12] yang tidak sedikit ya teman-teman ya.
+[51.88] Kadang kita butuh eh bisa sampai puluhan
+[54.32] bahkan ada yang sampai ratusan kode blok
+[56.76] kode di MITF Inventor supaya eh apa
+[59.60] namanya aplikasinya bisa berjalan. Nah,
+[62.68] dari ratusan kode itu tadi kadang ee ada
+[66.32] ya bukan kadang lagi ya ada kemungkinan
+[68.48] besar kita itu diminta ee kita membuat
+[71.96] kodenya itu banyak yang berulang gitu
+[74.28] ya. Misalnya kalian membuat game. Nah,
+[77.52] di dalam game-nya ini ada dua karakter.
+[80.00] dua karakter game ini tadi dia bisa
+[81.96] sama-sama mengattack gitu ya, menyerang
+[84.36] ee apa itu namanya? Musuh gitu. Nah, kan
+[88.04] kita enggak mau apa tuh namanya supaya
+[89.72] dua-duanya berjalan karena dia kita mau
+[92.16] menyerang gitu ya, menyerang
+[93.96] masing-masing musuh berarti kan dia
+[95.44] dua-duanya harus punya kode yang di mana
+[97.24] dia bisa membunuh musuh gitu misalnya.
+[100.64] Nah, kan ee yang biasa kita lakukan kan
+[103.76] supaya ee apa itu namanya? bisa
+[105.84] berjalan. Ya udah kita copy aja dari
+[107.76] karakter satu ke karakter dua. Kita
+[109.92] tinggal ubah namanya aja atau ee ngubah
+[113.08] triggernya aja, events-nya aja gitu kan
+[115.12] yang dan disesuaikan. Nah,
+[119.28] hal tersebut ya menulis kode yang
+[121.24] berulang itu merupakan sebuah kebiasaan
+[124.40] buruk ya teman-teman. Kenapa di sini
+[126.00] Kakak bilang dia kebiasaan buruk? Karena
+[128.64] ada dua masalah yang bisa muncul ketika
+[131.28] kita mengcopy paste kode seperti tadi
+[133.32] ya. ee apa namanya? sama-sama mengetek
+[135.56] gitu. Misalnya nih, yang pertama
+[137.68] aplikasinya itu terasa lebih berat dan
+[139.60] lebih lambat karena dia aplikasi itu kan
+[142.04] dia membaca dari atas sampai bawah. Nah,
+[144.72] dia itu di ee kodenya itu kalau misalnya
+[147.60] kita copy paste dia akan membaca coding
+[150.32] karakter A terus dia akan membaca coding
+[152.32] karakter B. Padahal kan harusnya karena
+[154.68] dia kodenya sama persis kenapa dia harus
+[156.56] baca dua kali? Itu kita baru ngomongin
+[158.84] kalau ada dua karakter. Gimana kalau
+[160.80] kita ada 3 sampai L karakter? gitu ya.
+[164.44] Nah, itu kan dia kodenya jadi lebih
+[165.96] berat gitu ya. Kodenya pertama kodenya
+[168.80] yang awalnya ratusan bisnisnya jadi
+[170.36] 200-an. Terus itu dia ukuran file
+[173.72] program kita jadi bisa lebih besar gitu
+[175.60] ya. Dan yang apa kalau file besar
+[177.76] otomatis dia akan jadi lambat gitu ya
+[180.04] ketika dia dioad. Nah, kemudian yang
+[182.76] kedua membingungkan saat dibaca. Nih
+[185.04] misalnya kita punya lima karakter yang
+[186.92] dia bisa nge-attack gitu ya. dari lima
+[189.60] karakter ini dia masing-masing kan punya
+[192.32] eh power yang beda-beda ya ketika dia
+[194.84] mengattack misalnya karakter A dia kalau
+[197.08] sekali attack dia bisa menghabiskan 20
+[200.60] health power HP gitu ya. Karakter kedua
+[203.04] cuma 15 yang ini ke yang ketiga 10 dan
+[206.12] seterusnya dan seterusnya. Kan kalau
+[208.04] misalnya ada error kita tuh bingung eh
+[210.28] kode yang mana ya? Yang mana ya yang apa
+[213.32] tuh namanya yang error misalnya kayak oh
+[216.32] attack-nya enggak sesuai gitu ya kayak
+[218.40] attack-nya kok langsung habis gitu. Jadi
+[220.64] ada kemungkinan-kemungkinan error yang
+[223.08] membuat kita tuh bingung ini sumbernya
+[225.60] itu masalah di mana karena itu kodenya
+[227.32] sama semua gitu ya. Bayangkan ee seperti
+[230.40] kita kayak mencari jamur di tumpukan
+[232.48] jerami gitu ya. Jadi kita punya ee
+[234.84] jerami kan ee ya banyaklah ya
+[237.20] serat-seratnya itu dan jamur itu eh
+[239.24] jamur jarum itu kecil gitu ya. Jadi itu
+[242.12] kayak ee apa tuh namanya? Sangat susah
+[244.08] gitu mencari membingungkan ketika kita
+[246.28] ee mencari error itu tadi. Nah ini tadi
+[249.20] kalau ada yang salah kita harus
+[250.84] memperbaiki banyak di banyak tempat
+[253.04] sekaligus. Misalnya kita ee apa dari
+[255.96] lima karakter ini tadi kita selain ada
+[258.68] health tower kita mau tambahin heal
+[260.32] power ya. kita apa? Selain dia bisa
+[262.52] ngattack, kita mau tambahin heal power.
+[264.64] Karena ada lima karakter, kita harus
+[266.00] tambahin tuh satu-satu kita harus copy
+[267.76] paste lagi kan tambah membingungkan
+[269.92] lagi, tambah berat lagi kodenya. Nah,
+[273.44] supaya hal tersebut itu bisa
+[275.76] diminimalisir
+[278.32] ya, meng-copy paste kodenya
+[280.28] berulang-ulang itu kita bisa menggunakan
+[282.32] yang namanya prosedur
+[284.96] atau kalau dalam bahasa pemrograman itu
+[286.64] biasa disebut dengan function. Nah, apa
+[289.60] sih prosedur itu? Apa sih function itu?
+[292.00] Coba kita bahas, kita lihat di sini.
+[294.84] Nah, kita kalau misalnya kalian masih
+[297.52] bingung, kita bayangkan lagi misalnya
+[300.16] gitu ya,
+[302.12] kalian di adalah seorang chef gitu ya.
+[304.80] Kalian adalah seorang chef. Nah, chef
+[307.36] itu dia di restorannya punya tiga menu.
+[310.52] Ada pizza, spaghetti, sama lasagna gitu
+[313.68] ya. Dan tiga menu ini tadi mereka
+[316.84] membutuhkan apa tu namanya? Resep saus
+[319.84] tomat.
+[321.04] Kalau kita buat misalnya kita ee bikin
+[323.84] pizzanya tanpa prosedur, tanpa
+[325.60] menggunakan prosedur gitu ya,
+[328.72] tanpa menggunakan prosedur di buku resep
+[331.36] pizzanya itu kita nulis cara bikin
+[334.20] sausnya di resep pizza. Jadi di pizza
+[337.36] cara bikin saus tomat spesial. Kita
+[339.72] tulis tuh ee apa itu namanya di buku
+[341.60] resep itu. Terus di bagian lain di
+[344.28] halaman selanjutnya kita mau bikin resep
+[346.48] untuk bikin spagetti.
+[349.04] ambil ee mieya, tambahkan minyak, terus
+[352.84] kita bikin sausnya, ditulis lagi
+[354.68] resepnya. Jadi resep itu ditulis lagi,
+[358.60] lagi dan lagi ya apa? Saus tomatnya.
+[361.64] Padahal sama resepnya itu sama saus
+[364.00] tomat spesial, tapi di buku resep kita
+[366.72] itu dipanggilnya tiga kali. Kan kayak
+[369.60] redundant ya, kayak terlalu
+[371.44] berulang-ulang. Nah, kalau dia pakai
+[373.52] prosedur
+[375.32] itu bayangkan kita dibukur stepnya kita
+[377.68] bikin satu halaman khusus aja entah di
+[379.96] bagian depan atau di bagi section khusus
+[381.96] gitu ya. Cara bikin saus tomat. Lalu di
+[386.12] di untuk di resep di bagian resep pizza
+[388.52] gitu ya kita cuma nulis buka halaman 5
+[392.08] untuk melihat cara membuat saus tomat.
+[395.36] Begitu pula juga dengan di resep bikin
+[398.12] spagetti dan juga resep sun ya. Kita
+[401.24] cuman mereferensikan coba buka halaman
+[404.12] saus tomat. Itu juga prosedur yang ada
+[406.84] di coding. Jadi kita tinggal buat
+[409.60] kemudian dari ee apa tuh namanya? Kode
+[413.32] yang sudah kita buat tadi itu kita
+[414.84] tinggal panggil oh ini ada di sini
+[416.48] kodenya tinggal ikutin yang sama. Jadi
+[418.84] kita enggak perlu lagi copy paste. Itu
+[421.56] untuk prosedur ya. contohnya prosedur.
+[425.12] Nah,
+[427.20] ada di dalam MIT App Invantor prosedur
+[430.28] itu ada dua kategori ya. Nah, yang ada
+[433.88] dia warnanya ungu ya biasanya. Nah, yang
+[436.20] pertama ada prosedur do yang berarti dia
+[439.52] do melakukan sesuatu dan ada prosedur
+[442.88] result yang berarti dia hanya
+[444.44] menghasilkan jawaban. Nah, kalau misal
+[447.56] dia prosedur do, prosedur do ini sama
+[450.68] kayak contoh ee apa tuh namanya? kitab
+[453.20] Iza tadi ya, dia cuman menampilkan aja
+[455.92] ya, melakukan sesuatu kayak ee
+[457.84] memberikan hasil jawaban gitu ya. Ini
+[460.12] kayak contoh ee sebuah aksi yang kayak
+[462.60] mengosongkan layar, mengubah warna atau
+[464.92] memutar suara. Jadi kayak dia enggak
+[466.88] menghasilkan sesuatu tapi dia melakukan
+[468.52] sesuatu gitu. Dia dari prosedur itu dia
+[471.76] enggak akan menghasilkan ee rumus baru
+[475.60] ee apa tu namanya? nilai baru gitu ya.
+[477.16] Sama kayak resep pizza tadi gitu ya. dia
+[479.40] cuman kayak, "Oh, cara membuat saus
+[482.20] tomat spesial." Nah, kalau yang prosedur
+[485.76] result yang dia menghasilkan jawaban ini
+[488.36] cocok dibuat ketika kita membuat
+[490.48] aplikasi
+[492.00] ee game tadi ya. Nah, misalnya kita
+[496.00] bikin prosedur cara ee apa tuh namanya?
+[500.00] Bukan cara ya, kita bikin prosedur
+[503.44] membunuh musuh gitu ya. Nah, itu kan dia
+[505.88] akan mengembalikan tuh beda-beda kan.
+[508.00] Maksudnya kalau karakter satu yang kalau
+[510.48] karakter if karakter satu yang dipanggil
+[512.80] maka dia akan membunuh mengurangi
+[515.40] musuhnya sebanyak 15 towernya health-nya
+[518.40] gitu ya. Nah, itu jadi kalau prosedur
+[521.64] result dia melakukan perhitungan ya,
+[523.52] entah dia pengurangan, pertambahan dia
+[526.04] tapi jadi dia intinya mengembalikan
+[528.08] menghasilkan sesuatu ya data gitu cocok
+[531.52] untuk menghitung diskon, menghitung skor
+[534.12] dan segala macam. Oke. Nah,
+[537.96] kalau di aplikasinya ya. Nah, kalau
+[541.40] misalnya kita mau bikin prosedur do yang
+[544.08] berarti dia mengosongkan layar nih.
+[546.64] Misalnya kita mau bikin kalkulator
+[548.48] sederhana di sini kita bikin textbox
+[551.76] angka pertama dan angka kedua. Terus di
+[554.68] sini kita bikin e button hitung yang
+[557.04] berarti dia kayak oh hitung dong 1 + 1 1
+[560.72] * 1 1 ya maksud textbox 1 dibagi textbox
+[564.80] 2 gitu dan seterusnya dan seterusnya
+[567.20] nanti ditampilkan di ee label hasil. Nah
+[570.72] di sini kita bikinkan button untuk
+[573.40] mereset, untuk mengulang kembali gitu
+[575.96] ya. Berarti kalau misalnya dia klik
+[577.64] reset berarti kan kita siap untuk
+[579.28] melakukan perhitungan. harusnya textbox
+[581.72] 1 sama texbox 2 itu dihapuskan.
+[585.08] Nah, bentuk kodenya seperti apa? Nah,
+[589.24] nih kita bikin prosedur ya. Ambil
+[592.56] prosedurnya yang warna yang warna ungu
+[594.64] ini. Terus kita kasih nama. Misalnya
+[596.64] nama prosedur adalah kosongkan layar.
+[599.44] Nah, dari kosongkan layar ini kita set
+[601.68] nih. Kalau misalnya prosedur ini
+[604.28] dipanggil, do something. Lakukan
+[606.40] sesuatu. Misalnya kita mau nge-set
+[609.24] box-nya jadi kosong ya. Kalau petiknya
+[611.64] petik dua enggak ada apa-apanya berarti
+[613.36] itu kosong ya, Teman-teman. Teks duanya
+[615.88] dikosong sama label hasilnya itu
+[618.08] dijadikan nol ya. Karena kita tadi bikin
+[621.04] kalkulator kita kalau riset berarti kan
+[623.04] kita mau siap memasukkan angka baru dan
+[625.80] kalau angkanya baru berarti hasilnya
+[628.28] juga akan baru gitu ya. Nah, ini
+[630.88] contohnya prosedur do.
+[634.96] Nah,
+[636.60] kita sudah membuat prosedurnya. Sekarang
+[639.48] cara manggilnya itu gimana supaya
+[642.00] prosedurnya ee bisa kayak kalau kita
+[645.00] klik dia bisa tuh prosedurnya berjalan.
+[648.56] Nah, caranya berarti kita ambil dulu
+[650.68] triggernya, events-nya. When apa nih?
+[654.12] When apa? When button direset atau
+[656.64] diklik button reset diklik gitu ya. Nah,
+[659.12] kalau dia diklik, dia akan call, dia
+[661.44] akan panggil, terus tuh dia kita pilih
+[664.28] nama dari prosedurnya tadi apa. Oh, nama
+[666.56] prosedurnya kosongkan layar. Maka ketika
+[669.40] kita klik button reset, maka dia akan
+[672.40] langsung ee apa itu namanya?
+[674.16] Mengosongkan layar menjalankan tiga
+[676.08] perintah ini sekaligus. Jadi enggak
+[678.44] perlu nih di sini pas button-nya diklik,
+[681.56] kita enggak perlu tambahkan kode yang
+[683.44] panjang-panjang gu ya. Nih simpel
+[685.96] seperti ini aja. Padahal seharusnya
+[688.04] sebenarnya kodenya ada tiga baris
+[690.20] seperti ini ya, Teman-teman. Gitu.
+[694.40] Nah,
+[696.36] yang kedua ada prosedur result. Prosedur
+[700.60] result ini dia untuk menghitung total
+[704.08] belanja. Jadi, dia setelah apa? Ee kalau
+[707.16] bedanya tadi kalau prosedur do di sini
+[710.16] ada tulisannya ya, Teman-teman ya. Ada
+[711.84] tulisannya do.
+[714.76] Kalau di sini dia tulisannya result,
+[716.84] berarti dia menghasilkan sesuatu.
+[719.04] Misalnya di sini kita bikin prosedur
+[721.12] untuk menghitung total belanja ditambah
+[723.92] pajak gitu ya. Kalau pajak kan biasanya
+[725.80] 10%. Nah, di sini kita tambahin textbox.
+[728.80] Textbox ini masukin misalnya total
+[730.92] belanjanya gitu ya, misalnya Rp100.000.
+[733.68] Nah, di sini kita tambahkan dia pajaknya
+[736.08] misalnya ee 1.000 gitu. Nah, ya udah
+[739.28] kita tambahkan aja di sini kalau
+[741.20] misalnya ada rumus-rumus lain gitu ya.
+[742.64] Kalau misalnya diskon kan ada banyak
+[744.32] lagi dia rumusnya. Nah, itu kita bikin
+[746.48] seperti itu. Nanti pas dipanggil
+[750.48] kita tinggal sama juga kita tinggal
+[752.76] panggil eh triggernya, events-nya,
+[756.28] kemudian kita set hasilnya jadi apa, ya
+[758.76] kan? Karena kan kita di sini dia
+[760.08] menghasilkan angka ya dari prosedur
+[762.24] hitung pajak itu dia hanya menghasilkan
+[764.00] angka. Nah, angkanya ini mau kita apain?
+[766.52] Angkanya ini mau kita tampilkan gitu.
+[768.84] Entah kita tampilkan di dalam sebuah
+[770.96] label atau kita simpan dia ke dalam
+[773.36] variabel bebas. Tapi di sini contohnya
+[775.48] kalau misalnya dia sudah menghitung
+[777.24] pajaknya dia langsung akan ee mengganti
+[780.44] label hasilnya itu jadi ee nilai yang
+[784.08] sudah dihitung sama pajaknya. Ya, itu
+[787.60] jadi tadi memanggil prosedur do dan
+[791.08] prosedur result.
+[797.40] satu action.
+[803.40] Nah, Teman-teman ee untuk lebih memahami
+[807.32] lagi tentang prosedur, coba kalian
+[809.84] kerjakan mini project berikut. Di sini
+[813.00] Kakak minta kamu bikin sebuah project
+[815.64] baru di MITF Inventor. Bikin sebuah
+[818.84] aplikasi kalkulator. Ya, berarti
+[821.76] aplikasi kalkulator berarti ada dua tekt
+[823.76] box, ya. ada dua nilai berarti kan ya,
+[826.04] ada dua nilai ee karena kita mau
+[828.80] menambahkan ini boleh kalian pakai
+[830.72] tambah kali bagi atau dipangkatin boleh
+[833.80] sembarang. Nah, berarti kan di sini kita
+[835.96] butuh dua nilai yang harus di ee ee
+[839.36] untuk dikalkulasikan ya. Terus itu ada
+[841.48] satu label untuk hasil dan dua button.
+[844.96] Button-nya itu button perhitungannya
+[846.84] untuk trigger menghitung entah itu
+[848.76] menambahkan atau dia ee membagi gitu
+[852.00] atau mengurang sembarang. Kemudian ada
+[854.12] satu button lagi untuk reset, untuk
+[856.24] menghapus semuanya dan mulai lagi dari
+[858.68] awal ya. Nah, buat menggunakan prosedur
+[861.96] do untuk merreset ee hasilnya. Kemudian
+[866.16] untuk menambahkan atau mengurang
+[869.08] melakukan kalkulasi itu buat dengan
+[871.92] menggunakan prosedur result. Kalau sudah
+[875.64] silakan kumpulkan di dalam di bawah ini.
+[882.20] Satu.
+[887.96] Nah, Teman-teman, kita sudah tahu cara
+[890.24] membuat prosedur atau function yang ada
+[893.12] di dalam MITor.
+[895.32] Sekarang kita akan membahas yang namanya
+[897.64] modularisasi.
+[899.52] Modularisasi.
+[901.24] Nah, modularisasi itu apa sih? Modul
+[904.92] modularisasi
+[906.80] itu adalah sebuah proses yang di mana
+[911.12] itu kita memecah atau membagi-bagi
+[914.72] kode yang panjang tadi, kode-kode kita
+[917.04] yang panjang menjadi sebuah aplikasi
+[920.80] yang dibagi menjadi modul-modul gitu
+[923.00] atau potongan-potongan kecil yang lebih
+[925.48] fokus dan teratur. Nah, anggap aja
+[928.44] kalian ee apa tuh namanya? diminta orang
+[930.96] tua kalian tuh untuk merapikan kamar
+[933.76] tidur gitu ya. Nah, ketika kita
+[935.84] merapikan kamar tidur kan pertama kita
+[937.40] harus tahu dulu nih barang-barang yang
+[939.64] ada di kamar kita tuh apa aja yang
+[941.00] berantakan, terus itu jenis-jenisnya
+[943.24] apa. Karena setelah kita tahu
+[945.36] jenis-jenisnya apa, baru kita bisa
+[947.52] kumpulkan dia ke dalam boks-boks atau
+[950.40] kotak-kotak kecil gitu ya, sesuai dengan
+[953.12] fungsinya. Misalnya di modul 1 itu kita
+[956.60] bikin dia kotak khusus untuk mainan.
+[960.04] modul dua atau apa namanya? Kotak yang
+[962.64] kedua itu khusus buku, yang ketiga itu
+[965.08] khusus untuk pakaian. Nah, jadi gitu ya.
+[968.76] Kita ketika membuat kode kita lihat dulu
+[971.24] mana yang fungsinya kurang lebih sama.
+[974.20] Kalau misalnya bisa berarti kita
+[976.60] gabungkan, kita buatkan prosedurnya biar
+[979.96] dia tidak berulang-ulang, biar dia tidak
+[982.40] berantakan.
+[983.96] Nah, di sini
+[987.40] ada contohnya ini ketika ada kode yang
+[991.00] di mana dia itu ada istilah di dalam
+[993.64] bahasa pemrograman itu namanya kode
+[995.24] spaghetti atau spaghetti code. Nah, kode
+[997.60] spaghetti itu spaghetti code ini seperti
+[999.20] ini. Jadi dalam sebuah function eh dalam
+[1002.52] sebuah eh trigger itu banyak banget
+[1005.08] perintahnya. Misalnya ada if nih, if
+[1007.68] label 1, label 2 apa segala macam, terus
+[1010.04] tambahin ee sound, kita tambahin
+[1013.16] pengurangan dan segala macam. Intinya
+[1015.36] spagetti code itu adalah kodenya itu
+[1018.68] ditumpuk dan ditaruh di satu tempat aja
+[1022.56] enggak dibagi-bagi. Bayangkan kalau
+[1024.64] kodenya 100 sampai lebih kan kita
+[1026.92] bingung ya nyarinya di mana kalau ada
+[1029.12] error dan segala macam. Nah, ini sangat
+[1032.40] berbahaya ya, Teman-teman. Nah, ada yang
+[1035.36] apa itu namanya? Ini bentuknya kalau
+[1036.80] misalnya kita pakai moduler. Ketika kita
+[1039.64] ee apa tuh namanya? Udah pakai modular
+[1041.76] atau udah bikin prosedur kan kita
+[1043.48] tinggal panggil aja prosedur lebih rapi
+[1045.60] gitu ya. Kodenya warnanya sama ya kan.
+[1048.92] Terus itu kita tahu oh kalau misalnya
+[1051.04] kita mau ngecek data kosong ee apa itu
+[1054.36] namanya? Berarti kita e lihat function
+[1056.88] yang namanya prosedur yang namanya cek
+[1058.52] data kosong. Kalau kita mau lihat
+[1061.08] misalnya errornya hitung total yang
+[1063.00] error, berarti kita tinggal cari
+[1064.52] prosedur yang namanya hitung total dan
+[1067.08] mainkan suara dan seterusnya gitu ya.
+[1069.16] Jadi kita tahu kita apa terlihat rapi
+[1071.88] warnanya sama, udah jelas ini semua ini
+[1075.60] dilakukan ketika apa yang terjadi? Oh,
+[1077.92] ketika button hitungnya diklik gitu ya.
+[1081.00] Nah, itu tadi apa itu namanya? Bentuk
+[1083.76] dari sebuah ee program yang sudah
+[1086.16] menerapkan metode modular. Nah, ketika
+[1089.48] kita menggunakan metode modular ini,
+[1092.64] ketika kita membuat flowchart-nya atau
+[1094.68] bagian alurnya pun dia menjadi bisa
+[1096.60] lebih sederhana gitu ya. Misalnya kita
+[1098.56] tinggal start user klik tombol misalnya
+[1101.28] hitung gitu ya, dia ngecek inputnya udah
+[1103.64] ada apa enggak. terus itu dia menghitung
+[1106.24] terus tuh progresnya udah flow chart-nya
+[1108.52] tuh enggak sepanjang kayak oh ee apa tuh
+[1111.12] namanya misalnya teks area 1 ditambah
+[1113.80] teks area 2. Nah, ini udah dimasukkan ke
+[1115.96] dalam sini nih di sudah di dalam masuk
+[1118.12] proses hitung gitu ya. Jadi dia ee apa
+[1120.44] itu namanya? Bagannya jadi ee
+[1122.16] flowchart-nya itu lebih ee apa itu
+[1124.52] namanya
+[1126.12] ya simpel lah gitu. Nah, modularisasi
+[1129.64] ini dia tidak hanya berlaku pada coding
+[1133.00] aja, tapi ketika kita mendesain di MIT
+[1136.80] App Inventor pun kita juga perlu
+[1139.24] melakukan yang namanya modularisasi. Ini
+[1141.80] mengelompokkan ya mengelompokkan UIUI
+[1145.48] user eh user interface yang komponennya
+[1148.68] itu sama fungsinya. Misalnya di sini
+[1151.80] kita ada dua button yang sama gitu ya.
+[1154.68] Ee misalnya di sini menambah mengurang
+[1156.56] gitu. Nah, ini kan sama kan untuk
+[1158.48] menghitung kan. Lebih baik kalau
+[1160.44] misalnya dia sama kita masukkan dia ke
+[1163.00] dalam ee mengguna kita harus menggunakan
+[1165.76] layout. Jadi kita menggunakan horizontal
+[1168.32] lay arrangement. Jadinya dia bisa e apa
+[1170.92] tuh namanya? Bergabung di satu tempat
+[1172.92] gitu ya. Jadi jangan lupa ketika kita
+[1174.92] mendesain, kita terapkan nih
+[1176.80] modularisasi yang sudah kita pelajari.
+[1179.52] Jangan lupa pakai layout boleh. Kalau
+[1182.16] misalnya buttonnya kita mau dia kanan
+[1183.76] kiri berarti kita pakainya horizontal
+[1185.64] arrangement. Kalau misalnya kita mau dia
+[1188.00] atas ke bawah atau kebalikannya, maka
+[1189.92] kita pakai e apa tuh namanya? Eh,
+[1192.68] vertical arrangement.
+[1200.20] Satu action.
+[1206.16] Nah, Teman-teman kita sudah belajar
+[1208.20] gimana kita membuat kode di MITF
+[1211.08] Inventor dan juga desain ya yang rapi
+[1214.00] menggunakan modularisasi dan juga
+[1216.76] prosedur gitu ya. Nah, ketika kita
+[1219.36] membuat kode yang rapi bukan berarti
+[1222.32] program kita itu bebas dari masalah gitu
+[1224.80] ya. Kadang saat orang lain itu apa tuh
+[1228.12] namanya? mencoba makai aplikasinya,
+[1230.40] mereka kadang melakukan sesuatu atau
+[1233.04] mencet button yang enggak seharusnya
+[1235.32] sehingga dia tuh ee mengakibatkan kode
+[1238.84] kita bisa error gitu ya. Nah, sama kayak
+[1241.80] misalnya kita bikin kue. Kalau kita
+[1243.68] bikin kue kan kadang kita harus
+[1245.08] mencicipi dulu kan ya kayak kue kita tuh
+[1248.00] maniskah atau ee rasanya masih
+[1250.76] kurangkah, belum matang kah gitu kan.
+[1252.84] Jadi kita apa yang kita buat tuh kita
+[1254.52] harus coba dulu gitu ya. Nah,
+[1258.04] kalau misalnya kita ee mencoba itu bisa
+[1262.08] juga ee apa tu namanya? Mencob apa itu
+[1265.36] namanya? Misalnya nih gini, kita kira
+[1268.72] kuenya yang kita buat itu kurang manis.
+[1271.68] Berarti kalau misalnya di dalam istilah
+[1273.92] program itu ada bug, ada error gitu ya,
+[1276.20] kodenya error, kuenya error. Nah,
+[1279.72] berarti apa yang kita lakukan untuk
+[1281.48] memperbaiki error itu tadi? Oh, kalau
+[1283.48] misalnya kurang manis errornya berarti
+[1285.88] kita nambahin gula. Proses memperbaiki
+[1288.56] itu tadi namanya dibagging dan proses
+[1291.76] memberikan kue untuk dicoba itu disebut
+[1294.88] namanya user testing. Nah, kita bahas
+[1297.92] yuk satu-satu.
+[1299.96] Pertama, bug itu apa sih? Bug itu adalah
+[1303.68] sebuah kesalahan gitu ya. Enggak cuman
+[1305.48] sebuah, ada mungkin ada banyak juga ya
+[1307.32] kesalahan cacat atau error yang ada di
+[1310.24] dalam sebuah program yang ee
+[1312.40] mengakibatkan programnya tidak berjalan
+[1314.76] ee dengan benar atau bahkan dia bisa
+[1317.72] crash atau sama sekali enggak bisa jalan
+[1319.44] gitu kalau error. Nah, kalau misalnya
+[1322.32] program kita punya bug ya kan punya
+[1324.28] error bug itu dia bisa juga bisa bisa
+[1327.12] disebut juga dengan serangga gitu. Kalau
+[1328.76] serangga kan mengganggu ya sama juga
+[1330.48] dengan error yang ada di dalam kode kita
+[1332.24] itu mengganggu. Nah, supaya kita ee apa
+[1336.32] tuh namanya? Memperbaiki bug ini tadi
+[1339.04] kita melakukan proses namanya di
+[1341.32] bugging. Ya, kalau di itu harusnya
+[1343.84] prosesnya ee menghilangkan di gitu ya.
+[1347.36] Di kalau bahasa Inggris bug itu errornya
+[1350.32] ging dibaging proses aktif. Jadi kita
+[1352.32] kayak melakukan proses ee apa tuh
+[1355.24] namanya? Ee memperbaikilah si bug itu
+[1359.24] tadi ya. intinya memperbaiki. Nah, fun
+[1363.28] fact bug itu dia ini ya kayak serangga
+[1366.40] gitu ya yang apa tuh namanya ada di
+[1370.84] komputer pertama. Jadi kan kalau di
+[1373.12] zaman dulu ini apalagi 1947 ya
+[1375.76] zaman-zaman habis perang gitu. Nah, ada
+[1378.68] bug atau ee apa terya serangga yang
+[1381.88] nyangkut di mesin komputer. Kalau dulu
+[1383.64] kan mesin komputer kayak benar-benar
+[1386.12] gede ya. Kalau PC kalian lihat di rumah
+[1388.28] tuh kan udah kotak kecil ya. Kalau dulu
+[1389.96] tuh dia sampai bisa penuh satu rumah
+[1392.64] gitu untuk proses ee apa tuh namanya?
+[1395.00] Komputerisasi. Nah, itu dia ada yang
+[1396.96] nyangkut sehingga itu dia disebut ee
+[1399.64] namanya bug itu fun factnya.
+[1402.28] Nah, bug atau crash yang paling umum
+[1405.76] yang mungkin kalian sendiri pun pernah
+[1407.56] ngerasain ya aplikasinya itu tiba-tiba
+[1410.28] crash atau ketutup sendiri gitu ya atau
+[1413.44] hang itu ketika ada kesalahan tipe data.
+[1416.64] Nah, misalnya nih kita apa punya textbox
+[1420.28] yang meminta user untuk memasukkan umur.
+[1423.24] Tapi kita kan mintanya angka ya 10 ya,
+[1426.28] jadi 10.
+[1428.24] Tapi ada user tuh kayak iseng, ya udah
+[1430.44] gue mau coba masukinnya 10 tahun. Nah,
+[1434.60] misalnya aplikasinya ini mau bikin dia
+[1437.16] usianya ee 5 tahun yang lalu gitu kan,
+[1440.40] berarti usia sekarang ditambah 5 kan
+[1442.64] rumusnya. Nah, karena 5 ini sebuah
+[1445.84] integer atau sebuah angka dan 10 tahun
+[1449.56] ini teks ini adalah sebuah huruf, maka
+[1452.44] kan dia enggak nyambung, enggak bisa
+[1453.96] ditambahin, maka dia akan error
+[1457.56] programnya nih ya. Itu sering banget
+[1459.76] terjadi ya. Ya kan, Teman-teman, ya.
+[1461.84] Nah, solusi yang bisa kita terapkan
+[1464.40] dalam program kita adalah kita bisa
+[1468.08] mendeteksi dulu
+[1470.28] kalau nih ya jika textbox 1 misalnya
+[1474.60] yang inputnya itu textbox 1. Kalau
+[1477.24] isinya textbox 1 itu dia not a number
+[1482.00] gitu ya, bukan sebuah number, maka kita
+[1486.36] eh apa tuh namanya? Tambahkan notifier
+[1488.44] gitu. misalnya show alert harus berupa
+[1491.64] angka gitu. Nah, kalau kita udah pakai
+[1495.12] ee apa tuh namanya? Pengaman seperti
+[1497.36] ini, maka kalau user masukin apapun
+[1500.40] selain angka misalnya simbol, maka dia
+[1503.60] akan muncul notif seperti ini, gitu ya.
+[1508.20] Nah, selanjutnya kalian kalau misalnya
+[1511.52] ngetes itu kan ee misalnya udah bikin
+[1514.64] projectnya di MIT Inventor, terus kalian
+[1516.76] mau ngetes nih projectnya. Nah, kalau
+[1520.80] mau ngecek itu harus pakai HP kan
+[1523.32] biasanya ya, tapi ada fitur rahasia.
+[1525.64] Kalau misal kalian bingung, kalau
+[1527.36] misalnya ada error terus tuh bingung
+[1528.88] blok mana yang salah, itu kalian klik
+[1530.96] kanan aja blok apa pada blok random.
+[1533.88] Terus ada perintah yang namanya do it.
+[1536.28] Nanti dia harusnya ee apa tuh namanya?
+[1539.16] Hanya ngetes di kode bagian itu aja
+[1541.36] tanpa harus memec
+[1543.96] ya. Nah, jadi boleh nih teman-teman coba
+[1546.52] untuk dibaggingnya.
+[1549.40] Nah, lanjut. Sekarang ketika kita
+[1552.92] membuat aplikasi gitu ya. di MITF
+[1556.52] Inventor. Jangan lupa ketika kita
+[1559.24] meminta data penting, data pribadi e
+[1563.08] user kita, jangan lupa gunakan Tiny DB
+[1567.00] supaya data yang dimasukin ke dalam
+[1570.00] aplikasi kita tuh aman gitu ya. Jangan
+[1572.44] disimpan ke server publik seperti Google
+[1575.44] eh Google Drive gitu ya, kan enggak aman
+[1577.80] kalau Google Drive. Nah, jadi kita bisa
+[1580.64] gunakan Tiny DB. Nah, Tiny DB ini kita
+[1584.32] bisa kalau mau menyimpan seperti ini ya
+[1586.40] bentuknya ya. Kita coba next nih. Di
+[1589.40] sini kita bikin set label nama to. Nah,
+[1593.40] oh ini apa namanya? Kalau mau menyimpan
+[1595.32] ya, store value. Berarti store ini
+[1598.28] menyimpan ya, value nilai. Menyimpan
+[1600.36] nilai. Nah, kalau Tiny DB itu kan dia
+[1602.80] membutuhkan tag dulu nama data yang
+[1605.28] disimpan tuh apa. Oh, yang mau kita
+[1606.76] simpan tuh nama si player. Terus itu
+[1609.60] value to store. Apa yang mau disimpan?
+[1611.88] Nama player tuh siapa? Misalnya nama
+[1613.12] playernya itu berdasarkan input yang ada
+[1615.04] di textbox nama. Berarti misalnya kita
+[1618.12] masukin di sini Ica, ICA akan disimpan
+[1621.36] ke dalam Tiny DB 1 dan kita nanti
+[1623.96] panggilnya berdasarkan tag ya. Nih coba.
+[1628.64] Nah, kita kalau mau memanggilnya, mau
+[1631.68] menampilkan apa yang sudah kita simpan
+[1633.48] tadi nih, kita set misalnya kita mau
+[1635.40] nampilinnya dia di mana? Misalnya kita
+[1636.88] mau nampilin dia di label, kita call
+[1639.60] nama dari Tiny DB-nya. Terus kita pilih
+[1642.60] yang get value yang mau ditampilin apa?
+[1645.84] Nama player ya. Nama player tadi yang
+[1649.00] kita masukin. Terus kadang ada nih kita
+[1651.76] bisa tambahkan lagi satu eh parameter
+[1654.60] gitu ya, satu nilai namanya value if tag
+[1658.00] not there. Jadi kadang kalau tag-nya ini
+[1660.28] enggak ada isinya, misalnya kita bikin
+[1662.48] sebelumnya tadi ya, ketika kita bikin ee
+[1665.32] apa tuh namanya? Sebuah tiny db gitu.
+[1668.40] Nah, misalnya di sini kita enggak belum
+[1670.36] ada isinya gitu. Kalau belum ada isinya
+[1672.60] kita bisa kasih default. Nah, default
+[1675.12] cara ngasih defaultnya itu ini value if
+[1677.32] tag not there. Jadi nilai value if jika
+[1680.88] tag not there. Kalau tag-nya enggak ada
+[1682.72] isinya berarti kita kasih nilai tamu
+[1684.96] gitu.
+[1687.08] Nah,
+[1702.84] 3 2 1 action.
+[1709.16] Oke, Teman-teman, kita udah membuat
+[1711.20] program yang baik dan benar. Terus itu
+[1713.92] kita juga sudah tahu kalau misalnya ada
+[1715.76] error apa yang bisa kita lakukan. Nah,
+[1718.20] sekarang kita mau membahas gimana sih
+[1721.28] mempresentasikan project kita gitu ya.
+[1724.16] Jadi percuma dong project kita udah
+[1726.52] bagus, udah ee apa itu namanya? Udah
+[1729.56] dibagi enggak ada errornya gitu ya, udah
+[1732.48] rapi. Nah, tapi kita ee apa tem enggak
+[1735.84] bisa ngasih tahu orang gitu ya. kita
+[1737.76] enggak bisa menceritakan project yang
+[1739.36] sudah kita buat, aplikasi yang kita buat
+[1741.08] ke orang lain. Nah, jadi di sini kita
+[1743.32] akan belajar gimana sih mempresentasikan
+[1745.60] project ya apa mempresentasikan e
+[1748.32] aplikasi kita dengan ee apa itu namanya
+[1750.92] benar gitu ya. Nah, anggap aja gini
+[1754.32] misalnya kalian suka menggambar
+[1756.24] superhero gitu ya. Nah, kalau misalnya
+[1758.80] kalian ditanya, "Ih, kamu lagi gambar
+[1761.28] apa?"
+[1762.08] Nah, pasti kan kalau kita misalnya suka
+[1764.28] misalnya Superman gitu ya, superheronya
+[1766.72] kan kita bisa ceritain kan, uh, karena
+[1769.00] kita suka banget nih sama Superman. Oh,
+[1771.56] ee Superman itu dia bisa terbang,
+[1773.28] Superman itu dia punya kekuatan ini ini
+[1775.72] gitu. Jadi, kita bisa menceritakan gitu
+[1777.76] ya. Sama juga dengan aplikasi kita gitu.
+[1780.28] Kadang kita harus mempresentasikan gitu
+[1782.20] ya, menceritakan tentang aplikasi kita
+[1784.52] karena kita ini suka gitu kita membuat
+[1786.32] dia karena kita butuh gitu. Nah, untuk
+[1790.12] membuat presentasi yang baik gitu ya,
+[1792.76] kalau misalnya kalian bingung itu kalian
+[1794.96] bisa pakai empat poin ini untuk semua
+[1797.40] aplikasi atau bisa juga untuk aplikasi
+[1799.60] project kalian atau untuk
+[1801.32] mempresentasikan tugas kalian itu bisa
+[1804.76] pakai poin ini empat ini ya. Yang
+[1807.48] pertama
+[1809.00] latar belakang. Kenapa sih kalian
+[1811.52] membuat aplikasi ini? Latar belakangnya
+[1814.52] apa? Saya membuat aplikasi keuangan
+[1817.24] karena saya kasihan nih melihat teman
+[1819.44] saya namanya Aisyah. Dia uangnya sering
+[1821.56] habis gitu. Nah, itu kita kasih latar
+[1824.24] belakangnya dulu. Kemudian fitur
+[1826.56] utamanya ini apa? Karena Aisyah ini
+[1829.16] pelupa, aku menambahkan fitur-fitur
+[1832.28] misalnya ada pengingat kalau misalnya
+[1834.48] aku lupa untuk menambahkan ee apa itu
+[1838.36] namanya? Untuk menambahkan ee uangnya
+[1842.48] gitu ya. itu untuk fitur tamanya.
+[1845.00] Kemudian kita tunjukkan langsung nih
+[1847.20] aplikasinya itu apa. Misalnya, oh ini
+[1850.48] kalau Aisyah lupa dia misalnya ee dia
+[1853.60] lupa untuk memasukkan ee catatan
+[1856.92] keuangan ya dia pencet nih tombol yang
+[1858.92] ini. Terus dari tombol ini nanti pencet
+[1860.92] ini. Jadi kita tunjukkan, kita
+[1862.40] demonstrasikan ee langsung kayak
+[1865.28] aplikasi kita nih kalau berjalan itu
+[1866.84] seperti apa. Yang keempat kalian
+[1869.52] ceritakan juga tantangannya itu apa.
+[1871.92] Misalnya nih pas ee kita bikin aplikasi
+[1875.16] ini, si Aisyah ini ee suka bingung
+[1879.64] ternyata dia ee apa tuh namanya? Otaknya
+[1881.96] itu lebih suka warna pink gitu. Jadi dia
+[1884.00] kayak, "Oh, kalau warna pink dia lebih
+[1885.68] mudah membacanya." Jadi apa terima?
+[1888.00] Tantangan-tantangan yang lucu gitu kan
+[1890.56] ya atau bug-bug yang menurut kalian wah
+[1893.16] aku enggak pernah tahu kalau misalnya
+[1895.08] warna itu aja bisa menimbulkan bug gitu.
+[1898.12] Jadi kalau misal presentasi boleh coba
+[1900.52] tambahkan empat poin ini, Teman-teman.
+[1903.96] Oke, selanjutnya sebelum kita live demo,
+[1907.96] kita mendemonstrasikan nih project kita
+[1910.24] secara langsung, jangan lupa kita
+[1912.60] persiapkan dulu. Nah, kalau MITF
+[1914.88] Inventor ini kita bisa menggunakan
+[1917.16] emulator ya. Kita bisa download di ee
+[1919.72] aplikasi kita kalau misalnya di laptop
+[1922.04] kita gitu ya, ada yang namanya Blu Stack
+[1924.16] gitu ya. Nah, itu bisa eh Bluestack itu
+[1926.76] kan dia Android yang ada di komputer
+[1928.24] gitu ya untuk testing namanya emulator
+[1930.20] gitu atau kita bisa mirroring layar HP
+[1933.32] gitu. Jadi kita menggunakan AI2
+[1935.80] companion baru kita colokin HP kita ke
+[1938.24] kabel apa menggunakan kabel terus nanti
+[1940.36] dia akan ee muncul tuh secara langsung
+[1942.68] itu ya. Jadi jangan lupa setelah kita
+[1944.36] siap apa yang mau dibahas, kita juga
+[1946.88] siap presentasinya ee apa tuh namanya ee
+[1949.88] bahan presentasinya ini ya bahan demonya
+[1951.92] itu ee sudah benar. Oke. Nah, setelah
+[1955.60] kita presentasi jangan lupa ee apa itu
+[1958.84] namanya? Kita harus memberikan dan
+[1961.48] menerima feedback atau unpan balik yang
+[1964.92] diberikan oleh orang lain. Misalnya nih
+[1967.72] e setelah kita presentasi projject kita
+[1970.88] ee misalnya tadi aplikasi keuangan tadi
+[1973.12] Aisyah ngomel gitu misalnya aku enggak
+[1975.52] suka warna pinknya warna pink eh peach
+[1978.68] gitu. Aku maunya pinknya pink yang lebih
+[1981.72] ee apa terama? lebih cerah lagi. Nah, ya
+[1983.96] udah itu kan feedback ya kan ya, umpan
+[1986.28] balik dari ee orang lain. Kita bisa
+[1988.84] terima, kita bisa ya udah kita enggak
+[1991.40] terima. Yang penting kita catat dulu
+[1993.40] gitu ya. Supaya nanti kalau misalnya
+[1995.24] kita ee lihat lagi kodenya kayak oh iya
+[1998.00] benar juga ya feedback yang dikasih
+[1999.48] gitu. Jadi kita terima aja dulu ya semua
+[2002.32] feedback-nya. Anggap aja feedback itu
+[2004.60] adalah hadiah gitu ya. Kayak wah kita
+[2006.76] dikasih ee hadiah gitu.
+[2016.72] to action.
+[2022.88] Oke, Teman-teman, kita udah belajar nih
+[2025.24] gimana cara membuat aplikasi dengan rapi
+[2027.92] dan tidak ada bug. Kemudian kita juga
+[2030.76] udah belajar cara mempresentasikan gitu
+[2033.52] ya, menceritakan project kita ke orang
+[2035.84] lain, aplikasi kita ke orang lain.
+[2037.92] Sekarang kita udah coba nih bikin satu
+[2040.16] aplikasi gitu kan. Sekarang waktunya
+[2042.00] kita membuat aplikasi lain yang
+[2044.48] berdampak positif. Nah, berdampak
+[2046.92] positif maksudnya apa? Yang berdampak
+[2049.08] positif ini maksudnya adalah kita
+[2051.52] membuat sebuah aplikasi untuk
+[2053.52] menyelesaikan masalah gitu ya. Jadi kita
+[2056.52] sebagai programmer, programmer itu
+[2058.20] intinya adalah problem solver,
+[2060.04] menyelesaikan masalah. Karena enggak
+[2061.76] mungkin kan orang manggil programmer
+[2063.96] untuk ee apa itu namanya? Baikin AC gitu
+[2067.20] kan. Enggak mungkin. Karena programmer
+[2068.76] itu pasti dia ada masalah nih. Misalnya
+[2072.60] ee kayak contoh teman kita tadi ya, si
+[2074.60] Aisyah ya, dia suka lupa untuk mencatat
+[2076.80] uangnya gitu ya, karena uangnya suka
+[2078.52] habis. Terus itu ada masalah nih,
+[2080.20] uangnya Aisyah itu selalu habis. Nah,
+[2082.84] kita telusuri dari masalah tadi. Oh.
+[2086.00] Ternyata dari ee apa tuh namanya? Aisyah
+[2088.52] suka uangnya itu suka habis karena dia
+[2091.08] tidak mencatat
+[2093.60] apa pengeluaran yang sudah dia lakukan.
+[2096.12] Nah, kita sudah ketemu masalahnya.
+[2098.12] Solusinya apa? Solusi yang kita bisa
+[2099.76] tawarkan? Oh, kita buatkan aplikasi ee
+[2102.96] pencatat keuangan untuk Aisyah gunakan.
+[2105.80] Jadi seperti itu ya. Kita programmer itu
+[2107.92] adalah seorang problem solver. Nah,
+[2111.16] ketika kita ee melihat sebuah masalah
+[2113.80] yang ada di dunia nyata gitu, kita harus
+[2115.92] punya yang pertama yang pertama kali
+[2117.84] harus kita punya adalah punya empati.
+[2119.84] Coba lihat sekeliling, lihat di rumahmu,
+[2122.64] lihat di sekolah, lihat di bangku teman
+[2125.20] sebelahmu, gitu ya. Contoh lain dari
+[2127.64] Aisyah tadi, selain Aisyah tadi misalnya
+[2130.16] dia ee ibu kamu gitu sering lupa
+[2132.96] menyiram tanaman. Nah, karena dia suka
+[2135.76] menyiram e lupa menyiram tanaman, ya
+[2137.72] udah kenapa kita enggak bikin aplikasi
+[2139.16] aja alarm supaya dia bisa ee mengingat
+[2142.48] ee mengasih tahu ibu kita untuk menyiram
+[2145.00] tanaman gitu ya. Nah, nih misalnya teman
+[2148.00] sebangku boros nih ya sama kayak ee apa
+[2150.24] namanya contoh kasus Aisyah tadi gitu
+[2151.72] ya. Nah, ini kita bisa bikin target
+[2153.56] tabungan harian atau misalnya adiknya
+[2156.20] Aisyah malas belajar matematika berarti
+[2159.32] kita bisa bikinkan aplikasi game kuis.
+[2162.00] Jadi tuh kayak dia ee bisa tetap belajar
+[2164.40] gitu ya. Nah, jadi kita punya masalah
+[2166.96] yang kita lihat masalah-masalah ini
+[2168.64] nyata dan ada contoh kasusnya kayak
+[2170.48] Aisyah tadi dan ibu kalian atau adiknya
+[2172.48] Aisyah tadi gitu ya. Dan itu kita bisa
+[2175.32] ee apa namanya? Ketika kita membuat
+[2176.76] aplikasi tadi itu kita menyelesaikan
+[2178.96] masalahnya ee apa tu namanya orang-orang
+[2181.12] itu tadi gitu. Jadi aplikasi yang kita
+[2183.64] buat itu enggak sia-sia dia akan bisa
+[2185.68] langsung digunakan gitu ya.
+[2189.04] Nah, misalnya nih contohnya ee aplikasi
+[2192.60] ibu kita tadi ya, kayak ee ibu kita tuh
+[2194.88] suka lupa untuk menyiram tanaman. Terus
+[2196.60] tuh kalau misalnya pakai aplikasi alarm
+[2198.20] tuh kayak wah susah banget tampilannya
+[2200.00] jelek. Nah, kita mau bikin aplikasi yang
+[2202.12] tampilannya lebih bagus gitu ya. Nah,
+[2204.16] berarti kan di sini kita ada tombol
+[2205.72] kaktus misalnya ee kalau kaktus kan dia
+[2208.00] disiramnya setiap 1 minggu. Kalau
+[2210.20] anggrek itu harus 1 hari sekali gitu ya.
+[2212.44] Terus itu ada kita tambahin komponen non
+[2214.68] visiblenya kayak karena kita mau pakai
+[2216.60] alarm kan berarti kita harus pakai clock
+[2218.68] untuk melihat waktunya. Kemudian ee
+[2221.76] harus ada suaranya juga dong. Kan kalau
+[2223.64] misalnya alarm enggak ada suaranya kan
+[2225.76] kayak ee percuma aplikasinya gitu. Terus
+[2228.20] ada notifier untuk notifikasi. Nah, ini
+[2230.40] kita bisa desain seperti ini. Nah, tiap
+[2232.80] button itu bisa kita tambahkan ee apa
+[2235.32] tuh namanya? Function-function-nya ya.
+[2236.76] Kayak oh kalau clock satu kita bikin
+[2239.00] dulu clocknya setiap berapa menit ini
+[2241.60] kan. Kalau hitungannya per detik kan.
+[2243.60] Nah, terus itu timer enable, terus itu
+[2246.20] tambahin notifier. Ini salah satu
+[2247.92] contoh. Nah, kalau waktunya habis,
+[2251.24] timernya sudah habis, maka dia ee bisa
+[2254.16] play suara, terus itu menampilkan
+[2256.64] message gitu ya. Nah, ini salah satu
+[2258.72] contoh untuk ee alarm tadi.
+[2271.88] Oke, Teman-teman. Sekarang tugas kalian
+[2274.12] adalah coba kita brainstorming idea
+[2277.88] apaagi yang kalian bisa ee buat gitu ya.
+[2280.84] Coba kalian sebutkan masalah apa yang
+[2283.28] kalian punya yang ada di sekolah. Boleh
+[2284.96] di sekolah, boleh di rumah, boleh juga
+[2287.12] di ee misalnya tempat kursus kalian gitu
+[2289.52] atau tempat bermain kalian. Terus itu
+[2292.00] tuliskan ide yang kalian mau buat untuk
+[2295.20] menyelesaikan masalah itu apa gitu ya.
+[2297.48] Coba e kalau bisa juga gambarkan juga di
+[2300.16] dalam satu kertas. Terus itu kumpulkan
+[2302.36] di dalam bok di bawah ini.
