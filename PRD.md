@@ -214,3 +214,36 @@ Struktur data tunggal yang dihasilkan oleh Subproject 2 untuk dibaca langsung ol
    - Berkas `courseData.json` tervalidasi skemanya dan terhubung ke web app.
 4. **Operasional**:
    - Submit kuis berhasil tercatat di Google Sheets tanpa error timeout.
+
+## Kebutuhan disetujui pengguna — 2026-09-08: materi campuran untuk pemula
+
+- Materi lama SMA dimulai sekitar sesi 25, bukan pengantar nol. LMS baru harus melayani siswa yang belum mengenal Python, Google Colab, atau cara menjalankan kode.
+- Gunakan video lama bila penjelasan tersedia. Kekurangan dijembatani bacaan HTML slides terpisah yang tampil di area materi utama; video baru dapat menggantikannya di masa depan. Tidak perlu menunggu produksi video baru.
+- Video mempertahankan bookmark waktu. HTML slides memiliki bookmark halaman/bagian, navigasi baca, dan tampilan diperbesar/fullscreen. Kedua format tetap memiliki rangkuman di bawah area materi.
+- Batas startSeconds/endSeconds, bookmark, dan waktu pause/quiz/resume/skip yang sudah dikurasi adalah data sumber yang harus dipreservasi. Re-sequencing memindahkan unit materi beserta metadata waktunya, bukan mereset setiap video ke awal atau memutar video penuh.
+- Ketidaksesuaian timestamp dilaporkan untuk pemeriksaan; tidak “diperbaiki” otomatis atau ditebak. Bila batas tidak tersedia, tandai belum diketahui tanpa mengarang batas baru.
+- Tahap sekarang: kebutuhan platform dicatat dalam PRD/knowledge/plan; prioritas eksekusi adalah review sequencing SMP–SMA rinci, bukan implementasi player atau produksi semua slides.
+
+### Spesifikasi tambahan: area materi video dan HTML slides
+
+Satu daftar langkah pembelajaran mendukung dua media utama: video YouTube dan dokumen HTML slides terpisah. Jenis media dipisahkan dari jenis aktivitas (pelajaran/proyek) agar proyek yang memiliki video tetap dapat dirender dengan benar. Skema `videos` pada contoh §4.4 adalah contoh lama; arah kontrak baru menggunakan `modules[].steps[]` dengan media eksplisit dan lapisan kompatibilitas untuk JSON yang ada.
+
+| Perilaku | Video | HTML slides |
+|---|---|---|
+| Area utama | Player dengan video ID/link dan rentang sumber | Viewer/iframe menuju artefak HTML terpisah |
+| Bookmark | Detik absolut pada sumber video | ID slide/bagian yang stabil |
+| Navigasi | Seek dibatasi pada segmen yang dikurasi | Sebelumnya/berikutnya dan lompat bookmark |
+| Perbesar | Fullscreen/tampilan luas | Fullscreen/tampilan luas dengan konten tetap terbaca |
+| Rangkuman | Di bawah player | Di bawah viewer |
+| Latihan | Pemicu timestamp atau manual sesuai metadata | Pemicu slide/bagian atau manual; tidak memakai waktu video palsu |
+| Progres | Kuis wajib tetap harus submitted | Kuis wajib tetap harus submitted; halaman terakhir terbaca bukan bukti penguasaan |
+
+Perubahan media atau fullscreen tidak menghapus posisi baca dan jawaban. Saat berganti ke slides, video sebelumnya berhenti. Kegagalan memuat media menampilkan pesan dan opsi coba lagi, bukan menandai selesai. Penanganan halaman tanpa kuis: sediakan tindakan eksplisit “Selesai membaca” sebagai usulan mekanisme completion; tidak menambah kuis wajib otomatis.
+
+### Acceptance criteria tambahan
+
+1. Materi video → slides → video dapat dibuka dalam urutan kurikulum yang sama, dengan rangkuman pada setiap langkah.
+2. Bookmark slides membuka bagian yang benar dan tetap berfungsi dalam tampilan diperbesar.
+3. Video selalu dimulai dan berhenti pada batas yang dikurasi; seek, replay, rewind, dan navigasi kuis tidak membocorkan filler di luar rentang.
+4. Metadata batas/waktu dari sumber lama memiliki snapshot pembanding; perubahan tidak disengaja harus terdeteksi sebelum migrasi.
+5. Setiap materi tambahan pada mapping memiliki tujuan, prasyarat, isi penjelasan, praktik, dan hubungan eksplisit ke materi video berikutnya.
