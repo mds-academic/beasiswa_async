@@ -1,0 +1,135 @@
+{
+  "levelId": "upper_primary",
+  "levelTitle": "Logika Koding Visual SD (UOB My Digital Space)",
+  "description": "Kurikulum pemrograman visual blok interaktif (Scratch) untuk melatih logika instruksi, variabel celengan, percabangan cerita, dan mini game finansial.",
+  "isPlaceholder": true,
+  "modules": [
+    {
+      "id": "up-mod-00",
+      "order": 0,
+      "title": "Modul 0: Orientasi Pembelajaran Asinkronus SD",
+      "description": "Pengenalan seru cara belajar mandiri dan berpetualang di dunia koding.",
+      "steps": [
+        {
+          "id": "up-0-0",
+          "type": "video",
+          "kicker": "Video 00 · Pengenalan",
+          "title": "Introduction to Async Learning",
+          "videoId": "yxmLOk5vcFg",
+          "quizzes": []
+        }
+      ]
+    },
+    {
+      "id": "up-mod-01",
+      "order": 1,
+      "title": "Modul 1: Petualangan Pertama — Data & Kebutuhan vs Keinginan",
+      "description": "Mengenal jenis data angka dan teks, membedakan kebutuhan dan keinginan belanja, serta keamanan digital.",
+      "steps": [
+        {
+          "id": "up-1-1",
+          "type": "video",
+          "kicker": "Checkpoint 01 · Data",
+          "title": "Mengenal & Menampilkan Data Sederhana",
+          "videoId": "",
+          "isPlaceholder": true,
+          "placeholderNotice": "Konten video sedang dalam tahap produksi rekaman.",
+          "quizzes": [
+            {
+              "id": "up-q-1-1",
+              "time": 60,
+              "question": "Manakah yang merupakan contoh kebutuhan pokok?",
+              "options": ["Buku tulis sekolah", "Mainan robot terbaru", "Top up game online"],
+              "correctIndex": 0,
+              "explanation": "Buku tulis sekolah adalah kebutuhan penunjang belajar, sedangkan mainan dan top up game adalah keinginan."
+            }
+          ]
+        },
+        {
+          "id": "up-1-2",
+          "type": "video",
+          "kicker": "Checkpoint 02 · Aman di Internet",
+          "title": "Menjaga Keamanan Data Pribadi Online",
+          "videoId": "",
+          "isPlaceholder": true,
+          "placeholderNotice": "Konten video sedang dalam tahap produksi rekaman.",
+          "quizzes": []
+        }
+      ]
+    },
+    {
+      "id": "up-mod-02",
+      "order": 2,
+      "title": "Modul 2: Celengan Digital — Mengenal Variabel di Scratch",
+      "description": "Membuat kotak penyimpan nilai (variabel) untuk mencatat uang tabungan dan menghitung target menabung.",
+      "steps": [
+        {
+          "id": "up-2-1",
+          "type": "video",
+          "kicker": "Checkpoint 01 · Variabel",
+          "title": "Membuat Variabel Celengan di Scratch",
+          "videoId": "",
+          "isPlaceholder": true,
+          "placeholderNotice": "Konten video sedang dalam tahap produksi rekaman.",
+          "quizzes": []
+        },
+        {
+          "id": "up-2-2",
+          "type": "video",
+          "kicker": "Checkpoint 02 · Target",
+          "title": "Mengontrol Saldo & Menghitung Tabungan",
+          "videoId": "",
+          "isPlaceholder": true,
+          "placeholderNotice": "Konten video sedang dalam tahap produksi rekaman.",
+          "quizzes": []
+        }
+      ]
+    },
+    {
+      "id": "up-mod-03",
+      "order": 3,
+      "title": "Modul 3: Karakter Cerdas — Logika Percabangan (If-Then)",
+      "description": "Memprogram karakter Scratch agar dapat mengambil keputusan cerdas saat menghadapi pilihan.",
+      "steps": [
+        {
+          "id": "up-3-1",
+          "type": "video",
+          "kicker": "Checkpoint 01 · Keputusan",
+          "title": "Blok Percabangan: Jika..., Maka..., Jika Tidak...",
+          "videoId": "",
+          "isPlaceholder": true,
+          "placeholderNotice": "Konten video sedang dalam tahap produksi rekaman.",
+          "quizzes": []
+        },
+        {
+          "id": "up-3-2",
+          "type": "video",
+          "kicker": "Checkpoint 02 · Broadcast",
+          "title": "Mengirim Pesan Antar Karakter (Broadcast Message)",
+          "videoId": "",
+          "isPlaceholder": true,
+          "placeholderNotice": "Konten video sedang dalam tahap produksi rekaman.",
+          "quizzes": []
+        }
+      ]
+    },
+    {
+      "id": "up-mod-04",
+      "order": 4,
+      "title": "Modul 4: Proyek Game Interaktif — Kuis Finansial Seru",
+      "description": "Menggabungkan sistem timer, skor, dan pesan animasi menjadi mini game koding edukatif.",
+      "steps": [
+        {
+          "id": "up-4-1",
+          "type": "project",
+          "kicker": "Final Project · Game Scratch",
+          "title": "Mini Game Petualangan Belanja Bijak",
+          "videoId": "",
+          "isPlaceholder": true,
+          "placeholderNotice": "Instruksi project Scratch interaktif.",
+          "quizzes": []
+        }
+      ]
+    }
+  ]
+}
