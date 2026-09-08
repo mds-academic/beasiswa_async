@@ -13,6 +13,10 @@
   - SD (Upper Primary): Blok visual atau pengantar logika fundamental yang sangat visual & interaktif.
   - SMP (Middle School): Transisi konsep fundamental dengan studi kasus yang relevan dan praktis.
   - SMA (High School): Koding tekstual terstruktur dengan problem solving berbasis kode dan mini project web IDE.
+- **Prinsip Zero-Touch Folder Lama**:
+  - Sumber materi acuan lama di `/Users/yazidhilmi/Documents/cloud/Kalananti-cloud/Academic_Content/B2B/UOB/Async/` bersifat **STRICTLY READ-ONLY**.
+  - DILARANG KERAS mengubah atau memodifikasi file apapun di folder lama tersebut.
+  - Semua file konten slide baru, kurikulum baru, dan dataset baru dibuat sebagai file baru (*completely new*) langsung di dalam folder subproject ini (`subprojects/02-curriculum-sequencing/`).
 
 ## Kebutuhan disetujui pengguna — 2026-09-08: materi campuran untuk pemula
 

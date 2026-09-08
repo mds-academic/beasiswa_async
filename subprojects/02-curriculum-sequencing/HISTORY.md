@@ -146,8 +146,73 @@ Pemeriksaan rinci terhadap seluruh 15 video YouTube, metadata kurasi, kuis, dan 
 ### User — 2026-09-08
 
 oke jadi apa yang bsia kita lakukan untuk memulau subproject 2 ini ??
+jangan modify dong akumau bikin file completely new yah jangan ubah apapund ari dolder sebelumnya ini kita bikin abru disini yah
 
 ### Status / Action
-Menjelaskan roadmap eksekusi Subproject 02 secara terstruktur dalam 4 langkah konkret, merekomendasikan memulai dari produksi 4 materi jembatan prioritas utama (`bridge-hs-00`, `bridge-hs-01`, `bridge-ms-00`, `bridge-ms-01`), format penyusunan HTML slides, dan penggabungan ke dataset kanonik baru.
+Penegasan mutlak prinsip zero-touch: folder materi lama di `/Users/yazidhilmi/Documents/cloud/Kalananti-cloud/Academic_Content/B2B/UOB/Async/` strictly read-only dan tidak akan disentuh/diubah sama sekali. Seluruh materi baru, bridge slides, dan dataset baru dibuat dari nol (*completely new*) langsung di dalam folder proyek lokal `subprojects/02-curriculum-sequencing/`. Disajikan 4 langkah konkret memulai eksekusi Subproject 02 dengan pembuatan file-file baru tersebut.
+
+### Assistant Response (Verbatim)
+
+Tenang, **aku pastikan dan jamin 100%**:
+1. **Folder sebelumnya (`Academic_Content/B2B/UOB/Async/`) STRICTLY READ-ONLY**: Tidak ada satu file pun di folder lama yang diubah, dimodifikasi, atau disentuh. Semuanya aman dan utuh seperti semula.
+2. **Semua file dibuat COMPLETELY NEW di sini**: Seluruh pekerjaan kita (baik Subproject 01 maupun Subproject 02) dibuat sebagai file baru dari nol di dalam folder proyek kita saat ini (`projects/uob-async-lms/`).
+
+---
+
+Terkait pertanyaanmu: **"apa yang bisa kita lakukan untuk memulai subproject 2 ini?"** dengan prinsip **membuat file completely new di sini**:
+
+Berdasarkan audit transkrip 15 video dan analisis kesenjangan materi pemula yang telah kita selesaikan, berikut adalah **4 langkah konkret** untuk langsung memulai eksekusinya:
+
+---
+
+### Langkah 1: Buat Folder Konten Slides Baru & Mulai 4 Bridge Slides Prioritas
+Kita buat folder baru: `subprojects/02-curriculum-sequencing/slides/`  
+Di dalam folder baru ini, kita buat file-file materi jembatan (*Bridge Slides*) baru dari nol untuk materi yang belum ada videonya:
+
+1. **`bridge-hs-00-pengantar-python.md` (SMA - Baru)**:
+   - Mengenal apa itu pemrograman & mengapa Python ramah bagi pemula.
+   - Konsep dasar instruksi komputer: Input → Proses → Output.
+2. **`bridge-hs-01-panduan-google-colab.md` (SMA - Baru)**:
+   - Panduan praktis langkah demi langkah membuka Google Colaboratory.
+   - Cara membuat notebook baru, menulis cell kode pertama (`print("Halo Dunia")`), dan menjalankannya.
+3. **`bridge-ms-00-pengantar-logika-koding.md` (SMP - Baru)**:
+   - Pengantar berpikir komputasional (logika langkah teratur & algoritma).
+4. **`bridge-ms-01-lingkungan-belajar-smp.md` (SMP - Baru)**:
+   - Persiapan akun & pengenalan area kerja praktik koding SMP.
+
+---
+
+### Langkah 2: Format Interaktif Tiap Slide (Mandiri & Ramah Pemula)
+Setiap file slide baru dirancang mandiri dengan struktur:
+- **Header materi & estimasi baca** (misal 5–7 menit).
+- **Kartu slide bertahap** (Slide 1, Slide 2, dst. dengan visual card).
+- **Code Snippet & Preview Output** (contoh kode dan hasil yang diharapkan).
+- **Rangkuman materi** di bagian bawah.
+- **Concept Check** (1–2 kuis singkat untuk mengecek pemahaman siswa sebelum lanjut).
+
+---
+
+### Langkah 3: Susun File Dataset Kurikulum Baru (`courseData-sequenced-v2.json`)
+Kita buat file JSON kurikulum baru di `subprojects/02-curriculum-sequencing/output/`:
+- Mengintegrasikan **Bridge Slides Baru** di awal urutan modul (Modul 0).
+- Menyambungkan ke **Video Kurasi Lama** berikutnya (hanya merujuk URL YouTube & detik batas `startSeconds`/`endSeconds` sebagai referensi pemutaran, tanpa mengubah file sumber video).
+
+---
+
+### Langkah 4: Validasi Alur Siswa (Student Journey Walkthrough)
+Kita tinjau alurnya dari sudut pandang siswa yang belum pernah koding:
+- *Apakah siswa sudah tahu cara menjalankan kode sebelum masuk ke materi percabangan (if-else)?* (Terpenuhi via Colab Guide).
+- *Apakah siswa sudah paham variabel sebelum disuruh memvalidasi input?* (Terpenuhi via Python Basics).
+
+---
+
+### Rekomendasi Awal:
+Bagaimana kalau kita langsung eksekusi **Langkah 1** sekarang, yaitu membuat folder baru `slides/` dan menyusun file baru pertama kita:
+👉 **`subprojects/02-curriculum-sequencing/slides/bridge-hs-00-pengantar-python.md`**  
+dan  
+👉 **`subprojects/02-curriculum-sequencing/slides/bridge-hs-01-panduan-google-colab.md`**?
+
+Apakah kamu setuju kita langsung buat kedua file baru tersebut sekarang?
+
 
 
