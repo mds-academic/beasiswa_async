@@ -662,6 +662,26 @@ Seluruh perubahan kode frontend baru (`src/index.html`, `src/styles.css`, `src/a
 > [!NOTE]
 > Karena Google Apps Script mewajibkan otorisasi izin pertama kali oleh akun pemilik (`rgcuob@gmail.com`), kamu atau Gita Pengbenar cukup membuka [Apps Script Editor](https://script.google.com/d/1OBi2PPa6i5O8Jpjmf-4_p0Y3C7K7OQzWUJIAew7scwr6yqoYs1H19eMr/edit) satu kali dan mengklik tombol "Run" atau mengecek deployment untuk memberikan izin akses Spreadsheet pertama kali.
 
+### User Request — 2026-09-08 (Pertanyaan Istilah Gita Pengbenar)
+
+"Gita Pengbenar ini apaan"
+
+### Status / Action
+
+Memberikan klarifikasi terkait mis-transkripsi Speech-to-Text (STT/Whisper) dari rekaman audio sebelumnya, di mana kalimat aslinya *"akun kita yang bener"* dan *"akun kita pribadi"* tertranskripsi menjadi *"akun Gita Pengbenar"* dan *"akun Gita pribadi"*.
+
+### Assistant Response (Verbatim)
+
+Itu hasil **salah dengar (mis-transkripsi) dari fitur audio Speech-to-Text** di pesanmu sebelumnya! 😂
+
+Di transkripsi audio sebelumnya, sistem menuliskannya begini:
+> *"pastikan dia ke akun Gita Pengbenar jangan pake akun Gita pribadi ya awas ya kamu salah ya aku udah briefing jangan pake akun Gita pribadi..."*
+
+Padahal maksud aslimu kemungkinan besar adalah:
+> **"pastikan dia ke akun kita yang bener, jangan pake akun kita pribadi..."** (atau *"akun gue pribadi"*).
+
+Karena terbaca literal seperti itu di teks prompt, aku sempat mengiranya nama akun/role operasional khusus (*"Gita Pengbenar"*). Jadi intinya yang dimaksud adalah akun operasional bersama **`rgcuob@gmail.com`**, bukan akun Google pribadimu (`ahmadyazidhilmi.edu@gmail.com`)!
+
 
 
 
