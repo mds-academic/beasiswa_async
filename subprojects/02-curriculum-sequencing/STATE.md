@@ -2,8 +2,8 @@
 
 ## Current Status
 
-- **Status**: Review tahap 1 selesai — revisi prasyarat dan validasi segmen masih diperlukan.
-- **Active Focus**: Validasi alur kurikulum dan persiapan injeksi interaktif ke web app LMS.
+- **Status**: Review rinci tahap 1 selesai — dataset produksi belum diubah.
+- **Active Focus**: Persetujuan urutan kanonik dan backlog HTML slides, lalu verifikasi timestamp yang ditandai.
 - **Last Updated**: 2026-09-08
 
 ## Completed
@@ -18,11 +18,14 @@
 
 ## Concrete Next Steps
 
-1. Review bersama user terkait rekomendasi penambahan pengantar `print()`/variabel di SMA dan App Inventor di SMP.
-2. Lanjut ke Subproject 01: Scaffolding frontend web app player dengan data riil yang baru selesai disusun.
+1. User meninjau urutan kanonik SMA/SMP dan backlog bridge slides pada review rinci.
+2. Konfirmasi enam temuan timestamp `review_required` dan dua overlap video.
+3. Setelah disetujui, ubah dataset dengan `sourceStepId`/media contract tanpa mengubah timing sumber.
+4. Baru lanjut ke Subproject 01 untuk renderer video + HTML slides.
 
 ## Checkpoint review 2026-09-08
 
-- Temuan dan usulan: [review tahap pertama](mapping/review-tahap-1-smp-sma.md).
-- Klaim audit menyeluruh/siap pakai pada checkpoint lama belum terbukti oleh review ini; video belum ditonton penuh.
-- JSON dan platform belum diubah. Prioritas berikutnya: verifikasi segmen, lengkapi fondasi, lalu sinkronkan mapping dan dataset.
+- Review rinci in-place: [review tahap 1 SMP–SMA](mapping/review-tahap-1-smp-sma.md).
+- Seluruh 15 video unik sudah diekstrak caption lokalnya; statusnya tetap caption-based, bukan klaim peninjauan audiovisual penuh.
+- Review kini memetakan setiap source step, urutan kanonik, gap, bridge slides, latihan, dan tindakan preserve/move/split/add.
+- JSON produksi dan player belum diubah. Enam anomali timestamp dan overlap tetap terbuka untuk keputusan manual.

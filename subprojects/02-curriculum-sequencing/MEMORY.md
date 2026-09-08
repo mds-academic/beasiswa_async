@@ -26,3 +26,11 @@
 - Batas startSeconds/endSeconds, bookmark, dan waktu pause/quiz/resume/skip yang sudah dikurasi adalah data sumber yang harus dipreservasi. Re-sequencing memindahkan unit materi beserta metadata waktunya, bukan mereset setiap video ke awal atau memutar video penuh.
 - Ketidaksesuaian timestamp dilaporkan untuk pemeriksaan; tidak “diperbaiki” otomatis atau ditebak. Bila batas tidak tersedia, tandai belum diketahui tanpa mengarang batas baru.
 - Tahap sekarang: kebutuhan platform dicatat dalam PRD/knowledge/plan; prioritas eksekusi adalah review sequencing SMP–SMA rinci, bukan implementasi player atau produksi semua slides.
+
+## Checkpoint review rinci — 2026-09-08
+
+- Review tahap pertama telah diperbarui in-place di `mapping/review-tahap-1-smp-sma.md`.
+- Jalur kanonik sementara: SMA (onboarding Colab → fondasi Python → conditional → loop → function → validasi/error handling → dictionary/analisis → proyek) dan SMP (tur App Inventor → event/data → validasi/flowchart → conditional → procedures/debugging → TinyDB → proyek).
+- Gap wajib diproduksi sebagai bridge HTML slides: Google Colab, fondasi Python, list/loop, function, dictionary; tur App Inventor, event/variabel, TinyDB, debugging blok.
+- Caption 15 video unik sudah disimpan lokal untuk audit isi/waktu, tetapi belum dianggap sebagai verifikasi visual penuh.
+- Dataset produksi tidak boleh diubah sebelum user menyetujui urutan dan anomali timestamp.
