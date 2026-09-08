@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Jembatan 00 - Mengenal Google Colab & Python Pertama</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --yellow: #FFE500;
+            --blue: #00C6FF;
+            --black: #1A1A1A;
+            --white: #FFFFFF;
+            --bg-light: #F0F4F8;
+            --green: #00E676;
+            --pink: #FF3366;
+            --purple: #8A2BE2;
+            --border: 3px solid #1A1A1A;
+            --shadow: 4px 4px 0px #1A1A1A;
+            --shadow-lg: 6px 6px 0px #1A1A1A;
+        }
+        body {
+            background-color: var(--bg-light);
+            background-image: radial-gradient(#cbd5e1 2px, transparent 2px);
+            background-size: 28px 28px;
+            font-family: 'Fredoka', sans-serif;
+            color: var(--black);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .app-container {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        /* Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--white);
+            border: var(--border);
+            border-radius: 18px;
+            padding: 14px 24px;
+            box-shadow: var(--shadow);
+        }
+        .brand-group {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .badge-kicker {
+            background: var(--black);
+            color: var(--yellow);
+            padding: 6px 14px;
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        .program-title {
+            font-size: 15px;
+            font-weight: 700;
+            color: #0f172a;
+        }
+        .status-pill {
+            background: #e6f4ea;
+            color: #137333;
+            border: 2px solid #137333;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 700;
+        }
+        /* Slides Area */
+        .slides-card {
+            background: var(--white);
+            border: var(--border);
+            border-radius: 24px;
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            min-height: 520px;
+        }
+        .slide-stage {
+            flex: 1;
+            padding: 32px 36px;
+            display: none;
+            animation: fadeIn 0.25s ease forwards;
+        }
+        .slide-stage.active {
+            display: flex;
+            gap: 32px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(6px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /* Left Column: Summary & Content */
+        .col-content {
+            flex: 1.1;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+        .tag-pill {
+            display: inline-block;
+            align-self: flex-start;
+            padding: 6px 14px;
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: 700;
+            border: 2px solid var(--black);
+            box-shadow: 2px 2px 0 var(--black);
+        }
+        .tag-yellow { background: var(--yellow); color: var(--black); }
+        .tag-blue { background: var(--blue); color: var(--black); }
+        .tag-green { background: var(--green); color: var(--black); }
+        .tag-pink { background: var(--pink); color: var(--white); }
+        .slide-title {
+            font-size: 26px;
+            font-weight: 700;
+            line-height: 1.25;
+            color: #0f172a;
+        }
+        .highlights-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-top: 4px;
+        }
+        .highlight-item {
+            display: flex;
+            gap: 14px;
+            align-items: flex-start;
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 12px 14px;
+        }
+        .highlight-icon {
+            font-size: 26px;
+            line-height: 1;
+        }
+        .highlight-text {
+            font-family: 'Nunito', sans-serif;
+        }
+        .highlight-label {
+            display: block;
+            font-family: 'Fredoka', sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 2px;
+        }
+        .highlight-sub {
+            font-size: 13px;
+            color: #475569;
+            line-height: 1.4;
+        }
+        .keynote-box {
+            background: #fefce8;
+            border: 2px solid var(--black);
+            border-radius: 12px;
+            padding: 12px 16px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 13px;
+            color: #854d0e;
+            box-shadow: 3px 3px 0 var(--yellow);
+            line-height: 1.4;
+        }
+        /* Right Column: Visual Frame */
+        .col-visual {
+            flex: 0.9;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .visual-frame {
+            flex: 1;
+            background: #0f172a;
+            border: var(--border);
+            border-radius: 16px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            box-shadow: var(--shadow);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 280px;
+        }
+        .visual-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .zoom-badge {
+            position: absolute;
+            bottom: 12px;
+            right: 12px;
+            background: rgba(0,0,0,0.75);
+            color: var(--white);
+            padding: 4px 10px;
+            border-radius: 8px;
+            font-size: 11px;
+            font-weight: 600;
+            backdrop-filter: blur(4px);
+        }
+        .caption-bar {
+            font-family: 'Nunito', sans-serif;
+            font-size: 12px;
+            color: #64748b;
+            text-align: center;
+            font-weight: 600;
+        }
+        /* Controls Bar */
+        .controls-bar {
+            background: #f8fafc;
+            border-top: var(--border);
+            padding: 16px 36px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-btn {
+            background: var(--white);
+            border: var(--border);
+            box-shadow: 3px 3px 0 var(--black);
+            padding: 10px 20px;
+            border-radius: 12px;
+            font-family: 'Fredoka', sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: transform 0.1s ease;
+        }
+        .nav-btn:hover {
+            transform: translate(-1px, -1px);
+            box-shadow: 4px 4px 0 var(--black);
+        }
+        .nav-btn:active {
+            transform: translate(2px, 2px);
+            box-shadow: 1px 1px 0 var(--black);
+        }
+        .nav-btn:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: 2px 2px 0 var(--black);
+        }
+        .nav-btn.primary {
+            background: var(--yellow);
+        }
+        .slide-counter {
+            font-size: 15px;
+            font-weight: 700;
+            color: #475569;
+        }
+        /* Summary Card Below Player */
+        .summary-card {
+            background: var(--white);
+            border: var(--border);
+            border-radius: 18px;
+            padding: 20px 24px;
+            box-shadow: var(--shadow);
+        }
+        .summary-card h3 {
+            font-size: 16px;
+            color: #0f172a;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .summary-card p {
+            font-family: 'Nunito', sans-serif;
+            font-size: 14px;
+            color: #475569;
+            line-height: 1.5;
+        }
+        /* Quiz Modal */
+        .quiz-card {
+            margin-top: 16px;
+            background: #eef2ff;
+            border: 2px solid #6366f1;
+            border-radius: 14px;
+            padding: 16px 20px;
+        }
+        .quiz-title {
+            font-size: 15px;
+            font-weight: 700;
+            color: #312e81;
+            margin-bottom: 12px;
+        }
+        .quiz-options {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .quiz-opt-btn {
+            background: var(--white);
+            border: 2px solid #cbd5e1;
+            padding: 10px 14px;
+            border-radius: 8px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            text-align: left;
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+        .quiz-opt-btn:hover {
+            border-color: #6366f1;
+            background: #faf5ff;
+        }
+        .quiz-opt-btn.correct {
+            background: #dcfce7;
+            border-color: #22c55e;
+            color: #15803d;
+        }
+        .quiz-opt-btn.wrong {
+            background: #fee2e2;
+            border-color: #ef4444;
+            color: #b91c1c;
+        }
+        /* Lightbox Modal */
+        .lightbox {
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            background: rgba(0,0,0,0.85);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            padding: 40px;
+        }
+        .lightbox.active {
+            display: flex;
+        }
+        .lightbox img {
+            max-width: 90vw;
+            max-height: 85vh;
+            border: 4px solid var(--white);
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+        }
+        .lightbox-close {
+            position: absolute;
+            top: 24px;
+            right: 28px;
+            background: var(--pink);
+            color: var(--white);
+            border: 2px solid var(--white);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        @media (max-width: 860px) {
+            .slide-stage.active { flex-direction: column; }
+            .col-visual { order: -1; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="brand-group">
+                <span class="badge-kicker">MATERI 00</span>
+                <span class="program-title">UOB My Digital Space · SMA</span>
+            </div>
+            <span class="status-pill">📖 Materi Jembatan Pemula</span>
+        </header>
+
+        <!-- Slides Presentation Area -->
+        <main class="slides-card">
+            <!-- Slide 0 -->
+            <div class="slide-stage active" data-slide="0">
+                <div class="col-content">
+                    <span class="tag-pill tag-yellow">🚀 Dasar Koding</span>
+                    <h1 class="slide-title">Selamat Datang di Dunia Koding Python!</h1>
+                    <div class="highlights-list">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🧠</span>
+                            <div class="highlight-text">
+                                <span class="highlight-label">Bahasa Paling Ramah di Dunia</span>
+                                <span class="highlight-sub">Sintaks Python dirancang sangat mirip bahasa Inggris sehari-hari, sehingga mudah dipelajari pemula.</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">⚡</span>
+                            <div class="highlight-text">
+                                <span class="highlight-label">Kekuatan Industri Nyata</span>
+                                <span class="highlight-sub">Dipakai oleh perusahaan teknologi raksasa (Google, YouTube, Netflix) untuk AI, data science, dan web.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="keynote-box">
+                        💡 Koding bukanlah sihir matematika yang rumit; koding adalah seni memberi instruksi yang jelas kepada komputer langkah demi langkah.
+                    </div>
+                </div>
+                <div class="col-visual">
+                    <div class="visual-frame" onclick="openLightbox('https://cdn-web-2.ruangguru.com/landing-pages/assets/9c0eaab5-9c3f-48e3-8216-e7bcce43a871.png')">
+                        <img src="https://cdn-web-2.ruangguru.com/landing-pages/assets/9c0eaab5-9c3f-48e3-8216-e7bcce43a871.png" alt="Portal Google Colab">
+                        <span class="zoom-badge">🔍 Klik untuk Perbesar</span>
+                    </div>
+                    <p class="caption-bar">📸 Layar Awal: Lingkungan Belajar Koding Google Colab</p>
+                </div>
+            </div>
+
+            <!-- Slide 1 -->
+            <div class="slide-stage" data-slide="1">
+                <div class="col-content">
+                    <span class="tag-pill tag-blue">💡 Pola Pikir Komputer</span>
+                    <h1 class="slide-title">Cara Komputer Berpikir: Siklus I-P-O</h1>
+                    <div class="highlights-list">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">⌨️</span>
+                            <div class="highlight-text">
+                                <span class="highlight-label">1. Input (Masukan)</span>
+                                <span class="highlight-sub">Instruksi atau data mentah yang kita ketikkan melalui keyboard.</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">⚙️</span>
+                            <div class="highlight-text">
+                                <span class="highlight-label">2. Proses (Pengolahan)</span>
+                                <span class="highlight-sub">Mesin Python menerjemahkan instruksimu baris demi baris dan menjalankannya.</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🖥️</span>
+                            <div class="highlight-text">
+                                <span class="highlight-label">3. Output (Keluaran)</span>
+                                <span class="highlight-sub">Hasil akhir yang ditampilkan ke layar monitor agar bisa dibaca manusia.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="keynote-box">
+                        🎯 Komputer hanya melakukan apa yang kamu perintahkan. Jika instruksimu teratur, hasilnya pasti teratur!
+                    </div>
+                </div>
+                <div class="col-visual">
+                    <div class="visual-frame" onclick="openLightbox('https://cdn-web-2.ruangguru.com/landing-pages/assets/af5954a4-3115-43fb-b9f9-4400cd55224f.png')">
+                        <img src="https://cdn-web-2.ruangguru.com/landing-pages/assets/af5954a4-3115-43fb-b9f9-4400cd55224f.png" alt="Siklus IPO Python">
+                        <span class="zoom-badge">🔍 Klik untuk Perbesar</span>
+                    </div>
+                    <p class="caption-bar">📸 Diagram Alur: Siklus Input -> Proses -> Output</p>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide-stage" data-slide="2">
+                <div class="col-content">
+                    <span class="tag-pill tag-green">🌐 Alat Koding Online</span>
+                    <h1 class="slide-title">Mengenal Google Colaboratory (Colab)</h1>
+                    <div class="highlights-list">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">☁️</span>
+                            <div class="highlight-text">
+                                <span class="highlight-label">100% Berbasis Cloud</span>
+                                <span class="highlight-sub">Tidak perlu install aplikasi berat di laptop. Cukup buka browser Chrome dan koneksi internet.</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">📁</span>
+                            <div class="highlight-text">
+                                <span class="highlight-label">Tersimpan Aman di Google Drive</span>
+                                <span class="highlight-sub">Setiap file kodinganmu (format .ipynb) otomatis tersimpan rapi di Google Drive pribadimu.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="keynote-box">
+                        🔗 Cara buka: Akses <b>colab.research.google.com</b> lalu klik tombol 'Notebook Baru' (+ New Notebook).
+                    </div>
+                </div>
+                <div class="col-visual">
+                    <div class="visual-frame" onclick="openLightbox('https://cdn-web-2.ruangguru.com/landing-pages/assets/9c0eaab5-9c3f-48e3-8216-e7bcce43a871.png')">
+                        <img src="https://cdn-web-2.ruangguru.com/landing-pages/assets/9c0eaab5-9c3f-48e3-8216-e7bcce43a871.png" alt="Membuka Notebook Baru">
+                        <span class="zoom-badge">🔍 Klik untuk Perbesar</span>
+                    </div>
+                    <p class="caption-bar">📸 Portal Resmi: Membuka Notebook Baru di Google Colab</p>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide-stage" data-slide="3">
+                <div class="col-content">
+                    <span class="tag-pill tag-pink">📝 Menulis Perintah</span>
+                    <h1 class="slide-title">Mengenal Code Cell & Fungsi print()</h1>
+                    <div class="highlights-list">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">📦</span>
+                            <div class="highlight-text">
+                                <span class="highlight-label">Code Cell (Kotak Perintah)</span>
+                                <span class="highlight-sub">Kotak abu-abu tempat kamu mengetikkan baris perintah Python.</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">📢</span>
+                            <div class="highlight-text">
+                                <span class="highlight-label">Fungsi print()</span>
+                                <span class="highlight-sub">Perintah ajaib untuk menyuruh komputer mencetak teks ke layar. Teks wajib diapit tanda petik ("...").</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="keynote-box">
+                        ⚠️ Aturan Tanda Petik: Huruf atau kalimat wajib memakai tanda petik dua "Halo" atau petik satu 'Halo'.
+                    </div>
+                </div>
+                <div class="col-visual">
+                    <div class="visual-frame" onclick="openLightbox('https://cdn-web-2.ruangguru.com/landing-pages/assets/fcd966fb-4031-43c3-8c63-85de89ff3989.png')">
+                        <img src="https://cdn-web-2.ruangguru.com/landing-pages/assets/fcd966fb-4031-43c3-8c63-85de89ff3989.png" alt="Code Cell dan Fungsi Print">
+                        <span class="zoom-badge">🔍 Klik untuk Perbesar</span>
+                    </div>
+                    <p class="caption-bar">📸 Code Editor: Mengetik Perintah print() di dalam Code Cell</p>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="slide-stage" data-slide="4">
+                <div class="col-content">
+                    <span class="tag-pill tag-yellow">▶️ Eksekusi Kode</span>
+                    <h1 class="slide-title">Menjalankan Kode & Membaca Output</h1>
+                    <div class="highlights-list">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🔘</span>
+                            <div class="highlight-text">
+                                <span class="highlight-label">Tombol Play (Run)</span>
+                                <span class="highlight-sub">Klik tombol lingkaran segitiga di samping kiri cell, atau gunakan shortcut keyboard Ctrl + Enter.</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">👀</span>
+                            <div class="highlight-text">
+                                <span class="highlight-label">Membaca Hasil di Bawah Cell</span>
+                                <span class="highlight-sub">Teks hasil print akan muncul bersih tepat di bawah kotak kode cell dalam hitungan detik.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="keynote-box">
+                        🎉 Selamat! Ketika teks muncul di layar, kamu sudah resmi menjadi seorang Coder Python!
+                    </div>
+                </div>
+                <div class="col-visual">
+                    <div class="visual-frame" onclick="openLightbox('https://cdn-web-2.ruangguru.com/landing-pages/assets/fcd966fb-4031-43c3-8c63-85de89ff3989.png')">
+                        <img src="https://cdn-web-2.ruangguru.com/landing-pages/assets/fcd966fb-4031-43c3-8c63-85de89ff3989.png" alt="Hasil Eksekusi Output">
+                        <span class="zoom-badge">🔍 Klik untuk Perbesar</span>
+                    </div>
+                    <p class="caption-bar">📸 Hasil Nyata: Output Muncul Bersih Tepat di Bawah Kotak Kode</p>
+                </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="slide-stage" data-slide="5">
+                <div class="col-content">
+                    <span class="tag-pill tag-green">🏆 Rangkuman & Kuis</span>
+                    <h1 class="slide-title">Cek Pemahaman Coder Pemula</h1>
+                    <div class="quiz-card">
+                        <p class="quiz-title">❓ Di mana kita menuliskan perintah kode Python pada Google Colab?</p>
+                        <div class="quiz-options">
+                            <button class="quiz-opt-btn" onclick="checkQuiz(0)">A. Di dalam kotak pencarian Google</button>
+                            <button class="quiz-opt-btn" onclick="checkQuiz(1)">B. Di dalam kotak Code Cell</button>
+                            <button class="quiz-opt-btn" onclick="checkQuiz(2)">C. Di kolom komentar YouTube</button>
+                            <button class="quiz-opt-btn" onclick="checkQuiz(3)">D. Di berkas Microsoft Word</button>
+                        </div>
+                        <div id="quiz-feedback" style="margin-top: 10px; font-size: 13px; display: none; line-height: 1.4;"></div>
+                    </div>
+                    <div class="keynote-box">
+                        🚀 Kamu sekarang siap lanjut ke materi berikutnya: mempelajari Variabel dan Tipe Data!
+                    </div>
+                </div>
+                <div class="col-visual">
+                    <div class="visual-frame" onclick="openLightbox('https://cdn-web-2.ruangguru.com/landing-pages/assets/af5954a4-3115-43fb-b9f9-4400cd55224f.png')">
+                        <img src="https://cdn-web-2.ruangguru.com/landing-pages/assets/af5954a4-3115-43fb-b9f9-4400cd55224f.png" alt="Rangkuman Colab">
+                        <span class="zoom-badge">🔍 Klik untuk Perbesar</span>
+                    </div>
+                    <p class="caption-bar">📸 Checklist: Siklus I-P-O yang Berhasil Kamu Pelajari</p>
+                </div>
+            </div>
+
+            <!-- Controls Footer -->
+            <footer class="controls-bar">
+                <button class="nav-btn" id="btn-prev" onclick="prevSlide()">◀ Sebelumnya</button>
+                <span class="slide-counter" id="slide-counter">Slide 1 dari 6</span>
+                <button class="nav-btn primary" id="btn-next" onclick="nextSlide()">Selanjutnya ▶</button>
+            </footer>
+        </main>
+
+        <!-- Summary Card Below Player -->
+        <section class="summary-card">
+            <h3>📖 Rangkuman Ringkas Materi</h3>
+            <p>
+                Google Colab adalah editor Python berbasis web gratis yang tidak memerlukan instalasi aplikasi di laptop. Siswa menulis perintah di dalam <b>Code Cell</b>, menekan tombol <b>Run (Play)</b>, dan membaca hasilnya (Output) tepat di bawah cell. Perintah <code>print("teks")</code> digunakan untuk menampilkan teks ke layar. Pahami siklus <b>Input ➔ Proses ➔ Output</b> sebelum melangkah ke koding yang lebih kompleks!
+            </p>
+        </section>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+        <img id="lightbox-img" src="" alt="Zoom Visual">
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const totalSlides = 6;
+        const stages = document.querySelectorAll('.slide-stage');
+        const prevBtn = document.getElementById('btn-prev');
+        const nextBtn = document.getElementById('btn-next');
+        const counter = document.getElementById('slide-counter');
+
+        function updateSlide() {
+            stages.forEach((s, idx) => {
+                s.classList.toggle('active', idx === currentSlide);
+            });
+            counter.innerText = `Slide ${currentSlide + 1} dari ${totalSlides}`;
+            prevBtn.disabled = currentSlide === 0;
+            nextBtn.innerText = currentSlide === totalSlides - 1 ? 'Selesai 🏁' : 'Selanjutnya ▶';
+        }
+
+        function nextSlide() {
+            if (currentSlide < totalSlides - 1) {
+                currentSlide++;
+                updateSlide();
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 0) {
+                currentSlide--;
+                updateSlide();
+            }
+        }
+
+        // Keyboard arrow navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') nextSlide();
+            if (e.key === 'ArrowLeft') prevSlide();
+            if (e.key === 'Escape') closeLightbox();
+        });
+
+        // Lightbox modal
+        function openLightbox(src) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox').classList.add('active');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+
+        // Quiz check
+        function checkQuiz(selectedIndex) {
+            const btns = document.querySelectorAll('.quiz-opt-btn');
+            const feedback = document.getElementById('quiz-feedback');
+            btns.forEach(b => b.classList.remove('correct', 'wrong'));
+            
+            if (selectedIndex === 1) {
+                btns[1].classList.add('correct');
+                feedback.style.display = 'block';
+                feedback.style.color = '#15803d';
+                feedback.innerHTML = '<b>✅ Jawaban Benar!</b> Kode Python di Google Colab ditulis di dalam blok khusus bernama Code Cell sebelum dijalankan.';
+            } else {
+                btns[selectedIndex].classList.add('wrong');
+                feedback.style.display = 'block';
+                feedback.style.color = '#b91c1c';
+                feedback.innerHTML = '<b>❌ Kurang tepat.</b> Coba ingat lagi kotak tempat kita mengetikkan baris instruksi tadi!';
+            }
+        }
+
+        updateSlide();
+    </script>
+</body>
+</html>
