@@ -3,6 +3,31 @@
  * Subproject 01: Interactive Player, Quiz Switcher, Single-Portal Auth, & Progress Lock
  */
 
+// Live Google Apps Script Web App Deployment URL (Account: rgcuob@gmail.com)
+const APP_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxeN6qSeNLl3G08JkKsJ1HTGLzk7smy4idTfpJgA4LxvgI_WR9G0JKeg9qohVDV4yyd/exec';
+
+function syncProgressToBackend(quizId, isCorrect, score) {
+  if (!state.student || !state.student.email || !state.student.school) return;
+  try {
+    fetch(APP_SCRIPT_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        email: state.student.email,
+        name: state.student.name,
+        school: state.student.school,
+        level: state.student.level,
+        quizId: quizId,
+        isCorrect: isCorrect,
+        score: score || 100
+      })
+    }).catch((err) => console.warn('Progress sync warning:', err));
+  } catch (err) {
+    console.warn('Progress sync exception:', err);
+  }
+}
+
 // ==================== STATE MANAGEMENT ====================
 const state = {
   isLoggedIn: false,
@@ -180,6 +205,38 @@ function setupLoginEvents() {
           : level === 'SMP'
           ? 'Misi: App Inventor Mobile'
           : 'Misi: Scratch Visual Coding';
+
+      // Restore local progress
+      const storageKey = `uob_progress_${email}_${schoolName}`;
+      try {
+        const saved = localStorage.getItem(storageKey);
+        if (saved) {
+          const parsed = JSON.parse(saved);
+          if (Array.isArray(parsed)) {
+            state.submittedQuizIds = new Set(parsed);
+          }
+        }
+      } catch (e) {
+        console.warn('Failed to read localStorage:', e);
+      }
+
+      // Background Server-First sync from Google Sheets
+      try {
+        const getUrl = `${APP_SCRIPT_URL}?action=get_progress&email=${encodeURIComponent(email)}&school=${encodeURIComponent(schoolName)}&level=${encodeURIComponent(level)}`;
+        fetch(getUrl)
+          .then((r) => r.json())
+          .then((res) => {
+            if (res && res.success && res.data && Array.isArray(res.data.submittedQuizIds)) {
+              res.data.submittedQuizIds.forEach((id) => state.submittedQuizIds.add(id));
+              localStorage.setItem(storageKey, JSON.stringify([...state.submittedQuizIds]));
+              renderQuizSwitcherStrip();
+              checkProgressGate();
+            }
+          })
+          .catch((err) => console.log('Backend sync offline/deferred:', err));
+      } catch (err) {
+        console.log('Background sync deferred:', err);
+      }
 
       buildSidebarModuleList();
       goToStep(0);
@@ -717,6 +774,16 @@ function setupQuizModalEvents() {
     if (selectedIdx === quiz.answer) {
       // Jawaban Benar
       state.submittedQuizIds.add(quiz.id);
+
+      // Save to localStorage
+      try {
+        const storageKey = `uob_progress_${state.student.email}_${state.student.school}`;
+        localStorage.setItem(storageKey, JSON.stringify([...state.submittedQuizIds]));
+      } catch (e) {}
+
+      // Sync ke Google Apps Script backend (rgcuob@gmail.com)
+      syncProgressToBackend(quiz.id, true, 100);
+
       showQuizFeedback(`Bagus sekali! Jawabanmu benar. ${quiz.explanation || ''}`, 'success');
       renderQuizSwitcherStrip();
       checkProgressGate();

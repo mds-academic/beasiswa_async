@@ -10,8 +10,8 @@
  * 5. Dynamic Header Insertion for flexible curriculum quizzes.
  */
 
-// SPREADSHEET_ID will be updated after the new Google Spreadsheet is linked
-let SPREADSHEET_ID = ''; 
+// SPREADSHEET_ID linked to new centralized UOB My Digital Space sheet under rgcuob@gmail.com
+const SPREADSHEET_ID = '1s6VVCGLPwiGWYwBNiR-4lrnB5XWcOV0l7pAIcgyif-k'; 
 
 const SHEET_STUDENT_DATA = 'ops-student-data';
 const SHEET_RESULT_SMA = 'ops-result-sma';

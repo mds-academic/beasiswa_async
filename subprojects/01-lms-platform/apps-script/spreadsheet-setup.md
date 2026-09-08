@@ -2,6 +2,11 @@
 
 Dokumen ini menjelaskan struktur Google Spreadsheet baru terpusat untuk program **UOB My Digital Space** multi-jenjang (SD, SMP, SMA) dan skrip Apps Script pendukungnya.
 
+- **Spreadsheet URL**: [UOB My Digital Space Master Database](https://docs.google.com/spreadsheets/d/1s6VVCGLPwiGWYwBNiR-4lrnB5XWcOV0l7pAIcgyif-k/edit) (ID: `1s6VVCGLPwiGWYwBNiR-4lrnB5XWcOV0l7pAIcgyif-k`)
+- **Apps Script Editor**: [Script Editor Bound Project](https://script.google.com/d/1OBi2PPa6i5O8Jpjmf-4_p0Y3C7K7OQzWUJIAew7scwr6yqoYs1H19eMr/edit) (ID: `1OBi2PPa6i5O8Jpjmf-4_p0Y3C7K7OQzWUJIAew7scwr6yqoYs1H19eMr`)
+- **Web App URL**: `https://script.google.com/macros/s/AKfycbxeN6qSeNLl3G08JkKsJ1HTGLzk7smy4idTfpJgA4LxvgI_WR9G0JKeg9qohVDV4yyd/exec`
+- **Owner Account**: `rgcuob@gmail.com` (Ruangguru Coding UOB / Gita Pengbenar)
+
 ---
 
 ## 1. Aturan Kritis Warning Banner (Row 1)
