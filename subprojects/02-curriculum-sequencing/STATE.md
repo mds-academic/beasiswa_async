@@ -2,8 +2,8 @@
 
 ## Current Status
 
-- **Status**: Overhaul Materi Jembatan 00 (SMA Google Colab & SMP MIT App Inventor) selesai dengan template neo-brutalisme kanonik & screenshot real CDN Ruangguru.
-- **Active Focus**: Integrasi bridge slides ke kurikulum platform LMS dan persiapan bridge slides berikutnya.
+- **Status**: Audit ulang scaffolding selesai; arah sequencing sudah cukup benar, tetapi kurikulum belum siap dianggap scaffolding final untuk pemula.
+- **Active Focus**: Finalisasi bridge HTML, memisahkan tur App Inventor dari TinyDB, lalu membuat dataset sequencing baru yang menghubungkan bridge sebagai prasyarat eksplisit.
 - **Last Updated**: 2026-09-08
 
 ## Completed
@@ -17,10 +17,13 @@
   - Mengunggah seluruh aset visual secara permanen ke Ruangguru CDN (`rg_cdn_web_2` di `https://cdn-web-2.ruangguru.com/landing-pages/assets/...`).
   - Menyusun 16 slide materi kaya & mendalam per jenjang dengan tabel perbandingan, petunjuk langkah demi langkah, mini playground interaktif, dan kuis pemahaman mandiri.
   - Sinkronisasi berkas slides & metadata JSON ke `subprojects/01-lms-platform/src/slides/` dan `docs/slides/`.
+- Audit ulang tersimpan di `mapping/audit-ulang-scaffolding-2026-09-08.md`.
+- Temuan kunci: hanya `bridge-hs-00.html` dan `bridge-ms-00.html` yang sudah menjadi HTML; `bridge-hs-01`/`bridge-ms-01` baru berupa metadata JSON dan belum di-inject sebagai step prasyarat.
+- Dataset masih memiliki quiz `99999`, bookmark di luar segmen, dan beberapa quiz yang berada sebelum `startSeconds`; dataset produksi belum disetujui untuk diubah.
 
 ## Concrete Next Steps
 
-1. Uji integrasi materi jembatan di dalam LMS player web app.
-2. Melanjutkan pembuatan bridge slides berikutnya sesuai kurasi review (`bridge-hs-01`, `bridge-ms-01`).
-3. Pemutakhiran dataset kurikulum final untuk disuntikkan ke portal belajar.
-
+1. Produksi HTML `bridge-hs-01` sampai `bridge-hs-05` dan `bridge-ms-01` sampai `bridge-ms-03`.
+2. Revisi `bridge-ms-00` agar tidak mengajarkan TinyDB terlalu awal.
+3. Buat dataset sequencing baru dengan bridge sebagai step dan prasyarat eksplisit.
+4. Validasi ulang timestamp/bookmark/quiz sebelum integrasi LMS.

@@ -257,3 +257,13 @@ oiya ini juga kalo ada beberapa info yang kamu ga tau scraping websites buat amb
 https://youtu.be/5M9jTl5pPsI?si=SUe3e6ooBMdvMPvL
 https://youtu.be/5M9jTl5pPsI?si=j1wYxVgGD4FjuCvv
 https://youtu.be/_aAQ8nFUAqc?si=ydg6KQywOi6CxC6x"
+
+## 2026-09-08 — Audit ulang materi dan scaffolding
+
+### User
+> /Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/02-curriculum-sequencing
+>
+> ini coba aku mau kamu cek dan audit lagi hasil kerjaan aku ini materinay udah bener kah udah scaffolding kah apakah udah sesusai atau menurutmua perlu ada tambahan giman amateri yang dibuat apakah udah seusai apa belum
+
+### Status
+- **under discussion** — audit ulang pedagogis, scaffolding, kelengkapan materi, dan kesesuaian jalur SMP–SMA diminta.
