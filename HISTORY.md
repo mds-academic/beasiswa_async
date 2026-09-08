@@ -740,8 +740,19 @@ Seluruh berkas web app, folder `docs/`, dan update sinkronisasi telah di-commit 
 Jika kamu ingin melihat tampilan langsung di komputermu sekarang, kamu bisa membuka:
 👉 `http://localhost:8080/`
 
+### User Request — 2026-09-08 (Skema Login Sheet, Auto-detect Grade, Typo Suggestion, & 100% Identical Design + Sandbox)
+
+"nah ini dia darimana data loginnya kan aku mau dai dari sheet harsnya ada data ini email	name	rombel_name	school_name	grade_name
+grade name ini nanti yang menentukan materi apa yang di tampilin apakah upper / lower primary ()sd atau midlle school (smp) atau high school (sma)
+harusnya dai cuman nanya nama sekolanya apa dan nanti berdasarkan nama sekolah dia masukin email
+jangan lupa kalo dia ada typo emailnya kita kasi tau email yang bener apa tapi harus yang paling mendekati yah 
 
 
+sama in iadakah alasan kenapa designnya kok ngga sama persis kaya yang ada yang lama yah ??
 
+kan aku mau ada sandbox buat nampilin vdideo / html slide 
 
+kok ga sam apersis si h designnya ??"
 
+### Status / Action
+In progress: Menyesuaikan login sheet 5 kolom (`email`, `name`, `rombel_name`, `school_name`, `grade_name`), auto-detect grade materi kurikulum, fuzzy typo suggestion email dengan Levenshtein distance, menyamakan desain 100% identik dengan legacy LMS (termasuk tombol play kuning pekat, focus-card, summary-card, dll.), serta mengintegrasikan sandbox container (`<iframe>`) untuk video & HTML slides.

@@ -1,10 +1,213 @@
 /**
  * UOB My Digital Space — Asynchronous Learning Platform Logic
- * Subproject 01: Interactive Player, Quiz Switcher, Single-Portal Auth, & Progress Lock
+ * Subproject 01: Interactive Player, Sandbox Container, Typo Suggestion, & Grade Auto-Detection
  */
 
 // Live Google Apps Script Web App Deployment URL (Account: rgcuob@gmail.com)
-const APP_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxeN6qSeNLl3G08JkKsJ1HTGLzk7smy4idTfpJgA4LxvgI_WR9G0JKeg9qohVDV4yyd/exec';
+const APP_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbybx1KlcTW7Rofbb7OSGWtWeEAU_uflLAG3bqfS9edl-tSlIPmRh4FnheBWCaKxb06S/exec';
+
+// ==================== STATE MANAGEMENT ====================
+const state = {
+  isLoggedIn: false,
+  selectedSchool: null,
+  student: {
+    name: '',
+    school: '',
+    rombel: '',
+    email: '',
+    grade: '',
+    level: 'SMA',
+    dataFile: 'courseData-highschool.json'
+  },
+  masterSchools: [],
+  schoolStudents: [],
+  allStudentsData: [],
+  courseData: [],
+  currentStepIndex: 0,
+  activeMediaMode: 'video', // 'video' or 'sandbox'
+  submittedQuizIds: new Set(),
+  activeQuiz: null,
+  activeQuizIndex: 0,
+  activeStepQuizzes: [],
+  ytPlayer: null,
+  isPlayerReady: false,
+  isPlaying: false,
+  playerCheckTimer: null,
+  hasStartedVideo: false
+};
+
+// ==================== DOM ELEMENTS ====================
+const el = {
+  // Login Overlay & Controls
+  loginOverlay: document.querySelector('#login-overlay'),
+  loginForm: document.querySelector('#login-form'),
+  loginSchoolInput: document.querySelector('#login-school-input'),
+  loginSchoolDropdown: document.querySelector('#login-school-dropdown'),
+  loginEmailInput: document.querySelector('#login-email-input'),
+  loginDetectedBadge: document.querySelector('#login-detected-badge'),
+  btnToggleEmailHelp: document.querySelector('#btn-toggle-email-help'),
+  emailHelpPanel: document.querySelector('#email-help-panel'),
+  emailHelpQuery: document.querySelector('#email-help-query'),
+  emailHelpResults: document.querySelector('#email-help-results'),
+  btnLogin: document.querySelector('#btn-login'),
+  loginErrorContainer: document.querySelector('#login-error-container'),
+  loginErrorTitle: document.querySelector('#login-error-title'),
+  loginErrorDesc: document.querySelector('#login-error-desc'),
+  loginSuggestionCard: document.querySelector('#login-suggestion-card'),
+  loginSuggestionEmail: document.querySelector('#login-suggestion-email'),
+  btnUseSuggestion: document.querySelector('#btn-use-suggestion'),
+
+  // Site Shell & Topbar
+  siteShell: document.querySelector('#site-shell'),
+  displayStudentName: document.querySelector('#display-student-name'),
+  displayStudentMeta: document.querySelector('#display-student-meta'),
+  studentAvatar: document.querySelector('#student-avatar'),
+  studentChip: document.querySelector('#student-chip'),
+  profileDropdown: document.querySelector('#profile-dropdown'),
+  btnLogout: document.querySelector('#btn-logout'),
+  btnOpenAdvisory: document.querySelector('#btn-open-advisory'),
+  advisoryModal: document.querySelector('#advisory-modal'),
+  btnDismissAdvisory: document.querySelector('#btn-dismiss-advisory'),
+
+  // Sidebar
+  sidebarMissionTitle: document.querySelector('#sidebar-mission-title'),
+  sidebarMissionDesc: document.querySelector('#sidebar-mission-desc'),
+  progressText: document.querySelector('#progress-text'),
+  progressFill: document.querySelector('#progress-fill'),
+  lessonNav: document.querySelector('#lesson-nav'),
+  mobileStepSelect: document.querySelector('#mobile-step-select'),
+
+  // Content Header
+  lessonKicker: document.querySelector('#lesson-kicker'),
+  lessonTitle: document.querySelector('#lesson-title'),
+  mediaTypeBadge: document.querySelector('#media-type-badge'),
+  lessonDuration: document.querySelector('#lesson-duration'),
+
+  // Media Switcher & Player
+  mediaSwitcherTabs: document.querySelector('#media-switcher-tabs'),
+  tabModeVideo: document.querySelector('#tab-mode-video'),
+  tabModeSandbox: document.querySelector('#tab-mode-sandbox'),
+  videoContainerBox: document.querySelector('#video-container-box'),
+  videoFrame: document.querySelector('#video-frame'),
+  customThumbnail: document.querySelector('#custom-thumbnail'),
+  thumbnailImg: document.querySelector('#thumbnail-img'),
+  centerPlayBtn: document.querySelector('#center-play-btn'),
+  videoLoading: document.querySelector('#video-loading'),
+  videoControls: document.querySelector('#video-controls'),
+  btnPlayPause: document.querySelector('#btn-play-pause'),
+  videoSeekBar: document.querySelector('#video-seek-bar'),
+  videoTimeDisplay: document.querySelector('#video-time-display'),
+  btnMute: document.querySelector('#btn-mute'),
+  btnFullscreen: document.querySelector('#btn-fullscreen'),
+  bookmarksContainer: document.querySelector('#bookmarks-container'),
+
+  // Sandbox Container
+  sandboxContainer: document.querySelector('#sandbox-container'),
+  sandboxTitle: document.querySelector('#sandbox-title'),
+  sandboxIframe: document.querySelector('#sandbox-iframe'),
+  btnReloadSandbox: document.querySelector('#btn-reload-sandbox'),
+  btnFullscreenSandbox: document.querySelector('#btn-fullscreen-sandbox'),
+
+  // Quiz Switcher Strip
+  quizSwitcherStrip: document.querySelector('#quiz-switcher-strip'),
+  quizSummaryStatus: document.querySelector('#quiz-summary-status'),
+  quizPillsList: document.querySelector('#quiz-pills-list'),
+  btnOpenActiveQuiz: document.querySelector('#btn-open-active-quiz'),
+
+  // Exact Legacy Below-Video 2-Column Cards
+  summaryHeadingIcon: document.querySelector('#summary-heading-icon'),
+  summaryCardTitle: document.querySelector('#summary-card-title'),
+  takeawayList: document.querySelector('#takeaway-list'),
+  focusCardTitle: document.querySelector('#focus-card-title'),
+  focusCardDesc: document.querySelector('#focus-card-desc'),
+  focusCardCode: document.querySelector('#focus-card-code'),
+
+  // Lesson Reading Accordion
+  readingAccordion: document.querySelector('#reading-accordion'),
+  readingHeaderLabel: document.querySelector('#reading-header-label'),
+  readingHeaderTitle: document.querySelector('#reading-header-title'),
+  readingHeaderDesc: document.querySelector('#reading-header-desc'),
+  readingHeaderBadge: document.querySelector('#reading-header-badge'),
+  readingConceptGrid: document.querySelector('#reading-concept-grid'),
+  readingSectionTitle: document.querySelector('#reading-section-title'),
+  readingSectionCode: document.querySelector('#reading-section-code'),
+  readingSectionNote: document.querySelector('#reading-section-note'),
+
+  // Step Nav Gate
+  btnPrevStep: document.querySelector('#btn-prev-step'),
+  btnNextStep: document.querySelector('#btn-next-step'),
+  nextStepIcon: document.querySelector('#next-step-icon'),
+  stepGateInfo: document.querySelector('#step-gate-info'),
+
+  // Quiz Modal Dialog
+  quizModal: document.querySelector('#quiz-modal'),
+  modalQuizNumber: document.querySelector('#modal-quiz-number'),
+  modalQuizTitle: document.querySelector('#modal-quiz-title'),
+  modalQuizQuestion: document.querySelector('#modal-quiz-question'),
+  modalQuizOptions: document.querySelector('#modal-quiz-options'),
+  quizFeedbackBox: document.querySelector('#quiz-feedback-box'),
+  feedbackIcon: document.querySelector('#feedback-icon'),
+  feedbackText: document.querySelector('#feedback-text'),
+  btnCloseQuizModal: document.querySelector('#btn-close-quiz-modal'),
+  btnRewatchQuiz: document.querySelector('#btn-rewatch-quiz'),
+  btnDeferQuiz: document.querySelector('#btn-defer-quiz'),
+  btnSubmitQuiz: document.querySelector('#btn-submit-quiz')
+};
+
+// ==================== HELPER ALGORITHMS ====================
+
+/**
+ * Algoritma Levenshtein Distance untuk toleransi typo email siswa
+ */
+function levenshteinDistance(a, b) {
+  const s1 = String(a || '').toLowerCase().trim();
+  const s2 = String(b || '').toLowerCase().trim();
+  const m = s1.length;
+  const n = s2.length;
+  const dp = Array.from({ length: m + 1 }, () => new Array(n + 1).fill(0));
+
+  for (let i = 0; i <= m; i++) dp[i][0] = i;
+  for (let j = 0; j <= n; j++) dp[0][j] = j;
+
+  for (let i = 1; i <= m; i++) {
+    for (let j = 1; j <= n; j++) {
+      const cost = s1[i - 1] === s2[j - 1] ? 0 : 1;
+      dp[i][j] = Math.min(
+        dp[i - 1][j] + 1, // deletion
+        dp[i][j - 1] + 1, // insertion
+        dp[i - 1][j - 1] + cost // substitution
+      );
+    }
+  }
+  return dp[m][n];
+}
+
+/**
+ * Menentukan jenjang dan file kurikulum berdasarkan grade_name dari Google Sheet
+ */
+function resolveCurriculumFromGrade(gradeName) {
+  const g = String(gradeName || '').toLowerCase().trim();
+  if (g.includes('sma') || g.includes('high') || g.includes('senior') || g.includes('python')) {
+    return { level: 'SMA', dataFile: 'courseData-highschool.json' };
+  } else if (g.includes('smp') || g.includes('middle') || g.includes('junior') || g.includes('app')) {
+    return { level: 'SMP', dataFile: 'courseData-middleschool.json' };
+  } else {
+    return { level: 'SD', dataFile: 'courseData-upperprimary.json' };
+  }
+}
+
+/**
+ * Masking email untuk tampilan aman (contoh: bu***@gmail.com)
+ */
+function maskEmail(email) {
+  const str = String(email || '').trim();
+  const parts = str.split('@');
+  if (parts.length !== 2) return str;
+  const username = parts[0];
+  const domain = parts[1];
+  if (username.length <= 2) return `${username}***@${domain}`;
+  return `${username.slice(0, 2)}***${username.slice(-1)}@${domain}`;
+}
 
 function syncProgressToBackend(quizId, isCorrect, score) {
   if (!state.student || !state.student.email || !state.student.school) return;
@@ -28,124 +231,18 @@ function syncProgressToBackend(quizId, isCorrect, score) {
   }
 }
 
-// ==================== STATE MANAGEMENT ====================
-const state = {
-  isLoggedIn: false,
-  student: {
-    name: '',
-    school: '',
-    email: '',
-    level: 'SMA',
-    dataFile: 'courseData-highschool.json'
-  },
-  courseData: [],
-  currentStepIndex: 0,
-  submittedQuizIds: new Set(),
-  activeQuiz: null,
-  activeQuizIndex: 0,
-  activeStepQuizzes: [],
-  ytPlayer: null,
-  isPlayerReady: false,
-  isPlaying: false,
-  playerCheckTimer: null,
-  hasStartedVideo: false,
-  currentSlideIndex: 0
-};
-
-// ==================== DOM ELEMENTS ====================
-const el = {
-  loginOverlay: document.querySelector('#login-overlay'),
-  loginForm: document.querySelector('#login-form'),
-  schoolSelect: document.querySelector('#school-select'),
-  studentNameInput: document.querySelector('#student-name'),
-  studentEmailInput: document.querySelector('#student-email'),
-  loginDetectedBadge: document.querySelector('#login-detected-badge'),
-  loginStatusMsg: document.querySelector('#login-status-msg'),
-
-  siteShell: document.querySelector('#site-shell'),
-  displayStudentName: document.querySelector('#display-student-name'),
-  displayStudentMeta: document.querySelector('#display-student-meta'),
-  studentAvatar: document.querySelector('#student-avatar'),
-  studentChip: document.querySelector('#student-chip'),
-  profileDropdown: document.querySelector('#profile-dropdown'),
-  btnLogout: document.querySelector('#btn-logout'),
-
-  sidebarMissionTitle: document.querySelector('#sidebar-mission-title'),
-  sidebarMissionDesc: document.querySelector('#sidebar-mission-desc'),
-  progressText: document.querySelector('#progress-text'),
-  progressFill: document.querySelector('#progress-fill'),
-  lessonNav: document.querySelector('#lesson-nav'),
-  mobileStepSelect: document.querySelector('#mobile-step-select'),
-
-  lessonKicker: document.querySelector('#lesson-kicker'),
-  lessonTitle: document.querySelector('#lesson-title'),
-  mediaTypeBadge: document.querySelector('#media-type-badge'),
-  lessonDuration: document.querySelector('#lesson-duration'),
-
-  videoContainerBox: document.querySelector('#video-container-box'),
-  videoFrame: document.querySelector('#video-frame'),
-  customThumbnail: document.querySelector('#custom-thumbnail'),
-  thumbnailImg: document.querySelector('#thumbnail-img'),
-  centerPlayBtn: document.querySelector('#center-play-btn'),
-  videoLoading: document.querySelector('#video-loading'),
-  videoControls: document.querySelector('#video-controls'),
-  btnPlayPause: document.querySelector('#btn-play-pause'),
-  videoSeekBar: document.querySelector('#video-seek-bar'),
-  videoTimeDisplay: document.querySelector('#video-time-display'),
-  btnMute: document.querySelector('#btn-mute'),
-  btnFullscreen: document.querySelector('#btn-fullscreen'),
-  bookmarksContainer: document.querySelector('#bookmarks-container'),
-
-  slidesContainerBox: document.querySelector('#slides-container-box'),
-  slidesCounterText: document.querySelector('#slides-counter-text'),
-  slidesCanvas: document.querySelector('#slides-canvas'),
-  btnPrevSlide: document.querySelector('#btn-prev-slide'),
-  btnNextSlide: document.querySelector('#btn-next-slide'),
-  slidesDots: document.querySelector('#slides-dots'),
-  btnExpandSlides: document.querySelector('#btn-expand-slides'),
-
-  quizSwitcherStrip: document.querySelector('#quiz-switcher-strip'),
-  quizSummaryStatus: document.querySelector('#quiz-summary-status'),
-  quizPillsList: document.querySelector('#quiz-pills-list'),
-  btnOpenActiveQuiz: document.querySelector('#btn-open-active-quiz'),
-
-  summaryTitle: document.querySelector('#summary-title'),
-  summaryBody: document.querySelector('#summary-body'),
-
-  btnPrevStep: document.querySelector('#btn-prev-step'),
-  btnNextStep: document.querySelector('#btn-next-step'),
-  nextStepIcon: document.querySelector('#next-step-icon'),
-  stepGateInfo: document.querySelector('#step-gate-info'),
-
-  advisoryModal: document.querySelector('#advisory-modal'),
-  btnOpenAdvisory: document.querySelector('#btn-open-advisory'),
-  btnDismissAdvisory: document.querySelector('#btn-dismiss-advisory'),
-
-  quizModal: document.querySelector('#quiz-modal'),
-  modalQuizNumber: document.querySelector('#modal-quiz-number'),
-  modalQuizTitle: document.querySelector('#modal-quiz-title'),
-  modalQuizQuestion: document.querySelector('#modal-quiz-question'),
-  modalQuizOptions: document.querySelector('#modal-quiz-options'),
-  quizFeedbackBox: document.querySelector('#quiz-feedback-box'),
-  feedbackIcon: document.querySelector('#feedback-icon'),
-  feedbackText: document.querySelector('#feedback-text'),
-  btnCloseQuizModal: document.querySelector('#btn-close-quiz-modal'),
-  btnRewatchQuiz: document.querySelector('#btn-rewatch-quiz'),
-  btnDeferQuiz: document.querySelector('#btn-defer-quiz'),
-  btnSubmitQuiz: document.querySelector('#btn-submit-quiz')
-};
-
-// ==================== INIT & EVENT LISTENERS ====================
-document.addEventListener('DOMContentLoaded', () => {
+// ==================== INITIALIZATION ====================
+document.addEventListener('DOMContentLoaded', async () => {
+  await loadMasterData();
   setupLoginEvents();
   setupProfileDropdown();
   setupAdvisoryModal();
-  setupQuizModalEvents();
+  setupMediaSwitcherEvents();
   setupPlayerControlEvents();
-  setupSlideControlEvents();
+  setupQuizModalEvents();
   setupStepNavEvents();
 
-  // Gentle Advisory check on mobile load
+  // Mobile Gentle Advisory Check
   if (window.innerWidth < 768) {
     setTimeout(() => {
       if (el.advisoryModal) el.advisoryModal.showModal();
@@ -153,103 +250,357 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// ==================== 1. AUTHENTICATION (SINGLE PORTAL) ====================
+// ==================== 1. DATA LOADING & COMBBOX SEARCH ====================
+async function loadMasterData() {
+  // Load local student master fixture (berisi kolom: email, name, rombel_name, school_name, grade_name)
+  try {
+    const res = await fetch('./data/ops-student-data.json');
+    if (res.ok) {
+      state.allStudentsData = await res.json();
+    }
+  } catch (e) {
+    console.warn('Local student fixture load warning:', e);
+  }
+
+  // Coba ambil data sekolah aktif langsung dari Google Apps Script backend
+  try {
+    const res = await fetch(`${APP_SCRIPT_URL}?action=schools`);
+    if (res.ok) {
+      const data = await res.json();
+      if (data.success && Array.isArray(data.schools) && data.schools.length > 0) {
+        state.masterSchools = data.schools;
+        return;
+      }
+    }
+  } catch (err) {
+    console.log('Apps Script schools offline/deferred, fallback to local fixture.');
+  }
+
+  // Fallback: ekstrak sekolah dari allStudentsData
+  const seen = {};
+  state.masterSchools = [];
+  state.allStudentsData.forEach((s) => {
+    const school = String(s.school_name || '').trim();
+    if (school && !seen[school.toLowerCase()]) {
+      seen[school.toLowerCase()] = true;
+      const cur = resolveCurriculumFromGrade(s.grade_name);
+      state.masterSchools.push({
+        school: school,
+        grade_name: s.grade_name || 'High School',
+        level: cur.level
+      });
+    }
+  });
+  state.masterSchools.sort((a, b) => a.school.localeCompare(b.school));
+}
+
 function setupLoginEvents() {
-  // Pilihan sekolah mendeteksi level
-  el.schoolSelect.addEventListener('change', () => {
-    const val = el.schoolSelect.value;
-    if (!val) return;
-    const [schoolName, level, dataFile] = val.split('|');
-    el.loginDetectedBadge.textContent = `Terdeteksi: Jenjang ${level} (${schoolName})`;
-    el.loginDetectedBadge.style.color = level === 'SMA' ? '#ffd93d' : level === 'SMP' ? '#43d7ff' : '#27c881';
+  // 1. School Combobox Search & Selection
+  const showSchoolDropdown = () => {
+    const query = el.loginSchoolInput.value.toLowerCase().trim();
+    const filtered = state.masterSchools.filter((s) => s.school.toLowerCase().includes(query));
+
+    el.loginSchoolDropdown.innerHTML = '';
+    if (filtered.length === 0) {
+      el.loginSchoolDropdown.innerHTML = '<p>Sekolah tidak ditemukan.</p>';
+    } else {
+      filtered.forEach((item) => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.innerHTML = `<strong>${item.school}</strong> <span style="opacity:0.7; font-size:0.8rem; margin-left:6px;">(${item.level})</span>`;
+        btn.addEventListener('click', () => selectSchool(item));
+        el.loginSchoolDropdown.appendChild(btn);
+      });
+    }
+    el.loginSchoolDropdown.hidden = false;
+  };
+
+  el.loginSchoolInput.addEventListener('focus', showSchoolDropdown);
+  el.loginSchoolInput.addEventListener('input', showSchoolDropdown);
+
+  document.addEventListener('click', (e) => {
+    if (!el.loginSchoolInput.contains(e.target) && !el.loginSchoolDropdown.contains(e.target)) {
+      el.loginSchoolDropdown.hidden = true;
+    }
   });
 
-  // Submit Login
-  el.loginForm.addEventListener('submit', async (e) => {
+  function selectSchool(schoolItem) {
+    state.selectedSchool = schoolItem;
+    el.loginSchoolInput.value = schoolItem.school;
+    el.loginSchoolDropdown.hidden = true;
+
+    // Filter daftar siswa sekolah ini untuk email helper & typo suggestion
+    state.schoolStudents = state.allStudentsData.filter(
+      (s) => String(s.school_name || '').toLowerCase().trim() === schoolItem.school.toLowerCase().trim()
+    );
+
+    // Update badge jenjang
+    const cur = resolveCurriculumFromGrade(schoolItem.grade_name);
+    el.loginDetectedBadge.textContent = `Terdeteksi: Jenjang ${cur.level} (${schoolItem.school})`;
+    el.loginDetectedBadge.style.color = cur.level === 'SMA' ? '#ffd93d' : cur.level === 'SMP' ? '#43d7ff' : '#27c881';
+
+    // Aktifkan input email & tombol cari bantuan
+    el.loginEmailInput.disabled = false;
+    el.btnToggleEmailHelp.disabled = false;
+    el.btnLogin.disabled = false;
+    el.loginEmailInput.focus();
+
+    // Reset error & help panel
+    hideLoginError();
+    el.emailHelpPanel.hidden = true;
+  }
+
+  // 2. Email Input Listener
+  el.loginEmailInput.addEventListener('input', () => {
+    hideLoginError();
+  });
+
+  // 3. Email Helper Panel Toggle & Search
+  el.btnToggleEmailHelp.addEventListener('click', () => {
+    el.emailHelpPanel.hidden = !el.emailHelpPanel.hidden;
+    if (!el.emailHelpPanel.hidden) {
+      el.emailHelpQuery.value = '';
+      renderEmailHelpResults('');
+      el.emailHelpQuery.focus();
+    }
+  });
+
+  el.emailHelpQuery.addEventListener('input', (e) => {
+    renderEmailHelpResults(e.target.value.trim());
+  });
+
+  function renderEmailHelpResults(query) {
+    const q = query.toLowerCase();
+    const students = state.schoolStudents.filter(
+      (s) => !q || s.name.toLowerCase().includes(q) || s.email.toLowerCase().includes(q)
+    );
+
+    el.emailHelpResults.innerHTML = '';
+    if (students.length === 0) {
+      el.emailHelpResults.innerHTML = '<p>Tidak ada nama atau email yang cocok di sekolah ini.</p>';
+      return;
+    }
+
+    students.forEach((s) => {
+      const card = document.createElement('div');
+      card.className = 'email-help-result';
+      card.innerHTML = `
+        <strong>${s.name} (${s.rombel_name || 'Kelas'})</strong>
+        <code>${maskEmail(s.email)}</code>
+      `;
+      card.addEventListener('click', () => {
+        el.loginEmailInput.value = s.email;
+        el.emailHelpPanel.hidden = true;
+        hideLoginError();
+        attemptLogin();
+      });
+      el.emailHelpResults.appendChild(card);
+    });
+  }
+
+  // 4. Form Submit Login
+  el.loginForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    const val = el.schoolSelect.value;
-    if (!val) {
-      showLoginStatus('Silakan pilih sekolah terlebih dahulu.', 'error');
-      return;
-    }
+    attemptLogin();
+  });
 
-    const [schoolName, level, dataFile] = val.split('|');
-    const name = el.studentNameInput.value.trim();
-    const email = el.studentEmailInput.value.trim();
-
-    if (!name || !email) {
-      showLoginStatus('Nama dan email wajib diisi.', 'error');
-      return;
-    }
-
-    state.student = { name, school: schoolName, email, level, dataFile };
-    showLoginStatus('Memuat kurikulum kelas...', 'normal');
-
-    try {
-      await loadCourseData(dataFile);
-      state.isLoggedIn = true;
-
-      // Update profil di topbar
-      el.displayStudentName.textContent = name;
-      el.displayStudentMeta.textContent = `${level} · ${schoolName}`;
-      el.studentAvatar.style.backgroundImage = `url('https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(name)}')`;
-
-      // Sembunyikan login & tampilkan dashboard
-      el.loginOverlay.style.display = 'none';
-      el.siteShell.style.display = 'block';
-
-      // Set deskripsi misi sidebar
-      el.sidebarMissionTitle.textContent =
-        level === 'SMA'
-          ? 'Misi: Python Programming'
-          : level === 'SMP'
-          ? 'Misi: App Inventor Mobile'
-          : 'Misi: Scratch Visual Coding';
-
-      // Restore local progress
-      const storageKey = `uob_progress_${email}_${schoolName}`;
-      try {
-        const saved = localStorage.getItem(storageKey);
-        if (saved) {
-          const parsed = JSON.parse(saved);
-          if (Array.isArray(parsed)) {
-            state.submittedQuizIds = new Set(parsed);
-          }
-        }
-      } catch (e) {
-        console.warn('Failed to read localStorage:', e);
-      }
-
-      // Background Server-First sync from Google Sheets
-      try {
-        const getUrl = `${APP_SCRIPT_URL}?action=get_progress&email=${encodeURIComponent(email)}&school=${encodeURIComponent(schoolName)}&level=${encodeURIComponent(level)}`;
-        fetch(getUrl)
-          .then((r) => r.json())
-          .then((res) => {
-            if (res && res.success && res.data && Array.isArray(res.data.submittedQuizIds)) {
-              res.data.submittedQuizIds.forEach((id) => state.submittedQuizIds.add(id));
-              localStorage.setItem(storageKey, JSON.stringify([...state.submittedQuizIds]));
-              renderQuizSwitcherStrip();
-              checkProgressGate();
-            }
-          })
-          .catch((err) => console.log('Backend sync offline/deferred:', err));
-      } catch (err) {
-        console.log('Background sync deferred:', err);
-      }
-
-      buildSidebarModuleList();
-      goToStep(0);
-    } catch (err) {
-      console.error(err);
-      showLoginStatus('Gagal memuat data kurikulum. Silakan coba lagi.', 'error');
+  // 5. Use Suggestion Button Click
+  el.btnUseSuggestion.addEventListener('click', () => {
+    const suggested = el.loginSuggestionEmail.dataset.fullEmail;
+    if (suggested) {
+      el.loginEmailInput.value = suggested;
+      hideLoginError();
+      attemptLogin();
     }
   });
 }
 
-function showLoginStatus(msg, type) {
-  el.loginStatusMsg.textContent = msg;
-  el.loginStatusMsg.style.color = type === 'error' ? '#f04438' : '#027a48';
+function hideLoginError() {
+  el.loginErrorContainer.style.display = 'none';
+  el.loginSuggestionCard.style.display = 'none';
+}
+
+function showLoginError(title, desc, suggestion = null) {
+  el.loginErrorContainer.style.display = 'flex';
+  el.loginErrorTitle.textContent = title;
+  el.loginErrorDesc.textContent = desc;
+
+  if (suggestion) {
+    el.loginSuggestionCard.style.display = 'block';
+    el.loginSuggestionEmail.textContent = suggestion.suggestedEmail;
+    el.loginSuggestionEmail.dataset.fullEmail = suggestion.fullEmail;
+  } else {
+    el.loginSuggestionCard.style.display = 'none';
+  }
+}
+
+// ==================== 2. ATTEMPT LOGIN WITH TYPO SUGGESTION ====================
+async function attemptLogin() {
+  if (!state.selectedSchool) {
+    showLoginError('Sekolah Belum Dipilih', 'Silakan pilih sekolah mitra terlebih dahulu.');
+    return;
+  }
+
+  const emailInput = el.loginEmailInput.value.toLowerCase().trim();
+  if (!emailInput) {
+    showLoginError('Email Masih Kosong', 'Silakan masukkan email yang terdaftar di Akademia Ruangguru.');
+    return;
+  }
+
+  el.btnLogin.disabled = true;
+  el.btnLogin.querySelector('span').textContent = 'Memverifikasi...';
+
+  const schoolName = state.selectedSchool.school;
+
+  // A. Cek kecocokan langsung di data lokal/memori
+  let matchedStudent = state.schoolStudents.find(
+    (s) => String(s.email || '').toLowerCase().trim() === emailInput
+  );
+
+  // B. Jika tidak ditemukan di lokal, coba verifikasi ke backend Apps Script
+  if (!matchedStudent) {
+    try {
+      const loginUrl = `${APP_SCRIPT_URL}?action=login&email=${encodeURIComponent(emailInput)}&school=${encodeURIComponent(schoolName)}`;
+      const res = await fetch(loginUrl);
+      if (res.ok) {
+        const json = await res.json();
+        if (json.success && json.student) {
+          matchedStudent = json.student;
+        } else if (json.suggestion) {
+          // Backend mengembalikan saran typo Levenshtein
+          handleTypoSuggestion(json.suggestion, emailInput);
+          el.btnLogin.disabled = false;
+          el.btnLogin.querySelector('span').textContent = 'Mulai Belajar';
+          return;
+        }
+      }
+    } catch (err) {
+      console.warn('Backend login lookup deferred, checking local Levenshtein:', err);
+    }
+  }
+
+  // C. Jika Berhasil Match: Masuk ke Kelas!
+  if (matchedStudent) {
+    const cur = resolveCurriculumFromGrade(matchedStudent.grade_name || state.selectedSchool.grade_name);
+    state.student = {
+      name: matchedStudent.name || 'Siswa Kalananti',
+      school: matchedStudent.school_name || schoolName,
+      rombel: matchedStudent.rombel_name || 'Kelas Reguler',
+      email: matchedStudent.email || emailInput,
+      grade: matchedStudent.grade_name || state.selectedSchool.grade_name,
+      level: cur.level,
+      dataFile: cur.dataFile
+    };
+
+    completeSuccessfulLogin();
+  } else {
+    // D. Email Tidak Match: Hitung Levenshtein Distance terhadap email di sekolah ini
+    let closest = null;
+    let minDistance = 999;
+
+    state.schoolStudents.forEach((st) => {
+      const dist = levenshteinDistance(emailInput, st.email);
+      if (dist < minDistance && dist <= 6) {
+        minDistance = dist;
+        closest = {
+          name: st.name,
+          suggestedEmail: st.email,
+          fullEmail: st.email,
+          distance: dist
+        };
+      }
+    });
+
+    el.btnLogin.disabled = false;
+    el.btnLogin.querySelector('span').textContent = 'Mulai Belajar';
+
+    if (closest) {
+      showLoginError(
+        'Email Belum Cocok',
+        `Email "${emailInput}" belum cocok dengan data siswa ${schoolName}. Kami menemukan email dengan ejaan paling mendekati:`,
+        closest
+      );
+    } else {
+      showLoginError(
+        'Email Belum Terdaftar',
+        `Email "${emailInput}" tidak ditemukan pada data siswa ${schoolName}. Coba cek kembali penulisan email atau gunakan tombol bantuan di atas.`
+      );
+    }
+  }
+}
+
+function handleTypoSuggestion(backendSuggestion, originalInput) {
+  showLoginError(
+    'Email Belum Cocok',
+    `Email "${originalInput}" memiliki kemiripan dengan data terdaftar di sekolah ini:`,
+    {
+      suggestedEmail: backendSuggestion.suggestedEmail || backendSuggestion.maskedEmail,
+      fullEmail: backendSuggestion.suggestedEmail
+    }
+  );
+}
+
+// ==================== 3. SUCCESSFUL LOGIN & DASHBOARD MOUNT ====================
+async function completeSuccessfulLogin() {
+  hideLoginError();
+  state.isLoggedIn = true;
+
+  // Update profil di topbar
+  el.displayStudentName.textContent = state.student.name;
+  el.displayStudentMeta.textContent = `${state.student.school} · ${state.student.rombel} (${state.student.level})`;
+  el.studentAvatar.style.backgroundImage = `url('https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(state.student.name)}')`;
+
+  // Tampilkan dashboard, sembunyikan login
+  el.loginOverlay.style.display = 'none';
+  el.siteShell.style.display = 'block';
+
+  // Set judul misi di sidebar
+  el.sidebarMissionTitle.textContent =
+    state.student.level === 'SMA'
+      ? 'Misi: Python Programming'
+      : state.student.level === 'SMP'
+      ? 'Misi: App Inventor Mobile'
+      : 'Misi: Scratch Visual Coding';
+
+  // Restore Local Progress
+  const storageKey = `uob_progress_${state.student.email}_${state.student.school}`;
+  try {
+    const saved = localStorage.getItem(storageKey);
+    if (saved) {
+      const parsed = JSON.parse(saved);
+      if (Array.isArray(parsed)) {
+        state.submittedQuizIds = new Set(parsed);
+      }
+    }
+  } catch (e) {
+    console.warn('LocalStorage read error:', e);
+  }
+
+  // Load Kurikulum sesuai jenjang yang terdeteksi
+  try {
+    await loadCourseData(state.student.dataFile);
+    buildSidebarModuleList();
+    goToStep(0);
+  } catch (err) {
+    console.error('Failed to load course dataset:', err);
+    alert('Gagal memuat kurikulum materi. Silakan refresh halaman.');
+  }
+
+  // Server-First sync progress from Google Sheets
+  try {
+    const getUrl = `${APP_SCRIPT_URL}?action=get_progress&email=${encodeURIComponent(state.student.email)}&school=${encodeURIComponent(state.student.school)}&level=${encodeURIComponent(state.student.level)}`;
+    fetch(getUrl)
+      .then((r) => r.json())
+      .then((res) => {
+        if (res && res.success && res.data && Array.isArray(res.data.submittedQuizIds)) {
+          res.data.submittedQuizIds.forEach((id) => state.submittedQuizIds.add(id));
+          localStorage.setItem(storageKey, JSON.stringify([...state.submittedQuizIds]));
+          renderQuizSwitcherStrip();
+          checkProgressGate();
+        }
+      })
+      .catch((err) => console.log('Backend sync offline/deferred:', err));
+  } catch (e) {}
 }
 
 async function loadCourseData(filename) {
@@ -274,9 +625,13 @@ function setupProfileDropdown() {
     teardownPlayer();
     el.siteShell.style.display = 'none';
     el.loginOverlay.style.display = 'flex';
-    el.loginForm.reset();
-    el.loginStatusMsg.textContent = '';
+    el.loginEmailInput.value = '';
+    el.loginEmailInput.disabled = true;
+    el.btnToggleEmailHelp.disabled = true;
+    el.btnLogin.disabled = true;
+    el.btnLogin.querySelector('span').textContent = 'Mulai Belajar';
     el.loginDetectedBadge.textContent = 'Pilih Sekolah untuk Mulai';
+    hideLoginError();
   });
 }
 
@@ -289,34 +644,31 @@ function setupAdvisoryModal() {
   });
 }
 
-// ==================== 2. MODULE & SIDEBAR NAVIGATION ====================
+// ==================== 4. SIDEBAR & NAVIGATION ====================
 function buildSidebarModuleList() {
   el.lessonNav.innerHTML = '';
   el.mobileStepSelect.innerHTML = '';
 
-  state.courseData.forEach((step, idx) => {
-    const numStr = String(idx).padStart(2, '0');
-
-    // Desktop Tab
+  state.courseData.forEach((step, index) => {
+    // Desktop Tab Item
     const tab = document.createElement('button');
-    tab.className = `lesson-tab ${idx === state.currentStepIndex ? 'active' : ''}`;
+    tab.className = `lesson-tab ${index === state.currentStepIndex ? 'active' : ''}`;
     tab.type = 'button';
-    tab.id = `lesson-tab-${idx}`;
     tab.innerHTML = `
-      <span class="tab-number">${numStr}</span>
-      <span class="tab-copy">
-        <strong>${step.title || 'Materi Belajar'}</strong>
-        <span>${step.kicker || 'Modul'}</span>
-      </span>
-      <span class="tab-arrow" aria-hidden="true">›</span>
+      <span class="tab-number">${String(index + 1).padStart(2, '0')}</span>
+      <div class="tab-copy">
+        <strong>${step.title || `Materi ${index + 1}`}</strong>
+        <span>${step.duration || '10 Menit'} · ${step.type === 'slide' ? 'Slide' : 'Video'}</span>
+      </div>
+      <span class="tab-arrow">→</span>
     `;
-    tab.addEventListener('click', () => goToStep(idx));
+    tab.addEventListener('click', () => goToStep(index));
     el.lessonNav.appendChild(tab);
 
     // Mobile Select Option
     const opt = document.createElement('option');
-    opt.value = idx;
-    opt.textContent = `${numStr} · ${step.title || 'Materi'}`;
+    opt.value = index;
+    opt.textContent = `${String(index + 1).padStart(2, '0')}. ${step.title}`;
     el.mobileStepSelect.appendChild(opt);
   });
 
@@ -324,98 +676,166 @@ function buildSidebarModuleList() {
     goToStep(Number(e.target.value));
   });
 
-  updateMissionProgress();
+  updateProgressIndicator();
 }
 
-function updateMissionProgress() {
+function updateProgressIndicator() {
   const total = state.courseData.length;
   const current = state.currentStepIndex + 1;
   el.progressText.textContent = `${current} dari ${total} Materi`;
-  const pct = Math.min(100, Math.round((current / total) * 100));
-  el.progressFill.style.width = `${pct}%`;
+  const percent = Math.min(100, Math.round((current / total) * 100));
+  el.progressFill.style.width = `${percent}%`;
 }
 
-// ==================== 3. STEP TRANSITION & MEDIA RENDERING ====================
-function goToStep(stepIndex) {
-  if (stepIndex < 0 || stepIndex >= state.courseData.length) return;
-
-  // Hentikan player video sebelumnya
+// ==================== 5. STEP CONTENT & MEDIA SWITCHER ====================
+function goToStep(index) {
+  if (index < 0 || index >= state.courseData.length) return;
+  state.currentStepIndex = index;
   teardownPlayer();
 
-  state.currentStepIndex = stepIndex;
-  const step = state.courseData[stepIndex];
+  const step = state.courseData[index];
 
-  // Update Active Tab Highlight
-  document.querySelectorAll('.lesson-tab').forEach((tab, idx) => {
-    tab.classList.toggle('active', idx === stepIndex);
-  });
-  if (el.mobileStepSelect) el.mobileStepSelect.value = stepIndex;
-  updateMissionProgress();
-
-  // Header Details
-  el.lessonKicker.textContent = step.kicker || `MODUL ${String(stepIndex).padStart(2, '0')}`;
-  el.lessonTitle.textContent = step.title || 'Materi Belajar';
+  // Update Header Info
+  el.lessonKicker.textContent = step.kicker || `MODUL ${String(index + 1).padStart(2, '0')}`;
+  el.lessonTitle.textContent = step.title;
+  el.mediaTypeBadge.textContent = step.type === 'slide' ? '📄 Slide Interaktif' : '▶ Video';
   el.lessonDuration.textContent = step.duration || '10 Menit';
 
-  // Deteksi Tipe Media: Video atau HTML Slides
-  const isVideo = step.type !== 'html_slides' && (step.videoId || step.youtubeId || (typeof step.videoUrl === 'string' && step.videoUrl.length > 0));
+  // Extract Quizzes
+  state.activeStepQuizzes = extractQuizzesFromStep(step);
+  renderQuizSwitcherStrip();
 
-  if (isVideo) {
-    el.mediaTypeBadge.textContent = '▶ Video Interaktif';
-    el.mediaTypeBadge.style.color = '#43d7ff';
-    el.videoContainerBox.style.display = 'flex';
-    el.slidesContainerBox.style.display = 'none';
-    renderVideoStep(step);
+  // Setup Sandbox Iframe Slide Path
+  const slidePath = step.slideUrl || (state.student.level === 'SMA' ? './slides/bridge-hs-00.html' : './slides/bridge-ms-00.html');
+  el.sandboxIframe.src = slidePath;
+  el.sandboxTitle.textContent = step.title;
+
+  // Media Mode: Default to Video if type is video, otherwise Sandbox
+  if (step.type === 'slide') {
+    activateMediaMode('sandbox');
   } else {
-    el.mediaTypeBadge.textContent = '📄 Slide Bacaan';
-    el.mediaTypeBadge.style.color = '#ffd93d';
-    el.videoContainerBox.style.display = 'none';
-    el.slidesContainerBox.style.display = 'flex';
-    renderSlidesStep(step);
+    activateMediaMode('video');
+    renderVideoStep(step);
   }
 
   // Render Bookmarks
   renderBookmarks(step.bookmarks || []);
 
-  // Ambil data kuis pada materi ini
-  state.activeStepQuizzes = extractQuizzesFromStep(step);
-  renderQuizSwitcherStrip();
+  // Render Exact Legacy 2-Column Cards Below Video
+  renderLegacyCards(step, index);
 
-  // Render Rangkuman
-  renderSummary(step);
+  // Render Lesson Reading Accordion
+  renderReadingAccordion(step, index);
 
-  // Periksa Status Kunci Progres (Next Step Button)
+  // Update Sidebar Active Class
+  document.querySelectorAll('.lesson-tab').forEach((tab, i) => {
+    tab.classList.toggle('active', i === index);
+  });
+  el.mobileStepSelect.value = index;
+
+  updateProgressIndicator();
   checkProgressGate();
 
-  // Scroll smooth ke atas area konten
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function extractQuizzesFromStep(step) {
   if (Array.isArray(step.quizzes) && step.quizzes.length > 0) {
-    return step.quizzes.map((q, i) => ({
-      id: q.id || `quiz-${state.currentStepIndex}-${i}`,
-      question: q.question || 'Pertanyaan Cek Pemahaman',
-      options: q.options || ['Pilihan A', 'Pilihan B', 'Pilihan C'],
-      answer: q.answer !== undefined ? q.answer : 0,
-      explanation: q.explanation || 'Jawaban tepat sesuai materi yang dijelaskan.',
-      time: q.time || q.timestamp || 45
-    }));
+    const list = [];
+    step.quizzes.forEach((item, idx) => {
+      if (item.questions && Array.isArray(item.questions)) {
+        item.questions.forEach((q, qIdx) => {
+          if (q.type !== 'info') {
+            list.push({
+              id: q.id || `q-${step.id || state.currentStepIndex}-${idx}-${qIdx}`,
+              title: q.title || `Kuis ${list.length + 1}`,
+              question: q.question || q.title || 'Pertanyaan Kuis',
+              options: q.options || ['Benar', 'Salah'],
+              answer: q.answer !== undefined ? q.answer : 0,
+              explanation: q.explanation || 'Penjelasan tepat sesuai materi.',
+              time: item.time || 30
+            });
+          }
+        });
+      } else if (item.question) {
+        list.push({
+          id: item.id || `q-${step.id || state.currentStepIndex}-${idx}`,
+          title: item.title || `Kuis ${list.length + 1}`,
+          question: item.question,
+          options: item.options || ['Pilihan A', 'Pilihan B'],
+          answer: item.answer !== undefined ? item.answer : 0,
+          explanation: item.explanation || 'Penjelasan tepat.',
+          time: item.time || 30
+        });
+      }
+    });
+    if (list.length > 0) return list;
   }
+
   if (step.quiz) {
     return [{
       id: step.quiz.id || `quiz-${state.currentStepIndex}-0`,
+      title: 'Cek Pemahaman',
       question: step.quiz.question || 'Pertanyaan Kuis',
       options: step.quiz.options || ['Pilihan A', 'Pilihan B'],
       answer: step.quiz.answer !== undefined ? step.quiz.answer : 0,
       explanation: step.quiz.explanation || 'Penjelasan kuis.',
-      time: step.quiz.time || step.quiz.timestamp || 30
+      time: step.quiz.time || 30
     }];
   }
+
   return [];
 }
 
-// ==================== 4. VIDEO PLAYER (YOUTUBE WITH CUSTOM CONTROLS) ====================
+// ==================== 6. MEDIA SWITCHER (VIDEO vs SANDBOX) ====================
+function setupMediaSwitcherEvents() {
+  el.tabModeVideo.addEventListener('click', () => {
+    activateMediaMode('video');
+  });
+
+  el.tabModeSandbox.addEventListener('click', () => {
+    activateMediaMode('sandbox');
+  });
+
+  // Sandbox Toolbar Buttons
+  el.btnReloadSandbox.addEventListener('click', () => {
+    el.sandboxIframe.src = el.sandboxIframe.src;
+  });
+
+  el.btnFullscreenSandbox.addEventListener('click', () => {
+    if (!document.fullscreenElement) {
+      el.videoFrame.requestFullscreen ? el.videoFrame.requestFullscreen() : el.sandboxContainer.requestFullscreen();
+    } else {
+      document.exitFullscreen().catch(() => {});
+    }
+  });
+}
+
+function activateMediaMode(mode) {
+  state.activeMediaMode = mode;
+  if (mode === 'sandbox') {
+    el.tabModeSandbox.classList.add('active');
+    el.tabModeVideo.classList.remove('active');
+    el.sandboxContainer.style.display = 'flex';
+    el.videoControls.style.display = 'none';
+    el.customThumbnail.style.display = 'none';
+
+    // Pause Video jika sedang main
+    if (state.ytPlayer && state.isPlaying) {
+      state.ytPlayer.pauseVideo();
+    }
+  } else {
+    el.tabModeVideo.classList.add('active');
+    el.tabModeSandbox.classList.remove('active');
+    el.sandboxContainer.style.display = 'none';
+    el.videoControls.style.display = 'flex';
+    if (!state.hasStartedVideo) {
+      el.customThumbnail.style.display = 'block';
+    }
+  }
+}
+
+// ==================== 7. VIDEO PLAYER (YOUTUBE WITH CONTROLS) ====================
 function renderVideoStep(step) {
   state.hasStartedVideo = false;
   state.isPlaying = false;
@@ -423,12 +843,10 @@ function renderVideoStep(step) {
   el.videoSeekBar.value = 0;
   el.videoTimeDisplay.textContent = '0:00 / 0:00';
 
-  // Thumbnail
   const vidId = step.videoId || step.youtubeId || 'yxmLOk5vcFg';
   el.thumbnailImg.src = step.thumbnailUrl || `https://img.youtube.com/vi/${vidId}/hqdefault.jpg`;
   el.customThumbnail.style.display = 'block';
 
-  // Inisialisasi YouTube Player
   initYouTubePlayer(vidId, step.startSeconds || 0, step.endSeconds || 0);
 }
 
@@ -479,16 +897,14 @@ function startPlayerTicker(endSeconds) {
     const curTime = state.ytPlayer.getCurrentTime();
     const duration = state.ytPlayer.getDuration() || 1;
 
-    // Update Seekbar & Time Display
     el.videoSeekBar.value = (curTime / duration) * 100;
     el.videoTimeDisplay.textContent = `${formatTime(curTime)} / ${formatTime(duration)}`;
 
-    // Guard End Seconds
     if (endSeconds > 0 && curTime >= endSeconds) {
       state.ytPlayer.pauseVideo();
     }
 
-    // Trigger Pop-up Quiz bila waktu tiba dan kuis belum selesai
+    // Trigger Pop-up Quiz bila waktu tiba
     state.activeStepQuizzes.forEach((q, idx) => {
       if (!state.submittedQuizIds.has(q.id)) {
         if (Math.abs(curTime - q.time) < 1.2) {
@@ -516,7 +932,6 @@ function teardownPlayer() {
   state.isPlayerReady = false;
   state.isPlaying = false;
 
-  // Re-create mount div
   const frame = document.querySelector('#video-frame');
   const existingMount = document.querySelector('#youtube-player');
   if (!existingMount && frame) {
@@ -582,6 +997,7 @@ function renderBookmarks(bookmarks) {
     btn.type = 'button';
     btn.innerHTML = `<span class="bookmark-time">${formatTime(bm.time || 0)}</span> <span>${bm.label || 'Bookmark'}</span>`;
     btn.addEventListener('click', () => {
+      activateMediaMode('video');
       if (el.customThumbnail.style.display !== 'none') {
         el.customThumbnail.style.display = 'none';
       }
@@ -600,87 +1016,56 @@ function formatTime(seconds) {
   return `${m}:${String(s).padStart(2, '0')}`;
 }
 
-// ==================== 5. HTML SLIDES VIEWER ====================
-function renderSlidesStep(step) {
-  const slides = step.slides || [
-    {
-      title: 'Mengenal Lingkungan Coding',
-      content: 'Selamat datang di area belajar koding asinkronus. Di materi ini, kita akan membaca konsep dasar sebelum praktik.',
-      code: 'print("Halo Dunia! Selamat belajar Python.")'
-    },
-    {
-      title: 'Cara Menjalankan Kode',
-      content: 'Setiap baris kode dibaca oleh komputer dari atas ke bawah secara berurutan. Klik tombol Play untuk melihat hasilnya.',
-      code: '# Ini adalah baris komentar\nx = 10\ny = 20\nprint("Total:", x + y)'
-    }
+// ==================== 8. EXACT LEGACY BELOW-VIDEO CARDS & READING ====================
+function renderLegacyCards(step, index) {
+  // Loot Box Summary Card
+  el.summaryHeadingIcon.textContent = String(index + 1).padStart(2, '0');
+  el.summaryCardTitle.textContent = step.lootboxTitle || 'Loot Box Hari Ini 🎁';
+
+  const defaultTakeaways = [
+    `<strong>Program itu pintar!</strong> Nggak cuma jalan lurus, komputer mengikuti alur logika secara berurutan.`,
+    `<strong>Kayak di dunia nyata.</strong> Logika pemrograman meniru bagaimana kita membuat keputusan setiap hari.`,
+    `<strong>Jawabannya pasti.</strong> Setiap kondisi menghasilkan Benar (True) atau Salah (False).`,
+    `<strong>Praktik kunci utama.</strong> Semakin sering mencoba dan mengutak-atik kode, semakin terbiasa!`
   ];
 
-  state.currentSlideIndex = 0;
-  displaySlideCard(slides, 0);
+  const takeaways = Array.isArray(step.takeaways) && step.takeaways.length > 0 ? step.takeaways : defaultTakeaways;
+  el.takeawayList.innerHTML = takeaways.map((t) => `<li>${t}</li>`).join('');
 
-  // Render Slide Dots
-  el.slidesDots.innerHTML = '';
-  slides.forEach((_, i) => {
-    const dot = document.createElement('div');
-    dot.className = `slide-dot ${i === 0 ? 'active' : ''}`;
-    el.slidesDots.appendChild(dot);
-  });
+  // Focus Card (Cheat Sheet Emas Pastel)
+  el.focusCardTitle.textContent = step.cheatsheetTitle || 'Kalo bener, gaskeun!';
+  el.focusCardDesc.textContent = step.cheatsheetDesc || 'Coba ingat apa konsep logika penting yang baru saja kamu pelajari?';
+  el.focusCardCode.innerHTML = step.cheatsheetCode || `<span class="keyword">print</span>(<span class="string">"Semangat Belajar Coding!"</span>)`;
 }
 
-function displaySlideCard(slides, index) {
-  const slide = slides[index];
-  el.slidesCounterText.textContent = `Halaman ${index + 1} dari ${slides.length}`;
+function renderReadingAccordion(step, index) {
+  el.readingHeaderLabel.textContent = `Materi Bacaan ${String(index + 1).padStart(2, '0')}`;
+  el.readingHeaderTitle.textContent = step.readingTitle || step.title;
+  el.readingHeaderDesc.textContent = step.readingDesc || 'Biar makin paham dan mantap, baca rangkuman materi ini setelah nonton video atau menyimak slide ya!';
 
-  el.slidesCanvas.innerHTML = `
-    <div class="slide-content-view">
-      <h4>${slide.title || 'Topik Slide'}</h4>
-      <p>${slide.content || ''}</p>
-      ${slide.code ? `<pre class="slide-code-box"><code>${escapeHtml(slide.code)}</code></pre>` : ''}
-    </div>
-  `;
+  // Concept Grid Cards (A, B, C)
+  const defaultConcepts = [
+    { num: 'A', title: 'Kode itu Nggak Kaku', desc: 'Bikin program kamu bisa memilih apa yang ingin dilakukan sesuai input pengguna.' },
+    { num: 'B', title: 'Kondisi = Memberi Pertanyaan', desc: 'Misalnya: "Apakah saldo cukup?", "Apakah tombol sudah ditekan?".' },
+    { num: 'C', title: 'Pasti dan Terukur', desc: 'Hasil evaluasi logika komputer hanya berupa True (Benar) atau False (Salah).' }
+  ];
 
-  el.btnPrevSlide.disabled = index === 0;
-  el.btnNextSlide.disabled = index === slides.length - 1;
+  const concepts = Array.isArray(step.concepts) && step.concepts.length > 0 ? step.concepts : defaultConcepts;
+  el.readingConceptGrid.innerHTML = concepts.map((c) => `
+    <article class="concept-card">
+      <span class="concept-number">${c.num}</span>
+      <h4>${c.title}</h4>
+      <p>${c.desc}</p>
+    </article>
+  `).join('');
 
-  // Update dots
-  document.querySelectorAll('.slide-dot').forEach((dot, i) => {
-    dot.classList.toggle('active', i === index);
-  });
+  // Reading Section Code & Note
+  el.readingSectionTitle.textContent = step.sectionTitle || 'Dari Dunia Nyata ke Dunia Kode';
+  el.readingSectionCode.textContent = step.sectionCode || `# Komputer mengecek syarat sebelum menjalankan aksi\nsaldo = 50000\nharga = 25000\n\nif saldo >= harga:\n    print("Transaksi Berhasil!")`;
+  el.readingSectionNote.innerHTML = step.sectionNote || `<strong>Intinya:</strong> Kondisi itu seperti satpam pintu. Kalau syarat terpenuhi (True), pintu dibuka!`;
 }
 
-function setupSlideControlEvents() {
-  el.btnPrevSlide.addEventListener('click', () => {
-    const step = state.courseData[state.currentStepIndex];
-    const slides = step.slides || [];
-    if (state.currentSlideIndex > 0) {
-      state.currentSlideIndex--;
-      displaySlideCard(slides, state.currentSlideIndex);
-    }
-  });
-
-  el.btnNextSlide.addEventListener('click', () => {
-    const step = state.courseData[state.currentStepIndex];
-    const slides = step.slides || [];
-    if (state.currentSlideIndex < slides.length - 1) {
-      state.currentSlideIndex++;
-      displaySlideCard(slides, state.currentSlideIndex);
-    }
-  });
-
-  el.btnExpandSlides.addEventListener('click', () => {
-    if (!document.fullscreenElement) {
-      el.slidesContainerBox.requestFullscreen().catch(() => {});
-    } else {
-      document.exitFullscreen().catch(() => {});
-    }
-  });
-}
-
-function escapeHtml(str) {
-  return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-}
-
-// ==================== 6. QUIZ SWITCHER & INTERACTIVE MODAL ====================
+// ==================== 9. QUIZ SWITCHER & MODAL ====================
 function renderQuizSwitcherStrip() {
   el.quizPillsList.innerHTML = '';
   const quizzes = state.activeStepQuizzes;
@@ -749,7 +1134,6 @@ function setupQuizModalEvents() {
   el.btnCloseQuizModal.addEventListener('click', closeModal);
   el.btnDeferQuiz.addEventListener('click', closeModal);
 
-  // Rewatch 30 Detik
   el.btnRewatchQuiz.addEventListener('click', () => {
     closeModal();
     if (state.ytPlayer && state.ytPlayer.getCurrentTime) {
@@ -760,7 +1144,6 @@ function setupQuizModalEvents() {
     }
   });
 
-  // Kirim Jawaban
   el.btnSubmitQuiz.addEventListener('click', () => {
     const selected = document.querySelector('input[name="quiz-choice"]:checked');
     if (!selected) {
@@ -772,16 +1155,13 @@ function setupQuizModalEvents() {
     const quiz = state.activeQuiz;
 
     if (selectedIdx === quiz.answer) {
-      // Jawaban Benar
       state.submittedQuizIds.add(quiz.id);
 
-      // Save to localStorage
       try {
         const storageKey = `uob_progress_${state.student.email}_${state.student.school}`;
         localStorage.setItem(storageKey, JSON.stringify([...state.submittedQuizIds]));
       } catch (e) {}
 
-      // Sync ke Google Apps Script backend (rgcuob@gmail.com)
       syncProgressToBackend(quiz.id, true, 100);
 
       showQuizFeedback(`Bagus sekali! Jawabanmu benar. ${quiz.explanation || ''}`, 'success');
@@ -792,7 +1172,6 @@ function setupQuizModalEvents() {
         closeModal();
       }, 1600);
     } else {
-      // Jawaban Salah
       showQuizFeedback('Jawaban belum tepat. Coba baca atau tonton ulang penjelasannya ya.', 'error');
     }
   });
@@ -805,7 +1184,7 @@ function showQuizFeedback(msg, type) {
   el.feedbackText.textContent = msg;
 }
 
-// ==================== 7. PROGRESS LOCK GATE & SUMMARY ====================
+// ==================== 10. PROGRESS LOCK GATE ====================
 function checkProgressGate() {
   const quizzes = state.activeStepQuizzes;
   const isCurrentStepCompleted = quizzes.every((q) => state.submittedQuizIds.has(q.id));
@@ -828,17 +1207,6 @@ function checkProgressGate() {
     el.nextStepIcon.textContent = '🔒';
     el.stepGateInfo.textContent = 'Selesaikan seluruh kuis pada materi ini untuk membuka materi selanjutnya.';
     el.stepGateInfo.style.color = '#ffd93d';
-  }
-}
-
-function renderSummary(step) {
-  el.summaryTitle.textContent = step.summaryTitle || `Poin Penting: ${step.title}`;
-  if (Array.isArray(step.summaryPoints) && step.summaryPoints.length > 0) {
-    el.summaryBody.innerHTML = `<ul>${step.summaryPoints.map((p) => `<li>${p}</li>`).join('')}</ul>`;
-  } else if (step.summary) {
-    el.summaryBody.innerHTML = `<p>${step.summary}</p>`;
-  } else {
-    el.summaryBody.innerHTML = `<p>Pelajari konsep utama pada materi ini dan uji pemahamanmu dengan kuis interaktif di atas.</p>`;
   }
 }
 

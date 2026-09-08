@@ -66,70 +66,79 @@
           </div>
         </div>
 
-        <!-- Sisi Kanan: Form Autentikasi Cerdas -->
+        <!-- Sisi Kanan: Form Autentikasi Cerdas (Hanya Sekolah & Email) -->
         <div class="login-form-panel">
           <span class="login-step" id="login-detected-badge">Pilih Sekolah untuk Mulai</span>
           <h2>Masuk ke Kelas</h2>
 
           <form id="login-form" class="login-form">
-            <!-- 1. Pilihan Sekolah (Auto Jenjang) -->
-            <div class="form-group">
-              <label for="school-select">Sekolah Mitra / Kelas</label>
-              <select id="school-select" required>
-                <option value="" disabled selected>-- Pilih Sekolah --</option>
-                <optgroup label="Sekolah Menengah Atas (SMA - Python)">
-                  <option value="SMAN 8 Jakarta|SMA|courseData-highschool.json">SMAN 8 Jakarta (SMA)</option>
-                  <option value="SMAN 70 Jakarta|SMA|courseData-highschool.json">SMAN 70 Jakarta (SMA)</option>
-                  <option value="SMA Labschool Kebayoran|SMA|courseData-highschool.json">SMA Labschool Kebayoran (SMA)</option>
-                  <option value="SMAN 1 Bandung|SMA|courseData-highschool.json">SMAN 1 Bandung (SMA)</option>
-                </optgroup>
-                <optgroup label="Sekolah Menengah Pertama (SMP - App Inventor)">
-                  <option value="SMPN 1 Jakarta|SMP|courseData-middleschool.json">SMPN 1 Jakarta (SMP)</option>
-                  <option value="SMPN 115 Jakarta|SMP|courseData-middleschool.json">SMPN 115 Jakarta (SMP)</option>
-                  <option value="SMP Labschool Jakarta|SMP|courseData-middleschool.json">SMP Labschool Jakarta (SMP)</option>
-                </optgroup>
-                <optgroup label="Sekolah Dasar (SD - Scratch & Logic)">
-                  <option value="SDN Menteng 01|SD|courseData-upperprimary.json">SDN Menteng 01 (SD)</option>
-                  <option value="SD Al-Azhar Kelapa Gading|SD|courseData-upperprimary.json">SD Al-Azhar Kelapa Gading (SD)</option>
-                </optgroup>
-              </select>
+            <!-- 1. Pilihan Sekolah (Combobox Pencarian) -->
+            <div class="input-group">
+              <label for="login-school-input">Sekolah Mitra / Kelas</label>
+              <div class="login-combobox">
+                <input
+                  id="login-school-input"
+                  type="text"
+                  placeholder="Pilih atau ketik nama sekolah..."
+                  autocomplete="off"
+                  required
+                />
+                <div id="login-school-dropdown" class="login-dropdown" hidden>
+                  <!-- Diisi otomatis dari Apps Script / master data -->
+                </div>
+              </div>
             </div>
 
-            <!-- 2. Nama Siswa -->
-            <div class="form-group">
-              <label for="student-name">Nama Lengkap Siswa</label>
+            <!-- 2. Email Akademia -->
+            <div class="input-group">
+              <label for="login-email-input">Email terdaftar di Akademia Ruangguru</label>
               <input
-                id="student-name"
-                type="text"
-                placeholder="Contoh: Budi Santoso"
-                required
-                autocomplete="name"
-              />
-            </div>
-
-            <!-- 3. Email Akademia -->
-            <div class="form-group">
-              <label for="student-email">Email Terdaftar di Akademia</label>
-              <input
-                id="student-email"
+                id="login-email-input"
                 type="email"
-                placeholder="nama@akademia.sch.id"
-                required
+                placeholder="nama@email.com"
                 autocomplete="email"
+                required
+                disabled
               />
             </div>
 
-            <button type="submit" id="btn-login" class="login-btn">
-              <span>Mulai Belajar Sekarang</span>
+            <!-- Bantuan Lupa / Cari Email -->
+            <button type="button" id="btn-toggle-email-help" class="login-help-toggle" disabled>
+              Tidak yakin emailnya? Cari bantuan lewat nama/email
+            </button>
+
+            <div id="email-help-panel" class="email-help-panel" hidden>
+              <label for="email-help-query">Cari nama siswa atau email di sekolah ini</label>
+              <input id="email-help-query" type="text" placeholder="Ketik nama atau sebagian email..." autocomplete="off" />
+              <div id="email-help-results" class="email-help-results">
+                <p>Pilih sekolah terlebih dahulu untuk mencari email terdaftar.</p>
+              </div>
+            </div>
+
+            <button type="submit" id="btn-login" class="login-btn" disabled>
+              <span>Mulai Belajar</span>
               <span class="btn-arrow">→</span>
             </button>
           </form>
 
-          <p id="login-status-msg" class="login-status-msg" role="status" aria-live="polite"></p>
-
           <p class="login-helper">
-            Menggunakan email pribadi/sekolah yang didaftarkan pada program UOB My Digital Space.
+            Gunakan email pribadi yang sudah didaftarkan di Akademia Ruangguru.
           </p>
+
+          <!-- Pesan Error Login & Saran Typo Email Terdekat -->
+          <div id="login-error-container" class="login-error-msg" style="display: none;">
+            <span class="icon">!</span>
+            <div>
+              <strong id="login-error-title">Email belum cocok</strong>
+              <p id="login-error-desc">Email ini belum cocok dengan data untuk sekolah yang dipilih. Coba cek lagi penulisannya ya.</p>
+              <div id="login-suggestion-card" class="registered-email-card" style="display: none;">
+                <span>Apakah maksud Anda email ini?</span>
+                <strong id="login-suggestion-email">budi.santoso@gmail.com</strong>
+                <button type="button" id="btn-use-suggestion" class="btn-use-suggestion">Gunakan Email Ini</button>
+                <p>Coba cek lagi tanda titik, huruf yang tertukar, atau domain emailnya.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -229,12 +238,23 @@
             </div>
           </div>
 
-          <!-- 1. Video Frame (YouTube Interactive Player) -->
+          <!-- Switcher Tab: Video vs Interactive Sandbox -->
+          <div class="media-switcher-tabs" id="media-switcher-tabs">
+            <button type="button" class="media-tab active" id="tab-mode-video">
+              <span>▶</span> Video Pembelajaran
+            </button>
+            <button type="button" class="media-tab" id="tab-mode-sandbox">
+              <span>💻</span> Interactive Sandbox / Slide
+            </button>
+          </div>
+
+          <!-- 1. Video & Sandbox Media Container -->
           <div id="video-container-box" class="media-container-box">
             <div class="video-frame" id="video-frame">
+              <!-- YouTube Video Player -->
               <div id="youtube-player"></div>
 
-              <!-- Custom Thumbnail & Center Play Button -->
+              <!-- Custom Thumbnail & Neo-Brutalist Center Play Button -->
               <div class="custom-thumbnail" id="custom-thumbnail">
                 <img
                   id="thumbnail-img"
@@ -244,13 +264,34 @@
                 <button class="video-center-play" id="center-play-btn" type="button" aria-label="Putar Video">▶</button>
               </div>
 
+              <!-- Interactive Sandbox Container (HTML Slides Iframe) -->
+              <div class="sandbox-container" id="sandbox-container" style="display: none;">
+                <div class="sandbox-header-bar">
+                  <div class="sandbox-header-left">
+                    <span class="sandbox-badge">💻 Interactive Sandbox</span>
+                    <span class="sandbox-title" id="sandbox-title">Slide Pembelajaran Mandiri</span>
+                  </div>
+                  <div class="sandbox-actions">
+                    <button type="button" id="btn-reload-sandbox" class="sandbox-btn" title="Muat Ulang Sandbox">↻ Reset</button>
+                    <button type="button" id="btn-fullscreen-sandbox" class="sandbox-btn" title="Perbesar Layar">⛶ Layar Penuh</button>
+                  </div>
+                </div>
+                <iframe
+                  id="sandbox-iframe"
+                  class="sandbox-iframe"
+                  src="about:blank"
+                  sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
+                  allowfullscreen
+                ></iframe>
+              </div>
+
               <!-- Video Loading Spinner -->
               <div class="video-loading-overlay" id="video-loading" hidden>
                 <div class="spinner"></div>
                 <p>Memuat Media...</p>
               </div>
 
-              <!-- Custom Player Controls Bar -->
+              <!-- Custom Player Controls Bar (For Video) -->
               <div class="video-controls" id="video-controls">
                 <button class="video-control-button" id="btn-play-pause" type="button" aria-label="Play/Pause">▶</button>
                 <input
@@ -273,61 +314,70 @@
             <div class="bookmarks-container" id="bookmarks-container"></div>
           </div>
 
-          <!-- 2. HTML Slides Viewer Container (Untuk Materi Non-Video) -->
-          <div id="slides-container-box" class="media-container-box" style="display: none;">
-            <div class="slides-viewer-card">
-              <div class="slides-viewer-header">
-                <div class="slides-indicator">
-                  <span class="slides-icon">📄</span>
-                  <span id="slides-counter-text">Halaman 1 dari 4</span>
-                </div>
-                <button class="btn-expand-slides" id="btn-expand-slides" type="button">
-                  <span>⛶</span> Perbesar Tampilan
-                </button>
-              </div>
-
-              <!-- Canvas Konten Slide -->
-              <div class="slides-canvas" id="slides-canvas">
-                <!-- Diinjeksi secara dinamis lewat app.js -->
-              </div>
-
-              <!-- Navigasi Slide Bawah -->
-              <div class="slides-footer-nav">
-                <button class="btn-slide-nav" id="btn-prev-slide" type="button">
-                  <span>‹</span> Slide Sebelumnya
-                </button>
-                <div class="slides-dots" id="slides-dots"></div>
-                <button class="btn-slide-nav" id="btn-next-slide" type="button">
-                  Slide Berikutnya <span>›</span>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- 3. Quiz Switcher Bar & Status Strip -->
+          <!-- 2. Quiz Switcher Bar & Status Strip -->
           <div class="quiz-switcher-strip" id="quiz-switcher-strip">
             <div class="quiz-switcher-left">
               <span class="quiz-strip-badge">📝 Pop-up Kuis</span>
               <span class="quiz-strip-status" id="quiz-summary-status">Memuat kuis...</span>
             </div>
             <div class="quiz-pills-list" id="quiz-pills-list">
-              <!-- Tombol Kuis (Kuis 1, Kuis 2) diinjeksi lewat JS -->
+              <!-- Tombol Kuis diinjeksi lewat JS -->
             </div>
             <button class="button-open-quiz" id="btn-open-active-quiz" type="button">
               <span>Buka Kuis</span>
             </button>
           </div>
 
-          <!-- 4. Card Rangkuman Materi -->
-          <article class="summary-card">
-            <div class="summary-header">
-              <span class="summary-kicker">RANGKUMAN MATERI</span>
-              <h3 id="summary-title">Poin Pembelajaran Hari Ini</h3>
+          <!-- 3. Exact Legacy 2-Column Cards (.below-video) -->
+          <div class="below-video">
+            <!-- Kartu 1: Loot Box Hari Ini (Rangkuman Poin dengan Checklist Hijau) -->
+            <article class="summary-card">
+              <h3 class="card-heading">
+                <span class="heading-icon" id="summary-heading-icon" aria-hidden="true">01</span>
+                <span id="summary-card-title">Loot Box Hari Ini 🎁</span>
+              </h3>
+              <ul class="takeaway-list" id="takeaway-list">
+                <!-- Diinjeksi dinamis -->
+              </ul>
+            </article>
+
+            <!-- Kartu 2: Focus Card (Cheat Sheet Emas Pastel dengan Mini Code) -->
+            <aside class="focus-card">
+              <div>
+                <p class="label">Cheat Sheet 📝</p>
+                <h3 id="focus-card-title">Kalo bener, gaskeun!</h3>
+                <p id="focus-card-desc">Coba ingat apa keputusan logika koding yang baru saja kamu pelajari?</p>
+              </div>
+              <div class="mini-code" id="focus-card-code">
+                <span class="keyword">print</span>(<span class="string">"Halo Dunia!"</span>)
+              </div>
+            </aside>
+          </div>
+
+          <!-- 4. Accordion Materi Bacaan Lengkap -->
+          <details class="lesson-reading-accordion" id="reading-accordion" open>
+            <summary>Buka Materi Bacaan</summary>
+            <div class="lesson-reading" id="lesson-reading">
+              <header class="reading-header">
+                <div>
+                  <p class="label" id="reading-header-label">Materi Bacaan 01</p>
+                  <h3 id="reading-header-title">Fondasi Koding & Pemikiran Komputasional</h3>
+                  <p id="reading-header-desc">Biar makin GG, baca rangkuman ini setelah nonton video atau menyimak slide ya!</p>
+                </div>
+                <span class="reading-badge" id="reading-header-badge">Dasar Konsep</span>
+              </header>
+
+              <div class="concept-grid" id="reading-concept-grid">
+                <!-- Diinjeksi dinamis -->
+              </div>
+
+              <article class="reading-section" id="reading-section">
+                <h4 id="reading-section-title">Contoh Praktik & Catatan Penting</h4>
+                <div class="reading-code" id="reading-section-code"># Contoh kode akan ditampilkan di sini</div>
+                <p class="reading-note" id="reading-section-note"><strong>Intinya:</strong> Pelajari langkah demi langkah dan coba sendiri!</p>
+              </article>
             </div>
-            <div class="summary-content" id="summary-body">
-              <p>Materi pembelajaran akan ditampilkan secara lengkap di sini.</p>
-            </div>
-          </article>
+          </details>
 
           <!-- 5. Navigasi Bawah (Progress Locked Next Button) -->
           <footer class="lesson-footer-nav">

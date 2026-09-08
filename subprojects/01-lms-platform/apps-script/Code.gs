@@ -32,10 +32,28 @@ function doGet(e) {
 
     const ss = SpreadsheetApp.openById(ssId);
     ensureSheetWithWarning(ss, SHEET_STUDENT_DATA, [
-      "No", "Nama Siswa", "Sekolah", "Email Akademia", "Jenjang", "Terakhir Login"
+      "email", "name", "rombel_name", "school_name", "grade_name", "last_login"
     ]);
 
-    // 1. Ambil daftar sekolah unik
+    // 0. Inisialisasi Data Awal (Seed Data jika masih kosong)
+    if (action === 'init_seed') {
+      const sheet = ss.getSheetByName(SHEET_STUDENT_DATA);
+      const rows = sheet.getDataRange().getValues();
+      if (rows.length <= 2) {
+        const seedStudents = [
+          ["yazid@test.com", "Ahmad Yazid", "XII MIPA 1", "SMAN 8 Jakarta", "High School"],
+          ["budi.santoso@gmail.com", "Budi Santoso", "XI MIPA 2", "SMAN 8 Jakarta", "High School"],
+          ["citra.lestari@gmail.com", "Citra Lestari", "VIII-A", "SMPN 1 Jakarta", "Middle School"],
+          ["dimas.pratama@gmail.com", "Dimas Pratama", "5-B", "SDN Menteng 01", "Upper Primary"],
+          ["eni.rahmawati@gmail.com", "Eni Rahmawati", "3-A", "SDN Menteng 01", "Lower Primary"]
+        ];
+        sheet.getRange(3, 1, seedStudents.length, 5).setValues(seedStudents);
+        return respond({ success: true, message: "Seed data berhasil dimasukkan.", total: seedStudents.length });
+      }
+      return respond({ success: true, message: "Data sheet sudah ada.", total: rows.length - 2 });
+    }
+
+    // 1. Ambil daftar sekolah unik dari kolom school_name
     if (action === 'schools') {
       const sheet = ss.getSheetByName(SHEET_STUDENT_DATA);
       const rows = sheet.getDataRange().getValues();
@@ -44,11 +62,12 @@ function doGet(e) {
 
       // Row 0 is warning banner, Row 1 is header, data starts at Row 2
       for (let i = 2; i < rows.length; i++) {
-        const school = String(rows[i][2] || '').trim();
-        const level = String(rows[i][4] || '').trim().toUpperCase();
+        const school = String(rows[i][3] || '').trim(); // Col 3: school_name
+        const gradeName = String(rows[i][4] || '').trim(); // Col 4: grade_name
         if (!school || seen[school.toLowerCase()]) continue;
         seen[school.toLowerCase()] = true;
-        schools.push({ school, level: level || 'SMA' });
+        const cur = resolveCurriculumFromGrade(gradeName);
+        schools.push({ school, grade_name: gradeName, level: cur.level });
       }
 
       schools.sort((a, b) => a.school.localeCompare(b.school));
@@ -63,14 +82,19 @@ function doGet(e) {
       const students = [];
 
       for (let i = 2; i < rows.length; i++) {
+        const email = String(rows[i][0] || '').trim();
         const name = String(rows[i][1] || '').trim();
-        const school = String(rows[i][2] || '').trim();
-        const email = String(rows[i][3] || '').trim();
+        const rombel = String(rows[i][2] || '').trim();
+        const school = String(rows[i][3] || '').trim();
+        const grade = String(rows[i][4] || '').trim();
 
         if (school.toLowerCase() === targetSchool && email) {
           students.push({
+            email,
             name,
-            school,
+            rombel_name: rombel,
+            school_name: school,
+            grade_name: grade,
             maskedEmail: maskEmail(email)
           });
         }
@@ -79,7 +103,7 @@ function doGet(e) {
       return respond({ success: true, students });
     }
 
-    // 3. Validasi Login Murid
+    // 3. Validasi Login Murid (Hanya butuh nama sekolah dan email, auto-detect level dari grade_name)
     if (action === 'login') {
       const email = normalizeEmail(e.parameter.email || '');
       const school = String(e.parameter.school || '').toLowerCase().trim();
@@ -91,31 +115,63 @@ function doGet(e) {
       const sheet = ss.getSheetByName(SHEET_STUDENT_DATA);
       const rows = sheet.getDataRange().getValues();
       let matched = null;
+      const schoolStudents = [];
 
       for (let i = 2; i < rows.length; i++) {
-        const rName = String(rows[i][1] || '').trim();
-        const rSchool = String(rows[i][2] || '').trim();
-        const rEmail = normalizeEmail(rows[i][3] || '');
-        const rLevel = String(rows[i][4] || 'SMA').trim().toUpperCase();
+        const rEmail = normalizeEmail(rows[i][0] || ''); // Col 0: email
+        const rName = String(rows[i][1] || '').trim(); // Col 1: name
+        const rRombel = String(rows[i][2] || '').trim(); // Col 2: rombel_name
+        const rSchool = String(rows[i][3] || '').trim(); // Col 3: school_name
+        const rGrade = String(rows[i][4] || '').trim(); // Col 4: grade_name
 
-        if (rEmail === email && rSchool.toLowerCase() === school) {
-          matched = {
-            name: rName,
-            school: rSchool,
-            email: rEmail,
-            level: rLevel,
-            rowIndex: i + 1
-          };
-          break;
+        if (rSchool.toLowerCase() === school && rEmail) {
+          schoolStudents.push({ email: rEmail, name: rName, rombel_name: rRombel, school_name: rSchool, grade_name: rGrade });
+
+          if (rEmail === email) {
+            const cur = resolveCurriculumFromGrade(rGrade);
+            matched = {
+              email: rEmail,
+              name: rName,
+              rombel_name: rRombel,
+              school_name: rSchool,
+              grade_name: rGrade,
+              level: cur.level,
+              dataFile: cur.dataFile,
+              rowIndex: i + 1
+            };
+            break;
+          }
         }
       }
 
       if (matched) {
-        // Update Timestamp Terakhir Login
+        // Update Timestamp Terakhir Login (Col 6: last_login)
         sheet.getRange(matched.rowIndex, 6).setValue(new Date().toISOString());
         return respond({ success: true, student: matched });
       } else {
-        return respond({ success: false, message: "Email tidak terdaftar pada sekolah yang dipilih." });
+        // Cari email terdekat jika ada typo (Levenshtein Distance)
+        let closestSuggestion = null;
+        let minDistance = 999;
+
+        for (let s of schoolStudents) {
+          const dist = levenshteinDistance(email, s.email);
+          if (dist < minDistance && dist <= 5) {
+            minDistance = dist;
+            closestSuggestion = {
+              name: s.name,
+              school: s.school_name,
+              maskedEmail: maskEmail(s.email),
+              suggestedEmail: s.email,
+              distance: dist
+            };
+          }
+        }
+
+        return respond({
+          success: false,
+          message: "Email belum terdaftar untuk sekolah yang dipilih.",
+          suggestion: closestSuggestion
+        });
       }
     }
 
@@ -311,4 +367,38 @@ function maskEmail(email) {
 function respond(data) {
   return ContentService.createTextOutput(JSON.stringify(data))
     .setMimeType(ContentService.MimeType.JSON);
+}
+
+function resolveCurriculumFromGrade(gradeName) {
+  const g = String(gradeName || '').toLowerCase().trim();
+  if (g.includes('primary') || g.includes('sd') || g.includes('lower') || g.includes('upper')) {
+    return { level: 'SD', dataFile: 'courseData-upperprimary.json' };
+  }
+  if (g.includes('middle') || g.includes('smp')) {
+    return { level: 'SMP', dataFile: 'courseData-middleschool.json' };
+  }
+  return { level: 'SMA', dataFile: 'courseData-highschool.json' };
+}
+
+function levenshteinDistance(a, b) {
+  a = String(a || '').toLowerCase();
+  b = String(b || '').toLowerCase();
+  const matrix = [];
+  for (let i = 0; i <= b.length; i++) matrix[i] = [i];
+  for (let j = 0; j <= a.length; j++) matrix[0][j] = j;
+
+  for (let i = 1; i <= b.length; i++) {
+    for (let j = 1; j <= a.length; j++) {
+      if (b.charAt(i - 1) === a.charAt(j - 1)) {
+        matrix[i][j] = matrix[i - 1][j - 1];
+      } else {
+        matrix[i][j] = Math.min(
+          matrix[i - 1][j - 1] + 1,
+          matrix[i][j - 1] + 1,
+          matrix[i - 1][j] + 1
+        );
+      }
+    }
+  }
+  return matrix[b.length][a.length];
 }

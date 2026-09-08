@@ -1,0 +1,168 @@
+{
+  "id": "bridge-ms-00",
+  "level": "SMP",
+  "kicker": "Materi Jembatan 00 · Pengantar Koding SMP",
+  "title": "Tur Lengkap MIT App Inventor",
+  "duration": "7 Menit Baca & Eksplorasi",
+  "type": "slides",
+  "summary": "MIT App Inventor adalah platform visual berbasis web untuk merancang dan membangun aplikasi Android menggunakan blok logika. Kenali 4 area Designer (Palette, Viewer, Components, Properties) dan cara beralih ke Blocks Editor sebelum mulai menyusun blok kode.",
+  "bookmarks": [
+    { "slideIndex": 0, "label": "1. Selamat Datang di App Inventor" },
+    { "slideIndex": 1, "label": "2. Designer vs Blocks Editor" },
+    { "slideIndex": 2, "label": "3. Palette: Menu Komponen" },
+    { "slideIndex": 3, "label": "4. Viewer: Layar HP Nyata" },
+    { "slideIndex": 4, "label": "5. Components & Properties" },
+    { "slideIndex": 5, "label": "6. Tes di HP & Kuis Pemahaman" }
+  ],
+  "slides": [
+    {
+      "slideIndex": 0,
+      "tagPill": { "text": "🤖 Koding Visual", "color": "yellow" },
+      "title": "Selamat Datang di MIT App Inventor!",
+      "highlights": [
+        {
+          "icon": "📱",
+          "label": "Bikin Aplikasi Android Beneran",
+          "sub": "Kamu bisa membuat aplikasi tombol, formulir masukan, game sederhana, hingga penyimpan data di HP."
+        },
+        {
+          "icon": "🧩",
+          "label": "Koding Seperti Puzzle Blok",
+          "sub": "Tidak perlu pusing menghafal ketikan kode rumit; kamu cukup menyusun blok logika yang saling mengunci."
+        }
+      ],
+      "keynote": "💡 Platform ini dikembangkan oleh MIT (Massachusetts Institute of Technology) agar siapa saja bisa menjadi pencipta teknologi digital!",
+      "visual": {
+        "cdnUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/99488d0a-3779-4dc9-890c-dcc95b525209.png",
+        "caption": "📸 Tur Lengkap: Antarmuka Kerja MIT App Inventor",
+        "altText": "Antarmuka MIT App Inventor"
+      }
+    },
+    {
+      "slideIndex": 1,
+      "tagPill": { "text": "🔄 Dua Ruang Kerja", "color": "blue" },
+      "title": "Dua Ruang Kerja: Designer vs Blocks",
+      "highlights": [
+        {
+          "icon": "🎨",
+          "label": "Designer: Menggambar Tampilan",
+          "sub": "Ruang untuk mengatur tata letak tombol, teks, kotak ketik, dan warna aplikasi yang terlihat oleh pengguna."
+        },
+        {
+          "icon": "🧠",
+          "label": "Blocks: Mengatur Otak & Logika",
+          "sub": "Ruang di balik layar untuk menentukan apa yang harus dilakukan aplikasi saat tombol diklik."
+        }
+      ],
+      "keynote": "🎯 Tombol peralihan Designer dan Blocks berada di sudut kanan atas layar!",
+      "visual": {
+        "cdnUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/99488d0a-3779-4dc9-890c-dcc95b525209.png",
+        "caption": "📸 Tombol Peralihan Tab Designer dan Blocks di Pojok Kanan Atas",
+        "altText": "Peralihan Designer dan Blocks"
+      }
+    },
+    {
+      "slideIndex": 2,
+      "tagPill": { "text": "🗂️ Area 1", "color": "green" },
+      "title": "Area Palette: Katalog Komponen Aplikasi",
+      "highlights": [
+        {
+          "icon": "🔘",
+          "label": "User Interface (Antarmuka)",
+          "sub": "Berisi Button (tombol), TextBox (kotak input), Label (teks keterangan), dan Image (gambar)."
+        },
+        {
+          "icon": "✋",
+          "label": "Cara Pakai: Drag and Drop",
+          "sub": "Cukup klik komponen yang diinginkan dari Palette, tahan, lalu seret dan lepaskan ke layar Viewer."
+        }
+      ],
+      "keynote": "💡 Tombol di Palette belum berfungsi sampai kamu memberinya logika di Blocks Editor nanti!",
+      "visual": {
+        "cdnUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/99488d0a-3779-4dc9-890c-dcc95b525209.png",
+        "caption": "📸 Kolom Paling Kiri: Palette Pilihan Komponen Interaktif",
+        "altText": "Area Palette App Inventor"
+      }
+    },
+    {
+      "slideIndex": 3,
+      "tagPill": { "text": "📱 Area 2", "color": "pink" },
+      "title": "Area Viewer: Simulasi Layar Smartphone",
+      "highlights": [
+        {
+          "icon": "📲",
+          "label": "Cermin Layar HP Nyata",
+          "sub": "Apa yang kamu susun di dalam kotak Viewer ini adalah tampilan persis yang akan muncul di layar HP Android."
+        },
+        {
+          "icon": "📐",
+          "label": "Atur Urutan Komponen",
+          "sub": "Kamu bisa meletakkan judul di atas, kotak isian nama di tengah, dan tombol kirim di bawah."
+        }
+      ],
+      "keynote": "✨ Di sinilah kamu melihat desain aplikasimu terbentuk langkah demi langkah!",
+      "visual": {
+        "cdnUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/99488d0a-3779-4dc9-890c-dcc95b525209.png",
+        "caption": "📸 Kolom Tengah: Viewer Simulasi Layar HP Asli",
+        "altText": "Area Viewer App Inventor"
+      }
+    },
+    {
+      "slideIndex": 4,
+      "tagPill": { "text": "⚙️ Area 3 & 4", "color": "yellow" },
+      "title": "Components List & Properties (Pengaturan)",
+      "highlights": [
+        {
+          "icon": "📋",
+          "label": "Components (Daftar Komponen)",
+          "sub": "Daftar pohon seluruh elemen yang ada di aplikasi. Sangat disarankan me-rename komponen (misal: btn_sapa)."
+        },
+        {
+          "icon": "🎨",
+          "label": "Properties (Pengaturan Detail)",
+          "sub": "Mengubah tulisan Text tombol, warna tombol (BackgroundColor), ukuran font, dan lebar elemen."
+        }
+      ],
+      "keynote": "💡 Tips: Selalu ubah properti 'Text' di kolom Properties untuk mengganti tulisan tombol, bukan dengan mengetik langsung di Viewer!",
+      "visual": {
+        "cdnUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/99488d0a-3779-4dc9-890c-dcc95b525209.png",
+        "caption": "📸 Sisi Kanan: Daftar Komponen dan Panel Pengaturan Properti",
+        "altText": "Components dan Properties"
+      }
+    },
+    {
+      "slideIndex": 5,
+      "tagPill": { "text": "🏆 Cek Pemahaman", "color": "green" },
+      "title": "Rangkuman Materi & Kuis Cek Pemahaman",
+      "highlights": [
+        {
+          "icon": "1️⃣",
+          "label": "Designer",
+          "sub": "Tempat menyusun tampilan (Palette, Viewer, Components, Properties)."
+        },
+        {
+          "icon": "2️⃣",
+          "label": "Blocks",
+          "sub": "Tempat menyusun logika blok aksi ketika tombol ditekan."
+        }
+      ],
+      "keynote": "🚀 Kamu sekarang siap lanjut ke materi bridge berikutnya: memberi aksi dan logika pada tombol!",
+      "visual": {
+        "cdnUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/d65c2b8d-7754-4df4-89f9-9075439d5b01.png",
+        "caption": "📸 Menatap Masa Depan: Blocks Editor Tempat Logika Dihidupkan",
+        "altText": "Blocks Editor App Inventor"
+      }
+    }
+  ],
+  "quiz": {
+    "question": "Jika kita ingin mengganti tulisan pada sebuah tombol di MIT App Inventor, di panel manakah kita mengaturnya?",
+    "options": [
+      "A. Di panel Palette",
+      "B. Di panel Properties (pada bagian Text)",
+      "C. Di panel Viewer dengan mengklik dua kali",
+      "D. Di galeri foto smartphone"
+    ],
+    "answer": 1,
+    "explanation": "Tepat sekali! Setiap perubahan tulisan, warna, maupun ukuran komponen diatur secara presisi pada panel paling kanan yaitu panel Properties."
+  }
+}

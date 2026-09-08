@@ -1,0 +1,216 @@
+{
+  "id": "bridge-hs-01",
+  "level": "SMA",
+  "kicker": "Materi Jembatan 01 · Dasar Python",
+  "title": "Variabel dan Tipe Data Tanpa Takut",
+  "duration": "8 Menit Baca & Praktik",
+  "type": "slides",
+  "summary": "Variabel adalah wadah penyimpanan di memori komputer yang diberi nama label khusus. Gunakan tanda sama dengan (=) untuk menugaskan nilai. Kenali perbedaan mendasar antara teks (String) dan angka (Integer/Float) agar program tidak salah menghitung.",
+  "bookmarks": [
+    { "slideIndex": 0, "label": "1. Analogi Kotak Berlabel" },
+    { "slideIndex": 1, "label": "2. Membuat Variabel di Python" },
+    { "slideIndex": 2, "label": "3. Tipe Data: String (Teks)" },
+    { "slideIndex": 3, "label": "4. Tipe Data: Integer & Float" },
+    { "slideIndex": 4, "label": "5. Jebakan: Teks '10' vs Angka 10" },
+    { "slideIndex": 5, "label": "6. Tipe Data: Boolean (Benar/Salah)" },
+    { "slideIndex": 6, "label": "7. Menghitung Nilai Variabel" },
+    { "slideIndex": 7, "label": "8. Rangkuman & Kuis Cek Pemahaman" }
+  ],
+  "slides": [
+    {
+      "slideIndex": 0,
+      "tagPill": { "text": "📦 Konsep Dasar", "color": "yellow" },
+      "title": "Variabel: Kotak Berlabel di Memori Komputer",
+      "highlights": [
+        {
+          "icon": "🏷️",
+          "label": "Kotak yang Diberi Nama",
+          "sub": "Bayangkan kardus penyimpanan dengan stiker label, misalnya label 'nama_siswa' atau 'saldo'."
+        },
+        {
+          "icon": "📥",
+          "label": "Menyimpan Apapun di Dalamnya",
+          "sub": "Kamu bisa memasukkan nama orang, angka tabungan, atau status aktif ke dalam kotak tersebut."
+        }
+      ],
+      "keynote": "💡 Komputer memiliki memori yang sangat luas. Dengan memberi label (variabel), kita bisa mengambil dan mengubah isinya kapan saja!",
+      "visual": {
+        "cdnUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/3017e5b0-2188-4bdd-b895-28020f093c03.png",
+        "caption": "📸 Analogi Visual: Kotak Berlabel untuk Menyimpan Teks, Angka, dan Status",
+        "altText": "Analogi Variabel Kotak Berlabel"
+      }
+    },
+    {
+      "slideIndex": 1,
+      "tagPill": { "text": "⚙️ Sintaks Python", "color": "blue" },
+      "title": "Cara Menulis Variabel di Python",
+      "highlights": [
+        {
+          "icon": "✍️",
+          "label": "Rumus: nama = isi_nilai",
+          "sub": "Tuliskan nama variabel di sebelah kiri, diikuti tanda sama dengan (=), lalu nilainya di sebelah kanan."
+        },
+        {
+          "icon": "⚠️",
+          "label": "Tanda = Bukan Sama Dengan Matematika",
+          "sub": "Tanda = di koding berarti 'Tolong simpan nilai di kanan ke dalam wadah di kiri' (disebut Assignment)."
+        }
+      ],
+      "keynote": "📝 Contoh Kode: nama = \"Budi\" artinya masukkan teks \"Budi\" ke dalam kotak bernama nama.",
+      "visual": {
+        "cdnUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/3017e5b0-2188-4bdd-b895-28020f093c03.png",
+        "caption": "📸 Contoh Sintaks Variabel Python: nama, saldo, dan aktif",
+        "altText": "Sintaks Variabel Python"
+      }
+    },
+    {
+      "slideIndex": 2,
+      "tagPill": { "text": "🔤 Tipe Data 1", "color": "green" },
+      "title": "Tipe Data 1: String (Teks & Karakter)",
+      "highlights": [
+        {
+          "icon": "💬",
+          "label": "Ciri Khas: Tanda Kutip",
+          "sub": "Semua tulisan huruf, kata, atau kalimat wajib dibungkus tanda kutip, misalnya \"Jakarta\" atau 'SMA'."
+        },
+        {
+          "icon": "🛡️",
+          "label": "Aman dari Perhitungan Matematika",
+          "sub": "Teks dianggap sebagai karakter mati yang tidak bisa dijumlahkan seperti angka normal."
+        }
+      ],
+      "keynote": "💡 Tips: Jika kamu lupa memberi tanda petik pada teks, Python akan mengira tulisan itu adalah nama variabel lain dan memunculkan pesan NameError!",
+      "visual": {
+        "cdnUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/fcd966fb-4031-43c3-8c63-85de89ff3989.png",
+        "caption": "📸 Menampilkan Isi Variabel String dengan print(nama)",
+        "altText": "Tipe Data String Python"
+      }
+    },
+    {
+      "slideIndex": 3,
+      "tagPill": { "text": "🔢 Tipe Data 2", "color": "pink" },
+      "title": "Tipe Data 2: Integer & Float (Angka)",
+      "highlights": [
+        {
+          "icon": "1️⃣",
+          "label": "Integer (int): Bilangan Bulat",
+          "sub": "Angka tanpa koma/desimal, seperti 10, 500, atau -25. Sangat cocok untuk menghitung jumlah barang atau umur."
+        },
+        {
+          "icon": "📊",
+          "label": "Float (float): Angka Desimal",
+          "sub": "Angka yang memiliki pecahan desimal. Python menggunakan tanda titik (.) bukan koma, misalnya 3.14 atau 95.5."
+        }
+      ],
+      "keynote": "⚠️ Penting: Jangan gunakan tanda petik pada angka yang ingin dihitung! Tulis langsung: harga = 50000.",
+      "visual": {
+        "cdnUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/3017e5b0-2188-4bdd-b895-28020f093c03.png",
+        "caption": "📸 Wadah Angka: Saldo Disimpan sebagai Integer Tanpa Tanda Petik",
+        "altText": "Tipe Data Integer dan Float"
+      }
+    },
+    {
+      "slideIndex": 4,
+      "tagPill": { "text": "🚨 Jebakan Coder", "color": "yellow" },
+      "title": "Jebakan Klasik: Teks \"10\" vs Angka 10",
+      "highlights": [
+        {
+          "icon": "🔗",
+          "label": "\"10\" + \"10\" Menghasilkan \"1010\"",
+          "sub": "Karena ada tanda petik, Python menganggapnya sebagai kata. Tanda + hanya menempelkan kedua kata (Concatenation)."
+        },
+        {
+          "icon": "➕",
+          "label": "10 + 10 Menghasilkan 20",
+          "sub": "Tanpa tanda petik, Python tahu ini adalah angka murni dan melakukan operasi penjumlahan matematika."
+        }
+      ],
+      "keynote": "💡 Ingat Baik-Baik: Inilah alasan kenapa nanti saat menerima input dari pengguna di modul selanjutnya, kita perlu mengubah teks menjadi angka menggunakan int()!",
+      "visual": {
+        "cdnUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/af5954a4-3115-43fb-b9f9-4400cd55224f.png",
+        "caption": "📸 Perbedaan Proses: Menempelkan Teks vs Menjumlahkan Angka",
+        "altText": "Jebakan String vs Number"
+      }
+    },
+    {
+      "slideIndex": 5,
+      "tagPill": { "text": "🔘 Tipe Data 3", "color": "blue" },
+      "title": "Tipe Data 3: Boolean (Benar atau Salah)",
+      "highlights": [
+        {
+          "icon": "💡",
+          "label": "Hanya Punya 2 Nilai Pasti",
+          "sub": "Hanya ada dua kemungkinan: True (Benar) atau False (Salah). Huruf pertama wajib KAPITAL."
+        },
+        {
+          "icon": "🚪",
+          "label": "Saklar Pengambilan Keputusan",
+          "sub": "Dipakai untuk mengecek kondisi: apakah password cocok? Apakah saldo mencukupi? Apakah siswa lulus?"
+        }
+      ],
+      "keynote": "🎯 Boolean adalah pondasi dasar logika percabangan (if-else) yang akan kamu temui di video selanjutnya.",
+      "visual": {
+        "cdnUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/3017e5b0-2188-4bdd-b895-28020f093c03.png",
+        "caption": "📸 Wadah Boolean: aktif = True Menyimpan Status Benar",
+        "altText": "Tipe Data Boolean Python"
+      }
+    },
+    {
+      "slideIndex": 6,
+      "tagPill": { "text": "💰 Studi Kasus", "color": "green" },
+      "title": "Menghitung Variabel Keuangan Sederhana",
+      "highlights": [
+        {
+          "icon": "💵",
+          "label": "Simulasi Saldo Rekening",
+          "sub": "saldo_awal = 100000, lalu jajan = 25000. Sisa uang dihitung dengan: sisa = saldo_awal - jajan."
+        },
+        {
+          "icon": "📢",
+          "label": "Mencetak Hasilnya",
+          "sub": "print(\"Sisa uang saku:\", sisa) akan otomatis memunculkan teks 'Sisa uang saku: 75000'."
+        }
+      ],
+      "keynote": "✨ Keren kan? Kamu baru saja membuat mesin penghitung keuangan digital pertamamu!",
+      "visual": {
+        "cdnUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/fcd966fb-4031-43c3-8c63-85de89ff3989.png",
+        "caption": "📸 Simulasi Kode: Menghitung Sisa Saldo dengan Operasi Variabel",
+        "altText": "Studi Kasus Keuangan Python"
+      }
+    },
+    {
+      "slideIndex": 7,
+      "tagPill": { "text": "🏆 Cek Pemahaman", "color": "pink" },
+      "title": "Rangkuman Materi & Kuis Mandiri",
+      "highlights": [
+        {
+          "icon": "1️⃣",
+          "label": "Variabel",
+          "sub": "Wadah data di memori komputer yang dibuat dengan sintaks nama = nilai."
+        },
+        {
+          "icon": "2️⃣",
+          "label": "Tiga Tipe Data Inti",
+          "sub": "String (\"teks\"), Integer/Float (angka), dan Boolean (True/False)."
+        }
+      ],
+      "keynote": "🚀 Kamu sekarang siap masuk ke video Modul 1: memvalidasi input teks dan angka dari pengguna!",
+      "visual": {
+        "cdnUrl": "https://cdn-web-2.ruangguru.com/landing-pages/assets/3017e5b0-2188-4bdd-b895-28020f093c03.png",
+        "caption": "📸 Tiga Kotak Memori yang Berhasil Kamu Kuasai!",
+        "altText": "Rangkuman Variabel"
+      }
+    }
+  ],
+  "quiz": {
+    "question": "Jika kita menjalankan kode: a = '50' lalu b = '20', berapakah hasil dari print(a + b)?",
+    "options": [
+      "A. 70",
+      "B. '5020'",
+      "C. Error",
+      "D. 50"
+    ],
+    "answer": 1,
+    "explanation": "Tepat sekali! Karena '50' dan '20' dibungkus tanda kutip, Python memperlakukannya sebagai String (teks). Operator + akan menggabungkan kedua teks menjadi '5020', bukan menjumlahkannya menjadi 70!"
+  }
+}

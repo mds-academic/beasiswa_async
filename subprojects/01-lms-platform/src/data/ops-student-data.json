@@ -1,0 +1,58 @@
+[
+  {
+    "email": "yazid@ruangguru.com",
+    "name": "Ahmad Yazid",
+    "rombel_name": "XII MIPA 1",
+    "school_name": "SMAN 8 Jakarta",
+    "grade_name": "High School"
+  },
+  {
+    "email": "budi.santoso@gmail.com",
+    "name": "Budi Santoso",
+    "rombel_name": "XI MIPA 2",
+    "school_name": "SMAN 8 Jakarta",
+    "grade_name": "High School"
+  },
+  {
+    "email": "alif.pratama@gmail.com",
+    "name": "Alif Pratama",
+    "rombel_name": "XI IPS 1",
+    "school_name": "SMAN 70 Jakarta",
+    "grade_name": "High School"
+  },
+  {
+    "email": "citra.lestari@gmail.com",
+    "name": "Citra Lestari",
+    "rombel_name": "VIII-A",
+    "school_name": "SMPN 1 Jakarta",
+    "grade_name": "Middle School"
+  },
+  {
+    "email": "fadli.ramadhan@gmail.com",
+    "name": "Fadli Ramadhan",
+    "rombel_name": "VII-B",
+    "school_name": "SMPN 115 Jakarta",
+    "grade_name": "Middle School"
+  },
+  {
+    "email": "dimas.pratama@gmail.com",
+    "name": "Dimas Pratama",
+    "rombel_name": "5-B",
+    "school_name": "SDN Menteng 01",
+    "grade_name": "Upper Primary"
+  },
+  {
+    "email": "eni.rahmawati@gmail.com",
+    "name": "Eni Rahmawati",
+    "rombel_name": "3-A",
+    "school_name": "SDN Menteng 01",
+    "grade_name": "Lower Primary"
+  },
+  {
+    "email": "keisha.azani@gmail.com",
+    "name": "Keisha Azani",
+    "rombel_name": "4-C",
+    "school_name": "SD Al-Azhar Kelapa Gading",
+    "grade_name": "Upper Primary"
+  }
+]
