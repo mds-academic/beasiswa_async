@@ -294,3 +294,32 @@ Audit lengkap sudah kusimpan di:
 Aku **tidak mengubah dataset produksi atau folder sumber lama**. Yang dibuat/diperbarui hanya dokumen audit dan `STATE.md` di subproject ini. Perubahan tersebut sudah dibuat checkpoint Git lokal dengan commit `ba5365f` (`docs(curriculum): audit scaffolding SMP SMA`).
 
 Status: **belum disetujui sebagai kurikulum final; arah sequencing dan daftar materi bridge sudah disetujui sebagai dasar pekerjaan berikutnya.**
+
+## 2026-09-08 — Implementation plan berbasis audit scaffolding
+
+### User
+> coba bikin implementation plan yang dibagi menjadi beberapa phases yang dia bisa kita run bertahap based on findings in /Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/02-curriculum-sequencing/mapping/audit-ulang-scaffolding-2026-09-08.md
+
+### Status
+- **proposed** — rencana implementasi bertahap diminta berdasarkan audit scaffolding SMP–SMA.
+
+### Assistant Response — 2026-09-08
+
+Implementation plan bertahap sudah dibuat berdasarkan audit scaffolding.
+
+File plan:
+[01 — Implementation Plan Scaffolding SMP–SMA](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/02-curriculum-sequencing/planning/01-implementation-plan-scaffolding-smp-sma.md)
+
+Plan dibagi menjadi 7 fase:
+
+1. **Fase 0 — Baseline dan kontrak data**: snapshot, folder draft baru, kontrak metadata bridge, dan status timestamp.
+2. **Fase 1 — Blueprint pedagogis**: finalisasi isi `bridge-hs-01` sampai `05` dan `bridge-ms-01` sampai `03`, termasuk keputusan pemisahan TinyDB dari `bridge-ms-00`.
+3. **Fase 2 — Produksi bridge SMA**: membuat lima HTML bridge baru dengan latihan, kuis, rangkuman, bookmark, dan bukti selesai.
+4. **Fase 3 — Produksi bridge SMP**: membuat tiga HTML bridge baru serta merapikan tur App Inventor agar TinyDB tidak muncul terlalu awal.
+5. **Fase 4 — Dataset sequencing v1**: membuat dataset baru dengan bridge sebagai step dan prasyarat eksplisit tanpa menimpa dataset produksi.
+6. **Fase 5 — Validasi teknis dan QA**: validasi JSON, link slide, graph prasyarat, timestamp, bookmark, quiz, dan smoke test HTML.
+7. **Fase 6 — Pilot dan integrasi**: uji dengan reviewer pemula/non-coding, revisi, lalu menyiapkan paket integrasi ke Subproject 01 setelah disetujui.
+
+Plan juga memuat acceptance criteria per fase, aturan preservasi timestamp, definition of done, serta batas zero-touch terhadap folder materi lama. Fase 2 dan 3 dapat dijalankan paralel setelah Fase 1 selesai; Fase 4 bergantung pada keduanya.
+
+Plan dan `STATE.md` sudah dibuat checkpoint Git lokal dengan commit `53b4c44` (`docs(curriculum): add phased scaffolding implementation plan`). Dataset produksi dan folder materi lama tidak diubah.
