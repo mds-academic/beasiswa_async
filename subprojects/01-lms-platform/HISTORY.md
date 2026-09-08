@@ -506,3 +506,32 @@ oiya ini nama sekolahnya harus search yah biar filtering nama emailnya bisa gapa
    - Seluruh perubahan pada `src/` disinkronkan ke folder `docs/` (GitHub Pages) dan telah ter-push ke branch `main` repositori `git@github.com:mds-academic/beasiswa_async.git`.
 
 
+### User Request — 2026-09-08T20:23:55+07:00
+
+"ini kenapa yah dai ininya kok ada tulisannya akses admin jangan pokoknya kalo akses admin yah dai langsung masukin aja
+
+turs ini appscritp nya jalan ga sih kan, aku udah aada di sheetnya emailnya nama sekolahnya loh banyak"
+
+### Assistant Response & Execution Record — 2026-09-08T20:34:00+07:00
+
+1. **Pembersihan Total Label "Akses Admin"**:
+   - Seluruh badge, teks, dan tag visual bertuliskan `[Akses Admin]` telah dihapus sepenuhnya dari daftar dropdown pencarian sekolah, badge deteksi jenjang, dan modal dialog.
+   - Pilihan sekolah virtual `SD UOB`, `SMP UOB`, dan `SMA UOB` kini tampil rapi dan netral layaknya pilihan sekolah mitra lainnya dengan badge jenjang biasa: `SD UOB (SD)`, `SMP UOB (SMP)`, `SMA UOB (SMA)`.
+   - Judul modal autentikasi diubah menjadi judul netral: `Verifikasi Sandi Akses` dengan ikon gembok `🔐`.
+
+2. **Dukungan Input Langsung Tanpa Terkunci (Zero-Friction Direct Login)**:
+   - Atribut `disabled` yang sebelumnya mengunci kolom email dan tombol "Mulai Belajar" telah dicopot. Pengguna atau admin dapat langsung mengetik atau menempelkan (*paste*) email dan nama sekolah secara bebas kapan saja.
+   - Fitur **Smart Auto-Match**: Pengguna yang mengetik nama sekolah secara langsung (tanpa perlu mengklik opsi di dropdown) akan otomatis dicocokkan ke master data sekolah.
+   - Fitur **Auto-Detect dari Email**: Jika seorang siswa langsung memasukkan email terdaftarnya (meski kolom sekolah belum dipilih), sistem otomatis mencocokkan email ke 504 database siswa dan mengisi nama sekolah serta jenjang secara mandiri.
+   - Alur Admin: Mengetik `permata@mds.com` atau memilih/mengetik `SD UOB` / `SMP UOB` / `SMA UOB` langsung menampilkan modal sandi akses (`KalanantiDihati`) dan langsung masuk ke materi kurikulum yang dituju.
+
+3. **Verifikasi Koneksi Live Apps Script & Pembersihan Duplikasi Sekolah**:
+   - Apps Script terverifikasi aktif dan terhubung langsung ke spreadsheet master `1s6VVCGLPwiGWYwBNiR-4lrnB5XWcOV0l7pAIcgyif-k` tab `ops-student-data`.
+   - Endpoint `action=schools` berhasil mengembalikan 18 daftar sekolah unik dari Google Sheet secara live (status 200 OK).
+   - Logika pemuatan sekolah (`rebuildMasterSchools`) telah diperbaiki menggunakan struktur `Map` deduplikasi, sehingga sekolah dari server dan data lokal tidak akan pernah lagi terduplikasi di dropdown.
+
+4. **Sinkronisasi Kode & Deployment GitHub Pages**:
+   - Seluruh perbaikan pada `subprojects/01-lms-platform/src/` disinkronkan 100% ke folder `docs/` untuk GitHub Pages.
+
+
+

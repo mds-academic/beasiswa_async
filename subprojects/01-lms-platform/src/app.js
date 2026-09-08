@@ -265,9 +265,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 // ==================== 1. DATA LOADING & COMBOBOX SEARCH ====================
 const ADMIN_VIRTUAL_SCHOOLS = [
-  { school: 'SD UOB', grade_name: 'Upper Primary', level: 'SD', isAdmin: true },
-  { school: 'SMP UOB', grade_name: 'Middle School', level: 'SMP', isAdmin: true },
-  { school: 'SMA UOB', grade_name: 'High School', level: 'SMA', isAdmin: true }
+  { school: 'SD UOB', grade_name: 'Upper Primary', level: 'SD' },
+  { school: 'SMP UOB', grade_name: 'Middle School', level: 'SMP' },
+  { school: 'SMA UOB', grade_name: 'High School', level: 'SMA' }
 ];
 
 function highlightMatch(text, query) {
@@ -277,16 +277,57 @@ function highlightMatch(text, query) {
   return text.replace(regex, '<mark class="search-highlight">$1</mark>');
 }
 
-async function loadMasterData() {
-  // 1. Inisialisasi sekolah admin secara instan (0ms latency)
-  state.masterSchools = [...ADMIN_VIRTUAL_SCHOOLS];
+function rebuildMasterSchools(serverSchools = null) {
+  const schoolMap = new Map();
 
-  // 2. Load local student master fixture (berisi 504 siswa real)
+  // 1. Masukkan sekolah virtual UOB (tanpa tag/badge mencolok)
+  ADMIN_VIRTUAL_SCHOOLS.forEach((adm) => {
+    schoolMap.set(adm.school.toLowerCase().trim(), { ...adm });
+  });
+
+  // 2. Jika ada data server dari Google Apps Script, gabungkan
+  if (Array.isArray(serverSchools) && serverSchools.length > 0) {
+    serverSchools.forEach((s) => {
+      const name = String(s.school || '').trim();
+      if (name && !schoolMap.has(name.toLowerCase())) {
+        const cur = resolveCurriculumFromGrade(s.grade_name);
+        schoolMap.set(name.toLowerCase(), {
+          school: name,
+          grade_name: s.grade_name || 'High School',
+          level: s.level || cur.level
+        });
+      }
+    });
+  }
+
+  // 3. Masukkan dari master data murid lokal (504 siswa real)
+  if (Array.isArray(state.allStudentsData) && state.allStudentsData.length > 0) {
+    state.allStudentsData.forEach((s) => {
+      const name = String(s.school_name || '').trim();
+      if (name && !schoolMap.has(name.toLowerCase())) {
+        const cur = resolveCurriculumFromGrade(s.grade_name);
+        schoolMap.set(name.toLowerCase(), {
+          school: name,
+          grade_name: s.grade_name || 'High School',
+          level: cur.level
+        });
+      }
+    });
+  }
+
+  state.masterSchools = Array.from(schoolMap.values()).sort((a, b) => a.school.localeCompare(b.school));
+}
+
+async function loadMasterData() {
+  // 1. Inisialisasi awal instan (0ms latency)
+  rebuildMasterSchools();
+
+  // 2. Load local student master fixture (504 siswa real)
   try {
     const res = await fetch('./data/ops-student-data.json');
     if (res.ok) {
       state.allStudentsData = await res.json();
-      buildSchoolsFromStudents();
+      rebuildMasterSchools();
     }
   } catch (e) {
     console.warn('Local student fixture load warning:', e);
@@ -299,63 +340,13 @@ async function loadMasterData() {
       if (res.ok) {
         const data = await res.json();
         if (data.success && Array.isArray(data.schools) && data.schools.length > 0) {
-          state.masterSchools = data.schools;
-          ensureAdminSchoolsInMaster();
-          state.masterSchools.sort((a, b) => a.school.localeCompare(b.school));
+          rebuildMasterSchools(data.schools);
         }
       }
     } catch (err) {
       console.log('Background schools update deferred.');
     }
-
-    try {
-      const res = await fetch(`${APP_SCRIPT_URL}?action=all_students`);
-      if (res.ok) {
-        const data = await res.json();
-        if (data.success && Array.isArray(data.students) && data.students.length > 0) {
-          state.allStudentsData = data.students;
-          buildSchoolsFromStudents();
-        }
-      }
-    } catch (err) {
-      console.log('Background all_students update deferred.');
-    }
   })();
-}
-
-function buildSchoolsFromStudents() {
-  const seen = {};
-  ADMIN_VIRTUAL_SCHOOLS.forEach((adm) => {
-    seen[adm.school.toLowerCase()] = true;
-  });
-
-  state.allStudentsData.forEach((s) => {
-    const school = String(s.school_name || '').trim();
-    if (school && !seen[school.toLowerCase()]) {
-      seen[school.toLowerCase()] = true;
-      const cur = resolveCurriculumFromGrade(s.grade_name);
-      state.masterSchools.push({
-        school: school,
-        grade_name: s.grade_name || 'High School',
-        level: cur.level
-      });
-    }
-  });
-  ensureAdminSchoolsInMaster();
-  state.masterSchools.sort((a, b) => a.school.localeCompare(b.school));
-}
-
-function ensureAdminSchoolsInMaster() {
-  ADMIN_VIRTUAL_SCHOOLS.forEach((adm) => {
-    const existing = state.masterSchools.find(
-      (s) => s.school.toLowerCase().trim() === adm.school.toLowerCase().trim()
-    );
-    if (!existing) {
-      state.masterSchools.push(adm);
-    } else {
-      existing.isAdmin = true;
-    }
-  });
 }
 
 function setupLoginEvents() {
@@ -375,13 +366,13 @@ function setupLoginEvents() {
     state.schoolStudents = [];
     el.loginSchoolInput.value = '';
     if (el.btnClearSchool) el.btnClearSchool.style.display = 'none';
-    el.loginDetectedBadge.textContent = 'Pilih Sekolah untuk Mulai';
+    el.loginDetectedBadge.textContent = 'Pilih atau Ketik Sekolah untuk Mulai';
     el.loginDetectedBadge.style.color = '';
     el.loginEmailInput.value = '';
     el.loginEmailInput.placeholder = 'nama@email.com';
-    el.loginEmailInput.disabled = true;
-    el.btnToggleEmailHelp.disabled = true;
-    el.btnLogin.disabled = true;
+    el.loginEmailInput.disabled = false;
+    el.btnToggleEmailHelp.disabled = false;
+    el.btnLogin.disabled = false;
     el.emailHelpPanel.hidden = true;
     hideLoginError();
   }
@@ -419,11 +410,7 @@ function setupLoginEvents() {
         btn.dataset.index = idx;
 
         const highlightedName = highlightMatch(item.school, query);
-        const adminBadge = (item.isAdmin || item.school.toUpperCase().includes('UOB'))
-          ? '<span class="badge-admin-tag">Akses Admin</span>'
-          : '';
-
-        btn.innerHTML = `<strong>${highlightedName}</strong> <span style="opacity:0.75; font-size:0.8rem; margin-left:6px;">(${item.level})</span> ${adminBadge}`;
+        btn.innerHTML = `<strong>${highlightedName}</strong> <span style="opacity:0.75; font-size:0.8rem; margin-left:6px;">(${item.level})</span>`;
         btn.addEventListener('click', () => selectSchool(item));
         el.loginSchoolDropdown.appendChild(btn);
       });
@@ -503,17 +490,16 @@ function setupLoginEvents() {
 
     // Update badge jenjang
     const cur = resolveCurriculumFromGrade(schoolItem.grade_name);
-    const isAdminSchool = schoolItem.isAdmin || schoolItem.school.toUpperCase().includes('UOB');
+    const isUobSchool = schoolItem.school.toUpperCase().includes('UOB');
 
-    if (isAdminSchool) {
-      el.loginDetectedBadge.textContent = `Akses Admin: ${schoolItem.school} (${cur.level})`;
-      el.loginDetectedBadge.style.color = '#7c3aed';
+    el.loginDetectedBadge.textContent = `Terdeteksi: Jenjang ${cur.level} (${schoolItem.school})`;
+    el.loginDetectedBadge.style.color = cur.level === 'SMA' ? '#ffd93d' : cur.level === 'SMP' ? '#43d7ff' : '#27c881';
+
+    if (isUobSchool) {
       if (!el.loginEmailInput.value || el.loginEmailInput.value.trim() === '') {
         el.loginEmailInput.value = 'permata@mds.com';
       }
     } else {
-      el.loginDetectedBadge.textContent = `Terdeteksi: Jenjang ${cur.level} (${schoolItem.school})`;
-      el.loginDetectedBadge.style.color = cur.level === 'SMA' ? '#ffd93d' : cur.level === 'SMP' ? '#43d7ff' : '#27c881';
       el.loginEmailInput.placeholder = 'nama@email.com';
       if (el.loginEmailInput.value === 'permata@mds.com') {
         el.loginEmailInput.value = '';
@@ -655,7 +641,7 @@ function showLoginError(title, desc, suggestion = null) {
 function openAdminPasswordModal(schoolName, curLevel) {
   if (el.adminPasswordModal && typeof el.adminPasswordModal.showModal === 'function') {
     if (el.adminModalSubtitle) {
-      el.adminModalSubtitle.textContent = `Akses khusus peninjauan kurikulum ${curLevel || ''} (${schoolName})`;
+      el.adminModalSubtitle.textContent = `Jenjang ${curLevel || ''} (${schoolName})`;
     }
     if (el.adminPasswordInput) {
       el.adminPasswordInput.value = '';
@@ -672,7 +658,7 @@ function openAdminPasswordModal(schoolName, curLevel) {
 
   // Fallback prompt jika browser tidak mendukung dialog element
   const adminPassword = window.prompt(
-    `Akses Admin UOB My Digital Space\n\nAnda sedang mengakses materi jenjang ${curLevel} (${schoolName}).\nSilakan masukkan Password Admin:`,
+    `Verifikasi Sandi Akses\n\nJenjang ${curLevel} (${schoolName}).\nSilakan masukkan Sandi Akses:`,
     ''
   );
   if (adminPassword === null) return;
@@ -684,11 +670,11 @@ function executeAdminLogin(schoolName, curLevel, password) {
     if (el.adminModalError) {
       el.adminModalError.style.display = 'flex';
       if (el.adminModalErrorText) {
-        el.adminModalErrorText.textContent = 'Password admin salah! Silakan periksa kembali.';
+        el.adminModalErrorText.textContent = 'Sandi yang Anda masukkan salah!';
       }
       if (el.adminPasswordInput) el.adminPasswordInput.select();
     }
-    showLoginError('Password Admin Salah', 'Password admin yang Anda masukkan tidak sesuai.');
+    showLoginError('Sandi Salah', 'Sandi yang Anda masukkan tidak sesuai.');
     return false;
   }
 
@@ -698,16 +684,16 @@ function executeAdminLogin(schoolName, curLevel, password) {
   }
 
   el.btnLogin.disabled = true;
-  el.btnLogin.querySelector('span').textContent = 'Memverifikasi Admin...';
+  el.btnLogin.querySelector('span').textContent = 'Memverifikasi...';
 
   const emailInput = (el.loginEmailInput.value || '').toLowerCase().trim() || 'permata@mds.com';
 
   // Verifikasi ke backend Apps Script (background logging non-blocking)
   try {
     const loginUrl = `${APP_SCRIPT_URL}?action=login&email=${encodeURIComponent(emailInput)}&school=${encodeURIComponent(schoolName)}&password=${encodeURIComponent(password)}`;
-    fetch(loginUrl).catch((e) => console.log('Apps Script admin login notice:', e));
+    fetch(loginUrl).catch((e) => console.log('Apps Script login notice:', e));
   } catch (e) {
-    console.warn('Backend admin notify deferred:', e);
+    console.warn('Backend notify deferred:', e);
   }
 
   const cur = resolveCurriculumFromGrade(state.selectedSchool ? state.selectedSchool.grade_name : 'Kelas 4');
@@ -727,28 +713,83 @@ function executeAdminLogin(schoolName, curLevel, password) {
 }
 
 async function attemptLogin() {
-  if (!state.selectedSchool) {
-    showLoginError('Sekolah Belum Dipilih', 'Silakan pilih sekolah mitra terlebih dahulu dari kolom pencarian.');
+  const rawSchoolInput = (el.loginSchoolInput.value || '').trim();
+  const emailInput = (el.loginEmailInput.value || '').toLowerCase().trim();
+
+  // 1. Auto-resolve sekolah jika belum diklik dari dropdown
+  if (!state.selectedSchool && rawSchoolInput) {
+    const exactMatch = state.masterSchools.find(
+      (s) => s.school.toLowerCase() === rawSchoolInput.toLowerCase()
+    );
+    if (exactMatch) {
+      state.selectedSchool = exactMatch;
+    } else {
+      const partialMatch = state.masterSchools.find(
+        (s) => s.school.toLowerCase().includes(rawSchoolInput.toLowerCase()) ||
+               rawSchoolInput.toLowerCase().includes(s.school.toLowerCase())
+      );
+      if (partialMatch) {
+        state.selectedSchool = partialMatch;
+      }
+    }
+  }
+
+  // 2. Alur Khusus Admin (email permata@mds.com atau sekolah mengandung UOB)
+  const isAdminEmail = emailInput === 'permata@mds.com';
+  const isUobSchool = rawSchoolInput.toUpperCase().includes('UOB') ||
+    (state.selectedSchool && state.selectedSchool.school.toUpperCase().includes('UOB'));
+
+  if (isAdminEmail || isUobSchool) {
+    if (!state.selectedSchool) {
+      let matchedVirtual = ADMIN_VIRTUAL_SCHOOLS[0]; // SD UOB default
+      if (rawSchoolInput.toLowerCase().includes('smp') || rawSchoolInput.toLowerCase().includes('middle')) {
+        matchedVirtual = ADMIN_VIRTUAL_SCHOOLS[1]; // SMP UOB
+      } else if (rawSchoolInput.toLowerCase().includes('sma') || rawSchoolInput.toLowerCase().includes('high')) {
+        matchedVirtual = ADMIN_VIRTUAL_SCHOOLS[2]; // SMA UOB
+      }
+      state.selectedSchool = matchedVirtual;
+      el.loginSchoolInput.value = matchedVirtual.school;
+    }
+
+    if (!el.loginEmailInput.value || el.loginEmailInput.value.trim() === '') {
+      el.loginEmailInput.value = 'permata@mds.com';
+    }
+
+    const schoolName = state.selectedSchool.school;
+    const cur = resolveCurriculumFromGrade(state.selectedSchool.grade_name);
+    openAdminPasswordModal(schoolName, cur.level);
     return;
   }
 
-  const emailInput = el.loginEmailInput.value.toLowerCase().trim();
-  const schoolName = state.selectedSchool.school;
-  const isVirtualAdminSchool = state.selectedSchool.isAdmin || schoolName.toUpperCase().includes('UOB');
-  const isAdminEmail = emailInput === 'permata@mds.com';
-
-  // ==================== ALUR KHUSUS ADMIN (permata@mds.com) ====================
-  if (isAdminEmail || isVirtualAdminSchool) {
-    if (!isAdminEmail && emailInput) {
-      showLoginError(
-        'Email Khusus Admin Diperlukan',
-        `Sekolah virtual "${schoolName}" ditujukan untuk akses peninjauan materi oleh tim admin. Silakan gunakan email admin: permata@mds.com`
+  // 3. Jika siswa mengetik email tetapi sekolah belum terpilih, auto-detect dari master data siswa
+  if (!state.selectedSchool && emailInput) {
+    const studentFound = state.allStudentsData.find(
+      (s) => String(s.email || '').toLowerCase().trim() === emailInput
+    );
+    if (studentFound) {
+      const matched = state.masterSchools.find(
+        (m) => m.school.toLowerCase() === String(studentFound.school_name || '').toLowerCase()
       );
-      return;
+      if (matched) {
+        state.selectedSchool = matched;
+        el.loginSchoolInput.value = matched.school;
+      } else {
+        const cur = resolveCurriculumFromGrade(studentFound.grade_name);
+        state.selectedSchool = {
+          school: studentFound.school_name,
+          grade_name: studentFound.grade_name,
+          level: cur.level
+        };
+        el.loginSchoolInput.value = studentFound.school_name;
+      }
+      state.schoolStudents = state.allStudentsData.filter(
+        (s) => String(s.school_name || '').toLowerCase().trim() === state.selectedSchool.school.toLowerCase().trim()
+      );
     }
+  }
 
-    const cur = resolveCurriculumFromGrade(state.selectedSchool.grade_name);
-    openAdminPasswordModal(schoolName, cur.level);
+  if (!state.selectedSchool) {
+    showLoginError('Sekolah Belum Dipilih', 'Silakan pilih atau ketik nama sekolah mitra Anda.');
     return;
   }
 
@@ -757,14 +798,30 @@ async function attemptLogin() {
     return;
   }
 
+  const schoolName = state.selectedSchool.school;
+
   // ==================== ALUR SISWA REGULER ====================
   el.btnLogin.disabled = true;
   el.btnLogin.querySelector('span').textContent = 'Memverifikasi...';
+
+  // Pastikan schoolStudents terisi
+  if (!state.schoolStudents || state.schoolStudents.length === 0) {
+    state.schoolStudents = state.allStudentsData.filter(
+      (s) => String(s.school_name || '').toLowerCase().trim() === schoolName.toLowerCase().trim()
+    );
+  }
 
   // A. Cek kecocokan langsung di data lokal/memori (500+ siswa real)
   let matchedStudent = state.schoolStudents.find(
     (s) => String(s.email || '').toLowerCase().trim() === emailInput
   );
+
+  // Jika belum cocok per nama sekolah, cari global di allStudentsData
+  if (!matchedStudent) {
+    matchedStudent = state.allStudentsData.find(
+      (s) => String(s.email || '').toLowerCase().trim() === emailInput
+    );
+  }
 
   // B. Jika tidak ditemukan di lokal, coba verifikasi ke backend Apps Script
   if (!matchedStudent) {
@@ -776,10 +833,9 @@ async function attemptLogin() {
         if (json.success && json.student) {
           matchedStudent = json.student;
         } else if (json.suggestion) {
-          // Backend mengembalikan saran typo Levenshtein
           handleTypoSuggestion(json.suggestion, emailInput);
           el.btnLogin.disabled = false;
-          el.btnLogin.querySelector('span').textContent = 'Mulai Belajar';
+          el.btnLogin.querySelector('span').textContent = 'Mulai Belajar →';
           return;
         }
       }
@@ -804,11 +860,12 @@ async function attemptLogin() {
 
     completeSuccessfulLogin();
   } else {
-    // D. Email Tidak Match: Hitung Levenshtein Distance terhadap email di sekolah ini
+    // D. Email Tidak Match: Hitung Levenshtein Distance
     let closest = null;
     let minDistance = 999;
+    const candidates = state.schoolStudents.length > 0 ? state.schoolStudents : state.allStudentsData;
 
-    state.schoolStudents.forEach((st) => {
+    candidates.forEach((st) => {
       const dist = levenshteinDistance(emailInput, st.email);
       if (dist < minDistance && dist <= 6) {
         minDistance = dist;
@@ -822,7 +879,7 @@ async function attemptLogin() {
     });
 
     el.btnLogin.disabled = false;
-    el.btnLogin.querySelector('span').textContent = 'Mulai Belajar';
+    el.btnLogin.querySelector('span').textContent = 'Mulai Belajar →';
 
     if (closest) {
       showLoginError(
@@ -833,7 +890,7 @@ async function attemptLogin() {
     } else {
       showLoginError(
         'Email Belum Terdaftar',
-        `Email "${emailInput}" tidak ditemukan pada data siswa ${schoolName}. Coba cek kembali penulisan email atau gunakan tombol bantuan di atas.`
+        `Email "${emailInput}" tidak ditemukan pada data siswa ${schoolName}. Coba periksa kembali penulisan email atau gunakan tombol "Cari Email Saya" di atas.`
       );
     }
   }

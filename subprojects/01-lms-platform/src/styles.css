@@ -408,16 +408,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 }
 
 .badge-admin-tag {
-  background: rgba(155, 81, 224, 0.15);
-  color: #7c3aed;
-  border: 1px solid rgba(155, 81, 224, 0.4);
-  font-size: 0.72rem;
-  font-weight: 800;
-  padding: 2px 6px;
-  border-radius: 4px;
-  margin-left: 6px;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+  display: none !important;
 }
 
 .login-dropdown p {
