@@ -2,12 +2,33 @@
 
 ## Current Status
 
-- **Status**: Kurikulum Scratch SD v4 (22 step: 5 slide bridge + 17 video Kak Laras) berhasil diinjeksi 100% ke Google Spreadsheet master (`materi-sd`, `ops-result-sd` 22 kolom, dan `Changelog & Audit Log`), divalidasi visual dengan tangkapan layar browser.
+- **Status**: Kurikulum Scratch SD v5 (video-first 18 step: 1 slide bridge intro + 17 video tutorial asli Kak Laras) berhasil diinjeksi 100% ke Google Spreadsheet master (`materi-sd` 18 baris, `ops-result-sd` 18 kolom pelacakan, dan `Changelog & Audit Log` entri ke-12). Seluruh aset antarmuka resmi Scratch MIT Media Lab telah di-upload ke CDN Ruangguru (`rg_cdn_web_2`) dan diuji E2E via Playwright dengan hasil 100% pass.
 - **Active Focus**: Persiapan pengujian integrasi akhir, sinkronisasi repositori, dan operasional peluncuran.
 - **Last Updated**: 2026-09-09
 
-
 ## Completed
+
+- **Restrukturisasi Kurikulum Scratch SD Video-First & Revamp Slide CDN Asli (2026-09-09)**:
+  - Pembagian materi SD disederhanakan menjadi **4 modul, 18 step** (1 slide intro fondasi + 17 video tutorial resmi Kak Laras):
+    - Modul 0: Kenalan dengan Scratch (`bridge-sd-00`)
+    - Modul 1: About Me — 7 Video
+    - Modul 2: Racing Car — 6 Video
+    - Modul 3: Increase Your Earnings — 4 Video
+  - Eliminasi total visual Create & Learn pihak ketiga dan balok tiruan.
+  - Pengambilan tangkapan layar langsung dari Scratch Editor resmi MIT Media Lab (`https://scratch.mit.edu/projects/editor/?tutorial=getStarted`) dan upload ke Ruangguru CDN (`rg_cdn_web_2`):
+    - `scratch_real_editor_clean` (editor utuh)
+    - `scratch_real_stage` (stage & scratch cat)
+    - `scratch_real_sprite_pane` (sprite & backdrop panel)
+    - 4 palette warna balok resmi (Motion, Looks, Events, Control)
+    - 3 kartu tutorial Getting Started (Move 10 steps, Say Hello, Green Flag event)
+  - Slide `bridge-sd-00.html` dan metadata `.json` direvamp total dengan panduan membuka Scratch resmi dan mencoba tutorial Getting Started; disinkronkan ke 3 mirror (`subprojects/02/slides/`, `subprojects/01/src/slides/`, `docs/slides/`).
+  - Dataset `courseData-upperprimary.json` disinkronkan ke 3 mirror dan divalidasi SHA-256 identik (`27e665ba...`).
+  - Google Spreadsheet master diperbarui via Apps Script CDP:
+    - Tab `materi-sd`: 18 baris lengkap format 14 kolom.
+    - Tab `ops-result-sd`: 18 kolom pelacakan kuis/proyek.
+    - Tab `Changelog & Audit Log`: entri audit resmi ke-12.
+  - Pengujian otomatis Playwright E2E mengonfirmasi 9 gambar CDN berstatus `LOADED` 100% dan dashboard kelas siswa SD menampilkan "Progres Misi: 1 dari 18 Materi".
+
 
 - Inisialisasi struktur proyek induk `projects/uob-async-lms/` beserta subproject `subprojects/01-lms-platform/` dan `subprojects/02-curriculum-sequencing/`.
 - Penyusunan draft PRD komprehensif ([PRD.md](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/PRD.md)) termasuk penanganan 6 akar masalah bug lama dan spesifikasi mobile modal.
