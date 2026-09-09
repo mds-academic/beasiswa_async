@@ -1,3 +1,453 @@
-<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Input, Sensing, dan Keputusan di Racing Car</title><style>
-:root{--ink:#172033;--yellow:#ffd84d;--blue:#42b8e8;--purple:#8b6ee8;--orange:#ff9b54;--green:#62c38a;--paper:#fffdf7;--muted:#5c667a}*{box-sizing:border-box}body{margin:0;background:#eaf4f7;color:var(--ink);font-family:Arial,sans-serif}.app{max-width:1180px;height:100vh;margin:auto;padding:20px;display:flex;flex-direction:column}.top{display:flex;justify-content:space-between;align-items:center;gap:14px}.brand{font-weight:800;letter-spacing:.04em}.tag{background:var(--yellow);border:3px solid var(--ink);border-radius:999px;padding:8px 14px;font-weight:800}.deck{flex:1;min-height:0;margin-top:14px}.slide{display:none;height:100%;background:var(--paper);border:4px solid var(--ink);border-radius:24px;box-shadow:10px 10px 0 var(--ink);padding:clamp(24px,5vw,64px);overflow:auto}.slide.active{display:block;animation:in .25s ease}@keyframes in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}h1{font-size:clamp(30px,5vw,58px);line-height:1.05;margin:0 0 18px}h2{font-size:clamp(24px,3vw,38px);margin:0 0 20px}h3{margin:10px 0 8px}.lead{font-size:clamp(18px,2vw,25px);line-height:1.45;max-width:850px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:22px 0}.card{border:3px solid var(--ink);border-radius:16px;padding:18px;background:#fff;box-shadow:5px 5px 0 var(--ink)}.card b{display:block;font-size:20px;margin-bottom:8px}.pill{display:inline-block;border:2px solid var(--ink);border-radius:10px;padding:7px 10px;margin:4px 4px 4px 0;font-weight:800}.event{background:#ffdf55}.motion{background:#55a9ef;color:#fff}.looks{background:#a678df;color:#fff}.control{background:#ffad55}.sense{background:#62c5c9}.data{background:#f39b4e}.code{background:#172033;color:#fff;border-radius:14px;padding:20px;font-family:monospace;font-size:clamp(16px,2vw,22px);line-height:1.55;margin:20px 0}.note{background:#e9f4ff;border-left:8px solid var(--blue);padding:14px 18px;border-radius:10px;margin:18px 0;font-size:18px;line-height:1.45}.warn{background:#fff2c7;border-left:8px solid var(--orange);padding:14px 18px;border-radius:10px;margin:18px 0;font-size:18px;line-height:1.45}ul{font-size:19px;line-height:1.55}.footer{display:flex;justify-content:space-between;align-items:center;margin-top:14px;gap:10px}.btn{border:3px solid var(--ink);background:var(--blue);color:#fff;border-radius:12px;padding:10px 18px;font-size:16px;font-weight:800;cursor:pointer;box-shadow:4px 4px 0 var(--ink)}.btn:active{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink)}.counter{font-weight:800;color:var(--muted)}.quiz button{display:block;width:100%;text-align:left;border:2px solid var(--ink);background:white;border-radius:10px;padding:12px;margin:8px 0;font-size:17px;cursor:pointer}.quiz button.correct{background:#c9f4d7}.quiz button.wrong{background:#ffd1d1}.source{font-size:13px;color:var(--muted);margin-top:22px}.source a{color:inherit}@media(max-width:600px){.app{padding:10px}.slide{padding:24px 20px;border-radius:18px;box-shadow:6px 6px 0 var(--ink)}.top{font-size:13px}.footer{position:sticky;bottom:0;background:linear-gradient(transparent,var(--paper) 25%);padding-top:18px}}
-</style></head><body><main class="app"><div class="top"><div class="brand">KALANANTI · SCRATCH SD</div><div class="tag">Bridge 03 · Logika Game</div></div><div class="deck"><section class="slide active" data-title="Game membutuhkan input"><h2>Game membutuhkan input</h2><p class="lead">Game terasa interaktif karena program menunggu input pemain: menekan tombol panah, mengeklik Sprite, atau menyentuh objek.</p><div class="code">when [up arrow] key pressed<br>move (10) steps</div></section><section class="slide " data-title="Gerak sambil tombol ditekan"><h2>Gerak sambil tombol ditekan</h2><div class="code">when [up arrow] key pressed<br>repeat until &lt;not key [up arrow] pressed?&gt;<br>  move (10) steps</div><p>Program memeriksa apakah tombol masih ditekan. Ini membuat mobil dapat bergerak dengan lebih halus.</p></section><section class="slide " data-title="Sensing bertanya kepada Stage"><h2>Sensing bertanya kepada Stage</h2><div class="grid"><div class="card"><b>touching [Finish Line]?</b>Apakah mobil menyentuh garis finish?</div><div class="card"><b>touching [Mobil 2]?</b>Apakah dua mobil bertabrakan?</div><div class="card"><b>key [space] pressed?</b>Apakah tombol tertentu sedang ditekan?</div></div><p>Sensing biasanya perlu dicek berulang agar tidak hanya memeriksa satu kali.</p></section><section class="slide " data-title="If membuat aturan game"><h2>If membuat aturan game</h2><div class="code">when green flag clicked<br>forever<br>  if &lt;touching [Finish Line]?&gt; then<br>    say [Aku menang!] for (2) seconds<br>    stop [all]</div><p>Kalimatnya bisa dibaca: <b>jika</b> menyentuh finish, <b>maka</b> jalankan aksi menang.</p></section><section class="slide " data-title="Racing Car: urutan kerja"><h2>Racing Car: urutan kerja</h2><ol><li>Desain sirkuit dan garis finish.</li><li>Desain mobil dan atur arah.</li><li>Program input keyboard dan gerak.</li><li>Duplikasi mobil kedua dan ubah kontrol.</li><li>Tambahkan collision dan feedback menang.</li></ol><div class="quiz card"><b>🧠 Cek pemahaman</b><p>Mengapa pengecekan touching diletakkan di dalam Forever?</p><button data-correct="true">A. Agar diperiksa terus-menerus</button><button data-correct="false">B. Agar Sprite hilang</button><button data-correct="false">C. Agar warna berubah</button><button data-correct="false">D. Agar project tersimpan</button></div></section></div><div class="footer"><button class="btn" id="prev">← Sebelumnya</button><span class="counter">Slide <span id="n">1</span> / <span id="total">5</span></span><button class="btn" id="next">Berikutnya →</button></div></main><script>const ss=[...document.querySelectorAll('.slide')];let i=0;function show(n){i=Math.max(0,Math.min(ss.length-1,n));ss.forEach((s,j)=>s.classList.toggle('active',j===i));document.querySelector('#n').textContent=i+1;document.querySelector('#prev').disabled=i===0;document.querySelector('#next').disabled=i===ss.length-1}document.querySelector('#prev').onclick=()=>show(i-1);document.querySelector('#next').onclick=()=>show(i+1);document.addEventListener('keydown',e=>{if(e.key==='ArrowRight')show(i+1);if(e.key==='ArrowLeft')show(i-1)});document.querySelectorAll('.quiz button').forEach(b=>b.onclick=()=>{b.parentElement.querySelectorAll('button').forEach(x=>x.classList.remove('correct','wrong'));b.classList.add(b.dataset.correct==='true'?'correct':'wrong')});show(0);</script></body></html>
+<!DOCTYPE html><html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Input, Sensing, dan Keputusan di Racing Car</title><style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --yellow: #FFE500;
+            --blue: #00C6FF;
+            --black: #1A1A1A;
+            --white: #FFFFFF;
+            --bg-light: #E8E8E8;
+            --green: #00E676;
+            --pink: #FF9DE2;
+            --red: #FF0055;
+            --purple: #C084FC;
+            --orange: #FF9800;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            background-image: radial-gradient(#bcbcbc 2px, transparent 2px);
+            background-size: 30px 30px;
+            font-family: 'Fredoka', sans-serif;
+            color: var(--black);
+            overflow: hidden;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* App Container (Landscape 16:9 Simulator) */
+        .app-container {
+            position: relative; z-index: 10;
+            width: 98vw; max-width: 1400px;
+            height: 98vh; max-height: 900px;
+            display: flex; flex-direction: column;
+        }
+
+        /* Header Layout */
+        .header {
+            display: flex; justify-content: flex-start; align-items: flex-start;
+            padding: 25px 50px 10px;
+            position: relative;
+            width: 100%;
+        }
+
+        /* Banner Centered at Top */
+        .banner-container { 
+            position: absolute; top: 20px; left: 0; width: 100%;
+            text-align: center; display: flex; flex-direction: column; align-items: center; 
+            z-index: 10; pointer-events: none;
+        }
+        
+        .banner-shape {
+            background-color: var(--blue);
+            padding: 10px 50px;
+            border: 4px solid var(--black);
+            border-radius: 12px;
+            box-shadow: 6px 6px 0px var(--black);
+            display: inline-block;
+        }
+        
+        .banner-text { 
+            font-size: 26px; font-weight: 700; letter-spacing: 2px; color: var(--white); 
+            text-shadow: 2px 2px 0px var(--black), -1px -1px 0px var(--black), 1px -1px 0px var(--black), -1px 1px 0px var(--black), 1px 1px 0px var(--black);
+        }
+        
+        .banner-subtitle {
+            background-color: var(--yellow); 
+            color: var(--black); 
+            padding: 6px 36px; 
+            font-size: 15px; font-weight: 700;
+            border: 3px solid var(--black);
+            border-radius: 20px; 
+            margin-top: -12px; 
+            text-transform: uppercase; letter-spacing: 1px;
+            box-shadow: 4px 4px 0px var(--black);
+            display: inline-block;
+        }
+
+        /* Slides Area */
+        .slides-area {
+            flex: 1; position: relative; margin: 25px 50px 0; perspective: 1200px;
+            min-height: 0; 
+        }
+
+        .slide {
+            position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+            display: none;
+        }
+        
+        .slide.active { 
+            display: block; 
+            animation: popIn 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+        }
+
+        @keyframes popIn {
+            from { opacity: 0; transform: scale(0.96) translateY(15px); }
+            to { opacity: 1; transform: scale(1) translateY(0); }
+        }
+
+        .content-card {
+            background-color: var(--white);
+            border: 4px solid var(--black); 
+            border-radius: 24px;
+            padding: 35px 55px; 
+            box-shadow: 12px 12px 0px var(--black);
+            width: 100%; height: 100%; 
+            overflow-y: auto;
+            display: flex;
+            position: relative;
+        }
+
+        .content-card::-webkit-scrollbar { width: 14px; }
+        .content-card::-webkit-scrollbar-track { background: var(--bg-light); border-left: 3px solid var(--black); border-radius: 0 20px 20px 0; }
+        .content-card::-webkit-scrollbar-thumb { background: var(--blue); border: 3px solid var(--black); border-radius: 10px; }
+
+        /* Decorative corner dot */
+        .content-card::after {
+            content: '';
+            position: absolute;
+            top: -15px; right: 30px;
+            width: 40px; height: 40px;
+            background-color: var(--yellow);
+            border: 3px solid var(--black);
+            border-radius: 50%;
+            box-shadow: 4px 4px 0px var(--black);
+            z-index: 5;
+        }
+
+        /* Inner container */
+        .inner-content {
+            max-width: 960px;
+            margin: auto;
+            width: 100%;
+            position: relative;
+            z-index: 10;
+        }
+
+        .slide-title {
+            font-size: 30px; font-weight: 700; color: var(--black); 
+            margin-bottom: 22px; line-height: 1.3;
+            background-color: var(--yellow);
+            display: inline-block;
+            padding: 8px 24px;
+            border: 3px solid var(--black);
+            border-radius: 12px;
+            box-shadow: 5px 5px 0px var(--black);
+        }
+
+        .slide-text { font-size: 20px; line-height: 1.6; color: var(--black); font-weight: 600; }
+        .slide-text p { margin-bottom: 18px; }
+        .slide-text ul { padding-left: 35px; margin-bottom: 20px; }
+        .slide-text li { margin-bottom: 12px; position: relative; list-style-type: none; }
+        .slide-text li::before {
+            content: '▶';
+            color: var(--blue);
+            position: absolute;
+            left: -30px;
+            font-size: 18px;
+            -webkit-text-stroke: 1px var(--black);
+        }
+        
+        .slide-text strong { 
+            color: var(--black); 
+            background-color: var(--blue); 
+            padding: 2px 10px; 
+            border: 2px solid var(--black);
+            border-radius: 6px; 
+            font-weight: 700; 
+            box-shadow: 2px 2px 0px var(--black);
+            display: inline-block;
+        }
+
+        .quote-box {
+            background-color: var(--yellow); 
+            border: 4px solid var(--black);
+            padding: 18px 26px; 
+            border-radius: 16px; 
+            margin: 22px 0; 
+            font-weight: 700; color: var(--black); font-size: 21px;
+            box-shadow: 6px 6px 0px var(--blue);
+            position: relative;
+        }
+
+        .code-block {
+            background-color: var(--black); 
+            border: 4px solid var(--black); border-radius: 16px;
+            padding: 20px 26px; font-family: 'Consolas', 'Courier New', monospace; font-size: 20px;
+            color: var(--white); overflow-x: auto; margin: 20px 0; 
+            box-shadow: 6px 6px 0px var(--yellow); 
+            line-height: 1.5;
+            text-align: left;
+        }
+
+        /* Real Screenshot Frame */
+        .screenshot-box {
+            margin: 20px 0;
+            background: #FAFAFA;
+            border: 4px solid var(--black);
+            border-radius: 18px;
+            padding: 12px;
+            box-shadow: 8px 8px 0px var(--black);
+            text-align: center;
+        }
+
+        .screenshot-img {
+            width: 100%;
+            max-height: 380px;
+            object-fit: contain;
+            border: 3px solid var(--black);
+            border-radius: 12px;
+            background: #FFFFFF;
+            display: block;
+        }
+
+        .screenshot-caption {
+            margin-top: 10px;
+            font-size: 15px;
+            font-weight: 700;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        /* 2-Column Side-by-Side */
+        .two-column {
+            display: flex;
+            gap: 25px;
+            align-items: flex-start;
+            margin: 20px 0;
+        }
+
+        .two-column > * {
+            flex: 1;
+        }
+
+        /* Tables */
+        .styled-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: var(--white);
+            border: 4px solid var(--black);
+            box-shadow: 6px 6px 0px var(--black);
+            margin: 18px 0;
+            font-size: 17px;
+        }
+
+        .styled-table th {
+            background-color: var(--yellow);
+            color: var(--black);
+            padding: 12px 16px;
+            border: 2px solid var(--black);
+            text-align: left;
+            font-weight: 700;
+        }
+
+        .styled-table td {
+            padding: 10px 16px;
+            border: 2px solid var(--black);
+            font-weight: 600;
+        }
+
+        .styled-table tr:nth-child(even) {
+            background-color: #F8FAFC;
+        }
+
+        /* Card Callout Boxes */
+        .feature-card {
+            background-color: #F0F9FF;
+            border: 3px solid var(--black);
+            border-radius: 14px;
+            padding: 18px;
+            box-shadow: 4px 4px 0px var(--black);
+            margin-bottom: 14px;
+        }
+
+        /* Block Representation Badges */
+        .block-badge {
+            display: inline-block;
+            padding: 6px 14px;
+            border: 3px solid var(--black);
+            border-radius: 10px;
+            font-weight: 700;
+            color: var(--white);
+            box-shadow: 3px 3px 0px var(--black);
+            margin: 4px 0;
+        }
+
+        .block-control { background-color: #DDAA00; color: var(--black); }
+        .block-logic { background-color: #55B535; }
+        .block-math { background-color: #3864B8; }
+        .block-text { background-color: #DE4C8A; }
+        .block-variable { background-color: #E86D1F; }
+        .block-event { background-color: #B58B00; color: var(--black); }
+        .block-color { background-color: #00BCD4; }
+
+        /* Interactive Playground */
+        .playground-card {
+            background: #fdfdfd;
+            border: 4px solid var(--black);
+            border-radius: 16px;
+            padding: 22px;
+            margin: 20px 0;
+            box-shadow: 6px 6px 0px var(--black);
+            text-align: left;
+        }
+
+        .input-text-custom {
+            width: 100%;
+            padding: 12px 18px;
+            font-size: 18px;
+            font-family: inherit;
+            border: 3px solid var(--black);
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+
+        .btn-action-custom {
+            background-color: var(--blue);
+            color: var(--white);
+            font-family: inherit;
+            font-weight: 700;
+            font-size: 18px;
+            padding: 10px 25px;
+            border: 3px solid var(--black);
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 4px 4px 0px var(--black);
+            transition: all 0.1s;
+        }
+
+        .btn-action-custom:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px var(--black);
+            background-color: #00B0E8;
+        }
+
+        .btn-action-custom:active {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0px var(--black);
+        }
+
+        .result-box {
+            margin-top: 15px;
+            background-color: var(--black);
+            color: var(--green);
+            padding: 15px 20px;
+            border-radius: 10px;
+            font-family: 'Consolas', monospace;
+            font-size: 19px;
+            min-height: 50px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Quiz Layout */
+        .quiz-option {
+            background-color: var(--white);
+            border: 3px solid var(--black);
+            border-radius: 12px;
+            padding: 14px 20px;
+            margin: 10px 0;
+            font-weight: 700;
+            font-size: 18px;
+            cursor: pointer;
+            box-shadow: 4px 4px 0px var(--black);
+            transition: all 0.1s;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .quiz-option:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px var(--black);
+            background-color: #F8FAFC;
+        }
+
+        .quiz-option.correct {
+            background-color: var(--green) !important;
+            color: var(--black) !important;
+        }
+
+        .quiz-option.wrong {
+            background-color: var(--red) !important;
+            color: var(--white) !important;
+        }
+
+        /* Navigation Controls */
+        .nav-container {
+            padding: 20px 50px 30px; display: flex; justify-content: space-between; align-items: center;
+            min-height: 90px;
+        }
+
+        .nav-btn {
+            background-color: var(--yellow); 
+            border: 4px solid var(--black);
+            color: var(--black); padding: 12px 35px; border-radius: 30px; cursor: pointer;
+            font-family: 'Fredoka', sans-serif; font-weight: 700; font-size: 18px;
+            transition: all 0.1s; display: flex; align-items: center; gap: 8px;
+            box-shadow: 6px 6px 0px var(--black);
+        }
+
+        .nav-btn:hover:not(:disabled) { 
+            transform: translate(-2px, -2px); box-shadow: 8px 8px 0px var(--black); 
+            background-color: #FFF033;
+        }
+        
+        .nav-btn:active:not(:disabled) {
+            transform: translate(4px, 4px); box-shadow: 2px 2px 0px var(--black);
+        }
+        
+        .nav-btn:disabled { 
+            background-color: #e0e0e0;
+            color: #888;
+            border-color: #888;
+            box-shadow: 2px 2px 0px #888; 
+            transform: translate(2px, 2px); 
+            cursor: not-allowed; 
+        }
+        
+        .counter-group {
+            display: flex; flex-direction: column; align-items: center; gap: 8px;
+            background: var(--white);
+            padding: 10px 28px;
+            border: 4px solid var(--black);
+            border-radius: 24px;
+            box-shadow: 6px 6px 0px var(--black);
+            transform: rotate(1deg);
+        }
+
+        .slide-counter { font-size: 17px; font-weight: 700; color: var(--black); }
+
+        .progress-bar-bg {
+            width: 220px; height: 16px; background-color: var(--bg-light); 
+            border: 3px solid var(--black); border-radius: 10px; overflow: hidden;
+            box-shadow: inset 2px 2px 0px rgba(0,0,0,0.1);
+        }
+        
+        .progress-bar {
+            height: 100%; background-color: var(--blue); 
+            border-right: 3px solid var(--black);
+            transition: width 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+    
+.source{font-size:14px;color:#333;margin-top:18px}.source a{color:#0056b3}.image-note{font-size:15px;font-weight:600;margin-top:8px;color:#333}.screenshot-box img{max-height:330px}.feature-card p,.feature-card li{font-size:18px;line-height:1.5}.mini-card{background:#fff;border:3px solid var(--black);border-radius:14px;padding:16px;box-shadow:4px 4px 0 var(--black);margin-bottom:12px}.mini-card h3{margin:0 0 8px}.two-column{align-items:stretch}.slide-text img{max-width:100%}
+</style></head><body><div class="app-container"><div class="header"><div class="banner-container"><div class="banner-shape"><div id="banner-title" class="banner-text">Game membutuhkan input</div></div><div id="banner-subtitle" class="banner-subtitle">Keyboard · Click · Touch</div></div></div><div class="slides-area"><div class="slide" data-title="Game membutuhkan input" data-subtitle="Keyboard · Click · Touch"><div class="content-card"><div class="inner-content"><h2 class="slide-title">Game membutuhkan input</h2><div class="slide-text"><p>Game menjadi interaktif karena program merespons tombol panah, klik, atau sentuhan objek.</p><div class="screenshot-box"><img src="../assets/scratch/cl-event-blocks.png" alt="Blok Events Scratch" class="screenshot-img"><div class="screenshot-caption">🖼️ Events memulai respons terhadap input</div></div></div></div></div></div><div class="slide" data-title="Gerak dan pengulangan" data-subtitle="Repeat Until"><div class="content-card"><div class="inner-content"><h2 class="slide-title">Gerak dan pengulangan</h2><div class="slide-text"><p>Untuk membuat mobil terus bergerak selama tombol ditekan, gunakan event keyboard dan loop. Ambil blok langsung dari palette Scratch.</p><div class="screenshot-box"><img src="../assets/scratch/cl-control-blocks.png" alt="Blok Control Scratch" class="screenshot-img"><div class="screenshot-caption">🖼️ Control mengatur pengulangan gerak</div></div></div></div></div></div><div class="slide" data-title="Sensing bertanya kepada game" data-subtitle="Touching · Key Pressed"><div class="content-card"><div class="inner-content"><h2 class="slide-title">Sensing bertanya kepada game</h2><div class="slide-text"><p>Sensing memeriksa apa yang sedang terjadi di Stage: apakah menyentuh finish, mobil lain, atau tombol tertentu.</p><div class="screenshot-box"><img src="../assets/scratch/cl-sensing-blocks.png" alt="Blok Sensing Scratch" class="screenshot-img"><div class="screenshot-caption">🖼️ Sensing mendeteksi interaksi</div></div></div></div></div></div><div class="slide" data-title="If membuat aturan" data-subtitle="Condition · Feedback"><div class="content-card"><div class="inner-content"><h2 class="slide-title">If membuat aturan</h2><div class="slide-text"><p>Logikanya: <b>jika</b> menyentuh garis finish, <b>maka</b> tampilkan menang. Pengecekan yang terus berjalan ditempatkan di dalam loop.</p><div class="screenshot-box"><img src="../assets/scratch/cl-sensing-blocks.png" alt="Blok Sensing Scratch" class="screenshot-img"><div class="screenshot-caption">🖼️ Gunakan Sensing sebagai kondisi</div></div><div class="feature-card quiz"><h3>🧠 Cek pemahaman</h3><p>Mengapa collision perlu dicek berulang?</p><button class="quiz-option" onclick="this.parentElement.querySelectorAll('.quiz-option').forEach(x=>x.classList.remove('correct','wrong'));this.classList.add('correct')">A. Agar dicek terus-menerus</button><button class="quiz-option" onclick="this.parentElement.querySelectorAll('.quiz-option').forEach(x=>x.classList.remove('correct','wrong'));this.classList.add('wrong')">B. Agar Sprite hilang</button><button class="quiz-option" onclick="this.parentElement.querySelectorAll('.quiz-option').forEach(x=>x.classList.remove('correct','wrong'));this.classList.add('wrong')">C. Agar warna berubah</button><button class="quiz-option" onclick="this.parentElement.querySelectorAll('.quiz-option').forEach(x=>x.classList.remove('correct','wrong'));this.classList.add('wrong')">D. Agar project tersimpan</button></div></div></div></div></div><div class="slide" data-title="Racing Car: urutan kerja" data-subtitle="Assets → Input → Logic"><div class="content-card"><div class="inner-content"><h2 class="slide-title">Racing Car: urutan kerja</h2><div class="slide-text"><ol><li>Desain sirkuit dan mobil.</li><li>Program input keyboard dan gerak.</li><li>Duplikasi mobil kedua.</li><li>Tambahkan finish line.</li><li>Tambahkan collision dan feedback menang.</li></ol></div></div></div></div></div><div class="nav-container"><button id="btnPrev" class="nav-btn" disabled>← Prev</button><div class="counter-group"><div class="slide-counter">Slide <span id="counter">1</span> dari <span id="totalSlides">5</span></div><div class="progress-bar-bg"><div id="bar" class="progress-bar" style="width:6.25%"></div></div></div><button id="btnNext" class="nav-btn">Next →</button></div></div><script>const slides=document.querySelectorAll('.slide'),bar=document.getElementById('bar'),counter=document.getElementById('counter'),btnPrev=document.getElementById('btnPrev'),btnNext=document.getElementById('btnNext');let currentSlide=0;function showSlide(index){if(index<0)index=0;if(index>=slides.length)index=slides.length-1;slides.forEach(s=>s.classList.remove('active'));currentSlide=index;slides[currentSlide].classList.add('active');const c=slides[currentSlide].querySelector('.content-card');if(c)c.scrollTo(0,0);btnPrev.disabled=currentSlide===0;btnNext.disabled=currentSlide===slides.length-1;counter.innerText=currentSlide+1;bar.style.width=((currentSlide+1)/slides.length*100)+'%';document.getElementById('banner-title').innerText=slides[currentSlide].dataset.title;document.getElementById('banner-subtitle').innerText=slides[currentSlide].dataset.subtitle}btnNext.onclick=()=>showSlide(currentSlide+1);btnPrev.onclick=()=>showSlide(currentSlide-1);document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key===' ')showSlide(currentSlide+1);if(e.key==='ArrowLeft')showSlide(currentSlide-1)});showSlide(0);</script></body></html>
