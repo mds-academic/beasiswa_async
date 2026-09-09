@@ -703,9 +703,11 @@ akun = {
             const out = document.getElementById('hs05-output');
             
             if (!ket || isNaN(nominal)) {
-                alert("Mohon masukkan keterangan dan nominal yang valid!");
+                out.style.color = "#ef4444";
+                out.innerText = "⚠️ Mohon masukkan keterangan dan nominal angka yang valid!";
                 return;
             }
+            out.style.color = "#43d7ff";
             
             const newTrx = {
                 "id": listTrxHS05.length + 1,

@@ -678,3 +678,38 @@ Kode/data pembaruan tidak diubah. Dokumentasi audit dicatat dalam commit `9aca1f
 
 ini ada audit terbaru coba di cek apakah udah sesuai"
 
+### User Request (Turn 2026-09-09, follow-up)
+
+"iya perbaiki,, sama ini ada beberapa notifikasi yang kok dia masi pake alert aku gamau pake alert aku mau kamu bikin modal alert sendiri yah , misalnya kaya ada ni materu nya belum seelsa itab videonya dia buka tab selanjutnya harusnya ada button ituu"
+
+### Status / Action
+- **implemented** — Telah diperbaiki secara komprehensif:
+  1. Menghapus seluruh 7 pemanggilan `window.alert()` browser bawaan dan menggantinya dengan In-App Skeuomorphic Modal Alert `#app-alert-modal` (`.app-alert-dialog`).
+  2. Menambahkan tombol aksi langsung `[▶ Lanjutkan Nonton Video]` pada modal alert saat siswa mencoba mengklik materi selanjutnya padahal materi berjalan belum selesai.
+  3. Memperbaiki normalisasi jawaban kuis (`normalizeQuizAnswer`) untuk format `"A"`, `"B"`, `"C"`, `"D"`, boolean, dan angka integer.
+  4. Menangani pembacaan kontrak progress server `res.progress` Apps Script secara aditif tanpa mereset progres lokal.
+  5. Menghitung watch completion video terhadap `endSeconds` segmen kurasi dan meng-clamp seekbar serta bookmark ke rentang materi.
+  6. Mengganti istilah Sandbox menjadi Slide di HTML, CSS, dan JS, serta mengeliminasi fallback bridge liar.
+  7. Sinkronisasi identik dari `src/` ke `docs/`.
+  8. Verifikasi Playwright end-to-end 8/8 PASS (`scratch/test_revision_features.py`).
+
+### Assistant Response
+Perbaikan komprehensif terhadap seluruh temuan audit blocker dan implementasi modal alert in-app telah selesai dikerjakan dan diverifikasi 100% lulus uji otomatis.
+
+1. **In-App Modal Alert Kustom Skeuomorphic (Bebas `window.alert()`)**:
+   - Seluruh 7 panggilan `window.alert()` browser bawaan kini resmi dihilangkan.
+   - Menggunakan dialog modal in-app `#app-alert-modal` bertema skeuomorphic navy-blue gelap dengan illuminated icon ring emas, border bevel timbul 3D, dan tombol aksi bergradien.
+   - Jika siswa mencoba membuka materi selanjutnya padahal materi berjalan belum selesai ditonton atau kuis belum selesai, modal muncul dengan tombol aksi ramah: **`[▶ Lanjutkan Nonton Video]`** yang langsung memfokuskan layar dan melanjutkan pemutaran materi berjalan.
+
+2. **Resolusi Blocker Audit Teknis**:
+   - **P0-01 (Normalisasi Kuis)**: Fungsi `normalizeQuizAnswer()` otomatis menangani string A-D, boolean, dan angka sehingga jawaban kuis di SD, SMP, dan SMA dinilai akurat.
+   - **P0-02 (Kontrak Progress Server)**: Menerima respons map `res.progress` Apps Script dan mempertahankan data progres lokal siswa secara aman.
+   - **P0-04 (Segment Video & Clamping)**: Watch completion dihitung terhadap `endSeconds` batas segmen kurasi, dan slider seekbar serta bookmark di-clamp agar siswa tidak melompat ke luar segmen.
+   - **P1-LMS-01/02 (Slide Pembelajaran & Hapus Fallback)**: Istilah Sandbox diganti total menjadi Slide pada elemen `#slide-container`, `#slide-iframe`, `#tab-mode-slide`, dan fallback bridge acak telah dihapus.
+   - **Sinkronisasi Dokumen**: Folder `src/` disalin identik ke `docs/`.
+
+3. **Verifikasi Otomatis Playwright (8/8 PASS)**:
+   - Seluruh 8 skenario pengujian di `scratch/test_revision_features.py` lulus 100%, membuktikan tidak ada lagi dialog alert native browser dan modal alert kustom muncul serta menutup dengan presisi.
+
+
+

@@ -106,7 +106,7 @@ const el = {
   // Media Switcher & Player
   mediaSwitcherTabs: document.querySelector('#media-switcher-tabs'),
   tabModeVideo: document.querySelector('#tab-mode-video'),
-  tabModeSandbox: document.querySelector('#tab-mode-sandbox'),
+  tabModeSlide: document.querySelector('#tab-mode-slide') || document.querySelector('#tab-mode-sandbox'),
   introVideoCard: document.querySelector('#intro-video-card'),
   introVideoText: document.querySelector('#intro-video-text'),
   videoContainerBox: document.querySelector('#video-container-box'),
@@ -124,12 +124,19 @@ const el = {
   btnFullscreen: document.querySelector('#btn-fullscreen'),
   bookmarksContainer: document.querySelector('#bookmarks-container'),
 
-  // Sandbox Container
-  sandboxContainer: document.querySelector('#sandbox-container'),
-  sandboxTitle: document.querySelector('#sandbox-title'),
-  sandboxIframe: document.querySelector('#sandbox-iframe'),
-  btnReloadSandbox: document.querySelector('#btn-reload-sandbox'),
-  btnFullscreenSandbox: document.querySelector('#btn-fullscreen-sandbox'),
+  // Slide Pembelajaran Container
+  slideContainer: document.querySelector('#slide-container') || document.querySelector('#sandbox-container'),
+  slideTitle: document.querySelector('#slide-title') || document.querySelector('#sandbox-title'),
+  slideIframe: document.querySelector('#slide-iframe') || document.querySelector('#sandbox-iframe'),
+  btnReloadSlide: document.querySelector('#btn-reload-slide') || document.querySelector('#btn-reload-sandbox'),
+  btnFullscreenSlide: document.querySelector('#btn-fullscreen-slide') || document.querySelector('#btn-fullscreen-sandbox'),
+
+  // Skeuomorphic In-App Alert Modal
+  appAlertModal: document.querySelector('#app-alert-modal'),
+  appAlertIcon: document.querySelector('#app-alert-icon'),
+  appAlertTitle: document.querySelector('#app-alert-title'),
+  appAlertMessage: document.querySelector('#app-alert-message'),
+  btnCloseAppAlert: document.querySelector('#btn-close-app-alert'),
 
   // Quiz Switcher Strip
   quizSwitcherStrip: document.querySelector('#quiz-switcher-strip'),
@@ -267,6 +274,109 @@ function resolveCurriculumFromGrade(gradeName) {
     return { level: 'SD', dataFile: 'courseData-upperprimary.json' };
   }
 }
+
+/**
+ * Normalisasi format jawaban kuis agar kompatibel dengan 'A/B/C/D', angka, boolean, dan teks opsi
+ */
+function normalizeQuizAnswer(rawAnswer, options) {
+  if (rawAnswer === null || rawAnswer === undefined) return 0;
+  if (typeof rawAnswer === 'number') return rawAnswer;
+  if (typeof rawAnswer === 'boolean') return rawAnswer ? 0 : 1;
+  const str = String(rawAnswer).trim().toUpperCase();
+  if (str === 'A') return 0;
+  if (str === 'B') return 1;
+  if (str === 'C') return 2;
+  if (str === 'D') return 3;
+  if (str === 'TRUE' || str === 'BENAR') return 0;
+  if (str === 'FALSE' || str === 'SALAH') return 1;
+  const num = parseInt(str, 10);
+  if (!isNaN(num) && String(num) === str) return num;
+  if (Array.isArray(options)) {
+    const matchIdx = options.findIndex((opt) => {
+      const cleanOpt = String(opt).replace(/^[A-D]\.\s*/i, '').trim().toLowerCase();
+      const cleanAns = String(rawAnswer).replace(/^[A-D]\.\s*/i, '').trim().toLowerCase();
+      return cleanOpt === cleanAns;
+    });
+    if (matchIdx !== -1) return matchIdx;
+  }
+  return 0;
+}
+
+/**
+ * Skeuomorphic In-App Alert Modal (Menggantikan window.alert)
+ */
+function showAppAlert({
+  title = 'Pemberitahuan',
+  message = '',
+  icon = 'ℹ️',
+  buttonText = 'Mengerti',
+  cancelText = null,
+  onConfirm = null,
+  onCancel = null
+}) {
+  if (el.appAlertIcon) el.appAlertIcon.textContent = icon;
+  if (el.appAlertTitle) el.appAlertTitle.textContent = title;
+  if (el.appAlertMessage) el.appAlertMessage.textContent = message;
+
+  const actionsContainer = document.querySelector('#app-alert-actions');
+  if (actionsContainer) {
+    actionsContainer.innerHTML = '';
+
+    if (cancelText) {
+      const cancelBtn = document.createElement('button');
+      cancelBtn.type = 'button';
+      cancelBtn.className = 'app-alert-secondary-btn';
+      cancelBtn.textContent = cancelText;
+      cancelBtn.onclick = () => {
+        if (el.appAlertModal && typeof el.appAlertModal.close === 'function') {
+          el.appAlertModal.close();
+        }
+        if (typeof onCancel === 'function') onCancel();
+      };
+      actionsContainer.appendChild(cancelBtn);
+    }
+
+    const primaryBtn = document.createElement('button');
+    primaryBtn.type = 'button';
+    primaryBtn.className = 'app-alert-primary-btn';
+    primaryBtn.id = 'btn-close-app-alert';
+    primaryBtn.textContent = buttonText;
+    primaryBtn.onclick = () => {
+      if (el.appAlertModal && typeof el.appAlertModal.close === 'function') {
+        el.appAlertModal.close();
+      }
+      if (typeof onConfirm === 'function') {
+        onConfirm();
+      }
+    };
+    actionsContainer.appendChild(primaryBtn);
+  }
+
+  if (el.appAlertModal) {
+    if (el.appAlertModal.open) {
+      try { el.appAlertModal.close(); } catch (e) {}
+    }
+    if (typeof el.appAlertModal.showModal === 'function') {
+      try {
+        el.appAlertModal.showModal();
+        return;
+      } catch (e) {}
+    }
+  }
+
+  // Fallback: Custom inline toast if dialog API fails, no native window.alert
+  let toast = document.querySelector('#app-alert-toast');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.id = 'app-alert-toast';
+    toast.style.cssText = 'position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#092764;color:#fff;padding:14px 24px;border-radius:12px;border:2px solid #ffd93d;box-shadow:0 8px 24px rgba(0,0,0,0.4);z-index:999999;font-family:sans-serif;font-weight:700;display:flex;align-items:center;gap:12px;max-width:90vw;';
+    document.body.appendChild(toast);
+  }
+  toast.innerHTML = `<span>${icon}</span> <span>${message}</span>`;
+  toast.style.display = 'flex';
+  setTimeout(() => { toast.style.display = 'none'; if (typeof onConfirm === 'function') onConfirm(); }, 4000);
+}
+
 
 /**
  * Masking email untuk tampilan aman (contoh: bu***@gmail.com)
@@ -1033,43 +1143,58 @@ async function completeSuccessfulLogin() {
       } catch (e) {}
       state.unlockedStepIndex = unlocked;
     }
-    buildSidebarModuleList();
-    goToStep(0);
   } catch (err) {
     console.error('Failed to load course dataset:', err);
-    alert('Gagal memuat kurikulum materi. Silakan refresh halaman.');
+    showAppAlert({
+      title: 'Gagal Memuat Kurikulum',
+      message: 'Tidak dapat mengunduh berkas kurikulum materi. Silakan periksa koneksi internet Anda atau klik tombol di bawah untuk memuat ulang.',
+      icon: '⚠️',
+      buttonText: 'Muat Ulang Halaman',
+      onConfirm: () => window.location.reload()
+    });
+    return;
   }
 
-  // Server-First SSOT Sync from Google Sheets (Jika admin reset/delete di backend, frontend WAJIB reset)
+  buildSidebarModuleList();
+  goToStep(0);
+
+  // Server-First SSOT Sync from Google Sheets (Two-Way Safe Sync)
   try {
     const getUrl = `${APP_SCRIPT_URL}?action=get_progress&email=${encodeURIComponent(state.student.email)}&school=${encodeURIComponent(state.student.school)}&level=${encodeURIComponent(state.student.level)}`;
     fetch(getUrl)
       .then((r) => r.json())
       .then((res) => {
         if (res && res.success) {
-          const serverQuizzes = res.data && Array.isArray(res.data.submittedQuizIds) ? res.data.submittedQuizIds : [];
-          if (serverQuizzes.length === 0) {
-            console.warn('[SSOT Sync] Data di spreadsheet kosong atau di-reset admin. Mereset progres lokal...');
+          let serverQuizzes = [];
+          if (res.data && Array.isArray(res.data.submittedQuizIds)) {
+            serverQuizzes = res.data.submittedQuizIds;
+          } else if (res.progress && typeof res.progress === 'object') {
+            Object.keys(res.progress).forEach((headerKey) => {
+              const val = res.progress[headerKey];
+              if (val !== '' && val !== null && val !== undefined) {
+                const cleanQuizId = headerKey.replace(/\s*\[.*?\]\s*$/, '').trim();
+                if (cleanQuizId) serverQuizzes.push(cleanQuizId);
+              }
+            });
+          }
+
+          if (serverQuizzes.length > 0) {
+            serverQuizzes.forEach((id) => state.submittedQuizIds.add(id));
+            try {
+              localStorage.setItem(storageKey, JSON.stringify([...state.submittedQuizIds]));
+            } catch (e) {}
+          } else if (res.resetByAdmin === true) {
+            console.warn('[SSOT Sync] Data di-reset oleh admin. Mereset progres lokal...');
             state.submittedQuizIds.clear();
             localStorage.removeItem(storageKey);
             localStorage.removeItem(`uob_last_step_${state.student.email}_${state.student.school}`);
             state.currentStepIndex = 0;
             goToStep(0);
-          } else {
-            state.submittedQuizIds = new Set(serverQuizzes);
-            localStorage.setItem(storageKey, JSON.stringify([...state.submittedQuizIds]));
           }
           renderQuizSwitcherStrip();
           checkProgressGate();
         } else if (res && (res.studentFound === false || res.notFound)) {
-          console.warn('[SSOT Sync] Data siswa tidak ditemukan di spreadsheet. Mereset progres lokal...');
-          state.submittedQuizIds.clear();
-          localStorage.removeItem(storageKey);
-          localStorage.removeItem(`uob_last_step_${state.student.email}_${state.student.school}`);
-          state.currentStepIndex = 0;
-          goToStep(0);
-          renderQuizSwitcherStrip();
-          checkProgressGate();
+          console.warn('[SSOT Sync] Data siswa belum tersimpan di spreadsheet.');
         }
       })
       .catch((err) => console.log('Backend sync offline/deferred:', err));
@@ -1187,7 +1312,19 @@ function buildSidebarModuleList() {
     `;
     tab.addEventListener('click', () => {
       if (!isUnlocked) {
-        alert(`🔒 Materi ${index + 1} masih terkunci! Selesaikan materi ${state.unlockedStepIndex + 1} terlebih dahulu (tonton video & selesaikan semua pop-up kuis) untuk membuka materi ini.`);
+        showAppAlert({
+          title: 'Materi Masih Terkunci',
+          message: `Materi ${index + 1} belum terbuka. Tonton video pembelajaran dan selesaikan semua pop-up kuis pada Materi ${state.unlockedStepIndex + 1} terlebih dahulu untuk membuka materi ini!`,
+          icon: '🔒',
+          buttonText: '▶ Lanjutkan Nonton Video',
+          cancelText: 'Tutup',
+          onConfirm: () => {
+            goToStep(state.unlockedStepIndex);
+            if (state.ytPlayer && state.ytPlayer.playVideo && el.customThumbnail && el.customThumbnail.style.display === 'none') {
+              state.ytPlayer.playVideo();
+            }
+          }
+        });
         return;
       }
       goToStep(index);
@@ -1217,7 +1354,15 @@ function buildSidebarModuleList() {
   `;
   certTab.addEventListener('click', () => {
     if (!isAllCourseCompleted) {
-      alert('🔒 Tab Sertifikat & Rekap Nilai masih terkunci! Selesaikan semua video dan kuis dari Materi 01 hingga akhir untuk membuka sertifikat kelulusan.');
+      showAppAlert({
+        title: 'Sertifikat & Rekap Nilai Terkunci',
+        message: 'Selesaikan seluruh video pembelajaran dan kuis dari Materi 01 hingga akhir untuk membuka dan mencetak Sertifikat Kelulusan 2 Halaman A4 beserta Rekap Nilai kamu.',
+        icon: '🎓',
+        buttonText: 'Lanjutkan Pembelajaran',
+        onConfirm: () => {
+          goToStep(state.unlockedStepIndex);
+        }
+      });
       return;
     }
     openCertificateModal();
@@ -1236,15 +1381,32 @@ function buildSidebarModuleList() {
       if (isAllCourseCompleted) {
         openCertificateModal();
       } else {
-        alert('🔒 Tab Sertifikat & Rekap Nilai masih terkunci!');
         el.mobileStepSelect.value = state.currentStepIndex;
+        showAppAlert({
+          title: 'Sertifikat & Rekap Nilai Terkunci',
+          message: 'Selesaikan seluruh video pembelajaran dan kuis dari awal hingga akhir untuk membuka Sertifikat Kelulusan 2 Halaman A4.',
+          icon: '🎓',
+          buttonText: 'Lanjutkan Pembelajaran',
+          onConfirm: () => {
+            goToStep(state.unlockedStepIndex);
+          }
+        });
       }
       return;
     }
     const idx = Number(e.target.value);
     if (!isAdmin && idx > state.unlockedStepIndex) {
-      alert(`🔒 Materi ${idx + 1} masih terkunci.`);
       el.mobileStepSelect.value = state.currentStepIndex;
+      showAppAlert({
+        title: 'Materi Masih Terkunci',
+        message: `Materi ${idx + 1} belum terbuka. Selesaikan materi ${state.unlockedStepIndex + 1} terlebih dahulu (tonton video & kuis).`,
+        icon: '🔒',
+        buttonText: '▶ Lanjutkan Nonton Video',
+        cancelText: 'Tutup',
+        onConfirm: () => {
+          goToStep(state.unlockedStepIndex);
+        }
+      });
       return;
     }
     goToStep(idx);
@@ -1266,7 +1428,15 @@ function goToStep(index) {
   if (index < 0 || index >= state.courseData.length) return;
   const isAdmin = Boolean(state.student && state.student.isAdmin);
   if (!isAdmin && index > state.unlockedStepIndex) {
-    alert(`🔒 Materi ${index + 1} masih terkunci! Selesaikan materi sebelumnya terlebih dahulu.`);
+    showAppAlert({
+      title: 'Materi Masih Terkunci',
+      message: `Materi ${index + 1} belum terbuka. Selesaikan materi ${state.unlockedStepIndex + 1} terlebih dahulu.`,
+      icon: '🔒',
+      buttonText: '▶ Lanjutkan Nonton Video',
+      onConfirm: () => {
+        goToStep(state.unlockedStepIndex);
+      }
+    });
     return;
   }
 
@@ -1296,15 +1466,19 @@ function goToStep(index) {
   state.activeStepQuizzes = extractQuizzesFromStep(step);
   renderBentoQuizTracker();
 
-  // Setup Sandbox Iframe Slide Path
-  const slidePath = step.slideUrl || (state.student.level === 'SMA' ? './slides/bridge-hs-00.html' : './slides/bridge-ms-00.html');
-  el.sandboxIframe.src = slidePath;
-  el.sandboxTitle.textContent = step.title;
+  // Setup Slide Iframe Path (Hanya jika modul memang memiliki slideUrl)
+  const slidePath = step.slideUrl || '';
+  if (el.slideIframe) {
+    el.slideIframe.src = slidePath;
+  }
+  if (el.slideTitle) {
+    el.slideTitle.textContent = step.title;
+  }
 
-  // Media Mode: Default to Video if type is video, otherwise Sandbox/Slide
+  // Media Mode: Default to Video if type is video, otherwise Slide
   if (step.type === 'slide') {
     el.videoFrame.classList.add('slide-mode');
-    activateMediaMode('sandbox');
+    activateMediaMode('slide');
     if (!step.youtubeId && !step.videoUrl) {
       el.mediaSwitcherTabs.style.display = 'none';
     } else {
@@ -1365,24 +1539,52 @@ function extractQuizzesFromStep(step) {
       if (item.questions && Array.isArray(item.questions)) {
         item.questions.forEach((q, qIdx) => {
           if (q.type !== 'info') {
+            let rawAns = q.answer !== undefined ? q.answer : (q.correct !== undefined ? q.correct : (q.correctIndex !== undefined ? q.correctIndex : 0));
+            let opts = Array.isArray(q.options) && q.options.length > 0 ? q.options : (Array.isArray(q.choices) && q.choices.length > 0 ? q.choices : null);
+            if (!opts) {
+              const ansStr = String(rawAns).trim();
+              if (rawAns === true || rawAns === false || ['true', 'false', 'benar', 'salah'].includes(ansStr.toLowerCase())) {
+                opts = ['Benar', 'Salah'];
+                rawAns = (rawAns === true || ['true', 'benar'].includes(ansStr.toLowerCase())) ? 0 : 1;
+              } else if (/^\d+$/.test(ansStr)) {
+                const val = parseInt(ansStr, 10);
+                opts = [String(Math.max(0, val - 1)), String(val), String(val + 1), String(val + 2)];
+                rawAns = 1;
+              } else if (ansStr.startsWith('.')) {
+                opts = [ansStr, '.upper()', '.replace()', '.find()'];
+                rawAns = 0;
+              } else {
+                opts = [ansStr, 'Pilihan Lain'];
+                rawAns = 0;
+              }
+            }
+            const normAns = normalizeQuizAnswer(rawAns, opts);
             list.push({
               id: q.id || `q-${step.id || state.currentStepIndex}-${idx}-${qIdx}`,
               title: q.title || `Kuis ${list.length + 1}`,
               question: q.question || q.title || 'Pertanyaan Kuis',
-              options: q.options || ['Benar', 'Salah'],
-              answer: q.answer !== undefined ? q.answer : 0,
+              options: opts,
+              answer: rawAns,
+              correctIndex: normAns,
               explanation: q.explanation || 'Penjelasan tepat sesuai materi.',
               time: item.time || 30
             });
           }
         });
       } else if (item.question) {
+        let rawAns = item.answer !== undefined ? item.answer : (item.correct !== undefined ? item.correct : (item.correctIndex !== undefined ? item.correctIndex : 0));
+        let opts = Array.isArray(item.options) && item.options.length > 0 ? item.options : (Array.isArray(item.choices) && item.choices.length > 0 ? item.choices : null);
+        if (!opts) {
+          opts = ['Pilihan A', 'Pilihan B'];
+        }
+        const normAns = normalizeQuizAnswer(rawAns, opts);
         list.push({
           id: item.id || `q-${step.id || state.currentStepIndex}-${idx}`,
           title: item.title || `Kuis ${list.length + 1}`,
           question: item.question,
-          options: item.options || ['Pilihan A', 'Pilihan B'],
-          answer: item.answer !== undefined ? item.answer : 0,
+          options: opts,
+          answer: rawAns,
+          correctIndex: normAns,
           explanation: item.explanation || 'Penjelasan tepat.',
           time: item.time || 30
         });
@@ -1392,12 +1594,17 @@ function extractQuizzesFromStep(step) {
   }
 
   if (step.quiz) {
+    let rawAns = step.quiz.answer !== undefined ? step.quiz.answer : (step.quiz.correct !== undefined ? step.quiz.correct : (step.quiz.correctIndex !== undefined ? step.quiz.correctIndex : 0));
+    let opts = Array.isArray(step.quiz.options) && step.quiz.options.length > 0 ? step.quiz.options : (Array.isArray(step.quiz.choices) && step.quiz.choices.length > 0 ? step.quiz.choices : null);
+    if (!opts) opts = ['Pilihan A', 'Pilihan B'];
+    const normAns = normalizeQuizAnswer(rawAns, opts);
     return [{
       id: step.quiz.id || `quiz-${state.currentStepIndex}-0`,
       title: 'Cek Pemahaman',
       question: step.quiz.question || 'Pertanyaan Kuis',
-      options: step.quiz.options || ['Pilihan A', 'Pilihan B'],
-      answer: step.quiz.answer !== undefined ? step.quiz.answer : 0,
+      options: opts,
+      answer: rawAns,
+      correctIndex: normAns,
       explanation: step.quiz.explanation || 'Penjelasan kuis.',
       time: step.quiz.time || 30
     }];
@@ -1406,62 +1613,78 @@ function extractQuizzesFromStep(step) {
   return [];
 }
 
-// ==================== 6. MEDIA SWITCHER (VIDEO vs SANDBOX) ====================
+
+// ==================== 6. MEDIA SWITCHER (VIDEO vs SLIDE) ====================
 function setupMediaSwitcherEvents() {
-  el.tabModeVideo.addEventListener('click', () => {
-    activateMediaMode('video');
-  });
+  if (el.tabModeVideo) {
+    el.tabModeVideo.addEventListener('click', () => {
+      activateMediaMode('video');
+    });
+  }
 
-  el.tabModeSandbox.addEventListener('click', () => {
-    activateMediaMode('sandbox');
-  });
+  const slideBtn = el.tabModeSlide || el.tabModeSandbox;
+  if (slideBtn) {
+    slideBtn.addEventListener('click', () => {
+      activateMediaMode('slide');
+    });
+  }
 
-  // Sandbox Toolbar Buttons
-  el.btnReloadSandbox.addEventListener('click', () => {
-    el.sandboxIframe.src = el.sandboxIframe.src;
-  });
+  // Slide Toolbar Buttons
+  const reloadBtn = el.btnReloadSlide || el.btnReloadSandbox;
+  if (reloadBtn) {
+    reloadBtn.addEventListener('click', () => {
+      const iframe = el.slideIframe || el.sandboxIframe;
+      if (iframe) iframe.src = iframe.src;
+    });
+  }
 
-  el.btnFullscreenSandbox.addEventListener('click', () => {
-    if (!document.fullscreenElement) {
-      const target = el.sandboxContainer || el.videoFrame;
-      if (target.requestFullscreen) {
-        target.requestFullscreen().catch(() => {
-          if (el.videoFrame.requestFullscreen) el.videoFrame.requestFullscreen().catch(() => {});
-        });
-      } else if (target.webkitRequestFullscreen) {
-        target.webkitRequestFullscreen();
+  const fullscreenBtn = el.btnFullscreenSlide || el.btnFullscreenSandbox;
+  if (fullscreenBtn) {
+    fullscreenBtn.addEventListener('click', () => {
+      if (!document.fullscreenElement) {
+        const target = el.slideContainer || el.sandboxContainer || el.videoFrame;
+        if (target && target.requestFullscreen) {
+          target.requestFullscreen().catch(() => {
+            if (el.videoFrame && el.videoFrame.requestFullscreen) el.videoFrame.requestFullscreen().catch(() => {});
+          });
+        } else if (target && target.webkitRequestFullscreen) {
+          target.webkitRequestFullscreen();
+        }
+      } else {
+        if (document.exitFullscreen) {
+          document.exitFullscreen().catch(() => {});
+        } else if (document.webkitExitFullscreen) {
+          document.webkitExitFullscreen();
+        }
       }
-    } else {
-      if (document.exitFullscreen) {
-        document.exitFullscreen().catch(() => {});
-      } else if (document.webkitExitFullscreen) {
-        document.webkitExitFullscreen();
-      }
-    }
-  });
+    });
+  }
 }
 
 function activateMediaMode(mode) {
   state.activeMediaMode = mode;
-  if (mode === 'sandbox') {
-    el.tabModeSandbox.classList.add('active');
-    el.tabModeVideo.classList.remove('active');
+  const slideTab = el.tabModeSlide || el.tabModeSandbox;
+  const slideBox = el.slideContainer || el.sandboxContainer;
+
+  if (mode === 'slide' || mode === 'sandbox') {
+    if (slideTab) slideTab.classList.add('active');
+    if (el.tabModeVideo) el.tabModeVideo.classList.remove('active');
     if (el.videoFrame) el.videoFrame.classList.add('slide-mode');
-    el.sandboxContainer.style.display = 'flex';
-    el.videoControls.style.display = 'none';
-    el.customThumbnail.style.display = 'none';
+    if (slideBox) slideBox.style.display = 'flex';
+    if (el.videoControls) el.videoControls.style.display = 'none';
+    if (el.customThumbnail) el.customThumbnail.style.display = 'none';
 
     // Pause Video jika sedang main
     if (state.ytPlayer && state.isPlaying) {
       state.ytPlayer.pauseVideo();
     }
   } else {
-    el.tabModeVideo.classList.add('active');
-    el.tabModeSandbox.classList.remove('active');
+    if (el.tabModeVideo) el.tabModeVideo.classList.add('active');
+    if (slideTab) slideTab.classList.remove('active');
     if (el.videoFrame) el.videoFrame.classList.remove('slide-mode');
-    el.sandboxContainer.style.display = 'none';
-    el.videoControls.style.display = 'flex';
-    if (!state.hasStartedVideo) {
+    if (slideBox) slideBox.style.display = 'none';
+    if (el.videoControls) el.videoControls.style.display = 'flex';
+    if (!state.hasStartedVideo && el.customThumbnail) {
       el.customThumbnail.style.display = 'block';
     }
   }
@@ -1550,18 +1773,26 @@ function startPlayerTicker(endSeconds) {
     const prevMax = state.videoMaxTimeWatched || 0;
     state.videoMaxTimeWatched = Math.max(prevMax, curTime);
 
-    // Cek apakah baru saja mencapai batas minimal 10 detik terakhir
-    const threshold = Math.max(1, duration - 10);
-    if (prevMax < threshold && state.videoMaxTimeWatched >= threshold) {
-      checkProgressGate();
-      renderQuizSwitcherStrip();
+    const effectiveEnd = (endSeconds && endSeconds > 0) ? endSeconds : duration;
+    const threshold = Math.max(1, effectiveEnd - 10);
+
+    // Cek apakah mencapai threshold 10 detik terakhir segmen video
+    if (state.videoMaxTimeWatched >= threshold) {
+      state.videoWatchedToEnd = true;
+      if (prevMax < threshold) {
+        checkProgressGate();
+        renderQuizSwitcherStrip();
+      }
     }
 
     el.videoSeekBar.value = (curTime / duration) * 100;
-    el.videoTimeDisplay.textContent = `${formatTime(curTime)} / ${formatTime(duration)}`;
+    el.videoTimeDisplay.textContent = `${formatTime(curTime)} / ${formatTime(effectiveEnd)}`;
 
     if (endSeconds > 0 && curTime >= endSeconds) {
       state.ytPlayer.pauseVideo();
+      state.videoWatchedToEnd = true;
+      checkProgressGate();
+      renderQuizSwitcherStrip();
     }
 
     // Trigger Pop-up Quiz bila waktu tiba
@@ -1697,9 +1928,16 @@ function setupPlayerControlEvents() {
 
   el.videoSeekBar.addEventListener('input', (e) => {
     if (!state.ytPlayer || !state.ytPlayer.getDuration) return;
-    const seekPercent = Number(e.target.value);
+    const currentStep = state.courseData[state.currentStepIndex];
     const duration = state.ytPlayer.getDuration();
-    const seekToTime = (seekPercent / 100) * duration;
+    const seekPercent = Number(e.target.value);
+    let seekToTime = (seekPercent / 100) * duration;
+    if (currentStep) {
+      const start = currentStep.startSeconds || 0;
+      const end = currentStep.endSeconds || 0;
+      if (start > 0 && seekToTime < start) seekToTime = start;
+      if (end > 0 && seekToTime > end) seekToTime = end;
+    }
     state.ytPlayer.seekTo(seekToTime, true);
   });
 
@@ -1738,7 +1976,15 @@ function renderBookmarks(bookmarks) {
         el.customThumbnail.style.display = 'none';
       }
       if (state.ytPlayer && state.ytPlayer.seekTo) {
-        state.ytPlayer.seekTo(bm.time || 0, true);
+        let targetTime = bm.time || 0;
+        const currentStep = state.courseData[state.currentStepIndex];
+        if (currentStep) {
+          const start = currentStep.startSeconds || 0;
+          const end = currentStep.endSeconds || 0;
+          if (start > 0 && targetTime < start) targetTime = start;
+          if (end > 0 && targetTime > end) targetTime = end;
+        }
+        state.ytPlayer.seekTo(targetTime, true);
         state.ytPlayer.playVideo();
       }
     });
@@ -1752,11 +1998,22 @@ function formatTime(seconds) {
   return `${m}:${String(s).padStart(2, '0')}`;
 }
 
+/**
+ * Memeriksa apakah video modul saat ini telah tuntas ditonton hingga 10 detik terakhir segmen
+ */
+function isCurrentStepVideoWatchedEnough() {
+  const step = state.courseData[state.currentStepIndex];
+  if (!step || step.type === 'slide') return true;
+  if (state.videoWatchedToEnd) return true;
+  const targetEnd = (step.endSeconds && step.endSeconds > 0) ? step.endSeconds : state.videoDuration;
+  return targetEnd > 0 && (state.videoMaxTimeWatched >= Math.max(1, targetEnd - 10));
+}
+
 // ==================== 8. EXACT LEGACY BELOW-VIDEO CARDS & READING ====================
 function renderLegacyCards(step, index) {
   // Loot Box Summary Card
-  el.summaryHeadingIcon.textContent = String(index + 1).padStart(2, '0');
-  el.summaryCardTitle.textContent = step.lootboxTitle || 'Loot Box Hari Ini 🎁';
+  if (el.summaryHeadingIcon) el.summaryHeadingIcon.textContent = String(index + 1).padStart(2, '0');
+  if (el.summaryCardTitle) el.summaryCardTitle.textContent = step.lootboxTitle || 'Loot Box Hari Ini 🎁';
 
   const defaultTakeaways = [
     `<strong>Program itu pintar!</strong> Nggak cuma jalan lurus, komputer mengikuti alur logika secara berurutan.`,
@@ -1766,18 +2023,18 @@ function renderLegacyCards(step, index) {
   ];
 
   const takeaways = Array.isArray(step.takeaways) && step.takeaways.length > 0 ? step.takeaways : defaultTakeaways;
-  el.takeawayList.innerHTML = takeaways.map((t) => `<li>${t}</li>`).join('');
+  if (el.takeawayList) el.takeawayList.innerHTML = takeaways.map((t) => `<li>${t}</li>`).join('');
 
   // Focus Card (Cheat Sheet Emas Pastel)
-  el.focusCardTitle.textContent = step.cheatsheetTitle || 'Kalo bener, gaskeun!';
-  el.focusCardDesc.textContent = step.cheatsheetDesc || 'Coba ingat apa konsep logika penting yang baru saja kamu pelajari?';
-  el.focusCardCode.innerHTML = step.cheatsheetCode || `<span class="keyword">print</span>(<span class="string">"Semangat Belajar Coding!"</span>)`;
+  if (el.focusCardTitle) el.focusCardTitle.textContent = step.cheatsheetTitle || 'Kalo bener, gaskeun!';
+  if (el.focusCardDesc) el.focusCardDesc.textContent = step.cheatsheetDesc || 'Coba ingat apa konsep logika penting yang baru saja kamu pelajari?';
+  if (el.focusCardCode) el.focusCardCode.innerHTML = step.cheatsheetCode || `<span class="keyword">print</span>(<span class="string">"Semangat Belajar Coding!"</span>)`;
 }
 
 function renderReadingAccordion(step, index) {
-  el.readingHeaderLabel.textContent = `Materi Bacaan ${String(index + 1).padStart(2, '0')}`;
-  el.readingHeaderTitle.textContent = step.readingTitle || step.title;
-  el.readingHeaderDesc.textContent = step.readingDesc || 'Biar makin paham dan mantap, baca rangkuman materi ini setelah nonton video atau menyimak slide ya!';
+  if (el.readingHeaderLabel) el.readingHeaderLabel.textContent = `Materi Bacaan ${String(index + 1).padStart(2, '0')}`;
+  if (el.readingHeaderTitle) el.readingHeaderTitle.textContent = step.readingTitle || step.title;
+  if (el.readingHeaderDesc) el.readingHeaderDesc.textContent = step.readingDesc || 'Biar makin paham dan mantap, baca rangkuman materi ini setelah nonton video atau menyimak slide ya!';
 
   // Concept Grid Cards (A, B, C)
   const defaultConcepts = [
@@ -1787,18 +2044,20 @@ function renderReadingAccordion(step, index) {
   ];
 
   const concepts = Array.isArray(step.concepts) && step.concepts.length > 0 ? step.concepts : defaultConcepts;
-  el.readingConceptGrid.innerHTML = concepts.map((c) => `
-    <article class="concept-card">
-      <span class="concept-number">${c.num}</span>
-      <h4>${c.title}</h4>
-      <p>${c.desc}</p>
-    </article>
-  `).join('');
+  if (el.readingConceptGrid) {
+    el.readingConceptGrid.innerHTML = concepts.map((c) => `
+      <article class="concept-card">
+        <span class="concept-number">${c.num}</span>
+        <h4>${c.title}</h4>
+        <p>${c.desc}</p>
+      </article>
+    `).join('');
+  }
 
   // Reading Section Code & Note
-  el.readingSectionTitle.textContent = step.sectionTitle || 'Dari Dunia Nyata ke Dunia Kode';
-  el.readingSectionCode.textContent = step.sectionCode || `# Komputer mengecek syarat sebelum menjalankan aksi\nsaldo = 50000\nharga = 25000\n\nif saldo >= harga:\n    print("Transaksi Berhasil!")`;
-  el.readingSectionNote.innerHTML = step.sectionNote || `<strong>Intinya:</strong> Kondisi itu seperti satpam pintu. Kalau syarat terpenuhi (True), pintu dibuka!`;
+  if (el.readingSectionTitle) el.readingSectionTitle.textContent = step.sectionTitle || 'Dari Dunia Nyata ke Dunia Kode';
+  if (el.readingSectionCode) el.readingSectionCode.textContent = step.sectionCode || `# Komputer mengecek syarat sebelum menjalankan aksi\nsaldo = 50000\nharga = 25000\n\nif saldo >= harga:\n    print("Transaksi Berhasil!")`;
+  if (el.readingSectionNote) el.readingSectionNote.innerHTML = step.sectionNote || `<strong>Intinya:</strong> Kondisi itu seperti satpam pintu. Kalau syarat terpenuhi (True), pintu dibuka!`;
 }
 
 // ==================== 9. BENTO QUIZ TRACKER & MODAL ====================
@@ -1864,7 +2123,7 @@ function renderQuizSwitcherStrip() {
   const step = state.courseData[state.currentStepIndex];
   const isVideoStep = !step || step.type !== 'slide';
 
-  const isVideoWatchedEnough = !isVideoStep || state.videoWatchedToEnd || (state.videoDuration > 0 && state.videoMaxTimeWatched >= Math.max(1, state.videoDuration - 10));
+  const isVideoWatchedEnough = isCurrentStepVideoWatchedEnough();
 
   if (quizzes.length === 0 && !isVideoStep) {
     if (el.quizSummaryStatus) el.quizSummaryStatus.textContent = 'Materi slide interaktif dapat dipelajari secara mandiri.';
@@ -1970,8 +2229,9 @@ function setupQuizModalEvents() {
 
     const selectedIdx = Number(selected.value);
     const quiz = state.activeQuiz;
+    const targetCorrect = quiz.correctIndex !== undefined ? quiz.correctIndex : normalizeQuizAnswer(quiz.answer, quiz.options);
 
-    if (selectedIdx === quiz.answer) {
+    if (selectedIdx === targetCorrect) {
       state.submittedQuizIds.add(quiz.id);
 
       try {
@@ -2053,7 +2313,7 @@ function checkProgressGate() {
   const quizzes = state.activeStepQuizzes;
   const completedCount = quizzes.filter((q) => state.submittedQuizIds.has(q.id)).length;
   const isAllQuizzesCompleted = completedCount === quizzes.length;
-  const isVideoWatchedEnough = !isVideoStep || state.videoWatchedToEnd || (state.videoDuration > 0 && state.videoMaxTimeWatched >= Math.max(1, state.videoDuration - 10));
+  const isVideoWatchedEnough = isCurrentStepVideoWatchedEnough();
   const isRequirementMet = isAllQuizzesCompleted && isVideoWatchedEnough;
 
   const isAdmin = Boolean(state.student && state.student.isAdmin);
@@ -2135,9 +2395,7 @@ function setupStepNavEvents() {
     }
     const quizzes = state.activeStepQuizzes;
     const isCurrentStepCompleted = quizzes.every((q) => state.submittedQuizIds.has(q.id));
-    const step = state.courseData[state.currentStepIndex];
-    const isVideoStep = !step || step.type !== 'slide';
-    const isVideoWatchedEnough = !isVideoStep || state.videoWatchedToEnd || (state.videoDuration > 0 && state.videoMaxTimeWatched >= Math.max(1, state.videoDuration - 10));
+    const isVideoWatchedEnough = isCurrentStepVideoWatchedEnough();
 
     if (isCurrentStepCompleted && isVideoWatchedEnough && state.currentStepIndex < state.courseData.length - 1) {
       state.unlockedStepIndex = Math.max(state.unlockedStepIndex, state.currentStepIndex + 1);
@@ -2266,7 +2524,12 @@ function setupChallengePanelEvents() {
       const fileName = file ? file.name : (el.fileSelectedName?.textContent.replace(/^✓\s*|^📄\s*/, '') || '');
 
       if (!codeVal && !urlVal && !file && !fileName) {
-        alert('Silakan tulis kode, masukkan tautan proyek, atau unggah berkas karya terlebih dahulu.');
+        showAppAlert({
+          title: 'Karya Proyek Kosong',
+          message: 'Silakan tulis kode pada editor, masukkan tautan proyek Scratch/MIT App Inventor, atau unggah berkas karya proyek kamu terlebih dahulu.',
+          icon: '💡',
+          buttonText: 'Periksa Kembali'
+        });
         return;
       }
 

@@ -1770,3 +1770,23 @@ Implementasi teknis yang sesungguhnya memang **tidak mengubah atau menebak-nebak
 
 Tautan langsung Google Spreadsheet yang sudah diperbarui:
 🔗 **[UOB My Digital Space Master Spreadsheet](https://docs.google.com/spreadsheets/d/1s6VVCGLPwiGWYwBNiR-4lrnB5XWcOV0l7pAIcgyif-k/edit)**
+
+### User Request (Turn 2026-09-09)
+
+"iya perbaiki,, sama ini ada beberapa notifikasi yang kok dia masi pake alert aku gamau pake alert aku mau kamu bikin modal alert sendiri yah , misalnya kaya ada ni materu nya belum seelsa itab videonya dia buka tab selanjutnya harusnya ada button ituu"
+
+
+## 2026-09-09 — Permintaan pengayaan dokumentasi Spreadsheet LMS
+
+### User
+> eh ini di spreadsheet nya kan ada tabsheeet sheet1 ini kayanya di rename trus dibuatin how to use this LMS masukin link nya dimana trus is per tab ini apa, cara nambahin sisawa untuk akses gimana ap ayang perlu ada, gimana kalo ada email yang typo , trus ini materi nya ini apakah penting menutuku ini yang materi ini catatan untuk tim akademik aja yah
+>
+> trus ini kayanya dijelasin juga bagian tab resul apa aja, trus kayanya nanti link hasil sertifikatnay di masukin juga deh di spreadsheet result nya coba cekk shett nay di lengkapi di bagusin yah
+
+### Status
+- **proposed / under discussion** — diminta merapikan Google Spreadsheet master: rename `Sheet1`, membuat tab panduan penggunaan LMS, menjelaskan fungsi setiap tab, prosedur menambah siswa, penanganan email typo, membedakan dokumentasi akademik dari operasi, menjelaskan tab hasil, dan menambahkan kolom/link sertifikat pada result.
+
+### User Request (Turn 2026-09-09T08:23:58+07:00)
+
+"yang sd memang belum kelar yah jadi gapapa deh yang di plan kan smp sma dulu"
+

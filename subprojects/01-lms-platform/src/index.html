@@ -238,7 +238,7 @@
             <button type="button" class="media-tab active" id="tab-mode-video">
               <span>▶</span> Video Pembelajaran
             </button>
-            <button type="button" class="media-tab" id="tab-mode-sandbox">
+            <button type="button" class="media-tab" id="tab-mode-slide">
               <span>📄</span> Slide Pembelajaran
             </button>
           </div>
@@ -276,20 +276,20 @@
               </div>
 
               <!-- Slide Pembelajaran Mandiri Container (HTML Slides Iframe) -->
-              <div class="sandbox-container" id="sandbox-container" style="display: none;">
-                <div class="sandbox-header-bar">
-                  <div class="sandbox-header-left">
-                    <span class="sandbox-badge">📄 Slide Interaktif</span>
-                    <span class="sandbox-title" id="sandbox-title">Slide Pembelajaran Mandiri</span>
+              <div class="slide-container" id="slide-container" style="display: none;">
+                <div class="slide-header-bar">
+                  <div class="slide-header-left">
+                    <span class="slide-badge">📄 Slide Interaktif</span>
+                    <span class="slide-title" id="slide-title">Slide Pembelajaran Mandiri</span>
                   </div>
-                  <div class="sandbox-actions">
-                    <button type="button" id="btn-reload-sandbox" class="sandbox-btn" title="Muat Ulang Slide">↻ Reset Slide</button>
-                    <button type="button" id="btn-fullscreen-sandbox" class="sandbox-btn" title="Perbesar Layar Penuh">⛶ Layar Penuh</button>
+                  <div class="slide-actions">
+                    <button type="button" id="btn-reload-slide" class="slide-btn" title="Muat Ulang Slide">↻ Reset Slide</button>
+                    <button type="button" id="btn-fullscreen-slide" class="slide-btn" title="Perbesar Layar Penuh">⛶ Layar Penuh</button>
                   </div>
                 </div>
                 <iframe
-                  id="sandbox-iframe"
-                  class="sandbox-iframe"
+                  id="slide-iframe"
+                  class="slide-iframe"
                   src="about:blank"
                   sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
                   allowfullscreen
@@ -499,7 +499,7 @@
           <div class="tip-item">
             <span class="tip-icon">🚀</span>
             <div>
-              <strong>Simulasi & Sandbox Optimal</strong>
+              <strong>Simulasi & Praktik Mandiri Optimal</strong>
               <p>Membuka Google Colab, MIT App Inventor, atau Scratch di tab terpisah berjalan mulus.</p>
             </div>
           </div>
@@ -507,6 +507,24 @@
         <button id="btn-dismiss-advisory" class="modal-primary-btn" type="button">
           Mengerti, Tetap Belajar di HP Ini
         </button>
+      </div>
+    </dialog>
+
+    <!-- ==================== 3b. MODAL: SKEUOMORPHIC IN-APP ALERT (GANTI WINDOW.ALERT) ==================== -->
+    <dialog id="app-alert-modal" class="modal-dialog app-alert-dialog">
+      <div class="modal-card app-alert-card">
+        <div class="app-alert-header">
+          <div class="app-alert-icon-ring" id="app-alert-icon">🔒</div>
+          <h3 class="app-alert-title" id="app-alert-title">Materi Masih Terkunci</h3>
+        </div>
+        <p class="app-alert-message" id="app-alert-message">
+          Selesaikan video dan kuis pada materi sebelumnya terlebih dahulu untuk membuka materi ini.
+        </p>
+        <div class="app-alert-actions" id="app-alert-actions">
+          <button type="button" id="btn-close-app-alert" class="app-alert-primary-btn">
+            Mengerti & Lanjutkan Belajar
+          </button>
+        </div>
       </div>
     </dialog>
 

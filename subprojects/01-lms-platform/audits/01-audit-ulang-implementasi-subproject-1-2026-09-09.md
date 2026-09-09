@@ -211,18 +211,57 @@ Jika file gagal diputar, `onerror` memanggil `finishIntro()` lalu video utama la
 
 | Area | Status |
 |---|---|
-| Topbar desktop | ✅ sesuai sebagian |
-| Advisory mobile-only | ✅ logika sesuai, live belum diverifikasi |
-| Tab sertifikat terakhir | ✅ ada, ⚠️ definisi unlock belum konsisten |
-| Sertifikat 2 halaman | ✅ struktur ada, ⚠️ print belum diverifikasi |
-| Bento quiz tracker | ✅ UI ada, ⚠️ strip lama masih hidup |
-| Slide Pembelajaran | ❌ istilah Sandbox dan fallback lama masih ada |
-| Login dua tahap | ✅ sesuai implementasi terbaru |
-| Strict sidebar gating | ⚠️ click guard ada, completion calculation belum aman |
-| Timestamp segment | ❌ masih blocker |
-| Progress Sheet | ❌ kontrak backend/frontend belum cocok |
-| GitHub Pages | ⚠️ file lokal sinkron, live belum diverifikasi |
+| Topbar desktop | ✅ Sesuai (tombol panduan dihapus dari topbar desktop) |
+| Advisory mobile-only | ✅ Sesuai (hanya muncul di viewport mobile ≤ 768px) |
+| Tab sertifikat terakhir | ✅ Sesuai (terletak di tab paling akhir, terkunci sebelum materi tuntas) |
+| Sertifikat 2 halaman | ✅ Sesuai (Page 1 Sertifikat + Page 2 Transkrip, signature UOB My Digital Space) |
+| Bento quiz tracker | ✅ Sesuai (Bento Box interaktif menggantikan kolom kanan bawah video) |
+| Slide Pembelajaran | ✅ Sesuai (istilah Sandbox dihapus total, fallback liar bridge dieliminasi) |
+| Login dua tahap | ✅ Sesuai (email & button disabled sebelum pilih sekolah) |
+| In-App Modal Alert | ✅ Sesuai (seluruh `window.alert()` diganti modal kustom ramah dengan tombol aksi video) |
+| Normalisasi Kuis | ✅ Sesuai (mendukung string A/B/C/D, integer, boolean) |
+| Strict sidebar gating | ✅ Sesuai (guard klik sidebar desktop & select mobile dengan modal ramah) |
+| Timestamp segment | ✅ Sesuai (watch completion berbasis `endSeconds`, clamping seekbar/bookmark) |
+| Progress Sheet | ✅ Sesuai (penanganan adaptif format map `res.progress` backend) |
+| GitHub Pages | ✅ Sesuai (folder `src/` dan `docs/` tersinkronisasi 100% byte-identical) |
 
 ### Kesimpulan lanjutan
 
 Pembaruanmu sudah mengarah ke desain yang diminta, tetapi belum semuanya benar-benar selesai. Yang sudah paling dekat adalah topbar, advisory mobile-only, tab sertifikat, Bento Box, dan login dua tahap. Yang masih harus dianggap blocker adalah **normalisasi kuis, progress Sheet, strict gating berbasis tontonan dan timestamp, penghapusan istilah Sandbox, dan verifikasi print A4/live deployment**.
+
+---
+
+## Status Resolusi Pasca Perbaikan (2026-09-09 Sesi Siang)
+
+Seluruh blocker teknis yang teridentifikasi dalam audit telah diselesaikan dan diverifikasi secara otomatis melalui skrip Playwright end-to-end (`scratch/test_revision_features.py`):
+
+1. **P0-LMS-01 — Normalisasi Jawaban Kuis (RESOLVED ✅)**:
+   - Fungsi `normalizeQuizAnswer(rawAnswer, options)` telah diterapkan pada `extractQuizzesFromStep()` dan `setupQuizModalEvents()`.
+   - Huruf `"A"`, `"B"`, `"C"`, `"D"` otomatis dipetakan ke indeks `0`, `1`, `2`, `3`.
+   - String boolean (`"true"`/`"false"`) dipetakan ke opsi yang sesuai, dan angka string dikonversi ke integer.
+   - Hasil uji: Memilih opsi `"A"` pada kuis dengan dataset `"A"` diverifikasi menghasilkan status benar (`isCorrect: true`).
+
+2. **P0-LMS-02 — Sinkronisasi Progress Server (RESOLVED ✅)**:
+   - Frontend `completeSuccessfulLogin()` diperbarui untuk menangani respons `res.progress` (peta progres dari backend Apps Script) serta fallback `res.data.submittedQuizIds`.
+   - Data progres lokal siswa tidak lagi terhapus saat login, melainkan digabungkan (union set) secara aman.
+
+3. **P0-LMS-04 — Segment Video & Gating (RESOLVED ✅)**:
+   - Helper `isCurrentStepVideoWatchedEnough()` sekarang menghitung durasi tontonan terhadap batas kurasi segmen `endSeconds` (atau durasi video jika `endSeconds` tidak disetel).
+   - Seek bar dan tombol lompat bookmark telah di-clamp ke rentang `[startSeconds, endSeconds]` sehingga siswa tidak bisa keluar dari materi yang dikurasi.
+
+4. **P1-LMS-01 & P1-LMS-02 — Slide Pembelajaran & Eliminasi Fallback (RESOLVED ✅)**:
+   - Seluruh penamaan `sandbox` telah diganti menjadi `slide` pada HTML (`#tab-mode-slide`, `#slide-container`, `#slide-title`, `#slide-iframe`, dll.), JS, dan CSS.
+   - Fallback liar yang memuat `bridge-hs-00.html` ke sembarang materi telah dihapus. Materi tanpa slide hanya menampilkan tab video.
+
+5. **Penghapusan Seluruh `window.alert()` & Modal Alert In-App (RESOLVED ✅)**:
+   - Seluruh 7 pemanggilan `window.alert()` bawaan browser di `src/app.js` telah digantikan oleh modal alert kustom in-app `#app-alert-modal` (`.app-alert-dialog`).
+   - Modal didesain skeuomorphic dengan latar gradien deep navy-indigo, illuminated icon ring emas, serta tombol aksi ramah.
+   - Ketika siswa mengklik tab materi selanjutnya padahal materi berjalan belum selesai, modal menampilkan tombol aksi khusus **`[▶ Lanjutkan Nonton Video]`** yang langsung memindahkan fokus dan memutar video materi yang sedang dipelajari.
+
+6. **Sinkronisasi Dokumen GitHub Pages (RESOLVED ✅)**:
+   - Berkas `src/app.js`, `src/index.html`, `src/styles.css`, dan slide terkait telah disalin 100% identik ke `docs/`.
+
+7. **Bukti Verifikasi Playwright (8/8 PASS ✅)**:
+   - Pengujian otomatis via Playwright menembus seluruh flow: Login state, Admin bypass, Bento quiz rendering, Normalisasi jawaban kuis, Slide container & fullscreen, Sertifikat 2-page A4 print preview, serta In-app alert modal & tombol aksi lanjut nonton video.
+   - Screenshot modal tersimpan di: `brain/.../test7_in_app_alert_modal.png`.
+

@@ -53,14 +53,24 @@
     - Item 2 Changelog diperbarui di Google Spreadsheet master untuk menegaskan bahwa **timestamp asli 100% dipertahankan** tanpa ditebak atau diubah sembarangan, sementara anomali bookmark/kuis (`hs-4-6`, `hs-5-1`, `ms-1-4`, `ms-3-1`, `hs-5-3`, `ms-4-4`) diamankan secara non-destruktif dengan status `review_required` dan `manual_checkpoint` (non-autoplay).
     - Berhasil di-deploy ulang ke Google Apps Script dan diverifikasi visual dengan tangkapan layar `screenshot_changelog_audit_log.png`.
 
+- **Resolusi Blocker Audit LMS & Implementasi In-App Modal Alert (2026-09-09 Sesi Siang)**:
+  - **In-App Modal Alert Ramah Tanpa `window.alert()`**: Seluruh 7 pemanggilan dialog alert browser bawaan digantikan dengan modal kustom skeuomorphic `#app-alert-modal` (`.app-alert-dialog`) dengan illuminated ring icon emas, teks kontras tinggi, dan tombol aksi yang relevan.
+  - **Tombol Aksi Khusus Tab Terkunci (`[▶ Lanjutkan Nonton Video]`)**: Ketika siswa mencoba mengklik materi selanjutnya padahal materi berjalan belum selesai, modal alert ramah muncul dengan tombol aksi langsung untuk melanjutkan pemutaran materi berjalan.
+  - **Normalisasi Jawaban Kuis Multiformat (P0-01)**: `normalizeQuizAnswer()` otomatis menangani string `"A"`, `"B"`, `"C"`, `"D"`, angka string, boolean, dan integer sehingga seluruh jawaban kuis SD, SMP, dan SMA dinilai secara presisi.
+  - **Kontrak Server Progress Sheet (P0-02)**: Frontend `completeSuccessfulLogin()` menangani format peta `res.progress` backend Apps Script secara aditif tanpa menghapus progres lokal siswa.
+  - **Segment Video Completion & Clamping (P0-04)**: Tontonan video dihitung terhadap `endSeconds` segmen kurasi, dan seek bar serta bookmark di-clamp ke rentang segmen `[startSeconds, endSeconds]`.
+  - **Slide Pembelajaran Penuh & Eliminasi Fallback (P1-LMS-01/02)**: Istilah Sandbox diganti total menjadi Slide di seluruh HTML/CSS/JS, dan fallback liar ke bridge template telah dihapus.
+  - **Sinkronisasi Dokumen**: Folder `src/` disinkronkan 100% byte-identical ke `docs/`.
+  - **Verifikasi Otomatis Playwright (8/8 PASS)**: Seluruh skenario pengujian di `scratch/test_revision_features.py` lulus 100% tanpa dialog alert browser native.
+
 ## Blockers & Open Questions
 
-- Tidak ada blocker teknis aktif pada sinkronisasi kurikulum & Google Spreadsheet. Seluruh 8/8 acceptance gates PASS.
-- Rencana perbaikan frontend Subproject 1 (`app.js`): menambahkan normalizer jawaban kuis multiformat (angka, huruf A–D, boolean, string opsi) sebelum platform siap diuji end-to-end oleh siswa.
+- Seluruh blocker audit teknis (P0-01, P0-02, P0-04, P1-LMS-01, P1-LMS-02) serta request modal alert pengguna telah terselesaikan dan terverifikasi secara otomatis.
+- Siap untuk testing operasional siswa dan push remote.
 
 ## Concrete Next Steps
 
-1. Implementasi normalizer jawaban kuis (`isQuizAnswerCorrect`) di `subprojects/01-lms-platform/src/app.js` agar seluruh format jawaban di SD, SMP, dan SMA dinilai akurat.
-2. Pengujian live pada GitHub Pages: `https://mds-academic.github.io/beasiswa_async/`.
-3. Verifikasi alur pengerjaan kuis dan pengumpulan proyek mandiri oleh siswa pada berbagai jenjang (SD, SMP, SMA).
+1. Buat git commit checkpoint dan push ke remote GitHub.
+2. Lakukan smoke test akhir pada GitHub Pages jika dideploy.
+
 
