@@ -834,7 +834,7 @@
               "status": "verified"
             },
             {
-              "time": 2591,
+              "time": 2570,
               "label": "Memahami Data Privacy",
               "status": "review_required",
               "outOfBounds": true,
@@ -1500,7 +1500,7 @@
               "status": "verified"
             },
             {
-              "time": 803,
+              "time": 790,
               "label": "Mini Project Kalkulator",
               "status": "review_required",
               "outOfBounds": true,
@@ -2148,7 +2148,7 @@
           ],
           "quizzes": [
             {
-              "time": 120,
+              "time": 2741,
               "shown": false,
               "resume": false,
               "title": "ANALISIS DATA TINYDB",

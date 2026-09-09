@@ -2268,7 +2268,7 @@
               "status": "verified"
             },
             {
-              "time": 4421,
+              "time": 4405,
               "label": "Final Project Kehadiran 🏁",
               "status": "review_required",
               "outOfBounds": true,
@@ -2390,7 +2390,7 @@
           "endSeconds": 1102,
           "bookmarks": [
             {
-              "time": 2,
+              "time": 3,
               "label": "Pembuka",
               "status": "review_required",
               "outOfBounds": true,
@@ -3011,7 +3011,7 @@
           },
           "quizzes": [
             {
-              "time": 150,
+              "time": 2381,
               "shown": false,
               "resume": false,
               "title": "PENGELOMPOKAN DATA TRANSAKSI (GROUPING)",

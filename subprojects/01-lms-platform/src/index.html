@@ -528,14 +528,19 @@
       </div>
     </dialog>
 
-    <!-- ==================== 4. MODAL: INTERACTIVE QUIZ (LESS-STRICT) ==================== -->
+    <!-- ==================== 4. MODAL: SKEUOMORPHIC POP-UP QUIZ (BERKARAKTER & 3X ATTEMPTS) ==================== -->
     <dialog id="quiz-modal" class="modal-dialog quiz-modal">
       <div class="modal-card quiz-card">
-        <!-- Header Kuis -->
+        <!-- Header Kuis Skeuomorphic Khas Async Asli -->
         <div class="quiz-modal-header">
+          <div class="quiz-header-badge-icon" id="modal-quiz-icon" aria-hidden="true">🤖</div>
           <div class="quiz-header-title">
-            <span class="quiz-number-tag" id="modal-quiz-number">Kuis 1 dari 2</span>
-            <h3 id="modal-quiz-title">Cek Pemahaman Materi</h3>
+            <div class="quiz-header-top-row">
+              <span class="quiz-kicker">CHECKPOINT PEMAHAMAN SISWA</span>
+              <span class="quiz-attempts-badge" id="modal-quiz-attempts-badge">🎯 Kesempatan: 3 / 3</span>
+            </div>
+            <h3 id="modal-quiz-title">Mini Pop-up Quiz ⏱</h3>
+            <p class="quiz-subtitle" id="modal-quiz-number">Kuis 1 dari 2 · Jawab materi video yang baru kamu tonton</p>
           </div>
           <!-- Tombol Tutup / Nanti Dulu -->
           <button
@@ -549,31 +554,38 @@
           </button>
         </div>
 
-        <!-- Konten Pertanyaan -->
+        <!-- Konten Pertanyaan & Dot Grid Body -->
         <div class="quiz-modal-body">
-          <p class="quiz-question" id="modal-quiz-question">Pertanyaan kuis sedang dimuat...</p>
+          <!-- Pertanyaan Bergaya Kartu Komik Skeuomorphic Kuning -->
+          <div class="quiz-question-card">
+            <div class="quiz-question-badge">❓ Pertanyaan</div>
+            <p class="quiz-question-text" id="modal-quiz-question">Pertanyaan kuis sedang dimuat...</p>
+          </div>
 
-          <!-- Opsi Jawaban Radio Cards -->
+          <!-- Opsi Jawaban Radio Cards Bergaya 3D -->
           <div class="quiz-options-group" id="modal-quiz-options"></div>
 
-          <!-- Alert Pesan Feedback Hasil Jawaban -->
+          <!-- Alert Pesan Feedback Hasil Jawaban Kaya Warna & Karakter -->
           <div class="quiz-feedback-box" id="quiz-feedback-box" hidden>
-            <span class="feedback-icon" id="feedback-icon">!</span>
-            <span class="feedback-text" id="feedback-text"></span>
+            <div class="feedback-header">
+              <span class="feedback-icon" id="feedback-icon">!</span>
+              <strong class="feedback-title" id="feedback-title">Status Jawaban</strong>
+            </div>
+            <div class="feedback-text" id="feedback-text"></div>
           </div>
         </div>
 
-        <!-- Footer Tombol Aksi Kuis -->
+        <!-- Footer Tombol Aksi Kuis 3D -->
         <div class="quiz-modal-footer">
           <button class="btn-rewatch" id="btn-rewatch-quiz" type="button" title="Putar ulang 30 detik sebelum kuis">
             <span>↺</span> Putar Ulang 30 Detik
           </button>
           <div class="quiz-footer-right">
             <button class="btn-defer" id="btn-defer-quiz" type="button">
-              Tutup & Kerjakan Nanti
+              Nanti Dulu
             </button>
             <button class="btn-submit-quiz" id="btn-submit-quiz" type="button">
-              Kirim Jawaban
+              Kirim Jawaban 🚀
             </button>
           </div>
         </div>

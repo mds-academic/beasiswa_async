@@ -41,6 +41,8 @@ const state = {
   videoWatchedToEnd: false,
   watchedStepIndices: new Set(),
   submittedChallenges: new Map(),
+  quizAttempts: new Map(),
+  quizScores: new Map(),
   unlockedStepIndex: 0
 };
 window.state = state;
@@ -189,12 +191,15 @@ const el = {
 
   // Quiz Modal Dialog
   quizModal: document.querySelector('#quiz-modal'),
+  modalQuizIcon: document.querySelector('#modal-quiz-icon'),
+  modalQuizAttemptsBadge: document.querySelector('#modal-quiz-attempts-badge'),
   modalQuizNumber: document.querySelector('#modal-quiz-number'),
   modalQuizTitle: document.querySelector('#modal-quiz-title'),
   modalQuizQuestion: document.querySelector('#modal-quiz-question'),
   modalQuizOptions: document.querySelector('#modal-quiz-options'),
   quizFeedbackBox: document.querySelector('#quiz-feedback-box'),
   feedbackIcon: document.querySelector('#feedback-icon'),
+  feedbackTitle: document.querySelector('#feedback-title'),
   feedbackText: document.querySelector('#feedback-text'),
   btnCloseQuizModal: document.querySelector('#btn-close-quiz-modal'),
   btnRewatchQuiz: document.querySelector('#btn-rewatch-quiz'),
@@ -1105,6 +1110,26 @@ async function completeSuccessfulLogin() {
     console.warn('LocalStorage read error:', e);
   }
 
+  // Restore Quiz Attempts and Scores
+  try {
+    const savedAtt = localStorage.getItem(`uob_quiz_attempts_${state.student.email}_${state.student.school}`);
+    if (savedAtt) {
+      const parsed = JSON.parse(savedAtt);
+      if (Array.isArray(parsed)) {
+        state.quizAttempts = new Map(parsed);
+      }
+    }
+    const savedScores = localStorage.getItem(`uob_quiz_scores_${state.student.email}_${state.student.school}`);
+    if (savedScores) {
+      const parsed = JSON.parse(savedScores);
+      if (Array.isArray(parsed)) {
+        state.quizScores = new Map(parsed);
+      }
+    }
+  } catch (e) {
+    console.warn('LocalStorage quiz attempts/scores read error:', e);
+  }
+
   // Restore Submitted Challenges
   const challengeStoreKey = `uob_challenges_${state.student.email}_${state.student.school}`;
   try {
@@ -1264,6 +1289,8 @@ function setupProfileDropdown() {
 
   el.btnLogout.addEventListener('click', () => {
     state.isLoggedIn = false;
+    state.quizAttempts.clear();
+    state.quizScores.clear();
     teardownPlayer();
     el.siteShell.style.display = 'none';
     el.loginOverlay.style.display = 'flex';
@@ -1712,7 +1739,11 @@ function renderVideoStep(step) {
   state.isIntroPlaying = false;
   el.btnPlayPause.textContent = '▶';
   el.videoSeekBar.value = 0;
-  el.videoTimeDisplay.textContent = '0:00 / 0:00';
+
+  const startSeconds = step.startSeconds || 0;
+  const endSeconds = step.endSeconds || 0;
+  const initialSpan = (endSeconds > startSeconds) ? (endSeconds - startSeconds) : 0;
+  el.videoTimeDisplay.textContent = initialSpan > 0 ? `0:00 / ${formatTime(initialSpan)}` : '0:00 / 0:00';
 
   if (el.introVideo) {
     try {
@@ -1726,7 +1757,7 @@ function renderVideoStep(step) {
   el.thumbnailImg.src = step.thumbnailUrl || `https://img.youtube.com/vi/${vidId}/hqdefault.jpg`;
   el.customThumbnail.style.display = 'block';
 
-  initYouTubePlayer(vidId, step.startSeconds || 0, step.endSeconds || 0);
+  initYouTubePlayer(vidId, startSeconds, endSeconds);
 }
 
 function initYouTubePlayer(videoId, startSeconds, endSeconds) {
@@ -1754,6 +1785,10 @@ function initYouTubePlayer(videoId, startSeconds, endSeconds) {
         state.isPlayerReady = true;
         state.videoDuration = event.target.getDuration() || 0;
         if (startSeconds) event.target.seekTo(startSeconds, true);
+        const effectiveEnd = (endSeconds && endSeconds > 0) ? endSeconds : state.videoDuration;
+        const segmentSpan = Math.max(1, effectiveEnd - startSeconds);
+        el.videoTimeDisplay.textContent = `0:00 / ${formatTime(segmentSpan)}`;
+        el.videoSeekBar.value = 0;
       },
       onStateChange: (event) => {
         if (event.data === YT.PlayerState.PLAYING) {
@@ -1779,6 +1814,9 @@ function initYouTubePlayer(videoId, startSeconds, endSeconds) {
 
 function startPlayerTicker(endSeconds) {
   stopPlayerTicker();
+  const currentStep = state.courseData[state.currentStepIndex];
+  const startSeconds = (currentStep && currentStep.startSeconds > 0) ? currentStep.startSeconds : 0;
+
   state.playerCheckTimer = setInterval(() => {
     if (!state.ytPlayer || !state.ytPlayer.getCurrentTime) return;
     const curTime = state.ytPlayer.getCurrentTime();
@@ -1789,6 +1827,7 @@ function startPlayerTicker(endSeconds) {
     state.videoMaxTimeWatched = Math.max(prevMax, curTime);
 
     const effectiveEnd = (endSeconds && endSeconds > 0) ? endSeconds : duration;
+    const segmentSpan = Math.max(1, effectiveEnd - startSeconds);
     const threshold = Math.max(1, effectiveEnd - 10);
 
     // Cek apakah mencapai threshold 10 detik terakhir segmen video
@@ -1800,8 +1839,12 @@ function startPlayerTicker(endSeconds) {
       }
     }
 
-    el.videoSeekBar.value = (curTime / duration) * 100;
-    el.videoTimeDisplay.textContent = `${formatTime(curTime)} / ${formatTime(effectiveEnd)}`;
+    // Waktu & seekbar dihitung relatif terhadap durasi segmen materi (Bukan raw full YouTube)
+    const elapsedInSegment = Math.max(0, Math.min(curTime - startSeconds, segmentSpan));
+    const progressPercent = Math.max(0, Math.min((elapsedInSegment / segmentSpan) * 100, 100));
+
+    el.videoSeekBar.value = progressPercent;
+    el.videoTimeDisplay.textContent = `${formatTime(elapsedInSegment)} / ${formatTime(segmentSpan)}`;
 
     if (endSeconds > 0 && curTime >= endSeconds) {
       state.ytPlayer.pauseVideo();
@@ -1810,10 +1853,11 @@ function startPlayerTicker(endSeconds) {
       renderQuizSwitcherStrip();
     }
 
-    // Trigger Pop-up Quiz bila waktu tiba
+    // Trigger Pop-up Quiz bila waktu tiba (Mendukung timestamp absolut maupun relatif terhadap segmen)
     state.activeStepQuizzes.forEach((q, idx) => {
       if (!state.submittedQuizIds.has(q.id)) {
-        if (Math.abs(curTime - q.time) < 1.2) {
+        const targetTriggerTime = (startSeconds > 0 && q.time < startSeconds) ? (startSeconds + q.time) : q.time;
+        if (Math.abs(curTime - targetTriggerTime) < 1.4) {
           state.ytPlayer.pauseVideo();
           openQuizModal(idx);
         }
@@ -1946,13 +1990,12 @@ function setupPlayerControlEvents() {
     const currentStep = state.courseData[state.currentStepIndex];
     const duration = state.ytPlayer.getDuration();
     const seekPercent = Number(e.target.value);
-    let seekToTime = (seekPercent / 100) * duration;
-    if (currentStep) {
-      const start = currentStep.startSeconds || 0;
-      const end = currentStep.endSeconds || 0;
-      if (start > 0 && seekToTime < start) seekToTime = start;
-      if (end > 0 && seekToTime > end) seekToTime = end;
-    }
+    const start = (currentStep && currentStep.startSeconds > 0) ? currentStep.startSeconds : 0;
+    const end = (currentStep && currentStep.endSeconds > 0) ? currentStep.endSeconds : duration;
+    const segmentSpan = Math.max(1, end - start);
+    let seekToTime = start + (seekPercent / 100) * segmentSpan;
+    if (seekToTime < start) seekToTime = start;
+    if (seekToTime > end) seekToTime = end;
     state.ytPlayer.seekTo(seekToTime, true);
   });
 
@@ -1980,25 +2023,28 @@ function renderBookmarks(bookmarks) {
   el.bookmarksContainer.innerHTML = '';
   if (!bookmarks || bookmarks.length === 0) return;
 
+  const currentStep = state.courseData[state.currentStepIndex];
+  const start = (currentStep && currentStep.startSeconds > 0) ? currentStep.startSeconds : 0;
+  const end = (currentStep && currentStep.endSeconds > 0) ? currentStep.endSeconds : 0;
+
   bookmarks.forEach((bm) => {
     const btn = document.createElement('button');
     btn.className = 'bookmark-btn';
     btn.type = 'button';
-    btn.innerHTML = `<span class="bookmark-time">${formatTime(bm.time || 0)}</span> <span>${bm.label || 'Bookmark'}</span>`;
+
+    const rawTime = bm.time || 0;
+    const relTime = (start > 0 && rawTime >= start) ? (rawTime - start) : rawTime;
+
+    btn.innerHTML = `<span class="bookmark-time">${formatTime(relTime)}</span> <span>${bm.label || 'Bookmark'}</span>`;
     btn.addEventListener('click', () => {
       activateMediaMode('video');
       if (el.customThumbnail.style.display !== 'none') {
         el.customThumbnail.style.display = 'none';
       }
       if (state.ytPlayer && state.ytPlayer.seekTo) {
-        let targetTime = bm.time || 0;
-        const currentStep = state.courseData[state.currentStepIndex];
-        if (currentStep) {
-          const start = currentStep.startSeconds || 0;
-          const end = currentStep.endSeconds || 0;
-          if (start > 0 && targetTime < start) targetTime = start;
-          if (end > 0 && targetTime > end) targetTime = end;
-        }
+        let targetTime = (start > 0 && rawTime < start) ? (start + rawTime) : rawTime;
+        if (start > 0 && targetTime < start) targetTime = start;
+        if (end > 0 && targetTime > end) targetTime = end;
         state.ytPlayer.seekTo(targetTime, true);
         state.ytPlayer.playVideo();
       }
@@ -2089,6 +2135,58 @@ function renderReadingAccordion(step, index) {
 }
 
 // ==================== 9. BENTO QUIZ TRACKER & MODAL ====================
+function updateQuizAttemptsBadge(quizId, isSubmitted, score) {
+  if (!el.modalQuizAttemptsBadge) return;
+  const attempts = state.quizAttempts.get(quizId) || 0;
+  const finalScore = score !== undefined && score !== null ? score : state.quizScores.get(quizId);
+
+  el.modalQuizAttemptsBadge.className = 'quiz-attempts-badge';
+
+  if (isSubmitted) {
+    if (finalScore === 0 || attempts >= 3) {
+      el.modalQuizAttemptsBadge.classList.add('danger');
+      el.modalQuizAttemptsBadge.textContent = '⚠️ Kesempatan Habis · Nilai: 0';
+      if (el.modalQuizIcon) el.modalQuizIcon.textContent = '🤖';
+    } else {
+      el.modalQuizAttemptsBadge.textContent = '✓ Selesai · Nilai: 100';
+      if (el.modalQuizIcon) el.modalQuizIcon.textContent = '🌟';
+    }
+  } else {
+    if (attempts === 0) {
+      el.modalQuizAttemptsBadge.textContent = '🎯 Kesempatan: 3 / 3';
+      if (el.modalQuizIcon) el.modalQuizIcon.textContent = '🤖';
+    } else if (attempts === 1) {
+      el.modalQuizAttemptsBadge.classList.add('warning');
+      el.modalQuizAttemptsBadge.textContent = '🎯 Kesempatan: 2 / 3';
+      if (el.modalQuizIcon) el.modalQuizIcon.textContent = '🤔';
+    } else if (attempts === 2) {
+      el.modalQuizAttemptsBadge.classList.add('danger');
+      el.modalQuizAttemptsBadge.textContent = '⚠️ Kesempatan Terakhir: 1 / 3';
+      if (el.modalQuizIcon) el.modalQuizIcon.textContent = '🚨';
+    } else {
+      el.modalQuizAttemptsBadge.classList.add('danger');
+      el.modalQuizAttemptsBadge.textContent = '⚠️ Batas Tercapai: 0 / 3';
+      if (el.modalQuizIcon) el.modalQuizIcon.textContent = '🤖';
+    }
+  }
+}
+
+function showQuizFeedback(msg, type, title) {
+  if (!el.quizFeedbackBox) return;
+  el.quizFeedbackBox.hidden = false;
+  el.quizFeedbackBox.className = `quiz-feedback-box ${type}`;
+  if (el.feedbackIcon) {
+    el.feedbackIcon.textContent = type === 'success' ? '🎉' : type === 'limit-reached' ? '⚠️' : '❌';
+  }
+  if (el.feedbackTitle) {
+    el.feedbackTitle.textContent =
+      title || (type === 'success' ? 'Jawaban Benar!' : type === 'limit-reached' ? 'Batas Percobaan Habis (3/3)' : 'Jawaban Belum Tepat');
+  }
+  if (el.feedbackText) {
+    el.feedbackText.innerHTML = msg;
+  }
+}
+
 function renderBentoQuizTracker() {
   if (!el.bentoQuizList) return;
   el.bentoQuizList.innerHTML = '';
@@ -2111,13 +2209,43 @@ function renderBentoQuizTracker() {
     return;
   }
 
+  const currentStep = state.courseData[state.currentStepIndex];
+  const start = (currentStep && currentStep.startSeconds > 0) ? currentStep.startSeconds : 0;
+
   quizzes.forEach((quiz, i) => {
     const isDone = state.submittedQuizIds.has(quiz.id);
+    const score = state.quizScores.get(quiz.id);
+    const attempts = state.quizAttempts.get(quiz.id) || 0;
     const item = document.createElement('div');
     item.className = 'bento-quiz-item';
 
-    const timeLabel = quiz.time ? formatTime(quiz.time) : '';
+    let relTime = quiz.time;
+    if (quiz.time !== undefined && quiz.time !== null) {
+      relTime = (start > 0 && quiz.time >= start) ? (quiz.time - start) : quiz.time;
+    }
+    const timeLabel = (relTime !== undefined && relTime !== null && relTime >= 0) ? formatTime(relTime) : '';
     const cleanPrompt = (quiz.question || quiz.title || `Kuis ${i + 1}`).replace(/<[^>]*>?/gm, '');
+
+    let badgeHtml = '';
+    let btnLabel = 'Buka Kuis';
+
+    if (isDone) {
+      if (score === 0 || attempts >= 3) {
+        badgeHtml = `<span class="bento-badge-done" style="background:#fef3c7; color:#b45309; border-color:#b45309; box-shadow:2px 2px 0 #b45309;">⚠️ Selesai (Nilai: 0)</span>`;
+        btnLabel = 'Ulas Pembahasan';
+      } else {
+        badgeHtml = `<span class="bento-badge-done">✓ Selesai (100)</span>`;
+        btnLabel = 'Ulas Kuis';
+      }
+    } else {
+      if (attempts > 0) {
+        badgeHtml = `<span class="bento-badge-pending" style="background:#fee2e2; color:#b91c1c; border-color:#b91c1c;">⏳ Coba Lagi (${attempts}/3)</span>`;
+        btnLabel = 'Lanjut Kuis';
+      } else {
+        badgeHtml = `<span class="bento-badge-pending">⏳ Belum</span>`;
+        btnLabel = 'Buka Kuis';
+      }
+    }
 
     item.innerHTML = `
       <div class="bento-quiz-meta">
@@ -2126,11 +2254,9 @@ function renderBentoQuizTracker() {
         <span class="bento-quiz-prompt" title="${cleanPrompt}">${cleanPrompt}</span>
       </div>
       <div class="bento-quiz-actions">
-        <span class="${isDone ? 'bento-badge-done' : 'bento-badge-pending'}">
-          ${isDone ? '✓ Selesai' : '⏳ Belum'}
-        </span>
+        ${badgeHtml}
         <button type="button" class="btn-bento-open-quiz">
-          ${isDone ? 'Ulas Kuis' : 'Buka Kuis'}
+          ${btnLabel}
         </button>
       </div>
     `;
@@ -2154,26 +2280,100 @@ function openQuizModal(quizIndex) {
   state.activeQuiz = quiz;
   state.activeQuizIndex = quizIndex;
 
-  el.modalQuizNumber.textContent = `Kuis ${quizIndex + 1} dari ${state.activeStepQuizzes.length}`;
-  el.modalQuizTitle.textContent = quiz.title || 'Cek Pemahaman Materi';
-  el.modalQuizQuestion.textContent = quiz.question || 'Pertanyaan';
+  const isDone = state.submittedQuizIds.has(quiz.id);
+  const score = state.quizScores.get(quiz.id);
+  const attempts = state.quizAttempts.get(quiz.id) || 0;
+  const targetCorrect = quiz.correctIndex !== undefined ? quiz.correctIndex : normalizeQuizAnswer(quiz.answer, quiz.options);
 
+  if (el.modalQuizNumber) {
+    el.modalQuizNumber.textContent = `Kuis ${quizIndex + 1} dari ${state.activeStepQuizzes.length} · Jawab materi video yang baru kamu tonton`;
+  }
+  if (el.modalQuizTitle) {
+    el.modalQuizTitle.textContent = quiz.title || 'Checkpoint Pemahaman Materi ⏱';
+  }
+  if (el.modalQuizQuestion) {
+    el.modalQuizQuestion.textContent = quiz.question || 'Pertanyaan Kuis';
+  }
+
+  updateQuizAttemptsBadge(quiz.id, isDone, score);
+
+  // Render opsi jawaban bergaya 3D komik dengan alfabet A, B, C, D
   el.modalQuizOptions.innerHTML = '';
   quiz.options.forEach((opt, idx) => {
+    const letter = String.fromCharCode(65 + idx);
     const label = document.createElement('label');
     label.className = 'quiz-option-card';
+
+    if (isDone) {
+      if (idx === targetCorrect) {
+        label.classList.add('correct-highlight');
+      }
+    }
+
     label.innerHTML = `
-      <input type="radio" name="quiz-choice" value="${idx}" class="option-radio" />
+      <input type="radio" name="quiz-choice" value="${idx}" class="option-radio" ${isDone ? 'disabled' : ''} />
+      <span class="option-letter-badge">${letter}</span>
       <span class="option-text">${opt}</span>
     `;
-    label.addEventListener('click', () => {
-      document.querySelectorAll('.quiz-option-card').forEach((c) => c.classList.remove('selected'));
-      label.classList.add('selected');
-    });
+
+    if (!isDone) {
+      label.addEventListener('click', () => {
+        document.querySelectorAll('.quiz-option-card').forEach((c) => {
+          c.classList.remove('selected');
+          c.classList.remove('wrong-highlight');
+        });
+        label.classList.add('selected');
+        const radio = label.querySelector('input[type="radio"]');
+        if (radio) radio.checked = true;
+      });
+    }
     el.modalQuizOptions.appendChild(label);
   });
 
-  el.quizFeedbackBox.hidden = true;
+  // Atur state tombol dan feedback box
+  if (isDone) {
+    if (el.btnRewatchQuiz) el.btnRewatchQuiz.style.display = 'none';
+    if (el.btnDeferQuiz) el.btnDeferQuiz.style.display = 'none';
+    if (el.btnSubmitQuiz) {
+      el.btnSubmitQuiz.classList.add('btn-continue-mode');
+      el.btnSubmitQuiz.innerHTML = 'Tutup & Lanjutkan Belajar ➔';
+    }
+
+    const explanationHtml = quiz.explanation
+      ? `<div class="feedback-key-box"><strong>Pembahasan Materi:</strong><br>${quiz.explanation}</div>`
+      : '';
+
+    if (score === 0 || attempts >= 3) {
+      const msg = `Kuis ini tercatat selesai dengan nilai <strong>0 / 100</strong> karena telah mencapai batas maksimal 3 kali percobaan.<br><br>
+        <strong>Kunci Jawaban yang Benar:</strong> ${String.fromCharCode(65 + targetCorrect)}. ${quiz.options[targetCorrect]}${explanationHtml}`;
+      showQuizFeedback(msg, 'limit-reached', '⚠️ Kesempatan Menjawab Habis (3/3)');
+    } else {
+      const msg = `Hebat! Kuis ini telah kamu selesaikan dengan nilai sempurna (100 / 100).${explanationHtml}`;
+      showQuizFeedback(msg, 'success', '🎉 Kuis Selesai');
+    }
+  } else {
+    if (el.btnRewatchQuiz) {
+      el.btnRewatchQuiz.style.display = 'inline-flex';
+      el.btnRewatchQuiz.classList.remove('pulse-hint');
+    }
+    if (el.btnDeferQuiz) el.btnDeferQuiz.style.display = 'inline-block';
+    if (el.btnSubmitQuiz) {
+      el.btnSubmitQuiz.classList.remove('btn-continue-mode');
+      el.btnSubmitQuiz.innerHTML = 'Kirim Jawaban 🚀';
+    }
+
+    if (attempts > 0) {
+      const remaining = Math.max(0, 3 - attempts);
+      showQuizFeedback(
+        `Kamu sudah mencoba ${attempts} kali. Sisa kesempatan: <strong>${remaining} kali lagi</strong>. Pilih opsi jawaban yang paling tepat ya!`,
+        'error',
+        `Percobaan ke-${attempts + 1} dari 3`
+      );
+    } else {
+      el.quizFeedbackBox.hidden = true;
+    }
+  }
+
   el.quizModal.showModal();
 }
 
@@ -2189,51 +2389,156 @@ function setupQuizModalEvents() {
     closeModal();
     if (state.ytPlayer && state.ytPlayer.getCurrentTime) {
       const cur = state.ytPlayer.getCurrentTime();
-      const targetTime = Math.max(0, cur - 30);
+      const currentStep = state.courseData[state.currentStepIndex];
+      const start = (currentStep && currentStep.startSeconds > 0) ? currentStep.startSeconds : 0;
+      const targetTime = Math.max(start, cur - 30);
       state.ytPlayer.seekTo(targetTime, true);
       state.ytPlayer.playVideo();
     }
   });
 
   el.btnSubmitQuiz.addEventListener('click', () => {
+    const quiz = state.activeQuiz;
+    if (!quiz) return;
+
+    // Jika dalam mode tombol Lanjut / Kuis sudah berstatus selesai, tutup modal dan buka gate
+    if (el.btnSubmitQuiz.classList.contains('btn-continue-mode') || state.submittedQuizIds.has(quiz.id)) {
+      closeModal();
+      renderQuizSwitcherStrip();
+      checkProgressGate();
+      return;
+    }
+
     const selected = document.querySelector('input[name="quiz-choice"]:checked');
     if (!selected) {
-      showQuizFeedback('Silakan pilih salah satu jawaban terlebih dahulu.', 'error');
+      showQuizFeedback('Silakan pilih salah satu opsi jawaban (A, B, C, atau D) terlebih dahulu ya!', 'error', 'Pilih Jawaban Dulu');
       return;
     }
 
     const selectedIdx = Number(selected.value);
-    const quiz = state.activeQuiz;
     const targetCorrect = quiz.correctIndex !== undefined ? quiz.correctIndex : normalizeQuizAnswer(quiz.answer, quiz.options);
 
+    // ==================== JAWABAN BENAR ====================
     if (selectedIdx === targetCorrect) {
       state.submittedQuizIds.add(quiz.id);
+      state.quizScores.set(quiz.id, 100);
+      const attempts = (state.quizAttempts.get(quiz.id) || 0) + 1;
+      state.quizAttempts.set(quiz.id, attempts);
 
+      // Simpan riwayat progres ke LocalStorage
       try {
-        const storageKey = `uob_progress_${state.student.email}_${state.student.school}`;
-        localStorage.setItem(storageKey, JSON.stringify([...state.submittedQuizIds]));
+        const studentEmail = state.student.email;
+        const studentSchool = state.student.school;
+        localStorage.setItem(`uob_progress_${studentEmail}_${studentSchool}`, JSON.stringify([...state.submittedQuizIds]));
+        localStorage.setItem(`uob_quiz_scores_${studentEmail}_${studentSchool}`, JSON.stringify([...state.quizScores]));
+        localStorage.setItem(`uob_quiz_attempts_${studentEmail}_${studentSchool}`, JSON.stringify([...state.quizAttempts]));
       } catch (e) {}
 
       syncProgressToBackend(quiz.id, true, 100);
 
-      showQuizFeedback(`Bagus sekali! Jawabanmu benar. ${quiz.explanation || ''}`, 'success');
+      // Highlight opsi benar & kunci pilihan
+      document.querySelectorAll('.quiz-option-card').forEach((c, idx) => {
+        const radio = c.querySelector('input');
+        if (radio) radio.disabled = true;
+        if (idx === targetCorrect) {
+          c.classList.add('correct-highlight');
+        }
+      });
+
+      updateQuizAttemptsBadge(quiz.id, true, 100);
+
+      const explanationHtml = quiz.explanation
+        ? `<div class="feedback-key-box"><strong>Pembahasan:</strong><br>${quiz.explanation}</div>`
+        : '';
+      const msg = `Luar biasa! Pilihanmu 100% tepat. Nilai kuis ini tercatat: <strong>100 / 100</strong>.${explanationHtml}`;
+      showQuizFeedback(msg, 'success', '🎉 JAWABAN TEPAT! HEBAT SEKALI!');
+
+      if (el.btnRewatchQuiz) el.btnRewatchQuiz.style.display = 'none';
+      if (el.btnDeferQuiz) el.btnDeferQuiz.style.display = 'none';
+      el.btnSubmitQuiz.innerHTML = 'Lanjutkan Misi Belajar ➔';
+      el.btnSubmitQuiz.classList.add('btn-continue-mode');
+
       renderQuizSwitcherStrip();
       checkProgressGate();
 
-      setTimeout(() => {
-        closeModal();
-      }, 1600);
+    // ==================== JAWABAN SALAH ====================
     } else {
-      showQuizFeedback('Jawaban belum tepat. Coba baca atau tonton ulang penjelasannya ya.', 'error');
+      const currentAtt = (state.quizAttempts.get(quiz.id) || 0) + 1;
+      state.quizAttempts.set(quiz.id, currentAtt);
+
+      try {
+        const studentEmail = state.student.email;
+        const studentSchool = state.student.school;
+        localStorage.setItem(`uob_quiz_attempts_${studentEmail}_${studentSchool}`, JSON.stringify([...state.quizAttempts]));
+      } catch (e) {}
+
+      const selectedCard = selected.closest('.quiz-option-card');
+      if (selectedCard) {
+        selectedCard.classList.add('wrong-highlight');
+      }
+
+      // KASUS A: Masih ada kesempatan (Percobaan 1 atau 2)
+      if (currentAtt < 3) {
+        const sisa = 3 - currentAtt;
+        updateQuizAttemptsBadge(quiz.id, false, null);
+
+        const msg = `Jawabanmu belum tepat. Kamu masih memiliki <strong>${sisa} kali kesempatan lagi</strong>.<br><br>
+          Yuk periksa kembali materi video atau klik tombol <strong>"↺ Putar Ulang 30 Detik"</strong> di bawah untuk menyimak penjelasannya lagi!`;
+        showQuizFeedback(msg, 'error', `❌ Jawaban Belum Tepat (Percobaan ${currentAtt} dari 3)`);
+
+        if (el.btnRewatchQuiz) {
+          el.btnRewatchQuiz.classList.add('pulse-hint');
+        }
+
+      // KASUS B: Batas 3x Tercapai (Percobaan ke-3 SALAH)
+      // Auto-save nilai 0, tandai kuis selesai agar tidak mentok, beri tahu siswa & tampilkan kunci jawaban
+      } else {
+        state.quizScores.set(quiz.id, 0);
+        state.submittedQuizIds.add(quiz.id);
+
+        try {
+          const studentEmail = state.student.email;
+          const studentSchool = state.student.school;
+          localStorage.setItem(`uob_progress_${studentEmail}_${studentSchool}`, JSON.stringify([...state.submittedQuizIds]));
+          localStorage.setItem(`uob_quiz_scores_${studentEmail}_${studentSchool}`, JSON.stringify([...state.quizScores]));
+          localStorage.setItem(`uob_quiz_attempts_${studentEmail}_${studentSchool}`, JSON.stringify([...state.quizAttempts]));
+        } catch (e) {}
+
+        syncProgressToBackend(quiz.id, false, 0);
+
+        // Kunci semua opsi & sorot kunci jawaban yang benar
+        document.querySelectorAll('.quiz-option-card').forEach((c, idx) => {
+          const radio = c.querySelector('input');
+          if (radio) radio.disabled = true;
+          if (idx === targetCorrect) {
+            c.classList.add('correct-highlight');
+          }
+        });
+
+        updateQuizAttemptsBadge(quiz.id, true, 0);
+
+        const explanationHtml = quiz.explanation
+          ? `<div class="feedback-key-box"><strong>Pembahasan Materi:</strong><br>${quiz.explanation}</div>`
+          : '';
+        const msg = `<p style="margin: 0 0 8px 0;">Nilai kuis ini tercatat: <strong>0 / 100</strong> karena telah mencapai batas maksimal 3 kali percobaan.</p>
+          <p style="margin: 0 0 10px 0;">Jangan berkecil hati! Kuis ini sekarang <strong>telah dianggap selesai</strong> agar kamu dapat membuka materi berikutnya dan menuntaskan pembelajaranmu.</p>
+          <div class="feedback-key-box">
+            <strong>Kunci Jawaban yang Benar:</strong> ${String.fromCharCode(65 + targetCorrect)}. ${quiz.options[targetCorrect]}<br>
+            ${quiz.explanation ? `<div style="margin-top: 6px;"><strong>Pembahasan:</strong> ${quiz.explanation}</div>` : ''}
+          </div>`;
+
+        showQuizFeedback(msg, 'limit-reached', '⚠️ Kesempatan Menjawab Habis (3/3)');
+
+        if (el.btnRewatchQuiz) el.btnRewatchQuiz.style.display = 'none';
+        if (el.btnDeferQuiz) el.btnDeferQuiz.style.display = 'none';
+        el.btnSubmitQuiz.innerHTML = 'Lanjutkan Misi Belajar ➔';
+        el.btnSubmitQuiz.classList.add('btn-continue-mode');
+
+        renderQuizSwitcherStrip();
+        checkProgressGate();
+      }
     }
   });
-}
-
-function showQuizFeedback(msg, type) {
-  el.quizFeedbackBox.hidden = false;
-  el.quizFeedbackBox.className = `quiz-feedback-box ${type}`;
-  el.feedbackIcon.textContent = type === 'success' ? '✓' : '!';
-  el.feedbackText.textContent = msg;
 }
 
 // ==================== 10. PROGRESS LOCK GATE ====================
@@ -2583,23 +2888,31 @@ function openCertificateModal() {
   // Calculate statistics
   let totalQuizzes = 0;
   let passedQuizzes = 0;
+  let totalScoreEarned = 0;
+  let completedQuizzes = 0;
 
   state.courseData.forEach((step) => {
     const qList = extractQuizzesFromStep(step);
     totalQuizzes += qList.length;
     qList.forEach((q) => {
       if (state.submittedQuizIds.has(q.id)) {
-        passedQuizzes++;
+        completedQuizzes++;
+        const score = state.quizScores.get(q.id);
+        const earned = score !== undefined && score !== null ? score : 100;
+        totalScoreEarned += earned;
+        if (earned > 0) {
+          passedQuizzes++;
+        }
       }
     });
   });
 
-  const accuracy = totalQuizzes > 0 ? Math.round((passedQuizzes / totalQuizzes) * 100) : 100;
+  const accuracy = totalQuizzes > 0 ? Math.round(totalScoreEarned / totalQuizzes) : 100;
   const challengeCount = state.submittedChallenges ? state.submittedChallenges.size : 0;
-  const isCompleted = passedQuizzes >= Math.max(1, Math.floor(totalQuizzes * 0.7));
+  const isCompleted = completedQuizzes >= totalQuizzes;
 
   // Update Score Report Grid
-  if (el.reportQuizzesCount) el.reportQuizzesCount.textContent = `${passedQuizzes} / ${totalQuizzes}`;
+  if (el.reportQuizzesCount) el.reportQuizzesCount.textContent = `${completedQuizzes} / ${totalQuizzes}`;
   if (el.reportAccuracy) el.reportAccuracy.textContent = `${accuracy}%`;
   if (el.reportChallengesCount) el.reportChallengesCount.textContent = `${challengeCount}`;
   if (el.reportStatus) {
