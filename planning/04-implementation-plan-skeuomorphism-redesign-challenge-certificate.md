@@ -1,6 +1,6 @@
-# Implementation Plan: Skeuomorphism Redesign, Mobile Advisory, Optional Challenges, Certificate & Server-First Sync
+# Implementation Plan: Skeuomorphism Redesign, 2-Page A4 Certificate & Transcript, Bento Quiz Tracker, Slide View & Strict Gating
 
-Dokumen rencana implementasi ini merinci transformasi visual dan logika platform LMS **UOB My Digital Space** berdasarkan 5 poin arahan terbaru dari pengguna.
+Dokumen rencana implementasi ini merinci transformasi visual dan logika platform LMS **UOB My Digital Space** berdasarkan arahan dan konfirmasi pengguna.
 
 ---
 
@@ -8,101 +8,69 @@ Dokumen rencana implementasi ini merinci transformasi visual dan logika platform
 
 | No | Poin Kebutuhan | Solusi Arsitektur & Implementasi |
 |---|---|---|
-| **3** | **Mobile Video Layout & Alert Modal Pengalaman Belajar** | - Responsivitas penuh pada kontainer video 16:9, strip tracker, dan kontrol bar dengan touch target minimal 44x44px.<br>- Modal dialog otomatis saat dibuka di mobile (`viewport width <= 768px`) dengan bahasa sopan dan ramah merekomendasikan Laptop/Tablet untuk kenyamanan koding dan layar lega.<br>- Tombol dismiss *"Mengerti, Tetap Belajar di HP Ini"* dengan penyimpanan session. |
-| **4** | **Redesign Skeuomorphism & Penggantian Font (Buang Fredoka)** | - Menghilangkan kesan *"AI Slop"* (flat neo-brutalisme generik) dan mengganti font kartun `Fredoka` menjadi **Plus Jakarta Sans** (Heading berkarakter premium & modern tech) dan **Inter** (Body text tajam & nyaman dibaca).<br>- Tampilan **Skeuomorphic Realistis**: Panel fisik beveled, tombol fisik bertingkat (top-light highlight, gradient permukaan, tactile active state, deep drop-shadow), bezel player perangkat nyata, indikator LED menyala, dan aksen logam/akrilik tactile. |
-| **5** | **Mini Project sebagai Challenge Opsional (Bisa Di-skip)** | - Mini project tidak lagi memblokir navigasi modul (*non-gating*). Siswa bebas melewatinya kapan saja.<br>- Disediakan kartu **Tantangan Praktik Mandiri (Challenge)** dengan form pengumpulan tugas sesuai jenjang:<br>  • **SMA**: Input kode langsung di Mini IDE interaktif atau link Google Colab / GitHub.<br>  • **SMP**: Input link MIT App Inventor Gallery / Drive atau upload file `.aia` / `.apk`.<br>  • **SD**: Input link proyek Scratch atau upload file `.sb3`.<br>- Hasil pengumpulan challenge dicatat ke backend & progres siswa. |
-| **6** | **Score Report & Sertifikat Kelulusan Digital Resmi** | - Pada materi terakhir / penyelesaian misi (atau tombol rekap khusus):<br>  • **Score Report**: Akurasi jawaban kuis pop-up, jumlah kuis selesai, dan status challenge mandiri yang dikumpulkan.<br>  • **Sertifikat Kelulusan Resmi Digital**: Desain skeuomorphic premium berlatar navy/emas resmi (UOB MDS x Ruangguru/Kalananti), mencantumkan nama siswa, sekolah, rombel, jenjang, nomor seri unik, stempel emas timbul (*embossed gold seal*), dan tombol cetak/simpan PDF (`window.print()` dengan layout cetak bersih). |
-| **7** | **Logika Sinkronisasi Server-First (Backend sebagai SSOT)** | - Backend Google Sheet menjadi **Single Source of Truth (SSOT)** mutlak.<br>- Saat login atau reload, aplikasi mengambil data langsung dari `action=get_progress`.<br>- **Jika data di sheet telah dihapus oleh admin**: Browser siswa secara otomatis **MENGOSONGKAN** `state.submittedQuizIds`, menghapus `localStorage`, dan mengembalikan progres siswa ke awal (Materi 01).<br>- `localStorage` hanya berfungsi sebagai cache lokal offline transient. |
+| **1** | **Pembersihan Topbar Desktop (Hapus Panduan Perangkat)** | - Hapus tombol *"Panduan Perangkat"* dari topbar desktop.<br>- Modal dialog panduan perangkat hanya muncul otomatis saat diakses dari perangkat mobile (`viewport width <= 768px`) dengan opsi dismiss persistens. |
+| **2** | **Sertifikat & Skor Hanya di Tab Terakhir Sidebar (Terkunci)** | - Hapus tombol sertifikat dari topbar dan profile dropdown.<br>- Tambahkan tab terakhir di sidebar: **`🎓 Sertifikat & Rekap Nilai`** berstatus terkunci (`🔒`).<br>- Tab ini hanya bisa dibuka setelah seluruh materi pembelajaran dan kuis selesai 100%. |
+| **3** | **Dokumen Cetak 2 Halaman A4 Presisi & Tanda Tangan Resmi** | - Format cetak A4 2 halaman (`@media print` dengan `page-break-after: always`):<br>  • **Halaman 1**: Certificate of Completion berbingkai emas & navy resmi.<br>  • **Halaman 2**: Transkrip Nilai & Hasil Evaluasi Belajar (tabel rincian modul, pop-up kuis selesai, capaian skor, dan matriks 4 kompetensi komputasi).<br>- **Tanda Tangan Wajib**: **`UOB My Digital Space`** (*Academic Team & Organizing Committee*). Tidak menggunakan nama personal. |
+| **4** | **Pop-up Quiz Tracker di Bento Box (Pengganti Cheat Sheet)** | - Hapus strip horizontal sempit kuis di bawah video.<br>- Ubah Bento Box cheat sheet di bawah video menjadi **Bento Card `📝 Evaluasi Pop-up Kuis`** berisi daftar kuis scrollable 1 baris bersih per item, dilengkapi badge status (`✓ Selesai` / `⏳ Belum`), timestamp, dan tombol *"Buka Kuis"* / *"Ulas Kuis"*. |
+| **5** | **Slide Pembelajaran (Bukan Sandbox) & Layar Penuh** | - Ganti seluruh label teks "Sandbox" menjadi "Slide Pembelajaran".<br>- Sediakan tinggi lega (`min-height: 640px; height: 75vh;`) agar materi slide tidak ter-crop di tengah.<br>- Perbaiki tombol *"Layar Penuh"* (`requestFullscreen()`) untuk iframe slide.<br>- Jika materi murni bertipe slide (tanpa video), langsung tampilkan slide dan sembunyikan switcher tab. |
+| **6** | **Validasi Login Ketat & Strict Sidebar Gating** | - Input email dan tombol login terkunci (`disabled: true`) sampai siswa memilih sekolah mitra di dropdown combobox.<br>- Siswa regular tidak dapat melompati materi yang terkunci (`🔒`) di sidebar. |
 
 ---
 
 ## 2. Rincian Teknis & Perubahan Berkas
 
-### A. Komponen UI & Visual ([`src/styles.css`](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/01-lms-platform/src/styles.css))
-1. **Pembaruan Typography**:
-   - Ganti import font `@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap');`.
-   - `--font-heading`: `'Plus Jakarta Sans', -apple-system, sans-serif`.
-   - `--font-body`: `'Inter', -apple-system, sans-serif`.
-   - `--font-code`: `'Fira Code', monospace`.
-2. **Skeuomorphic Token & Styles**:
-   - Panel & Card: `linear-gradient(180deg, #0d2868 0%, #081a44 100%)`, `box-shadow: inset 0 1px 0 rgba(255,255,255,0.25), 0 8px 24px rgba(0,0,0,0.5)`, `border: 1px solid rgba(255,255,255,0.15)`.
-   - Tombol Fisik Taktil (`.btn-skeuo`, `.video-center-play`, `.quiz-pill-btn`, `.btn-nav-step`):
-     - Highlight tepi atas: `border-top: 1px solid rgba(255,255,255,0.4)`.
-     - Permukaan 3D: Gradien halus cembung.
-     - Shadow fisik berlapis: `box-shadow: 0 4px 8px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.3)`.
-     - Active press state: `transform: translateY(2px)`, `box-shadow: 0 1px 2px rgba(0,0,0,0.4), inset 0 2px 4px rgba(0,0,0,0.4)`.
-3. **Modal Alert Mobile Device & Sertifikat Layout Print**:
-   - Styling kartu modal rekomendasi laptop/tablet (`#advisory-modal`).
-   - Styling template sertifikat skeuomorphic eksklusif (`#certificate-modal`).
-   - Aturan `@media print` khusus agar saat user menekan cetak, hanya sertifikat yang tercetak dalam format landscape berkualitas tinggi.
+### A. Tampilan & Layout ([`src/styles.css`](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/01-lms-platform/src/styles.css))
+1. **Pelebaran Kontainer Utama (`.site-shell`)**:
+   - Diperlebar menjadi `width: min(1560px, calc(100% - 32px));` agar tidak terasa ter-crop sempit di monitor desktop modern.
+2. **Slide Mode & Layar Penuh**:
+   - `.video-frame.slide-mode` dengan `aspect-ratio: auto; min-height: 640px; height: 75vh;`.
+   - Aturan fullscreen menyeluruh untuk `.video-frame:fullscreen` dan `.sandbox-container:fullscreen`.
+3. **Bento Quiz Tracker Styling**:
+   - `.bento-quiz-card`, `.bento-quiz-item`, `.bento-badge-done`, `.bento-badge-pending`, `.btn-bento-open-quiz`.
+4. **Dokumen 2 Halaman A4 & Print Rules**:
+   - `.cert-a4-page` dengan `page-break-after: always; break-after: page;`.
+   - Tabel transkrip akademik, badge capaian, dan matriks 4 kompetensi komputasi.
+   - Aturan `@page { size: A4 portrait; margin: 10mm 12mm; }` untuk hasil cetak dan simpan PDF presisi.
 
 ---
 
 ### B. Struktur HTML ([`src/index.html`](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/01-lms-platform/src/index.html))
-1. **Modal Rekomendasi Perangkat (Mobile Advisory)**:
-   - Teks panduan yang ramah dan tersusun rapi menjelaskan keunggulan membuka di laptop/tablet (layar lega, koding lebih nyaman).
-   - Tombol: *"Mengerti, Tetap Belajar di HP Ini"*.
-2. **Kartu Tantangan Praktik Mandiri (Optional Challenge)**:
-   - Ditempatkan di bawah video player (bisa dibuka/ditutup).
-   - Menampilkan formulir pengumpulan dinamis sesuai jenjang (`SMA`: Editor Kode Python + Link Colab; `SMP`: Link App Inventor Gallery + Upload file; `SD`: Link Scratch + Upload file).
-   - Tombol *"Kirim Karya Tantangan"* & Tombol *"Lewati Tantangan & Lanjut"*.
-3. **Modal Dialog Sertifikat & Score Report (`#certificate-modal`)**:
-   - Score Report: Widget ringkasan kuis selesai, akurasi, dan challenge terkumpul.
-   - Sertifikat Digital resmi UOB MDS x Kalananti dengan nama dinamis, tanggal dinamis, QR code/nomor seri verifikasi, dan tombol *"Cetak / Simpan PDF"*.
+1. **Pembersihan Topbar**:
+   - Dihapus `#btn-open-advisory` dan `#btn-open-certificate` dari topbar desktop.
+   - Dihapus `#btn-dropdown-cert` dari `#profile-dropdown`.
+2. **Form Login Awal**:
+   - Ditambahkan `disabled` pada `#login-email-input`, `#btn-toggle-email-help`, dan `#btn-login`.
+3. **Bento Box Tracker**:
+   - Dihapus `#quiz-switcher-strip`.
+   - Ditambahkan `#bento-quiz-tracker-card` dengan list kontainer `#bento-quiz-list`.
+4. **Modal Dialog Sertifikat 2 Halaman A4**:
+   - `#cert-page-1`: Sertifikat Kelulusan resmi.
+   - `#cert-page-2`: Transkrip Hasil Evaluasi Belajar dengan tabel `#cert-transcript-tbody`.
+   - Tanda tangan resmi entitas: `UOB My Digital Space`.
 
 ---
 
 ### C. Logika Aplikasi ([`src/app.js`](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/01-lms-platform/src/app.js))
-1. **Mobile Detection & Advisory Trigger**:
-   - Cek `window.innerWidth <= 768` atau touch device saat login; jika belum pernah di-dismiss di session ini, buka `#advisory-modal`.
-2. **Sinkronisasi Server-First (Backend SSOT)**:
-   - Di `loadStudentSession()` / login:
-     - Lakukan `fetch(action=get_progress)`.
-     - Jika backend mengembalikan map kuis kosong / data siswa tidak ada di sheet:
-       - **Kosongkan localStorage dan state lokal**.
-       - Reset progres ke materi 0.
-     - Jika backend mengembalikan kuis tersimpan:
-       - Sinkronkan `state.submittedQuizIds`.
-       - Perbarui cache `localStorage`.
-3. **Logika Challenge Mandiri**:
-   - Step challenge tidak membatasi tombol *"Materi Selanjutnya"*.
-   - Saat siswa submit challenge, kirim payload ke Apps Script (`action: 'submitChallenge'`) dan simpan status lokal.
-4. **Logika Sertifikat & Score Report**:
-   - Hitung total kuis dari seluruh step di kurikulum aktif.
-   - Tampilkan kalkulasi akurasi nilai dan daftar challenge yang sudah diselesaikan.
-   - Injeksi nama siswa, sekolah, dan tanggal ke template sertifikat resmi.
-   - Pemicu `window.print()` untuk cetak/simpan PDF.
-
----
-
-### D. Backend Apps Script ([`apps-script/Code.gs`](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/01-lms-platform/apps-script/Code.gs))
-1. **Penyempurnaan `get_progress`**:
-   - Mengembalikan array ID kuis yang telah selesai dan daftar submission challenge.
-   - Mengembalikan flag `isReset: true` jika siswa tidak memiliki catatan di sheet agar frontend langsung menghapus cache browser.
-2. **Penyimpanan Challenge Submission**:
-   - Menerima submission kode / file / tautan challenge dan menyimpannya di sheet pelaporan atau tab `ops-challenges`.
+1. **Gating Login & Reset Form**:
+   - Input email dan tombol masuk baru aktif saat `selectSchool()` dipanggil.
+2. **Sidebar Modul & Tab Sertifikat**:
+   - `buildSidebarModuleList()` membuat tab materi dengan indikator kunci (`🔒`).
+   - Menambahkan tab khusus `#tab-certificate-final` (`🎓 Sertifikat & Rekap Nilai`) di akhir navigasi yang hanya bisa dibuka saat `isAllCourseCompleted`.
+3. **Slide Mode Activation**:
+   - `activateMediaMode()` otomatis menambahkan class `.slide-mode` pada container saat membuka slide.
+4. **Bento Tracker Rendering**:
+   - `renderBentoQuizTracker()` merender daftar pop-up kuis secara horizontal 1 baris per item dengan tombol akses langsung.
+5. **Populasi Data Sertifikat & Transkrip**:
+   - `openCertificateModal()` mengisi data siswa, sekolah, rombel, serial number, tanggal cetak, dan merender baris modul pada tabel transkrip.
 
 ---
 
 ## 3. Rencana Verifikasi & Pengujian
-
-1. **Verifikasi Tampilan Mobile & Modal Advisory**:
-   - Buka viewport mobile (`375x812` iPhone / `412x915` Android) menggunakan Playwright.
-   - Pastikan modal alert perangkat muncul otomatis dengan susunan bahasa yang ramah.
-   - Klik tombol dismiss dan pastikan navigasi modul tetap lancar.
-2. **Verifikasi Gaya Skeuomorphism & Typography**:
-   - Pastikan font Plus Jakarta Sans dan Inter ter-render tajam tanpa Fredoka.
-   - Periksa efek tombol 3D taktil, beveling, shadow, dan responsivitas klik.
-3. **Verifikasi Challenge Opsional**:
-   - Buka step yang memiliki tugas/challenge.
-   - Pastikan tombol *"Materi Selanjutnya"* tetap dapat dibuka (setelah kuis tuntas dan video ditonton s.d. 10 detik terakhir) tanpa mewajibkan challenge.
-   - Uji coba form pengumpulan tugas challenge untuk jenjang SMA, SMP, dan SD.
-4. **Verifikasi Score Report & Sertifikat**:
-   - Tuntaskan materi hingga akhir, buka tampilan sertifikat dan score report.
-   - Pastikan nama siswa, nama sekolah, nomor seri, dan tanggal terisi dengan tepat.
-5. **Verifikasi SSOT Reset Backend**:
-   - Simulasikan penghapusan data baris siswa di spreadsheet.
-   - Reload browser siswa dan pastikan seluruh cache browser ter-reset bersih kembali ke awal.
-6. **Git Commit & Remote Push**:
-   - Sinkronkan `subprojects/01-lms-platform/src/` ke `docs/`.
-   - Commit dan push ke `git@github.com:mds-academic/beasiswa_async.git` branch `main`.
+- **Uji Otomatis Playwright ([`scratch/test_revision_features.py`](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/scratch/test_revision_features.py))**:
+  - Test 1: Input login terkunci default.
+  - Test 2: Alur login Admin SMA UOB.
+  - Test 3: Pembersihan tombol topbar desktop.
+  - Test 4: Tampilan Bento Quiz Tracker 1 baris.
+  - Test 5: Tampilan Slide Pembelajaran tidak ter-crop (slide-mode).
+  - Test 6: Sertifikat 2 Halaman A4 & tanda tangan UOB My Digital Space.
+  - Test 7: Alur login siswa regular dan strict gating tab materi & sertifikat.

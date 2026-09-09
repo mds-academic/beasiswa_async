@@ -96,14 +96,15 @@
               <input
                 id="login-email-input"
                 type="email"
-                placeholder="nama@email.com"
+                placeholder="Pilih sekolah terlebih dahulu..."
                 autocomplete="email"
+                disabled
                 required
               />
             </div>
 
             <!-- Bantuan Lupa / Cari Email -->
-            <button type="button" id="btn-toggle-email-help" class="login-help-toggle">
+            <button type="button" id="btn-toggle-email-help" class="login-help-toggle" disabled>
               Tidak yakin emailnya? Cari bantuan lewat nama/email
             </button>
 
@@ -115,7 +116,7 @@
               </div>
             </div>
 
-            <button type="submit" id="btn-login" class="login-btn">
+            <button type="submit" id="btn-login" class="login-btn" disabled>
               <span>Mulai Belajar</span>
               <span class="btn-arrow">→</span>
             </button>
@@ -161,18 +162,6 @@
         </div>
 
         <div class="topbar-right">
-          <!-- Tombol Sertifikat & Rekap Hasil -->
-          <button id="btn-open-certificate" class="certificate-btn" type="button" title="Lihat Rekap Nilai & Sertifikat Kelulusan">
-            <span class="cert-icon">🎓</span>
-            <span class="cert-text">Sertifikat & Skor</span>
-          </button>
-
-          <!-- Tombol Panduan Perangkat (Advisory) -->
-          <button id="btn-open-advisory" class="advisory-btn" type="button" title="Informasi Perangkat">
-            <span class="advisory-icon">✦</span>
-            <span class="advisory-text">Panduan Perangkat</span>
-          </button>
-
           <!-- Profil Siswa Chip -->
           <div class="student-chip" id="student-chip" tabindex="0" role="button" aria-haspopup="true">
             <div class="avatar" id="student-avatar" aria-hidden="true"></div>
@@ -184,10 +173,6 @@
 
             <!-- Dropdown Menu Keluar -->
             <div class="profile-dropdown" id="profile-dropdown" hidden>
-              <button id="btn-dropdown-cert" class="dropdown-item" type="button">
-                <span>🎓</span>
-                <span>Sertifikat & Skor</span>
-              </button>
               <button id="btn-logout" class="dropdown-item" type="button">
                 <span>⏏</span>
                 <span>Ganti Akun / Keluar</span>
@@ -248,13 +233,13 @@
             </div>
           </div>
 
-          <!-- Switcher Tab: Video vs Interactive Sandbox -->
+          <!-- Switcher Tab: Video vs Slide Pembelajaran -->
           <div class="media-switcher-tabs" id="media-switcher-tabs">
             <button type="button" class="media-tab active" id="tab-mode-video">
               <span>▶</span> Video Pembelajaran
             </button>
             <button type="button" class="media-tab" id="tab-mode-sandbox">
-              <span>💻</span> Interactive Sandbox / Slide
+              <span>📄</span> Slide Pembelajaran
             </button>
           </div>
 
@@ -264,7 +249,7 @@
             <p class="intro-video-text" id="intro-video-text"></p>
           </div>
 
-          <!-- 1. Video & Sandbox Media Container -->
+          <!-- 1. Video & Slide Media Container -->
           <div id="video-container-box" class="media-container-box">
             <div class="video-frame" id="video-frame">
               <!-- YouTube Video Player -->
@@ -290,16 +275,16 @@
                 <button class="video-center-play" id="center-play-btn" type="button" aria-label="Putar Video">▶</button>
               </div>
 
-              <!-- Interactive Sandbox Container (HTML Slides Iframe) -->
+              <!-- Slide Pembelajaran Mandiri Container (HTML Slides Iframe) -->
               <div class="sandbox-container" id="sandbox-container" style="display: none;">
                 <div class="sandbox-header-bar">
                   <div class="sandbox-header-left">
-                    <span class="sandbox-badge">💻 Interactive Sandbox</span>
+                    <span class="sandbox-badge">📄 Slide Interaktif</span>
                     <span class="sandbox-title" id="sandbox-title">Slide Pembelajaran Mandiri</span>
                   </div>
                   <div class="sandbox-actions">
-                    <button type="button" id="btn-reload-sandbox" class="sandbox-btn" title="Muat Ulang Sandbox">↻ Reset</button>
-                    <button type="button" id="btn-fullscreen-sandbox" class="sandbox-btn" title="Perbesar Layar">⛶ Layar Penuh</button>
+                    <button type="button" id="btn-reload-sandbox" class="sandbox-btn" title="Muat Ulang Slide">↻ Reset Slide</button>
+                    <button type="button" id="btn-fullscreen-sandbox" class="sandbox-btn" title="Perbesar Layar Penuh">⛶ Layar Penuh</button>
                   </div>
                 </div>
                 <iframe
@@ -338,20 +323,6 @@
 
             <!-- Bookmarks Bar -->
             <div class="bookmarks-container" id="bookmarks-container"></div>
-          </div>
-
-          <!-- 2. Quiz Switcher Bar & Status Strip -->
-          <div class="quiz-switcher-strip" id="quiz-switcher-strip">
-            <div class="quiz-switcher-left">
-              <span class="quiz-strip-badge">📝 Pop-up Kuis</span>
-              <span class="quiz-strip-status" id="quiz-summary-status">Memuat kuis...</span>
-            </div>
-            <div class="quiz-pills-list" id="quiz-pills-list">
-              <!-- Tombol Kuis diinjeksi lewat JS -->
-            </div>
-            <button class="button-open-quiz" id="btn-open-active-quiz" type="button">
-              <span>Buka Kuis</span>
-            </button>
           </div>
 
           <!-- 2b. Kartu Tantangan Praktik Mandiri (Challenge) — Opsional & Non-Gating -->
@@ -426,7 +397,7 @@
             </div>
           </section>
 
-          <!-- 3. Exact Legacy 2-Column Cards (.below-video) -->
+          <!-- 3. Exact 2-Column Bento Cards (.below-video) -->
           <div class="below-video">
             <!-- Kartu 1: Loot Box Hari Ini (Rangkuman Poin dengan Checklist Hijau) -->
             <article class="summary-card">
@@ -439,22 +410,26 @@
               </ul>
             </article>
 
-            <!-- Kartu 2: Focus Card (Cheat Sheet Emas Pastel dengan Mini Code) -->
-            <aside class="focus-card">
-              <div>
-                <p class="label">Cheat Sheet 📝</p>
-                <h3 id="focus-card-title">Kalo bener, gaskeun!</h3>
-                <p id="focus-card-desc">Coba ingat apa keputusan logika koding yang baru saja kamu pelajari?</p>
+            <!-- Kartu 2: Bento Box Evaluasi Pop-up Kuis (Scrollable List) -->
+            <aside class="bento-quiz-card" id="bento-quiz-tracker-card">
+              <div class="bento-quiz-header">
+                <div class="bento-quiz-header-title">
+                  <span class="bento-quiz-icon">📝</span>
+                  <div>
+                    <h3 class="bento-quiz-title">Evaluasi Pop-up Kuis</h3>
+                    <p class="bento-quiz-counter" id="bento-quiz-counter">Memuat evaluasi kuis...</p>
+                  </div>
+                </div>
               </div>
-              <div class="mini-code" id="focus-card-code">
-                <span class="keyword">print</span>(<span class="string">"Halo Dunia!"</span>)
+              <div class="bento-quiz-scrollable-list" id="bento-quiz-list">
+                <!-- Diinjeksi dinamis via JS -->
               </div>
             </aside>
           </div>
 
           <!-- 4. Accordion Materi Bacaan Lengkap -->
-          <details class="lesson-reading-accordion" id="reading-accordion" open>
-            <summary>Buka Materi Bacaan</summary>
+          <details class="lesson-reading-accordion" id="reading-accordion">
+            <summary>📖 Buka Ringkasan Materi & Catatan Penting</summary>
             <div class="lesson-reading" id="lesson-reading">
               <header class="reading-header">
                 <div>
@@ -666,60 +641,165 @@
           </div>
         </div>
 
-        <!-- 2. Sertifikat Kelulusan Digital Resmi (Skeuomorphic Luxury Certificate) -->
+        <!-- 2. Sertifikat Kelulusan Digital Resmi & Transkrip 2 Halaman A4 -->
         <div class="certificate-printable-area" id="certificate-printable-area">
-          <div class="certificate-frame">
-            <div class="certificate-inner-border">
-              <!-- Header Logos -->
-              <div class="cert-logos">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ruangguru_logo.svg/3840px-Ruangguru_logo.svg.png"
-                  alt="Ruangguru"
-                  class="cert-logo-rg"
-                />
-                <div class="cert-divider-line"></div>
-                <img
-                  src="https://cdn-web-2.ruangguru.com/landing-pages/assets/37185db7-24a8-467d-aabb-1d5df48f9bc0.png"
-                  alt="UOB My Digital Space"
-                  class="cert-logo-uob"
-                />
-              </div>
-
-              <div class="cert-header-badge">CERTIFICATE OF COMPLETION</div>
-              <h1 class="cert-title">SERTIFIKAT KELULUSAN</h1>
-              <p class="cert-subtitle">Sertifikat ini secara resmi diberikan sebagai bukti apresiasi kepada:</p>
-
-              <div class="cert-student-name" id="cert-student-name">Nama Siswa</div>
-              <div class="cert-student-school" id="cert-student-school">SMAN 8 Jakarta · Kelas XII</div>
-
-              <p class="cert-body-text">
-                Telah berhasil menyelesaikan seluruh rangkaian materi pembelajaran dan evaluasi interaktif pada program:
-              </p>
-              <div class="cert-program-name" id="cert-program-name">
-                Asynchronous Coding Exploration: Python for High School
-              </div>
-
-              <!-- Footer Sertifikat: QR / Serial, Tanggal, Tanda Tangan -->
-              <div class="cert-footer-grid">
-                <div class="cert-col-left">
-                  <span class="cert-serial-label">Nomor Verifikasi Sertifikat:</span>
-                  <strong class="cert-serial-no" id="cert-serial-no">MDS-2026-SMA-78291</strong>
-                  <span class="cert-date-text" id="cert-date-text">Diterbitkan pada: 8 September 2026</span>
+          <!-- HALAMAN 1: Sertifikat Kelulusan Resmi (A4 Page 1) -->
+          <div class="cert-a4-page cert-page-1" id="cert-page-1">
+            <div class="certificate-frame">
+              <div class="certificate-inner-border">
+                <!-- Header Logos -->
+                <div class="cert-logos">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ruangguru_logo.svg/3840px-Ruangguru_logo.svg.png"
+                    alt="Ruangguru"
+                    class="cert-logo-rg"
+                  />
+                  <div class="cert-divider-line"></div>
+                  <img
+                    src="https://cdn-web-2.ruangguru.com/landing-pages/assets/37185db7-24a8-467d-aabb-1d5df48f9bc0.png"
+                    alt="UOB My Digital Space"
+                    class="cert-logo-uob"
+                  />
                 </div>
 
-                <div class="cert-seal-box">
-                  <div class="cert-gold-seal">
-                    <span>★</span>
-                    <strong>OFFICIAL</strong>
-                    <small>UOB MDS</small>
+                <div class="cert-header-badge">CERTIFICATE OF COMPLETION</div>
+                <h1 class="cert-title">SERTIFIKAT KELULUSAN</h1>
+                <p class="cert-subtitle">Sertifikat ini secara resmi diberikan sebagai bukti apresiasi kelulusan kepada:</p>
+
+                <div class="cert-student-name" id="cert-student-name">Nama Siswa</div>
+                <div class="cert-student-school" id="cert-student-school">SMAN 8 Jakarta · Jenjang SMA</div>
+
+                <p class="cert-body-text">
+                  Telah berhasil menyelesaikan seluruh rangkaian materi pembelajaran mandiri, evaluasi pop-up kuis, serta tantangan praktik interaktif dengan hasil sangat memuaskan pada program:
+                </p>
+                <div class="cert-program-name" id="cert-program-name">
+                  Asynchronous Coding Exploration: Python for High School
+                </div>
+
+                <!-- Footer Sertifikat: No Verifikasi, Cap Emas, Tanda Tangan UOB My Digital Space -->
+                <div class="cert-footer-grid">
+                  <div class="cert-col-left">
+                    <span class="cert-serial-label">Nomor Verifikasi Sertifikat:</span>
+                    <strong class="cert-serial-no" id="cert-serial-no">MDS-2026-SMA-78291</strong>
+                    <span class="cert-date-text" id="cert-date-text">Diterbitkan pada: 8 September 2026</span>
+                  </div>
+
+                  <div class="cert-seal-box">
+                    <div class="cert-gold-seal">
+                      <span>★</span>
+                      <strong>OFFICIAL</strong>
+                      <small>UOB MDS</small>
+                    </div>
+                  </div>
+
+                  <div class="cert-col-right">
+                    <div class="cert-signature-line"></div>
+                    <strong class="cert-signatory-name">UOB My Digital Space</strong>
+                    <span class="cert-signatory-role">Academic Team & Organizing Committee</span>
+                    <span class="cert-org">Kalananti & PT Bank UOB Indonesia</span>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
 
-                <div class="cert-col-right">
+          <!-- HALAMAN 2: Transkrip Hasil Evaluasi Belajar (A4 Page 2) -->
+          <div class="cert-a4-page cert-page-2" id="cert-page-2">
+            <div class="transcript-frame">
+              <!-- Header Transkrip -->
+              <div class="transcript-header">
+                <div class="transcript-logos">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ruangguru_logo.svg/3840px-Ruangguru_logo.svg.png"
+                    alt="Ruangguru"
+                    class="transcript-logo-rg"
+                  />
+                  <div class="cert-divider-line"></div>
+                  <img
+                    src="https://cdn-web-2.ruangguru.com/landing-pages/assets/37185db7-24a8-467d-aabb-1d5df48f9bc0.png"
+                    alt="UOB My Digital Space"
+                    class="transcript-logo-uob"
+                  />
+                </div>
+                <div class="transcript-title-box">
+                  <span class="transcript-badge">OFFICIAL ACADEMIC TRANSCRIPT</span>
+                  <h2 class="transcript-title">TRANSKRIP HASIL EVALUASI BELAJAR</h2>
+                  <p class="transcript-subtitle">Lampiran Resmi Sertifikat Kelulusan No. <span id="transcript-serial-ref">MDS-2026-SMA-78291</span></p>
+                </div>
+              </div>
+
+              <!-- Student Profile Card in Transcript -->
+              <div class="transcript-meta-grid">
+                <div class="transcript-meta-item">
+                  <span class="meta-label">Nama Siswa:</span>
+                  <strong id="transcript-student-name">Nama Siswa</strong>
+                </div>
+                <div class="transcript-meta-item">
+                  <span class="meta-label">Sekolah & Jenjang:</span>
+                  <strong id="transcript-student-school">SMAN 8 Jakarta · SMA</strong>
+                </div>
+                <div class="transcript-meta-item">
+                  <span class="meta-label">Tanggal Terbit:</span>
+                  <strong id="transcript-date">8 September 2026</strong>
+                </div>
+                <div class="transcript-meta-item">
+                  <span class="meta-label">Status Kelulusan:</span>
+                  <strong class="status-pass" id="transcript-status">LULUS (100%)</strong>
+                </div>
+              </div>
+
+              <!-- Tabel Rincian Modul & Kuis -->
+              <div class="transcript-table-container">
+                <table class="transcript-table">
+                  <thead>
+                    <tr>
+                      <th style="width: 8%;">No</th>
+                      <th style="width: 44%;">Topik Modul Pembelajaran</th>
+                      <th style="width: 22%;">Evaluasi Pop-up Kuis</th>
+                      <th style="width: 14%;">Skor Kuis</th>
+                      <th style="width: 12%;">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody id="cert-transcript-tbody">
+                    <!-- Diinjeksi dinamis lewat renderCertificateData() -->
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- Capaian Kompetensi & Rubrik Evaluasi -->
+              <div class="transcript-competencies">
+                <h4 class="competency-heading">Capaian Kompetensi Digital & Pembelajaran:</h4>
+                <div class="competency-grid">
+                  <div class="competency-box">
+                    <strong>Computational Thinking</strong>
+                    <span>Dekomposisi persoalan logika & abstraksi algoritma terstruktur</span>
+                  </div>
+                  <div class="competency-box">
+                    <strong>Implementasi Logika</strong>
+                    <span>Penguasaan sintaks, kondisional, perulangan, & manipulasi data</span>
+                  </div>
+                  <div class="competency-box">
+                    <strong>Creative Problem Solving</strong>
+                    <span>Penyelesaian mini-tantangan & proyek aplikasi secara mandiri</span>
+                  </div>
+                  <div class="competency-box">
+                    <strong>Kemandirian Belajar</strong>
+                    <span>Ketuntasan asinkronus dengan akurasi pemahaman komprehensif</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Footer Transkrip -->
+              <div class="transcript-footer">
+                <div class="transcript-footer-left">
+                  <p class="transcript-note">
+                    * Dokumen ini diterbitkan secara otomatis dan sah melalui Sistem Manajemen Pembelajaran Asinkronus UOB My Digital Space bersama Kalananti & Ruangguru.
+                  </p>
+                </div>
+                <div class="transcript-footer-right">
                   <div class="cert-signature-line"></div>
-                  <strong>Ahmad Yazid Hilmi</strong>
-                  <span>Lead Curriculum & Technology</span>
-                  <span class="cert-org">UOB My Digital Space & Kalananti</span>
+                  <strong class="cert-signatory-name">UOB My Digital Space</strong>
+                  <span class="cert-signatory-role">Academic Team & Organizing Committee</span>
                 </div>
               </div>
             </div>

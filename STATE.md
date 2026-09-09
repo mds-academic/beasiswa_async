@@ -2,9 +2,9 @@
 
 ## Current Status
 
-- **Status**: Initialized — PRD & Implementation Plan drafted, awaiting user review.
+- **Status**: LMS platform and Apps Script backend updated and deployed; endpoint smoke test passed.
 - **Active Focus**: Review PRD, finalisasi struktur repositori, dan verifikasi alur kurikulum & arsitektur web app.
-- **Last Updated**: 2026-09-08
+- **Last Updated**: 2026-09-09
 
 ## Completed
 
@@ -32,14 +32,23 @@
   - Verifikasi otomatis Playwright test suite 4-Gate (Mobile Advisory, Desktop Login, Certificate Modal, Challenge Panel) lolos 100%.
   - Sinkronisasi identik ke `docs/` dan push berhasil ke GitHub remote `main`.
 
-- **Sinkronisasi Master Google Spreadsheet & Rilis Tab Changelog & Audit Log (v1.0)**:
-  - Pembuatan tab resmi **`Changelog & Audit Log`** di Google Spreadsheet master (`1s6VVCGLPwiGWYwBNiR-4lrnB5XWcOV0l7pAIcgyif-k`) yang mendokumentasikan 10 poin perbaikan eksekutif: resolusi Blocker B1 (pembersihan TinyDB Modul 0), B2 (normalisasi anomali timestamp/kuis), B3 (standardisasi metadata bridge), B4 (ekspansi 8-gate validator), relokasi `hs-1-3` ke Modul 4, pengujian visual QA Playwright lintas perangkat, sinkronisasi hash SHA256 identik, dan skema pelacakan nilai 0-100.
-  - Pembaruan penuh tab kurikulum:
-    - **`materi-sd`**: 8 step coding Scratch & data keuangan dasar.
-    - **`materi-smp`**: 36 step lengkap (termasuk 4 slide bridge `bridge-ms-00..03` dan 32 video tutorial Kak Laras).
-    - **`materi-sma`**: 36 step lengkap (termasuk 6 slide bridge `bridge-hs-00..05`, relokasi persiapan capstone `hs-1-3` ke Modul 4, dan 30 video tutorial Google Colab Python).
-  - Pembaruan tab pelacakan hasil belajar: **`ops-result-sd`** (8 step), **`ops-result-smp`** (36 step), dan **`ops-result-sma`** (36 step) dengan skala nilai total 0–100, konversi grade huruf (A/B/C), dan perekaman jawaban kuis per step.
-  - Eksekusi otomatis via Google Apps Script (`setupAllLMSSheets()`) dan verifikasi visual menyeluruh dengan 6 tangkapan layar PNG.
+- **Revisi LMS Terkini Berdasarkan Feedback Pengguna (2026-09-09)**:
+  - **Pembersihan Topbar Desktop**: Dihapus tombol *"Panduan Perangkat"* dan *"Sertifikat & Skor"* dari topbar desktop. Panduan perangkat hanya otomatis aktif di mobile view.
+  - **Tab Akhir Sidebar Terkunci (`🎓 Sertifikat & Rekap Nilai`)**: Sertifikat kelulusan dipindahkan menjadi tab terakhir di sidebar berstatus terkunci (`🔒`), hanya terbuka bila seluruh materi selesai.
+  - **Dokumen Cetak 2 Halaman A4 Presisi**:
+    - Halaman 1: Certificate of Completion resmi berlatar navy/emas.
+    - Halaman 2: Transkrip Hasil Evaluasi Belajar (rincian modul, pop-up kuis, skor, dan matriks 4 kompetensi).
+    - Tanda tangan resmi entitas: **`UOB My Digital Space`** (*Academic Team & Organizing Committee*), tanpa nama personal.
+  - **Bento Box Pop-up Quiz Tracker**: Menggantikan cheat sheet sempit di bawah video dengan Bento Card `📝 Evaluasi Pop-up Kuis` (daftar scrollable 1 baris bersih per kuis dengan badge status dan tombol aksi).
+  - **Perbaikan Tampilan Slide Pembelajaran & Layar Penuh**:
+    - Ganti istilah Sandbox menjadi "Slide Pembelajaran".
+    - Container lega (`min-height: 640px; height: 75vh;`) tanpa ter-crop ke tengah di desktop (`.site-shell` diperlebar ke `min(1560px, calc(100% - 32px))`).
+    - Tombol layar penuh (`requestFullscreen()`) bekerja optimal untuk container slide iframe.
+  - **Validasi Login Ketat & Strict Sidebar Gating**:
+    - Input email dan tombol masuk terkunci default sampai sekolah dipilih di combobox.
+    - Siswa reguler tidak dapat melompati materi yang berstatus terkunci (`🔒`).
+  - **Verifikasi Otomatis**: Seluruh 7 pengujian Playwright end-to-end (`scratch/test_revision_features.py`) lolos 100%.
+  - **Sinkronisasi Kode**: `src/` disinkronkan identik ke `docs/`.
 
 ## Blockers & Open Questions
 

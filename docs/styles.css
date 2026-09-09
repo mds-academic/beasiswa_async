@@ -667,7 +667,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 
 /* ==================== 2. MAIN SITE SHELL ==================== */
 .site-shell {
-  width: min(1360px, calc(100% - 40px));
+  width: min(1560px, calc(100% - 32px));
   margin: 0 auto;
   padding: 20px 0 48px;
   position: relative;
@@ -1001,6 +1001,50 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   font-weight: 800;
 }
 
+/* Locked Tab State */
+.lesson-tab.locked {
+  opacity: 0.55;
+  cursor: not-allowed;
+  filter: grayscale(0.5);
+  border-color: rgba(255, 255, 255, 0.04);
+}
+
+.lesson-tab.locked:hover {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.lesson-tab.locked .tab-number {
+  border-color: rgba(255, 255, 255, 0.18);
+  font-size: 0.85rem;
+}
+
+/* Special Tab: 🎓 Sertifikat & Rekap Nilai */
+.lesson-tab.certificate-tab {
+  background: linear-gradient(135deg, rgba(234, 179, 8, 0.18) 0%, rgba(194, 65, 12, 0.18) 100%);
+  border: 1.5px dashed rgba(253, 224, 71, 0.6);
+  margin-top: 14px;
+  position: relative;
+}
+
+.lesson-tab.certificate-tab:hover {
+  background: linear-gradient(135deg, rgba(234, 179, 8, 0.3) 0%, rgba(194, 65, 12, 0.3) 100%);
+  border-color: #fde047;
+  color: #ffffff;
+}
+
+.lesson-tab.certificate-tab.active {
+  background: linear-gradient(180deg, #fef08a 0%, #fde047 100%);
+  border-color: #eab308;
+  color: #092764;
+}
+
+.lesson-tab.certificate-tab.locked {
+  opacity: 0.5;
+  border-color: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.04);
+}
+
 .help-card {
   margin-top: 28px;
   padding-top: 20px;
@@ -1154,7 +1198,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   gap: 14px;
 }
 
-/* Video Frame (YouTube Player & Sandbox Host) */
+/* Video Frame (YouTube Player & Sandbox/Slide Host) */
 .video-frame {
   width: 100%;
   aspect-ratio: 16 / 9;
@@ -1164,6 +1208,14 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.3);
   position: relative;
   border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: min-height 0.25s ease, aspect-ratio 0.25s ease;
+}
+
+/* Slide Mode: Container tinggi penuh & lebar tidak ter-crop */
+.video-frame.slide-mode {
+  aspect-ratio: auto;
+  min-height: 640px;
+  height: 75vh;
 }
 
 .video-frame iframe,
@@ -1316,6 +1368,36 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   height: 100%;
   border: 0;
   background: #ffffff;
+}
+
+/* Fullscreen Slide Container */
+.video-frame:fullscreen,
+.sandbox-container:fullscreen,
+.sandbox-container:-webkit-full-screen {
+  width: 100vw !important;
+  height: 100vh !important;
+  min-height: 100vh !important;
+  max-width: 100vw !important;
+  max-height: 100vh !important;
+  border-radius: 0 !important;
+  border: none !important;
+  z-index: 999999 !important;
+  position: fixed !important;
+  inset: 0 !important;
+}
+
+.video-frame:fullscreen .sandbox-container {
+  position: absolute;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.video-frame:fullscreen .sandbox-iframe,
+.sandbox-container:fullscreen .sandbox-iframe,
+.sandbox-container:-webkit-full-screen .sandbox-iframe {
+  height: calc(100vh - 52px) !important;
+  width: 100vw !important;
 }
 
 /* Video Controls Bar */
@@ -1803,6 +1885,209 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 
 .mini-code .string {
   color: #65e7ae;
+}
+
+/* ==================== Bento Box: Evaluasi Pop-up Kuis ==================== */
+.bento-quiz-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  padding: 30px;
+  border-radius: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 24px 48px rgba(9, 39, 100, 0.08);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bento-quiz-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 0 var(--ink);
+}
+
+.bento-quiz-header {
+  margin-bottom: 16px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.bento-quiz-header-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bento-quiz-icon {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  color: #ffffff;
+  border: 2px solid var(--ink);
+  border-radius: 10px;
+  background: var(--blue);
+  box-shadow: 3px 3px 0 var(--ink);
+  font-size: 1.1rem;
+}
+
+.bento-quiz-title {
+  margin: 0 0 2px 0;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--navy-dark);
+}
+
+.bento-quiz-counter {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.bento-quiz-scrollable-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 270px;
+  overflow-y: auto;
+  padding-right: 6px;
+}
+
+.bento-quiz-scrollable-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.bento-quiz-scrollable-list::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+
+.bento-quiz-scrollable-list::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+.bento-quiz-scrollable-list::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.bento-quiz-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 14px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  transition: all 0.18s ease;
+}
+
+.bento-quiz-item:hover {
+  background: #ffffff;
+  border-color: #cbd5e1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.bento-quiz-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+}
+
+.bento-quiz-num {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 0.86rem;
+  color: #092764;
+  white-space: nowrap;
+}
+
+.bento-quiz-time {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 2px 8px;
+  border-radius: var(--radius-pill);
+  background: #e2e8f0;
+  color: #334155;
+  font-size: 0.72rem;
+  font-weight: 700;
+  font-family: var(--font-code);
+  white-space: nowrap;
+}
+
+.bento-quiz-prompt {
+  font-size: 0.82rem;
+  color: #475569;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bento-quiz-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.bento-badge-done {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  background: #dcfce7;
+  color: #166534;
+  border: 1px solid #86efac;
+  font-size: 0.74rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.bento-badge-pending {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  background: #fef3c7;
+  color: #92400e;
+  border: 1px solid #fde68a;
+  font-size: 0.74rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.btn-bento-open-quiz {
+  padding: 5px 14px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #1084f8 0%, #0866c6 100%);
+  border: 1px solid #0654a4;
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(8, 102, 198, 0.25);
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.btn-bento-open-quiz:hover {
+  background: linear-gradient(180deg, #2b93fc 0%, #0b74de 100%);
+  transform: translateY(-1px);
+}
+
+.bento-quiz-empty {
+  padding: 24px 16px;
+  text-align: center;
+  color: #64748b;
+  font-size: 0.88rem;
 }
 
 /* ==================== Lesson Reading Accordion ==================== */
@@ -3517,8 +3802,252 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   }
 }
 
-/* Print Rules: Cetak / Simpan PDF Sertifikat Saja */
+/* ==================== 2-Page A4 Certificate & Academic Transcript ==================== */
+.cert-a4-page {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 24px;
+}
+
+.cert-signatory-name {
+  font-size: 0.96rem;
+  color: #092764;
+  font-weight: 800;
+  display: block;
+}
+
+.cert-signatory-role {
+  font-size: 0.78rem;
+  color: #475569;
+  display: block;
+}
+
+/* Transcript Frame (Page 2) */
+.transcript-frame {
+  background: #ffffff;
+  border: 4px solid #092764;
+  border-radius: 8px;
+  padding: 28px 32px;
+  box-shadow: inset 0 0 20px rgba(9, 39, 100, 0.04);
+}
+
+.transcript-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 2px solid #092764;
+  padding-bottom: 14px;
+  margin-bottom: 16px;
+}
+
+.transcript-logos {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.transcript-logo-rg {
+  height: 28px;
+  object-fit: contain;
+}
+
+.transcript-logo-uob {
+  height: 32px;
+  object-fit: contain;
+}
+
+.transcript-title-box {
+  text-align: right;
+}
+
+.transcript-badge {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  color: #092764;
+  background: #eff6ff;
+  padding: 2px 10px;
+  border-radius: var(--radius-pill);
+  border: 1px solid #bfdbfe;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.transcript-title {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #092764;
+  margin: 0 0 2px 0;
+  letter-spacing: 0.02em;
+}
+
+.transcript-subtitle {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.transcript-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-bottom: 16px;
+}
+
+.transcript-meta-item .meta-label {
+  display: block;
+  font-size: 0.7rem;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 2px;
+}
+
+.transcript-meta-item strong {
+  display: block;
+  font-size: 0.86rem;
+  color: #0f172a;
+}
+
+.transcript-meta-item strong.status-pass {
+  color: #166534;
+  font-weight: 800;
+}
+
+.transcript-table-container {
+  margin-bottom: 16px;
+  max-height: 480px;
+  overflow-y: auto;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+}
+
+.transcript-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+.transcript-table thead {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.transcript-table th {
+  background: #092764;
+  color: #ffffff;
+  padding: 8px 10px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  border: 1px solid #092764;
+}
+
+.transcript-table td {
+  padding: 6px 10px;
+  border: 1px solid #e2e8f0;
+  color: #1e293b;
+}
+
+.transcript-table tr:nth-child(even) td {
+  background: #f8fafc;
+}
+
+.transcript-badge-done {
+  color: #166534;
+  background: #dcfce7;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.72rem;
+  display: inline-block;
+}
+
+.transcript-competencies {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+}
+
+.competency-heading {
+  font-family: var(--font-heading);
+  font-size: 0.84rem;
+  color: #092764;
+  margin: 0 0 8px 0;
+  font-weight: 700;
+}
+
+.competency-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.competency-box {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 6px 10px;
+}
+
+.competency-box strong {
+  display: block;
+  font-size: 0.8rem;
+  color: #0c74e8;
+  margin-bottom: 2px;
+}
+
+.competency-box span {
+  font-size: 0.72rem;
+  color: #64748b;
+  line-height: 1.3;
+}
+
+.transcript-footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  border-top: 1px solid #cbd5e1;
+  padding-top: 12px;
+}
+
+.transcript-footer-left {
+  max-width: 480px;
+}
+
+.transcript-note {
+  font-size: 0.7rem;
+  color: #64748b;
+  font-style: italic;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.transcript-footer-right {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* ==================== Print Rules: Cetak / Simpan PDF 2 Halaman A4 ==================== */
 @media print {
+  @page {
+    size: A4 portrait;
+    margin: 10mm 12mm;
+  }
   body {
     background: #ffffff !important;
   }
@@ -3531,22 +4060,24 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
     visibility: visible;
   }
   #certificate-modal {
-    position: fixed;
-    inset: 0;
+    position: static !important;
     max-width: 100% !important;
-    max-height: 100% !important;
+    max-height: none !important;
     width: 100% !important;
-    height: 100% !important;
+    height: auto !important;
     background: #ffffff !important;
     margin: 0 !important;
     padding: 0 !important;
     border: none !important;
     box-shadow: none !important;
+    display: block !important;
   }
   .certificate-dialog-card {
     border: none !important;
     box-shadow: none !important;
     padding: 0 !important;
+    max-height: none !important;
+    overflow: visible !important;
     background: transparent !important;
   }
   .certificate-dialog-header,
@@ -3558,6 +4089,23 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
     box-shadow: none !important;
     padding: 0 !important;
     margin: 0 !important;
+  }
+  .cert-a4-page {
+    width: 100% !important;
+    min-height: 265mm !important;
+    page-break-after: always !important;
+    break-after: page !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+  }
+  .cert-a4-page:last-child {
+    page-break-after: auto !important;
+    break-after: auto !important;
+  }
+  .transcript-table-container {
+    max-height: none !important;
+    overflow: visible !important;
   }
   .certificate-frame {
     border-width: 6px !important;
