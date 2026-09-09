@@ -1,0 +1,106 @@
+[0.0] untuk membuat animasi makanan kesukaanmu
+[3.1] kita pastikan sudah memiliki kostumnya
+[6.5] ya di sini aku sudah punya kostum
+[8.6] tinggal di kode saja di sini kamu bisa
+[11.9] menggunakan konsep sebelumnya
+[13.6] menggunakan suara dan say block untuk
+[16.2] menjelaskan apa makanan favoritmu di
+[19.4] sini aku mau memperlihatkan Bagaimana
+[21.4] cara mengkode pergantian kostumnya
+[24.8] pertama kita pakai event yang when this
+[29.1] practic dulu ya lalu kita akan kelux dan
+[33.6] kita akan memilih kostum yang pertama
+[36.2] untuk memastikan kostum pertama kita
+[38.8] selalu dimulai dari yang paling atas
+[41.5] yaitu di sini punyaku donat
+[47.0] jika sudah pastikan kamu mengingat ada
+[50.0] berapa kostum di Sprite kamu kamu bisa
+[53.8] lihat di paling bawah Angkanya berapa di
+[57.1] sini aku 8 berarti kita akan mengulang
+[59.2] sebanyak 8 kali untuk mengganti kostum
+[63.2] kamu bisa menggunakan switch kostum satu
+[65.9] persatu secara manual diganti donat 1
+[68.6] donat 2 3 sampai 8 tapi itu terlalu
+[72.1] panjang kita akan menggunakan next
+[75.1] kostum Kenapa menggunakan next kostum
+[76.9] karena next kostum ini dia akan
+[79.2] melanjutkan pergantian kostumnya ke
+[82.2] kostum sebelahnya atau setelahnya jadi
+[84.9] kita sudah mengurutkan sebagai teks
+[87.4] kostum saja
+[88.9] untuk pengulangan kita akan menggunakan
+[91.5] control repeat 10 Nah di sini repeat 10
+[96.0] nya diganti dengan angka berapa banyak
+[99.2] kostummu tadi punya aku ada 8 berarti
+[102.4] aku akan tulis repeat 8 kalau kamu
+[105.7] masukkan next kostum dan kamu Klik di
+[108.0] donatnya kamu akan lihat ada perubahan
+[110.8] kostum setelah itu kembali ke yang penuh
+[114.2] lagi bisa dilihat ya tapi sangat cepat
+[117.7] Jika seperti itu Kamu bisa menggunakan
+[120.5] with ya
+[123.1] taruh waitnya setelah next kostum kamu
+[126.1] coba lagi bisa dilihat Wah makanannya
+[129.5] berubah kostum tapi kurang seru nih
+[133.8] karena satu whitenya terlalu lama dan
+[137.9] tidak ada animasi suaranya ya tidak ada
+[140.9] suaranya nih boleh kalian tambahkan
+[143.1] suara gimana kalian sudah pernah belajar
+[145.5] bagaimana menambahkan suara di sini aku
+[148.4] ada suara baik sudah ada dan ada suara
+[151.5] com
+[153.2] baik soalnya seperti ini
+[157.1] kalau tidak ada di Sprite kamu kamu bisa
+[160.4] dicus asang ya lalu bisa kamu ketik
+[164.3] yang baik
+[166.3] atau yang
+[170.2] m ini adalah dua suara yang ada di slide
+[173.3] untuk seperti memakan makanan tapi kalau
+[175.9] kamu mau bikin suara sendiri boleh juga
+[177.9] kok untuk record suaramu
+[180.1] karena aku sudah ada aku akan pilih
+[182.9] suara yang baik saja
+[186.4] nah bagaimana caranya aku akan
+[189.8] menambahkan sound menggunakan
+[193.0] start sound yang com tetapi taruhnya di
+[197.8] sebelum next kostum ya jadi urutannya
+[200.3] adalah start sound next kostum baru
+[203.4] weight kita cek dulu apakah sudah sesuai
+[206.2] yang kita inginkan atau ada perlu
+[208.7] dirubah
+[217.9] Oke Kayaknya sudah oke ya ada suaranya
+[222.6] ganti kostum tapi kayaknya waitnya
+[226.0] lamaan nih kalau dirasa withnya satu
+[229.3] detik itu terlalu lama kamu bisa rubah
+[231.6] menjadi angka yang lebih kecil misalnya
+[235.6] 0.5 kita coba
+[241.5] kayaknya ini lebih baik ya Jadi kita mau
+[245.2] memastikan makanan kita itu selalu
+[248.0] dimulai dari kostum yang pertama dan
+[251.0] berakhir di kostum yang pertama lagi
+[253.1] kenapa Karena kalau kita berakhir di
+[256.6] kostum yang paling terakhir dia nggak
+[258.7] ada apa-apa nanti kita tidak bisa Klik
+[260.9] lagi jadi harus kembali ke
+[264.6] kostum yang pertama ya Nah untuk
+[268.3] menambahkan informasi Kenapa kok ada
+[271.5] donat di sini kamu bisa menambahkan
+[274.7] event baru when this practic lagi
+[279.0] dan di sini kamu bisa menambahkan
+[283.6] tulisan
+[288.9] favoritku adalah
+[294.0] Biasanya seperti ini Nah kenapa harus
+[297.1] dipisah karena aku mau memperlihatkan
+[299.3] tulisannya
+[300.7] bersamaan dengan animasinya Coba kita di
+[305.0] klik ya
+[308.8] wah tulisannya menghilang sebelum ini
+[312.5] selesai boleh dirubah angkanya mungkin 4
+[320.6] Ya udah cukup Jadi pas ya Aku
+[324.0] menggunakan repeat 8 dan itu sekitar 4
+[328.3] detik itu untuk memperlihatkan
+[330.2] tulisannya itu muncul Selama animasinya
+[333.8] berjalan Jika kamu mau menambahkan
+[336.1] recording sound juga kamu boleh record
+[338.6] sound dengan menambahkan nanti
+[343.0] di video sebelumnya

@@ -1,0 +1,650 @@
+[0.7] Nah, di video kali ini kita akan
+[2.8] melanjutkan ya melanjutkan ee project
+[6.0] kita yang di mana di sini kan kita ee
+[8.5] sebelumnya kita sudah sampai memunculkan
+[10.7] tombol opsi. Ada opsi satu, ada opsi
+[13.4] dua, dan di sini kita juga memunculkan
+[15.3] si kredit. Nah, kalau misalnya dirasa
+[17.3] ini kok muncul kayak gini tuh apa gitu
+[19.6] ya. Nah, mungkin kita bisa tambahkan di
+[21.7] backdrop kita mau kayak ngasih tahu ini
+[24.5] tuh kredit gitu. Nah, kita bisa misalnya
+[28.1] aku akan pakai kotak warna putih
+[31.6] paling gampangnya seperti ini.
+[35.6] Nah, kayaknya kurang panjang berarti
+[38.5] harus diginiin.
+[41.6] Seperti ini kita sesuaikan aja kan udah
+[45.1] ada. Terus kita bisa pakai T atau teks.
+[49.6] Terus aku mau ganti warna hitam saja.
+[52.4] Kita kasih K sebagai kredit.
+[57.3] Nah, untuk tulisan itu kamu bisa banget
+[59.7] loh, bisa kamu rubah ee pilihan
+[62.4] tulisannya ya apa namanya? Fontnya ada
+[65.3] marker, ada pixel, ada curly. Jadi boleh
+[68.2] banget dimodifikasi.
+[70.5] Misalnya aku mau sensitif aja dan kalau
+[73.8] misalnya dirasa itu terlalu kecil bisa
+[77.2] kamu perbesar seperti ini
+[80.2] gitu. Terus kamu atur aja deh posisinya
+[83.8] kamu mau seperti apa. Nah, kalau
+[86.2] misalnya ada anak yang mengatakan, "Kak,
+[88.9] aku ininya apa namanya si maaf ya agak
+[92.6] agak lagi ee misalnya ini angka nolnya
+[95.8] itu tuh tidak ee apa namanya? Kayak
+[98.8] enggak mirip seperti yang dicontoh gitu
+[101.6] ya. Kayak ini kok ee nolnya gini banget
+[104.6] sih?
+[106.0] Ini aku mau coba ini
+[109.2] kok ada kayak ada masalah gitu. Nah,
+[112.2] kalau misalnya ada nolnya seperti ini
+[114.8] ya, kalau misalnya kamu tahan itu nanti
+[117.8] ada muncul normal read out, large read
+[120.3] out, sama slider. Nah, kalau normal dia
+[123.0] seperti ini. Jadi, tulisan kreditnya.
+[126.0] Kalau large read out dia cuma angkanya
+[128.1] saja. Sama kalau slider dia itu bisa di
+[131.7] slide. Jadi, bisa manual kita rubah
+[134.2] gitu. Nah, kita mau pilihnya
+[138.8] gimana nih? Ee
+[142.7] bisa didouble klik juga. Kalau double
+[144.2] klik dia akan berubah-berubah gitu ya.
+[147.8] Nah, kita mau bikin dia seperti ini. Nol
+[150.2] aja large retout. Nah, kalau misalnya
+[152.8] sudah oke, oke gitu ya. Nah, ee setelah
+[157.1] itu kita mau kalau misalnya sudah yang
+[160.1] tadi K-nya biar ketahuan ini apa gitu
+[162.6] ya, angka di atas itu kita mau
+[164.9] menambahkan backdrop. Nah, di sini ee
+[167.8] untuk yang pertama kita akan bikin
+[169.5] bareng-bareng aja ee apa namanya ee
+[173.7] kegiatannya yaitu yang pasti kalian
+[176.8] harus lakukan di rumah adalah
+[179.0] membersihkan kamar. Benar enggak? Kalau
+[182.8] misalnya enggak ee aneh ya gitu ya.
+[185.6] Kayak kan itu kamar kamu, kamu harus
+[187.6] bersihkan loh gitu. Kamarnya berantakan.
+[190.1] Berantakan biasanya apa? Baju kotor
+[192.9] ditaruh di lantai, mainan disebar gitu
+[196.6] ya. Taruh tidak pada tempatnya. Makanan
+[199.7] ditaruh di kamar juga misalnya. itu bisa
+[202.8] banget ya ee kita buat kayak oke kita
+[205.8] mau bikin pekerjaan apa sih yang
+[207.8] biasanya tuh di rumah yang biasanya
+[210.0] diminta oleh ee keluarga kita gitu. Nah,
+[214.0] yaitu salah satunya membersihkan kamar.
+[216.5] Nah, ee biar gampang kenapa kamar?
+[219.3] Karena kita ada backdrop-nya juga. Kita
+[221.3] akan mengajarkan bagaimana cara
+[223.2] menambahkan backdrop. Cara menambahkan
+[225.6] backdrop itu mirip seperti menambahkan
+[228.0] eh sprite. Bisa dari sini ya, bisa dari
+[231.2] sini kanan bawah gitu ya atau kiri
+[233.9] bawah. Kalau kiri bawah itu dia choose a
+[236.1] backdrop juga. Berbeda dengan sprite ya.
+[238.8] Kalau sprite di sebelah kiri itu kan
+[240.2] nambahin costum. Nah, kalau misalnya ee
+[243.0] di backdrop kanan kiri sama-sama
+[244.9] backdrop gitu karena dia tidak ada
+[246.6] kostum-nya. Nah, di sini boleh dipilih
+[249.3] gitu ya. Eh, ada pilihan beberapa
+[252.1] bedroom ada tiga, jadi boleh dipilih
+[253.9] tiga ruangan, tiga kamar gitu ya. Kita
+[257.1] mau bikin ini bedroom. Nah, pastikan
+[260.0] namanya itu disesuaikan aja ya. Misalnya
+[263.2] kalau bedroom ya, bedroom atau misalnya
+[265.8] aku mau kasih namanya membersihkan
+[270.6] kamar gitu. Kenapa? Karena biar sesuai
+[273.7] aja mirip dengan ee sampel project gitu.
+[276.6] Jadi nanti aku mau ngasih nama ee
+[280.0] opsinya membersihkan kamar, backdrop-nya
+[282.2] membersihkan kamar, jadi semuanya
+[283.6] membersihkan kamar. Jadi biar ee bisa
+[286.8] digunakan ee bolak-balik gitu. Nah,
+[291.5] untuk yang tombol opsi
+[294.2] kita punya kostum ya, ada dua kostum,
+[297.8] ada opsi satu, opsi dua. Karena kita ada
+[300.4] membersihkan kamar berarti kita mau
+[302.5] begini nih. Contohnya misalnya di opsi
+[305.0] satu, aku akan rubah opsi satu itu
+[307.8] menjadi namanya yang sama seperti
+[309.7] backdrop gitu. Karena kita akan
+[311.8] menggunakan si nama ee apa namanya? kita
+[314.6] akan menggunakan si nama yang sama untuk
+[318.5] program ini, untuk ee pekerjaan ini.
+[321.9] Untuk tulisannya juga bisa kita double
+[323.9] klik. Opsi satunya kita ganti
+[325.6] membersihkan kamar. Kalau misalnya
+[327.6] terlalu panjang
+[330.2] biasanya aku bikin dia enter biar ada di
+[334.6] sini. Taruh di tengah-tengah. Kalau
+[337.2] kamarnya pengin di tengah-tengah tinggal
+[338.9] tambahin stasi gitu. Kalau kurang besar
+[342.6] nih kotaknya bisa pakai panah ini ya,
+[345.2] pakai select. Terus kita atur aja
+[349.0] kotaknya ini.
+[351.1] Oh, kayaknya ini dua kotak yang berbeda.
+[353.9] He, benar, dua kotak yang berbeda. Jadi
+[357.2] harus diselectuanya baru kita gini
+[361.2] gedein. Nah, tuh ya. Jadi biar kelihatan
+[364.5] lebih rapih aja. E terus tulisannya
+[366.8] boleh ditaruh di tengah-tengah di tanda
+[368.6] plus dan lingkaran ini. Jadi biar selalu
+[371.4] ada di tengah-tengah gitu dan dia akan
+[374.6] berubah secara otomatis. Nah, ee kalau
+[378.7] misalnya sudah kita mau nge-code dulu
+[382.5] ya. Kita mau mengkode di mana? di tombol
+[386.5] opsi itu kita mau bikin kalau kita klik
+[391.6] si ini ya si clon-nya gitu. Kalau
+[396.0] misalnya kostum yang diklik itu namanya
+[400.5] membersihkan kamar ya, dia akan berubah
+[405.1] ke backdrop yang membersihkan kamar juga
+[408.4] karena kita sudah ada kodenya di sini.
+[410.8] Ini kode untuk ngeklik ya. ini mirip
+[414.8] seperti when this right click. Tapi
+[417.1] karena kita pakai clone ya, pakai clone
+[420.1] jadinya harus kita bikinnya seperti ini.
+[422.6] Kalau kena mouse eh jika eh gimana
+[426.4] gimana eh jika clone menyentuh mouse
+[429.4] pointer ya, mouse pointer kita dan mouse
+[432.1] down. Mouse down itu berarti diklik
+[434.1] gitu. Kalau itu keduanya eh benar
+[437.8] dilakukan. Jadi clon-nya menyentuh mouse
+[440.8] pointer dan mouse-nya kita klik, dia
+[443.6] akan membuat ini true yang berarti nanti
+[446.7] dia akan mengarahkan ke backdrop eh
+[449.6] membersihkan kamar. Gimana caranya?
+[452.1] Karena kita ada dua pilihan, ada opsi
+[454.3] satu, opsi du, kita akan bikinnya pakai
+[456.0] if then else. Kalau backdrop-nya ee apa?
+[459.0] Kalau costum name-nya yang diklik itu
+[461.3] membersihkan kamar, maka dia akan ganti
+[464.2] backdrop ke membersihkan kamar. Kalau
+[466.6] bukannya membersihkan kamar, berarti
+[468.4] opsi yang kedua yaitu backdrop yang
+[470.3] kedua nanti untuk pekerjaan kedua. Nah,
+[472.8] gimana caranya? Kita tambahkan if then
+[475.9] else. Aku biasanya akan taruh di pinggir
+[478.0] dulu karena kita akan menggunakan
+[480.4] operator untuk mengecek
+[483.0] apakah sudah benar atau belum. Kita akan
+[485.8] ke looks. Kita pilih namanya costume
+[489.8] name. Ini masih number. Number-nya
+[493.1] diganti jadi name ya. Kenapa sih
+[495.4] pakainya costume name? Kenapa enggak
+[497.5] pakai costume number aja? Kalau number
+[500.7] ini kamu enggak boleh otak-atik. Kalau
+[503.6] misalnya enggak sengaja kepindah-pindah
+[505.8] itu nanti akan bermasalah. Kalau
+[507.8] misalnya name itu pasti akan selalu
+[510.5] melihat dari nama kostumnya gitu. Jadi
+[513.7] lebih mudah pakai costume name. Jadi
+[515.8] kalau misalnya kamu nambah-nambahin atau
+[518.2] mungkin kamu enggak sengaja
+[519.4] kegeser-geser itu masih ee masih yang
+[523.1] benar membersihkan kamar. Nah, kita
+[525.1] taruh seperti ini. Nah, untuk memasukkan
+[528.1] ke dalam lubang ini yang bagian kiri itu
+[531.2] harus masuk ke dalam lubangnya. Dia
+[533.2] warna putih nyala gitu deh. Ee apa
+[536.4] bahasanya ya? Kayak kayak berwarna gitu.
+[539.4] Nah, dia akan masuk. Kalau misalnya dia
+[542.4] enggak masuk-masuk biasanya naruhnya
+[544.9] gini, mungkin di tengah-tengah atau
+[547.8] pinggirannya. Jadi dia ngedeteksinya
+[550.1] dari yang ee kode kirinya gitu.
+[554.6] Nah, di sini baru kita bisa masukkan
+[557.3] switch backdrop membersihkan kamar gitu
+[560.9] ya. Nah, yang ini nanti kita masih
+[563.6] kosongin karena kita belum ada backdrop
+[566.0] yang keduanya. Jadi, kita bolongin dulu.
+[569.6] Kalau misalnya sudah kita masukkan
+[572.2] dengan cara masukkan ke dalam if then
+[575.5] else-nya. Kita coba dulu yuk dari awal
+[578.1] lagi gitu. Bisa kelihatan di sini kosong
+[581.3] enggak ada tulisannya. Sedang melamunkan
+[583.5] apa Nina? Nini? Aku mau beli gitar. Oke,
+[586.1] kamu kerja dulu gitu ya. Ini kan yang
+[587.9] contoh aku tidak ee kasih ee banyak ya
+[591.8] ee apa tulisannya. Nah, harusnya kalau
+[594.7] diklik membersihkan kamar, aku coba full
+[596.8] screen, dia akan berubah ke backdrop
+[600.7] yang ee kamar gitu. Jadi ee cukup cukup
+[605.4] menarik ya. Tapi masih seperti ini
+[608.1] berarti ada yang harus kita rubah, ada
+[611.0] yang harus kita edit. Satu, di sini
+[613.6] K-nya hilang juga harus kita tambahin.
+[616.6] Terus membersihkan kamar, opsi-opsinya
+[619.3] harusnya kita sembunyikan.
+[621.3] neneknya juga masa neneknya di dalam
+[623.4] kamar kan dia kita ee disuruh ngerjain
+[626.1] pekerjaan gitu ya. Nah, ee mungkin yang
+[630.3] gampang dulu yang backdrop
+[634.0] ini aku akan
+[637.0] pilih ini copy gitu ya. Terus
+[640.7] membersihkan kamar. Ternyata backdrop
+[643.0] yang aku pilih dia itu dalam bentuk
+[645.6] bitmap. Jadi paling mudah aku convert
+[648.9] dulu
+[650.5] di terus baru aku paste ini si Kya-nya.
+[654.5] Kenapa? Ee kalau misalnya dia bertanya
+[657.2] kenapa, kenapa enggak langsung dipaste
+[658.8] aja tulisannya. Bisa. Tapi kalau
+[661.6] misalnya kamu mau ngubah-ngubah nih
+[663.5] kayak K-nya ternyata tidak sesuai dengan
+[666.3] seperti yang di backdrop kan. Backdrop
+[668.6] pas nih. Tapi di K-nya ini dia enggak
+[671.4] enggak sesuai gitu ya. Nah, kamu enggak
+[674.3] bisa ngedit lagi gitu. Jadi, enggak bisa
+[677.2] diedit seperti di living room. Di living
+[679.1] room kan kita masih bisa milih ya, gitu.
+[682.0] Nah, ini karena aku sudah enggak bisa
+[684.4] rubah, aku harus terpaksa ngambil
+[687.2] bathroom-nya lagi. Ini
+[690.9] harus aku pindah, aku hapus, aku giniin.
+[695.8] Terus ini aku convert dulu baru aku copy
+[701.2] lagi nih. Copy,
+[703.9] paste. Terus disesuaikan apakah sudah
+[707.0] sesuai atau belum. Kalau misalnya belum
+[709.3] tinggal di ee sesuaikan saja gitu ya.
+[712.8] Kan tadi kayak aku naruh ee S ee apa
+[717.0] namanya tadi? Bitmap gitu kan dia agak
+[719.7] turun ketika aku paste as a vector
+[722.2] ternyata pas gitu ya. Jadi gitu aja.
+[726.8] Kalau sudah kita mau ke nenek dulu deh.
+[732.2] Ketika dia di backdrop berubah,
+[737.4] kita sembunyikan. Berarti when backdrop
+[740.2] switches tu membersihkan kamar,
+[744.3] kita mau hide.
+[747.2] Untuk yang tombol opsi ini agak sedikit
+[750.6] berbeda
+[752.3] gitu ya.
+[754.7] Eh,
+[756.2] kalau misalnya tadi nenek itu pakainya
+[759.1] hide ya, ketika backdrop berubah.
+[763.0] When backdrop switches untuk ini untuk
+[766.0] opsi karena kita pakainya clone itu
+[768.7] pakainya delete this clone. Jadi bukan
+[772.2] pakai yang hide karena kalau hide dia
+[775.0] meng-hide sprite-nya bukan eh clon-nya
+[778.6] bukan menghapus clon-nya. Jadi clonnya
+[780.4] cuma bisa dihapus tidak bisa
+[781.6] disembunyikan. Kita coba dulu. Coba
+[784.2] ulang lagi.
+[786.3] Oke. Dia lagi sedih. Terus kamu
+[789.0] menemukan apa, Nina? Nenek, aku ingin
+[791.1] beli gitar. Kamu oke, kamu kerja dulu.
+[794.6] Masihkan kamar.
+[796.9] Ketika diklik
+[799.2] sekarang. Kenapa tidak bisa diklik
+[800.6] sekarang?
+[802.4] Bentar, ya. Oh, backdrop-nya karena tadi
+[805.6] aku salah kan, jadinya enggak berubah.
+[808.4] Nah. Nah, harusnya sudah. Betul. Tinggal
+[813.4] kita melanjutkan apa nih yang harus kita
+[816.0] lakukan untuk di ee apa namanya ee di
+[820.9] kamar ini kita bikin kayak berantakan.
+[824.1] Contohnya apa nih? Contohnya adalah mm
+[828.8] aku akan memberikan mungkin dua contoh
+[830.8] saja. Ee di sampel kan dia ada banyak
+[833.3] ya, jadi disesuaikan aja dengan
+[836.0] waktunya. Aku akan mencontohkan misalnya
+[839.6] makanan. makanan aku akan pilih pakai ee
+[844.0] aku suka makanan apa ya? Nah, paling
+[846.3] gampang donat kali ya. Misalnya aku mau
+[849.9] bikin ada donat gitu. Nah, aku mau bikin
+[855.0] donatnya itu nih terlalu besar kita
+[857.9] kecilkan dulu.
+[860.1] Misalnya ada donat di meja gitu ya.
+[865.1] Gua bikin 20 kayak kecilan 30 deh. Nah,
+[868.3] misalnya ada donat di di meja gitu, aku
+[871.2] pengen bikin dia itu kalau diklik itu
+[874.8] kayak dimakan. Jadi kita ngebersihinnya
+[877.2] berarti kita makan donatnya. Semoga
+[879.7] masih aman. Yang di mana caranya gitu ya
+[883.1] paling gampang kalau misalnya mau ganti
+[885.0] kostum itu bisa kita klik donate terus
+[888.1] duplicate.
+[890.0] Nah, duplicate-nya apa nih? Kalau mau
+[893.1] kayak dimakan, aku biasanya menggunakan
+[896.3] ee teknologi apa ya caranya gitu. Aku
+[900.4] pakai metode kayak ngegigit
+[904.1] pakai eraser atau penghapus. Kita atur
+[908.2] ukurannya misalnya 100 terlalu besar
+[910.3] bikin 70. Bu mau bikin biar kayak orang
+[913.3] gigit itu kita pakai ee ini tinggal
+[917.0] diklik aja kayak gini cuk kegigit jadi
+[921.2] kayak krauk gitu ya kayak makanan di
+[924.6] digigit gitu terusnya ee
+[929.8] kita duplicate lagi bikin digigit lagi
+[933.2] gitu ya. Aku mau bikin kayak gini
+[936.1] misalnya. Terus bikin lagi
+[940.2] ee makan bawahnya kayak gini.
+[945.3] Duplicate lagi. Aku mau bikin dia
+[949.1] ngegigit lagi lebih gede gitu ya.
+[953.8] Kayak gini. Gigit lagi.
+[958.4] Tinggal sedikit. Misalnya
+[962.2] digigit lagi, kita hapus semuanya
+[965.7] kosong. Berarti ada tujuh ada tujuh
+[968.6] kostum ya ee di sini di mana kalau aku
+[974.0] mulai dari awal digigit gigit gigit
+[977.6] gigit gigit gigit habis gitu. Nah,
+[982.9] gimana nih cara nge-codenya? yang mau
+[985.7] kita kode pertama ketika kita klik green
+[988.8] flag pastikan dia sembunyikan dulu
+[990.6] karena dia muncul hanya ada di backdrop
+[993.8] ini gitu ya. Nah, ketika backdrop-nya
+[997.4] itu di kamar ya, membersihkan kamar kita
+[1000.8] mau show
+[1002.6] gitu. Kita mau showkan terus kita taruh
+[1006.2] lokasinya tadi mana posisinya
+[1009.7] di sini posisinya. Kalau sudah oke kita
+[1012.3] kasih go to XY. sama jangan lupa
+[1016.2] kostumnya
+[1018.7] pastikan yang paling pertama
+[1021.8] gitu. Nah, terus kita mau bikin kan ee
+[1026.0] dia kayak dimakan, kita bisa pakai eh
+[1029.3] when this sprite click. Jadi kayak kayak
+[1032.2] sebelumnya di opsi, tapi yang ini kita
+[1034.8] bikinnya when this sprite karena yang
+[1036.6] dirubah adalah sprite-nya.
+[1039.6] Nah, di sini boleh banget. Eh, di sini
+[1042.0] ada sound enggak ya? Oh, ada
+[1046.2] gitu ya. Ada suara comp. Coba kita
+[1050.1] dengarkan
+[1053.3] ya. Ada suara kayak dimakan dimakan gitu
+[1055.9] kayak croke gitu. Kalau misalnya mau
+[1058.2] nambahin suara boleh banget sound ya. Di
+[1062.4] sini ada byte,
+[1065.0] ada chom.
+[1066.6] Kalau misalnya mau nambahin suara bisa
+[1069.1] eh klik di choose a sound tinggal
+[1071.5] dipilih mau apa
+[1074.3] aneh gitu ya. Misalnya ada byte ch
+[1082.4] ya boleh dicoba gitu ya atau kalau mau
+[1084.9] record
+[1086.7] kamu juga bisa pakai eh tombol record
+[1089.3] ini. Nah kalau misalnya mau record
+[1092.1] pastikan diallow ya. Boleh allow this
+[1095.0] time atau allow visiting the site. Nah,
+[1098.4] kalau misalnya sudah bisa record, kamu
+[1100.2] bisa klik record
+[1104.6] gitu. Nah, bisa diplay dulu.
+[1108.2] Nah, mungkin aku akan motong.
+[1113.8] Nah, kalau misalnya mau record lagi,
+[1115.7] rrecord. Kalau sudah oke, kita save.
+[1119.4] Jadi boleh ya
+[1126.2] [Musik]
+[1132.6] ya. Jadi boleh diedit-edit. Nah, kalau
+[1135.2] misalnya sudah kita bisa nih pakai eh
+[1138.9] play sound until done ya. Ketika kita
+[1143.4] klik terus kita mau dia ganti kostum.
+[1148.4] Jadi kalau kita klik Awi
+[1155.0] mungkin aku perbesar kali ya.
+[1158.2] Nah, setelah itu kan sudah enggak bisa
+[1159.7] diklik lagi karena sudah menghilang.
+[1162.2] Nah, ee kita mau
+[1166.3] seperti ini ngebersihinnya gitu ya.
+[1168.6] Contoh untuk membersihkan. Nah, ee
+[1171.4] setiap kita berhasil membersihkan salah
+[1173.8] satu item, kita mau dapat semacam ee
+[1179.3] poin gitu. Di sini ee aku sudah siapkan
+[1183.7] ada variabel membersihkan kamar. Jadi,
+[1187.0] nanti kita bisa nih munculin
+[1190.5] gitu. Jadi kita mau bikin kalau
+[1197.4] kalau costume name-nya
+[1200.8] ini
+[1203.2] ee kita kasih costume name. Tadi aku mau
+[1206.5] lihat dulu yang paling terakhir tuh
+[1208.0] donat 7. Kita copy aja namanya. Kalau
+[1212.1] kostumnya berubah yang ini yang kosong
+[1214.7] udah habis, kita mau change.
+[1218.2] Change-nya bukan kredit, tapi
+[1220.0] membersihkan kamar by 1. Nah, terus ee
+[1224.0] di mana kita bisa mereset sih ee
+[1227.1] membersihkan kamar? Nah, itu nanti ya ee
+[1230.6] apa namanya ee untuk itu. Tapi kita mau
+[1235.1] ngasih contoh yang lain nih. Aku mau
+[1237.2] ngasih contoh misalnya
+[1239.8] ee apa ya?
+[1243.7] Mm.
+[1245.3] H. Bikin pakai efek deh. Jadi misalnya
+[1248.4] ada baju ya. Jadi aku mau nyari baju
+[1253.6] los eh
+[1256.9] ada shirt ya. Shirt. Nah, misalnya aku
+[1260.2] ada t-shirt seperti ini.
+[1263.6] Nah, kalau misalnya mau diedit silakan.
+[1266.3] Tapi kan aneh ya kalau ee apa namanya?
+[1270.0] Baju tuh tampilannya seperti ini. Bisa
+[1272.7] loh kita bikin dia kayak seolah-olah di
+[1275.1] lantai. Untuk biar dia kayak di lantai
+[1277.1] berarti kita harus miringin seperti
+[1278.4] kayak ini ya, kayak meja, kayak kasur
+[1280.7] itu harus dimiringin. Kita akan pakai
+[1282.8] ini. Select semuanya terus menggunakan
+[1286.9] yang titik ini
+[1289.8] gitu.
+[1291.5] Oh, enggak deng.
+[1294.1] Terus yang mau kita lakukan adalah kita
+[1296.4] mau miringkan
+[1298.6] terus kita
+[1301.0] pendekin gini. Jadi seolah-olah dia ada
+[1303.5] di lantai gitu ya. Jadi boleh banget nih
+[1307.6] kayak wah kas ee biar kelihatan
+[1311.0] dia itu ini kita miringin lagi
+[1316.1] gini kali ya. Nah, misalnya kasurnya
+[1319.8] apa? Kamu naruh baju di ee lantai kita
+[1324.9] harus bersihkan.
+[1327.4] Gimana caranya? Kita akan ke kode lagi
+[1330.5] sama seperti sebelumnya. When green
+[1332.6] flight click kita sembunyikan,
+[1336.3] kita hide. Terus ketika dia berpindah ya
+[1341.1] di backdrop membersihkan kamar, kita mau
+[1344.6] showkan
+[1346.3] sama kita mau pastiin posisinya di situ
+[1350.6] ya. Nah, kalau misalnya mau diklik
+[1355.3] apa yang akan terjadi? Misalnya aku mau
+[1358.0] bikin dia itu menghilang
+[1361.4] gitu. Aku mau bikin dia kayak menghilang
+[1364.6] kayak ya udah kayak ya udah kita masukin
+[1366.8] ke mana gitu ya. Nah, ini bisa banget.
+[1370.8] Kalau mau nambahin tulisan juga boleh
+[1373.0] seperti yang dicontoh atau mau langsung
+[1375.8] kita bisa pakai repeat.
+[1379.3] Pakai repeat 10 terus menggunakan efek.
+[1383.8] Ada di sini change effect color.
+[1386.4] Colornya kita ganti jadi ghost. Kenapa
+[1389.2] kita ganti ghost? Karena kalau diklik
+[1391.9] dia itu akan transparan sampai dia
+[1394.5] menghilang kayak enggak ada gitu. Nah,
+[1398.8] karena itu Gost itu sampai 100 kita
+[1402.0] repeat-nya 10 berarti biar dapat sampai
+[1405.1] 100 kita kasih 10. 10 * 10 = 100. Dan
+[1410.0] kalau misalnya sudah kita mau change
+[1413.5] lagi si membersihkan kamar gitu.
+[1419.0] Jadi nanti untuk membersihkan kamar ee
+[1421.9] harusnya udah dapat dua poin. Nah, ini
+[1424.0] mungkin aku centangin dulu biar
+[1425.6] kelihatan ya. Kita coba play dulu dari
+[1428.6] awal ini. Nanti kita akan bermain kapan
+[1431.5] memunculkan, kapan menyembunyikan. Tapi
+[1434.2] itu nanti di sprite lain kita mau cek
+[1436.6] dulu nih ee benar enggak ya membersihkan
+[1439.5] kamar. Oke. Awi Awi Awi Awi Awi Awi.
+[1446.7] Nah, benar ya. Aku dapat satu, ini dapat
+[1451.2] dua. Nah, jadi kita mau bikin seperti
+[1454.2] ini. Nah, kalau masih ada waktu boleh
+[1456.7] banget anaknya disuruh kira-kira
+[1458.8] membersihkan kamar tuh biasanya apaagi
+[1460.2] sih? Mainan atau apa gitu ya. Jadi
+[1463.5] banyak sekali yang bisa di ee lakukan.
+[1468.1] Tapi aku contohnya cuma dua saja. Nah,
+[1471.2] setelah ini kita mau menambahkan tombol
+[1474.2] ee sprite lagi satu yaitu untuk tombol.
+[1476.9] Aku akan pakai contohnya ini.
+[1479.9] Terus aku mau kasih tulisan selesai.
+[1485.5] Selesai. Warnanya jangan ungu,
+[1489.4] hitam saja. Taruh di tengah. Terlalu
+[1492.8] besar dikecilin.
+[1495.3] Nah, seperti ini. Tapi ukurannya terlalu
+[1497.8] besar. Aku kecilin dulu ya menjadi
+[1499.9] mungkin 50%.
+[1502.2] Nah, habis itu aku mau taruh di mana ya?
+[1505.4] Taruh sini deh. Ada tombol selesai yang
+[1509.4] di mana kita mau dia muncul kalau kamu
+[1512.4] sudah menyelesaikan benda-benda yang ada
+[1515.6] di kamarnya. Karena aku bikinnya dua,
+[1518.2] berarti kalau sudah dapat dua dia baru
+[1520.4] muncul nih tombol selesainya. Boleh
+[1523.2] diganti namanya juga ya.
+[1526.2] eh tombol selesai
+[1529.4] walaupun enggak wajib yang di mana kita
+[1532.4] mau bikin when green flag klik pastikan
+[1535.6] disembunyikan.
+[1538.0] Eh, mana nih sembunyi? Hide.
+[1541.4] Terus kita mau mastiin variabel yang
+[1544.7] kita buat tadi kita hide juga variabel
+[1548.0] si membersihkan kamar. Kayaknya nanti
+[1550.4] yang membuang sampah akan aku hapus aja
+[1552.5] ee dari starter project. Kenapa? Karena
+[1555.2] nanti untuk yang aktivitas kedua itu aku
+[1557.6] bebaskan kepada anak kira-kira mereka
+[1559.4] mau apa. Tapi kalau misalnya enggak ada
+[1561.6] ide gitu ya, boleh pakai membuang
+[1564.0] sampah. Nah, ee kalau misalnya sudah
+[1568.5] kita mau ke
+[1571.4] when backdrop switches to. Ketika
+[1574.3] membersihkan kamar
+[1576.8] dia akan posisinya di sini karena bisa
+[1579.2] saja nanti di tempat lain akan posisinya
+[1581.5] berbeda. Tapi kan dia masih hide ya. Apa
+[1584.4] nih kita munculinnya?
+[1586.5] Munculinnya nunggu sampai variabel
+[1589.0] ngersihkan kamar itu sama dengan 2.
+[1591.3] Berarti instead of pakai if then kita
+[1594.3] bisa pakai wait until. Nah, sama seperti
+[1597.7] sebelumnya ini tapi kita pakai variabel
+[1601.2] membersihkan kamar. Kita bilang kalau
+[1604.2] membersihkan kamarnya sama dengan 2
+[1607.1] barulah dia muncul pakai show.
+[1612.6] Dan kalau misalnya sudah ee kita akan
+[1616.4] bikin kalau kita klik ya, kita akan
+[1620.0] bikin when this sprite click.
+[1624.0] Kita ada dua nanti ada dua tombol yang
+[1626.3] sama itu akan muncul kalau di backdrop
+[1629.0] pertama ee apa namanya yang kamar terus
+[1631.6] sama aktivitas kedua. Jadi nanti kita
+[1634.0] akan tambahin dulu if then else.
+[1637.0] Sama seperti sebelumnya kita cek dulu
+[1639.9] backdrop-nya. berarti backdrop
+[1644.0] eh costum
+[1647.7] backdrop name. Biar enggak salah karena
+[1650.6] besar kecilnya itu mempengaruhi.
+[1653.3] Kita copy saja
+[1656.7] terus kita paste. Membersihkan kamar
+[1659.4] taruh di dalam if then gitu. Nah, ee apa
+[1665.4] namanya? Kita bisa tambahin suara
+[1669.7] misalnya senang gitu ya.
+[1674.0] Mm
+[1679.7] apa ya? Pakai suara yang mana ya? Hmm.
+[1688.6] ini kali cheer
+[1692.4] mungkin aku akan pakai cheer yang di
+[1694.4] mana wah hebat gitu. Nah, kita bisa
+[1698.7] nambahin suara jadi kayak yey kamu
+[1701.2] berhasil membersihkan kamar kamu. Kita
+[1704.2] bisa pakai play sound. Nah, mungkin di
+[1707.2] sini akan ada yang bertanya di shirt eh
+[1710.3] apa? Di donut kita pakai play sound
+[1712.8] until then. Sedangkan di tombol itu
+[1715.0] pakai start sound. Apa yang membedakan?
+[1717.6] Jadi kalau play sound until dia itu akan
+[1721.4] kodenya itu dijalankan sampai akhir.
+[1724.5] Jadi nyala ee suara dulu dari awal
+[1727.0] sampai akhir. Kalau misalnya cepat ya
+[1729.8] cepat. Kalau misalnya lama ya lama gitu.
+[1733.2] Kalau misalnya play sound until then,
+[1735.0] kalau sudah selesai baru dia ee lanjut
+[1739.0] ke kode berikutnya. Nah, di cheer ini
+[1742.6] ternyata waktunya hampir 5 detik. Kalau
+[1746.2] misalnya kita play sound until done 5
+[1748.6] detik, terus baru nanti ada tulisan
+[1751.4] misalnya kamu berhasil membersihkan
+[1753.6] kamar, itu kan agak aneh ya. Kita mau
+[1756.8] ada suara jadi start sound jadi suaranya
+[1759.5] dinyalain. Habis itu lanjut ke kode
+[1762.3] berikutnya. Nah, di sini kita akan pakai
+[1764.7] misalnya
+[1766.5] selamat
+[1768.8] kamu mendapatkan berapa kredit? kan tadi
+[1772.2] eh kalau di sini video ini kan aku tidak
+[1775.3] bilang ya harus ada berapa kredit, tapi
+[1777.3] kalau yang dicontoh dia itu membutuhkan
+[1780.3] 8 kredit ya di sampel project itu dia
+[1782.6] butuh 8 kredit yang di mana kita mau
+[1785.6] memastikan setiap kegiatan itu kreditnya
+[1788.1] berbeda. Karena di sini kalau sama nanti
+[1790.4] akan ee masalah ketika kita mau lanjut
+[1794.1] ke ee kegiatan keduanya.
+[1797.7] Jadi misalnya aku akan bilang kalau
+[1799.8] butuhnya 8 berarti aku bikin misalnya 3
+[1802.3] sama 5 atau ee 2 sama
+[1807.6] 6 misalnya gitu tapi jangan 4 dan 4 gitu
+[1811.0] ya. Misalnya karena kamar itu cukup
+[1813.7] susah gitu ya, bisa kamu mendapatkan
+[1816.8] lima kredit dan kita bisa tambahkan kita
+[1821.8] change kreditnya bukan by 1 tapi by 5
+[1825.6] karena dia dapat 5. Nah, kalau misalnya
+[1829.1] sudah kita akan kembali ke backdrop
+[1832.4] living room
+[1834.9] ya. Nah, habis itu nanti kita akan ee
+[1838.8] broadcast lagi opsinya.
+[1841.5] opsinya munculin lagi gitu ya. Kita coba
+[1844.4] klik. Ini kan harusnya membersihkan
+[1845.7] kamar sudah dua nih. Kita klik
+[1851.9] gini. Yeay. Kamu berhasil mendapatkan
+[1855.6] lima gitu ya. Mendapatkan lima
+[1860.0] ee apa namanya? Lima kredit. Bisa
+[1862.6] kelihatan di sini lima kredit. Nah, ada
+[1865.0] yang harus kita perbaiki. Selesainya
+[1867.0] tombolnya harus disembunyikan lagi.
+[1868.8] Kalau sudah di sini membersihkan kamar
+[1872.1] juga kita sembunyikan
+[1874.9] ya biar enggak muncul-muncul.
+[1877.2] Terusnya kita juga mau yang ini kan udah
+[1879.8] dikerjain nih ya, membersihkan kamar mau
+[1882.4] kita hapus jadi enggak muncul lagi. Jadi
+[1885.1] tinggal sisa opsi yang kedua gitu.
+[1887.7] Gimana caranya di eh tombol ini kita
+[1891.9] bikin aja when backdrop switches to
+[1895.1] living room kita sembunyikan
+[1899.0] gitu. Nah, untuk yang
+[1903.2] opsi Oh, terus mungkin bisa juga
+[1908.1] kita hide ya. Aku bentar aku mau lihat
+[1912.8] ee contohnya dulu.
+[1915.8] Di manakah aku menyembunyikan
+[1920.1] ee
+[1922.7] si variabel?
+[1925.2] Oh, aku di player ya. Oke, enggak
+[1928.7] apa-apa kita sembunyikan aja dulu. Udah
+[1931.4] biarin dulu ya. Nanti kita akan nge-kode
+[1933.3] itu nanti di tempat lain. Kita akan
+[1935.9] lanjut dulu ke opsi yang di mana di opsi
+[1939.0] ini kita perlu menambahkan kode yang di
+[1941.8] sini kita udah ada contohnya. gitu ya.
+[1945.7] Udah ada ee starternya, kreditnya kan
+[1949.0] kita untuk membersihkan kamar tuh dapat
+[1950.7] lima. Nah, karena di Scratch itu tidak
+[1954.7] ada sama dengan atau lebih dari lima ee
+[1958.5] apa tanda sama dengan atau lebih dari,
+[1962.3] kita akan pakai caranya ya udah
+[1964.8] kreditnya lebih dari angka dikurangi 1.
+[1969.8] Jadi kalau sudah dapat lima berarti dia
+[1973.5] harus dihapus dan costum name-nya
+[1977.3] yang membersihkan kamar
+[1982.0] ini
+[1984.0] dia akan dihapus. Kita coba ke selesai.
+[1987.0] Nah, sembunyi. Ininya juga sembunyi.
+[1990.3] Nah, nanti di sini kita akan bikin kalau
+[1993.2] misalnya berarti butuh 8 berarti butuh 3
+[1995.9] nanti ini kita jadiin dua gitu. Tapi
+[1999.0] untuk saat ini kita sampai sini dulu
+[2001.9] sebelum kita lanjut untuk ke opsi dua.

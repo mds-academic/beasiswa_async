@@ -1,0 +1,146 @@
+[2.3] kita akan belajar membuat Sprite
+[6.1] karakter kita sendiri yang akan kita
+[8.5] gambar dari kosong Jadi untuk membuat
+[12.4] itu kita akan menggunakan PIN editor
+[15.3] pertama kita hapus dulu Sprite kucingnya
+[18.8] yang mau kita lakukan adalah dekatkan
+[22.0] Mouse
+[23.8] Sprite lalu klik bagian pin
+[29.6] dia akan memunculkan Sprite kosong dan
+[32.6] langsung ke kostum Tab di sini kita akan
+[36.6] membuat karakter kita dalam bentuk
+[39.5] vektor Nah aku akan memperlihatkan
+[42.6] contoh pembuatan karakter aku yang
+[46.2] sebagai perempuan menggunakan rambut
+[49.4] panjang berwarna hitam
+[51.5] pertama aku akan menggunakan Sheep
+[54.8] lingkaran dimana disini aku akan merubah
+[57.8] warna kulitnya seperti sawo matang
+[63.2] jika sudah outline nya bisa aku kurangi
+[66.6] biar ada garis tepinya tapi tidak
+[68.7] terlalu tebal
+[71.2] untuk membuat lingkaran yang ukurannya
+[74.0] sama lingkaran dengan diameter yang sama
+[77.0] kita bisa tahan shift di keyboard lalu
+[81.0] kita buat lingkaran
+[84.0] dia akan membuat perfect
+[87.3] jika sudah usahakan karakter kamu atau
+[91.2] gambar kamu ini bentuknya ada di
+[94.6] tengah-tengah ya
+[98.4] Jika perlu kamu bisa zoom in untuk
+[101.9] membantumu saat menggambar
+[104.6] jika sudah saatnya untuk mengedit karena
+[108.7] ini badan mukanya terlalu bulat Aku mau
+[113.0] bikinkan Dia sedikit lonjong dengan cara
+[115.8] pakai
+[118.0] Klik di shape lalu klik pada bentuk yang
+[121.1] Mau diubah bentuknya nanti akan muncul
+[124.1] titik seperti ini
+[126.9] pilih salah satu titik Aku akan bagian
+[129.7] dagu akan aku turunkan untuk
+[133.6] memperlihatkan
+[135.6] mukanya atau wajahnya tidak terlalu
+[138.3] bulat
+[141.8] kamu juga bisa meruncingkan dagunya jika
+[144.7] mau dengan cara klik bagian
+[148.6] Diamond ini
+[152.1] jika sudah aku mau menambahkan rambutnya
+[155.9] dulu untuk rambut aku akan menggunakan
+[158.5] Line
+[160.7] dan di sini untuk membuat Line yang bisa
+[163.5] diwarnai dalamnya pastikan lain itu
+[166.6] tidak terputus dalam artian jika aku mau
+[170.9] membuat poni
+[173.9] dengan contoh seperti ini
+[179.5] aku tidak bisa hanya membuat garis
+[182.1] seperti ini saja namun aku harus
+[184.9] menggabungkan titik yang ini sama titik
+[187.7] ini untuk membuat bentuk yang tertutup
+[190.0] dan aku bisa mewarnainya karena jika
+[192.9] tidak aku tidak bisa mewarnainya nanti
+[196.0] akan berwarna semua bentuknya jadi aku
+[200.0] harus mengambil lain lagi
+[203.3] Aku akan buat seperti ini dulu
+[206.2] lalu sambungkan lainnya ke sini
+[210.6] jika sudah aku baru bisa mewarnainya
+[214.1] sekarang bisa bermain dengan receive
+[217.1] untuk mengubah posisinya
+[220.4] seperti ini aku harus membuat titik baru
+[223.8] lalu dibuat seperti ini
+[229.3] kamu juga bisa membuat titiknya ini
+[232.3] menjadi Curve atau pointed dia ini kalau
+[236.0] di Curve dia akan seperti ini bisa kamu
+[239.2] bikin oval lebih
+[242.1] kayak melingkar tapi kalau di pointed
+[245.2] dia kan menjadi lurus seperti ini
+[253.6] nah poninya sudah tinggal rambut
+[256.3] belakangnya karena rambut aku panjang
+[259.0] aku akan membuat
+[261.9] rambutnya panjang juga kamu bisa juga
+[265.3] Selain lain bisa juga menggunakan brush
+[268.7] yang di mana kamu bisa
+[271.3] lebih
+[273.7] kreatif lagi namun dengan syarat
+[279.1] dengan syarat jangan bolong juga untuk
+[282.2] pembuatannya
+[286.5] misalnya aku bikin seperti ini kalau
+[289.3] sudah warnai tapi menutupi semua wajah
+[293.0] dari karakter aku kita bisa rubah dengan
+[297.0] cara klik dan pilih untuk ke back
+[301.6] nah jadilah seperti ini jika kamu perlu
+[305.9] mengubahnya sayangnya juga menggunakan
+[309.4] brush itu agak sulit ya untuk mengubah
+[312.9] titik-titiknya karena terlalu banyak
+[314.8] titiknya kamu bisa menggunakan penghapus
+[317.8] untuk menghapus extra gambarnya
+[322.5] tinggal dirapikan saja
+[325.4] atau kamu bisa edit juga
+[329.5] aku akan Zoom
+[332.4] titik ini mau aku hapus
+[342.0] dan jadi deh karakter Aku memiliki
+[345.1] rambut dengan poni yang lurus saatnya
+[348.9] menghias wajahnya dengan menambahkan
+[351.5] mata hidung dan mulut di sini kamu bisa
+[355.0] juga menggunakan shape yang kamu mau di
+[357.7] sini aku akan menggunakan lingkaran lagi
+[359.9] untuk membuat mata
+[362.2] untuk membuat putih pastikan warnanya
+[365.1] dirubah
+[367.4] seperti ini
+[370.0] lalu aku Terganti warnanya hitam
+[374.9] seperti ini
+[377.6] untuk memudahkan aku membuat mata yang
+[380.5] sama ukurannya aku bisa Klik dua bentuk
+[385.1] ini dengan cara tekan shift lalu aku
+[388.9] pilih copy Kalau sudah aku bisa pilih
+[392.3] paste dan berubah seperti ini aku akan
+[396.2] flip biar matanya pas menghadap Tengah
+[399.6] Tinggal diatur Saatnya membuat hidung
+[404.5] aku akan menggunakan lingkaran lagi
+[407.2] namun aku akan menggunakan gradiasi
+[411.3] yang satu aku buat garis merah ini
+[415.1] menandakan dia tidak ada warna
+[418.1] yang di sini Aku mau ganti warna merah
+[425.5] Nah kalau dilihat ini terlalu merah aku
+[428.9] akan rubah sedikit menggunakan fill
+[432.5] dan menggerakkan seperti ini
+[436.5] lalu menggunakan
+[446.3] nah
+[448.3] inilah hidung aku
+[453.5] lalu yang terakhir membuat mulut aku
+[458.1] akan menggunakan
+[460.7] warna merah ini dengan kotak
+[466.0] tapi menggunakan Richeese
+[485.6] aku akan menambahkan alis
+[493.4] yang aku ricis
+[495.9] lalu aku copy dan paste
+[499.0] aku flip kan biar
+[501.9] seperti
+[503.7] sama ya ukurannya
+[507.0] dan jadi karakter aku sudah selesai nah
+[511.4] tapi kalau kita lihat dia terlalu besar
+[513.9] jadi boleh diganti ya ukurannya Misalnya
+[517.4] 50 jika terlalu kecil bisa dirubah lagi
+[521.1] misalnya 70
+[524.0] dan seperti ini aku akan taruh di
+[527.1] tengah-tengah

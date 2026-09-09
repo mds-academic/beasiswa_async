@@ -1,0 +1,137 @@
+[1.7] untuk menggerakkan Sprite mobil kita
+[4.1] harus memprogramnya kita akan memprogram
+[7.1] Sprite mobil untuk berjalan maju belok
+[9.8] ke kanan dan belok ke kiri dengan tombol
+[12.7] panah di keyboard pertama pastikan kamu
+[16.0] sudah ada di Sprite mobilnya jika sudah
+[19.7] kita akan ke events untuk mengambil when
+[22.7] Space key press jika e kodenya terlalu
+[26.4] kecil kamu bisa memperbesarnya dengan
+[28.9] menekan tombol
+[31.4] plus karena kita mau menggunakan panah
+[34.6] untuk jalan maju kita akan menggunakan
+[37.2] up
+[38.3] arrow untuk up arrow kita mau bikin dia
+[42.0] jalan maju untuk jalan maju kita
+[44.4] tambahkan ke motion ambil move 10 steps
+[48.4] kamu boleh coba menekan tombol up arrow
+[51.4] untuk majunya nah perhatikan Apa yang
+[54.6] terjadi ketika kamu menekan tombol up
+[56.9] arrow dan kalau
+[58.9] menahannya
+[61.8] untuk mengulang kamu bisa pindahkan
+[64.6] posisi mobilnya dan mencoba lagi untuk
+[67.2] jalan maju Apakah sudah dia jalan maju
+[70.9] Nah kalau kamu perhatikan Jika kamu
+[74.2] menahan tombol up arrownya dia akan
+[76.9] jalannya seperti jalan patah-patah di
+[79.2] awal lalu dia akan jalannya sedikit
+[82.2] lebih smooth tapi kadang-kadang suka
+[84.4] patah-patah nih Nah untuk memperbaikinya
+[88.0] kita mau bikin bagaimana eh mobilnya ini
+[91.8] berjalan selalu mulus ketika kita tekan
+[95.2] tombol up arrow-nya kita akan
+[97.2] menggunakan control menggunakan repeat
+[102.0] until nah repeat until ini gunanya untuk
+[106.1] mengulang kode yang ada di dalamnya
+[108.4] hingga kondisi yang ada di sebelahnya
+[111.2] itu tercapai Nah di sini kita mau
+[113.8] mengatakan jika kita menekan tombol up
+[116.7] arrow kita mau bikin mobilnya jalan
+[119.9] sebanyak 10 langkah sampai tombol up
+[122.6] arrow-nya tidak ditekan lagi Bagaimana
+[125.6] caranya kita akan ke operators ambil not
+[128.7] karena ada
+[131.7] tidak lalu kita ke sensing untuk
+[135.4] mengambil key Space press jadi bisa
+[138.8] dilihat di sini ada tiga kode tambahan
+[141.7] untuk key Space press-nya kita ganti
+[144.0] dengan up
+[145.3] arrow lalu kita mau masukkan ke dalam
+[148.4] note cara untuk masukkannya ambil bagian
+[151.4] kiri dari kode kita m masukkan ke dalam
+[153.9] lubang jika muncul e garis putih di
+[157.8] lubang itu berarti kamu bisa
+[160.3] memasukkannya jika sudah not-nya note
+[163.8] key up arrow press-nya kita masukkan ke
+[166.3] dalam repeat
+[167.7] antil pastikan untuk mengambil yang
+[170.5] paling kiri karena jika tidak dia akan
+[174.6] sulit untuk masuk misalnya kalau kamu
+[176.8] ambil yang kanan dia tidak akan berwarna
+[179.2] putih dan dan kamu tidak bisa
+[180.6] memasukkannya jadi dia hanya mau
+[182.7] dimasukkan kalau menyentuh bagian kiri
+[185.4] kode lalu move 10 steps-nya kita
+[188.8] masukkan ke dalam repeat until dan
+[191.2] gabungkan ke W up aerrow key press Jika
+[194.8] kamu coba sekarang seharusnya mobil Kamu
+[198.2] berjalan lebih smooth dari
+[200.4] sebelumnya Jika kamu merasa mobilnya
+[203.0] terlalu cepat jalannya kamu bisa rubah
+[205.6] angkanya sesuai yang kamu inginkan jika
+[208.9] kamu memilih untuk dua steps maka dia
+[211.5] akan berjalan dua langkah at the times
+[214.2] jadi dia jalannya lebih lambat Jika kamu
+[217.8] rubah menjadi
+[219.4] 50 dia akan jalannya lebih
+[223.0] cepat seperti
+[225.2] itu Nah selanjutnya kita mau bikin untuk
+[229.2] belok ke kanan dan belok ke kiri mirip
+[232.2] seperti kode di up arrow ini kita akan
+[235.1] mengkode yang sama namun kode di dalam
+[238.2] repeat untiltil akan berbeda tidak jadi
+[240.6] boleh dibuat dulu untuk ke kanan maka
+[243.2] kita akan menggunakan right arrow untuk
+[245.7] belok ke kiri kita akan pakai left arrow
+[248.4] hati-hati ketika kamu mengodenya
+[250.8] pastikan eh arrow-nya yang ada di when
+[254.1] key press-nya dan key press yang ada di
+[256.8] warna biru ini sama
+[268.6] ya
+[300.0] Jika kamu sudah membuat untuk when arrow
+[303.4] key press repeat until not key press
+[306.9] Jadi kalau sudah bikin dua itu untuk
+[309.0] yang ke kanan dan ke kiri kita bisa
+[311.0] lanjut ke motion lalu kita mau ambil
+[314.0] turn right dan turn left bisa dilihat
+[316.3] dari panahnya yang ini untuk ke kanan
+[320.0] dan yang satunya itu untuk ke kiri nah
+[323.7] Jika kamu masukkan seperti ini
+[325.4] seharusnya dia sekarang bisa berbelok ke
+[328.2] kanan dan ke kiri
+[330.0] bisa kita ulang
+[332.4] lagi lalu kita
+[335.0] lurus bisa belok ke kiri bisa belok ke
+[345.5] kanan Jadi sekarang kamu bisa
+[348.0] menggerakkan mobil kamu mengarah ke
+[350.4] kanan atau ke
+[351.8] kiri nah jika perputaran itu terlalu
+[355.3] cepat seperti yang di Move 10 steps tadi
+[358.2] kamu bisa merubah angka ya jika 15
+[361.1] terlalu cepat kita bisa rubah menjadi 5
+[364.3] nah usahakan angkanya sama ya untuk left
+[367.2] arrow dan right arrow karena kita mau
+[369.1] bikin dia beloknya itu sama dengan yang
+[374.6] satunya Nah kamu sekarang bisa
+[377.4] menggerakkan
+[382.4] mobilnya Nah untuk mengulang untuk
+[385.3] memastikan mobilnya itu berada di posisi
+[388.4] semula kita bisa membuat dia menjadi
+[391.8] mengarah ke kanan dulu dan posisinya
+[394.4] kita set Nah untuk mengeset kita akan
+[396.7] menggunakan events pakai when Green Flag
+[402.0] Click lalu kita ke motion kita mau
+[405.4] memastikan dia berawal menghadap ke
+[408.2] kanan yaitu point in direction 90 Jadi
+[412.7] sekarang kalau kita klik Green Flag
+[414.8] misalnya sedang menghadap ke arah yang
+[416.4] lain kita bisa Klik Green Flag dia akan
+[419.5] hadap ke kanan kembali Nah kalau sudah
+[422.8] Pilihlah posisi pertama kamu misalnya di
+[426.2] sini dan tambahkan go to
+[430.6] xy-nya Jadi kalau misalnya kamu jalankan
+[434.0] mobilnya lalu mau diulang Dari awal kamu
+[437.6] hanya perlu klik Green Flag untuk
+[439.8] kembali ke posisi
+[442.7] awalnya

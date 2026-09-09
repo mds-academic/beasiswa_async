@@ -1,0 +1,44 @@
+[4.0] cara membuat Sprite mobil kita akan
+[6.6] membuatnya di bagian Sprite scratch
+[9.5] secara otomatis memposisikan Sprite
+[11.9] menghadap ke arah kanan maka kita akan
+[14.6] membuat mobil kita menghadap kanan juga
+[17.4] pertama kita buat dulu menggunakan paint
+[20.8] di Sprite lalu kita akan menggunakan
+[24.0] kotak untuk membuat mobilnya madapnya ke
+[27.3] kanan dan terlihat dari atas nah gunakan
+[30.6] kreativitasmu untuk menggunakan shape
+[32.7] atau e tools yang lainnya untuk membuat
+[35.5] mobil
+[58.3] kamu Jika kamu kamu merasa kesulitan
+[61.6] untuk mengedit kamu bisa zoom in dengan
+[64.2] klik Tanda plus
+[88.8] ini
+[100.4] untuk pembuatan roda kamu bisa membuat
+[103.4] satu bentuk dulu lalu kamu bisa copy
+[106.4] lalu di-paste untuk membuat roda
+[114.7] lainnya nah ini sudah jadi namun kalau
+[118.0] dilihat rodanya ini dia atas kap
+[120.5] mobilnya ya Jadi untuk membuat e bannya
+[124.5] di bawahnya itu kita bisa Klik Ini
+[128.2] kotaknya lalu kita pilih bagian yang
+[136.5] back dan jadi mobil Kamu sudah siap
+[140.8] namun jika kamu lihat ini terlalu besar
+[144.3] untuk sirkuitnya kamu bisa rubah
+[146.6] size-nya dengan mengganti di bagian size
+[158.3] jika sudah kamu mau memastikan bahwa
+[161.4] mobil kamu berada di tengah Apa
+[163.7] maksudnya di
+[164.9] tengah tengah itu adalah tombol yang ini
+[168.5] ada tanda klik ee Tanda plus dengan
+[171.7] lingkaran seperti ini nah ini menandakan
+[174.8] tanda Tengah dari sprite-nya pastikan
+[177.6] kamu memilih ee memastikan Sprite kamu
+[181.0] ada di tengah-tengah untuk memudahkan
+[183.1] saat pengkodean nanti jadi dengan cara
+[185.8] kamu drag semuanya atau klik klik ctrol
+[188.9] a lalu kamu pastikan Tanda plus yang ada
+[192.0] di gambarmu itu menyatu dengan tanda
+[195.4] panah
+[198.5] Tengah jika sudah kamu siap untuk
+[202.9] mengkodenya

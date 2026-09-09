@@ -1,0 +1,212 @@
+[1.0] Sekarang kita mau mengup ee
+[3.7] menyelesaikan nih untuk pembuatan ending
+[6.5] yang di mana untuk memudahkan kita biar
+[9.2] enggak bingung nih. Jadi ketika sudah
+[11.3] berhasil mendapatkan 8 kredit, kita akan
+[14.3] panggil neneknya dan kita akan ee kayak
+[16.9] yuk kita beli gitarnya sekarang gitu.
+[19.6] Nah, untuk memudahkan karena kita kan
+[21.6] akan melanjutkan di sini ya, kita akan
+[24.4] menggunakan broadcast ending saja gitu
+[28.7] yang di mana di broadcast ending ini
+[31.1] kita akan bikin mm
+[34.2] seperti apa ya percakapan ya ee yang
+[38.7] menarik tuh
+[40.8] gini
+[42.5] kita kan when I receive ending ya
+[45.2] pemainnya
+[46.9] kita bisa bilang
+[49.0] wah Ah,
+[52.1] e
+[54.5] kreditku sudah cukup
+[57.7] untuk membeli gitar gitu ya. Terus aku
+[64.0] mau panggil nenek. Nenek
+[69.4] ee uangku sudah terkumpul gitu kan.
+[75.3] Jadi misalnya seperti ini, kita mau
+[77.1] bikin nenek, aku sudah terkumpul nih.
+[80.1] Gitu. Nah, lalu kita bisa bikin di nenek
+[83.5] ya dengan yang sama dengan kalau aku
+[85.8] akan pakai cara yang sama di
+[87.2] samping-sampingnya dulu. Ketika dia
+[89.5] weight seperti ini, ini kan empat ya.
+[92.3] Tapi kalau mau mudah biar enggak bingung
+[95.6] anaknya disesuaikan saja 2 sama dua
+[98.7] walaupun bisa jadi empat gitu kan. Nah,
+[101.7] misalnya kita bikin dia show
+[104.5] neneknya.
+[106.9] Neneknya show. Habis itu kita mau bikin
+[110.2] dia muncul di posisi yang sama ya.
+[114.5] Berarti kita mau ambil ini aja. Misalnya
+[119.2] aku mau showkan dulu. Misalnya aku mau
+[122.0] bikin dia ke sini gitu ya. Angkanya yang
+[125.8] ini
+[127.9] 6 sama -28.
+[132.4] Nah, di sini
+[136.6] dia ada oh harusnya glide 6
+[141.4] sama -28
+[143.7] 28.
+[145.4] Terus got to kita bikin aja deh 240
+[148.8] karena paling ujung kan 240 kita
+[151.1] bikinkan dia show habis itu dia glide
+[154.2] glide kalau dari sini ke sini kayaknya
+[156.4] akan lebih ee apa namanya? Lebih lama
+[160.0] ya. Jadi mungkin sekitar 2 detik nanti
+[162.7] kita akan coba. Terus kita mau bikin
+[165.1] nih, wah kamu hebat gitu ya. Kita bisa
+[169.6] tambahkan ini.
+[175.5] Wah, kamu hebat gitu ya.
+[179.3] Aku lupa nama karakter kita siapa. Nina
+[183.0] ya. Nina. Wah, Nina gitu ya.
+[188.6] Nina. kamu hebat seperti itu. Ayo kita
+[193.4] beli,
+[197.2] ayo kita beli gitarnya.
+[199.8] Jadi ee disesuaikan saja ee berapa
+[206.1] ee menitnya ya.
+[209.2] Nah, terusnya kita mau nambahin weight
+[213.3] ya. Ketika kita menyusun kayak gini
+[215.6] terus gimana dong weight-nya gitu? Ya
+[217.8] udah kita gabungin aja. 2 + 2 + 2 6.
+[221.5] Kita bikin 6 gitu ya. Habis itu ee apa
+[226.2] namanya? Kita coba deh. Aku akan
+[228.9] pindahin dulu ke nenek ya. Ini kodenya
+[232.1] aku hapus saja yang di nenek seperti
+[234.8] ini.
+[236.4] Nah, ketika kita mau ngecek, ngeceknya
+[238.6] itu gampang banget karena kita pakai
+[240.2] broadcast. Kita enggak usah mulai dari
+[242.6] awal banget nih untuk kode yang ini ya.
+[245.4] kita bisa pakai broadcast ending aja
+[247.4] langsung kita klik gitu ya. Wah,
+[249.8] kreditku sudah cukup untuk membeli gitar
+[252.6] gitu ya. Neneknya kita sembunyiin gitu
+[254.8] kan tadi ee udah terlanjur hah gitu ya.
+[262.2] Excuse me. Maaf. Nah, ini misalnya kita
+[264.5] coba ulang lagi. Bentar deh aku stop
+[266.6] dulu deh. Ini aku sembunyiin neneknya
+[270.4] terus broadcast dulu. Wah, kku sudah
+[272.5] cukup untuk membeli gitar. Nenek, aku
+[274.6] sudah terkumpul. Neneknya datang. Wul
+[277.2] gitu. Wah, Nina kamu hebat gitu ya. Ayo
+[279.7] kita beli gitarnya gitu ya. Misalnya ayo
+[283.4] gitu ya. Kita bisa tambahkan misalnya
+[285.8] ayo
+[287.8] gitu ya. Ee terus kita bikin misalnya
+[291.7] dia glide gitu glide-nya sampai 240
+[298.6] gitu ya. Dan mungkin ini kita kasih 3
+[301.9] detik deh gitu. Karena dari sini ke sini
+[303.8] mungkin butuh tiga. Nah, terus gimana
+[306.4] neneknya? Neneknya juga mungkin ee apa
+[310.0] namanya?
+[313.0] Kita lihat dulu. Ini enam
+[317.0] 6. Kita coba dulu
+[321.5] seperti ini. Eh, maaf salah.
+[325.1] Kita pakai events broadcast ending. Wah,
+[327.6] kku sudah cukup untuk membeli gitar.
+[329.5] Nenek udku sudah terkumpul. Kita suruh
+[331.6] dia datang. Masuk nih neneknya. Wah,
+[334.1] Nina kamu hebat. Ayo kita beli gitarnya.
+[337.2] Terus ayo. Nah, terus kan dia jalan nih
+[340.0] set gitu. Nah, kita bisa tambahkan nenek
+[343.0] untuk berjalan juga. Nah, gimana nih
+[345.7] cara jalannya? Kita bisa ee apa namanya?
+[349.9] kita duplicate ya si glide-nya tadi yang
+[354.0] ini terus kita jadiin 240. Jadi biar
+[357.9] gampang set cuma ada masalah. Masalahnya
+[362.6] di mana? Dia mundur. Nah, gimana caranya
+[366.4] biar dia ee jalannya ke kanan? Kita bisa
+[370.3] menggunakan point in direction 90.
+[373.8] Karena kita kan sudah bikin neneknya ini
+[376.6] ee apa? Menghadap kiri gitu ya. Jadi
+[379.3] kita bikin point in direction baru
+[381.8] glide. Mari kita coba broadcast
+[384.8] ending-nya.
+[386.3] Mungkin aku ee kita mulai dari awal aja
+[389.1] deh. Eh atau enggak gini karena kan
+[392.0] kostumnya dia yang berdiri ini. Terus
+[396.8] kita broadcast ending-nya. Wah kku sudah
+[399.5] cukup untuk membeli gitar. Nenek uangku
+[401.7] sudah terkumpul. Neneknya datang.
+[404.6] Wahina kamu hebat. Ayo kita beli
+[407.2] gitarnya. Ayo, terus jalan ya, set gitu.
+[412.7] Nah, tinggal yang terakhir ada yang
+[414.7] kurang yaitu jangan lupa disembunyikan
+[418.2] biar seolah-olah mereka sedang keluar
+[421.8] gitu. Nah, ini neneknya kayaknya tadi
+[424.0] langsung jalan ya. Boleh kita tambahin
+[426.7] wait deh ee apa 1 detik gitu.
+[432.6] Aku mau sembunyikan dulu ninanya. Aku
+[435.5] mau pindahkan sini dulu.
+[438.1] Terus kita coba. Semoga ini yang
+[439.7] terakhir untuk pengecekan ya. Jadi
+[441.5] ketika bikin animasi tuh kadang-kadang
+[443.3] harus ngecekin satu persatu gitu. Nah,
+[446.4] ini karena codingannya di awal ya, kita
+[449.2] enggak dari awal jadi dia sudah
+[450.7] menghadap. Nah, seperti ini.
+[454.8] Tada hilang gitu. Mungkin pemainnya tadi
+[458.3] jangan tiga deh, dua aja gitu. Aku mau
+[460.9] bikin misalnya biar barengan gitu. Nah,
+[464.6] harusnya seperti itu. Nah, aku ada
+[467.6] tambahan ee untuk kode yang ini yang di
+[470.9] pemain yang seb di video sebelumnya ini
+[473.7] kan height variable-nya itu ketika di
+[475.9] dalam else. Nah, ketika kita broadcast
+[478.9] di ending ternyata variabelnya itu
+[481.2] enggak kesembunyi gitu ya karena ee
+[483.6] kreditnya kan del gitu. Nah, ini kita
+[486.5] bisa rubah aja taruh di bawahnya. Jadi,
+[488.7] setelah menjalankan if then else-nya,
+[491.2] dia akan ee sembunyi. Itu aja yang perlu
+[493.6] dipindahin. Yuk, kita cek dari awal.
+[496.6] Kita klik green flag. Nah, di sini kalau
+[500.0] misalnya enggak ada apa nih yang kurang?
+[502.4] Ternyata pemainnya
+[505.0] kita enggak ngasih show. Pastikan di
+[507.7] when green flck kita kasih show. Taruh
+[511.2] seperti ini ya. Taruh paling atas gitu.
+[515.0] Taruh paling atas biasanya. Nah, kita
+[517.5] coba ulang lagi.
+[519.7] Aku ingin beli gitar untuk belajar
+[522.4] musik. Nina melamunkan apa, Nenek? Aku
+[526.2] mau beli gitar. Oke, kamu kerja dulu
+[528.8] baru bisa dapat kredit. Kerjakan. Kita
+[531.5] misalnya bersihkan kamar dulu. Ayo kita
+[534.3] bersihkan kamar ini.
+[538.7] Di sini ya. Aku enggak pakai suara tapi
+[542.3] kita udah dapat dua. Kita klik selesai.
+[545.5] Dapat. lima kredit. Terus sekarang sisa
+[549.3] membuang sampah. Nah, ini ee
+[554.6] ini sampah gelas sama ini kayak apel
+[558.0] gitu organik.
+[560.6] Nah, kita selesai.
+[563.9] Harusnya mendapat delan. Nah, terus wah
+[565.7] kreditku sudah ini terkumpul gitu ya.
+[570.1] Wah, Nina kamu hebat. Nah, ini
+[573.0] endingnya.
+[574.9] Lalu mereka jalan
+[577.8] seperti itu dan selesai. Jadi
+[580.1] projjectnya itu cukup menarik ya. Kita
+[582.4] ada animasinya di awal sama di akhir.
+[585.0] Terus ada permainan yang di mana
+[587.0] ternyata bisa loh pakai tombol bisa
+[588.9] mengarahkan ke sana ke sini gitu hanya
+[591.2] menggunakan clone saja. Jadi projjectnya
+[593.9] sudah selesai. Kalau misalnya sudah
+[595.9] selesai bisa kamu share. Di sini
+[598.0] harusnya ada tombol share karena tapi
+[599.5] akun ini belum ee verifikasi jadi enggak
+[602.6] ada share-nya. gitu ya. Jangan lupa
+[605.5] di-save now kalau misalnya mau eh
+[608.3] di-backup gitu ya, mungkin yang offline
+[610.8] gitu eh takut enggak kesimpan atau
+[613.4] gimana boleh di-backup dengan save to
+[615.4] your computer. Jadi dia akan
+[617.3] men-download sebagai file.sb.
+[620.1] Nah, di sini tulisannya masih starter
+[621.5] remix. Kita bisa rubah gitu ya. eh
+[626.1] earning your eh Nina misalnya seperti
+[629.8] ini. Nah, aku tinggal save to your
+[631.9] computer lagi deh. Nah, jadi projectnya
+[634.5] kita kasih ganti namanya. Harusnya
+[637.1] seperti itu. Dalam 5 hari bisa selesai.
+[642.5] Yeah.

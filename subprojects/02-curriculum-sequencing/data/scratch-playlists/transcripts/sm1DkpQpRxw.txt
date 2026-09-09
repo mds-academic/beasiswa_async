@@ -1,0 +1,39 @@
+[1.4] permainan kurang seru jika tidak ada
+[3.7] pemenangnya Nah kita mau bikin finish
+[6.3] Line ya di mana Kalau mobil sat atau
+[8.8] mobil dua yang menyentuh finish Line
+[10.5] duluan dialah pemenangnya Bagaimana cara
+[13.0] membuatnya pertama kita harus bikin
+[15.1] sprite-nya dulu kita akan membuat
+[17.0] seperti mobil dengan cara ke paint di
+[19.3] Sprite Nah karena menghadapnya itu bisa
+[23.2] ke kanan ya Nah ini tinggal e tinggal
+[26.0] ditentukan saja Apakah mau menghadapnya
+[28.9] eh seperti Seti ini misalnya
+[32.1] finish atau mau bentukannya seperti ini
+[37.0] diputar nah ini diberi kebebasan kepada
+[40.5] kalian untuk membuat finish
+[44.2] lainnya Nah di sini aku akan menggunakan
+[49.5] warna hijau
+[51.7] muda sebagai
+[54.6] kotaknya seperti ini dan jangan lupa
+[57.3] taruh di tengah-tengah Nah karena
+[59.9] tulisan aku kurang bagus agak sulit
+[61.5] untuk menulis tangan pakai Mouse jadi
+[63.7] aku akan menggunakan t yaitu
+[66.4] teks warnanya aku jadikan putih dan aku
+[69.7] bikin
+[71.2] finish karena ini terlalu kecil bisa
+[73.8] kita perbesar
+[81.5] ya Nah kembali ini tulisannya terlalu
+[85.3] besar kita bisa
+[88.8] perkecil
+[90.5] dan jika kamu mau bikin finish seperti
+[93.3] ini seperti ini juga tidak apa-apa tapi
+[96.0] jika kamu mau di sebelah kanan sini atau
+[98.2] di belakang mobilnya kamu bisa putar
+[101.0] dengan cara Klik di select lalu kita
+[103.6] pilih semua dan di bawah ini ada untuk
+[111.9] memutar dan jadi deh finish Line kamu
+[115.6] sudah
+[118.8] siap

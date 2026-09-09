@@ -1,0 +1,84 @@
+[0.0] Bagaimana cara membuat Sprite yang dapat
+[2.9] berubah tampilannya seperti makanan yang
+[6.2] dimakan itu bisa kita gunakan kostum
+[10.1] jadi kita akan membuat Sprite yang
+[13.4] memiliki beberapa kostum dan kita akan
+[15.8] rubah kostumnya satu persatu biar
+[18.5] terlihat seolah-olah makanannya itu
+[20.8] dimakan kita buat dulu sprite-nya di
+[24.3] sini aku beri kebebasan kamu boleh
+[26.5] memilih Sprite yang sudah ada atau kamu
+[29.6] bisa menggambarnya sendiri di sini aku
+[32.4] akan memperlihatkan kalau yang pakai
+[35.5] sprite sudah ada ya jadi akan aku cus
+[38.6] subscribe aku akan mencari makanan
+[41.0] mungkin yang mudah aku akan pilih donat
+[44.5] kali ya jadi aku akan bilang donat
+[47.5] adalah makanan kesukaanku kalau kamu mau
+[50.9] edit Jangan lupa untuk ke kostum tab Nah
+[55.0] di sini Kamu sudah pernah belajar
+[57.1] bagaimana mengedit kamu boleh menge
+[60.0] ditnya aku akan biarkan ini seperti
+[62.1] biasa
+[63.5] nah bagaimana biar terlihat seperti
+[66.9] makanan ini atau donat ini dimakan
+[69.8] Nantinya di sini aku punya caranya
+[72.2] pertama kita punya sprite-nya atau
+[75.7] kostumnya ya kita punya kostum donatnya
+[78.5] di sini lalu yang mau kita lakukan
+[80.7] adalah kita Klik Kanan dan pilih
+[83.4] duplicate
+[86.0] nanti akan ada donat 2
+[90.5] biar terlihat kayak sedang dimakan aku
+[93.2] akan menggunakan cara yang paling mudah
+[95.2] yaitu menggunakan eraser atau penghapus
+[98.8] di sini kamu bisa mengatur ukurannya
+[102.3] penghapusnya mau dari satu sampai 100
+[105.4] Jika 40 dia akan seperti ini
+[108.8] kalau misalnya mau lebih besar kamu bisa
+[112.7] menggunakan 100 Sepertinya kalau 100
+[116.3] terlalu besar aku akan merubahnya
+[119.1] menjadi 70 saja Nah di sini aku akan
+[123.6] membuat seperti gigitan ya untuk membuat
+[127.0] gigitan aku hanya perlu mungkin dari
+[129.6] tempat sini aku akan gigit bagian ini
+[132.7] tinggal diklik saja dia akan memotong
+[136.0] tapi kayaknya kurang pas ya jadi aku
+[140.0] akan bikin satu lagi biar kayak
+[142.6] kelihatannya dia dimakan
+[145.4] seperti ini kamu juga bisa kalau mau
+[149.3] bikin sendiri misalnya aku ganti jadi 40
+[153.6] lalu kamu menghapus secara manual juga
+[156.5] boleh biar terlihat kayak digigit ada
+[160.3] bekas gigitannya di sini
+[164.2] jadi ini untuk gigitan pertama kalau
+[168.1] misalnya sudah kita mau duplicate lagi
+[171.2] tapi dari kostum yang kedua bukan dari
+[175.2] yang pertama Ya kita Klik Kanan lagi
+[177.9] kita pilih duplicate Nah di sini dia kan
+[182.1] mempunyai yang bentuknya seperti di
+[185.5] donat 2 Nah kita bikin lagi seperti
+[188.8] dimakan lagi
+[190.9] Mungkin aku akan
+[193.6] membuatnya
+[195.5] seperti ini
+[199.0] jadilah gigitan kedua lakukan sampai
+[202.8] semuanya habis ya Di Sini aku beri
+[206.5] kebebasan kamu bisa memiliki beberapa
+[209.5] kostum mungkin 5 6 atau 7 usahakan
+[213.5] jangan terlalu banyak saja karena kita
+[216.1] akan codingnya menggunakan switch
+[251.3] Nah bisa dilihat di donat ke-8 itu sudah
+[255.6] habis semua dan pastikan urutannya tetap
+[258.6] sesuai ya dari yang kita buat jadi dari
+[261.7] yang penuh digigit satu gigit 2 gigi 3 4
+[266.3] 5 6 dan 7 jadi ada 8 kali ya untuk
+[272.3] sampai menghabiskan makanannya nah
+[275.0] pastikan kita kembalikan ke kostum yang
+[277.1] pertama Dulu posisikan di mana kamu mau
+[280.6] taruh makanan favorit kamu ini aku akan
+[283.9] taruh di sebelah sini deh
+[286.1] dan selesai kamu sudah memiliki Sprite
+[290.7] yang memiliki beberapa kostum makanan
+[293.0] yang akan dimakan
+[295.2] kamu siap untuk membuat animasinya

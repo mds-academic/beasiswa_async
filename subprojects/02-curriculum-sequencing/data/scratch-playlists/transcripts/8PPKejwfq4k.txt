@@ -1,0 +1,215 @@
+[0.0] kita akan belajar animasi gerak pada
+[3.5] Sprite hobi Kita dimana kita akan
+[6.4] menggunakan 4 kode yaitu move dan steps
+[13.5] dan juga kode dari control yaitu repeat
+[18.8] 10 dari gabungan 4 ini kamu bisa membuat
+[23.2] animasi yang berbeda-beda nah gimana sih
+[26.8] tapi sebelum itu kita akan lihat dulu
+[29.5] per kodenya pertama kita coba move time
+[33.1] steps nya jika kita klik beberapa kali
+[35.4] kita lihat spray kita itu bergerak ke
+[38.3] kanan Bagaimana kita tahu dia bergerak
+[41.6] ke arah mana kamu bisa lihat di bagian
+[44.6] Direction di bawah ini jika kamu klik
+[47.2] dia akan muncul ada gambar panah di
+[49.9] dalam lingkaran kalau kamu putar seperti
+[52.4] ini dan kamu klik move Nya maka dia akan
+[56.2] jalan ke arah yang panah ini jadi kamu
+[60.4] juga bisa nih bermain dengan panahnya
+[63.1] ini Tapi karena kita masih di awal kita
+[66.1] akan menggunakan 90 saja di sini ada
+[69.4] turn right sama turnlev nah ini untuk
+[72.1] membelokkan spray kita ke kanan atau ke
+[74.8] kiri sebenarnya ini kayak untuk merubah
+[76.7] directionnya nih Kalau di klik kanan
+[79.3] jadi 105 yang tadinya 90 kalau kamu
+[83.3] mengubah angkanya misalnya 5 maka dia
+[86.2] akan berputar sebanyak 5 derajat kamu
+[88.7] bisa bermain dengan angkanya dan mau
+[91.4] Berputar Ke kanan atau ke kirinya Nah di
+[94.8] sini untuk mengubah memperbaiki aku akan
+[97.2] mulai dari 90 lagi nah repeat ini adalah
+[101.0] kode untuk pengulangan kode yang ada di
+[104.0] dalamnya Aku biasanya menggunakan
+[107.1] analogi mulut buaya karena dia seperti
+[110.6] ini ya seperti mulut buaya jadi kode
+[113.5] yang dimakan oleh kode ini atau di dalam
+[116.1] kode mulut buaya ini itu akan diulang
+[119.0] sebanyak
+[119.9] angka ini kalau misalnya dibilang repeat
+[122.5] 10 maka dia akan mengulang sebanyak 10
+[125.3] kali Contohnya aku taruh Movement
+[128.6] stepsnya di dalam repeat 10 jika aku
+[131.4] klik maka dia akan jalan ke kanan
+[134.6] sebanyak 10 langkah 10 kali gitu Kalau
+[140.0] misalnya aku tukar dengan
+[142.5] Misalnya ini aku kasih 5 derajat maka
+[145.7] dia akan berputar sebanyak 5 derajat 10
+[148.6] kali
+[149.5] gitu Kalau misalnya ke kirinya yang 15
+[153.3] derajat maka dia akan 10 kali Berputar
+[156.4] Ke Kiri sebanyak 5 sebesar 15 derajat ya
+[160.0] jadi dia akan berputar seperti ini Nah
+[163.6] kamu bisa bermain dengan kodenya
+[166.4] misalnya bikin dia jalan lalu berputar
+[169.6] itu bisa sekali Contohnya aku akan ulang
+[172.7] lagi direksinya 90 mungkin dari posisi
+[175.7] ini untuk jaga-jaga kamu bisa ambil
+[179.3] kodenya biar tidak berubah ini aku akan
+[183.2] simpan di atas seperti ini lalu aku mau
+[187.1] coba kalau dia itu bergerak sebanyak 10
+[192.3] langkah
+[193.9] turn kanannya itu 15 derajat aku bikin
+[198.0] 10 kali jika aku menggunakan kode
+[201.7] seperti ini apa yang akan terjadi
+[204.3] ternyata dia berputar dan hampir
+[207.5] menghilang kalau dihitung-hitung untuk
+[210.5] membuat dia berputar sebanyak satu
+[213.4] lingkaran itu kita akan menggunakan
+[217.8] 360 dibagi 15
+[221.1] berarti dia harus diulang sebanyak 24
+[226.3] kita akan ulang dulu ke go to
+[229.8] directionnya kita ganti jadi 90
+[234.4] dan kita coba dulu ya kita repeat
+[239.3] nah dia akan berputar satu lingkaran apa
+[243.8] yang terjadi kalau misalnya aku taruh
+[246.5] seperti ini
+[247.6] trend kiri terus jalan trend kanan terus
+[251.5] trend kiri lagi apa yang akan terjadi ya
+[256.1] Wah ternyata dia jalannya menyerong
+[259.9] seperti itu jadi nggak kelihatan ya dia
+[263.5] berputarnya tapi bisa dilihat kalau dia
+[266.2] jalannya itu menyerong ke atas
+[270.5] seperti ini Nah kalau misalnya kita
+[274.3] Tambahkan repeatnya lagi lalu kita buat
+[277.7] yang sedikit berbeda apa yang akan
+[279.8] terjadi ya Aku akan coba kalau membuat
+[283.9] seperti ini
+[285.7] jadi dia berputar Jadi ditaruh di
+[289.2] dalamnya dari Beat lagi ini dia akan
+[291.5] berputar 15 derajat lalu dia akan
+[294.8] mengulang Jalan 10 langkah 10 kali habis
+[298.7] itu mengulang lagi dari atas kita coba
+[301.1] lihat
+[303.7] Wah dia terusnya menghilang masih jalan
+[308.2] kodenya karena kita tidak kelihatan ya
+[310.3] tapi dia jalannya sudah jauh tidak
+[312.3] terlihat sama sekali Oleh karena itu
+[314.8] kita klik lagi gotunya biar kembali ke
+[317.5] posisi semula ternyata ini nggak bisa ya
+[319.7] Bisa tapi mungkin jangan 10 step
+[323.0] kayaknya
+[324.0] mungkin kita bikin satu steps
+[327.8] ketika kita coba ternyata dia jalannya
+[330.7] kayak berputar gitu berkeliling Nah jadi
+[334.6] kamu bisa nih bermain dengan repeat turn
+[338.2] dan move untuk membuat animasi kira-kira
+[341.0] mau seperti apa ya Atau kamu mau bikin
+[343.2] Dia jalan Tapi khususnya berputar-putar
+[346.8] misalnya seperti ini
+[349.1] Nah kamu bisa lihat dia itu sebenarnya
+[352.5] jalan karena kamu bisa lihat dari x nya
+[355.4] cuma karena aku kasih move nya hanya
+[358.3] satu jadi terlalu pendek ya aku
+[361.1] kembalikan dulu ke-10
+[364.8] di sini nah dia akan berjalan ke kanan
+[368.0] dan juga berputar
+[370.4] Nah di sini kamu bisa lihat dia
+[372.3] berputar-putar tapi sambil jalan ke
+[374.8] kanan juga
+[377.5] nah dia di sini ya kalau misalnya aku
+[380.6] kasih 50
+[383.5] nah dia berputar-putarnya seperti ini
+[387.2] gitu cukup menarik ya di jalan-jalan ke
+[390.8] sana kemari terusnya nanti dia kembali
+[392.9] ke posisi semula Nah aku akan menantang
+[395.7] kamu untuk mencoba membuat animasi hanya
+[398.5] menggunakan 4 kode ini repeat move trend
+[403.9] kanan atau tangan kiri atau boleh
+[405.7] dua-duanya jadi animasi kamu akan
+[408.7] seperti apa ya Nah kalau misalnya sudah
+[411.9] aku akan Hapus dulu yang ini kalau
+[414.6] misalnya sudah kita harus menambahkan
+[417.1] eventsnya di mana eventsnya ini kita
+[420.3] masih menggunakan when this bright dan
+[423.8] jangan lupa kita kasih go to Exo nya di
+[427.3] paling bawah Kenapa karena ini untuk
+[430.0] memastikan Kamu mungkin membuat animasi
+[432.2] yang berakhiran nanti dia ada di sebelah
+[434.7] sini nah itu kita mau panggil dia
+[437.1] kembali ke posisi semula Jadi kalau aku
+[439.5] klik seperti ini dia muter-muter ya dia
+[442.0] berkeliling berputar-putar dan kalau
+[444.4] misalnya sudah dia akan kembali ke
+[448.3] posisi utama seperti ini
+[451.6] Nah selanjutnya aku juga mau mengajarkan
+[454.8] Gimana caranya untuk menjelaskan hobi
+[458.8] kita ini tapi tidak menggunakan suara
+[462.7] kita namun menggunakan suara komputer
+[466.0] Nah jadi ternyata misalnya kamu sedang
+[469.3] di dalam ruangan yang sedang ramai yang
+[472.4] tidak bisa merecord atau merekam suara
+[475.0] kamu kamu bisa menggunakan fitur namanya
+[478.1] text to speech bagaimana itu
+[480.6] penggunaannya pertama kita harus
+[483.1] menambahkan kodenya dulu dengan
+[485.9] menggunakan add extension di sebelah
+[488.5] kiri bawah diklik ya Add extensionnya
+[491.9] lalu kita akan memilih bagian yang
+[495.9] tekstur speech Nah kita akan pilih
+[498.8] bagian text to speech yang ini nanti dia
+[502.6] akan menambahkan kategori baru di bagian
+[506.5] kode Nah di sini di bagian text to
+[509.8] speech ada 3 kode Tuhan yaitu speak
+[513.7] Hello set voice dan set language Nah di
+[518.9] sini Aku biasanya menyusunnya dari bawah
+[522.0] ke atas jadi disetkan dulu language-nya
+[526.0] bahasanya lalu disetkan Suaranya Baru
+[531.0] speak Hello nya Nah di sini language-nya
+[534.9] terbatas dan Sayangnya tidak ada bahasa
+[537.5] Indonesia kamu bisa menggunakan bahasa
+[540.8] yang mungkin mirip kamu bisa
+[542.8] bereksperimen dengan memilih bahasanya
+[545.1] contohnya Aku mau menggunakan bahasa
+[548.6] Italia bahasa Itali lalu voicenya masih
+[552.9] yang Alto di sini ada 5 pilihan dan kamu
+[556.0] ada stik Hello misalnya aku akan menulis
+[558.8] dalam bahasa Indonesia
+[569.8] ini saya seperti ini aku mau mengatakan
+[572.0] hobiku adalah bermain game Nah di sini
+[575.0] kamu bisa coba
+[578.4] ya mirip-mirip dengan bahasa Indonesia
+[580.7] ya tapi mungkin bisa berubah misalnya
+[584.3] kalau menggunakan bahasa Spanish mungkin
+[589.7] Nah mungkin lebih mirip ya ke bahasa
+[592.3] Indonesia Nah kalau language-nya sudah
+[595.0] oke Kamu juga bisa merubah voicenya di
+[597.5] sini ada autode quick dan Giant kalau
+[600.1] misalnya aku pilih quick suaranya kan
+[602.2] seperti ini
+[604.2] nah seperti itu Jadi kamu bisa
+[607.0] bereksperimen kira-kira mau pakai bahasa
+[610.3] apa dan suara yang mana untuk speaknya
+[613.9] kamu bisa menggunakan tulisan bahasa
+[615.6] Indonesia cuma nanti lafalannya akan
+[618.2] agak sedikit berbeda ya karena
+[620.0] language-nya itu bukan bahasa Indonesia
+[622.7] Nah di sini juga aku mau menekankan
+[625.7] ketika kamu menggunakan text to speech
+[628.4] ini kamu harus menggunakan internet atau
+[631.8] kamu harus terhubung dengan internet
+[633.7] Jika kamu tidak terhubung dengan
+[635.5] internet misalnya kamu membuka ini
+[638.6] internet yang sedang mati atau mungkin
+[642.3] internetnya agak lambat mungkin akan
+[645.4] suaranya tidak terdengar atau ada delay
+[647.7] jadi usahakan internet kamu itu lancar
+[651.2] ya ketika menggunakan fitur text to
+[654.1] speech jika sudah kamu bisa menambahkan
+[657.1] event when this praclick agar animasi
+[661.3] dan suaranya terdengar pada saat
+[663.8] bersamaan Mari kita coba
+[667.6] seperti ini kamu sudah membuat animasi
+[672.3] dan juga menambahkan suara untuk
+[675.2] menjelaskan gambar ini tuh menjelaskan
+[677.9] apa sih tentang diri kita

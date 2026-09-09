@@ -1,0 +1,718 @@
+[0.8] Nah, sekarang kita mau melanjutkan lagi
+[3.6] untuk yang opsi kedua. Nah, opsi kedua
+[5.9] ini sebenarnya penginnya itu ee anak
+[8.8] dibebaskan. Jadi, biar mereka berinovasi
+[10.7] juga. Kira-kira kalian ee di rumah tuh
+[13.5] ngerjain apa lagi selain beresin kamar
+[16.1] gitu ya. Nah, cuma kadang-kadang kan
+[18.0] anak suka bingung ya ee kayak aku enggak
+[20.4] tahu kah atau aku cuma beresin mainan
+[23.2] berarti udah menapikan kamar ee kamar
+[25.6] itu. Nah, kita bisa ee pakai cara yang
+[29.0] kedua. Di sini aku akan memperlihatkan
+[30.9] gimana ee kalau kita sekalian buang
+[34.6] sampah ya. Jadi, salah satu tugas
+[36.6] mungkin buang sampah tapi sampahnya ini
+[39.0] kita mau ee direcycle juga. Jadi apa
+[42.9] namanya? Dipisah ee berdasarkan
+[45.4] jenisnya. Jadi kalau kayak sampah
+[47.6] organik, anorganik, terus eways gitu ya
+[51.8] atau B3 atau kardus, kertas dan lain
+[55.3] sebagainya itu kan ada jenis-jenisnya.
+[57.6] Nah, di sini aku mau ngasih contoh
+[60.1] mungkin ada tiga ya ee contoh tempat
+[63.3] sampah yaitu organik yang berarti kayak
+[66.0] misalnya ee sisa apel, terusnya
+[69.1] buah-buahan, sayuran,
+[71.6] terus ee apa? Telur, cangkang telur gitu
+[75.1] ya. Terus ada eways. Eways itu berarti
+[78.3] adalah eh sampah dari elektronik gitu.
+[83.0] Eways itu kayak misalnya komputer kamu
+[84.9] rusak, laptop kamu rusak, HP kamu rusak
+[88.6] gitu. Nah, itu jangan dibuang di tempat
+[91.6] sampah biasa karena itu berbahaya gitu
+[94.4] ya. kita bisa bilang itu nanti harus
+[97.2] dikumpulin dulu, terus nanti kita kirim
+[99.6] ke ee penerima sampah eways. Nah, ada
+[103.3] juga yang kayak mungkin yang berbahaya
+[105.6] juga yaitu gelas gitu ya, kaca. Kalau
+[109.0] beling gitu itu juga jangan dibuang
+[111.9] sembarangan gitu ya, jangan dicampur
+[114.3] nanti kalau misalnya ee keinjak gitu kan
+[117.4] nanti berdarah gitu ya. Jadi kita kalau
+[119.9] yang berbahaya seperti itu mau kita
+[121.7] pisahkan juga. Nah, ee mungkin yang itu
+[125.2] untuk jadi opsi dua aku akan bilang
+[127.0] membuang sampah ya.
+[130.8] Membuang
+[132.5] sampah.
+[134.0] Di sini aku rubah juga
+[137.8] namanya.
+[140.4] Terus kita enter. Taruh tengah-tengah.
+[144.3] Terus kita taruh di tengah seperti ini.
+[147.0] Kayaknya terlalu besar ininya kotaknya.
+[150.5] Jadi aku kecilin aja.
+[153.7] seperti ini. Nah, ini taruh tengah,
+[157.6] kotaknya juga taruh tengah. Dan harusnya
+[161.3] tidak ada
+[163.4] masalah ya. Ini ada spasi, aku mau biar
+[168.6] pas di tengah seperti ini gitu ya.
+[171.7] Membuang sampah. Nah, membuang sampah
+[175.0] ini kita perlu backdrop-nya juga dong.
+[177.2] Berarti kalau misalnya membuang sampah
+[180.1] bebas, aku bebaskan saja. mau pilihnya
+[182.9] apa, tapi pastikan dikasih namanya sesu
+[186.1] ee sama ya dengan si tombol opsi.
+[189.1] Misalnya membuang sampah itu ee aku akan
+[193.2] melakukan di luar gitu ya. Misalnya di
+[197.4] luar nih, Bro. Ee mungkin rumah
+[199.4] belakangku tuh langsung ke pantai gitu
+[201.8] ya, ke lautan. Jadi aku mau taruh
+[203.9] seperti ini gitu. Nah, eh sama seperti
+[208.5] sebelumnya kalau misalnya dia bitmap
+[210.6] kita jadi vektor dulu. Jangan lupa nama
+[213.7] kostumnya kita ganti. Tadi aku sudah ee
+[216.5] ini sudah copy ya namanya. Terus yang
+[220.0] mau kita lakukan adalah kita mau ngambil
+[223.4] ini si dan kotaknya kita copy kita
+[227.9] paste.
+[230.0] Nah, seperti ini gitu ya. Nah, karena ee
+[234.6] sebelumnya aku bilang ee variabel yang
+[237.8] membuang sampah itu akan dihapus. Jadi,
+[240.2] aku contohin kalau misalnya dihapus
+[241.9] seperti apa, kita harus bikin
+[244.0] variabelnya dulu. Jadi, make a variabel,
+[247.0] terus kita kasih nih namanya membuang
+[249.9] sampah gitu ya. Terus kita mau klik oke.
+[253.8] Nah, ini kayaknya aku Oh, aku bikin
+[256.1] variabelnya tuh di stage. Jadi, aku mau
+[258.1] ngasih lihat dulu. Kalau misalnya tadi
+[260.7] kamu bikinnya di stage, dia akan bilang,
+[262.8] "This variable will available to all
+[264.9] sprites." Jadi, semua sprite bisa
+[266.7] mengaksesnya. Tapi kalau misalnya kamu
+[268.8] kodenya di salah satu sprite, biasanya
+[270.8] ada pilihan for all spright atau for the
+[273.0] sprite only. Pastikan eh kasih eh
+[275.9] pilihnya yang for all sprite, ya. Nah,
+[279.1] kita akan klik oke. Terus ada membuang
+[281.6] sampah. Boleh diatur posisinya.
+[285.3] tumpuk-tumpukan enggak apa-apa
+[288.8] gitu.
+[290.6] Nah, ee kalau sudah kita bisa lanjut di
+[294.4] tombol opsi untuk memunculkan ee
+[297.8] menyembunyikan bisa nanti dulu. Yang mau
+[300.6] kita lakukan adalah kita mau kalau klik
+[303.6] membuang sampah ini dia akan switch
+[306.3] backdrop to yang membuang sampah juga.
+[310.0] Nah, kan kemarin kita bikin di sini
+[312.3] video ee apa di video sebelumnya ini kan
+[314.6] kosong ya, kita mau masukkan berarti
+[318.1] switch backdrop tuh membuang sampah.
+[321.8] Nah, kalau misalnya kita klik mungkin
+[324.7] karena kita belum mulai dari awal ya,
+[327.2] ini membuang sampah nanti kita akan
+[328.7] sembunyikan.
+[330.7] Bisa disembunyikan digabungin aja sama
+[333.5] si tombol tombol selesai
+[337.0] kita bisa tambahkan hide. variabel
+[341.3] membuang sampah gitu ya. Jadi di sini,
+[346.2] nah di sini kan masih ada pilihan ya.
+[348.5] Nah, kita enggak harus milih yang paling
+[350.1] kiri, kita bisa langsung yang membuang
+[351.7] sampah. Harusnya dia berubah ke ee
+[354.4] backdrop yang membuang sampah. Nah, sama
+[356.4] seperti sebelumnya yang tombol opsi sama
+[359.2] nenek harus di sembunyikan juga. Gimana
+[362.9] caranya? Kita akan ke sini.
+[367.7] When backdrop switch is to, kita bisa
+[369.8] duplicate.
+[371.4] Membersihkan kamar menjadi membuang
+[373.0] sampah. Di nenek pun juga sama kalau
+[375.6] misalnya kita eh duplicate, kita
+[379.4] membuang sampah lalu kita suruh dia
+[381.5] hide. Nah, harusnya dia sudah hide ya
+[384.6] untuk ini. Nah, ee aku akan membuat
+[388.3] tempat sampah. tempat sampahnya kita
+[390.3] akan membuat pakai sprite. Jadi ee kalau
+[393.7] misalnya sebelum-sebelumnya kita itu
+[395.3] choose, kita bisa gambar pakai paint.
+[398.0] Aku akan bikin yang paling sederhana.
+[400.0] Misalnya organik itu sampah organik
+[402.6] biasanya warna ee hijau
+[405.7] gitu ya. Aku akan bikin kotak seperti
+[408.0] ini. Tapi kuper kecil.
+[411.9] Jadi misalnya aku mau bikin tempat
+[413.2] sampah, kita kasih namanya
+[417.2] ee organik.
+[419.8] gitu ya.
+[421.8] Ee sampah
+[424.7] organik
+[427.4] terus kita taruh di sini
+[430.9] gitu ya.
+[433.0] Ini kayaknya tadi ada yang ke ini. Nah,
+[436.9] seperti itu. Ini kita kasih namanya
+[439.9] sampah
+[441.6] organik.
+[443.8] Terus misalnya ini aku bisa duplicate
+[446.6] juga. Klik kanan di bagian sprite-nya
+[449.8] kita ganti misalnya ee
+[454.8] tapi warnanya kita rubah mungkin Eways
+[458.0] itu warnanya apa? Merah ya mungkin merah
+[461.7] ya kira-kira merah.
+[464.1] Terus kita rubah ini ee
+[468.3] sama
+[470.4] duplicate lagi aja daripada bikin dari
+[472.8] awal kita kasih namanya ini ee
+[478.0] sampah gelas
+[480.9] gitu ya.
+[485.4] gelas
+[490.0] aku bikin seperti ini. Warnanya bisa
+[492.8] kita rubah. Misalnya kalau warna ini tuh
+[496.5] sampah gelas
+[499.0] ungu kali ya.
+[503.2] Ungu deh enggak apa-apa. Tapi tulisannya
+[505.6] mungkin aku bikin putih misalnya seperti
+[508.0] itu. Nah, kalau misalnya sudah boleh
+[510.3] diatur posisinya
+[513.0] gitu. Apakah posisinya sudah sama? Aku
+[516.0] mau bikin misalnya Y-nya itu negatif ee
+[519.2] 133 biar enggak terlalu
+[522.7] ini ya. Nah, seperti ini misalnya. Nah,
+[526.4] yang mau kita lakukan cukup sederhana
+[529.0] yaitu kita set up ee kapan dia muncul,
+[532.1] kapan dia sembunyi. Nah, untuk eh
+[535.7] sembunyi when green flag click sudah
+[537.5] pasti disembunyikan kita hide. Terus
+[541.0] ketika backdrop-nya berubah menjadi
+[545.0] membuang sampah, kita bikin dia show.
+[548.3] Tapi posisinya jangan lupa biar selalu
+[551.0] di situ terus kita taruh ee gotunya.
+[554.2] Lalu kita juga mau nambahin when
+[556.7] backdrop switches to living room kita
+[559.6] juga sembunyikan. Jadi kalau misalnya
+[561.1] dia balik lagi ke living room dia akan
+[563.7] sembunyi. Nah lakukan ini untuk semua eh
+[567.4] sprite tadi. Nah ini kamu bisa pakai
+[569.8] cara yang aku sudah ajarkan bisa di-copy
+[572.5] gitu ya. Tapi nanti XY-nya go to XY-nya
+[576.2] itu harus dimodifikasi
+[580.1] gitu.
+[581.6] Nah, ini
+[583.5] go to XC-nya ditukar.
+[586.8] Ini juga
+[589.3] go to X-nya ditukar seperti itu. Nah, di
+[593.5] sini aku biasanya ngasih kayak dua
+[596.6] sampah, dua sampah, dua sampah. Berarti
+[598.3] total ada enam. Cuma di sini aku akan
+[600.2] ngasih ee satu-satu aja kali ya, biar ee
+[604.3] apa namanya? Enggak terlalu lama
+[606.1] videonya. Nah, yang mau kita lakukan
+[608.8] adalah misalnya kita mau pilih
+[611.9] sprite-nya tuh Apple gitu ya. Misalnya
+[615.9] ini
+[617.7] sampah Apple.
+[621.6] Nah, di sini aku akan bikin
+[625.8] buat menghias-hias aja. Boleh banget ya
+[628.6] dihias seperti ini.
+[631.5] Nah, ini aku mau ganti warnanya.
+[639.4] Jadi kayak misalnya apa ya? Ee tinggal
+[642.7] bijinya doang gitu.
+[646.0] Ini koper kecil like ini bijinya.
+[650.6] Ini bijinya kebesaran
+[654.9] kan bijinya kan biasanya lonjong-lonjong
+[656.9] gitu ya. Jadi bisa kita warnai.
+[661.3] Tada.
+[662.8] Nah, misalnya seperti itu. Ini adalah
+[665.4] Apple gitu. Nah, ee
+[670.0] terus kita mau bikin
+[673.8] mm
+[675.3] yang eways itu biasanya komputer ini ada
+[678.3] laptop gitu ya. Tapi kita modifikasi
+[681.8] misalnya mm warnanya aku jadiin hitam
+[685.6] kali ya. Terus aku bikin retak-retak.
+[693.0] Jadi kayak ee apa namanya? Komputernya
+[696.7] udah rusak terus mau ditambahin error
+[699.8] atau gimana itu boleh.
+[703.2] Error
+[706.7] misalnya seperti ini.
+[711.0] Nah, jadi ada error, ada apel. Ini aku
+[716.6] kecilin aja.
+[719.8] Misal 80,
+[722.0] ada apel,
+[724.9] ada apel, ada ini. Terus satunya lagi
+[728.2] berarti yang ee sampah gelas. Oke, kita
+[732.2] cari deh gelas.
+[735.9] Jadi yang ee kita mau bikin nah ini
+[740.4] ini aku akan hapus yang ini. Terus yang
+[745.4] mau kita lakukan adalah aku akan agak
+[748.1] aneh ya pembuatannya. Aku mau bikin dia
+[752.6] warnanya
+[755.4] ee
+[761.6] kayak biru gini kali ya.
+[764.1] Nah,
+[766.2] misalnya seperti ini. Terus tambahin aja
+[769.1] tadi garis-garis pecah gitu
+[775.1] gitu
+[778.1] ya. Jadi kayak gelasnya pecah. Aduh
+[781.7] tidak gitu. Ini juga kita kecilin
+[785.3] mungkin 50% ya cukuplah gitu ya. Nah,
+[790.0] dari tiga ini kita tahu komputer itu
+[793.0] masuknya eways. Sampah gelas itu gelas
+[796.2] berarti sampah ee organik itu apel gitu
+[799.9] ya. Nah, di sini kita akan membuat kalau
+[803.4] sampah organik masuk ke sini dia benar
+[806.5] tapi kalau ke sini atau ke sini dia akan
+[809.2] salah. Sama halnya ini benar salah salah
+[813.6] yang ini benar salah salah gitu ya. Nah,
+[817.6] gimana nih cara bikinnya? Kita akan
+[820.0] mulai dari si sampah dulu. Sampah apel.
+[823.0] Di sini aku mau mm mulai dulu deh. W
+[826.2] green flck sembunyiin dulu. Dia belum
+[828.7] muncul. Dia munculnya ketika when
+[832.2] backdrop switches to buang sampah.
+[837.3] Ini dulu yang mau kita ee kita kode
+[839.6] dulu. Nah, setelah itu kita mau taruh
+[843.2] tengah-tengah nih misalnya ya udah taruh
+[845.6] sini kali ya. ketika x-nya itu kita
+[848.3] bikin 0 aja. Nah, misalnya aku mau bikin
+[851.7] seperti ini.
+[854.0] Terus yang mau kita lakukan karena kita
+[855.8] nanti ini mau kita klik terus bisa kita
+[858.9] ee pindah-pindahin, kita akan
+[861.5] menggunakan sensing namanya set drag
+[864.5] mode dragable. Nah, ini tuh apa ya?
+[867.5] Kalau misalnya ada yang bertanya. Jadi
+[870.7] ketika kita mainin itu biasanya kita
+[872.9] full screen kan seperti ini. Nah, pada
+[876.0] auto eh pada default-nya itu tuh
+[878.8] sprite-nya tuh enggak bisa kita
+[880.2] pindah-pindahin. Kecuali kamu lagi di
+[882.8] sini, di sini kamu bisa pindahin karena
+[884.6] lagi di editor. Tapi kalau lagi full
+[886.8] screen itu enggak bisa. Nah, kalau kita
+[889.5] kasih set drag mode dragable, kita klik
+[892.4] nih dragable. Harusnya sekarang apel-nya
+[895.9] bisa kita drag, bisa kita pindahin gitu
+[899.7] ya. Tapi yang lain belum. Jadi kita mau
+[902.5] taruh set drag eh mode eh dragable.
+[905.9] Terus kita mau bikin kode nih kalau
+[908.5] menyentuh sampah organik, sampah ewa,
+[911.5] dan sampah gelas. Nah, kita akan
+[913.7] menggunakan forever
+[916.0] karena kita enggak tahu kapan
+[917.3] ngecekinnya. Jadi, dia akan ngecekin
+[919.0] terus. Terus, kita akan menggunakan if.
+[923.6] If-nya yang pertama adalah yang benar
+[925.9] dulu nih. Kalau menyentuh mana? Kita
+[929.7] pilih
+[931.3] sampah organik
+[934.3] gitu ya. Kalau misalnya betul bisa pakai
+[936.8] suara gitu ya. Atau kalau misalnya mau
+[939.3] record bisa di-record.
+[941.5] Yeay kamu betul.
+[944.4] seperti ini.
+[947.2] Aku mau coba ee dengarkan.
+[952.2] Eh, aku ke-record ya. Eh, record ulang
+[954.5] malah mencetnya.
+[956.5] Yeay, kamu betul.
+[959.2] Misalnya seperti itu. Ini aku potong.
+[962.2] Ini aku potong. Aku coba dengerin. Ye,
+[964.0] kamu betul. Nah, seperti itu. Kalau
+[966.8] sudah oke, ya udah ini betul gitu kan.
+[973.9] Terus kalau yang salah gimana?
+[976.6] Put kamu salah. Misalnya seperti itu.
+[982.2] Kita coba
+[984.5] putu
+[986.0] salah
+[987.6] gitu ya. Berarti ini kita tulis misalnya
+[990.6] salah seperti itu. Nah, di sini aku akan
+[994.6] bikin seperti yang dicontoh. Jadi, aku
+[996.9] akan pakai eh kita bisa pakai play sound
+[1001.1] until then karena kan enggak akan aku
+[1002.8] enggak pakai tulisan ya, tapi
+[1004.2] menggunakan ee apa namanya? Pakai suara.
+[1008.2] Nah, ini misalnya betul. Terus
+[1011.4] variabelnya kita mau change
+[1016.2] si membuang sampah by satu.
+[1019.6] Jangan lupa itemnya kalau sudah benar
+[1022.9] kita taruh high kita ee sembunyikan.
+[1028.1] Dan biar ini tidak mengulang-ulang kita
+[1030.8] bisa tambahkan namanya stop tapi
+[1033.6] stop-nya adalah stop this script. Jadi
+[1036.4] kode ini yang forever itu kan dia akan
+[1038.4] nyala terus ya sampai kita stop
+[1040.1] game-nya. Nah kita bisa juga menggunakan
+[1042.7] stop the script. Dia akan mematikan
+[1044.3] kodenya ini kalau sudah selesai.
+[1047.0] Kalau misalnya salah gimana? Kita akan
+[1049.3] pakai if then baru. Mungkin aku lepas
+[1052.0] dulu di sini. Nah, touching-nya itu ada
+[1054.7] dua.
+[1057.1] Touching-nya itu kalau menyentuh sampah
+[1059.9] eways atau menyentuh sampah gelas.
+[1064.3] Karena pakai atau berarti kita pakai or.
+[1067.3] Kita masukkan seperti ini baru
+[1070.2] dimasukkan ke dalam if then.
+[1073.4] Nah, yang ini yang mau kita lakukan.
+[1076.4] adalah ee ada suaranya lagi tapi yang
+[1079.8] salah play sound aja. Terus kita mau
+[1083.9] bikin dia kembali ke posisi semula yaitu
+[1088.0] 0120
+[1091.7] gitu ya. Di sini aku akan taruh go to
+[1094.9] seperti ini. Nah, kalau misalnya sudah
+[1098.3] ini aku kelepas tadi if-nya taruh di
+[1101.8] bawahnya
+[1103.4] gitu ya. Kalau misalnya takut ini takut
+[1106.0] di dalamnya gitu, kamu bisa keluarin if
+[1108.1] dulu. Yang pertama kita taruh gini,
+[1110.6] susun. Jadi pastikan seperti ini bukan
+[1112.8] naruh di dalamnya. Habis itu kita klik
+[1115.5] ee masukkan ke dalam Forever. Nah, di
+[1118.8] sini aku orangnya suka nge-copy-copy
+[1122.5] saja kodenya gitu ya. Kenapa aku kasih
+[1126.6] 0120 posisinya? Karena biar nanti
+[1130.5] item-item yang lain juga sama. Jadi
+[1132.6] numpuk-numpukin aja.
+[1134.4] gitu ya. Jadi kita tinggal masukin ini
+[1137.4] terus jangan lupa ditambahin w green
+[1139.7] flck-nya gitu ya. Kita kasih show w
+[1144.2] green flck
+[1146.4] seperti ini. Tadi di laptop udah tapi
+[1149.7] sekarang kita ganti touching-nya sampah
+[1152.9] ewa.
+[1154.6] Kalau salah berarti sampah ewas-nya
+[1156.5] diganti dengan organik. Sama halnya
+[1159.5] dengan yang glass water, kita bikin
+[1164.6] hide, copy kodenya.
+[1168.7] Lalu kita tinggal rubah yang tadinya
+[1171.8] sampah gelas menjadi sampah organik.
+[1176.2] Jadi harusnya semudah itu gitu ya untuk
+[1180.0] pembuatannya. Jadi enggak enggak harus
+[1182.4] yang repot-repot nih untuk pembuatannya.
+[1185.1] nya. Jadi kita memang ee apa ini sangat
+[1188.4] membantu terutama kita cuma ada 5 hari
+[1191.0] gitu ya. Tapi kalau dirasa kayak wah ini
+[1193.1] baru hari kedua atau hari ketiga
+[1195.1] kayaknya masih bisa ada waktu deh biar
+[1197.3] lama ee ya udah kita bikin kodenya
+[1200.1] satu-satu misalnya seperti itu. Itu aku
+[1202.7] bebaskan kepada ee kakak-kakak pengajar.
+[1207.2] Nah, nanti di sini kita akan bikin nih
+[1211.2] kode di mana di tombolnya ini ya. Ketika
+[1220.4] kita mau bikin dia juga muncul nih ini
+[1223.4] ya kita bisa duplicate aja.
+[1229.6] Nah, ketika backdrop switches-nya itu di
+[1232.8] membuang sampah, kita mau munculin. Nah,
+[1235.8] bisa dilihat dia muncul, tapi ternyata
+[1237.8] terlihat kalau dia ee apa namanya? Ada
+[1241.7] di sini gitu.
+[1245.4] Nah, kita mau mindahin. Nah, gimana nih
+[1248.1] cara mindahinnya?
+[1250.3] Kan dia ada di sini tadi gitu ya.
+[1253.6] Nah, ini bisa kita pindahin seperti ini.
+[1256.2] Nah, ini kan tadi dari tadi kayak aku
+[1257.9] nyoba ngeklik tuh ee selalu jalan ya.
+[1260.9] Bisa when this pikck-nya dilepas dulu
+[1263.8] itu ya. Kita showkan. Terus aku mau
+[1266.0] bikin selesainya itu tadi kan nutupin
+[1269.6] ini ya, nutupin ini. Nah, aku mau bikin
+[1272.6] dia berubah pindah ke atas misalnya. Ya
+[1275.7] udah tinggal go to X-nya kita rubah.
+[1279.4] Aku paling suka buang kodenya. Masukkan
+[1281.9] kode yang baru. Nah, kalau misalnya
+[1285.1] sudah membuang sampah ininya juga bisa.
+[1287.8] Klik kanan bisa kita rubah. Tadi
+[1289.8] membuang sampahnya dapat skornya berapa?
+[1291.9] Karena aku bikin tiga sampah doang
+[1293.7] berarti tiga. Kalau misalnya sampahnya
+[1296.1] mau bikin masing-masing jenis itu ada
+[1298.6] dua berarti enam. Boleh disesuaikan saja
+[1301.7] kira-kira ada berapa. Nah, kita bilang
+[1304.2] kalau misalnya membuang sampahnya sudah
+[1305.8] sama dengan 3, kita showkan. Lalu
+[1308.6] barulah kita masukkan di sini. Nih kita
+[1312.3] akan lanjutkan kode di bagian else. Aku
+[1315.4] akan duplicate saja yang cheers-nya.
+[1319.1] Tapi aku mau rubah ini kalau lima ini
+[1322.6] kan aku nge-copy terus ee kreditnya jadi
+[1325.8] lima ya. Nah, ketika lima yang kehapus
+[1329.0] malah yang membersihkan kamar bukan yang
+[1331.4] membuang sampah. Nah, karena yang
+[1333.8] sebelumnya lima, kita bikin yang
+[1335.8] membuang sampah lebih kecil ya daripada
+[1339.1] ee apa yang sebelumnya. Jadi harus di
+[1341.8] bawah lima. Nah, karena aku mau bikinnya
+[1344.2] itu delan totalnya kita bikin tiga,
+[1348.3] gitu. Nah, kenapa tiga? Karena kita akan
+[1351.5] bilang kalau di atas tiga, berarti yang
+[1354.3] disembunyikan adalah membuang sampah.
+[1357.8] Nah, di sini kayak kelihatan ya masih
+[1359.7] barang-barang items-nya masih muncul itu
+[1362.4] karena kita belum ee belum mainin
+[1364.8] makanya dia masih muncul. Jadi tenang
+[1366.5] aja. Nah, ee kita kembali ke opsinya.
+[1370.9] Ini kan tadi aku ngasihnya tiga ya.
+[1373.9] Berarti kita bisa mengubahnya ini
+[1376.2] menjadi 2 karena 3 - 1. Terus costum
+[1380.1] name-nya pastikan yang membuang sampah.
+[1385.8] Ini kita coba ya mulai dari awal. Ini
+[1389.0] kenapa belum sembunyi?
+[1391.4] Eh, oh when green flck malah show. Nah,
+[1395.4] inilah kegunaan kita harus mengecek
+[1397.7] setiap membuat proyeknya.
+[1400.3] Kita coba ya, kita full screen kan saja.
+[1405.6] Nih, aku mau beli gitar. Oke, kamu kerja
+[1408.2] dulu baru bisa dapat kredit. Nah, aku
+[1410.6] misalnya mau milih membuang sampah dulu.
+[1413.0] Dari tadi kan kita nyobanya membersihkan
+[1414.8] kamar ya, membuang sampah. Oke. Yeay,
+[1418.3] kamu betul. Oke. Oh, ini yang
+[1422.4] membersihkan sampahnya belum muncul.
+[1424.0] Nanti kita akan perbaiki.
+[1426.5] Nah, ini kalau kalau salah dia enggak
+[1428.5] mau gitu, ya.
+[1431.2] Nah, ini tadi kayaknya kedengaran
+[1433.2] enggak, enggak ada suaranya ya.
+[1435.9] Kita harus perbaiki. Kenapa? Karena
+[1440.8] sound-nya betul dan salah. hanya ada di
+[1444.1] apel, sedangkan di sini enggak ada. Nah,
+[1447.0] kita harus copy juga nih
+[1450.4] ya suaranya. Jangan lupa ini ada sound
+[1452.9] betul sama sound salah. Kita harus taruh
+[1456.0] dulu ini.
+[1461.5] Nah, harusnya tadi berbunyi gitu ya.
+[1465.9] Nah, karena kita udah selesai, kita akan
+[1468.2] klik selesai.
+[1470.4] Selama kamu mendapatkan lima kredit.
+[1472.4] harusnya tiga ee kita perbaiki dulu kita
+[1477.2] bukan lima kredit tapi tiga.
+[1480.5] Dan benar karena mendapatkan tiga yang
+[1483.4] muncul hanya membersihkan kamar
+[1486.9] seperti itu. Nah, boleh ya ee
+[1489.8] dimodifikasi lagi karena kayaknya tadi
+[1492.4] kan ee yang ini belum muncul ya. Aku mau
+[1496.7] lihat dulu kemarin kita munculinnya
+[1501.7] ee
+[1503.6] ini apa? Oh, yang opsi.
+[1509.4] Oh, yang ini yang neneknya ya? Yang
+[1511.1] kemarin.
+[1513.0] Aku mau lihat kita memunculkan si
+[1516.8] membersihkan kamar. Oh, membersihkan
+[1518.5] kamar pun juga belum ya.
+[1521.8] Kita coba dulu.
+[1525.8] membersihkan kamar karena kita mau tahu
+[1529.2] variabelnya di sini sudah langsung dua
+[1530.9] soalnya.
+[1533.0] Oke. Ee kita akan perbaiki dulu yang di
+[1538.6] mana pertama ee karena aku bikin di
+[1542.9] sampel project itu ada tambahan kalau
+[1545.3] mau bikin kayak animasi karakternya itu
+[1547.8] jalan masuk.
+[1551.9] Jadi, aku mau memunculkan si
+[1553.8] variabel-variabelnya itu di pemain. ini
+[1557.3] optional aja. Tapi kalau misalnya enggak
+[1559.6] mau ee bisa dikip mungkin cuma untuk
+[1563.0] men-show sama varia ee men-showkan si
+[1565.3] variabel yang di mana kita mau bikin.
+[1568.9] Aku mau ngasih contoh. Aku mau bikin dia
+[1571.6] tuh jalan kayak dari sini ya ketika di
+[1574.6] kamar. Aku mau bikin ketika backdrop
+[1577.2] berubah menjadi ee membersihkan kamar
+[1579.9] aku mau dia start dari sini. Go to ya.
+[1584.0] Jadi sama seperti yang nenek sebelumnya,
+[1586.0] kita mau bikin dia glide. Glide-nya
+[1588.3] misalnya di sini gitu.
+[1592.5] Nah, aku mau nyoba. Jadi dia kayak ee
+[1595.6] ada ini. Nah, terus mau nambahin suara
+[1598.0] ee apa tulisan gitu kan. Ayo,
+[1603.8] ayo kita bersihkan kamar ini misalnya
+[1608.6] seperti itu. Nah, barulah di sini aku
+[1611.6] kasih show.
+[1613.9] show variabel
+[1616.8] membersihkan kamar. Nah, kita coba dulu.
+[1623.2] Sama halnya nanti untuk yang di ee
+[1626.3] membuang sampah ya.
+[1629.4] Bersihkan kamar. Ayo kita bersihkan
+[1631.9] kamar ini. Nah, dia muncul
+[1635.3] gitu.
+[1638.1] Nah, dia sudah langsung selesai. Karena
+[1639.7] apa? kita belum riset sih membersihkan
+[1642.6] kamarnya.
+[1644.2] Nah, aku mau lihat dulu biar sama dengan
+[1648.8] ee sampel ya.
+[1651.6] Itu kita reset ada di mm
+[1657.3] aku sedang mengecek di manakah perisetan
+[1660.6] itu.
+[1664.7] Oh, kita setnya di tombol ya. Jadi
+[1668.6] tombol selesai di sini kita ada eh
+[1671.4] height variable ini harusnya enggak usah
+[1673.8] sih ini kayaknya kita buang aja ee yang
+[1677.2] ini harusnya dia set jadi set
+[1680.6] membersihkan kamar nol set membuang
+[1684.0] sampah juga nol gitu
+[1687.8] ya. Jadi dia gini. Tapi kalau mau
+[1690.0] ditambahin juga enggak apa-apa sih aku
+[1692.1] enggak nambahin kayaknya ya. Eh, di sini
+[1696.2] tuh aku tidak menambahkan. Aku mau lihat
+[1699.2] dulu di contoh.
+[1702.8] Iya, aku tidak menambahkan. Tapi kalau
+[1704.8] misalnya mau dibikin hide banget juga.
+[1708.4] Jadi, membersihkan kamar, membuang
+[1711.2] sampah.
+[1712.8] Nah, kita ee klik green fake lagi.
+[1716.9] Oke, kita lanjut-lanjut
+[1721.2] setelah itu. Oke. Nah, kita memberikan
+[1725.2] sampah. Dia masuk ada ngomong menisalkan
+[1729.9] sampah kita ini dapat satu. Awi. Awi.
+[1734.4] Awi. Awi. Awi.
+[1739.9] Ini kecil banget jadi agak susah. Yuk.
+[1742.2] Nah. Nah, kalau udah selesai
+[1748.5] seperti ini ya, kita sudah bikin dia
+[1751.4] selesai gitu. Nah, sekarang saatnya kita
+[1756.3] untuk ee ketika kita kembali ini kok dia
+[1760.2] tidak muncul
+[1763.1] yang si tombolnya.
+[1767.6] Ee oh aku tahu kenapa.
+[1771.7] Kenapa? Karena harusnya yang kecil taruh
+[1775.1] di atas dulu nih yang di tombol opsi.
+[1778.6] Bisa dilihat ya kalau misalnya ee
+[1783.7] karena dia di sini kan kreditnya di atas
+[1786.8] dua.
+[1789.0] Mm
+[1791.3] kredit du itu betul.
+[1797.1] Aku bingung. Mm.
+[1800.6] Atau kita enggak bilangnya di atas dua
+[1803.4] ya.
+[1805.5] Aku baru kepikiran
+[1808.6] harusnya ketika kita mendapatkan
+[1812.0] membuang samp e kamarah
+[1818.0] karena kita sudah dapat lima. Hmm,
+[1822.0] pahampaham.
+[1823.6] ini kayaknya ada sedikit ee masalah ya
+[1827.2] yang harus kita perbaiki. Mungkin ee
+[1832.1] kita bisa menggunakan
+[1837.8] karena kalau mau ngerjain ini harus yang
+[1839.5] paling kecil dulu, yaitu buang sampah
+[1841.4] dulu biar enggak ada masalah
+[1846.4] gitu. Karena kalau misalnya sudah
+[1848.0] membersihkan kamar yang ini, otomatis
+[1850.1] dia juga sudah tidak bisa
+[1851.9] mengerjakannya.
+[1855.2] Mm
+[1857.4] kayaknya kita bisa ganti ini jadi angka
+[1859.9] sama dengan aja deh.
+[1863.8] Ini sama dengan 3,
+[1867.7] ini sama dengan 5
+[1871.7] kan 5 dan 3 ya.
+[1878.4] Ee sebentar.
+[1881.3] Aku
+[1885.4] sedang mencoba dulu
+[1890.0] kira-kira apakah betul dicontohnya.
+[1898.2] Oke.
+[1901.5] Emm. Iya harusnya harusnya iya harusnya
+[1904.9] ini pakai sama dengan jangan pakai lebih
+[1907.4] besar. Jadi kalau misalnya kita klik,
+[1910.3] kita coba aku ingin membeli, aku ingin
+[1912.8] membeli gitar untuk musik. Sedang
+[1915.3] melamunkan apa Nina gitu kan. Nek aku
+[1918.0] mau beli gitar. Oke, kerja dulu. Nah,
+[1921.5] kita coba dulu ya. Membersihkan kamar.
+[1925.6] Minta ada ini. Awi
+[1932.0] Nah, kita selesai.
+[1934.2] Kamu dapat lima kredit. Nah, kalau ini
+[1936.9] benar ya baru membuang sampah
+[1940.3] gitu. Nah, di sini kita baru
+[1943.1] memperbaiki. Dia ada kesalahan di mana
+[1945.8] kita belum kode bagian yang ini untuk ee
+[1949.8] apa? Kapan dia masuk ya. Aku mau
+[1952.7] duplicate aja.
+[1954.9] Ini aku ganti menjadi buang sampah.
+[1958.1] Terus dia harusnya di sini.
+[1961.4] Berarti kita glide-nya kita ganti aja.
+[1966.0] seperti ini gitu ya. Ee
+[1971.6] sampah
+[1974.1] menurut jenisnya.
+[1978.2] Terus yang ini kita bikin membuang
+[1980.7] sampah gitu ya.
+[1983.6] Terus ee
+[1987.2] untuk memastikan dia sembunyi ya, kita
+[1991.4] coba lagi deh.
+[1994.0] Kita coba dulu ya untuk pengetesan.
+[2004.1] Membuang sampah
+[2007.0] menurut jenisnya ini kita taruh sini.
+[2010.2] Yeay, kamu betul.
+[2012.5] Ini sih. Yeay, kamu betul.
+[2015.7] Yeay, kamu betul.
+[2018.2] Terus kita klik selesai.
+[2023.3] Kita membersihkan sampah. Nah, membuang
+[2025.2] sampahnya masih belum sembunyi ya.
+[2028.4] itu kita bisa ee perbaiki nanti sebelum
+[2032.3] membuat ending.
+[2036.3] Awi awi awi awi
+[2042.4] awi.
+[2044.1] Kita klik selesai.
+[2048.2] Nah, dia di sini ee apa? Ketika delan
+[2051.7] malah muncul dua-duanya. Nah, nanti kita
+[2054.0] akan bikin kalau ee 8 dia harusnya
+[2057.3] menghilang gitu ya. Jadi nanti kayaknya
+[2060.4] akan aku rubah sedikit di sini.
+[2065.2] Kita akan coba bikin ini.
+[2075.1] Aku mau coba kalau kita
+[2080.2] ini
+[2083.5] terus nanti kita set kreditnya jadi del.
+[2090.0] Nah, ini kan dia muncul ketika kreditnya
+[2092.5] 8.
+[2096.4] Terusnya kita
+[2099.4] change backdrop
+[2102.2] to living room.
+[2105.8] Apakah dia menghilang?
+[2108.6] Kita stop dulu.
+[2111.0] Nah, harusnya enggak ya. Harusnya
+[2113.8] harusnya menghilang dua-duanya gitu.
+[2116.4] Jadi kita enggak perlu costum name. Nah,
+[2118.0] itu nanti aku akan tambahkan di ee apa?
+[2121.7] di sample projectnya aku akan update.
+[2124.2] Nah, eh
+[2126.8] kita akan melanjutkan dulu sebelum kita
+[2130.0] bikin ending-nya yang di mana kan kita
+[2133.1] mau ee dia kan kembali ke ini ya ke
+[2137.0] living room ya. Ketika pemainnya itu ke
+[2141.7] living room
+[2143.8] yang belum kita kode adalah dia kayak ee
+[2147.9] apa namanya? dia udah dapat delan atau
+[2151.4] belum ya variabelnya apa kreditnya.
+[2155.2] Kalau misalnya sudah dia akan ke ending
+[2157.7] yang nanti akan kita kode ee di video
+[2160.4] berikutnya gitu ya. Di sini untuk
+[2163.4] ending. Nah, tapi kalau misalnya belum
+[2167.8] ya kalau misalnya belum aku mau dia
+[2170.5] berdiri di sini. Jadi kayak ee apa?
+[2173.4] Memperlihatkan dia lagi di sini. Kalau
+[2175.8] misalnya belum, kita akan bikin ee
+[2181.8] Oh, aku tahu
+[2184.1] pakai if then else aja.
+[2188.4] Kalau misalnya belum, belum sama dengan
+[2190.9] 8,
+[2192.5] maka aku mau bikin dia go to ke sini ya,
+[2196.5] posisi sini. Terus sembunyikan variabel
+[2200.9] si membersihkan sampah.
+[2205.9] membersihkan sampah, membersihkan kamar
+[2208.3] maksudnya membersihkan kamar sama
+[2211.6] membuang sampah. Aku dari tadi
+[2213.6] ngomongnya agak kebalik-kebalik, mohon
+[2215.3] maaf. Nah, nanti dia seperti ini. Kita
+[2217.7] akan coba dulu ya. Kita klik green flag.
+[2221.3] Oke,
+[2226.9] seperti ini.
+[2232.8] Oke, kita coba buang sampah.
+[2237.6] Ye, kamu betul. Ye, kamu betul. Ye, kamu
+[2241.9] betul.
+[2243.8] Kita klik selesai.
+[2248.1] Jadi membersihkan kamar.
+[2251.0] Dan dia di posisi sini ya.
+[2262.3] Terus kita bersihkan
+[2265.5] awi awi awi awi. Oke, kita selesai.
+[2271.1] Harusnya dapat lima.
+[2273.8] Dan ketika sudah mendapatkan delu
+[2278.4] ending yang ada di video berikutnya.

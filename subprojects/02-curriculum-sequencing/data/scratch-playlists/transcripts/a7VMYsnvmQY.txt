@@ -1,0 +1,120 @@
+[0.4] Sekarang saatnya memprogram Sprite kita
+[3.8] untuk memperkenalkan diri kita kita akan
+[7.0] membuat
+[7.9] sprite-nya bisa berbicara dan
+[10.3] memunculkan tulisannya ketika slidenya
+[13.4] ditekan Nah untuk menggunakan suara kita
+[16.8] harus merekam suara kita dulu ya kita
+[19.7] bisa ke some tab lalu kita di bagian
+[23.7] sini di bagian Fuse jangan diklik karena
+[26.7] kita akan memilih bagian yang record nah
+[30.3] ketika diricord biasanya tampilan
+[32.8] pertama kali akan ada pertanyaan Apakah
+[36.0] boleh memberikan
+[38.2] permission untuk scratch menggunakan
+[40.6] microphone kamu kita pilih bagian yang
+[43.4] low ya agar bisa di record Nah nanti
+[46.5] tombol merah recordnya sudah menyala
+[48.9] kamu bisa memperkenalkan diri sebagai
+[51.6] contoh aku akan memperkenalkan diriku
+[53.7] Halo nama aku Nana seperti itu ya
+[58.4] Halo nama aku Nana
+[61.3] Nah kamu bisa melihat setelah aku record
+[64.3] sound dia akan memperlihatkan tampilan
+[67.2] seperti ini kamu bisa memainkannya dulu
+[70.1] dan juga bisa mengedit kira-kira bagian
+[72.8] mana yang harus dihapus misalnya di awal
+[75.7] itu butuh waktu yang lama nih sebelum
+[78.4] aku ngomong atau di akhir aku juga
+[80.5] stopnya itu agak lama itu bisa aku
+[83.5] potong Mungkin aku akan potong seperti
+[86.5] ini
+[87.6] lalu sebelum kita save bisa di play dulu
+[90.7] untuk memastikan suaranya sudah oke atau
+[93.0] belum Halo nama aku Nana nah ternyata
+[96.7] sudah oke nih tidak terlalu cepat
+[99.0] langsung bicara tapi tidak terlalu
+[101.5] lambat juga untuk memulainya Nah kalau
+[104.2] misalnya sudah oke Bisa klik shift kalau
+[106.5] misalnya ternyata suaranya ada suara
+[109.3] berisik di belakang kamu bisa pilih yang
+[111.7] record ya aku akan klik save lalu akan
+[115.8] tampilan seperti ini dengan nama
+[117.8] recording 1 karena ini record aku yang
+[121.0] pertama di sini ada tombol-tombol yang
+[123.4] bisa kamu coba aku suka menggunakan
+[125.5] faster dan flower untuk merubah peach
+[128.8] suara aku ini contohnya kalau aku
+[131.1] membuat faster Halo nama aku Nana
+[134.7] bisa terdengar suara aku sedikit berbeda
+[137.7] ya dari sebelumnya kalau mau
+[140.0] dikembalikan kamu gunakan Andu saja Halo
+[143.5] nama aku Nana terdengar Suaranya sangat
+[146.1] berbeda ya apa apalagi kalau kita buat
+[149.3] flower Halo nama aku Nana Wah Suaranya
+[153.4] sangat berbeda Halo nama aku Nana Nah
+[156.8] kamu bisa bermain dengan suaranya bisa
+[159.1] dibuat lebih besar
+[160.6] lebih kecil suaranya kalau mute Berarti
+[163.7] suaranya akan menghilang fade in berarti
+[166.1] dari awalnya itu agak pelan terus
+[167.8] membesar atau fake out Terus menghilang
+[169.7] suaranya reverse berarti dia akan
+[172.3] memainkan suara dari belakang ke depan
+[174.5] jadi agak aneh nanti terdengar ya kalau
+[176.6] robot suaranya akan menjadi
+[178.8] kayak robot Nah aku beri kebebasan kamu
+[182.0] untuk mengedit suara kamu tapi aku akan
+[185.3] menggunakan suara biasaku saja untuk
+[187.8] memperkenalkan diri aku karena kita akan
+[190.6] mengkodenya kita akan pindah ke kota
+[194.7] Nah kita akan menggunakan event yang
+[197.7] baru yaitu When The Spray Kenapa kita
+[201.1] menggunakan wentis slide klik karena
+[203.2] kita mau menjalankan kodenya Nanti kalau
+[206.0] kita klik sprite-nya perbedaan dengan
+[209.3] white Green Flag klik itu wind Green
+[212.5] flight menggunakan
+[214.4] bendera Green Flag di atas sini tapi
+[217.7] kalau yang wentist praclick itu kita
+[219.8] mengklik Sprite nya
+[222.0] Nah tadi kita sudah merekam suara kita
+[225.5] kita ambil kodenya di bagian sound di
+[229.4] sini ada dua pilihan ada play sound
+[232.3] until dan dan ada juga start Nah di sini
+[236.4] Kita akan menggunakan start song Kenapa
+[239.1] karena kita mau membuat suara dan
+[241.9] tulisannya itu muncul pada saat
+[244.0] bersamaan di sini aku akan tambahkan
+[247.6] looks menambahkan say hello hello nya
+[252.2] tadi kan halo
+[254.8] nama aku
+[257.6] Nana Nah untuk
+[261.7] second nya atau detiknya kita bisa
+[264.7] mengecek di some tadi kamu bisa dilihat
+[267.4] di sini recordingnya itu angkanya Kalau
+[270.8] nggak salah satu titik 93 ya jadi nggak
+[274.2] nyampe 2 detik jadi aku akan sesuaikan
+[276.8] saja angkanya
+[280.3] 1.93 biar pas jadi kalau nanti kamu mau
+[283.7] menambahkan suara tambahan lagi kamu
+[286.4] tidak harus menunggu kelamaan kita coba
+[289.3] dulu ya Halo nama aku Nana Nah sudah
+[293.2] terdengar Ya sudah pas ketika suaranya
+[295.7] mulai tulisannya juga ada kenapa karena
+[298.5] bisa saja ketika orang lain
+[300.8] memainkan proyek kita ini ternyata
+[305.3] apa ternyata speakernya rusak atau
+[308.5] speakernya belum tersambung terus kita
+[311.3] ketika diklik tidak ada informasi
+[314.0] apa-apa padahal ada perkenalan kita jadi
+[316.9] aku memberikan suara dan menggunakan
+[319.3] sing kalau mau coba lagi boleh sekali
+[321.9] tinggal menggunakan
+[323.7] start sound yang baru dan c-nya jadi
+[327.4] urutannya selalu menggunakan state sound
+[330.3] lalu ditambahkan save for to seconds nya
+[333.4] sesuaikan angka secondsnya dengan durasi
+[336.4] recording kamu ya dan jangan lupa untuk
+[339.0] selalu memilih recording kamu biar tidak
+[342.2] salah

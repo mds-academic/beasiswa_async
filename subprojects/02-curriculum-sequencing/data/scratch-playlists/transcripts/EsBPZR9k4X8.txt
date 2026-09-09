@@ -1,0 +1,50 @@
+[0.1] selanjutnya kita akan memberitahukan
+[3.6] hobi kita dan di sini Kita akan
+[6.8] menggunakan emoji sebagai e gambar dari
+[12.0] hobi kita ini nah bagaimana sih caranya
+[15.2] untuk menambahkan emoji di komputer Nah
+[18.8] kita akan membuat Sprite dulu yang
+[21.5] kosong seperti menambahkan Sprite baru
+[24.3] dengan paint lalu di sini kita akan
+[28.1] pilih teks nah di sini mungkin kamu akan
+[31.8] ee bingung sedikit Kenapa kita pakainya
+[34.9] teks Nah di sini aku akan zoomkan dulu
+[38.2] di mana ketika kita membuat teks
+[41.8] biasalah Kita bisa menulis eh huruf atau
+[45.6] angka di teks ini tetapi kita mau
+[49.1] menggunakan Emoji Keyboard Bagaimana
+[52.0] caranya kalau kamu menggunakan Windows
+[55.6] komputer Kamu bisa menekan Windows key
+[59.4] dan titik pada saat yang bersamaan
+[62.0] karena aku menggunakan windows aku akan
+[64.3] klik Windows dan titik nanti akan muncul
+[67.4] seperti ini dan kamu bisa memilih eh
+[71.3] gambar emoji yang kamu mau gunakan Jika
+[74.8] kamu menggunakan MacBook maka kamu bisa
+[78.0] menggunakan comand cont control dan
+[81.2] Space untuk membuka Emoji Keyboard kamu
+[85.0] Nah di sini aku akan ee memperlihatkan
+[88.7] Hobi aku
+[90.4] itu adalah bermain game Nah di sini Kamu
+[94.7] bisa cari atau kamu bisa search di sini
+[98.0] misalnya aku akan search
+[100.7] eh
+[103.9] game nah misalnya di sini ada game ya
+[107.4] aku mau pilih yang video game ini deh
+[111.0] nah ketika aku mencari tadi yang video
+[114.0] game terlihat ada game konsol ya di sini
+[117.8] aku akan bilang ya aku suka main G game
+[120.4] Nah kalau misalnya sudah tapi gambarnya
+[122.7] terlalu kecil nih kita bisa merubah
+[125.7] ukurannya Gimana caranya kita akan pakai
+[129.4] select button ya biar ada titik-titiknya
+[133.0] kita bisa rubah ukuran seperti mengubah
+[136.5] ukuran gambar seperti biasa jadi di sini
+[140.8] tinggal disesuaikan saja ukurannya mau
+[143.9] sebesar apa ya Dan kalau misalnya sudah
+[148.4] boleh ditaruh mau di di mana mungkin aku
+[150.9] akan taruh sebelah kiri mungkin ya Nah
+[153.6] di sini kamu sudah berhasil menambahkan
+[157.2] Sprite baru menggunakan
+[160.4] Emoji
+[161.9] Keyboard

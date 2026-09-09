@@ -3,7 +3,7 @@
 ## Current Status
 
 - **Status**: FINAL ACCEPTANCE PASSED (100% Selesai) — Seluruh temuan audit independen (B1–B4) telah diselesaikan secara tuntas dan lolos 8-gate verification test suite.
-- **Active Focus**: UAT alur belajar platform LMS dan monitoring kesiapan deployment.
+- **Active Focus**: Audit awal sequencing materi Scratch Async SD berbasis tiga project tutorial; belum ada perubahan dataset produksi.
 - **Last Updated**: 2026-09-08 23:59 WIB
 
 ## Completed
@@ -30,6 +30,8 @@
   - Dokumen audit [audit-verifikasi-implementasi-fase-0-6-2026-09-08.md](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/02-curriculum-sequencing/mapping/audit-verifikasi-implementasi-fase-0-6-2026-09-08.md) dan laporan [qa-scaffolding-report.md](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/02-curriculum-sequencing/drafts/qa/qa-scaffolding-report.md) diperbarui ke status **FINAL ACCEPTANCE PASSED**.
 
 ## Concrete Next Steps
+
+0. Bahas dan validasi audit sequencing Scratch SD sebelum menentukan micro-lesson/bridge atau perubahan dataset.
 
 1. Evaluasi pengerjaan siswa pada mini lab interaktif dan kuis pemahaman mandiri via LMS platform.
 2. Monitor live telemetry pengerjaan kuis dan progres sync ke Google Spreadsheet master.

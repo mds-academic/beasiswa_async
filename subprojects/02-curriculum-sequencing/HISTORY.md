@@ -384,3 +384,26 @@ Yang terverifikasi:
 Catatan penting: spreadsheet menulis B2 sebagai timestamp “dinormalisasi menjadi presisi”, sedangkan implementasi aktual lebih aman dan sesuai aturan sumber: timestamp asli dipertahankan, lalu anomaly dikarantina sebagai `review_required`/`manual_checkpoint`. Jadi dokumentasinya perlu diperjelas agar tidak terkesan angka timestamp sudah dipindahkan atau ditebak.
 
 Audit dan hasil browser verification sudah ditambahkan ke `audit-verifikasi-implementasi-fase-0-6-2026-09-08.md` dan `STATE.md`.
+
+## 2026-09-09 — Audit awal playlist Scratch Async SD
+
+### User
+> /Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/02-curriculum-sequencing
+>
+> ini aku mau nambahin materi sd tapi ini baru yang tutorial based&#x20;
+>
+> coba aku mau kamu disect ini playlist dibawah ini, lihat bagian mana yang bisa di urutin penjelasannya tapi ini karena penjelasan nya untuk membuat 3 project berbeda kita gabis stitch thenm together gituu
+>
+> Untuk Scratch Async, Aku kepikiran baru 3 proyek yang dibuat. Menurutku 3 ini sudah masuk semua komponen pembelajaran Scratch. Tapi emang minim pillar lainnya.
+>
+> 1. About Me: [https://www.youtube.com/playlist?list=PLqrknrOURrd1dEIoFXTRKyGdeog67Deoj](https://www.youtube.com/playlist?list=PLqrknrOURrd1dEIoFXTRKyGdeog67Deoj)
+> 2. Racing Car: [https://www.youtube.com/playlist?list=PLqrknrOURrd3sGvgW8ERa-pKXef6JlFzP](https://www.youtube.com/playlist?list=PLqrknrOURrd3sGvgW8ERa-pKXef6JlFzP)
+> 3. Increase Your Earning: [https://www.youtube.com/playlist?list=PLqrknrOURrd20WZDOPzUcO2V_tLyYhzQY](https://www.youtube.com/playlist?list=PLqrknrOURrd20WZDOPzUcO2V_tLyYhzQY)
+>
+> ini baca dan diescet dulu deh baru kita bahas yah
+
+### Status
+- **under discussion** — audit awal sequencing playlist Scratch Async SD diminta; belum ada keputusan final tentang urutan atau perubahan dataset.
+
+### Actions
+- Incoming request logged before analysis. Playlist inspection in progress.

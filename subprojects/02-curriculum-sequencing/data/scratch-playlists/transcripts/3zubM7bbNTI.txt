@@ -1,0 +1,48 @@
+[1.2] permainan ini kurang seru kalau dimainin
+[3.9] hanya dengan satu orang kita mau bikin
+[6.8] ini sebagai pertandingan Di mana kita
+[10.2] bisa ada dua pemain yang satu akan
+[12.9] menggerakkan dengan ao KYS yang satunya
+[15.6] lagi akan menggunakan
+[17.7] wasd atau yang biasa digunakan key untuk
+[20.9] bermain
+[22.0] game caranya bagaimana kita akan
+[25.7] duplikat saja dari mobil satu yang kita
+[28.6] sudah buat sebelumnya kita bisa Klik
+[31.1] Kanan lalu pilih yang duplicate Nah
+[35.0] nanti dia akan berubah menjadi mobil dua
+[37.4] cuma kalau kita lihatau kita klik Green
+[40.4] Flag mereka akan saling bertumpukan dan
+[42.8] itu tidak mau terjadi yang mau kita
+[44.9] lakukan adalah mobil duanya mau kita
+[48.3] rubah
+[49.4] posisinya caranya bagaimana kita mau go
+[52.8] to xy-nya kita hapus dulu jadi kalau
+[56.0] kita klik Green Flag ini tidak Eh sama
+[58.5] ya Nah tinggal Kita sesuaikan aja
+[61.7] seperti
+[62.6] ini ya jadi ee posisinya kalau sudah
+[66.2] sama boleh diambil go to XY yang baru
+[69.9] Nah cuma kita coba lagi ternyata
+[72.4] jalannya eh Jalan semua ketika kita
+[75.2] pakai panah kita harus ganti
+[77.4] controllernya untuk yang mobil dua
+[79.2] dengan e w a dan D ya Jadi gimana nih
+[85.3] kita bisa ke up arrow kita ganti dengan
+[89.4] double atau w tinggal discroll saja kita
+[93.8] ganti W yang ini juga W berarti yang
+[96.9] left arrow itu dia pakainya a maka kita
+[100.2] ganti dengan huruf a ini juga tombol a
+[104.0] untuk yang right arrow kita ganti dengan
+[106.6] huruf D atau
+[108.9] D Nah berarti kalau kita coba mulai jika
+[112.6] aku pencet panah dia akan eh mobil
+[116.8] pertama saja yang jalan kalau pakai
+[119.1] mobil yang kedua aku gerakkan dengan W A
+[122.5] dan D seperti itu Nah cuma
+[126.1] permasalahannya warnanya sama Nah aku
+[128.6] beri ke kalian challenge Bagaimana
+[131.6] caranya untuk membedakan nih mobil satu
+[133.9] dengan mobil dua karena warnanya sama
+[135.9] harus Kita
+[139.8] bedakan

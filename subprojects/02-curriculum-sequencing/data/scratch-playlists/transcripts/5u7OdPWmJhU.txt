@@ -1,0 +1,716 @@
+[1.1] Nah, sebelum kita memulai ee project ini
+[3.9] gitu ya, kita mau membuat ee proyek yang
+[7.3] di mana karak ee playernya itu tuh lagi
+[10.0] kepengin beli sesuatu tapi orang uangnya
+[12.6] tuh masih kurang nih gitu. Nah, terus
+[15.6] mamnya atau ibunya ee mau menawarkan
+[18.8] kalau ya udah kamu gimana kalau
+[20.6] mengerjakan pekerjaan yang mungkin
+[23.0] pekerjaan rumah gitu ya. Terus nanti
+[25.7] setiap kamu berhasil menyelesaikan ee
+[28.9] pekerjaan itu, kamu akan mendapatkan
+[30.8] kredit ya. Mungkin satu kreditnya itu
+[32.8] bisa berapa rupiah gitu ya. Ya, yang
+[35.5] dicontoh itu aku bikin satu kredit sama
+[38.2] dengan ee Rp50.000 dan dia membutuhkan
+[41.7] Rp400.000. Oleh karena itu bisa kita
+[44.3] ajak kalau misalnya dia mau ee karakter
+[48.0] ini namanya Dani. Dani itu misalnya
+[50.0] pengin beli gitar karena dia mau belajar
+[52.1] musik gitu ya. Dia butuh beli gitar
+[55.2] harga Rp700.000 ya. Mungkin kalau ada
+[58.4] anak bilang terlalu murah gitu ya enggak
+[60.3] apa-apa. Terus tapi tabungan dia masih
+[62.4] Rp300.000. Nah, mamnya bilang, "Oke, ee
+[65.8] gimana kalau kamu kerja membersihkan
+[68.1] rumah gitu ya, membuang sampah dengan
+[70.4] benar dan kegiatan-kegiatan rumah,
+[72.9] pekerjaan rumah lainnya? Ya, mungkin
+[74.8] kita bisa tanya, kamu kalau di rumah
+[76.2] bantuin ee apa nih?" Misalnya bersihkan
+[79.5] kamar, terusnya ee let's say ee main
+[84.6] bersama adik gitu ya atau mungkin nyiram
+[87.6] tanaman misalnya itu bebas sekali gitu
+[90.1] ya. ee nanti kita bisa kasih beberapa
+[92.6] opsi kepada anak dan terus nanti
+[95.1] biasanya kalau misalnya kamu berhasil
+[97.9] mengerjakan pekerjaan itu apa nih?
+[100.3] Kadang-kadang suka ada imbalannya. Nah,
+[102.0] imbalannya di sini aku bilang akan
+[103.4] mendapatkan kredit yang berbeda-beda dan
+[105.8] kredit itu akan bisa membuat ee apa
+[108.6] namanya? Mm
+[111.2] ee apa namanya? Kreditnya itu Rp50.000.
+[113.4] Jadi kalau misalnya mau mendapatkan
+[114.8] Rp400.000 kan tadi bilangnya Rp300.000
+[117.4] ya uangnya gitu. Jadi kurang 400 berarti
+[119.9] butuh 8 kredit gitu. Nah, karena kita
+[123.8] cuma 5 hari nih, jadi mungkin
+[125.6] aktivitasnya cuma mungkin dua aja. Kalau
+[127.9] misalnya anaknya bisa lebih dari dua ya
+[130.2] enggak masalah. Nah, ee sebelum itu,
+[133.6] sebelum kita membuat projectnya di sini
+[135.5] aku sudah buatkan eh starter project.
+[138.0] Apa sih itu starter project? Jadi,
+[139.6] starter project itu artinya projectnya
+[141.9] itu enggak dari awal gitu ya. maksudnya
+[145.2] enggak dari awal itu jadi mereka enggak
+[146.9] bikin dari kosongan. Di sini udah ada
+[148.6] beberapa ya, mungkin ada eh sprite, ada
+[152.2] backdrop gitu ya, terus ada kode. Tapi
+[155.7] kodenya pasti sangat-sangat sedikit yang
+[157.5] di mana berarti kamu mainin enggak akan
+[159.8] terjadi apa-apa karena masih harus kita
+[162.0] kode gitu. Nah, cara bukanya di mana? Di
+[165.2] sini ada bit.lle/sc2starter
+[168.3] 625. Nah, kita bisa buka.
+[172.0] Nah, pastikan anak itu sudah login,
+[175.0] sudah sign in. Kalau misalnya belum,
+[177.3] biasanya tulisannya di sebelah kanan
+[179.8] atas tuh masih sign in atau eh join gitu
+[183.3] ya, join scratch. Nah, kalau misalnya
+[185.6] sudah harusnya ada nama akunnya dia. Di
+[187.4] sini aku bikin namanya belum bikin akun
+[189.7] gitu ya. Memang aku sengajain. Dan yang
+[192.0] mau eh kamu lihat ini ada tulisannya
+[194.7] increase your earning starter project.
+[196.6] Kita mau klik remix
+[198.9] gitu. Nah, remix itu artinya kita
+[201.2] membuat copy, membuat duplicate eh
+[203.8] project ini gitu ya. Membuat eh
+[206.6] duplicate project ini ke akun kita gitu.
+[210.2] Jadi akan tersave kalau misalnya bikin
+[212.4] project baru kan otomatis ke-save di
+[214.6] akun kita ya. Kalau ini kita kayak pakai
+[216.6] punya orang gitu ya, kita ee duplikasi
+[219.8] gitu untuk kita buat. Nah, eh aku mau
+[224.0] ngasih lihat dulu di sini ada apa. Di
+[225.8] sini ada pemain. Kalau kita lihat
+[227.7] kostumnya, kostumnya masih kosong karena
+[229.6] aku e mau bikin anak-anak tuh pilih
+[232.2] sendiri karakternya. Boleh pilih, boleh
+[234.3] bikin, boleh ee misalnya upload kalau
+[236.8] misalnya ada yang mengerti cara upload.
+[238.8] Tapi kalau aku akan milih aja.
+[242.3] Terus di sini ada kode ya, ada kode di
+[245.3] mana when backdrop switches tu ada not
+[248.4] credit sama 0. Dia akan ke posisi yang
+[251.7] di sini akan kita rubah ya tergantung
+[253.8] kamu karakternya nanti berdiri di mana.
+[256.0] Terus di sini kalau sudah ada 8 kredit
+[259.4] gitu ya kreditnya kan tadi butuh 400
+[262.1] berarti butuh 8. Kalau misalnya mau
+[264.6] diatur yang lain lagi boleh banget.
+[266.4] Terus nanti kita akan ada broadcast
+[268.1] ending-nya gitu. Jadi, kita mau bikin ee
+[271.5] karena ini living room-nya ya, living
+[274.2] room. Di sini aku sudah kasih backdrop
+[276.0] juga namanya living room yang di mana
+[278.2] living room ini akan dimulai dari ee ini
+[281.1] menjadi kayak tengah-tengahnya gitu ya,
+[283.3] backdrop tengah. Dalam artian ketika
+[285.4] kita klik ee apa bahasanya ya? Aku akan
+[288.0] menjelaskannya ketika kita mulai itu
+[290.8] mulainya tuh dari living room. Jadi ada
+[293.3] nanti percakapan antara anak dan ibu
+[295.4] yang anaknya pengin membeli sesuatu gitu
+[297.6] ya. Terus ee nanti kan akan pindah gitu.
+[301.4] Kamu mengerjakan pekerjaan apa misalnya
+[303.1] mencuci piring berarti nanti akan pindah
+[304.8] ke kitchen. Kalau misalnya menyiram
+[306.6] tanaman berarti ke mana? Kalau misalnya
+[309.0] mau kegiatan yang lain membersihkan
+[310.7] kamar itu ganti kamar juga gitu kan.
+[313.0] Nah, kalau sudah selesai dari pekerjaan
+[315.2] pertama kita mau bikin karakter kita tuh
+[317.6] kembali ke living room lagi atau ke
+[319.4] ruang tamunya. Nah, nanti ee setiap kita
+[322.9] kembali ke ruang tamu itu tuh kita harus
+[325.8] ada beberapa kondisi. Yang pertama ini
+[328.6] kreditnya masih nol enggak? Kalau
+[330.4] misalnya masih nol berarti ee itu
+[333.4] artinya dia ee berada di ee awal gitu.
+[338.3] Kalau dia sudah melakukan satu pekerjaan
+[340.9] yang pekerjaannya itu harus
+[342.3] diselesaikan, sudah pasti nanti dia akan
+[344.8] mendapatkan kredit. Berarti kalau
+[347.2] misalnya dia memiliki kredit mungkin
+[349.8] satu atau lebih, ketika dia ke living
+[352.6] room lagi berarti ini kita tidak
+[354.3] men-trigger ee apa namanya? Kita tidak
+[356.9] men-trigger awalan lagi gitu, tapi kita
+[361.0] akan bikin nanti oh ee pekerjaan
+[363.6] selanjutnya yang masih perlu dikerjakan
+[365.6] apa? Yaitu pekerjaan kedua gitu ya.
+[368.0] Nanti pekerjaan kedua kita ee pindah ke
+[371.2] backdrop lainnya lagi, ke skenario yang
+[373.5] lain. Nah, ketika kita kembali lagi
+[376.4] kalau misalnya pekerjaannya cuma dua
+[378.0] berarti kan sudah habis ya harusnya
+[380.2] kreditnya sudah sesuai dengan yang kita
+[383.2] buat. Misalnya 8 gitu ya, aku bikin 8
+[385.7] berarti nanti dia akan mengarahkan ke
+[388.3] ending gitu. Jadi akan m-trigger
+[390.8] skenario ending. Kenapa kita
+[392.9] backdrop-nya cuma satu? Kan kita kalau
+[395.0] living room di rumah eh di rumah-rumah
+[397.9] biasanya living room-nya kan cuma satu
+[399.7] ya. Kalau misalnya kita beda-bedain ee
+[402.6] nanti akan terlalu banyak kodenya. Nah,
+[405.0] terus di sini ada tombol opsi yang di
+[407.5] mana aku sudah ee membantu ya ada
+[410.0] tambahan kode di mana kalau misalnya
+[412.4] kita klik green flag itu dia sembunyi.
+[414.8] Nah, habis itu di opsinya ini itu akan
+[417.5] bikin clone sendiri. Nah, contohnya
+[420.4] seperti ini. Kadang-kadang anak suka
+[422.4] bingung gitu ya kalau mau bikin ee apa
+[425.4] namanya? Opsi satu, opsi dua, terus
+[428.0] taruhnya bagaimana. Kita akan bantu
+[430.2] dengan menggunakan clone di sini. Tapi
+[432.6] nanti kita akan ubah di sini yang di
+[434.9] mana ini sudah aku kasih juga ada
+[437.1] forever dan if touching mouse pointer
+[439.2] and mouse down. Itu kalau misalnya klik
+[441.3] eh kita klik salah satu tombolnya yang
+[444.2] di mana kenapa kenapa sih enggak pakai
+[447.0] event mana nih? Even when this sprite
+[450.0] click. Ingat, karena di sini kita
+[451.8] pakainya clone bukan pakai sprite.
+[453.6] Takutnya anak akan kebingungan ketika eh
+[456.9] mengkode clone itu tidak bisa
+[458.7] menggunakan event yang ini gitu ya. Yang
+[461.4] ada di event harus menggunakan when I
+[463.3] start as a clone gitu. Jadi makanya di
+[466.0] sini aku sudah bantu kalau kita klik ini
+[468.3] nanti akan kerigger ke backdrop pertama
+[471.0] gitu ya. Opsi dua berarti backdrop kedua
+[473.5] gitu. Kalau misalnya mau ada tiga ya
+[475.6] berarti harus diatur lagi.
+[478.1] Nah, eh setelah itu di sini juga ada
+[480.6] when I start execone yang satunya lagi
+[483.2] ini untuk ee apa namanya? Kalau misalnya
+[488.3] ee kita mengerjakan opsi satu dulu gitu
+[490.5] ya, terus udah selesai kita balik lagi,
+[493.5] kita pengin opsi satunya itu terhapus
+[496.6] gitu ya. Enggak enggak muncul lagi
+[498.9] karena kan nanti bisa katakan curang
+[501.3] gitu. Padahal kan pekerjaan pertama
+[503.3] sudah selesai. Nah, ini nanti untuk
+[504.8] digunakan sebagai itu yang di mana nanti
+[507.0] ee kreditnya sudah di sudah dapat
+[509.1] berapa. Terus kalau ee costum name-nya
+[512.0] jadi nanti setiap ee apa clon-nya itu
+[515.3] kan dia punya nama ee kostumnya sendiri
+[518.6] ya. Nah, itu nanti kalau misalnya ee
+[521.8] clon-nya satu berarti dia akan dihapus
+[524.3] gitu. Jadi nanti tersisa hanya opsi dua
+[527.4] gitu. Nah, ee terus yang terakhir ada di
+[530.8] stage. Yang di stage ini hanya permainan
+[533.7] ada kredit. Kapan kredit muncul, kapan
+[536.8] ee kreditnya disembunyikan. Jadi, itu
+[539.1] aja sih untuk ee si kreditnya. Jadi,
+[541.8] enggak usah memusingkan kapan muncul,
+[544.1] kapan enggaknya. Nah, untuk video kali
+[547.0] ini kita mau set up ya. Kita mau set up
+[550.0] yang pertama ya. pertama maksudnya kita
+[552.8] mau bikin anaknya mungkin sedang ee
+[555.4] berpikir atau lagi sedang melamun, habis
+[558.3] itu nanti ibunya masuk gitu kan. Kamu
+[560.3] kenapa gitu? Aku mau beli ini gitu. Jadi
+[562.5] kita akan menggunakan percakapan gitu.
+[566.1] Nah, di sini aku akan kasih kebebasan.
+[568.6] Jadi boleh ee hari pertama juga ya
+[571.4] anak-anak boleh ditanya untuk pilih
+[573.8] karakter kamu. Tapi kita enggak pakai
+[575.5] choose a sprite, tapi kita ke pemain,
+[577.8] terus kita ke kostum
+[580.3] ya. Ada kostum di sini. Nah, di sinilah
+[582.9] kamu mau menambahkan karakter pemain
+[585.0] kamu, gitu.
+[588.2] Nah, di sini
+[591.0] ada beberapa orang ya. Jadi, ada
+[592.7] beberapa. Kalau misalnya mau pilihlah
+[595.8] yang ee vektor. Apa itu vektor? Jadi,
+[599.6] aku mau ngasih lihat dulu perbedaan
+[601.4] vektor sama ee nonvektor atau bitmap.
+[606.2] Ini adalah vektor.
+[608.4] Lalu yang ini kalau enggak salah adalah
+[610.6] bitmap.
+[612.6] Mana nih? Kok enggak masuk? Bentar ya,
+[615.5] aku tambahin. Oh, ini dia masuk. Nah, ee
+[618.8] Oh, ini masih
+[620.9] vektor ring bukan yang ini berarti.
+[622.8] Mmaya
+[626.0] yang orang misalnya ini gitu ya. Nah,
+[630.0] apa perbedaan dari vektor dan bitmap?
+[633.0] Jadi kalau misalnya kamu ke ini enggak
+[637.5] enggak update cepat ya,
+[640.5] aku tambahin dulu ya untuk perbedaan.
+[645.1] Nah, ini baru masuk. Nah, perbedaan dari
+[649.2] ee vektor dan bitmap. Kalau misalnya
+[651.5] vektor dia tampilannya seperti ini yang
+[653.8] tombolnya kayak gini ya. Dan dia ada
+[657.1] tulisannya di bawah itu convert to big
+[659.3] map. Nah, kalau vektor itu dia per parts
+[662.4] gini yang di mana parts-nya itu bisa
+[664.3] kita ubah-ubah. Jadi, aku bisa gedein.
+[666.8] Nah, di sini kan ada tangannya ya.
+[668.5] Tangannya kayak terpisah dan aku bisa
+[671.1] mengubahnya gitu. Jadi kayak aku putar
+[673.6] jadi disesuaikanin misalnya aku ee
+[676.2] instead of
+[678.8] apa namanya? Bikin-bikin gitu ya di sini
+[681.7] tinggal oh ya udah. Misalnya aku mau
+[684.1] bikin dia gini tangannya
+[687.3] gitu ya.
+[689.0] Nah, ini aku bisa diatur kalau vektor
+[692.8] enaknya di situ.
+[696.1] Nah, misalnya gini.
+[698.3] Tada. Jadi kalau misalnya aku showkan,
+[701.1] ini kan belum di-show ya. Kita showkan
+[703.1] di sini. Nah, karakternya seperti ini.
+[706.1] Atau mau bikin dia misalnya kayak orang
+[708.1] duduk gitu kan. Aku mau bikin dia kayak
+[710.4] duduk deh. Aku bisa ee mungkin kalau
+[714.8] yang karena dia pakai rock ya. Jadi
+[717.8] mungkin agak sulit.
+[720.9] Ee gimana ya enaknya? Mm Oh, aku tahu.
+[724.8] Kita bisa pakai yang ini.
+[729.6] Nah, y seolah-olah kayak kayak duduk ya
+[733.7] gitu. M ininya aku iniin dulu.
+[741.0] Mana nih? ini sama shift ini terus dia
+[745.5] naikin
+[747.0] ini gini
+[749.0] kita eh
+[754.0] ini sama ini ini pakai shift ya aku
+[756.8] dudukinnya kayak pakai shift gini terus
+[760.5] ininya aku pindahin eh
+[763.3] jangan pakai it pakai ini. Nah, jadi
+[767.0] kayak seolah-olah kayak dia lagi duduk
+[769.4] gitu ya. Tapi kalau misalnya ee yang
+[773.4] Anina nih, yang anina itu dia
+[775.1] tampilannya seperti ini. Kelihatan ya,
+[777.0] dia titik-titik pikel yang di mana kita
+[779.5] enggak bisa ee ngedit-ngedit gambarnya
+[782.9] dalam artian ee enggak bisa seperti ini
+[785.7] tadi yang tadinya berdiri kita bikin
+[787.4] kayak seolah-olah duduk karena dia ee
+[790.4] malah cuma bisa gini malah motong. kan
+[792.6] aneh ya kalau kalau seperti itu. Nah,
+[795.0] jadi kita akan sarankan coba pilih
+[797.3] karakter yang ee vektor. Biasanya sih
+[800.7] gambarnya kayak kartun gitu ya, tapi
+[802.9] tidak semua kartun itu dia ee vektor.
+[806.8] Jadi misalnya aku mau ngasih lihat yang
+[808.5] non vektor itu mana ya?
+[811.8] Ee karakter yang tidak vektor
+[816.2] kalau enggak salah itu
+[819.9] ini kayak Hana gitu ya. Karena dia juga
+[823.0] bitmap, dia kartun tapi ternyata
+[825.2] titik-titik. Jadi kalau misalnya mereka
+[827.0] lihat titik-titik boleh diganti.
+[829.3] Biasanya aku ee pakai contohnya itu
+[832.0] pakai Dani ya. Kalau di sample project
+[834.8] itu aku pakai Dani. Mana Dani? Eh, Dani
+[838.3] nih ada Dani A, Dani B, Dani C. Aku
+[840.9] bikin Dani A gitu ya. Nah, kalau
+[844.1] misalnya mau bikin dia duduk gitu kan,
+[846.4] ya udah tadi sama seperti tadi ee aku
+[849.5] bikin dia duduk. Cuma kalau misalnya
+[851.6] kalian klik kakinya bisa terlihat dia
+[854.4] itu ee jadi satu ya kakinya atas bagian
+[858.9] atas sama bagian bawah. Boleh pakai cara
+[862.3] tapi mungkin ini akan terlalu sulit buat
+[864.1] anak-anak ya. Ee ini aku bikinin dia ee
+[869.3] ini unroup juga.
+[871.5] Nah ini kan nanti dia seperti ini ya.
+[874.5] Bisa kayak ya udah kayak orang duduk
+[877.0] gitu
+[879.0] kayak gini.
+[881.2] kita bikin seperti ini gitu kan. Cuma
+[884.0] yah berarti kakinya ini ee apa kayak
+[890.0] enggak pakai celana dong karakternya
+[892.4] gitu. Nah, itu harus dimodifikasi.
+[895.8] Jadi misalnya seperti ini terus kita
+[899.3] pakai ini gitu kan.
+[902.3] Ini aku pakai shift.
+[905.0] Nah, misalnya seperti ini
+[908.1] ee ini terus kita bikin gini,
+[912.2] ininya gini, ininya gini misalnya.
+[915.8] Nah, jadi bisa dimodifikasi ya. Jadi ini
+[918.8] adalah reshape tombol reshape yang ada
+[920.8] titik-titiknya gitu bisa di ee edit-edit
+[924.7] gitu. Ininya juga bisa lengkungannya
+[927.4] bisa diatur
+[929.5] ya biasanya gitu.
+[931.5] Terus bisa juga kalau mau dibikin sharp
+[934.4] eh atau pointed gitu. Jadi bisa dipilih
+[936.6] pointed atau curve gitu. Nah, itu eh
+[941.1] bebas aja kalau misalnya enggak mau
+[943.4] bikin aneh-aneh mungkin dirasa anaknya
+[946.0] kayak kayaknya nih enggak bisa deh kalau
+[947.9] harus ngedit kayak gini tuh terlalu
+[949.7] sulit gitu. Ya udah langsung karakternya
+[952.1] yang berdiri aja mungkin bermainnya
+[954.1] dengan warna gitu. Kita mau mengajarkan
+[956.6] anak bisa loh kamu ngedit-ngedit gitu.
+[959.0] Kalau di sini ada ada warna misalnya aku
+[961.1] sukanya warna biru, ya udah ganti
+[963.5] bajunya Dani menjadi warna biru.
+[965.5] Contohnya seperti itu. Atau misalnya
+[967.8] pakai karakter satu tadi kan bikin kayak
+[969.8] gini gitu ya. Ee apa? Ya udah deh aku
+[972.8] pakai karakter satu aja enggak usah Deni
+[974.6] agak ribet. Aku akan menambahkan dua
+[977.6] karakternya
+[980.1] tadi karakter satu.
+[982.6] Jadi yang ini ee adalah karakter duduk.
+[986.4] Berarti aku akan bilang misalnya siapa?
+[990.4] Eh, Nina. Nina duduk
+[994.4] terus
+[996.5] Nina.
+[998.2] Nina
+[1000.6] berdiri gitu yang pemain aku hapus saja
+[1003.9] enggak apa-apa gitu ya. Jadi yang
+[1006.3] tadinya dia duduk gitu kan, terus aku
+[1009.3] mau bikin dia berdiri. Nah, kalau
+[1011.4] berdiri mungkin tadi ini kan dia
+[1014.8] duduknya kayak gini. nih ya kayak ya
+[1017.4] udah udah okelah duduknya. Nah,
+[1019.4] berdirinya ternyata dia jadi kayak di
+[1021.8] bawah gini bisa kita bikin dia naik ke
+[1025.9] atas. Jadi biar ee ketika duduk oh ya
+[1029.7] gitu ya. Jadi biar kayak kelihatan ada
+[1032.0] animasi lagi duduk lagi ngelamun pengin
+[1034.4] apa terus tiba-tiba dia berdiri karena
+[1037.8] ada ibunya misalnya seperti itu. Itu
+[1040.6] untuk si pemain. Nah kalau misalnya
+[1043.5] untuk orang tuanya. Nah, barulah kita
+[1046.5] bisa pakai yang e choose a sprite. Di
+[1048.9] sebelah kanan bawah ini. Kita akan pilih
+[1052.0] di sini aku akan pakai search pakai
+[1053.7] people. Kira-kira ibunya yang mana ya?
+[1056.5] Atau mungkin pakai yang bapak. Nah, tadi
+[1058.6] kan aku mendapatkan kan karakter satu ya
+[1061.1] teman-teman. Cuma tadi kalau pakai
+[1062.8] kostum itu dia langsung menyebarkan jadi
+[1065.3] satu satu gitu. Sedangkan kalau misalnya
+[1069.0] pakai eh choose a sprite itu tuh
+[1071.2] biasanya satu sprite ada beberapa
+[1073.6] kostum.
+[1075.1] gitu. Jadi agak berbeda. Misalnya tadi
+[1077.5] karakter satu dapat dari mana sih? Dari
+[1079.7] sini gitu. Nah, terus pas dilihat
+[1082.4] ternyata setiap ee apa kostum yang ada
+[1086.4] di sprite itu ternyata
+[1089.1] banyak gitu ya. Jadi boleh banget
+[1091.6] dipilih misalnya
+[1094.2] nenek kali ya. Jadi aku mau bikin ada si
+[1097.8] neneknya. Nah, ini pemainnya aku e
+[1100.6] mungkin kelihatan kecil karena size-nya
+[1102.5] 70.
+[1104.4] Jadi boleh banget ya diatur ukurannya
+[1106.9] berapa. Nah, misalnya di sini aku mau
+[1109.5] pilih si nenek aja di sini. Berarti aku
+[1112.1] bilang nama karakternya jadi nenek.
+[1116.3] Mungkin akan sedikit berbeda ya dengan
+[1118.2] contoh yang ada di ee apa di sample
+[1121.6] project. Tapi itu memang sengaja biar
+[1124.2] kakak pengajar ini bisa memahami ee
+[1127.0] lebih detail. Nah, jadi kayak gini. Aku
+[1130.4] sudah ada pemain, ada nenek. Nenek,
+[1132.7] sengaja tidak aku rubah-rubah? Kalau
+[1135.0] misalnya ada yang mau ngerubah, boleh
+[1137.0] aja. Ini biar enggak kelamaan juga buat
+[1140.1] teman-teman di sini ee belajar. Nah,
+[1143.4] kalau misalnya sudah kita mau mulai
+[1145.9] mengkode nih untuk pembuatan ee apa
+[1149.0] namanya? Percakapannya. Nah, pertama
+[1151.6] misalnya kan aku mau bikin ya tadi dia
+[1154.2] tuh duduk dulu, habis itu dia berdiri
+[1157.1] gitu ya. Nah, gimana caranya? Kita mau
+[1161.4] pertama mulai dulu nih dengan when green
+[1163.8] flight click. Di sini aku akan taruh di
+[1165.4] sini nyari area aja yang kosong. When
+[1168.6] green flight click kita mau atur
+[1170.6] posisinya dia duduknya di mana. Agak
+[1173.0] turunan atau harus agak naikan gitu atau
+[1176.0] agak munduran gitu ya. Bebas banget.
+[1179.0] Nah, kalau misalnya sudah mendapatkan ee
+[1181.9] posisi yang sudah sesuai dengan pilihan
+[1185.2] kamu, kamu akan ke motion untuk ngambil
+[1188.2] go to XY.
+[1190.3] Nah, pastikan angka di sini itu sesuai
+[1193.6] dengan angka di sini. Biasanya dia
+[1196.4] otomatis ya ee apa namanya? Biasanya
+[1199.4] angkanya berubah secara otomatis. Jadi
+[1201.0] kalau aku pindahin gini biasanya dia
+[1203.3] udah otomatis ya. Cuma kadang-kadang
+[1206.3] kadang-kadang aja sih dia itu enggak
+[1208.9] berubah yang di kode sini. Jadi ee lebih
+[1212.0] aman dicek dulu. Nah, terus yang mau
+[1215.3] kita lakukan adalah backdrop-nya. Ini
+[1218.1] kan namanya living room. Nah, kita mau
+[1221.3] pastikan kita set up dulu. Pastikan
+[1224.0] backdrop-nya itu yang living room.
+[1225.9] Berarti switch backdrop to living room.
+[1228.0] In case misalnya kita sudah di
+[1229.5] tengah-tengah, ketika kita mau nyoba
+[1231.8] ngulang lagi ternyata karena kita tidak
+[1234.3] set eh backdrop-nya di awal nanti dia
+[1237.4] kayak enggak berubah backdrop-nya. Jadi,
+[1239.2] agak bingung. Nah, terus aku mau switch
+[1242.7] costum. Kalau backdrop itu dia latar
+[1244.9] belakangnya, kostum itu kostum dari
+[1247.6] karakternya. Nah, aku mau pastikan dia
+[1250.5] mulai ketika diklik green flag itu dia
+[1253.4] lagi duduk gitu. Nah, terusnya di sini
+[1257.2] ada say, ada thing. Kalau thing itu
+[1259.3] kayak eh apa ya? Ngomong pada diri
+[1262.6] sendiri gitu ya. Jadi tampilannya nanti
+[1264.5] dia akan seperti ini, ada
+[1265.6] bulit-bulitbulnya gitu. Nah, misalnya mm
+[1271.0] ee aku
+[1274.4] ingin
+[1276.2] beli
+[1278.0] gitar misalnya
+[1282.2] ini ya. Nah, bisa kita coba klik green
+[1284.9] flag-nya. Aku ingin beli gitar untuk
+[1287.0] belajar musik gitu kan. Kalau misalnya
+[1289.8] tulisannya cepat menghilang kayak kamu
+[1292.0] belum selesai baca, boleh diatur untuk
+[1295.1] eh angkanya ya, berapa second untuk
+[1297.6] munculnya seperti itu.
+[1301.4] Nah, ee misalnya mau ditambahin lagi di
+[1304.0] contoh kan aku bikin cukup banyak ya
+[1306.2] untuk apa namanya ee percakapannya gitu
+[1309.8] ya. Nanti ee di sini aku bikin kalau
+[1312.1] enggak salahnya ada beberapa. Nah, eh,
+[1316.0] aku lupa karena kan dia mau gitar ya.
+[1319.0] Kita ke kostum dulu di Nina duduk.
+[1321.2] Misalnya nih ada mau bikin kayak yang
+[1324.1] yang kayak gambar gitu tuh boleh banget
+[1326.6] ya. Jadi misalnya aku mau tadi kan dia
+[1329.3] bilang mau gitar. Kenapa gitar? Karena
+[1332.1] di sini ada sprite-nya. Jadi enggak
+[1333.9] harus milih, enggak perlu harus
+[1335.4] nyari-nyari lagi. Nah, misalnya di sini
+[1337.6] kan ada gitar elektrik, ada gitar A
+[1339.7] misalnya gitar elektrik. Nah, di sini
+[1342.1] kamu bisa banget loh kamu copy terus
+[1345.1] taruh di Nina duduk kita paste seperti
+[1348.3] ini ya. Aku perkecil
+[1351.5] misalnya gini.
+[1354.0] Terus aku mau kasih seperti ee apa
+[1358.1] namanya?
+[1363.1] Ini apa? Ee kayak balon
+[1368.3] awan gitu. Keinginan.
+[1371.8] Terus kita warnain. Misalnya sama-sama
+[1374.8] ungu, tapi aku merubah jadi putih. Nah,
+[1378.1] seperti ini loh. Tapi ee gitarnya
+[1380.5] hilang. Kita bikin dia kebal
+[1383.9] seperti ini.
+[1386.7] Kalau misalnya terlalu besar boleh kita
+[1388.6] kecilin gitu ya. Kayak aku pengin deh
+[1392.5] kayak gini. Jadi kayak aku pengin deh
+[1394.8] beli punya gitar gitu kan. Jadi biar
+[1397.9] kayak mm kayaknya seru deh kalau punya
+[1400.5] gitar untuk belajar musik gitu. Nah, ee
+[1404.6] pas dia lagi ngelamun gitu ya, pas lagi
+[1407.5] dia ngelamun tiba-tiba neneknya datang
+[1409.8] nih gitu. Nah, gimana caranya gitu. Di
+[1413.3] sini kan neneknya udah ada ya, jadi aku
+[1415.3] mau bikin dia kayak masuk gitu.
+[1418.2] Kita bisa mulai dari when green flagling
+[1422.2] kita sembunyiin dulu. Jadi pas ninanya
+[1425.7] itu lagi ngelamun kita bikin dia belum
+[1428.0] muncul. Kita kasih hide. Terus kapan nih
+[1431.2] dia masuk? Kamu bisa melihat di sini ee
+[1434.6] kan pemainnya lagi mikir-mikir selama 2
+[1437.0] detik misalnya seperti itu. Nah, mm
+[1440.6] kayaknya tadi tulisannya terlalu panjang
+[1442.4] jadi kayak butuh 3 detik. Nah, apakah
+[1444.6] kamu mau bikin neneknya itu masuk
+[1447.1] setelah 3 detik atau mau sebelumnya?
+[1450.2] Nah, kamu bisa ngatur nih pakai weight.
+[1453.4] Misalnya kalau aku atur dia 3 detik dia
+[1457.3] baru muncul ya. Kita mau bikin dia show.
+[1460.9] Habis itu kita mau dia datang kayak set
+[1464.0] jalan seperti ini gitu ya. Kita mau
+[1467.0] pakai glide glide to. Kalau tadi kan go
+[1469.7] to sekarang kita pakai glide to. Glide
+[1471.9] to itu apa? Glight to itu dia dari sini
+[1474.4] dari posisi pertama terusnya kita mau ke
+[1477.5] glide to. Wih, gitu ya. Jadi ee
+[1481.3] kelihatan kalau misalnya di sini aku mau
+[1484.2] go to-nya juga deh lihat perbedaannya.
+[1486.6] Kalau misalnya pakai go to dia langsung
+[1488.6] gini, tapi kalau glide to dia gini. Nah,
+[1493.1] kalau mau bikin animasi jadinya gimana?
+[1496.1] Ya udah pakai go to dulu. Misalnya
+[1500.0] berapa ee paling kanan itu 240
+[1503.6] gitu ya. Jadi bisa kita bikin dari ee
+[1507.0] pastikan dia muncul di 240 karena kan
+[1509.4] dia dari sini nih kita mau bikin biar
+[1511.7] animasinya ngulang itu dari awal sebelah
+[1514.1] kanan dulu 240 terus dia gliding ke sini
+[1517.4] kita coba lihat ya set nah kelihatan
+[1520.8] enggak kalau dia kayak wing gitu jalan
+[1524.1] kalau misalnya kecepatan itu berarti
+[1526.3] kita bisa glide-nya kita ee angkanya
+[1528.9] lebih besar jadi dia akan jalannya lebih
+[1531.4] pelan jadi kamu mau bikin seperti Apa?
+[1534.2] Nah, di sini kalau dilihat ini neneknya
+[1536.3] menghadap ke kanan bukan ke kiri terus
+[1538.9] jadinya jalannya mundur. Kalau misalnya
+[1541.2] terjadi seperti itu, kamu bisa ke
+[1542.9] direction dulu yang di mana kamu bisa
+[1545.6] pilih yang ini. Ini tuh artinya left and
+[1547.9] right. Jadi kalau misalnya kita balik
+[1550.0] dia itu dia akan kayak gini gitu ya.
+[1552.9] Ngadap kanan kiri. Tapi kalau misalnya
+[1554.9] kita pakainya yang ini, dia akan
+[1556.7] muternya gini malahan. Maksudnya kita
+[1558.7] suruh dia kebalik gitu ya. Jadi kita
+[1560.8] pian tengah dulu. Habis itu kita bisa
+[1563.3] pakai point in direction -90
+[1566.7] atau dibikin set dia ke kiri gitu. Nah,
+[1570.9] kita tinggal masukkan. Kita coba.
+[1573.8] Aku ingin belajar beli gitar untuk
+[1576.2] belajar musik. Nah, dia sambil ee
+[1579.0] setelah selesai ngomong neneknya baru
+[1580.8] masuk. Kalau misalnya kamu mau bikin
+[1583.2] misalnya seperti ini, misalnya dua gitu
+[1586.0] ya.
+[1588.4] Jadi dia sambil sambil ngomong neneknya
+[1590.6] tiba-tiba masuk. gitu kan. Nah, habis
+[1593.2] itu misalnya kita kasih ee percakapan
+[1596.9] kamu lagi ngapain? Nah, karena kita mau
+[1599.7] ada percakapan antara ee nenek dan si
+[1602.9] pemain, lebih mudahnya daripada kita
+[1606.8] kode di bawahnya, kita bisa menggunakan
+[1609.8] namanya events. Nah, events itu apa? Ja,
+[1613.0] bukan ee pakai broadcast maksudnya. Nah,
+[1615.6] broadcast itu apa? Kayak kirim pesan.
+[1617.6] Jadi kita mau oh ee percakapan ini kita
+[1620.5] bikin event sendiri aja. Jadi dipisah.
+[1623.6] Jadi kalau misalnya ada masalah
+[1627.6] saat kita ini kita bisa ee rubah aja.
+[1632.4] Kita pakai broadcast. Nah, broadcast-nya
+[1635.0] di sini namanya ending. Kita ganti aja
+[1637.6] menjadi percakapan. Kita bikin baru
+[1643.6] gitu ya. Nah, ketika kita broadcast,
+[1646.4] kita akan taruh when I receive
+[1649.9] percakapan
+[1651.6] di nenek sama di pemain. Nah, di sini
+[1654.7] aku enggak akan nulis terlalu banyak ya
+[1656.6] ee codingnya enggak kayak dicontoh.
+[1659.1] Kenapa? Jadi, aku cuma mau ngasih tahu
+[1661.0] aja bagaimana ketika membuat percakapan
+[1663.3] itu. Jadi, kalau bikin percakapan ketika
+[1666.0] satu sprite itu sedang ngomong berarti
+[1668.4] satu sprite yang lain itu harus wait.
+[1671.6] Jadi dia harusnya seperti ini. Ketika
+[1673.8] ada yang ngomong berarti ada yang
+[1676.8] weight. Wait-nya berapa? Sesuaikan
+[1679.5] dengan say block-nya ini
+[1682.8] gitu. Jadi aku biasanya nyusun kodenya
+[1686.3] itu selalu
+[1688.5] seperti ini.
+[1690.9] Jadi di samping-sampingin dulu gitu ya.
+[1694.6] Misalnya ee ini nenek gitu ya. Ini aku
+[1698.7] kasih add komen deh. Nenek.
+[1704.0] Ini yang ngomong nenek.
+[1706.2] Kalau yang ini
+[1710.0] adalah Nina atau pemain
+[1715.9] ini ya.
+[1722.1] Nah, misalnya dia nanti akan ngomong mm
+[1727.9] sedang melamun
+[1730.2] kan apa nih, Nak? Misalnya seperti itu
+[1733.0] ya. Nah, kalau dua yah, maaf
+[1737.5] ini. Nah, kalau misalnya 2 detik cukup 2
+[1740.2] detik ee terus Nina akan ngomong ee oh
+[1744.7] ee nenek aku mau beli gitar misalnya
+[1751.2] seperti itu. Nah, buatlah susunlah kanan
+[1754.6] kiri kanan kiri kanan kiri gitu ya
+[1756.5] sampai selesai sampai dibutuhkan gitu
+[1759.2] ya. Nah, harapannya itu berakhir di
+[1762.9] nenek gitu kan. Misalnya ee oke
+[1768.3] ee oke kamu kerja dulu baru bisa dapat
+[1774.7] kredit. Ya, aku skip aja bisa dilihat
+[1777.6] contoh percakapannya antara ee dua
+[1781.2] karakter, dua sprite di sample project.
+[1784.0] Nah, di sini aku bikin neneknya yang
+[1786.0] ngomong terakhir gitu ya. Ini mungkin
+[1788.0] kelihatannya masih kenapa di pemain
+[1789.3] nanti kita pindahin yang di mana kita
+[1792.2] mau kasih event opsi. Nah, broadcast-nya
+[1796.3] di sini udah ada namanya opsi. Kita
+[1798.4] tinggal broadcast opsi. Terus yang
+[1801.1] terakhir adalah ee oh enggak ee apa
+[1805.8] namanya? Kita bisa tambahin show
+[1808.4] variabel kredit. Jadi kayak kita udah
+[1810.3] mulai pekerjaan kita nih, apa yang mau
+[1813.2] kamu lakukan seperti itu. Nah, ee ini
+[1818.2] kalau misalnya kamu ngajarin anaknya itu
+[1821.0] bikinnya itu di satu sprite karena
+[1822.9] nyusunnya kayak gini ya,
+[1824.2] samping-sampingan. Nah, kalau misalnya
+[1826.7] seperti itu kita bisa mindahin kodenya
+[1830.0] itu ke nenek. Ada dua cara. Yang pertama
+[1832.8] biasanya nih yang suka bermasalah kepada
+[1835.3] anak, tapi aku lebih senang pakai cara
+[1837.4] ini karena gampang. itu tinggal ambil
+[1839.9] aja kode paling atas, masukkan ke nenek.
+[1842.6] Ketika neneknya biru-biru gitu ya, dia
+[1845.6] akan nge-copy. Cuma kelihatan nih ada
+[1848.4] kayak error gitu ya, kayak ini ee ke
+[1851.4] tombol opsi atau nenek gitu. Nah, ini
+[1853.1] tinggal kita perbesar. Harusnya kayak
+[1854.9] gini. Jadi yang tadi nenek kan ada
+[1856.5] goyang-goyang dikit bisa masukin secara
+[1858.8] otomatis dia seperti ini. Tinggal
+[1860.5] masukin ke percakapannya. Nah, itu cara
+[1864.2] yang kadang-kadang suka bermasalah kalau
+[1866.5] anak belum terbiasa gitu ya. Cara lain
+[1869.5] satu lagi adalah menggunakan backpack.
+[1871.9] Kalau kamu pakai ee online ee ini
+[1875.2] biasanya bisa. Tapi kalau misalnya
+[1877.2] pakainya offline editor itu enggak bisa.
+[1879.4] Cinggal buka backpack-nya aja. Di sini
+[1881.5] backpack aku harusnya sudah ada banyak
+[1883.5] ya, ada banyak gambar. Jadi ee apa ee
+[1887.6] kok tampilannya beda? Karena aku sudah
+[1889.4] pernah pakai backpack sebelumnya. Kalau
+[1891.0] misalnya belum pernah pakai biasanya
+[1893.3] backpack is empety. Nah, ini tinggal
+[1895.3] kita bawa taruh ke backpack dia kan
+[1897.8] warna biru gitu. Nah, nunggu dia
+[1900.2] loading. Kalau scriptnya sudah masuk ke
+[1902.3] sini kita tinggal ke nenek terus kita
+[1905.3] keluarkan ke tengah sini. Nanti dia akan
+[1908.2] kecopy biasanya kayak di ujung-ujung
+[1910.8] gitu. Kita tinggal sambungin. Jadi
+[1913.9] seperti itu. Kita mau bikin ee
+[1916.2] percakapan antara dua karakter. Nah,
+[1919.0] mungkin ada tambahan yang aku eh agak
+[1922.2] sedikit lupa gitu ya, yaitu di mana
+[1925.1] pemainnya ini kan ee ini ya
+[1929.0] kayak gini.
+[1931.7] Nah, ketika dia ee neneknya datang,
+[1937.4] kita mau bikin misalnya dia jadi
+[1939.0] berdiri. Nah, kapan kamu mau ee dia
+[1943.1] berdiri? Nah, kan tadi kan dia eh ini
+[1947.4] kita mau ke looks, kita tinggal atur
+[1952.0] switch costum-nya kapan, apakah di sini
+[1954.3] atau di sini? Kayaknya setelah wait deh.
+[1957.2] Jadi dia berdiri, "Aku ingin beli gitar
+[1960.6] untuk belajar musik." Keman apa Nina?
+[1964.5] "Nah nenek aku mau beli gitar." Jadi dia
+[1966.6] kayak kaget gitu kan, kayak berdiri. Aku
+[1968.8] mau ngomong. Nah, karena di sini tombol
+[1971.5] opsi itu ee sudah aku buatkan ya ee ini
+[1975.4] yang opsi makanya dia langsung muncul
+[1977.9] yang di mana nanti kita akan lanjutkan
+[1979.5] di video berikutnya. Yeah.

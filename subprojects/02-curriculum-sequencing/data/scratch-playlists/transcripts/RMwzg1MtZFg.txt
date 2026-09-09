@@ -1,0 +1,85 @@
+[0.6] kamu ditantang untuk membuat satu Sprite
+[4.1] lagi yang menceritakan tentang
+[6.0] cita-citamu Nah kamu bisa mendesain dan
+[9.8] mengkode menggunakan konsep-konsep yang
+[12.4] sudah dipelajari sebelumnya di sini ada
+[15.6] satu tambahan yang mau aku perkenalkan
+[17.7] yaitu efek di
+[23.3] Aku mau memperkenalkan efek yang ada di
+[26.2] looks pertama kamu bisa kelux dan Scroll
+[30.5] ke bawah untuk menemukan change color
+[33.6] effect color effect dan clear graphic
+[37.3] effect Nah apakah ini ini adalah efek
+[41.0] yang bisa kamu tambahkan di Project kamu
+[43.7] ada color Ada fish eye ada World
+[48.1] pixelate mozaik brightness dan goals Nah
+[52.0] kamu bisa coba-coba nih dengan
+[53.8] menggunakan cheese dan set kalau
+[56.5] misalnya set color dia itu merubah
+[59.5] warnanya ke efek yang nol kalau misalnya
+[63.1] aku bikin 50 dia akan berubah warna nah
+[67.6] Tetapi kalau menggunakan change color
+[70.2] effect dia akan berubah setiap
+[73.0] 25 ya setiap 25 unit jadi warnanya
+[77.0] berbeda-beda kalau kamu mau ganti
+[79.3] Misalnya bergantian setiap 2
+[83.2] adalah nilai ya jadi dia akan berubahnya
+[85.8] pelan-pelan seperti ini Nah apa yang
+[88.9] terjadi kalau misalnya menggunakan Fish
+[91.4] Eye atau efek yang lainnya Nah kalau
+[93.9] fisheye dia kan berubah bentuknya ya
+[96.1] jadi seperti mata ikan yang akan agak
+[98.9] maju seperti itu dan kalau kamu mau
+[101.9] memperbaiki atau menghilangkan efeknya
+[104.9] kamu bisa menggunakan clear graphic
+[106.7] effex-nya Nah di sini aku mau kasih
+[109.2] contoh misalnya aku sudah ada kostum di
+[114.5] sini aku ada 7 kostum yang di mana aku
+[117.9] akan membuat animasi menggunakan ganti
+[120.8] kostum
+[122.0] dan aku akan menambahkan efeknya
+[124.3] Misalnya menggunakan konsep dari
+[127.3] sebelumnya aku akan menggunakan repeat
+[129.8] karena kostum aku ada 7 jadi aku akan
+[133.5] pakai repeat 7 dan Aku pastikan dari
+[138.1] kostum yang pertama dulu lalu aku akan
+[140.9] menambahkan next kostum dan change color
+[145.3] effect
+[146.6] Jadi kalau aku klik kalau bisa lihat
+[149.0] warnanya berubah tapi dia tidak kembali
+[151.9] ke warna sebelumnya jadi jangan lupa
+[155.5] taruh clear grafik efeknya di paling
+[158.2] bawah Jadi kalau dicoba lagi dia akan
+[161.5] seperti ini cuma kecepatan aku tambahkan
+[165.3] control kali ya mungkin
+[173.0] dia berubah warna ganti kostum juga tapi
+[176.2] pergantiannya agak lama nih jadi aku
+[179.0] ganti saja mungkin 0.2
+[183.2] Nah ini bisa ganti warna kalau aku ganti
+[187.1] jadi pixlite bagaimana ya
+[192.7] ya bisa kelihatan kalau dia ganti pixed
+[195.4] jadi pixelate banget ya mungkin dirubah
+[197.6] jadi dua aja
+[201.0] jadi kamu bisa bermain dengan
+[203.6] efek yang ada di sini
+[208.5] sepertinya ini menarik
+[211.7] aku akan bikin dia selalu berganti
+[214.5] mozaik dan 4
+[219.5] ya Jadi bisa seperti ini dan kalau sudah
+[222.6] pastikan tambahkan event yaitu when the
+[226.4] spritely Dan tambahkan when this
+[229.3] practive yang baru untuk menceritakan
+[231.6] atau menjelaskan Sprite Ini untuk apa
+[234.4] aku akan bilang
+[236.1] cita-citaku ingin menjadi seorang
+[239.4] baseball ya baseball player Mungkin aku
+[242.7] akan menggunakan say
+[246.5] akan seperti ini cita-citaku
+[251.3] adalah
+[252.9] menjadi seorang
+[256.6] baseball player
+[261.1] jika sudah kita bisa tambahkan
+[264.4] eventsnya when the Sprite dan kita coba
+[272.7] Wah berhasil Sekarang
+[275.3] giliranmu untuk membuat animasi MU mau
+[279.1] seperti apa untuk cita-citamu

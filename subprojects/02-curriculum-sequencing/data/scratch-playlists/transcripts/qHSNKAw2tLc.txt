@@ -1,0 +1,27 @@
+[2.9] cara membuat sirkuit balap mobil kita
+[5.9] akan membuatnya di backdrop pertama kita
+[8.9] akan menggunakan paint dari
+[11.4] backdrop lalu kita buat kotak dengan
+[15.2] warna yang kamu pilih kamu boleh pilih
+[18.7] mau seperti apa pastikan outline-nya
+[22.4] dikosongkan kita mau cover semua kotak
+[25.9] putih ini dengan warna yang kamu pilih
+[28.5] tadi jika sudah kita mau membuat kotak
+[32.4] lagi tapi dengan warna yang berbeda
+[34.7] untuk
+[40.8] jalannya Nah kita mau buat lebih kecil
+[44.4] dari garis putih
+[49.0] ini seperti ini kalau sudah kita mau
+[53.4] pindah ke bagian select untuk mengcopy
+[57.5] kita mau copy lalu kita mau paste kotak
+[61.3] yang barusan kita
+[63.3] buat rubah warnanya dengan warna hijau
+[67.3] yang kamu pilih tadi menggunakan pick
+[72.9] color rubah ukurannya sedikit lebih
+[76.0] kecil dari yang warna jalan dan pastikan
+[79.7] kamu taruh di
+[81.9] tengah-tengahnya jika kurang lebar kamu
+[84.4] bisa atur
+[87.5] kembali dan jika sudah kamu sudah
+[90.7] berhasil membuat
+[96.4] sirkuitnya

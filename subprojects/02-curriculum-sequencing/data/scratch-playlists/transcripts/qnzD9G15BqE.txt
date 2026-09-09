@@ -1,0 +1,94 @@
+[1.3] finish Line sudah berhasil dibuat
+[3.4] bagaimana untuk mengkode menangnya Nah
+[6.1] di sini kita akan mengkodenya di mobil 1
+[8.9] atau mobil du jadi e pastikan kamu ada
+[13.0] di Sprite yang kamu mau kode pertama
+[16.2] misalnya aku mau ke mobil 1 pastikan
+[18.7] kamu ada di kode mobil 1 nah kita akan
+[23.4] menggunakan menggunakan W
+[27.9] Green di mana Di inflekti ini kita akan
+[31.4] menambahkan condition atau kondisi yang
+[34.3] di mana dia akan mengecek Apakah dia
+[36.8] menyentuh finish Line atau
+[39.8] tidak condition-nya kita menggunakan if
+[43.1] then nah if then-nya apa kita mau jika
+[46.7] mobil satu menyentuh finish Line jadi
+[49.1] kita ke
+[50.4] sensing lalu pilih touching Mouse
+[53.7] pointer taruh di dalamnya Mouse
+[56.3] pointernya dirubah menjadi finish Line
+[60.9] Buatlah seperti ini dan kalau misalnya
+[64.6] mau ada tulisan menang boleh kamu pakai
+[68.0] look Misalnya
+[73.3] bilang mobil satu
+[76.5] menang atau bisa juga pakai suara pakai
+[79.7] suara tinggal ke sound dan pilih play
+[82.1] sound until
+[84.8] done Nah untuk pilihan suara kamu bisa
+[88.2] memilih di sound
+[90.9] di mana di sound ini cuma ada suara pop
+[93.8] kamu bisa pilih choose a sound dengan
+[96.0] cara Klik di bagian chose a
+[98.3] sound Pilih suara yang kamu
+[102.8] mau seperti contoh aku akan memilih
+[108.0] cheer nah jangan lupa di play sound-nya
+[111.0] diganti namanya play sound
+[114.8] cheer nah permasalahannya ketika kita
+[118.0] klik Green Flag dan berhasil membuat
+[122.3] mobilnya menentuh finish Line dia tidak
+[125.5] bersuara karena kodenya sudah dicek
+[128.1] sebelumnya untuk bisa mengecek terus
+[130.7] kita harus menambahkan control
+[134.2] forever masukkan if then-nya tadi di
+[136.8] dalam forever baru ditaruh di Wi Green
+[140.0] flight
+[142.4] clicknya Harusnya kalau sudah dia
+[145.4] harusnya
+[147.9] berbunyi mobil satu menang dan suaranya
+[152.1] terdengar
+[153.8] nah ee kamu juga bisa menggunakan ini
+[158.2] untuk memberi suara jika menyentuh mobil
+[161.5] dua atau musuh caranya bagaimana gunakan
+[164.7] kode yang mirip seperti di atas tadi
+[167.6] menggunakan if
+[170.3] touching tapi sekarang kita ganti dengan
+[173.0] touching mobil
+[174.3] du Nah mungkin kita kasih suara
+[178.8] hongk
+[181.3] ada toy Hong B seperti ini dan kita
+[185.8] ambil play sound until
+[188.5] dan Jadi kalau misalnya nanti Mobilnya
+[191.6] menyentul mobil dua dia akan
+[195.4] berbunyi seperti itu lakukan hal yang
+[198.4] sama untuk di mobil dua ya Berarti untuk
+[201.6] di mobil dua itu pakai finish Line juga
+[204.4] pastikan tulisannya mobil dua bukan
+[206.4] mobil satu cheernya boleh berubah e
+[208.9] suaranya untuk membedakan yang menang
+[211.0] mobil sat atau mobil dua dan juga boleh
+[213.6] diganti juga play sound untuk kalau
+[215.7] menyentuh mobil
+[217.4] satunya caranya kalau misalnya waktu e
+[221.6] Kurang E banyak kamu juga bisa duplicate
+[225.7] kode ini dengan cara taruh ke
+[228.7] backpack masukkan ke dalam backpack
+[231.3] seperti
+[232.2] ini dan tunggu sampai muncul ada scriipt
+[235.6] code di sebelah kiri bawah kalau sudah
+[239.0] kita mobil dua ambil scripnya tadi Nah
+[244.4] di sini tinggal kita ganti finish Line
+[248.0] tetap finish Line tulisannya aku ganti
+[250.2] dengan mobil
+[251.6] dua dan suaranya di sini tidak ada suara
+[255.1] yang tadi berarti harus dicari dulu
+[258.2] misalnya
+[263.4] mm misalnya ada suara Hei ya jadi
+[266.3] misalnya kalau ee apa ada suara hei
+[269.2] terus mungkin yang Win gitu
+[272.6] kan misalnya aku mau pakai Win berarti
+[276.2] untuk mobil dua kalau menang dia dengar
+[278.9] menjalankan suara Win kalau yang
+[281.3] touching mobil
+[283.1] satu kita akan pakai suaranya he dan
+[287.3] Harusnya sekarang bisa dimainkan hingga
+[291.2] akhir
