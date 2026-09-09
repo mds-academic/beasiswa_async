@@ -3055,7 +3055,7 @@ function evaluateStudentEligibility() {
 function openCertificateModal() {
   if (!el.certificateModal) return;
 
-  if (state.isRestoring) {
+  if (state.isRestoringProgress) {
     showAppAlert({
       title: 'Sinkronisasi Progres Belajar',
       message: 'Data progres belajar sedang disinkronkan dengan server. Silakan tunggu beberapa detik sebelum membuka sertifikat.',
@@ -3088,6 +3088,17 @@ function openCertificateModal() {
   if (el.certAdminWatermark) el.certAdminWatermark.style.display = isAdminPreview ? 'block' : 'none';
   if (el.transcriptAdminWatermark) el.transcriptAdminWatermark.style.display = isAdminPreview ? 'block' : 'none';
 
+  renderCertificateData();
+  el.certificateModal.showModal();
+}
+
+/**
+ * Render & Populate Data Sertifikat dan Transkrip Lengkap
+ */
+function renderCertificateData() {
+  const eligibility = evaluateStudentEligibility();
+  const isAdminPreview = eligibility.isAdmin && !eligibility.isFullyEligible;
+
   // Update Score Report Grid
   const challengeCount = state.submittedChallenges ? state.submittedChallenges.size : 0;
   if (el.reportQuizzesCount) el.reportQuizzesCount.textContent = `${eligibility.submittedCount} / ${eligibility.totalQuizzes}`;
@@ -3104,25 +3115,25 @@ function openCertificateModal() {
   }
 
   // Common Metadata
-  const studentName = state.student.name || 'Peserta Pembelajaran';
-  const school = state.student.school || 'Sekolah Mitra UOB';
-  const rombel = state.student.rombel ? ` · ${state.student.rombel}` : '';
-  const level = state.student.level ? ` (${state.student.level})` : '';
+  const studentName = state.student && state.student.name ? state.student.name : 'Peserta Pembelajaran';
+  const school = state.student && state.student.school ? state.student.school : 'Sekolah Mitra UOB';
+  const rombel = state.student && state.student.rombel ? ` · ${state.student.rombel}` : '';
+  const level = state.student && state.student.level ? ` (${state.student.level})` : '';
   const fullSchoolText = `${school}${rombel}${level}`;
 
   const programName =
-    state.student.level === 'SMA'
+    state.student && state.student.level === 'SMA'
       ? 'Asynchronous Coding Exploration: Python for High School'
-      : state.student.level === 'SMP'
+      : state.student && state.student.level === 'SMP'
       ? 'Asynchronous Coding Exploration: MIT App Inventor for Middle School'
       : 'Asynchronous Coding Exploration: Scratch Visual Coding for Primary School';
 
   // Nomor Seri Deterministik Format Resmi UOB MDS
-  const hash = Math.abs(hashString((state.student.email || 'user') + (state.student.school || 'uob'))).toString(36).toUpperCase().padStart(6, '0').slice(0, 6);
-  const serialNo = `UOB-MDS-${state.student.level || 'GEN'}-2026-${hash}`;
+  const hash = Math.abs(hashString(((state.student && state.student.email) || 'user') + ((state.student && state.student.school) || 'uob'))).toString(36).toUpperCase().padStart(6, '0').slice(0, 6);
+  const serialNo = `UOB-MDS-${(state.student && state.student.level) || 'GEN'}-2026-${hash}`;
 
   // Tanggal Kelulusan Resmi
-  const completionDate = state.student.completedAt ? new Date(state.student.completedAt) : new Date();
+  const completionDate = state.student && state.student.completedAt ? new Date(state.student.completedAt) : new Date();
   const options = { year: 'numeric', month: 'long', day: 'numeric' };
   const formattedDate = completionDate.toLocaleDateString('id-ID', options);
 
@@ -3147,7 +3158,7 @@ function openCertificateModal() {
   }
 
   // Populate Transcript Module Breakdown Table (Compact & Accurate)
-  if (el.certTranscriptTbody) {
+  if (el.certTranscriptTbody && state.courseData && state.courseData.length > 0) {
     el.certTranscriptTbody.innerHTML = '';
     state.courseData.forEach((step, idx) => {
       const qList = extractQuizzesFromStep(step);
@@ -3196,8 +3207,6 @@ function openCertificateModal() {
       el.certTranscriptTbody.appendChild(tr);
     });
   }
-
-  el.certificateModal.showModal();
 }
 
 /**
@@ -3234,11 +3243,8 @@ async function exportCertificateToPdf() {
     const page2Orig = document.querySelector('#cert-page-2');
     if (!page1Orig || !page2Orig) throw new Error('Elemen template sertifikat tidak ditemukan');
 
-    // Pastikan data tabel transkrip sudah terpopulasi sebelum diclone
-    const tbody = document.querySelector('#cert-transcript-tbody');
-    if (!tbody || tbody.children.length === 0) {
-      openCertificateModal();
-    }
+    // Pastikan data tabel transkrip dan metadata sertifikat selalu terpopulasi sebelum diclone
+    renderCertificateData();
 
     // Tunggu font web terpasang stabil
     if (document.fonts && document.fonts.ready) {
