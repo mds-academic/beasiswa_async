@@ -19,6 +19,22 @@ sma_step_headers_json = json.dumps([f"{sid} [Skor & Jawaban]" for sid in sma_ste
 print(f"SD Steps: {len(sd_step_ids)}, SMP Steps: {len(smp_step_ids)}, SMA Steps: {len(sma_step_ids)}")
 print(f"Changelog Rows: {len(payload['changelog'])}")
 
+# Master orchestrator placed at top
+top_orchestrator = '''
+// ==================== MASTER ORCHESTRATOR (DEFAULT FUNCTION) ====================
+function setupAllLMSSheets() {
+  const res1 = setupResultTrackingSheets();
+  const res2 = populateCurriculumSheets();
+  const res3 = populateChangelogSheet();
+  return {
+    success: true,
+    resultTracking: res1,
+    curriculumSheets: res2,
+    changelogSheet: res3
+  };
+}
+'''
+
 code_snippet = f'''
 // ==================== RESULT TRACKING SHEETS INITIALIZER ====================
 function setupResultTrackingSheets() {{
@@ -159,7 +175,7 @@ function setupResultTrackingSheets() {{
     }}
 
     sheet.setFrozenRows(2);
-    sheet.setFrozenColumns(4); // Freeze up to Sekolah so student identity stays visible when scrolling right
+    // sheet.setFrozenColumns(4);
   }});
 
   return {{
@@ -350,7 +366,7 @@ function populateChangelogSheet() {{
   }}
 
   sheet.setFrozenRows(3);
-  sheet.setFrozenColumns(2);
+  // sheet.setFrozenColumns(2);
 
   // Column Widths
   sheet.setColumnWidth(1, 45);   // No
@@ -368,19 +384,6 @@ function populateChangelogSheet() {{
     totalRecords: changelogRows.length
   }};
 }}
-
-// ==================== MASTER ORCHESTRATOR ====================
-function setupAllLMSSheets() {{
-  const res1 = setupResultTrackingSheets();
-  const res2 = populateCurriculumSheets();
-  const res3 = populateChangelogSheet();
-  return {{
-    success: true,
-    resultTracking: res1,
-    curriculumSheets: res2,
-    changelogSheet: res3
-  }};
-}}
 '''
 
 # Read base Code.gs
@@ -388,7 +391,14 @@ code_gs_path = 'subprojects/01-lms-platform/apps-script/Code.gs'
 with open(code_gs_path, 'r', encoding='utf-8') as f:
     orig_code = f.read()
 
-# Cut off previous dynamic populator functions
+# Remove old top orchestrator if present
+idx_top = orig_code.find('// ==================== MASTER ORCHESTRATOR (DEFAULT FUNCTION) ====================')
+if idx_top != -1:
+    idx_top_end = orig_code.find('// ==================== GET HANDLER', idx_top)
+    if idx_top_end != -1:
+        orig_code = orig_code[:idx_top] + orig_code[idx_top_end:]
+
+# Cut off previous dynamic populator functions at bottom
 idx = orig_code.find('// ==================== RESULT TRACKING SHEETS INITIALIZER ====================')
 if idx != -1:
     orig_code = orig_code[:idx]
@@ -397,15 +407,21 @@ idx2 = orig_code.find('// ==================== CURRICULUM SHEETS POPULATOR =====
 if idx2 != -1:
     orig_code = orig_code[:idx2]
 
-# Ensure action routing in doGet for setup_all_sheets and changelog
-if "action === 'setup_all_sheets'" not in orig_code:
-    hook = "if (action === 'setup_curriculum_sheets') {"
-    replacement = "if (action === 'setup_all_sheets') {\\n      return respond(setupAllLMSSheets());\\n    }\\n\\n    if (action === 'setup_result_sheets') {\\n      return respond(setupResultTrackingSheets());\\n    }\\n\\n    if (action === 'setup_curriculum_sheets') {"
-    orig_code = orig_code.replace(hook, replacement)
+idx3 = orig_code.find('// ==================== MASTER ORCHESTRATOR ====================')
+if idx3 != -1:
+    orig_code = orig_code[:idx3]
+
+# Insert top_orchestrator right before doGet
+get_handler_marker = '// ==================== GET HANDLER (AUTH & DATA FETCH) ===================='
+if get_handler_marker in orig_code:
+    parts = orig_code.split(get_handler_marker)
+    orig_code = parts[0].strip() + '\n\n' + top_orchestrator.strip() + '\n\n' + get_handler_marker + parts[1]
+else:
+    orig_code = top_orchestrator.strip() + '\n\n' + orig_code
 
 full_updated_code = orig_code.strip() + '\n\n' + code_snippet.strip() + '\n'
 
 with open(code_gs_path, 'w', encoding='utf-8') as f:
     f.write(full_updated_code)
 
-print(f"✅ Generated updated Code.gs with payload v3, tracking sheets (8/36/36), and Changelog & Audit Log!")
+print(f"✅ Generated updated Code.gs with setupAllLMSSheets as the DEFAULT TOP FUNCTION!")

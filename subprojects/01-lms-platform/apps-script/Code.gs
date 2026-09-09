@@ -20,6 +20,19 @@ const SHEET_RESULT_SD = 'ops-result-sd';
 
 const WARNING_BANNER = "WARNING: DO NOT EDIT OR FILTER THIS DATA. THIS IS DIRECTLY FROM HTML AS THIS WILL AFFECT HOW THE DATA BEING STORED AND SAVED !!";
 
+// ==================== MASTER ORCHESTRATOR (DEFAULT FUNCTION) ====================
+function setupAllLMSSheets() {
+  const res1 = setupResultTrackingSheets();
+  const res2 = populateCurriculumSheets();
+  const res3 = populateChangelogSheet();
+  return {
+    success: true,
+    resultTracking: res1,
+    curriculumSheets: res2,
+    changelogSheet: res3
+  };
+}
+
 // ==================== GET HANDLER (AUTH & DATA FETCH) ====================
 function doGet(e) {
   try {
@@ -633,7 +646,7 @@ function setupResultTrackingSheets() {
     }
 
     sheet.setFrozenRows(2);
-    sheet.setFrozenColumns(4); // Freeze up to Sekolah so student identity stays visible when scrolling right
+    // sheet.setFrozenColumns(4);
   });
 
   return {
@@ -824,7 +837,7 @@ function populateChangelogSheet() {
   }
 
   sheet.setFrozenRows(3);
-  sheet.setFrozenColumns(2);
+  // sheet.setFrozenColumns(2);
 
   // Column Widths
   sheet.setColumnWidth(1, 45);   // No
@@ -840,18 +853,5 @@ function populateChangelogSheet() {
     success: true,
     message: "Tab Changelog & Audit Log berhasil dibuat dengan 10 catatan perbaikan resmi!",
     totalRecords: changelogRows.length
-  };
-}
-
-// ==================== MASTER ORCHESTRATOR ====================
-function setupAllLMSSheets() {
-  const res1 = setupResultTrackingSheets();
-  const res2 = populateCurriculumSheets();
-  const res3 = populateChangelogSheet();
-  return {
-    success: true,
-    resultTracking: res1,
-    curriculumSheets: res2,
-    changelogSheet: res3
   };
 }

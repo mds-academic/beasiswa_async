@@ -23,17 +23,30 @@
   - Pembuatan Google Spreadsheet baru terpusat: `1s6VVCGLPwiGWYwBNiR-4lrnB5XWcOV0l7pAIcgyif-k` ([UOB My Digital Space Master Database](https://docs.google.com/spreadsheets/d/1s6VVCGLPwiGWYwBNiR-4lrnB5XWcOV0l7pAIcgyif-k/edit)).
   - Container-bound Apps Script project terpasang dan terdeploy via Clasp: `AKfycbxeN6qSeNLl3G08JkKsJ1HTGLzk7smy4idTfpJgA4LxvgI_WR9G0JKeg9qohVDV4yyd`.
   - Sinkronisasi progres dua arah (Local Storage & Server-First Sync via Apps Script) terpasang di `src/app.js`.
-- **Implementasi Scaffolding Pedagogis SMP-SMA Selesai & Lolos Verifikasi (Fase 0 s.d. Fase 6)**:
-  - Berkas HTML materi jembatan lengkap: 5 SMA (`bridge-hs-01` s.d. `bridge-hs-05`) dan 4 SMP (`bridge-ms-00` revisi bersih tanpa TinyDB, `bridge-ms-01` s.d. `bridge-ms-03`).
-  - Dataset kurikulum baru `courseData-highschool.json` (12 langkah kanonik) dan `courseData-middleschool.json` (11 langkah kanonik) aktif.
-  - Seluruh kuis 99999 dikonversi menjadi manual/project checkpoint tanpa autoplay palsu.
-  - Seluruh berkas tersinkronisasi penuh ke `slides/`, `output/`, `subprojects/01-lms-platform/src/`, dan `docs/`.
+- **Redesain Skeuomorphism, Mini Project Challenge, Score Report & Sertifikat Digital Selesai**:
+  - Poin 3: Mobile Advisory Modal persuasif dan ramah untuk layar smartphone (< 768px) dengan panduan rekomendasi perangkat laptop/komputer.
+  - Poin 4: Redesain visual Skeuomorphism taktil (tombol 3D bergradien cembung, specular highlights, bayangan hardware realistis) dan modern typography (**Plus Jakarta Sans** untuk headings, **Inter** untuk body, **Fira Code** untuk terminal IDE).
+  - Poin 5: Mini project dikonversi menjadi **Tantangan Praktik Mandiri Non-Gating** (bebas dilewati kapan saja tanpa memblokir materi berikutnya) dengan input formulir fleksibel (SMA: editor Python + link Colab/GitHub + file `.py`; SMP: link MIT App Inventor + file `.aia`/`.apk`; SD: link Scratch + file `.sb3`).
+  - Poin 6: Score Report komprehensif (kuis selesai, akurasi, challenge terkumpul, status kelulusan) dan Sertifikat Kelulusan Digital Resmi (UOB My Digital Space x Ruangguru/Kalananti) dengan nomor seri unik, stempel timbul emas 3D, dan fitur Cetak / Simpan PDF (`@media print`).
+  - Poin 7: Logika Server-First SSOT Sync diperbaiki — jika baris siswa di-reset atau dihapus admin di Google Sheets, browser otomatis mereset bersih `localStorage` dan mengembalikan siswa ke Materi 01.
+  - Verifikasi otomatis Playwright test suite 4-Gate (Mobile Advisory, Desktop Login, Certificate Modal, Challenge Panel) lolos 100%.
+  - Sinkronisasi identik ke `docs/` dan push berhasil ke GitHub remote `main`.
+
+- **Sinkronisasi Master Google Spreadsheet & Rilis Tab Changelog & Audit Log (v1.0)**:
+  - Pembuatan tab resmi **`Changelog & Audit Log`** di Google Spreadsheet master (`1s6VVCGLPwiGWYwBNiR-4lrnB5XWcOV0l7pAIcgyif-k`) yang mendokumentasikan 10 poin perbaikan eksekutif: resolusi Blocker B1 (pembersihan TinyDB Modul 0), B2 (normalisasi anomali timestamp/kuis), B3 (standardisasi metadata bridge), B4 (ekspansi 8-gate validator), relokasi `hs-1-3` ke Modul 4, pengujian visual QA Playwright lintas perangkat, sinkronisasi hash SHA256 identik, dan skema pelacakan nilai 0-100.
+  - Pembaruan penuh tab kurikulum:
+    - **`materi-sd`**: 8 step coding Scratch & data keuangan dasar.
+    - **`materi-smp`**: 36 step lengkap (termasuk 4 slide bridge `bridge-ms-00..03` dan 32 video tutorial Kak Laras).
+    - **`materi-sma`**: 36 step lengkap (termasuk 6 slide bridge `bridge-hs-00..05`, relokasi persiapan capstone `hs-1-3` ke Modul 4, dan 30 video tutorial Google Colab Python).
+  - Pembaruan tab pelacakan hasil belajar: **`ops-result-sd`** (8 step), **`ops-result-smp`** (36 step), dan **`ops-result-sma`** (36 step) dengan skala nilai total 0–100, konversi grade huruf (A/B/C), dan perekaman jawaban kuis per step.
+  - Eksekusi otomatis via Google Apps Script (`setupAllLMSSheets()`) dan verifikasi visual menyeluruh dengan 6 tangkapan layar PNG.
 
 ## Blockers & Open Questions
 
-- Otentikasi izin pertama kali Web App: Karena Google mewajibkan pemilik skrip (`rgcuob@gmail.com`) mengizinkan akses runtime saat pertama kali dipublikasikan, user/Gita Pengbenar cukup membuka editor skrip sekali dan mengklik Review Permissions jika diminta saat pengujian web app.
+Tidak ada blocker teknis aktif. Seluruh kurikulum dan spreadsheet sinkron 100%.
 
 ## Concrete Next Steps
 
-1. UAT dan verifikasi alur belajar di platform LMS (`http://localhost:8080/`).
-2. Evaluasi pengerjaan siswa pada mini lab interaktif dan kuis pemahaman mandiri.
+1. Pengujian live pada GitHub Pages: `https://mds-academic.github.io/beasiswa_async/`.
+2. Pengujian input karya challenge mandiri oleh siswa pada berbagai jenjang (SD, SMP, SMA).
+

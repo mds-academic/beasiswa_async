@@ -1414,7 +1414,83 @@ Seluruh 4 temuan blocker (**B1, B2, B3, B4**) beserta 7 butir perbaikan wajib pa
 
 
 
-### User Request (Turn 15)
+### Assistant Response & Action Record — 2026-09-09T07:44:00+07:00
 
-"ini. kalo memang udah jamgan lupa update di sheet nya juga dong apa yang kamu ubah apa yang diperabaiki"
+Seluruh perbaikan dan penambahan fitur dari **Poin 3 sampai Poin 7** telah selesai dibangun, diverifikasi melalui pengujian otomatis Playwright, dan disinkronkan ke repositori Git serta GitHub Pages.
 
+Berikut rincian lengkap apa yang telah diubah dan diselesaikan:
+
+---
+
+### 1. Poin 3: Mobile Friendly Video & Gentle Advisory Modal
+- **Pendeteksian Viewport Otomatis**: Ketika platform diakses dari layar ponsel (lebar `<= 768px`), sistem secara otomatis menampilkan dialog rekomendasi perangkat.
+- **Bahasa yang Santun & Persuasif**: Mengapresiasi siswa yang membuka lewat HP, namun merekomendasikan penggunaan **Laptop, Komputer, atau Tablet** agar dapat melihat kode tanpa zoom, mengetik dengan keyboard fisik yang presisi, serta membuka Google Colab / App Inventor / Scratch dengan lancar.
+- **Aksi Tanpa Memblokir**: Tombol *"Mengerti, Tetap Belajar di HP Ini"* menutup modal dan menyimpan preferensi ke `sessionStorage` sehingga siswa yang hanya memiliki HP tetap dapat belajar dengan nyaman tanpa dialog berulang.
+
+---
+
+### 2. Poin 4: Redesain Skeuomorphism & Modern Typography
+- **Pembuangan Font Kartun & Desain Flat AI Slop**: Font `Fredoka` telah dibuang sepenuhnya. Typography kini menggunakan kombinasi elegan:
+  - **Plus Jakarta Sans**: Untuk seluruh judul, heading, dan label tombol.
+  - **Inter**: Untuk body text, instruksi soal, dan penjelasan materi.
+  - **Fira Code**: Untuk terminal kode dan nomor verifikasi serial.
+- **Sentuhan Fisik Taktil (Skeuomorphic Elements)**:
+  - **Tombol Play Tengah (`.video-center-play`)**: Dibuat sebagai tombol fisik akrilik 3D berbentuk lingkaran dengan gradien cembung, specular highlight atas, border cincin logam putih, dan bayangan hardware realistis.
+  - **Tombol Interaktif (`.login-btn`, `.btn-nav-step`, `.button-open-quiz`)**: Memiliki bevel halus, top-light highlight, dan efek klik fisik mendalam (*pressed-in effect*).
+  - **Frame Hardware Slate**: Pemutar video dan container materi dibalut frame hardware gelap dengan border pencahayaan atas yang tangible.
+
+---
+
+### 3. Poin 5: Mini Project sebagai Tantangan Mandiri (Non-Gating)
+- **Tidak Memblokir Navigasi**: Mini project kini berstatus tantangan praktik mandiri yang bersifat **opsional**. Tombol materi selanjutnya (`#btn-next-step`) tidak lagi dikunci oleh mini project (hanya wajib menyelesaikan pop-up quiz dan menonton video hingga 10 detik terakhir).
+- **Formulir Pengumpulan Karya Sesuai Jenjang**:
+  - **SMA**: Disediakan editor kode Python langsung di dalam panel platform + input tautan Google Colab/GitHub + unggah berkas `.py` / `.ipynb`.
+  - **SMP**: Input tautan Galeri MIT App Inventor / Google Drive + unggah berkas `.aia` / `.apk`.
+  - **SD**: Input tautan proyek Scratch + unggah berkas proyek `.sb3`.
+- **Tombol *"Lewati Tantangan & Lanjut →"***: Memungkinkan siswa melompati tantangan kapan saja dengan transisi scroll yang mulus ke navigasi bawah.
+
+---
+
+### 4. Poin 6: Score Report & Sertifikat Kelulusan Digital Resmi
+- **Score Report Grid (4 Metrik)**:
+  - Jumlah Kuis Pop-up Selesai (`passed / total`)
+  - Akurasi Pemahaman (`%`)
+  - Jumlah Tantangan Mandiri yang Dikumpulkan
+  - Status Kelulusan (`LULUS` / `LULUS DENGAN PUJIAN`)
+- **Sertifikat Kelulusan Digital Mewah**:
+  - Frame ganda biru navy tua & ornamen emas timbul.
+  - Logo resmi Ruangguru dan UOB My Digital Space.
+  - Nama siswa dinamis dengan aksen garis bawah emas.
+  - Asal sekolah, rombel/kelas, dan jenjang program.
+  - Stempel timbul emas 3D (*Official UOB MDS Seal*).
+  - Nomor serial verifikasi unik (`MDS-2026-[LEVEL]-[HASH]`).
+  - Tanggal penerbitan lokal dinamis dan garis tanda tangan resmi.
+- **Fitur Cetak / Simpan PDF (`@media print`)**: Tombol *"🖨️ Cetak / Simpan PDF"* telah dikonfigurasi dengan CSS print rules sehingga hanya mencetak lembar sertifikat bersih tanpa elemen UI platform.
+
+---
+
+### 5. Poin 7: Server-First SSOT Sync (Penyelarasan Mutlak dari Spreadsheet)
+- **Akar Masalah Nyangkut**: Sebelumnya browser membaca cache `localStorage` terlebih dahulu dan skrip sinkronisasi hanya menambahkan ID kuis baru tanpa pernah membersihkan data jika di spreadsheet dihapus.
+- **Solusi SSOT Baru**:
+  - Saat siswa login, browser memanggil `get_progress` ke Google Apps Script.
+  - Jika data di Google Sheets kosong (`submittedQuizIds: []`) atau baris siswa tidak ditemukan / dihapus admin (`studentFound: false`), sistem frontend secara langsung menghapus cache `localStorage`, mengosongkan Set progres lokal, dan mengembalikan posisi siswa ke **Materi 01**.
+
+---
+
+### 6. Verifikasi & Status Deployment
+- **Playwright Test Suite (4/4 Passed)**:
+  1. *Mobile Advisory*: Berhasil mendeteksi layar ponsel (390×844) dan menutup dengan tombol dismiss.
+  2. *Desktop Skeuomorphism*: Tampilan login, tipografi, dan dropdown sekolah berfungsi mulus.
+  3. *Certificate Modal*: Modal sertifikat dan score report terbuka dengan data siswa dinamis dan nomor serial.
+  4. *Challenge Panel*: Panel tantangan muncul di materi praktik (Tab 5) dengan form input sesuai jenjang dan tombol skip non-gating.
+- **Git Checkpoint & Push**: Telah di-commit (`e8fee14`) dan di-push ke remote repository `git@github.com:mds-academic/beasiswa_async.git` branch `main`.
+- **Live GitHub Pages**: Otomatis ter-update di `https://mds-academic.github.io/beasiswa_async/`.
+
+
+### User Request (Turn 2026-09-09)
+
+"iya soalnya rgcuob dia hanya bsia di buka di arc aku udah login di arc browser, pindah ke space work aku dulu (ctrl+3) trus buka linkny a di new tab"
+
+### Assistant Action (Turn 2026-09-09)
+
+Arc berhasil dipindahkan ke space Kalananti, lalu editor Apps Script project `async-learning-mds-y1` dibuka di tab baru menggunakan URL project yang diminta. Editor terverifikasi login sebagai `rgcuob@gmail.com`. Versi lokal `Code.gs` sudah disiapkan dari `/Users/yazidhilmi/Documents/cloud/Kalananti-cloud/Academic_Content/B2B/UOB/Async/Code.gs` untuk ditempel, tetapi kontrol Arc mengalami system dialog kosong tepat setelah aksi paste sehingga penyimpanan dan redeploy belum dapat diverifikasi. Status: blocked sementara oleh dialog/koneksi UI Arc; tidak mengklaim deployment berhasil.
