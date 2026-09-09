@@ -3,6 +3,8 @@
  * Subproject 01: Interactive Player, Sandbox Container, Typo Suggestion, & Grade Auto-Detection
  */
 
+import { LOGO_RUANGGURU, LOGO_UOB_MDS } from './assets/logos/logo-assets.js';
+
 // Live Google Apps Script Web App Deployment URL (Account: rgcuob@gmail.com)
 const APP_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwXvyynsPJ_wUU4KGfj0Z9B3Is0m00U1lUjVEn5lLs/exec';
 
@@ -221,7 +223,14 @@ const el = {
   certSerialNo: document.querySelector('#cert-serial-no'),
   certDateText: document.querySelector('#cert-date-text'),
   btnPrintCertificate: document.querySelector('#btn-print-certificate'),
+  btnBrowserPrint: document.querySelector('#btn-browser-print'),
   btnDismissCertificate: document.querySelector('#btn-dismiss-certificate'),
+  certAdminWatermark: document.querySelector('#cert-admin-watermark'),
+  transcriptAdminWatermark: document.querySelector('#transcript-admin-watermark'),
+  certLogoRg: document.querySelector('#cert-logo-rg'),
+  certLogoUob: document.querySelector('#cert-logo-uob'),
+  transcriptLogoRg: document.querySelector('#transcript-logo-rg'),
+  transcriptLogoUob: document.querySelector('#transcript-logo-uob'),
   advisoryContinueBtn: document.querySelector('#btn-close-advisory-modal'),
 
   // Bento Box Pop-up Quiz Evaluator
@@ -2961,18 +2970,86 @@ function setupChallengePanelEvents() {
 }
 
 // ==================== 12. CERTIFICATE & SCORE REPORT LOGIC ====================
+
+/**
+ * Evaluasi terpusat kelulusan siswa (Server-First Data Contract)
+ */
+function evaluateStudentEligibility() {
+  const totalSteps = state.courseData ? state.courseData.length : 0;
+  const isCourseFinished = totalSteps > 0 && state.unlockedStepIndex >= totalSteps;
+
+  let totalQuizzes = 0;
+  let submittedCount = 0;
+  let totalScoreEarned = 0;
+  let passedQuizzes = 0;
+  let zeroScoreCount = 0;
+
+  state.courseData.forEach((step) => {
+    const qList = extractQuizzesFromStep(step);
+    totalQuizzes += qList.length;
+    qList.forEach((q) => {
+      if (state.submittedQuizIds.has(q.id)) {
+        submittedCount++;
+        const score = state.quizScores.get(q.id);
+        // Nilai aktual: jika gagal 3x atau skor 0, catat apa adanya (jangan default ke 100)
+        const actualScore = (score !== undefined && score !== null) ? Number(score) : 0;
+        totalScoreEarned += actualScore;
+        if (actualScore > 0) {
+          passedQuizzes++;
+        } else {
+          zeroScoreCount++;
+        }
+      }
+    });
+  });
+
+  const isQuizzesFinished = totalQuizzes === 0 || submittedCount >= totalQuizzes;
+  const accuracy = totalQuizzes > 0 ? Math.round(totalScoreEarned / totalQuizzes) : 100;
+  const isPassing = accuracy >= 70; // Standar kelulusan resmi UOB MDS
+  const isAdmin = Boolean(state.student && state.student.isAdmin);
+  const isFullyEligible = isCourseFinished && isQuizzesFinished && isPassing;
+
+  return {
+    isFullyEligible,
+    isAdmin,
+    isCourseFinished,
+    isQuizzesFinished,
+    totalQuizzes,
+    submittedCount,
+    passedQuizzes,
+    zeroScoreCount,
+    accuracy,
+    isPassing
+  };
+}
+
+/**
+ * Membuka modal sertifikat kelulusan dan transkrip hasil evaluasi
+ */
 function openCertificateModal() {
   if (!el.certificateModal) return;
 
-  const isAdmin = Boolean(state.student && state.student.isAdmin);
-  const isAllCourseCompleted = isAdmin || state.unlockedStepIndex >= state.courseData.length;
+  if (state.isRestoring) {
+    showAppAlert({
+      title: 'Sinkronisasi Progres Belajar',
+      message: 'Data progres belajar sedang disinkronkan dengan server. Silakan tunggu beberapa detik sebelum membuka sertifikat.',
+      icon: '⏳'
+    });
+    return;
+  }
 
-  if (!isAllCourseCompleted) {
+  const eligibility = evaluateStudentEligibility();
+
+  // Guard Terpusat: Tolak jika belum eligible dan bukan admin
+  if (!eligibility.isFullyEligible && !eligibility.isAdmin) {
+    const remainingSteps = Math.max(0, state.courseData.length - state.unlockedStepIndex);
+    const remainingQuizzes = Math.max(0, eligibility.totalQuizzes - eligibility.submittedCount);
+
     showAppAlert({
       title: 'Sertifikat & Rekap Nilai Terkunci',
-      message: 'Selesaikan seluruh materi pembelajaran dan evaluasi kuis dari awal hingga akhir untuk membuka Sertifikat Kelulusan 2 Halaman A4.',
+      message: `Kamu belum memenuhi seluruh syarat kelulusan resmi UOB My Digital Space:\n\n• Materi tuntas: ${Math.min(state.unlockedStepIndex, state.courseData.length)} / ${state.courseData.length} modul (${remainingSteps > 0 ? `${remainingSteps} modul tersisa` : 'Lengkap'})\n• Kuis disubmit: ${eligibility.submittedCount} / ${eligibility.totalQuizzes} kuis (${remainingQuizzes > 0 ? `${remainingQuizzes} kuis tersisa` : 'Lengkap'})\n• Akurasi pemahaman: ${eligibility.accuracy}% (ambang batas kelulusan: minimal 70%)\n\nSelesaikan seluruh rangkaian materi dan kuis untuk membuka dokumen resmi.`,
       icon: '🎓',
-      buttonText: 'Lanjutkan Pembelajaran',
+      buttonText: 'Lanjutkan Belajar',
       onConfirm: () => {
         goToStep(state.unlockedStepIndex < state.courseData.length ? state.unlockedStepIndex : 0);
       }
@@ -2980,41 +3057,27 @@ function openCertificateModal() {
     return;
   }
 
-  // Calculate statistics
-  let totalQuizzes = 0;
-  let passedQuizzes = 0;
-  let totalScoreEarned = 0;
-  let completedQuizzes = 0;
-
-  state.courseData.forEach((step) => {
-    const qList = extractQuizzesFromStep(step);
-    totalQuizzes += qList.length;
-    qList.forEach((q) => {
-      if (state.submittedQuizIds.has(q.id)) {
-        completedQuizzes++;
-        const score = state.quizScores.get(q.id);
-        const earned = score !== undefined && score !== null ? score : 100;
-        totalScoreEarned += earned;
-        if (earned > 0) {
-          passedQuizzes++;
-        }
-      }
-    });
-  });
-
-  const accuracy = totalQuizzes > 0 ? Math.round(totalScoreEarned / totalQuizzes) : 100;
-  const challengeCount = state.submittedChallenges ? state.submittedChallenges.size : 0;
-  const isCompleted = completedQuizzes >= totalQuizzes;
+  // Watermark Khusus untuk Pratinjau Admin yang belum tuntas
+  const isAdminPreview = eligibility.isAdmin && !eligibility.isFullyEligible;
+  if (el.certAdminWatermark) el.certAdminWatermark.style.display = isAdminPreview ? 'block' : 'none';
+  if (el.transcriptAdminWatermark) el.transcriptAdminWatermark.style.display = isAdminPreview ? 'block' : 'none';
 
   // Update Score Report Grid
-  if (el.reportQuizzesCount) el.reportQuizzesCount.textContent = `${completedQuizzes} / ${totalQuizzes}`;
-  if (el.reportAccuracy) el.reportAccuracy.textContent = `${accuracy}%`;
+  const challengeCount = state.submittedChallenges ? state.submittedChallenges.size : 0;
+  if (el.reportQuizzesCount) el.reportQuizzesCount.textContent = `${eligibility.submittedCount} / ${eligibility.totalQuizzes}`;
+  if (el.reportAccuracy) el.reportAccuracy.textContent = `${eligibility.accuracy}%`;
   if (el.reportChallengesCount) el.reportChallengesCount.textContent = `${challengeCount}`;
   if (el.reportStatus) {
-    el.reportStatus.textContent = passedQuizzes >= totalQuizzes ? 'LULUS (PERFECT)' : (isCompleted ? 'LULUS' : 'PROGRES');
+    if (isAdminPreview) {
+      el.reportStatus.textContent = `PREVIEW ADMIN (${eligibility.accuracy}%)`;
+    } else if (eligibility.accuracy >= 90) {
+      el.reportStatus.textContent = 'LULUS (PUJIAN)';
+    } else {
+      el.reportStatus.textContent = 'LULUS (MEMUASKAN)';
+    }
   }
 
-  // Common Meta
+  // Common Metadata
   const studentName = state.student.name || 'Peserta Pembelajaran';
   const school = state.student.school || 'Sekolah Mitra UOB';
   const rombel = state.student.rombel ? ` · ${state.student.rombel}` : '';
@@ -3028,50 +3091,222 @@ function openCertificateModal() {
       ? 'Asynchronous Coding Exploration: MIT App Inventor for Middle School'
       : 'Asynchronous Coding Exploration: Scratch Visual Coding for Primary School';
 
-  const hash = Math.abs(hashString((state.student.email || 'user') + (state.student.school || 'uob'))).toString().padStart(6, '0').slice(0, 6);
-  const serialNo = `MDS-2026-${state.student.level || 'GEN'}-${hash}`;
+  // Nomor Seri Deterministik Format Resmi UOB MDS
+  const hash = Math.abs(hashString((state.student.email || 'user') + (state.student.school || 'uob'))).toString(36).toUpperCase().padStart(6, '0').slice(0, 6);
+  const serialNo = `UOB-MDS-${state.student.level || 'GEN'}-2026-${hash}`;
 
-  const now = new Date();
+  // Tanggal Kelulusan Resmi
+  const completionDate = state.student.completedAt ? new Date(state.student.completedAt) : new Date();
   const options = { year: 'numeric', month: 'long', day: 'numeric' };
-  const formattedDate = now.toLocaleDateString('id-ID', options);
+  const formattedDate = completionDate.toLocaleDateString('id-ID', options);
 
-  // Update Page 1: Certificate of Completion
+  // Update Page 1: Certificate of Completion (Landscape A4)
   if (el.certStudentName) el.certStudentName.textContent = studentName;
   if (el.certStudentSchool) el.certStudentSchool.textContent = fullSchoolText;
   if (el.certProgramName) el.certProgramName.textContent = programName;
   if (el.certSerialNo) el.certSerialNo.textContent = serialNo;
   if (el.certDateText) el.certDateText.textContent = `Diterbitkan pada: ${formattedDate}`;
 
-  // Update Page 2: Academic Transcript
+  // Update Page 2: Academic Transcript (Portrait A4)
   if (el.transcriptStudentName) el.transcriptStudentName.textContent = studentName;
   if (el.transcriptStudentSchool) el.transcriptStudentSchool.textContent = fullSchoolText;
   if (el.transcriptDate) el.transcriptDate.textContent = formattedDate;
   if (el.transcriptSerialRef) el.transcriptSerialRef.textContent = serialNo;
   if (el.transcriptStatus) {
-    el.transcriptStatus.textContent = `${accuracy}% · ${passedQuizzes >= totalQuizzes ? 'LULUS (PERFECT)' : 'LULUS'}`;
+    if (isAdminPreview) {
+      el.transcriptStatus.textContent = `PRATINJAU ADMIN (${eligibility.accuracy}%)`;
+    } else {
+      el.transcriptStatus.textContent = `${eligibility.accuracy}% · ${eligibility.accuracy >= 90 ? 'LULUS DENGAN PUJIAN' : 'LULUS'}`;
+    }
   }
 
-  // Populate Transcript Module Breakdown Table
+  // Populate Transcript Module Breakdown Table (Compact & Accurate)
   if (el.certTranscriptTbody) {
     el.certTranscriptTbody.innerHTML = '';
     state.courseData.forEach((step, idx) => {
       const qList = extractQuizzesFromStep(step);
-      const stepQuizzesCompleted = qList.filter((q) => state.submittedQuizIds.has(q.id)).length;
-      const isStepDone = qList.length === 0 || stepQuizzesCompleted === qList.length;
+      let stepTotalScore = 0;
+      let stepSubmitted = 0;
+
+      qList.forEach((q) => {
+        if (state.submittedQuizIds.has(q.id)) {
+          stepSubmitted++;
+          const sc = state.quizScores.get(q.id);
+          stepTotalScore += (sc !== undefined && sc !== null) ? Number(sc) : 0;
+        }
+      });
+
+      const isStepDone = qList.length === 0 || stepSubmitted === qList.length;
+      let scoreDisplay = '';
+      let statusBadge = '';
+
+      if (qList.length > 0) {
+        if (isStepDone) {
+          const avgScore = Math.round(stepTotalScore / qList.length);
+          if (avgScore === 0) {
+            scoreDisplay = `<span style="font-weight: 800; color: #dc2626;">0 / 100</span>`;
+            statusBadge = `<span class="transcript-badge-zero">Perlu Remedial</span>`;
+          } else {
+            scoreDisplay = `<span style="font-weight: 700; color: #092764;">${avgScore} / 100</span>`;
+            statusBadge = `<span class="transcript-badge-done">✓ Tuntas</span>`;
+          }
+        } else {
+          scoreDisplay = `<span style="color: #64748b;">${stepSubmitted}/${qList.length} Selesai</span>`;
+          statusBadge = `<span class="transcript-badge-pending">⏳ Belum</span>`;
+        }
+      } else {
+        scoreDisplay = `<span style="font-weight: 700; color: #092764;">100 / 100</span>`;
+        statusBadge = `<span class="transcript-badge-done">✓ Tuntas</span>`;
+      }
 
       const tr = document.createElement('tr');
       tr.innerHTML = `
         <td style="text-align: center; font-weight: 700;">${String(idx + 1).padStart(2, '0')}</td>
         <td><strong>${step.title || `Materi ${idx + 1}`}</strong></td>
-        <td>${qList.length > 0 ? `${stepQuizzesCompleted}/${qList.length} Pop-up Kuis` : 'Materi Slide Interaktif'}</td>
-        <td style="font-weight: 700; color: #092764;">${qList.length > 0 ? (isStepDone ? '100 / 100' : `${Math.round((stepQuizzesCompleted / qList.length) * 100)} / 100`) : '100 / 100'}</td>
-        <td><span class="transcript-badge-done">${isStepDone ? '✓ Tuntas' : '⏳ Progres'}</span></td>
+        <td>${qList.length > 0 ? `${stepSubmitted}/${qList.length} Pop-up Kuis` : 'Materi Slide Interaktif'}</td>
+        <td style="text-align: center;">${scoreDisplay}</td>
+        <td style="text-align: center;">${statusBadge}</td>
       `;
       el.certTranscriptTbody.appendChild(tr);
     });
   }
 
   el.certificateModal.showModal();
+}
+
+/**
+ * Ekspor Dokumen Resmi 2 Halaman (Halaman 1 Landscape A4 & Halaman 2 Portrait A4) via html2pdf Bundle
+ */
+async function exportCertificateToPdf() {
+  if (typeof window.html2pdf !== 'function') {
+    showToast('Library PDF belum siap, beralih ke dialog cetak browser...');
+    window.print();
+    return;
+  }
+
+  const eligibility = evaluateStudentEligibility();
+  if (!eligibility.isFullyEligible && !eligibility.isAdmin) {
+    showToast('Dokumen terkunci: selesaikan seluruh materi dan kuis terlebih dahulu.');
+    return;
+  }
+
+  const btn = el.btnPrintCertificate;
+  const originalHtml = btn ? btn.innerHTML : '';
+  if (btn) {
+    btn.disabled = true;
+    btn.innerHTML = '<span>⏳</span> Mengenerate PDF (Halaman 1 Landscape & Halaman 2 Portrait)...';
+  }
+
+  // Buat Surface Sandbox Terisolasi Berukuran A4 Tetap di Luar Viewport
+  const sandbox = document.createElement('div');
+  sandbox.id = 'cert-render-sandbox';
+  document.body.appendChild(sandbox);
+
+  try {
+    const page1Orig = document.querySelector('#cert-page-1');
+    const page2Orig = document.querySelector('#cert-page-2');
+    if (!page1Orig || !page2Orig) throw new Error('Elemen template sertifikat tidak ditemukan');
+
+    // Surface Halaman 1: Landscape A4 (Fixed 1123 × 794 px)
+    const surface1 = document.createElement('div');
+    surface1.className = 'sandbox-surface-page-1';
+    const clone1 = page1Orig.cloneNode(true);
+    clone1.style.width = '100%';
+    clone1.style.height = '100%';
+    clone1.style.maxWidth = 'none';
+
+    // Sematkan Base64 Logo untuk menjamin 0% risiko CORS dan 100% offline-ready
+    const c1LogoRg = clone1.querySelector('#cert-logo-rg');
+    if (c1LogoRg) c1LogoRg.src = LOGO_RUANGGURU;
+    const c1LogoUob = clone1.querySelector('#cert-logo-uob');
+    if (c1LogoUob) c1LogoUob.src = LOGO_UOB_MDS;
+    surface1.appendChild(clone1);
+
+    // Surface Halaman 2: Portrait A4 (Fixed 794 × 1123 px)
+    const surface2 = document.createElement('div');
+    surface2.className = 'sandbox-surface-page-2';
+    const clone2 = page2Orig.cloneNode(true);
+    clone2.style.width = '100%';
+    clone2.style.maxWidth = 'none';
+
+    const c2LogoRg = clone2.querySelector('#transcript-logo-rg');
+    if (c2LogoRg) c2LogoRg.src = LOGO_RUANGGURU;
+    const c2LogoUob = clone2.querySelector('#transcript-logo-uob');
+    if (c2LogoUob) c2LogoUob.src = LOGO_UOB_MDS;
+    surface2.appendChild(clone2);
+
+    sandbox.appendChild(surface1);
+    sandbox.appendChild(surface2);
+
+    // Tunggu font web dan layout terpasang stabil
+    if (document.fonts && document.fonts.ready) {
+      try {
+        await Promise.race([document.fonts.ready, new Promise((r) => setTimeout(r, 2500))]);
+      } catch (_) {}
+    }
+    await new Promise((r) => setTimeout(r, 200));
+
+    // Render Canvas Halaman 1 (Landscape) Resolusi Tinggi Skala 2x
+    const canvas1 = await window.html2pdf().set({
+      html2canvas: {
+        scale: 2,
+        useCORS: true,
+        allowTaint: true,
+        backgroundColor: '#ffffff',
+        logging: false
+      }
+    }).from(surface1).toCanvas().get('canvas');
+
+    // Render Canvas Halaman 2 (Portrait) Resolusi Tinggi Skala 2x
+    const canvas2 = await window.html2pdf().set({
+      html2canvas: {
+        scale: 2,
+        useCORS: true,
+        allowTaint: true,
+        backgroundColor: '#ffffff',
+        logging: false
+      }
+    }).from(surface2).toCanvas().get('canvas');
+
+    // Inisialisasi jsPDF Dokumen Multi-Orientasi
+    const dummy = document.createElement('div');
+    const pdf = await window.html2pdf().set({
+      jsPDF: {
+        unit: 'mm',
+        format: 'a4',
+        orientation: 'landscape',
+        compress: true
+      }
+    }).from(dummy).toPdf().get('pdf');
+
+    // Halaman 1: Landscape A4 (297 mm × 210 mm)
+    const img1 = canvas1.toDataURL('image/jpeg', 0.96);
+    pdf.addImage(img1, 'JPEG', 0, 0, 297, 210, undefined, 'FAST');
+
+    // Tambahkan Halaman 2: Portrait A4 (210 mm × 297 mm)
+    pdf.addPage('a4', 'portrait');
+    const img2 = canvas2.toDataURL('image/jpeg', 0.96);
+    pdf.addImage(img2, 'JPEG', 0, 0, 210, 297, undefined, 'FAST');
+
+    // Penamaan Berkas PDF Tersanitasi
+    const studentNameRaw = state.student && state.student.name ? state.student.name : 'Siswa';
+    const sanitizedName = studentNameRaw.replace(/[^a-zA-Z0-9_\- ]/g, '').trim().replace(/\s+/g, '_') || 'Peserta';
+    const levelTag = state.student && state.student.level ? state.student.level : 'LMS';
+    const filename = `Sertifikat_UOB_MDS_${levelTag}_${sanitizedName}.pdf`;
+
+    pdf.save(filename);
+    showToast(`✓ Berhasil mengunduh ${filename}! Halaman 1 Landscape A4 & Halaman 2 Portrait A4.`);
+  } catch (err) {
+    console.error('Gagal mengekspor PDF:', err);
+    showToast('Terjadi kendala ekspor PDF, membuka dialog cetak browser...');
+    window.print();
+  } finally {
+    sandbox.remove();
+    if (btn) {
+      btn.disabled = false;
+      btn.innerHTML = originalHtml;
+    }
+  }
 }
 
 function setupCertificateModalEvents() {
@@ -3094,10 +3329,18 @@ function setupCertificateModalEvents() {
       el.certificateModal.close();
     });
   }
+  // Tombol Utama: Ekspor PDF Multi-Orientasi
   if (el.btnPrintCertificate) {
     el.btnPrintCertificate.addEventListener('click', () => {
+      exportCertificateToPdf();
+    });
+  }
+  // Tombol Sekunder: Cetak Langsung Browser (Fallback)
+  if (el.btnBrowserPrint) {
+    el.btnBrowserPrint.addEventListener('click', () => {
       window.print();
     });
   }
 }
+
 
