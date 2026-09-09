@@ -39,6 +39,7 @@ const state = {
   videoMaxTimeWatched: 0,
   videoDuration: 0,
   videoWatchedToEnd: false,
+  watchedStepIndices: new Set(),
   submittedChallenges: new Map(),
   unlockedStepIndex: 0
 };
@@ -83,10 +84,8 @@ const el = {
   studentChip: document.querySelector('#student-chip'),
   profileDropdown: document.querySelector('#profile-dropdown'),
   btnLogout: document.querySelector('#btn-logout'),
-  btnOpenAdvisory: document.querySelector('#btn-open-advisory'),
   advisoryModal: document.querySelector('#advisory-modal'),
   btnDismissAdvisory: document.querySelector('#btn-dismiss-advisory'),
-  btnOpenCertificate: document.querySelector('#btn-open-certificate'),
   btnDropdownCert: document.querySelector('#btn-dropdown-cert'),
 
   // Sidebar
@@ -141,7 +140,6 @@ const el = {
   // Quiz Switcher Strip
   quizSwitcherStrip: document.querySelector('#quiz-switcher-strip'),
   quizSummaryStatus: document.querySelector('#quiz-summary-status'),
-  quizPillsList: document.querySelector('#quiz-pills-list'),
   btnOpenActiveQuiz: document.querySelector('#btn-open-active-quiz'),
 
   // Challenge Panel (Mini Project Mandiri — Non-Gating)
@@ -1119,6 +1117,17 @@ async function completeSuccessfulLogin() {
     }
   } catch (e) {}
 
+  // Pulihkan riwayat tontonan materi video yang tuntas
+  try {
+    const savedWatched = localStorage.getItem(`uob_watched_${state.student.email}_${state.student.school}`);
+    if (savedWatched) {
+      const parsedWatched = JSON.parse(savedWatched);
+      if (Array.isArray(parsedWatched)) {
+        state.watchedStepIndices = new Set(parsedWatched.map(Number));
+      }
+    }
+  } catch (e) {}
+
   // Load Kurikulum sesuai jenjang yang terdeteksi
   try {
     await loadCourseData(state.student.dataFile);
@@ -1127,18 +1136,29 @@ async function completeSuccessfulLogin() {
     } else {
       let unlocked = 0;
       for (let i = 0; i < state.courseData.length; i++) {
-        const qList = extractQuizzesFromStep(state.courseData[i]);
+        const step = state.courseData[i];
+        const qList = extractQuizzesFromStep(step);
+        const isSlide = step.type === 'slide';
         const allQDone = qList.length === 0 || qList.every((q) => state.submittedQuizIds.has(q.id));
-        if (allQDone) {
+        const isWatched = isSlide || state.watchedStepIndices.has(i);
+
+        // Strict Gating: Step dianggap tuntas membuka materi berikutnya HANYA jika
+        // seluruh kuis selesai DAN (jika materi video) videonya sudah pernah ditonton s.d. threshold
+        if (allQDone && isWatched) {
           unlocked = i + 1;
         } else {
           break;
         }
       }
+
       try {
         const savedUnlocked = localStorage.getItem(`uob_unlocked_${state.student.email}_${state.student.school}`);
         if (savedUnlocked) {
-          unlocked = Math.max(unlocked, Number(savedUnlocked));
+          const numSaved = Number(savedUnlocked);
+          // Hanya percayai savedUnlocked jika siswa memiliki bukti kuis/tontonan aktif
+          if (!isNaN(numSaved) && numSaved > 0 && (state.submittedQuizIds.size > 0 || state.watchedStepIndices.size > 0)) {
+            unlocked = Math.max(unlocked, Math.min(numSaved, state.courseData.length));
+          }
         }
       } catch (e) {}
       state.unlockedStepIndex = unlocked;
@@ -1258,11 +1278,6 @@ function setupProfileDropdown() {
 }
 
 function setupAdvisoryModal() {
-  if (el.btnOpenAdvisory) {
-    el.btnOpenAdvisory.addEventListener('click', () => {
-      el.advisoryModal?.showModal();
-    });
-  }
   if (el.btnDismissAdvisory) {
     el.btnDismissAdvisory.addEventListener('click', () => {
       sessionStorage.setItem('uob_advisory_dismissed', 'true');
@@ -1747,7 +1762,7 @@ function initYouTubePlayer(videoId, startSeconds, endSeconds) {
           startPlayerTicker(endSeconds);
         } else if (event.data === YT.PlayerState.ENDED) {
           state.isPlaying = false;
-          state.videoWatchedToEnd = true;
+          markCurrentStepVideoWatched();
           el.btnPlayPause.textContent = '▶';
           stopPlayerTicker();
           checkProgressGate();
@@ -1778,7 +1793,7 @@ function startPlayerTicker(endSeconds) {
 
     // Cek apakah mencapai threshold 10 detik terakhir segmen video
     if (state.videoMaxTimeWatched >= threshold) {
-      state.videoWatchedToEnd = true;
+      markCurrentStepVideoWatched();
       if (prevMax < threshold) {
         checkProgressGate();
         renderQuizSwitcherStrip();
@@ -1790,7 +1805,7 @@ function startPlayerTicker(endSeconds) {
 
     if (endSeconds > 0 && curTime >= endSeconds) {
       state.ytPlayer.pauseVideo();
-      state.videoWatchedToEnd = true;
+      markCurrentStepVideoWatched();
       checkProgressGate();
       renderQuizSwitcherStrip();
     }
@@ -1999,12 +2014,25 @@ function formatTime(seconds) {
 }
 
 /**
+ * Menandai video modul saat ini telah tuntas ditonton dan menyimpannya secara persisten
+ */
+function markCurrentStepVideoWatched() {
+  state.videoWatchedToEnd = true;
+  state.watchedStepIndices.add(state.currentStepIndex);
+  if (state.student && state.student.email) {
+    try {
+      localStorage.setItem(`uob_watched_${state.student.email}_${state.student.school}`, JSON.stringify([...state.watchedStepIndices]));
+    } catch (e) {}
+  }
+}
+
+/**
  * Memeriksa apakah video modul saat ini telah tuntas ditonton hingga 10 detik terakhir segmen
  */
 function isCurrentStepVideoWatchedEnough() {
   const step = state.courseData[state.currentStepIndex];
   if (!step || step.type === 'slide') return true;
-  if (state.videoWatchedToEnd) return true;
+  if (state.videoWatchedToEnd || state.watchedStepIndices.has(state.currentStepIndex)) return true;
   const targetEnd = (step.endSeconds && step.endSeconds > 0) ? step.endSeconds : state.videoDuration;
   return targetEnd > 0 && (state.videoMaxTimeWatched >= Math.max(1, targetEnd - 10));
 }
@@ -2117,59 +2145,6 @@ function renderBentoQuizTracker() {
 
 function renderQuizSwitcherStrip() {
   renderBentoQuizTracker();
-  if (!el.quizPillsList) return;
-  el.quizPillsList.innerHTML = '';
-  const quizzes = state.activeStepQuizzes;
-  const step = state.courseData[state.currentStepIndex];
-  const isVideoStep = !step || step.type !== 'slide';
-
-  const isVideoWatchedEnough = isCurrentStepVideoWatchedEnough();
-
-  if (quizzes.length === 0 && !isVideoStep) {
-    if (el.quizSummaryStatus) el.quizSummaryStatus.textContent = 'Materi slide interaktif dapat dipelajari secara mandiri.';
-    if (el.btnOpenActiveQuiz) el.btnOpenActiveQuiz.style.display = 'none';
-    return;
-  }
-
-  const completedCount = quizzes.filter((q) => state.submittedQuizIds.has(q.id)).length;
-
-  if (quizzes.length === 0) {
-    if (el.quizSummaryStatus) el.quizSummaryStatus.textContent = isVideoWatchedEnough ? '✓ Video tuntas ditonton.' : '⏱ Tonton video setidaknya s.d. 10 detik terakhir.';
-    if (el.btnOpenActiveQuiz) el.btnOpenActiveQuiz.style.display = 'none';
-  } else {
-    if (el.btnOpenActiveQuiz) el.btnOpenActiveQuiz.style.display = 'inline-block';
-    if (el.quizSummaryStatus) el.quizSummaryStatus.textContent = `Tracker: ${quizzes.length} Pop-up Kuis (${completedCount}/${quizzes.length} Selesai) · Video: ${isVideoWatchedEnough ? '✓ Tuntas' : '⏱ Belum Tuntas'}`;
-  }
-
-  // Render Quiz Pills
-  quizzes.forEach((quiz, i) => {
-    const isDone = state.submittedQuizIds.has(quiz.id);
-    const pill = document.createElement('button');
-    pill.className = `quiz-pill-btn ${isDone ? 'completed' : ''}`;
-    pill.type = 'button';
-    const timeLabel = quiz.time ? formatTime(quiz.time) : '';
-    pill.innerHTML = `<span>${isDone ? '✓' : '⏱'}</span> <span>${timeLabel ? timeLabel + ' · ' : ''}Kuis ${i + 1} (${isDone ? 'Selesai' : 'Belum'})</span>`;
-    pill.addEventListener('click', () => openQuizModal(i));
-    el.quizPillsList.appendChild(pill);
-  });
-
-  // Render Video Status Pill
-  if (isVideoStep) {
-    const videoPill = document.createElement('div');
-    videoPill.className = `quiz-pill-btn ${isVideoWatchedEnough ? 'completed' : ''}`;
-    videoPill.style.cursor = 'default';
-    videoPill.innerHTML = `<span>${isVideoWatchedEnough ? '✓' : '⏱'}</span> <span>Video: ${isVideoWatchedEnough ? 'Ditonton s.d. 10 Detik Akhir' : 'Belum 10 Detik Terakhir'}</span>`;
-    el.quizPillsList.appendChild(videoPill);
-  }
-
-  if (quizzes.length > 0 && el.btnOpenActiveQuiz) {
-    const allDone = completedCount === quizzes.length;
-    el.btnOpenActiveQuiz.textContent = allDone ? '✓ Semua Kuis Tuntas' : 'Buka Kuis Pop-up';
-    el.btnOpenActiveQuiz.onclick = () => {
-      const firstUnfinished = quizzes.findIndex((q) => !state.submittedQuizIds.has(q.id));
-      openQuizModal(firstUnfinished !== -1 ? firstUnfinished : 0);
-    };
-  }
 }
 
 function openQuizModal(quizIndex) {
@@ -2552,6 +2527,7 @@ function setupChallengePanelEvents() {
 
       // Optional async push to Google Apps Script
       try {
+        const step = state.courseData[state.currentStepIndex] || {};
         fetch(APP_SCRIPT_URL, {
           method: 'POST',
           mode: 'no-cors',
@@ -2559,8 +2535,10 @@ function setupChallengePanelEvents() {
           body: JSON.stringify({
             action: 'submit_challenge',
             email: state.student.email,
+            name: state.student.name,
             school: state.student.school,
             level: state.student.level,
+            stepId: step.id || `step-${state.currentStepIndex + 1}`,
             submission: submissionData
           })
         }).catch(() => {});
@@ -2569,7 +2547,7 @@ function setupChallengePanelEvents() {
       if (el.challengeSubmitFeedback) {
         el.challengeSubmitFeedback.style.display = 'block';
         el.challengeSubmitFeedback.className = 'challenge-submit-feedback success';
-        el.challengeSubmitFeedback.textContent = '🎉 Hebat! Karya tantanganmu berhasil dikumpulkan. Kamu bebas lanjut ke materi berikutnya!';
+        el.challengeSubmitFeedback.textContent = '🎉 Hebat! Karya tantanganmu berhasil tersimpan di browser dan diarsipkan ke rekapitulasi. Kamu bebas lanjut ke materi berikutnya kapan saja!';
       }
     });
   }
@@ -2585,6 +2563,22 @@ function setupChallengePanelEvents() {
 // ==================== 12. CERTIFICATE & SCORE REPORT LOGIC ====================
 function openCertificateModal() {
   if (!el.certificateModal) return;
+
+  const isAdmin = Boolean(state.student && state.student.isAdmin);
+  const isAllCourseCompleted = isAdmin || state.unlockedStepIndex >= state.courseData.length;
+
+  if (!isAllCourseCompleted) {
+    showAppAlert({
+      title: 'Sertifikat & Rekap Nilai Terkunci',
+      message: 'Selesaikan seluruh materi pembelajaran dan evaluasi kuis dari awal hingga akhir untuk membuka Sertifikat Kelulusan 2 Halaman A4.',
+      icon: '🎓',
+      buttonText: 'Lanjutkan Pembelajaran',
+      onConfirm: () => {
+        goToStep(state.unlockedStepIndex < state.courseData.length ? state.unlockedStepIndex : 0);
+      }
+    });
+    return;
+  }
 
   // Calculate statistics
   let totalQuizzes = 0;

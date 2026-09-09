@@ -265,3 +265,31 @@ Seluruh blocker teknis yang teridentifikasi dalam audit telah diselesaikan dan d
    - Pengujian otomatis via Playwright menembus seluruh flow: Login state, Admin bypass, Bento quiz rendering, Normalisasi jawaban kuis, Slide container & fullscreen, Sertifikat 2-page A4 print preview, serta In-app alert modal & tombol aksi lanjut nonton video.
    - Screenshot modal tersimpan di: `brain/.../test7_in_app_alert_modal.png`.
 
+8. **P0-03 — Backend Submit Challenge & UI Feedback (RESOLVED ✅)**:
+   - Endpoint `doPost` di Google Apps Script kini memiliki branch `action === 'submit_challenge'` untuk mencatat bukti pengumpulan karya mandiri ke sheet siswa tanpa memicu error `quizId wajib ada`.
+   - Copy teks di antarmuka diperbarui secara jujur dan transparan: *"🎉 Hebat! Karya tantanganmu berhasil tersimpan di browser dan diarsipkan ke rekapitulasi. Kamu bebas lanjut ke materi berikutnya kapan saja!"*.
+
+9. **P0-LMS-03 — Strict Sidebar Gating & Step Tanpa Kuis (RESOLVED ✅)**:
+   - `state.watchedStepIndices` kini mencatat riwayat tontonan video secara persisten di `localStorage` (`uob_watched_${email}_${school}`).
+   - Saat login, kalkulasi `unlockedStepIndex` untuk materi video tanpa kuis kini memverifikasi apakah video materi tersebut sudah pernah ditonton hingga tuntas (`isWatched`) sebelum membuka materi selanjutnya. Siswa tidak bisa lagi melewati video materi tanpa kuis tanpa menontonnya.
+   - Nilai `savedUnlocked` dari `localStorage` tidak lagi menimpa data siswa jika data server mengindikasikan reset.
+
+10. **P1-LMS-03 — Pembersihan Ghost Code Strip Kuis Lama (RESOLVED ✅)**:
+    - Seluruh kode mati (50 baris) pada `renderQuizSwitcherStrip()` yang mencoba merender elemen usang `#quiz-pills-list` telah dibersihkan total.
+    - Fungsi `renderQuizSwitcherStrip()` kini murni menjalankan `renderBentoQuizTracker()`, menjadikan Bento Box satu-satunya Single Source of Truth antarmuka kuis.
+
+11. **P1-LMS-05 — Centralized Guard Kelulusan Sertifikat (RESOLVED ✅)**:
+    - Fungsi `openCertificateModal()` kini dilengkapi guard terpusat di level fungsi: jika siswa belum menyelesaikan seluruh materi (`state.unlockedStepIndex < state.courseData.length`) dan bukan admin, modal sertifikat tidak bisa dibuka dari mana pun (termasuk profile dropdown), melainkan menampilkan modal alert ramah dan mengarahkan siswa ke materi berjalan.
+    - Syarat kelulusan antara sidebar dan sertifikat kini 100% konsisten.
+
+12. **P2-LMS-01 — Pembersihan Dead Wiring Advisory Desktop (RESOLVED ✅)**:
+    - Variabel `btnOpenAdvisory` dan `btnOpenCertificate` serta event listener terkait di `setupAdvisoryModal()` telah dibersihkan dari `app.js`.
+
+13. **P2-01 & P2-02 — Indeks Kolom & Dynamic Header Apps Script (RESOLVED ✅)**:
+    - Di `Code.gs`, `get_progress` membaca kolom kuis mulai dari indeks 10 (kolom 0-9 adalah metadata: Timestamp, Email, Nama, Sekolah, Rombel, Progress, Total Skor, Grade, Kuis Selesai, Status Kelulusan). Metadata tidak lagi salah dianggap sebagai kuis.
+    - Di `doPost`, pencocokan header kuis menggunakan regex matching sehingga format `${quizId} [Skor]` maupun `${quizId} [Skor & Jawaban]` langsung terdeteksi tanpa membuat kolom duplikat.
+
+14. **P2-LMS-03 — Penanganan Video Intro Bumper (DOCUMENTED & INTENDED ✅)**:
+    - Logika `onerror` pada `introVideo` yang memanggil `finishIntro()` dan melanjutkan ke YouTube merupakan *graceful fallback* yang disengaja agar gangguan pemutaran bumper pengantar 4 detik (misal: codec browser tidak kompatibel) tidak memblokir siswa untuk mengakses pembelajaran utama.
+
+

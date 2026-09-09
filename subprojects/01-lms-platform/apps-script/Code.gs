@@ -310,14 +310,28 @@ function doGet(e) {
       }
 
       const progressMap = {};
-      for (let c = 4; c < headers.length; c++) {
+      const submittedQuizIds = [];
+      for (let c = 10; c < headers.length; c++) {
         const headerName = String(headers[c] || '').trim();
         if (headerName) {
-          progressMap[headerName] = studentRow[c];
+          const cellVal = studentRow[c];
+          progressMap[headerName] = cellVal;
+          if (cellVal !== '' && cellVal !== null && cellVal !== undefined) {
+            const cleanId = headerName.replace(/\s*\[.*?\]\s*$/, '').trim();
+            if (cleanId) submittedQuizIds.push(cleanId);
+          }
         }
       }
 
-      return respond({ success: true, progress: progressMap });
+      return respond({
+        success: true,
+        studentFound: true,
+        progress: progressMap,
+        data: {
+          submittedQuizIds: submittedQuizIds,
+          scores: progressMap
+        }
+      });
     }
 
     return respond({ success: false, message: "Aksi tidak dikenal." });
@@ -350,6 +364,32 @@ function doPost(e) {
     const name = String(payload.name || '').trim();
     const school = String(payload.school || '').trim();
     const level = String(payload.level || 'SMA').toUpperCase();
+
+    // Branch 1: Submit Challenge
+    if (payload.action === 'submit_challenge') {
+      if (!email || !school) {
+        return respond({ success: false, message: "Email dan sekolah wajib ada." });
+      }
+
+      const targetSheetName = getResultSheetName(level);
+      const resSheet = ss.getSheetByName(targetSheetName);
+      if (resSheet) {
+        const rows = resSheet.getDataRange().getValues();
+        for (let i = 2; i < rows.length; i++) {
+          if (normalizeEmail(rows[i][1]) === email) {
+            resSheet.getRange(i + 1, 1).setValue(new Date().toISOString());
+            break;
+          }
+        }
+      }
+
+      return respond({
+        success: true,
+        message: "Tantangan praktik berhasil dicatat di server."
+      });
+    }
+
+    // Branch 2: Quiz Progress Submission
     const quizId = String(payload.quizId || '').trim();
     const answer = String(payload.answer || '').trim();
     const score = payload.score !== undefined ? payload.score : 100;
@@ -392,12 +432,19 @@ function doPost(e) {
       resSheet.getRange(studentRowIndex, 1).setValue(new Date().toISOString());
     }
 
-    // Pastikan kolom kuis ada di header (Dynamic Header Insertion)
-    const headerColumnName = `${quizId} [Skor]`;
-    let quizColIndex = headerRow.indexOf(headerColumnName) + 1;
+    // Pastikan kolom kuis ada di header (Dynamic Header Matching/Insertion)
+    const headerColumnName = `${quizId} [Skor & Jawaban]`;
+    let quizColIndex = -1;
+    for (let c = 0; c < headerRow.length; c++) {
+      const h = String(headerRow[c] || '').trim();
+      const cleanH = h.replace(/\s*\[.*?\]\s*$/, '').trim();
+      if (cleanH === quizId || h.startsWith(quizId) || h === headerColumnName || h === `${quizId} [Skor]`) {
+        quizColIndex = c + 1;
+        break;
+      }
+    }
 
-    if (quizColIndex === 0) {
-      // Tambahkan kolom baru di akhir header row
+    if (quizColIndex === -1) {
       quizColIndex = headerRow.length + 1;
       resSheet.getRange(2, quizColIndex).setValue(headerColumnName);
     }
