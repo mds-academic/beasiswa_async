@@ -778,3 +778,43 @@ Kalau mau cek file source langsung:
 ### Actions / Artifacts
 - Menyalakan local LMS server pada port 4173 dari Subproject 01 `src`.
 - Menyediakan entry point LMS dan direct links ke seluruh bridge SD.
+
+## 2026-09-09 — Laporan isi lima slide terlihat sama
+
+### User
+> ini isi slide nya gaada yang beda
+
+### Status
+- **bug report / under investigation** — pengguna melaporkan isi bridge slide Scratch SD terlihat sama.
+
+### Actions
+- Incoming report logged before investigation.
+
+### Assistant Response — 2026-09-09
+
+Iya, kalau yang kamu lihat semuanya sama berarti ada masalah di preview/cache atau mapping yang kebaca browser—bukan isi source slide yang seharusnya. Aku cek ulang sekarang: file `bridge-sd-00` sampai `bridge-sd-04` memang berbeda, judul slide dan jumlah bagian masing-masing berbeda.
+
+Yang benar:
+
+- `bridge-sd-00`: 6 slide — orientasi platform Scratch
+- `bridge-sd-01`: 5 slide — Sprite, Costume, Event, Sound
+- `bridge-sd-02`: 5 slide — Loop dan Animasi
+- `bridge-sd-03`: 5 slide — Input, Sensing, Conditional, Racing Car
+- `bridge-sd-04`: 7 slide — Variable, Broadcast, State, Capstone
+
+Aku juga cek mirror LMS Subproject 01 dan isinya berbeda dengan source sequencing.
+
+Coba buka link ini satu per satu dengan hard refresh:
+
+- [SD 00](http://127.0.0.1:4173/slides/bridge-sd-00.html)
+- [SD 01](http://127.0.0.1:4173/slides/bridge-sd-01.html)
+- [SD 02](http://127.0.0.1:4173/slides/bridge-sd-02.html)
+- [SD 03](http://127.0.0.1:4173/slides/bridge-sd-03.html)
+- [SD 04](http://127.0.0.1:4173/slides/bridge-sd-04.html)
+
+Kalau yang kamu maksud adalah **isi materi di LMS saat klik step**, bukan direct link di atas, kirim screenshot atau sebut step yang dibuka. Aku akan cek mapping iframe-nya, karena dataset sekarang sudah berisi `slideUrl` unik untuk kelima bridge.
+
+### Actions / Artifacts
+- Membandingkan hash dan jumlah slide lima bridge di source dan mirror LMS.
+- Mengonfirmasi file dan mapping `slideUrl` berbeda.
+- Memberikan direct preview link untuk isolasi masalah cache vs mapping LMS.
