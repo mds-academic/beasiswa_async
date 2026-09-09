@@ -1732,3 +1732,41 @@ Aku tidak mengubah kode/data pembaruanmu. Audit dokumentasi dicatat dalam commit
 
 ini ada audit terbaru coba di cek apakah udah sesuai"
 
+
+
+### Assistant Verbatim Response (Turn 2026-09-09T08:12:00+07:00)
+
+Terima kasih atas koreksi dan ketelitiannya! Masukan tersebut **100% tepat dan sangat krusial** untuk akurasi dokumentasi teknis.
+
+Implementasi teknis yang sesungguhnya memang **tidak mengubah atau menebak-nebak angka timestamp asli**, melainkan:
+1. **Mempertahankan timestamp asli 100%** sesuai konfigurasi awal kurikulum untuk mencegah desinkronisasi video instruktur.
+2. **Mengamankan item anomali secara non-destruktif** dengan menandai status `review_required`, flag `outOfBounds: true`, serta mengonversi kuis segmen yang di luar durasi menjadi `manual_checkpoint` (dengan `autoplay: false`) agar pemutar YouTube tidak *crash* atau *stuck*.
+
+---
+
+### Tindakan yang Sudah Langsung Dilakukan
+
+1. **Pembaruan Narasi pada Tab `Changelog & Audit Log` di Google Spreadsheet Master**:
+   Baris Poin 2 pada spreadsheet telah diperbaiki dan diperjelas agar tidak menimbulkan kesan timestamp ditebak atau digeser sembarangan:
+   - **Apa yang Diubah & Diperbaiki**:
+     > *"Timestamp asli 100% dipertahankan tanpa diubah atau ditebak sembarangan. Anomali bookmark (`hs-4-6`, `hs-5-1`, `ms-1-4`, `ms-3-1`) dan kuis segmen (`hs-5-3`, `ms-4-4`) diamankan secara non-destruktif dengan status `review_required`, `outOfBounds: true`, dan `manual_checkpoint` (autoplay: false) agar pemutar video tidak crash."*
+   - **Status Terkini (Resolusi)**:
+     > `✅ RESOLVED (Timestamp Asli Dipertahankan & Anomali Diamankan)`
+   - **Verifikasi & Bukti Uji**:
+     > `Gate 6 audit-verifikasi lolos: 6 anomali terbukti berstatus review_required & manual_checkpoint; pemutar video aman.`
+
+2. **Sinkronisasi Langsung ke Google Apps Script & Spreadsheet**:
+   - Skrip generator `generate_curriculum_sheet_data_v3.py` dan payload `curriculum_sheet_payload_v3.json` telah diperbarui.
+   - `Code.gs` telah dimutakhirkan dan di-push via Clasp ke Google Apps Script project.
+   - Fungsi `setupAllLMSSheets()` telah dieksekusi ulang secara sukses via Chrome CDP pada port 9222.
+   - Tangkapan layar bukti visual yang diperbarui telah disimpan di:
+     [screenshot_changelog_audit_log.png](file:///Users/yazidhilmi/.gemini/antigravity-ide/brain/ec8944f1-9ecc-4ac0-a351-be3754892890/screenshot_changelog_audit_log.png)
+
+3. **Status Verifikasi & Git Checkpoint**:
+   - Seluruh hasil verifikasi independen kamu terkonfirmasi valid: **8/8 Acceptance Gates PASS**, `bridge-ms-00` bebas TinyDB, 10 berkas metadata seragam dengan `learningObjectives`, SHA-256 identik, dan 20 screenshot QA visual lengkap.
+   - Perubahan telah dicatat di [STATE.md](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/STATE.md) dan di-commit ke Git lokal:
+     - Commit `53669c4`: `docs(sheets): clarify timestamp wording in Changelog to reflect non-destructive safeguarding`
+     - Commit `e8aedde`: `docs(uob-async-lms): update STATE.md with verified audit state and changelog wording clarification`
+
+Tautan langsung Google Spreadsheet yang sudah diperbarui:
+🔗 **[UOB My Digital Space Master Spreadsheet](https://docs.google.com/spreadsheets/d/1s6VVCGLPwiGWYwBNiR-4lrnB5XWcOV0l7pAIcgyif-k/edit)**
