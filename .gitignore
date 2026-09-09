@@ -14,3 +14,7 @@ temp/
 .env
 .env.*
 !.env.example
+
+# Scratch testing directory
+scratch/
+

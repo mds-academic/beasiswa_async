@@ -38,7 +38,8 @@ const state = {
   isIntroPlaying: false,
   videoMaxTimeWatched: 0,
   videoDuration: 0,
-  videoWatchedToEnd: false
+  videoWatchedToEnd: false,
+  submittedChallenges: new Map()
 };
 window.state = state;
 
@@ -84,6 +85,8 @@ const el = {
   btnOpenAdvisory: document.querySelector('#btn-open-advisory'),
   advisoryModal: document.querySelector('#advisory-modal'),
   btnDismissAdvisory: document.querySelector('#btn-dismiss-advisory'),
+  btnOpenCertificate: document.querySelector('#btn-open-certificate'),
+  btnDropdownCert: document.querySelector('#btn-dropdown-cert'),
 
   // Sidebar
   sidebarMissionTitle: document.querySelector('#sidebar-mission-title'),
@@ -133,6 +136,25 @@ const el = {
   quizPillsList: document.querySelector('#quiz-pills-list'),
   btnOpenActiveQuiz: document.querySelector('#btn-open-active-quiz'),
 
+  // Challenge Panel (Mini Project Mandiri — Non-Gating)
+  challengePanel: document.querySelector('#challenge-panel'),
+  challengeTitle: document.querySelector('#challenge-title'),
+  challengeStatusBadge: document.querySelector('#challenge-status-badge'),
+  challengeDesc: document.querySelector('#challenge-desc'),
+  challengeTasksBox: document.querySelector('#challenge-tasks-box'),
+  groupCodeInput: document.querySelector('#group-code-input'),
+  challengeCodeEditor: document.querySelector('#challenge-code-editor'),
+  groupLinkInput: document.querySelector('#group-link-input'),
+  challengeUrlLabel: document.querySelector('#challenge-url-label'),
+  challengeUrlInput: document.querySelector('#challenge-url-input'),
+  groupFileInput: document.querySelector('#group-file-input'),
+  challengeFileLabel: document.querySelector('#challenge-file-label'),
+  challengeFileInput: document.querySelector('#challenge-file-input'),
+  fileSelectedName: document.querySelector('#file-selected-name'),
+  btnSubmitChallenge: document.querySelector('#btn-submit-challenge'),
+  btnSkipChallenge: document.querySelector('#btn-skip-challenge'),
+  challengeSubmitFeedback: document.querySelector('#challenge-submit-feedback'),
+
   // Exact Legacy Below-Video 2-Column Cards
   summaryHeadingIcon: document.querySelector('#summary-heading-icon'),
   summaryCardTitle: document.querySelector('#summary-card-title'),
@@ -171,7 +193,23 @@ const el = {
   btnCloseQuizModal: document.querySelector('#btn-close-quiz-modal'),
   btnRewatchQuiz: document.querySelector('#btn-rewatch-quiz'),
   btnDeferQuiz: document.querySelector('#btn-defer-quiz'),
-  btnSubmitQuiz: document.querySelector('#btn-submit-quiz')
+  btnSubmitQuiz: document.querySelector('#btn-submit-quiz'),
+
+  // Certificate Modal Dialog
+  certificateModal: document.querySelector('#certificate-modal'),
+  btnCloseCertModal: document.querySelector('#btn-close-cert-modal'),
+  reportQuizzesCount: document.querySelector('#report-quizzes-count'),
+  reportAccuracy: document.querySelector('#report-accuracy'),
+  reportChallengesCount: document.querySelector('#report-challenges-count'),
+  reportStatus: document.querySelector('#report-status'),
+  certStudentName: document.querySelector('#cert-student-name'),
+  certStudentSchool: document.querySelector('#cert-student-school'),
+  certProgramName: document.querySelector('#cert-program-name'),
+  certSerialNo: document.querySelector('#cert-serial-no'),
+  certDateText: document.querySelector('#cert-date-text'),
+  btnPrintCertificate: document.querySelector('#btn-print-certificate'),
+  btnDismissCertificate: document.querySelector('#btn-dismiss-certificate'),
+  advisoryContinueBtn: document.querySelector('#btn-close-advisory-modal')
 };
 
 // ==================== HELPER ALGORITHMS ====================
@@ -229,6 +267,18 @@ function maskEmail(email) {
   return `${username.slice(0, 2)}***${username.slice(-1)}@${domain}`;
 }
 
+/**
+ * Hash string deterministik untuk nomor seri sertifikat digital
+ */
+function hashString(str) {
+  let hash = 0;
+  for (let i = 0; i < str.length; i++) {
+    hash = (hash << 5) - hash + str.charCodeAt(i);
+    hash |= 0;
+  }
+  return hash;
+}
+
 function syncProgressToBackend(quizId, isCorrect, score) {
   if (!state.student || !state.student.email || !state.student.school) return;
   try {
@@ -257,6 +307,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   setupLoginEvents();
   setupProfileDropdown();
   setupAdvisoryModal();
+  setupChallengePanelEvents();
+  setupCertificateModalEvents();
   setupMediaSwitcherEvents();
   setupPlayerControlEvents();
   setupQuizModalEvents();
@@ -265,7 +317,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Mobile Gentle Advisory Check
   if (window.innerWidth < 768) {
     setTimeout(() => {
-      if (el.advisoryModal) el.advisoryModal.showModal();
+      checkMobileAdvisory();
     }, 1200);
   }
 });
@@ -957,6 +1009,18 @@ async function completeSuccessfulLogin() {
     console.warn('LocalStorage read error:', e);
   }
 
+  // Restore Submitted Challenges
+  const challengeStoreKey = `uob_challenges_${state.student.email}_${state.student.school}`;
+  try {
+    const savedCh = localStorage.getItem(challengeStoreKey);
+    if (savedCh) {
+      const parsedCh = JSON.parse(savedCh);
+      if (Array.isArray(parsedCh)) {
+        state.submittedChallenges = new Map(parsedCh);
+      }
+    }
+  } catch (e) {}
+
   // Load Kurikulum sesuai jenjang yang terdeteksi
   try {
     await loadCourseData(state.student.dataFile);
@@ -967,21 +1031,42 @@ async function completeSuccessfulLogin() {
     alert('Gagal memuat kurikulum materi. Silakan refresh halaman.');
   }
 
-  // Server-First sync progress from Google Sheets
+  // Server-First SSOT Sync from Google Sheets (Jika admin reset/delete di backend, frontend WAJIB reset)
   try {
     const getUrl = `${APP_SCRIPT_URL}?action=get_progress&email=${encodeURIComponent(state.student.email)}&school=${encodeURIComponent(state.student.school)}&level=${encodeURIComponent(state.student.level)}`;
     fetch(getUrl)
       .then((r) => r.json())
       .then((res) => {
-        if (res && res.success && res.data && Array.isArray(res.data.submittedQuizIds)) {
-          res.data.submittedQuizIds.forEach((id) => state.submittedQuizIds.add(id));
-          localStorage.setItem(storageKey, JSON.stringify([...state.submittedQuizIds]));
+        if (res && res.success) {
+          const serverQuizzes = res.data && Array.isArray(res.data.submittedQuizIds) ? res.data.submittedQuizIds : [];
+          if (serverQuizzes.length === 0) {
+            console.warn('[SSOT Sync] Data di spreadsheet kosong atau di-reset admin. Mereset progres lokal...');
+            state.submittedQuizIds.clear();
+            localStorage.removeItem(storageKey);
+            localStorage.removeItem(`uob_last_step_${state.student.email}_${state.student.school}`);
+            state.currentStepIndex = 0;
+            goToStep(0);
+          } else {
+            state.submittedQuizIds = new Set(serverQuizzes);
+            localStorage.setItem(storageKey, JSON.stringify([...state.submittedQuizIds]));
+          }
+          renderQuizSwitcherStrip();
+          checkProgressGate();
+        } else if (res && (res.studentFound === false || res.notFound)) {
+          console.warn('[SSOT Sync] Data siswa tidak ditemukan di spreadsheet. Mereset progres lokal...');
+          state.submittedQuizIds.clear();
+          localStorage.removeItem(storageKey);
+          localStorage.removeItem(`uob_last_step_${state.student.email}_${state.student.school}`);
+          state.currentStepIndex = 0;
+          goToStep(0);
           renderQuizSwitcherStrip();
           checkProgressGate();
         }
       })
       .catch((err) => console.log('Backend sync offline/deferred:', err));
   } catch (e) {}
+
+  checkMobileAdvisory();
 }
 
 async function loadCourseData(filename) {
@@ -1039,12 +1124,31 @@ function setupProfileDropdown() {
 }
 
 function setupAdvisoryModal() {
-  el.btnOpenAdvisory.addEventListener('click', () => {
+  if (el.btnOpenAdvisory) {
+    el.btnOpenAdvisory.addEventListener('click', () => {
+      el.advisoryModal?.showModal();
+    });
+  }
+  if (el.btnDismissAdvisory) {
+    el.btnDismissAdvisory.addEventListener('click', () => {
+      sessionStorage.setItem('uob_advisory_dismissed', 'true');
+      el.advisoryModal?.close();
+    });
+  }
+  if (el.advisoryContinueBtn) {
+    el.advisoryContinueBtn.addEventListener('click', () => {
+      sessionStorage.setItem('uob_advisory_dismissed', 'true');
+      el.advisoryModal?.close();
+    });
+  }
+}
+
+function checkMobileAdvisory() {
+  const isMobile = window.innerWidth <= 768;
+  const alreadyDismissed = sessionStorage.getItem('uob_advisory_dismissed');
+  if (isMobile && !alreadyDismissed && el.advisoryModal) {
     el.advisoryModal.showModal();
-  });
-  el.btnDismissAdvisory.addEventListener('click', () => {
-    el.advisoryModal.close();
-  });
+  }
 }
 
 // ==================== 4. SIDEBAR & NAVIGATION ====================
@@ -1147,6 +1251,9 @@ function goToStep(index) {
 
   // Render Exact Legacy 2-Column Cards Below Video
   renderLegacyCards(step, index);
+
+  // Render Challenge Panel (Mini Project Mandiri — Non-Gating)
+  renderChallengePanel(step, index);
 
   // Render Lesson Reading Accordion
   renderReadingAccordion(step, index);
@@ -1820,3 +1927,252 @@ function setupStepNavEvents() {
     });
   }
 }
+
+// ==================== 11. CHALLENGE PANEL LOGIC (NON-GATING) ====================
+function renderChallengePanel(step, index) {
+  if (!el.challengePanel) return;
+
+  const isChallengeStep = Boolean(
+    step.practice ||
+    step.miniProject ||
+    step.type === 'challenge' ||
+    (step.title && (step.title.toLowerCase().includes('project') || step.title.toLowerCase().includes('tantangan') || step.title.toLowerCase().includes('tugas')))
+  );
+
+  if (!isChallengeStep) {
+    el.challengePanel.style.display = 'none';
+    return;
+  }
+
+  el.challengePanel.style.display = 'block';
+
+  // Title & description
+  const chTitle = step.practice?.title || step.miniProject?.title || step.title || 'Tantangan Praktik Mandiri';
+  const chDesc = step.practice?.instruction || step.miniProject?.description || 'Tantangan ini bersifat opsional untuk mengasah dan melatih kemampuan kodingmu secara mandiri. Kamu bebas melewatinya dan lanjut ke materi berikutnya kapan saja!';
+
+  if (el.challengeTitle) el.challengeTitle.textContent = chTitle;
+  if (el.challengeDesc) el.challengeDesc.textContent = chDesc;
+
+  // Tasks list
+  if (el.challengeTasksBox) {
+    const rawTasks = step.practice?.tasks || step.miniProject?.tasks || step.practice?.checklist;
+    const tasks = Array.isArray(rawTasks) && rawTasks.length > 0 ? rawTasks : [
+      'Buka IDE koding sesuai jenjang belajarmu.',
+      'Terapkan logika dan konsep yang telah dipelajari pada video materi ini.',
+      'Uji coba program dan pastikan berjalan lancar tanpa error!'
+    ];
+
+    el.challengeTasksBox.innerHTML = `
+      <ul>
+        ${tasks.map((t) => `<li>${typeof t === 'string' ? t : (t.text || t.task || JSON.stringify(t))}</li>`).join('')}
+      </ul>
+    `;
+  }
+
+  // Adjust inputs based on student level
+  const level = state.student?.level || 'SMA';
+  if (level === 'SMA') {
+    if (el.groupCodeInput) el.groupCodeInput.style.display = 'block';
+    if (el.groupLinkInput) el.groupLinkInput.style.display = 'block';
+    if (el.challengeUrlLabel) el.challengeUrlLabel.textContent = 'Atau Tautan Proyek (Google Colab / GitHub):';
+    if (el.challengeUrlInput) el.challengeUrlInput.placeholder = 'https://colab.research.google.com/...';
+    if (el.groupFileInput) el.groupFileInput.style.display = 'block';
+    if (el.challengeFileLabel) el.challengeFileLabel.textContent = 'Atau Unggah Berkas Python (.py / .ipynb):';
+    if (el.challengeFileInput) el.challengeFileInput.accept = '.py,.ipynb,.txt';
+  } else if (level === 'SMP') {
+    if (el.groupCodeInput) el.groupCodeInput.style.display = 'none';
+    if (el.groupLinkInput) el.groupLinkInput.style.display = 'block';
+    if (el.challengeUrlLabel) el.challengeUrlLabel.textContent = 'Tautan Galeri MIT App Inventor / Google Drive:';
+    if (el.challengeUrlInput) el.challengeUrlInput.placeholder = 'https://ai2.appinventor.mit.edu/... atau link Google Drive';
+    if (el.groupFileInput) el.groupFileInput.style.display = 'block';
+    if (el.challengeFileLabel) el.challengeFileLabel.textContent = 'Atau Unggah Berkas Proyek (.aia / .apk):';
+    if (el.challengeFileInput) el.challengeFileInput.accept = '.aia,.apk,.zip';
+  } else {
+    // SD
+    if (el.groupCodeInput) el.groupCodeInput.style.display = 'none';
+    if (el.groupLinkInput) el.groupLinkInput.style.display = 'block';
+    if (el.challengeUrlLabel) el.challengeUrlLabel.textContent = 'Tautan Proyek Scratch (scratch.mit.edu):';
+    if (el.challengeUrlInput) el.challengeUrlInput.placeholder = 'https://scratch.mit.edu/projects/...';
+    if (el.groupFileInput) el.groupFileInput.style.display = 'block';
+    if (el.challengeFileLabel) el.challengeFileLabel.textContent = 'Atau Unggah Berkas Proyek Scratch (.sb3):';
+    if (el.challengeFileInput) el.challengeFileInput.accept = '.sb3,.zip';
+  }
+
+  // Restore prior submission if exists
+  const chKey = step.id || `step_${index}`;
+  const savedCh = state.submittedChallenges?.get(chKey);
+  if (savedCh) {
+    if (el.challengeCodeEditor && savedCh.code) el.challengeCodeEditor.value = savedCh.code;
+    if (el.challengeUrlInput && savedCh.url) el.challengeUrlInput.value = savedCh.url;
+    if (el.fileSelectedName && savedCh.fileName) el.fileSelectedName.textContent = `✓ ${savedCh.fileName}`;
+    if (el.challengeSubmitFeedback) {
+      el.challengeSubmitFeedback.style.display = 'block';
+      el.challengeSubmitFeedback.className = 'challenge-submit-feedback success';
+      el.challengeSubmitFeedback.textContent = `✓ Karya tantangan telah tersimpan (${new Date(savedCh.timestamp).toLocaleTimeString('id-ID')}). Kamu bisa memperbaruinya kapan saja!`;
+    }
+  } else {
+    if (el.challengeSubmitFeedback) el.challengeSubmitFeedback.style.display = 'none';
+  }
+}
+
+function setupChallengePanelEvents() {
+  if (el.challengeFileInput) {
+    el.challengeFileInput.addEventListener('change', (e) => {
+      const file = e.target.files && e.target.files[0];
+      if (file && el.fileSelectedName) {
+        el.fileSelectedName.textContent = `📄 ${file.name} (${(file.size / 1024).toFixed(1)} KB)`;
+      }
+    });
+  }
+
+  if (el.btnSubmitChallenge) {
+    el.btnSubmitChallenge.addEventListener('click', () => {
+      const step = state.courseData[state.currentStepIndex];
+      const chKey = step?.id || `step_${state.currentStepIndex}`;
+      const codeVal = el.challengeCodeEditor?.value?.trim() || '';
+      const urlVal = el.challengeUrlInput?.value?.trim() || '';
+      const file = el.challengeFileInput?.files?.[0];
+      const fileName = file ? file.name : (el.fileSelectedName?.textContent.replace(/^✓\s*|^📄\s*/, '') || '');
+
+      if (!codeVal && !urlVal && !file && !fileName) {
+        alert('Silakan tulis kode, masukkan tautan proyek, atau unggah berkas karya terlebih dahulu.');
+        return;
+      }
+
+      const submissionData = {
+        stepId: chKey,
+        stepTitle: step?.title || '',
+        code: codeVal,
+        url: urlVal,
+        fileName: fileName,
+        timestamp: new Date().toISOString()
+      };
+
+      state.submittedChallenges.set(chKey, submissionData);
+
+      // Save to localStorage
+      const challengeStoreKey = `uob_challenges_${state.student.email}_${state.student.school}`;
+      try {
+        localStorage.setItem(challengeStoreKey, JSON.stringify([...state.submittedChallenges]));
+      } catch (e) {}
+
+      // Optional async push to Google Apps Script
+      try {
+        fetch(APP_SCRIPT_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            action: 'submit_challenge',
+            email: state.student.email,
+            school: state.student.school,
+            level: state.student.level,
+            submission: submissionData
+          })
+        }).catch(() => {});
+      } catch (e) {}
+
+      if (el.challengeSubmitFeedback) {
+        el.challengeSubmitFeedback.style.display = 'block';
+        el.challengeSubmitFeedback.className = 'challenge-submit-feedback success';
+        el.challengeSubmitFeedback.textContent = '🎉 Hebat! Karya tantanganmu berhasil dikumpulkan. Kamu bebas lanjut ke materi berikutnya!';
+      }
+    });
+  }
+
+  if (el.btnSkipChallenge) {
+    el.btnSkipChallenge.addEventListener('click', () => {
+      // Non-gating: Scroll smoothly to footer nav or next step
+      el.btnNextStep?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+  }
+}
+
+// ==================== 12. CERTIFICATE & SCORE REPORT LOGIC ====================
+function openCertificateModal() {
+  if (!el.certificateModal) return;
+
+  // Calculate statistics
+  let totalQuizzes = 0;
+  let passedQuizzes = 0;
+
+  state.courseData.forEach((step) => {
+    const qList = extractQuizzesFromStep(step);
+    totalQuizzes += qList.length;
+    qList.forEach((q) => {
+      if (state.submittedQuizIds.has(q.id)) {
+        passedQuizzes++;
+      }
+    });
+  });
+
+  const accuracy = totalQuizzes > 0 ? Math.round((passedQuizzes / totalQuizzes) * 100) : 100;
+  const challengeCount = state.submittedChallenges ? state.submittedChallenges.size : 0;
+  const isCompleted = passedQuizzes >= Math.max(1, Math.floor(totalQuizzes * 0.7));
+
+  // Update Score Report Grid
+  if (el.reportQuizzesCount) el.reportQuizzesCount.textContent = `${passedQuizzes} / ${totalQuizzes}`;
+  if (el.reportAccuracy) el.reportAccuracy.textContent = `${accuracy}%`;
+  if (el.reportChallengesCount) el.reportChallengesCount.textContent = `${challengeCount}`;
+  if (el.reportStatus) {
+    el.reportStatus.textContent = passedQuizzes >= totalQuizzes ? 'LULUS (PERFECT)' : (isCompleted ? 'LULUS' : 'PROGRES');
+  }
+
+  // Update Printable Certificate
+  if (el.certStudentName) {
+    el.certStudentName.textContent = state.student.name || 'Peserta Pembelajaran';
+  }
+  if (el.certStudentSchool) {
+    const school = state.student.school || 'Sekolah Mitra UOB';
+    const rombel = state.student.rombel ? ` · ${state.student.rombel}` : '';
+    const level = state.student.level ? ` (${state.student.level})` : '';
+    el.certStudentSchool.textContent = `${school}${rombel}${level}`;
+  }
+  if (el.certProgramName) {
+    el.certProgramName.textContent =
+      state.student.level === 'SMA'
+        ? 'Asynchronous Coding Exploration: Python for High School'
+        : state.student.level === 'SMP'
+        ? 'Asynchronous Coding Exploration: MIT App Inventor for Middle School'
+        : 'Asynchronous Coding Exploration: Scratch Visual Coding for Primary School';
+  }
+  if (el.certSerialNo) {
+    const hash = Math.abs(hashString((state.student.email || 'user') + (state.student.school || 'uob'))).toString().padStart(6, '0').slice(0, 6);
+    el.certSerialNo.textContent = `MDS-2026-${state.student.level || 'GEN'}-${hash}`;
+  }
+  if (el.certDateText) {
+    const now = new Date();
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    el.certDateText.textContent = `Diterbitkan pada: ${now.toLocaleDateString('id-ID', options)}`;
+  }
+
+  el.certificateModal.showModal();
+}
+
+function setupCertificateModalEvents() {
+  if (el.btnOpenCertificate) {
+    el.btnOpenCertificate.addEventListener('click', openCertificateModal);
+  }
+  if (el.btnDropdownCert) {
+    el.btnDropdownCert.addEventListener('click', () => {
+      if (el.profileDropdown) el.profileDropdown.hidden = true;
+      openCertificateModal();
+    });
+  }
+  if (el.btnCloseCertModal) {
+    el.btnCloseCertModal.addEventListener('click', () => {
+      el.certificateModal.close();
+    });
+  }
+  if (el.btnDismissCertificate) {
+    el.btnDismissCertificate.addEventListener('click', () => {
+      el.certificateModal.close();
+    });
+  }
+  if (el.btnPrintCertificate) {
+    el.btnPrintCertificate.addEventListener('click', () => {
+      window.print();
+    });
+  }
+}
+
