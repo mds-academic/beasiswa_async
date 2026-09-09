@@ -2884,6 +2884,9 @@ function renderChallengePanel(step, index) {
       el.challengeSubmitFeedback.textContent = `✓ Karya tantangan telah tersimpan (${new Date(savedCh.timestamp).toLocaleTimeString('id-ID')}). Kamu bisa memperbaruinya kapan saja!`;
     }
   } else {
+    if (el.challengeCodeEditor) el.challengeCodeEditor.value = '';
+    if (el.challengeUrlInput) el.challengeUrlInput.value = '';
+    if (el.fileSelectedName) el.fileSelectedName.textContent = 'Belum ada file dipilih';
     if (el.challengeSubmitFeedback) el.challengeSubmitFeedback.style.display = 'none';
   }
 }
@@ -2905,9 +2908,11 @@ function setupChallengePanelEvents() {
       const codeVal = el.challengeCodeEditor?.value?.trim() || '';
       const urlVal = el.challengeUrlInput?.value?.trim() || '';
       const file = el.challengeFileInput?.files?.[0];
-      const fileName = file ? file.name : (el.fileSelectedName?.textContent.replace(/^✓\s*|^📄\s*/, '') || '');
+      const rawFileName = el.fileSelectedName?.textContent?.trim() || '';
+      const hasRealFile = file || (rawFileName && !rawFileName.toLowerCase().includes('belum ada file') && !rawFileName.toLowerCase().includes('tidak ada file'));
+      const fileName = file ? file.name : (hasRealFile ? rawFileName.replace(/^✓\s*|^📄\s*/, '') : '');
 
-      if (!codeVal && !urlVal && !file && !fileName) {
+      if (!codeVal && !urlVal && !fileName) {
         showAppAlert({
           title: 'Karya Proyek Kosong',
           message: 'Silakan tulis kode pada editor, masukkan tautan proyek Scratch/MIT App Inventor, atau unggah berkas karya proyek kamu terlebih dahulu.',
