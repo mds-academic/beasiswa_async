@@ -30,3 +30,13 @@
 
 - YouTube tidak boleh memulai saat `goToStep()`/render; `onReady` sekarang mem-pause player dan event PLAYING hydration ditolak.
 - Untuk unit `introMode: "bumper"`, urutan dipaksa: klik Play → bumper selesai → YouTube play. Tidak bersamaan.
+
+## Update 2026-09-09 — Redesain Sertifikat (Landscape A4) & Transkrip Nilai (Portrait A4)
+
+- **Vendor & Aset**: Menggunakan `html2pdf.bundle.min.js` lokal dan aset logo Base64 Data URI (`logo-assets.js`) untuk menjamin 100% bebas error CORS saat diekspor offline.
+- **Halaman 1 (Landscape A4)**: Sertifikat Kelulusan resmi berpenampilan mewah skeuomorphic (frame regalia navy/gold, segel emas 3D embossed UOB MDS, tipografi berwibawa, dan nama siswa bebas hyperlink underline).
+- **Halaman 2 (Portrait A4)**: Transkrip Nilai kompak 36 baris materi dengan ringkasan 4 pilar computational thinking dan perincian nilai kuis riil (skor 0 tetap tercatat).
+- **Ekspor Multi-Orientasi**: Fungsi `exportCertificateToPdf()` merender Halaman 1 (`landscape`) dan Halaman 2 (`portrait`) ke dalam 1 file PDF A4 utuh 2 halaman melalui canvas retina 2x di kontainer terisolasi `#cert-render-sandbox`.
+- **Eligibility Guard & Admin Preview**: Validasi kelulusan terpusat (seluruh materi selesai, semua kuis tersubmit, akurasi >= 70%). Akses akun admin yang belum menyelesaikan materi menampilkan watermark transparan `[PRATINJAU DOKUMEN · VERIFIKASI ADMIN]`.
+- **Verifikasi & Publikasi**: Lolos 8/8 uji otomatis Playwright (`test_certificate_pdf_export.py`), disinkronkan ke folder `docs/`, di-commit (`0f3d7d6`), dan di-push ke GitHub remote `origin main`.
+

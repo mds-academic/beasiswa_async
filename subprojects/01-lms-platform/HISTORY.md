@@ -1146,4 +1146,34 @@ Belum ada kode sertifikat yang dijalankan pada turn ini. Silakan konfirmasi pers
 > oke go ahead publish yah
 
 ### Status
-- **In Execution** — Menjalankan eksekusi 2 tahap: Tahap A (vendor lokal html2pdf, aset logo bebas CORS, isolated fixed A4 sandbox renderer, server-first data contract, export multi-orientasi) dan Tahap B (visual polish regalia certificate, compact transcript, QA Playwright binary PDF, sinkronisasi ke docs/).
+- **completed** — Redesain sertifikat kelulusan (Landscape A4) dan transkrip nilai (Portrait A4) selesai diimplementasikan, diverifikasi lulus 8/8 pengujian otomatis Playwright (termasuk validasi binary PDF), disinkronkan ke folder live deploy `docs/`, dan dipublikasikan via Git commit `0f3d7d6` serta di-push ke remote `origin main`.
+
+### Actions Taken
+1. **Penyediaan Vendor Lokal & Aset Bebas CORS**:
+   - Menautkan `src/vendor/html2pdf.bundle.min.js` di `src/index.html` dan `docs/index.html`.
+   - Mengonversi logo resmi Ruangguru dan UOB MDS ke Base64 Data URI di `src/assets/logos/logo-assets.js` sehingga 100% bebas dari CORS tainted canvas saat diekspor ke PDF offline.
+2. **Implementasi UI Modal & Sandbox Render Terisolasi**:
+   - Mengubah modal sertifikat menjadi sistem 2 halaman: Halaman 1 Landscape A4 (`aspect-ratio: 297 / 210`) dan Halaman 2 Portrait A4 (`aspect-ratio: 210 / 297`).
+   - Merancang desain mewah skeuomorphic: border Regalia navy & emas berornamen sudut klasik, guilloche rosette watermark, segel emas 3D embossed resmi UOB My Digital Space, dan tipografi serif berwibawa tanpa garis bawah hyperlink pada nama siswa.
+   - Merancang transkrip nilai kompak 36 baris dengan summary box 4 pilar computational thinking dan tabel modular rapi.
+   - Menyediakan kontainer render terisolasi di luar viewport (`#cert-render-sandbox`) dengan ukuran standar fixed A4 96 DPI (`1123 × 794 px` landscape & `794 × 1123 px` portrait) berskala 2x retina.
+3. **Logika Ekspor PDF Multi-Orientasi & Eligibility Guard**:
+   - Mengimplementasikan `exportCertificateToPdf()`: merender Halaman 1 ke canvas landscape lalu memasukkan ke `jsPDF` (`orientation: 'landscape', format: 'a4', unit: 'mm'`), lalu menambahkan Halaman 2 via `doc.addPage('a4', 'portrait')` dan memasukkan canvas portrait, menghasilkan 1 berkas PDF utuh 2 halaman multi-orientasi.
+   - Menyediakan tombol `#btn-print-certificate` untuk unduh berkas PDF dan `#btn-browser-print` untuk cetak native browser.
+   - Menetapkan eligibility guard terpusat `evaluateStudentEligibility()`: validasi ketuntasan seluruh modul, seluruh kuis tersubmit, akurasi >= 70%, dan skor kuis riil (termasuk 0 jika salah 3x).
+   - Menambahkan watermark transparan `[PRATINJAU DOKUMEN · VERIFIKASI ADMIN]` dan label status verifikasi jika dibuka oleh Admin yang belum menuntaskan materi.
+   - Menerbitkan nomor seri resmi `UOB-MDS-[JENJANG]-2026-[HASH]` dan tanggal kelulusan aktual.
+4. **Verifikasi Otomatis Playwright (8/8 PASS)**:
+   - Menjalankan `scratch/test_certificate_pdf_export.py` pada browser Chromium headless:
+     - Login Admin SMA UOB berhasil.
+     - Modal terbuka dengan tab sertifikat aktif.
+     - Halaman 1 berdimensi Landscape (w=980, h=693, aspect=1.41).
+     - Halaman 2 berdimensi Portrait (w=800, h=1412, aspect=0.57).
+     - Nama siswa tanpa garis bawah biru (`text-decoration-line: none`).
+     - Tabel transkrip merender 36 baris modul SMA secara utuh.
+     - File PDF diunduh nyata (ukuran ~356 KB).
+     - Binary PDF divalidasi regex: tepat 2 `/Page`, MediaBox Halaman 1 `841.89 × 595.28 pt` (Landscape A4), MediaBox Halaman 2 `595.28 × 841.89 pt` (Portrait A4).
+5. **Publikasi & Git Push**:
+   - Menyinkronkan seluruh perubahan dari `subprojects/01-lms-platform/src/` ke `docs/`.
+   - Membuat git commit `0f3d7d6` (`feat(certificate): implement landscape a4 certificate and portrait transcript with html2pdf export`).
+   - Melakukan `git push origin main` ke upstream repository `git@github.com:mds-academic/beasiswa_async.git`.
