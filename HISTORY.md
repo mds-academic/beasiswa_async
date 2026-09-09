@@ -1998,3 +1998,28 @@ Clarified that the detailed explanation from the previous response had not yet b
 
 ### Assistant Verbatim Response (Turn 2026-09-09T09:14:00+07:00)
 
+
+## 2026-09-09 — Full Guide Inserted Into Spreadsheet
+
+### User request
+> ya masukin dongg
+
+### Assistant action
+Inserted the complete detailed operational guide into live tab `How to Use LMS` at `A1:B53`, including quick links, purpose and permissions for every tab, student onboarding, required fields, typo-email correction, result definitions, certificate workflow/statuses, academic-only materia documentation, audit log requirements, security rules, and definition of done. Re-read `A1:B53` through the browser clipboard and confirmed 53 rows were present.
+
+### Status
+implemented and verified in live Spreadsheet.
+
+---
+
+## 2026-09-09 — GitHub Pages Live URL & Remote Sync
+
+### User request
+> eh ini link github page nya mana
+
+### Assistant action
+Checked git remote configuration for the project (`git@github.com:mds-academic/beasiswa_async.git`), pushed local commits (`08e6b23`) to `origin/main`, verified live deployment status (`HTTP/2 200`), and provided direct links to the GitHub Pages portal.
+
+### Status
+completed and verified live.
+
