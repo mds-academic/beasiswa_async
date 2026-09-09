@@ -1,0 +1,61 @@
+{
+  "kicker": "Materi Jembatan 03 · Logika Game",
+  "title": "Input, Sensing, dan Keputusan di Racing Car",
+  "summary": "Jembatan sebelum coding Racing Car dengan blok Scratch aktual.",
+  "id": "bridge-sd-03",
+  "type": "slide",
+  "level": "SD",
+  "totalSlides": 5,
+  "slideUrl": "./slides/bridge-sd-03.html",
+  "embedUrl": "slides/bridge-sd-03.html",
+  "prerequisiteStepIds": [],
+  "learningObjectives": [
+    "Memahami input keyboard",
+    "Memahami loop pengecekan",
+    "Menggunakan Sensing dan If Then untuk aturan game"
+  ],
+  "practice": {
+    "type": "guided_reading",
+    "description": "Menyelesaikan pembacaan, observasi visual, dan checkpoint quiz."
+  },
+  "completionCriteria": {
+    "quizScoreMin": 100,
+    "interactiveCompleted": true,
+    "description": "Menyelesaikan semua slide dan checkpoint quiz."
+  },
+  "bookmarks": [
+    {
+      "slideIndex": 0,
+      "label": "Game membutuhkan input"
+    },
+    {
+      "slideIndex": 1,
+      "label": "Gerak dan pengulangan"
+    },
+    {
+      "slideIndex": 2,
+      "label": "Sensing bertanya kepada game"
+    },
+    {
+      "slideIndex": 3,
+      "label": "If membuat aturan"
+    },
+    {
+      "slideIndex": 4,
+      "label": "Racing Car: urutan kerja"
+    }
+  ],
+  "quizzes": [
+    {
+      "question": "Checkpoint tersedia di dalam slide interaktif.",
+      "options": [
+        "Baca ulang slide",
+        "Lanjut tanpa mencoba",
+        "Tutup materi"
+      ],
+      "answer": 0,
+      "explanation": "Baca ulang bagian yang belum jelas lalu coba lagi.",
+      "embedded": true
+    }
+  ]
+}

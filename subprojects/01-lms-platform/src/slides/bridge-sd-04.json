@@ -1,0 +1,70 @@
+{
+  "kicker": "Materi Jembatan 04 · Data dan Koordinasi",
+  "title": "Variable, Broadcast, dan Project Integratif",
+  "summary": "Jembatan sebelum Increase Your Earnings dengan visual blok Scratch aktual.",
+  "id": "bridge-sd-04",
+  "type": "slide",
+  "level": "SD",
+  "totalSlides": 7,
+  "slideUrl": "./slides/bridge-sd-04.html",
+  "embedUrl": "slides/bridge-sd-04.html",
+  "prerequisiteStepIds": [],
+  "learningObjectives": [
+    "Menjelaskan variable sebagai penyimpan nilai",
+    "Membuat counter Score atau Credit",
+    "Menjelaskan Broadcast sebagai pesan antar-Sprite",
+    "Menghubungkan backdrop, kondisi, dan ending"
+  ],
+  "practice": {
+    "type": "guided_reading",
+    "description": "Menyelesaikan pembacaan, observasi visual, dan checkpoint quiz."
+  },
+  "completionCriteria": {
+    "quizScoreMin": 100,
+    "interactiveCompleted": true,
+    "description": "Menyelesaikan semua slide dan checkpoint quiz."
+  },
+  "bookmarks": [
+    {
+      "slideIndex": 0,
+      "label": "Variable adalah kotak nilai"
+    },
+    {
+      "slideIndex": 1,
+      "label": "Atur nilai awal"
+    },
+    {
+      "slideIndex": 2,
+      "label": "Broadcast adalah pesan"
+    },
+    {
+      "slideIndex": 3,
+      "label": "Backdrop adalah babak cerita"
+    },
+    {
+      "slideIndex": 4,
+      "label": "Increase Your Earnings"
+    },
+    {
+      "slideIndex": 5,
+      "label": "Checklist sebelum capstone"
+    },
+    {
+      "slideIndex": 6,
+      "label": "Peta Scratch Async SD"
+    }
+  ],
+  "quizzes": [
+    {
+      "question": "Checkpoint tersedia di dalam slide interaktif.",
+      "options": [
+        "Baca ulang slide",
+        "Lanjut tanpa mencoba",
+        "Tutup materi"
+      ],
+      "answer": 0,
+      "explanation": "Baca ulang bagian yang belum jelas lalu coba lagi.",
+      "embedded": true
+    }
+  ]
+}

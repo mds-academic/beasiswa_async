@@ -629,3 +629,76 @@ Checkpoint Git lokal: `0b4b319` (`fix(curriculum): align scratch slides with bri
 - Structural validation berhasil; browser visual QA tertunda karena permission error Chromium.
 - Dataset produksi tidak diubah.
 - Git checkpoint lokal: `0b4b319`.
+
+## 2026-09-09 — Eksekusi implementation plan Scratch Async SD
+
+### User
+> /Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/02-curriculum-sequencing/planning/02-implementation-plan-scratch-async-sd.md
+>
+> jalankan ini yah
+
+### Status
+- **approved / implementation requested** — pengguna meminta plan Scratch Async SD dijalankan.
+
+### Actions
+- Incoming request logged before implementation.
+
+### Assistant Response — 2026-09-09
+
+Plan-nya sudah aku jalankan sampai tahap integrasi dataset, bukan hanya membuat draft slides.
+
+Yang sudah dilakukan:
+
+1. Mengubah jalur SD menjadi enam modul:
+   - Bridge 00 — Kenalan dengan Scratch
+   - About Me — Project 1
+   - Bridge 02 — Loop dan Animasi
+   - Racing Car — Project 2
+   - Bridge 04 — Variable dan Koordinasi Project
+   - Increase Your Earnings — Project 3 / Capstone
+2. Memasukkan lima bridge slide sebagai step `slide`.
+3. Memasukkan seluruh 17 video playlist sebagai step `video` terpisah.
+4. Menjaga tiga project tetap terpisah; tidak ada stitching antar-project.
+5. Menyalin bridge HTML, JSON, dan aset Scratch ke Subproject 01 LMS.
+6. Menyinkronkan dataset ke tiga mirror:
+   - `output/courseData-upperprimary.json`
+   - `subprojects/01-lms-platform/src/data/courseData-upperprimary.json`
+   - `docs/data/courseData-upperprimary.json`
+
+Hasil integrasi: **6 modul, 22 step**.
+
+Struktur step-nya:
+
+- Modul 0: 1 bridge
+- Modul 1: 1 bridge + 7 video About Me
+- Modul 2: 1 bridge
+- Modul 3: 1 bridge + 6 video Racing Car
+- Modul 4: 1 bridge
+- Modul 5: 4 video Increase Your Earnings
+
+Validasi yang berhasil:
+
+- JSON valid.
+- Ketiga dataset mirror memiliki ukuran dan isi identik.
+- Semua 5 bridge tersedia di subproject, LMS source, dan docs.
+- Semua gambar lokal yang direferensikan slide tersedia.
+- Semua bridge memakai `content-card`, banner, navigasi, dan progress bar dari design system existing.
+- Tidak ada text-code block palsu pada bridge.
+
+Aku juga memperbarui status plan menjadi `implemented — pending user/UAT approval` dan menambahkan hasil implementasinya ke plan.
+
+Catatan: belum menjalankan sinkronisasi ke Google Spreadsheet atau deployment production karena plan acceptance criteria masih meminta UAT/review dan approval sebelum publish. Materi sumber lama tetap tidak disentuh.
+
+Script integrasi yang dibuat:
+`scripts/sync_scratch_sd_curriculum.py`
+
+Checkpoint Git lokal: akan dibuat setelah pencatatan perubahan turn ini.
+
+### Actions / Artifacts
+- Mengintegrasikan `courseData-upperprimary.json` ke tiga mirror.
+- Menyalin 5 bridge + metadata + aset ke LMS source dan docs.
+- Membuat script sync `scripts/sync_scratch_sd_curriculum.py`.
+- Memperbarui plan dan STATE.
+- Structural validation dataset, bridge, bookmark, dan asset berhasil.
+- UAT browser LMS dan spreadsheet belum dijalankan.
+- Dataset sumber lama tidak dimodifikasi.

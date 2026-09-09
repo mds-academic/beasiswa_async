@@ -1,6 +1,6 @@
 # 02 — Implementation Plan: Scratch Async SD Scaffolding
 
-**Status:** `implemented draft / under discussion`  
+**Status:** `implemented — pending user/UAT approval`  
 **Tanggal:** 2026-09-09
 
 ## Tujuan
@@ -139,6 +139,15 @@ Jika ingin cakupan Scratch lebih lengkap, buat extension terpisah setelah capsto
 4. Setiap bridge memiliki objective, practice, completion criteria, bookmark, dan sumber.
 5. LMS owner menyetujui mapping ID sebelum `courseData-upperprimary.json` diubah.
 6. Tidak ada materi sumber lama yang dimodifikasi.
+7. Dataset SD terintegrasi ke `output/`, Subproject 01, dan `docs/`; seluruh mirror identik dan berisi 22 step.
+
+## Implementasi yang sudah dijalankan
+
+- Jalur enam modul dibuat: Bridge 00 → About Me → Bridge 02 → Racing Car → Bridge 04 → Increase Your Earnings.
+- Playlist tutorial tetap sebagai video terpisah; tidak ada stitching project.
+- Lima bridge disalin ke `subprojects/01-lms-platform/src/slides/` dan `docs/slides/`.
+- `courseData-upperprimary.json` diperbarui di tiga mirror dengan 22 step.
+- Visual bridge memakai design system existing dan aset Scratch aktual lokal.
 
 ## Keputusan yang masih terbuka
 

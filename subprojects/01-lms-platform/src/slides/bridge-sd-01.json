@@ -1,0 +1,61 @@
+{
+  "kicker": "Materi Jembatan 01 · Project About Me",
+  "title": "Dari Karakter ke Kode: Sprite, Costume, dan Event",
+  "summary": "Jembatan sebelum playlist About Me dengan visual Scratch aktual.",
+  "id": "bridge-sd-01",
+  "type": "slide",
+  "level": "SD",
+  "totalSlides": 5,
+  "slideUrl": "./slides/bridge-sd-01.html",
+  "embedUrl": "slides/bridge-sd-01.html",
+  "prerequisiteStepIds": [],
+  "learningObjectives": [
+    "Membedakan Sprite, Costume, dan Backdrop",
+    "Menggunakan event green flag dan sprite click",
+    "Menggabungkan Looks dan Sound untuk perkenalan"
+  ],
+  "practice": {
+    "type": "guided_reading",
+    "description": "Menyelesaikan pembacaan, observasi visual, dan checkpoint quiz."
+  },
+  "completionCriteria": {
+    "quizScoreMin": 100,
+    "interactiveCompleted": true,
+    "description": "Menyelesaikan semua slide dan checkpoint quiz."
+  },
+  "bookmarks": [
+    {
+      "slideIndex": 0,
+      "label": "Siapkan Project About Me"
+    },
+    {
+      "slideIndex": 1,
+      "label": "Sprite, Costume, Backdrop"
+    },
+    {
+      "slideIndex": 2,
+      "label": "Event membuat project bereaksi"
+    },
+    {
+      "slideIndex": 3,
+      "label": "Tambahkan suara dan cerita"
+    },
+    {
+      "slideIndex": 4,
+      "label": "Tantangan About Me"
+    }
+  ],
+  "quizzes": [
+    {
+      "question": "Checkpoint tersedia di dalam slide interaktif.",
+      "options": [
+        "Baca ulang slide",
+        "Lanjut tanpa mencoba",
+        "Tutup materi"
+      ],
+      "answer": 0,
+      "explanation": "Baca ulang bagian yang belum jelas lalu coba lagi.",
+      "embedded": true
+    }
+  ]
+}
