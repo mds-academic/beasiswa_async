@@ -736,3 +736,45 @@ Checkpoint Git lokal: `e816654` (`feat(curriculum): integrate scratch async sd p
 - Plan Scratch SD dijalankan sampai integrasi dataset dan mirror LMS/docs.
 - Dataset produksi sumber lama tidak dimodifikasi.
 - UAT browser, spreadsheet sync, dan production deployment masih terbuka.
+
+## 2026-09-09 — Permintaan lokasi untuk mengecek hasil implementasi
+
+### User
+> mana aku mau cek ??
+
+### Status
+- **under discussion** — pengguna meminta lokasi/entry point untuk memeriksa hasil integrasi Scratch SD.
+
+### Actions
+- Incoming request logged before response.
+
+### Assistant Response — 2026-09-09
+
+Bisa cek di sini:
+
+**1. LMS terintegrasi — jalur SD**
+
+[ buka LMS Scratch SD lokal ](http://127.0.0.1:4173/)
+
+Server lokal sedang berjalan dari `subprojects/01-lms-platform/src` di port `4173`. Pilih grade/jenjang SD jika diminta platform.
+
+**2. Cek langsung lima bridge slide**
+
+- [Bridge 00 — Kenalan Scratch](http://127.0.0.1:4173/slides/bridge-sd-00.html)
+- [Bridge 01 — About Me](http://127.0.0.1:4173/slides/bridge-sd-01.html)
+- [Bridge 02 — Loop dan Animasi](http://127.0.0.1:4173/slides/bridge-sd-02.html)
+- [Bridge 03 — Racing Car Logic](http://127.0.0.1:4173/slides/bridge-sd-03.html)
+- [Bridge 04 — Variable dan Broadcast](http://127.0.0.1:4173/slides/bridge-sd-04.html)
+
+Jalur di LMS yang sudah diintegrasikan adalah:
+
+`Bridge 00 → About Me → Bridge 02 → Racing Car → Bridge 04 → Increase Your Earnings`
+
+Kalau mau cek file source langsung:
+
+- [courseData-upperprimary.json](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/02-curriculum-sequencing/output/courseData-upperprimary.json)
+- [Folder slides](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/02-curriculum-sequencing/slides/)
+
+### Actions / Artifacts
+- Menyalakan local LMS server pada port 4173 dari Subproject 01 `src`.
+- Menyediakan entry point LMS dan direct links ke seluruh bridge SD.
