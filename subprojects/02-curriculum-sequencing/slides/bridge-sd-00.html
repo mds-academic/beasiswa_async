@@ -1,4 +1,13 @@
-<!DOCTYPE html><html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Scratch dari Nol: Kenalan dengan Platformnya</title><style>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scratch dari Nol: Kenalan dengan Platform Coding Visual</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Fira+Code:wght@500;600&display=swap" rel="stylesheet">
+    <style>
         * {
             box-sizing: border-box;
             margin: 0;
@@ -6,23 +15,24 @@
         }
 
         :root {
-            --yellow: #FFE500;
-            --blue: #00C6FF;
-            --black: #1A1A1A;
+            --scratch-orange: #FFAB19;
+            --scratch-blue: #4C97FF;
+            --scratch-purple: #9966FF;
+            --scratch-yellow: #FFBF00;
+            --scratch-green: #59C059;
+            --scratch-red: #FF6680;
+            --dark: #1E1E2F;
+            --black: #111827;
             --white: #FFFFFF;
-            --bg-light: #E8E8E8;
-            --green: #00E676;
-            --pink: #FF9DE2;
-            --red: #FF0055;
-            --purple: #C084FC;
-            --orange: #FF9800;
+            --bg-page: #F3F4F6;
+            --card-bg: #FFFFFF;
         }
 
         body {
-            background-color: var(--bg-light);
-            background-image: radial-gradient(#bcbcbc 2px, transparent 2px);
-            background-size: 30px 30px;
-            font-family: 'Fredoka', sans-serif;
+            background-color: var(--bg-page);
+            background-image: radial-gradient(#d1d5db 2px, transparent 2px);
+            background-size: 28px 28px;
+            font-family: 'Fredoka', 'Plus Jakarta Sans', sans-serif;
             color: var(--black);
             overflow: hidden;
             height: 100vh;
@@ -31,179 +41,186 @@
             align-items: center;
         }
 
-        /* App Container (Landscape 16:9 Simulator) */
         .app-container {
-            position: relative; z-index: 10;
-            width: 98vw; max-width: 1400px;
-            height: 98vh; max-height: 900px;
-            display: flex; flex-direction: column;
+            position: relative;
+            z-index: 10;
+            width: 98vw;
+            max-width: 1380px;
+            height: 98vh;
+            max-height: 880px;
+            display: flex;
+            flex-direction: column;
         }
 
         /* Header Layout */
         .header {
-            display: flex; justify-content: flex-start; align-items: flex-start;
-            padding: 25px 50px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 14px 40px 6px;
             position: relative;
             width: 100%;
         }
 
-        /* Banner Centered at Top */
-        .banner-container { 
-            position: absolute; top: 20px; left: 0; width: 100%;
-            text-align: center; display: flex; flex-direction: column; align-items: center; 
-            z-index: 10; pointer-events: none;
+        .banner-container {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            pointer-events: none;
         }
-        
+
         .banner-shape {
-            background-color: var(--blue);
-            padding: 10px 50px;
-            border: 4px solid var(--black);
-            border-radius: 12px;
-            box-shadow: 6px 6px 0px var(--black);
+            background: linear-gradient(135deg, #4C97FF, #3373CC);
+            padding: 8px 42px;
+            border: 3.5px solid var(--black);
+            border-radius: 14px;
+            box-shadow: 5px 5px 0px var(--black);
             display: inline-block;
         }
-        
-        .banner-text { 
-            font-size: 26px; font-weight: 700; letter-spacing: 2px; color: var(--white); 
-            text-shadow: 2px 2px 0px var(--black), -1px -1px 0px var(--black), 1px -1px 0px var(--black), -1px 1px 0px var(--black), 1px 1px 0px var(--black);
+
+        .banner-text {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            color: var(--white);
+            text-shadow: 2px 2px 0px var(--black);
         }
-        
+
         .banner-subtitle {
-            background-color: var(--yellow); 
-            color: var(--black); 
-            padding: 6px 36px; 
-            font-size: 15px; font-weight: 700;
+            background-color: var(--scratch-orange);
+            color: var(--black);
+            padding: 5px 28px;
+            font-size: 14px;
+            font-weight: 700;
             border: 3px solid var(--black);
-            border-radius: 20px; 
-            margin-top: -12px; 
-            text-transform: uppercase; letter-spacing: 1px;
-            box-shadow: 4px 4px 0px var(--black);
+            border-radius: 20px;
+            margin-top: -10px;
+            letter-spacing: 1px;
+            box-shadow: 3px 3px 0px var(--black);
             display: inline-block;
         }
 
         /* Slides Area */
         .slides-area {
-            flex: 1; position: relative; margin: 25px 50px 0; perspective: 1200px;
-            min-height: 0; 
+            flex: 1;
+            position: relative;
+            margin: 14px 40px 0;
+            perspective: 1200px;
+            min-height: 0;
         }
 
         .slide {
-            position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
             display: none;
         }
-        
-        .slide.active { 
-            display: block; 
-            animation: popIn 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+
+        .slide.active {
+            display: block;
+            animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
         }
 
         @keyframes popIn {
-            from { opacity: 0; transform: scale(0.96) translateY(15px); }
+            from { opacity: 0; transform: scale(0.97) translateY(12px); }
             to { opacity: 1; transform: scale(1) translateY(0); }
         }
 
         .content-card {
             background-color: var(--white);
-            border: 4px solid var(--black); 
-            border-radius: 24px;
-            padding: 35px 55px; 
-            box-shadow: 12px 12px 0px var(--black);
-            width: 100%; height: 100%; 
+            border: 4px solid var(--black);
+            border-radius: 22px;
+            padding: 28px 45px;
+            box-shadow: 10px 10px 0px var(--black);
+            width: 100%;
+            height: 100%;
             overflow-y: auto;
             display: flex;
             position: relative;
         }
 
-        .content-card::-webkit-scrollbar { width: 14px; }
-        .content-card::-webkit-scrollbar-track { background: var(--bg-light); border-left: 3px solid var(--black); border-radius: 0 20px 20px 0; }
-        .content-card::-webkit-scrollbar-thumb { background: var(--blue); border: 3px solid var(--black); border-radius: 10px; }
+        .content-card::-webkit-scrollbar { width: 12px; }
+        .content-card::-webkit-scrollbar-track { background: #E5E7EB; border-left: 2px solid var(--black); border-radius: 0 18px 18px 0; }
+        .content-card::-webkit-scrollbar-thumb { background: var(--scratch-blue); border: 2px solid var(--black); border-radius: 8px; }
 
-        /* Decorative corner dot */
-        .content-card::after {
-            content: '';
-            position: absolute;
-            top: -15px; right: 30px;
-            width: 40px; height: 40px;
-            background-color: var(--yellow);
-            border: 3px solid var(--black);
-            border-radius: 50%;
-            box-shadow: 4px 4px 0px var(--black);
-            z-index: 5;
-        }
-
-        /* Inner container */
         .inner-content {
-            max-width: 960px;
+            max-width: 1080px;
             margin: auto;
             width: 100%;
             position: relative;
             z-index: 10;
         }
 
-        .slide-title {
-            font-size: 30px; font-weight: 700; color: var(--black); 
-            margin-bottom: 22px; line-height: 1.3;
-            background-color: var(--yellow);
-            display: inline-block;
+        .slide-title-tag {
+            font-size: 26px;
+            font-weight: 700;
+            color: var(--black);
+            margin-bottom: 18px;
+            background-color: var(--scratch-yellow);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
             padding: 8px 24px;
+            border: 3.5px solid var(--black);
+            border-radius: 12px;
+            box-shadow: 4px 4px 0px var(--black);
+        }
+
+        .slide-text {
+            font-size: 19px;
+            line-height: 1.6;
+            color: #1F2937;
+            font-weight: 500;
+        }
+
+        .slide-text p { margin-bottom: 16px; }
+
+        .callout-box {
+            background-color: #FEF3C7;
+            border: 3.5px solid var(--black);
+            border-radius: 16px;
+            padding: 16px 22px;
+            margin: 18px 0;
+            font-weight: 600;
+            color: var(--black);
+            font-size: 18px;
+            box-shadow: 5px 5px 0px var(--scratch-orange);
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .callout-link-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, #FF6680, #E60049);
+            color: var(--white);
+            text-decoration: none;
+            font-family: inherit;
+            font-weight: 700;
+            font-size: 17px;
+            padding: 10px 22px;
             border: 3px solid var(--black);
             border-radius: 12px;
-            box-shadow: 5px 5px 0px var(--black);
+            box-shadow: 4px 4px 0px var(--black);
+            transition: all 0.1s;
         }
 
-        .slide-text { font-size: 20px; line-height: 1.6; color: var(--black); font-weight: 600; }
-        .slide-text p { margin-bottom: 18px; }
-        .slide-text ul { padding-left: 35px; margin-bottom: 20px; }
-        .slide-text li { margin-bottom: 12px; position: relative; list-style-type: none; }
-        .slide-text li::before {
-            content: '▶';
-            color: var(--blue);
-            position: absolute;
-            left: -30px;
-            font-size: 18px;
-            -webkit-text-stroke: 1px var(--black);
-        }
-        
-        .slide-text strong { 
-            color: var(--black); 
-            background-color: var(--blue); 
-            padding: 2px 10px; 
-            border: 2px solid var(--black);
-            border-radius: 6px; 
-            font-weight: 700; 
-            box-shadow: 2px 2px 0px var(--black);
-            display: inline-block;
+        .callout-link-btn:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px var(--black);
+            background: #FF4D6D;
         }
 
-        .quote-box {
-            background-color: var(--yellow); 
-            border: 4px solid var(--black);
-            padding: 18px 26px; 
-            border-radius: 16px; 
-            margin: 22px 0; 
-            font-weight: 700; color: var(--black); font-size: 21px;
-            box-shadow: 6px 6px 0px var(--blue);
-            position: relative;
-        }
-
-        .code-block {
-            background-color: var(--black); 
-            border: 4px solid var(--black); border-radius: 16px;
-            padding: 20px 26px; font-family: 'Consolas', 'Courier New', monospace; font-size: 20px;
-            color: var(--white); overflow-x: auto; margin: 20px 0; 
-            box-shadow: 6px 6px 0px var(--yellow); 
-            line-height: 1.5;
-            text-align: left;
-        }
-
-        /* Real Screenshot Frame */
+        /* Screenshot Frame */
         .screenshot-box {
-            margin: 20px 0;
-            background: #FAFAFA;
-            border: 4px solid var(--black);
-            border-radius: 18px;
+            margin: 18px 0;
+            background: #F9FAFB;
+            border: 3.5px solid var(--black);
+            border-radius: 16px;
             padding: 12px;
-            box-shadow: 8px 8px 0px var(--black);
+            box-shadow: 6px 6px 0px var(--black);
             text-align: center;
         }
 
@@ -211,243 +228,584 @@
             width: 100%;
             max-height: 380px;
             object-fit: contain;
-            border: 3px solid var(--black);
-            border-radius: 12px;
+            border: 2px solid var(--black);
+            border-radius: 10px;
             background: #FFFFFF;
             display: block;
+            margin: 0 auto;
         }
 
         .screenshot-caption {
             margin-top: 10px;
             font-size: 15px;
             font-weight: 700;
-            color: #333;
+            color: #374151;
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 8px;
         }
 
-        /* 2-Column Side-by-Side */
+        /* 2-Column Grid */
         .two-column {
-            display: flex;
-            gap: 25px;
-            align-items: flex-start;
-            margin: 20px 0;
-        }
-
-        .two-column > * {
-            flex: 1;
-        }
-
-        /* Tables */
-        .styled-table {
-            width: 100%;
-            border-collapse: collapse;
-            background-color: var(--white);
-            border: 4px solid var(--black);
-            box-shadow: 6px 6px 0px var(--black);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
             margin: 18px 0;
-            font-size: 17px;
         }
 
-        .styled-table th {
-            background-color: var(--yellow);
-            color: var(--black);
-            padding: 12px 16px;
-            border: 2px solid var(--black);
-            text-align: left;
-            font-weight: 700;
-        }
-
-        .styled-table td {
-            padding: 10px 16px;
-            border: 2px solid var(--black);
-            font-weight: 600;
-        }
-
-        .styled-table tr:nth-child(even) {
-            background-color: #F8FAFC;
-        }
-
-        /* Card Callout Boxes */
-        .feature-card {
-            background-color: #F0F9FF;
+        .mini-card {
+            background: #FFFFFF;
             border: 3px solid var(--black);
             border-radius: 14px;
-            padding: 18px;
+            padding: 14px 18px;
             box-shadow: 4px 4px 0px var(--black);
-            margin-bottom: 14px;
         }
 
-        /* Block Representation Badges */
-        .block-badge {
-            display: inline-block;
-            padding: 6px 14px;
-            border: 3px solid var(--black);
-            border-radius: 10px;
+        .mini-card h3 {
+            font-size: 18px;
             font-weight: 700;
-            color: var(--white);
-            box-shadow: 3px 3px 0px var(--black);
-            margin: 4px 0;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
 
-        .block-control { background-color: #DDAA00; color: var(--black); }
-        .block-logic { background-color: #55B535; }
-        .block-math { background-color: #3864B8; }
-        .block-text { background-color: #DE4C8A; }
-        .block-variable { background-color: #E86D1F; }
-        .block-event { background-color: #B58B00; color: var(--black); }
-        .block-color { background-color: #00BCD4; }
+        .mini-card p {
+            font-size: 15px;
+            line-height: 1.5;
+            color: #4B5563;
+            margin: 0;
+        }
 
-        /* Interactive Playground */
-        .playground-card {
-            background: #fdfdfd;
-            border: 4px solid var(--black);
+        /* Step Card */
+        .step-card {
+            background: #F0FDF4;
+            border: 3px solid var(--black);
             border-radius: 16px;
-            padding: 22px;
-            margin: 20px 0;
-            box-shadow: 6px 6px 0px var(--black);
-            text-align: left;
-        }
-
-        .input-text-custom {
-            width: 100%;
-            padding: 12px 18px;
-            font-size: 18px;
-            font-family: inherit;
-            border: 3px solid var(--black);
-            border-radius: 8px;
-            margin-bottom: 12px;
-        }
-
-        .btn-action-custom {
-            background-color: var(--blue);
-            color: var(--white);
-            font-family: inherit;
-            font-weight: 700;
-            font-size: 18px;
-            padding: 10px 25px;
-            border: 3px solid var(--black);
-            border-radius: 8px;
-            cursor: pointer;
+            padding: 16px 20px;
+            margin-bottom: 14px;
             box-shadow: 4px 4px 0px var(--black);
-            transition: all 0.1s;
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
         }
 
-        .btn-action-custom:hover {
-            transform: translate(-2px, -2px);
-            box-shadow: 6px 6px 0px var(--black);
-            background-color: #00B0E8;
-        }
-
-        .btn-action-custom:active {
-            transform: translate(2px, 2px);
+        .step-number {
+            background-color: var(--scratch-green);
+            color: var(--white);
+            font-size: 20px;
+            font-weight: 700;
+            width: 38px;
+            height: 38px;
+            border: 2.5px solid var(--black);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
             box-shadow: 2px 2px 0px var(--black);
         }
 
-        .result-box {
-            margin-top: 15px;
-            background-color: var(--black);
-            color: var(--green);
-            padding: 15px 20px;
-            border-radius: 10px;
-            font-family: 'Consolas', monospace;
-            font-size: 19px;
-            min-height: 50px;
-            display: flex;
-            align-items: center;
+        .step-body h4 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 4px;
+            color: #065F46;
+        }
+
+        .step-body p {
+            font-size: 15px;
+            line-height: 1.5;
+            color: #1F2937;
+            margin: 0;
         }
 
         /* Quiz Layout */
+        .quiz-card {
+            background: #EFF6FF;
+            border: 3.5px solid var(--black);
+            border-radius: 18px;
+            padding: 20px 26px;
+            margin: 20px 0;
+            box-shadow: 6px 6px 0px var(--black);
+        }
+
+        .quiz-title {
+            font-size: 19px;
+            font-weight: 700;
+            color: #1E3A8A;
+            margin-bottom: 12px;
+        }
+
         .quiz-option {
             background-color: var(--white);
             border: 3px solid var(--black);
             border-radius: 12px;
-            padding: 14px 20px;
-            margin: 10px 0;
+            padding: 12px 18px;
+            margin: 8px 0;
             font-weight: 700;
-            font-size: 18px;
+            font-size: 16px;
             cursor: pointer;
-            box-shadow: 4px 4px 0px var(--black);
+            box-shadow: 3px 3px 0px var(--black);
             transition: all 0.1s;
             display: flex;
             align-items: center;
             justify-content: space-between;
+            width: 100%;
+            text-align: left;
         }
 
         .quiz-option:hover {
             transform: translate(-2px, -2px);
-            box-shadow: 6px 6px 0px var(--black);
-            background-color: #F8FAFC;
+            box-shadow: 5px 5px 0px var(--black);
+            background-color: #F9FAFB;
         }
 
         .quiz-option.correct {
-            background-color: var(--green) !important;
+            background-color: var(--scratch-green) !important;
             color: var(--black) !important;
         }
 
         .quiz-option.wrong {
-            background-color: var(--red) !important;
+            background-color: var(--scratch-red) !important;
             color: var(--white) !important;
         }
 
         /* Navigation Controls */
         .nav-container {
-            padding: 20px 50px 30px; display: flex; justify-content: space-between; align-items: center;
-            min-height: 90px;
+            padding: 14px 40px 22px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 75px;
         }
 
         .nav-btn {
-            background-color: var(--yellow); 
-            border: 4px solid var(--black);
-            color: var(--black); padding: 12px 35px; border-radius: 30px; cursor: pointer;
-            font-family: 'Fredoka', sans-serif; font-weight: 700; font-size: 18px;
-            transition: all 0.1s; display: flex; align-items: center; gap: 8px;
-            box-shadow: 6px 6px 0px var(--black);
-        }
-
-        .nav-btn:hover:not(:disabled) { 
-            transform: translate(-2px, -2px); box-shadow: 8px 8px 0px var(--black); 
-            background-color: #FFF033;
-        }
-        
-        .nav-btn:active:not(:disabled) {
-            transform: translate(4px, 4px); box-shadow: 2px 2px 0px var(--black);
-        }
-        
-        .nav-btn:disabled { 
-            background-color: #e0e0e0;
-            color: #888;
-            border-color: #888;
-            box-shadow: 2px 2px 0px #888; 
-            transform: translate(2px, 2px); 
-            cursor: not-allowed; 
-        }
-        
-        .counter-group {
-            display: flex; flex-direction: column; align-items: center; gap: 8px;
-            background: var(--white);
-            padding: 10px 28px;
-            border: 4px solid var(--black);
+            background-color: var(--scratch-yellow);
+            border: 3.5px solid var(--black);
+            color: var(--black);
+            padding: 10px 30px;
             border-radius: 24px;
-            box-shadow: 6px 6px 0px var(--black);
-            transform: rotate(1deg);
+            cursor: pointer;
+            font-family: inherit;
+            font-weight: 700;
+            font-size: 17px;
+            transition: all 0.1s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 5px 5px 0px var(--black);
         }
 
-        .slide-counter { font-size: 17px; font-weight: 700; color: var(--black); }
+        .nav-btn:hover:not(:disabled) {
+            transform: translate(-2px, -2px);
+            box-shadow: 7px 7px 0px var(--black);
+            background-color: #FFD54F;
+        }
+
+        .nav-btn:active:not(:disabled) {
+            transform: translate(3px, 3px);
+            box-shadow: 2px 2px 0px var(--black);
+        }
+
+        .nav-btn:disabled {
+            background-color: #E5E7EB;
+            color: #9CA3AF;
+            border-color: #9CA3AF;
+            box-shadow: 2px 2px 0px #9CA3AF;
+            cursor: not-allowed;
+            transform: translate(2px, 2px);
+        }
+
+        .counter-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            background: var(--white);
+            padding: 8px 24px;
+            border: 3px solid var(--black);
+            border-radius: 20px;
+            box-shadow: 4px 4px 0px var(--black);
+        }
+
+        .slide-counter {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--black);
+        }
 
         .progress-bar-bg {
-            width: 220px; height: 16px; background-color: var(--bg-light); 
-            border: 3px solid var(--black); border-radius: 10px; overflow: hidden;
-            box-shadow: inset 2px 2px 0px rgba(0,0,0,0.1);
+            width: 180px;
+            height: 14px;
+            background-color: #E5E7EB;
+            border: 2.5px solid var(--black);
+            border-radius: 8px;
+            overflow: hidden;
         }
-        
+
         .progress-bar {
-            height: 100%; background-color: var(--blue); 
-            border-right: 3px solid var(--black);
-            transition: width 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            height: 100%;
+            background-color: var(--scratch-blue);
+            border-right: 2.5px solid var(--black);
+            transition: width 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
-    
-.source{font-size:14px;color:#333;margin-top:18px}.source a{color:#0056b3}.image-note{font-size:15px;font-weight:600;margin-top:8px;color:#333}.screenshot-box img{max-height:330px}.feature-card p,.feature-card li{font-size:18px;line-height:1.5}.mini-card{background:#fff;border:3px solid var(--black);border-radius:14px;padding:16px;box-shadow:4px 4px 0 var(--black);margin-bottom:12px}.mini-card h3{margin:0 0 8px}.two-column{align-items:stretch}.slide-text img{max-width:100%}
-</style></head><body><div class="app-container"><div class="header"><div class="banner-container"><div class="banner-shape"><div id="banner-title" class="banner-text">Selamat Datang di Scratch</div></div><div id="banner-subtitle" class="banner-subtitle">Scratch · Platform Coding Visual</div></div></div><div class="slides-area"><div class="slide" data-title="Selamat Datang di Scratch" data-subtitle="Scratch · Platform Coding Visual"><div class="content-card"><div class="inner-content"><h2 class="slide-title">Selamat Datang di Scratch</h2><div class="slide-text"><div class="content-card" style="align-items:center;justify-content:center;background:radial-gradient(circle,var(--blue) 0%,#0056b3 100%);color:var(--white)"><div class="inner-content" style="text-align:center"><span style="background-color:var(--yellow);color:var(--black);padding:8px 24px;border:3px solid var(--black);border-radius:20px;font-size:18px;font-weight:700;box-shadow:4px 4px 0 var(--black);display:inline-block">UOB MY DIGITAL SPACE • SD 🎨</span><h1 style="font-size:46px;text-shadow:4px 4px 0 var(--black)">Yuk, Kenalan dengan Scratch!</h1><p style="font-size:23px;color:var(--yellow)">Tempat membuat cerita, animasi, dan game dengan balok kode</p><div class="screenshot-box"><img src="../assets/scratch/cl-scratch-editor.png" alt="Tampilan Scratch dari artikel Create &amp; Learn" class="screenshot-img"><div class="screenshot-caption">🖼️ Contoh tampilan editor Scratch</div></div></div></div></div></div></div></div><div class="slide" data-title="Scratch itu apa?" data-subtitle="Platform Coding Visual"><div class="content-card"><div class="inner-content"><h2 class="slide-title">Scratch itu apa?</h2><div class="slide-text"><p>Scratch adalah platform gratis berbasis blok untuk membuat <b>cerita, animasi, dan game</b>. Kita menyusun balok seperti puzzle, jadi bisa fokus pada logika tanpa sibuk mengetik sintaks.</p><div class="screenshot-box"><img src="../assets/scratch/cl-scratch-overview.png" alt="Contoh project Scratch dari artikel Create &amp; Learn" class="screenshot-img"><div class="screenshot-caption">🖼️ Contoh karya yang dapat dibuat di Scratch</div></div><p class="source">Visual berasal dari artikel <a href="https://www.create-learn.us/blog/how-do-i-learn-scratch-coding-with-scratch-for-kids-explained/">Create & Learn — How to Use Scratch</a>. Digunakan sebagai referensi belajar, bukan ilustrasi buatan ulang.</p></div></div></div></div><div class="slide" data-title="Kenali ruang kerjanya" data-subtitle="Block Palette · Coding Area · Stage · Sprite"><div class="content-card"><div class="inner-content"><h2 class="slide-title">Kenali ruang kerjanya</h2><div class="slide-text"><div class="two-column"><div><div class="mini-card" style=""><h3>Block Palette</h3><p>Tempat mengambil blok kode berwarna.</p></div><div class="mini-card" style=""><h3>Coding Area</h3><p>Tempat menyambungkan balok.</p></div></div><div><div class="mini-card" style=""><h3>Stage</h3><p>Tempat project berjalan.</p></div><div class="mini-card" style=""><h3>Sprite & Backdrop</h3><p>Tempat mengatur karakter dan latar.</p></div></div></div><div class="screenshot-box"><img src="../assets/scratch/cl-scratch-editor.png" alt="Antarmuka editor Scratch" class="screenshot-img"><div class="screenshot-caption">🖼️ Gunakan gambar aktual sebagai peta ruang kerja</div></div></div></div></div></div><div class="slide" data-title="Warna dan bentuk blok" data-subtitle="Blok kode Scratch"><div class="content-card"><div class="inner-content"><h2 class="slide-title">Warna dan bentuk blok</h2><div class="slide-text"><div class="two-column"><div class="screenshot-box"><img src="../assets/scratch/cl-event-blocks.png" alt="Blok Events Scratch" class="screenshot-img"><div class="screenshot-caption">🖼️ Events adalah pemicu script</div></div><div class="screenshot-box"><img src="../assets/scratch/cl-motion-blocks.png" alt="Blok Motion Scratch" class="screenshot-img"><div class="screenshot-caption">🖼️ Motion mengatur gerak Sprite</div></div></div><p>Setiap kategori memiliki warna dan bentuk sendiri. Blok Events biasanya menjadi awal script. Pilih blok asli dari palette Scratch lalu sambungkan di Coding Area.</p></div></div></div></div><div class="slide" data-title="Coba project pertamamu" data-subtitle="Green Flag · Say"><div class="content-card"><div class="inner-content"><h2 class="slide-title">Coba project pertamamu</h2><div class="slide-text"><p>Ikuti langkah ini langsung di Scratch:</p><ol><li>Pilih satu Sprite.</li><li>Ambil blok Events dari palette.</li><li>Ambil blok Looks untuk membuat Sprite berbicara.</li><li>Sambungkan, lalu klik bendera hijau.</li></ol><div class="screenshot-box"><img src="../assets/scratch/cl-looks-blocks.png" alt="Blok Looks Scratch" class="screenshot-img"><div class="screenshot-caption">🖼️ Pilih blok Looks langsung dari Scratch</div></div><div class="feature-card quiz"><h3>🧠 Cek pemahaman</h3><p>Apa yang biasanya menjadi awal script?</p><button class="quiz-option" onclick="this.parentElement.querySelectorAll('.quiz-option').forEach(x=>x.classList.remove('correct','wrong'));this.classList.add('wrong')">A. Blok Motion</button><button class="quiz-option" onclick="this.parentElement.querySelectorAll('.quiz-option').forEach(x=>x.classList.remove('correct','wrong'));this.classList.add('correct')">B. Blok Events</button><button class="quiz-option" onclick="this.parentElement.querySelectorAll('.quiz-option').forEach(x=>x.classList.remove('correct','wrong'));this.classList.add('wrong')">C. Blok Sound</button><button class="quiz-option" onclick="this.parentElement.querySelectorAll('.quiz-option').forEach(x=>x.classList.remove('correct','wrong'));this.classList.add('wrong')">D. Blok Variables</button></div></div></div></div></div><div class="slide" data-title="Kalau belum berjalan..." data-subtitle="Troubleshooting Dasar"><div class="content-card"><div class="inner-content"><h2 class="slide-title">Kalau belum berjalan...</h2><div class="slide-text"><div class="two-column"><div><div class="mini-card" style=""><h3>Script tidak mulai</h3><p>Pastikan ada blok Events di paling atas.</p></div><div class="mini-card" style=""><h3>Sprite terbalik</h3><p>Atur Rotation Style menjadi Left-Right.</p></div></div><div><div class="mini-card" style=""><h3>Animasi hanya sekali</h3><p>Gunakan Repeat atau Forever.</p></div><div class="mini-card" style=""><h3>Sensing tidak bereaksi</h3><p>Cek berulang di dalam Forever.</p></div></div></div><p class="source">Visual berasal dari artikel <a href="https://www.create-learn.us/blog/how-do-i-learn-scratch-coding-with-scratch-for-kids-explained/">Create & Learn — How to Use Scratch</a>. Digunakan sebagai referensi belajar, bukan ilustrasi buatan ulang.</p></div></div></div></div></div><div class="nav-container"><button id="btnPrev" class="nav-btn" disabled>← Prev</button><div class="counter-group"><div class="slide-counter">Slide <span id="counter">1</span> dari <span id="totalSlides">6</span></div><div class="progress-bar-bg"><div id="bar" class="progress-bar" style="width:6.25%"></div></div></div><button id="btnNext" class="nav-btn">Next →</button></div></div><script>const slides=document.querySelectorAll('.slide'),bar=document.getElementById('bar'),counter=document.getElementById('counter'),btnPrev=document.getElementById('btnPrev'),btnNext=document.getElementById('btnNext');let currentSlide=0;function showSlide(index){if(index<0)index=0;if(index>=slides.length)index=slides.length-1;slides.forEach(s=>s.classList.remove('active'));currentSlide=index;slides[currentSlide].classList.add('active');const c=slides[currentSlide].querySelector('.content-card');if(c)c.scrollTo(0,0);btnPrev.disabled=currentSlide===0;btnNext.disabled=currentSlide===slides.length-1;counter.innerText=currentSlide+1;bar.style.width=((currentSlide+1)/slides.length*100)+'%';document.getElementById('banner-title').innerText=slides[currentSlide].dataset.title;document.getElementById('banner-subtitle').innerText=slides[currentSlide].dataset.subtitle}btnNext.onclick=()=>showSlide(currentSlide+1);btnPrev.onclick=()=>showSlide(currentSlide-1);document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key===' ')showSlide(currentSlide+1);if(e.key==='ArrowLeft')showSlide(currentSlide-1)});showSlide(0);</script></body></html>
+
+        /* Tag Badges */
+        .tag-motion { background-color: #4C97FF; color: white; padding: 2px 8px; border-radius: 6px; border: 2px solid black; }
+        .tag-looks { background-color: #9966FF; color: white; padding: 2px 8px; border-radius: 6px; border: 2px solid black; }
+        .tag-events { background-color: #FFBF00; color: black; padding: 2px 8px; border-radius: 6px; border: 2px solid black; }
+        .tag-control { background-color: #FFAB19; color: black; padding: 2px 8px; border-radius: 6px; border: 2px solid black; }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Top Banner -->
+        <div class="header">
+            <div class="banner-container">
+                <div class="banner-shape">
+                    <div id="banner-title" class="banner-text">Kenalan dengan Scratch</div>
+                </div>
+                <div id="banner-subtitle" class="banner-subtitle">UOB MY DIGITAL SPACE • UPPER PRIMARY</div>
+            </div>
+        </div>
+
+        <!-- Slides Area -->
+        <div class="slides-area">
+            
+            <!-- Slide 1: Welcome -->
+            <div class="slide active" data-title="Selamat Datang di Scratch!" data-subtitle="Platform Coding Visual Resmi MIT">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <div class="slide-title-tag">
+                            <span>😺</span> Selamat Datang di Scratch!
+                        </div>
+                        <div class="slide-text">
+                            <p><b>Scratch</b> adalah platform coding visual gratis dari MIT (Massachusetts Institute of Technology) yang dirancang khusus untuk membuat <b>cerita interaktif, animasi, dan game</b> tanpa perlu pusing mengetik kode teks yang rumit.</p>
+                            
+                            <div class="screenshot-box">
+                                <img src="https://cdn-web-2.ruangguru.com/landing-pages/assets/f668c8e9-f446-4464-8df1-b42f6eeb576d.png" 
+                                     onerror="this.src='../assets/scratch/scratch_real_editor_clean.png'"
+                                     alt="Tampilan Asli Editor Scratch Resmi" 
+                                     class="screenshot-img">
+                                <div class="screenshot-caption">
+                                    <span>📸</span> Tampilan Nyata Editor Resmi Scratch di <b>scratch.mit.edu</b>
+                                </div>
+                            </div>
+
+                            <div class="callout-box">
+                                <span>💡</span>
+                                <div>
+                                    Di Scratch, kita memprogram dengan <b>menyusun balok kode warna-warni seperti puzzle</b>. Jika bentuk lekukan baloknya pas, kodenya akan langsung menempel dan siap dijalankan!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2: Cara Buka & 4 Ruang Kerja -->
+            <div class="slide" data-title="Buka Scratch & Kenali Ruang Kerjanya" data-subtitle="4 Bagian Utama Editor Scratch">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <div class="slide-title-tag">
+                            <span>🧭</span> Cara Membuka & 4 Ruang Kerja Utama
+                        </div>
+                        <div class="slide-text">
+                            <p>Yuk buka Scratch langsung di browsermu! Klik tombol merah di bawah ini untuk membuka halaman editor resmi dengan tutorial bawaan:</p>
+
+                            <div style="text-align: center; margin: 14px 0 20px;">
+                                <a href="https://scratch.mit.edu/projects/editor/?tutorial=getStarted" target="_blank" rel="noopener noreferrer" class="callout-link-btn">
+                                    <span>🚀</span> Buka Scratch di Tab Baru: scratch.mit.edu/projects/editor/?tutorial=getStarted
+                                </a>
+                            </div>
+
+                            <p>Ada <b>4 area penting</b> yang wajib kamu ketahui di dalam editor Scratch:</p>
+
+                            <div class="two-column">
+                                <div class="mini-card" style="border-left: 8px solid var(--scratch-blue);">
+                                    <h3><span>🧩</span> 1. Block Palette (Kiri)</h3>
+                                    <p>Etalase lemari tempat menyimpan seluruh balok kode warna-warni yang dikelompokkan berdasarkan fungsinya.</p>
+                                </div>
+                                <div class="mini-card" style="border-left: 8px solid var(--scratch-purple);">
+                                    <h3><span>📜</span> 2. Coding Area (Tengah)</h3>
+                                    <p>Meja kerja luas tempat kamu menyeret (drag) dan menyambungkan balok-balok kode puzzle menjadi skrip perintah.</p>
+                                </div>
+                                <div class="mini-card" style="border-left: 8px solid var(--scratch-green);">
+                                    <h3><span>🎭</span> 3. Stage & Flag (Kanan Atas)</h3>
+                                    <p>Panggung aksi tempat karakter hidup dan bergerak saat kamu menekan tombol <b>Bendera Hijau (Green Flag)</b>.</p>
+                                </div>
+                                <div class="mini-card" style="border-left: 8px solid var(--scratch-orange);">
+                                    <h3><span>🐱</span> 4. Sprite & Backdrop Pane (Kanan Bawah)</h3>
+                                    <p>Area untuk memilih karakter (Sprite), mengganti latar belakang (Backdrop), serta mengatur posisi (x, y) dan ukuran karakter.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: Kategori Balok Kode Asli -->
+            <div class="slide" data-title="Warna & Bentuk Balok Asli Scratch" data-subtitle="Motion · Looks · Events · Control">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <div class="slide-title-tag">
+                            <span>🎨</span> Kategori & Warna Balok Kode Asli
+                        </div>
+                        <div class="slide-text">
+                            <p>Setiap kategori balok di Scratch memiliki <b>warna khas</b> agar kamu mudah menemukannya:</p>
+
+                            <div class="two-column">
+                                <div class="screenshot-box">
+                                    <img src="https://cdn-web-2.ruangguru.com/landing-pages/assets/d3e26eb8-f7bc-491d-9fea-9c7e3a88cc81.png" 
+                                         onerror="this.src='../assets/scratch/scratch_real_motion_palette.png'"
+                                         alt="Balok Motion Asli Scratch" 
+                                         class="screenshot-img" style="max-height: 240px;">
+                                    <div class="screenshot-caption">
+                                        <b class="tag-motion">Motion (Biru)</b>: Mengatur gerakan langkah, putaran, dan koordinat.
+                                    </div>
+                                </div>
+                                <div class="screenshot-box">
+                                    <img src="https://cdn-web-2.ruangguru.com/landing-pages/assets/0778db78-6b86-4e1c-9d34-57aea9ce7d13.png" 
+                                         onerror="this.src='../assets/scratch/scratch_real_looks_palette.png'"
+                                         alt="Balok Looks Asli Scratch" 
+                                         class="screenshot-img" style="max-height: 240px;">
+                                    <div class="screenshot-caption">
+                                        <b class="tag-looks">Looks (Ungu)</b>: Mengatur dialog balon kata, ganti kostum, dan ukuran.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="two-column">
+                                <div class="screenshot-box">
+                                    <img src="https://cdn-web-2.ruangguru.com/landing-pages/assets/513dac2f-d9d8-4b3c-bce8-ef8947ed763e.png" 
+                                         onerror="this.src='../assets/scratch/scratch_real_events_palette.png'"
+                                         alt="Balok Events Asli Scratch" 
+                                         class="screenshot-img" style="max-height: 240px;">
+                                    <div class="screenshot-caption">
+                                        <b class="tag-events">Events (Kuning)</b>: Topi pemicu ("when green flag clicked") wajib di paling atas!
+                                    </div>
+                                </div>
+                                <div class="screenshot-box">
+                                    <img src="https://cdn-web-2.ruangguru.com/landing-pages/assets/81adfccc-d372-499c-89a8-35abafc2c924.png" 
+                                         onerror="this.src='../assets/scratch/scratch_real_control_palette.png'"
+                                         alt="Balok Control Asli Scratch" 
+                                         class="screenshot-img" style="max-height: 240px;">
+                                    <div class="screenshot-caption">
+                                        <b class="tag-control">Control (Oranye)</b>: Mengatur jeda ("wait"), pengulangan ("repeat/forever").
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4: Tutorial Getting Started Step-by-Step -->
+            <div class="slide" data-title="Coba Project Pertamamu!" data-subtitle="Ikuti Tutorial Resmi 'Getting Started'">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <div class="slide-title-tag">
+                            <span>🏁</span> Langkah demi Langkah Project Pertama
+                        </div>
+                        <div class="slide-text">
+                            <p>Ikuti 3 langkah praktis ini langsung di Scratch editor yang sudah kamu buka:</p>
+
+                            <div class="step-card">
+                                <div class="step-number">1</div>
+                                <div class="step-body">
+                                    <h4>Tarik Balok "move 10 steps"</h4>
+                                    <p>Klik kategori <b>Motion (Biru)</b> di sebelah kiri, lalu seret balok <code>move 10 steps</code> ke Coding Area di tengah. Coba klik baloknya sekali: Scratch Cat di panggung langsung bergerak 10 langkah!</p>
+                                    <div class="screenshot-box" style="margin-top: 10px; max-width: 540px;">
+                                        <img src="https://cdn-web-2.ruangguru.com/landing-pages/assets/69d083d3-a370-4930-a965-2350d3220a91.png" 
+                                             onerror="this.src='../assets/scratch/card_step1_perfect.png'"
+                                             alt="Tarik balok move" class="screenshot-img" style="max-height: 220px;">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="step-card">
+                                <div class="step-number">2</div>
+                                <div class="step-body">
+                                    <h4>Tempelkan Balok "say Hello! for 2 seconds"</h4>
+                                    <p>Klik kategori <b>Looks (Ungu)</b>, ambil balok <code>say Hello! for 2 seconds</code>, lalu tempelkan tepat di bawah balok <code>move 10 steps</code> sampai menyatu seperti puzzle.</p>
+                                    <div class="screenshot-box" style="margin-top: 10px; max-width: 540px;">
+                                        <img src="https://cdn-web-2.ruangguru.com/landing-pages/assets/cc304757-e91a-4454-acde-5539a3350f49.png" 
+                                             onerror="this.src='../assets/scratch/card_step2_perfect.png'"
+                                             alt="Tempelkan balok say Hello" class="screenshot-img" style="max-height: 220px;">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="step-card">
+                                <div class="step-number">3</div>
+                                <div class="step-body">
+                                    <h4>Pasang Topi "when green flag clicked" & Jalankan!</h4>
+                                    <p>Klik kategori <b>Events (Kuning Emas)</b>, ambil balok <code>when green flag clicked</code>, dan pasang di paling atas. Sekarang tekan tombol <b>Bendera Hijau</b> di atas panggung!</p>
+                                    <div class="screenshot-box" style="margin-top: 10px; max-width: 540px;">
+                                        <img src="https://cdn-web-2.ruangguru.com/landing-pages/assets/52f228b3-b41f-4df1-b10d-8777c7c16eee.png" 
+                                             onerror="this.src='../assets/scratch/card_step3_perfect.png'"
+                                             alt="Pasang bendera hijau" class="screenshot-img" style="max-height: 220px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 5: Menambah Sprite & Backdrop -->
+            <div class="slide" data-title="Menambah Karakter & Latar Panggung" data-subtitle="Choose a Sprite & Choose a Backdrop">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <div class="slide-title-tag">
+                            <span>🎪</span> Menambah Sprite & Backdrop Baru
+                        </div>
+                        <div class="slide-text">
+                            <p>Di pojok kanan bawah editor Scratch, terdapat dua tombol lingkaran ungu yang sangat penting:</p>
+
+                            <div class="screenshot-box">
+                                <img src="https://cdn-web-2.ruangguru.com/landing-pages/assets/8e9d8dec-0a0e-4134-920b-1157a32d3ae3.png" 
+                                     onerror="this.src='../assets/scratch/scratch_real_sprite_pane.png'"
+                                     alt="Panel Sprite dan Backdrop Asli" class="screenshot-img" style="max-height: 280px;">
+                                <div class="screenshot-caption">
+                                    <span>🔍</span> Panel Karakter Sprite & Pemilih Backdrop di Pojok Kanan Bawah
+                                </div>
+                            </div>
+
+                            <div class="two-column">
+                                <div class="mini-card" style="background: #FDF4FF; border-color: var(--scratch-purple);">
+                                    <h3><span>🐱</span> Tombol Kucing: Choose a Sprite</h3>
+                                    <p>Klik untuk membuka galeri ratusan karakter siap pakai (hewan, orang, makanan, emoji) atau menggambar karakter karyamu sendiri!</p>
+                                </div>
+                                <div class="mini-card" style="background: #F0FDF4; border-color: var(--scratch-green);">
+                                    <h3><span>🖼️</span> Tombol Pemandangan: Choose a Backdrop</h3>
+                                    <p>Klik untuk mengubah latar belakang putih menjadi sirkuit balap, kamar tidur, lapangan bola, atau luar angkasa!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 6: Troubleshooting & Quiz -->
+            <div class="slide" data-title="Tips Penting & Kuis Pemahaman" data-subtitle="Troubleshooting Dasar & Uji Pemahaman">
+                <div class="content-card">
+                    <div class="inner-content">
+                        <div class="slide-title-tag">
+                            <span>🛠️</span> Troubleshooting Dasar & Kuis
+                        </div>
+                        <div class="slide-text">
+                            <p><b>Pertolongan Pertama Jika Kodingmu Mengalami Masalah:</b></p>
+                            
+                            <div class="two-column">
+                                <div class="mini-card">
+                                    <h3><span>❓</span> Karakter Diam Saja?</h3>
+                                    <p>Pastikan balok paling atas adalah topi <code>when green flag clicked</code> dan pastikan kamu mengklik Bendera Hijau di atas panggung.</p>
+                                </div>
+                                <div class="mini-card">
+                                    <h3><span>❓</span> Karakter Hilang Keluar Layar?</h3>
+                                    <p>Ketik angka <code>0</code> pada kolom <b>x</b> dan kolom <b>y</b> di panel Sprite untuk mengembalikan karakter tepat ke tengah panggung.</p>
+                                </div>
+                            </div>
+
+                            <!-- Quiz 1 -->
+                            <div class="quiz-card">
+                                <div class="quiz-title">🧠 Kuis 1: Apa fungsi balok kuning emas "when green flag clicked"?</div>
+                                <button class="quiz-option" onclick="handleQuiz(this, false)">A. Menghapus karakter kucing dari panggung</button>
+                                <button class="quiz-option" onclick="handleQuiz(this, true)">B. Menjadi pemicu awal script saat bendera hijau di atas panggung diklik</button>
+                                <button class="quiz-option" onclick="handleQuiz(this, false)">C. Mengubah warna latar belakang menjadi hijau</button>
+                                <button class="quiz-option" onclick="handleQuiz(this, false)">D. Mematikan suara komputer</button>
+                            </div>
+
+                            <!-- Quiz 2 -->
+                            <div class="quiz-card">
+                                <div class="quiz-title">🧠 Kuis 2: Di mana letak meja kerja tempat kita menyambungkan balok-balok kode puzzle?</div>
+                                <button class="quiz-option" onclick="handleQuiz(this, false)">A. Stage (Panggung aksi)</button>
+                                <button class="quiz-option" onclick="handleQuiz(this, true)">B. Coding Area (Meja kerja luas di bagian tengah)</button>
+                                <button class="quiz-option" onclick="handleQuiz(this, false)">C. Block Palette (Lemari balok di sebelah kiri)</button>
+                                <button class="quiz-option" onclick="handleQuiz(this, false)">D. Tombol Settings</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom Navigation -->
+        <div class="nav-container">
+            <button id="btnPrev" class="nav-btn" disabled>← Kembali</button>
+            <div class="counter-group">
+                <div class="slide-counter">Slide <span id="counter">1</span> dari <span id="totalSlides">6</span></div>
+                <div class="progress-bar-bg">
+                    <div id="bar" class="progress-bar" style="width: 16.66%;"></div>
+                </div>
+            </div>
+            <button id="btnNext" class="nav-btn">Lanjut →</button>
+        </div>
+    </div>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        const bar = document.getElementById('bar');
+        const counter = document.getElementById('counter');
+        const totalSlides = document.getElementById('totalSlides');
+        const btnPrev = document.getElementById('btnPrev');
+        const btnNext = document.getElementById('btnNext');
+        const bannerTitle = document.getElementById('banner-title');
+        const bannerSubtitle = document.getElementById('banner-subtitle');
+
+        let currentSlide = 0;
+        totalSlides.innerText = slides.length;
+
+        function showSlide(index) {
+            if (index < 0) index = 0;
+            if (index >= slides.length) index = slides.length - 1;
+
+            slides.forEach(s => s.classList.remove('active'));
+            currentSlide = index;
+            slides[currentSlide].classList.add('active');
+
+            const card = slides[currentSlide].querySelector('.content-card');
+            if (card) card.scrollTo(0, 0);
+
+            btnPrev.disabled = currentSlide === 0;
+            btnNext.disabled = currentSlide === slides.length - 1;
+
+            counter.innerText = currentSlide + 1;
+            bar.style.width = ((currentSlide + 1) / slides.length * 100) + '%';
+
+            if (slides[currentSlide].dataset.title) {
+                bannerTitle.innerText = slides[currentSlide].dataset.title;
+            }
+            if (slides[currentSlide].dataset.subtitle) {
+                bannerSubtitle.innerText = slides[currentSlide].dataset.subtitle;
+            }
+        }
+
+        btnNext.onclick = () => showSlide(currentSlide + 1);
+        btnPrev.onclick = () => showSlide(currentSlide - 1);
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === ' ') showSlide(currentSlide + 1);
+            if (e.key === 'ArrowLeft') showSlide(currentSlide - 1);
+        });
+
+        function handleQuiz(btn, isCorrect) {
+            const parent = btn.parentElement;
+            parent.querySelectorAll('.quiz-option').forEach(opt => {
+                opt.classList.remove('correct', 'wrong');
+            });
+            if (isCorrect) {
+                btn.classList.add('correct');
+            } else {
+                btn.classList.add('wrong');
+            }
+        }
+
+        showSlide(0);
+    </script>
+</body>
+</html>

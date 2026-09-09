@@ -2122,3 +2122,67 @@ completed and verified.
 ### Status
 completed and verified live in Google Spreadsheet.
 
+## 2026-09-09 — Revisi Scratch SD Video-First (4 Modul, 18 Step) dan Perbaikan Modul Bridge 00 Berbasis Real Scratch Editor
+
+### User request
+> Iya, kamu benar. Pembagian sebelumnya tidak masuk akal karena aku membuat slide yang mengulang isi video.
+>
+> Sudah aku revisi menjadi **video-first**:
+>
+> ```text
+> Bridge 00 → About Me → Racing Car → Increase Your Earnings
+> ```
+>
+> ### Modul 0 — Bridge 00
+> Satu-satunya slide wajib untuk:
+> - Apa itu Scratch
+> - Cara membuka Scratch dan membuat project
+> - Stage, Sprite, Backdrop, Block Palette, Coding Area
+> - Project pertama
+> - Troubleshooting dasar
+>
+> ### Modul 1 — About Me
+> Langsung memakai 7 video asli:
+> 1. Mendesain Karakter
+> 2. Merekam Suara Perkenalan Diri
+> 3. Membuat Kostum Makanan
+> 4. Memprogram Sprite Makanan
+> 5. Menambahkan Sprite dengan Emoji
+> 6. Memprogram Animasi dan Text-to-Speech
+> 7. Memprogram dengan Effects
+>
+> ### Modul 2 — Racing Car
+> Langsung memakai 6 video asli:
+> 1. Desain Sirkuit
+> 2. Desain Mobil
+> 3. Kode Mobil
+> 4. Duplikasi dan Modifikasi Mobil 2
+> 5. Desain Finish Line
+> 6. Kode Menang dan Menyentuh Musuh
+>
+> ### Modul 3 — Increase Your Earnings
+> Langsung memakai 4 video asli:
+> 1. Percakapan Intro
+> 2. Memprogram Opsi 1
+> 3. Memprogram Opsi 2
+> 4. Memprogram Ending
+>
+> Sekarang dataset menjadi:
+> - **4 modul**
+> - **18 step**
+> - **1 slide intro**
+> - **17 video tutorial**
+>
+> Bridge 01–04 tidak dihapus, tapi dikeluarkan dari course aktif dan disimpan sebagai draft/reference.
+>
+> Plan juga sudah diperbarui:
+> [02 — Implementation Plan Scratch Async SD](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/02-curriculum-sequencing/planning/02-implementation-plan-scratch-async-sd.md)
+>
+> Prinsip finalnya:
+> > Kalau penjelasannya sudah ada di video, gunakan video. Slide hanya dibuat untuk gap yang belum memiliki penjelasan.
+>
+> Checkpoint Git: `3a646e6`.
+>
+> eh ini aku gasuka banget sama is imodulnya gak menggambarkan scratch asli dan dia gak pake blok asli aku benci deh, ini dibaikin yah modulnya suru dia buka https://scratch.mit.edu/projects/editor/?tutorial=getStarted dan bikin ambil blok nya trus ss masukin cdn untuk project projectnya yah, coba dong baikin
+
+

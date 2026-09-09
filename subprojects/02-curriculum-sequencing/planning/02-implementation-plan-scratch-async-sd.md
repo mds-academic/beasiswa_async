@@ -1,116 +1,95 @@
 # 02 — Implementation Plan: Scratch Async SD Scaffolding
 
-**Status:** `revised — video-first sequencing pending user/UAT approval`  
+**Status:** `implemented & verified — video-first 18-step sequencing with authentic scratch cdn assets`  
 **Tanggal:** 2026-09-09
 
 ## Tujuan
 
-Mengubah tiga playlist tutorial Scratch menjadi jalur belajar asinkronus SD yang runtut tanpa menggabungkan tiga project menjadi satu artefak. Setiap project tetap berdiri sendiri dan dipakai sebagai milestone.
+Mengubah materi Scratch SD asinkronus menjadi alur belajar **video-first** yang terstruktur, padat, dan menyenangkan bagi siswa SD. Mengeliminasi slide duplikat yang mengulang isi video Kak Laras, serta merombak slide orientasi (`bridge-sd-00`) menggunakan antarmuka resmi MIT Media Lab (`https://scratch.mit.edu/projects/editor/?tutorial=getStarted`) dengan balok nyata yang di-upload ke CDN Ruangguru.
 
-## Prinsip desain
+## Prinsip Desain
 
-- **Bridge sebelum project:** konsep yang menjadi prasyarat dikenalkan lewat slide singkat sebelum video tutorial.
-- **Project tetap terpisah:** About Me, Racing Car, dan Increase Your Earnings tidak di-stitch.
-- **Dari konkret ke abstrak:** kenal platform → aksi sederhana → pengulangan → sensing/keputusan → data/koordinasi.
-- **Tutorial bukan satu-satunya kurikulum:** siswa diberi checkpoint, istilah, alasan penggunaan blok, dan troubleshooting.
-- **Satu perubahan setiap eksperimen:** siswa meniru, mengubah satu hal, menguji, lalu menjelaskan.
+- **Video-First**: Jika materi dan langkah sudah dijelaskan secara gamblang di video tutorial Kak Laras, gunakan video tersebut secara langsung. Slide hanya dibuat untuk menjembatani gap pengenalan awal yang belum tercakup di video.
+- **Antarmuka Asli Scratch (Anti-Mockup)**: Tidak menggunakan aset pihak ketiga atau blok ilustratif buatan Create & Learn. Semua referensi visual harus berasal dari antarmuka Scratch resmi MIT Media Lab dan tutorial *Getting Started*, dengan aset ter-host di CDN Ruangguru (`rg_cdn_web_2`).
+- **Project Tetap Terpisah**: Tiga proyek inti (*About Me*, *Racing Car*, dan *Increase Your Earnings*) tidak di-stitch menjadi satu file raksasa, melainkan menjadi milestone mandiri yang jelas.
+- **Hands-on Interaktif Nyata**: Siswa diarahkan langsung membuka editor web Scratch resmi untuk merangkai kode pertama mereka (`when green flag clicked` → `move 10 steps` → `say Hello! for 2 seconds`).
 
-## Struktur kanonik yang direkomendasikan — video-first
+## Struktur Kanonik Final — Video-First (4 Modul, 18 Step)
 
-### Modul 0 — Satu-satunya bridge: Kenalan dengan Scratch
+### Modul 0 — Satu-satunya Slide Bridge: Kenalan dengan Scratch (1 Step)
 
-**Slide:** `bridge-sd-00`  
-**Sumber:** artikel Create & Learn yang diminta pengguna, memakai screenshot Scratch aktual.
+**Slide:** `bridge-sd-00` (`slides/bridge-sd-00.html`)  
+**Sumber:** Scratch Editor Resmi MIT Media Lab (`https://scratch.mit.edu/projects/editor/?tutorial=getStarted`)  
+**Aset:** Tangkapan layar antarmuka asli, palette warna balok resmi, dan langkah tutorial *Getting Started* yang di-upload ke CDN Ruangguru.
 
-Bridge ini hanya menutup gap yang belum tersedia dalam playlist: cara membuka Scratch, mengenali Stage/Sprite/Block Palette/Coding Area, dan mencoba project pertama. Bridge tidak mengajarkan ulang konsep yang sudah dijelaskan di video.
+Materi wajib yang dibahas:
+1. Cara membuka Scratch dan mengakses tutorial *Getting Started*.
+2. Memahami 4 area kerja utama: Stage (panggung), Sprite Pane, Block Palette, dan Coding Area.
+3. Mengenal kategori balok kode (Motion, Looks, Events, Control).
+4. Merangkai program balok pertama (Scratch Cat bergerak 10 langkah dan menyapa "Hello!").
+5. Cara menambahkan Sprite dan Backdrop baru dari library.
+6. Tips troubleshooting dasar (balok tidak bereaksi, sprite hilang/keluar layar, suara tidak terdengar).
 
-### Modul 1 — Project About Me
+### Modul 1 — Project About Me (7 Step)
 
-**7 video playlist About Me, urutan asli tetap:**
+Menggunakan 7 video tutorial resmi Kak Laras secara berurutan:
+1. `up-about-1`: Mendesain Karakter
+2. `up-about-2`: Merekam Suara Perkenalan Diri
+3. `up-about-3`: Membuat Kostum Makanan
+4. `up-about-4`: Memprogram Sprite Makanan
+5. `up-about-5`: Menambahkan Sprite dengan Emoji
+6. `up-about-6`: Memprogram Animasi dan Text-to-Speech
+7. `up-about-7`: Memprogram dengan Effects
 
-1. Mendesain Karakter
-2. Merekam Suara Perkenalan Diri
-3. Membuat Kostum Makanan
-4. Memprogram Sprite Makanan
-5. Menambahkan Sprite dengan Emoji
-6. Memprogram Animasi dan Text-to-Speech
-7. Memprogram dengan Effects
+### Modul 2 — Project Racing Car (6 Step)
 
-Video menjadi sumber utama untuk desain, Costume, Event, Sound, `repeat`, animasi, dan extension. Tidak ada Bridge 01/02 tambahan di jalur wajib karena penjelasannya sudah ada di playlist.
+Menggunakan 6 video tutorial resmi Kak Laras secara berurutan:
+1. `up-racing-1`: Desain Sirkuit
+2. `up-racing-2`: Desain Mobil
+3. `up-racing-3`: Kode Mobil
+4. `up-racing-4`: Duplikasi dan Modifikasi Mobil 2
+5. `up-racing-5`: Desain Finish Line
+6. `up-racing-6`: Kode Menang dan Menyentuh Musuh
 
-### Modul 2 — Project Racing Car
+### Modul 3 — Project Increase Your Earnings / Capstone (4 Step)
 
-**6 video playlist Racing Car, urutan asli tetap:**
+Menggunakan 4 video tutorial resmi Kak Laras secara berurutan:
+1. `up-earning-1`: Percakapan Intro
+2. `up-earning-2`: Memprogram Opsi 1
+3. `up-earning-3`: Memprogram Opsi 2
+4. `up-earning-4`: Memprogram Ending
 
-1. Desain Sirkuit
-2. Desain Mobil
-3. Kode Mobil
-4. Duplikasi dan Modifikasi Mobil 2
-5. Desain Finish Line
-6. Kode Menang dan Menyentuh Musuh
+### Alur Belajar Lengkap
 
-Video menjadi sumber utama untuk keyboard input, gerak, `repeat until`, duplicate/reuse, sensing, collision, conditional, dan feedback. Tidak ada Bridge 03 tambahan di jalur wajib.
+```text
+Bridge 00 (Slide Asli CDN) → About Me (7 Video) → Racing Car (6 Video) → Increase Your Earnings (4 Video)
+```
 
-### Modul 3 — Project Increase Your Earnings / Capstone
+Total: **4 Modul, 18 Step** (1 slide intro + 17 video tutorial).
 
-**4 video playlist Increase Your Earnings, urutan asli tetap:**
+## Status Bridge Tambahan (01–04)
 
-1. Percakapan Intro
-2. Memprogram Opsi 1
-3. Memprogram Opsi 2
-4. Memprogram Ending
+Slide `bridge-sd-01` s.d. `bridge-sd-04` tetap tersimpan rapi di folder arsip/draft (`drafts/sd-scratch/` dan `slides/`) sebagai materi referensi pengayaan guru/instruktur, tetapi **dikeluarkan dari jalur kurikulum aktif** agar siswa fokus belajar melalui video tanpa pengulangan materi yang melelahkan.
 
-Video menjadi sumber utama untuk starter project, backdrop sebagai scene, clone, variable credit, broadcast, `if then else`, dan ending. Tidak ada Bridge 04 tambahan di jalur wajib.
+## Aset Resmi Scratch di Ruangguru CDN (`rg_cdn_web_2`)
 
-### Alur final
+| Nama Aset | Keterangan | URL CDN Ruangguru |
+|---|---|---|
+| `scratch_real_editor_clean` | Tampilan utuh Scratch Editor MIT | `https://cdn-web-2.ruangguru.com/landing-pages/assets/f668c8e9-f446-4464-8df1-b42f6eeb576d.png` |
+| `scratch_real_stage` | Area Stage & Scratch Cat | `https://cdn-web-2.ruangguru.com/landing-pages/assets/aa4663d8-b986-49ea-b54b-c3d33d6a4cfd.png` |
+| `scratch_real_sprite_pane` | Panel Sprite Properties & Backdrop | `https://cdn-web-2.ruangguru.com/landing-pages/assets/8e9d8dec-0a0e-4134-920b-1157a32d3ae3.png` |
+| `scratch_real_motion_palette` | Balok Biru Gerakan (Motion) | `https://cdn-web-2.ruangguru.com/landing-pages/assets/d3e26eb8-f7bc-491d-9fea-9c7e3a88cc81.png` |
+| `scratch_real_looks_palette` | Balok Ungu Tampilan (Looks) | `https://cdn-web-2.ruangguru.com/landing-pages/assets/0778db78-6b86-4e1c-9d34-57aea9ce7d13.png` |
+| `scratch_real_events_palette` | Balok Kuning Kejadian (Events) | `https://cdn-web-2.ruangguru.com/landing-pages/assets/513dac2f-d9d8-4b3c-bce8-ef8947ed763e.png` |
+| `scratch_real_control_palette` | Balok Oranye Kontrol (Control) | `https://cdn-web-2.ruangguru.com/landing-pages/assets/81adfccc-d372-499c-89a8-35abafc2c924.png` |
+| `card_step1` | Tutorial Card 1: Move 10 Steps | `https://cdn-web-2.ruangguru.com/landing-pages/assets/69d083d3-a370-4930-a965-2350d3220a91.png` |
+| `card_step2` | Tutorial Card 2: Say Hello | `https://cdn-web-2.ruangguru.com/landing-pages/assets/cc304757-e91a-4454-acde-5539a3350f49.png` |
+| `card_step3` | Tutorial Card 3: Green Flag Event | `https://cdn-web-2.ruangguru.com/landing-pages/assets/52f228b3-b41f-4df1-b10d-8777c7c16eee.png` |
 
-`Bridge 00 → About Me (7 video) → Racing Car (6 video) → Increase Your Earnings (4 video)`
+## Implementasi & Sinkronisasi yang Diselesaikan
 
-Total: **4 modul, 18 step** = 1 bridge intro + 17 video tutorial.
+1. **Dataset Produksi 18 Step**: `courseData-upperprimary.json` disinkronkan ke 3 mirror (`output/`, `src/data/`, `docs/data/`) dan tervalidasi identik (SHA-256 matching).
+2. **Slide Bridge Direvamp**: `bridge-sd-00.html` dan `bridge-sd-00.json` menggunakan aset CDN resmi, tombol aksi editor resmi, dan fallback lokal.
+3. **Master Google Sheet**: Tab `materi-sd` diperbarui menjadi 18 baris, tab `ops-result-sd` diperbarui menjadi 18 kolom pelacakan kuis, dan `Changelog & Audit Log` mencatat entri ke-12.
+4. **Platform LMS UI**: Antarmuka LMS SD menampilkan 18 tabs pembelajaran + 1 tab sertifikat kelulusan.
 
-### Aturan pemakaian bridge ke depan
-
-- Jika konsep sudah dijelaskan cukup di video, **pakai video; jangan dibuatkan slide duplikat**.
-- Slide hanya dibuat untuk missing prerequisite yang menghambat siswa memulai.
-- Bridge 01–04 tetap disimpan sebagai draft/reference, tetapi tidak dimasukkan ke jalur course aktif.
-- Extension seperti Lists, Custom Blocks, dan debugging eksplisit hanya dibuat jika ada gap yang benar-benar dibutuhkan setelah UAT.
-
-## Hal yang belum ditutup oleh tiga playlist
-
-Belum menjadi target wajib pada draft ini:
-
-- Lists;
-- Custom Blocks;
-- Operators secara sistematis;
-- debugging sebagai metode eksplisit, bukan hanya perbaikan error.
-
-Jika ingin cakupan Scratch lebih lengkap, buat extension terpisah setelah capstone. Jangan memasukkannya di tengah alur wajib karena akan menambah beban kognitif.
-
-## Artefak yang sudah dibuat
-
-- `slides/bridge-sd-00.html` + `.json`
-- `slides/bridge-sd-01.html` + `.json`
-- `slides/bridge-sd-02.html` + `.json`
-- `slides/bridge-sd-03.html` + `.json`
-- `slides/bridge-sd-04.html` + `.json`
-- Draft metadata duplikat di `drafts/sd-scratch/`
-- Generator: `scripts/build_scratch_sd_bridges.py`
-
-## Acceptance criteria sebelum masuk dataset produksi
-
-1. Reviewer menyetujui urutan tiga project dan posisi lima bridge.
-2. Semua slide dapat dibuka di desktop dan mobile.
-3. Semua quiz embedded dapat dijawab ulang dan memberikan feedback.
-4. Setiap bridge memiliki objective, practice, completion criteria, bookmark, dan sumber.
-5. LMS owner menyetujui mapping ID sebelum `courseData-upperprimary.json` diubah.
-6. Tidak ada materi sumber lama yang dimodifikasi.
-7. Dataset SD terintegrasi ke `output/`, Subproject 01, dan `docs/`; seluruh mirror identik dan berisi 22 step (5 slide bridge + 17 video tutorial).
-
-## Implementasi yang sudah dijalankan
-
-- Jalur enam modul dibuat: Modul 0 (Bridge 00 & 01) → Modul 1 (About Me part 1) → Modul 2 (Bridge 02 & Animasi) → Modul 3 (Racing Car & Bridge 03) → Modul 4 (Bridge 04 & Opsi 1) → Modul 5 (Capstone & Ending).
-- Playlist tutorial tetap sebagai video terpisah; tidak ada stitching project paksa.
-- Lima slide bridge (`bridge-sd-00` s.d. `bridge-sd-04`) lengkap dengan slide HTML interaktif, bookmark, dan kuis.
-- `courseData-upperprimary.json` diperbarui di tiga mirror dengan 22 step lengkap dan diverifikasi SHA-256 identik.
-- Seluruh 17 video tutorial memiliki properti `"introMode": "embedded"` untuk mencegah pemutaran bumper ganda.
-- Visual bridge memakai design system existing dan aset Scratch aktual lokal.

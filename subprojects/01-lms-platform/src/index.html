@@ -673,52 +673,73 @@
 
         <!-- 2. Sertifikat Kelulusan Digital Resmi & Transkrip 2 Halaman A4 -->
         <div class="certificate-printable-area" id="certificate-printable-area">
-          <!-- HALAMAN 1: Sertifikat Kelulusan Resmi (A4 Page 1) -->
+          <!-- HALAMAN 1: Sertifikat Kelulusan Resmi (A4 Landscape) -->
           <div class="cert-a4-page cert-page-1" id="cert-page-1">
             <div class="certificate-frame">
+              <!-- Watermark Khusus Mode Admin Preview -->
+              <div class="cert-admin-watermark" id="cert-admin-watermark" style="display: none;">
+                PRATINJAU DOKUMEN · VERIFIKASI ADMIN
+              </div>
+
+              <!-- Ornamen Sudut Regalia Klasik -->
+              <div class="cert-corner-ornament top-left" aria-hidden="true"></div>
+              <div class="cert-corner-ornament top-right" aria-hidden="true"></div>
+              <div class="cert-corner-ornament bottom-left" aria-hidden="true"></div>
+              <div class="cert-corner-ornament bottom-right" aria-hidden="true"></div>
+
+              <!-- Latar Belakang Emblem Watermark Halus -->
+              <div class="cert-guilloche-watermark" aria-hidden="true"></div>
+
               <div class="certificate-inner-border">
-                <!-- Header Logos -->
+                <!-- Header Logos (Bebas CORS & Offline-Ready) -->
                 <div class="cert-logos">
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ruangguru_logo.svg/3840px-Ruangguru_logo.svg.png"
+                    src="./assets/logos/ruangguru-logo.png"
                     alt="Ruangguru"
                     class="cert-logo-rg"
+                    id="cert-logo-rg"
                   />
                   <div class="cert-divider-line"></div>
                   <img
-                    src="https://cdn-web-2.ruangguru.com/landing-pages/assets/37185db7-24a8-467d-aabb-1d5df48f9bc0.png"
+                    src="./assets/logos/uob-mds-logo.png"
                     alt="UOB My Digital Space"
                     class="cert-logo-uob"
+                    id="cert-logo-uob"
                   />
                 </div>
 
-                <div class="cert-header-badge">CERTIFICATE OF COMPLETION</div>
+                <div class="cert-header-badge">CERTIFICATE OF COMPLETION & EXCELLENCE</div>
                 <h1 class="cert-title">SERTIFIKAT KELULUSAN</h1>
-                <p class="cert-subtitle">Sertifikat ini secara resmi diberikan sebagai bukti apresiasi kelulusan kepada:</p>
+                <p class="cert-subtitle">Sertifikat ini secara resmi dianugerahkan sebagai bukti ketuntasan & pencapaian belajar kepada:</p>
 
                 <div class="cert-student-name" id="cert-student-name">Nama Siswa</div>
+                <div class="cert-name-divider" aria-hidden="true"></div>
                 <div class="cert-student-school" id="cert-student-school">SMAN 8 Jakarta · Jenjang SMA</div>
 
                 <p class="cert-body-text">
-                  Telah berhasil menyelesaikan seluruh rangkaian materi pembelajaran mandiri, evaluasi pop-up kuis, serta tantangan praktik interaktif dengan hasil sangat memuaskan pada program:
+                  Telah berhasil menyelesaikan seluruh rangkaian materi pembelajaran mandiri, evaluasi kuis pemahaman komprehensif, serta mini-tantangan praktik interaktif dengan hasil sangat memuaskan pada program:
                 </p>
                 <div class="cert-program-name" id="cert-program-name">
                   Asynchronous Coding Exploration: Python for High School
                 </div>
 
-                <!-- Footer Sertifikat: No Verifikasi, Cap Emas, Tanda Tangan UOB My Digital Space -->
+                <!-- Footer Sertifikat: No Verifikasi, Cap Emas 3D, Tanda Tangan UOB My Digital Space -->
                 <div class="cert-footer-grid">
                   <div class="cert-col-left">
-                    <span class="cert-serial-label">Nomor Verifikasi Sertifikat:</span>
-                    <strong class="cert-serial-no" id="cert-serial-no">MDS-2026-SMA-78291</strong>
+                    <span class="cert-serial-label">Nomor Verifikasi Digital:</span>
+                    <strong class="cert-serial-no" id="cert-serial-no">UOB-MDS-SMA-2026-78291A</strong>
                     <span class="cert-date-text" id="cert-date-text">Diterbitkan pada: 8 September 2026</span>
+                    <span class="cert-verification-status">✓ Terverifikasi Resmi & Sah Secara Sistem</span>
                   </div>
 
                   <div class="cert-seal-box">
                     <div class="cert-gold-seal">
-                      <span>★</span>
-                      <strong>OFFICIAL</strong>
-                      <small>UOB MDS</small>
+                      <div class="seal-inner-ring">
+                        <span class="seal-star">★</span>
+                        <strong class="seal-text">OFFICIAL</strong>
+                        <span class="seal-brand">UOB MDS</span>
+                        <small class="seal-year">2026</small>
+                      </div>
                     </div>
                   </div>
 
@@ -726,35 +747,42 @@
                     <div class="cert-signature-line"></div>
                     <strong class="cert-signatory-name">UOB My Digital Space</strong>
                     <span class="cert-signatory-role">Academic Team & Organizing Committee</span>
-                    <span class="cert-org">Kalananti & PT Bank UOB Indonesia</span>
+                    <span class="cert-org">PT Bank UOB Indonesia · Kalananti · Ruangguru</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- HALAMAN 2: Transkrip Hasil Evaluasi Belajar (A4 Page 2) -->
+          <!-- HALAMAN 2: Transkrip Hasil Evaluasi Belajar (A4 Portrait) -->
           <div class="cert-a4-page cert-page-2" id="cert-page-2">
             <div class="transcript-frame">
+              <!-- Watermark Khusus Mode Admin Preview Halaman 2 -->
+              <div class="transcript-admin-watermark" id="transcript-admin-watermark" style="display: none;">
+                PRATINJAU DOKUMEN · VERIFIKASI ADMIN
+              </div>
+
               <!-- Header Transkrip -->
               <div class="transcript-header">
                 <div class="transcript-logos">
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ruangguru_logo.svg/3840px-Ruangguru_logo.svg.png"
+                    src="./assets/logos/ruangguru-logo.png"
                     alt="Ruangguru"
                     class="transcript-logo-rg"
+                    id="transcript-logo-rg"
                   />
                   <div class="cert-divider-line"></div>
                   <img
-                    src="https://cdn-web-2.ruangguru.com/landing-pages/assets/37185db7-24a8-467d-aabb-1d5df48f9bc0.png"
+                    src="./assets/logos/uob-mds-logo.png"
                     alt="UOB My Digital Space"
                     class="transcript-logo-uob"
+                    id="transcript-logo-uob"
                   />
                 </div>
                 <div class="transcript-title-box">
                   <span class="transcript-badge">OFFICIAL ACADEMIC TRANSCRIPT</span>
                   <h2 class="transcript-title">TRANSKRIP HASIL EVALUASI BELAJAR</h2>
-                  <p class="transcript-subtitle">Lampiran Resmi Sertifikat Kelulusan No. <span id="transcript-serial-ref">MDS-2026-SMA-78291</span></p>
+                  <p class="transcript-subtitle">Lampiran Resmi Sertifikat Kelulusan No. <span id="transcript-serial-ref">UOB-MDS-SMA-2026-78291A</span></p>
                 </div>
               </div>
 
@@ -778,15 +806,15 @@
                 </div>
               </div>
 
-              <!-- Tabel Rincian Modul & Kuis -->
+              <!-- Tabel Rincian Modul & Kuis (Dirancang Compact agar Pas 1 Lembar Portrait) -->
               <div class="transcript-table-container">
                 <table class="transcript-table">
                   <thead>
                     <tr>
-                      <th style="width: 8%;">No</th>
-                      <th style="width: 44%;">Topik Modul Pembelajaran</th>
-                      <th style="width: 22%;">Evaluasi Pop-up Kuis</th>
-                      <th style="width: 14%;">Skor Kuis</th>
+                      <th style="width: 7%;">No</th>
+                      <th style="width: 45%;">Topik Modul Pembelajaran</th>
+                      <th style="width: 24%;">Evaluasi Pop-up Kuis</th>
+                      <th style="width: 12%;">Skor</th>
                       <th style="width: 12%;">Status</th>
                     </tr>
                   </thead>
@@ -839,7 +867,10 @@
         <!-- 3. Tombol Aksi Modal Sertifikat -->
         <div class="certificate-dialog-actions">
           <button type="button" class="btn-print-certificate" id="btn-print-certificate">
-            <span>🖨️</span> Cetak / Simpan PDF
+            <span>📄</span> Unduh Sertifikat & Transkrip (PDF A4)
+          </button>
+          <button type="button" class="btn-browser-print" id="btn-browser-print" title="Gunakan dialog cetak bawaan browser sebagai alternatif">
+            <span>🖨️</span> Cetak Browser
           </button>
           <button type="button" class="btn-dismiss-certificate" id="btn-dismiss-certificate">
             Tutup
@@ -848,7 +879,11 @@
       </div>
     </dialog>
 
+    <!-- Library Konverter PDF Klien (html2canvas + jsPDF) -->
+    <script src="./vendor/html2pdf.bundle.min.js"></script>
+
     <!-- Aplikasi Logika JS Utama -->
     <script type="module" src="./app.js"></script>
   </body>
 </html>
+

@@ -992,3 +992,289 @@ under discussion
 ### Status
 completed and verified live in Google Spreadsheet.
 
+
+## 2026-09-09 — Penyesuaian untuk kelas 60 menit dan siswa cepat menangkap
+
+### User request
+> selain yang diatas apa lagi yah yang diajarin bagsunya , karena kelasnya tuh 60 menit tapi anka anak cepet menangkap jadi kaya kudu disesuain lagi
+
+### Assistant action
+Memberikan rekomendasi perluasan materi Python–Streamlit untuk siswa SMP–SMA yang cepat menangkap, termasuk pola proyek bertingkat, topik tambahan, struktur waktu 60 menit, serta diferensiasi tantangan SMP dan SMA. Belum ada perubahan artefak.
+
+### Status
+under discussion
+
+## 2026-09-09 — Revisi Scratch SD Video-First (4 Modul, 18 Step) dan Perbaikan Modul Bridge 00 Berbasis Real Scratch Editor
+
+### User request
+> Iya, kamu benar. Pembagian sebelumnya tidak masuk akal karena aku membuat slide yang mengulang isi video.
+>
+> Sudah aku revisi menjadi **video-first**:
+>
+> ```text
+> Bridge 00 → About Me → Racing Car → Increase Your Earnings
+> ```
+>
+> ### Modul 0 — Bridge 00
+> Satu-satunya slide wajib untuk:
+> - Apa itu Scratch
+> - Cara membuka Scratch dan membuat project
+> - Stage, Sprite, Backdrop, Block Palette, Coding Area
+> - Project pertama
+> - Troubleshooting dasar
+>
+> ### Modul 1 — About Me
+> Langsung memakai 7 video asli:
+> 1. Mendesain Karakter
+> 2. Merekam Suara Perkenalan Diri
+> 3. Membuat Kostum Makanan
+> 4. Memprogram Sprite Makanan
+> 5. Menambahkan Sprite dengan Emoji
+> 6. Memprogram Animasi dan Text-to-Speech
+> 7. Memprogram dengan Effects
+>
+> ### Modul 2 — Racing Car
+> Langsung memakai 6 video asli:
+> 1. Desain Sirkuit
+> 2. Desain Mobil
+> 3. Kode Mobil
+> 4. Duplikasi dan Modifikasi Mobil 2
+> 5. Desain Finish Line
+> 6. Kode Menang dan Menyentuh Musuh
+>
+> ### Modul 3 — Increase Your Earnings
+> Langsung memakai 4 video asli:
+> 1. Percakapan Intro
+> 2. Memprogram Opsi 1
+> 3. Memprogram Opsi 2
+> 4. Memprogram Ending
+>
+> Sekarang dataset menjadi:
+> - **4 modul**
+> - **18 step**
+> - **1 slide intro**
+> - **17 video tutorial**
+>
+> Bridge 01–04 tidak dihapus, tapi dikeluarkan dari course aktif dan disimpan sebagai draft/reference.
+>
+> Plan juga sudah diperbarui:
+> [02 — Implementation Plan Scratch Async SD](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/02-curriculum-sequencing/planning/02-implementation-plan-scratch-async-sd.md)
+>
+> Prinsip finalnya:
+> > Kalau penjelasannya sudah ada di video, gunakan video. Slide hanya dibuat untuk gap yang belum memiliki penjelasan.
+>
+> Checkpoint Git: `3a646e6`.
+>
+> eh ini aku gasuka banget sama is imodulnya gak menggambarkan scratch asli dan dia gak pake blok asli aku benci deh, ini dibaikin yah modulnya suru dia buka https://scratch.mit.edu/projects/editor/?tutorial=getStarted dan bikin ambil blok nya trus ss masukin cdn untuk project projectnya yah, coba dong baikin
+
+
+### Assistant response
+Kalau anak-anaknya cepat menangkap, menurutku solusinya **bukan menambah banyak konsep baru dalam satu pertemuan**, tetapi membuat setiap proyek memiliki beberapa tingkat kedalaman. Dengan begitu, siswa tetap menghasilkan satu proyek dalam 60 menit, tetapi siswa cepat tidak kehabisan tantangan.
+
+## Gunakan sistem tiga level
+
+Setiap pertemuan sebaiknya memiliki:
+
+1. **Core Mission** — fitur minimum yang wajib selesai semua siswa.
+2. **Upgrade Mission** — pengembangan untuk siswa yang selesai lebih cepat.
+3. **Boss Challenge** — tantangan terbuka tanpa tutorial langkah demi langkah.
+
+Contoh proyek *Number Guessing Game*:
+
+- Core: menebak angka dengan `while`.
+- Upgrade: batas percobaan dan petunjuk terlalu besar/kecil.
+- Boss: level kesulitan, skor, replay, dan leaderboard.
+
+Ini lebih baik daripada langsung melompat ke banyak materi karena anak belajar melakukan **iterasi produk**, bukan hanya menyalin kode.
+
+## Materi tambahan yang bagus
+
+### 1. Git dan GitHub sebagai kebiasaan
+Jangan hanya memakai Codespaces sebagai editor. Ajarkan secara bertahap:
+
+- struktur repository;
+- commit dan pesan commit;
+- membaca perubahan;
+- membuat README;
+- branching sederhana untuk SMA;
+- memperbaiki konflik sederhana sebagai enrichment.
+
+Setiap pertemuan ditutup dengan satu commit. Hasil akhirnya adalah portofolio nyata, bukan sekadar kumpulan file.
+
+### 2. Debugging sebagai materi eksplisit
+Anak cepat menangkap biasanya justru senang dengan tantangan mencari kesalahan.
+
+Aktivitas yang bisa diberikan:
+
+- *bug hunt* selama 5 menit;
+- membaca error message;
+- menggunakan `print()` untuk melacak nilai;
+- mengenali syntax, runtime, dan logic error;
+- memperbaiki kode teman;
+- menggunakan breakpoint/debugger untuk SMA.
+
+Debugging jangan hanya muncul ketika program gagal. Jadikan sebuah keterampilan yang memang diajarkan.
+
+### 3. Clean code dan cara berpikir programmer
+Mulai dari proyek kecil, ajarkan:
+
+- nama variabel yang jelas;
+- memecah program menjadi function;
+- menghindari kode berulang;
+- komentar yang berguna;
+- memisahkan data, logic, dan interface;
+- melakukan refactor setelah program berhasil.
+
+Untuk siswa cepat, tantangannya bukan cuma “buat bekerja”, tetapi “buat lebih mudah dibaca dan dikembangkan”.
+
+### 4. Algorithmic thinking
+Tidak harus dibuat seperti materi algoritma universitas. Gunakan kasus konkret:
+
+- mencari nilai tertinggi;
+- menghitung frekuensi kata;
+- filter dan sorting data;
+- membuat ranking;
+- menentukan rekomendasi dari beberapa aturan;
+- membandingkan pencarian manual dan pencarian dengan program.
+
+SMA bisa dikenalkan pada efisiensi secara intuitif: “Jika datanya menjadi 10.000, cara mana yang lebih masuk akal?”
+
+### 5. Testing
+Ini sangat cocok untuk siswa yang cepat menangkap.
+
+- membuat daftar skenario pengujian;
+- menguji input normal, kosong, negatif, dan ekstrem;
+- menggunakan `assert`;
+- unit test sederhana dengan `pytest` untuk SMA;
+- meminta teman mencoba merusak aplikasi.
+
+Bisa dikemas sebagai peran **QA Engineer** agar tidak terasa terlalu akademis.
+
+### 6. UI/UX untuk Streamlit
+Selain coding, siswa dapat belajar membuat produk yang nyaman digunakan:
+
+- layout dan hierarchy;
+- label input yang jelas;
+- feedback sukses dan error;
+- empty state;
+- warna dan keterbacaan;
+- accessibility sederhana;
+- merancang wireframe sebelum coding.
+
+Ini membuat proyek Streamlit jauh lebih menarik daripada sekadar kumpulan input dan tombol.
+
+### 7. State dan penyimpanan data
+Setelah dasar Streamlit, tambahkan:
+
+- `st.session_state`;
+- JSON dan CSV;
+- SQLite sederhana;
+- create, read, update, delete atau CRUD;
+- filter, pencarian, dan sorting;
+- import dan export data.
+
+Contoh proyeknya:
+
+- habit tracker;
+- library manager;
+- voting app;
+- inventory mini;
+- student progress tracker.
+
+### 8. API dan integrasi
+Bukan hanya mengambil data, tetapi mengolahnya menjadi fitur:
+
+- Pokémon comparison app;
+- country explorer;
+- public holiday planner;
+- currency converter;
+- rekomendasi buku;
+- dashboard kualitas udara atau cuaca jika API stabil.
+
+SMA bisa belajar status code, parameter, JSON, timeout, dan penanganan API gagal.
+
+### 9. Data literacy
+Streamlit sangat kuat untuk jalur ini:
+
+- membersihkan data;
+- mencari data kosong;
+- menghitung statistik;
+- memilih visualisasi yang tepat;
+- membedakan fakta dan interpretasi;
+- menyampaikan insight dari grafik.
+
+Proyek dapat memakai data yang dekat dengan anak: musik, olahraga, kebiasaan belajar, game, atau survei kelas.
+
+### 10. Software ethics dan keamanan dasar
+Materinya dibuat ringan dan kontekstual:
+
+- jangan menyimpan password di kode;
+- mengenal environment variables dan secrets;
+- privasi data pengguna;
+- memvalidasi input;
+- menggunakan gambar dan data dengan bertanggung jawab;
+- keterbatasan serta bias aplikasi rekomendasi.
+
+### 11. Product thinking
+Sebelum coding, siswa menjawab:
+
+- Siapa penggunanya?
+- Masalah apa yang diselesaikan?
+- Apa fitur paling penting?
+- Bagaimana kita tahu aplikasinya membantu?
+
+Sesudah proyek selesai, siswa melakukan demo 30–60 detik. Ini mengembangkan komunikasi, kreativitas, dan ownership.
+
+## Struktur kelas 60 menit
+
+Aku menyarankan pola berikut:
+
+- **0–5 menit:** hook, demo hasil akhir, dan tujuan.
+- **5–12 menit:** konsep baru melalui contoh kecil.
+- **12–20 menit:** live coding bersama.
+- **20–42 menit:** Core Mission.
+- **42–52 menit:** Upgrade Mission atau Boss Challenge.
+- **52–57 menit:** testing, debugging, dan refactor.
+- **57–60 menit:** commit GitHub dan mini-demo/refleksi.
+
+Untuk siswa yang sangat cepat, sediakan **challenge card** yang bisa dibuka tanpa menunggu teman lain. Hindari memperpanjang penjelasan guru hanya untuk mengisi waktu.
+
+## Project pool tambahan
+
+Selain proyek yang sudah disebutkan sebelumnya, kamu bisa memakai:
+
+- password strength checker;
+- text adventure game;
+- chatbot berbasis aturan;
+- flashcard learning app;
+- typing speed tester;
+- voting dan polling app;
+- habit tracker;
+- study timer/Pomodoro;
+- library book manager;
+- event registration app;
+- recommendation engine sederhana;
+- image filter menggunakan Pillow;
+- word-frequency analyzer;
+- survey dan dashboard kelas;
+- mini marketplace simulator;
+- mystery game berbasis data;
+- escape room coding;
+- dashboard portofolio pribadi.
+
+## Rekomendasi penyesuaian journey
+
+Untuk 24 pertemuan, aku akan mengubah arah besarnya menjadi:
+
+- **Pertemuan 1–3:** trial dan fundamental.
+- **Pertemuan 4–8:** Python logic melalui game dan utility kecil.
+- **Pertemuan 9–12:** data, file, debugging, testing, dan Git.
+- **Pertemuan 13–17:** Streamlit UI, state, CRUD, dan UX.
+- **Pertemuan 18–20:** API, data visualization, dan multi-page app.
+- **Pertemuan 21–24:** capstone dalam tim atau individu.
+
+Yang paling penting: **jangan membuat seluruh kelas sekadar belajar syntax lalu pindah ke syntax berikutnya**. Untuk anak yang cepat menangkap, kedalaman sebaiknya datang dari proses:
+
+> build → test → debug → improve → explain → publish
+
+Dengan model ini, satu pertemuan tetap terasa padat walaupun konsep utamanya hanya satu.

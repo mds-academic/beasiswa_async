@@ -1035,3 +1035,115 @@ Catatan: upload `Code.gs` berhasil, tetapi deployment publik baru belum bisa div
 ### Status
 completed and verified live in Google Spreadsheet.
 
+## 2026-09-09 — Redesain Sertifikat (Landscape A4) & Transkrip Nilai (Portrait A4) via html2pdf
+
+### User
+> /Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/01-lms-platform
+> 
+> ini design nya jelek banget sih yah , kenapa dia kok pas di print kaya jelek banget ga sesaui 
+> 
+> 1/ harusnya sertifikat lanscape a4
+> halaman 2 nilai gapapa potrait
+> 
+> ini pake konverter html2pdf aja kali aku ada be==perna bikin buat placemnet_test broject B2C coba deh cari
+
+### Status
+- **Planned / Ready for User Approval** — Menemukan modul `html2pdf.bundle.min.js` dari referensi proyek B2C Placement Test (`Academic_Content/B2C/placement-test/placement-sync.js`), memvalidasi kapabilitas ekspor multi-orientasi via Playwright (Halaman 1 Landscape A4 + Halaman 2 Portrait A4), memperbarui rencana implementasi [04-implementation-plan-skeuomorphism-redesign-challenge-certificate.md](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/planning/04-implementation-plan-skeuomorphism-redesign-challenge-certificate.md) secara in-place, dan menyusun [implementation_plan.md](file:///Users/yazidhilmi/.gemini/antigravity-ide/brain/a9518d2d-708b-44d8-976b-4c0a05998824/implementation_plan.md) untuk persetujuan pengguna.
+
+### Assistant response
+Implementasi konverter `html2pdf` dari proyek B2C Placement Test berhasil ditemukan di:
+- [`Academic_Content/B2C/placement-test/placement-sync.js`](file:///Users/yazidhilmi/Documents/cloud/Kalananti-cloud/Academic_Content/B2C/placement-test/placement-sync.js)
+- [`Academic_Content/B2C/placement-test/versi-lama-local/pdf-test/test-html2pdf-export.js`](file:///Users/yazidhilmi/Documents/cloud/Kalananti-cloud/Academic_Content/B2C/placement-test/versi-lama-local/pdf-test/test-html2pdf-export.js)
+
+Modul `html2pdf.bundle.min.js` telah kami unduh ke direktori lokal:
+[`src/vendor/html2pdf.bundle.min.js`](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/01-lms-platform/src/vendor/html2pdf.bundle.min.js)
+
+Kami juga telah melakukan pengujian teknis langsung via Playwright headless browser: engine `jsPDF` di dalam bundle tersebut terbukti dapat menghasilkan **1 file PDF utuh dengan orientasi campuran**:
+1. **Halaman 1**: Landscape A4 (`841.89 × 595.28 pt` / `297 × 210 mm`) untuk Sertifikat Kelulusan resmi.
+2. **Halaman 2**: Portrait A4 (`595.28 × 841.89 pt` / `210 × 297 mm`) untuk Transkrip Nilai & Kuis.
+
+Rencana implementasi lengkap telah dibuat dan diperbarui secara in-place pada dokumen proyek:
+- Rencana Kerja Aktif: [`04-implementation-plan-skeuomorphism-redesign-challenge-certificate.md`](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/planning/04-implementation-plan-skeuomorphism-redesign-challenge-certificate.md)
+- Dokumen Artifact: [`implementation_plan.md`](file:///Users/yazidhilmi/.gemini/antigravity-ide/brain/a9518d2d-708b-44d8-976b-4c0a05998824/implementation_plan.md)
+
+Silakan tinjau rencana tersebut dan tekan tombol **Proceed** / berikan konfirmasi untuk mulai mengeksekusi redesain visual dan logika ekspor PDF.
+
+
+## 2026-09-09 — Analisis implementation plan perbaikan sertifikat
+
+### User
+> ini aku mau ada perbaikan sertifikat kira kira ada tambahan kah dari kamu coba analisis implementation plan nya sebelum dijalankan
+
+### Status
+- **Under analysis** — meninjau implementation plan sertifikat sebelum eksekusi dan membandingkannya dengan PRD serta implementasi LMS saat ini.
+
+### Assistant final response
+Aku sudah analisis implementation plan sertifikatnya. Arah besarnya sudah benar, tetapi menurutku **belum aman langsung dieksekusi**.
+
+Temuan paling penting:
+
+1. `html2pdf.bundle.min.js` memang sudah ada, tetapi belum dimuat di `index.html` dan belum ada fungsi `exportCertificateToPdf()`; tombol saat ini masih memakai `window.print()`.
+2. CSS print sekarang masih default portrait, jadi belum bisa menjamin halaman 1 landscape dan halaman 2 portrait.
+3. Layout harus dirender pada surface A4 fixed, bukan ukuran modal browser.
+4. Logo eksternal berisiko gagal/CORS saat dikonversi ke canvas; sebaiknya gunakan aset lokal atau fallback teks.
+5. Data sertifikat harus server-first. Saat ini score quiz yang belum ada bisa dianggap `100`, sehingga transcript berisiko tidak akurat.
+6. Eligibility perlu satu definisi terpusat: semua video/slide selesai, semua kuis tersubmit, dan threshold kelulusan terpenuhi.
+7. Nomor seri dan tanggal masih dibuat client-side; untuk sertifikat resmi sebaiknya ada status/serial dari backend, atau diberi label preview.
+8. Wajib ada QA PDF nyata: tepat 2 halaman, page 1 297×210 mm, page 2 210×297 mm, tidak crop, tidak overflow ke halaman 3.
+
+Aku sudah menambahkan hasil review ini ke [implementation plan](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/planning/04-implementation-plan-skeuomorphism-redesign-challenge-certificate.md). Statusnya **NEEDS REVISION sebelum eksekusi**. Belum ada kode sertifikat yang dijalankan atau diubah pada turn ini.
+
+## 2026-09-09 — Revisi Komprehensif Implementation Plan Sertifikat (9 Temuan Review)
+
+### User
+> ini ada feedback coba di lihat 
+> 
+> Aku sudah analisis implementation plan sertifikatnya. Arah besarnya sudah benar, tetapi **belum aman langsung dieksekusi**.
+> 
+> Temuan penting:
+> 
+> 1. `html2pdf.bundle.min.js` sudah ada, tetapi belum dimuat di `index.html`.
+> 2. Fungsi `exportCertificateToPdf()` belum ada; tombol masih memakai `window.print()`.
+> 3. CSS print masih default portrait, belum menjamin halaman 1 landscape dan halaman 2 portrait.
+> 4. Layout harus dirender pada surface A4 fixed, bukan ukuran modal browser.
+> 5. Logo eksternal berisiko gagal/CORS saat dikonversi ke canvas.
+> 6. Data sertifikat harus server-first; score yang belum tersedia tidak boleh dianggap otomatis 100.
+> 7. Eligibility harus satu definisi terpusat: semua materi selesai, semua kuis tersubmit, dan nilai memenuhi syarat.
+> 8. Nomor seri dan tanggal masih client-side; untuk sertifikat resmi sebaiknya diterbitkan backend.
+> 9. Wajib QA PDF nyata: tepat 2 halaman, halaman 1 `297 × 210 mm`, halaman 2 `210 × 297 mm`, tanpa crop atau halaman ketiga.
+> 
+> Review sudah aku tambahkan ke:
+> 
+> [Implementation Plan Sertifikat](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/planning/04-implementation-plan-skeuomorphism-redesign-challenge-certificate.md)
+> 
+> Status: **NEEDS REVISION sebelum eksekusi**. Belum ada kode sertifikat yang dijalankan pada turn ini.
+
+### Status
+- **Plan Revised & Awaiting User Approval** — Rencana implementasi telah dirombak secara komprehensif untuk menuntaskan ke-9 poin review. Disusun roadmap eksekusi 2 tahap (Tahap A: Engine & Data Contract; Tahap B: Visual Polish & QA).
+
+### Assistant response
+Terima kasih atas review yang sangat mendalam dan presisi! Seluruh **9 temuan penting** telah kami analisis dan kami integrasikan solusinya ke dalam rencana implementasi revisi:
+
+1. **Engine ekspor terhubung ke UI**: Vendor lokal `src/vendor/html2pdf.bundle.min.js` ditautkan di `src/index.html` dan tombol aksi modal memanggil `exportCertificateToPdf()`, bukan lagi `window.print()`.
+2. **Pengujian PDF nyata multi-orientasi**: Menguji langsung berkas PDF binary via Playwright/Python PDF parser untuk memvalidasi tepat 2 halaman dengan `/MediaBox` Halaman 1 Landscape A4 (`297 × 210 mm` / `841.89 × 595.28 pt`) dan Halaman 2 Portrait A4 (`210 × 297 mm` / `595.28 × 841.89 pt`).
+3. **Ukuran render fixed A4 (Isolated Sandbox Surface)**: Render canvas tidak mengambil elemen modal yang fleksibel, melainkan dirender pada kontainer terisolasi di luar viewport (`#cert-render-sandbox`) dengan ukuran standar A4 96 DPI tetap (`1123 × 794 px` landscape & `794 × 1123 px` portrait) berskala 2x (300 DPI retina).
+4. **CORS deterministik & Aset Lokal**: Menyimpan logo Ruangguru dan UOB di direktori lokal `src/assets/logos/` (plus inline SVG/Data URI fallback) sehingga 100% bebas error CORS dan offline-ready.
+5. **Source of truth server-first**: Menghilangkan fallback nilai otomatis 100. Skor kuis diambil strictly dari `state.quizScores`, termasuk skor 0 jika siswa salah 3x.
+6. **Eligibility guard terpusat**: Validasi ketat kelulusan (`canIssueCertificate()`) mencakup ketuntasan materi, seluruh kuis disubmit, dan ambang batas kelulusan terpenuhi. Sesi Admin yang belum menyelesaikan materi diberikan watermark transparan `[PRATINJAU DOKUMEN / CONTOH VERIFIKASI ADMIN]`.
+7. **Nomor seri & tanggal resmi**: Menggunakan tanggal penyelesaian aktual (`completionDate`), format serial standar `UOB-MDS-[JENJANG]-[TAHUN]-[HASH]`, dan sanitasi nama file PDF.
+8. **Pemisahan jalur ekspor PDF dan browser print**: Tombol utama modal adalah unduh berkas PDF, sementara cetak browser dijadikan tombol sekunder fallback.
+9. **QA otomatis komprehensif**: Pengujian Playwright memverifikasi 36 baris materi SMA/SMP pas dalam 1 halaman Portrait A4 tanpa tumpah ke halaman 3.
+
+Dokumen rencana kerja telah diperbarui secara in-place:
+- Rencana Kerja Proyek: [`04-implementation-plan-skeuomorphism-redesign-challenge-certificate.md`](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/planning/04-implementation-plan-skeuomorphism-redesign-challenge-certificate.md)
+- Dokumen Artifact: [`implementation_plan.md`](file:///Users/yazidhilmi/.gemini/antigravity-ide/brain/a9518d2d-708b-44d8-976b-4c0a05998824/implementation_plan.md)
+
+Belum ada kode sertifikat yang dijalankan pada turn ini. Silakan konfirmasi persetujuan atau klik **Proceed** jika rencana revisi ini sudah sesuai untuk mulai kita eksekusi dari **Tahap A**.
+
+## 2026-09-09 — Eksekusi Redesain Sertifikat (Landscape A4), Transkrip Nilai (Portrait A4) & Ekspor html2pdf
+
+### User
+> oke go ahead publish yah
+
+### Status
+- **In Execution** — Menjalankan eksekusi 2 tahap: Tahap A (vendor lokal html2pdf, aset logo bebas CORS, isolated fixed A4 sandbox renderer, server-first data contract, export multi-orientasi) dan Tahap B (visual polish regalia certificate, compact transcript, QA Playwright binary PDF, sinkronisasi ke docs/).

@@ -1,7 +1,7 @@
 {
   "kicker": "Materi Jembatan 00 · Kenalan Scratch",
-  "title": "Scratch dari Nol: Kenalan dengan Platformnya",
-  "summary": "Orientasi platform Scratch menggunakan referensi visual aktual dari Create & Learn.",
+  "title": "Scratch dari Nol: Kenalan dengan Platform Coding Visual",
+  "summary": "Orientasi platform Scratch menggunakan antarmuka resmi scratch.mit.edu dan tutorial interaktif Getting Started.",
   "id": "bridge-sd-00",
   "type": "slide",
   "level": "SD",
@@ -10,56 +10,58 @@
   "embedUrl": "slides/bridge-sd-00.html",
   "prerequisiteStepIds": [],
   "learningObjectives": [
-    "Menjelaskan Scratch sebagai platform coding berbasis blok",
-    "Mengenali Stage, Sprite, Block Palette, dan Coding Area",
-    "Membuat dan menjalankan project pertama",
-    "Mengetahui troubleshooting dasar"
+    "Membuka editor Scratch resmi dan tutorial Getting Started di scratch.mit.edu",
+    "Mengenali 4 area kerja utama: Block Palette, Coding Area, Stage, dan Sprite Pane",
+    "Memahami kategori warna balok asli: Motion (Biru), Looks (Ungu), Events (Kuning), Control (Oranye)",
+    "Membuat project pertama: menggerakkan karakter, menambahkan dialog kata, dan memasang topi bendera hijau",
+    "Memahami troubleshooting dasar dan penyesuaian posisi karakter"
   ],
   "practice": {
-    "type": "guided_reading",
-    "description": "Menyelesaikan pembacaan, observasi visual, dan checkpoint quiz."
+    "type": "guided_reading_and_hands_on",
+    "description": "Membuka scratch.mit.edu di tab baru, mengikuti tutorial Getting Started, dan menjawab kuis pemahaman."
   },
   "completionCriteria": {
     "quizScoreMin": 100,
     "interactiveCompleted": true,
-    "description": "Menyelesaikan semua slide dan checkpoint quiz."
+    "description": "Menyelesaikan seluruh slide dan kuis pemahaman Scratch."
   },
   "bookmarks": [
     {
       "slideIndex": 0,
-      "label": "Selamat Datang di Scratch"
+      "label": "Selamat Datang di Scratch!"
     },
     {
       "slideIndex": 1,
-      "label": "Scratch itu apa?"
+      "label": "Buka Scratch & Kenali Ruang Kerjanya"
     },
     {
       "slideIndex": 2,
-      "label": "Kenali ruang kerjanya"
+      "label": "Warna & Bentuk Balok Asli Scratch"
     },
     {
       "slideIndex": 3,
-      "label": "Warna dan bentuk blok"
+      "label": "Coba Project Pertamamu!"
     },
     {
       "slideIndex": 4,
-      "label": "Coba project pertamamu"
+      "label": "Menambah Karakter & Latar Panggung"
     },
     {
       "slideIndex": 5,
-      "label": "Kalau belum berjalan..."
+      "label": "Tips Penting & Kuis Pemahaman"
     }
   ],
   "quizzes": [
     {
-      "question": "Checkpoint tersedia di dalam slide interaktif.",
+      "question": "Apa fungsi balok kuning emas 'when green flag clicked' di Scratch?",
       "options": [
-        "Baca ulang slide",
-        "Lanjut tanpa mencoba",
-        "Tutup materi"
+        "Menghapus karakter kucing dari panggung",
+        "Menjadi pemicu awal script saat bendera hijau di atas panggung diklik",
+        "Mengubah warna latar belakang menjadi hijau",
+        "Mematikan audio browser"
       ],
-      "answer": 0,
-      "explanation": "Baca ulang bagian yang belum jelas lalu coba lagi.",
+      "answer": 1,
+      "explanation": "Balok berkepala cembung 'when green flag clicked' adalah topi Event yang menjalankan seluruh balok di bawahnya saat bendera hijau diklik.",
       "embedded": true
     }
   ]

@@ -289,46 +289,35 @@ modules = [
     {
         'id': 'up-mod-00',
         'order': 0,
-        'title': 'Modul 0: Kenalan dengan Scratch & Fondasi Interaksi',
-        'description': 'Materi jembatan orientasi Scratch dan transisi dari karakter visual ke kode blok.',
+        'title': 'Modul 0: Kenalan dengan Scratch',
+        'description': 'Satu-satunya materi jembatan wajib untuk orientasi platform, ruang kerja, tutorial Getting Started, dan troubleshooting dasar.',
         'steps': [
-            bridge_step('bridge-sd-00', 'Materi Jembatan 00 · Kenalan Scratch'),
-            bridge_step('bridge-sd-01', 'Materi Jembatan 01 · Sprite & Event')
+            bridge_step('bridge-sd-00', 'Materi Jembatan 00 · Kenalan Scratch')
         ]
     },
     {
         'id': 'up-mod-01',
         'order': 1,
-        'title': 'Modul 1: About Me — Karakter, Suara & Media Interaktif',
-        'description': 'Project pertama: membuat karakter perkenalan diri, merekam suara, kostum makanan, dan interaksi sprite.',
+        'title': 'Modul 1: About Me — Karakter, Suara & Animasi',
+        'description': 'Project pertama: membuat karakter perkenalan diri, merekam suara, kostum makanan, sprite emoji, animasi Text-to-Speech, dan efek visual.',
         'steps': [
             video_step('up-about-1', '1 About Me - Mendesain Karakter', 'Video About Me · Tutorial', 'about-me'),
             video_step('up-about-2', '2 About Me - Merekam Suara Perkenalan Diri', 'Video About Me · Tutorial', 'about-me'),
             video_step('up-about-3', '3 About Me - Membuat Kostum Makanan', 'Video About Me · Tutorial', 'about-me'),
             video_step('up-about-4', '4 About Me - Memprogram Sprite Makanan', 'Video About Me · Tutorial', 'about-me'),
-            video_step('up-about-5', '5 About Me - Menambahkan Sprite dengan Emoji', 'Video About Me · Tutorial', 'about-me')
-        ]
-    },
-    {
-        'id': 'up-mod-02',
-        'order': 2,
-        'title': 'Modul 2: Loop, Gerakan Berulang & Animasi Lanjutan',
-        'description': 'Fondasi loop dan pengulangan untuk animasi gerak, ekstensi Text-to-Speech, serta efek visual.',
-        'steps': [
-            bridge_step('bridge-sd-02', 'Materi Jembatan 02 · Loop & Animasi'),
+            video_step('up-about-5', '5 About Me - Menambahkan Sprite dengan Emoji', 'Video About Me · Tutorial', 'about-me'),
             video_step('up-about-6', '6 About Me - Memprogram Animasi dan Menggunakan Text-to-Speech', 'Video About Me · Tutorial', 'about-me'),
             video_step('up-about-7', '7 About Me - Memprogram dengan Effects', 'Video About Me · Tutorial', 'about-me')
         ]
     },
     {
-        'id': 'up-mod-03',
-        'order': 3,
-        'title': 'Modul 3: Racing Car Game — Kontrol Kemudi & Deteksi Tabrakan',
-        'description': 'Project kedua: mendesain sirkuit balap, kemudi keyboard 2 mobil, sensing tabrakan, dan aturan menang.',
+        'id': 'up-mod-02',
+        'order': 2,
+        'title': 'Modul 2: Racing Car Game — Arena Balap & Kemudi',
+        'description': 'Project kedua: mendesain sirkuit balap, kemudi keyboard mobil, duplikasi mobil 2, garis finish, deteksi tabrakan, dan kode menang.',
         'steps': [
             video_step('up-racing-1', '1 Desain Sirkuit', 'Video Racing Car · Tutorial', 'racing-car'),
             video_step('up-racing-2', '2 Desain Mobil', 'Video Racing Car · Tutorial', 'racing-car'),
-            bridge_step('bridge-sd-03', 'Materi Jembatan 03 · Sensing & Kontrol'),
             video_step('up-racing-3', '3 Kode Mobil', 'Video Racing Car · Tutorial', 'racing-car'),
             video_step('up-racing-4', '4 Duplikasi dan Modifikasi Mobil 2', 'Video Racing Car · Tutorial', 'racing-car'),
             video_step('up-racing-5', '5 Desain Finish Line', 'Video Racing Car · Tutorial', 'racing-car'),
@@ -336,22 +325,13 @@ modules = [
         ]
     },
     {
-        'id': 'up-mod-04',
-        'order': 4,
-        'title': 'Modul 4: Proyek Integratif — Variabel, Broadcast & Percabangan',
-        'description': 'Jembatan data dan komunikasi antar-sprite untuk starter project bertema pekerjaan dan keuangan.',
+        'id': 'up-mod-03',
+        'order': 3,
+        'title': 'Modul 3: Increase Your Earnings — Proyek Capstone Interaktif',
+        'description': 'Project capstone: percakapan intro, logika opsi pekerjaan, penghasilan kredit uang, sistem percabangan, dan ending cerita.',
         'steps': [
-            bridge_step('bridge-sd-04', 'Materi Jembatan 04 · Variabel & Broadcast'),
             video_step('up-earning-1', '1. Percakapan Intro', 'Video Increase Your Earnings · Capstone', 'increase-earning'),
-            video_step('up-earning-2', '2. Memprogram Opsi 1', 'Video Increase Your Earnings · Capstone', 'increase-earning')
-        ]
-    },
-    {
-        'id': 'up-mod-05',
-        'order': 5,
-        'title': 'Modul 5: Increase Your Earnings — Capstone & Ending',
-        'description': 'Penyelesaian project integratif: penambahan kredit, kondisi interaktif, broadcast sinyal ending, dan evaluasi hasil.',
-        'steps': [
+            video_step('up-earning-2', '2. Memprogram Opsi 1', 'Video Increase Your Earnings · Capstone', 'increase-earning'),
             video_step('up-earning-3', '3. Memprogram Opsi 2', 'Video Increase Your Earnings · Capstone', 'increase-earning'),
             video_step('up-earning-4', '4. Memprogram Ending', 'Video Increase Your Earnings · Capstone', 'increase-earning')
         ]
