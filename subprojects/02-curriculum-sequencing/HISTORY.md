@@ -483,3 +483,149 @@ Checkpoint Git lokal: `43f2680` (`docs(curriculum): audit scratch async sd seque
 
 ### Actions
 - Incoming request logged before substantive work.
+
+### Assistant Response — 2026-09-09
+
+Iya, aku sudah susun scaffolding lengkapnya dan langsung bikin draft slides-nya.
+
+Struktur yang aku rekomendasikan:
+
+1. **Bridge 00 — Kenalan dengan Scratch**
+   - Menggunakan artikel Create & Learn sebagai sumber intro platform.
+   - Scratch itu apa.
+   - Cara buka `scratch.mit.edu`, Create, login, dan save.
+   - Mengenal Block Palette, Coding Area, Stage, Sprite, dan Backdrop.
+   - Arti warna blok.
+   - Project mini: Sprite menyapa.
+   - Troubleshooting dasar.
+
+2. **Project 1 — About Me**
+   - Tetap memakai 7 video asli.
+   - Alur: `design → media → first code → animation → creative challenge`.
+   - Ditambah Bridge 01 untuk Sprite, Costume, Backdrop, Event, dan Sound.
+
+3. **Bridge 02 — Loop dan Animasi**
+   - Aksi satu kali vs aksi berulang.
+   - `repeat`, `forever`, `repeat until`.
+   - `move`, `turn`, `next costume`, `wait`.
+   - Costume sebagai frame animasi.
+
+4. **Project 2 — Racing Car**
+   - Urutan tetap: desain sirkuit → desain mobil → kode mobil → duplikasi mobil → finish line → menang/collision.
+   - Ditambah Bridge 03 sebelum video Kode Mobil.
+   - Bridge ini menjelaskan keyboard input, gerakan, sensing, collision, dan `if then`.
+
+5. **Bridge 04 — Variable dan Koordinasi Project**
+   - Variable sebagai kotak penyimpan nilai.
+   - Score/Credit.
+   - `set` dan `change`.
+   - Broadcast sebagai pesan antar-Sprite.
+   - Backdrop sebagai scene/state.
+
+6. **Project 3 — Increase Your Earnings**
+   - Tetap menjadi capstone.
+   - Urutan tetap: intro/remix → opsi 1 → opsi 2 → ending.
+   - Clone, broadcast, variable global, conditional, dan scene coordination dipakai di sini.
+
+Jadi jalur lengkapnya:
+
+`Bridge 00 → About Me → Bridge 02 → Racing Car → Bridge 04 → Increase Your Earnings`
+
+Aku juga sudah membuat lima slide bridge:
+
+- [Bridge 00 — Scratch dari Nol](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/02-curriculum-sequencing/slides/bridge-sd-00.html)
+- [Bridge 01 — Sprite, Costume, dan Event](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/02-curriculum-sequencing/slides/bridge-sd-01.html)
+- [Bridge 02 — Loop dan Animasi](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/02-curriculum-sequencing/slides/bridge-sd-02.html)
+- [Bridge 03 — Input, Sensing, dan Keputusan](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/02-curriculum-sequencing/slides/bridge-sd-03.html)
+- [Bridge 04 — Variable, Broadcast, dan Project Integratif](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/02-curriculum-sequencing/slides/bridge-sd-04.html)
+
+Implementation plan-nya ada di:
+
+[02 — Implementation Plan Scratch Async SD](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/02-curriculum-sequencing/planning/02-implementation-plan-scratch-async-sd.md)
+
+Setiap slide sudah memiliki metadata JSON, bookmark, learning objectives, practice, completion criteria, dan embedded checkpoint quiz. Aku juga membuat generator supaya slides bisa diregenerasi secara konsisten di:
+
+`scripts/build_scratch_sd_bridges.py`
+
+Aku belum memasukkan bridge ini ke `courseData-upperprimary.json`, karena masih perlu validasi kamu dulu untuk struktur dan tone materinya. Browser Playwright lokal juga gagal dijalankan karena permission error dari Chromium sandbox, jadi yang bisa aku lakukan sekarang baru validasi structural HTML dan metadata.
+
+Checkpoint Git lokal: `fbf45f9` (`feat(curriculum): add scratch sd scaffolding bridges`).
+
+### Actions / Artifacts
+- Membaca artikel Create & Learn dan mengambil struktur konsep intro platformnya.
+- Membuat plan `planning/02-implementation-plan-scratch-async-sd.md`.
+- Membuat 5 HTML bridge dan 5 metadata JSON di `slides/`.
+- Membuat draft metadata di `drafts/sd-scratch/`.
+- Membuat generator `scripts/build_scratch_sd_bridges.py`.
+- Memperbarui `STATE.md`.
+- Structural validation HTML/JSON berhasil untuk 5 bridge; visual browser QA tertunda karena permission error Chromium.
+- Dataset produksi belum diubah.
+- Git checkpoint lokal: `fbf45f9`.
+
+## 2026-09-09 — Koreksi desain dan penggunaan aset Scratch asli
+
+### User
+> /Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/02-curriculum-sequencing/slides/bridge-sd-00.html
+>
+> ini semua yang kamu buat kenapa kok dai ngga sama designnya kaya yang ada loh ah jnagan ngarang sebdiri
+>
+> sama kan aku udah kasi link nya kan ini kamu ambil lah gambarnya
+>
+> jangan bikin text pake block actual ambil dari web scratch nya dong ahh
+
+### Status
+- **revision requested** — desain slide harus mengikuti design system yang sudah ada di project, bukan template baru; visual Scratch harus menggunakan screenshot/aset aktual dari sumber web Scratch atau artikel yang dirujuk; representasi blok berupa teks harus dihapus.
+
+### Actions
+- Incoming correction logged before edits.
+
+### Assistant Response — 2026-09-09
+
+Iya, kamu benar—versi sebelumnya salah. Aku bikin visual dan representasi blok sendiri, padahal harus mengikuti design system bridge yang sudah ada dan memakai gambar Scratch aktual dari link referensi.
+
+Sudah aku revisi **semua 5 bridge Scratch SD**, bukan hanya `bridge-sd-00.html`:
+
+- sekarang memakai struktur dan styling yang sama dengan bridge existing (`bridge-ms-00`): banner, content card, slide navigation, progress bar, typography, dan visual language yang sama;
+- menghapus semua text-based code blocks / blok kode palsu;
+- menggantinya dengan screenshot blok dan editor Scratch aktual dari artikel Create & Learn;
+- aset gambar disimpan lokal di `assets/scratch/`, jadi slide tidak bergantung pada hotlink eksternal;
+- sumber dan attribution ditampilkan di slide intro/penutup.
+
+Bridge 00 sekarang memakai visual aktual untuk:
+
+- tampilan editor Scratch;
+- overview project Scratch;
+- Events blocks;
+- Motion blocks;
+- Looks blocks.
+
+Bridge lainnya juga memakai screenshot kategori blok aktual untuk Control, Sensing, Variables, Events, Motion, dan Looks sesuai konsep yang sedang dijelaskan.
+
+File yang direvisi:
+
+- [Bridge 00 — Scratch dari Nol](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/02-curriculum-sequencing/slides/bridge-sd-00.html)
+- [Bridge 01 — Sprite, Costume, dan Event](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/02-curriculum-sequencing/slides/bridge-sd-01.html)
+- [Bridge 02 — Loop dan Animasi](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/02-curriculum-sequencing/slides/bridge-sd-02.html)
+- [Bridge 03 — Input, Sensing, dan Keputusan](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/02-curriculum-sequencing/slides/bridge-sd-03.html)
+- [Bridge 04 — Variable dan Broadcast](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/02-curriculum-sequencing/slides/bridge-sd-04.html)
+
+Aku juga memperbarui generator di `scripts/build_scratch_sd_bridges.py` supaya kalau diregenerate, design system dan aturan penggunaan aset ini tetap konsisten.
+
+Validasi struktur:
+- 5 HTML bridge berhasil diregenerate;
+- semua metadata JSON tetap sinkron jumlah slide/bookmark;
+- sudah tidak ada `<div class="code">` atau blok kode berbentuk teks;
+- semua bridge sekarang menggunakan screenshot aktual.
+
+Catatan: aku belum melakukan visual QA browser karena Chromium lokal sebelumnya gagal start akibat permission error. Dataset produksi juga belum diubah.
+
+Checkpoint Git lokal: `0b4b319` (`fix(curriculum): align scratch slides with bridge design`).
+
+### Actions / Artifacts
+- Memperbaiki seluruh 5 HTML bridge agar mengikuti design system `bridge-ms-00`.
+- Mengunduh 8 aset visual Scratch aktual dari artikel Create & Learn ke `assets/scratch/`.
+- Menghapus representasi blok kode berbasis teks.
+- Memperbarui generator slide.
+- Structural validation berhasil; browser visual QA tertunda karena permission error Chromium.
+- Dataset produksi tidak diubah.
+- Git checkpoint lokal: `0b4b319`.
