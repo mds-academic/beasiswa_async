@@ -2079,3 +2079,25 @@ Verified the GitHub Pages URL returns HTTP 200 and updated live `How to Use LMS`
 
 ### Status
 implemented and browser-verified in live Spreadsheet.
+
+## 2026-09-09 — Finalisasi Scaffolding Scratch SD, 5 Slide Bridge, Standarisasi IntroMode, dan Audit Dokumen
+
+### User request
+> coab ini di fix kalau belum aku ada beberapa yang udah aku baikin
+
+### Assistant action
+1. Melakukan audit komparatif terhadap perbaikan yang telah diterapkan user di Subproject 1 (intro bumper 4 detik non-pausable, `introPlaybackToken` anti ghost-playback, sinkronisasi activity `save_activity` ke Spreadsheet, dan standarisasi `introMode: "embedded"`).
+2. Menyinkronkan perubahan `subprojects/01-lms-platform/src/app.js` ke `docs/app.js` sehingga deployment GitHub Pages 100% byte-identical dengan source.
+3. Menyelesaikan scaffolding kurikulum Scratch SD (Upper Primary):
+   - Merekonstruksi 6 modul berurutan logis dengan total 22 step (5 slide bridge + 17 video tutorial Scratch).
+   - Menyematkan metadata `"introMode": "embedded"` ke seluruh 17 video tutorial SD agar video materi yang sudah memiliki bumper internal tidak memicu pemutaran bumper eksternal ganda.
+   - Menghubungkan 5 slide bridge interaktif (`bridge-sd-00` s.d. `bridge-sd-04`) ke `src/slides/`, `docs/slides/`, dan metadata dataset.
+   - Menulis checkpoint kuis spesifik konsep berbasis transkrip nyata untuk ke-17 video tutorial.
+   - Menyelaraskan dan memverifikasi SHA-256 identik di 3 mirror: `output/courseData-upperprimary.json`, `src/data/courseData-upperprimary.json`, dan `docs/data/courseData-upperprimary.json`.
+4. Memperbarui dokumen audit [`audit-sequencing-scratch-async-sd-2026-09-09.md`](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/02-curriculum-sequencing/mapping/audit-sequencing-scratch-async-sd-2026-09-09.md) dari status `under discussion` menjadi `implemented — verified in production dataset`, lengkap dengan matriks 6 modul dan 22 step.
+5. Memperbarui dokumen rencana [`02-implementation-plan-scratch-async-sd.md`](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/02-curriculum-sequencing/planning/02-implementation-plan-scratch-async-sd.md) agar mencerminkan arsitektur 6 modul dan 22 step.
+6. Menjalankan pengujian otomatis end-to-end via Playwright pada login `SD UOB` (22 lesson tabs + 1 tab sertifikat akhir, Bento quiz tracker, dan verifikasi bahwa bumper eksternal tidak aktif).
+7. Membuat git commit checkpoint lokal `4608b2f`.
+
+### Status
+completed and verified.
