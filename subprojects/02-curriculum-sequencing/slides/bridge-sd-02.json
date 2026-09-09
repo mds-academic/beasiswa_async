@@ -1,8 +1,8 @@
 {
-  "id": "bridge-sd-02",
-  "kicker": "Bridge 02 · Animasi",
+  "kicker": "Materi Jembatan 02 · Loop dan Animasi",
   "title": "Membuat Gerakan Berulang dengan Loop",
-  "summary": "Jembatan sebelum video animasi About Me dan fondasi loop untuk Racing Car.",
+  "summary": "Jembatan loop untuk About Me dan Racing Car menggunakan blok Scratch aktual.",
+  "id": "bridge-sd-02",
   "type": "slide",
   "level": "SD",
   "totalSlides": 5,
@@ -10,31 +10,31 @@
   "embedUrl": "slides/bridge-sd-02.html",
   "prerequisiteStepIds": [],
   "learningObjectives": [
-    "Menjelaskan perbedaan aksi satu kali dan berulang",
-    "Menggunakan move, turn, next costume, wait, dan repeat",
-    "Membuat animasi sederhana yang dapat diuji dan diubah"
+    "Membedakan aksi satu kali dan berulang",
+    "Memahami Repeat, Forever, dan Repeat Until",
+    "Menggunakan Move, Turn, Next Costume, dan Wait"
   ],
   "practice": {
     "type": "guided_reading",
-    "description": "Menyelesaikan simulasi mini dan checkpoint pada setiap bagian."
+    "description": "Menyelesaikan pembacaan, observasi visual, dan checkpoint quiz."
   },
   "completionCriteria": {
     "quizScoreMin": 100,
     "interactiveCompleted": true,
-    "description": "Menyelesaikan semua slide, latihan, dan kuis dengan benar."
+    "description": "Menyelesaikan semua slide dan checkpoint quiz."
   },
   "bookmarks": [
     {
       "slideIndex": 0,
-      "label": "Mengapa kita membutuhkan loop?"
+      "label": "Mengapa butuh loop?"
     },
     {
       "slideIndex": 1,
-      "label": "Repeat dan Forever"
+      "label": "Repeat, Forever, Repeat Until"
     },
     {
       "slideIndex": 2,
-      "label": "Animasi = aksi kecil + waktu"
+      "label": "Gerak adalah aksi kecil"
     },
     {
       "slideIndex": 3,
@@ -49,12 +49,12 @@
     {
       "question": "Checkpoint tersedia di dalam slide interaktif.",
       "options": [
-        "Lihat ulang slide",
-        "Coba bloknya",
-        "Minta bantuan setelah mencoba"
+        "Baca ulang slide",
+        "Lanjut tanpa mencoba",
+        "Tutup materi"
       ],
       "answer": 0,
-      "explanation": "Baca kembali bagian yang belum jelas lalu coba lagi.",
+      "explanation": "Baca ulang bagian yang belum jelas lalu coba lagi.",
       "embedded": true
     }
   ]

@@ -1,8 +1,8 @@
 {
+  "kicker": "Materi Jembatan 04 · Data dan Koordinasi",
+  "title": "Variable, Broadcast, dan Project Integratif",
+  "summary": "Jembatan sebelum Increase Your Earnings dengan visual blok Scratch aktual.",
   "id": "bridge-sd-04",
-  "kicker": "Bridge 04 · Data & Koordinasi",
-  "title": "Variabel, Broadcast, dan Project Integratif",
-  "summary": "Jembatan sebelum Increase Your Earnings: memperkenalkan nilai yang berubah dan pesan antar karakter secara bertahap.",
   "type": "slide",
   "level": "SD",
   "totalSlides": 7,
@@ -10,40 +10,40 @@
   "embedUrl": "slides/bridge-sd-04.html",
   "prerequisiteStepIds": [],
   "learningObjectives": [
-    "Menjelaskan variable sebagai tempat menyimpan nilai",
-    "Membuat counter sederhana untuk skor atau kredit",
-    "Menjelaskan broadcast sebagai pesan antar Sprite",
-    "Menghubungkan backdrop, kondisi, dan ending project"
+    "Menjelaskan variable sebagai penyimpan nilai",
+    "Membuat counter Score atau Credit",
+    "Menjelaskan Broadcast sebagai pesan antar-Sprite",
+    "Menghubungkan backdrop, kondisi, dan ending"
   ],
   "practice": {
     "type": "guided_reading",
-    "description": "Menyelesaikan simulasi mini dan checkpoint pada setiap bagian."
+    "description": "Menyelesaikan pembacaan, observasi visual, dan checkpoint quiz."
   },
   "completionCriteria": {
     "quizScoreMin": 100,
     "interactiveCompleted": true,
-    "description": "Menyelesaikan semua slide, latihan, dan kuis dengan benar."
+    "description": "Menyelesaikan semua slide dan checkpoint quiz."
   },
   "bookmarks": [
     {
       "slideIndex": 0,
-      "label": "Variabel adalah kotak penyimpan nilai"
+      "label": "Variable adalah kotak nilai"
     },
     {
       "slideIndex": 1,
-      "label": "Kapan variable berubah?"
+      "label": "Atur nilai awal"
     },
     {
       "slideIndex": 2,
-      "label": "Broadcast seperti mengirim pesan"
+      "label": "Broadcast adalah pesan"
     },
     {
       "slideIndex": 3,
-      "label": "Backdrop sebagai babak cerita"
+      "label": "Backdrop adalah babak cerita"
     },
     {
       "slideIndex": 4,
-      "label": "Increase Your Earnings: capstone"
+      "label": "Increase Your Earnings"
     },
     {
       "slideIndex": 5,
@@ -51,19 +51,19 @@
     },
     {
       "slideIndex": 6,
-      "label": "Peta lengkap Scratch Async SD"
+      "label": "Peta Scratch Async SD"
     }
   ],
   "quizzes": [
     {
       "question": "Checkpoint tersedia di dalam slide interaktif.",
       "options": [
-        "Lihat ulang slide",
-        "Coba bloknya",
-        "Minta bantuan setelah mencoba"
+        "Baca ulang slide",
+        "Lanjut tanpa mencoba",
+        "Tutup materi"
       ],
       "answer": 0,
-      "explanation": "Baca kembali bagian yang belum jelas lalu coba lagi.",
+      "explanation": "Baca ulang bagian yang belum jelas lalu coba lagi.",
       "embedded": true
     }
   ]

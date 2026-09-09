@@ -1,8 +1,8 @@
 {
-  "id": "bridge-sd-00",
-  "kicker": "Bridge 00 · Kenalan Scratch",
+  "kicker": "Materi Jembatan 00 · Kenalan Scratch",
   "title": "Scratch dari Nol: Kenalan dengan Platformnya",
-  "summary": "Orientasi platform Scratch berbasis sumber Create & Learn, disederhanakan untuk siswa SD pemula.",
+  "summary": "Orientasi platform Scratch menggunakan referensi visual aktual dari Create & Learn.",
+  "id": "bridge-sd-00",
   "type": "slide",
   "level": "SD",
   "totalSlides": 6,
@@ -13,37 +13,37 @@
     "Menjelaskan Scratch sebagai platform coding berbasis blok",
     "Mengenali Stage, Sprite, Block Palette, dan Coding Area",
     "Membuat dan menjalankan project pertama",
-    "Mengetahui cara menyimpan karya dan memecahkan masalah awal"
+    "Mengetahui troubleshooting dasar"
   ],
   "practice": {
     "type": "guided_reading",
-    "description": "Menyelesaikan simulasi mini dan checkpoint pada setiap bagian."
+    "description": "Menyelesaikan pembacaan, observasi visual, dan checkpoint quiz."
   },
   "completionCriteria": {
     "quizScoreMin": 100,
     "interactiveCompleted": true,
-    "description": "Menyelesaikan semua slide, latihan, dan kuis dengan benar."
+    "description": "Menyelesaikan semua slide dan checkpoint quiz."
   },
   "bookmarks": [
     {
       "slideIndex": 0,
-      "label": "Selamat datang di Scratch"
+      "label": "Selamat Datang di Scratch"
     },
     {
       "slideIndex": 1,
-      "label": "Masuk ke ruang kerja Scratch"
+      "label": "Scratch itu apa?"
     },
     {
       "slideIndex": 2,
-      "label": "Kenali 4 area utama"
+      "label": "Kenali ruang kerjanya"
     },
     {
       "slideIndex": 3,
-      "label": "Warna blok membantu kita"
+      "label": "Warna dan bentuk blok"
     },
     {
       "slideIndex": 4,
-      "label": "Project pertama: Sprite menyapa"
+      "label": "Coba project pertamamu"
     },
     {
       "slideIndex": 5,
@@ -54,12 +54,12 @@
     {
       "question": "Checkpoint tersedia di dalam slide interaktif.",
       "options": [
-        "Lihat ulang slide",
-        "Coba bloknya",
-        "Minta bantuan setelah mencoba"
+        "Baca ulang slide",
+        "Lanjut tanpa mencoba",
+        "Tutup materi"
       ],
       "answer": 0,
-      "explanation": "Baca kembali bagian yang belum jelas lalu coba lagi.",
+      "explanation": "Baca ulang bagian yang belum jelas lalu coba lagi.",
       "embedded": true
     }
   ]

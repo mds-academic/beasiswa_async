@@ -1,8 +1,8 @@
 {
-  "id": "bridge-sd-01",
-  "kicker": "Bridge 01 · Project About Me",
+  "kicker": "Materi Jembatan 01 · Project About Me",
   "title": "Dari Karakter ke Kode: Sprite, Costume, dan Event",
-  "summary": "Jembatan sebelum video About Me: siswa memahami objek yang akan dibuat dan event klik sederhana.",
+  "summary": "Jembatan sebelum playlist About Me dengan visual Scratch aktual.",
+  "id": "bridge-sd-01",
   "type": "slide",
   "level": "SD",
   "totalSlides": 5,
@@ -11,23 +11,22 @@
   "prerequisiteStepIds": [],
   "learningObjectives": [
     "Membedakan Sprite, Costume, dan Backdrop",
-    "Membuat atau memilih Sprite sederhana",
-    "Menggunakan green flag dan sprite click sebagai event",
-    "Menggabungkan Looks dan Sound untuk memperkenalkan diri"
+    "Menggunakan event green flag dan sprite click",
+    "Menggabungkan Looks dan Sound untuk perkenalan"
   ],
   "practice": {
     "type": "guided_reading",
-    "description": "Menyelesaikan simulasi mini dan checkpoint pada setiap bagian."
+    "description": "Menyelesaikan pembacaan, observasi visual, dan checkpoint quiz."
   },
   "completionCriteria": {
     "quizScoreMin": 100,
     "interactiveCompleted": true,
-    "description": "Menyelesaikan semua slide, latihan, dan kuis dengan benar."
+    "description": "Menyelesaikan semua slide dan checkpoint quiz."
   },
   "bookmarks": [
     {
       "slideIndex": 0,
-      "label": "Apa yang sedang kita buat?"
+      "label": "Siapkan Project About Me"
     },
     {
       "slideIndex": 1,
@@ -35,11 +34,11 @@
     },
     {
       "slideIndex": 2,
-      "label": "Dua event yang sering dipakai"
+      "label": "Event membuat project bereaksi"
     },
     {
       "slideIndex": 3,
-      "label": "Media juga bagian dari coding"
+      "label": "Tambahkan suara dan cerita"
     },
     {
       "slideIndex": 4,
@@ -50,12 +49,12 @@
     {
       "question": "Checkpoint tersedia di dalam slide interaktif.",
       "options": [
-        "Lihat ulang slide",
-        "Coba bloknya",
-        "Minta bantuan setelah mencoba"
+        "Baca ulang slide",
+        "Lanjut tanpa mencoba",
+        "Tutup materi"
       ],
       "answer": 0,
-      "explanation": "Baca kembali bagian yang belum jelas lalu coba lagi.",
+      "explanation": "Baca ulang bagian yang belum jelas lalu coba lagi.",
       "embedded": true
     }
   ]

@@ -1,8 +1,8 @@
 {
-  "id": "bridge-sd-03",
-  "kicker": "Bridge 03 · Logika Game",
+  "kicker": "Materi Jembatan 03 · Logika Game",
   "title": "Input, Sensing, dan Keputusan di Racing Car",
-  "summary": "Jembatan sebelum coding Racing Car: input keyboard, loop pengecekan, collision, dan conditional.",
+  "summary": "Jembatan sebelum coding Racing Car dengan blok Scratch aktual.",
+  "id": "bridge-sd-03",
   "type": "slide",
   "level": "SD",
   "totalSlides": 5,
@@ -10,19 +10,18 @@
   "embedUrl": "slides/bridge-sd-03.html",
   "prerequisiteStepIds": [],
   "learningObjectives": [
-    "Membedakan event tombol keyboard dan bendera hijau",
-    "Menggunakan repeat until untuk menahan gerak",
-    "Menjelaskan sensing sebagai pertanyaan kepada project",
-    "Membuat aturan if-then untuk menang atau collision"
+    "Memahami input keyboard",
+    "Memahami loop pengecekan",
+    "Menggunakan Sensing dan If Then untuk aturan game"
   ],
   "practice": {
     "type": "guided_reading",
-    "description": "Menyelesaikan simulasi mini dan checkpoint pada setiap bagian."
+    "description": "Menyelesaikan pembacaan, observasi visual, dan checkpoint quiz."
   },
   "completionCriteria": {
     "quizScoreMin": 100,
     "interactiveCompleted": true,
-    "description": "Menyelesaikan semua slide, latihan, dan kuis dengan benar."
+    "description": "Menyelesaikan semua slide dan checkpoint quiz."
   },
   "bookmarks": [
     {
@@ -31,15 +30,15 @@
     },
     {
       "slideIndex": 1,
-      "label": "Gerak sambil tombol ditekan"
+      "label": "Gerak dan pengulangan"
     },
     {
       "slideIndex": 2,
-      "label": "Sensing bertanya kepada Stage"
+      "label": "Sensing bertanya kepada game"
     },
     {
       "slideIndex": 3,
-      "label": "If membuat aturan game"
+      "label": "If membuat aturan"
     },
     {
       "slideIndex": 4,
@@ -50,12 +49,12 @@
     {
       "question": "Checkpoint tersedia di dalam slide interaktif.",
       "options": [
-        "Lihat ulang slide",
-        "Coba bloknya",
-        "Minta bantuan setelah mencoba"
+        "Baca ulang slide",
+        "Lanjut tanpa mencoba",
+        "Tutup materi"
       ],
       "answer": 0,
-      "explanation": "Baca kembali bagian yang belum jelas lalu coba lagi.",
+      "explanation": "Baca ulang bagian yang belum jelas lalu coba lagi.",
       "embedded": true
     }
   ]
