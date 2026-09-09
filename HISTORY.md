@@ -2305,3 +2305,49 @@ Hasil berkas baru terbukti sempurna dan diunduh ke `/Users/yazidhilmi/Downloads/
 ### Status
 resolved & validated in production.
 
+---
+
+### User Request (Turn 19)
+
+itu transcropt nilainya segitu doang kah 
+
+### User Request (Turn 20)
+
+continue
+
+### Assistant Response & Action Record (Turn 20)
+
+Menjelaskan secara transparan dan detail mengenai kelengkapan isi transkrip nilai resmi UOB MDS pada Halaman 2:
+
+1. **Penyebab Tampilan Sempat Kosong / "Segitu Doang"**:
+   - Pada saat pengujian awal konversi `html2pdf.js`, pemanggilan ekspor PDF sempat berjalan sebelum fungsi perenderan baris data modul `#cert-transcript-tbody` selesai mengeksekusi iterasi 36 materi.
+   - Akibatnya, berkas PDF sementara yang terunduh saat itu hanya memuat header tabel kosong tanpa isi baris modul.
+
+2. **Perbaikan Kode & Arsitektur Frontend**:
+   - Logika populasi sertifikat dan transkrip diekstrak keluar dari `openCertificateModal()` menjadi fungsi mandiri `renderCertificateData()`.
+   - `exportCertificateToPdf()` kini secara langsung memanggil `renderCertificateData()` tanpa bergantung pada apakah modal sedang terbuka atau tidak.
+   - Perubahan telah disinkronkan identik antara `subprojects/01-lms-platform/src/app.js` dan `docs/app.js`.
+   - Perubahan telah di-commit ke Git lokal (`8f248aa`) dan di-push ke GitHub remote `origin/main` (`git@github.com:mds-academic/beasiswa_async.git`).
+
+3. **Kelengkapan Isi Transkrip Sebenarnya (36 Modul Penuh)**:
+   Transkrip resmi jenjang SMA memuat konten komprehensif yang telah dipastikan pas dalam 1 halaman Portrait A4:
+   - **Header & Metadata Siswa**: Nomor Seri Sertifikat (`UOB-MDS-SMA-2026-*`), Nama Siswa, Sekolah & Rombel, Tanggal Kelulusan, dan Status Kelulusan dengan persentase akurasi.
+   - **Tabel Detail 36 Modul Pembelajaran SMA**:
+     - Kolom No (01 s.d. 36)
+     - Topik Modul (Modul 01 Orientasi, Modul 02 Dasar Google Colab & Python, Modul 03 s.d. 35 Variabel, List, Dictionary, Loop, Fungsi, Keamanan Transaksi, dsb., hingga Modul 36 Menyatukan Kode Program Capstone).
+     - Kolom Evaluasi Pop-up Kuis (rasio kuis selesai).
+     - Kolom Skor Modul (skala 0 - 100).
+     - Kolom Status Capaian (Badge Hijau "✓ Tuntas" / Merah "Perlu Remedial" / Kuning "Belum").
+   - **Matriks 4 Capaian Kompetensi Komputasi**:
+     - *Computational Thinking*
+     - *Implementasi Logika*
+     - *Creative Problem Solving*
+     - *Kemandirian Belajar*
+   - **Footer & Pengesahan**: Catatan verifikasi digital otomatis dan blok tanda tangan resmi *Academic Team & Organizing Committee PT Bank UOB Indonesia · Kalananti · Ruangguru*.
+
+4. **Sinkronisasi Berkas PDF di Komputer Pengguna**:
+   Kedua berkas PDF di folder unduhan pengguna telah diperbarui dengan versi utuh 2 halaman (Halaman 1 Landscape A4 + Halaman 2 Portrait A4 memuat 36 modul lengkap):
+   - `/Users/yazidhilmi/Downloads/Sertifikat_UOB_MDS_SMA_Admin_Permata.pdf` (1.5 MB)
+   - `/Users/yazidhilmi/Downloads/Sertifikat_UOB_MDS_SMA_Admin_Permata_SMA_UOB.pdf` (1.5 MB)
+
+
