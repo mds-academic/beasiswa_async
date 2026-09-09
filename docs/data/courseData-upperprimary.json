@@ -7,8 +7,8 @@
     {
       "id": "up-mod-00",
       "order": 0,
-      "title": "Modul 0: Kenalan dengan Scratch",
-      "description": "Satu-satunya materi bridge untuk mengenal platform Scratch sebelum mulai tutorial project.",
+      "title": "Modul 0: Kenalan dengan Scratch & Fondasi Interaksi",
+      "description": "Materi jembatan orientasi Scratch dan transisi dari karakter visual ke kode blok.",
       "steps": [
         {
           "id": "bridge-sd-00",
@@ -73,14 +73,73 @@
               "embedded": true
             }
           ]
+        },
+        {
+          "id": "bridge-sd-01",
+          "type": "slide",
+          "kicker": "Materi Jembatan 01 · Sprite & Event",
+          "title": "Dari Karakter ke Kode: Sprite, Costume, dan Event",
+          "slideUrl": "./slides/bridge-sd-01.html",
+          "embedUrl": "slides/bridge-sd-01.html",
+          "summary": "Jembatan sebelum playlist About Me dengan visual Scratch aktual.",
+          "totalSlides": 5,
+          "learningObjectives": [
+            "Membedakan Sprite, Costume, dan Backdrop",
+            "Menggunakan event green flag dan sprite click",
+            "Menggabungkan Looks dan Sound untuk perkenalan"
+          ],
+          "practice": {
+            "type": "guided_reading",
+            "description": "Menyelesaikan pembacaan, observasi visual, dan checkpoint quiz."
+          },
+          "completionCriteria": {
+            "quizScoreMin": 100,
+            "interactiveCompleted": true,
+            "description": "Menyelesaikan semua slide dan checkpoint quiz."
+          },
+          "bookmarks": [
+            {
+              "slideIndex": 0,
+              "label": "Siapkan Project About Me"
+            },
+            {
+              "slideIndex": 1,
+              "label": "Sprite, Costume, Backdrop"
+            },
+            {
+              "slideIndex": 2,
+              "label": "Event membuat project bereaksi"
+            },
+            {
+              "slideIndex": 3,
+              "label": "Tambahkan suara dan cerita"
+            },
+            {
+              "slideIndex": 4,
+              "label": "Tantangan About Me"
+            }
+          ],
+          "quizzes": [
+            {
+              "question": "Checkpoint tersedia di dalam slide interaktif.",
+              "options": [
+                "Baca ulang slide",
+                "Lanjut tanpa mencoba",
+                "Tutup materi"
+              ],
+              "answer": 0,
+              "explanation": "Baca ulang bagian yang belum jelas lalu coba lagi.",
+              "embedded": true
+            }
+          ]
         }
       ]
     },
     {
       "id": "up-mod-01",
       "order": 1,
-      "title": "Modul 1: About Me — Perkenalan Interaktif",
-      "description": "Project pertama: membuat karakter dan perkenalan interaktif dari desain hingga animasi.",
+      "title": "Modul 1: About Me — Karakter, Suara & Media Interaktif",
+      "description": "Project pertama: membuat karakter perkenalan diri, merekam suara, kostum makanan, dan interaksi sprite.",
       "steps": [
         {
           "id": "up-about-1",
@@ -89,6 +148,7 @@
           "title": "1 About Me - Mendesain Karakter",
           "videoId": "pmSYmmRe4Sw",
           "playlistId": "about-me",
+          "introMode": "embedded",
           "quizzes": [
             {
               "time": 0,
@@ -97,16 +157,16 @@
               "title": "Checkpoint: 1 About Me - Mendesain Karakter",
               "questions": [
                 {
-                  "id": "q-1-about-me---mendesain-karakter",
-                  "question": "Apa fokus utama materi \"1 About Me - Mendesain Karakter\"?",
+                  "id": "q-up-about-1",
+                  "question": "Di tab mana kita bisa menggambar atau mengubah tampilan karakter/Sprite sendiri di Scratch?",
                   "options": [
-                    "Mencoba, mengamati, dan menjelaskan hasilnya",
-                    "Menutup Scratch",
-                    "Menghapus semua Sprite",
-                    "Tidak melakukan apa-apa"
+                    "Tab Costumes (Kostum)",
+                    "Tab Sounds (Suara)",
+                    "Tab Code (Kode)",
+                    "Tab File"
                   ],
                   "answer": "A",
-                  "explanation": "Benar. Pembelajaran Scratch dilakukan dengan mencoba, mengamati, mengubah, dan menjelaskan."
+                  "explanation": "Tab Costumes menyediakan Paint editor untuk menggambar, mengedit bentuk vektor, dan mengubah tampilan Sprite."
                 }
               ]
             }
@@ -119,6 +179,7 @@
           "title": "2 About Me - Merekam Suara Perkenalan Diri",
           "videoId": "a7VMYsnvmQY",
           "playlistId": "about-me",
+          "introMode": "embedded",
           "quizzes": [
             {
               "time": 0,
@@ -127,16 +188,16 @@
               "title": "Checkpoint: 2 About Me - Merekam Suara Perkenalan Diri",
               "questions": [
                 {
-                  "id": "q-2-about-me---merekam-suara-perkenalan-diri",
-                  "question": "Apa fokus utama materi \"2 About Me - Merekam Suara Perkenalan Diri\"?",
+                  "id": "q-up-about-2",
+                  "question": "Blok Event apa yang digunakan agar suara perkenalan diri berbunyi saat karakter diklik oleh pengguna?",
                   "options": [
-                    "Mencoba, mengamati, dan menjelaskan hasilnya",
-                    "Menutup Scratch",
-                    "Menghapus semua Sprite",
-                    "Tidak melakukan apa-apa"
+                    "when this sprite clicked (ketika sprite ini diklik)",
+                    "when space key pressed",
+                    "stop all",
+                    "hide"
                   ],
                   "answer": "A",
-                  "explanation": "Benar. Pembelajaran Scratch dilakukan dengan mencoba, mengamati, mengubah, dan menjelaskan."
+                  "explanation": "Blok \"when this sprite clicked\" akan mendeteksi klik mouse pada karakter dan langsung menjalankan blok pemutar suara di bawahnya."
                 }
               ]
             }
@@ -149,6 +210,7 @@
           "title": "3 About Me - Membuat Kostum Makanan",
           "videoId": "pAWCUOSOHAk",
           "playlistId": "about-me",
+          "introMode": "embedded",
           "quizzes": [
             {
               "time": 0,
@@ -157,16 +219,16 @@
               "title": "Checkpoint: 3 About Me - Membuat Kostum Makanan",
               "questions": [
                 {
-                  "id": "q-3-about-me---membuat-kostum-makanan",
-                  "question": "Apa fokus utama materi \"3 About Me - Membuat Kostum Makanan\"?",
+                  "id": "q-up-about-3",
+                  "question": "Mengapa kita membuat beberapa Costume berbeda pada Sprite makanan yang sama?",
                   "options": [
-                    "Mencoba, mengamati, dan menjelaskan hasilnya",
-                    "Menutup Scratch",
-                    "Menghapus semua Sprite",
-                    "Tidak melakukan apa-apa"
+                    "Agar satu Sprite makanan bisa berganti-ganti tampilan menu/state yang berbeda",
+                    "Agar Scratch berjalan lebih cepat",
+                    "Karena satu Sprite hanya boleh memiliki satu kode saja",
+                    "Untuk menghapus panggung Scratch"
                   ],
                   "answer": "A",
-                  "explanation": "Benar. Pembelajaran Scratch dilakukan dengan mencoba, mengamati, mengubah, dan menjelaskan."
+                  "explanation": "Costume berfungsi sebagai frame atau variasi tampilan, sehingga satu Sprite makanan bisa menampilkan apel, burger, atau es krim secara bergantian."
                 }
               ]
             }
@@ -179,6 +241,7 @@
           "title": "4 About Me - Memprogram Sprite Makanan",
           "videoId": "odzpfqdxTEc",
           "playlistId": "about-me",
+          "introMode": "embedded",
           "quizzes": [
             {
               "time": 0,
@@ -187,16 +250,16 @@
               "title": "Checkpoint: 4 About Me - Memprogram Sprite Makanan",
               "questions": [
                 {
-                  "id": "q-4-about-me---memprogram-sprite-makanan",
-                  "question": "Apa fokus utama materi \"4 About Me - Memprogram Sprite Makanan\"?",
+                  "id": "q-up-about-4",
+                  "question": "Blok apa yang digunakan untuk mengganti tampilan kostum ke kostum berikutnya secara berulang?",
                   "options": [
-                    "Mencoba, mengamati, dan menjelaskan hasilnya",
-                    "Menutup Scratch",
-                    "Menghapus semua Sprite",
-                    "Tidak melakukan apa-apa"
+                    "next costume di dalam blok repeat",
+                    "delete this clone",
+                    "broadcast message",
+                    "set volume to 0%"
                   ],
                   "answer": "A",
-                  "explanation": "Benar. Pembelajaran Scratch dilakukan dengan mencoba, mengamati, mengubah, dan menjelaskan."
+                  "explanation": "Kombinasi blok \"next costume\" di dalam \"repeat\" (dengan sedikit jeda \"wait\") membuat Sprite berganti kostum secara berurutan dan terlihat dinamis."
                 }
               ]
             }
@@ -209,6 +272,7 @@
           "title": "5 About Me - Menambahkan Sprite dengan Emoji",
           "videoId": "EsBPZR9k4X8",
           "playlistId": "about-me",
+          "introMode": "embedded",
           "quizzes": [
             {
               "time": 0,
@@ -217,18 +281,85 @@
               "title": "Checkpoint: 5 About Me - Menambahkan Sprite dengan Emoji",
               "questions": [
                 {
-                  "id": "q-5-about-me---menambahkan-sprite-dengan-emoji",
-                  "question": "Apa fokus utama materi \"5 About Me - Menambahkan Sprite dengan Emoji\"?",
+                  "id": "q-up-about-5",
+                  "question": "Bagaimana cara meletakkan Sprite emoji di posisi tertentu pada Stage Scratch?",
                   "options": [
-                    "Mencoba, mengamati, dan menjelaskan hasilnya",
-                    "Menutup Scratch",
-                    "Menghapus semua Sprite",
-                    "Tidak melakukan apa-apa"
+                    "Mengatur koordinat posisi x (horizontal) dan y (vertikal) pada panel Sprite",
+                    "Mengubah ukuran layar komputer",
+                    "Menghapus backdrop sirkuit",
+                    "Mematikan speaker audio"
                   ],
                   "answer": "A",
-                  "explanation": "Benar. Pembelajaran Scratch dilakukan dengan mencoba, mengamati, mengubah, dan menjelaskan."
+                  "explanation": "Posisi setiap Sprite di Scratch ditentukan oleh koordinat X (kiri-kanan) dan Y (atas-bawah) pada panggung Stage."
                 }
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "up-mod-02",
+      "order": 2,
+      "title": "Modul 2: Loop, Gerakan Berulang & Animasi Lanjutan",
+      "description": "Fondasi loop dan pengulangan untuk animasi gerak, ekstensi Text-to-Speech, serta efek visual.",
+      "steps": [
+        {
+          "id": "bridge-sd-02",
+          "type": "slide",
+          "kicker": "Materi Jembatan 02 · Loop & Animasi",
+          "title": "Membuat Gerakan Berulang dengan Loop",
+          "slideUrl": "./slides/bridge-sd-02.html",
+          "embedUrl": "slides/bridge-sd-02.html",
+          "summary": "Jembatan loop untuk About Me dan Racing Car menggunakan blok Scratch aktual.",
+          "totalSlides": 5,
+          "learningObjectives": [
+            "Membedakan aksi satu kali dan berulang",
+            "Memahami Repeat, Forever, dan Repeat Until",
+            "Menggunakan Move, Turn, Next Costume, dan Wait"
+          ],
+          "practice": {
+            "type": "guided_reading",
+            "description": "Menyelesaikan pembacaan, observasi visual, dan checkpoint quiz."
+          },
+          "completionCriteria": {
+            "quizScoreMin": 100,
+            "interactiveCompleted": true,
+            "description": "Menyelesaikan semua slide dan checkpoint quiz."
+          },
+          "bookmarks": [
+            {
+              "slideIndex": 0,
+              "label": "Mengapa butuh loop?"
+            },
+            {
+              "slideIndex": 1,
+              "label": "Repeat, Forever, Repeat Until"
+            },
+            {
+              "slideIndex": 2,
+              "label": "Gerak adalah aksi kecil"
+            },
+            {
+              "slideIndex": 3,
+              "label": "Costume sebagai frame"
+            },
+            {
+              "slideIndex": 4,
+              "label": "Tantangan animasi"
+            }
+          ],
+          "quizzes": [
+            {
+              "question": "Checkpoint tersedia di dalam slide interaktif.",
+              "options": [
+                "Baca ulang slide",
+                "Lanjut tanpa mencoba",
+                "Tutup materi"
+              ],
+              "answer": 0,
+              "explanation": "Baca ulang bagian yang belum jelas lalu coba lagi.",
+              "embedded": true
             }
           ]
         },
@@ -239,6 +370,7 @@
           "title": "6 About Me - Memprogram Animasi dan Menggunakan Text-to-Speech",
           "videoId": "8PPKejwfq4k",
           "playlistId": "about-me",
+          "introMode": "embedded",
           "quizzes": [
             {
               "time": 0,
@@ -247,16 +379,16 @@
               "title": "Checkpoint: 6 About Me - Memprogram Animasi dan Menggunakan Text-to-Speech",
               "questions": [
                 {
-                  "id": "q-6-about-me---memprogram-animasi-dan-menggunakan-text-to-speech",
-                  "question": "Apa fokus utama materi \"6 About Me - Memprogram Animasi dan Menggunakan Text-to-Speech\"?",
+                  "id": "q-up-about-6",
+                  "question": "Apa fungsi ekstensi Text-to-Speech pada Scratch?",
                   "options": [
-                    "Mencoba, mengamati, dan menjelaskan hasilnya",
-                    "Menutup Scratch",
-                    "Menghapus semua Sprite",
-                    "Tidak melakukan apa-apa"
+                    "Mengubah teks kalimat yang kita ketik menjadi suara bicara otomatis",
+                    "Menggambar mobil balap 3D",
+                    "Merekam video webcam",
+                    "Memperbesar ukuran browser"
                   ],
                   "answer": "A",
-                  "explanation": "Benar. Pembelajaran Scratch dilakukan dengan mencoba, mengamati, mengubah, dan menjelaskan."
+                  "explanation": "Ekstensi Text-to-Speech memanfaatkan kecerdasan buatan untuk menyuarakan teks tulisan menjadi ucapan digital interaktif."
                 }
               ]
             }
@@ -269,6 +401,7 @@
           "title": "7 About Me - Memprogram dengan Effects",
           "videoId": "RMwzg1MtZFg",
           "playlistId": "about-me",
+          "introMode": "embedded",
           "quizzes": [
             {
               "time": 0,
@@ -277,16 +410,16 @@
               "title": "Checkpoint: 7 About Me - Memprogram dengan Effects",
               "questions": [
                 {
-                  "id": "q-7-about-me---memprogram-dengan-effects",
-                  "question": "Apa fokus utama materi \"7 About Me - Memprogram dengan Effects\"?",
+                  "id": "q-up-about-7",
+                  "question": "Blok apa yang digunakan untuk mengembalikan warna dan tampilan Sprite ke kondisi awal setelah diberi efek grafis?",
                   "options": [
-                    "Mencoba, mengamati, dan menjelaskan hasilnya",
-                    "Menutup Scratch",
-                    "Menghapus semua Sprite",
-                    "Tidak melakukan apa-apa"
+                    "clear graphic effects",
+                    "switch backdrop to random",
+                    "change color effect by 25",
+                    "turn 15 degrees"
                   ],
                   "answer": "A",
-                  "explanation": "Benar. Pembelajaran Scratch dilakukan dengan mencoba, mengamati, mengubah, dan menjelaskan."
+                  "explanation": "Blok \"clear graphic effects\" menghapus semua modifikasi efek warna, mata ikan, atau kecerahan yang diterapkan ke Sprite."
                 }
               ]
             }
@@ -295,10 +428,10 @@
       ]
     },
     {
-      "id": "up-mod-02",
-      "order": 2,
-      "title": "Modul 2: Racing Car — Logika Game",
-      "description": "Project kedua: membuat game balap dengan input keyboard, gerak, collision, dan aturan menang.",
+      "id": "up-mod-03",
+      "order": 3,
+      "title": "Modul 3: Racing Car Game — Kontrol Kemudi & Deteksi Tabrakan",
+      "description": "Project kedua: mendesain sirkuit balap, kemudi keyboard 2 mobil, sensing tabrakan, dan aturan menang.",
       "steps": [
         {
           "id": "up-racing-1",
@@ -307,6 +440,7 @@
           "title": "1 Desain Sirkuit",
           "videoId": "qHSNKAw2tLc",
           "playlistId": "racing-car",
+          "introMode": "embedded",
           "quizzes": [
             {
               "time": 0,
@@ -315,16 +449,16 @@
               "title": "Checkpoint: 1 Desain Sirkuit",
               "questions": [
                 {
-                  "id": "q-1-desain-sirkuit",
-                  "question": "Apa fokus utama materi \"1 Desain Sirkuit\"?",
+                  "id": "q-up-racing-1",
+                  "question": "Di bagian mana kita menggambar lintasan balap mobil yang menjadi latar belakang permainan?",
                   "options": [
-                    "Mencoba, mengamati, dan menjelaskan hasilnya",
-                    "Menutup Scratch",
-                    "Menghapus semua Sprite",
-                    "Tidak melakukan apa-apa"
+                    "Stage / Backdrop",
+                    "Tab Sound",
+                    "Extension Library",
+                    "Sprite Mobil"
                   ],
                   "answer": "A",
-                  "explanation": "Benar. Pembelajaran Scratch dilakukan dengan mencoba, mengamati, mengubah, dan menjelaskan."
+                  "explanation": "Lintasan balap digambar pada Stage/Backdrop karena berfungsi sebagai latar statis tempat mobil-mobil balap melaju."
                 }
               ]
             }
@@ -337,6 +471,7 @@
           "title": "2 Desain Mobil",
           "videoId": "QAJXUrjmetI",
           "playlistId": "racing-car",
+          "introMode": "embedded",
           "quizzes": [
             {
               "time": 0,
@@ -345,18 +480,77 @@
               "title": "Checkpoint: 2 Desain Mobil",
               "questions": [
                 {
-                  "id": "q-2-desain-mobil",
-                  "question": "Apa fokus utama materi \"2 Desain Mobil\"?",
+                  "id": "q-up-racing-2",
+                  "question": "Mengapa titik pusat (center point) Sprite mobil harus tepat berada di tengah gambar pada Paint Editor?",
                   "options": [
-                    "Mencoba, mengamati, dan menjelaskan hasilnya",
-                    "Menutup Scratch",
-                    "Menghapus semua Sprite",
-                    "Tidak melakukan apa-apa"
+                    "Agar saat mobil berbelok (berputar arah), rotasinya pas di poros tengah mobil dan tidak melayang miring",
+                    "Agar warna mobil berubah menjadi emas",
+                    "Supaya sirkuit otomatis terhapus",
+                    "Karena Scratch melarang menggambar di tepi"
                   ],
                   "answer": "A",
-                  "explanation": "Benar. Pembelajaran Scratch dilakukan dengan mencoba, mengamati, mengubah, dan menjelaskan."
+                  "explanation": "Titik pusat kanvas menentukan titik poros putaran Sprite saat menjalankan blok perpindahan sudut atau kemudi."
                 }
               ]
+            }
+          ]
+        },
+        {
+          "id": "bridge-sd-03",
+          "type": "slide",
+          "kicker": "Materi Jembatan 03 · Sensing & Kontrol",
+          "title": "Input, Sensing, dan Keputusan di Racing Car",
+          "slideUrl": "./slides/bridge-sd-03.html",
+          "embedUrl": "slides/bridge-sd-03.html",
+          "summary": "Jembatan sebelum coding Racing Car dengan blok Scratch aktual.",
+          "totalSlides": 5,
+          "learningObjectives": [
+            "Memahami input keyboard",
+            "Memahami loop pengecekan",
+            "Menggunakan Sensing dan If Then untuk aturan game"
+          ],
+          "practice": {
+            "type": "guided_reading",
+            "description": "Menyelesaikan pembacaan, observasi visual, dan checkpoint quiz."
+          },
+          "completionCriteria": {
+            "quizScoreMin": 100,
+            "interactiveCompleted": true,
+            "description": "Menyelesaikan semua slide dan checkpoint quiz."
+          },
+          "bookmarks": [
+            {
+              "slideIndex": 0,
+              "label": "Game membutuhkan input"
+            },
+            {
+              "slideIndex": 1,
+              "label": "Gerak dan pengulangan"
+            },
+            {
+              "slideIndex": 2,
+              "label": "Sensing bertanya kepada game"
+            },
+            {
+              "slideIndex": 3,
+              "label": "If membuat aturan"
+            },
+            {
+              "slideIndex": 4,
+              "label": "Racing Car: urutan kerja"
+            }
+          ],
+          "quizzes": [
+            {
+              "question": "Checkpoint tersedia di dalam slide interaktif.",
+              "options": [
+                "Baca ulang slide",
+                "Lanjut tanpa mencoba",
+                "Tutup materi"
+              ],
+              "answer": 0,
+              "explanation": "Baca ulang bagian yang belum jelas lalu coba lagi.",
+              "embedded": true
             }
           ]
         },
@@ -367,6 +561,7 @@
           "title": "3 Kode Mobil",
           "videoId": "lIekdk-dDTw",
           "playlistId": "racing-car",
+          "introMode": "embedded",
           "quizzes": [
             {
               "time": 0,
@@ -375,16 +570,16 @@
               "title": "Checkpoint: 3 Kode Mobil",
               "questions": [
                 {
-                  "id": "q-3-kode-mobil",
-                  "question": "Apa fokus utama materi \"3 Kode Mobil\"?",
+                  "id": "q-up-racing-3",
+                  "question": "Blok Motion apa yang digunakan untuk mengubah sudut hadap mobil balap saat tombol panah kiri atau kanan ditekan?",
                   "options": [
-                    "Mencoba, mengamati, dan menjelaskan hasilnya",
-                    "Menutup Scratch",
-                    "Menghapus semua Sprite",
-                    "Tidak melakukan apa-apa"
+                    "turn right / turn left atau point in direction",
+                    "set size to 100%",
+                    "say Hello for 2 seconds",
+                    "ask and wait"
                   ],
                   "answer": "A",
-                  "explanation": "Benar. Pembelajaran Scratch dilakukan dengan mencoba, mengamati, mengubah, dan menjelaskan."
+                  "explanation": "Blok \"turn\" (berbelok sejumlah derajat) atau \"point in direction\" digunakan untuk mengarahkan moncong mobil ke arah belokan yang diinginkan."
                 }
               ]
             }
@@ -397,6 +592,7 @@
           "title": "4 Duplikasi dan Modifikasi Mobil 2",
           "videoId": "3zubM7bbNTI",
           "playlistId": "racing-car",
+          "introMode": "embedded",
           "quizzes": [
             {
               "time": 0,
@@ -405,16 +601,16 @@
               "title": "Checkpoint: 4 Duplikasi dan Modifikasi Mobil 2",
               "questions": [
                 {
-                  "id": "q-4-duplikasi-dan-modifikasi-mobil-2",
-                  "question": "Apa fokus utama materi \"4 Duplikasi dan Modifikasi Mobil 2\"?",
+                  "id": "q-up-racing-4",
+                  "question": "Setelah menduplikasi Sprite Mobil 1 menjadi Mobil 2, apa perubahan utama yang wajib dilakukan pada kodenya?",
                   "options": [
-                    "Mencoba, mengamati, dan menjelaskan hasilnya",
-                    "Menutup Scratch",
-                    "Menghapus semua Sprite",
-                    "Tidak melakukan apa-apa"
+                    "Mengganti tombol keyboard pengendalinya (misalnya tombol W-A-S-D untuk Mobil 2) agar tidak bentrok dengan Tombol Panah Mobil 1",
+                    "Menghapus semua kode gerak Mobil 2",
+                    "Menghapus seluruh panggung sirkuit",
+                    "Mengubah bahasa Scratch menjadi bahasa lain"
                   ],
                   "answer": "A",
-                  "explanation": "Benar. Pembelajaran Scratch dilakukan dengan mencoba, mengamati, mengubah, dan menjelaskan."
+                  "explanation": "Dalam game balap 2 pemain, pemain kedua harus diberi tombol kontrol terpisah (seperti W, A, S, D) agar kedua mobil bisa dikemudikan bersamaan."
                 }
               ]
             }
@@ -427,6 +623,7 @@
           "title": "5 Desain Finish Line",
           "videoId": "sm1DkpQpRxw",
           "playlistId": "racing-car",
+          "introMode": "embedded",
           "quizzes": [
             {
               "time": 0,
@@ -435,16 +632,16 @@
               "title": "Checkpoint: 5 Desain Finish Line",
               "questions": [
                 {
-                  "id": "q-5-desain-finish-line",
-                  "question": "Apa fokus utama materi \"5 Desain Finish Line\"?",
+                  "id": "q-up-racing-5",
+                  "question": "Apa fungsi utama Sprite garis finish (finish line) yang diletakkan melintang di lintasan?",
                   "options": [
-                    "Mencoba, mengamati, dan menjelaskan hasilnya",
-                    "Menutup Scratch",
-                    "Menghapus semua Sprite",
-                    "Tidak melakukan apa-apa"
+                    "Sebagai penanda batas akhir sirkuit untuk mendeteksi sentuhan mobil saat balapan selesai",
+                    "Menghias warna panggung agar terlihat gelap",
+                    "Mempercepat koneksi internet",
+                    "Mengganti lagu pengiring"
                   ],
                   "answer": "A",
-                  "explanation": "Benar. Pembelajaran Scratch dilakukan dengan mencoba, mengamati, mengubah, dan menjelaskan."
+                  "explanation": "Garis finish dibuat sebagai Sprite target agar blok Sensing nantinya dapat mendeteksi apakah mobil sudah menyentuhnya."
                 }
               ]
             }
@@ -457,6 +654,7 @@
           "title": "6 Kode Menang dan Menyentuh Musuh",
           "videoId": "qnzD9G15BqE",
           "playlistId": "racing-car",
+          "introMode": "embedded",
           "quizzes": [
             {
               "time": 0,
@@ -465,16 +663,16 @@
               "title": "Checkpoint: 6 Kode Menang dan Menyentuh Musuh",
               "questions": [
                 {
-                  "id": "q-6-kode-menang-dan-menyentuh-musuh",
-                  "question": "Apa fokus utama materi \"6 Kode Menang dan Menyentuh Musuh\"?",
+                  "id": "q-up-racing-6",
+                  "question": "Blok Sensing dan Control apa yang digunakan bersamaan untuk mengecek secara terus-menerus apakah mobil menyentuh garis finish?",
                   "options": [
-                    "Mencoba, mengamati, dan menjelaskan hasilnya",
-                    "Menutup Scratch",
-                    "Menghapus semua Sprite",
-                    "Tidak melakukan apa-apa"
+                    "forever berisi if touching [Finish Line]? then ...",
+                    "repeat 10 kali berisi say Hello",
+                    "wait 5 seconds lalu stop all",
+                    "when I receive start game"
                   ],
                   "answer": "A",
-                  "explanation": "Benar. Pembelajaran Scratch dilakukan dengan mencoba, mengamati, mengubah, dan menjelaskan."
+                  "explanation": "Pengulangan \"forever\" yang membungkus percabangan \"if touching Finish Line?\" memastikan pengecekan tabrakan aktif di setiap detik balapan."
                 }
               ]
             }
@@ -483,11 +681,79 @@
       ]
     },
     {
-      "id": "up-mod-03",
-      "order": 3,
-      "title": "Modul 3: Increase Your Earnings — Capstone",
-      "description": "Project ketiga: mengikuti starter project integratif dengan pilihan aktivitas, credit, scene, clone, dan ending.",
+      "id": "up-mod-04",
+      "order": 4,
+      "title": "Modul 4: Proyek Integratif — Variabel, Broadcast & Percabangan",
+      "description": "Jembatan data dan komunikasi antar-sprite untuk starter project bertema pekerjaan dan keuangan.",
       "steps": [
+        {
+          "id": "bridge-sd-04",
+          "type": "slide",
+          "kicker": "Materi Jembatan 04 · Variabel & Broadcast",
+          "title": "Variable, Broadcast, dan Project Integratif",
+          "slideUrl": "./slides/bridge-sd-04.html",
+          "embedUrl": "slides/bridge-sd-04.html",
+          "summary": "Jembatan sebelum Increase Your Earnings dengan visual blok Scratch aktual.",
+          "totalSlides": 7,
+          "learningObjectives": [
+            "Menjelaskan variable sebagai penyimpan nilai",
+            "Membuat counter Score atau Credit",
+            "Menjelaskan Broadcast sebagai pesan antar-Sprite",
+            "Menghubungkan backdrop, kondisi, dan ending"
+          ],
+          "practice": {
+            "type": "guided_reading",
+            "description": "Menyelesaikan pembacaan, observasi visual, dan checkpoint quiz."
+          },
+          "completionCriteria": {
+            "quizScoreMin": 100,
+            "interactiveCompleted": true,
+            "description": "Menyelesaikan semua slide dan checkpoint quiz."
+          },
+          "bookmarks": [
+            {
+              "slideIndex": 0,
+              "label": "Variable adalah kotak nilai"
+            },
+            {
+              "slideIndex": 1,
+              "label": "Atur nilai awal"
+            },
+            {
+              "slideIndex": 2,
+              "label": "Broadcast adalah pesan"
+            },
+            {
+              "slideIndex": 3,
+              "label": "Backdrop adalah babak cerita"
+            },
+            {
+              "slideIndex": 4,
+              "label": "Increase Your Earnings"
+            },
+            {
+              "slideIndex": 5,
+              "label": "Checklist sebelum capstone"
+            },
+            {
+              "slideIndex": 6,
+              "label": "Peta Scratch Async SD"
+            }
+          ],
+          "quizzes": [
+            {
+              "question": "Checkpoint tersedia di dalam slide interaktif.",
+              "options": [
+                "Baca ulang slide",
+                "Lanjut tanpa mencoba",
+                "Tutup materi"
+              ],
+              "answer": 0,
+              "explanation": "Baca ulang bagian yang belum jelas lalu coba lagi.",
+              "embedded": true
+            }
+          ]
+        },
         {
           "id": "up-earning-1",
           "type": "video",
@@ -495,6 +761,7 @@
           "title": "1. Percakapan Intro",
           "videoId": "5u7OdPWmJhU",
           "playlistId": "increase-earning",
+          "introMode": "embedded",
           "quizzes": [
             {
               "time": 0,
@@ -503,16 +770,16 @@
               "title": "Checkpoint: 1. Percakapan Intro",
               "questions": [
                 {
-                  "id": "q-1.-percakapan-intro",
-                  "question": "Apa fokus utama materi \"1. Percakapan Intro\"?",
+                  "id": "q-up-earning-1",
+                  "question": "Mengapa kita melakukan \"Remix\" pada project starter Increase Your Earnings di Scratch?",
                   "options": [
-                    "Mencoba, mengamati, dan menjelaskan hasilnya",
-                    "Menutup Scratch",
-                    "Menghapus semua Sprite",
-                    "Tidak melakukan apa-apa"
+                    "Untuk menyalin project awal yang sudah memiliki aset dan dialog ke akun kita, lalu memprogram logikanya sendiri",
+                    "Untuk menghapus project milik orang lain",
+                    "Karena Scratch tidak bisa membuat project baru",
+                    "Untuk mengunduh aplikasi Scratch Desktop"
                   ],
                   "answer": "A",
-                  "explanation": "Benar. Pembelajaran Scratch dilakukan dengan mencoba, mengamati, mengubah, dan menjelaskan."
+                  "explanation": "Fitur Remix menyalin starter code dan aset lengkap ke workspace kita sehingga kita bisa langsung fokus menambahkan kode interaktif."
                 }
               ]
             }
@@ -525,6 +792,7 @@
           "title": "2. Memprogram Opsi 1",
           "videoId": "rb8wuLoVnic",
           "playlistId": "increase-earning",
+          "introMode": "embedded",
           "quizzes": [
             {
               "time": 0,
@@ -533,21 +801,29 @@
               "title": "Checkpoint: 2. Memprogram Opsi 1",
               "questions": [
                 {
-                  "id": "q-2.-memprogram-opsi-1",
-                  "question": "Apa fokus utama materi \"2. Memprogram Opsi 1\"?",
+                  "id": "q-up-earning-2",
+                  "question": "Saat pemain memilih salah satu pekerjaan/opsi pada cerita, bagaimana cara memindahkan tampilan ke tempat kerja yang sesuai?",
                   "options": [
-                    "Mencoba, mengamati, dan menjelaskan hasilnya",
-                    "Menutup Scratch",
-                    "Menghapus semua Sprite",
-                    "Tidak melakukan apa-apa"
+                    "Menggunakan blok switch backdrop to [Nama Tempat Kerja]",
+                    "Mengganti nama akun Scratch",
+                    "Menghapus semua blok perintah",
+                    "Memutar lagu berulang-ulang"
                   ],
                   "answer": "A",
-                  "explanation": "Benar. Pembelajaran Scratch dilakukan dengan mencoba, mengamati, mengubah, dan menjelaskan."
+                  "explanation": "Blok \"switch backdrop to ...\" digunakan untuk mengubah scene atau latar belakang sesuai keputusan yang dipilih pemain."
                 }
               ]
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "up-mod-05",
+      "order": 5,
+      "title": "Modul 5: Increase Your Earnings — Capstone & Ending",
+      "description": "Penyelesaian project integratif: penambahan kredit, kondisi interaktif, broadcast sinyal ending, dan evaluasi hasil.",
+      "steps": [
         {
           "id": "up-earning-3",
           "type": "video",
@@ -555,6 +831,7 @@
           "title": "3. Memprogram Opsi 2",
           "videoId": "t5YIkeWux3U",
           "playlistId": "increase-earning",
+          "introMode": "embedded",
           "quizzes": [
             {
               "time": 0,
@@ -563,16 +840,16 @@
               "title": "Checkpoint: 3. Memprogram Opsi 2",
               "questions": [
                 {
-                  "id": "q-3.-memprogram-opsi-2",
-                  "question": "Apa fokus utama materi \"3. Memprogram Opsi 2\"?",
+                  "id": "q-up-earning-3",
+                  "question": "Konsep pemrograman apa yang digunakan untuk mencatat dan menambah jumlah uang/kredit penghasilan yang didapatkan karakter?",
                   "options": [
-                    "Mencoba, mengamati, dan menjelaskan hasilnya",
-                    "Menutup Scratch",
-                    "Menghapus semua Sprite",
-                    "Tidak melakukan apa-apa"
+                    "Variable (misalnya variable Credit/Penghasilan)",
+                    "Backdrop Switcher",
+                    "Sound Pitch",
+                    "Pen Color"
                   ],
                   "answer": "A",
-                  "explanation": "Benar. Pembelajaran Scratch dilakukan dengan mencoba, mengamati, mengubah, dan menjelaskan."
+                  "explanation": "Variable bertindak sebagai wadah penyimpan angka yang nilainya dapat bertambah atau berkurang sesuai aktivitas karakter."
                 }
               ]
             }
@@ -585,6 +862,7 @@
           "title": "4. Memprogram Ending",
           "videoId": "A1SrFU4pDY4",
           "playlistId": "increase-earning",
+          "introMode": "embedded",
           "quizzes": [
             {
               "time": 0,
@@ -593,16 +871,16 @@
               "title": "Checkpoint: 4. Memprogram Ending",
               "questions": [
                 {
-                  "id": "q-4.-memprogram-ending",
-                  "question": "Apa fokus utama materi \"4. Memprogram Ending\"?",
+                  "id": "q-up-earning-4",
+                  "question": "Apa fungsi sinyal \"broadcast\" yang dikirimkan saat permainan mencapai akhir cerita?",
                   "options": [
-                    "Mencoba, mengamati, dan menjelaskan hasilnya",
-                    "Menutup Scratch",
-                    "Menghapus semua Sprite",
-                    "Tidak melakukan apa-apa"
+                    "Mengirimkan pesan ke seluruh Sprite dan Backdrop secara bersamaan agar memicu aksi penutup/ending",
+                    "Mengunci keyboard komputer",
+                    "Menghapus file di Google Drive",
+                    "Memulai ulang komputer"
                   ],
                   "answer": "A",
-                  "explanation": "Benar. Pembelajaran Scratch dilakukan dengan mencoba, mengamati, mengubah, dan menjelaskan."
+                  "explanation": "Broadcast mengirimkan pesan radio ke seluruh Sprite. Sprite penerima yang memiliki blok \"when I receive [ending]\" akan langsung merespons secara serentak."
                 }
               ]
             }

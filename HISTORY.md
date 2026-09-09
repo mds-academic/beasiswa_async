@@ -2023,3 +2023,59 @@ Checked git remote configuration for the project (`git@github.com:mds-academic/b
 ### Status
 completed and verified live.
 
+
+## 2026-09-09 — Audit ulang intro bumper Subproject 1
+
+### User
+> harusnya ini udah di audit cuman kayanya masi ada beberapa yang kurang deh coba audit ulang kaya misalnya oh ini dia pas nampilin video kan harusnya into bumper yang 4 detik itu gabsai di pause dia nampilin dulu , tapi kan ada beberapa yang aku udah embed di videonya jadi kok dia kaya dua kali intinya ikutin yang async yang original deh kalo ada intor nya yah berarti di vdieo explainernya belum ada intor nya gitu kalo kalo gaa ada perintah masukin intor bumper ya berarti dia udah ada
+
+### Status
+- **Under audit** — audit ulang fokus pada intro bumper 4 detik, pencegahan pause, deduplikasi dengan intro embedded, dan kesesuaian lifecycle dengan Async original.
+
+### Actions
+- Membandingkan `src/app.js` dan dataset Subproject 1 dengan implementasi Async original read-only.
+- Memeriksa seluruh unit video pada dataset HS, SMP, dan SD untuk keberadaan metadata intro.
+- Memperbarui audit dengan temuan `P0-INTRO-01`, `P0-INTRO-02`, `P0-INTRO-03`, `P1-INTRO-01`, `P1-INTRO-02`, dan `P1-INTRO-03`.
+- Memperbarui `projects/uob-async-lms/STATE.md`.
+- Tidak mengubah kode runtime atau dataset.
+
+### Open questions
+- Metadata final per video perlu dikurasi dari instruksi/source content: `embedded`, `bumper`, `none`, atau `review_required`.
+
+---
+
+## 2026-09-09 — WhatsApp Message Draft: Admin Access, Sheet Link, & SD Video Status
+
+### User request
+> bikinin message wa untuk akses admin apa yang di masukin passwornya apa trus kasi tau sd belum ada yah
+> minta cek kan platform nya
+> sama kasi link sheet lms nya dimana
+
+### Assistant action
+Prepared a ready-to-send WhatsApp message covering admin credentials (school: `SMA UOB` / `SMP UOB`, password: `KalanantiDihati`), live LMS platform link (`https://mds-academic.github.io/beasiswa_async/`), Google Sheets master database link, and explicit note on SD Scratch video production status.
+
+### Status
+completed.
+
+
+## 2026-09-09 — Guide Visual Redesign
+
+### User request
+> eh ini masi palain kok jelek banget astaga dibagusin ekk
+
+### Assistant action
+Restyled the live `How to Use LMS` tab: navy title/section hierarchy, white section text, bold labels, blue link emphasis, merged title row, and wrapped content. Performed visual QA through the authenticated browser. Operational data tabs were not rewritten in this pass.
+
+### Status
+implemented for the guide tab; result-tab visual redesign remains a separate follow-up.
+
+## 2026-09-09 — Added GitHub Pages and Admin Access Documentation
+
+### User request
+> ini masi kurang lengkap mana link github page nya mana ininya cara akses adminnya masukin sini juga biar lengkap
+
+### Assistant action
+Verified the GitHub Pages URL returns HTTP 200 and updated live `How to Use LMS` from the prior guide to a 63-row complete operational guide. Added GitHub Pages, GitHub repository, Spreadsheet master, Apps Script Web App, and Apps Script Editor links; documented link purposes; added admin login flow using virtual schools `SD UOB`, `SMP UOB`, `SMA UOB`; documented admin email and password safety without exposing the admin password; added admin operational access, permissions, roster, result, certificate, academic-material, audit, and security guidance. Reapplied navy section styling, white section text, bold labels, and wrapping, then verified `A1:B63` and browser screenshot.
+
+### Status
+implemented and browser-verified in live Spreadsheet.

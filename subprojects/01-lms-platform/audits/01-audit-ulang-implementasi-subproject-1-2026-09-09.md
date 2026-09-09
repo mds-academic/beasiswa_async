@@ -293,3 +293,169 @@ Seluruh blocker teknis yang teridentifikasi dalam audit telah diselesaikan dan d
     - Logika `onerror` pada `introVideo` yang memanggil `finishIntro()` dan melanjutkan ke YouTube merupakan *graceful fallback* yang disengaja agar gangguan pemutaran bumper pengantar 4 detik (misal: codec browser tidak kompatibel) tidak memblokir siswa untuk mengakses pembelajaran utama.
 
 
+
+## Audit ulang lanjutan — Intro bumper 4 detik (2026-09-09)
+
+### Requirement yang dikonfirmasi
+
+Perilaku yang diminta harus mengikuti Async original:
+
+1. Intro bumper 4 detik hanya diputar bila video explainernya belum memiliki intro embedded.
+2. Jika intro sudah menyatu di dalam video YouTube, bumper `intro.mp4` tidak boleh ditambahkan.
+3. Bumper tidak boleh dapat di-pause, di-seek, atau dikontrol sebagai video materi.
+4. Setelah bumper selesai, video materi baru mulai diputar.
+5. Intro tidak boleh diputar dua kali pada satu materi/sesi.
+
+### Hasil audit implementasi saat ini
+
+#### P0-INTRO-01 — Bumper masih selalu ditambahkan ke semua video
+
+`setupPlayerControlEvents()` menentukan semua step selain `slide` sebagai video dan memanggil `playIntroBumper()` bila `introPlayedSteps` belum berisi index step. `playIntroBumper()` selalu memakai `./intro.mp4`.
+
+Dataset `courseData-highschool.json`, `courseData-middleschool.json`, dan `courseData-upperprimary.json` tidak memiliki metadata per unit seperti `embeddedIntro`, `introMode`, atau `introRequired`. Karena itu runtime tidak mempunyai dasar untuk membedakan:
+
+- video dengan intro embedded;
+- video tanpa intro;
+- status intro yang belum diverifikasi.
+
+**Status: FAIL / blocker.** Risiko intro ganda masih nyata.
+
+#### P0-INTRO-02 — Bumper masih bisa di-pause dari tombol Play/Pause
+
+Saat `state.isIntroPlaying` bernilai true, handler `togglePlay()` secara eksplisit memanggil `el.introVideo.pause()` atau `el.introVideo.play()`. Ini berlawanan langsung dengan requirement bumper tidak dapat di-pause.
+
+Kontrol video utama juga tidak disembunyikan/disabled secara terpusat selama bumper berjalan; perubahan teks tombol menjadi `⏸` justru memberi affordance bahwa bumper dapat dihentikan.
+
+**Status: FAIL / blocker.**
+
+#### P0-INTRO-03 — Proteksi “sekali per materi” berbasis index, bukan ID unit
+
+`state.introPlayedSteps` menyimpan `currentStepIndex`, bukan step ID. Ini rapuh saat urutan course berubah, saat dataset digabung, atau saat step yang sama muncul sebagai potongan berbeda. Ia juga hanya berlaku di memory session dan tidak mendokumentasikan apakah yang sudah dimainkan adalah bumper eksternal atau intro embedded.
+
+**Status: PARTIAL.** Untuk sesi sederhana bisa mencegah replay, tetapi belum memenuhi kontrak metadata yang diperlukan.
+
+#### P1-INTRO-01 — Reset ketika berpindah materi memang ada, tetapi callback async belum diberi token sesi
+
+`goToStep()` menghentikan intro aktif dan mereset state. Namun `finishIntro()` callback hanya bergantung pada closure bumper; tidak ada `stepId`/generation token yang memvalidasi bahwa callback masih milik materi aktif. Jika callback lama terlambat selesai setelah perpindahan materi, ia masih dapat menandai `introPlayedSteps` berdasarkan `state.currentStepIndex` terbaru dan meneruskan callback ke player baru.
+
+**Status: PARTIAL / risiko ghost playback.**
+
+#### P1-INTRO-02 — Fallback error melewati bumper secara diam-diam
+
+`onerror` dan rejection dari `introVideo.play()` langsung memanggil `finishIntro()`, sehingga video utama tetap berjalan tanpa bumper. Ini boleh dipilih sebagai kebijakan resilience, tetapi saat ini tidak ada notifikasi/retry dan statusnya tidak tercatat sebagai `intro_unverified`.
+
+**Status: NEEDS DECISION.**
+
+#### P1-INTRO-03 — “Intro” berupa kartu narasi bukan sumber kebenaran bumper
+
+Field `introVideo` pada beberapa data SMP hanya berisi teks HTML pengantar (`introVideoCard`). Field itu bukan indikator bahwa video YouTube memiliki intro embedded dan tidak boleh dipakai untuk memutuskan apakah `intro.mp4` perlu diputar.
+
+### Perbandingan dengan Async original
+
+Async original memang memakai flag `introPlayed` per step dan memutar `intro.mp4` sebelum YouTube. Original juga menyembunyikan kontrol materi selama intro pada beberapa implementasi dan memvalidasi step aktif sebelum callback `onIntroEnded` meneruskan pemutaran.
+
+Namun sumber original yang diaudit juga belum menyediakan metadata eksplisit untuk status intro embedded per video. Jadi kita tidak boleh menyimpulkan “semua video harus diberi bumper” hanya karena original memakai `intro.mp4`. Untuk memenuhi instruksi terbaru, status intro harus dikurasi per unit video.
+
+### Matriks keputusan yang dibutuhkan
+
+| Metadata unit | Perilaku runtime | Status saat ini |
+|---|---|---|
+| `introMode: "embedded"` | Jangan putar `intro.mp4`; langsung tampilkan video dari boundary kurasi | Belum tersedia |
+| `introMode: "bumper"` | Putar `intro.mp4` non-pausable sekali, lalu YouTube | Belum tersedia |
+| `introMode: "none"` | Langsung YouTube tanpa bumper | Belum tersedia |
+| `introMode: "review_required"` | Jangan menebak; tahan publikasi/beri flag audit | Belum tersedia |
+
+### Temuan audit tambahan yang terverifikasi
+
+- Folder `docs/` tidak ada pada Subproject 1 saat audit ini, sehingga klaim sinkronisasi `src/` → `docs/` dan kesiapan GitHub Pages belum dapat dianggap terbukti.
+- `src/app.js` masih memiliki fallback selector `#tab-mode-sandbox`, `#sandbox-container`, dan `#sandbox-title`; ini bukan blocker visual bila elemen lama tidak ada, tetapi menunjukkan cleanup istilah Sandbox belum benar-benar tuntas.
+- File `intro.mp4` ada di `src/`, tetapi tidak ada bukti otomatis di repo bahwa durasinya tepat 4 detik atau bahwa bumper sudah diuji non-pausable.
+
+### Kesimpulan audit lanjutan
+
+Permintaan intro bumper **belum terpenuhi**. Bug utama bukan sekadar tampilan dobel: sistem belum punya kontrak data untuk mengetahui kapan bumper harus dipakai, dan tombol pause masih dapat menghentikan bumper. Implementasi belum boleh dinyatakan mengikuti Async original sampai metadata intro per unit dikurasi dan lifecycle bumper diperbaiki.
+
+### Prioritas perbaikan
+
+1. Tambahkan `introMode` per unit video dan isi dari audit sumber/original; jangan menebak dari judul atau keberadaan `introVideo` text.
+2. Ubah bumper menjadi non-pausable: disable/hide kontrol play, seek, dan click handler selama `isIntroPlaying`; cegah pause programatik selain lifecycle internal.
+3. Gunakan step ID + playback generation token untuk mencegah callback bumper lama memulai video pada step baru.
+4. Uji minimal empat skenario: embedded, bumper eksternal, klik pause saat bumper, dan pindah tab saat bumper.
+5. Verifikasi durasi aktual `intro.mp4` dan catat hasilnya pada test/audit.
+
+## Status implementasi perbaikan intro bumper — 2026-09-09
+
+Perbaikan sudah diterapkan:
+
+- Semua unit video sekarang memiliki `introMode: "embedded"` secara eksplisit karena tidak ada instruksi sumber yang meminta penambahan bumper eksternal.
+- Bumper hanya akan berjalan bila unit diberi `introMode: "bumper"`; tidak lagi otomatis untuk semua video.
+- `introMode: "embedded"` dan `introMode: "none"` langsung menjalankan video materi tanpa `intro.mp4`.
+- Tombol kontrol disembunyikan selama bumper aktif, klik kontrol diabaikan, `controls` HTML5 dimatikan, dan event `pause` akan melanjutkan pemutaran otomatis.
+- Seek/context interaction pada bumper diblokir.
+- Lifecycle memakai step ID dan playback token untuk mencegah callback bumper lama memulai video pada materi baru.
+- Saat berpindah materi, listener bumper dibersihkan dan token dibatalkan.
+
+Validasi yang dijalankan:
+
+- `node --check src/app.js` ✅
+- Semua dataset course dapat diparse ✅
+- 99 unit video memiliki mode intro eksplisit; seluruhnya saat ini `embedded` ✅
+- `git diff --check` ✅
+
+Catatan: jika nanti ditemukan video yang benar-benar tidak memiliki intro embedded, ubah metadata unit tersebut menjadi `"introMode": "bumper"`. Runtime akan menampilkan `intro.mp4` tepat satu kali per unit/sesi dan tidak bisa dipause oleh siswa.
+
+## Status implementasi autoplay dan sequencing bumper — 2026-09-09
+
+Perbaikan tambahan sudah diterapkan:
+
+- YouTube dipaksa `pauseVideo()` ketika iframe selesai dibuat; render materi tidak lagi dianggap sebagai aksi Play.
+- Event YouTube `PLAYING` yang datang saat hydration ditolak jika `hasStartedVideo` belum true atau bumper masih aktif.
+- Untuk `introMode: "bumper"`, urutannya sekarang strict: user klik Play → `intro.mp4` berjalan sampai selesai → kontrol YouTube dibuka → YouTube mulai.
+- Callback bumper mengatur `hasStartedVideo` hanya setelah bumper selesai.
+- Bookmark yang memang memulai video menandai `hasStartedVideo` secara eksplisit.
+
+Validasi: `node --check src/app.js`, parsing seluruh JSON, dan `git diff --check` lulus.
+
+## Audit dan perbaikan restore progress — 2026-09-09
+
+### Temuan sebelum perbaikan
+
+Sebelumnya jawabannya **belum aman** untuk klaim “tab terakhir dari Spreadsheet”:
+
+- Saat login/refresh, frontend selalu menjalankan `goToStep(0)`.
+- `currentStepIndex` hanya disimpan ke localStorage saat navigasi; tidak disimpan ke Apps Script/Spreadsheet.
+- Status video selesai hanya disimpan di localStorage (`uob_watched_*`), bukan di Spreadsheet.
+- Apps Script `get_progress` hanya mengembalikan progres kuis.
+- Apps Script mencocokkan siswa berdasarkan email saja pada `get_progress`, bukan email + sekolah.
+
+### Perbaikan yang diterapkan
+
+- Menambahkan checkpoint server `save_activity` untuk menyimpan `_Last Step` dan `_Watched Steps` pada baris siswa.
+- `goToStep()` menyimpan step ID terakhir ke localStorage dan mengirim checkpoint ke Spreadsheet setelah fase restore selesai.
+- `markCurrentStepVideoWatched()` mengirim daftar step ID video yang selesai ke server.
+- `get_progress` sekarang mengembalikan `lastStepId` dan `watchedStepIds` selain kuis.
+- Restore login sekarang membaca progres server, menghitung ulang unlock berdasarkan kuis + tontonan video, lalu membuka tab terakhir yang masih valid/terbuka.
+- Restore tetap memakai localStorage sebagai fallback ketika server belum tersedia.
+- Pencocokan server diperketat menjadi email + sekolah.
+- Kolom metadata aktivitas tidak lagi salah dihitung sebagai ID kuis.
+- Guard `isRestoringProgress` mencegah proses restore mengirim checkpoint palsu ke server.
+
+### Validasi dan deployment
+
+- `node --check src/app.js` ✅
+- JSON dataset valid ✅
+- `git diff --check` ✅
+- `clasp push` berhasil mengunggah `Code.gs` dan `appsscript.json`; proses CLI kemudian mengembalikan error permission saat menulis `~/.clasprc.json`, sehingga deployment baru belum diklaim selesai.
+
+## Klarifikasi skenario lintas-browser siswa — 2026-09-09
+
+Skenario yang diminta: siswa sudah berada di Materi 3, video belum selesai, kuis belum tersimpan, lalu minggu berikutnya login dari browser sekolah yang berbeda.
+
+Target perilaku:
+
+- Siswa kembali ke tab Materi 3 berdasarkan `_Last Step` di Spreadsheet.
+- Materi 3 tetap belum selesai/terkunci untuk lanjut karena video dan kuisnya belum lengkap.
+- Video tidak otomatis berjalan; siswa tetap harus menekan Play.
+- Jika siswa sudah menonton sebagian video tetapi belum mencapai threshold selesai, sistem saat ini mengingat tab/materi terakhir, bukan timestamp detik terakhir.
+
+Perbaikan sebelumnya sudah menyimpan last step saat `goToStep()` dan memulihkan last step dari server. Pada audit ini URL frontend juga diarahkan ke deployment Apps Script `@HEAD` yang menerima endpoint `save_activity`, karena URL lama masih menunjuk release sebelumnya yang belum memiliki checkpoint tab/video.

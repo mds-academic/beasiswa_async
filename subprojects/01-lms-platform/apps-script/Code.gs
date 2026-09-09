@@ -298,8 +298,11 @@ function doGet(e) {
       const headers = rows[1]; // Row 1 adalah header kolom kuis
       let studentRow = null;
 
+      const requestedSchool = String(e.parameter.school || '').trim().toLowerCase();
       for (let i = 2; i < rows.length; i++) {
-        if (normalizeEmail(rows[i][1]) === email) { // Col 1 adalah Email
+        const rowEmail = normalizeEmail(rows[i][1]);
+        const rowSchool = String(rows[i][3] || '').trim().toLowerCase();
+        if (rowEmail === email && (!requestedSchool || rowSchool === requestedSchool)) {
           studentRow = rows[i];
           break;
         }
@@ -311,25 +314,31 @@ function doGet(e) {
 
       const progressMap = {};
       const submittedQuizIds = [];
-      for (let c = 10; c < headers.length; c++) {
+      for (let c = 4; c < headers.length; c++) {
         const headerName = String(headers[c] || '').trim();
         if (headerName) {
           const cellVal = studentRow[c];
           progressMap[headerName] = cellVal;
-          if (cellVal !== '' && cellVal !== null && cellVal !== undefined) {
+          // Only quiz score columns count as submitted quizzes.
+          // Activity metadata and summary columns must never become quiz IDs.
+          if (/\[Skor(?: & Jawaban)?\]/i.test(headerName) && cellVal !== '' && cellVal !== null && cellVal !== undefined) {
             const cleanId = headerName.replace(/\s*\[.*?\]\s*$/, '').trim();
             if (cleanId) submittedQuizIds.push(cleanId);
           }
         }
       }
 
+      const watchedRaw = progressMap["_Watched Steps"] || "";
+      const watchedStepIds = String(watchedRaw).split(",").map((v) => v.trim()).filter(Boolean);
       return respond({
         success: true,
         studentFound: true,
         progress: progressMap,
         data: {
           submittedQuizIds: submittedQuizIds,
-          scores: progressMap
+          scores: progressMap,
+          lastStepId: String(progressMap["_Last Step"] || "").trim(),
+          watchedStepIds: watchedStepIds
         }
       });
     }
@@ -389,7 +398,58 @@ function doPost(e) {
       });
     }
 
-    // Branch 2: Quiz Progress Submission
+    // Branch 2: Activity checkpoint (last tab + completed video IDs)
+    if (payload.action === 'save_activity') {
+      if (!email || !school) {
+        return respond({ success: false, message: "Email dan sekolah wajib ada." });
+      }
+      const targetSheetName = getResultSheetName(level);
+      const resSheet = ensureSheetWithWarning(ss, targetSheetName, [
+        "Timestamp", "Email Siswa", "Nama Siswa", "Sekolah"
+      ]);
+      let rows = resSheet.getDataRange().getValues();
+      let headerRow = rows[1] || [];
+      let studentRowIndex = -1;
+      for (let i = 2; i < rows.length; i++) {
+        const rEmail = normalizeEmail(rows[i][1]);
+        const rSchool = String(rows[i][3] || '').trim().toLowerCase();
+        if (rEmail === email && rSchool === school.toLowerCase()) {
+          studentRowIndex = i + 1;
+          break;
+        }
+      }
+      if (studentRowIndex === -1) {
+        studentRowIndex = Math.max(3, resSheet.getLastRow() + 1);
+        resSheet.getRange(studentRowIndex, 1, 1, 4).setValues([[
+          new Date().toISOString(), email, name, school
+        ]]);
+      } else {
+        resSheet.getRange(studentRowIndex, 1, 1, 4).setValues([[
+          new Date().toISOString(), email, name || rows[studentRowIndex - 1][2], school
+        ]]);
+      }
+      const metadata = {
+        "_Last Step": String(payload.lastStepId || '').trim(),
+        "_Watched Steps": Array.isArray(payload.watchedStepIds)
+          ? payload.watchedStepIds.join(',')
+          : String(payload.watchedStepIds || '').trim()
+      };
+      Object.keys(metadata).forEach((headerName) => {
+        let col = -1;
+        for (let c = 0; c < headerRow.length; c++) {
+          if (String(headerRow[c] || '').trim() === headerName) { col = c + 1; break; }
+        }
+        if (col === -1) {
+          col = Math.max(5, headerRow.length + 1);
+          resSheet.getRange(2, col).setValue(headerName);
+          headerRow[col - 1] = headerName;
+        }
+        resSheet.getRange(studentRowIndex, col).setValue(metadata[headerName]);
+      });
+      return respond({ success: true, message: "Checkpoint aktivitas tersimpan." });
+    }
+
+    // Branch 3: Quiz Progress Submission
     const quizId = String(payload.quizId || '').trim();
     const answer = String(payload.answer || '').trim();
     const score = payload.score !== undefined ? payload.score : 100;

@@ -18,3 +18,15 @@
    - Tombol berubah menjadi `[Lanjutkan Misi Belajar ➔]` yang membuka progress lock gate materi berikutnya.
 5. Verifikasi pengujian Playwright end-to-end terkonfirmasi 100% PASS.
 
+
+
+## Update 2026-09-09 — Intro bumper diperbaiki
+
+- Metadata `introMode` ditambahkan ke seluruh unit video. Default eksplisit saat ini `embedded` sesuai instruksi pengguna: tanpa instruksi bumper, jangan menambahkan bumper.
+- Runtime hanya memainkan `intro.mp4` untuk `introMode: "bumper"`; bumper non-pausable, non-seekable, dan memakai playback token.
+- Validasi syntax dan dataset lulus.
+
+## Update 2026-09-09 — Autoplay dan sequencing media
+
+- YouTube tidak boleh memulai saat `goToStep()`/render; `onReady` sekarang mem-pause player dan event PLAYING hydration ditolak.
+- Untuk unit `introMode: "bumper"`, urutan dipaksa: klik Play → bumper selesai → YouTube play. Tidak bersamaan.

@@ -6,6 +6,8 @@
 - **Active Focus**: Review PRD, finalisasi struktur repositori, dan verifikasi alur kurikulum & arsitektur web app.
 - **Last Updated**: 2026-09-09
 
+- **Audit ulang terbaru**: Intro bumper 4 detik belum sesuai requirement. Runtime masih menambahkan bumper ke semua video, bumper masih dapat di-pause, dan dataset belum memiliki `introMode` per unit. Lihat [audit lanjutan](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/01-lms-platform/audits/01-audit-ulang-implementasi-subproject-1-2026-09-09.md).
+
 ## Completed
 
 - Inisialisasi struktur proyek induk `projects/uob-async-lms/` beserta subproject `subprojects/01-lms-platform/` dan `subprojects/02-curriculum-sequencing/`.

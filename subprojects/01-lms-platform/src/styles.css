@@ -2467,6 +2467,12 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   border-radius: inherit;
 }
 
+.video-frame.intro-playing .intro-video {
+  pointer-events: none;
+  user-select: none;
+}
+
+
 /* Tombol Bypass Khusus Admin */
 .btn-admin-bypass {
   background: #7c3aed;

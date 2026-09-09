@@ -4,7 +4,7 @@
  */
 
 // Live Google Apps Script Web App Deployment URL (Account: rgcuob@gmail.com)
-const APP_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbybx1KlcTW7Rofbb7OSGWtWeEAU_uflLAG3bqfS9edl-tSlIPmRh4FnheBWCaKxb06S/exec';
+const APP_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwXvyynsPJ_wUU4KGfj0Z9B3Is0m00U1lUjVEn5lLs/exec';
 
 // ==================== STATE MANAGEMENT ====================
 const state = {
@@ -35,6 +35,7 @@ const state = {
   playerCheckTimer: null,
   hasStartedVideo: false,
   introPlayedSteps: new Set(),
+  introPlaybackToken: 0,
   isIntroPlaying: false,
   videoMaxTimeWatched: 0,
   videoDuration: 0,
@@ -43,7 +44,8 @@ const state = {
   submittedChallenges: new Map(),
   quizAttempts: new Map(),
   quizScores: new Map(),
-  unlockedStepIndex: 0
+  unlockedStepIndex: 0,
+  isRestoringProgress: false
 };
 window.state = state;
 
@@ -406,7 +408,7 @@ function hashString(str) {
   return hash;
 }
 
-function syncProgressToBackend(quizId, isCorrect, score) {
+function syncProgressToBackend(quizId, isCorrect, score, activity = {}) {
   if (!state.student || !state.student.email || !state.student.school) return;
   try {
     fetch(APP_SCRIPT_URL, {
@@ -414,13 +416,18 @@ function syncProgressToBackend(quizId, isCorrect, score) {
       mode: 'no-cors',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
+        action: quizId ? 'submit_quiz' : 'save_activity',
         email: state.student.email,
         name: state.student.name,
         school: state.student.school,
         level: state.student.level,
-        quizId: quizId,
-        isCorrect: isCorrect,
-        score: score || 100
+        quizId: quizId || '',
+        isCorrect: Boolean(isCorrect),
+        score: score || 0,
+        lastStepId: activity.lastStepId || (state.courseData[state.currentStepIndex] || {}).id || '',
+        watchedStepIds: Array.isArray(activity.watchedStepIds)
+          ? activity.watchedStepIds
+          : [...state.watchedStepIndices].map((i) => state.courseData[i]?.id).filter(Boolean)
       })
     }).catch((err) => console.warn('Progress sync warning:', err));
   } catch (err) {
@@ -1074,6 +1081,45 @@ function handleTypoSuggestion(backendSuggestion, originalInput) {
   );
 }
 
+
+function recomputeUnlockedStepIndex() {
+  if (state.student.isAdmin) {
+    state.unlockedStepIndex = 9999;
+    return;
+  }
+  let unlocked = 0;
+  for (let i = 0; i < state.courseData.length; i++) {
+    const step = state.courseData[i];
+    const qList = extractQuizzesFromStep(step);
+    const allQDone = qList.length === 0 || qList.every((q) => state.submittedQuizIds.has(q.id));
+    const isWatched = step.type === 'slide' || state.watchedStepIndices.has(i);
+    if (allQDone && isWatched) unlocked = i + 1;
+    else break;
+  }
+  state.unlockedStepIndex = unlocked;
+}
+
+function restoreServerActivity(progressResponse) {
+  const data = progressResponse?.data || {};
+  const progress = progressResponse?.progress || {};
+  const watchedIds = Array.isArray(data.watchedStepIds)
+    ? data.watchedStepIds
+    : String(progress['_Watched Steps'] || '').split(',').map((v) => v.trim()).filter(Boolean);
+  watchedIds.forEach((id) => {
+    const index = state.courseData.findIndex((step) => step.id === id);
+    if (index >= 0) state.watchedStepIndices.add(index);
+  });
+  const lastStepId = data.lastStepId || progress['_Last Step'] || '';
+  recomputeUnlockedStepIndex();
+  if (lastStepId) {
+    const lastIndex = state.courseData.findIndex((step) => step.id === lastStepId);
+    if (lastIndex >= 0 && lastIndex <= state.unlockedStepIndex) {
+      state.currentStepIndex = lastIndex;
+      goToStep(lastIndex);
+    }
+  }
+}
+
 // ==================== 3. SUCCESSFUL LOGIN & DASHBOARD MOUNT ====================
 async function completeSuccessfulLogin() {
   hideLoginError();
@@ -1097,7 +1143,9 @@ async function completeSuccessfulLogin() {
       : 'Misi: Scratch Visual Coding';
 
   // Restore Local Progress
+  state.isRestoringProgress = true;
   const storageKey = `uob_progress_${state.student.email}_${state.student.school}`;
+  let savedLocalLastStepId = '';
   try {
     const saved = localStorage.getItem(storageKey);
     if (saved) {
@@ -1106,6 +1154,7 @@ async function completeSuccessfulLogin() {
         state.submittedQuizIds = new Set(parsed);
       }
     }
+    savedLocalLastStepId = localStorage.getItem(`uob_last_step_${state.student.email}_${state.student.school}`) || '';
   } catch (e) {
     console.warn('LocalStorage read error:', e);
   }
@@ -1156,38 +1205,8 @@ async function completeSuccessfulLogin() {
   // Load Kurikulum sesuai jenjang yang terdeteksi
   try {
     await loadCourseData(state.student.dataFile);
-    if (state.student.isAdmin) {
-      state.unlockedStepIndex = 9999;
-    } else {
-      let unlocked = 0;
-      for (let i = 0; i < state.courseData.length; i++) {
-        const step = state.courseData[i];
-        const qList = extractQuizzesFromStep(step);
-        const isSlide = step.type === 'slide';
-        const allQDone = qList.length === 0 || qList.every((q) => state.submittedQuizIds.has(q.id));
-        const isWatched = isSlide || state.watchedStepIndices.has(i);
+    recomputeUnlockedStepIndex();
 
-        // Strict Gating: Step dianggap tuntas membuka materi berikutnya HANYA jika
-        // seluruh kuis selesai DAN (jika materi video) videonya sudah pernah ditonton s.d. threshold
-        if (allQDone && isWatched) {
-          unlocked = i + 1;
-        } else {
-          break;
-        }
-      }
-
-      try {
-        const savedUnlocked = localStorage.getItem(`uob_unlocked_${state.student.email}_${state.student.school}`);
-        if (savedUnlocked) {
-          const numSaved = Number(savedUnlocked);
-          // Hanya percayai savedUnlocked jika siswa memiliki bukti kuis/tontonan aktif
-          if (!isNaN(numSaved) && numSaved > 0 && (state.submittedQuizIds.size > 0 || state.watchedStepIndices.size > 0)) {
-            unlocked = Math.max(unlocked, Math.min(numSaved, state.courseData.length));
-          }
-        }
-      } catch (e) {}
-      state.unlockedStepIndex = unlocked;
-    }
   } catch (err) {
     console.error('Failed to load course dataset:', err);
     showAppAlert({
@@ -1201,7 +1220,8 @@ async function completeSuccessfulLogin() {
   }
 
   buildSidebarModuleList();
-  goToStep(0);
+  const localLastIndex = state.courseData.findIndex((step) => step.id === savedLocalLastStepId);
+  goToStep(localLastIndex >= 0 && localLastIndex <= state.unlockedStepIndex ? localLastIndex : 0);
 
   // Server-First SSOT Sync from Google Sheets (Two-Way Safe Sync)
   try {
@@ -1228,7 +1248,11 @@ async function completeSuccessfulLogin() {
             try {
               localStorage.setItem(storageKey, JSON.stringify([...state.submittedQuizIds]));
             } catch (e) {}
-          } else if (res.resetByAdmin === true) {
+          }
+          if (res.data || res.progress) {
+            restoreServerActivity(res);
+          }
+          if (res.resetByAdmin === true) {
             console.warn('[SSOT Sync] Data di-reset oleh admin. Mereset progres lokal...');
             state.submittedQuizIds.clear();
             localStorage.removeItem(storageKey);
@@ -1236,14 +1260,21 @@ async function completeSuccessfulLogin() {
             state.currentStepIndex = 0;
             goToStep(0);
           }
+          state.isRestoringProgress = false;
           renderQuizSwitcherStrip();
           checkProgressGate();
         } else if (res && (res.studentFound === false || res.notFound)) {
+          state.isRestoringProgress = false;
           console.warn('[SSOT Sync] Data siswa belum tersimpan di spreadsheet.');
         }
       })
-      .catch((err) => console.log('Backend sync offline/deferred:', err));
-  } catch (e) {}
+      .catch((err) => {
+        state.isRestoringProgress = false;
+        console.log('Backend sync offline/deferred:', err);
+      });
+  } catch (e) {
+    state.isRestoringProgress = false;
+  }
 
   checkMobileAdvisory();
 }
@@ -1483,17 +1514,30 @@ function goToStep(index) {
   }
 
   state.currentStepIndex = index;
+  const currentStepId = state.courseData[index]?.id || `step-${index}`;
+  if (state.isLoggedIn && state.student?.email && !state.isRestoringProgress) {
+    try { localStorage.setItem(`uob_last_step_${state.student.email}_${state.student.school}`, currentStepId); } catch (e) {}
+    syncProgressToBackend('', true, 0, {
+      lastStepId: currentStepId,
+      watchedStepIds: [...state.watchedStepIndices].map((i) => state.courseData[i]?.id).filter(Boolean)
+    });
+  }
   state.videoMaxTimeWatched = 0;
   state.videoDuration = 0;
   state.videoWatchedToEnd = false;
   state.isIntroPlaying = false;
+  state.introPlaybackToken += 1;
   if (el.introVideo) {
     try {
       el.introVideo.pause();
     } catch (e) {}
     el.introVideo.currentTime = 0;
     el.introVideo.style.display = 'none';
+    el.introVideo.onended = null;
+    el.introVideo.onpause = null;
+    el.introVideo.onseeking = null;
   }
+  if (el.videoControls) el.videoControls.style.display = 'flex';
   teardownPlayer();
 
   const step = state.courseData[index];
@@ -1782,7 +1826,11 @@ function initYouTubePlayer(videoId, startSeconds, endSeconds) {
     },
     events: {
       onReady: (event) => {
+        // Never let YouTube start while the lesson is only being rendered.
+        // Playback is allowed only from the explicit Play action (or after bumper completion).
+        try { event.target.pauseVideo(); } catch (e) {}
         state.isPlayerReady = true;
+        state.isPlaying = false;
         state.videoDuration = event.target.getDuration() || 0;
         if (startSeconds) event.target.seekTo(startSeconds, true);
         const effectiveEnd = (endSeconds && endSeconds > 0) ? endSeconds : state.videoDuration;
@@ -1792,6 +1840,14 @@ function initYouTubePlayer(videoId, startSeconds, endSeconds) {
       },
       onStateChange: (event) => {
         if (event.data === YT.PlayerState.PLAYING) {
+          // A player event can arrive during iframe hydration. Reject it unless
+          // the learner explicitly started the lesson after any bumper.
+          if (!state.hasStartedVideo || state.isIntroPlaying) {
+            try { event.target.pauseVideo(); } catch (e) {}
+            state.isPlaying = false;
+            el.btnPlayPause.textContent = '▶';
+            return;
+          }
           state.isPlaying = true;
           el.btnPlayPause.textContent = '⏸';
           startPlayerTicker(endSeconds);
@@ -1895,63 +1951,97 @@ function teardownPlayer() {
  * 4-Detik Intro Video Bumper (intro.mp4)
  * Wajib diputar sebelum video materi utama YouTube berputar
  */
+function getIntroMode(step) {
+  if (!step) return 'none';
+  if (step.introMode === 'bumper' || step.introMode === 'embedded' || step.introMode === 'none') {
+    return step.introMode;
+  }
+  if (step.embeddedIntro === true) return 'embedded';
+  // No explicit bumper instruction means the source video owns its intro.
+  return 'embedded';
+}
+
+function shouldPlayIntroBumper(step) {
+  return Boolean(step && step.type !== 'slide' && getIntroMode(step) === 'bumper');
+}
+
+/** Play the external 4-second bumper as a locked, non-interactive pre-roll. */
 function playIntroBumper(onFinish) {
-  if (!el.introVideo) {
+  const step = state.courseData[state.currentStepIndex];
+  const stepId = step && step.id ? step.id : `step-${state.currentStepIndex}`;
+  const token = ++state.introPlaybackToken;
+  if (!shouldPlayIntroBumper(step) || !el.introVideo) {
     if (onFinish) onFinish();
     return;
   }
 
   el.customThumbnail.style.display = 'none';
   el.introVideo.style.display = 'block';
+  el.introVideo.controls = false;
   el.introVideo.currentTime = 0;
   state.isIntroPlaying = true;
-  el.btnPlayPause.textContent = '⏸';
+  state.introPlayedSteps.delete(stepId);
+  el.btnPlayPause.textContent = '⏳';
+  if (el.videoControls) el.videoControls.style.display = 'none';
+  if (el.videoFrame) el.videoFrame.classList.add('intro-playing');
 
   let finished = false;
+  const isCurrentPlayback = () => (
+    !finished && token === state.introPlaybackToken &&
+    state.courseData[state.currentStepIndex] === step
+  );
   const finishIntro = () => {
     if (finished) return;
     finished = true;
+    if (token !== state.introPlaybackToken) return;
     state.isIntroPlaying = false;
-    state.introPlayedSteps.add(state.currentStepIndex);
+    state.introPlayedSteps.add(stepId);
     el.introVideo.style.display = 'none';
+    el.introVideo.onended = null;
+    el.introVideo.onpause = null;
+    el.introVideo.onseeking = null;
+    if (el.videoControls) el.videoControls.style.display = 'flex';
+    if (el.videoFrame) el.videoFrame.classList.remove('intro-playing');
+    el.btnPlayPause.textContent = '▶';
     if (onFinish) onFinish();
   };
 
+  // A bumper is not a learner-controlled media surface.
+  el.introVideo.onpause = () => {
+    if (isCurrentPlayback()) el.introVideo.play().catch(() => {});
+  };
+  el.introVideo.onseeking = () => {
+    if (isCurrentPlayback()) el.introVideo.currentTime = 0;
+  };
+  el.introVideo.oncontextmenu = (event) => event.preventDefault();
   el.introVideo.onended = finishIntro;
   el.introVideo.onerror = (err) => {
-    console.warn('Intro video playback error:', err);
+    console.warn('Intro bumper playback error:', err);
+    // Do not strand the learner if the optional external bumper cannot load.
     finishIntro();
   };
 
   const playPromise = el.introVideo.play();
-  if (playPromise !== undefined) {
-    playPromise.catch((err) => {
-      console.warn('Intro video play exception:', err);
-      finishIntro();
-    });
-  }
+  if (playPromise !== undefined) playPromise.catch((err) => {
+    console.warn('Intro bumper play exception:', err);
+    finishIntro();
+  });
 }
-
 function setupPlayerControlEvents() {
   const togglePlay = () => {
     const step = state.courseData[state.currentStepIndex];
-    const isVideoStep = !step || step.type !== 'slide';
+    const isVideoStep = Boolean(step && step.type !== 'slide');
 
-    // 1. Jika intro video sedang berjalan, toggle play/pause intro
-    if (state.isIntroPlaying && el.introVideo) {
-      if (el.introVideo.paused) {
-        el.introVideo.play();
-        el.btnPlayPause.textContent = '⏸';
-      } else {
-        el.introVideo.pause();
-        el.btnPlayPause.textContent = '▶';
-      }
-      return;
-    }
+    // Bumper bukan media yang bisa dikontrol siswa.
+    if (state.isIntroPlaying) return;
 
-    // 2. Jika belum pernah memutar intro di materi video ini, putar intro 4 detik dulu
-    if (isVideoStep && !state.introPlayedSteps.has(state.currentStepIndex)) {
+    // Hanya video yang secara eksplisit diberi introMode:'bumper' memakai bumper eksternal.
+    const stepId = step && step.id ? step.id : `step-${state.currentStepIndex}`;
+    if (isVideoStep && shouldPlayIntroBumper(step) && !state.introPlayedSteps.has(stepId)) {
       playIntroBumper(() => {
+        // Strict order: bumper ended → reveal/start YouTube.
+        state.hasStartedVideo = true;
+        el.customThumbnail.style.display = 'none';
         if (state.ytPlayer && state.ytPlayer.playVideo) {
           state.ytPlayer.playVideo();
         }
@@ -2045,6 +2135,7 @@ function renderBookmarks(bookmarks) {
         let targetTime = (start > 0 && rawTime < start) ? (start + rawTime) : rawTime;
         if (start > 0 && targetTime < start) targetTime = start;
         if (end > 0 && targetTime > end) targetTime = end;
+        state.hasStartedVideo = true;
         state.ytPlayer.seekTo(targetTime, true);
         state.ytPlayer.playVideo();
       }
@@ -2069,6 +2160,10 @@ function markCurrentStepVideoWatched() {
     try {
       localStorage.setItem(`uob_watched_${state.student.email}_${state.student.school}`, JSON.stringify([...state.watchedStepIndices]));
     } catch (e) {}
+    syncProgressToBackend('', true, 0, {
+      lastStepId: state.courseData[state.currentStepIndex]?.id || '',
+      watchedStepIds: [...state.watchedStepIndices].map((i) => state.courseData[i]?.id).filter(Boolean)
+    });
   }
 }
 

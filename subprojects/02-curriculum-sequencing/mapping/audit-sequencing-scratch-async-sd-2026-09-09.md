@@ -1,7 +1,7 @@
 # Audit Sequencing Scratch Async SD — Tutorial-Based Playlist
 
 **Tanggal:** 2026-09-09  
-**Status:** `under discussion` — audit awal, belum mengubah dataset produksi.
+**Status:** `implemented — verified in production dataset` (Diperbarui pasca implementasi scaffolding 6 modul, 5 slide bridge, dan standarisasi introMode)
 
 ## Ruang lingkup dan metode
 
@@ -95,16 +95,64 @@ Video 2 memuat beban konsep terbesar karena sekaligus mengenalkan clone, costume
 | Custom blocks/functions | tidak terlihat pada 17 caption | **belum tercakup** |
 | Debugging/systematic problem solving | muncul sebagai troubleshooting informal | **belum menjadi lesson eksplisit** |
 
-## Rekomendasi keputusan sequencing
+## Keputusan sequencing yang telah diimplementasikan
 
-- **Jangan menggabungkan artefak project.** Gunakan tiga project sebagai tiga milestone terpisah.
-- **Gunakan About Me sebagai entry point**, tetapi tambahkan pengantar Scratch UI sebelum video desain dan tur kode singkat sebelum video 4.
-- **Gunakan Racing Car sebagai project logika/game**, dengan micro-lesson input keyboard → loop → sensing → conditional.
-- **Gunakan Increase Your Earnings sebagai capstone**, setelah variable, conditional, dan event coordination sudah pernah dikenalkan.
-- **Jangan mengklaim “semua komponen Scratch” secara penuh.** Tiga project mencakup sebagian besar blok yang dibutuhkan untuk membuat project interaktif, tetapi Lists, custom blocks, operator yang lebih sistematis, dan debugging eksplisit masih minim/tidak tercakup.
-- **Tidak ada perubahan dataset produksi pada tahap ini.** Langkah berikutnya adalah membahas apakah gap tersebut ditutup dengan micro-lesson/slide bridge, bukan memindahkan video secara agresif.
+- **Tiga artefak project tetap terpisah:** About Me, Racing Car, dan Increase Your Earnings berdiri sendiri sebagai milestone bertahap; tidak ada penyatuan/stitching project paksa.
+- **Entry Point berfondasi kuat:** Modul 0 menyediakan dua slide bridge (`bridge-sd-00` orientasi platform berbasis artikel Create & Learn + `bridge-sd-01` transisi karakter ke kode/kostum/event).
+- **Logika Loop & Animasi:** Modul 2 menyediakan `bridge-sd-02` yang menjembatani konsep loop (`repeat`, `forever`, `wait`, frame animasi) sebelum video animasi lanjutan dan TTS.
+- **Kemudi & Deteksi Tabrakan:** Modul 3 menyisipkan `bridge-sd-03` tepat sebelum video kode mobil untuk menjembatani event keyboard, arah putar mobil, dan sensing `touching`.
+- **Variabel & Sinyal Komunikasi:** Modul 4 menyisipkan `bridge-sd-04` sebelum video project Increase Your Earnings untuk membekali konsep variabel kredit dan sinyal `broadcast`.
+- **Transparansi cakupan:** lists, custom blocks, dan operator mendalam tidak dipaksakan ke materi wajib agar beban kognitif siswa SD tetap terjaga.
 
-## Data audit lokal
+## Struktur 6 Modul dan 22 Step Produksi
 
-- Metadata playlist: `data/scratch-playlists/{about-me,racing-car,increase-earning}.json`
-- Caption: `data/scratch-playlists/transcripts/*.txt`
+| Modul | Tipe | ID Step | Judul Materi | Peran Pedagogis / Komponen |
+|---|---|---|---|---|
+| **Modul 0: Kenalan Scratch & Fondasi Interaksi** | Slide | `bridge-sd-00` | Scratch dari Nol: Kenalan dengan Platformnya | Orientasi UI: Stage, Sprite, Palette, Coding Area |
+| | Slide | `bridge-sd-01` | Dari Karakter ke Kode: Sprite, Costume, dan Event | Transisi visual ke logika blok & event klik |
+| **Modul 1: About Me — Perkenalan Diri** | Video | `up-about-1` | 1 About Me - Mendesain Karakter | Paint editor vektor, bentuk dasar, warna kulit |
+| | Video | `up-about-2` | 2 About Me - Merekam Suara Perkenalan Diri | Sound tab, rekam suara, event `when clicked` |
+| | Video | `up-about-3` | 3 About Me - Membuat Kostum Makanan | Tab costumes, multi-frame state makanan |
+| | Video | `up-about-4` | 4 About Me - Memprogram Sprite Makanan | `next costume`, loop `repeat`, `wait`, suara |
+| | Video | `up-about-5` | 5 About Me - Menambahkan Sprite dengan Emoji | Koordinat X/Y panggung & variasi sprite |
+| **Modul 2: Loop & Animasi Lanjutan** | Slide | `bridge-sd-02` | Membuat Gerakan Berulang dengan Loop | Konsep loop: aksi berulang vs sekali jalan |
+| | Video | `up-about-6` | 6 About Me - Memprogram Animasi & TTS | Motion `move`/`turn`, ekstensi Text-to-Speech |
+| | Video | `up-about-7` | 7 About Me - Memprogram dengan Effects | Visual efek grafik `color effect`, reset efek |
+| **Modul 3: Racing Car Game — Kontrol & Deteksi** | Video | `up-racing-1` | 1 Desain Sirkuit | Stage & backdrop kanvas lintasan balap |
+| | Video | `up-racing-2` | 2 Desain Mobil | Top-down sprite mobil & titik pusat (center point) |
+| | Slide | `bridge-sd-03` | Input, Sensing, dan Keputusan di Racing Car | Konsep kemudi keyboard, arah & deteksi tabrakan |
+| | Video | `up-racing-3` | 3 Kode Mobil | Motion kemudi keyboard `point in direction` |
+| | Video | `up-racing-4` | 4 Duplikasi dan Modifikasi Mobil 2 | Duplikasi sprite & adaptasi tombol WASD |
+| | Video | `up-racing-5` | 5 Desain Finish Line | Sprite garis finish melintang sirkuit |
+| | Video | `up-racing-6` | 6 Kode Menang dan Menyentuh Musuh | Sensing `touching`, conditional `if-then`, menang |
+| **Modul 4: Proyek Integratif — Variabel & Sinyal** | Slide | `bridge-sd-04` | Variable, Broadcast, dan Project Integratif | Konsep kotak variabel kredit & sinyal broadcast |
+| | Video | `up-earning-1` | 1. Percakapan Intro | Remix starter project, alur cerita skenario |
+| | Video | `up-earning-2` | 2. Memprogram Opsi 1 | Switch scene backdrop, `if-then-else`, show/hide |
+| **Modul 5: Increase Your Earnings — Capstone** | Video | `up-earning-3` | 3. Memprogram Opsi 2 | Modifikasi variabel kredit, interaksi klik |
+| | Video | `up-earning-4` | 4. Memprogram Ending | Broadcast pesan ending, evaluasi kredit akhir |
+
+## Standarisasi Intro Bumper (`introMode: "embedded"`)
+
+Seluruh 17 unit video Scratch SD telah distandarisasi dengan properti:
+```json
+"introMode": "embedded"
+```
+Karena video tutorial YouTube dari sumber materi asli telah memiliki bumper/opening visual tersendiri, runtime LMS (`app.js`) secara cerdas langsung memulai video pembelajaran tanpa memutar `intro.mp4` eksternal ganda, sehingga alur belajar siswa SD mulus dan bebas hambatan.
+
+## Checkpoint Quiz & Validasi
+
+- Setiap video step dilengkapi checkpoint quiz berbasis transkrip nyata untuk menguji pemahaman konsep inti di akhir video.
+- Format kuis mendukung ekstraksi bento box LMS dan normalisasi jawaban huruf/indeks.
+- Seluruh 5 slide bridge memuat interactive slide checkpoint, bookmarks, dan learning objectives.
+
+## Bukti Sinkronisasi Dataset
+
+Dataset produksi telah disinkronkan dan diverifikasi memiliki hash SHA-256 identik di tiga mirror:
+1. `subprojects/02-curriculum-sequencing/output/courseData-upperprimary.json`
+2. `subprojects/01-lms-platform/src/data/courseData-upperprimary.json`
+3. `docs/data/courseData-upperprimary.json`
+
+Hasil verifikasi:
+- **Total Modules:** 6
+- **Total Steps:** 22 (5 Slide Bridge + 17 Video Tutorial)
+- **Status Validasi JSON & Runtime:** PASS 100%

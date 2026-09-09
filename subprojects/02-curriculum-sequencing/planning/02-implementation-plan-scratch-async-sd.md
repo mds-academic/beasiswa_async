@@ -104,18 +104,13 @@ Jika ingin cakupan Scratch lebih lengkap, buat extension terpisah setelah capsto
 4. Setiap bridge memiliki objective, practice, completion criteria, bookmark, dan sumber.
 5. LMS owner menyetujui mapping ID sebelum `courseData-upperprimary.json` diubah.
 6. Tidak ada materi sumber lama yang dimodifikasi.
-7. Dataset SD terintegrasi ke `output/`, Subproject 01, dan `docs/`; seluruh mirror identik dan berisi 18 step pada jalur video-first.
+7. Dataset SD terintegrasi ke `output/`, Subproject 01, dan `docs/`; seluruh mirror identik dan berisi 22 step (5 slide bridge + 17 video tutorial).
 
 ## Implementasi yang sudah dijalankan
 
-- Jalur video-first direvisi menjadi empat modul: Bridge 00 → About Me → Racing Car → Increase Your Earnings.
-- Playlist tutorial tetap sebagai video terpisah; tidak ada stitching project.
-- Lima bridge disalin ke `subprojects/01-lms-platform/src/slides/` dan `docs/slides/`.
-- `courseData-upperprimary.json` diperbarui di tiga mirror dengan 18 step (1 bridge + 17 video).
+- Jalur enam modul dibuat: Modul 0 (Bridge 00 & 01) → Modul 1 (About Me part 1) → Modul 2 (Bridge 02 & Animasi) → Modul 3 (Racing Car & Bridge 03) → Modul 4 (Bridge 04 & Opsi 1) → Modul 5 (Capstone & Ending).
+- Playlist tutorial tetap sebagai video terpisah; tidak ada stitching project paksa.
+- Lima slide bridge (`bridge-sd-00` s.d. `bridge-sd-04`) lengkap dengan slide HTML interaktif, bookmark, dan kuis.
+- `courseData-upperprimary.json` diperbarui di tiga mirror dengan 22 step lengkap dan diverifikasi SHA-256 identik.
+- Seluruh 17 video tutorial memiliki properti `"introMode": "embedded"` untuk mencegah pemutaran bumper ganda.
 - Visual bridge memakai design system existing dan aset Scratch aktual lokal.
-
-## Keputusan yang masih terbuka
-
-- Apakah Bridge 01 dan Bridge 02 ditampilkan sebagai materi wajib atau Bridge 02 dijadikan pre-watch wajib sebelum Racing Car.
-- Apakah lima bridge menjadi step terpisah di LMS atau beberapa dijadikan bagian materi pendamping pada satu module.
-- Apakah extension Lists/Custom Blocks diperlukan untuk definisi “lengkap”.

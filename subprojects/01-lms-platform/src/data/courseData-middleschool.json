@@ -81,7 +81,8 @@
           "cheatsheetDesc": "Tiga kunci sukses belajar mandiri di platform ini:",
           "cheatsheetCode": "1. Tonton video sampai tuntas\n2. Kerjakan kuis interaktif\n3. Buka rangkuman & coba latihan kode",
           "sourceStepId": "ms-0-0",
-          "prerequisiteStepIds": []
+          "prerequisiteStepIds": [],
+          "introMode": "embedded"
         },
         {
           "id": "ms-0-1",
@@ -188,7 +189,8 @@
           "sourceStepId": "ms-0-1",
           "prerequisiteStepIds": [
             "ms-0-0"
-          ]
+          ],
+          "introMode": "embedded"
         },
         {
           "id": "ms-0-2",
@@ -331,7 +333,8 @@
           "sourceStepId": "ms-0-2",
           "prerequisiteStepIds": [
             "ms-0-1"
-          ]
+          ],
+          "introMode": "embedded"
         },
         {
           "id": "ms-0-3",
@@ -428,7 +431,8 @@
           "sourceStepId": "ms-0-3",
           "prerequisiteStepIds": [
             "ms-0-2"
-          ]
+          ],
+          "introMode": "embedded"
         },
         {
           "id": "bridge-ms-00",
@@ -702,7 +706,8 @@
           "sourceStepId": "ms-1-1",
           "prerequisiteStepIds": [
             "bridge-ms-01"
-          ]
+          ],
+          "introMode": "embedded"
         },
         {
           "id": "ms-1-2",
@@ -749,7 +754,8 @@
           "sourceStepId": "ms-1-2",
           "prerequisiteStepIds": [
             "ms-1-1"
-          ]
+          ],
+          "introMode": "embedded"
         },
         {
           "id": "ms-1-3",
@@ -805,7 +811,8 @@
           "sourceStepId": "ms-1-3",
           "prerequisiteStepIds": [
             "ms-1-2"
-          ]
+          ],
+          "introMode": "embedded"
         },
         {
           "id": "ms-1-4",
@@ -863,7 +870,8 @@
           "sourceStepId": "ms-1-4",
           "prerequisiteStepIds": [
             "ms-1-3"
-          ]
+          ],
+          "introMode": "embedded"
         },
         {
           "id": "ms-1-5",
@@ -910,7 +918,8 @@
           "sourceStepId": "ms-1-5",
           "prerequisiteStepIds": [
             "ms-1-4"
-          ]
+          ],
+          "introMode": "embedded"
         },
         {
           "id": "ms-1-6",
@@ -1000,7 +1009,8 @@
           "sourceStepId": "ms-1-6",
           "prerequisiteStepIds": [
             "ms-1-5"
-          ]
+          ],
+          "introMode": "embedded"
         },
         {
           "id": "ms-1-7",
@@ -1102,7 +1112,8 @@
           "sourceStepId": "ms-1-7",
           "prerequisiteStepIds": [
             "ms-1-6"
-          ]
+          ],
+          "introMode": "embedded"
         }
       ]
     },
@@ -1183,7 +1194,8 @@
           "sourceStepId": "ms-2-1",
           "prerequisiteStepIds": [
             "ms-1-7"
-          ]
+          ],
+          "introMode": "embedded"
         },
         {
           "id": "ms-2-2",
@@ -1238,7 +1250,8 @@
           "sourceStepId": "ms-2-2",
           "prerequisiteStepIds": [
             "ms-2-1"
-          ]
+          ],
+          "introMode": "embedded"
         },
         {
           "id": "ms-2-3",
@@ -1293,7 +1306,8 @@
           "sourceStepId": "ms-2-3",
           "prerequisiteStepIds": [
             "ms-2-2"
-          ]
+          ],
+          "introMode": "embedded"
         },
         {
           "id": "ms-2-4",
@@ -1354,7 +1368,8 @@
           "sourceStepId": "ms-2-4",
           "prerequisiteStepIds": [
             "ms-2-3"
-          ]
+          ],
+          "introMode": "embedded"
         },
         {
           "id": "ms-2-5",
@@ -1405,7 +1420,8 @@
           "sourceStepId": "ms-2-5",
           "prerequisiteStepIds": [
             "ms-2-4"
-          ]
+          ],
+          "introMode": "embedded"
         },
         {
           "id": "ms-2-6",
@@ -1450,7 +1466,8 @@
           "sourceStepId": "ms-2-6",
           "prerequisiteStepIds": [
             "ms-2-5"
-          ]
+          ],
+          "introMode": "embedded"
         }
       ]
     },
@@ -1532,7 +1549,8 @@
           "sourceStepId": "ms-3-1",
           "prerequisiteStepIds": [
             "ms-2-6"
-          ]
+          ],
+          "introMode": "embedded"
         },
         {
           "id": "ms-3-2",
@@ -1579,7 +1597,8 @@
           "sourceStepId": "ms-3-2",
           "prerequisiteStepIds": [
             "ms-3-1"
-          ]
+          ],
+          "introMode": "embedded"
         },
         {
           "id": "ms-3-3",
@@ -1628,7 +1647,8 @@
           "sourceStepId": "ms-3-3",
           "prerequisiteStepIds": [
             "ms-3-2"
-          ]
+          ],
+          "introMode": "embedded"
         },
         {
           "id": "bridge-ms-03",
@@ -1779,7 +1799,8 @@
           "sourceStepId": "ms-3-4",
           "prerequisiteStepIds": [
             "bridge-ms-03"
-          ]
+          ],
+          "introMode": "embedded"
         },
         {
           "id": "ms-3-5",
@@ -1838,7 +1859,8 @@
           "sourceStepId": "ms-3-5",
           "prerequisiteStepIds": [
             "ms-3-4"
-          ]
+          ],
+          "introMode": "embedded"
         }
       ]
     },
@@ -1997,7 +2019,8 @@
           "sourceStepId": "ms-4-1",
           "prerequisiteStepIds": [
             "bridge-ms-02"
-          ]
+          ],
+          "introMode": "embedded"
         },
         {
           "id": "ms-4-2",
@@ -2075,7 +2098,8 @@
           "sourceStepId": "ms-4-2",
           "prerequisiteStepIds": [
             "ms-4-1"
-          ]
+          ],
+          "introMode": "embedded"
         },
         {
           "id": "ms-4-3",
@@ -2122,7 +2146,8 @@
           "sourceStepId": "ms-4-3",
           "prerequisiteStepIds": [
             "ms-4-2"
-          ]
+          ],
+          "introMode": "embedded"
         },
         {
           "id": "ms-4-4",
@@ -2176,7 +2201,8 @@
           "sourceStepId": "ms-4-4",
           "prerequisiteStepIds": [
             "ms-4-3"
-          ]
+          ],
+          "introMode": "embedded"
         },
         {
           "id": "ms-4-5",
@@ -2223,7 +2249,8 @@
           "sourceStepId": "ms-4-5",
           "prerequisiteStepIds": [
             "ms-4-4"
-          ]
+          ],
+          "introMode": "embedded"
         },
         {
           "id": "ms-4-6",
@@ -2269,7 +2296,8 @@
           "sourceStepId": "ms-4-6",
           "prerequisiteStepIds": [
             "ms-4-5"
-          ]
+          ],
+          "introMode": "embedded"
         }
       ]
     },
@@ -2334,7 +2362,8 @@
           "sourceStepId": "ms-5-1",
           "prerequisiteStepIds": [
             "ms-4-6"
-          ]
+          ],
+          "introMode": "embedded"
         },
         {
           "id": "ms-5-2",
@@ -2375,7 +2404,8 @@
           "sourceStepId": "ms-5-2",
           "prerequisiteStepIds": [
             "ms-5-1"
-          ]
+          ],
+          "introMode": "embedded"
         },
         {
           "id": "ms-5-3",
@@ -2421,7 +2451,8 @@
           "sourceStepId": "ms-5-3",
           "prerequisiteStepIds": [
             "ms-5-2"
-          ]
+          ],
+          "introMode": "embedded"
         },
         {
           "id": "ms-5-4",
@@ -2518,7 +2549,8 @@
           "sourceStepId": "ms-5-4",
           "prerequisiteStepIds": [
             "ms-5-3"
-          ]
+          ],
+          "introMode": "embedded"
         }
       ]
     }
