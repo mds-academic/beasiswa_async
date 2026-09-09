@@ -357,3 +357,30 @@ Audit detail tersimpan di:
 Status yang paling akurat: **Fase 0–6 sebagian besar sudah diimplementasikan secara teknis, tetapi belum final acceptance.** Jangan menganggap ini 100% done sebelum blocker B1–B4 ditutup.
 
 Aku tidak mengubah dataset atau HTML dalam audit ini. Hanya audit dan `STATE.md` yang diperbarui. Checkpoint Git lokal: `12797af` (`docs(curriculum): audit phase 0-6 completion claims`).
+
+## 2026-09-09 — Verifikasi pasca-perbaikan dan sinkronisasi Spreadsheet
+
+### User
+> ini katanya udah dibaikin lagi coba cek, sama sekalaian cek di browser yah soalnya aku udah minta di sync ke spreadsheet juga unutk dokmentasi
+
+### Status
+- **under discussion** — verifikasi ulang hasil perbaikan, browser QA, dan sinkronisasi Google Spreadsheet diminta.
+
+### Assistant Response — 2026-09-09
+
+Aku sudah cek ulang file lokal, menjalankan validator 8-gate, dan membuka Google Spreadsheet master melalui Chrome profile terautentikasi.
+
+**Hasilnya: perbaikan teknis utama memang sudah masuk dan validator lokal menghasilkan 8/8 PASS.**
+
+Yang terverifikasi:
+- `bridge-ms-00` sekarang 0 match untuk TinyDB, `virtualTinyDB`, `simpanTinyDB`, `bacaTinyDB`, database, dan Storage pada seluruh salinan.
+- Metadata 10 bridge sudah seragam dan `learningObjectives` tidak lagi kosong.
+- Enam anomaly timestamp/bookmark sudah diamankan dengan `review_required`, `outOfBounds`, atau `manual_checkpoint`; angka sumber tidak diubah.
+- Dataset dan slide tersinkron identik melalui SHA-256.
+- 20 screenshot QA tersedia untuk 10 bridge: desktop dan mobile.
+- Spreadsheet master dapat dibuka dan tab `materi-sd`, `materi-smp`, `materi-sma`, serta `Changelog & Audit Log` terbaca.
+- Tab SMA memuat bridge HS-00 sampai HS-05; tab SMP memuat bridge MS-00 sampai MS-03; Changelog memuat B1–B4 dan status 8/8 gate.
+
+Catatan penting: spreadsheet menulis B2 sebagai timestamp “dinormalisasi menjadi presisi”, sedangkan implementasi aktual lebih aman dan sesuai aturan sumber: timestamp asli dipertahankan, lalu anomaly dikarantina sebagai `review_required`/`manual_checkpoint`. Jadi dokumentasinya perlu diperjelas agar tidak terkesan angka timestamp sudah dipindahkan atau ditebak.
+
+Audit dan hasil browser verification sudah ditambahkan ke `audit-verifikasi-implementasi-fase-0-6-2026-09-08.md` dan `STATE.md`.

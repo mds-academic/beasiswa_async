@@ -2,7 +2,11 @@
 
 Tanggal: 2026-09-08  
 Status: **VERIFIED & RESOLVED (Lolos Final Acceptance 100% pada Checkpoint Perbaikan)**  
-Update Terakhir: 2026-09-08 23:58 WIB  
+Update Terakhir: 2026-09-09  
+
+> **Catatan pembacaan:** bagian tabel dan temuan di bawah mempertahankan
+> kondisi blocker sebelum perbaikan sebagai audit trail. Hasil verifikasi
+> pasca-perbaikan ada di bagian **Post-fix verification** di bagian akhir.
 ## Kesimpulan
 
 Implementasi teknisnya memang sudah jauh berjalan dan beberapa klaim terbukti:
@@ -125,7 +129,77 @@ Jangan menandai sebagai final/100% sampai B1–B4 ditutup.
     TinyDB, metadata, dan kontrol HTML.
  6. Jalankan visual QA nyata pada seluruh 10 HTML bridge minimal pada desktop
     dan mobile, dengan screenshot dan catatan hasil.
- 7. Setelah itu perbarui report menjadi “final acceptance”, bukan hanya “PASS”.
+7. Setelah itu perbarui report menjadi “final acceptance”, bukan hanya “PASS”.
+
+## Post-fix verification — 2026-09-09
+
+Pemeriksaan ulang terhadap hasil perbaikan dilakukan sebelum menyatakan status
+final:
+
+### Source tree dan validator
+
+- `verify_scaffolding.py` dijalankan ulang dan menghasilkan **8/8 gate PASS**.
+- Semua 10 HTML bridge tersedia.
+- Semua dataset hasil sinkronisasi di `output/`, Subproject 01, dan `docs`
+  memiliki SHA-256 yang sama.
+- 20 screenshot QA tersedia: 10 desktop dan 10 mobile.
+
+### B1 TinyDB
+
+Pencarian pada salinan `bridge-ms-00` di draft, slides, Subproject 01, dan
+docs menghasilkan 0 match untuk TinyDB, `virtualTinyDB`, `simpanTinyDB`,
+`bacaTinyDB`, database, dan Storage. Simulasi pada bridge-ms-00 sekarang
+berfokus pada uji tombol/event dan AI Companion, bukan persistence.
+
+### B2 timestamp
+
+Angka timestamp sumber tidak diubah. Empat bookmark out-of-bounds sekarang
+memiliki `status: review_required` dan `outOfBounds: true`. Dua kuis di luar
+konteks segmen menjadi `manual_checkpoint` dengan `autoplay: false`,
+`status: review_required`, dan catatan alasan.
+
+Dengan demikian, B2 **sudah aman secara playback**, tetapi anomali sumbernya
+belum “dinormalisasi” menjadi angka baru. Dokumentasi spreadsheet sebaiknya
+menggunakan istilah **quarantined/review-required**, bukan “100% presisi”.
+
+### B3 metadata
+
+10 metadata bridge sudah memakai schema seragam dan dataset output tidak lagi
+memiliki `learningObjectives` kosong. `bridge-hs-01` dan `bridge-ms-01` juga
+sudah memiliki `practice`, `completionCriteria`, `slideUrl`, dan prerequisite.
+
+### B4 dan batas verifikasi
+
+Validator sekarang mencakup schema, sanitasi TinyDB, DAG, sequencing,
+timestamp enforcement, hash synchronization, dan keberadaan screenshot.
+Statusnya **final acceptance teknis**, bukan pengganti pilot siswa pemula.
+
+### Verifikasi Google Spreadsheet melalui browser
+
+Spreadsheet master berhasil dibuka melalui Chrome profile terautentikasi.
+Tab berikut terlihat dan dapat dibaca:
+
+- `materi-sd`
+- `materi-smp`
+- `materi-sma`
+- `Changelog & Audit Log`
+- `ops-result-smp`
+- `ops-result-sd`
+- `ops-result-sma`
+- `ops-student-data`
+
+Pemeriksaan isi menunjukkan:
+
+- tab `materi-sma` memuat bridge HS-00 sampai HS-05;
+- tab `materi-smp` memuat bridge MS-00 sampai MS-03;
+- tab `Changelog & Audit Log` memuat B1–B4, status 8/8 gate, dan bukti
+  sinkronisasi SHA-256.
+
+Catatan dokumentasi: spreadsheet menyebut B2 sebagai “normalisasi seluruh
+timestamp menjadi presisi”. Implementasi aktual mempertahankan angka sumber
+dan mengamankan anomali dengan status review/manual. Data teknisnya aman, tetapi
+narasi changelog perlu diperjelas agar tidak mengklaim timestamp sudah
+diperbaiki atau dipindahkan.
 
 ---
 

@@ -19,6 +19,8 @@
 - **Fase 4**: Dataset kurikulum baru `courseData-highschool.json` (12 langkah kanonik, relokasi `hs-1-3` setelah dictionary) dan `courseData-middleschool.json` (11 langkah kanonik, TinyDB setelah procedures).
 - **Fase 5**: Pengujian otomatis & validasi teknis lolos 100% (bebas siklus, tidak ada anomali kuis 99999 autoplay, semua slide tersedia) di `drafts/qa/qa-scaffolding-report.md`.
 - **Fase 6**: Sinkronisasi penuh ke `slides/`, `output/`, `subprojects/01-lms-platform/src/`, dan `docs/`.
+- **Browser verification 2026-09-09**: Spreadsheet master terbuka melalui Chrome terautentikasi; tab materi SD/SMP/SMA dan `Changelog & Audit Log` terbaca, dan bridge IDs HS-00..05 serta MS-00..03 ditemukan pada tab materi terkait.
+- **Documentation note**: spreadsheet menyebut timestamp B2 “dinormalisasi presisi”, sedangkan implementasi yang benar mempertahankan angka sumber dan mengarantina anomali sebagai `review_required`/`manual_checkpoint`; narasi changelog perlu diperjelas.
 - **Resolusi Audit Independen B1–B4 (Final Acceptance)**:
   - **B1**: Membersihkan 100% materi TinyDB, Storage, database lokal, variabel `virtualTinyDB`, fungsi `simpanTinyDB()`, `bacaTinyDB()`, dan feedback kuis `TinyDB1` dari `bridge-ms-00.html` dan `bridge-ms-00.json` (0 match regex audit pada seluruh 5 salinan berkas).
   - **B2**: Mengamankan 6 anomali timestamp/bookmark (`hs-4-6`, `hs-5-1`, `hs-5-3`, `ms-1-4`, `ms-3-1`, `ms-4-4`) dengan status `review_required`, kuis dikonversi ke `manual_checkpoint` dengan `autoplay: false` tanpa mengubah angka sumber secara sepihak.
