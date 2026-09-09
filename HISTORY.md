@@ -1691,3 +1691,37 @@ Melakukan perbaikan menyeluruh pada frontend LMS platform (subprojects/01-lms-pl
 User mengirim implementation plan redesain topbar, tab sertifikat akhir, sertifikat/transkrip 2 halaman A4, Bento Quiz Tracker, Slide Pembelajaran, dan strict sidebar gating; lalu meminta: "ini aku ada beberapa pembaruan , coba cek lagii yah audit lagi ii n udah bener apa ngga".
 
 **Status:** under discussion — audit lanjutan difokuskan pada Subproject 1; kode pengguna tidak diubah pada turn ini.
+
+### Assistant Final Response — 2026-09-09 (Audit lanjutan pembaruan desain Subproject 1)
+
+Aku sudah audit ulang berdasarkan implementation plan dan perubahan aktual di Subproject 1.
+
+Kesimpulannya: **arah perbaikannya sudah benar, tetapi belum 100% beres.**
+
+Yang sudah sesuai:
+- Panduan Perangkat sudah tidak muncul di topbar desktop dan logikanya mobile-only.
+- Tab Sertifikat & Rekap Nilai sudah dipindahkan ke item terakhir sidebar dan dikunci.
+- Struktur sertifikat 2 halaman sudah ada: Certificate of Completion + Transcript.
+- Tanda tangan sudah memakai `UOB My Digital Space`, bukan nama personal.
+- Bento Box evaluasi kuis sudah tersedia, scrollable, ada status, timestamp, dan tombol buka kuis.
+- Strict sidebar click guard sudah ditambahkan.
+- Email dan tombol login aktif setelah sekolah dipilih.
+- `src/` dan `docs/` sudah sinkron secara lokal.
+
+Yang masih belum benar dan menjadi blocker:
+1. Jawaban kuis masih campuran `A/B/C/D`, angka, boolean, dan `null`, tetapi frontend masih membandingkan index angka langsung.
+2. Sync progress Sheet masih tidak cocok: frontend membaca `res.data.submittedQuizIds`, backend mengirim `progress` map.
+3. Strict gating saat login hanya memeriksa kuis, belum memeriksa video sudah ditonton.
+4. LocalStorage unlock lama masih bisa membuka materi setelah reset server.
+5. Seek, bookmark, dan gate video masih memakai durasi penuh YouTube, bukan rentang timestamp terkurasi.
+6. Istilah `Sandbox` masih tersisa di HTML, CSS, dan JavaScript.
+7. Fallback global masih bisa menampilkan `bridge-hs-00`/`bridge-ms-00` pada step yang tidak memiliki slide.
+8. Bento baru masih hidup bersama fungsi strip kuis lama.
+9. Fullscreen masih menargetkan `sandboxContainer/videoFrame`, bukan struktur Slide Pembelajaran yang baru.
+10. Definisi kelulusan sertifikat 70% kuis berbeda dengan definisi unlock seluruh materi.
+11. Print A4 dan deployment live belum berhasil diverifikasi secara nyata.
+
+Laporan lengkap sudah diperbarui di:
+[audit ulang Subproject 1](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/01-lms-platform/audits/01-audit-ulang-implementasi-subproject-1-2026-09-09.md)
+
+Aku tidak mengubah kode/data pembaruanmu. Audit dokumentasi dicatat dalam commit Subproject 1 `9aca1fb`.
