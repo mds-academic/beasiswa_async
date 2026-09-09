@@ -49,13 +49,18 @@
     - Siswa reguler tidak dapat melompati materi yang berstatus terkunci (`🔒`).
   - **Verifikasi Otomatis**: Seluruh 7 pengujian Playwright end-to-end (`scratch/test_revision_features.py`) lolos 100%.
   - **Sinkronisasi Kode**: `src/` disinkronkan identik ke `docs/`.
+  - **Koreksi Presisi Narasi Changelog di Google Spreadsheet (2026-09-09)**:
+    - Item 2 Changelog diperbarui di Google Spreadsheet master untuk menegaskan bahwa **timestamp asli 100% dipertahankan** tanpa ditebak atau diubah sembarangan, sementara anomali bookmark/kuis (`hs-4-6`, `hs-5-1`, `ms-1-4`, `ms-3-1`, `hs-5-3`, `ms-4-4`) diamankan secara non-destruktif dengan status `review_required` dan `manual_checkpoint` (non-autoplay).
+    - Berhasil di-deploy ulang ke Google Apps Script dan diverifikasi visual dengan tangkapan layar `screenshot_changelog_audit_log.png`.
 
 ## Blockers & Open Questions
 
-Tidak ada blocker teknis aktif. Seluruh kurikulum dan spreadsheet sinkron 100%.
+- Tidak ada blocker teknis aktif pada sinkronisasi kurikulum & Google Spreadsheet. Seluruh 8/8 acceptance gates PASS.
+- Rencana perbaikan frontend Subproject 1 (`app.js`): menambahkan normalizer jawaban kuis multiformat (angka, huruf A–D, boolean, string opsi) sebelum platform siap diuji end-to-end oleh siswa.
 
 ## Concrete Next Steps
 
-1. Pengujian live pada GitHub Pages: `https://mds-academic.github.io/beasiswa_async/`.
-2. Pengujian input karya challenge mandiri oleh siswa pada berbagai jenjang (SD, SMP, SMA).
+1. Implementasi normalizer jawaban kuis (`isQuizAnswerCorrect`) di `subprojects/01-lms-platform/src/app.js` agar seluruh format jawaban di SD, SMP, dan SMA dinilai akurat.
+2. Pengujian live pada GitHub Pages: `https://mds-academic.github.io/beasiswa_async/`.
+3. Verifikasi alur pengerjaan kuis dan pengumpulan proyek mandiri oleh siswa pada berbagai jenjang (SD, SMP, SMA).
 
