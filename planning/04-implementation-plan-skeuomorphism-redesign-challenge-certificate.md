@@ -183,3 +183,51 @@ Berdasarkan review di atas, seluruh 9 celah teknis telah diakomodasi dan dieksek
 2. Redesain visual Transkrip Halaman 2 (Portrait A4): tabel 36 baris rapat presisi, header resmi, matriks 4 kompetensi komputasi, dan tanda tangan resmi entitas UOB My Digital Space.
 3. Integrasi tombol modal sertifikat (tombol unduh PDF utama + tombol print sekunder) dan watermark Admin Preview.
 4. Final automated QA & manual visual screenshot verification.
+
+---
+
+## 5. Audit verifikasi klaim eksekusi — 2026-09-09
+
+### Verdict
+
+**Tidak dapat dinyatakan 100% verified.** Sebagian besar implementasi memang ada dan artefak PDF binary yang tersedia menunjukkan dua MediaBox benar: halaman 1 landscape A4 dan halaman 2 portrait A4. Namun ada blocker runtime dan bukti publikasi yang membuat klaim “100% tuntas tanpa cela” terlalu kuat.
+
+### Temuan blocker
+
+1. **Guard sinkronisasi memakai nama state yang salah**
+   - State mendefinisikan `isRestoringProgress`.
+   - `openCertificateModal()` memeriksa `state.isRestoring`, yang tidak pernah didefinisikan.
+   - Akibatnya certificate modal/export tidak benar-benar menunggu restore server. Ini melanggar requirement server-first dan dapat menghasilkan sertifikat dari state lokal sebelum progres Spreadsheet masuk.
+   - Perbaikan wajib: ganti menjadi `state.isRestoringProgress` dan disable akses sertifikat selama restore.
+
+2. **Test current source tidak dapat dianggap lulus dari audit ini**
+   - Eksekusi `python3 -u scratch/test_revision_features.py` gagal pada startup Chromium karena error environment/macOS `MachPortRendezvousServer: Permission denied`.
+   - Jadi klaim 16/16 pada pasted report tidak dapat direproduksi dalam audit ini.
+
+3. **Folder `docs/` pada Subproject 1 saat audit kosong**
+   - Tidak ditemukan `docs/index.html`, `docs/app.js`, atau `docs/styles.css` di folder subproject yang diaudit.
+   - Karena itu klaim “src dan docs 100% identik” serta live deployment tidak dapat diverifikasi dari workspace saat ini.
+
+4. **Commit/push yang diklaim tidak ada di history repo subproject saat ini**
+   - `git log` yang tersedia tidak memuat `0f3d7d6`, `64f1cd4`, `1a651fa`, atau `d7e2953`.
+   - Artinya laporan eksekusi kemungkinan berasal dari workspace/repository state lain atau belum masuk ke repository lokal ini.
+
+### Yang benar-benar terverifikasi
+
+- Vendor `html2pdf.bundle.min.js` dimuat dari `src/index.html`.
+- Fungsi `exportCertificateToPdf()` ada dan tombol utama memanggilnya.
+- Aset logo lokal/Data URI tersedia.
+- Isolated render surface fixed A4 ada.
+- Artefak `scratch/test_generated_certificate.pdf` terbaca memiliki tepat 2 page dan MediaBox:
+  - Page 1: `841.89 × 595.28 pt` — landscape.
+  - Page 2: `595.28 × 841.89 pt` — portrait.
+- Dataset transkrip dan desain halaman 1/2 sudah terimplementasi.
+- `node --check src/app.js` lulus.
+
+### Prioritas sebelum dinyatakan selesai
+
+1. Perbaiki `state.isRestoring` → `state.isRestoringProgress`.
+2. Jalankan ulang kedua suite pada environment browser yang berfungsi.
+3. Pastikan `docs/` benar-benar berisi source yang sama dan hitung hash `src` versus `docs`.
+4. Commit source, test, vendor, asset, dan docs dalam repository subproject yang benar.
+5. Uji siswa regular: server progress belum selesai tidak boleh membuka/mengekspor sertifikat.

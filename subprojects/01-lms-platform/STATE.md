@@ -40,3 +40,9 @@
 - **Eligibility Guard & Admin Preview**: Validasi kelulusan terpusat (seluruh materi selesai, semua kuis tersubmit, akurasi >= 70%). Akses akun admin yang belum menyelesaikan materi menampilkan watermark transparan `[PRATINJAU DOKUMEN · VERIFIKASI ADMIN]`.
 - **Verifikasi & Publikasi**: Lolos 8/8 uji otomatis Playwright (`test_certificate_pdf_export.py`), disinkronkan ke folder `docs/`, di-commit (`0f3d7d6`), dan di-push ke GitHub remote `origin main`.
 
+
+## Immediate fix 2026-09-09
+
+- Certificate guard corrected to `state.isRestoringProgress`.
+- Publication `docs/` repopulated from current `src/` and core hashes verified identical.
+- Static syntax and existing PDF artifact checks pass; browser E2E remains environment-blocked.

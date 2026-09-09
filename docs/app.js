@@ -3348,4 +3348,11 @@ function setupCertificateModalEvents() {
   }
 }
 
+// Expose core controller functions to window for in-browser testing & diagnostics
+window.goToStep = goToStep;
+window.buildSidebarModuleList = buildSidebarModuleList;
+window.openCertificateModal = openCertificateModal;
+window.recomputeUnlockedStepIndex = recomputeUnlockedStepIndex;
+window.extractQuizzesFromStep = extractQuizzesFromStep;
+
 

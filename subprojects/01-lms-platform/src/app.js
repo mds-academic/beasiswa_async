@@ -3034,7 +3034,7 @@ function evaluateStudentEligibility() {
 function openCertificateModal() {
   if (!el.certificateModal) return;
 
-  if (state.isRestoring) {
+  if (state.isRestoringProgress) {
     showAppAlert({
       title: 'Sinkronisasi Progres Belajar',
       message: 'Data progres belajar sedang disinkronkan dengan server. Silakan tunggu beberapa detik sebelum membuka sertifikat.',
@@ -3347,5 +3347,12 @@ function setupCertificateModalEvents() {
     });
   }
 }
+
+// Expose core controller functions to window for in-browser testing & diagnostics
+window.goToStep = goToStep;
+window.buildSidebarModuleList = buildSidebarModuleList;
+window.openCertificateModal = openCertificateModal;
+window.recomputeUnlockedStepIndex = recomputeUnlockedStepIndex;
+window.extractQuizzesFromStep = extractQuizzesFromStep;
 
 

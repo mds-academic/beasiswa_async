@@ -459,3 +459,12 @@ Target perilaku:
 - Jika siswa sudah menonton sebagian video tetapi belum mencapai threshold selesai, sistem saat ini mengingat tab/materi terakhir, bukan timestamp detik terakhir.
 
 Perbaikan sebelumnya sudah menyimpan last step saat `goToStep()` dan memulihkan last step dari server. Pada audit ini URL frontend juga diarahkan ke deployment Apps Script `@HEAD` yang menerima endpoint `save_activity`, karena URL lama masih menunjuk release sebelumnya yang belum memiliki checkpoint tab/video.
+
+## Immediate fix applied — 2026-09-09
+
+- Fixed certificate restore guard from the undefined `state.isRestoring` to the actual `state.isRestoringProgress`.
+- Repopulated `docs/` from the current `src/` publication state, including app, styles, HTML, data, slides, assets, vendor, and intro media.
+- Verified `src/` and `docs/` hashes match for `app.js`, `styles.css`, and `index.html`.
+- Verified available PDF artifact still contains exactly 2 pages with landscape/portrait A4 MediaBox.
+- `node --check` passes for both `src/app.js` and `docs/app.js`.
+- Browser E2E remains environment-blocked by Chromium macOS permission error; this is not reported as a pass.

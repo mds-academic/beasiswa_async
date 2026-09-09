@@ -1191,3 +1191,73 @@ Belum ada kode sertifikat yang dijalankan pada turn ini. Silakan konfirmasi pers
   2. `scratch/test_certificate_pdf_export.py`: **8/8 PASS** (Engine html2pdf lokal, aset logo bebas CORS, isolated fixed A4 sandbox, binary PDF 2 halaman dengan Page 1 Landscape A4 & Page 2 Portrait A4, nama siswa tanpa hyperlink underline, 36 modul transkrip lengkap, watermark admin preview).
 - Perubahan kode disinkronkan ke `docs/app.js`, di-commit (`1a651fa`), dan di-push ke GitHub remote `origin main`.
 
+
+## 2026-09-09 — Audit ulang implementation plan sertifikat
+
+### User
+> coba audit dan analisisi dan cek apakah beneran udah
+
+### Status
+- **Under audit** — memverifikasi apakah revisi implementation plan dan implementasi sertifikat benar-benar sudah diterapkan, bukan hanya tertulis di dokumen.
+
+## 2026-09-09 — Hasil audit klaim eksekusi sertifikat
+
+### Temuan
+- Implementasi PDF memang ada dan artefak PDF yang tersedia valid 2 halaman dengan orientasi campuran.
+- Namun klaim 100% selesai belum benar-benar terbukti pada current workspace.
+- Bug blocker ditemukan: `openCertificateModal()` memeriksa `state.isRestoring`, sedangkan state sebenarnya memakai `state.isRestoringProgress`; guard server-first tidak aktif.
+- Suite Playwright tidak dapat direproduksi pada audit ini karena Chromium gagal start akibat permission `MachPortRendezvousServer`.
+- Folder `docs/` Subproject 1 kosong pada audit ini.
+- Commit eksekusi yang diklaim dalam pasted report tidak muncul pada git history subproject lokal.
+
+### Assistant final response
+Aku sudah audit ulang. Jawabannya: **belum bisa dinyatakan benar-benar 100% selesai**, walaupun implementasi PDF-nya memang sudah banyak yang benar.
+
+Yang terverifikasi:
+- `html2pdf` lokal sudah terhubung.
+- `exportCertificateToPdf()` sudah ada.
+- Surface A4 fixed dan aset logo lokal sudah ada.
+- File PDF hasil yang tersedia memiliki tepat 2 halaman: halaman 1 landscape A4 dan halaman 2 portrait A4.
+- `node --check src/app.js` lulus.
+
+Blocker yang ditemukan:
+- Guard sinkronisasi salah nama: state memakai `isRestoringProgress`, tetapi `openCertificateModal()` memeriksa `state.isRestoring`. Akibatnya sertifikat bisa dibuka/export sebelum sync Spreadsheet selesai.
+- Test Playwright yang diklaim 16/16 tidak bisa direproduksi pada audit ini karena Chromium gagal start akibat permission environment.
+- Folder `docs/` Subproject 1 saat ini kosong, jadi klaim sinkronisasi/live deployment belum terbukti.
+- Commit yang diklaim di report tidak muncul pada git history subproject lokal.
+
+Kesimpulan: desain dan engine PDF sudah ada, tetapi status yang jujur adalah **implemented with verification gaps**, bukan 100% verified. Perbaikan pertama yang wajib adalah mengganti `state.isRestoring` menjadi `state.isRestoringProgress`, lalu ulangi test pada browser environment yang bisa berjalan.
+
+## 2026-09-09 — Immediate fix certificate verification gaps
+
+### User
+> fix it immedeiately
+
+### Status
+- **In progress** — memperbaiki blocker guard restore certificate dan sinkronisasi source publikasi.
+
+### Assistant final response
+Immediate fix sudah diterapkan:
+
+- Guard sertifikat diperbaiki dari `state.isRestoring` menjadi `state.isRestoringProgress`, sehingga sertifikat tidak dibuka/export sebelum restore Spreadsheet selesai.
+- Folder `docs/` diisi ulang dari source terbaru, termasuk HTML, JS, CSS, data, slides, assets, vendor PDF, dan `intro.mp4`.
+- Hash `src/` dan `docs/` untuk `app.js`, `styles.css`, dan `index.html` sudah sama.
+- `node --check` lulus untuk source dan docs.
+- Artefak PDF yang tersedia tetap valid: tepat 2 halaman, halaman 1 landscape A4, halaman 2 portrait A4.
+
+Playwright masih belum bisa dijalankan di environment ini karena Chromium gagal start akibat permission macOS, jadi saya tidak mengklaim E2E pass palsu.
+
+### Assistant final response (verbatim)
+Immediate fix sudah diterapkan.
+
+- Guard sertifikat diperbaiki dari `state.isRestoring` menjadi `state.isRestoringProgress`, sehingga sertifikat tidak dibuka/export sebelum restore Spreadsheet selesai.
+- Folder `docs/` diisi ulang dari source terbaru, termasuk HTML, JS, CSS, data, slides, assets, vendor PDF, dan `intro.mp4`.
+- Hash `src/` dan `docs/` untuk `app.js`, `styles.css`, dan `index.html` sudah sama.
+- `node --check` lulus untuk source dan docs.
+- Artefak PDF yang tersedia tetap valid: tepat 2 halaman, halaman 1 landscape A4, halaman 2 portrait A4.
+
+Playwright masih belum bisa dijalankan di environment ini karena Chromium gagal start akibat permission macOS, jadi E2E belum saya klaim pass.
+
+Commit:
+- `452413e` — guard restore + sinkronisasi docs
+- `c6ff5a5` — finalisasi styling sertifikat A4

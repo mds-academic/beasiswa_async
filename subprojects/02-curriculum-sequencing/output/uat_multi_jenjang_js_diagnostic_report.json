@@ -1,0 +1,2538 @@
+{
+  "SD": {
+    "student": {
+      "email": "raffaghaisan90@gmail.com",
+      "schoolQuery": "ANDALUS",
+      "actualName": "Raffa ghaisan atharrazka sinaga",
+      "actualSchool": "SD AL ANDALUS ISLAMIC SCHOOL PEKANBARU"
+    },
+    "startedAt": "2026-09-09T09:09:41.773Z",
+    "track": "SD",
+    "totalSteps": 18,
+    "stepsEvaluated": [
+      {
+        "index": 0,
+        "id": "bridge-sd-00",
+        "title": "Scratch dari Nol: Kenalan dengan Platform Coding Visual",
+        "type": "slide",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-bridge-sd-00-0",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "mediaSrc": "http://localhost:8080/slides/bridge-sd-00.html",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 1,
+        "id": "up-about-1",
+        "title": "1 About Me - Mendesain Karakter",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-up-about-1",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "A",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "pmSYmmRe4Sw",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 2,
+        "id": "up-about-2",
+        "title": "2 About Me - Merekam Suara Perkenalan Diri",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-up-about-2",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "A",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "a7VMYsnvmQY",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 3,
+        "id": "up-about-3",
+        "title": "3 About Me - Membuat Kostum Makanan",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-up-about-3",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "A",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "pAWCUOSOHAk",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 4,
+        "id": "up-about-4",
+        "title": "4 About Me - Memprogram Sprite Makanan",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-up-about-4",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "A",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "odzpfqdxTEc",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 5,
+        "id": "up-about-5",
+        "title": "5 About Me - Menambahkan Sprite dengan Emoji",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-up-about-5",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "A",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "EsBPZR9k4X8",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 6,
+        "id": "up-about-6",
+        "title": "6 About Me - Memprogram Animasi dan Menggunakan Text-to-Speech",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-up-about-6",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "A",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "8PPKejwfq4k",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 7,
+        "id": "up-about-7",
+        "title": "7 About Me - Memprogram dengan Effects",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-up-about-7",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "A",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "RMwzg1MtZFg",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 8,
+        "id": "up-racing-1",
+        "title": "1 Desain Sirkuit",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-up-racing-1",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "A",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "qHSNKAw2tLc",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 9,
+        "id": "up-racing-2",
+        "title": "2 Desain Mobil",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-up-racing-2",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "A",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "QAJXUrjmetI",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 10,
+        "id": "up-racing-3",
+        "title": "3 Kode Mobil",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-up-racing-3",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "A",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "lIekdk-dDTw",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 11,
+        "id": "up-racing-4",
+        "title": "4 Duplikasi dan Modifikasi Mobil 2",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-up-racing-4",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "A",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "3zubM7bbNTI",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 12,
+        "id": "up-racing-5",
+        "title": "5 Desain Finish Line",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-up-racing-5",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "A",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "sm1DkpQpRxw",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 13,
+        "id": "up-racing-6",
+        "title": "6 Kode Menang dan Menyentuh Musuh",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-up-racing-6",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "A",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "qnzD9G15BqE",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 14,
+        "id": "up-earning-1",
+        "title": "1. Percakapan Intro",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-up-earning-1",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "A",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "5u7OdPWmJhU",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 15,
+        "id": "up-earning-2",
+        "title": "2. Memprogram Opsi 1",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-up-earning-2",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "A",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "rb8wuLoVnic",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 16,
+        "id": "up-earning-3",
+        "title": "3. Memprogram Opsi 2",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-up-earning-3",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "A",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "t5YIkeWux3U",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 17,
+        "id": "up-earning-4",
+        "title": "4. Memprogram Ending",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-up-earning-4",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "A",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "A1SrFU4pDY4",
+        "nextBtnDisabled": true
+      }
+    ],
+    "errorsCaptured": [],
+    "hiddenOrClippingIssues": [],
+    "quizEvaluation": {
+      "totalQuizzes": 18,
+      "correctAnswers": 18,
+      "wrongTestsChecked": 18
+    },
+    "serverSync": {
+      "attempted": 0,
+      "successful": 0,
+      "errors": []
+    },
+    "certificateValidation": {
+      "unlocked": true,
+      "page1Landscape": true,
+      "page2Portrait": true,
+      "serial": "UOB-MDS-SD-2026-KTI7YC",
+      "renderedStudentName": "Raffa ghaisan atharrazka sinaga",
+      "hasUnderline": false,
+      "transcriptRowsCount": 18,
+      "expectedRowsCount": 18,
+      "tabFound": true,
+      "modalOpened": true,
+      "page1Dimensions": "980 x 693 px",
+      "page2Dimensions": "800 x 992 px"
+    },
+    "summary": {
+      "isAllCompleted": true,
+      "totalScore": 100,
+      "grade": "A (Sangat Baik)"
+    }
+  },
+  "SMP": {
+    "student": {
+      "email": "arkaanxherdan@gmail.com",
+      "schoolQuery": "KHADIJAH",
+      "actualName": "Xherdan Arkaan Ramadhan",
+      "actualSchool": "SMP KHADIJAH SURABAYA"
+    },
+    "startedAt": "2026-09-09T09:10:09.176Z",
+    "track": "SMP",
+    "totalSteps": 36,
+    "stepsEvaluated": [
+      {
+        "index": 0,
+        "id": "ms-0-0",
+        "title": "Introduction to Async Learning",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-ms-0-0-1",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "B",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "yxmLOk5vcFg",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 1,
+        "id": "ms-0-1",
+        "title": "Sign In ke MIT App Inventor",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-ms-0-1-1",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "tT1FtLbLqkE",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 2,
+        "id": "ms-0-2",
+        "title": "Mendesain User Interface (UI)",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 2,
+        "quizEvaluations": [
+          {
+            "quizId": "q-ms-0-2-1",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 2,
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-ms-0-2-2",
+            "title": "Kuis 2",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 0,
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "5M9jTl5pPsI",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 3,
+        "id": "ms-0-3",
+        "title": "Publish Proyek App Inventor ke Gallery",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-ms-0-3-1",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "_aAQ8nFUAqc",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 4,
+        "id": "bridge-ms-00",
+        "title": "Panduan Lengkap MIT App Inventor & Uji Proyek Pertamaku",
+        "type": "slide",
+        "mediaLoaded": true,
+        "quizzesCount": 2,
+        "quizEvaluations": [
+          {
+            "quizId": "q-bridge-ms-00-0",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 2,
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-bridge-ms-00-1",
+            "title": "Kuis 2",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 0,
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "mediaSrc": "http://localhost:8080/slides/bridge-ms-00.html",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 5,
+        "id": "bridge-ms-01",
+        "title": "Event Tombol, Properti, dan Variabel Blok",
+        "type": "slide",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-bridge-ms-01-0",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "mediaSrc": "http://localhost:8080/slides/bridge-ms-01.html",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 6,
+        "id": "ms-1-1",
+        "title": "Input Aman",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-ms-1-1-0-0",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "B. Jika TextBoxNama.Text = \"\".",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "UhutS4BVKhk",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 7,
+        "id": "ms-1-2",
+        "title": "Mini Project Form Aman",
+        "type": "project",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-ms-1-2-1",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "B",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "UhutS4BVKhk",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 8,
+        "id": "ms-1-3",
+        "title": "Flowchart Logika Data",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-ms-1-3-0-0",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "UhutS4BVKhk",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 9,
+        "id": "ms-1-4",
+        "title": "Data & Privacy App",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-ms-1-4-0-0",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 2,
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "UhutS4BVKhk",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 10,
+        "id": "ms-1-5",
+        "title": "Mini Project Cek Pesan Aman",
+        "type": "project",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-ms-1-5-1",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "B",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "UhutS4BVKhk",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 11,
+        "id": "ms-1-6",
+        "title": "Eksplorasi Data Pribadi",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 3,
+        "quizEvaluations": [
+          {
+            "quizId": "q-ms-1-6-0-0",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "Nomor Induk Kependudukan (NIK)",
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-ms-1-6-1-0",
+            "title": "Kuis 2",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "Aplikasi Perekam Suara (Voice Note)",
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-ms-1-6-2-0",
+            "title": "Kuis 3",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "Di catatan/brankas yang aman (Sensitif)",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "cWfbcaSg7Eo",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 12,
+        "id": "ms-1-7",
+        "title": "Etika dan Tanggung Jawab Digital",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 4,
+        "quizEvaluations": [
+          {
+            "quizId": "q-ms-1-7-0-0",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "Matikan telepon, Bank tidak pernah meminta PIN nasabah",
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-ms-1-7-1-0",
+            "title": "Kuis 2",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-ms-1-7-2-0",
+            "title": "Kuis 3",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "G@r0d4_B1rU!99",
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-ms-1-7-3-0",
+            "title": "Kuis 4",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "Untuk mencegah pengguna mengirim form jika belum mengisi password",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "cWfbcaSg7Eo",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 13,
+        "id": "ms-2-1",
+        "title": "PERCABANGAN GANDA",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 2,
+        "quizEvaluations": [
+          {
+            "quizId": "q-ms-2-1-0-0",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "B. Menjalankan perintah jika IF bernilai SALAH",
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-ms-2-1-1-0",
+            "title": "Kuis 2",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "B. Belah Ketupat",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "tDkIcceTzII",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 14,
+        "id": "ms-2-2",
+        "title": "APP INVENTOR",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-ms-2-2-0-0",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "B. Ikon roda gigi biru di blok IF",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "tDkIcceTzII",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 15,
+        "id": "ms-2-3",
+        "title": "LITERASI KEUANGAN",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-ms-2-3-0-0",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "B. Pendapatan digital",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "tDkIcceTzII",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 16,
+        "id": "ms-2-4",
+        "title": "LITERASI KEUANGAN",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 2,
+        "quizEvaluations": [
+          {
+            "quizId": "q-ms-2-4-0-0",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "A. Kebutuhan (Needs)",
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-ms-2-4-0-1",
+            "title": "Kuis 2",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "B. Keinginan (Wants)",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "tDkIcceTzII",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 17,
+        "id": "ms-2-5",
+        "title": "APP INVENTOR + FINANSIAL",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-ms-2-5-0-0",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "B. Biru (Math)",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "tDkIcceTzII",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 18,
+        "id": "ms-2-6",
+        "title": "FINAL PROJECT",
+        "type": "project",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-ms-2-6-1",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "A",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "tDkIcceTzII",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 19,
+        "id": "ms-3-1",
+        "title": "Membuat dan Memanggil Procedures",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-ms-3-1-0-0",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "Untuk mengumpulkan beberapa perintah menjadi satu sehingga bisa dipakai berkali-kali tanpa mengulang.",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "P8Ea0v8Gy2o",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 20,
+        "id": "ms-3-2",
+        "title": "Mini Project Kalkulator",
+        "type": "project",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-ms-3-2-1",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "B",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "P8Ea0v8Gy2o",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 21,
+        "id": "ms-3-3",
+        "title": "Optimasi dan Modularisasi Kode",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-ms-3-3-0-0",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "Karena kita bisa mengisolasi masalah dan mencari error di satu \"kotak\" modul spesifik.",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "P8Ea0v8Gy2o",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 22,
+        "id": "bridge-ms-03",
+        "title": "Detektif Blok: Debugging & Uji Kasus Form",
+        "type": "slide",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-bridge-ms-03-0",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 0,
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "mediaSrc": "http://localhost:8080/slides/bridge-ms-03.html",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 23,
+        "id": "ms-3-4",
+        "title": "Uji Coba dan Debugging",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-ms-3-4-0-0",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "Menyimpan data kecil secara lokal di handphone pengguna sehingga data tidak hilang saat aplikasi ditutup.",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "P8Ea0v8Gy2o",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 24,
+        "id": "ms-3-5",
+        "title": "Presentasi dan Refleksi",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-ms-3-5-0-0",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "Berterima kasih atas feedback tersebut, dan berjanji akan mengubah warna teks menjadi lebih terang.",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "P8Ea0v8Gy2o",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 25,
+        "id": "bridge-ms-02",
+        "title": "Buku Kas Digital: Menyimpan Data dengan TinyDB",
+        "type": "slide",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-bridge-ms-02-0",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "mediaSrc": "http://localhost:8080/slides/bridge-ms-02.html",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 26,
+        "id": "ms-4-1",
+        "title": "Penyimpanan Data dengan TinyDB",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 2,
+        "quizEvaluations": [
+          {
+            "quizId": "q-ms-4-1-0-0",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "TinyDB (Database Lokal)",
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-ms-4-1-1-0",
+            "title": "Kuis 2",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "Sebagai stiker penamaan (judul) agar data mudah dicari di laci",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "cWfbcaSg7Eo",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 27,
+        "id": "ms-4-2",
+        "title": "Mengelola Data Aman di TinyDB",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 2,
+        "quizEvaluations": [
+          {
+            "quizId": "q-ms-4-2-0-0",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "50 (karena ditimpa / di-update)",
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-ms-4-2-1-0",
+            "title": "Kuis 2",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "TinyDB1.ClearTag",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "cWfbcaSg7Eo",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 28,
+        "id": "ms-4-3",
+        "title": "Mini Project Tiny DB",
+        "type": "project",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-ms-4-3-1",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "A",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "cWfbcaSg7Eo",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 29,
+        "id": "ms-4-4",
+        "title": "Menganalisis Data Finansial",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-ms-4-4-1",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "B",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "UhutS4BVKhk",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 30,
+        "id": "ms-4-5",
+        "title": "Mini Project C",
+        "type": "project",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-ms-4-5-1",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "B",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "UhutS4BVKhk",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 31,
+        "id": "ms-4-6",
+        "title": "Keamanan dalam Bertransaksi Digital",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-ms-4-6-0-0",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "UhutS4BVKhk",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 32,
+        "id": "ms-5-1",
+        "title": "Merancang Solusi Digital",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-ms-5-1-0-0",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "Aplikasi pengingat jadwal piket kelas yang terhubung dengan notifikasi harian.",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "P8Ea0v8Gy2o",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 33,
+        "id": "ms-5-2",
+        "title": "Merancang Solusi Digital",
+        "type": "project",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-ms-5-2-1",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "B",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "P8Ea0v8Gy2o",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 34,
+        "id": "ms-5-3",
+        "title": "Final Project",
+        "type": "project",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-ms-5-3-1",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "B",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "UhutS4BVKhk",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 35,
+        "id": "ms-5-4",
+        "title": "Mempublikasikan Final Project ke Gallery",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-ms-0-3-1",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "_aAQ8nFUAqc",
+        "nextBtnDisabled": true
+      }
+    ],
+    "errorsCaptured": [],
+    "hiddenOrClippingIssues": [],
+    "quizEvaluation": {
+      "totalQuizzes": 47,
+      "correctAnswers": 47,
+      "wrongTestsChecked": 47
+    },
+    "serverSync": {
+      "attempted": 0,
+      "successful": 0,
+      "errors": []
+    },
+    "certificateValidation": {
+      "unlocked": true,
+      "page1Landscape": true,
+      "page2Portrait": true,
+      "serial": "UOB-MDS-SMP-2026-7MQHKB",
+      "renderedStudentName": "Xherdan Arkaan Ramadhan",
+      "hasUnderline": false,
+      "transcriptRowsCount": 36,
+      "expectedRowsCount": 36,
+      "tabFound": true,
+      "modalOpened": true,
+      "page1Dimensions": "980 x 693 px",
+      "page2Dimensions": "800 x 1424 px"
+    },
+    "summary": {
+      "isAllCompleted": true,
+      "totalScore": 100,
+      "grade": "A (Sangat Baik)"
+    }
+  },
+  "SMA": {
+    "student": {
+      "email": "intannurainisipayung@gmail.com",
+      "schoolQuery": "NEGERI 20 BATAM",
+      "actualName": "Intan Nuraini Sipayung",
+      "actualSchool": "SMA NEGERI 20 BATAM"
+    },
+    "startedAt": "2026-09-09T09:10:54.129Z",
+    "track": "SMA",
+    "totalSteps": 36,
+    "stepsEvaluated": [
+      {
+        "index": 0,
+        "id": "hs-0-0",
+        "title": "Introduction to Async Learning",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 2,
+        "quizEvaluations": [
+          {
+            "quizId": "q-hs-0-0-1",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "B",
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-0-0-2",
+            "title": "Kuis 2",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "C",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "yxmLOk5vcFg",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 1,
+        "id": "bridge-hs-00",
+        "title": "Panduan Lengkap Google Colab & Pemrograman Python Pertamaku",
+        "type": "slide",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-bridge-hs-00-0",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "mediaSrc": "http://localhost:8080/slides/bridge-hs-00.html",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 2,
+        "id": "bridge-hs-01",
+        "title": "Variabel dan Tipe Data Tanpa Takut",
+        "type": "slide",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-bridge-hs-01-0",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "mediaSrc": "http://localhost:8080/slides/bridge-hs-01.html",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 3,
+        "id": "hs-1-1",
+        "title": "Input, Masalah Input User, dan Konsep Validasi",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 2,
+        "quizEvaluations": [
+          {
+            "quizId": "q-hs-1-1-1-0",
+            "title": "Mini Quiz: Sanitasi String 🧹",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 0,
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-1-1-1-1",
+            "title": "Mini Quiz: Hapus Spasi ✂️",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 0,
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "pKYN1E60xtU",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 4,
+        "id": "bridge-hs-02",
+        "title": "Dari Input Teks Menjadi Logika Keputusan",
+        "type": "slide",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-bridge-hs-02-0",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "mediaSrc": "http://localhost:8080/slides/bridge-hs-02.html",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 5,
+        "id": "hs-2-1",
+        "title": "Bagaimana Program Bisa Memilih?",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 2,
+        "quizEvaluations": [
+          {
+            "quizId": "q-hs-2-1-1",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "C",
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-2-1-2",
+            "title": "Kuis 2",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "B",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "MLgrQoRo2oo",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 6,
+        "id": "hs-2-2",
+        "title": "Menulis Conditional di Python",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 10,
+        "quizEvaluations": [
+          {
+            "quizId": "q-hs-2-2-0-0",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 0,
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-2-2-0-1",
+            "title": "Kuis 2",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 0,
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-2-2-0-2",
+            "title": "Kuis 3",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-2-2-0-3",
+            "title": "Kuis 4",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-2-2-1-0",
+            "title": "Kuis 5",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-2-2-1-1",
+            "title": "Kuis 6",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-2-2-1-2",
+            "title": "Kuis 7",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-2-2-2-0",
+            "title": "Kuis 8",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-2-2-2-1",
+            "title": "Kuis 9",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 0,
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-2-2-2-2",
+            "title": "Kuis 10",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 0,
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "-hYK440Vlr8",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 7,
+        "id": "hs-2-3",
+        "title": "Multi Branch Conditionals",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 3,
+        "quizEvaluations": [
+          {
+            "quizId": "q-hs-2-3-0-0",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-2-3-0-1",
+            "title": "Kuis 2",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-2-3-0-2",
+            "title": "Kuis 3",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "_jm2p3pstrM",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 8,
+        "id": "hs-2-4",
+        "title": "Nested Conditionals",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-hs-2-4-0-0",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "_e3hs1nWuME",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 9,
+        "id": "hs-2-5",
+        "title": "Logical Operator",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 3,
+        "quizEvaluations": [
+          {
+            "quizId": "q-hs-2-5-0-0",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-2-5-1-0",
+            "title": "Kuis 2",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-2-5-2-0",
+            "title": "Kuis 3",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "_iRZY0-_skc",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 10,
+        "id": "hs-2-6",
+        "title": "Needs vs Wants & Risks",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 3,
+        "quizEvaluations": [
+          {
+            "quizId": "q-hs-2-6-0-0",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-2-6-1-0",
+            "title": "Kuis 2",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-2-6-2-0",
+            "title": "Kuis 3",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "bMsKBaRsKmc",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 11,
+        "id": "hs-2-7",
+        "title": "Smart Budget & Risk Planner",
+        "type": "project",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-hs-2-7-1",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "C",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "bMsKBaRsKmc",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 12,
+        "id": "bridge-hs-03",
+        "title": "Mengulang Tanpa Bosan: List dan For Loop",
+        "type": "slide",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-bridge-hs-03-0",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 2,
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "mediaSrc": "http://localhost:8080/slides/bridge-hs-03.html",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 13,
+        "id": "hs-3-1",
+        "title": "Video Pembelajaran",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-hs-3-1-0-0",
+            "title": "Analogi Logika: Menebak Angka 1-100",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "RnyYn2SzFVU",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 14,
+        "id": "hs-3-2",
+        "title": "Optimasi Loop & Step Count",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 2,
+        "quizEvaluations": [
+          {
+            "quizId": "q-hs-3-2-0-0",
+            "title": "Mini Activity: Hitung Step Count 🎯",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-3-2-0-1",
+            "title": "Latihan: Tebak Output 🕵️‍♂️",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "RnyYn2SzFVU",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 15,
+        "id": "hs-3-3",
+        "title": "Optimasi Program Python",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-hs-3-3-0-0",
+            "title": "Latihan: Pilih Algoritma Lebih Efisien 🤔",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 0,
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "RnyYn2SzFVU",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 16,
+        "id": "hs-3-4",
+        "title": "Mini Project Optimasi",
+        "type": "project",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-hs-3-4-1",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "B",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "RnyYn2SzFVU",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 17,
+        "id": "bridge-hs-04",
+        "title": "Fungsi: Mesin Cetak Kode Mandiri",
+        "type": "slide",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-bridge-hs-04-0",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "mediaSrc": "http://localhost:8080/slides/bridge-hs-04.html",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 18,
+        "id": "hs-3-5",
+        "title": "Functions in Python",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 5,
+        "quizEvaluations": [
+          {
+            "quizId": "q-hs-3-5-0-0",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 0,
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-3-5-1-0",
+            "title": "Kuis 2",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 0,
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-3-5-2-0",
+            "title": "Latihan: Print atau Return? 🤔",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "print()",
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-3-5-2-1",
+            "title": "Latihan: Print atau Return? 🤔",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "return",
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-3-5-3-0",
+            "title": "Kuis 5",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "RnyYn2SzFVU",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 19,
+        "id": "hs-3-6",
+        "title": "Modular Design in Python",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-hs-3-6-0-0",
+            "title": "Latihan Debugging 🕵️‍♂️",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "hP6MSkerx9A",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 20,
+        "id": "hs-3-7",
+        "title": "Mini Project",
+        "type": "project",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-hs-3-7-1",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "B",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "hP6MSkerx9A",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 21,
+        "id": "hs-3-8",
+        "title": "Financial Literacy",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 2,
+        "quizEvaluations": [
+          {
+            "quizId": "q-hs-3-8-0-0",
+            "title": "Latihan: Lengkapi Function 🧩",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-3-8-1-0",
+            "title": "Latihan: Tebak Hasil Tahun Pertama 🧠",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "hP6MSkerx9A",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 22,
+        "id": "bridge-hs-05",
+        "title": "Kamus Data: Menyimpan Transaksi dengan Dictionary",
+        "type": "slide",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-bridge-hs-05-0",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "mediaSrc": "http://localhost:8080/slides/bridge-hs-05.html",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 23,
+        "id": "hs-1-2",
+        "title": "Sanitasi & Validasi Input dalam Program Keuangan",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 4,
+        "quizEvaluations": [
+          {
+            "quizId": "q-hs-1-2-1-0",
+            "title": "Latihan: Lengkapi Function! 🧩",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 0,
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-1-2-1-1",
+            "title": "Latihan: Lengkapi Method! 🧩",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 0,
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-1-2-1-2",
+            "title": "Latihan: Lengkapi Function `validate_amount` 🧩",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 0,
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-1-2-1-3",
+            "title": "Kuis Kilat: Sanitasi vs Validasi ⚖️",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "Memastikan nominal tidak boleh negatif (<= 0)",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "pKYN1E60xtU",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 24,
+        "id": "hs-1-3",
+        "title": "Safe Transaction Input",
+        "type": "project",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-hs-1-3-0-0",
+            "title": "Mini Project: Safe Transaction Input 🛡️",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "pKYN1E60xtU",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 25,
+        "id": "hs-4-1",
+        "title": "Try-Except dan Debugging Program Python",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 3,
+        "quizEvaluations": [
+          {
+            "quizId": "q-hs-4-1-0-0",
+            "title": "Jenis Error yang Sering Muncul 🐛",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-4-1-1-0",
+            "title": "Latihan: Tebak Jenis Error! 🕵️‍♂️",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "ValueError 💥",
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-4-1-1-1",
+            "title": "Latihan: Lengkapi Blok `try-except` 🧩",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 0,
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "pKYN1E60xtU",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 26,
+        "id": "hs-4-2",
+        "title": "Safe Input with Error Handling",
+        "type": "project",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-hs-4-2-0-0",
+            "title": "Mini Project: Safe Input with Error Handling 🛡️",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "pKYN1E60xtU",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 27,
+        "id": "hs-4-3",
+        "title": "Langkah Debugging Code",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 2,
+        "quizEvaluations": [
+          {
+            "quizId": "q-hs-4-3-0-0",
+            "title": "Latihan: Cari Sumber Bug 🔎",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "get_total() ⚙️",
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-4-3-0-1",
+            "title": "Latihan: Perbaiki Nilai Diskon 🛠️",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 0,
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "pKYN1E60xtU",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 28,
+        "id": "hs-4-4",
+        "title": "Debugging Program Belanja",
+        "type": "project",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-hs-4-4-0-0",
+            "title": "Mini Project: Debugging Program Belanja 🛍️🕵️‍♂️",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "pKYN1E60xtU",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 29,
+        "id": "hs-4-5",
+        "title": "Dictionary dan List Transaksi",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 2,
+        "quizEvaluations": [
+          {
+            "quizId": "q-hs-4-5-0-0",
+            "title": "Pemahaman: Dictionary & Keys 🔑",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-4-5-1-0",
+            "title": "Latihan: Data Structures 🧩",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "10000 🔢",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "pKYN1E60xtU",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 30,
+        "id": "hs-4-6",
+        "title": "Analisis Data Keuangan dengan Python",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 8,
+        "quizEvaluations": [
+          {
+            "quizId": "q-hs-4-6-0-0",
+            "title": "Perintah Python 🐍 (1/4)",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 0,
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-4-6-0-1",
+            "title": "Perintah Python 🐍 (2/4)",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 0,
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-4-6-0-2",
+            "title": "Perintah Python 🐍 (3/4)",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 0,
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-4-6-0-3",
+            "title": "Perintah Python 🐍 (4/4)",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 0,
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-4-6-1-0",
+            "title": "Perintah Python 🐍 (1/4)",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-4-6-1-1",
+            "title": "Perintah Python 🐍 (2/4)",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-4-6-1-2",
+            "title": "Perintah Python 🐍 (3/4)",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-4-6-1-3",
+            "title": "Perintah Python 🐍 (4/4)",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "pKYN1E60xtU",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 31,
+        "id": "hs-5-1",
+        "title": "Design Thinking & Kebutuhan Pengguna",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 3,
+        "quizEvaluations": [
+          {
+            "quizId": "q-hs-5-1-0-0",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-5-1-1-0",
+            "title": "Kuis 2",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-5-1-2-0",
+            "title": "Kuis 3",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "S1j2gt3Up74",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 32,
+        "id": "hs-5-2",
+        "title": "Flowchart & Use Case",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 2,
+        "quizEvaluations": [
+          {
+            "quizId": "q-hs-5-2-0-0",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-5-2-2-0",
+            "title": "Kuis 2",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "S1j2gt3Up74",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 33,
+        "id": "hs-5-3",
+        "title": "Menganalisis Data Transaksi",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-hs-5-3-1",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": "B",
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "S1j2gt3Up74",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 34,
+        "id": "hs-5-4",
+        "title": "Logika & Rekomendasi Pintar",
+        "type": "video",
+        "mediaLoaded": true,
+        "quizzesCount": 1,
+        "quizEvaluations": [
+          {
+            "quizId": "q-hs-5-4-0-0",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "S1j2gt3Up74",
+        "nextBtnDisabled": true
+      },
+      {
+        "index": 35,
+        "id": "hs-5-5",
+        "title": "Menyatukan Kode Program",
+        "type": "project",
+        "mediaLoaded": true,
+        "quizzesCount": 2,
+        "quizEvaluations": [
+          {
+            "quizId": "q-hs-5-5-0-0",
+            "title": "Kuis 1",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 1,
+            "scoreAwarded": 100
+          },
+          {
+            "quizId": "q-hs-5-5-1-0",
+            "title": "Kuis 2",
+            "hasOptions": true,
+            "accuracyVerified": true,
+            "correctOptionIndex": 0,
+            "scoreAwarded": 100
+          }
+        ],
+        "clippingOrLayoutIssues": [],
+        "unlockedAtStart": true,
+        "videoId": "S1j2gt3Up74",
+        "nextBtnDisabled": true
+      }
+    ],
+    "errorsCaptured": [],
+    "hiddenOrClippingIssues": [],
+    "quizEvaluation": {
+      "totalQuizzes": 78,
+      "correctAnswers": 78,
+      "wrongTestsChecked": 78
+    },
+    "serverSync": {
+      "attempted": 0,
+      "successful": 0,
+      "errors": []
+    },
+    "certificateValidation": {
+      "unlocked": true,
+      "page1Landscape": true,
+      "page2Portrait": true,
+      "serial": "UOB-MDS-SMA-2026-3ZPCIT",
+      "renderedStudentName": "Intan Nuraini Sipayung",
+      "hasUnderline": false,
+      "transcriptRowsCount": 36,
+      "expectedRowsCount": 36,
+      "tabFound": true,
+      "modalOpened": true,
+      "page1Dimensions": "980 x 693 px",
+      "page2Dimensions": "800 x 1408 px"
+    },
+    "summary": {
+      "isAllCompleted": true,
+      "totalScore": 100,
+      "grade": "A (Sangat Baik)"
+    }
+  }
+}
