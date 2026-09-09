@@ -1,0 +1,62 @@
+{
+  "id": "bridge-sd-01",
+  "kicker": "Bridge 01 · Project About Me",
+  "title": "Dari Karakter ke Kode: Sprite, Costume, dan Event",
+  "summary": "Jembatan sebelum video About Me: siswa memahami objek yang akan dibuat dan event klik sederhana.",
+  "type": "slide",
+  "level": "SD",
+  "totalSlides": 5,
+  "slideUrl": "./slides/bridge-sd-01.html",
+  "embedUrl": "slides/bridge-sd-01.html",
+  "prerequisiteStepIds": [],
+  "learningObjectives": [
+    "Membedakan Sprite, Costume, dan Backdrop",
+    "Membuat atau memilih Sprite sederhana",
+    "Menggunakan green flag dan sprite click sebagai event",
+    "Menggabungkan Looks dan Sound untuk memperkenalkan diri"
+  ],
+  "practice": {
+    "type": "guided_reading",
+    "description": "Menyelesaikan simulasi mini dan checkpoint pada setiap bagian."
+  },
+  "completionCriteria": {
+    "quizScoreMin": 100,
+    "interactiveCompleted": true,
+    "description": "Menyelesaikan semua slide, latihan, dan kuis dengan benar."
+  },
+  "bookmarks": [
+    {
+      "slideIndex": 0,
+      "label": "Apa yang sedang kita buat?"
+    },
+    {
+      "slideIndex": 1,
+      "label": "Sprite, Costume, Backdrop"
+    },
+    {
+      "slideIndex": 2,
+      "label": "Dua event yang sering dipakai"
+    },
+    {
+      "slideIndex": 3,
+      "label": "Media juga bagian dari coding"
+    },
+    {
+      "slideIndex": 4,
+      "label": "Tantangan About Me"
+    }
+  ],
+  "quizzes": [
+    {
+      "question": "Checkpoint tersedia di dalam slide interaktif.",
+      "options": [
+        "Lihat ulang slide",
+        "Coba bloknya",
+        "Minta bantuan setelah mencoba"
+      ],
+      "answer": 0,
+      "explanation": "Baca kembali bagian yang belum jelas lalu coba lagi.",
+      "embedded": true
+    }
+  ]
+}

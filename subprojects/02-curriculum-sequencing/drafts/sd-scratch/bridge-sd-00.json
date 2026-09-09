@@ -1,0 +1,66 @@
+{
+  "id": "bridge-sd-00",
+  "kicker": "Bridge 00 · Kenalan Scratch",
+  "title": "Scratch dari Nol: Kenalan dengan Platformnya",
+  "summary": "Orientasi platform Scratch berbasis sumber Create & Learn, disederhanakan untuk siswa SD pemula.",
+  "type": "slide",
+  "level": "SD",
+  "totalSlides": 6,
+  "slideUrl": "./slides/bridge-sd-00.html",
+  "embedUrl": "slides/bridge-sd-00.html",
+  "prerequisiteStepIds": [],
+  "learningObjectives": [
+    "Menjelaskan Scratch sebagai platform coding berbasis blok",
+    "Mengenali Stage, Sprite, Block Palette, dan Coding Area",
+    "Membuat dan menjalankan project pertama",
+    "Mengetahui cara menyimpan karya dan memecahkan masalah awal"
+  ],
+  "practice": {
+    "type": "guided_reading",
+    "description": "Menyelesaikan simulasi mini dan checkpoint pada setiap bagian."
+  },
+  "completionCriteria": {
+    "quizScoreMin": 100,
+    "interactiveCompleted": true,
+    "description": "Menyelesaikan semua slide, latihan, dan kuis dengan benar."
+  },
+  "bookmarks": [
+    {
+      "slideIndex": 0,
+      "label": "Selamat datang di Scratch"
+    },
+    {
+      "slideIndex": 1,
+      "label": "Masuk ke ruang kerja Scratch"
+    },
+    {
+      "slideIndex": 2,
+      "label": "Kenali 4 area utama"
+    },
+    {
+      "slideIndex": 3,
+      "label": "Warna blok membantu kita"
+    },
+    {
+      "slideIndex": 4,
+      "label": "Project pertama: Sprite menyapa"
+    },
+    {
+      "slideIndex": 5,
+      "label": "Kalau belum berjalan..."
+    }
+  ],
+  "quizzes": [
+    {
+      "question": "Checkpoint tersedia di dalam slide interaktif.",
+      "options": [
+        "Lihat ulang slide",
+        "Coba bloknya",
+        "Minta bantuan setelah mencoba"
+      ],
+      "answer": 0,
+      "explanation": "Baca kembali bagian yang belum jelas lalu coba lagi.",
+      "embedded": true
+    }
+  ]
+}

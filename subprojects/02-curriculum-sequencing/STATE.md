@@ -3,7 +3,7 @@
 ## Current Status
 
 - **Status**: FINAL ACCEPTANCE PASSED (100% Selesai) — Seluruh temuan audit independen (B1–B4) telah diselesaikan secara tuntas dan lolos 8-gate verification test suite.
-- **Active Focus**: Audit awal sequencing materi Scratch Async SD berbasis tiga project tutorial; belum ada perubahan dataset produksi.
+- **Active Focus**: Review draft scaffolding Scratch Async SD dan validasi lima bridge slide sebelum integrasi dataset.
 - **Last Updated**: 2026-09-08 23:59 WIB
 
 ## Completed
@@ -31,7 +31,7 @@
 
 ## Concrete Next Steps
 
-0. Bahas dan validasi audit sequencing Scratch SD sebelum menentukan micro-lesson/bridge atau perubahan dataset.
+0. Review dan validasi draft lima bridge Scratch SD sebelum integrasi dataset.
 
 1. Evaluasi pengerjaan siswa pada mini lab interaktif dan kuis pemahaman mandiri via LMS platform.
 2. Monitor live telemetry pengerjaan kuis dan progres sync ke Google Spreadsheet master.

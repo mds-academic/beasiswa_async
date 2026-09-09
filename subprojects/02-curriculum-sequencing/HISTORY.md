@@ -407,3 +407,79 @@ Audit dan hasil browser verification sudah ditambahkan ke `audit-verifikasi-impl
 
 ### Actions
 - Incoming request logged before analysis. Playlist inspection in progress.
+
+### Assistant Response — 2026-09-09
+
+Udah aku baca dan dissect dulu. Aku berhasil memetakan semua **17 video** dari tiga playlist lewat metadata playlist dan caption Bahasa Indonesia. Aku belum mengubah dataset produksi atau struktur course.
+
+Kesimpulan awalnya: **kita tidak perlu stitch ketiga project menjadi satu project**. Justru lebih aman menjadikannya tiga milestone terpisah:
+
+1. **About Me → Project 1 / fondasi Scratch**
+   - desain Sprite dan Costume;
+   - record dan play sound;
+   - `when this sprite clicked`;
+   - `switch costume`, `next costume`, `wait`, `repeat`;
+   - animasi, Text-to-Speech, dan effects sebagai extension/challenge.
+
+   Urutan playlist-nya sudah cukup baik. Bagian yang paling penting secara pedagogis adalah video **Memprogram Sprite Makanan**, karena itu transisi pertama dari desain ke coding. Video Emoji lebih cocok sebagai extension, bukan prasyarat.
+
+2. **Racing Car → Project 2 / logika game**
+   Urutan aslinya juga cukup tepat:
+   `Desain Sirkuit → Desain Mobil → Kode Mobil → Duplikasi Mobil 2 → Finish Line → Kode Menang/Collision`.
+
+   Sebelum video Kode Mobil, sebaiknya ada micro-lesson singkat tentang key press, arah/koordinat, dan perbedaan `repeat` dengan `repeat until`. Conditional baru muncul di bagian menang/collision, dan itu masih masuk akal karena langsung punya konteks game.
+
+3. **Increase Your Earnings → Project 3 / capstone integratif**
+   Urutannya sebaiknya tetap:
+   `Intro + Remix Starter Project → Opsi 1 → Opsi 2 → Ending`.
+
+   Ini project paling berat. Ia menggabungkan clone, `when I start as a clone`, costume name, backdrop sebagai scene/state, variable global, `if then else`, `forever`, `touching`, hide/show, dan broadcast. Jadi sebaiknya tidak dipakai sebagai project pertama.
+
+Hal yang bisa diurutkan ulang bukan dengan mencampur project, melainkan dengan membuat **alur internal dan checkpoint** di dalam tiap project:
+
+- About Me: `design → media → first code → animation → creative challenge`.
+- Racing Car: `assets → keyboard input → movement loop → duplicate/reuse → sensing → conditional + feedback`.
+- Increase Your Earnings: `understand brief → navigate scenes → handle choices → track variable/score → ending condition`.
+
+Cakupan Scratch yang sudah kuat: Sprite, Stage/Backdrop, Costume, Events, Motion, Looks, Sound, Animation, Loop, Sensing, Conditional, Variable, dan Broadcast.
+
+Yang masih minim atau belum terlihat sebagai pembelajaran eksplisit:
+
+- Operators secara sistematis;
+- Lists;
+- Custom Blocks;
+- debugging/problem-solving sebagai lesson tersendiri;
+- penjelasan konsep variable, state, dan broadcast sebelum dipakai di project capstone.
+
+Jadi klaim “tiga project ini sudah mencakup semua komponen Scratch” **cukup benar kalau maksudnya komponen yang dibutuhkan untuk membuat project interaktif dasar**, tetapi belum lengkap jika maksudnya seluruh kategori konsep Scratch.
+
+Audit detail dan caption lokal sudah kusimpan di:
+[Audit Sequencing Scratch Async SD](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/02-curriculum-sequencing/mapping/audit-sequencing-scratch-async-sd-2026-09-09.md)
+
+Metadata playlist ada di `data/scratch-playlists/`, dan transcript ada di `data/scratch-playlists/transcripts/`. Statusnya masih **under discussion**; belum ada perubahan dataset produksi.
+
+Checkpoint Git lokal: `43f2680` (`docs(curriculum): audit scratch async sd sequencing`).
+
+### Actions / Artifacts
+- Membaca metadata 3 playlist dan seluruh 17 video.
+- Mengambil caption Bahasa Indonesia yang tersedia untuk audit isi.
+- Membuat audit sequencing di `mapping/audit-sequencing-scratch-async-sd-2026-09-09.md`.
+- Menyimpan metadata dan transcript di `data/scratch-playlists/`.
+- Memperbarui `STATE.md` dan membuat checkpoint Git lokal `43f2680`.
+- Dataset produksi tidak diubah.
+
+## 2026-09-09 — Permintaan scaffolding lengkap Scratch Async SD dan produksi slides
+
+### User
+> oke yaudah plannya apa kamu ini yang belum ada intro nya platformnya kan pake ini aja penjelasannya biin slide [https://www.create-learn.us/blog/how-do-i-learn-scratch-coding-with-scratch-for-kids-explained/](https://www.create-learn.us/blog/how-do-i-learn-scratch-coding-with-scratch-for-kids-explained/)
+>
+> sisanya coba bikinin juga slide nya yah
+>
+> coba atur scaffolding materinyaa aapa yang lengkap dan jelas
+
+### Status
+- **implemented/in progress** — pengguna menyetujui penggunaan artikel Create & Learn sebagai sumber intro platform Scratch dan meminta rancangan scaffolding lengkap serta produksi slide untuk gap materi lainnya.
+- Dataset produksi belum diubah sebelum blueprint dan isi slide diverifikasi.
+
+### Actions
+- Incoming request logged before substantive work.

@@ -1,0 +1,61 @@
+{
+  "id": "bridge-sd-02",
+  "kicker": "Bridge 02 · Animasi",
+  "title": "Membuat Gerakan Berulang dengan Loop",
+  "summary": "Jembatan sebelum video animasi About Me dan fondasi loop untuk Racing Car.",
+  "type": "slide",
+  "level": "SD",
+  "totalSlides": 5,
+  "slideUrl": "./slides/bridge-sd-02.html",
+  "embedUrl": "slides/bridge-sd-02.html",
+  "prerequisiteStepIds": [],
+  "learningObjectives": [
+    "Menjelaskan perbedaan aksi satu kali dan berulang",
+    "Menggunakan move, turn, next costume, wait, dan repeat",
+    "Membuat animasi sederhana yang dapat diuji dan diubah"
+  ],
+  "practice": {
+    "type": "guided_reading",
+    "description": "Menyelesaikan simulasi mini dan checkpoint pada setiap bagian."
+  },
+  "completionCriteria": {
+    "quizScoreMin": 100,
+    "interactiveCompleted": true,
+    "description": "Menyelesaikan semua slide, latihan, dan kuis dengan benar."
+  },
+  "bookmarks": [
+    {
+      "slideIndex": 0,
+      "label": "Mengapa kita membutuhkan loop?"
+    },
+    {
+      "slideIndex": 1,
+      "label": "Repeat dan Forever"
+    },
+    {
+      "slideIndex": 2,
+      "label": "Animasi = aksi kecil + waktu"
+    },
+    {
+      "slideIndex": 3,
+      "label": "Costume sebagai frame"
+    },
+    {
+      "slideIndex": 4,
+      "label": "Tantangan animasi"
+    }
+  ],
+  "quizzes": [
+    {
+      "question": "Checkpoint tersedia di dalam slide interaktif.",
+      "options": [
+        "Lihat ulang slide",
+        "Coba bloknya",
+        "Minta bantuan setelah mencoba"
+      ],
+      "answer": 0,
+      "explanation": "Baca kembali bagian yang belum jelas lalu coba lagi.",
+      "embedded": true
+    }
+  ]
+}
