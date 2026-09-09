@@ -153,11 +153,11 @@ def run():
     
     # Click each tab and capture screenshot
     tabs_to_show = [
-        ("Changelog & Audit Log", "screenshot_changelog_audit_log.png"),
+        ("Changelog & Audit Log", "screenshot_changelog_audit_log_v4.png"),
+        ("materi-sd", "screenshot_materi_sd_v4.png"),
+        ("ops-result-sd", "screenshot_ops_result_sd_v4.png"),
         ("materi-smp", "screenshot_materi_smp_v3.png"),
-        ("materi-sma", "screenshot_materi_sma_v3.png"),
-        ("materi-sd", "screenshot_materi_sd_v3.png"),
-        ("ops-result-smp", "screenshot_ops_result_smp_v3.png")
+        ("materi-sma", "screenshot_materi_sma_v3.png")
     ]
     
     for tab_name, fname in tabs_to_show:

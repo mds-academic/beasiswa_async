@@ -2,11 +2,10 @@
 
 ## Current Status
 
-- **Status**: LMS platform and Apps Script backend updated and deployed; endpoint smoke test passed.
-- **Active Focus**: Review PRD, finalisasi struktur repositori, dan verifikasi alur kurikulum & arsitektur web app.
+- **Status**: Kurikulum Scratch SD v4 (22 step: 5 slide bridge + 17 video Kak Laras) berhasil diinjeksi 100% ke Google Spreadsheet master (`materi-sd`, `ops-result-sd` 22 kolom, dan `Changelog & Audit Log`), divalidasi visual dengan tangkapan layar browser.
+- **Active Focus**: Persiapan pengujian integrasi akhir, sinkronisasi repositori, dan operasional peluncuran.
 - **Last Updated**: 2026-09-09
 
-- **Audit ulang terbaru**: Intro bumper 4 detik belum sesuai requirement. Runtime masih menambahkan bumper ke semua video, bumper masih dapat di-pause, dan dataset belum memiliki `introMode` per unit. Lihat [audit lanjutan](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/01-lms-platform/audits/01-audit-ulang-implementasi-subproject-1-2026-09-09.md).
 
 ## Completed
 

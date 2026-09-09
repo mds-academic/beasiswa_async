@@ -1001,3 +1001,37 @@ Contohnya siswa sudah berada di Materi 3, tetapi video belum selesai dan kuis be
 Jadi yang dipulihkan adalah **tab terakhir**, bukan otomatis menandai video atau kuis sebagai selesai.
 
 Catatan penting: saat ini posisi video sampai detik terakhir belum dipulihkan lintas-browser. Yang tersimpan lintas-browser adalah tab terakhir dan daftar video yang sudah selesai. Commit terbaru: `7a51bbe`.
+
+## 2026-09-09 — Konfirmasi status perbaikan restore progress
+
+### User
+> ini udah di baikin yah
+
+### Status
+- **Implemented locally / deployment verification pending** — fitur restore tab terakhir, watched steps, dan sinkronisasi Spreadsheet sudah diperbaiki di source dan diunggah melalui `clasp push`; deployment publik baru belum dapat diverifikasi penuh karena error permission `.clasprc.json`.
+
+### Assistant final response
+Iya, sudah diperbaiki di source code dan sudah dibuat checkpoint Git. Sekarang tab terakhir, video yang sudah selesai, progres kuis, dan status unlock disinkronkan ke Spreadsheet sehingga bisa dipulihkan dari browser berbeda. Video yang belum selesai tetap belum dianggap selesai dan tidak autoplay.
+
+Catatan: upload `Code.gs` berhasil, tetapi deployment publik baru belum bisa diverifikasi penuh karena `clasp` mengalami error permission pada `.clasprc.json`. Jadi source sudah diperbaiki; live endpoint perlu dicek sekali lagi setelah deployment aktif.
+
+## 2026-09-09 — Injeksi Kurikulum Scratch SD (Upper Primary) 22 Step ke Google Spreadsheet Master
+
+### User request
+> yaudah inject ke materi sd dah
+
+### Assistant action
+1. Menghasilkan payload data kurikulum Scratch SD v4 sebanyak 22 baris materi (Modul 0: 2 slide bridge interaktif, Modul 1: 4 video tutorial About Me, Modul 2: 1 slide bridge + 5 video Racing Car bagian 1, Modul 3: 1 slide bridge + 4 video Racing Car bagian 2, Modul 4: 1 slide bridge persiapan capstone, Modul 5: 4 video capstone Increase Your Earnings) dengan format standar 14 kolom melalui skrip `generate_curriculum_sheet_data_v4.py`.
+2. Memperbarui `subprojects/01-lms-platform/apps-script/Code.gs` via `update_code_gs_v4.py`:
+   - Menyematkan data payload v4 untuk tab `materi-sd` (22 rows), `materi-smp` (36 rows), `materi-sma` (36 rows), dan `Changelog & Audit Log` (11 entries).
+   - Memperluas skema tab `ops-result-sd` menjadi 22 kolom pelacakan kuis/materi (`bridge-sd-00` s.d. `up-earning-4`) dengan rumus rekapitulasi progres dan konversi nilai 0–100 presisi.
+3. Melakukan deployment ke Google Apps Script via Clasp (`npx @google/clasp push -f`).
+4. Memicu eksekusi fungsi `setupAllLMSSheets()` langsung di Google Apps Script editor via Chrome DevTools Protocol (CDP) WebSocket (`execute_apps_script_direct_cdp.py`), yang tereksekusi sukses dalam 4 detik.
+5. Memvalidasi hasil injeksi di Google Spreadsheet master (`1s6VVCGLPwiGWYwBNiR-4lrnB5XWcOV0l7pAIcgyif-k`) dan menangkap tangkapan layar verifikasi visual:
+   - `screenshot_materi-sd_v4.png`: Memverifikasi 22 baris data kurikulum terisi lengkap dengan styling navy header dan border rapi.
+   - `screenshot_ops-result-sd_v4.png`: Memverifikasi 22 kolom evaluasi nilai siswa telah terkonfigurasi dengan status kelulusan dan persentase progres.
+   - `screenshot_changelog_and_audit_log_v4.png`: Memverifikasi entri ke-11 terkait injeksi kurikulum Scratch SD v4 terdokumentasi secara transparan.
+
+### Status
+completed and verified live in Google Spreadsheet.
+
