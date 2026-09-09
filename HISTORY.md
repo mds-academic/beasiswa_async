@@ -2185,4 +2185,30 @@ completed and verified live in Google Spreadsheet.
 >
 > eh ini aku gasuka banget sama is imodulnya gak menggambarkan scratch asli dan dia gak pake blok asli aku benci deh, ini dibaikin yah modulnya suru dia buka https://scratch.mit.edu/projects/editor/?tutorial=getStarted dan bikin ambil blok nya trus ss masukin cdn untuk project projectnya yah, coba dong baikin
 
+### Assistant Response (Turn 13)
+Perbaikan menyeluruh materi modul Scratch SD telah berhasil dieksekusi dengan standar video-first dan aset asli antarmuka Scratch resmi MIT Media Lab:
+
+1. **Pengambilan Screenshot Antarmuka & Balok Asli Scratch MIT**:
+   - Membuka `https://scratch.mit.edu/projects/editor/?tutorial=getStarted` melalui Chrome CDP port 9222.
+   - Menangkap seluruh area kerja nyata: Stage & Scratch Cat, Sprite Pane, Palette Warna Balok Resmi (Motion, Looks, Events, Control), serta kartu tutorial Getting Started (Move 10 Steps, Say Hello, When Flag Clicked).
+2. **Upload Massal ke Ruangguru CDN (`rg_cdn_web_2`)**:
+   - 10 aset PNG asli telah diunggah ke Ruangguru CDN via portal file uploader.
+   - Mapping URL tersimpan di `scratch_cdn_assets.json` dan dihubungkan langsung ke slide `bridge-sd-00.html`.
+3. **Revamp Total Slide `bridge-sd-00`**:
+   - Seluruh visual Create & Learn dan blok tiruan telah dieliminasi 100%.
+   - Slide menyertakan call-to-action langsung ke URL Scratch Getting Started, menjelaskan 4 area kerja utama, panduan memasang balok pertama, dan kuis pemahaman interaktif.
+   - Disinkronkan ke 3 mirror: `subprojects/02-curriculum-sequencing/slides/`, `subprojects/01-lms-platform/src/slides/`, dan `docs/slides/`.
+4. **Sinkronisasi Dataset Video-First 18-Step**:
+   - `courseData-upperprimary.json` disinkronkan ke 4 modul & 18 step (1 slide intro + 17 video tutorial asli Kak Laras).
+   - Seluruh 3 mirror tervalidasi SHA-256 identik (`27e665ba...`).
+5. **Pembaruan Google Spreadsheet Master & Apps Script**:
+   - Tab `materi-sd` diperbarui menjadi 18 baris kurikulum video-first.
+   - Tab `ops-result-sd` diperbarui menjadi 18 kolom pelacakan kuis/proyek.
+   - Tab `Changelog & Audit Log` menambahkan entri ke-12 resmi.
+   - Dieksekusi otomatis via Apps Script CDP `setupAllLMSSheets()` dan diverifikasi visual dengan screenshot.
+6. **Verifikasi Playwright E2E & Git Checkpoint**:
+   - Uji E2E mengonfirmasi login siswa SD berhasil memuat dashboard "Progres Misi: 1 dari 18 Materi" dan slide `bridge-sd-00` tersemat mulus.
+   - Local Git commit dibuat: `4238fc0` (root) dan `840fec6` (subproject 01).
+
+
 
