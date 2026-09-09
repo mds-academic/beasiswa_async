@@ -391,6 +391,27 @@ function showAppAlert({
   setTimeout(() => { toast.style.display = 'none'; if (typeof onConfirm === 'function') onConfirm(); }, 4000);
 }
 
+/**
+ * Lightweight Toast Notification
+ */
+function showToast(message) {
+  let toast = document.querySelector('#app-toast');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.id = 'app-toast';
+    toast.style.cssText = 'position:fixed;bottom:28px;left:50%;transform:translateX(-50%);background:#092764;color:#fff;padding:12px 24px;border-radius:10px;border:1.5px solid #38bdf8;box-shadow:0 8px 24px rgba(0,0,0,0.35);z-index:999999;font-family:var(--font-body, sans-serif);font-size:0.85rem;font-weight:600;display:flex;align-items:center;gap:10px;max-width:90vw;transition:opacity 0.3s ease;pointer-events:none;';
+    document.body.appendChild(toast);
+  }
+  toast.textContent = message;
+  toast.style.display = 'flex';
+  toast.style.opacity = '1';
+  clearTimeout(toast._timeout);
+  toast._timeout = setTimeout(() => {
+    toast.style.opacity = '0';
+    setTimeout(() => { toast.style.display = 'none'; }, 300);
+  }, 3500);
+}
+
 
 /**
  * Masking email untuk tampilan aman (contoh: bu***@gmail.com)
@@ -3202,9 +3223,10 @@ async function exportCertificateToPdf() {
     btn.innerHTML = '<span>⏳</span> Mengenerate PDF (Halaman 1 Landscape & Halaman 2 Portrait)...';
   }
 
-  // Buat Surface Sandbox Terisolasi Berukuran A4 Tetap di Luar Viewport
+  // Buat Surface Sandbox Terisolasi Berukuran A4 Tetap di (0,0) yang Tidak Terlihat (Opacity 0)
   const sandbox = document.createElement('div');
   sandbox.id = 'cert-render-sandbox';
+  sandbox.style.cssText = 'position: fixed !important; left: 0 !important; top: 0 !important; width: 1123px !important; z-index: -9999 !important; background: #ffffff !important; pointer-events: none !important; opacity: 0 !important;';
   document.body.appendChild(sandbox);
 
   try {
@@ -3212,7 +3234,20 @@ async function exportCertificateToPdf() {
     const page2Orig = document.querySelector('#cert-page-2');
     if (!page1Orig || !page2Orig) throw new Error('Elemen template sertifikat tidak ditemukan');
 
-    // Surface Halaman 1: Landscape A4 (Fixed 1123 × 794 px)
+    // Pastikan data tabel transkrip sudah terpopulasi sebelum diclone
+    const tbody = document.querySelector('#cert-transcript-tbody');
+    if (!tbody || tbody.children.length === 0) {
+      openCertificateModal();
+    }
+
+    // Tunggu font web terpasang stabil
+    if (document.fonts && document.fonts.ready) {
+      try {
+        await Promise.race([document.fonts.ready, new Promise((r) => setTimeout(r, 2000))]);
+      } catch (_) {}
+    }
+
+    // ==================== 1. Surface Halaman 1: Landscape A4 (1123 × 794 px) ====================
     const surface1 = document.createElement('div');
     surface1.className = 'sandbox-surface-page-1';
     const clone1 = page1Orig.cloneNode(true);
@@ -3226,8 +3261,31 @@ async function exportCertificateToPdf() {
     const c1LogoUob = clone1.querySelector('#cert-logo-uob');
     if (c1LogoUob) c1LogoUob.src = LOGO_UOB_MDS;
     surface1.appendChild(clone1);
+    sandbox.appendChild(surface1);
 
-    // Surface Halaman 2: Portrait A4 (Fixed 794 × 1123 px)
+    await new Promise((r) => setTimeout(r, 120));
+
+    // Render Canvas Halaman 1 (Landscape) Resolusi Tinggi Skala 2x
+    // WAJIB set orientation: 'landscape' agar toContainer tidak memotong lebar ke 794px
+    const canvas1 = await window.html2pdf().set({
+      jsPDF: {
+        unit: 'mm',
+        format: 'a4',
+        orientation: 'landscape'
+      },
+      html2canvas: {
+        scale: 2,
+        useCORS: true,
+        allowTaint: true,
+        backgroundColor: '#ffffff',
+        scrollX: 0,
+        scrollY: 0,
+        logging: false
+      }
+    }).from(surface1).toCanvas().get('canvas');
+    surface1.remove();
+
+    // ==================== 2. Surface Halaman 2: Portrait A4 (794 × 1123 px) ====================
     const surface2 = document.createElement('div');
     surface2.className = 'sandbox-surface-page-2';
     const clone2 = page2Orig.cloneNode(true);
@@ -3239,41 +3297,31 @@ async function exportCertificateToPdf() {
     const c2LogoUob = clone2.querySelector('#transcript-logo-uob');
     if (c2LogoUob) c2LogoUob.src = LOGO_UOB_MDS;
     surface2.appendChild(clone2);
-
-    sandbox.appendChild(surface1);
     sandbox.appendChild(surface2);
 
-    // Tunggu font web dan layout terpasang stabil
-    if (document.fonts && document.fonts.ready) {
-      try {
-        await Promise.race([document.fonts.ready, new Promise((r) => setTimeout(r, 2500))]);
-      } catch (_) {}
-    }
-    await new Promise((r) => setTimeout(r, 200));
-
-    // Render Canvas Halaman 1 (Landscape) Resolusi Tinggi Skala 2x
-    const canvas1 = await window.html2pdf().set({
-      html2canvas: {
-        scale: 2,
-        useCORS: true,
-        allowTaint: true,
-        backgroundColor: '#ffffff',
-        logging: false
-      }
-    }).from(surface1).toCanvas().get('canvas');
+    await new Promise((r) => setTimeout(r, 120));
 
     // Render Canvas Halaman 2 (Portrait) Resolusi Tinggi Skala 2x
+    // WAJIB set orientation: 'portrait' agar rasio aspek tepat A4 portrait
     const canvas2 = await window.html2pdf().set({
+      jsPDF: {
+        unit: 'mm',
+        format: 'a4',
+        orientation: 'portrait'
+      },
       html2canvas: {
         scale: 2,
         useCORS: true,
         allowTaint: true,
         backgroundColor: '#ffffff',
+        scrollX: 0,
+        scrollY: 0,
         logging: false
       }
     }).from(surface2).toCanvas().get('canvas');
+    surface2.remove();
 
-    // Inisialisasi jsPDF Dokumen Multi-Orientasi
+    // ==================== 3. Kompilasi PDF Multi-Orientasi ====================
     const dummy = document.createElement('div');
     const pdf = await window.html2pdf().set({
       jsPDF: {
@@ -3288,7 +3336,7 @@ async function exportCertificateToPdf() {
     const img1 = canvas1.toDataURL('image/jpeg', 0.96);
     pdf.addImage(img1, 'JPEG', 0, 0, 297, 210, undefined, 'FAST');
 
-    // Tambahkan Halaman 2: Portrait A4 (210 mm × 297 mm)
+    // Halaman 2: Portrait A4 (210 mm × 297 mm)
     pdf.addPage('a4', 'portrait');
     const img2 = canvas2.toDataURL('image/jpeg', 0.96);
     pdf.addImage(img2, 'JPEG', 0, 0, 210, 297, undefined, 'FAST');
@@ -3352,6 +3400,7 @@ function setupCertificateModalEvents() {
 window.goToStep = goToStep;
 window.buildSidebarModuleList = buildSidebarModuleList;
 window.openCertificateModal = openCertificateModal;
+window.exportCertificateToPdf = exportCertificateToPdf;
 window.recomputeUnlockedStepIndex = recomputeUnlockedStepIndex;
 window.extractQuizzesFromStep = extractQuizzesFromStep;
 

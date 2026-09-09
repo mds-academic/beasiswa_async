@@ -4735,12 +4735,15 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 /* ==================== Fixed A4 Off-Screen Sandbox Renderer ==================== */
 #cert-render-sandbox {
   position: fixed !important;
-  left: -99999px !important;
+  left: 0 !important;
   top: 0 !important;
-  z-index: -99999 !important;
+  width: 1123px !important;
+  z-index: -9999 !important;
   overflow: visible !important;
   background: #ffffff !important;
   display: block !important;
+  pointer-events: none !important;
+  opacity: 0 !important;
 }
 
 .sandbox-surface-page-1 {
@@ -4767,8 +4770,90 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   box-sizing: border-box !important;
   overflow: hidden !important;
   background: #ffffff !important;
-  padding: 16px !important;
+  padding: 12px 16px !important;
   display: block !important;
+}
+
+/* Penyesuaian Presisi Halaman 2 (Agar 36 Modul SMA/SMP + Kompetensi + TTD Pas Sempurna 1 Halaman A4 Portrait) */
+.sandbox-surface-page-2 .transcript-header {
+  margin-bottom: 4px !important;
+  padding-bottom: 4px !important;
+}
+.sandbox-surface-page-2 .transcript-logo-rg {
+  height: 22px !important;
+}
+.sandbox-surface-page-2 .transcript-logo-uob {
+  height: 24px !important;
+}
+.sandbox-surface-page-2 .transcript-badge {
+  font-size: 0.6rem !important;
+  padding: 1px 6px !important;
+  margin-bottom: 1px !important;
+}
+.sandbox-surface-page-2 .transcript-title {
+  font-size: 0.95rem !important;
+  margin: 0 !important;
+}
+.sandbox-surface-page-2 .transcript-subtitle {
+  font-size: 0.65rem !important;
+}
+.sandbox-surface-page-2 .transcript-meta-grid {
+  padding: 4px 8px !important;
+  gap: 6px !important;
+  margin-bottom: 6px !important;
+}
+.sandbox-surface-page-2 .transcript-meta-item .meta-label {
+  font-size: 0.58rem !important;
+}
+.sandbox-surface-page-2 .transcript-meta-item strong {
+  font-size: 0.72rem !important;
+}
+.sandbox-surface-page-2 .transcript-table-container {
+  margin-bottom: 6px !important;
+}
+.sandbox-surface-page-2 .transcript-table th {
+  padding: 3px 5px !important;
+  font-size: 0.64rem !important;
+}
+.sandbox-surface-page-2 .transcript-table td {
+  padding: 1.8px 5px !important;
+  font-size: 0.62rem !important;
+  line-height: 1.15 !important;
+}
+.sandbox-surface-page-2 .transcript-badge-done,
+.sandbox-surface-page-2 .transcript-badge-zero,
+.sandbox-surface-page-2 .transcript-badge-pending {
+  padding: 1px 4px !important;
+  font-size: 0.58rem !important;
+}
+.sandbox-surface-page-2 .transcript-competencies {
+  padding: 4px 8px !important;
+  margin-bottom: 6px !important;
+}
+.sandbox-surface-page-2 .competency-heading {
+  font-size: 0.68rem !important;
+  margin-bottom: 3px !important;
+}
+.sandbox-surface-page-2 .competency-box {
+  padding: 3px 6px !important;
+}
+.sandbox-surface-page-2 .competency-box strong {
+  font-size: 0.66rem !important;
+}
+.sandbox-surface-page-2 .competency-box span {
+  font-size: 0.58rem !important;
+}
+.sandbox-surface-page-2 .transcript-footer {
+  padding-top: 4px !important;
+}
+.sandbox-surface-page-2 .transcript-note {
+  font-size: 0.58rem !important;
+}
+.sandbox-surface-page-2 .cert-signatory-name {
+  font-size: 0.72rem !important;
+}
+.sandbox-surface-page-2 .cert-signatory-role {
+  font-size: 0.6rem !important;
 }
 
 /* ==================== Modern Mixed-Orientation @media print ==================== */
