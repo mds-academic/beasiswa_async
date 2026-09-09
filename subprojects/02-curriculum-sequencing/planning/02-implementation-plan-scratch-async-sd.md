@@ -1,6 +1,6 @@
 # 02 — Implementation Plan: Scratch Async SD Scaffolding
 
-**Status:** `implemented — pending user/UAT approval`  
+**Status:** `revised — video-first sequencing pending user/UAT approval`  
 **Tanggal:** 2026-09-09
 
 ## Tujuan
@@ -15,100 +15,65 @@ Mengubah tiga playlist tutorial Scratch menjadi jalur belajar asinkronus SD yang
 - **Tutorial bukan satu-satunya kurikulum:** siswa diberi checkpoint, istilah, alasan penggunaan blok, dan troubleshooting.
 - **Satu perubahan setiap eksperimen:** siswa meniru, mengubah satu hal, menguji, lalu menjelaskan.
 
-## Struktur kanonik yang direkomendasikan
+## Struktur kanonik yang direkomendasikan — video-first
 
-### Fase 0 — Bridge 00: Kenalan dengan Scratch
+### Modul 0 — Satu-satunya bridge: Kenalan dengan Scratch
 
 **Slide:** `bridge-sd-00`  
-**Sumber intro:** artikel Create & Learn yang diminta pengguna, diparafrasekan dan disederhanakan.
+**Sumber:** artikel Create & Learn yang diminta pengguna, memakai screenshot Scratch aktual.
 
-Isi:
+Bridge ini hanya menutup gap yang belum tersedia dalam playlist: cara membuka Scratch, mengenali Stage/Sprite/Block Palette/Coding Area, dan mencoba project pertama. Bridge tidak mengajarkan ulang konsep yang sudah dijelaskan di video.
 
-1. Scratch sebagai coding berbasis blok.
-2. Cara membuka `scratch.mit.edu`, Create, dan login/simpan.
-3. Empat area: Block Palette, Coding Area, Stage, Sprite & Backdrop.
-4. Arti warna blok utama.
-5. Project pertama: Sprite menyapa.
-6. Troubleshooting dasar.
+### Modul 1 — Project About Me
 
-**Output siswa:** satu Sprite menyapa saat bendera hijau diklik.
+**7 video playlist About Me, urutan asli tetap:**
 
-### Fase 1 — Project About Me: desain → media → first code
+1. Mendesain Karakter
+2. Merekam Suara Perkenalan Diri
+3. Membuat Kostum Makanan
+4. Memprogram Sprite Makanan
+5. Menambahkan Sprite dengan Emoji
+6. Memprogram Animasi dan Text-to-Speech
+7. Memprogram dengan Effects
 
-**Playlist:** About Me, 7 video.
+Video menjadi sumber utama untuk desain, Costume, Event, Sound, `repeat`, animasi, dan extension. Tidak ada Bridge 01/02 tambahan di jalur wajib karena penjelasannya sudah ada di playlist.
 
-Urutan video tetap, dengan framing checkpoint:
+### Modul 2 — Project Racing Car
 
-1. Mendesain Karakter.
-2. Merekam Suara Perkenalan Diri.
-3. Membuat Kostum Makanan.
-4. Memprogram Sprite Makanan.
-5. Menambahkan Sprite dengan Emoji.
-6. Memprogram Animasi dan Text-to-Speech.
-7. Memprogram dengan Effects.
+**6 video playlist Racing Car, urutan asli tetap:**
 
-**Slide pendamping:** `bridge-sd-01` sebelum playlist dan `bridge-sd-02` sebelum video animasi.
+1. Desain Sirkuit
+2. Desain Mobil
+3. Kode Mobil
+4. Duplikasi dan Modifikasi Mobil 2
+5. Desain Finish Line
+6. Kode Menang dan Menyentuh Musuh
 
-**Output siswa:** kartu perkenalan interaktif dengan minimal satu event, satu media, dan satu animasi.
+Video menjadi sumber utama untuk keyboard input, gerak, `repeat until`, duplicate/reuse, sensing, collision, conditional, dan feedback. Tidak ada Bridge 03 tambahan di jalur wajib.
 
-### Fase 2 — Bridge 02: Loop dan animasi
+### Modul 3 — Project Increase Your Earnings / Capstone
 
-**Slide:** `bridge-sd-02`.
+**4 video playlist Increase Your Earnings, urutan asli tetap:**
 
-Konsep:
+1. Percakapan Intro
+2. Memprogram Opsi 1
+3. Memprogram Opsi 2
+4. Memprogram Ending
 
-- aksi satu kali versus aksi berulang;
-- `repeat`, `forever`, dan pengantar `repeat until`;
-- `move`, `turn`, `next costume`, `wait`;
-- Costume sebagai frame animasi;
-- mengubah angka dan mengamati akibatnya.
+Video menjadi sumber utama untuk starter project, backdrop sebagai scene, clone, variable credit, broadcast, `if then else`, dan ending. Tidak ada Bridge 04 tambahan di jalur wajib.
 
-**Output siswa:** animasi gerak atau pergantian Costume yang dapat dijelaskan.
+### Alur final
 
-### Fase 3 — Project Racing Car: input → loop → sensing → conditional
+`Bridge 00 → About Me (7 video) → Racing Car (6 video) → Increase Your Earnings (4 video)`
 
-**Playlist:** Racing Car, 6 video.
+Total: **4 modul, 18 step** = 1 bridge intro + 17 video tutorial.
 
-Urutan video tetap:
+### Aturan pemakaian bridge ke depan
 
-1. Desain Sirkuit.
-2. Desain Mobil.
-3. Kode Mobil.
-4. Duplikasi dan Modifikasi Mobil 2.
-5. Desain Finish Line.
-6. Kode Menang dan Menyentuh Musuh.
-
-**Slide pendamping:** `bridge-sd-03` sebelum video Kode Mobil.
-
-**Output siswa:** dua mobil yang dikendalikan input berbeda, memiliki finish line, dan memberi feedback ketika menang/bertabrakan.
-
-### Fase 4 — Bridge 04: variable dan koordinasi project
-
-**Slide:** `bridge-sd-04`.
-
-Konsep:
-
-- variable sebagai kotak penyimpan nilai;
-- set nilai awal dan change nilai;
-- variable global untuk nilai yang dibaca beberapa Sprite;
-- broadcast sebagai pesan antar-Sprite;
-- backdrop sebagai babak/state;
-- hubungan pilihan → aktivitas → credit → ending.
-
-**Output siswa:** counter Score/Credit sederhana dan satu broadcast yang mengganti scene atau memicu respons Sprite lain.
-
-### Fase 5 — Project Increase Your Earnings: capstone
-
-**Playlist:** Increase Your Earnings, 4 video.
-
-Urutan tetap:
-
-1. Percakapan Intro dan Remix Starter Project.
-2. Memprogram Opsi 1.
-3. Memprogram Opsi 2.
-4. Memprogram Ending.
-
-**Output siswa:** project pilihan pekerjaan dengan credit dan ending kondisional. Clone diposisikan sebagai teknik lanjutan yang diikuti dari tutorial, bukan konsep yang harus dikuasai sebelum seluruh course.
+- Jika konsep sudah dijelaskan cukup di video, **pakai video; jangan dibuatkan slide duplikat**.
+- Slide hanya dibuat untuk missing prerequisite yang menghambat siswa memulai.
+- Bridge 01–04 tetap disimpan sebagai draft/reference, tetapi tidak dimasukkan ke jalur course aktif.
+- Extension seperti Lists, Custom Blocks, dan debugging eksplisit hanya dibuat jika ada gap yang benar-benar dibutuhkan setelah UAT.
 
 ## Hal yang belum ditutup oleh tiga playlist
 
@@ -139,14 +104,14 @@ Jika ingin cakupan Scratch lebih lengkap, buat extension terpisah setelah capsto
 4. Setiap bridge memiliki objective, practice, completion criteria, bookmark, dan sumber.
 5. LMS owner menyetujui mapping ID sebelum `courseData-upperprimary.json` diubah.
 6. Tidak ada materi sumber lama yang dimodifikasi.
-7. Dataset SD terintegrasi ke `output/`, Subproject 01, dan `docs/`; seluruh mirror identik dan berisi 22 step.
+7. Dataset SD terintegrasi ke `output/`, Subproject 01, dan `docs/`; seluruh mirror identik dan berisi 18 step pada jalur video-first.
 
 ## Implementasi yang sudah dijalankan
 
-- Jalur enam modul dibuat: Bridge 00 → About Me → Bridge 02 → Racing Car → Bridge 04 → Increase Your Earnings.
+- Jalur video-first direvisi menjadi empat modul: Bridge 00 → About Me → Racing Car → Increase Your Earnings.
 - Playlist tutorial tetap sebagai video terpisah; tidak ada stitching project.
 - Lima bridge disalin ke `subprojects/01-lms-platform/src/slides/` dan `docs/slides/`.
-- `courseData-upperprimary.json` diperbarui di tiga mirror dengan 22 step.
+- `courseData-upperprimary.json` diperbarui di tiga mirror dengan 18 step (1 bridge + 17 video).
 - Visual bridge memakai design system existing dan aset Scratch aktual lokal.
 
 ## Keputusan yang masih terbuka

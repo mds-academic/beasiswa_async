@@ -8,7 +8,7 @@
       "id": "up-mod-00",
       "order": 0,
       "title": "Modul 0: Kenalan dengan Scratch",
-      "description": "Mengenal platform Scratch, ruang kerja, blok kode, dan membuat project pertama.",
+      "description": "Satu-satunya materi bridge untuk mengenal platform Scratch sebelum mulai tutorial project.",
       "steps": [
         {
           "id": "bridge-sd-00",
@@ -80,67 +80,8 @@
       "id": "up-mod-01",
       "order": 1,
       "title": "Modul 1: About Me — Perkenalan Interaktif",
-      "description": "Membuat project About Me dengan Sprite, Costume, Event, Sound, dan animasi.",
+      "description": "Project pertama: membuat karakter dan perkenalan interaktif dari desain hingga animasi.",
       "steps": [
-        {
-          "id": "bridge-sd-01",
-          "type": "slide",
-          "kicker": "Materi Jembatan 01 · Project About Me",
-          "title": "Dari Karakter ke Kode: Sprite, Costume, dan Event",
-          "slideUrl": "./slides/bridge-sd-01.html",
-          "embedUrl": "slides/bridge-sd-01.html",
-          "summary": "Jembatan sebelum playlist About Me dengan visual Scratch aktual.",
-          "totalSlides": 5,
-          "learningObjectives": [
-            "Membedakan Sprite, Costume, dan Backdrop",
-            "Menggunakan event green flag dan sprite click",
-            "Menggabungkan Looks dan Sound untuk perkenalan"
-          ],
-          "practice": {
-            "type": "guided_reading",
-            "description": "Menyelesaikan pembacaan, observasi visual, dan checkpoint quiz."
-          },
-          "completionCriteria": {
-            "quizScoreMin": 100,
-            "interactiveCompleted": true,
-            "description": "Menyelesaikan semua slide dan checkpoint quiz."
-          },
-          "bookmarks": [
-            {
-              "slideIndex": 0,
-              "label": "Siapkan Project About Me"
-            },
-            {
-              "slideIndex": 1,
-              "label": "Sprite, Costume, Backdrop"
-            },
-            {
-              "slideIndex": 2,
-              "label": "Event membuat project bereaksi"
-            },
-            {
-              "slideIndex": 3,
-              "label": "Tambahkan suara dan cerita"
-            },
-            {
-              "slideIndex": 4,
-              "label": "Tantangan About Me"
-            }
-          ],
-          "quizzes": [
-            {
-              "question": "Checkpoint tersedia di dalam slide interaktif.",
-              "options": [
-                "Baca ulang slide",
-                "Lanjut tanpa mencoba",
-                "Tutup materi"
-              ],
-              "answer": 0,
-              "explanation": "Baca ulang bagian yang belum jelas lalu coba lagi.",
-              "embedded": true
-            }
-          ]
-        },
         {
           "id": "up-about-1",
           "type": "video",
@@ -356,135 +297,9 @@
     {
       "id": "up-mod-02",
       "order": 2,
-      "title": "Modul 2: Loop dan Animasi",
-      "description": "Memahami pengulangan dan menggunakannya untuk membuat gerak serta animasi.",
+      "title": "Modul 2: Racing Car — Logika Game",
+      "description": "Project kedua: membuat game balap dengan input keyboard, gerak, collision, dan aturan menang.",
       "steps": [
-        {
-          "id": "bridge-sd-02",
-          "type": "slide",
-          "kicker": "Materi Jembatan 02 · Loop dan Animasi",
-          "title": "Membuat Gerakan Berulang dengan Loop",
-          "slideUrl": "./slides/bridge-sd-02.html",
-          "embedUrl": "slides/bridge-sd-02.html",
-          "summary": "Jembatan loop untuk About Me dan Racing Car menggunakan blok Scratch aktual.",
-          "totalSlides": 5,
-          "learningObjectives": [
-            "Membedakan aksi satu kali dan berulang",
-            "Memahami Repeat, Forever, dan Repeat Until",
-            "Menggunakan Move, Turn, Next Costume, dan Wait"
-          ],
-          "practice": {
-            "type": "guided_reading",
-            "description": "Menyelesaikan pembacaan, observasi visual, dan checkpoint quiz."
-          },
-          "completionCriteria": {
-            "quizScoreMin": 100,
-            "interactiveCompleted": true,
-            "description": "Menyelesaikan semua slide dan checkpoint quiz."
-          },
-          "bookmarks": [
-            {
-              "slideIndex": 0,
-              "label": "Mengapa butuh loop?"
-            },
-            {
-              "slideIndex": 1,
-              "label": "Repeat, Forever, Repeat Until"
-            },
-            {
-              "slideIndex": 2,
-              "label": "Gerak adalah aksi kecil"
-            },
-            {
-              "slideIndex": 3,
-              "label": "Costume sebagai frame"
-            },
-            {
-              "slideIndex": 4,
-              "label": "Tantangan animasi"
-            }
-          ],
-          "quizzes": [
-            {
-              "question": "Checkpoint tersedia di dalam slide interaktif.",
-              "options": [
-                "Baca ulang slide",
-                "Lanjut tanpa mencoba",
-                "Tutup materi"
-              ],
-              "answer": 0,
-              "explanation": "Baca ulang bagian yang belum jelas lalu coba lagi.",
-              "embedded": true
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "up-mod-03",
-      "order": 3,
-      "title": "Modul 3: Racing Car — Logika Game",
-      "description": "Membuat game balap dengan input keyboard, loop, sensing, collision, dan conditional.",
-      "steps": [
-        {
-          "id": "bridge-sd-03",
-          "type": "slide",
-          "kicker": "Materi Jembatan 03 · Logika Game",
-          "title": "Input, Sensing, dan Keputusan di Racing Car",
-          "slideUrl": "./slides/bridge-sd-03.html",
-          "embedUrl": "slides/bridge-sd-03.html",
-          "summary": "Jembatan sebelum coding Racing Car dengan blok Scratch aktual.",
-          "totalSlides": 5,
-          "learningObjectives": [
-            "Memahami input keyboard",
-            "Memahami loop pengecekan",
-            "Menggunakan Sensing dan If Then untuk aturan game"
-          ],
-          "practice": {
-            "type": "guided_reading",
-            "description": "Menyelesaikan pembacaan, observasi visual, dan checkpoint quiz."
-          },
-          "completionCriteria": {
-            "quizScoreMin": 100,
-            "interactiveCompleted": true,
-            "description": "Menyelesaikan semua slide dan checkpoint quiz."
-          },
-          "bookmarks": [
-            {
-              "slideIndex": 0,
-              "label": "Game membutuhkan input"
-            },
-            {
-              "slideIndex": 1,
-              "label": "Gerak dan pengulangan"
-            },
-            {
-              "slideIndex": 2,
-              "label": "Sensing bertanya kepada game"
-            },
-            {
-              "slideIndex": 3,
-              "label": "If membuat aturan"
-            },
-            {
-              "slideIndex": 4,
-              "label": "Racing Car: urutan kerja"
-            }
-          ],
-          "quizzes": [
-            {
-              "question": "Checkpoint tersedia di dalam slide interaktif.",
-              "options": [
-                "Baca ulang slide",
-                "Lanjut tanpa mencoba",
-                "Tutup materi"
-              ],
-              "answer": 0,
-              "explanation": "Baca ulang bagian yang belum jelas lalu coba lagi.",
-              "embedded": true
-            }
-          ]
-        },
         {
           "id": "up-racing-1",
           "type": "video",
@@ -668,86 +483,10 @@
       ]
     },
     {
-      "id": "up-mod-04",
-      "order": 4,
-      "title": "Modul 4: Variable dan Koordinasi Project",
-      "description": "Memahami nilai yang berubah, broadcast, backdrop sebagai scene, dan alur project.",
-      "steps": [
-        {
-          "id": "bridge-sd-04",
-          "type": "slide",
-          "kicker": "Materi Jembatan 04 · Data dan Koordinasi",
-          "title": "Variable, Broadcast, dan Project Integratif",
-          "slideUrl": "./slides/bridge-sd-04.html",
-          "embedUrl": "slides/bridge-sd-04.html",
-          "summary": "Jembatan sebelum Increase Your Earnings dengan visual blok Scratch aktual.",
-          "totalSlides": 7,
-          "learningObjectives": [
-            "Menjelaskan variable sebagai penyimpan nilai",
-            "Membuat counter Score atau Credit",
-            "Menjelaskan Broadcast sebagai pesan antar-Sprite",
-            "Menghubungkan backdrop, kondisi, dan ending"
-          ],
-          "practice": {
-            "type": "guided_reading",
-            "description": "Menyelesaikan pembacaan, observasi visual, dan checkpoint quiz."
-          },
-          "completionCriteria": {
-            "quizScoreMin": 100,
-            "interactiveCompleted": true,
-            "description": "Menyelesaikan semua slide dan checkpoint quiz."
-          },
-          "bookmarks": [
-            {
-              "slideIndex": 0,
-              "label": "Variable adalah kotak nilai"
-            },
-            {
-              "slideIndex": 1,
-              "label": "Atur nilai awal"
-            },
-            {
-              "slideIndex": 2,
-              "label": "Broadcast adalah pesan"
-            },
-            {
-              "slideIndex": 3,
-              "label": "Backdrop adalah babak cerita"
-            },
-            {
-              "slideIndex": 4,
-              "label": "Increase Your Earnings"
-            },
-            {
-              "slideIndex": 5,
-              "label": "Checklist sebelum capstone"
-            },
-            {
-              "slideIndex": 6,
-              "label": "Peta Scratch Async SD"
-            }
-          ],
-          "quizzes": [
-            {
-              "question": "Checkpoint tersedia di dalam slide interaktif.",
-              "options": [
-                "Baca ulang slide",
-                "Lanjut tanpa mencoba",
-                "Tutup materi"
-              ],
-              "answer": 0,
-              "explanation": "Baca ulang bagian yang belum jelas lalu coba lagi.",
-              "embedded": true
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "up-mod-05",
-      "order": 5,
-      "title": "Modul 5: Increase Your Earnings — Capstone",
-      "description": "Mengikuti project integratif dengan pilihan aktivitas, credit, scene, clone, dan ending.",
+      "id": "up-mod-03",
+      "order": 3,
+      "title": "Modul 3: Increase Your Earnings — Capstone",
+      "description": "Project ketiga: mengikuti starter project integratif dengan pilihan aktivitas, credit, scene, clone, dan ending.",
       "steps": [
         {
           "id": "up-earning-1",

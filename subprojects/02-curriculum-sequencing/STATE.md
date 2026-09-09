@@ -3,7 +3,7 @@
 ## Current Status
 
 - **Status**: FINAL ACCEPTANCE PASSED (100% Selesai) — Seluruh temuan audit independen (B1–B4) telah diselesaikan secara tuntas dan lolos 8-gate verification test suite.
-- **Active Focus**: UAT jalur Scratch Async SD terintegrasi: enam modul, 22 step, dan lima bridge slide.
+- **Active Focus**: UAT jalur Scratch Async SD versi video-first: empat modul, 18 step, dan satu bridge intro.
 - **Last Updated**: 2026-09-08 23:59 WIB
 
 ## Completed
@@ -31,7 +31,7 @@
 
 ## Concrete Next Steps
 
-0. UAT jalur Scratch SD terintegrasi di LMS dan review copy/visual setiap bridge.
+0. UAT jalur Scratch SD video-first di LMS: pastikan hanya Bridge 00 yang menjadi slide wajib dan 17 tutorial tampil sebagai video.
 
 1. Evaluasi pengerjaan siswa pada mini lab interaktif dan kuis pemahaman mandiri via LMS platform.
 2. Monitor live telemetry pengerjaan kuis dan progres sync ke Google Spreadsheet master.

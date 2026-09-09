@@ -818,3 +818,107 @@ Kalau yang kamu maksud adalah **isi materi di LMS saat klik step**, bukan direct
 - Membandingkan hash dan jumlah slide lima bridge di source dan mirror LMS.
 - Mengonfirmasi file dan mapping `slideUrl` berbeda.
 - Memberikan direct preview link untuk isolasi masalah cache vs mapping LMS.
+
+## 2026-09-09 — Koreksi pembagian materi: prioritaskan video, jangan duplikasi slide
+
+### User
+> aku nmasih ,erasa aneh kan ini dai ada di vide kan yah, kalo ada video nya pake video aja dong penjelasananya sumpah ini ga makesense coba apa sih pembagian mu alur mategimana dah
+
+### Status
+- **revision requested / under discussion** — pengguna menolak bridge slide yang menduplikasi penjelasan video dan meminta pembagian alur materi yang lebih masuk akal dengan video sebagai sumber utama bila tersedia.
+
+### Actions
+- Incoming correction logged before revising the sequencing implementation.
+
+### Assistant Response — 2026-09-09
+
+Iya, kamu benar. Pembagian sebelumnya memang tidak makesense karena aku menambahkan Bridge 01–04 untuk menjelaskan ulang hal yang sebenarnya sudah dijelaskan di video. Itu salah secara sequencing.
+
+Aku sudah revisi menjadi **video-first**:
+
+## Alur yang benar
+
+`Bridge 00 → About Me → Racing Car → Increase Your Earnings`
+
+### Modul 0 — Bridge 00: Kenalan dengan Scratch
+
+Ini satu-satunya slide wajib karena belum ada video intro platform. Isinya hanya:
+
+- Scratch itu apa;
+- cara membuka Scratch dan membuat project;
+- mengenal Stage, Sprite, Backdrop, Block Palette, dan Coding Area;
+- mencoba project pertama;
+- troubleshooting paling dasar.
+
+### Modul 1 — About Me
+
+Langsung pakai 7 video asli, tanpa slide duplikat:
+
+1. Mendesain Karakter
+2. Merekam Suara Perkenalan Diri
+3. Membuat Kostum Makanan
+4. Memprogram Sprite Makanan
+5. Menambahkan Sprite dengan Emoji
+6. Memprogram Animasi dan Text-to-Speech
+7. Memprogram dengan Effects
+
+Video-video ini sudah menjelaskan desain, Costume, Event, Sound, animasi, loop, dan effects.
+
+### Modul 2 — Racing Car
+
+Langsung pakai 6 video asli:
+
+1. Desain Sirkuit
+2. Desain Mobil
+3. Kode Mobil
+4. Duplikasi dan Modifikasi Mobil 2
+5. Desain Finish Line
+6. Kode Menang dan Menyentuh Musuh
+
+Video-video ini sudah menjelaskan keyboard input, movement, `repeat until`, duplicate/reuse, sensing, collision, conditional, dan feedback.
+
+### Modul 3 — Increase Your Earnings
+
+Langsung pakai 4 video asli:
+
+1. Percakapan Intro
+2. Memprogram Opsi 1
+3. Memprogram Opsi 2
+4. Memprogram Ending
+
+Video-video ini sudah menjelaskan starter project, backdrop/scene, clone, variable credit, broadcast, conditional, dan ending.
+
+## Hasil revisi
+
+Sekarang dataset menjadi:
+
+- **4 modul**
+- **18 step total**
+- **1 slide intro**
+- **17 video tutorial**
+
+Bridge 01–04 tetap kusimpan sebagai draft/reference, tetapi sudah dikeluarkan dari course aktif supaya tidak menduplikasi isi video.
+
+Aku juga memperbarui plan menjadi **video-first sequencing**:
+
+[02 — Implementation Plan Scratch Async SD](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/02-curriculum-sequencing/planning/02-implementation-plan-scratch-async-sd.md)
+
+Dataset sudah disinkronkan ulang ke tiga mirror:
+
+- `output/courseData-upperprimary.json`
+- `subprojects/01-lms-platform/src/data/courseData-upperprimary.json`
+- `docs/data/courseData-upperprimary.json`
+
+Ketiganya identik dan sudah diverifikasi berisi 18 step.
+
+Jadi prinsipnya sekarang jelas: **kalau penjelasannya sudah ada di video, kita gunakan video. Slide hanya untuk gap yang belum punya penjelasan.**
+
+Checkpoint Git lokal dibuat setelah revisi ini.
+
+### Actions / Artifacts
+- Mengeluarkan Bridge 01–04 dari jalur course aktif.
+- Mengubah dataset dari 6 modul/22 step menjadi 4 modul/18 step.
+- Menyinkronkan tiga mirror dataset.
+- Memperbarui implementation plan dan STATE.
+- Menyimpan bridge tambahan sebagai draft/reference, tidak dihapus.
+- UAT LMS dan spreadsheet belum dijalankan.
