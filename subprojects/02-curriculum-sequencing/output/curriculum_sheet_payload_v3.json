@@ -1300,11 +1300,11 @@
       2,
       "Audit Blocker (B2)",
       "hs-4-6, hs-5-1, ms-1-4, ms-3-1, hs-5-3, ms-4-4",
-      "Anomali timestamp: bookmark video berada di luar batas durasi total (misal 12:00 saat video hanya 11:24) dan trigger kuis pop-up muncul di luar konteks segmen aktif.",
-      "Melakukan audit detik demi detik dan normalisasi seluruh timestamp bookmark dan kuis pop-up agar presisi berada di dalam rentang durasi video aktif dan selaras dengan penjelasan materi.",
+      "Anomali timestamp: bookmark video berada di luar batas durasi total (misal 12:00 saat video hanya 11:24) dan trigger kuis pop-up berada di luar rentang aktif video.",
+      "Timestamp asli 100% dipertahankan tanpa diubah atau ditebak sembarangan. Anomali bookmark (hs-4-6, hs-5-1, ms-1-4, ms-3-1) dan kuis segmen (hs-5-3, ms-4-4) diamankan secara non-destruktif dengan status 'review_required', 'outOfBounds: true', dan 'manual_checkpoint' (autoplay: false) agar pemutar video tidak crash.",
       "❌ ANOMALI (Bookmark & kuis out-of-bounds)",
-      "✅ RESOLVED (100% Presisi & Terverifikasi)",
-      "Gate 3 audit-verifikasi lolos 0 anomali batas detik video; kuis muncul tepat waktu."
+      "✅ RESOLVED (Timestamp Asli Dipertahankan & Anomali Diamankan)",
+      "Gate 6 audit-verifikasi lolos: 6 anomali terbukti berstatus review_required & manual_checkpoint; pemutar video aman."
     ],
     [
       3,
