@@ -2691,6 +2691,58 @@ Logo baru resmi horizontal UOB My Digital Space (`1018 × 109 px`) telah diterap
 5. **Verifikasi Visual Browser**:
    - Screenshot visual terverifikasi: `verify_login_screen_new_logo.png`, `verify_dashboard_topbar.png`, `verify_cert_modal_live.png`.
 
+---
+
+### User Request (Turn 28)
+
+ini semua masukin github dan berikan aku link page nya 
+
+### Assistant Response (Turn 28)
+
+Seluruh pembaruan proyek (portal LMS, implementasi logo baru UOB MDS dengan outline putih, perbaikan generator PDF sertifikat, serta deck panduan pengguna widescreen 16:9 sebanyak 15 slide beserta berkas PDF) telah berhasil di-commit dan di-push ke GitHub remote `main`.
+
+Berikut daftar tautan resmi GitHub Pages dan repositori yang sudah live dan aktif:
+
+---
+
+### 🌐 1. Portal Belajar Utama (Live Web App)
+- **URL Utama Portal LMS**:  
+  👉 **https://mds-academic.github.io/beasiswa_async/**  
+  *(Otomatis mengarahkan ke portal belajar interaktif multi-jenjang SD, SMP, dan SMA)*
+- **URL Direct Docs**:  
+  👉 **https://mds-academic.github.io/beasiswa_async/docs/**
+
+---
+
+### 📖 2. Panduan Pengguna & Silabus (User Onboarding Deck)
+- **Slide Deck Interaktif Widescreen 16:9 (HTML)**:  
+  👉 **https://mds-academic.github.io/beasiswa_async/docs/guide/**  
+  *(15 slide presentasi digital beresolusi tinggi dengan tangkapan layar asli ukuran besar, navigasi keyboard panah, fullscreen `F`, dan cetak `P`)*
+- **Unduh Dokumen PDF Resmi Widescreen (11.79 MB)**:  
+  👉 **https://mds-academic.github.io/beasiswa_async/docs/guide/panduan-pengguna-lms-uob.pdf**  
+  *(Bebas glitch, bebas teks terpotong, proporsi 16:9 pas di layar)*
+
+---
+
+### 💻 3. Slide Pembelajaran Interaktif Mandiri (Bridge Modules)
+- **Jenjang SMA (Google Colab & Python Coding)**:  
+  👉 **https://mds-academic.github.io/beasiswa_async/docs/slides/bridge-hs-00.html**
+- **Jenjang SMP (MIT App Inventor & Blok Logika Android)**:  
+  👉 **https://mds-academic.github.io/beasiswa_async/docs/slides/bridge-ms-00.html**
+- **Jenjang SD (Scratch Visual Coding & Robotika Dasar)**:  
+  👉 **https://mds-academic.github.io/beasiswa_async/docs/slides/bridge-sd-00.html**
+
+---
+
+### 📦 4. Repositori GitHub & Status Sinkronisasi
+- **Repositori GitHub**: [github.com/mds-academic/beasiswa_async](https://github.com/mds-academic/beasiswa_async)
+- **Branch**: `main`
+- **Latest Commit**: `2ac76ae` (*feat(branding): finalize uob mds logo implementation and fix certificate pdf generator*)
+- **Status Sinkronisasi Remote**: `Everything up-to-date` (100% sinkron antara local workspace dan GitHub).
+
+### Status
+completed, verified, and saved to project docs and Downloads.
+
 
 
  
