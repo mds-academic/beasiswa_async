@@ -2791,12 +2791,44 @@ Seluruh perbaikan redaksi sertifikat kelulusan dan pembersihan sebutan mitra tel
 ### Status
 completed, verified, and saved to project docs and Downloads.
 
+---
 
+### User Request (Turn 30)
 
+1/ hotlinenya ke Contact Center UOB My Digital Space - +62 813-1534-4904
+2/ ini kayany aperlu di ss ulang deh dan generate pdf ulang soalnya logonya baru sama sertifikat tuh ada perbaikan 
 
- 
+### Assistant Response (Turn 30)
 
+Seluruh instruksi telah dieksekusi tuntas:
 
+1. **Pembaruan Kontak Layanan & Hotline Bantuan**:
+   - Hotline bantuan resmi kini diarahkan ke: **Contact Center UOB My Digital Space — `+62 813-1534-4904`** (terhubung langsung via WhatsApp `https://wa.me/6281315344904`).
+   - Diterapkan pada Slide 15 (Pusat Bantuan) pada deck panduan pengguna, kartu bantuan sidebar portal LMS (`docs/index.html`), serta seluruh berkas mirror subproyek (`subprojects/01-lms-platform/`).
 
+2. **Pengambilan Ulang 14 Tangkapan Layar Asli (Real Screenshots)**:
+   - Seluruh 14 tangkapan layar antarmuka telah ditangkap ulang secara otomatis menggunakan Playwright Chromium langsung dari instance portal LMS aktif (`http://localhost:8080/`):
+     - **`step_01_portal_login.png`**: Menampilkan logo baru horizontal resmi UOB My Digital Space ber-outline putih solid di atas kartu login navy.
+     - **`step_02_school_dropdown.png`**: Pencarian combobox sekolah mitra dengan logo baru.
+     - **`step_03_student_email_select.png`**: Pemilihan email siswa dengan logo baru.
+     - **`step_04_dashboard_overview.png`**: Topbar profil siswa dan area media dengan logo baru ber-outline putih.
+     - **`step_05_sidebar_navigation.png`**: Sidebar misi lengkap dengan kartu bantuan Contact Center baru (+62 813-1534-4904).
+     - **`step_06_reading_slide.png`**: Antarmuka pembaca slide interaktif dengan topbar terbaru.
+     - **`step_07_video_player.png`**: Pemutar video pintar dengan topbar terbaru.
+     - **`step_08_interactive_quiz.png`**: Modal kuis pop-up less-strict.
+     - **`step_09_quiz_feedback.png`**: Umpan balik sukses kuis & tombol lanjut materi.
+     - **`step_10_challenge_panel.png`**: Panel formulir pengumpulan Mini Project mandiri.
+     - **`step_11_certificate_unlocked.png`**: Tab sidebar kelulusan & sertifikat terbuka.
+     - **`step_12_cert_page1.png`**: Sertifikat Kelulusan resmi resolusi tinggi (2000 × 1413 px) memuat logo baru UOB MDS dan redaksi kalimat kelulusan yang telah diperbarui (*"Sertifikat ini dianugerahkan..."*, *"Telah berhasil menyelesaikan..."*, *"PT Bank UOB Indonesia · Ruangguru"*).
+     - **`step_13_cert_page2.png`**: Transkrip Akademik resmi resolusi tinggi (1414 × 2001 px) memuat logo baru dan catatan resmi kemitraan UOB dan Ruangguru tanpa sebutan pihak ketiga.
+     - **`step_14_mobile_advisory.png`**: Dialog saran perangkat laptop/komputer saat dibuka via HP.
 
+3. **Regenerasi PDF Resmi Widescreen 16:9 (15 Halaman)**:
+   - Dokumen PDF resmi [panduan-pengguna-lms-uob.pdf](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/docs/guide/panduan-pengguna-lms-uob.pdf) (11.85 MB, tepat 15 halaman widescreen 16:9) telah diekspor ulang menggunakan Playwright Chromium.
+   - Salinan otomatis diperbarui ke folder Unduhan laptop: [Panduan_Pengguna_LMS_UOB_My_Digital_Space.pdf](file:///Users/yazidhilmi/Downloads/Panduan_Pengguna_LMS_UOB_My_Digital_Space.pdf).
 
+4. **Sinkronisasi Dokumen & Remote GitHub**:
+   - Seluruh perubahan telah disinkronkan ke folder mirror `subprojects/01-lms-platform/`, di-commit ke Git lokal, dan di-push ke GitHub remote `origin/main`.
+
+### Status
+completed, verified, and saved to project docs and Downloads.

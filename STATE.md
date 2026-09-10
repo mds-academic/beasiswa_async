@@ -2,11 +2,17 @@
 
 ## Current Status
 
-- **Status**: Implementasi logo baru resmi horizontal UOB My Digital Space (`1018 × 109 px`) tuntas di seluruh portal, sertifikat, transkrip, dan deck panduan pengguna. Outline putih tajam 8-arah (`filter: drop-shadow(...)`) diterapkan pada latar navy gelap (login & topbar), serta perbaikan generator PDF sertifikat (`stepCount`) telah diverifikasi otomatis via Playwright.
+- **Status**: Seluruh 14 tangkapan layar antarmuka panduan pengguna telah ditangkap ulang dengan antarmuka terkini (logo baru horizontal UOB MDS, outline putih, redaksi sertifikat kelulusan baru, dan hotline Contact Center UOB MDS `+62 813-1534-4904`). Dokumen PDF panduan pengguna widescreen 16:9 (15 halaman) telah diekspor ulang (11.85 MB) dan disinkronkan ke repositori dan folder Unduhan.
 - **Active Focus**: Siap untuk operasional peluncuran platform dan distribusi materi panduan pengguna.
 - **Last Updated**: 2026-09-10
 
 ## Completed
+
+- **Pembaruan Hotline Contact Center & Regenerasi Tangkapan Layar & PDF Panduan (2026-09-10)**:
+  - Hotline bantuan resmi diperbarui menjadi: **Contact Center UOB My Digital Space — `+62 813-1534-4904`** (terhubung ke WhatsApp) pada Slide 15 deck panduan, kartu bantuan sidebar portal LMS (`docs/index.html`), dan mirror subproyek.
+  - Skrip `capture_guide_screenshots.py` diperbarui dan mengeksekusi penangkapan ulang seluruh 14 screenshot antarmuka (portal login, pencarian sekolah, pemilihan email, dashboard, sidebar, slide reader, video player, kuis, feedback, challenge panel, sertifikat & transkrip resolusi tinggi 2000px).
+  - Skrip `export_guide_pdf.py` mengekspor ulang berkas PDF resmi [panduan-pengguna-lms-uob.pdf](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/docs/guide/panduan-pengguna-lms-uob.pdf) (11.85 MB, 15 halaman widescreen 16:9) dan menyalinnya ke `/Users/yazidhilmi/Downloads/Panduan_Pengguna_LMS_UOB_My_Digital_Space.pdf`.
+  - Sinkronisasi mirror ke `subprojects/01-lms-platform/docs/guide/`.
 
 - **Penyempurnaan Redaksi Sertifikat Kelulusan & Pembersihan Sebutan Mitra (2026-09-10)**:
   - Teks pengantar sertifikat diperbarui: *"Sertifikat ini dianugerahkan sebagai pengakuan atas penyelesaian dan pencapaian pembelajaran kepada:"*.
