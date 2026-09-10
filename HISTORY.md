@@ -2350,4 +2350,43 @@ Menjelaskan secara transparan dan detail mengenai kelengkapan isi transkrip nila
    - `/Users/yazidhilmi/Downloads/Sertifikat_UOB_MDS_SMA_Admin_Permata.pdf` (1.5 MB)
    - `/Users/yazidhilmi/Downloads/Sertifikat_UOB_MDS_SMA_Admin_Permata_SMA_UOB.pdf` (1.5 MB)
 
+---
+
+### User Request (Turn 21)
+
+ini yang tulisan priatinjaunya kenapa ikut ter cetakke pdf yah?
+
+dan juga kayanya ini dibuat dia full deh length nya pdf nya sampe bawah ada yang di iniin di lebarin marginnya jadi ngga nanggung
+
+### Assistant Response & Action Record (Turn 21)
+
+Menyelesaikan 2 perbaikan visual kritis pada berkas ekspor PDF sertifikat & transkrip UOB MDS:
+
+1. **Pembersihan Total Teks / Watermark "PRATINJAU" pada Hasil Cetak/PDF**:
+   - **Penyebab**: Saat admin melihat modal pratinjau sebelum siswa tuntas 100%, elemen watermark `.cert-admin-watermark` dan `.transcript-admin-watermark` memiliki `style="display: block"`, serta status diisi string `"PRATINJAU ADMIN"`. Ketika dikloning untuk ekspor PDF, elemen ini terbawa ikut tercetak.
+   - **Solusi**:
+     - Di `exportCertificateToPdf()`, `clone1.querySelector('#cert-admin-watermark')` dan `clone2.querySelector('#transcript-admin-watermark')` dihapus secara total (`.remove()`).
+     - Teks status transkrip pada PDF klon disterilkan dari kata "PRATINJAU", sehingga selalu mencerminkan status resmi kelulusan (contoh: `100% · LULUS DENGAN PUJIAN`).
+     - Di aturan `@media print`, disematkan rule `.cert-admin-watermark, .transcript-admin-watermark { display: none !important; }`.
+
+2. **Perombakan Layout Halaman 2 Menjadi Full-Length Menjangkau Batas Bawah A4 ("Tidak Nanggung")**:
+   - **Penyebab Gap Bawah**: Sebelumnya kontainer `.transcript-frame` hanya membungkus konten setinggi ~987px tanpa deklarasi tinggi penuh, sehingga menyisakan jarak kosong putih ~186px di bagian bawah halaman portrait A4 (1123px).
+   - **Solusi**:
+     - `.sandbox-surface-page-2` diatur dengan padding tepi seragam `16px`.
+     - `.sandbox-surface-page-2 .transcript-frame` dikonfigurasi setinggi `100%` (`min-height: calc(1123px - 32px)`) menggunakan flexbox vertikal `display: flex; flex-direction: column; justify-content: space-between;`.
+     - Border biru navy resmi membentang penuh dari atas hingga menyentuh margin bawah 20px (simetris dengan margin atas 22px).
+     - Margin dan padding antar section (Header, Metadata Grid, Tabel 36 Baris, Matriks 4 Kompetensi, dan Footer TTD) dilebarkan secara proporsional dan elegan, menghilangkan kekosongan yang terasa nanggung.
+     - Untuk jenjang SD yang hanya memuat 18 modul, padding tabel disesuaikan otomatis menjadi `5.5px 6px` agar tetap penuh dan proporsional.
+
+3. **Verifikasi Visual & Pembaruan File Pengguna**:
+   - Pengujian render visual telah diverifikasi:
+     - `test_36_page_1.png`: Bebas watermark, bingkai emas & segel resmi bersih.
+     - `test_36_page_2.png`: Bebas watermark, status bersih `100% · LULUS DENGAN PUJIAN`, frame membentang penuh (margin atas 22px, margin bawah 20px), memuat 36 baris modul, 4 matriks kompetensi, dan tanda tangan resmi.
+   - Berkas PDF di folder Downloads pengguna telah ditimpa dengan versi sempurna:
+     - `/Users/yazidhilmi/Downloads/Sertifikat_UOB_MDS_SMA_Admin_Permata.pdf` (1.3 MB)
+     - `/Users/yazidhilmi/Downloads/Sertifikat_UOB_MDS_SMA_Admin_Permata_SMA_UOB.pdf` (1.3 MB)
+     - `/Users/yazidhilmi/Downloads/Sertifikat_UOB_MDS_SMA_Admin_Permata_SMA_UOB (1).pdf` (1.3 MB)
+   - Kode sumber `subprojects/01-lms-platform/src/` dan `docs/` telah disinkronkan dan di-commit (`18b5b40`), lalu di-push ke GitHub remote `main`.
+
+
 
