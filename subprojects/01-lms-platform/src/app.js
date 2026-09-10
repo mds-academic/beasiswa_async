@@ -3261,6 +3261,10 @@ async function exportCertificateToPdf() {
     clone1.style.height = '100%';
     clone1.style.maxWidth = 'none';
 
+    // Hapus total seluruh watermark pratinjau admin pada dokumen cetak / ekspor PDF
+    const w1 = clone1.querySelector('#cert-admin-watermark');
+    if (w1) w1.remove();
+
     // Sematkan Base64 Logo untuk menjamin 0% risiko CORS dan 100% offline-ready
     const c1LogoRg = clone1.querySelector('#cert-logo-rg');
     if (c1LogoRg) c1LogoRg.src = LOGO_RUANGGURU;
@@ -3297,6 +3301,93 @@ async function exportCertificateToPdf() {
     const clone2 = page2Orig.cloneNode(true);
     clone2.style.width = '100%';
     clone2.style.maxWidth = 'none';
+
+    // Hapus total seluruh watermark pratinjau admin pada dokumen cetak / ekspor PDF
+    const w2 = clone2.querySelector('#transcript-admin-watermark');
+    if (w2) w2.remove();
+
+    // Pastikan status di transkrip bersih dari teks "PRATINJAU ADMIN"
+    const statusEl = clone2.querySelector('#transcript-status');
+    if (statusEl) {
+      statusEl.textContent = `${eligibility.accuracy || 100}% · ${(eligibility.accuracy || 100) >= 90 ? 'LULUS DENGAN PUJIAN' : 'LULUS'}`;
+    }
+
+    // Injeksi style presisi full-length agar frame dan seluruh konten Halaman 2 menyentuh batas bawah A4 tanpa nanggung
+    const compStyle = document.createElement('style');
+    compStyle.innerHTML = `
+      .sandbox-surface-page-2 { padding: 16px !important; }
+      .sandbox-surface-page-2 .transcript-frame {
+        height: 100% !important;
+        min-height: calc(1123px - 32px) !important;
+        max-height: calc(1123px - 32px) !important;
+        box-sizing: border-box !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+        padding: 16px 20px !important;
+        border: 3.5px solid #092764 !important;
+        border-radius: 6px !important;
+        background: #ffffff !important;
+      }
+      .sandbox-surface-page-2 .transcript-header {
+        margin-bottom: 8px !important;
+        padding-bottom: 8px !important;
+      }
+      .sandbox-surface-page-2 .transcript-logo-rg { height: 25px !important; }
+      .sandbox-surface-page-2 .transcript-logo-uob { height: 28px !important; }
+      .sandbox-surface-page-2 .transcript-badge { font-size: 0.62rem !important; padding: 2px 8px !important; margin-bottom: 2px !important; }
+      .sandbox-surface-page-2 .transcript-title { font-size: 1.05rem !important; margin: 0 !important; }
+      .sandbox-surface-page-2 .transcript-subtitle { font-size: 0.68rem !important; }
+      .sandbox-surface-page-2 .transcript-meta-grid {
+        padding: 6px 12px !important;
+        gap: 8px !important;
+        margin-bottom: 8px !important;
+      }
+      .sandbox-surface-page-2 .transcript-meta-item .meta-label { font-size: 0.60rem !important; margin-bottom: 2px !important; }
+      .sandbox-surface-page-2 .transcript-meta-item strong { font-size: 0.78rem !important; }
+      .sandbox-surface-page-2 .transcript-table-container {
+        margin-bottom: 8px !important;
+        border: 1px solid #e2e8f0 !important;
+        border-radius: 6px !important;
+        flex: 1 1 auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+      }
+      .sandbox-surface-page-2 .transcript-table {
+        height: 100% !important;
+      }
+      .sandbox-surface-page-2 .transcript-table th {
+        padding: ${stepCount <= 18 ? '5px 6px' : '3px 6px'} !important;
+        font-size: 0.66rem !important;
+      }
+      .sandbox-surface-page-2 .transcript-table td {
+        padding: ${stepCount <= 18 ? '5.5px 6px' : '1.8px 6px'} !important;
+        font-size: ${stepCount <= 18 ? '0.66rem' : '0.61rem'} !important;
+        line-height: 1.15 !important;
+      }
+      .sandbox-surface-page-2 .transcript-badge-done,
+      .sandbox-surface-page-2 .transcript-badge-zero,
+      .sandbox-surface-page-2 .transcript-badge-pending {
+        padding: 1px 5px !important;
+        font-size: 0.58rem !important;
+      }
+      .sandbox-surface-page-2 .transcript-competencies {
+        padding: 8px 12px !important;
+        margin-bottom: 8px !important;
+      }
+      .sandbox-surface-page-2 .competency-heading { font-size: 0.72rem !important; margin-bottom: 5px !important; }
+      .sandbox-surface-page-2 .competency-box { padding: 5px 8px !important; }
+      .sandbox-surface-page-2 .competency-box strong { font-size: 0.68rem !important; margin-bottom: 2px !important; }
+      .sandbox-surface-page-2 .competency-box span { font-size: 0.59rem !important; line-height: 1.25 !important; }
+      .sandbox-surface-page-2 .transcript-footer {
+        padding-top: 8px !important;
+        border-top: 1.5px solid #092764 !important;
+      }
+      .sandbox-surface-page-2 .transcript-note { font-size: 0.60rem !important; line-height: 1.3 !important; }
+      .sandbox-surface-page-2 .cert-signatory-name { font-size: 0.76rem !important; }
+      .sandbox-surface-page-2 .cert-signatory-role { font-size: 0.62rem !important; }
+    `;
+    clone2.appendChild(compStyle);
 
     const c2LogoRg = clone2.querySelector('#transcript-logo-rg');
     if (c2LogoRg) c2LogoRg.src = LOGO_RUANGGURU;
@@ -3409,5 +3500,6 @@ window.openCertificateModal = openCertificateModal;
 window.exportCertificateToPdf = exportCertificateToPdf;
 window.recomputeUnlockedStepIndex = recomputeUnlockedStepIndex;
 window.extractQuizzesFromStep = extractQuizzesFromStep;
+window.renderCertificateData = renderCertificateData;
 
 
