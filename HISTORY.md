@@ -2660,6 +2660,38 @@ Sesuai arahanmu bahwa dokumen ini diperuntukkan untuk dibaca di layar (*digital 
 ### Status
 completed, verified, and saved to project docs and Downloads.
 
+---
+
+### User Request (Turn 27)
+
+EH AD ALERT LOGO BARU UOB MDS nyaa 
+
+https://roboguru-forum-cdn.ruangguru.com//image/4a9cc902-8ed0-42e2-a844-92dd46ff017c.png
+
+diimplement dong ke /Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms
+
+oiya ini dia waran gelap jangan lupa kalo pake bg gelap tambahin outline putih gitu kali yah 
+
+### Assistant Response & Action Record (Turn 27) — 2026-09-10T10:55:00+07:00
+
+Logo baru resmi horizontal UOB My Digital Space (`1018 × 109 px`) telah diterapkan di seluruh platform `projects/uob-async-lms`:
+
+1. **Aset Gambar & Data URI Base64**:
+   - Berkas logo baru diunduh dan disimpan ke `subprojects/01-lms-platform/src/assets/logos/uob-mds-logo.png` dan `docs/assets/logos/uob-mds-logo.png`.
+   - String Base64 data URI dibuat dan diperbarui di `subprojects/01-lms-platform/src/assets/logos/logo-assets.js` dan `docs/assets/logos/logo-assets.js`.
+2. **Efek Outline Putih Solid 8-Arah pada Latar Belakang Gelap**:
+   - Sesuai arahan, pada kartu login dan topbar dashboard utama (`#092764`), logo monokromatik biru UOB `#077bbf` diberi efek outline putih tajam via 8-way `drop-shadow`:
+     `filter: drop-shadow(1px 0 0 #fff) drop-shadow(-1px 0 0 #fff) drop-shadow(0 1px 0 #fff) drop-shadow(0 -1px 0 #fff) drop-shadow(1px 1px 0 #fff) drop-shadow(-1px -1px 0 #fff) drop-shadow(1px -1px 0 #fff) drop-shadow(-1px 1px 0 #fff);`
+   - Menghasilkan efek sticker cutout yang kontras tinggi dan sangat tajam tanpa blur pada layar Retina.
+3. **Penyajian Alami pada Latar Belakang Terang**:
+   - Pada sertifikat digital (Halaman 1) dan transkrip nilai (Halaman 2), serta badge putih cover/topbar deck panduan, logo tampil dalam warna biru UOB asli dengan `filter: none`.
+4. **Perbaikan Generator PDF Sertifikat (`stepCount`)**:
+   - Memperbaiki `ReferenceError: stepCount is not defined` di `exportCertificateToPdf()` pada `src/app.js` dan `docs/app.js`.
+   - Pengujian otomatis via Playwright (`test_certificate_pdf_export.py`) mencatat 8/8 tes lulus dan berhasil mengekspor PDF sertifikat 2 halaman multi-orientasi (Landscape + Portrait) ke folder Downloads.
+5. **Verifikasi Visual Browser**:
+   - Screenshot visual terverifikasi: `verify_login_screen_new_logo.png`, `verify_dashboard_topbar.png`, `verify_cert_modal_live.png`.
+
+
 
  
 

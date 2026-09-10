@@ -2,11 +2,21 @@
 
 ## Current Status
 
-- **Status**: Deck presentasi interaktif dan PDF resmi "Panduan Lengkap Pengguna & Silabus Abridged LMS UOB My Digital Space" berhasil dirombak total ke format **Digital Widescreen Presentation (16:9 · 1920px × 1080px)** sebanyak **15 slide/halaman presisi** (11.79 MB). Menjawab tuntas seluruh kendala gambar kekecilan, glitch box kuning Chromium print, dan konten terpotong. Screenshot disajikan dalam ukuran besar (>1000px width, 640px height) dengan teks 100% terbaca tajam, pemisahan Dashboard & Sidebar ke slide mandiri, sertifikat/transkrip ultra-high-res 2000px, dan sinkronisasi penuh ke portal LMS.
-- **Active Focus**: Persiapan pengujian integrasi akhir, sinkronisasi repositori, dan operasional peluncuran.
+- **Status**: Implementasi logo baru resmi horizontal UOB My Digital Space (`1018 × 109 px`) tuntas di seluruh portal, sertifikat, transkrip, dan deck panduan pengguna. Outline putih tajam 8-arah (`filter: drop-shadow(...)`) diterapkan pada latar navy gelap (login & topbar), serta perbaikan generator PDF sertifikat (`stepCount`) telah diverifikasi otomatis via Playwright.
+- **Active Focus**: Siap untuk operasional peluncuran platform dan distribusi materi panduan pengguna.
 - **Last Updated**: 2026-09-10
 
 ## Completed
+
+- **Implementasi Logo Baru Horizontal UOB My Digital Space & Outline Putih Latar Gelap (2026-09-10)**:
+  - Berkas logo baru diunduh dan disimpan ke `subprojects/01-lms-platform/src/assets/logos/uob-mds-logo.png` dan `docs/assets/logos/uob-mds-logo.png`.
+  - Base64 data URI di-generate dan diperbarui di `subprojects/01-lms-platform/src/assets/logos/logo-assets.js` dan `docs/assets/logos/logo-assets.js`.
+  - Styling outline solid putih 8-arah diterapkan pada kartu login dan topbar dashboard utama (`filter: drop-shadow(...)`) untuk kontras tinggi di atas latar navy `#092764`.
+  - Styling alami tanpa outline diterapkan pada sertifikat kelulusan (Halaman 1) dan transkrip nilai (Halaman 2) dengan latar putih/gading.
+  - Perbaikan bug `ReferenceError: stepCount is not defined` di `exportCertificateToPdf()` pada `src/app.js` dan `docs/app.js`.
+  - Ekspor PDF sertifikat 2 halaman multi-orientasi diuji dan terverifikasi otomatis via Playwright (`test_certificate_pdf_export.py`, 8/8 test lulus).
+  - Deck panduan pengguna dan PDF Widescreen 16:9 disinkronkan dengan logo baru.
+
 
 - **Overhaul Deck Widescreen 16:9 (1920x1080) & Resolusi Glitch/Cutoff (2026-09-10)**:
   - Pembaruan Rencana Implementasi: [06-implementation-plan-user-guide-deck-pdf.md](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/planning/06-implementation-plan-user-guide-deck-pdf.md).

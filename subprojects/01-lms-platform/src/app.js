@@ -3313,6 +3313,7 @@ async function exportCertificateToPdf() {
     }
 
     // Injeksi style presisi full-length agar frame dan seluruh konten Halaman 2 menyentuh batas bawah A4 tanpa nanggung
+    const stepCount = (state.courseData && state.courseData.length) || 36;
     const compStyle = document.createElement('style');
     compStyle.innerHTML = `
       .sandbox-surface-page-2 { padding: 16px !important; }
