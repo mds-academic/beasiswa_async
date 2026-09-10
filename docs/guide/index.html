@@ -1,0 +1,1573 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panduan Pengguna & Navigasi LMS — UOB My Digital Space</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-dark: #061122;
+      --bg-card: rgba(14, 27, 49, 0.92);
+      --bg-card-border: rgba(93, 182, 255, 0.25);
+      --accent-blue: #3a86ff;
+      --accent-gold: #ffbe0b;
+      --accent-green: #06d6a0;
+      --accent-cyan: #4cc9f0;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-light: #cbd5e1;
+      --font-heading: 'Plus Jakarta Sans', system-ui, sans-serif;
+      --font-body: 'Inter', system-ui, sans-serif;
+      --font-code: 'Fira Code', monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      background-image: 
+        radial-gradient(circle at 12% 18%, rgba(58, 134, 255, 0.15) 0%, transparent 40%),
+        radial-gradient(circle at 88% 82%, rgba(255, 190, 11, 0.12) 0%, transparent 35%),
+        radial-gradient(circle at 50% 50%, rgba(6, 214, 160, 0.08) 0%, transparent 50%);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Fixed Deck Topbar */
+    .deck-topbar {
+      width: 100%;
+      height: 60px;
+      background: rgba(6, 17, 34, 0.88);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--bg-card-border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+    }
+
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-logo-pill {
+      background: linear-gradient(135deg, #1e3a8a, #0284c7);
+      color: #fff;
+      font-family: var(--font-heading);
+      font-weight: 800;
+      font-size: 0.85rem;
+      padding: 5px 12px;
+      border-radius: 99px;
+      letter-spacing: 0.05em;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .brand-title {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--text-main);
+    }
+
+    .brand-title span {
+      color: var(--accent-gold);
+    }
+
+    .deck-topbar-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-topbar {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid var(--bg-card-border);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 7px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .btn-topbar:hover {
+      background: rgba(58, 134, 255, 0.2);
+      border-color: var(--accent-blue);
+      color: #fff;
+    }
+
+    .btn-topbar.btn-primary {
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      border-color: #3b82f6;
+      box-shadow: 0 2px 8px rgba(37, 99, 235, 0.4);
+    }
+
+    .btn-topbar.btn-primary:hover {
+      background: linear-gradient(135deg, #3b82f6, #2563eb);
+      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.6);
+    }
+
+    /* Deck Slides Container */
+    .deck-container {
+      width: 100%;
+      max-width: 1440px;
+      padding: 30px 24px 100px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    /* Single Slide Card (16:9 ratio) */
+    .deck-slide {
+      background: var(--bg-card);
+      border: 1px solid var(--bg-card-border);
+      border-radius: 24px;
+      padding: 38px 44px;
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(16px);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 720px;
+      page-break-after: always;
+      break-after: page;
+      overflow: hidden;
+    }
+
+    .deck-slide::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--accent-blue), var(--accent-cyan), var(--accent-gold));
+    }
+
+    /* Slide Header */
+    .slide-header {
+      margin-bottom: 22px;
+    }
+
+    .slide-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-heading);
+      font-size: 0.76rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent-gold);
+      background: rgba(255, 190, 11, 0.12);
+      border: 1px solid rgba(255, 190, 11, 0.3);
+      padding: 4px 12px;
+      border-radius: 99px;
+      margin-bottom: 10px;
+    }
+
+    .slide-title {
+      font-family: var(--font-heading);
+      font-size: 1.95rem;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    .slide-subtitle {
+      font-size: 0.98rem;
+      color: var(--text-muted);
+      margin-top: 6px;
+      line-height: 1.45;
+    }
+
+    /* Slide Body (Split Layout) */
+    .slide-body {
+      display: grid;
+      grid-template-columns: 1.05fr 1.35fr;
+      gap: 32px;
+      align-items: center;
+      flex: 1;
+      margin: 10px 0 20px;
+    }
+
+    /* Left Pane: Instructions & Callouts */
+    .slide-text-pane {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .instruction-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .instruction-item {
+      display: flex;
+      gap: 14px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 14px 16px;
+      border-radius: 14px;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .instruction-item:hover {
+      border-color: rgba(93, 182, 255, 0.4);
+      background: rgba(58, 134, 255, 0.05);
+      transform: translateX(4px);
+    }
+
+    .item-badge {
+      flex: 0 0 28px;
+      height: 28px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, var(--accent-blue), #1e40af);
+      color: #fff;
+      font-family: var(--font-heading);
+      font-weight: 800;
+      font-size: 0.85rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .item-content h4 {
+      font-family: var(--font-heading);
+      font-size: 0.94rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+
+    .item-content p {
+      font-size: 0.84rem;
+      color: var(--text-light);
+      line-height: 1.45;
+    }
+
+    .item-content p strong {
+      color: var(--accent-gold);
+    }
+
+    .callout-box {
+      background: linear-gradient(135deg, rgba(6, 214, 160, 0.12), rgba(6, 214, 160, 0.04));
+      border-left: 4px solid var(--accent-green);
+      border-radius: 0 12px 12px 0;
+      padding: 12px 16px;
+      font-size: 0.84rem;
+      color: #d1fae5;
+      line-height: 1.45;
+    }
+
+    .callout-box strong {
+      color: #34d399;
+      font-weight: 700;
+      display: block;
+      margin-bottom: 2px;
+      font-family: var(--font-heading);
+    }
+
+    /* Right Pane: Screenshot Media Frame */
+    .slide-media-pane {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .screenshot-frame {
+      width: 100%;
+      background: #020813;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .frame-bar {
+      height: 28px;
+      background: #0b1526;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      align-items: center;
+      padding: 0 12px;
+      gap: 6px;
+    }
+
+    .frame-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #334155;
+    }
+    .frame-dot.red { background: #ef4444; }
+    .frame-dot.yellow { background: #f59e0b; }
+    .frame-dot.green { background: #10b981; }
+
+    .frame-title {
+      font-family: var(--font-code);
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      margin-left: 8px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .screenshot-img {
+      width: 100%;
+      height: auto;
+      max-height: 480px;
+      object-fit: contain;
+      display: block;
+      background: #061122;
+    }
+
+    .frame-caption {
+      font-size: 0.76rem;
+      color: var(--text-muted);
+      text-align: center;
+      padding: 6px 12px;
+      background: rgba(0, 0, 0, 0.4);
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    /* Multi Screenshot Grid */
+    .screenshot-dual-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      width: 100%;
+    }
+
+    .screenshot-dual-grid .screenshot-img {
+      max-height: 380px;
+    }
+
+    /* Slide Footer */
+    .slide-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 14px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .footer-tags {
+      display: flex;
+      gap: 8px;
+    }
+
+    .tag-pill {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 3px 9px;
+      border-radius: 6px;
+      font-size: 0.74rem;
+      font-weight: 600;
+    }
+
+    .slide-number-badge {
+      font-family: var(--font-heading);
+      font-weight: 800;
+      color: var(--accent-gold);
+    }
+
+    /* Cover Slide Specifics */
+    .slide-cover {
+      text-align: center;
+      justify-content: center;
+      gap: 28px;
+      padding: 60px 48px;
+      min-height: 720px;
+    }
+
+    .cover-badge-row {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .cover-main-title {
+      font-family: var(--font-heading);
+      font-size: 3.2rem;
+      font-weight: 900;
+      line-height: 1.15;
+      background: linear-gradient(135deg, #ffffff 40%, #93c5fd 80%, #ffbe0b 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    .cover-description {
+      font-size: 1.22rem;
+      color: var(--text-light);
+      max-width: 820px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .cover-features-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      max-width: 1040px;
+      margin: 16px auto 0;
+    }
+
+    .cover-feature-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 18px 16px;
+      text-align: left;
+    }
+
+    .cover-feature-icon {
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+    }
+
+    .cover-feature-card h4 {
+      font-family: var(--font-heading);
+      font-size: 0.95rem;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+
+    .cover-feature-card p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* Roadmap Grid (Slide 2) */
+    .roadmap-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 18px;
+      width: 100%;
+      margin: 12px 0;
+    }
+
+    .roadmap-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 20px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .roadmap-step-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-heading);
+      font-size: 0.72rem;
+      font-weight: 800;
+      color: var(--accent-gold);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .roadmap-card h3 {
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .roadmap-card p {
+      font-size: 0.82rem;
+      color: var(--text-light);
+      line-height: 1.45;
+    }
+
+    /* Fixed Bottom Presentation Controller */
+    .deck-controls {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(6, 17, 34, 0.94);
+      border: 1px solid var(--bg-card-border);
+      border-radius: 99px;
+      padding: 8px 18px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      backdrop-filter: blur(20px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+      z-index: 100;
+    }
+
+    .control-btn {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: var(--text-main);
+      padding: 6px 14px;
+      border-radius: 99px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s;
+    }
+
+    .control-btn:hover {
+      background: var(--accent-blue);
+      color: #fff;
+      border-color: var(--accent-blue);
+    }
+
+    .control-counter {
+      font-family: var(--font-heading);
+      font-size: 0.85rem;
+      font-weight: 800;
+      color: var(--text-light);
+      min-width: 80px;
+      text-align: center;
+    }
+
+    .slide-select {
+      background: #0b172a;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #fff;
+      font-size: 0.8rem;
+      padding: 5px 10px;
+      border-radius: 8px;
+      outline: none;
+      cursor: pointer;
+    }
+
+    /* -------------------------------------------------------------
+       PRINT STYLES FOR PDF EXPORT (A4 LANDSCAPE EXACT)
+       ------------------------------------------------------------- */
+    @page {
+      size: 297mm 210mm;
+      margin: 0;
+    }
+
+    @media print {
+      * {
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        box-shadow: none !important;
+      }
+
+      html, body {
+        display: block !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: visible !important;
+        background: #061122 !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+
+      .deck-topbar,
+      .deck-controls {
+        display: none !important;
+      }
+
+      .deck-container {
+        display: block !important;
+        width: 100% !important;
+        max-width: none !important;
+        height: auto !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        gap: 0 !important;
+      }
+
+      .deck-slide {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+        width: 297mm !important;
+        height: 210mm !important;
+        max-height: 210mm !important;
+        border-radius: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
+        padding: 10mm 15mm !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+        overflow: hidden !important;
+        position: relative !important;
+        page-break-after: avoid !important;
+        break-after: avoid !important;
+      }
+
+      .deck-slide + .deck-slide {
+        page-break-before: always !important;
+        break-before: page !important;
+      }
+
+      .slide-header {
+        margin-bottom: 3mm !important;
+      }
+
+      .slide-body {
+        margin: 2mm 0 4mm !important;
+        gap: 16px !important;
+      }
+
+      .instruction-list {
+        gap: 6px !important;
+      }
+
+      .instruction-item {
+        padding: 8px 12px !important;
+      }
+
+      .slide-cover {
+        height: 210mm !important;
+        max-height: 210mm !important;
+        padding: 14mm 18mm !important;
+      }
+
+      .screenshot-img {
+        max-height: 96mm !important;
+      }
+
+      .screenshot-dual-grid .screenshot-img {
+        max-height: 88mm !important;
+      }
+
+      .cover-main-title {
+        font-size: 2.3rem !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Topbar Header -->
+  <header class="deck-topbar">
+    <div class="brand-group">
+      <span class="brand-logo-pill">UOB MY DIGITAL SPACE</span>
+      <h1 class="brand-title">Panduan Pengguna & Navigasi <span>Platform LMS</span></h1>
+    </div>
+    <div class="deck-topbar-actions">
+      <button class="btn-topbar" id="btn-fullscreen" onclick="toggleFullscreen()">⛶ Layar Penuh</button>
+      <button class="btn-topbar btn-primary" id="btn-print-pdf" onclick="window.print()">📥 Cetak / Simpan PDF</button>
+    </div>
+  </header>
+
+  <!-- Presentation Slides Container -->
+  <div class="deck-container">
+
+    <!-- ========================================================= -->
+    <!-- SLIDE 1: COVER -->
+    <!-- ========================================================= -->
+    <section class="deck-slide slide-cover" id="slide-1">
+      <div class="cover-badge-row">
+        <span class="slide-eyebrow">🌟 PANDUAN PENGGUNA RESMI LMS ASYNCHRONOUS</span>
+      </div>
+
+      <h1 class="cover-main-title">UOB My Digital Space</h1>
+      <p class="cover-description">
+        Panduan langkah demi langkah menggunakan platform pembelajaran asinkronus (LMS): cara membuka portal, mencari sekolah mitra & email siswa, mempelajari modul video/slide, menjawab kuis interaktif, hingga mengunduh sertifikat kelulusan resmi.
+      </p>
+
+      <div class="cover-features-grid">
+        <div class="cover-feature-card">
+          <div class="cover-feature-icon">🌐</div>
+          <h4>Single Portal</h4>
+          <p>Satu alamat web untuk jenjang SD, SMP, dan SMA dengan deteksi otomatis.</p>
+        </div>
+        <div class="cover-feature-card">
+          <div class="cover-feature-icon">⏱</div>
+          <h4>Less-Strict Quiz</h4>
+          <p>Kuis interaktif fleksibel, bisa ditunda atau rewatch 30 detik sebelum jawab.</p>
+        </div>
+        <div class="cover-feature-card">
+          <div class="cover-feature-icon">🔒</div>
+          <h4>Progress Gate</h4>
+          <p>Materi terkunci rapi bertahap untuk menjaga integritas belajar siswa.</p>
+        </div>
+        <div class="cover-feature-card">
+          <div class="cover-feature-icon">🎓</div>
+          <h4>Sertifikat 2 Halaman</h4>
+          <p>Sertifikat resmi stempel emas timbul & transkrip nilai full-length A4.</p>
+        </div>
+      </div>
+
+      <div class="slide-footer">
+        <div class="footer-tags">
+          <span class="tag-pill">Ruangguru Coding × UOB CSR</span>
+          <span class="tag-pill">Asynchronous Learning Track</span>
+          <span class="tag-pill">Edisi 2026</span>
+        </div>
+        <span class="slide-number-badge">Halaman 1 / 12</span>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SLIDE 2: ROADMAP (STUDENT JOURNEY) -->
+    <!-- ========================================================= -->
+    <section class="deck-slide" id="slide-2">
+      <div class="slide-header">
+        <span class="slide-eyebrow">🗺 PETA ALUR BELAJAR SISWA</span>
+        <h2 class="slide-title">6 Tahap Sukses Menyelesaikan Misi Coding</h2>
+        <p class="slide-subtitle">Gambaran perjalanan belajar siswa dari hari pertama masuk portal hingga klaim sertifikat.</p>
+      </div>
+
+      <div class="roadmap-grid">
+        <div class="roadmap-card">
+          <span class="roadmap-step-pill">Tahap 01</span>
+          <h3>Akses & Pilih Sekolah</h3>
+          <p>Buka portal web di browser. Ketik nama sekolah di combobox pencarian; sistem otomatis mendeteksi jenjang (SD / SMP / SMA).</p>
+        </div>
+        <div class="roadmap-card">
+          <span class="roadmap-step-pill">Tahap 02</span>
+          <h3>Pilih Email Siswa</h3>
+          <p>Ketik nama atau email siswa terdaftar. Data nama siswa otomatis terisi dari database resmi sekolah mitra.</p>
+        </div>
+        <div class="roadmap-card">
+          <span class="roadmap-step-pill">Tahap 03</span>
+          <h3>Jelajahi Modul Belajar</h3>
+          <p>Pahami struktur sidebar navigasi misi: materi berjalan (▶), materi selesai (✓), dan materi terkunci gembok (🔒).</p>
+        </div>
+        <div class="roadmap-card">
+          <span class="roadmap-step-pill">Tahap 04</span>
+          <h3>Pelajari Slide & Video</h3>
+          <p>Simak slide fondasi bacaan untuk pemula mutlak atau tonton video tutorial koding kurasi YouTube dengan bookmark topik.</p>
+        </div>
+        <div class="roadmap-card">
+          <span class="roadmap-step-pill">Tahap 05</span>
+          <h3>Kuis & Tantangan Praktik</h3>
+          <p>Jawab pop-up kuis di setiap video. Kuis yang tuntas akan membuka tombol gembok "Materi Selanjutnya" secara otomatis.</p>
+        </div>
+        <div class="roadmap-card">
+          <span class="roadmap-step-pill">Tahap 06</span>
+          <h3>Klaim Sertifikat Resmi</h3>
+          <p>Setelah progres 100%, tab Sertifikat & Rekap Nilai di sidebar terbuka. Unduh dokumen resmi 2 halaman PDF A4!</p>
+        </div>
+      </div>
+
+      <div class="slide-footer">
+        <div class="footer-tags">
+          <span class="tag-pill">Student Journey</span>
+          <span class="tag-pill">Self-Paced Learning</span>
+        </div>
+        <span class="slide-number-badge">Halaman 2 / 12</span>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SLIDE 3: LANGKAH 1 — BUKA PORTAL & CARI SEKOLAH -->
+    <!-- ========================================================= -->
+    <section class="deck-slide" id="slide-3">
+      <div class="slide-header">
+        <span class="slide-eyebrow">LANGKAH 01 · AKSES & SEKOLAH</span>
+        <h2 class="slide-title">Membuka Portal & Mencari Sekolah Mitra</h2>
+        <p class="slide-subtitle">Satu pintu masuk (Single Portal) cerdas untuk seluruh peserta beasiswa.</p>
+      </div>
+
+      <div class="slide-body">
+        <div class="slide-text-pane">
+          <ul class="instruction-list">
+            <li class="instruction-item">
+              <span class="item-badge">1</span>
+              <div class="item-content">
+                <h4>Buka URL Portal di Browser</h4>
+                <p>Akses alamat resmi LMS menggunakan browser modern (disarankan Google Chrome atau Microsoft Edge).</p>
+              </div>
+            </li>
+            <li class="instruction-item">
+              <span class="item-badge">2</span>
+              <div class="item-content">
+                <h4>Ketik Nama Sekolah di Kolom Pencarian</h4>
+                <p>Ketik 2–3 huruf kata kunci nama sekolah (contoh: <strong>"andalus"</strong>, <strong>"negeri 20"</strong>, atau <strong>"khadijah"</strong>).</p>
+              </div>
+            </li>
+            <li class="instruction-item">
+              <span class="item-badge">3</span>
+              <div class="item-content">
+                <h4>Pilih dari Dropdown Rekomendasi</h4>
+                <p>Klik nama sekolah yang muncul. Sistem akan otomatis mendeteksi jenjang sekolah (SD, SMP, atau SMA) dan menyiapkan kurikulum koding yang relevan.</p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="callout-box">
+            <strong>💡 Tips Praktis:</strong>
+            Jika nama sekolah belum muncul, pastikan ejaan sesuai nama resmi di yayasan/dinas atau ketik kata unik sekolahmu.
+          </div>
+        </div>
+
+        <div class="slide-media-pane">
+          <div class="screenshot-frame">
+            <div class="frame-bar">
+              <div class="frame-dot red"></div>
+              <div class="frame-dot yellow"></div>
+              <div class="frame-dot green"></div>
+              <span class="frame-title">LMS UOB — Pencarian Sekolah Mitra</span>
+            </div>
+            <img src="assets/step_02_school_dropdown.png" alt="Pencarian Sekolah" class="screenshot-img" />
+            <div class="frame-caption">Tampilan combobox cerdas: mengetik "andalus" memunculkan nama sekolah & badge jenjang</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide-footer">
+        <div class="footer-tags">
+          <span class="tag-pill">Portal Login</span>
+          <span class="tag-pill">Auto-Detect Level</span>
+        </div>
+        <span class="slide-number-badge">Halaman 3 / 12</span>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SLIDE 4: LANGKAH 2 — PILIH EMAIL & NAMA SISWA -->
+    <!-- ========================================================= -->
+    <section class="deck-slide" id="slide-4">
+      <div class="slide-header">
+        <span class="slide-eyebrow">LANGKAH 02 · IDENTITAS SISWA</span>
+        <h2 class="slide-title">Memasukkan Email Siswa & Mulai Belajar</h2>
+        <p class="slide-subtitle">Autentikasi instan tanpa password rumit bagi siswa peserta beasiswa.</p>
+      </div>
+
+      <div class="slide-body">
+        <div class="slide-text-pane">
+          <ul class="instruction-list">
+            <li class="instruction-item">
+              <span class="item-badge">1</span>
+              <div class="item-content">
+                <h4>Klik Kolom Email Siswa</h4>
+                <p>Setelah sekolah dipilih, kolom Email Siswa yang tadinya terkunci akan terbuka dan siap diisi.</p>
+              </div>
+            </li>
+            <li class="instruction-item">
+              <span class="item-badge">2</span>
+              <div class="item-content">
+                <h4>Ketik Nama Depan atau Email Terdaftar</h4>
+                <p>Ketik awalan email atau nama siswa (misal: <strong>"raffa"</strong>). Dropdown akan menampilkan siswa terdaftar di sekolah tersebut.</p>
+              </div>
+            </li>
+            <li class="instruction-item">
+              <span class="item-badge">3</span>
+              <div class="item-content">
+                <h4>Verifikasi Nama & Klik Tombol Masuk</h4>
+                <p>Nama siswa akan terisi otomatis. Klik tombol <strong>"Mulai Belajar Sekarang →"</strong> untuk masuk ke ruang kelas digital.</p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="callout-box">
+            <strong>ℹ️ Bagaimana jika Siswa Lupa Email?</strong>
+            Siswa dapat mengecek daftar email yang dibagikan oleh guru pendamping sekolah / PIC Kalananti atau mengetik nama lengkap di kolom pencarian.
+          </div>
+        </div>
+
+        <div class="slide-media-pane">
+          <div class="screenshot-frame">
+            <div class="frame-bar">
+              <div class="frame-dot red"></div>
+              <div class="frame-dot yellow"></div>
+              <div class="frame-dot green"></div>
+              <span class="frame-title">LMS UOB — Pemilihan Email Siswa Terdaftar</span>
+            </div>
+            <img src="assets/step_03_student_email_select.png" alt="Email Siswa" class="screenshot-img" />
+            <div class="frame-caption">Pencarian email siswa menampilkan daftar nama resmi terdaftar di database sekolah</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide-footer">
+        <div class="footer-tags">
+          <span class="tag-pill">Student Authentication</span>
+          <span class="tag-pill">Roster Sync</span>
+        </div>
+        <span class="slide-number-badge">Halaman 4 / 12</span>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SLIDE 5: LANGKAH 3 — DASHBOARD & SIDEBAR MODUL -->
+    <!-- ========================================================= -->
+    <section class="deck-slide" id="slide-5">
+      <div class="slide-header">
+        <span class="slide-eyebrow">LANGKAH 03 · STRUKTUR DASHBOARD</span>
+        <h2 class="slide-title">Mengenal Dashboard & Navigasi Modul Belajar</h2>
+        <p class="slide-subtitle">Antarmuka taktil skeuomorfik bertema luar angkasa yang memotivasi siswa.</p>
+      </div>
+
+      <div class="slide-body">
+        <div class="slide-text-pane">
+          <ul class="instruction-list">
+            <li class="instruction-item">
+              <span class="item-badge">1</span>
+              <div class="item-content">
+                <h4>Topbar Profil Siswa</h4>
+                <p>Bagian atas menampilkan nama siswa, avatar kartun unik, nama sekolah, serta badge jenjang aktif (SD, SMP, atau SMA).</p>
+              </div>
+            </li>
+            <li class="instruction-item">
+              <span class="item-badge">2</span>
+              <div class="item-content">
+                <h4>Sidebar Misi & Indikator Progres</h4>
+                <p>Menampilkan judul misi dan progress bar (misal: <strong>"Progres Misi: 1 dari 18 Materi"</strong>) yang bertambah setiap modul tuntas.</p>
+              </div>
+            </li>
+            <li class="instruction-item">
+              <span class="item-badge">3</span>
+              <div class="item-content">
+                <h4>Arti 3 Ikon Status Modul</h4>
+                <p>
+                  • <strong>Ikon Centang Hijau (✓)</strong>: Materi telah selesai & kuis tuntas.<br>
+                  • <strong>Ikon Play Aktif (▶)</strong>: Materi yang sedang dipelajari saat ini.<br>
+                  • <strong>Ikon Gembok (🔒)</strong>: Materi terkunci hingga materi sebelumnya tuntas.
+                </p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="callout-box">
+            <strong>🔒 Mekanisme Kunci Progres:</strong>
+            Siswa tidak dapat melompati materi yang terkunci. Hal ini memastikan setiap konsep dasar dikuasai sebelum lanjut ke tahap koding yang lebih rumit.
+          </div>
+        </div>
+
+        <div class="slide-media-pane">
+          <div class="screenshot-frame">
+            <div class="frame-bar">
+              <div class="frame-dot red"></div>
+              <div class="frame-dot yellow"></div>
+              <div class="frame-dot green"></div>
+              <span class="frame-title">LMS UOB — Tampilan Dashboard Siswa Aktif</span>
+            </div>
+            <img src="assets/step_04_dashboard_overview.png" alt="Dashboard Siswa" class="screenshot-img" />
+            <div class="frame-caption">Dashboard lengkap: Topbar profil siswa, sidebar modul berprogres, dan area pembelajaran utama</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide-footer">
+        <div class="footer-tags">
+          <span class="tag-pill">User Interface</span>
+          <span class="tag-pill">Progress Tracking</span>
+        </div>
+        <span class="slide-number-badge">Halaman 5 / 12</span>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SLIDE 6: LANGKAH 4 — MEMBACA SLIDE PEMBELAJARAN -->
+    <!-- ========================================================= -->
+    <section class="deck-slide" id="slide-6">
+      <div class="slide-header">
+        <span class="slide-eyebrow">LANGKAH 04 · SLIDE PEMBELAJARAN</span>
+        <h2 class="slide-title">Membaca Slide Interaktif (Fondasi Pemula)</h2>
+        <p class="slide-subtitle">Modul pengantar ramah untuk siswa yang sama sekali belum pernah koding.</p>
+      </div>
+
+      <div class="slide-body">
+        <div class="slide-text-pane">
+          <ul class="instruction-list">
+            <li class="instruction-item">
+              <span class="item-badge">1</span>
+              <div class="item-content">
+                <h4>Kapan Materi Berupa Slide?</h4>
+                <p>Khusus pada materi orientasi awal (misal: Mengenal Scratch untuk SD, App Inventor untuk SMP, atau Google Colab untuk SMA).</p>
+              </div>
+            </li>
+            <li class="instruction-item">
+              <span class="item-badge">2</span>
+              <div class="item-content">
+                <h4>Navigasi Slide Bertahap</h4>
+                <p>Gunakan tombol panah <strong>Sebelumnya (←)</strong> dan <strong>Selanjutnya (→)</strong> di bagian bawah container slide untuk membaca kartu demi kartu.</p>
+              </div>
+            </li>
+            <li class="instruction-item">
+              <span class="item-badge">3</span>
+              <div class="item-content">
+                <h4>Fitur Mode Layar Penuh (Fullscreen)</h4>
+                <p>Klik tombol <strong>"Layar Penuh"</strong> di atas slide agar membaca materi pengantar lebih lega dan bebas gangguan.</p>
+              </div>
+            </li>
+            <li class="instruction-item">
+              <span class="item-badge">4</span>
+              <div class="item-content">
+                <h4>Kartu Rangkuman Materi</h4>
+                <p>Di bawah slide tersedia kartu rangkuman ringkas yang merangkum poin-poin penting untuk dicatat siswa.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="slide-media-pane">
+          <div class="screenshot-frame">
+            <div class="frame-bar">
+              <div class="frame-dot red"></div>
+              <div class="frame-dot yellow"></div>
+              <div class="frame-dot green"></div>
+              <span class="frame-title">LMS UOB — Penampil Slide Pembelajaran Interaktif</span>
+            </div>
+            <img src="assets/step_06_reading_slide.png" alt="Slide Pembelajaran" class="screenshot-img" />
+            <div class="frame-caption">Slide interaktif: teks penjelasan konsep, kartu visual resmi, dan tombol navigasi baca</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide-footer">
+        <div class="footer-tags">
+          <span class="tag-pill">Interactive Slides</span>
+          <span class="tag-pill">Zero-Experience Friendly</span>
+        </div>
+        <span class="slide-number-badge">Halaman 6 / 12</span>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SLIDE 7: LANGKAH 5 — MENONTON VIDEO TUTORIAL -->
+    <!-- ========================================================= -->
+    <section class="deck-slide" id="slide-7">
+      <div class="slide-header">
+        <span class="slide-eyebrow">LANGKAH 05 · VIDEO TUTORIAL</span>
+        <h2 class="slide-title">Menyimak Video Tutorial Koding Terkurasi</h2>
+        <p class="slide-subtitle">Panduan langkah demi langkah mempraktikkan kode bersama instruktur.</p>
+      </div>
+
+      <div class="slide-body">
+        <div class="slide-text-pane">
+          <ul class="instruction-list">
+            <li class="instruction-item">
+              <span class="item-badge">1</span>
+              <div class="item-content">
+                <h4>Kurasi Waktu Presisi</h4>
+                <p>Video hanya memutar segmen materi yang relevan (misal: <em>01:30 hingga 06:45</em>), memangkas jeda yang tidak perlu agar belajar lebih padat dan fokus.</p>
+              </div>
+            </li>
+            <li class="instruction-item">
+              <span class="item-badge">2</span>
+              <div class="item-content">
+                <h4>Tombol Rewatch 30 Detik</h4>
+                <p>Klik tombol <strong>"Rewatch 30s"</strong> untuk memutar mundur 30 detik secara instan jika siswa ketinggalan penjelasan kode instruktur.</p>
+              </div>
+            </li>
+            <li class="instruction-item">
+              <span class="item-badge">3</span>
+              <div class="item-content">
+                <h4>Strip Bookmark Subtopik</h4>
+                <p>Di bawah video terdapat deretan tombol bookmark topik. Klik tombol topik untuk langsung melompat ke bagian pembahasan tersebut.</p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="callout-box">
+            <strong>🎬 Tip Belajar Efektif:</strong>
+            Siswa dapat membuka tab kedua (Scratch / Colab / App Inventor) di samping tab LMS untuk langsung menirukan koding yang dicontohkan di video!
+          </div>
+        </div>
+
+        <div class="slide-media-pane">
+          <div class="screenshot-frame">
+            <div class="frame-bar">
+              <div class="frame-dot red"></div>
+              <div class="frame-dot yellow"></div>
+              <div class="frame-dot green"></div>
+              <span class="frame-title">LMS UOB — Player Video YouTube Terintegrasi</span>
+            </div>
+            <img src="assets/step_07_video_player.png" alt="Video Player" class="screenshot-img" />
+            <div class="frame-caption">Video player kustom: timeline terkontrol, tombol rewatch 30s, dan tombol bookmark topik</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide-footer">
+        <div class="footer-tags">
+          <span class="tag-pill">Curated Video</span>
+          <span class="tag-pill">Bookmarks Navigation</span>
+        </div>
+        <span class="slide-number-badge">Halaman 7 / 12</span>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SLIDE 8: LANGKAH 6 — POP-UP KUIS INTERAKTIF -->
+    <!-- ========================================================= -->
+    <section class="deck-slide" id="slide-8">
+      <div class="slide-header">
+        <span class="slide-eyebrow">LANGKAH 06 · EVALUASI KUIS</span>
+        <h2 class="slide-title">Mengerjakan Pop-Up Kuis Ramah (Less-Strict)</h2>
+        <p class="slide-subtitle">Evaluasi pemahaman konsep secara interaktif dan tidak mengekang siswa.</p>
+      </div>
+
+      <div class="slide-body">
+        <div class="slide-text-pane">
+          <ul class="instruction-list">
+            <li class="instruction-item">
+              <span class="item-badge">1</span>
+              <div class="item-content">
+                <h4>Muncul Otomatis Saat Video Berjalan</h4>
+                <p>Ketika video mencapai titik penting, pop-up modal kuis akan muncul dengan pertanyaan pilihan ganda (A, B, C, D).</p>
+              </div>
+            </li>
+            <li class="instruction-item">
+              <span class="item-badge">2</span>
+              <div class="item-content">
+                <h4>Bebas Menunda: "Tutup & Kerjakan Nanti"</h4>
+                <p>Jika belum yakin, siswa dapat menutup kuis untuk menonton ulang penjelasan video tanpa diblokir secara kaku.</p>
+              </div>
+            </li>
+            <li class="instruction-item">
+              <span class="item-badge">3</span>
+              <div class="item-content">
+                <h4>Bento Box Quiz Tracker</h4>
+                <p>Di bawah media player, terdapat kartu <strong>"📝 Evaluasi Pop-up Kuis"</strong> yang mencatat daftar semua kuis pada materi tersebut. Siswa bisa membukanya kapan saja!</p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="callout-box">
+            <strong>🎯 Desain Opsi Ramah:</strong>
+            Opsi jawaban didesain berupa kartu 3D tebal dengan huruf A, B, C, D yang kontras dan nyaman diklik di layar komputer maupun tablet.
+          </div>
+        </div>
+
+        <div class="slide-media-pane">
+          <div class="screenshot-frame">
+            <div class="frame-bar">
+              <div class="frame-dot red"></div>
+              <div class="frame-dot yellow"></div>
+              <div class="frame-dot green"></div>
+              <span class="frame-title">LMS UOB — Pop-Up Modal Kuis Interaktif</span>
+            </div>
+            <img src="assets/step_08_interactive_quiz.png" alt="Pop-Up Kuis" class="screenshot-img" />
+            <div class="frame-caption">Modal kuis interaktif: pertanyaan konsep koding, 4 opsi jawaban 3D, dan tombol aksi fleksibel</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide-footer">
+        <div class="footer-tags">
+          <span class="tag-pill">Interactive Quiz</span>
+          <span class="tag-pill">Less-Strict UX</span>
+        </div>
+        <span class="slide-number-badge">Halaman 8 / 12</span>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SLIDE 9: LANGKAH 7 — FEEDBACK KUIS & BUKA KUNCI -->
+    <!-- ========================================================= -->
+    <section class="deck-slide" id="slide-9">
+      <div class="slide-header">
+        <span class="slide-eyebrow">LANGKAH 07 · KUNCI PROGRES</span>
+        <h2 class="slide-title">Umpan Balik Kuis & Membuka Materi Selanjutnya</h2>
+        <p class="slide-subtitle">Sistem evaluasi cerdas dengan umpan balik langsung seketika.</p>
+      </div>
+
+      <div class="slide-body">
+        <div class="slide-text-pane">
+          <ul class="instruction-list">
+            <li class="instruction-item">
+              <span class="item-badge">1</span>
+              <div class="item-content">
+                <h4>Pilih Opsi & Klik "Kirim Jawaban"</h4>
+                <p>Klik salah satu kartu pilihan jawaban, lalu klik tombol biru <strong>"Kirim Jawaban"</strong>.</p>
+              </div>
+            </li>
+            <li class="instruction-item">
+              <span class="item-badge">2</span>
+              <div class="item-content">
+                <h4>Umpan Balik Nilai Instan</h4>
+                <p>Jika benar, opsi akan disorot warna hijau dengan pesan sukses. Jika keliru, siswa dipersilakan mencoba kembali hingga memahami konsepnya.</p>
+              </div>
+            </li>
+            <li class="instruction-item">
+              <span class="item-badge">3</span>
+              <div class="item-content">
+                <h4>Tombol "Materi Selanjutnya" Terbuka Otomatis!</h4>
+                <p>Begitu seluruh kuis pada modul aktif tuntas dikerjakan, tombol <strong>"Materi Selanjutnya →"</strong> yang tadinya terkunci gembok abu-abu otomatis menyala hijau aktif!</p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="callout-box">
+            <strong>☁️ Sinkronisasi Otomatis Google Sheets:</strong>
+            Setiap jawaban kuis otomatis tersimpan ke server Google Sheets dan browser lokal, sehingga progres tidak akan hilang saat komputer dimatikan atau direfresh.
+          </div>
+        </div>
+
+        <div class="slide-media-pane">
+          <div class="screenshot-frame">
+            <div class="frame-bar">
+              <div class="frame-dot red"></div>
+              <div class="frame-dot yellow"></div>
+              <div class="frame-dot green"></div>
+              <span class="frame-title">LMS UOB — Hasil Umpan Balik Kuis & Tombol Terbuka</span>
+            </div>
+            <img src="assets/step_09_quiz_feedback.png" alt="Quiz Feedback" class="screenshot-img" />
+            <div class="frame-caption">Umpan balik hijau instan & status kuis tersimpan, membuka akses menuju materi berikutnya</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide-footer">
+        <div class="footer-tags">
+          <span class="tag-pill">Instant Feedback</span>
+          <span class="tag-pill">Atomic Upsert</span>
+        </div>
+        <span class="slide-number-badge">Halaman 9 / 12</span>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SLIDE 10: LANGKAH 8 — TANTANGAN PRAKTIK MANDIRI -->
+    <!-- ========================================================= -->
+    <section class="deck-slide" id="slide-10">
+      <div class="slide-header">
+        <span class="slide-eyebrow">LANGKAH 08 · PRAKTIK MANDIRI</span>
+        <h2 class="slide-title">Tantangan Praktik Mandiri (Mini Project)</h2>
+        <p class="slide-subtitle">Mengasah kreativitas koding siswa membuat proyek nyata.</p>
+      </div>
+
+      <div class="slide-body">
+        <div class="slide-text-pane">
+          <ul class="instruction-list">
+            <li class="instruction-item">
+              <span class="item-badge">1</span>
+              <div class="item-content">
+                <h4>Tantangan Sesuai Jenjang Pendidikan</h4>
+                <p>
+                  • <strong>SD (Scratch)</strong>: Proyek animasi & game (About Me, Racing Car).<br>
+                  • <strong>SMP (App Inventor)</strong>: Proyek aplikasi mobile smartphone.<br>
+                  • <strong>SMA (Python)</strong>: Proyek script aplikasi finansial & kalkulator pintar.
+                </p>
+              </div>
+            </li>
+            <li class="instruction-item">
+              <span class="item-badge">2</span>
+              <div class="item-content">
+                <h4>Bersifat Non-Gating (Bebas Eksplorasi)</h4>
+                <p>Tantangan praktik tidak mengunci siswa. Siswa dapat mengerjakannya secara leluasa atau melewatinya sementara jika ingin mengejar modul teori.</p>
+              </div>
+            </li>
+            <li class="instruction-item">
+              <span class="item-badge">3</span>
+              <div class="item-content">
+                <h4>Formulir Pengumpulan Fleksibel</h4>
+                <p>Siswa dapat menempelkan <strong>tautan proyek</strong> (Google Colab / Scratch / Drive) atau mengunggah <strong>file karya</strong> (<code>.py</code>, <code>.sb3</code>, <code>.aia</code>), lalu klik <strong>"Kirim Tugas Praktik"</strong>.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="slide-media-pane">
+          <div class="screenshot-frame">
+            <div class="frame-bar">
+              <div class="frame-dot red"></div>
+              <div class="frame-dot yellow"></div>
+              <div class="frame-dot green"></div>
+              <span class="frame-title">LMS UOB — Panel Tantangan Praktik Mandiri</span>
+            </div>
+            <img src="assets/step_10_challenge_panel.png" alt="Tantangan Praktik" class="screenshot-img" />
+            <div class="frame-caption">Panel Tantangan: instruksi tugas, input kode, kolom link proyek, dan upload berkas</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide-footer">
+        <div class="footer-tags">
+          <span class="tag-pill">Mini Project</span>
+          <span class="tag-pill">Non-Gating Challenge</span>
+        </div>
+        <span class="slide-number-badge">Halaman 10 / 12</span>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SLIDE 11: LANGKAH 9 — KLAIM SERTIFIKAT & REKAP NILAI -->
+    <!-- ========================================================= -->
+    <section class="deck-slide" id="slide-11">
+      <div class="slide-header">
+        <span class="slide-eyebrow">LANGKAH 09 · KELULUSAN RESMI</span>
+        <h2 class="slide-title">Mengklaim Sertifikat Kelulusan & Transkrip Nilai</h2>
+        <p class="slide-subtitle">Dokumen kelulusan resmi 2 halaman standar A4 siap cetak dan simpan PDF.</p>
+      </div>
+
+      <div class="slide-body">
+        <div class="slide-text-pane">
+          <ul class="instruction-list">
+            <li class="instruction-item">
+              <span class="item-badge">1</span>
+              <div class="item-content">
+                <h4>Buka Tab Terakhir di Sidebar</h4>
+                <p>Setelah seluruh materi tuntas 100%, tab terakhir di sidebar <strong>"🎓 Sertifikat & Rekap Nilai"</strong> otomatis terbuka dan dapat diklik.</p>
+              </div>
+            </li>
+            <li class="instruction-item">
+              <span class="item-badge">2</span>
+              <div class="item-content">
+                <h4>Halaman 1: Certificate of Completion (Landscape A4)</h4>
+                <p>Sertifikat resmi berbingkai emas elegan, nomor seri unik (contoh: <code>UOB-MDS-SMA-2026-3ZPCIT</code>), stempel 3D timbul, dan tanda tangan resmi UOB MDS.</p>
+              </div>
+            </li>
+            <li class="instruction-item">
+              <span class="item-badge">3</span>
+              <div class="item-content">
+                <h4>Halaman 2: Transkrip Hasil Belajar (Portrait A4)</h4>
+                <p>Tabel rincian evaluasi seluruh modul, skor kuis, status <strong>100% · LULUS DENGAN PUJIAN</strong>, serta matriks 4 kompetensi digital.</p>
+              </div>
+            </li>
+            <li class="instruction-item">
+              <span class="item-badge">4</span>
+              <div class="item-content">
+                <h4>Klik "Cetak / Simpan PDF"</h4>
+                <p>Klik tombol di bawah modal untuk langsung mengunduh file PDF 2 halaman jernih tanpa watermark.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="slide-media-pane">
+          <div class="screenshot-dual-grid">
+            <div class="screenshot-frame">
+              <div class="frame-bar">
+                <span class="frame-title">Hal 1 — Sertifikat (Landscape)</span>
+              </div>
+              <img src="assets/step_12_cert_page1.png" alt="Sertifikat Halaman 1" class="screenshot-img" />
+            </div>
+            <div class="screenshot-frame">
+              <div class="frame-bar">
+                <span class="frame-title">Hal 2 — Transkrip (Portrait)</span>
+              </div>
+              <img src="assets/step_13_cert_page2.png" alt="Transkrip Halaman 2" class="screenshot-img" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide-footer">
+        <div class="footer-tags">
+          <span class="tag-pill">Official Certificate</span>
+          <span class="tag-pill">2-Page PDF Export</span>
+        </div>
+        <span class="slide-number-badge">Halaman 11 / 12</span>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- SLIDE 12: TIPS PERANGKAT, FAQ & FASILITATOR -->
+    <!-- ========================================================= -->
+    <section class="deck-slide" id="slide-12">
+      <div class="slide-header">
+        <span class="slide-eyebrow">PUSAT BANTUAN & TIPS BELAJAR</span>
+        <h2 class="slide-title">Rekomendasi Perangkat Belajar & Bantuan Fasilitator</h2>
+        <p class="slide-subtitle">Memastikan pengalaman belajar mandiri siswa tetap lancar dan menyenangkan.</p>
+      </div>
+
+      <div class="slide-body">
+        <div class="slide-text-pane">
+          <ul class="instruction-list">
+            <li class="instruction-item">
+              <span class="item-badge">💻</span>
+              <div class="item-content">
+                <h4>Perangkat yang Disarankan</h4>
+                <p>Sangat disarankan menggunakan <strong>Laptop, Komputer Desktop, atau Chromebook</strong> (layar minimal 1366×768) dengan keyboard fisik agar mengetik kode dan menyusun balok logika lebih leluasa.</p>
+              </div>
+            </li>
+            <li class="instruction-item">
+              <span class="item-badge">📱</span>
+              <div class="item-content">
+                <h4>Jika Membuka Lewat Smartphone / HP</h4>
+                <p>Akan muncul <em>Gentle Advisory Modal</em> ramah yang mengingatkan kenyamanan belajar koding. Siswa tetap dapat mengklik <em>"Mengerti, Tetap Lanjutkan"</em> jika darurat.</p>
+              </div>
+            </li>
+            <li class="instruction-item">
+              <span class="item-badge">💬</span>
+              <div class="item-content">
+                <h4>Pusat Bantuan Fasilitator Siaga</h4>
+                <p>Jika menemukan kendala (misal: nama sekolah belum terdaftar, email tidak ditemukan, atau tombol kuis macet), klik tombol <strong>"Bantuan Fasilitator"</strong> di bagian bawah sidebar untuk langsung terhubung ke WhatsApp PIC Kalananti.</p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="callout-box">
+            <strong>🎉 Selamat Belajar & Berkreasi!</strong>
+            Program beasiswa UOB My Digital Space hadir untuk membuka potensi teknologi anak Indonesia. Kuasai koding, ciptakan karya digitalmu, dan raih sertifikat prestisiusmu!
+          </div>
+        </div>
+
+        <div class="slide-media-pane">
+          <div class="screenshot-frame">
+            <div class="frame-bar">
+              <div class="frame-dot red"></div>
+              <div class="frame-dot yellow"></div>
+              <div class="frame-dot green"></div>
+              <span class="frame-title">LMS UOB — Gentle Advisory Modal (Mobile Reminder)</span>
+            </div>
+            <img src="assets/step_14_mobile_advisory.png" alt="Mobile Advisory" class="screenshot-img" />
+            <div class="frame-caption">Modal ramah yang otomatis muncul saat platform dibuka di layar smartphone sempit</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide-footer">
+        <div class="footer-tags">
+          <span class="tag-pill">Help Center</span>
+          <span class="tag-pill">Facilitator Support</span>
+          <span class="tag-pill">Happy Coding!</span>
+        </div>
+        <span class="slide-number-badge">Halaman 12 / 12</span>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Bottom Interactive Presentation Controls -->
+  <div class="deck-controls">
+    <button class="control-btn" id="btn-prev" onclick="prevSlide()">← Sebelumnya</button>
+    <select class="slide-select" id="slide-select" onchange="jumpToSlide(this.value)">
+      <option value="1">1 · Cover & Program Overview</option>
+      <option value="2">2 · Peta Alur Belajar Siswa</option>
+      <option value="3">3 · Langkah 1: Akses Portal & Pilih Sekolah</option>
+      <option value="4">4 · Langkah 2: Pilih Email & Nama Siswa</option>
+      <option value="5">5 · Langkah 3: Dashboard & Navigasi Modul</option>
+      <option value="6">6 · Langkah 4: Membaca Slide Pembelajaran</option>
+      <option value="7">7 · Langkah 5: Menonton Video Tutorial</option>
+      <option value="8">8 · Langkah 6: Pop-Up Kuis Interaktif</option>
+      <option value="9">9 · Langkah 7: Umpan Balik Kuis & Buka Kunci</option>
+      <option value="10">10 · Langkah 8: Tantangan Praktik Mandiri</option>
+      <option value="11">11 · Langkah 9: Klaim Sertifikat Kelulusan</option>
+      <option value="12">12 · Tips Perangkat & Bantuan Fasilitator</option>
+    </select>
+    <span class="control-counter" id="control-counter">Slide 1 / 12</span>
+    <button class="control-btn" id="btn-next" onclick="nextSlide()">Selanjutnya →</button>
+  </div>
+
+  <script>
+    let currentSlide = 1;
+    const totalSlides = 12;
+
+    function updateControls() {
+      document.getElementById('control-counter').textContent = `Slide ${currentSlide} / ${totalSlides}`;
+      document.getElementById('slide-select').value = String(currentSlide);
+      document.getElementById('btn-prev').disabled = currentSlide === 1;
+      document.getElementById('btn-next').disabled = currentSlide === totalSlides;
+    }
+
+    function jumpToSlide(num) {
+      currentSlide = parseInt(num, 10);
+      const target = document.getElementById(`slide-${currentSlide}`);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+      updateControls();
+    }
+
+    function prevSlide() {
+      if (currentSlide > 1) {
+        jumpToSlide(currentSlide - 1);
+      }
+    }
+
+    function nextSlide() {
+      if (currentSlide < totalSlides) {
+        jumpToSlide(currentSlide + 1);
+      }
+    }
+
+    function toggleFullscreen() {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(err => {
+          console.log(`Error attempting fullscreen: ${err.message}`);
+        });
+      } else {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        }
+      }
+    }
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' ') {
+        if (currentSlide < totalSlides) {
+          e.preventDefault();
+          nextSlide();
+        }
+      } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+        if (currentSlide > 1) {
+          e.preventDefault();
+          prevSlide();
+        }
+      } else if (e.key.toLowerCase() === 'f') {
+        toggleFullscreen();
+      } else if (e.key.toLowerCase() === 'p') {
+        window.print();
+      }
+    });
+
+    // Observer to detect which slide is currently in view during scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+          const id = entry.target.id;
+          const match = id.match(/slide-(\d+)/);
+          if (match) {
+            currentSlide = parseInt(match[1], 10);
+            updateControls();
+          }
+        }
+      });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('.deck-slide').forEach(slide => {
+      observer.observe(slide);
+    });
+
+    updateControls();
+  </script>
+</body>
+</html>

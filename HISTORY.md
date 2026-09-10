@@ -2443,3 +2443,103 @@ Hasilnya:
 ### Status
 completed, verified, and pushed to remote main.
 
+---
+
+### User Request (Turn 23)
+
+/Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms
+
+eh ini coba di detailin dong dibikinin deck pdf yang bagus pake html to pdf cara membuka, cari naam sekolah dan email anaknya trus step by step baca, ngerjakan, ngumpul dapet sertif ini gimana coba dibikini pdf lengkap dengan screnshoot step by step biar aku enak yah sebagai penguna baru atau user coba
+
+### User Request (Turn 24)
+
+go ahead
+
+### Assistant Response (Turn 24)
+
+Deck presentasi interaktif dan dokumen PDF resmi **"Panduan Lengkap Pengguna LMS UOB My Digital Space"** telah selesai dibuat 100% menggunakan arsitektur HTML-to-PDF berbasis Playwright Chromium. Dokumen ini dirancang khusus untuk memberikan pengalaman onboarding yang sangat ramah, visual, dan jelas bagi pengguna baru (siswa, orang tua, maupun guru).
+
+---
+
+### 1. Berkas Utama yang Tersedia & Dapat Langsung Diakses
+
+1. **Berkas PDF Resmi Siap Cetak & Bagikan**:
+   - 📄 Proyek: [panduan-pengguna-lms-uob.pdf](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/docs/guide/panduan-pengguna-lms-uob.pdf) (Ukuran: 8.33 MB, tepat 12 halaman A4 Landscape 16:9, bebas halaman kosong).
+   - 📥 Folder Unduhan Laptop: [Panduan_Pengguna_LMS_UOB_My_Digital_Space.pdf](file:///Users/yazidhilmi/Downloads/Panduan_Pengguna_LMS_UOB_My_Digital_Space.pdf)
+2. **Deck Presentasi Interaktif (HTML)**:
+   - 🌐 [docs/guide/index.html](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/docs/guide/index.html)
+   - Fitur Deck: Navigasi keyboard (`Panah Kiri`/`Kanan`, `Spasi`), kontrol layar penuh (`F`), tombol cetak PDF instan (`P`), bar progres dinamis, serta navigasi nomor slide langsung.
+3. **Dokumen Rencana Implementasi**:
+   - 📋 [06-implementation-plan-user-guide-deck-pdf.md](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/planning/06-implementation-plan-user-guide-deck-pdf.md)
+4. **Mirror Subproyek**:
+   - Telah disinkronkan ke `subprojects/01-lms-platform/docs/guide/`.
+
+---
+
+### 2. Ringkasan 12 Slide & Alur Panduan Step-by-Step
+
+Deck terdiri dari 12 slide bertema *dark navy glassmorphism* modern dengan tipografi *Plus Jakarta Sans*, *Inter*, dan *Fira Code*, dilengkapi **14 tangkapan layar asli (real screenshots)**:
+
+- **Slide 1 — Cover & Pengantar**:
+  - Judul resmi: Panduan Lengkap Pengguna — UOB My Digital Space.
+  - Ringkasan 4 pilar belajar: Akses Instan Mandiri, Pembelajaran Terkurasi, Kuis Interaktif, dan Sertifikat Digital Resmi 2 Halaman.
+- **Slide 2 — Persiapan & Rekomendasi Perangkat**:
+  - Rekomendasi utama menggunakan Laptop/PC (layar ≥ 1024px) dengan browser Google Chrome/Edge modern.
+  - Menampilkan tangkapan layar **Mobile Gentle Advisory Modal** (`step_14_mobile_advisory.png`) yang secara ramah mengarahkan siswa saat membuka lewat layar HP.
+- **Slide 3 — Langkah 1: Membuka Portal & Mencari Nama Sekolah**:
+  - URL portal LMS (`http://localhost:8080/` atau domain produksi Vercel).
+  - Panduan interaktif fitur pencarian combobox: siswa cukup mengetikkan kata kunci sekolah (misal: "andalus"), sistem otomatis memfilter dan menampilkan badge jenjang (SD / SMP / SMA).
+  - Tangkapan layar asli: `step_01_portal_login.png` & `step_02_school_dropdown.png`.
+- **Slide 4 — Langkah 2: Memilih Email / Akun Siswa**:
+  - Setelah sekolah dipilih, dropdown email siswa langsung aktif dan terisi daftar nama siswa terdaftar.
+  - Siswa dapat mencari nama atau emailnya (misal: "raffa"), lalu menekan tombol 3D *"Masuk ke Kelas"*.
+  - Tangkapan layar asli: `step_03_student_email_select.png`.
+- **Slide 5 — Langkah 3: Mengenal Beranda Belajar (Dashboard)**:
+  - Penjelasan Topbar (logo, nama siswa, asal sekolah, badge jenjang, dan tombol Keluar).
+  - Penjelasan Sidebar Progres Misi dengan indikator visual status materi (✓ Selesai Hijau, ▶ Sedang Aktif Biru, 🔒 Terkunci Abu-abu).
+  - Tangkapan layar asli: `step_04_dashboard_overview.png` & `step_05_sidebar_navigation.png`.
+- **Slide 6 — Langkah 4: Membaca & Mempelajari Slide Interaktif**:
+  - Panduan membaca materi slide HTML interaktif: tombol navigasi Prev/Next, preview kode program, dan kotak rangkuman konsep.
+  - Tangkapan layar asli: `step_06_reading_slide.png`.
+- **Slide 7 — Langkah 5: Menonton Video Modul Terkurasi**:
+  - Panduan pemutar video YouTube terintegrasi: timeline bar, tombol pintas *"Tonton Ulang 30 Detik"*, serta daftar penanda waktu topik materi.
+  - Tangkapan layar asli: `step_07_video_player.png`.
+- **Slide 8 — Langkah 6: Menjawab Kuis Pop-up Interaktif**:
+  - Penjelasan mekanisme kuis *Less-Strict*: kuis muncul otomatis di akhir materi untuk menguji pemahaman tanpa membuat siswa frustrasi.
+  - Desain kartu jawaban 3D taktil (A, B, C, D) dan Bento Box Tracker penanda status tiap soal.
+  - Tangkapan layar asli: `step_08_interactive_quiz.png`.
+- **Slide 9 — Langkah 7: Umpan Balik Kuis & Membuka Materi Selanjutnya**:
+  - Umpan balik instan berwarna hijau dengan penjelasan jawaban benar.
+  - Tombol *"Materi Selanjutnya"* menyala otomatis dan membuka gembok materi berikutnya pada sidebar.
+  - Tangkapan layar asli: `step_09_quiz_feedback.png`.
+- **Slide 10 — Langkah 8: Mengerjakan Tantangan Praktik (Mini Project)**:
+  - Panduan panel Mini Project (*Non-Gating Challenge*): siswa dapat menyelesaikan proyek tanpa memblokir materi berikutnya.
+  - Opsi pengumpulan fleksibel: Code Editor terpasang, tautan eksternal (Google Colab / GitHub / MIT App Inventor / Scratch), dan upload file proyek (`.py`, `.aia`, `.sb3`).
+  - Tangkapan layar asli: `step_10_challenge_panel.png`.
+- **Slide 11 — Langkah 9: Mengklaim & Mengunduh Sertifikat Resmi**:
+  - Setelah seluruh materi tuntas 100%, menu `🎓 Sertifikat & Rekap Nilai` otomatis terbuka.
+  - Dilengkapi 2 halaman sertifikat resmi tanpa watermark:
+    - **Halaman 1 (Landscape A4)**: Sertifikat Kelulusan berbingkai emas, nomor seri unik, dan segel resmi timbul.
+    - **Halaman 2 (Portrait A4)**: Transkrip Akademik penuh (*full-length*) memuat daftar seluruh materi, persentase kehadiran, dan matriks kompetensi.
+  - Tombol aksi: *"Cetak / Simpan PDF"* langsung dari browser.
+  - Tangkapan layar asli: `step_11_certificate_unlocked.png`, `step_12_cert_page1.png`, & `step_13_cert_page2.png`.
+- **Slide 12 — Penutup, Tips Belajar, & Bantuan**:
+  - 3 Tips Sukses Belajar Asinkron (Belajar Rutin, Praktik Langsung, Jangan Ragu Mengulang Video).
+  - Informasi kontak tim bantuan akademik Kalananti & UOB Indonesia.
+
+---
+
+### 3. Detail Teknis HTML-to-PDF Engine
+
+- **Solusi Masalah Clipping Chromium Print**:
+  - Pada Chromium headless, properti CSS `backdrop-filter: blur(...)` menyebabkan mesin render cetak memotong seluruh konten setelah halaman pertama (halaman 2-12 menjadi putih kosong).
+  - Diatasi dengan aturan `@media print { * { backdrop-filter: none !important; -webkit-backdrop-filter: none !important; box-shadow: none !important; } }`.
+- **Eliminasi Blank Page Berlebih**:
+  - Menggunakan isolasi slide ketat: tinggi tepat `210mm`, lebar `297mm`, `overflow: hidden`, dan pembagian halaman menggunakan selector kombinasi `.deck-slide + .deck-slide { page-break-before: always; break-before: page; }`.
+- **Hasil Verifikasi**:
+  - PDF berhasil diekspor dengan ukuran tepat **12 halaman**, seluruh teks terbaca tajam, tata letak seimbang, dan seluruh 14 screenshot tampil jernih.
+
+### Status
+completed, verified, and saved to project docs and Downloads.
+
+

@@ -2,11 +2,35 @@
 
 ## Current Status
 
-- **Status**: Kurikulum Scratch SD v5 (video-first 18 step: 1 slide bridge intro + 17 video tutorial asli Kak Laras) berhasil diinjeksi 100% ke Google Spreadsheet master (`materi-sd` 18 baris, `ops-result-sd` 18 kolom pelacakan, dan `Changelog & Audit Log` entri ke-12). Seluruh aset antarmuka resmi Scratch MIT Media Lab telah di-upload ke CDN Ruangguru (`rg_cdn_web_2`) dan diuji E2E via Playwright dengan hasil 100% pass.
+- **Status**: Deck presentasi interaktif dan PDF komprehensif "Panduan Lengkap Pengguna LMS UOB My Digital Space" (12 slide/halaman landscape 16:9) selesai dibuat 100% menggunakan HTML-to-PDF engine Playwright Chromium, dilengkapi 14 tangkapan layar antarmuka asli (login combobox, navigasi modul, slide reader, video player, kuis interaktif, mini project, dan sertifikat resmi 2 halaman).
 - **Active Focus**: Persiapan pengujian integrasi akhir, sinkronisasi repositori, dan operasional peluncuran.
-- **Last Updated**: 2026-09-09
+- **Last Updated**: 2026-09-10
 
 ## Completed
+
+- **Deck Panduan Lengkap Pengguna LMS (HTML-to-PDF 12 Slide & 14 Real Screenshots) Selesai 100% (2026-09-10)**:
+  - Pembuatan Rencana Implementasi: [06-implementation-plan-user-guide-deck-pdf.md](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/planning/06-implementation-plan-user-guide-deck-pdf.md).
+  - Ekstraksi 14 aset visual antarmuka asli berkualitas tinggi (`projects/uob-async-lms/docs/guide/assets/`):
+    - `step_01_portal_login.png`: Tampilan modal masuk awal.
+    - `step_02_school_dropdown.png`: Pencarian combobox nama sekolah ("andalus").
+    - `step_03_student_email_select.png`: Dropdown pemilihan email/akun siswa ("raffa").
+    - `step_04_dashboard_overview.png`: Tampilan dashboard beranda setelah login.
+    - `step_05_sidebar_navigation.png`: Sidebar daftar materi dengan indikator status (✓, ▶, 🔒).
+    - `step_06_reading_slide.png`: Antarmuka pembaca slide HTML interaktif & rangkuman.
+    - `step_07_video_player.png`: Pemutar video terkurasi, tombol Tonton Ulang 30 Detik, dan daftar penanda waktu.
+    - `step_08_interactive_quiz.png`: Modal kuis interaktif 3D skeuomorphic & bento box tracker.
+    - `step_09_quiz_feedback.png`: Umpan balik instan jawaban benar dan terbukanya tombol materi selanjutnya.
+    - `step_10_challenge_panel.png`: Panel Mini Project tantangan mandiri fleksibel (editor kode, link, upload berkas).
+    - `step_11_certificate_unlocked.png`: Status kelulusan dan menu sertifikat terbuka pada sidebar.
+    - `step_12_cert_page1.png`: Halaman 1 Sertifikat Kelulusan resmi (Landscape A4).
+    - `step_13_cert_page2.png`: Halaman 2 Transkrip Akademik resmi (Portrait A4).
+    - `step_14_mobile_advisory.png`: Modal rekomendasi perangkat laptop/komputer untuk pengguna HP.
+  - Implementasi deck presentasi interaktif di [index.html](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/docs/guide/index.html) dengan navigasi keyboard (Arrow Left/Right, Space, F, P), touch swipe, progress bar dinamis, dan print stylesheet A4 landscape presisi.
+  - Export PDF resmi via script headless Chromium (`export_guide_pdf.py`):
+    - [panduan-pengguna-lms-uob.pdf](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/docs/guide/panduan-pengguna-lms-uob.pdf) (8.33 MB, tepat 12 halaman A4 Landscape tanpa halaman kosong).
+    - Salinan instan pengguna: `/Users/yazidhilmi/Downloads/Panduan_Pengguna_LMS_UOB_My_Digital_Space.pdf`.
+  - Sinkronisasi mirror ke `subprojects/01-lms-platform/docs/guide/`.
+
 
 - **In-Browser JavaScript Simulation & Deep Diagnostic UAT (Zero Playwright) Selesai 100% (2026-09-09)**:
   - Berhasil mengeksekusi simulasi pengerjaan step demi step dan diagnostik menyeluruh via Chrome CDP port 9222 murni JavaScript (`run_js_diagnostic_uat_v2.py`) tanpa wrapper Playwright:
