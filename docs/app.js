@@ -1052,7 +1052,7 @@ async function attemptLogin() {
   if (matchedStudent) {
     const cur = resolveCurriculumFromGrade(matchedStudent.grade_name || state.selectedSchool.grade_name);
     state.student = {
-      name: matchedStudent.name || 'Siswa Kalananti',
+      name: matchedStudent.name || 'Peserta Pembelajaran',
       school: matchedStudent.school_name || schoolName,
       rombel: matchedStudent.rombel_name || 'Kelas Reguler',
       email: matchedStudent.email || emailInput,

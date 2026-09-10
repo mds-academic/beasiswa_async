@@ -8,6 +8,12 @@
 
 ## Completed
 
+- **Penyempurnaan Redaksi Sertifikat Kelulusan & Pembersihan Sebutan Mitra (2026-09-10)**:
+  - Teks pengantar sertifikat diperbarui: *"Sertifikat ini dianugerahkan sebagai pengakuan atas penyelesaian dan pencapaian pembelajaran kepada:"*.
+  - Narasi ketuntasan sertifikat disesuaikan dengan instruksi resmi stakeholder: *"Telah berhasil menyelesaikan seluruh rangkaian pembelajaran mandiri, evaluasi pemahaman, dan tantangan praktik interaktif dengan hasil yang sangat memuaskan dalam program:"*.
+  - Pembersihan total nama *"Kalananti"* pada seluruh antarmuka dan dokumen pengguna (`index.html`, sertifikat, transkrip, slide pembelajaran, deck panduan pengguna, dan email bantuan). Kemitraan resmi kini murni **UOB My Digital Space** dari **PT Bank UOB Indonesia** dan **Ruangguru**.
+  - Generator PDF sertifikat dan deck panduan pengguna telah diekspor ulang dan diverifikasi otomatis 100% via Playwright.
+
 - **Implementasi Logo Baru Horizontal UOB My Digital Space & Outline Putih Latar Gelap (2026-09-10)**:
   - Berkas logo baru diunduh dan disimpan ke `subprojects/01-lms-platform/src/assets/logos/uob-mds-logo.png` dan `docs/assets/logos/uob-mds-logo.png`.
   - Base64 data URI di-generate dan diperbarui di `subprojects/01-lms-platform/src/assets/logos/logo-assets.js` dan `docs/assets/logos/logo-assets.js`.

@@ -2743,6 +2743,55 @@ Berikut daftar tautan resmi GitHub Pages dan repositori yang sudah live dan akti
 ### Status
 completed, verified, and saved to project docs and Downloads.
 
+---
+
+### User Request (Turn 29)
+
+eh ini sertifikat ada beberapa perbaikan 
+
+Sertifikat ini dianugerahkan sebagai pengakuan atas penyelesaian dan pencapaian pembelajaran kepada:
+[11:08, 9/10/2026] Permata Cinere: Telah berhasil menyelesaikan seluruh rangkaian pembelajaran mandiri, evaluasi pemahaman, dan tantangan praktik interaktif dengan hasil yang sangat memuaskan dalam program:
+[11:09, 9/10/2026] Permata Cinere: Telah berhasil menyelesaikan seluruh rangkaian pembelajaran mandiri, evaluasi pemahaman, dan tantangan praktik interaktif dengan hasil yang sangat memuaskan dalam program:
+evaluasi pemahaman atau kuis jg gpp
+kalananti gaboleh disebutt yah ini my digital space dari UOB dan ruangguru
+
+### Assistant Response & Action Record (Turn 29) — 2026-09-10T11:24:00+07:00
+
+Seluruh perbaikan redaksi sertifikat kelulusan dan pembersihan sebutan mitra telah selesai diterapkan secara menyeluruh di seluruh platform dan berkas ekspor:
+
+1. **Pembaruan Redaksi Sertifikat Kelulusan (Halaman 1)**:
+   - **Teks Pengantar (Subtitle)**:
+     Diubah menjadi:
+     *"Sertifikat ini dianugerahkan sebagai pengakuan atas penyelesaian dan pencapaian pembelajaran kepada:"*
+   - **Narasi Ketuntasan Belajar (Body Text)**:
+     Diubah sesuai redaksi stakeholder resmi Permata Cinere:
+     *"Telah berhasil menyelesaikan seluruh rangkaian pembelajaran mandiri, evaluasi pemahaman, dan tantangan praktik interaktif dengan hasil yang sangat memuaskan dalam program:"*
+   - **Organisasi Penerbit (Footer Right)**:
+     Diubah menjadi:
+     `PT Bank UOB Indonesia · Ruangguru`
+
+2. **Catatan Kaki Transkrip Nilai (Halaman 2)**:
+   - Diperbarui menjadi:
+     `* Dokumen ini diterbitkan secara otomatis dan sah melalui Sistem Manajemen Pembelajaran Asinkronus UOB My Digital Space bersama UOB dan Ruangguru.`
+
+3. **Pembersihan Total Sebutan Kalananti**:
+   - Menghapus sebutan *"Kalananti"* pada seluruh antarmuka dan berkas publik:
+     - `index.html`: Chip nama default menjadi *"Peserta Pembelajaran"*, link bantuan menjadi `mailto:academic@ruangguru.com`.
+     - `app.js`: Objek data default menjadi `'Peserta Pembelajaran'`.
+     - `bridge-hs-01.html`: Contoh tipe data string diubah menjadi `code>"Ruangguru"</code> atau <code>'UOB'</code>`.
+     - `docs/guide/index.html`: Footer slide dan kartu helpdesk diperbarui menjadi kemitraan eksklusif CSR PT Bank UOB Indonesia dan Ruangguru.
+
+4. **Verifikasi Otomatis Playwright (8/8 PASS)**:
+   - Skrip `test_certificate_pdf_export.py` mengecek kecocokan teks persis pada DOM dan PDF multi-orientasi (Landscape Halaman 1 + Portrait Halaman 2), mengonfirmasi ketiadaan kata "Kalananti" pada cert-org dan transkrip note.
+   - Ekspor PDF sertifikat diperbarui dan tersimpan di:
+     `/Users/yazidhilmi/Downloads/Sertifikat_UOB_MDS_SMA_Admin_Permata.pdf`.
+   - Deck panduan pengguna diekspor ulang (15 slide 16:9) dan tersimpan di:
+     `/Users/yazidhilmi/Downloads/Panduan_Pengguna_LMS_UOB_My_Digital_Space.pdf`.
+
+### Status
+completed, verified, and saved to project docs and Downloads.
+
+
 
 
  
