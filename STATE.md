@@ -6,7 +6,11 @@
 - **Active Focus**: Siap untuk operasional peluncuran platform dan distribusi materi panduan pengguna.
 - **Last Updated**: 2026-09-10
 
-## Completed
+- **Standardisasi Istilah Edukasi di Panduan Pengguna (2026-09-10)**:
+  - Mengganti istilah ambigu/gamified (*"Total Step / Materi Misi"* dan *"Step Misi Terpadu"*) pada tabel silabus Slide 5 menjadi istilah baku kurikulum pendidikan Indonesia: **`Total Materi Pembelajaran`** (`18 Materi Pembelajaran` untuk SD, `36 Materi Pembelajaran` untuk SMP dan SMA).
+  - Menyeragamkan seluruh sebutan di slide pendukung: badge silabus menjadi `4 Modul · 18 Materi Pembelajaran`, kuis menjadi `18 Kuis (1 kuis di setiap materi)`, indikator beranda menjadi `Indikator Progres Belajar Real-Time`, dan navigasi sidebar menjadi `Navigasi Modul & Materi`.
+  - Mengeliminasi kata *"misi"* dan *"step"* dari seluruh teks narasi pengguna pada deck panduan agar selaras 100% dengan portal LMS yang menggunakan metrik ketuntasan *"X dari Y Materi"*.
+  - Menghasilkan ulang dokumen PDF panduan widescreen 16:9 (`panduan-pengguna-lms-uob.pdf`, 11.69 MB) dan menyalinnya ke folder Unduhan laptop.
 
 - **Perbaikan Pewarnaan Cap Segel Emas (Gold Seal) di Ekspor PDF (2026-09-10)**:
   - Mengidentifikasi akar masalah hilangnya warna segel emas pada hasil ekspor PDF: parser gaya `html2canvas` tidak mendukung `radial-gradient` serta mengalami kegagalan render saat menemukan properti `outline` dan `outline-offset: -1px` pada elemen cap.

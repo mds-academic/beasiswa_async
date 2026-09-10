@@ -2929,3 +2929,33 @@ Apakah tabel silabus di Slide 5 ingin langsung kita seragamkan menjadi **`Total 
    - Tangkapan layar langkah panduan ([`step_12_cert_page1.png`](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/docs/guide/assets/step_12_cert_page1.png)) telah diperbarui dengan tampilan segel emas asli tersebut.
    - Dokumen PDF panduan pengguna ([`Panduan_Pengguna_LMS_UOB_My_Digital_Space.pdf`](file:///Users/yazidhilmi/Downloads/Panduan_Pengguna_LMS_UOB_My_Digital_Space.pdf)) dan file sertifikat resmi ([`Sertifikat_UOB_MDS_SMA_Admin_Permata.pdf`](file:///Users/yazidhilmi/Downloads/Sertifikat_UOB_MDS_SMA_Admin_Permata.pdf)) di folder Unduhan laptop telah diekspor ulang secara otomatis.
 
+
+---
+
+## User Request — 2026-09-10 (Standardisasi Istilah Edukasi: Materi Pembelajaran)
+
+"iya ini diganti jadi istilah pendiidikan yang comomon di indo aja yah"
+
+### Assistant Actions & Verbatim Response
+
+Seluruh istilah kurikulum di deck panduan pengguna telah distandardisasi ke istilah pendidikan baku yang umum digunakan di Indonesia:
+
+1. **Standardisasi Tabel Silabus (Slide 5)**:
+   - Parameter *"Total Step / Materi Misi"* diganti menjadi **`Total Materi Pembelajaran`**.
+   - Nilai *"18 Step Misi Terpadu"* diganti menjadi **`18 Materi Pembelajaran`** (SD).
+   - Nilai *"36 Step Misi Terpadu"* diganti menjadi **`36 Materi Pembelajaran`** (SMP & SMA).
+   - Keterangan kuis diganti menjadi: **`18 Kuis (1 kuis di setiap materi)`**.
+   - Hal ini sekarang selaras 100% dengan baris syarat kelulusan sertifikat: **`Menuntaskan 100% (18 dari 18 Materi)`** dan **`(36 dari 36 Materi)`**.
+
+2. **Standardisasi Slide Pendukung (Slide 1, 6, 7, 8, 12, 14)**:
+   - **Slide 1 (Cover)**: Badge jenjang diganti menjadi `4 Modul · 18 Materi` & `6 Modul · 36 Materi`.
+   - **Slide 6 (Detail Silabus)**: Judul kartu silabus diganti menjadi `4 Modul · 18 Materi Pembelajaran` & `6 Modul · 36 Materi Pembelajaran`.
+   - **Slide 7 (Beranda)**: Subtitle diganti menjadi `profil siswa, asal sekolah, dan indikator progres belajar`, dan indikator dinamai `Indikator Progres Belajar Real-Time` (*"Progres Belajar: 1 dari 18 Materi"*).
+   - **Slide 8 (Navigasi)**: Eyebrow dan judul diganti menjadi `Navigasi Modul & Materi`, dan caption diganti menjadi `Sidebar Navigasi Modul`.
+   - **Slide 12 (Kuis Feedback)**: Subtitle diganti menjadi `aktivasi materi pembelajaran berikutnya secara instan`.
+   - **Slide 14 (Klaim Sertifikat)**: Teks diganti menjadi `Setelah 100% materi pembelajaran selesai...`.
+
+3. **Regenerasi PDF Panduan Pengguna Widescreen 16:9**:
+   - Skrip `scratch/export_guide_pdf.py` dijalankan ulang, menghasilkan berkas PDF beresolusi tinggi 1920x1080 (15 halaman, 11.69 MB): [`docs/guide/panduan-pengguna-lms-uob.pdf`](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/docs/guide/panduan-pengguna-lms-uob.pdf).
+   - Berkas otomatis disalin ke folder Unduhan laptop: [`/Users/yazidhilmi/Downloads/Panduan_Pengguna_LMS_UOB_My_Digital_Space.pdf`](file:///Users/yazidhilmi/Downloads/Panduan_Pengguna_LMS_UOB_My_Digital_Space.pdf).
+   - Seluruh perubahan disinkronkan ke subproyek via `rsync`.
