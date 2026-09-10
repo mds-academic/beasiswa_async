@@ -2832,3 +2832,100 @@ Seluruh instruksi telah dieksekusi tuntas:
 
 ### Status
 completed, verified, and saved to project docs and Downloads.
+
+---
+
+### User Request (Turn 31)
+
+maksudnya materi apa misi
+
+jelsin detai l maksudnya apa 
+
+### Assistant Response (Turn 31)
+
+Pertanyaan ini sangat tepat dan kritis! Munculnya kata **"Materi"** dan **"Misi"** secara bergantian di tabel tersebut memang membingungkan karena menggabungkan istilah teknis kurikulum dengan istilah gamifikasi tema luar angkasa.
+
+Berikut penjelasan detail mengenai perbedaan maksudnya, struktur aslinya di platform, dan usulan perapian istilahnya:
+
+---
+
+### 1. Mengapa Muncul Istilah "Misi" dan "Materi"?
+
+Di platform LMS asinkronus UOB My Digital Space:
+1. **"Materi" (Istilah Kurikulum Asli)**:
+   - Merupakan **satuan unit belajar terkecil** yang harus dibuka dan dituntaskan oleh siswa.
+   - Satu materi = 1 unit sesi belajar (berisi 1 Video Tutorial ATAU 1 Slide Bacaan Interaktif + Kuis Pop-up Pemahaman + Rangkuman Konsep).
+   - Di jenjang SD ada **18 Materi**, di SMP ada **36 Materi**, dan di SMA ada **36 Materi**.
+2. **"Misi" (Istilah Gamifikasi Tema Luar Angkasa / Space Theme)**:
+   - Portal LMS mengusung tema gamifikasi eksplorasi luar angkasa (*Space Mission*).
+   - Di antarmuka sidebar portal, judul program koding dibungkus dengan metafora petualangan, misalnya:
+     - *"Misi: Scratch Visual Coding"* (SD)
+     - *"Misi: App Inventor Mobile Apps"* (SMP)
+     - *"Misi: Python Coding Exploration"* (SMA)
+   - Teks indikator progres di portal awalnya tertulis: *"Progres Misi: 1 dari 18 Materi"* (maksudnya: progres menyelesaikan misi petualangan koding, yang terdiri dari 18 materi pembelajaran).
+3. **Penyebab Kebingungan di Tabel**:
+   - Di baris tabel Slide 5 kemarin, tertulis:
+     `Total Step / Materi Misi` -> `36 Step Misi Terpadu`, lalu di baris bawahnya tertulis `36 dari 36 Materi`.
+   - Hal ini membuat pembaca bertanya-tanya: **"Apakah satu materi itu disebut misi, atau misinya adalah keseluruhan modul, atau apa bedanya materi dan misi?"**
+
+---
+
+### 2. Hirarki Struktur Belajar yang Sebenarnya di LMS
+
+Agar hierarkinya sangat jelas, berikut urutan struktur dari level teratas hingga terkecil:
+
+| Level | Istilah Baku | Contoh di Jenjang SMA | Penjelasan |
+| :--- | :--- | :--- | :--- |
+| **Level 1** | **Program / Kurikulum** *(Atau "Misi Belajar")* | Python for High School | Keseluruhan perjalanan belajar koding jenjang tersebut. |
+| **Level 2** | **Modul** *(Bab / Unit Topik)* | Modul 01: Variabel & Tipe Data | Kumpulan topik besar (total ada 4 modul di SD, 6 modul di SMP, 6 modul di SMA). |
+| **Level 3** | **Materi / Step** *(Satuan Belajar yang Dihitung)* | Step 03: Variabel dan Tipe Data Tanpa Takut | Unit aktivitas individual yang dibuka siswa: memutar 1 video / slide, menjawab kuis, dan membuka materi berikutnya. |
+
+Jadi:
+- **Materi** adalah **apa yang dipelajari dan dihitung** (Total 18 di SD, 36 di SMP, 36 di SMA).
+- **Misi** hanyalah **bahasa seru-seruan (gamifikasi)** untuk menyebut seluruh perjalanan belajar di portal.
+
+---
+
+### 3. Solusi Perapian: Menghapus Kata "Misi" di Tabel Silabus
+
+Agar silabus resmi tampil profesional, baku, dan tidak membingungkan guru, orang tua, maupun siswa, tabel Slide 5 sebaiknya dirapikan menjadi 100% konsisten menggunakan istilah akademis:
+
+- **Sebelum (Membingungkan)**:
+  - Baris label: `Total Step / Materi Misi`
+  - Isi kolom: `18 Step Misi Terpadu` / `36 Step Misi Terpadu`
+  - Syarat kelulusan: `Menuntaskan 100% (36 dari 36 Materi)`
+- **Sesudah (Rapi & Baku 100% Konsisten)**:
+  - Baris label: **`Total Materi Pembelajaran`** (atau **`Total Sesi Belajar`**)
+  - Isi kolom: **`18 Materi Pembelajaran`** / **`36 Materi Pembelajaran`**
+  - Syarat kelulusan: **`Menuntaskan 100% (18 dari 18 Materi)`** / **`Menuntaskan 100% (36 dari 36 Materi)`**
+
+Dengan begitu, kata *"Misi"* dieliminasi dari tabel silabus dan hanya digunakan sebagai nama tema portal di sidebar (*"Misi: Belajar Koding"*).
+
+Apakah tabel silabus di Slide 5 ingin langsung kita seragamkan menjadi **`Total Materi Pembelajaran`** (atau kamu lebih sreg dengan sebutan **`Total Sesi Belajar`**)?
+
+---
+
+## User Request — 2026-09-10 (Investigasi Warna Segel Emas di PDF vs HTML)
+
+"ini kenapa yah hasil pdf sama yang di html kok beda in kok kaya dai gada wrananya"
+
+### Investigasi & Akar Masalah (Root Cause Analysis)
+
+1. **Akar Masalah CSS di Library Canvas/PDF (`html2canvas`)**:
+   - Di antarmuka modal HTML, elemen cap segel `.cert-gold-seal` awalnya menggunakan `background: radial-gradient(...)` dan kemudian diubah dengan kombinasi shorthand CSS serta properti `outline: 2px solid ...` dan `outline-offset: -1px`.
+   - Library internal `html2canvas` (yang digunakan oleh `html2pdf.js` untuk merender canvas sebelum diubah menjadi file PDF) memiliki keterbatasan kompatibilitas terhadap parser CSS:
+     - **`radial-gradient` tidak didukung**: `html2canvas` hanya dapat merender `linear-gradient`.
+     - **`outline` dan `outline-offset` menyebabkan crash render pada node**: Ketika `html2canvas` menemukan properti CSS yang tidak didukung seperti `outline-offset: -1px` pada elemen cap, parser gayanya gagal (silent failure) sehingga `html2canvas` mengabaikan seluruh instruksi pewarnaan latar belakang (`background-color` dan `background-image`).
+     - Akibatnya, lingkaran cap segel jatuh ke latar transparan (`rgba(0,0,0,0)`), memperlihatkan kertas putih di belakangnya. Karena teks di dalamnya berwarna putih (`color: #ffffff`), teks putih di atas latar putih membuat cap segel tampak memudar total / tidak berwarna sama sekali (*"kok kaya dia gada warnanya"*).
+
+2. **Perbaikan Presisi & Permanen**:
+   - Menghapus properti `outline` dan `outline-offset` dari `.cert-gold-seal`. Sebagai gantinya, efek ring/bingkai luar ganda dibuat 100% menggunakan `box-shadow` berlapis yang didukung penuh oleh `html2canvas`:
+     `box-shadow: 0 0 0 2px #b45309, inset 0 2px 4px rgba(255, 255, 255, 0.8), 0 6px 16px rgba(146, 64, 14, 0.4) !important;`
+   - Menggunakan `linear-gradient(135deg, #fffbeb 0%, #fde047 25%, #eab308 45%, #d97706 70%, #92400e 100%) !important;` dengan fallback padat `background-color: #d97706 !important;`.
+   - Menerapkan perbaikan gaya ini secara sinkron di `subprojects/01-lms-platform/src/styles.css`, `subprojects/01-lms-platform/src/app.js`, `docs/styles.css`, dan `docs/app.js`.
+
+3. **Verifikasi Visual & Hasil Ekspor**:
+   - Pengujian otomatis via Playwright Chromium membuktikan hasil ekspor PDF asli ([`scratch/test_generated_certificate.pdf`](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/scratch/test_generated_certificate.pdf)) kini merender cap segel emas dengan warna kuning keemasan berkilau (*metallic gold*) yang kaya dan kontras, lengkap dengan bintang putih 3D dan teks tebal `"★ OFFICIAL UOB MDS 2026"`.
+   - Tangkapan layar langkah panduan ([`step_12_cert_page1.png`](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/docs/guide/assets/step_12_cert_page1.png)) telah diperbarui dengan tampilan segel emas asli tersebut.
+   - Dokumen PDF panduan pengguna ([`Panduan_Pengguna_LMS_UOB_My_Digital_Space.pdf`](file:///Users/yazidhilmi/Downloads/Panduan_Pengguna_LMS_UOB_My_Digital_Space.pdf)) dan file sertifikat resmi ([`Sertifikat_UOB_MDS_SMA_Admin_Permata.pdf`](file:///Users/yazidhilmi/Downloads/Sertifikat_UOB_MDS_SMA_Admin_Permata.pdf)) di folder Unduhan laptop telah diekspor ulang secara otomatis.
+

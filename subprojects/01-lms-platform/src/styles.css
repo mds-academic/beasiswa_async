@@ -4088,7 +4088,8 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 }
 
 .certificate-frame {
-  background: radial-gradient(ellipse at 50% 35%, #ffffff 0%, #faf8f5 70%, #f4eee1 100%);
+  background-color: #faf8f5;
+  background: linear-gradient(180deg, #ffffff 0%, #faf8f5 70%, #f4eee1 100%);
   border: 10px solid #092764;
   outline: 2.5px solid #b38728;
   outline-offset: -6px;
@@ -4350,17 +4351,18 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   width: 78px;
   height: 78px;
   border-radius: 50%;
-  background: radial-gradient(circle at 35% 30%, #fffbe6 0%, #fde047 30%, #d97706 70%, #92400e 100%);
-  border: 3.5px solid #ffffff;
+  background-color: #d97706 !important;
+  background: linear-gradient(135deg, #fffbeb 0%, #fde047 25%, #eab308 45%, #d97706 70%, #92400e 100%) !important;
+  border: 3.5px solid #ffffff !important;
   box-shadow:
     0 0 0 2px #b45309,
     inset 0 2px 4px rgba(255, 255, 255, 0.8),
-    0 6px 16px rgba(146, 64, 14, 0.35);
+    0 6px 16px rgba(146, 64, 14, 0.4) !important;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  color: #ffffff !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 
 .seal-inner-ring {

@@ -8,6 +8,13 @@
 
 ## Completed
 
+- **Perbaikan Pewarnaan Cap Segel Emas (Gold Seal) di Ekspor PDF (2026-09-10)**:
+  - Mengidentifikasi akar masalah hilangnya warna segel emas pada hasil ekspor PDF: parser gaya `html2canvas` tidak mendukung `radial-gradient` serta mengalami kegagalan render saat menemukan properti `outline` dan `outline-offset: -1px` pada elemen cap.
+  - Mengganti properti dengan `linear-gradient` bergradasi emas kaya (`#fffbeb` ke `#92400e`), fallback padat `background-color: #d97706 !important;`, dan border ganda berbasis `box-shadow` berlapis yang 100% kompatibel dengan kanvas PDF.
+  - Seluruh berkas CSS dan skrip pembangkit PDF (`styles.css` dan `app.js` di kedua folder `src/` dan `docs/`) telah disinkronkan.
+  - Verifikasi otomatis via Playwright membuktikan cap segel emas tampil berkilau tajam (*metallic gold*) di dokumen PDF asli.
+  - Tangkapan layar Slide 12 pada deck panduan dan PDF panduan pengguna widescreen 16:9 telah diregenerasi. Salinan sertifikat dan panduan diperbarui di folder Unduhan laptop.
+
 - **Pembaruan Hotline Contact Center & Regenerasi Tangkapan Layar & PDF Panduan (2026-09-10)**:
   - Hotline bantuan resmi diperbarui menjadi: **Contact Center UOB My Digital Space — `+62 813-1534-4904`** (terhubung ke WhatsApp) pada Slide 15 deck panduan, kartu bantuan sidebar portal LMS (`docs/index.html`), dan mirror subproyek.
   - Skrip `capture_guide_screenshots.py` diperbarui dan mengeksekusi penangkapan ulang seluruh 14 screenshot antarmuka (portal login, pencarian sekolah, pemilihan email, dashboard, sidebar, slide reader, video player, kuis, feedback, challenge panel, sertifikat & transkrip resolusi tinggi 2000px).

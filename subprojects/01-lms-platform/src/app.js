@@ -3270,6 +3270,24 @@ async function exportCertificateToPdf() {
     if (c1LogoRg) c1LogoRg.src = LOGO_RUANGGURU;
     const c1LogoUob = clone1.querySelector('#cert-logo-uob');
     if (c1LogoUob) c1LogoUob.src = LOGO_UOB_MDS;
+    // Injeksi style presisi untuk Halaman 1 agar seal emas dan warna latar selalu tampil kaya
+    const p1Style = document.createElement('style');
+    p1Style.innerHTML = `
+      .sandbox-surface-page-1 .certificate-frame {
+        background-color: #faf8f5 !important;
+        background: linear-gradient(180deg, #ffffff 0%, #faf8f5 70%, #f4eee1 100%) !important;
+      }
+      .sandbox-surface-page-1 .cert-gold-seal {
+        background-color: #d97706 !important;
+        background: linear-gradient(135deg, #fffbeb 0%, #fde047 25%, #eab308 45%, #d97706 70%, #92400e 100%) !important;
+        border: 3.5px solid #ffffff !important;
+        box-shadow: 0 0 0 2px #b45309, 0 6px 16px rgba(146, 64, 14, 0.4) !important;
+        color: #ffffff !important;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6) !important;
+      }
+    `;
+    clone1.appendChild(p1Style);
+
     surface1.appendChild(clone1);
     sandbox.appendChild(surface1);
 
