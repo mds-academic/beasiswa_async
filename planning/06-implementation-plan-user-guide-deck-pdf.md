@@ -35,49 +35,63 @@ Menghasilkan panduan visual komprehensif yang memandu pengguna langkah demi lang
 
 ---
 
-## 2. Struktur Slide Panduan Pengguna
+## 2. Struktur Slide Panduan Pengguna (Revisi Seamless Portal & Matriks Abridged)
 
-Deck panduan akan terdiri dari 12 slide terstruktur:
+Deck panduan diselaraskan 100% dengan estetika visual portal LMS (*deep space navy, starfield dots, floating planets, dual branding Ruangguru x UOB, jenjang badges, dan 3D tactile skeuomorphic buttons*) serta diperkaya dengan matriks kurikulum abridged per jenjang (SD, SMP, SMA):
 
-- **Slide 1: Judul & Pengantar**:
-  - *Panduan Pengguna Baru LMS UOB My Digital Space* — Asynchronous Learning Platform SD, SMP & SMA.
-  - Ringkasan tujuan program beasiswa dan teknologi single-portal.
-- **Slide 2: Peta Alur Belajar Siswa (Student Journey Overview)**:
-  - Diagram visual 6 langkah utama: Akses Portal → Input Identitas → Eksplorasi Sidebar → Belajar Materi → Selesaikan Kuis & Praktik → Unduh Sertifikat Resmi.
-- **Slide 3: Langkah 1 — Membuka Portal & Memilih Sekolah Mitra**:
-  - Akses URL portal LMS.
-  - Cara mencari nama sekolah di combobox pintar.
-  - Penjelasan deteksi otomatis jenjang (SD / SMP / SMA).
-- **Slide 4: Langkah 2 — Memasukkan Email & Nama Siswa**:
-  - Memilih atau mengetik email siswa terdaftar.
-  - Cara menemukan email jika siswa belum tahu (referensi data sekolah / PIC).
-  - Validasi data & tombol "Mulai Belajar Sekarang".
-- **Slide 5: Langkah 3 — Mengenal Dashboard & Navigasi Modul (Sidebar)**:
-  - Anatomi dashboard: Topbar identitas siswa & sidebar materi misi.
-  - Arti 3 status materi: Selesai (✓), Sedang Berjalan (▶), dan Terkunci (🔒).
-  - Indikator progres misi ("Progres: X dari Y Materi").
-- **Slide 6: Langkah 4 — Membaca Slide Pembelajaran (Materi Bacaan/Jembatan)**:
-  - Mempelajari slide fondasi konsep untuk siswa pemula mutlak.
-  - Navigasi slide sebelumnya/selanjutnya, mode fullscreen, dan kartu rangkuman.
-- **Slide 7: Langkah 5 — Menonton Video Tutorial Pembelajaran**:
-  - Player video YouTube terkurasi (hanya memutar segmen materi penting).
-  - Menggunakan bookmark topik dan fitur putar ulang 30 detik (*Rewatch 30s*).
-- **Slide 8: Langkah 6 — Menjawab Pop-Up Kuis Interaktif**:
-  - Munculnya pop-up kuis non-blocking yang ramah (*less-strict*).
-  - Memilih jawaban, memeriksa feedback nilai instan.
-  - Membuka kunci tombol "Materi Selanjutnya".
-- **Slide 9: Langkah 7 — Mengerjakan Tantangan Praktik Mandiri (Mini Project)**:
-  - Praktik membuat kode di Google Colab / Scratch / App Inventor.
-  - Mengirimkan link proyek atau file tugas (bersifat non-gating).
-- **Slide 10: Langkah 8 — Membuka Tab Sertifikat & Rekap Nilai**:
-  - Terbukanya tab `🎓 Sertifikat & Rekap Nilai` di sidebar setelah 100% misi tuntas.
-  - Tampilan Halaman 1: Certificate of Completion berbingkai emas & stempel 3D.
-  - Tampilan Halaman 2: Transkrip Hasil Evaluasi Belajar full-length A4 dengan matriks 4 kompetensi.
-- **Slide 11: Langkah 9 — Mengunduh & Mencetak Berkas PDF Sertifikat**:
-  - Mengklik tombol "Cetak / Simpan PDF" di modal sertifikat.
-  - Mendapatkan dokumen 2 halaman resmi beresolusi tinggi tanpa watermark pratinjau.
-- **Slide 12: Panduan Perangkat, Troubleshooting & Bantuan Fasilitator**:
-  - Rekomendasi perangkat laptop/desktop/Chromebook.
+- **Slide 1: Cover & Pengantar Resmi**:
+  - Dual Logo resmi Ruangguru dan UOB Indonesia, floating space planets, dan starfield background.
+  - Judul: *Panduan Lengkap Pengguna & Navigasi Belajar Mandiri — UOB My Digital Space*.
+  - Jenjang Badges resmi: `SD · Scratch Logic`, `SMP · App Inventor`, `SMA · Python Coding`.
+  - 4 Pilar belajar: Akses Mandiri, Materi Terkurasi, Kuis Interaktif, dan Sertifikat Kelulusan 2 Halaman.
+- **Slide 2: Persiapan Perangkat & Rekomendasi Penggunaan**:
+  - Rekomendasi perangkat: Laptop/PC (layar ≥ 1024px) dengan Google Chrome/Edge.
+  - Tangkapan layar asli **Mobile Gentle Advisory Modal** (`step_14_mobile_advisory.png`) yang ramah bagi siswa saat mengakses via smartphone.
+- **Slide 3: Langkah 1 — Membuka Portal & Mencari Nama Sekolah**:
+  - URL portal LMS (`http://localhost:8080/` atau URL Vercel).
+  - Panduan interaktif fitur combobox pencarian nama sekolah (misal: "andalus").
+  - Auto-detection jenjang otomatis (SD / SMP / SMA).
+  - Tangkapan layar: `step_01_portal_login.png` & `step_02_school_dropdown.png`.
+- **Slide 4: Langkah 2 — Memilih Email Siswa & Masuk ke Kelas**:
+  - Pemilihan email/nama siswa terdaftar, konfirmasi identitas kelas.
+  - Tombol 3D skeuomorphic *"Masuk ke Kelas"*.
+  - Tangkapan layar: `step_03_student_email_select.png`.
+- **Slide 5: [BARU] Matriks Kurikulum Abridged Per Jenjang (SD, SMP, SMA)**:
+  - Tabel perbandingan komprehensif 3 jenjang:
+    - **SD (Scratch)**: 4 Modul · 18 Step (1 Slide Pengantar · 17 Video Tutorial · 18 Kuis Interaktif · 3 Proyek Hands-on di Scratch Editor).
+    - **SMP (App Inventor)**: 6 Modul · 36 Step (4 Slide Bacaan · 24 Video Tutorial · 46 Kuis · 8 Mini Project yang Bisa Dikumpul).
+    - **SMA (Python)**: 6 Modul · 36 Step (6 Slide Bacaan · 23 Video Tutorial · 59 Kuis · 7 Mini Project yang Bisa Dikumpul).
+- **Slide 6: [BARU] Detail Modul & Mini Project yang Dapat Dikumpulkan**:
+  - Rincian kurikulum dan daftar judul mini project tiap jenjang:
+    - **SD**: Modul 0 Kenalan Scratch, Modul 1 About Me (7 video), Modul 2 Racing Car (6 video), Modul 3 Increase Your Earnings (4 video).
+    - **SMP**: 8 Mini Project (Form Aman, Cek Pesan Aman, Final Project If-Else, Kalkulator Prosedur, Tiny DB, Mini Project C, Solusi Digital, Final Project App).
+    - **SMA**: 7 Mini Project (Smart Budget & Risk Planner, Mini Project Optimasi, Mini Project Fungsi, Safe Transaction Input, Safe Input Error Handling, Debugging Program Belanja, Financial Literacy Capstone).
+- **Slide 7: Langkah 3 — Mengenal Beranda Belajar (Dashboard & Sidebar)**:
+  - Anatomi Topbar profil siswa & Sidebar Misi dengan indikator visual (✓ Selesai Hijau, ▶ Aktif Biru, 🔒 Terkunci Abu-abu).
+  - Tangkapan layar: `step_04_dashboard_overview.png` & `step_05_sidebar_navigation.png`.
+- **Slide 8: Langkah 4 — Membaca & Mempelajari Slide Interaktif**:
+  - Mempelajari slide fondasi konsep mandiri, navigasi, code preview, dan kotak rangkuman.
+  - Tangkapan layar: `step_06_reading_slide.png`.
+- **Slide 9: Langkah 5 — Menonton Video Modul Terkurasi**:
+  - Pemutar video YouTube terintegrasi, seek bar, tombol *"Tonton Ulang 30 Detik"*, dan bookmark topik.
+  - Tangkapan layar: `step_07_video_player.png`.
+- **Slide 10: Langkah 6 — Menjawab Kuis Pop-up Interaktif**:
+  - Penjelasan kuis ramah *Less-Strict*, kartu opsi 3D (A, B, C, D), dan Bento Box tracker status soal.
+  - Tangkapan layar: `step_08_interactive_quiz.png`.
+- **Slide 11: Langkah 7 — Umpan Balik Kuis & Buka Materi Selanjutnya**:
+  - Umpan balik instan jawaban benar & tombol *"Materi Selanjutnya"* membuka gembok materi berikutnya.
+  - Tangkapan layar: `step_09_quiz_feedback.png`.
+- **Slide 12: Langkah 8 — Mengerjakan Tantangan Praktik (Mini Project Panel)**:
+  - Panel form Mini Project non-gating: input formulir fleksibel (editor kode Python, link Colab/GitHub/App Inventor/Scratch, upload berkas).
+  - Tangkapan layar: `step_10_challenge_panel.png`.
+- **Slide 13: Langkah 9 — Mengklaim & Mengunduh Sertifikat Resmi (2 Halaman)**:
+  - Terbukanya menu `🎓 Sertifikat & Rekap Nilai`.
+  - Halaman 1: Sertifikat Kelulusan resmi berbingkai emas & stempel 3D (Landscape A4).
+  - Halaman 2: Transkrip Akademik resmi full-length dengan rekap seluruh materi & matriks 4 kompetensi (Portrait A4).
+  - Tangkapan layar: `step_11_certificate_unlocked.png`, `step_12_cert_page1.png`, & `step_13_cert_page2.png`.
+- **Slide 14: Penutup, Tips Sukses Belajar, & Pusat Bantuan**:
+  - 3 Tips sukses belajar mandiri (Rutin, Praktik, Ulang Video), FAQ umum, dan kontak tim bantuan teknis Ruangguru x UOB Indonesia.
+
   - Advisory modal ramah saat dibuka di HP/smartphone.
   - Bantuan teknis & tombol kontak WhatsApp Fasilitator Kalananti.
 

@@ -2,34 +2,26 @@
 
 ## Current Status
 
-- **Status**: Deck presentasi interaktif dan PDF komprehensif "Panduan Lengkap Pengguna LMS UOB My Digital Space" (12 slide/halaman landscape 16:9) selesai dibuat 100% menggunakan HTML-to-PDF engine Playwright Chromium, dilengkapi 14 tangkapan layar antarmuka asli (login combobox, navigasi modul, slide reader, video player, kuis interaktif, mini project, dan sertifikat resmi 2 halaman).
+- **Status**: Deck presentasi interaktif dan PDF resmi "Panduan Lengkap Pengguna & Silabus Abridged LMS UOB My Digital Space" berhasil diperbarui 100% (14 slide/halaman A4 landscape presisi). Dilengkapi dengan tabel matriks perbandingan kurikulum 3 jenjang (SD, SMP, SMA), rincian judul modul, jumlah video, slide bacaan, kuis, dan daftar mini project yang dapat dikumpulkan, dengan desain visual yang diselaraskan 100% dengan portal LMS (dual branding Ruangguru x UOB, space planets, starfield dots, dan tombol 3D skeuomorphic).
 - **Active Focus**: Persiapan pengujian integrasi akhir, sinkronisasi repositori, dan operasional peluncuran.
 - **Last Updated**: 2026-09-10
 
 ## Completed
 
-- **Deck Panduan Lengkap Pengguna LMS (HTML-to-PDF 12 Slide & 14 Real Screenshots) Selesai 100% (2026-09-10)**:
-  - Pembuatan Rencana Implementasi: [06-implementation-plan-user-guide-deck-pdf.md](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/planning/06-implementation-plan-user-guide-deck-pdf.md).
-  - Ekstraksi 14 aset visual antarmuka asli berkualitas tinggi (`projects/uob-async-lms/docs/guide/assets/`):
-    - `step_01_portal_login.png`: Tampilan modal masuk awal.
-    - `step_02_school_dropdown.png`: Pencarian combobox nama sekolah ("andalus").
-    - `step_03_student_email_select.png`: Dropdown pemilihan email/akun siswa ("raffa").
-    - `step_04_dashboard_overview.png`: Tampilan dashboard beranda setelah login.
-    - `step_05_sidebar_navigation.png`: Sidebar daftar materi dengan indikator status (✓, ▶, 🔒).
-    - `step_06_reading_slide.png`: Antarmuka pembaca slide HTML interaktif & rangkuman.
-    - `step_07_video_player.png`: Pemutar video terkurasi, tombol Tonton Ulang 30 Detik, dan daftar penanda waktu.
-    - `step_08_interactive_quiz.png`: Modal kuis interaktif 3D skeuomorphic & bento box tracker.
-    - `step_09_quiz_feedback.png`: Umpan balik instan jawaban benar dan terbukanya tombol materi selanjutnya.
-    - `step_10_challenge_panel.png`: Panel Mini Project tantangan mandiri fleksibel (editor kode, link, upload berkas).
-    - `step_11_certificate_unlocked.png`: Status kelulusan dan menu sertifikat terbuka pada sidebar.
-    - `step_12_cert_page1.png`: Halaman 1 Sertifikat Kelulusan resmi (Landscape A4).
-    - `step_13_cert_page2.png`: Halaman 2 Transkrip Akademik resmi (Portrait A4).
-    - `step_14_mobile_advisory.png`: Modal rekomendasi perangkat laptop/komputer untuk pengguna HP.
-  - Implementasi deck presentasi interaktif di [index.html](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/docs/guide/index.html) dengan navigasi keyboard (Arrow Left/Right, Space, F, P), touch swipe, progress bar dinamis, dan print stylesheet A4 landscape presisi.
-  - Export PDF resmi via script headless Chromium (`export_guide_pdf.py`):
-    - [panduan-pengguna-lms-uob.pdf](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/docs/guide/panduan-pengguna-lms-uob.pdf) (8.33 MB, tepat 12 halaman A4 Landscape tanpa halaman kosong).
-    - Salinan instan pengguna: `/Users/yazidhilmi/Downloads/Panduan_Pengguna_LMS_UOB_My_Digital_Space.pdf`.
+- **Revisi Seamless Portal Design & Matriks Kurikulum Abridged 3 Jenjang (2026-09-10)**:
+  - Pembaruan Rencana Implementasi: [06-implementation-plan-user-guide-deck-pdf.md](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/planning/06-implementation-plan-user-guide-deck-pdf.md).
+  - Penambahan 2 Slide Baru:
+    - **Slide 5 (Matriks Kurikulum Abridged 3 Jenjang)**: Tabel perbandingan komprehensif SD (Scratch: 4 modul, 18 step, 17 video, 1 slide, 18 kuis, 3 proyek hands-on), SMP (App Inventor: 6 modul, 36 step, 24 video, 4 slide, 46 kuis, 8 mini project), dan SMA (Python: 6 modul, 36 step, 23 video, 6 slide, 59 kuis, 7 mini project).
+    - **Slide 6 (Rincian Silabus & Daftar Mini Project)**: 3 Bento card merinci bab modul dan daftar judul mini project yang dapat disubmit per jenjang (SMP: Form Aman, Cek Pesan, Final Project If-Else, Kalkulator Prosedur, TinyDB, Mini Project C, Merancang Solusi, Final Project App; SMA: Smart Budget, Optimasi, Fungsi Modular, Safe Transaction, Safe Input Error Handling, Debugging Belanja, Capstone Financial App).
+  - Penyelarasan Desain 100% Seamless dengan Portal LMS:
+    - Palet warna asli portal (`--navy: #092764`, `--navy-dark: #051a43`, `--navy-deep: #03102b`, `--blue: #0b78f6`, `--cyan: #43d7ff`, `--yellow: #ffd93d`).
+    - Dual Logo resmi Ruangguru x UOB Indonesia di Topbar dan Cover.
+    - Floating space planets dan starfield canvas overlay.
+    - Tombol taktil skeuomorphic 3D cembung warna emas dan biru.
+    - Badge jenjang resmi (`badge-sd`, `badge-smp`, `badge-sma`).
+  - Pembaruan berkas HTML ([docs/guide/index.html](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/docs/guide/index.html)) dan ekspor PDF resmi ([panduan-pengguna-lms-uob.pdf](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/docs/guide/panduan-pengguna-lms-uob.pdf) & `/Users/yazidhilmi/Downloads/Panduan_Pengguna_LMS_UOB_My_Digital_Space.pdf`): tepat 14 halaman A4 Landscape (10.84 MB), terverifikasi 100% tanpa clipping atau blank pages.
   - Sinkronisasi mirror ke `subprojects/01-lms-platform/docs/guide/`.
+
 
 
 - **In-Browser JavaScript Simulation & Deep Diagnostic UAT (Zero Playwright) Selesai 100% (2026-09-09)**:
