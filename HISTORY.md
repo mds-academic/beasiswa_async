@@ -2578,6 +2578,89 @@ Deck presentasi interaktif dan berkas PDF resmi **"Panduan Lengkap Pengguna & Si
 
 ### Status
 completed, verified, and saved to project docs and Downloads.
+
+---
+
+### User Request (Turn 26)
+
+ini banyak kesalahan 
+1/ ini dai ada yang terlalu kecil gambarnya jadi ga kelaitan 
+2/ design pdf nya banyak yang glitch 
+3/ banyak yang terpotong
+
+kan pdf kan ga harus A4 yah karena ini bukan di print jadi bisa di sesuaikan yah 
+
+### Assistant Response (Turn 26)
+
+Seluruh kendala pada deck panduan dan ekspor PDF telah diperbaiki secara menyeluruh:
+
+---
+
+### 1. Penyesuaian Kanvas: Beralih dari A4 ke Digital Widescreen 16:9 (1920px × 1080px)
+Sesuai arahanmu bahwa dokumen ini diperuntukkan untuk dibaca di layar (*digital presentation*) dan bukan untuk dicetak fisik, kanvas PDF resmi kini diubah total dari ukuran A4 sempit menjadi **Format Widescreen Layar 16:9 (`1920px × 1080px`)**:
+- Memberikan ruang horizontal dan vertikal yang sangat lega (lebar 1920px dan tinggi 1080px).
+- Tidak ada lagi pemadatan paksa elemen antarmuka yang sebelumnya membuat layout berdesakan.
+- Menghasilkan pengalaman membaca yang nyaman, luas, dan modern seperti deck presentasi profesional.
+
+---
+
+### 2. Resolusi Masalah 1: Gambar Screenshot Berukuran Besar & Sangat Tajam
+- **Pemisahan Slide Mandiri**:
+  - Slide Dashboard dan Sidebar yang sebelumnya digabung berdampingan dipecah menjadi 2 slide terpisah:
+    - **Slide 7 (Langkah 3A — Mengenal Dashboard Belajar)**: Menampilkan screenshot penuh dashboard dengan dimensi besar (`max-height: 640px`, lebar >1000px). Semua teks profil siswa, topbar, nama sekolah, dan progress bar misi kini terbaca jelas dan tajam.
+    - **Slide 8 (Langkah 3B — Navigasi Sidebar Misi & Arti 3 Status)**: Menampilkan screenshot penuh sidebar dari atas sampai bawah dengan kartu penjelasan 3 status indikator (Centang Hijau `✓`, Play Biru `▶`, Gembok Abu-abu `🔒`) berukuran besar dan jelas.
+- **Sertifikat & Transkrip Ultra-High-Res (Slide 14)**:
+  - Menggunakan gambar beresolusi 2000px yang diekstrak langsung secara lossless dari berkas PDF resmi, sehingga teks transkrip nilai, tabel modul, dan segel emas UOB terbaca jernih tanpa blur atau pecah.
+
+---
+
+### 3. Resolusi Masalah 2: Eliminasi Total Glitch Visual PDF
+- **Penyebab Glitch Kotak Kuning**:
+  - Mesin cetak Chromium headless mengalami bug rendering saat memproses CSS `-webkit-background-clip: text` yang digabung dengan latar gradien, sehingga merender kotak kuning pekat di atas kata *"Silabus Pembelajaran"*.
+- **Solusi**:
+  - Mencopot seluruh properti `-webkit-background-clip: text` pada heading dan menggantinya dengan warna solid resmi portal (`color: var(--yellow);` `#ffd93d`).
+  - Hasil cetak PDF kini bersih 100% dari kotak penutup, tanpa artefak visual, dan teks judul tampil kontras tajam.
+
+---
+
+### 4. Resolusi Masalah 3: Eliminasi Konten Terpotong (Zero Cutoffs & Leaks)
+- **Eliminasi Pemotongan Halaman**:
+  - Pada format A4 sebelumnya, konten 3 kolom silabus terpotong di bagian bawah, dan baris header slide berikutnya bocor (*leak*) ke bagian bawah halaman.
+  - Pada format widescreen 16:9 dengan tinggi terkunci `1080px` dan isolasi halaman `@page { size: 1920px 1080px; margin: 0; }`, seluruh 15 slide kini terisolasi presisi 1 slide per 1 halaman PDF.
+  - Kartu silabus, tabel abridged, kartu materi, dan footer halaman 1-15 tampil utuh tanpa terpotong dan tanpa halaman kosong.
+
+---
+
+### 5. Ringkasan 15 Slide Panduan Pengguna Widescreen
+1. **Slide 1**: Cover & Pengantar Resmi (Dual Logo Ruangguru x UOB, bebas glitch teks).
+2. **Slide 2**: Persiapan Perangkat & Rekomendasi Penggunaan (Mobile Gentle Advisory Modal).
+3. **Slide 3**: Langkah 1 — Membuka Portal & Combobox Pencarian Sekolah.
+4. **Slide 4**: Langkah 2 — Memilih Email Siswa & Tombol 3D Masuk ke Kelas.
+5. **Slide 5**: Matriks Kurikulum Abridged 3 Jenjang (Tabel komparasi SD, SMP, SMA).
+6. **Slide 6**: Rincian Modul & Daftar Mini Project Tiap Jenjang (3 Kolom Bento lega).
+7. **Slide 7**: Langkah 3A — Mengenal Dashboard Belajar (Screenshot Besar Full Dashboard).
+8. **Slide 8**: Langkah 3B — Navigasi Sidebar Misi & Arti 3 Status (Screenshot Besar Full Sidebar).
+9. **Slide 9**: Langkah 4 — Membaca Slide Interaktif & Rangkuman Konsep.
+10. **Slide 10**: Langkah 5 — Menonton Video Modul dengan Pemutar Pintar.
+11. **Slide 11**: Langkah 6 — Menjawab Kuis Pop-up Interaktif (*Less-Strict*).
+12. **Slide 12**: Langkah 7 — Umpan Balik Kuis & Buka Materi Selanjutnya.
+13. **Slide 13**: Langkah 8 — Mengerjakan Tantangan Praktik (Mini Project Panel).
+14. **Slide 14**: Langkah 9 — Mengklaim Sertifikat Kelulusan & Transkrip Nilai (High-Res 2000px).
+15. **Slide 15**: Penutup — Tips Sukses Belajar Asinkron & Pusat Bantuan.
+
+---
+
+### 6. Berkas yang Telah Diperbarui & Siap Diakses
+- 📄 **Berkas PDF Resmi Proyek**: [panduan-pengguna-lms-uob.pdf](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/docs/guide/panduan-pengguna-lms-uob.pdf) (Ukuran: 11.79 MB, tepat 15 halaman widescreen 16:9).
+- 📥 **Salinan Folder Unduhan Laptop**: [Panduan_Pengguna_LMS_UOB_My_Digital_Space.pdf](file:///Users/yazidhilmi/Downloads/Panduan_Pengguna_LMS_UOB_My_Digital_Space.pdf).
+- 🌐 **Deck Presentasi Interaktif (HTML)**: [docs/guide/index.html](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/docs/guide/index.html).
+- 📋 **Dokumen Rencana Implementasi**: [06-implementation-plan-user-guide-deck-pdf.md](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/planning/06-implementation-plan-user-guide-deck-pdf.md).
+- 🔄 **Mirror Subproyek**: [subprojects/01-lms-platform/docs/guide/](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/subprojects/01-lms-platform/docs/guide/).
+
+### Status
+completed, verified, and saved to project docs and Downloads.
+
+
  
 
 

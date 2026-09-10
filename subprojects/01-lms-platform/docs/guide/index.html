@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=1920, initial-scale=1.0" />
   <title>Panduan Pengguna & Navigasi LMS — UOB My Digital Space</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,28 +26,25 @@
       --ink-light: #2d3f66;
       --muted: #61708f;
       --line: #dce6f5;
-      --paper: #ffffff;
       --white: #ffffff;
       --text-main: #f8fafc;
       --text-muted: #94a3b8;
       --text-light: #cbd5e1;
 
       /* Card Backgrounds */
-      --card-bg: rgba(5, 26, 67, 0.88);
-      --card-border: rgba(67, 215, 255, 0.25);
-      --inner-card: rgba(9, 39, 100, 0.55);
-      --inner-border: rgba(220, 230, 245, 0.14);
+      --card-bg: #051a43;
+      --card-border: rgba(67, 215, 255, 0.28);
+      --inner-card: rgba(9, 39, 100, 0.65);
+      --inner-border: rgba(220, 230, 245, 0.16);
 
       /* Typography */
       --font-heading: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
       --font-body: 'Inter', system-ui, -apple-system, sans-serif;
-      --font-code: 'Fira Code', ui-monospace, SFMono-Regular, monospace;
+      --font-code: 'Fira Code', monospace;
 
-      /* Shadows & Radius */
       --radius-sm: 8px;
       --radius-md: 14px;
       --radius-lg: 20px;
-      --radius-xl: 32px;
       --radius-pill: 9999px;
     }
 
@@ -57,70 +54,20 @@
       padding: 0;
     }
 
-    body {
-      min-height: 100vh;
-      background:
-        radial-gradient(circle at 12% 8%, rgba(67, 215, 255, 0.22), transparent 26rem),
-        radial-gradient(circle at 92% 18%, rgba(116, 97, 255, 0.2), transparent 24rem),
-        linear-gradient(150deg, var(--navy-deep), var(--navy-dark) 45%, var(--navy) 90%);
+    html, body {
+      background-color: var(--navy-deep);
       color: var(--text-main);
       font-family: var(--font-body);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      overflow-x: hidden;
-      position: relative;
       -webkit-font-smoothing: antialiased;
+      margin: 0;
+      padding: 0;
     }
 
-    /* Starfield Background Overlay */
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      opacity: 0.45;
-      background-image:
-        radial-gradient(circle, #fff 1px, transparent 1.5px),
-        radial-gradient(circle, rgba(255, 255, 255, 0.7) 1px, transparent 1.5px);
-      background-position: 0 0, 42px 58px;
-      background-size: 96px 96px, 128px 128px;
-      z-index: 0;
-    }
-
-    /* Floating Space Planets (Consistent with Portal) */
-    .planet {
-      position: fixed;
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0.85;
-      filter: drop-shadow(0 12px 30px rgba(0, 0, 0, 0.35));
-    }
-    .planet-one {
-      width: 130px;
-      top: 100px;
-      left: 28px;
-      animation: floatPlanet 14s ease-in-out infinite alternate;
-    }
-    .planet-two {
-      width: 170px;
-      bottom: 60px;
-      right: 32px;
-      animation: floatPlanet 18s ease-in-out infinite alternate-reverse;
-    }
-    @keyframes floatPlanet {
-      0% { transform: translateY(0px) rotate(0deg); }
-      100% { transform: translateY(-24px) rotate(8deg); }
-    }
-
-    /* Fixed Topbar Header (Portal Branding) */
+    /* Fixed Presentation Topbar (Interactive Mode) */
     .deck-topbar {
       width: 100%;
       height: 64px;
-      background: rgba(3, 16, 43, 0.92);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
+      background: rgba(3, 16, 43, 0.94);
       border-bottom: 1px solid var(--card-border);
       position: sticky;
       top: 0;
@@ -128,7 +75,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0 32px;
+      padding: 0 40px;
     }
 
     .brand-group {
@@ -140,71 +87,55 @@
       display: flex;
       align-items: center;
       gap: 14px;
-      background: rgba(255, 255, 255, 0.96);
-      padding: 6px 14px;
+      background: #ffffff;
+      padding: 6px 16px;
       border-radius: var(--radius-pill);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
-    .rg-logo {
-      height: 20px;
-      width: auto;
-      object-fit: contain;
-    }
-    .brand-divider {
-      width: 1px;
-      height: 18px;
-      background: #cbd5e1;
-    }
-    .uob-logo {
-      height: 18px;
-      width: auto;
-      object-fit: contain;
-    }
-    .brand-text {
-      display: flex;
-      flex-direction: column;
-    }
+    .rg-logo { height: 22px; width: auto; object-fit: contain; }
+    .brand-divider { width: 1px; height: 18px; background: #cbd5e1; }
+    .uob-logo { height: 18px; width: auto; object-fit: contain; }
+
+    .brand-text { display: flex; flex-direction: column; }
     .brand-kicker {
-      font-size: 0.68rem;
+      font-size: 0.7rem;
       font-weight: 800;
       text-transform: uppercase;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.12em;
       color: var(--cyan);
       font-family: var(--font-heading);
     }
     .brand-title {
       font-family: var(--font-heading);
       font-weight: 700;
-      font-size: 0.92rem;
+      font-size: 0.95rem;
       color: #fff;
     }
 
-    /* Topbar Controls */
     .deck-controls {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 14px;
     }
     .slide-counter {
       font-family: var(--font-heading);
       font-weight: 700;
-      font-size: 0.88rem;
+      font-size: 0.9rem;
       color: var(--yellow);
       background: rgba(255, 217, 61, 0.12);
       border: 1px solid rgba(255, 217, 61, 0.3);
-      padding: 6px 14px;
+      padding: 6px 16px;
       border-radius: var(--radius-pill);
     }
     .btn-topbar {
       font-family: var(--font-heading);
-      font-size: 0.84rem;
+      font-size: 0.86rem;
       font-weight: 700;
-      padding: 8px 16px;
+      padding: 8px 18px;
       border-radius: var(--radius-md);
       cursor: pointer;
       display: inline-flex;
       align-items: center;
-      gap: 6px;
+      gap: 8px;
       transition: all 0.2s ease;
       text-decoration: none;
     }
@@ -214,11 +145,9 @@
       color: #fff;
     }
     .btn-topbar.btn-nav:hover {
-      background: rgba(67, 215, 255, 0.18);
+      background: rgba(67, 215, 255, 0.2);
       border-color: var(--cyan);
-      transform: translateY(-1px);
     }
-    /* Skeuomorphic Yellow Button (Portal Primary) */
     .btn-topbar.btn-primary {
       background: linear-gradient(180deg, var(--yellow) 0%, var(--yellow-warm) 100%);
       border: 1px solid rgba(255, 255, 255, 0.5);
@@ -226,104 +155,97 @@
       font-weight: 800;
       box-shadow: 0 3px 0 #b38b00, 0 6px 16px rgba(0, 0, 0, 0.35);
     }
-    .btn-topbar.btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 5px 0 #b38b00, 0 10px 22px rgba(255, 217, 61, 0.4);
-    }
-    .btn-topbar.btn-primary:active {
-      transform: translateY(2px);
-      box-shadow: 0 1px 0 #b38b00, 0 4px 8px rgba(0, 0, 0, 0.3);
-    }
 
-    /* Deck Container */
+    /* Container for Screen View */
     .deck-container {
-      width: 100%;
-      max-width: 1440px;
-      padding: 36px 32px 100px;
       display: flex;
       flex-direction: column;
-      gap: 48px;
-      position: relative;
-      z-index: 10;
+      align-items: center;
+      gap: 40px;
+      padding: 30px 0 80px;
     }
 
-    /* Slide Card: 16:9 Aspect Frame */
+    /* Widescreen 16:9 Presentation Canvas (1920 x 1080) */
     .deck-slide {
-      width: 100%;
-      background: var(--card-bg);
+      width: 1920px;
+      height: 1080px;
+      max-height: 1080px;
+      min-height: 1080px;
+      background: 
+        radial-gradient(circle at 12% 10%, rgba(67, 215, 255, 0.16) 0%, transparent 40%),
+        radial-gradient(circle at 88% 85%, rgba(11, 120, 246, 0.16) 0%, transparent 45%),
+        linear-gradient(150deg, #03102b, #051a43 50%, #092764 100%);
       border: 1px solid var(--card-border);
-      border-radius: 24px;
-      padding: 40px 48px;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      position: relative;
+      box-sizing: border-box;
+      padding: 48px 64px 38px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      min-height: 720px;
+      position: relative;
       overflow: hidden;
       page-break-after: always;
       break-after: page;
+      page-break-inside: avoid;
+      break-inside: avoid;
     }
 
-    /* Top Glowing Stripe on Every Slide */
+    /* Top Accent Stripe */
     .deck-slide::before {
       content: '';
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
-      height: 4px;
+      height: 5px;
       background: linear-gradient(90deg, var(--blue), var(--cyan), var(--yellow));
     }
 
-    /* Slide Header */
+    /* Header Section */
     .slide-header {
-      margin-bottom: 24px;
+      margin-bottom: 20px;
     }
     .slide-eyebrow {
       display: inline-flex;
       align-items: center;
       gap: 8px;
       font-family: var(--font-heading);
-      font-size: 0.74rem;
+      font-size: 0.8rem;
       font-weight: 800;
       text-transform: uppercase;
       letter-spacing: 0.12em;
       color: var(--yellow);
       background: rgba(255, 217, 61, 0.12);
-      border: 1px solid rgba(255, 217, 61, 0.3);
-      padding: 4px 12px;
+      border: 1px solid rgba(255, 217, 61, 0.35);
+      padding: 5px 14px;
       border-radius: var(--radius-pill);
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
     .slide-title {
       font-family: var(--font-heading);
-      font-size: 2rem;
+      font-size: 2.35rem;
       font-weight: 800;
-      color: #fff;
-      line-height: 1.22;
+      color: #ffffff;
+      line-height: 1.2;
       letter-spacing: -0.01em;
     }
     .slide-title span {
       color: var(--cyan);
     }
     .slide-subtitle {
-      font-size: 0.95rem;
-      color: var(--text-muted);
+      font-size: 1.05rem;
+      color: var(--text-light);
       margin-top: 6px;
       line-height: 1.45;
     }
 
-    /* Jenjang Badges (Portal Standard) */
+    /* Badges */
     .badge-sd {
       background: rgba(39, 200, 129, 0.15);
-      border: 1px solid rgba(39, 200, 129, 0.4);
+      border: 1px solid rgba(39, 200, 129, 0.45);
       color: var(--green);
       font-weight: 800;
-      font-size: 0.76rem;
-      padding: 4px 12px;
+      font-size: 0.85rem;
+      padding: 5px 14px;
       border-radius: var(--radius-pill);
       display: inline-flex;
       align-items: center;
@@ -332,11 +254,11 @@
     }
     .badge-smp {
       background: rgba(139, 92, 246, 0.15);
-      border: 1px solid rgba(139, 92, 246, 0.4);
+      border: 1px solid rgba(139, 92, 246, 0.45);
       color: #c084fc;
       font-weight: 800;
-      font-size: 0.76rem;
-      padding: 4px 12px;
+      font-size: 0.85rem;
+      padding: 5px 14px;
       border-radius: var(--radius-pill);
       display: inline-flex;
       align-items: center;
@@ -345,11 +267,11 @@
     }
     .badge-sma {
       background: rgba(11, 120, 246, 0.15);
-      border: 1px solid rgba(67, 215, 255, 0.4);
+      border: 1px solid rgba(67, 215, 255, 0.45);
       color: var(--cyan);
       font-weight: 800;
-      font-size: 0.76rem;
-      padding: 4px 12px;
+      font-size: 0.85rem;
+      padding: 5px 14px;
       border-radius: var(--radius-pill);
       display: inline-flex;
       align-items: center;
@@ -357,92 +279,90 @@
       font-family: var(--font-heading);
     }
 
-    /* Slide Body: Two-Column Split */
+    /* Slide Body (Split Layout: Text & Media) */
     .slide-body {
       display: grid;
-      grid-template-columns: 1.05fr 1.35fr;
-      gap: 32px;
+      grid-template-columns: 1fr 1.45fr;
+      gap: 48px;
       align-items: center;
       flex: 1;
-      margin: 8px 0 20px;
+      margin: 10px 0 20px;
+    }
+
+    /* Balanced Split (e.g. for Portrait Screenshots like Mobile or Sidebar) */
+    .slide-body.balanced {
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
     }
 
     /* Left Text Pane */
     .slide-text-pane {
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 20px;
     }
     .instruction-list {
       list-style: none;
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 16px;
     }
     .instruction-item {
       display: flex;
-      gap: 14px;
+      gap: 16px;
       background: var(--inner-card);
       border: 1px solid var(--inner-border);
-      padding: 14px 16px;
-      border-radius: 14px;
-      transition: transform 0.2s ease, border-color 0.2s ease;
-    }
-    .instruction-item:hover {
-      border-color: rgba(67, 215, 255, 0.4);
-      background: rgba(11, 120, 246, 0.1);
-      transform: translateX(4px);
+      padding: 18px 22px;
+      border-radius: 16px;
     }
     .item-badge {
-      flex: 0 0 28px;
-      height: 28px;
-      border-radius: 8px;
+      flex: 0 0 34px;
+      height: 34px;
+      border-radius: 10px;
       background: linear-gradient(135deg, var(--blue), var(--navy-dark));
-      border: 1px solid rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.25);
       color: #fff;
       font-family: var(--font-heading);
       font-weight: 800;
-      font-size: 0.85rem;
+      font-size: 1rem;
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
     }
     .item-content h4 {
       font-family: var(--font-heading);
-      font-size: 0.94rem;
+      font-size: 1.08rem;
       font-weight: 700;
       color: #fff;
-      margin-bottom: 4px;
+      margin-bottom: 6px;
     }
     .item-content p {
-      font-size: 0.84rem;
+      font-size: 0.94rem;
       color: var(--text-light);
-      line-height: 1.45;
+      line-height: 1.55;
     }
     .item-content p strong {
       color: var(--yellow);
     }
 
-    /* Callout Boxes */
     .callout-box {
-      background: linear-gradient(135deg, rgba(39, 200, 129, 0.12), rgba(39, 200, 129, 0.04));
-      border-left: 4px solid var(--green);
-      border-radius: 0 12px 12px 0;
-      padding: 12px 16px;
-      font-size: 0.84rem;
+      background: linear-gradient(135deg, rgba(39, 200, 129, 0.14), rgba(39, 200, 129, 0.05));
+      border-left: 5px solid var(--green);
+      border-radius: 0 14px 14px 0;
+      padding: 14px 20px;
+      font-size: 0.94rem;
       color: #d1fae5;
-      line-height: 1.45;
+      line-height: 1.5;
     }
     .callout-box strong {
       color: var(--green);
-      font-weight: 700;
       display: block;
-      margin-bottom: 2px;
+      margin-bottom: 4px;
       font-family: var(--font-heading);
+      font-size: 1rem;
     }
     .callout-box.info-cyan {
-      background: linear-gradient(135deg, rgba(67, 215, 255, 0.12), rgba(67, 215, 255, 0.04));
+      background: linear-gradient(135deg, rgba(67, 215, 255, 0.14), rgba(67, 215, 255, 0.05));
       border-left-color: var(--cyan);
       color: #e0f2fe;
     }
@@ -462,359 +382,328 @@
       width: 100%;
       background: rgba(3, 16, 43, 0.85);
       border: 1px solid var(--card-border);
-      border-radius: 16px;
-      padding: 10px;
-      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5);
+      border-radius: 18px;
+      padding: 14px;
+      box-shadow: 0 20px 48px rgba(0, 0, 0, 0.55);
       position: relative;
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
-    }
-    .media-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 20px 48px rgba(67, 215, 255, 0.18);
     }
     .media-card img {
       width: 100%;
       height: auto;
-      max-height: 480px;
+      max-height: 640px;
       object-fit: contain;
-      border-radius: 10px;
+      border-radius: 12px;
       display: block;
       background: #020817;
     }
     .media-caption {
-      font-size: 0.74rem;
+      font-size: 0.86rem;
       font-family: var(--font-heading);
       color: var(--text-muted);
       text-align: center;
-      margin-top: 8px;
+      margin-top: 10px;
       letter-spacing: 0.02em;
     }
     .media-caption strong {
       color: var(--cyan);
     }
 
-    /* Dual Media Stack */
+    /* Dual Media Stack (Generous 16:9 Scale) */
     .dual-media-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 14px;
+      gap: 20px;
       width: 100%;
     }
     .dual-media-grid .media-card img {
-      max-height: 280px;
-    }
-
-    /* Triple Media Stack */
-    .triple-media-grid {
-      display: grid;
-      grid-template-columns: 1.1fr 1fr 1fr;
-      gap: 12px;
-      width: 100%;
-    }
-    .triple-media-grid .media-card img {
-      max-height: 340px;
+      max-height: 580px;
     }
 
     /* Slide Footer */
     .slide-footer {
       border-top: 1px solid rgba(220, 230, 245, 0.12);
-      padding-top: 14px;
+      padding-top: 16px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      font-size: 0.76rem;
+      font-size: 0.86rem;
       color: var(--text-muted);
     }
     .footer-left {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 14px;
     }
     .footer-pill {
-      background: rgba(255, 255, 255, 0.06);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      padding: 3px 10px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 4px 14px;
       border-radius: var(--radius-pill);
       color: var(--text-light);
       font-family: var(--font-heading);
       font-weight: 600;
     }
 
-    /* ==================== Slide 1: Cover Page Special Styling ==================== */
+    /* ==================== Slide 1: Cover Special Styling ==================== */
     .cover-content {
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
-      padding: 24px 0 10px;
-      gap: 20px;
+      padding: 40px 0 20px;
+      gap: 24px;
       flex: 1;
       justify-content: center;
     }
     .cover-brand-pill {
       display: inline-flex;
       align-items: center;
-      gap: 16px;
-      background: rgba(255, 255, 255, 0.98);
-      padding: 10px 24px;
+      gap: 20px;
+      background: #ffffff;
+      padding: 12px 32px;
       border-radius: var(--radius-pill);
-      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
     }
-    .cover-brand-pill .rg-logo { height: 26px; }
-    .cover-brand-pill .uob-logo { height: 24px; }
+    .cover-brand-pill .rg-logo { height: 32px; }
+    .cover-brand-pill .uob-logo { height: 26px; }
     .cover-kicker {
-      font-size: 0.88rem;
+      font-size: 0.95rem;
       font-weight: 800;
       text-transform: uppercase;
-      letter-spacing: 0.14em;
+      letter-spacing: 0.16em;
       color: var(--cyan);
       font-family: var(--font-heading);
-      margin-top: 4px;
+      margin-top: 6px;
     }
     .cover-title {
       font-family: var(--font-heading);
-      font-size: 2.85rem;
+      font-size: 3.6rem;
       font-weight: 800;
-      color: #fff;
+      color: #ffffff;
       line-height: 1.18;
-      max-width: 960px;
+      max-width: 1200px;
     }
+    /* Solid color without webkit-background-clip to prevent Chromium PDF glitch */
     .cover-title span {
-      background: linear-gradient(135deg, var(--yellow), #ff9f1c);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: var(--yellow);
     }
     .cover-subtitle {
-      font-size: 1.1rem;
+      font-size: 1.25rem;
       color: var(--text-light);
-      max-width: 820px;
-      line-height: 1.55;
+      max-width: 980px;
+      line-height: 1.6;
     }
     .cover-badges {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 12px;
-      margin-top: 6px;
+      gap: 16px;
+      margin-top: 8px;
     }
     .cover-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 16px;
+      gap: 24px;
       width: 100%;
-      margin-top: 14px;
+      margin-top: 24px;
       text-align: left;
     }
     .cover-feature-card {
       background: var(--inner-card);
       border: 1px solid var(--inner-border);
-      border-radius: 16px;
-      padding: 18px 20px;
+      border-radius: 18px;
+      padding: 24px 26px;
       display: flex;
       flex-direction: column;
-      gap: 8px;
-      transition: transform 0.2s ease, border-color 0.2s ease;
+      gap: 10px;
     }
-    .cover-feature-card:hover {
-      transform: translateY(-3px);
-      border-color: var(--cyan);
-    }
-    .feature-icon {
-      font-size: 1.5rem;
-    }
+    .feature-icon { font-size: 1.8rem; }
     .feature-title {
       font-family: var(--font-heading);
-      font-size: 0.95rem;
+      font-size: 1.12rem;
       font-weight: 700;
       color: #fff;
     }
     .feature-desc {
-      font-size: 0.82rem;
+      font-size: 0.9rem;
       color: var(--text-muted);
-      line-height: 1.45;
+      line-height: 1.5;
     }
 
-    /* ==================== Slide 5 & 6: Abridged Table & Syllabus Special Styling ==================== */
+    /* ==================== Slide 5: Abridged Table Styling ==================== */
     .abridged-table-container {
       width: 100%;
-      background: rgba(3, 16, 43, 0.7);
+      background: rgba(3, 16, 43, 0.75);
       border: 1px solid var(--card-border);
-      border-radius: 16px;
+      border-radius: 18px;
       overflow: hidden;
-      margin: 8px 0 16px;
+      margin: 12px 0 20px;
     }
     .abridged-table {
       width: 100%;
       border-collapse: collapse;
       text-align: left;
-      font-size: 0.84rem;
+      font-size: 0.95rem;
     }
     .abridged-table th {
-      background: rgba(9, 39, 100, 0.8);
+      background: rgba(9, 39, 100, 0.85);
       font-family: var(--font-heading);
-      font-size: 0.82rem;
+      font-size: 0.92rem;
       font-weight: 800;
       color: #fff;
-      padding: 12px 18px;
+      padding: 16px 24px;
       border-bottom: 2px solid var(--card-border);
       text-transform: uppercase;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.06em;
     }
     .abridged-table td {
-      padding: 12px 18px;
-      border-bottom: 1px solid rgba(220, 230, 245, 0.08);
+      padding: 14px 24px;
+      border-bottom: 1px solid rgba(220, 230, 245, 0.1);
       color: var(--text-light);
       vertical-align: middle;
     }
     .abridged-table tr:hover td {
-      background: rgba(67, 215, 255, 0.04);
+      background: rgba(67, 215, 255, 0.05);
     }
-    .abridged-table tr:last-child td {
-      border-bottom: none;
-    }
+    .abridged-table tr:last-child td { border-bottom: none; }
     .abridged-table .col-param {
       font-weight: 700;
       color: #fff;
       font-family: var(--font-heading);
-      width: 24%;
+      width: 25%;
     }
     .abridged-table .col-sd { width: 25%; }
     .abridged-table .col-smp { width: 25%; }
-    .abridged-table .col-sma { width: 26%; }
+    .abridged-table .col-sma { width: 25%; }
     .abridged-table .stat-val {
       font-family: var(--font-heading);
       font-weight: 800;
-      font-size: 0.95rem;
+      font-size: 1.05rem;
       color: var(--yellow);
     }
 
-    /* Syllabus 3 Columns Cards */
+    /* ==================== Slide 6: Syllabus 3-Column Grid ==================== */
     .syllabus-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
+      gap: 28px;
       width: 100%;
       flex: 1;
-      margin: 8px 0 14px;
+      margin: 10px 0 20px;
     }
     .syllabus-card {
       background: var(--inner-card);
       border: 1px solid var(--inner-border);
-      border-radius: 18px;
-      padding: 18px 20px;
+      border-radius: 20px;
+      padding: 24px 26px;
       display: flex;
       flex-direction: column;
-      gap: 14px;
-      transition: transform 0.2s ease, border-color 0.2s ease;
-    }
-    .syllabus-card:hover {
-      transform: translateY(-3px);
-      border-color: rgba(67, 215, 255, 0.4);
+      gap: 16px;
     }
     .syllabus-card-header {
       display: flex;
       flex-direction: column;
-      gap: 6px;
-      border-bottom: 1px solid rgba(220, 230, 245, 0.1);
-      padding-bottom: 12px;
+      gap: 8px;
+      border-bottom: 1px solid rgba(220, 230, 245, 0.12);
+      padding-bottom: 14px;
     }
     .syllabus-card-title {
       font-family: var(--font-heading);
-      font-size: 1.1rem;
+      font-size: 1.25rem;
       font-weight: 800;
       color: #fff;
     }
     .syllabus-card-desc {
-      font-size: 0.78rem;
+      font-size: 0.88rem;
       color: var(--text-muted);
     }
     .module-compact-list {
       list-style: none;
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 10px;
       flex: 1;
     }
     .module-compact-item {
-      background: rgba(3, 16, 43, 0.6);
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      border-radius: 10px;
-      padding: 8px 12px;
-      font-size: 0.78rem;
+      background: rgba(3, 16, 43, 0.65);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 12px;
+      padding: 10px 14px;
+      font-size: 0.88rem;
       color: var(--text-light);
       display: flex;
       flex-direction: column;
-      gap: 2px;
+      gap: 3px;
     }
     .module-compact-item strong {
       color: #fff;
       font-family: var(--font-heading);
     }
     .module-badge-tag {
-      font-size: 0.68rem;
+      font-size: 0.76rem;
       font-weight: 700;
       color: var(--cyan);
       font-family: var(--font-code);
     }
     .project-highlight-box {
-      background: rgba(255, 217, 61, 0.08);
-      border: 1px dashed rgba(255, 217, 61, 0.35);
-      border-radius: 10px;
-      padding: 10px 12px;
-      font-size: 0.76rem;
+      background: rgba(255, 217, 61, 0.1);
+      border: 1px dashed rgba(255, 217, 61, 0.4);
+      border-radius: 12px;
+      padding: 14px 16px;
+      font-size: 0.86rem;
       color: #fef08a;
-      line-height: 1.45;
+      line-height: 1.5;
     }
     .project-highlight-box strong {
       color: var(--yellow);
       display: block;
       font-family: var(--font-heading);
-      margin-bottom: 3px;
+      margin-bottom: 4px;
     }
 
-    /* ==================== Media Print Stylesheet (Exact 14 Pages A4 Landscape) ==================== */
+    /* -------------------------------------------------------------
+       PRINT STYLES FOR DIGITAL PRESENTATION PDF (EXACT 1920x1080)
+       ------------------------------------------------------------- */
+    @page {
+      size: 1920px 1080px;
+      margin: 0;
+    }
+
     @media print {
-      @page {
-        size: 297mm 210mm landscape;
-        margin: 0;
-      }
       html, body {
-        width: 297mm;
-        height: auto;
-        background: #051a43 !important;
-        color: #fff !important;
+        width: 1920px !important;
+        height: auto !important;
+        background: #03102b !important;
         margin: 0 !important;
         padding: 0 !important;
         -webkit-print-color-adjust: exact !important;
         print-color-adjust: exact !important;
       }
-      /* CRITICAL: Matikan filter blur agar Chromium print engine tidak meng-clip halaman */
       * {
         backdrop-filter: none !important;
         -webkit-backdrop-filter: none !important;
         box-shadow: none !important;
         text-shadow: none !important;
       }
-      .deck-topbar, .planet {
+      .deck-topbar {
         display: none !important;
       }
       .deck-container {
-        width: 297mm !important;
-        max-width: 297mm !important;
-        padding: 0 !important;
+        display: block !important;
+        width: 1920px !important;
         margin: 0 !important;
+        padding: 0 !important;
         gap: 0 !important;
       }
       .deck-slide {
-        width: 297mm !important;
-        height: 210mm !important;
-        max-height: 210mm !important;
-        min-height: 210mm !important;
+        width: 1920px !important;
+        height: 1080px !important;
+        max-height: 1080px !important;
+        min-height: 1080px !important;
         margin: 0 !important;
-        padding: 18mm 24mm 14mm !important;
-        border-radius: 0 !important;
+        padding: 48px 64px 38px !important;
         border: none !important;
-        background: #051a43 !important;
+        border-radius: 0 !important;
         box-sizing: border-box !important;
         overflow: hidden !important;
         page-break-after: always !important;
@@ -826,74 +715,34 @@
         page-break-before: always !important;
         break-before: page !important;
       }
-      .slide-body {
-        margin: 4px 0 10px !important;
-        gap: 20px !important;
-      }
-      .media-card img {
-        max-height: 105mm !important;
-      }
-      .dual-media-grid .media-card img {
-        max-height: 62mm !important;
-      }
-      .triple-media-grid .media-card img {
-        max-height: 75mm !important;
-      }
-      .slide-title {
-        font-size: 1.7rem !important;
-      }
-      .cover-title {
-        font-size: 2.3rem !important;
-      }
-      .cover-grid {
-        margin-top: 10px !important;
-      }
-      .abridged-table-container {
-        margin: 4px 0 10px !important;
-      }
-      .abridged-table th, .abridged-table td {
-        padding: 8px 12px !important;
-        font-size: 0.78rem !important;
-      }
-      .syllabus-grid {
-        gap: 12px !important;
-        margin: 4px 0 8px !important;
-      }
-      .syllabus-card {
-        padding: 12px 14px !important;
-      }
     }
   </style>
 </head>
 <body>
 
-  <!-- Floating Space Planets (Portal Ambience) -->
-  <img class="planet planet-one" src="https://cdn-web-2.ruangguru.com/landing-pages/assets/e49806a2-dcc4-4858-a261-c4e33b798180.png" alt="" aria-hidden="true" />
-  <img class="planet planet-two" src="https://cdn-web-2.ruangguru.com/landing-pages/assets/eaa66ac5-e69c-46f2-b942-909bcaad579a.png" alt="" aria-hidden="true" />
-
-  <!-- Fixed Topbar Header (Portal Branding & Interactive Controls) -->
+  <!-- Fixed Topbar Header (Portal Branding & Controls) -->
   <header class="deck-topbar">
     <div class="brand-group">
       <div class="brand-logos">
         <img class="rg-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ruangguru_logo.svg/3840px-Ruangguru_logo.svg.png" alt="Ruangguru" />
         <div class="brand-divider"></div>
-        <img class="uob-logo" src="https://cdn-web-2.ruangguru.com/landing-pages/assets/37185db7-24a8-467d-aabb-1d5df48f9bc0.png" alt="UOB Indonesia" />
+        <img class="uob-logo" src="https://roboguru-forum-cdn.ruangguru.com//image/4a9cc902-8ed0-42e2-a844-92dd46ff017c.png" alt="UOB My Digital Space" />
       </div>
       <div class="brand-text">
         <span class="brand-kicker">UOB My Digital Space</span>
-        <span class="brand-title">Panduan Pengguna & Silabus Abridged</span>
+        <span class="brand-title">Panduan Pengguna & Silabus Abridged (Edisi Layar Lebar 16:9)</span>
       </div>
     </div>
 
     <div class="deck-controls">
-      <span class="slide-counter" id="slide-indicator">Slide 1 / 14</span>
+      <span class="slide-counter" id="slide-indicator">Slide 1 / 15</span>
       <button class="btn-topbar btn-nav" id="btn-prev" onclick="prevSlide()">◀ Sebelumnya</button>
       <button class="btn-topbar btn-nav" id="btn-next" onclick="nextSlide()">Selanjutnya ▶</button>
       <button class="btn-topbar btn-primary" onclick="window.print()">🖨️ Cetak / Unduh PDF</button>
     </div>
   </header>
 
-  <!-- Deck Slides Container (14 Complete Slides) -->
+  <!-- Deck Slides Container (15 Widescreen Slides) -->
   <main class="deck-container">
 
     <!-- ==================== SLIDE 1: COVER ==================== -->
@@ -902,7 +751,7 @@
         <div class="cover-brand-pill">
           <img class="rg-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ruangguru_logo.svg/3840px-Ruangguru_logo.svg.png" alt="Ruangguru" />
           <div class="brand-divider"></div>
-          <img class="uob-logo" src="https://cdn-web-2.ruangguru.com/landing-pages/assets/37185db7-24a8-467d-aabb-1d5df48f9bc0.png" alt="UOB Indonesia" />
+          <img class="uob-logo" src="https://roboguru-forum-cdn.ruangguru.com//image/4a9cc902-8ed0-42e2-a844-92dd46ff017c.png" alt="UOB My Digital Space" />
         </div>
         <span class="cover-kicker">UOB My Digital Space · Asynchronous Learning Platform</span>
         <h1 class="cover-title">Panduan Lengkap Pengguna & <span>Silabus Pembelajaran</span></h1>
@@ -929,7 +778,7 @@
           <div class="cover-feature-card">
             <span class="feature-icon">🎯</span>
             <h3 class="feature-title">Kuis & Mini Project Mandiri</h3>
-            <p class="feature-desc">Evaluasi ramah <em>less-strict</em> tanpa rasa takut gagal, disertai umpan balik penjelasan instan.</p>
+            <p class="feature-desc">Evaluasi ramah less-strict tanpa rasa takut gagal, disertai umpan balik penjelasan instan.</p>
           </div>
           <div class="cover-feature-card">
             <span class="feature-icon">🎓</span>
@@ -944,7 +793,7 @@
           <span class="footer-pill">UOB My Digital Space</span>
           <span>Inisiatif CSR PT Bank UOB Indonesia x Ruangguru & Kalananti</span>
         </div>
-        <div>Halaman 01 dari 14</div>
+        <div>Halaman 01 dari 15</div>
       </footer>
     </section>
 
@@ -956,7 +805,7 @@
         <p class="slide-subtitle">Panduan perangkat yang disarankan untuk kenyamanan belajar koding mandiri</p>
       </div>
 
-      <div class="slide-body">
+      <div class="slide-body balanced">
         <div class="slide-text-pane">
           <ul class="instruction-list">
             <li class="instruction-item">
@@ -1001,7 +850,7 @@
           <span class="footer-pill">Persiapan Belajar</span>
           <span>Rekomendasi Lingkungan Koding Terbaik</span>
         </div>
-        <div>Halaman 02 dari 14</div>
+        <div>Halaman 02 dari 15</div>
       </footer>
     </section>
 
@@ -1046,15 +895,9 @@
         </div>
 
         <div class="slide-media-pane">
-          <div class="dual-media-grid">
-            <div class="media-card">
-              <img src="assets/step_01_portal_login.png" alt="Halaman Login Portal Awal" />
-              <div class="media-caption">1. Tampilan awal portal masuk LMS</div>
-            </div>
-            <div class="media-card">
-              <img src="assets/step_02_school_dropdown.png" alt="Combobox Pencarian Nama Sekolah" />
-              <div class="media-caption">2. Pencarian combobox sekolah ("andalus")</div>
-            </div>
+          <div class="media-card">
+            <img src="assets/step_02_school_dropdown.png" alt="Combobox Pencarian Nama Sekolah" />
+            <div class="media-caption">Tangkapan Layar: <strong>Pencarian combobox nama sekolah</strong> dengan filter cerdas & badge jenjang</div>
           </div>
         </div>
       </div>
@@ -1064,7 +907,7 @@
           <span class="footer-pill">Langkah 01</span>
           <span>Pencarian Cerdas Sekolah Mitra</span>
         </div>
-        <div>Halaman 03 dari 14</div>
+        <div>Halaman 03 dari 15</div>
       </footer>
     </section>
 
@@ -1121,11 +964,11 @@
           <span class="footer-pill">Langkah 02</span>
           <span>Pemilihan Akun & Masuk Kelas</span>
         </div>
-        <div>Halaman 04 dari 14</div>
+        <div>Halaman 04 dari 15</div>
       </footer>
     </section>
 
-    <!-- ==================== SLIDE 5: [BARU] MATRIKS KURIKULUM ABRIDGED ==================== -->
+    <!-- ==================== SLIDE 5: MATRIKS KURIKULUM ABRIDGED ==================== -->
     <section class="deck-slide" id="slide-5">
       <div class="slide-header">
         <span class="slide-eyebrow">Struktur Kurikulum · Matriks Perbandingan 3 Jenjang</span>
@@ -1207,11 +1050,11 @@
           <span class="footer-pill">Silabus Abridged</span>
           <span>Matriks Kurikulum Resmi UOB My Digital Space 2026</span>
         </div>
-        <div>Halaman 05 dari 14</div>
+        <div>Halaman 05 dari 15</div>
       </footer>
     </section>
 
-    <!-- ==================== SLIDE 6: [BARU] RINCIAN MODUL & MINI PROJECT ==================== -->
+    <!-- ==================== SLIDE 6: RINCIAN MODUL & MINI PROJECT ==================== -->
     <section class="deck-slide" id="slide-6">
       <div class="slide-header">
         <span class="slide-eyebrow">Rincian Silabus · Mini Project & Hands-on Challenge</span>
@@ -1335,16 +1178,16 @@
           <span class="footer-pill">Daftar Mini Project</span>
           <span>Tantangan Praktik Mandiri Terintegrasi (Non-Gating)</span>
         </div>
-        <div>Halaman 06 dari 14</div>
+        <div>Halaman 06 dari 15</div>
       </footer>
     </section>
 
-    <!-- ==================== SLIDE 7: LANGKAH 3 - DASHBOARD & SIDEBAR ==================== -->
+    <!-- ==================== SLIDE 7: LANGKAH 3A - DASHBOARD UTAMA ==================== -->
     <section class="deck-slide" id="slide-7">
       <div class="slide-header">
-        <span class="slide-eyebrow">Langkah 03 · Navigasi Antarmuka</span>
-        <h2 class="slide-title">Mengenal Dashboard Belajar & <span>Struktur Misi</span></h2>
-        <p class="slide-subtitle">Antarmuka taktil modern yang memudahkan siswa memantau progres belajar setiap saat</p>
+        <span class="slide-eyebrow">Langkah 03A · Antarmuka Beranda</span>
+        <h2 class="slide-title">Mengenal Dashboard Belajar <span>Beranda Siswa</span></h2>
+        <p class="slide-subtitle">Tampilan utama setelah masuk kelas: profil siswa, asal sekolah, dan status misi aktif</p>
       </div>
 
       <div class="slide-body">
@@ -1353,64 +1196,111 @@
             <li class="instruction-item">
               <div class="item-badge">1</div>
               <div class="item-content">
-                <h4>Topbar Profil & Informasi Sekolah</h4>
-                <p>Bagian atas menampilkan nama lengkap siswa, nama sekolah mitra, badge jenjang koding, serta tombol keluar akun.</p>
+                <h4>Topbar Profil & Asal Sekolah</h4>
+                <p>Bagian atas menampilkan nama lengkap siswa, nama sekolah mitra, badge jenjang koding resmi, serta tombol keluar akun.</p>
               </div>
             </li>
             <li class="instruction-item">
               <div class="item-badge">2</div>
               <div class="item-content">
-                <h4>Sidebar Misi & Tiga Indikator Status</h4>
-                <p>Daftar seluruh materi tersusun rapi dengan 3 ikon status visual:
-                  <br />• <strong>Centang Hijau (✓)</strong>: Materi telah selesai dipelajari.
-                  <br />• <strong>Play Biru (▶)</strong>: Materi aktif yang sedang dibuka.
-                  <br />• <strong>Gembok Abu-abu (🔒)</strong>: Materi selanjutnya yang terkunci.
-                </p>
+                <h4>Area Media Pembelajaran Terpusat</h4>
+                <p>Materi aktif langsung terbuka di tengah layar: video tutorial YouTube interaktif atau slide bacaan tanpa perlu membuka tab baru.</p>
               </div>
             </li>
             <li class="instruction-item">
               <div class="item-badge">3</div>
               <div class="item-content">
-                <h4>Progress Bar Dinamis Real-Time</h4>
-                <p>Memperlihatkan persentase misi yang tuntas (misal: <em>"Progres Misi: 1 dari 18 Materi"</em>).</p>
+                <h4>Progress Bar Misi Real-Time</h4>
+                <p>Memperlihatkan jumlah materi yang tuntas secara akurat (misal: <em>"Progres Misi: 1 dari 18 Materi"</em>).</p>
               </div>
             </li>
           </ul>
 
           <div class="callout-box">
-            <strong>🎯 Sistem Scaffolding:</strong>
-            Materi terbuka berurutan langkah demi langkah agar siswa tidak kewalahan dan dapat memahami konsep secara matang.
+            <strong>✨ Pengalaman Pengguna Mulus:</strong>
+            Desain antarmuka responsif dan ramah memusatkan fokus siswa langsung ke materi pembelajaran tanpa distraksi.
           </div>
         </div>
 
         <div class="slide-media-pane">
-          <div class="dual-media-grid">
-            <div class="media-card">
-              <img src="assets/step_04_dashboard_overview.png" alt="Dashboard Utama Siswa" />
-              <div class="media-caption">1. Topbar profil & ringkasan dashboard</div>
-            </div>
-            <div class="media-card">
-              <img src="assets/step_05_sidebar_navigation.png" alt="Sidebar Navigasi Modul" />
-              <div class="media-caption">2. Sidebar daftar modul & indikator status</div>
-            </div>
+          <div class="media-card">
+            <img src="assets/step_04_dashboard_overview.png" alt="Tampilan Dashboard Utama Siswa" />
+            <div class="media-caption">Tangkapan Layar Resolusi Tinggi: <strong>Beranda Belajar Siswa</strong> lengkap dengan Topbar profil & pemutar materi</div>
           </div>
         </div>
       </div>
 
       <footer class="slide-footer">
         <div class="footer-left">
-          <span class="footer-pill">Langkah 03</span>
-          <span>Navigasi Dashboard & Sidebar Misi</span>
+          <span class="footer-pill">Langkah 03A</span>
+          <span>Beranda Siswa & Area Pembelajaran</span>
         </div>
-        <div>Halaman 07 dari 14</div>
+        <div>Halaman 07 dari 15</div>
       </footer>
     </section>
 
-    <!-- ==================== SLIDE 8: LANGKAH 4 - BACA SLIDE INTERAKTIF ==================== -->
+    <!-- ==================== SLIDE 8: LANGKAH 3B - SIDEBAR & STATUS MISI ==================== -->
     <section class="deck-slide" id="slide-8">
       <div class="slide-header">
+        <span class="slide-eyebrow">Langkah 03B · Navigasi Sidebar Misi</span>
+        <h2 class="slide-title">Navigasi Sidebar Misi & <span>Tiga Indikator Status</span></h2>
+        <p class="slide-subtitle">Sistem scaffolding materi bertahap dengan indikator visual yang jelas dan terstruktur</p>
+      </div>
+
+      <div class="slide-body balanced">
+        <div class="slide-text-pane">
+          <ul class="instruction-list">
+            <li class="instruction-item">
+              <div class="item-badge" style="background: var(--green);">✓</div>
+              <div class="item-content">
+                <h4>Centang Hijau (✓) — Materi Tuntas Selesai</h4>
+                <p>Menandakan video/slide materi dan kuis pemahaman telah selesai dikerjakan dengan benar. Siswa dapat mengklik kembali kapan saja untuk mengulang materi.</p>
+              </div>
+            </li>
+            <li class="instruction-item">
+              <div class="item-badge" style="background: var(--blue);">▶</div>
+              <div class="item-content">
+                <h4>Tombol Play Biru (▶) — Materi Sedang Aktif</h4>
+                <p>Menandakan materi misi yang saat ini sedang dibuka dan dipelajari oleh siswa di area konten utama.</p>
+              </div>
+            </li>
+            <li class="instruction-item">
+              <div class="item-badge" style="background: #475569;">🔒</div>
+              <div class="item-content">
+                <h4>Gembok Abu-abu (🔒) — Materi Terkunci</h4>
+                <p>Materi selanjutnya masih terkunci rapi demi menjaga alur belajar berurutan. Gembok akan terbuka otomatis begitu kuis materi aktif selesai!</p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="callout-box info-cyan">
+            <strong>🎯 Mengapa Ada Gembok Belajar?</strong>
+            Fitur progress lock gate membantu siswa menyerap konsep secara matang dari fondasi dasar sebelum melangkah ke logika pemrograman yang lebih rumit.
+          </div>
+        </div>
+
+        <div class="slide-media-pane">
+          <div class="media-card" style="max-width: 480px;">
+            <img src="assets/step_05_sidebar_navigation.png" alt="Sidebar Navigasi Modul" style="max-height: 640px;" />
+            <div class="media-caption">Tangkapan Layar Resolusi Tinggi: <strong>Sidebar Navigasi Misi</strong> dengan indikator status ✓, ▶, dan 🔒</div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="slide-footer">
+        <div class="footer-left">
+          <span class="footer-pill">Langkah 03B</span>
+          <span>Navigasi Sidebar & Indikator Status Materi</span>
+        </div>
+        <div>Halaman 08 dari 15</div>
+      </footer>
+    </section>
+
+    <!-- ==================== SLIDE 9: LANGKAH 4 - BACA SLIDE INTERAKTIF ==================== -->
+    <section class="deck-slide" id="slide-9">
+      <div class="slide-header">
         <span class="slide-eyebrow">Langkah 04 · Pembelajaran Slide</span>
-        <h2 class="slide-title">Membaca Slide Interaktif & <span>Rangkuman Materi</span></h2>
+        <h2 class="slide-title">Membaca Slide Interaktif & <span>Rangkuman Konsep</span></h2>
         <p class="slide-subtitle">Fondasi konsep visual yang ringkas dan mudah dipahami sebelum memprogram</p>
       </div>
 
@@ -1449,7 +1339,7 @@
         <div class="slide-media-pane">
           <div class="media-card">
             <img src="assets/step_06_reading_slide.png" alt="Antarmuka Pembaca Slide Interaktif" />
-            <div class="media-caption">Tangkapan Layar: <strong>Slide reader interaktif</strong> dengan preview kode & rangkuman materi</div>
+            <div class="media-caption">Tangkapan Layar Resolusi Tinggi: <strong>Slide reader interaktif</strong> dengan preview kode & rangkuman materi</div>
           </div>
         </div>
       </div>
@@ -1459,12 +1349,12 @@
           <span class="footer-pill">Langkah 04</span>
           <span>Slide Interaktif & Rangkuman Konsep</span>
         </div>
-        <div>Halaman 08 dari 14</div>
+        <div>Halaman 09 dari 15</div>
       </footer>
     </section>
 
-    <!-- ==================== SLIDE 9: LANGKAH 5 - NONTON VIDEO MODUL ==================== -->
-    <section class="deck-slide" id="slide-9">
+    <!-- ==================== SLIDE 10: LANGKAH 5 - NONTON VIDEO MODUL ==================== -->
+    <section class="deck-slide" id="slide-10">
       <div class="slide-header">
         <span class="slide-eyebrow">Langkah 05 · Pembelajaran Video</span>
         <h2 class="slide-title">Menonton Video Modul dengan <span>Pemutar Pintar</span></h2>
@@ -1506,7 +1396,7 @@
         <div class="slide-media-pane">
           <div class="media-card">
             <img src="assets/step_07_video_player.png" alt="Pemutar Video Terkurasi LMS" />
-            <div class="media-caption">Tangkapan Layar: <strong>Pemutar video pintar</strong> dengan seek bar, tombol Rewatch 30s & bookmark</div>
+            <div class="media-caption">Tangkapan Layar Resolusi Tinggi: <strong>Pemutar video pintar</strong> dengan seek bar, tombol Rewatch 30s & bookmark</div>
           </div>
         </div>
       </div>
@@ -1516,16 +1406,16 @@
           <span class="footer-pill">Langkah 05</span>
           <span>Pemutar Video Pintar & Bookmark Topik</span>
         </div>
-        <div>Halaman 09 dari 14</div>
+        <div>Halaman 10 dari 15</div>
       </footer>
     </section>
 
-    <!-- ==================== SLIDE 10: LANGKAH 6 - JAWAB KUIS INTERAKTIF ==================== -->
-    <section class="deck-slide" id="slide-10">
+    <!-- ==================== SLIDE 11: LANGKAH 6 - JAWAB KUIS INTERAKTIF ==================== -->
+    <section class="deck-slide" id="slide-11">
       <div class="slide-header">
         <span class="slide-eyebrow">Langkah 06 · Evaluasi Pemahaman</span>
         <h2 class="slide-title">Menjawab Kuis Interaktif <span>Ramah Pemula</span></h2>
-        <p class="slide-subtitle">Evaluasi pemahaman konsep less-strict untuk membangun kepercayaan diri siswa</p>
+        <p class="slide-subtitle">Evaluasi pemahaman konsep less-strict untuk membangun rasa percaya diri siswa</p>
       </div>
 
       <div class="slide-body">
@@ -1563,7 +1453,7 @@
         <div class="slide-media-pane">
           <div class="media-card">
             <img src="assets/step_08_interactive_quiz.png" alt="Modal Kuis Interaktif" />
-            <div class="media-caption">Tangkapan Layar: <strong>Modal pop-up kuis interaktif</strong> dengan kartu opsi 3D & Bento tracker</div>
+            <div class="media-caption">Tangkapan Layar Resolusi Tinggi: <strong>Modal pop-up kuis interaktif</strong> dengan kartu opsi 3D & Bento tracker</div>
           </div>
         </div>
       </div>
@@ -1573,12 +1463,12 @@
           <span class="footer-pill">Langkah 06</span>
           <span>Kuis Interaktif Less-Strict</span>
         </div>
-        <div>Halaman 10 dari 14</div>
+        <div>Halaman 11 dari 15</div>
       </footer>
     </section>
 
-    <!-- ==================== SLIDE 11: LANGKAH 7 - FEEDBACK KUIS & UNLOCK ==================== -->
-    <section class="deck-slide" id="slide-11">
+    <!-- ==================== SLIDE 12: LANGKAH 7 - FEEDBACK KUIS & UNLOCK ==================== -->
+    <section class="deck-slide" id="slide-12">
       <div class="slide-header">
         <span class="slide-eyebrow">Langkah 07 · Umpan Balik Instan</span>
         <h2 class="slide-title">Menerima Umpan Balik & <span>Membuka Materi Selanjutnya</span></h2>
@@ -1620,7 +1510,7 @@
         <div class="slide-media-pane">
           <div class="media-card">
             <img src="assets/step_09_quiz_feedback.png" alt="Umpan Balik Kuis Berhasil" />
-            <div class="media-caption">Tangkapan Layar: <strong>Umpan balik kuis berhasil</strong> & tombol lanjut materi menyala aktif</div>
+            <div class="media-caption">Tangkapan Layar Resolusi Tinggi: <strong>Umpan balik kuis berhasil</strong> & tombol lanjut materi menyala aktif</div>
           </div>
         </div>
       </div>
@@ -1630,12 +1520,12 @@
           <span class="footer-pill">Langkah 07</span>
           <span>Umpan Balik Kuis & Buka Materi Baru</span>
         </div>
-        <div>Halaman 11 dari 14</div>
+        <div>Halaman 12 dari 15</div>
       </footer>
     </section>
 
-    <!-- ==================== SLIDE 12: LANGKAH 8 - MINI PROJECT PANEL ==================== -->
-    <section class="deck-slide" id="slide-12">
+    <!-- ==================== SLIDE 13: LANGKAH 8 - MINI PROJECT PANEL ==================== -->
+    <section class="deck-slide" id="slide-13">
       <div class="slide-header">
         <span class="slide-eyebrow">Langkah 08 · Praktik Koding Mandiri</span>
         <h2 class="slide-title">Mengerjakan & Mengumpulkan <span>Tantangan Mini Project</span></h2>
@@ -1681,7 +1571,7 @@
         <div class="slide-media-pane">
           <div class="media-card">
             <img src="assets/step_10_challenge_panel.png" alt="Panel Formulir Mini Project" />
-            <div class="media-caption">Tangkapan Layar: <strong>Panel formulir Mini Project</strong> dengan editor kode, link, & upload file</div>
+            <div class="media-caption">Tangkapan Layar Resolusi Tinggi: <strong>Panel formulir Mini Project</strong> dengan editor kode, link, & upload file</div>
           </div>
         </div>
       </div>
@@ -1691,12 +1581,12 @@
           <span class="footer-pill">Langkah 08</span>
           <span>Tantangan Praktik Mandiri & Pengumpulan</span>
         </div>
-        <div>Halaman 12 dari 14</div>
+        <div>Halaman 13 dari 15</div>
       </footer>
     </section>
 
-    <!-- ==================== SLIDE 13: LANGKAH 9 - KLAIM SERTIFIKAT RESMI ==================== -->
-    <section class="deck-slide" id="slide-13">
+    <!-- ==================== SLIDE 14: LANGKAH 9 - KLAIM SERTIFIKAT RESMI ==================== -->
+    <section class="deck-slide" id="slide-14">
       <div class="slide-header">
         <span class="slide-eyebrow">Langkah 09 · Kelulusan & Sertifikat</span>
         <h2 class="slide-title">Mengklaim Sertifikat Kelulusan & <span>Transkrip Resmi</span></h2>
@@ -1736,18 +1626,14 @@
         </div>
 
         <div class="slide-media-pane">
-          <div class="triple-media-grid">
-            <div class="media-card">
-              <img src="assets/step_11_certificate_unlocked.png" alt="Sidebar Menu Sertifikat Terbuka" />
-              <div class="media-caption">1. Menu sertifikat terbuka di sidebar</div>
-            </div>
+          <div class="dual-media-grid">
             <div class="media-card">
               <img src="assets/step_12_cert_page1.png" alt="Halaman 1 Sertifikat Kelulusan" />
-              <div class="media-caption">2. Halaman 1: Sertifikat resmi emas</div>
+              <div class="media-caption">Tangkapan Layar Resolusi Tinggi: <strong>Halaman 1 Sertifikat Resmi</strong> berbingkai emas & stempel 3D</div>
             </div>
             <div class="media-card">
               <img src="assets/step_13_cert_page2.png" alt="Halaman 2 Transkrip Akademik" />
-              <div class="media-caption">3. Halaman 2: Transkrip nilai full-length</div>
+              <div class="media-caption">Tangkapan Layar Resolusi Tinggi: <strong>Halaman 2 Transkrip Nilai</strong> full-length & matriks kompetensi</div>
             </div>
           </div>
         </div>
@@ -1758,19 +1644,19 @@
           <span class="footer-pill">Langkah 09</span>
           <span>Klaim Sertifikat & Transkrip 2 Halaman</span>
         </div>
-        <div>Halaman 13 dari 14</div>
+        <div>Halaman 14 dari 15</div>
       </footer>
     </section>
 
-    <!-- ==================== SLIDE 14: PENUTUP & PUSAT BANTUAN ==================== -->
-    <section class="deck-slide" id="slide-14">
+    <!-- ==================== SLIDE 15: PENUTUP & PUSAT BANTUAN ==================== -->
+    <section class="deck-slide" id="slide-15">
       <div class="slide-header">
         <span class="slide-eyebrow">Panduan Tambahan · Bantuan & Dukungan</span>
         <h2 class="slide-title">Tips Sukses Belajar Asinkron & <span>Pusat Bantuan</span></h2>
         <p class="slide-subtitle">Dukungan penuh untuk mendampingi perjalanan koding siswa hingga tuntas</p>
       </div>
 
-      <div class="slide-body">
+      <div class="slide-body balanced">
         <div class="slide-text-pane">
           <ul class="instruction-list">
             <li class="instruction-item">
@@ -1801,22 +1687,22 @@
         </div>
 
         <div class="slide-media-pane">
-          <div class="media-card" style="padding: 24px; text-align: center; background: rgba(9, 39, 100, 0.65);">
-            <div style="font-size: 2.2rem; margin-bottom: 12px;">🏫 🤝 💻</div>
-            <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; color: #fff; margin-bottom: 8px;">Pusat Bantuan & Layanan Fasilitator</h3>
-            <p style="font-size: 0.86rem; color: var(--text-light); line-height: 1.5; margin-bottom: 20px;">
+          <div class="media-card" style="padding: 32px; text-align: center; background: rgba(9, 39, 100, 0.75);">
+            <div style="font-size: 2.8rem; margin-bottom: 16px;">🏫 🤝 💻</div>
+            <h3 style="font-family: var(--font-heading); font-size: 1.45rem; font-weight: 800; color: #fff; margin-bottom: 12px;">Pusat Bantuan & Layanan Fasilitator</h3>
+            <p style="font-size: 0.96rem; color: var(--text-light); line-height: 1.6; margin-bottom: 24px;">
               Jika ada pertanyaan seputar akun, materi koding, atau kendala perangkat, hubungi guru pendamping sekolah atau tim akademik kami.
             </p>
-            <div style="display: flex; flex-direction: column; gap: 10px; align-items: center;">
-              <span class="footer-pill" style="padding: 8px 18px; font-size: 0.85rem; color: #fff; background: rgba(67, 215, 255, 0.15); border-color: var(--cyan);">
+            <div style="display: flex; flex-direction: column; gap: 14px; align-items: center;">
+              <span class="footer-pill" style="padding: 10px 22px; font-size: 0.92rem; color: #fff; background: rgba(67, 215, 255, 0.18); border-color: var(--cyan);">
                 ✉️ Email Akademik: <strong>academic@kalananti.id</strong>
               </span>
-              <span class="footer-pill" style="padding: 8px 18px; font-size: 0.85rem; color: #fff; background: rgba(39, 200, 129, 0.15); border-color: var(--green);">
+              <span class="footer-pill" style="padding: 10px 22px; font-size: 0.92rem; color: #fff; background: rgba(39, 200, 129, 0.18); border-color: var(--green);">
                 💬 Hotline Fasilitator: <strong>Grup Koordinasi Guru & Sekolah Mitra</strong>
               </span>
             </div>
-            <div style="margin-top: 24px;">
-              <span class="badge-sd" style="font-size: 0.82rem; padding: 6px 16px;">Selamat Belajar & Raih Sertifikatmu! 🚀</span>
+            <div style="margin-top: 30px;">
+              <span class="badge-sd" style="font-size: 0.92rem; padding: 8px 20px;">Selamat Belajar & Raih Sertifikatmu! 🚀</span>
             </div>
           </div>
         </div>
@@ -1827,24 +1713,21 @@
           <span class="footer-pill">UOB My Digital Space</span>
           <span>Selamat Belajar & Sukses Menempuh Perjalanan Kodingmu!</span>
         </div>
-        <div>Halaman 14 dari 14</div>
+        <div>Halaman 15 dari 15</div>
       </footer>
     </section>
 
   </main>
 
   <script>
-    // Slide Navigation Logic for Interactive Presentation
     let currentSlide = 1;
-    const totalSlides = 14;
+    const totalSlides = 15;
 
     function updateSlide() {
-      const slides = document.querySelectorAll('.deck-slide');
-      slides.forEach((slide, idx) => {
-        if (idx === currentSlide - 1) {
-          slide.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      });
+      const slide = document.getElementById(`slide-${currentSlide}`);
+      if (slide) {
+        slide.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
       document.getElementById('slide-indicator').textContent = `Slide ${currentSlide} / ${totalSlides}`;
     }
 
@@ -1862,7 +1745,6 @@
       }
     }
 
-    // Keyboard Shortcuts
     document.addEventListener('keydown', (e) => {
       if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') {
         e.preventDefault();
@@ -1872,12 +1754,6 @@
         prevSlide();
       } else if (e.key.toLowerCase() === 'p') {
         window.print();
-      } else if (e.key.toLowerCase() === 'f') {
-        if (!document.fullscreenElement) {
-          document.documentElement.requestFullscreen();
-        } else {
-          document.exitFullscreen();
-        }
       }
     });
   </script>

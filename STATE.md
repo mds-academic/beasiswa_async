@@ -2,24 +2,25 @@
 
 ## Current Status
 
-- **Status**: Deck presentasi interaktif dan PDF resmi "Panduan Lengkap Pengguna & Silabus Abridged LMS UOB My Digital Space" berhasil diperbarui 100% (14 slide/halaman A4 landscape presisi). Dilengkapi dengan tabel matriks perbandingan kurikulum 3 jenjang (SD, SMP, SMA), rincian judul modul, jumlah video, slide bacaan, kuis, dan daftar mini project yang dapat dikumpulkan, dengan desain visual yang diselaraskan 100% dengan portal LMS (dual branding Ruangguru x UOB, space planets, starfield dots, dan tombol 3D skeuomorphic).
+- **Status**: Deck presentasi interaktif dan PDF resmi "Panduan Lengkap Pengguna & Silabus Abridged LMS UOB My Digital Space" berhasil dirombak total ke format **Digital Widescreen Presentation (16:9 · 1920px × 1080px)** sebanyak **15 slide/halaman presisi** (11.79 MB). Menjawab tuntas seluruh kendala gambar kekecilan, glitch box kuning Chromium print, dan konten terpotong. Screenshot disajikan dalam ukuran besar (>1000px width, 640px height) dengan teks 100% terbaca tajam, pemisahan Dashboard & Sidebar ke slide mandiri, sertifikat/transkrip ultra-high-res 2000px, dan sinkronisasi penuh ke portal LMS.
 - **Active Focus**: Persiapan pengujian integrasi akhir, sinkronisasi repositori, dan operasional peluncuran.
 - **Last Updated**: 2026-09-10
 
 ## Completed
 
-- **Revisi Seamless Portal Design & Matriks Kurikulum Abridged 3 Jenjang (2026-09-10)**:
+- **Overhaul Deck Widescreen 16:9 (1920x1080) & Resolusi Glitch/Cutoff (2026-09-10)**:
   - Pembaruan Rencana Implementasi: [06-implementation-plan-user-guide-deck-pdf.md](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/planning/06-implementation-plan-user-guide-deck-pdf.md).
-  - Penambahan 2 Slide Baru:
-    - **Slide 5 (Matriks Kurikulum Abridged 3 Jenjang)**: Tabel perbandingan komprehensif SD (Scratch: 4 modul, 18 step, 17 video, 1 slide, 18 kuis, 3 proyek hands-on), SMP (App Inventor: 6 modul, 36 step, 24 video, 4 slide, 46 kuis, 8 mini project), dan SMA (Python: 6 modul, 36 step, 23 video, 6 slide, 59 kuis, 7 mini project).
-    - **Slide 6 (Rincian Silabus & Daftar Mini Project)**: 3 Bento card merinci bab modul dan daftar judul mini project yang dapat disubmit per jenjang (SMP: Form Aman, Cek Pesan, Final Project If-Else, Kalkulator Prosedur, TinyDB, Mini Project C, Merancang Solusi, Final Project App; SMA: Smart Budget, Optimasi, Fungsi Modular, Safe Transaction, Safe Input Error Handling, Debugging Belanja, Capstone Financial App).
-  - Penyelarasan Desain 100% Seamless dengan Portal LMS:
-    - Palet warna asli portal (`--navy: #092764`, `--navy-dark: #051a43`, `--navy-deep: #03102b`, `--blue: #0b78f6`, `--cyan: #43d7ff`, `--yellow: #ffd93d`).
-    - Dual Logo resmi Ruangguru x UOB Indonesia di Topbar dan Cover.
-    - Floating space planets dan starfield canvas overlay.
-    - Tombol taktil skeuomorphic 3D cembung warna emas dan biru.
-    - Badge jenjang resmi (`badge-sd`, `badge-smp`, `badge-sma`).
-  - Pembaruan berkas HTML ([docs/guide/index.html](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/docs/guide/index.html)) dan ekspor PDF resmi ([panduan-pengguna-lms-uob.pdf](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/docs/guide/panduan-pengguna-lms-uob.pdf) & `/Users/yazidhilmi/Downloads/Panduan_Pengguna_LMS_UOB_My_Digital_Space.pdf`): tepat 14 halaman A4 Landscape (10.84 MB), terverifikasi 100% tanpa clipping atau blank pages.
+  - Konversi kanvas cetak dari A4 Landscape sempit ke **Kanvas Widescreen 16:9 Digital Presentation (1920px × 1080px)**.
+  - Eliminasi total visual glitch teks kuning dengan mencopot `-webkit-background-clip: text` dan menggantinya dengan warna solid `#ffd93d` tajam.
+  - Pemisahan tampilan padat menjadi slide mandiri:
+    - **Slide 7 (Langkah 3A - Dashboard Overview)**: Screenshot penuh berukuran besar (`max-height: 640px`).
+    - **Slide 8 (Langkah 3B - Sidebar Navigasi & 3 Status Badges)**: Screenshot sidebar penuh dengan arti 3 ikon (Centang, Play, Gembok).
+  - Ekstraksi tangkapan layar sertifikat dan transkrip kelulusan ultra-high-res (2000 × 1414 & 1414 × 2000) langsung dari PDF resmi.
+  - Penyusunan 15 slide presisi tanpa konten terpotong dan tanpa kebocoran slide (*zero leaks*).
+  - Ekspor PDF Widescreen resmi via Playwright Chromium headless:
+    - 📄 [panduan-pengguna-lms-uob.pdf](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/docs/guide/panduan-pengguna-lms-uob.pdf) (11.79 MB, 15 halaman).
+    - 📥 Salinan unduhan: `/Users/yazidhilmi/Downloads/Panduan_Pengguna_LMS_UOB_My_Digital_Space.pdf`.
+  - Verifikasi visual 15 halaman PDF menggunakan ekstraksi `sips` PNG: seluruh teks dan antarmuka terkonfirmasi tajam, bersih, dan proporsional.
   - Sinkronisasi mirror ke `subprojects/01-lms-platform/docs/guide/`.
 
 

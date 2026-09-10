@@ -197,13 +197,22 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 }
 
 .rg-logo {
-  height: 32px;
+  height: 30px;
   filter: brightness(0) invert(1);
 }
 
 .uob-logo {
-  height: 44px;
-  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.75));
+  height: 24px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(1px 0 0 #fff)
+          drop-shadow(-1px 0 0 #fff)
+          drop-shadow(0 1px 0 #fff)
+          drop-shadow(0 -1px 0 #fff)
+          drop-shadow(1px 1px 0 #fff)
+          drop-shadow(-1px -1px 0 #fff)
+          drop-shadow(1px -1px 0 #fff)
+          drop-shadow(-1px 1px 0 #fff);
 }
 
 .login-kicker {
@@ -690,13 +699,22 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 }
 
 .brand-group .rg-logo {
-  height: 32px;
+  height: 28px;
   filter: brightness(0) invert(1);
 }
 
 .brand-group .uob-logo {
-  height: 44px;
-  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.75));
+  height: 22px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(1px 0 0 #fff)
+          drop-shadow(-1px 0 0 #fff)
+          drop-shadow(0 1px 0 #fff)
+          drop-shadow(0 -1px 0 #fff)
+          drop-shadow(1px 1px 0 #fff)
+          drop-shadow(-1px -1px 0 #fff)
+          drop-shadow(1px -1px 0 #fff)
+          drop-shadow(-1px 1px 0 #fff);
 }
 
 .topbar-right {
@@ -4194,7 +4212,8 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 }
 
 .cert-logo-uob {
-  height: 38px;
+  height: 28px;
+  width: auto;
   object-fit: contain;
 }
 
@@ -4450,7 +4469,8 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 }
 
 .transcript-logo-uob {
-  height: 32px;
+  height: 20px;
+  width: auto;
   object-fit: contain;
 }
 
@@ -4796,7 +4816,9 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   height: 25px !important;
 }
 .sandbox-surface-page-2 .transcript-logo-uob {
-  height: 28px !important;
+  height: 22px !important;
+  width: auto !important;
+  object-fit: contain !important;
 }
 .sandbox-surface-page-2 .transcript-badge {
   font-size: 0.62rem !important;

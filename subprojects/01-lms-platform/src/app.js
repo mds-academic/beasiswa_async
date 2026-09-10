@@ -3334,7 +3334,7 @@ async function exportCertificateToPdf() {
         padding-bottom: 8px !important;
       }
       .sandbox-surface-page-2 .transcript-logo-rg { height: 25px !important; }
-      .sandbox-surface-page-2 .transcript-logo-uob { height: 28px !important; }
+      .sandbox-surface-page-2 .transcript-logo-uob { height: 22px !important; width: auto !important; object-fit: contain !important; }
       .sandbox-surface-page-2 .transcript-badge { font-size: 0.62rem !important; padding: 2px 8px !important; margin-bottom: 2px !important; }
       .sandbox-surface-page-2 .transcript-title { font-size: 1.05rem !important; margin: 0 !important; }
       .sandbox-surface-page-2 .transcript-subtitle { font-size: 0.68rem !important; }
