@@ -148,6 +148,31 @@
       background: rgba(67, 215, 255, 0.2);
       border-color: var(--cyan);
     }
+    .btn-topbar.btn-fit {
+      border: 1px solid var(--card-border);
+      background: rgba(255, 255, 255, 0.06);
+      color: #cbd5e1;
+    }
+    .btn-topbar.btn-fit:hover {
+      background: rgba(67, 215, 255, 0.15);
+      border-color: var(--cyan);
+      color: #fff;
+    }
+    .btn-topbar.btn-fit.active {
+      background: rgba(67, 215, 255, 0.18);
+      border-color: var(--cyan);
+      color: var(--cyan);
+      font-weight: 800;
+    }
+    @media (max-width: 1300px) {
+      .brand-title { font-size: 0.82rem; }
+      .btn-topbar { padding: 6px 12px; font-size: 0.8rem; }
+      .deck-controls { gap: 8px; }
+    }
+    @media (max-width: 960px) {
+      .brand-text { display: none; }
+    }
+
     .btn-topbar.btn-primary {
       background: linear-gradient(180deg, var(--yellow) 0%, var(--yellow-warm) 100%);
       border: 1px solid rgba(255, 255, 255, 0.5);
@@ -156,37 +181,61 @@
       box-shadow: 0 3px 0 #b38b00, 0 6px 16px rgba(0, 0, 0, 0.35);
     }
 
+    :root {
+      --deck-scale: 1;
+      --slide-scaled-width: 1920px;
+      --slide-scaled-height: 1080px;
+    }
+
     /* Container for Screen View */
     .deck-container {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 40px;
-      padding: 30px 0 80px;
+      gap: 28px;
+      padding: 16px 0 80px;
+      width: 100%;
+      max-width: 100vw;
+      box-sizing: border-box;
+      overflow-x: hidden;
     }
 
-    /* Widescreen 16:9 Presentation Canvas (1920 x 1080) */
+    /* Outer Wrapper that holds the exact scaled footprint on screen */
+    .slide-wrapper {
+      width: var(--slide-scaled-width, 1920px);
+      height: var(--slide-scaled-height, 1080px);
+      position: relative;
+      margin: 0 auto;
+      border-radius: calc(14px * var(--deck-scale, 1));
+      overflow: hidden;
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.55), 0 0 0 1px var(--card-border);
+      flex-shrink: 0;
+      background: #03102b;
+      transition: width 0.12s ease-out, height 0.12s ease-out;
+    }
+
+    /* Widescreen 16:9 Presentation Canvas (1920 x 1080 internal) */
     .deck-slide {
       width: 1920px;
       height: 1080px;
       max-height: 1080px;
       min-height: 1080px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: scale(var(--deck-scale, 1));
+      transform-origin: top left;
       background: 
         radial-gradient(circle at 12% 10%, rgba(67, 215, 255, 0.16) 0%, transparent 40%),
         radial-gradient(circle at 88% 85%, rgba(11, 120, 246, 0.16) 0%, transparent 45%),
         linear-gradient(150deg, #03102b, #051a43 50%, #092764 100%);
-      border: 1px solid var(--card-border);
+      border: none;
       box-sizing: border-box;
       padding: 48px 64px 38px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      position: relative;
       overflow: hidden;
-      page-break-after: always;
-      break-after: page;
-      page-break-inside: avoid;
-      break-inside: avoid;
     }
 
     /* Top Accent Stripe */
@@ -694,12 +743,32 @@
         margin: 0 !important;
         padding: 0 !important;
         gap: 0 !important;
+        overflow: visible !important;
+      }
+      .slide-wrapper {
+        display: block !important;
+        width: 1920px !important;
+        height: 1080px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border: none !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        overflow: hidden !important;
+        page-break-after: always !important;
+        break-after: page !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
       }
       .deck-slide {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
         width: 1920px !important;
         height: 1080px !important;
         max-height: 1080px !important;
         min-height: 1080px !important;
+        transform: none !important;
         margin: 0 !important;
         padding: 48px 64px 38px !important;
         border: none !important;
@@ -711,12 +780,76 @@
         page-break-inside: avoid !important;
         break-inside: avoid !important;
       }
-      .deck-slide + .deck-slide {
+      .slide-wrapper + .slide-wrapper {
         page-break-before: always !important;
         break-before: page !important;
       }
     }
   </style>
+  <script>
+    let currentScaleMode = 'fit';
+
+    function updateDeckScale() {
+      const topbar = document.querySelector('.deck-topbar');
+      const topbarHeight = topbar ? topbar.offsetHeight : 64;
+      const vWidth = window.innerWidth;
+      const vHeight = window.innerHeight;
+
+      let scale = 1.0;
+      if (currentScaleMode === 'fit') {
+        const availWidth = Math.max(320, vWidth - 48);
+        const availHeight = Math.max(200, vHeight - topbarHeight - 32);
+        const scaleX = availWidth / 1920;
+        const scaleY = availHeight / 1080;
+        scale = Math.min(scaleX, scaleY, 1.0);
+      }
+
+      const scaledWidth = Math.round(1920 * scale);
+      const scaledHeight = Math.round(1080 * scale);
+
+      document.documentElement.style.setProperty('--deck-scale', scale.toFixed(4));
+      document.documentElement.style.setProperty('--slide-scaled-width', scaledWidth + 'px');
+      document.documentElement.style.setProperty('--slide-scaled-height', scaledHeight + 'px');
+
+      const pct = Math.round(scale * 100);
+      const scalePctEl = document.getElementById('scale-pct');
+      if (scalePctEl) scalePctEl.textContent = pct + '%';
+
+      const fitLabelEl = document.getElementById('fit-label');
+      if (fitLabelEl) {
+        fitLabelEl.textContent = currentScaleMode === 'fit' ? 'Pas Layar' : 'Ukuran Asli';
+      }
+      const fitBtn = document.getElementById('btn-fit');
+      if (fitBtn) {
+        if (currentScaleMode === 'fit') {
+          fitBtn.classList.add('active');
+        } else {
+          fitBtn.classList.remove('active');
+        }
+      }
+    }
+
+    function toggleFitMode() {
+      currentScaleMode = currentScaleMode === 'fit' ? '100' : 'fit';
+      updateDeckScale();
+    }
+
+    function toggleFullscreen() {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(err => console.log(err));
+      } else {
+        document.exitFullscreen().catch(err => console.log(err));
+      }
+    }
+
+    // Run initial scale calculation immediately
+    updateDeckScale();
+    window.addEventListener('resize', updateDeckScale);
+    window.addEventListener('orientationchange', updateDeckScale);
+    document.addEventListener('fullscreenchange', () => {
+      setTimeout(updateDeckScale, 100);
+    });
+  </script>
 </head>
 <body>
 
@@ -736,8 +869,14 @@
 
     <div class="deck-controls">
       <span class="slide-counter" id="slide-indicator">Slide 1 / 15</span>
-      <button class="btn-topbar btn-nav" id="btn-prev" onclick="prevSlide()">◀ Sebelumnya</button>
-      <button class="btn-topbar btn-nav" id="btn-next" onclick="nextSlide()">Selanjutnya ▶</button>
+      <button class="btn-topbar btn-nav" id="btn-prev" onclick="prevSlide()" title="Slide Sebelumnya (Panah Kiri)">◀ Sebelumnya</button>
+      <button class="btn-topbar btn-nav" id="btn-next" onclick="nextSlide()" title="Slide Selanjutnya (Panah Kanan)">Selanjutnya ▶</button>
+      <button class="btn-topbar btn-nav btn-fit active" id="btn-fit" onclick="toggleFitMode()" title="Beralih Mode Pas Layar / Ukuran Asli">
+        <span id="fit-icon">⛶</span> <span id="fit-label">Pas Layar</span> (<span id="scale-pct">100%</span>)
+      </button>
+      <button class="btn-topbar btn-nav" id="btn-fs" onclick="toggleFullscreen()" title="Mode Layar Penuh (F)">
+        🖥️ Layar Penuh
+      </button>
       <button class="btn-topbar btn-primary" onclick="window.print()">🖨️ Cetak / Unduh PDF</button>
     </div>
   </header>
@@ -746,7 +885,8 @@
   <main class="deck-container">
 
     <!-- ==================== SLIDE 1: COVER ==================== -->
-    <section class="deck-slide" id="slide-1">
+    <div class="slide-wrapper" id="wrapper-1" data-slide="1">
+      <section class="deck-slide" id="slide-1">
       <div class="cover-content">
         <div class="cover-brand-pill">
           <img class="rg-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ruangguru_logo.svg/3840px-Ruangguru_logo.svg.png" alt="Ruangguru" />
@@ -795,10 +935,13 @@
         </div>
         <div>Halaman 01 dari 15</div>
       </footer>
-    </section>
+    
+      </section>
+    </div>
 
     <!-- ==================== SLIDE 2: PERANGKAT & MOBILE ADVISORY ==================== -->
-    <section class="deck-slide" id="slide-2">
+    <div class="slide-wrapper" id="wrapper-2" data-slide="2">
+      <section class="deck-slide" id="slide-2">
       <div class="slide-header">
         <span class="slide-eyebrow">Persiapan Awal · Rekomendasi Perangkat</span>
         <h2 class="slide-title">Spesifikasi Perangkat & <span>Mobile Gentle Advisory</span></h2>
@@ -852,10 +995,13 @@
         </div>
         <div>Halaman 02 dari 15</div>
       </footer>
-    </section>
+    
+      </section>
+    </div>
 
     <!-- ==================== SLIDE 3: LANGKAH 1 - BUKA PORTAL & CARI SEKOLAH ==================== -->
-    <section class="deck-slide" id="slide-3">
+    <div class="slide-wrapper" id="wrapper-3" data-slide="3">
+      <section class="deck-slide" id="slide-3">
       <div class="slide-header">
         <span class="slide-eyebrow">Langkah 01 · Akses Portal</span>
         <h2 class="slide-title">Membuka Portal & <span>Mencari Nama Sekolah Mitra</span></h2>
@@ -909,10 +1055,13 @@
         </div>
         <div>Halaman 03 dari 15</div>
       </footer>
-    </section>
+    
+      </section>
+    </div>
 
     <!-- ==================== SLIDE 4: LANGKAH 2 - PILIH EMAIL SISWA ==================== -->
-    <section class="deck-slide" id="slide-4">
+    <div class="slide-wrapper" id="wrapper-4" data-slide="4">
+      <section class="deck-slide" id="slide-4">
       <div class="slide-header">
         <span class="slide-eyebrow">Langkah 02 · Autentikasi Siswa</span>
         <h2 class="slide-title">Memilih Akun Siswa & <span>Masuk ke Kelas Belajar</span></h2>
@@ -966,10 +1115,13 @@
         </div>
         <div>Halaman 04 dari 15</div>
       </footer>
-    </section>
+    
+      </section>
+    </div>
 
     <!-- ==================== SLIDE 5: MATRIKS KURIKULUM ABRIDGED ==================== -->
-    <section class="deck-slide" id="slide-5">
+    <div class="slide-wrapper" id="wrapper-5" data-slide="5">
+      <section class="deck-slide" id="slide-5">
       <div class="slide-header">
         <span class="slide-eyebrow">Struktur Kurikulum · Matriks Perbandingan 3 Jenjang</span>
         <h2 class="slide-title">Matriks Pembelajaran Abridged: <span>SD, SMP, & SMA</span></h2>
@@ -1052,10 +1204,13 @@
         </div>
         <div>Halaman 05 dari 15</div>
       </footer>
-    </section>
+    
+      </section>
+    </div>
 
     <!-- ==================== SLIDE 6: RINCIAN MODUL & MINI PROJECT ==================== -->
-    <section class="deck-slide" id="slide-6">
+    <div class="slide-wrapper" id="wrapper-6" data-slide="6">
+      <section class="deck-slide" id="slide-6">
       <div class="slide-header">
         <span class="slide-eyebrow">Rincian Silabus · Mini Project & Hands-on Challenge</span>
         <h2 class="slide-title">Rincian Modul & <span>Daftar Mini Project yang Dikumpul</span></h2>
@@ -1180,10 +1335,13 @@
         </div>
         <div>Halaman 06 dari 15</div>
       </footer>
-    </section>
+    
+      </section>
+    </div>
 
     <!-- ==================== SLIDE 7: LANGKAH 3A - DASHBOARD UTAMA ==================== -->
-    <section class="deck-slide" id="slide-7">
+    <div class="slide-wrapper" id="wrapper-7" data-slide="7">
+      <section class="deck-slide" id="slide-7">
       <div class="slide-header">
         <span class="slide-eyebrow">Langkah 03A · Antarmuka Beranda</span>
         <h2 class="slide-title">Mengenal Dashboard Belajar <span>Beranda Siswa</span></h2>
@@ -1237,10 +1395,13 @@
         </div>
         <div>Halaman 07 dari 15</div>
       </footer>
-    </section>
+    
+      </section>
+    </div>
 
     <!-- ==================== SLIDE 8: LANGKAH 3B - SIDEBAR & STATUS MATERI ==================== -->
-    <section class="deck-slide" id="slide-8">
+    <div class="slide-wrapper" id="wrapper-8" data-slide="8">
+      <section class="deck-slide" id="slide-8">
       <div class="slide-header">
         <span class="slide-eyebrow">Langkah 03B · Navigasi Modul & Materi</span>
         <h2 class="slide-title">Navigasi Modul & Materi · <span>Tiga Indikator Status</span></h2>
@@ -1294,10 +1455,13 @@
         </div>
         <div>Halaman 08 dari 15</div>
       </footer>
-    </section>
+    
+      </section>
+    </div>
 
     <!-- ==================== SLIDE 9: LANGKAH 4 - BACA SLIDE INTERAKTIF ==================== -->
-    <section class="deck-slide" id="slide-9">
+    <div class="slide-wrapper" id="wrapper-9" data-slide="9">
+      <section class="deck-slide" id="slide-9">
       <div class="slide-header">
         <span class="slide-eyebrow">Langkah 04 · Pembelajaran Slide</span>
         <h2 class="slide-title">Membaca Slide Interaktif & <span>Rangkuman Konsep</span></h2>
@@ -1351,10 +1515,13 @@
         </div>
         <div>Halaman 09 dari 15</div>
       </footer>
-    </section>
+    
+      </section>
+    </div>
 
     <!-- ==================== SLIDE 10: LANGKAH 5 - NONTON VIDEO MODUL ==================== -->
-    <section class="deck-slide" id="slide-10">
+    <div class="slide-wrapper" id="wrapper-10" data-slide="10">
+      <section class="deck-slide" id="slide-10">
       <div class="slide-header">
         <span class="slide-eyebrow">Langkah 05 · Pembelajaran Video</span>
         <h2 class="slide-title">Menonton Video Modul dengan <span>Pemutar Pintar</span></h2>
@@ -1408,10 +1575,13 @@
         </div>
         <div>Halaman 10 dari 15</div>
       </footer>
-    </section>
+    
+      </section>
+    </div>
 
     <!-- ==================== SLIDE 11: LANGKAH 6 - JAWAB KUIS INTERAKTIF ==================== -->
-    <section class="deck-slide" id="slide-11">
+    <div class="slide-wrapper" id="wrapper-11" data-slide="11">
+      <section class="deck-slide" id="slide-11">
       <div class="slide-header">
         <span class="slide-eyebrow">Langkah 06 · Evaluasi Pemahaman</span>
         <h2 class="slide-title">Menjawab Kuis Interaktif <span>Ramah Pemula</span></h2>
@@ -1465,10 +1635,13 @@
         </div>
         <div>Halaman 11 dari 15</div>
       </footer>
-    </section>
+    
+      </section>
+    </div>
 
     <!-- ==================== SLIDE 12: LANGKAH 7 - FEEDBACK KUIS & UNLOCK ==================== -->
-    <section class="deck-slide" id="slide-12">
+    <div class="slide-wrapper" id="wrapper-12" data-slide="12">
+      <section class="deck-slide" id="slide-12">
       <div class="slide-header">
         <span class="slide-eyebrow">Langkah 07 · Umpan Balik Instan</span>
         <h2 class="slide-title">Menerima Umpan Balik & <span>Membuka Materi Selanjutnya</span></h2>
@@ -1522,10 +1695,13 @@
         </div>
         <div>Halaman 12 dari 15</div>
       </footer>
-    </section>
+    
+      </section>
+    </div>
 
     <!-- ==================== SLIDE 13: LANGKAH 8 - MINI PROJECT PANEL ==================== -->
-    <section class="deck-slide" id="slide-13">
+    <div class="slide-wrapper" id="wrapper-13" data-slide="13">
+      <section class="deck-slide" id="slide-13">
       <div class="slide-header">
         <span class="slide-eyebrow">Langkah 08 · Praktik Koding Mandiri</span>
         <h2 class="slide-title">Mengerjakan & Mengumpulkan <span>Tantangan Mini Project</span></h2>
@@ -1583,10 +1759,13 @@
         </div>
         <div>Halaman 13 dari 15</div>
       </footer>
-    </section>
+    
+      </section>
+    </div>
 
     <!-- ==================== SLIDE 14: LANGKAH 9 - KLAIM SERTIFIKAT RESMI ==================== -->
-    <section class="deck-slide" id="slide-14">
+    <div class="slide-wrapper" id="wrapper-14" data-slide="14">
+      <section class="deck-slide" id="slide-14">
       <div class="slide-header">
         <span class="slide-eyebrow">Langkah 09 · Kelulusan & Sertifikat</span>
         <h2 class="slide-title">Mengklaim Sertifikat Kelulusan & <span>Transkrip Resmi</span></h2>
@@ -1646,10 +1825,13 @@
         </div>
         <div>Halaman 14 dari 15</div>
       </footer>
-    </section>
+    
+      </section>
+    </div>
 
     <!-- ==================== SLIDE 15: PENUTUP & PUSAT BANTUAN ==================== -->
-    <section class="deck-slide" id="slide-15">
+    <div class="slide-wrapper" id="wrapper-15" data-slide="15">
+      <section class="deck-slide" id="slide-15">
       <div class="slide-header">
         <span class="slide-eyebrow">Panduan Tambahan · Bantuan & Dukungan</span>
         <h2 class="slide-title">Tips Sukses Belajar Asinkron & <span>Pusat Bantuan</span></h2>
@@ -1715,7 +1897,9 @@
         </div>
         <div>Halaman 15 dari 15</div>
       </footer>
-    </section>
+    
+      </section>
+    </div>
 
   </main>
 
@@ -1724,11 +1908,19 @@
     const totalSlides = 15;
 
     function updateSlide() {
-      const slide = document.getElementById(`slide-${currentSlide}`);
-      if (slide) {
-        slide.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const wrapper = document.getElementById(`wrapper-${currentSlide}`);
+      if (wrapper) {
+        const topbar = document.querySelector('.deck-topbar');
+        const topbarHeight = topbar ? topbar.offsetHeight : 64;
+        const rect = wrapper.getBoundingClientRect();
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const targetY = scrollTop + rect.top - topbarHeight - 16;
+        window.scrollTo({ top: Math.max(0, targetY), behavior: 'smooth' });
       }
-      document.getElementById('slide-indicator').textContent = `Slide ${currentSlide} / ${totalSlides}`;
+      const indicator = document.getElementById('slide-indicator');
+      if (indicator) {
+        indicator.textContent = `Slide ${currentSlide} / ${totalSlides}`;
+      }
     }
 
     function nextSlide() {
@@ -1752,9 +1944,32 @@
       } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
         e.preventDefault();
         prevSlide();
+      } else if (e.key.toLowerCase() === 'f') {
+        toggleFullscreen();
       } else if (e.key.toLowerCase() === 'p') {
         window.print();
       }
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+      updateDeckScale();
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const slideNum = parseInt(entry.target.getAttribute('data-slide'), 10);
+            if (slideNum && slideNum !== currentSlide) {
+              currentSlide = slideNum;
+              const indicator = document.getElementById('slide-indicator');
+              if (indicator) {
+                indicator.textContent = `Slide ${currentSlide} / ${totalSlides}`;
+              }
+            }
+          }
+        });
+      }, { threshold: 0.5 });
+
+      document.querySelectorAll('.slide-wrapper').forEach(el => observer.observe(el));
     });
   </script>
 </body>

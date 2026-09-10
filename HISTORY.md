@@ -2959,3 +2959,40 @@ Seluruh istilah kurikulum di deck panduan pengguna telah distandardisasi ke isti
    - Skrip `scratch/export_guide_pdf.py` dijalankan ulang, menghasilkan berkas PDF beresolusi tinggi 1920x1080 (15 halaman, 11.69 MB): [`docs/guide/panduan-pengguna-lms-uob.pdf`](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/docs/guide/panduan-pengguna-lms-uob.pdf).
    - Berkas otomatis disalin ke folder Unduhan laptop: [`/Users/yazidhilmi/Downloads/Panduan_Pengguna_LMS_UOB_My_Digital_Space.pdf`](file:///Users/yazidhilmi/Downloads/Panduan_Pengguna_LMS_UOB_My_Digital_Space.pdf).
    - Seluruh perubahan disinkronkan ke subproyek via `rsync`.
+
+---
+
+## User Request — 2026-09-10 (Auto-Scale HTML Deck ke Ukuran Window Browser)
+
+"ini pdf terbaru dan htmlnya udah di perbarui kan yah
+
+oiya ini yang html kan dai kok di layar aku siuka ke crop coba ukurannya sesuaikan dengan widoow browser deh untuk nampilin semua nya gitu jadi dia gak dikira ke crop padahal tingal di keciloin tapi user behavior kan susah banget jalo disuru sue"
+
+### Assistant Actions & Verbatim Response
+
+1. **Akar Masalah & Kebutuhan Pengguna**:
+   - Berkas HTML slide sebelumnya memiliki dimensi kanvas tetap `width: 1920px; height: 1080px;`.
+   - Pada layar laptop beresolusi 1366×768, 1440×900 (MacBook Air), atau monitor Full HD 1080p yang terpotong oleh address bar/tab browser (tinggi efektif ~700–850px), slide melebihi batas viewport sehingga tampak terpotong (*"dikira ke-crop"*).
+   - Pengguna rata-rata tidak menyadari bahwa mereka perlu memperkecil zoom browser manual (`Ctrl -` / `Cmd -`).
+
+2. **Implementasi Dynamic Viewport Auto-Scaling (Zero-Crop)**:
+   - **Struktur Kontainer Baru (`.slide-wrapper`)**: Setiap elemen slide (`.deck-slide`) dibungkus dalam `.slide-wrapper` yang mengatur dimensi tampak pada layar secara dinamis.
+   - **Kalkulasi Skala Otomatis Real-Time**:
+     - Skrip JavaScript menghitung ruang viewport yang tersedia saat halaman dimuat dan setiap kali jendela browser diubah ukurannya (`resize`, `orientationchange`, dan `fullscreenchange`):
+       `scale = Math.min(availWidth / 1920, availHeight / 1080, 1.0)`.
+     - Nilai skala diterapkan secara instan ke variabel CSS `--deck-scale`, `--slide-scaled-width`, dan `--slide-scaled-height`.
+     - Konten slide internal (1920×1080) diskalakan secara proporsional via `transform: scale(...)` dengan titik poros `top left`, mempertahankan ketajaman teks dan gambar.
+   - **Uji Kompatibilitas Multi-Viewport (Playwright Automated Testing)**:
+     - Layar 1440×800 (MacBook): Skala otomatis `65%` (`1252px × 704px`), `Horizontal Overflow: False`, pas 100% vertikal.
+     - Layar 1366×768 (Windows): Skala otomatis `62%` (`1195px × 672px`), `Horizontal Overflow: False`, pas 100% vertikal.
+     - Layar 1920×1080 (Desktop): Skala otomatis `91%` (`1749px × 984px`), `Horizontal Overflow: False`, pas 100% vertikal.
+
+3. **Kontrol Interaktif di Topbar**:
+   - **Tombol `⛶ Pas Layar (XX%)`**: Aktif otomatis sejak awal. Pengguna dapat mengkliknya kapan saja untuk beralih antara mode *Pas Layar* dan *Ukuran Asli (100%)*.
+   - **Tombol `🖥️ Layar Penuh`** (Shortcut keyboard: `F`): Menghilangkan address bar browser untuk pengalaman presentasi layar penuh maksimal.
+   - **Pelacak Scroll Cerdas (`IntersectionObserver`)**: Nomor slide pada topbar (`Slide X / 15`) otomatis berganti sesuai slide yang sedang berada di tengah pandangan pengguna saat digulir.
+
+4. **Integritas Cetak PDF Tetap Terjaga**:
+   - Peraturan `@media print` menjaga ukuran asli `1920px × 1080px` dengan `transform: none !important;`.
+   - Skrip `scratch/export_guide_pdf.py` telah dieksekusi ulang, menghasilkan berkas PDF resmi 15 halaman (11.69 MB) yang disinkronkan ke repositori dan disalin ke `/Users/yazidhilmi/Downloads/Panduan_Pengguna_LMS_UOB_My_Digital_Space.pdf`.
+

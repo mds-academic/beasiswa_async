@@ -2,15 +2,19 @@
 
 ## Current Status
 
-- **Status**: Seluruh 14 tangkapan layar antarmuka panduan pengguna telah ditangkap ulang dengan antarmuka terkini (logo baru horizontal UOB MDS, outline putih, redaksi sertifikat kelulusan baru, dan hotline Contact Center UOB MDS `+62 813-1534-4904`). Dokumen PDF panduan pengguna widescreen 16:9 (15 halaman) telah diekspor ulang (11.85 MB) dan disinkronkan ke repositori dan folder Unduhan.
+- **Status**: Fitur Auto-Fit Responsif ke Window Browser telah diimplementasikan pada HTML presentation deck (`docs/guide/index.html`). Seluruh slide 16:9 secara otomatis diskalakan proporsional agar 100% pas dan terlihat penuh di semua ukuran layar laptop/monitor tanpa terpotong (0% cropped, 0% overflow). Tersedia tombol interaktif `⛶ Pas Layar` / `Ukuran Asli` dan `🖥️ Layar Penuh` di topbar. Berkas PDF panduan widescreen 16:9 (15 halaman, 11.69 MB) telah diekspor ulang dan disinkronkan ke folder Unduhan laptop serta remote GitHub.
 - **Active Focus**: Siap untuk operasional peluncuran platform dan distribusi materi panduan pengguna.
 - **Last Updated**: 2026-09-10
 
-- **Standardisasi Istilah Edukasi di Panduan Pengguna (2026-09-10)**:
-  - Mengganti istilah ambigu/gamified (*"Total Step / Materi Misi"* dan *"Step Misi Terpadu"*) pada tabel silabus Slide 5 menjadi istilah baku kurikulum pendidikan Indonesia: **`Total Materi Pembelajaran`** (`18 Materi Pembelajaran` untuk SD, `36 Materi Pembelajaran` untuk SMP dan SMA).
-  - Menyeragamkan seluruh sebutan di slide pendukung: badge silabus menjadi `4 Modul · 18 Materi Pembelajaran`, kuis menjadi `18 Kuis (1 kuis di setiap materi)`, indikator beranda menjadi `Indikator Progres Belajar Real-Time`, dan navigasi sidebar menjadi `Navigasi Modul & Materi`.
-  - Mengeliminasi kata *"misi"* dan *"step"* dari seluruh teks narasi pengguna pada deck panduan agar selaras 100% dengan portal LMS yang menggunakan metrik ketuntasan *"X dari Y Materi"*.
-  - Menghasilkan ulang dokumen PDF panduan widescreen 16:9 (`panduan-pengguna-lms-uob.pdf`, 11.69 MB) dan menyalinnya ke folder Unduhan laptop.
+- **Implementasi Auto-Fit Responsif ke Window Browser pada HTML Guide Deck (2026-09-10)**:
+  - Mengatasi kendala tampilan terpotong (*"dikira ke-crop"*) pada layar laptop atau monitor berukuran sedang (seperti MacBook 13"/14", Windows 1366x768 / 1080p).
+  - Mengimplementasikan sistem **Dynamic Viewport Auto-Scaling**: elemen setiap slide dibungkus dalam `.slide-wrapper` yang secara dinamis menghitung ruang viewport yang tersedia (`availWidth` dan `availHeight - topbarHeight`), lalu menyesuaikan nilai CSS variable `--deck-scale` dan ukuran kontainer secara real-time.
+  - Setiap slide kini tampil 100% utuh tanpa horizontal scrollbar (`Overflow: False`), mempertahankan rasio 16:9 yang presisi dan estetika kartu melayang berbayang lembut.
+  - Menambahkan kontrol cerdas pada topbar:
+    - Tombol **`⛶ Pas Layar (XX%)`**: Aktif secara otomatis (default), dapat diklik untuk beralih antara mode *Pas Layar* dan *Ukuran Asli (100%)*.
+    - Tombol **`🖥️ Layar Penuh`** (Shortcut: tombol `F`): Mengaktifkan mode presentasi fullscreen tanpa address bar/tab browser.
+    - Observer pelacak scroll otomatis (`IntersectionObserver`) yang memperbarui nomor slide di topbar saat pengguna menggulir layar.
+  - Mempertahankan rendering cetak `@media print` murni 1920x1080 sehingga hasil ekspor PDF tetap beresolusi tinggi (15 halaman, 11.69 MB).
 
 - **Perbaikan Pewarnaan Cap Segel Emas (Gold Seal) di Ekspor PDF (2026-09-10)**:
   - Mengidentifikasi akar masalah hilangnya warna segel emas pada hasil ekspor PDF: parser gaya `html2canvas` tidak mendukung `radial-gradient` serta mengalami kegagalan render saat menemukan properti `outline` dan `outline-offset: -1px` pada elemen cap.
