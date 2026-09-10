@@ -6,7 +6,11 @@
 - **Active Focus**: Siap untuk operasional peluncuran platform dan distribusi materi panduan pengguna.
 - **Last Updated**: 2026-09-10
 
-- **Implementasi Auto-Fit Responsif ke Window Browser pada HTML Guide Deck (2026-09-10)**:
+- **Pembersihan Kata "CSR" & Penyelarasan Footer "UOB MDS" (2026-09-10)**:
+  - Menghapus klausa *"Inisiatif CSR PT Bank UOB Indonesia x Ruangguru"* pada footer Slide 1 sesuai instruksi pengguna bahwa program ini bukan program CSR.
+  - Mengganti teks footer murni menjadi: `UOB MDS` (pada badge) dan `UOB My Digital Space` (pada deskripsi teks) tanpa narasi tambahan.
+  - Memastikan seluruh dokumen dan antarmuka panduan bebas dari kata "CSR".
+  - Berkas PDF panduan widescreen 16:9 (`panduan-pengguna-lms-uob.pdf`, 11.69 MB) diekspor ulang dan disalin ke folder Unduhan laptop serta remote GitHub.
   - Mengatasi kendala tampilan terpotong (*"dikira ke-crop"*) pada layar laptop atau monitor berukuran sedang (seperti MacBook 13"/14", Windows 1366x768 / 1080p).
   - Mengimplementasikan sistem **Dynamic Viewport Auto-Scaling**: elemen setiap slide dibungkus dalam `.slide-wrapper` yang secara dinamis menghitung ruang viewport yang tersedia (`availWidth` dan `availHeight - topbarHeight`), lalu menyesuaikan nilai CSS variable `--deck-scale` dan ukuran kontainer secara real-time.
   - Setiap slide kini tampil 100% utuh tanpa horizontal scrollbar (`Overflow: False`), mempertahankan rasio 16:9 yang presisi dan estetika kartu melayang berbayang lembut.

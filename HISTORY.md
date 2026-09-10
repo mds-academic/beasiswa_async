@@ -2996,3 +2996,25 @@ oiya ini yang html kan dai kok di layar aku siuka ke crop coba ukurannya sesuaik
    - Peraturan `@media print` menjaga ukuran asli `1920px × 1080px` dengan `transform: none !important;`.
    - Skrip `scratch/export_guide_pdf.py` telah dieksekusi ulang, menghasilkan berkas PDF resmi 15 halaman (11.69 MB) yang disinkronkan ke repositori dan disalin ke `/Users/yazidhilmi/Downloads/Panduan_Pengguna_LMS_UOB_My_Digital_Space.pdf`.
 
+
+---
+
+## User Request — 2026-09-10 (Hapus Kata CSR, Gunakan UOB My Digital Space)
+
+"ini kenapa yah ada ini jangan ngarang deh ini bukan prigram csr udah tulis aja UOB mds lala jan ngarang"
+
+### Assistant Actions & Verbatim Response
+
+1. **Pembersihan Kata "CSR"**:
+   - Kata *"Inisiatif CSR PT Bank UOB Indonesia x Ruangguru"* pada footer Slide 1 telah dihapus total.
+   - Sesuai instruksi langsung pengguna, teks diganti murni menjadi:
+     - Badge/Pill: **`UOB MDS`**
+     - Teks Samping: **`UOB My Digital Space`**
+   - Tidak ada lagi kata "CSR" di seluruh berkas deck panduan maupun portal antarmuka.
+
+2. **Regenerasi PDF & Sinkronisasi**:
+   - Skrip `scratch/export_guide_pdf.py` telah dijalankan ulang.
+   - Berkas PDF resmi 15 halaman (11.69 MB) telah diperbarui:
+     - Repositori: [`docs/guide/panduan-pengguna-lms-uob.pdf`](file:///Users/yazidhilmi/Documents/Edu/Fireside-chat/projects/uob-async-lms/docs/guide/panduan-pengguna-lms-uob.pdf)
+     - Folder Unduhan: [`/Users/yazidhilmi/Downloads/Panduan_Pengguna_LMS_UOB_My_Digital_Space.pdf`](file:///Users/yazidhilmi/Downloads/Panduan_Pengguna_LMS_UOB_My_Digital_Space.pdf)
+   - Sinkronisasi ke mirror `subprojects/01-lms-platform/docs/guide/`.
