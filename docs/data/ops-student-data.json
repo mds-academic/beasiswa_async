@@ -3526,5 +3526,26 @@
     "rombel_name": "",
     "school_name": "SD MUHAMMADIYAH II GRESIK",
     "grade_name": "Upper Primary"
+  },
+  {
+    "email": "demo.sd@mail.com",
+    "name": "Demo SD",
+    "rombel_name": "",
+    "school_name": "Demo SD",
+    "grade_name": "Upper Primary"
+  },
+  {
+    "email": "demo.smp@mail.com",
+    "name": "Demo SMP",
+    "rombel_name": "",
+    "school_name": "Demo SMP",
+    "grade_name": "Middle School"
+  },
+  {
+    "email": "demo.sma@mail.com",
+    "name": "Demo SMA",
+    "rombel_name": "",
+    "school_name": "Demo SMA",
+    "grade_name": "High School"
   }
 ]
